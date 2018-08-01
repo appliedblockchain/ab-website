@@ -222,6 +222,10 @@ select:-webkit-autofill:focus {
 
 	&--grey {
 		background-color: $lightgrey;
+
+		.title {
+			color: $primary;
+		}
 	}
 }
 

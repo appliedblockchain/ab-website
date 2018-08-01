@@ -20,8 +20,8 @@ $(document).ready(function() {
 
 $(".tab--vertical .tab__nav a").click(function(event) {
 	event.preventDefault();
-	$(this).parent().addClass(".tab--vertical nav__btn--active");
-	$(this).parent().siblings().removeClass(".tab--vertical nav__btn--active");
+	$(this).addClass("nav__button--active");
+	$(this).siblings().removeClass("nav__button--active");
 	var tab = $(this).attr("href");
 	$(".tab--vertical .tab__item").not(tab).css("display", "none");
 	$(tab).fadeIn(400);
@@ -31,8 +31,8 @@ $(".tab--vertical .tab__nav a").click(function(event) {
 
 $(".tab--horizontal .tab__nav a").click(function(event) {
 	event.preventDefault();
-	$(this).parent().addClass(".tab--horizontal nav__btn--active");
-	$(this).parent().siblings().removeClass(".tab--horizontal nav__btn--active");
+	$(this).addClass("nav__button--active");
+	$(this).siblings().removeClass("nav__button--active");
 	var tab = $(this).attr("href");
 	$(".tab--horizontal .tab__item").not(tab).css("display", "none");
 	$(tab).fadeIn(400);

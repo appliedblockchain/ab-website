@@ -2533,9 +2533,13 @@ select:-webkit-autofill:focus {
 .section--grey {
   background-color: #f0f0f0;
 }
+/* line 226, ../sass/partials/_structure.scss */
+.section--grey .title {
+  color: #005eff;
+}
 
 /*alignement*/
-/* line 230, ../sass/partials/_structure.scss */
+/* line 234, ../sass/partials/_structure.scss */
 .section {
   display: -webkit-flex;
   display: flex;
@@ -2543,17 +2547,17 @@ select:-webkit-autofill:focus {
   flex-direction: column;
   text-align: center;
 }
-/* line 235, ../sass/partials/_structure.scss */
+/* line 239, ../sass/partials/_structure.scss */
 .section--left {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   text-align: left;
 }
-/* line 239, ../sass/partials/_structure.scss */
+/* line 243, ../sass/partials/_structure.scss */
 .section--left .section__desc {
   margin-left: 0;
 }
-/* line 244, ../sass/partials/_structure.scss */
+/* line 248, ../sass/partials/_structure.scss */
 .section--right {
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -2564,7 +2568,7 @@ select:-webkit-autofill:focus {
  * block
  * —————————————————————————————————————————————————————————————————
 */
-/* line 257, ../sass/partials/_structure.scss */
+/* line 261, ../sass/partials/_structure.scss */
 .block {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
@@ -2583,7 +2587,7 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 /* line 16, ../sass/partials/_tabs.scss */
-.tab__nav .nav__btn {
+.tab__nav .nav__button {
   display: inline-block;
 }
 /* line 21, ../sass/partials/_tabs.scss */
@@ -2680,4 +2684,39 @@ select:-webkit-autofill:focus {
 /* line 20, ../sass/pages/_join.scss */
 .jobs {
   padding: 0;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * SERVICES
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 13, ../sass/pages/_services.scss */
+.approach__filter {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+}
+/* line 18, ../sass/pages/_services.scss */
+.approach__item {
+  display: -webkit-flex;
+  display: flex;
+  text-align: left;
+}
+/* line 23, ../sass/pages/_services.scss */
+.approach__number {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #d7d7dc;
+  width: 25%;
+  line-height: 0.9;
+}
+/* line 31, ../sass/pages/_services.scss */
+.approach__content {
+  margin: 0 40px;
+}
+/* line 35, ../sass/pages/_services.scss */
+.approach__title {
+  margin-bottom: 20px;
 }

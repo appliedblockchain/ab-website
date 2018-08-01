@@ -17,16 +17,18 @@
 		&:nth-child(1) .accordion__header {
 			padding-top: 0;
 		}
-	}
 
-	&__item + .accordion__item {
+		& + & {
+			border-top: 1px solid $primary;
+		}
 	}
 
 	&__header {
-		cursor: pointer;
 	    @include display-flex();
     	@include align-items(center);
-    	@include justify-content(space-between);
+		@include justify-content(space-between);
+		text-align: left;
+		cursor: pointer;
 	}
 
 	&__icon {
@@ -34,24 +36,19 @@
 	}
 
 	&__title {
-	    position: relative;
-	    width: 100%;
-	    @include display-flex();
-    	@include align-items(center);
-    	@include justify-content(space-between);
+		width: 66.666%;
 	}
 
 	&__content {
 		cursor: initial;
 		display: none;
-
-		> * {
-		}
+		border-top: 1px solid $grey;
 	}
 
-	&__icons {
-
-		img {
-		}
+	&__actions {
+		@include display-flex();
 	}
+
+	
+
 }

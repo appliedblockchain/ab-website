@@ -7,8 +7,9 @@
  * STRUCTURE
  * —————————————————————————————————————————————————————————————————
  * general
- * containers
  * z-index
+ * section
+ * block
  * —————————————————————————————————————————————————————————————————
 */
 
@@ -145,11 +146,15 @@ select:-webkit-autofill:focus {
 
 
 /*
- * containers
+ * z-index
  * —————————————————————————————————————————————————————————————————
 */
 
-/*section*/
+
+/*
+ * section
+ * —————————————————————————————————————————————————————————————————
+*/
 
 .section {
 	padding: $integer*6 $col*2;
@@ -189,7 +194,7 @@ select:-webkit-autofill:focus {
 	}
 }
 
-/*section types*/
+/*types*/
 
 .section {
 	
@@ -206,7 +211,7 @@ select:-webkit-autofill:focus {
 	}
 }
 
-/*section color*/
+/*colors*/
 
 .section {
 
@@ -220,12 +225,11 @@ select:-webkit-autofill:focus {
 	}
 }
 
-/*section alignement*/
+/*alignement*/
 
 .section {
 	@include display-flex();
 	@include flex-direction(column);
-    @include align-items(center);
 	text-align: center;
 
 	&--left {
@@ -243,7 +247,12 @@ select:-webkit-autofill:focus {
 	}
 }
 
-/*block*/
+
+
+/*
+ * block
+ * —————————————————————————————————————————————————————————————————
+*/
 
 .block {
 	background-color: $white;

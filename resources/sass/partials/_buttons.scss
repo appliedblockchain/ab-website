@@ -29,12 +29,17 @@
 	overflow: hidden;
 	position: relative;
 	white-space: nowrap;
+
 	&__inner {
 		@include transform-style(preserve-3d);
 		@include backface-visibility (hidden);
 		@include transition (color 0.4s ease 0s, transform 0.4s ease 0s);
 		display: block;
 		text-transform: uppercase;
+	}
+
+	& + & {
+		margin-left: 5px;
 	}
 }
 
@@ -54,6 +59,7 @@
 	text-align: center;
 	background-color: transparent;
 }
+
 .button--animate:hover:before, .button--animate:hover .button__inner {
 	@include transform(translateX(140%));
 }
@@ -84,11 +90,22 @@
 
 	&--large {
 		padding: 18px 36px;
+
+		&.button--icon {
+			width: $integer*3;
+			height: $integer*3;
+		}
 	}
 
 	&--small {
 		padding: 6px 15px;
+
+		&.button--icon {
+			width: $integer*1.5;
+			height: $integer*1.5;
+		}
 	}
+
 }
 
 
@@ -99,36 +116,12 @@
 */
 
 .button--icon {
-	width: $col/4;
-	height: $col/4;
-	min-width: $integer;
-	min-height: $integer;
-	padding: 0;
-	font-size: 0.8rem;
-	line-height: 1;
-	border: 1px solid $white;
-	color: $white;
-	will-change: transform;
-	@include border-radius(50%);
 	@include display-flex();
 	@include justify-content(center);
 	@include align-items(center);
-	&:hover {
-		color: $black;
-		border-width: $col/8;
-	}
-
-	&.button--large {
-		width: $col/2;
-		height: $col/2;
-		min-width: $integer*2;
-		min-height: $integer*2;
-		font-size: 1.6rem;
-		&:hover {
-			border-width: $col/4;
-		}
-	}
-
+	padding: 0;
+	width: $integer*2;
+	height: $integer*2;
 }
 
 
@@ -139,6 +132,7 @@
 */
 
 .button--close {
+
 	&:before, &:after {
 		margin-top: -2px;
 		background-color: $black;
@@ -174,6 +168,7 @@
 	cursor: pointer;
 	margin-top: 5px;
 	@include animation(btn--menu--opacity 0.8s ease 0s);
+
 	&:before, &:after {
 		background-color: $white;
 		@include pseudo-element('', 50%, auto, auto, auto, 20px, 2px);
@@ -183,10 +178,12 @@
 			content: none;
 		}
 	}
+
 	&:before {
 		@include transform(translateY(5px));
 		@include animation(btn--menu--close--before 0.8s ease);
 	}
+
 	&:after {
 		@include transform(translateY(-5px));
 		@include animation(btn--menu--close--after 0.8s ease);
@@ -202,10 +199,12 @@
 	}
 
 	&.button--menu--open {
+
 		&:before {
 			transform: rotate(45deg); 
 			@include animation(btn--menu--open--before 0.8s ease);
 		}
+
 		&:after {
 			transform: rotate(-45deg); 
 			@include animation(btn--menu--open--after 0.8s ease);

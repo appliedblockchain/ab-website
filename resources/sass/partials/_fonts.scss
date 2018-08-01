@@ -59,6 +59,9 @@ html, body {
 	&--small {
 		font-size: 0.8rem;
 	}
+	&--bold {
+		font-weight: $font-bold;
+	}
 }
 
 .label {
@@ -88,6 +91,18 @@ html, body {
 		@include fontSize(0.8, $font-black, normal);
 		letter-spacing: 0.04rem;
 		line-height: 1.5;
+	}
+}
+
+.button--icon {
+	font-size: 1.5rem;
+
+	&.button--large {
+		font-size: 2.5rem;
+	}
+
+	&.button--small {
+		font-size: 1rem;
 	}
 }
 

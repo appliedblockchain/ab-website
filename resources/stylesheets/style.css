@@ -580,7 +580,7 @@ optgroup {
   position: relative;
   white-space: nowrap;
 }
-/* line 32, ../sass/partials/_buttons.scss */
+/* line 33, ../sass/partials/_buttons.scss */
 .button__inner {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -596,12 +596,16 @@ optgroup {
   display: block;
   text-transform: uppercase;
 }
+/* line 41, ../sass/partials/_buttons.scss */
+.button + .button {
+  margin-left: 5px;
+}
 
 /*
  * animate
  * —————————————————————————————————————————————————————————————————
 */
-/* line 48, ../sass/partials/_buttons.scss */
+/* line 53, ../sass/partials/_buttons.scss */
 .button--animate:before {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -626,7 +630,7 @@ optgroup {
   background-color: transparent;
 }
 
-/* line 57, ../sass/partials/_buttons.scss */
+/* line 63, ../sass/partials/_buttons.scss */
 .button--animate:hover:before, .button--animate:hover .button__inner {
   -moz-transform: translateX(140%);
   -ms-transform: translateX(140%);
@@ -718,64 +722,47 @@ optgroup {
  * size
  * —————————————————————————————————————————————————————————————————
 */
-/* line 85, ../sass/partials/_buttons.scss */
+/* line 91, ../sass/partials/_buttons.scss */
 .button--large {
   padding: 18px 36px;
 }
-/* line 89, ../sass/partials/_buttons.scss */
+/* line 94, ../sass/partials/_buttons.scss */
+.button--large.button--icon {
+  width: 60px;
+  height: 60px;
+}
+/* line 100, ../sass/partials/_buttons.scss */
 .button--small {
   padding: 6px 15px;
+}
+/* line 103, ../sass/partials/_buttons.scss */
+.button--small.button--icon {
+  width: 30px;
+  height: 30px;
 }
 
 /*
  * icon
  * —————————————————————————————————————————————————————————————————
 */
-/* line 101, ../sass/partials/_buttons.scss */
+/* line 118, ../sass/partials/_buttons.scss */
 .button--icon {
-  width: 1.5625vw;
-  height: 1.5625vw;
-  min-width: 20px;
-  min-height: 20px;
-  padding: 0;
-  font-size: 0.8rem;
-  line-height: 1;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  will-change: transform;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
-}
-/* line 116, ../sass/partials/_buttons.scss */
-.button--icon:hover {
-  color: #000a1e;
-  border-width: 0.78125vw;
-}
-/* line 121, ../sass/partials/_buttons.scss */
-.button--icon.button--large {
-  width: 3.125vw;
-  height: 3.125vw;
-  min-width: 40px;
-  min-height: 40px;
-  font-size: 1.6rem;
-}
-/* line 127, ../sass/partials/_buttons.scss */
-.button--icon.button--large:hover {
-  border-width: 1.5625vw;
+  padding: 0;
+  width: 40px;
+  height: 40px;
 }
 
 /*
  * close
  * —————————————————————————————————————————————————————————————————
 */
-/* line 142, ../sass/partials/_buttons.scss */
+/* line 136, ../sass/partials/_buttons.scss */
 .button--close:before, .button--close:after {
   margin-top: -2px;
   background-color: #000a1e;
@@ -800,21 +787,21 @@ optgroup {
   width: 30px;
   height: 7px;
 }
-/* line 151, ../sass/partials/_buttons.scss */
+/* line 145, ../sass/partials/_buttons.scss */
 .button--close.rotate:before {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 155, ../sass/partials/_buttons.scss */
+/* line 149, ../sass/partials/_buttons.scss */
 .button--close.rotate:after {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 159, ../sass/partials/_buttons.scss */
+/* line 153, ../sass/partials/_buttons.scss */
 .button--close.rotate:hover:before, .button--close.rotate:hover:after {
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -826,7 +813,7 @@ optgroup {
  * menu
  * —————————————————————————————————————————————————————————————————
 */
-/* line 172, ../sass/partials/_buttons.scss */
+/* line 166, ../sass/partials/_buttons.scss */
 .button--menu {
   display: none;
   cursor: pointer;
@@ -835,7 +822,7 @@ optgroup {
   -webkit-animation: btn--menu--opacity 0.8s ease 0s;
   animation: btn--menu--opacity 0.8s ease 0s;
 }
-/* line 177, ../sass/partials/_buttons.scss */
+/* line 172, ../sass/partials/_buttons.scss */
 .button--menu:before, .button--menu:after {
   background-color: #ffffff;
   content: "";
@@ -856,12 +843,12 @@ optgroup {
   border-radius: 0.15rem;
 }
 @media (pointer: coarse) {
-  /* line 177, ../sass/partials/_buttons.scss */
+  /* line 172, ../sass/partials/_buttons.scss */
   .button--menu:before, .button--menu:after {
     content: none;
   }
 }
-/* line 186, ../sass/partials/_buttons.scss */
+/* line 182, ../sass/partials/_buttons.scss */
 .button--menu:before {
   -moz-transform: translateY(5px);
   -ms-transform: translateY(5px);
@@ -871,7 +858,7 @@ optgroup {
   -webkit-animation: btn--menu--close--before 0.8s ease;
   animation: btn--menu--close--before 0.8s ease;
 }
-/* line 190, ../sass/partials/_buttons.scss */
+/* line 187, ../sass/partials/_buttons.scss */
 .button--menu:after {
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
@@ -881,7 +868,7 @@ optgroup {
   -webkit-animation: btn--menu--close--after 0.8s ease;
   animation: btn--menu--close--after 0.8s ease;
 }
-/* line 195, ../sass/partials/_buttons.scss */
+/* line 192, ../sass/partials/_buttons.scss */
 .button--menu .button__inner {
   width: 20px;
   height: 2px;
@@ -896,21 +883,21 @@ optgroup {
   -webkit-border-radius: 0.15rem;
   border-radius: 0.15rem;
 }
-/* line 205, ../sass/partials/_buttons.scss */
+/* line 203, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:before {
   transform: rotate(45deg);
   -moz-animation: btn--menu--open--before 0.8s ease;
   -webkit-animation: btn--menu--open--before 0.8s ease;
   animation: btn--menu--open--before 0.8s ease;
 }
-/* line 209, ../sass/partials/_buttons.scss */
+/* line 208, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:after {
   transform: rotate(-45deg);
   -moz-animation: btn--menu--open--after 0.8s ease;
   -webkit-animation: btn--menu--open--after 0.8s ease;
   animation: btn--menu--open--after 0.8s ease;
 }
-/* line 214, ../sass/partials/_buttons.scss */
+/* line 213, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open .button__inner {
   opacity: 0;
 }
@@ -993,8 +980,12 @@ html, body {
 .body--small {
   font-size: 0.8rem;
 }
+/* line 62, ../sass/partials/_fonts.scss */
+.body--bold {
+  font-weight: 700;
+}
 
-/* line 64, ../sass/partials/_fonts.scss */
+/* line 67, ../sass/partials/_fonts.scss */
 .label {
   font-size: 0.8rem;
   letter-spacing: 0.016rem;
@@ -1003,7 +994,7 @@ html, body {
 }
 
 /*buttons*/
-/* line 70, ../sass/partials/_fonts.scss */
+/* line 73, ../sass/partials/_fonts.scss */
 .button {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1011,7 +1002,7 @@ html, body {
   line-height: 1;
 }
 
-/* line 77, ../sass/partials/_fonts.scss */
+/* line 80, ../sass/partials/_fonts.scss */
 .button__inner {
   font-size: 1rem;
   letter-spacing: 0.02rem;
@@ -1020,7 +1011,7 @@ html, body {
   font-family: "Chivo", Verdana, Geneva, sans-serif;
   letter-spacing: 0.05rem;
 }
-/* line 82, ../sass/partials/_fonts.scss */
+/* line 85, ../sass/partials/_fonts.scss */
 .button--large .button__inner {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -1028,7 +1019,7 @@ html, body {
   font-style: normal;
   letter-spacing: 0.08rem;
 }
-/* line 87, ../sass/partials/_fonts.scss */
+/* line 90, ../sass/partials/_fonts.scss */
 .button--small .button__inner {
   font-size: 0.8rem;
   letter-spacing: 0.016rem;
@@ -1038,8 +1029,21 @@ html, body {
   line-height: 1.5;
 }
 
-/*col text*/
 /* line 97, ../sass/partials/_fonts.scss */
+.button--icon {
+  font-size: 1.5rem;
+}
+/* line 100, ../sass/partials/_fonts.scss */
+.button--icon.button--large {
+  font-size: 2.5rem;
+}
+/* line 104, ../sass/partials/_fonts.scss */
+.button--icon.button--small {
+  font-size: 1rem;
+}
+
+/*col text*/
+/* line 112, ../sass/partials/_fonts.scss */
 .col-text--1 {
   -moz-column-count: 1;
   -webkit-column-count: 1;
@@ -1049,7 +1053,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 97, ../sass/partials/_fonts.scss */
+  /* line 112, ../sass/partials/_fonts.scss */
   .col-text--1 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1057,7 +1061,7 @@ html, body {
   }
 }
 
-/* line 97, ../sass/partials/_fonts.scss */
+/* line 112, ../sass/partials/_fonts.scss */
 .col-text--2 {
   -moz-column-count: 2;
   -webkit-column-count: 2;
@@ -1067,7 +1071,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 97, ../sass/partials/_fonts.scss */
+  /* line 112, ../sass/partials/_fonts.scss */
   .col-text--2 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1075,7 +1079,7 @@ html, body {
   }
 }
 
-/* line 97, ../sass/partials/_fonts.scss */
+/* line 112, ../sass/partials/_fonts.scss */
 .col-text--3 {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -1085,7 +1089,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 97, ../sass/partials/_fonts.scss */
+  /* line 112, ../sass/partials/_fonts.scss */
   .col-text--3 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1093,7 +1097,7 @@ html, body {
   }
 }
 
-/* line 97, ../sass/partials/_fonts.scss */
+/* line 112, ../sass/partials/_fonts.scss */
 .col-text--4 {
   -moz-column-count: 4;
   -webkit-column-count: 4;
@@ -1103,7 +1107,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 97, ../sass/partials/_fonts.scss */
+  /* line 112, ../sass/partials/_fonts.scss */
   .col-text--4 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1514,12 +1518,13 @@ html, body {
  * STRUCTURE
  * —————————————————————————————————————————————————————————————————
  * general
- * containers
  * z-index
+ * section
+ * block
  * —————————————————————————————————————————————————————————————————
 */
 @media (pointer: coarse) {
-  /* line 17, ../sass/partials/_structure.scss */
+  /* line 18, ../sass/partials/_structure.scss */
   .hide-mobile {
     display: none !important;
   }
@@ -1529,7 +1534,7 @@ html, body {
  * general
  * —————————————————————————————————————————————————————————————————
 */
-/* line 28, ../sass/partials/_structure.scss */
+/* line 29, ../sass/partials/_structure.scss */
 * {
   outline: none;
   -moz-box-sizing: border-box;
@@ -1537,14 +1542,14 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 33, ../sass/partials/_structure.scss */
+/* line 34, ../sass/partials/_structure.scss */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-/* line 39, ../sass/partials/_structure.scss */
+/* line 40, ../sass/partials/_structure.scss */
 .row {
   margin: 0 -0.3125vw;
   display: -webkit-flex;
@@ -1552,14 +1557,14 @@ html, body {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 44, ../sass/partials/_structure.scss */
+/* line 45, ../sass/partials/_structure.scss */
 .row:after, .clear:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* line 55, ../sass/partials/_structure.scss */
+/* line 56, ../sass/partials/_structure.scss */
 [class*="col--"] {
   background-color: grey;
   float: left;
@@ -1568,812 +1573,812 @@ html, body {
   width: 100%;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--1 {
   width: 6.25vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--1 {
   margin-left: 6.25vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--2 {
   width: 12.5vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--2 {
   margin-left: 12.5vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--3 {
   width: 18.75vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--3 {
   margin-left: 18.75vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--4 {
   width: 25vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--4 {
   margin-left: 25vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--5 {
   width: 31.25vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--5 {
   margin-left: 31.25vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--6 {
   width: 37.5vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--6 {
   margin-left: 37.5vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--7 {
   width: 43.75vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--7 {
   margin-left: 43.75vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--8 {
   width: 50vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--8 {
   margin-left: 50vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--9 {
   width: 56.25vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--9 {
   margin-left: 56.25vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--10 {
   width: 62.5vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--10 {
   margin-left: 62.5vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--11 {
   width: 68.75vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--11 {
   margin-left: 68.75vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--12 {
   width: 75vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--12 {
   margin-left: 75vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--13 {
   width: 81.25vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--13 {
   margin-left: 81.25vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--14 {
   width: 87.5vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--14 {
   margin-left: 87.5vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--15 {
   width: 93.75vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--15 {
   margin-left: 93.75vw;
 }
 
-/* line 64, ../sass/partials/_structure.scss */
+/* line 65, ../sass/partials/_structure.scss */
 .col--16 {
   width: 100vw;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 66, ../sass/partials/_structure.scss */
 .coloffset--16 {
   margin-left: 100vw;
 }
 
 @media (min-width: 576px) {
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm1 {
     width: 6.25vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm1 {
     margin-left: 6.25vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm2 {
     width: 12.5vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm2 {
     margin-left: 12.5vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm3 {
     width: 18.75vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm3 {
     margin-left: 18.75vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm4 {
     width: 25vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm4 {
     margin-left: 25vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm5 {
     width: 31.25vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm5 {
     margin-left: 31.25vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm6 {
     width: 37.5vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm6 {
     margin-left: 37.5vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm7 {
     width: 43.75vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm7 {
     margin-left: 43.75vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm8 {
     width: 50vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm8 {
     margin-left: 50vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm9 {
     width: 56.25vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm9 {
     margin-left: 56.25vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm10 {
     width: 62.5vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm10 {
     margin-left: 62.5vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm11 {
     width: 68.75vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm11 {
     margin-left: 68.75vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm12 {
     width: 75vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm12 {
     margin-left: 75vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm13 {
     width: 81.25vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm13 {
     margin-left: 81.25vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm14 {
     width: 87.5vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm14 {
     margin-left: 87.5vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm15 {
     width: 93.75vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm15 {
     margin-left: 93.75vw;
   }
 
-  /* line 70, ../sass/partials/_structure.scss */
+  /* line 71, ../sass/partials/_structure.scss */
   .col--sm16 {
     width: 100vw;
   }
 
-  /* line 71, ../sass/partials/_structure.scss */
+  /* line 72, ../sass/partials/_structure.scss */
   .coloffset--sm16 {
     margin-left: 100vw;
   }
 }
 @media (min-width: 768px) {
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md1 {
     width: 6.25vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md1 {
     margin-left: 6.25vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md2 {
     width: 12.5vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md2 {
     margin-left: 12.5vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md3 {
     width: 18.75vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md3 {
     margin-left: 18.75vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md4 {
     width: 25vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md4 {
     margin-left: 25vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md5 {
     width: 31.25vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md5 {
     margin-left: 31.25vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md6 {
     width: 37.5vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md6 {
     margin-left: 37.5vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md7 {
     width: 43.75vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md7 {
     margin-left: 43.75vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md8 {
     width: 50vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md8 {
     margin-left: 50vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md9 {
     width: 56.25vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md9 {
     margin-left: 56.25vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md10 {
     width: 62.5vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md10 {
     margin-left: 62.5vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md11 {
     width: 68.75vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md11 {
     margin-left: 68.75vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md12 {
     width: 75vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md12 {
     margin-left: 75vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md13 {
     width: 81.25vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md13 {
     margin-left: 81.25vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md14 {
     width: 87.5vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md14 {
     margin-left: 87.5vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md15 {
     width: 93.75vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md15 {
     margin-left: 93.75vw;
   }
 
-  /* line 77, ../sass/partials/_structure.scss */
+  /* line 78, ../sass/partials/_structure.scss */
   .col--md16 {
     width: 100vw;
   }
 
-  /* line 78, ../sass/partials/_structure.scss */
+  /* line 79, ../sass/partials/_structure.scss */
   .coloffset--md16 {
     margin-left: 100vw;
   }
 }
 @media (min-width: 1024px) {
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg1 {
     width: 6.25vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg1 {
     margin-left: 6.25vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg2 {
     width: 12.5vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg2 {
     margin-left: 12.5vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg3 {
     width: 18.75vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg3 {
     margin-left: 18.75vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg4 {
     width: 25vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg4 {
     margin-left: 25vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg5 {
     width: 31.25vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg5 {
     margin-left: 31.25vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg6 {
     width: 37.5vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg6 {
     margin-left: 37.5vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg7 {
     width: 43.75vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg7 {
     margin-left: 43.75vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg8 {
     width: 50vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg8 {
     margin-left: 50vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg9 {
     width: 56.25vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg9 {
     margin-left: 56.25vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg10 {
     width: 62.5vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg10 {
     margin-left: 62.5vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg11 {
     width: 68.75vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg11 {
     margin-left: 68.75vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg12 {
     width: 75vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg12 {
     margin-left: 75vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg13 {
     width: 81.25vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg13 {
     margin-left: 81.25vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg14 {
     width: 87.5vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg14 {
     margin-left: 87.5vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg15 {
     width: 93.75vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg15 {
     margin-left: 93.75vw;
   }
 
-  /* line 84, ../sass/partials/_structure.scss */
+  /* line 85, ../sass/partials/_structure.scss */
   .col--lg16 {
     width: 100vw;
   }
 
-  /* line 85, ../sass/partials/_structure.scss */
+  /* line 86, ../sass/partials/_structure.scss */
   .coloffset--lg16 {
     margin-left: 100vw;
   }
 }
 @media (min-width: 1300px) {
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl1 {
     width: 6.25vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl1 {
     margin-left: 6.25vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl2 {
     width: 12.5vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl2 {
     margin-left: 12.5vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl3 {
     width: 18.75vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl3 {
     margin-left: 18.75vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl4 {
     width: 25vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl4 {
     margin-left: 25vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl5 {
     width: 31.25vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl5 {
     margin-left: 31.25vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl6 {
     width: 37.5vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl6 {
     margin-left: 37.5vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl7 {
     width: 43.75vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl7 {
     margin-left: 43.75vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl8 {
     width: 50vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl8 {
     margin-left: 50vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl9 {
     width: 56.25vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl9 {
     margin-left: 56.25vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl10 {
     width: 62.5vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl10 {
     margin-left: 62.5vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl11 {
     width: 68.75vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl11 {
     margin-left: 68.75vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl12 {
     width: 75vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl12 {
     margin-left: 75vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl13 {
     width: 81.25vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl13 {
     margin-left: 81.25vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl14 {
     width: 87.5vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl14 {
     margin-left: 87.5vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl15 {
     width: 93.75vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl15 {
     margin-left: 93.75vw;
   }
 
-  /* line 91, ../sass/partials/_structure.scss */
+  /* line 92, ../sass/partials/_structure.scss */
   .col--xl16 {
     width: 100vw;
   }
 
-  /* line 92, ../sass/partials/_structure.scss */
+  /* line 93, ../sass/partials/_structure.scss */
   .coloffset--xl16 {
     margin-left: 100vw;
   }
 }
 /*embed responsively*/
-/* line 98, ../sass/partials/_structure.scss */
+/* line 99, ../sass/partials/_structure.scss */
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -2381,7 +2386,7 @@ html, body {
   overflow: hidden;
   max-width: 100%;
 }
-/* line 105, ../sass/partials/_structure.scss */
+/* line 106, ../sass/partials/_structure.scss */
 .embed-container iframe, .embed-container object, .embed-container embed {
   position: absolute;
   top: 0;
@@ -2391,26 +2396,26 @@ html, body {
 }
 
 /*text selection*/
-/* line 116, ../sass/partials/_structure.scss */
+/* line 117, ../sass/partials/_structure.scss */
 ::-moz-selection {
   background: #005eff;
   color: #ffffff;
 }
 
-/* line 120, ../sass/partials/_structure.scss */
+/* line 121, ../sass/partials/_structure.scss */
 ::selection {
   background: #005eff;
   color: #ffffff;
 }
 
-/* line 124, ../sass/partials/_structure.scss */
+/* line 125, ../sass/partials/_structure.scss */
 ::-moz-selection {
   background: #005eff;
   color: #ffffff;
 }
 
 /*remove autocomplete from webkit browsers*/
-/* line 131, ../sass/partials/_structure.scss */
+/* line 132, ../sass/partials/_structure.scss */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -2430,91 +2435,95 @@ select:-webkit-autofill:focus {
 }
 
 /*
- * containers
+ * z-index
  * —————————————————————————————————————————————————————————————————
 */
-/*section*/
-/* line 154, ../sass/partials/_structure.scss */
+/*
+ * section
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 159, ../sass/partials/_structure.scss */
 .section {
   padding: 120px 12.5vw;
 }
-/* line 157, ../sass/partials/_structure.scss */
+/* line 162, ../sass/partials/_structure.scss */
 .section__header {
   margin-bottom: 80px;
 }
-/* line 161, ../sass/partials/_structure.scss */
+/* line 166, ../sass/partials/_structure.scss */
 .section__comment {
   margin-bottom: 40px;
 }
-/* line 168, ../sass/partials/_structure.scss */
+/* line 173, ../sass/partials/_structure.scss */
 .section__desc {
   width: 66.666%;
   margin: 20px auto 0 auto;
 }
-/* line 176, ../sass/partials/_structure.scss */
+/* line 181, ../sass/partials/_structure.scss */
 .section__filter {
   margin-bottom: 20px;
 }
-/* line 180, ../sass/partials/_structure.scss */
+/* line 185, ../sass/partials/_structure.scss */
 .section__link {
   margin-top: 80px;
 }
-/* line 185, ../sass/partials/_structure.scss */
+/* line 190, ../sass/partials/_structure.scss */
 .section__link .link__title {
   margin-bottom: 20px;
 }
 
-/*section types*/
-/* line 196, ../sass/partials/_structure.scss */
+/*types*/
+/* line 201, ../sass/partials/_structure.scss */
 .section--header {
   padding-top: 200px;
 }
-/* line 200, ../sass/partials/_structure.scss */
+/* line 205, ../sass/partials/_structure.scss */
 .section--alt {
   padding-top: 0;
 }
 
-/*section color*/
-/* line 213, ../sass/partials/_structure.scss */
+/*colors*/
+/* line 218, ../sass/partials/_structure.scss */
 .section--primary {
   background-color: #005eff;
   color: #ffffff;
 }
-/* line 218, ../sass/partials/_structure.scss */
+/* line 223, ../sass/partials/_structure.scss */
 .section--grey {
   background-color: #f0f0f0;
 }
 
-/*section alignement*/
-/* line 225, ../sass/partials/_structure.scss */
+/*alignement*/
+/* line 230, ../sass/partials/_structure.scss */
 .section {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  align-items: center;
   text-align: center;
 }
-/* line 231, ../sass/partials/_structure.scss */
+/* line 235, ../sass/partials/_structure.scss */
 .section--left {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   text-align: left;
 }
-/* line 235, ../sass/partials/_structure.scss */
+/* line 239, ../sass/partials/_structure.scss */
 .section--left .section__desc {
   margin-left: 0;
 }
-/* line 240, ../sass/partials/_structure.scss */
+/* line 244, ../sass/partials/_structure.scss */
 .section--right {
   -webkit-align-items: flex-end;
   align-items: flex-end;
   text-align: right;
 }
 
-/*block*/
-/* line 248, ../sass/partials/_structure.scss */
+/*
+ * block
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 257, ../sass/partials/_structure.scss */
 .block {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
@@ -2536,31 +2545,35 @@ select:-webkit-autofill:focus {
 .accordion__item:nth-child(1) .accordion__header {
   padding-top: 0;
 }
-/* line 25, ../sass/partials/_tabs.scss */
+/* line 21, ../sass/partials/_tabs.scss */
+.accordion__item + .accordion__item {
+  border-top: 1px solid #005eff;
+}
+/* line 26, ../sass/partials/_tabs.scss */
 .accordion__header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  text-align: left;
   cursor: pointer;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
 }
-/* line 36, ../sass/partials/_tabs.scss */
+/* line 38, ../sass/partials/_tabs.scss */
 .accordion__title {
-  position: relative;
-  width: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  width: 66.666%;
 }
-/* line 44, ../sass/partials/_tabs.scss */
+/* line 42, ../sass/partials/_tabs.scss */
 .accordion__content {
   cursor: initial;
   display: none;
+  border-top: 1px solid #f0f0f0;
+}
+/* line 48, ../sass/partials/_tabs.scss */
+.accordion__actions {
+  display: -webkit-flex;
+  display: flex;
 }
 
 /* 
@@ -2626,3 +2639,14 @@ select:-webkit-autofill:focus {
 }
 
 /*background*/
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * JOIN
+ * —————————————————————————————————————————————————————————————————
+ * general
+ * —————————————————————————————————————————————————————————————————
+*/
+/*
+ * general
+ * —————————————————————————————————————————————————————————————————
+*/

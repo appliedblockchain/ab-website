@@ -555,6 +555,46 @@ optgroup {
 }
 /* 
  * —————————————————————————————————————————————————————————————————
+ * ACCORDIONS
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 14, ../sass/partials/_accordions.scss */
+.accordion__item {
+  width: 100%;
+}
+/* line 17, ../sass/partials/_accordions.scss */
+.accordion__item + .accordion__item {
+  border-top: 1px solid #d7d7dc;
+}
+/* line 22, ../sass/partials/_accordions.scss */
+.accordion__header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  text-align: left;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+/* line 35, ../sass/partials/_accordions.scss */
+.accordion__title {
+  width: 66.666%;
+}
+/* line 39, ../sass/partials/_accordions.scss */
+.accordion__content {
+  cursor: initial;
+  display: none;
+}
+/* line 44, ../sass/partials/_accordions.scss */
+.accordion__actions {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
  * BUTTONS
  * —————————————————————————————————————————————————————————————————
  * general
@@ -2535,46 +2575,32 @@ select:-webkit-autofill:focus {
 
 /* 
  * —————————————————————————————————————————————————————————————————
- * ACCORDIONS
+ * TABS
  * —————————————————————————————————————————————————————————————————
 */
-/* line 15, ../sass/partials/_tabs.scss */
-.accordion__item {
-  width: 100%;
+/* line 11, ../sass/partials/_tabs.scss */
+.tab {
+  overflow: hidden;
 }
-/* line 17, ../sass/partials/_tabs.scss */
-.accordion__item:nth-child(1) .accordion__header {
-  padding-top: 0;
+/* line 16, ../sass/partials/_tabs.scss */
+.tab__nav .nav__btn {
+  display: inline-block;
 }
 /* line 21, ../sass/partials/_tabs.scss */
-.accordion__item + .accordion__item {
-  border-top: 1px solid #005eff;
+.tab__content {
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease;
+  -webkit-transition-delay: 0s;
+  transition: all 0.4s ease 0s;
 }
-/* line 26, ../sass/partials/_tabs.scss */
-.accordion__header {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  text-align: left;
-  cursor: pointer;
-}
-/* line 38, ../sass/partials/_tabs.scss */
-.accordion__title {
-  width: 66.666%;
-}
-/* line 42, ../sass/partials/_tabs.scss */
-.accordion__content {
-  cursor: initial;
+/* line 25, ../sass/partials/_tabs.scss */
+.tab__item {
   display: none;
-  border-top: 1px solid #f0f0f0;
 }
-/* line 48, ../sass/partials/_tabs.scss */
-.accordion__actions {
-  display: -webkit-flex;
-  display: flex;
+/* line 28, ../sass/partials/_tabs.scss */
+.tab__item:nth-child(1) {
+  display: block;
 }
 
 /* 
@@ -2648,6 +2674,10 @@ select:-webkit-autofill:focus {
  * —————————————————————————————————————————————————————————————————
 */
 /*
- * general
+ * jobs
  * —————————————————————————————————————————————————————————————————
 */
+/* line 20, ../sass/pages/_join.scss */
+.jobs {
+  padding: 0;
+}

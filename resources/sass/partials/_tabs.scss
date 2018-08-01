@@ -4,51 +4,29 @@
 
 /* 
  * —————————————————————————————————————————————————————————————————
- * ACCORDIONS
+ * TABS
  * —————————————————————————————————————————————————————————————————
 */
 
+.tab {
+	overflow: hidden;
 
+	&__nav {
 
-.accordion {
-
-	&__item {
-		width: 100%;
-		&:nth-child(1) .accordion__header {
-			padding-top: 0;
+		.nav__btn {
+			display: inline-block;
 		}
-
-		& + & {
-			border-top: 1px solid $primary;
-		}
-	}
-
-	&__header {
-	    @include display-flex();
-    	@include align-items(center);
-		@include justify-content(space-between);
-		text-align: left;
-		cursor: pointer;
-	}
-
-	&__icon {
-		
-	}
-
-	&__title {
-		width: 66.666%;
 	}
 
 	&__content {
-		cursor: initial;
+	    @include transition(all 0.4s ease 0s);
+	}
+
+	&__item {
 		display: none;
-		border-top: 1px solid $grey;
+
+		&:nth-child(1) {
+			display: block;
+		}
 	}
-
-	&__actions {
-		@include display-flex();
-	}
-
-	
-
 }

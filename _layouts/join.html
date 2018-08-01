@@ -25,34 +25,63 @@
         </div>
 
         <div class="section__content">
-            <div class="section__filter">
-                <a href="" class="button button--primary-darken button--animate fa fa-check">
-                    <p class="button__inner">London</p>
-                </a>
-                <a href="" class="button button--primary">
-                    <p class="button__inner">Porto</p>
-                </a>
-            </div>
-            <div class="block accordion jobs">
-                {% for job in site.data.jobs %}
-                    <div class="accordion__item">
-                        <div class="accordion__header">
-                            <p class="accordion__title body--bold">{{ job.title }}</p>
-                            <p>{{ job.type }}</p>
-                            <div class="accordion__actions">
-                                <span class="button button--primary button--small button--animate fa fa-edit">
-                                    <p class="button__inner">Apply</p>
-                                </span>
-                                <span class="button button--icon button--highlight button--small">
-                                    <i class="fa fa-plus"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <p class="accordion__content">
-                                {{ job.description }}
-                        </p>
+            <div class="tab tab--vertical">
+                <div class="section__filter tab__nav">
+                    <div class="nav__btn nav__btn--active">
+                        <a href="#tab1" class="button button--primary-darken button--animate fa fa-check">
+                            <p class="button__inner">London</p>
+                        </a>
                     </div>
-                {% endfor %}
+                    <div class="nav__btn">
+                        <a href="#tab2" class="button button--primary">
+                            <p class="button__inner">Porto</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab__content block accordion jobs">
+                    <div id="tab1" class="tab__item">
+                        {% for job in site.data.jobs %}
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <p class="accordion__title body--bold">{{ job.title }}</p>
+                                    <p>{{ job.type }}</p>
+                                    <div class="accordion__actions">
+                                        <span class="button button--primary button--small button--animate fa fa-edit">
+                                            <p class="button__inner">Apply</p>
+                                        </span>
+                                        <span class="button button--icon button--highlight button--small">
+                                            <i class="fa fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="accordion__content">
+                                    {{ job.description }}
+                                </p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div id="tab2" class="tab__item">
+                        {% for job in site.data.jobs %}
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <p class="accordion__title body--bold">{{ job.title }}</p>
+                                    <p>{{ job.type }}</p>
+                                    <div class="accordion__actions">
+                                        <span class="button button--primary button--small button--animate fa fa-edit">
+                                            <p class="button__inner">Apply</p>
+                                        </span>
+                                        <span class="button button--icon button--highlight button--small">
+                                            <i class="fa fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="accordion__content">
+                                    {{ job.description }}
+                                </p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </div>
 

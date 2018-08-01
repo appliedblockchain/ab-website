@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 // horizontal
 
-$(".tab--vertical .tab__nav .btn").click(function(event) {
+$(".tab--vertical .tab__nav a").click(function(event) {
 	event.preventDefault();
 	$(this).parent().addClass(".tab--vertical nav__btn--active");
 	$(this).parent().siblings().removeClass(".tab--vertical nav__btn--active");
@@ -29,7 +29,7 @@ $(".tab--vertical .tab__nav .btn").click(function(event) {
 
 // vertical
 
-$(".tab--horizontal .tab__nav .btn").click(function(event) {
+$(".tab--horizontal .tab__nav a").click(function(event) {
 	event.preventDefault();
 	$(this).parent().addClass(".tab--horizontal nav__btn--active");
 	$(this).parent().siblings().removeClass(".tab--horizontal nav__btn--active");

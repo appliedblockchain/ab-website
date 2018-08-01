@@ -65,8 +65,18 @@ html, body {
 	@include fontSize(0.8, $font-black, normal);
 }
 
+/*buttons*/
+
+.button {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: auto;
+    line-height: 1;
+}
+
 .button__inner {
 	@include fontSize(1, $font-black, normal);
+	font-family: $font;
 	letter-spacing: 0.05rem;
 
 	.button--large & {
@@ -80,6 +90,8 @@ html, body {
 		line-height: 1.5;
 	}
 }
+
+/*col text*/
 
 @for $i from 1 through 4 {
 	.col-text--#{$i} {

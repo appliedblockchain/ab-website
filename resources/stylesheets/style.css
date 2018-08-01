@@ -558,6 +558,7 @@ optgroup {
  * BUTTONS
  * —————————————————————————————————————————————————————————————————
  * general
+ * animate
  * icon
  * close
  * menu
@@ -567,99 +568,161 @@ optgroup {
  * general
  * —————————————————————————————————————————————————————————————————
 */
-/* line 23, ../sass/partials/_buttons.scss */
+/* line 24, ../sass/partials/_buttons.scss */
 .button {
-  -moz-transition: color 0.4s ease 0s, border 0.4s ease 0s, -moz-transform 0.4s ease 0s, opacity 0.6s ease 0s;
-  -o-transition: color 0.4s ease 0s, border 0.4s ease 0s, -o-transform 0.4s ease 0s, opacity 0.6s ease 0s;
-  -webkit-transition: color 0.4s ease, border 0.4s ease, -webkit-transform 0.4s ease, opacity 0.6s ease;
-  -webkit-transition-delay: 0s, 0s, 0s, 0s;
-  transition: color 0.4s ease 0s, border 0.4s ease 0s, transform 0.4s ease 0s, opacity 0.6s ease 0s;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
   display: inline-block;
-  position: relative;
   cursor: pointer;
-  will-change: transform;
-  padding: 10px 20px;
+  padding: 12px 24px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
 }
 /* line 32, ../sass/partials/_buttons.scss */
-.button:before {
-  z-index: 1;
-}
-/* line 36, ../sass/partials/_buttons.scss */
 .button__inner {
-  z-index: 2;
-  position: relative;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transition: color 0.4s ease 0s, -moz-transform 0.4s ease 0s;
+  -o-transition: color 0.4s ease 0s, -o-transform 0.4s ease 0s;
+  -webkit-transition: color 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition-delay: 0s, 0s;
+  transition: color 0.4s ease 0s, transform 0.4s ease 0s;
+  display: block;
   text-transform: uppercase;
+}
+
+/*
+ * animate
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 48, ../sass/partials/_buttons.scss */
+.button--animate:before {
+  -moz-transition: -moz-transform 0.4s ease 0s;
+  -o-transition: -o-transform 0.4s ease 0s;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -webkit-transition-delay: 0s;
+  transition: transform 0.4s ease 0s;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: -140%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* line 57, ../sass/partials/_buttons.scss */
+.button--animate:hover:before, .button--animate:hover .button__inner {
+  -moz-transform: translateX(140%);
+  -ms-transform: translateX(140%);
+  -webkit-transform: translateX(140%);
+  transform: translateX(140%);
 }
 
 /*
  * color variant
  * —————————————————————————————————————————————————————————————————
 */
-/* line 52, ../sass/partials/_buttons.scss */
-.button--primary, .button--primary-lighten, .button--primary-darken {
+/* line 164, ../sass/modules/_mixins.scss */
+.button--primary {
   background-color: #005eff;
+  border-color: #005eff;
   color: #ffffff;
 }
-/* line 56, ../sass/partials/_buttons.scss */
+/* line 168, ../sass/modules/_mixins.scss */
 .button--primary-lighten {
   background-color: #4d8eff;
+  border-color: #4d8eff;
+  color: #ffffff;
 }
-/* line 61, ../sass/partials/_buttons.scss */
+/* line 173, ../sass/modules/_mixins.scss */
 .button--primary-darken {
   background-color: #0042b3;
+  border-color: #0042b3;
+  color: #ffffff;
 }
-/* line 67, ../sass/partials/_buttons.scss */
-.button--secondary, .button--secondary-lighten, .button--secondary-darken {
+
+/* line 164, ../sass/modules/_mixins.scss */
+.button--secondary {
   background-color: #64f0ff;
+  border-color: #64f0ff;
   color: #005eff;
 }
-/* line 71, ../sass/partials/_buttons.scss */
+/* line 168, ../sass/modules/_mixins.scss */
 .button--secondary-lighten {
   background-color: #b1f7ff;
+  border-color: #b1f7ff;
+  color: #005eff;
 }
-/* line 76, ../sass/partials/_buttons.scss */
+/* line 173, ../sass/modules/_mixins.scss */
 .button--secondary-darken {
   background-color: #18e9ff;
+  border-color: #18e9ff;
+  color: #005eff;
 }
-/* line 82, ../sass/partials/_buttons.scss */
-.button--dark, .button--dark-lighten, .button--dark-darken {
-  background-color: #000076;
-  color: #ffffff;
-}
-/* line 86, ../sass/partials/_buttons.scss */
-.button--dark-lighten {
-  background-color: #0000c3;
-}
-/* line 91, ../sass/partials/_buttons.scss */
-.button--dark-darken {
-  background-color: #00002a;
-}
-/* line 97, ../sass/partials/_buttons.scss */
-.button--highlight, .button--highlight-lighten, .button--highlight-darken {
+
+/* line 164, ../sass/modules/_mixins.scss */
+.button--highlight {
   background-color: #ff6f00;
+  border-color: #ff6f00;
   color: #ffffff;
 }
-/* line 101, ../sass/partials/_buttons.scss */
+/* line 168, ../sass/modules/_mixins.scss */
 .button--highlight-lighten {
   background-color: #ff9a4d;
+  border-color: #ff9a4d;
+  color: #ffffff;
 }
-/* line 106, ../sass/partials/_buttons.scss */
+/* line 173, ../sass/modules/_mixins.scss */
 .button--highlight-darken {
   background-color: #b34e00;
+  border-color: #b34e00;
+  color: #ffffff;
+}
+
+/* line 164, ../sass/modules/_mixins.scss */
+.button--dark {
+  background-color: #000076;
+  border-color: #000076;
+  color: #ffffff;
+}
+/* line 168, ../sass/modules/_mixins.scss */
+.button--dark-lighten {
+  background-color: #0000c3;
+  border-color: #0000c3;
+  color: #ffffff;
+}
+/* line 173, ../sass/modules/_mixins.scss */
+.button--dark-darken {
+  background-color: #00002a;
+  border-color: #00002a;
+  color: #ffffff;
 }
 
 /*
  * size
  * —————————————————————————————————————————————————————————————————
 */
-/* line 122, ../sass/partials/_buttons.scss */
+/* line 85, ../sass/partials/_buttons.scss */
 .button--large {
-  padding: 10px 25px;
+  padding: 18px 36px;
 }
-/* line 126, ../sass/partials/_buttons.scss */
+/* line 89, ../sass/partials/_buttons.scss */
 .button--small {
   padding: 6px 15px;
 }
@@ -668,7 +731,7 @@ optgroup {
  * icon
  * —————————————————————————————————————————————————————————————————
 */
-/* line 138, ../sass/partials/_buttons.scss */
+/* line 101, ../sass/partials/_buttons.scss */
 .button--icon {
   width: 1.5625vw;
   height: 1.5625vw;
@@ -690,12 +753,12 @@ optgroup {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 153, ../sass/partials/_buttons.scss */
+/* line 116, ../sass/partials/_buttons.scss */
 .button--icon:hover {
   color: #000a1e;
   border-width: 0.78125vw;
 }
-/* line 158, ../sass/partials/_buttons.scss */
+/* line 121, ../sass/partials/_buttons.scss */
 .button--icon.button--large {
   width: 3.125vw;
   height: 3.125vw;
@@ -703,7 +766,7 @@ optgroup {
   min-height: 40px;
   font-size: 1.6rem;
 }
-/* line 164, ../sass/partials/_buttons.scss */
+/* line 127, ../sass/partials/_buttons.scss */
 .button--icon.button--large:hover {
   border-width: 1.5625vw;
 }
@@ -712,7 +775,7 @@ optgroup {
  * close
  * —————————————————————————————————————————————————————————————————
 */
-/* line 179, ../sass/partials/_buttons.scss */
+/* line 142, ../sass/partials/_buttons.scss */
 .button--close:before, .button--close:after {
   margin-top: -2px;
   background-color: #000a1e;
@@ -737,21 +800,21 @@ optgroup {
   width: 30px;
   height: 7px;
 }
-/* line 188, ../sass/partials/_buttons.scss */
+/* line 151, ../sass/partials/_buttons.scss */
 .button--close.rotate:before {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 192, ../sass/partials/_buttons.scss */
+/* line 155, ../sass/partials/_buttons.scss */
 .button--close.rotate:after {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 196, ../sass/partials/_buttons.scss */
+/* line 159, ../sass/partials/_buttons.scss */
 .button--close.rotate:hover:before, .button--close.rotate:hover:after {
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -763,7 +826,7 @@ optgroup {
  * menu
  * —————————————————————————————————————————————————————————————————
 */
-/* line 209, ../sass/partials/_buttons.scss */
+/* line 172, ../sass/partials/_buttons.scss */
 .button--menu {
   display: none;
   cursor: pointer;
@@ -772,7 +835,7 @@ optgroup {
   -webkit-animation: btn--menu--opacity 0.8s ease 0s;
   animation: btn--menu--opacity 0.8s ease 0s;
 }
-/* line 214, ../sass/partials/_buttons.scss */
+/* line 177, ../sass/partials/_buttons.scss */
 .button--menu:before, .button--menu:after {
   background-color: #ffffff;
   content: "";
@@ -793,12 +856,12 @@ optgroup {
   border-radius: 0.15rem;
 }
 @media (pointer: coarse) {
-  /* line 214, ../sass/partials/_buttons.scss */
+  /* line 177, ../sass/partials/_buttons.scss */
   .button--menu:before, .button--menu:after {
     content: none;
   }
 }
-/* line 223, ../sass/partials/_buttons.scss */
+/* line 186, ../sass/partials/_buttons.scss */
 .button--menu:before {
   -moz-transform: translateY(5px);
   -ms-transform: translateY(5px);
@@ -808,7 +871,7 @@ optgroup {
   -webkit-animation: btn--menu--close--before 0.8s ease;
   animation: btn--menu--close--before 0.8s ease;
 }
-/* line 227, ../sass/partials/_buttons.scss */
+/* line 190, ../sass/partials/_buttons.scss */
 .button--menu:after {
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
@@ -818,7 +881,7 @@ optgroup {
   -webkit-animation: btn--menu--close--after 0.8s ease;
   animation: btn--menu--close--after 0.8s ease;
 }
-/* line 232, ../sass/partials/_buttons.scss */
+/* line 195, ../sass/partials/_buttons.scss */
 .button--menu .button__inner {
   width: 20px;
   height: 2px;
@@ -833,21 +896,21 @@ optgroup {
   -webkit-border-radius: 0.15rem;
   border-radius: 0.15rem;
 }
-/* line 242, ../sass/partials/_buttons.scss */
+/* line 205, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:before {
   transform: rotate(45deg);
   -moz-animation: btn--menu--open--before 0.8s ease;
   -webkit-animation: btn--menu--open--before 0.8s ease;
   animation: btn--menu--open--before 0.8s ease;
 }
-/* line 246, ../sass/partials/_buttons.scss */
+/* line 209, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:after {
   transform: rotate(-45deg);
   -moz-animation: btn--menu--open--after 0.8s ease;
   -webkit-animation: btn--menu--open--after 0.8s ease;
   animation: btn--menu--open--after 0.8s ease;
 }
-/* line 251, ../sass/partials/_buttons.scss */
+/* line 214, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open .button__inner {
   opacity: 0;
 }
@@ -939,15 +1002,25 @@ html, body {
   font-style: normal;
 }
 
-/* line 68, ../sass/partials/_fonts.scss */
+/*buttons*/
+/* line 70, ../sass/partials/_fonts.scss */
+.button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* line 77, ../sass/partials/_fonts.scss */
 .button__inner {
   font-size: 1rem;
   letter-spacing: 0.02rem;
   font-weight: 900;
   font-style: normal;
+  font-family: "Chivo", Verdana, Geneva, sans-serif;
   letter-spacing: 0.05rem;
 }
-/* line 72, ../sass/partials/_fonts.scss */
+/* line 82, ../sass/partials/_fonts.scss */
 .button--large .button__inner {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -955,7 +1028,7 @@ html, body {
   font-style: normal;
   letter-spacing: 0.08rem;
 }
-/* line 77, ../sass/partials/_fonts.scss */
+/* line 87, ../sass/partials/_fonts.scss */
 .button--small .button__inner {
   font-size: 0.8rem;
   letter-spacing: 0.016rem;
@@ -965,7 +1038,8 @@ html, body {
   line-height: 1.5;
 }
 
-/* line 85, ../sass/partials/_fonts.scss */
+/*col text*/
+/* line 97, ../sass/partials/_fonts.scss */
 .col-text--1 {
   -moz-column-count: 1;
   -webkit-column-count: 1;
@@ -975,7 +1049,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 85, ../sass/partials/_fonts.scss */
+  /* line 97, ../sass/partials/_fonts.scss */
   .col-text--1 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -983,7 +1057,7 @@ html, body {
   }
 }
 
-/* line 85, ../sass/partials/_fonts.scss */
+/* line 97, ../sass/partials/_fonts.scss */
 .col-text--2 {
   -moz-column-count: 2;
   -webkit-column-count: 2;
@@ -993,7 +1067,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 85, ../sass/partials/_fonts.scss */
+  /* line 97, ../sass/partials/_fonts.scss */
   .col-text--2 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1001,7 +1075,7 @@ html, body {
   }
 }
 
-/* line 85, ../sass/partials/_fonts.scss */
+/* line 97, ../sass/partials/_fonts.scss */
 .col-text--3 {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -1011,7 +1085,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 85, ../sass/partials/_fonts.scss */
+  /* line 97, ../sass/partials/_fonts.scss */
   .col-text--3 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1019,7 +1093,7 @@ html, body {
   }
 }
 
-/* line 85, ../sass/partials/_fonts.scss */
+/* line 97, ../sass/partials/_fonts.scss */
 .col-text--4 {
   -moz-column-count: 4;
   -webkit-column-count: 4;
@@ -1029,7 +1103,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 85, ../sass/partials/_fonts.scss */
+  /* line 97, ../sass/partials/_fonts.scss */
   .col-text--4 {
     -moz-column-count: 1;
     -webkit-column-count: 1;

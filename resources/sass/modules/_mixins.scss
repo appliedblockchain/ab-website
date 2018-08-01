@@ -10,7 +10,7 @@
 // buttons
 // fonts
 // forms
-// tooltip
+// buttons
 // —————————————————————————————————————————————————————————————————
 
 
@@ -141,3 +141,50 @@
 }
 
 
+
+// —————————————————————————————————————————————————————————————————
+// forms
+// —————————————————————————————————————————————————————————————————
+
+@mixin placeholder {
+	:-moz-placeholder { @content; }
+	::-moz-placeholder { @content; }
+	:-ms-input-placeholder { @content; }
+	::-webkit-input-placeholder { @content; } 
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// buttons
+// —————————————————————————————————————————————————————————————————
+
+@mixin btn-color($prefix, $colors...) {
+	@each $i in $colors {
+		.#{$prefix}#{nth($i, 1)} {
+			background-color: nth($i, 2);
+			border-color: nth($i, 2);
+			color: nth($i, 3);
+			&-lighten {
+				background-color: lighten(nth($i, 2), 15%);
+				border-color: lighten(nth($i, 2), 15%);
+				color: nth($i, 3);
+			}
+			&-darken {
+				background-color: darken(nth($i, 2), 15%);
+				border-color: darken(nth($i, 2), 15%);
+				color: nth($i, 3);
+			}
+		}
+	}
+}
+
+@mixin btnCloseColor($prefix, $colors...) {
+	@each $i in $colors {
+		.#{$prefix}#{nth($i, 1)} {
+			&::before, &::after {
+				background-color: nth($i, 2);
+			}
+		}
+	}
+}

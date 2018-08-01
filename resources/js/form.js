@@ -6,11 +6,8 @@ $(document).ready(function() {
 // FORM
 // —————————————————————————————————————————————————————————————————
 // CHANGE STYLE ON FOCUS
-// DATEPICKER
-// DATEPICKER RANGE
 // CUSTOM SELECT
 // CUSTOM FILE UPLOAD
-// NUMBER
 // —————————————————————————————————————————————————————————————————
 
 
@@ -228,57 +225,6 @@ $('.form__dropdown').bind('mousewheel DOMMouseScroll', function(e) {
 	}(jQuery));
 
 	$('input[type=file]').customFile();
-
-
-
-// —————————————————————————————————————————————————————————————————
-// NUMBER
-// —————————————————————————————————————————————————————————————————
-
-(function() {
- 
-	window.inputNumber = function(el) {
-
-		var min = el.attr('min') || false;
-		var max = el.attr('max') || false;
-
-		var els = {};
-
-		els.dec = el.prev();
-		els.inc = el.next();
-
-		el.each(function() {
-			init($(this));
-		});
-
-		function init(el) {
-
-			els.dec.on('click', decrement);
-			els.inc.on('click', increment);
-
-			function decrement() {
-				var value = el[0].value;
-				value--;
-				if(!min || value >= min) {
-					el[0].value = value;
-				}
-			}
-
-			function increment() {
-				var value = el[0].value;
-				value++;
-				if(!max || value <= max) {
-					el[0].value = value++;
-				}
-			}
-		}
-	}
-})();
-
-inputNumber($('.form__number .form__input'));
-// inputNumber($('.form__number--2 .form__input'));
-// etc.
-
 
 
 

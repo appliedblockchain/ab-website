@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * FONTS
+ * —————————————————————————————————————————————————————————————————
+ * general
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+/* 
+ * general
+ * —————————————————————————————————————————————————————————————————
+*/
+
+html, body {
+	font-family: $font;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: $font-light;
+	color: $black;
+}
+
+.headline {
+	@include fontSize(3, $font-black, normal);
+	text-transform: uppercase;
+}
+
+.title {
+	@include fontSize(2.5, $font-bold, normal);	
+}
+
+.subtitle {
+	@include fontSize(2, $font-bold, normal);
+}
+
+.comment {
+	@include fontSize(1.5, $font-light, normal);
+	text-transform: uppercase;
+}
+
+.quote {
+	@include fontSize(1.5, $font-light, normal);
+}
+
+.lead {
+	@include fontSize(1.5, $font-regular, normal);	
+}
+
+.body {
+	
+	&--large {
+		font-size: 1.25rem;
+	}
+	&--small {
+		font-size: 0.8rem;
+	}
+}
+
+.label {
+	@include fontSize(0.8, $font-black, normal);
+}
+
+.button__inner {
+	@include fontSize(1, $font-black, normal);
+	letter-spacing: 0.05rem;
+
+	.button--large & {
+		@include fontSize(1.5, $font-black, normal);
+		letter-spacing: 0.08rem;
+	}
+
+	.button--small & {
+		@include fontSize(0.8, $font-black, normal);
+		letter-spacing: 0.04rem;
+		line-height: 1.5;
+	}
+}
+
+@for $i from 1 through 4 {
+	.col-text--#{$i} {
+		@include column-count($i);
+		@include column-gap(2rem);
+		@include responsive(max-width, $break-tablets-max) {
+			@include column-count(1);
+		}
+	}
+}

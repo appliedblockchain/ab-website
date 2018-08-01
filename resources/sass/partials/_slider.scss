@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * SLIDER
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.slider {
+	height: 500px;
+	position: relative;
+
+	&__content {
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(center);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-align: center;
+		color: $white;
+	}
+}
+
+.slides {
+	height: 100%;
+
+	&__item {
+		@include background(center center, contain);
+		height: 100%;
+		/* Hide the slides before the JS is loaded. Avoids image jumping */
+		display: none;
+		-webkit-backface-visibility: hidden;
+	}
+
+	&__control-nav {
+		display: none;
+	}
+
+	&__direction-nav {
+
+		a {
+			@include border-radius(50%);
+			width: $integer*2;
+			height: $integer*2;
+			position: absolute;
+			margin-top: -$integer;
+			top: 50%;
+			cursor: pointer;
+			z-index: 10;
+			&:before {
+				font-size: 1.5rem;
+			}
+		}
+
+		.slides__prev, .slides__next {
+			@include display-flex();
+			@include align-items(center);
+			@include justify-content(center);
+		}
+
+		.slides__prev {
+			left: $integer;
+			&:before {
+				@include fontAwesome("\f104", auto, auto, auto, $integer*0.75, $primary);
+			}
+		}
+
+		.slides__next {
+			right: $integer;
+			&:before {
+				@include fontAwesome("\f105", auto, $integer*0.75, auto, auto, $primary);
+			}
+		}
+	}
+}

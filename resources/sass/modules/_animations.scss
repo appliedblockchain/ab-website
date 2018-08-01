@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * ANIMATIONS
+ * —————————————————————————————————————————————————————————————————
+ * general
+ * btn menu
+ * fade in gallery images
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+/* 
+ * general
+ * —————————————————————————————————————————————————————————————————
+*/
+
+@include keyframes(fade-in) {
+	from 	{ opacity:0; } 
+	to 		{ opacity:1; } 
+}
+
+
+
+/* 
+ * btn menu
+ * —————————————————————————————————————————————————————————————————
+*/
+
+/*btn apparition*/
+@include keyframes(btn--menu--opacity) {
+	0% 		{ opacity: 0; }
+	50% 	{ opacity: 0; }
+	100% 	{ opacity: 100%; }
+}
+
+/*lines > close*/
+@include keyframes(btn--menu--open--before) {
+	0% 		{ transform: translateY(5px); }
+	50% 	{ transform: translateY(0); 
+			  transform: rotate(0); }
+	100% 	{ transform: rotate(45deg); }
+}
+@include keyframes(btn--menu--open--after) {
+	0% 		{ transform: translateY(-5px); }
+	50% 	{ transform: translateY(0); 
+			  transform: rotate(0); }
+	100% 	{ transform: rotate(-45deg); }
+}
+
+/*close > lines*/
+@include keyframes(btn--menu--close--before) {
+	0% 		{ transform: rotate(45deg); }
+	50% 	{ transform: rotate(0); 
+			  transform: translateY(0); }
+	100% 	{ transform: translateY(5px); }
+}
+@include keyframes(btn--menu--close--after) {
+	0% 		{ transform: rotate(-45deg); }
+	50% 	{ transform: rotate(0); 
+			  transform: translateY(0); }
+	100% 	{ transform: translateY(-5px); }
+}
+
+
+

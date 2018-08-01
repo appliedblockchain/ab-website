@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * BUTTONS
+ * —————————————————————————————————————————————————————————————————
+ * general
+ * icon
+ * close
+ * menu
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+/*
+ * general
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.button {
+	@include transition(color 0.4s ease 0s, border 0.4s ease 0s, transform 0.4s ease 0s, opacity 0.6s ease 0s);
+	@include border-radius(100px);
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	will-change: transform;
+	padding: 10px 20px;
+
+	&:before {
+		z-index: 1;
+	}
+
+	&__inner {
+		z-index: 2;
+		position: relative;
+		text-transform: uppercase;
+	}
+}
+
+
+
+/*
+ * color variant
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.button {
+
+	&--primary {
+		background-color: $primary;
+		color: $white;
+
+		&-lighten {
+			@extend .button--primary;
+			background-color: lighten($primary, 15%);
+		}
+
+		&-darken {
+			@extend .button--primary;
+			background-color: darken($primary, 15%);
+		}
+	}
+
+	&--secondary {
+		background-color: $secondary;
+		color: $primary;
+
+		&-lighten {
+			@extend .button--secondary;
+			background-color: lighten($secondary, 15%);
+		}
+
+		&-darken {
+			@extend .button--secondary;
+			background-color: darken($secondary, 15%);
+		}
+	}
+
+	&--dark {
+		background-color: $dark;
+		color: $white;
+
+		&-lighten {
+			@extend .button--dark;
+			background-color: lighten($dark, 15%);
+		}
+
+		&-darken {
+			@extend .button--dark;
+			background-color: darken($dark, 15%);
+		}
+	}
+
+	&--highlight {
+		background-color: $highlight;
+		color: $white;
+
+		&-lighten {
+			@extend .button--highlight;
+			background-color: lighten($highlight, 15%);
+		}
+
+		&-darken {
+			@extend .button--highlight;
+			background-color: darken($highlight, 15%);
+		}
+	}
+}
+
+
+
+/*
+ * size
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.button {
+
+	&--large {
+		padding: 10px 25px;
+	}
+
+	&--small {
+		padding: 6px 15px;
+	}
+}
+
+
+
+/*
+ * icon
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.button--icon {
+	width: $col/4;
+	height: $col/4;
+	min-width: $integer;
+	min-height: $integer;
+	padding: 0;
+	font-size: 0.8rem;
+	line-height: 1;
+	border: 1px solid $white;
+	color: $white;
+	will-change: transform;
+	@include border-radius(50%);
+	@include display-flex();
+	@include justify-content(center);
+	@include align-items(center);
+	&:hover {
+		color: $black;
+		border-width: $col/8;
+	}
+
+	&.button--large {
+		width: $col/2;
+		height: $col/2;
+		min-width: $integer*2;
+		min-height: $integer*2;
+		font-size: 1.6rem;
+		&:hover {
+			border-width: $col/4;
+		}
+	}
+
+}
+
+
+
+/*
+ * close
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.button--close {
+	&:before, &:after {
+		margin-top: -2px;
+		background-color: $black;
+		@include transform(rotate(0deg));
+		@include transition (transform 0.4s ease 0s);
+		@include border-radius(0.15rem);
+		@include pseudo-element('', 50%, auto, auto, auto, 30px, 7px);
+	}
+
+	&.rotate:before {
+		@include transform(rotate(45deg));
+	}
+
+	&.rotate:after {
+		@include transform(rotate(-45deg));
+	}
+
+	&.rotate:hover:before, &.rotate:hover:after {
+		@include transform(rotate(0deg));
+	}
+	
+}
+
+
+
+/*
+ * menu
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.button--menu {
+	display: none;
+	cursor: pointer;
+	margin-top: 5px;
+	@include animation(btn--menu--opacity 0.8s ease 0s);
+	&:before, &:after {
+		background-color: $white;
+		@include pseudo-element('', 50%, auto, auto, auto, 20px, 2px);
+		@include transition(transform 0.4s ease 0s);
+		@include border-radius(0.15rem);
+		@include responsive-mobile-devices() {
+			content: none;
+		}
+	}
+	&:before {
+		@include transform(translateY(5px));
+		@include animation(btn--menu--close--before 0.8s ease);
+	}
+	&:after {
+		@include transform(translateY(-5px));
+		@include animation(btn--menu--close--after 0.8s ease);
+	}
+
+	.button__inner {
+		width: 20px;
+		height: 2px;
+		background-color: $white;
+		position: absolute;
+		@include transition(opacity 0s ease 0.4s);
+		@include border-radius(0.15rem);
+	}
+
+	&.button--menu--open {
+		&:before {
+			transform: rotate(45deg); 
+			@include animation(btn--menu--open--before 0.8s ease);
+		}
+		&:after {
+			transform: rotate(-45deg); 
+			@include animation(btn--menu--open--after 0.8s ease);
+		}
+
+		.button__inner {
+			opacity: 0;
+		}
+	}
+}

@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * STRUCTURE
+ * —————————————————————————————————————————————————————————————————
+ * general
+ * containers
+ * z-index
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+.hide-mobile {
+	@include responsive-mobile-devices() {
+		display: none !important;
+	}
+}
+
+/*
+ * general
+ * —————————————————————————————————————————————————————————————————
+*/
+
+* {
+	outline: none;
+	@include box-sizing(border-box);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.row {
+	margin: 0 (-$col-padding);
+	@include display-flex();
+	@include flex-wrap(wrap);
+
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.clear:after {
+	@extend .row:after;
+}
+
+[class*="col--"] {
+	background-color: grey;
+	float: left;
+	padding: 0 $col-padding;
+	position: relative;
+	width: 100%;
+}
+
+@for $i from 1 through 16 {
+	.col--#{$i} 				{ width: $i*$col; }
+	.coloffset--#{$i} 			{ margin-left: $i*$col; }
+}
+
+@include responsive(min-width, $break-phones-min) {
+	@for $i from 1 through 16 {
+		.col--sm#{$i} 			{ width: $i*$col; }
+		.coloffset--sm#{$i} 	{ margin-left: $i*$col; }
+	}
+}
+
+@include responsive(min-width, $break-tablets-min) {
+	@for $i from 1 through 16 {
+		.col--md#{$i} 			{ width: $i*$col; }
+		.coloffset--md#{$i} 	{ margin-left: $i*$col; }
+	}
+}
+
+@include responsive(min-width, $break-desktop-min) {
+	@for $i from 1 through 16 {
+		.col--lg#{$i} 			{ width: $i*$col; }
+		.coloffset--lg#{$i} 	{ margin-left: $i*$col; }
+	}
+}
+
+@include responsive(min-width, $break-large-desktop-min) {
+	@for $i from 1 through 16 {
+		.col--xl#{$i} 			{ width: $i*$col; }
+		.coloffset--xl#{$i} 	{ margin-left: $i*$col; }
+	}
+}
+
+/*embed responsively*/
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+
+	iframe, object, embed { 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%; 
+	}
+}
+
+/*text selection*/
+
+::-moz-selection {
+	background: $primary;
+	color: $white;
+}
+::selection {
+	background: $primary;
+	color: $white;
+}
+::-moz-selection {
+	background: $primary;
+	color: $white;
+}
+
+/*remove autocomplete from webkit browsers*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: $white !important;
+	-webkit-box-shadow: 0 0 0px 1000px $black inset;
+	@include transition(background-color 0.4s ease 0s);
+}
+
+
+
+/*
+ * containers
+ * —————————————————————————————————————————————————————————————————
+*/
+
+/*section*/
+
+.section {
+	padding: $integer*6 $col*2;
+
+	&__header {
+		margin-bottom: $integer*4;
+	}
+
+	&__comment {
+		margin-bottom: $integer*2;
+	}
+
+	&__title {
+	}
+	
+	&__desc {
+		width: 66.666%;
+		margin: $integer auto 0 auto;
+	}
+
+	&__content {
+	}
+
+	&__filter {
+		margin-bottom: $integer;
+	}
+
+	&__link {
+		margin-top: $integer*4;
+
+		.link {
+
+			&__title {
+				margin-bottom: $integer;
+			}
+		}
+	}
+}
+
+/*section types*/
+
+.section {
+	
+	&--header {
+		padding-top: $integer*10;	
+	}
+
+	&--alt {
+		padding-top: 0;
+	}
+
+	&--footer {
+
+	}
+}
+
+/*section color*/
+
+.section {
+
+	&--primary {
+		background-color: $primary;
+		color: $white;
+	}
+
+	&--grey {
+		background-color: $grey;
+	}
+}
+
+/*section alignement*/
+
+.section {
+	@include display-flex();
+	@include flex-direction(column);
+    @include align-items(center);
+	text-align: center;
+
+	&--left {
+		@include align-items(flex-start);
+		text-align: left;
+
+		.section__desc {
+			margin-left: 0;
+		}
+	}
+
+	&--right {
+		@include align-items(flex-end);
+		text-align: right;
+	}
+}
+
+/*block*/
+
+.block {
+	background-color: $white;
+	box-shadow: 0 0 30px 0 rgba(21,21,76,0.05);
+	border-radius: $integer;
+	padding: $integer*2;
+	color: $black;
+}

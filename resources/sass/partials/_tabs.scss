@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * ACCORDIONS
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+.accordion {
+
+	&__item {
+		width: 100%;
+		&:nth-child(1) .accordion__header {
+			padding-top: 0;
+		}
+	}
+
+	&__item + .accordion__item {
+	}
+
+	&__header {
+		cursor: pointer;
+	    @include display-flex();
+    	@include align-items(center);
+    	@include justify-content(space-between);
+	}
+
+	&__icon {
+		
+	}
+
+	&__title {
+	    position: relative;
+	    width: 100%;
+	    @include display-flex();
+    	@include align-items(center);
+    	@include justify-content(space-between);
+	}
+
+	&__content {
+		cursor: initial;
+		display: none;
+
+		> * {
+		}
+	}
+
+	&__icons {
+
+		img {
+		}
+	}
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+
+
+// —————————————————————————————————————————————————————————————————
+// MIXINS
+// —————————————————————————————————————————————————————————————————
+// general
+// media queris
+// buttons
+// fonts
+// forms
+// tooltip
+// —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
+
+@mixin calc($property, $expression) {
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+}
+
+@mixin background($position, $size) {
+	background-position: $position;
+	-webkit-background-size: $size;
+			background-size: $size;
+	background-repeat: no-repeat;
+}
+
+@mixin pseudo-element($content, $top, $right, $bottom, $left, $width, $height) {
+	content: $content;
+	position: absolute;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	width: $width;
+	height: $height;
+}
+
+@mixin hoverLink {
+	&:hover, &:active, &:focus {
+		@content;
+	}
+}
+
+@mixin position($position, $top, $right, $bottom, $left, $height, $width) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	width: $width;
+	height: $height;
+}
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content; 
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	} 
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// media queries
+// —————————————————————————————————————————————————————————————————
+
+@mixin responsive($value, $break) {
+	@media ($value: $break) {
+		@content;
+	}
+}
+
+@mixin responsive-mobile-devices() {
+	@media (pointer:coarse) {
+		@content;
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// fonts
+// —————————————————————————————————————————————————————————————————
+
+@mixin fontface($font-name, $font-file, $font-weight, $font-style) {
+	@font-face {
+		font-family: $font-name;
+		src: url('../fonts/' + $font-file + '.woff2') format('woff2'),
+			 url('../fonts/' + $font-file + '.woff') format('woff'),
+			 url('../fonts/' + $font-file + '.ttf') format('truetype');
+		font-weight: $font-weight;
+		font-style: $font-style;
+	}
+}
+
+@mixin fontSize($font-size, $font-weight, $font-style) {
+	font-size: $font-size + rem;
+	letter-spacing: $font-size*.02 + rem;
+	font-weight: $font-weight;
+	font-style: $font-style;
+}
+
+@mixin fontAwesome($fa, $top, $right, $bottom, $left, $color) {
+	content: $fa;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: $color;
+	position: absolute;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+@mixin textOverflow($property) {
+	-o-text-overflow: $property;
+	   text-overflow: $property;
+}
+
+@mixin ellipsis() {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+

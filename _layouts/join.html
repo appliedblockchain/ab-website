@@ -40,7 +40,7 @@
                 </div>
                 <div class="tab__content block accordion jobs">
                     <div id="tab1" class="tab__item">
-                        {% for job in site.data.jobs %}
+                        {% for job in site.data.jobs.london %}
                             <div class="accordion__item">
                                 <div class="accordion__header">
                                     <p class="accordion__title body--bold">{{ job.title }}</p>
@@ -61,7 +61,7 @@
                         {% endfor %}
                     </div>
                     <div id="tab2" class="tab__item">
-                        {% for job in site.data.jobs %}
+                        {% for job in site.data.jobs.porto %}
                             <div class="accordion__item">
                                 <div class="accordion__header">
                                     <p class="accordion__title body--bold">{{ job.title }}</p>

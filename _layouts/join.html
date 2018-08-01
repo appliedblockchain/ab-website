@@ -34,23 +34,25 @@
                 </a>
             </div>
             <div class="block accordion jobs">
-                <div class="accordion__item">
-                    <div class="accordion__header">
-                        <p class="accordion__title body--bold">Node.js Software Developer</p>
-                        <p>Permanent</p>
-                        <div class="accordion__actions">
-                            <span class="button button--primary button--small button--animate fa fa-edit">
-                                <p class="button__inner">Apply</p>
-                            </span>
-                            <span class="button button--icon button--highlight button--small">
-                                <i class="fa fa-plus"></i>
-                            </span>
+                {% for job in site.data.jobs %}
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <p class="accordion__title body--bold">{{ job.title }}</p>
+                            <p>{{ job.type }}</p>
+                            <div class="accordion__actions">
+                                <span class="button button--primary button--small button--animate fa fa-edit">
+                                    <p class="button__inner">Apply</p>
+                                </span>
+                                <span class="button button--icon button--highlight button--small">
+                                    <i class="fa fa-plus"></i>
+                                </span>
+                            </div>
                         </div>
+                        <p class="accordion__content">
+                            Content 1
+                        </p>
                     </div>
-                    <p class="accordion__content">
-                        Content 1
-                    </p>
-                </div>
+                {% endfor %}
             </div>
         </div>
 

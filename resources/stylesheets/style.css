@@ -996,31 +996,27 @@ html, body {
 /*buttons*/
 /* line 73, ../sass/partials/_fonts.scss */
 .button {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-/* line 80, ../sass/partials/_fonts.scss */
-.button__inner {
   font-size: 1rem;
   letter-spacing: 0.02rem;
   font-weight: 900;
   font-style: normal;
   font-family: "Chivo", Verdana, Geneva, sans-serif;
   letter-spacing: 0.05rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: auto;
+  line-height: 1;
 }
-/* line 85, ../sass/partials/_fonts.scss */
-.button--large .button__inner {
+/* line 82, ../sass/partials/_fonts.scss */
+.button.button--large {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
   font-weight: 900;
   font-style: normal;
   letter-spacing: 0.08rem;
 }
-/* line 90, ../sass/partials/_fonts.scss */
-.button--small .button__inner {
+/* line 87, ../sass/partials/_fonts.scss */
+.button.button--small {
   font-size: 0.8rem;
   letter-spacing: 0.016rem;
   font-weight: 900;
@@ -1029,21 +1025,26 @@ html, body {
   line-height: 1.5;
 }
 
-/* line 97, ../sass/partials/_fonts.scss */
+/* line 94, ../sass/partials/_fonts.scss */
+.button__inner {
+  font-family: "Chivo", Verdana, Geneva, sans-serif;
+}
+
+/* line 98, ../sass/partials/_fonts.scss */
 .button--icon {
   font-size: 1.5rem;
 }
-/* line 100, ../sass/partials/_fonts.scss */
+/* line 101, ../sass/partials/_fonts.scss */
 .button--icon.button--large {
   font-size: 2.5rem;
 }
-/* line 104, ../sass/partials/_fonts.scss */
+/* line 105, ../sass/partials/_fonts.scss */
 .button--icon.button--small {
   font-size: 1rem;
 }
 
 /*col text*/
-/* line 112, ../sass/partials/_fonts.scss */
+/* line 113, ../sass/partials/_fonts.scss */
 .col-text--1 {
   -moz-column-count: 1;
   -webkit-column-count: 1;
@@ -1053,7 +1054,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 112, ../sass/partials/_fonts.scss */
+  /* line 113, ../sass/partials/_fonts.scss */
   .col-text--1 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1061,7 +1062,7 @@ html, body {
   }
 }
 
-/* line 112, ../sass/partials/_fonts.scss */
+/* line 113, ../sass/partials/_fonts.scss */
 .col-text--2 {
   -moz-column-count: 2;
   -webkit-column-count: 2;
@@ -1071,7 +1072,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 112, ../sass/partials/_fonts.scss */
+  /* line 113, ../sass/partials/_fonts.scss */
   .col-text--2 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1079,7 +1080,7 @@ html, body {
   }
 }
 
-/* line 112, ../sass/partials/_fonts.scss */
+/* line 113, ../sass/partials/_fonts.scss */
 .col-text--3 {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -1089,7 +1090,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 112, ../sass/partials/_fonts.scss */
+  /* line 113, ../sass/partials/_fonts.scss */
   .col-text--3 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1097,7 +1098,7 @@ html, body {
   }
 }
 
-/* line 112, ../sass/partials/_fonts.scss */
+/* line 113, ../sass/partials/_fonts.scss */
 .col-text--4 {
   -moz-column-count: 4;
   -webkit-column-count: 4;
@@ -1107,7 +1108,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 112, ../sass/partials/_fonts.scss */
+  /* line 113, ../sass/partials/_fonts.scss */
   .col-text--4 {
     -moz-column-count: 1;
     -webkit-column-count: 1;

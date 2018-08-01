@@ -48,7 +48,8 @@ html, body {
 }
 
 .lead {
-	@include fontSize(1.5, $font-regular, normal);	
+	@include fontSize(1.5, $font-regular, normal);
+	color: $primary;
 }
 
 .body {

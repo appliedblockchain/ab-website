@@ -30,8 +30,30 @@
         </div>
 
         <div class="section__content">
+            <div class="tab tab--vertical approach">
+                <div class="section__filter tab__nav approach__filter">
+                    {% for item in site.data.approach %}
+                        <a href="#{{ item.id }}" class="nav__button {{ item.active }} approach__button">
+                            <h2 class="comment">{{ item.number }} {{ item.title }}</h2>
+                        </a>
+                    {% endfor %}
+                </div>
+                <div class="tab__content block accordion">
+                    {% for item in site.data.approach %}
+                        <div id="{{ item.id }}" class="tab__item">
+                            <div class="approach__item">
+                                <p class="approach__number">{{ item.number }}</p>
+                                <div class="approach__content">
+                                    <p class="approach__title lead">{{ item.title }}</p>
+                                    <p class="approach__text">{{ item.text }}</p>
+                                </div>
+                                <img src="resources/images/icons/{{ item.icon }}.svg" alt="Icon" class="apprach__icon">
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-
     </section>
 
     <section class="section section--alt section--grey">
@@ -42,39 +64,8 @@
         </div>
 
         <div class="section__content">
-            <div class="tab tab--vertical approach">
-                <div class="section__filter tab__nav approach__filter">
-                    <a href="#advisory" class="nav__button nav__button--active">
-                        <h2 class="comment">01 Advisory</h2>
-                    </a>
-                    <a href="#poc" class="nav__button nav__button--active">
-                        <h2 class="comment">02 POC</h2>
-                    </a>
-                </div>
-                <div class="tab__content block accordion">
-                    <div id="advisory" class="tab__item">
-                        <div class="approach__item">
-                            <p class="approach__number">01</p>
-                            <div class="approach__content">
-                                <p class="approach__title lead">Advisory</p>
-                                <p class="approach__text">We work together with you to learn about your project to provide you with independent strategic advise as to whether blockchain is suitable and adds genuine technical value to the problem you are trying to solve.<br><br>We assess your requirements to provide you with an impartial recommendation to approach and implement your blockchain project, and then advise which of the available blockchain technologies is best suited for your product/solution.</p>
-                            </div>
-                            <img src="resources/images/icons/icon-consultation.svg" alt="Icon" class="apprach__icon">
-                        </div>
-                    </div>
-                    <div id="poc" class="tab__item">
-                        <div class="approach__item">
-                            <p class="approach__number">02</p>
-                            <div class="approach__content">
-                                <p class="approach__title">POC</p>
-                                <p class="approach__text">We work together with you to learn about your project to provide you with independent strategic advise as to whether blockchain is suitable and adds genuine technical value to the problem you are trying to solve.<br><br>We assess your requirements to provide you with an impartial recommendation to approach and implement your blockchain project, and then advise which of the available blockchain technologies is best suited for your product/solution.</p>
-                            </div>
-                            <img src="" alt="" class="apprach__icon">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+
     </section>
 
     <section class="section section--left">

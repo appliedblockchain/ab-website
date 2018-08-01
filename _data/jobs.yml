@@ -1,6 +1,6 @@
-#jobs list
+# jobs list
 
-#london
+# london
 
 london:
   - title: Node.js Software Developer
@@ -11,9 +11,7 @@ london:
     type: Internship
     description: This is a description
 
-
-
-#porto
+# porto
 
 porto:
   - title: Senior React.js Developer

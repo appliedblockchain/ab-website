@@ -140,7 +140,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     -webkit-text-fill-color: $white !important;
 	-webkit-box-shadow: 0 0 0px 1000px $black inset;
-	@include transition(background-color 0.4s ease 0s);
+	@include transition(background-color $transition);
 }
 
 

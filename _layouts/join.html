@@ -28,18 +28,18 @@
             <div class="tab tab--vertical">
                 <div class="section__filter tab__nav">
                     <div class="nav__btn nav__btn--active">
-                        <a href="#tab1" class="button button--primary-darken button--animate fa fa-check">
+                        <a href="#london" class="button button--primary-darken button--animate fa fa-check">
                             <p class="button__inner">London</p>
                         </a>
                     </div>
                     <div class="nav__btn">
-                        <a href="#tab2" class="button button--primary">
+                        <a href="#porto" class="button button--primary">
                             <p class="button__inner">Porto</p>
                         </a>
                     </div>
                 </div>
                 <div class="tab__content block accordion jobs">
-                    <div id="tab1" class="tab__item">
+                    <div id="london" class="tab__item">
                         {% for job in site.data.jobs.london %}
                             <div class="accordion__item">
                                 <div class="accordion__header">
@@ -60,7 +60,7 @@
                             </div>
                         {% endfor %}
                     </div>
-                    <div id="tab2" class="tab__item">
+                    <div id="porto" class="tab__item">
                         {% for job in site.data.jobs.porto %}
                             <div class="accordion__item">
                                 <div class="accordion__header">

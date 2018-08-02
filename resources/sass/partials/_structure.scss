@@ -237,6 +237,10 @@ select:-webkit-autofill:focus {
 		padding-top: 0;
 	}
 
+	&--block {
+		padding: 0 $col;
+	}
+
 	&--footer {
 
 	}

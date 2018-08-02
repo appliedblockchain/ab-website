@@ -11,6 +11,7 @@
  * hover classes
  * section
  * block
+ * footer
  * —————————————————————————————————————————————————————————————————
 */
 
@@ -39,9 +40,8 @@ html, body {
 }
 
 .row {
-	margin: 0 (-$col-padding);
-	@include display-flex();
-	@include flex-wrap(wrap);
+	margin: 0 (-$integer);
+	width: 100%;
 
 	&:after {
 		content: '';
@@ -55,43 +55,39 @@ html, body {
 }
 
 [class*="col--"] {
-	background-color: grey;
-	float: left;
-	padding: 0 $col-padding;
-	position: relative;
-	width: 100%;
+	padding: 0 $integer;
 }
 
-@for $i from 1 through 16 {
-	.col--#{$i} 				{ width: $i*$col; }
-	.coloffset--#{$i} 			{ margin-left: $i*$col; }
+@for $i from 1 through 14 {
+	.col--#{$i} 				{ width: $i*$col-inner; }
+	.coloffset--#{$i} 			{ margin-left: $i*$col-inner; }
 }
 
 @include responsive(min-width, $break-phones-min) {
-	@for $i from 1 through 16 {
-		.col--sm#{$i} 			{ width: $i*$col; }
-		.coloffset--sm#{$i} 	{ margin-left: $i*$col; }
+	@for $i from 1 through 14 {
+		.col--sm#{$i} 			{ width: $i*$col-inner; }
+		.coloffset--sm#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-tablets-min) {
-	@for $i from 1 through 16 {
-		.col--md#{$i} 			{ width: $i*$col; }
-		.coloffset--md#{$i} 	{ margin-left: $i*$col; }
+	@for $i from 1 through 14 {
+		.col--md#{$i} 			{ width: $i*$col-inner; }
+		.coloffset--md#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-desktop-min) {
-	@for $i from 1 through 16 {
-		.col--lg#{$i} 			{ width: $i*$col; }
-		.coloffset--lg#{$i} 	{ margin-left: $i*$col; }
+	@for $i from 1 through 14 {
+		.col--lg#{$i} 			{ width: $i*$col-inner; }
+		.coloffset--lg#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-large-desktop-min) {
-	@for $i from 1 through 16 {
-		.col--xl#{$i} 			{ width: $i*$col; }
-		.coloffset--xl#{$i} 	{ margin-left: $i*$col; }
+	@for $i from 1 through 14 {
+		.col--xl#{$i} 			{ width: $i*$col-inner; }
+		.coloffset--xl#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
@@ -313,3 +309,30 @@ select:-webkit-autofill:focus {
 	padding: $integer*2;
 	color: $black;
 }
+
+
+
+/*
+ * footer
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.footer {
+	padding: $integer*6 $col;
+
+	> * {
+		@include display-flex();
+	}
+
+	&__title {
+		margin-bottom: $integer;
+	}
+
+	&__adress {
+
+		p + p {
+			margin-top: $integer/2;
+		}
+	}
+}
+

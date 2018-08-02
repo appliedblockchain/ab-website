@@ -43,6 +43,7 @@ $('.owl-carousel-clients').owlCarousel({
 
 $('.owl-carousel-testimonial').owlCarousel({
     items: 1,
+    autoplayHoverPause: true,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
     mouseDrag: false,

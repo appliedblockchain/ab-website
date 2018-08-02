@@ -38,7 +38,7 @@ html, body {
 }
 
 .subtitle {
-	@include fontSize(2, $font-bold, normal);
+	@include fontSize(1.8, $font-bold, normal);
 }
 
 .comment {

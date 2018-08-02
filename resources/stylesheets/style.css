@@ -2567,27 +2567,31 @@ select:-webkit-autofill:focus {
   background-color: #005eff;
   color: #ffffff;
 }
-/* line 249, ../sass/partials/_structure.scss */
+/* line 248, ../sass/partials/_structure.scss */
+.section--primary .lead {
+  color: #ffffff;
+}
+/* line 253, ../sass/partials/_structure.scss */
 .section--grey {
   background-color: #f0f0f0;
 }
-/* line 252, ../sass/partials/_structure.scss */
+/* line 256, ../sass/partials/_structure.scss */
 .section--grey .title {
   color: #005eff;
 }
 
 /*alignement*/
-/* line 262, ../sass/partials/_structure.scss */
+/* line 266, ../sass/partials/_structure.scss */
 .section--left {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   text-align: left;
 }
-/* line 266, ../sass/partials/_structure.scss */
+/* line 270, ../sass/partials/_structure.scss */
 .section--left .section__desc {
   margin-left: 0;
 }
-/* line 271, ../sass/partials/_structure.scss */
+/* line 275, ../sass/partials/_structure.scss */
 .section--right {
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -2598,7 +2602,7 @@ select:-webkit-autofill:focus {
  * block
  * —————————————————————————————————————————————————————————————————
 */
-/* line 284, ../sass/partials/_structure.scss */
+/* line 288, ../sass/partials/_structure.scss */
 .block {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
@@ -2702,16 +2706,20 @@ select:-webkit-autofill:focus {
 /*background*/
 /* 
  * —————————————————————————————————————————————————————————————————
+ * CONTACT
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 13, ../sass/pages/_contact.scss */
+#contact .section__header {
+  margin-bottom: 20px;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
  * JOIN
  * —————————————————————————————————————————————————————————————————
- * general
- * —————————————————————————————————————————————————————————————————
 */
-/*
- * jobs
- * —————————————————————————————————————————————————————————————————
-*/
-/* line 22, ../sass/pages/_join.scss */
+/* line 13, ../sass/pages/_join.scss */
 .jobs__content {
   padding: 0;
   width: 100%;

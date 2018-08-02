@@ -244,6 +244,10 @@ select:-webkit-autofill:focus {
 	&--primary {
 		background-color: $primary;
 		color: $white;
+
+		.lead {
+			color: $white;
+		}
 	}
 
 	&--grey {

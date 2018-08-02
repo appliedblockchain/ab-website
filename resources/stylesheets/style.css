@@ -2820,6 +2820,65 @@ select:-webkit-autofill:focus {
 
 /* 
  * —————————————————————————————————————————————————————————————————
+ * HOME
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 11, ../sass/pages/_home.scss */
+#home-case-studies {
+  background-position: 15% bottom;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../images/home-portrait.png);
+  padding-left: 50%;
+}
+/* line 18, ../sass/pages/_home.scss */
+#home-case-studies .section__title, #home-case-studies .section__desc {
+  width: 100%;
+}
+
+/* line 24, ../sass/pages/_home.scss */
+#home-media {
+  border-top: 5px solid #f0f0f0;
+}
+/* line 28, ../sass/pages/_home.scss */
+#home-media .section__header {
+  margin-bottom: 0;
+}
+
+/* line 33, ../sass/pages/_home.scss */
+.logo-media {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+/* line 37, ../sass/pages/_home.scss */
+.logo-media__item {
+  position: relative;
+  width: 25%;
+  padding: 20px 40px;
+}
+/* line 44, ../sass/pages/_home.scss */
+.logo-media__item + .logo-media__item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: -5px;
+  width: 5px;
+  height: 100%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+}
+/* line 52, ../sass/pages/_home.scss */
+.logo-media__image {
+  width: 100%;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
  * JOIN
  * —————————————————————————————————————————————————————————————————
 */

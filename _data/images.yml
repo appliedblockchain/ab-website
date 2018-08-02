@@ -1,3 +1,19 @@
+# media section
+# in home.html page
+
+media:
+  - url: bloomberg
+    alt: bloomberg
+
+  - url: finextra
+    alt: finextra
+
+  - url: forbes
+    alt: forbes
+
+  - url: venturebeat
+    alt: venturebeat
+
 # technology section
 # in service.html page
 

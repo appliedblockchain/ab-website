@@ -28,14 +28,16 @@
 
     </section>
 
-    <section class="section section--left section--grey">
+    <section class="section section--left section--grey" id="home-case-studies">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             comment='Who we help'
-            title='We have developed blockchain solutions for over 30 clients – from startups to enterprises and everything in between'
-            description='Our founders come with two decades of experience in designing, developing and deploying solutions for the largest global institutions. We fully understand and appreciate non-function and integration requirements, along with the challenges associated with delivering new, innovative technology to enterprise production supported environments. As we are a startup ourselves, we fully understand the pressure of startups – and this forces us to innovate, deliver and deploy at speed. Our team works with companies from inception to establishing long-term relationships.'
+            title='Blockchain solutions for enterprise and startups'
+            description='We have developed blockchain solutions for over 30 clients – from startups to enterprises and everything in between.'
         %}
+
+        <p>Our founders come with two decades of experience in designing, developing and deploying solutions for the largest global institutions. We fully understand and appreciate non-function and integration requirements, along with the challenges associated with delivering new, innovative technology to enterprise production supported environments. As we are a startup ourselves, we fully understand the pressure of startups – and this forces us to innovate, deliver and deploy at speed. Our team works with companies from inception to establishing long-term relationships.</p>
 
         <div class="section__link">
             <a href="" class="button button--secondary button--large button--animate fas fa-fill">
@@ -69,11 +71,12 @@
                 <p class="button__inner">Find out more</p>
             </a>
         </div>
-    
+
     </section>
 
     <section class="section section--testimonial testimonial">
-        <div class="owl-carousel owl-carousel-testimonial carousel">
+
+        <div class="section__content owl-carousel owl-carousel-testimonial carousel">
             <!-- edit data in _data/testimonials.html -->
             {% for item in site.data.testimonials %}
                 <div class="testimonial__item">
@@ -89,6 +92,32 @@
                 </div>
             {% endfor %}
         </div>
+
+    </section>
+
+    <section class="section" id="home-media">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            comment='Featured In'
+        %}
+
+        <div class="section__content logo-media">
+            <!-- edit data in _data/images.html -->
+            {% for item in site.data.images.media %}
+                <div class="logo-media__item">
+                    <img src="resources/images/logos/media/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
+                </div>
+            {% endfor %}    
+        </div>
+
+        <div class="section__link">
+            <p class="link__title body--large">To find out more about more about AppliedBlockchan in the media and our events</p>
+            <a href="" class="button button--secondary button--large button--animate fas fa-newspaper">
+                <p class="button__inner">Find out more</p>
+            </a>
+        </div>
+
     </section>
 
 </div>

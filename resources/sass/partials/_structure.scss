@@ -203,6 +203,8 @@ select:-webkit-autofill:focus {
 	}
 
 	&__filter {
+        @include display-flex();
+		@include justify-content(space-evenly);
 		margin-bottom: $integer;
 	}
 

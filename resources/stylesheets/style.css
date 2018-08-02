@@ -2536,54 +2536,58 @@ select:-webkit-autofill:focus {
 }
 /* line 205, ../sass/partials/_structure.scss */
 .section__filter {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
   margin-bottom: 20px;
 }
-/* line 209, ../sass/partials/_structure.scss */
+/* line 211, ../sass/partials/_structure.scss */
 .section__link {
   margin-top: 80px;
 }
-/* line 214, ../sass/partials/_structure.scss */
+/* line 216, ../sass/partials/_structure.scss */
 .section__link .link__title {
   margin-bottom: 20px;
 }
 
 /*types*/
-/* line 225, ../sass/partials/_structure.scss */
+/* line 227, ../sass/partials/_structure.scss */
 .section--header {
   padding-top: 200px;
 }
-/* line 229, ../sass/partials/_structure.scss */
+/* line 231, ../sass/partials/_structure.scss */
 .section--alt {
   padding-top: 0;
 }
 
 /*colors*/
-/* line 242, ../sass/partials/_structure.scss */
+/* line 244, ../sass/partials/_structure.scss */
 .section--primary {
   background-color: #005eff;
   color: #ffffff;
 }
-/* line 247, ../sass/partials/_structure.scss */
+/* line 249, ../sass/partials/_structure.scss */
 .section--grey {
   background-color: #f0f0f0;
 }
-/* line 250, ../sass/partials/_structure.scss */
+/* line 252, ../sass/partials/_structure.scss */
 .section--grey .title {
   color: #005eff;
 }
 
 /*alignement*/
-/* line 260, ../sass/partials/_structure.scss */
+/* line 262, ../sass/partials/_structure.scss */
 .section--left {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   text-align: left;
 }
-/* line 264, ../sass/partials/_structure.scss */
+/* line 266, ../sass/partials/_structure.scss */
 .section--left .section__desc {
   margin-left: 0;
 }
-/* line 269, ../sass/partials/_structure.scss */
+/* line 271, ../sass/partials/_structure.scss */
 .section--right {
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -2594,7 +2598,7 @@ select:-webkit-autofill:focus {
  * block
  * —————————————————————————————————————————————————————————————————
 */
-/* line 282, ../sass/partials/_structure.scss */
+/* line 284, ../sass/partials/_structure.scss */
 .block {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
@@ -2707,9 +2711,10 @@ select:-webkit-autofill:focus {
  * jobs
  * —————————————————————————————————————————————————————————————————
 */
-/* line 20, ../sass/pages/_join.scss */
-.jobs {
+/* line 22, ../sass/pages/_join.scss */
+.jobs__content {
   padding: 0;
+  width: 100%;
 }
 
 /* 
@@ -2718,17 +2723,51 @@ select:-webkit-autofill:focus {
  * —————————————————————————————————————————————————————————————————
 */
 /* line 13, ../sass/pages/_services.scss */
-.approach__filter {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
+.solutions__filter {
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
 }
-/* line 18, ../sass/pages/_services.scss */
+/* line 19, ../sass/pages/_services.scss */
+.solutions__button {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  flex-basis: 0;
+  padding: 0 10px;
+}
+/* line 25, ../sass/pages/_services.scss */
+.solutions__icon {
+  -moz-transition: background-color, ease 0.4s 0s;
+  -o-transition: background-color, ease 0.4s 0s;
+  -webkit-transition: background-color, ease 0.4s;
+  -webkit-transition-delay: 0s, 0s;
+  transition: background-color, ease 0.4s 0s;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+/* line 32, ../sass/pages/_services.scss */
+.solutions__icon:hover, .nav__button--active .solutions__icon {
+  background-color: #0055e6;
+}
+/* line 37, ../sass/pages/_services.scss */
+.solutions__text {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+
+/* line 46, ../sass/pages/_services.scss */
+.approach__filter {
+  width: 100%;
+}
+/* line 50, ../sass/pages/_services.scss */
 .approach__button {
   position: relative;
 }
-/* line 21, ../sass/pages/_services.scss */
+/* line 53, ../sass/pages/_services.scss */
 .approach__button:before {
   -moz-transition: opacity 0.4s ease 0s, width 0.4s ease 0s, left 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s, width 0.4s ease 0s, left 0.4s ease 0s;
@@ -2748,23 +2787,23 @@ select:-webkit-autofill:focus {
   background-color: #000076;
   opacity: 0;
 }
-/* line 29, ../sass/pages/_services.scss */
+/* line 61, ../sass/pages/_services.scss */
 .approach__button:hover:before, .approach__button.nav__button--active:before {
   opacity: 1;
   width: 100%;
   left: 0;
 }
-/* line 36, ../sass/pages/_services.scss */
+/* line 68, ../sass/pages/_services.scss */
 .approach .block {
   padding: 80px;
 }
-/* line 40, ../sass/pages/_services.scss */
+/* line 72, ../sass/pages/_services.scss */
 .approach__item {
   display: -webkit-flex;
   display: flex;
   text-align: left;
 }
-/* line 45, ../sass/pages/_services.scss */
+/* line 77, ../sass/pages/_services.scss */
 .approach__number {
   font-size: 5rem;
   font-weight: 700;
@@ -2773,35 +2812,35 @@ select:-webkit-autofill:focus {
   line-height: 0.9;
   width: 80px;
 }
-/* line 54, ../sass/pages/_services.scss */
+/* line 86, ../sass/pages/_services.scss */
 .approach__content {
   margin: 0 40px;
 }
-/* line 58, ../sass/pages/_services.scss */
+/* line 90, ../sass/pages/_services.scss */
 .approach__title {
   margin-bottom: 20px;
 }
 
-/* line 63, ../sass/pages/_services.scss */
+/* line 95, ../sass/pages/_services.scss */
 .projects {
   margin: -10px;
 }
-/* line 66, ../sass/pages/_services.scss */
+/* line 98, ../sass/pages/_services.scss */
 .projects__item {
   width: 25%;
   padding: 10px;
 }
-/* line 71, ../sass/pages/_services.scss */
+/* line 103, ../sass/pages/_services.scss */
 .projects__image {
   padding: 0;
   width: 100%;
 }
 
-/* line 79, ../sass/pages/_services.scss */
+/* line 111, ../sass/pages/_services.scss */
 .technology__item {
   padding: 0 40px;
 }
-/* line 83, ../sass/pages/_services.scss */
+/* line 115, ../sass/pages/_services.scss */
 .technology__image {
   display: -webkit-flex;
   display: flex;

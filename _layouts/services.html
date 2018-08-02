@@ -21,9 +21,28 @@
             title='Our Solutions'
         %}
 
-        <div class="section__content">
+        <div class="section__content tab tab--vertical solutions">
+            <div class="section__filter tab__nav solutions__filter">
+                <!-- edit data in _data/solutions.html -->
+                {% for item in site.data.solutions %}
+                    <a href="#{{ item.id }}" class="nav__button {{ item.active }} solutions__button">
+                        <div class="solutions__background">
+                            <img src="resources/images/icons/solutions/{{ item.icon }}.svg" alt="" class="solutions__icon">
+                        </div>
+                        <h2 class="comment">{{ item.title }}</h2>
+                    </a>
+                {% endfor %}
+            </div>
+            <div class="tab__content solutions__item">
+                <!-- edit data in _data/solutions.html -->
+                {% for item in site.data.solutions %}
+                    <div id="{{ item.id }}" class="tab__item solutions__item">
+                        <p class="solutions__text">{{ item.text }}</p>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-
+    
     </section>
 
     <section class="section section--grey">
@@ -34,33 +53,32 @@
             description='Building your Blockchain Project'
         %}
 
-        <div class="section__content">
-            <div class="tab tab--vertical approach">
-                <div class="section__filter tab__nav approach__filter">
-                    <!-- edit data in _data/approach.html -->
-                    {% for item in site.data.approach %}
-                        <a href="#{{ item.id }}" class="nav__button {{ item.active }} approach__button">
-                            <h2 class="comment">{{ item.number }} {{ item.title }}</h2>
-                        </a>
-                    {% endfor %}
-                </div>
-                <div class="tab__content block accordion">
-                    <!-- edit data in _data/approach.html -->
-                    {% for item in site.data.approach %}
-                        <div id="{{ item.id }}" class="tab__item">
-                            <div class="approach__item">
-                                <p class="approach__number">{{ item.number }}</p>
-                                <div class="approach__content">
-                                    <p class="approach__title lead">{{ item.title }}</p>
-                                    <p class="approach__text">{{ item.text }}</p>
-                                </div>
-                                <img src="resources/images/icons/{{ item.icon }}.svg" alt="Icon" class="apprach__icon">
+        <div class="section__content tab tab--vertical approach">
+            <div class="section__filter tab__nav approach__filter">
+                <!-- edit data in _data/approach.html -->
+                {% for item in site.data.approach %}
+                    <a href="#{{ item.id }}" class="nav__button {{ item.active }} approach__button">
+                        <h2 class="comment">{{ item.number }} {{ item.title }}</h2>
+                    </a>
+                {% endfor %}
+            </div>
+            <div class="tab__content block">
+                <!-- edit data in _data/approach.html -->
+                {% for item in site.data.approach %}
+                    <div id="{{ item.id }}" class="tab__item">
+                        <div class="approach__item">
+                            <p class="approach__number">{{ item.number }}</p>
+                            <div class="approach__content">
+                                <p class="approach__title lead">{{ item.title }}</p>
+                                <p class="approach__text">{{ item.text }}</p>
                             </div>
+                            <img src="resources/images/icons/{{ item.icon }}.svg" alt="Icon" class="apprach__icon">
                         </div>
-                    {% endfor %}
-                </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
+
     </section>
 
     <section class="section section--alt section--grey">

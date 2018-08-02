@@ -1,0 +1,12 @@
+{% assign background-color = include.background-color %}
+{% assign title = include.title %}
+{% assign description = include.description %}
+
+<div class="section section--header section--{{ background-color }}">
+    {% if title %}
+        <h1 class="headline">{{ title }}</h1>
+    {% endif %}
+    {% if description %}
+        <p class="section__desc body--large">{{ description }}</p>
+    {% endif %}
+</div>

@@ -9,30 +9,34 @@
     </header>
     <!-- /HEADER -->
 
-    <div class="section section--header">
-        <h1 class="headline">Work with us</h1>
-        <p class="section__desc body--large">Step in a collaborative, unique and fast-paced environment</p>
-    </div>
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        background-color=''
+        title='Work with us'
+        description='Step in a collaborative, unique and fast-paced environment'
+    %}
 
     <section class="section section--primary">
 
-        <div class="section__header">
-            <h1 class="section__title title">Check out our openings in London and in Porto</h1>
-            <p class="section__desc body--large">We are continuously looking for highly motivated and ambitious people who are passionate about delivering innovative blockchain-based solutions to global enterprises and disruptive startups.</p>
-        </div>
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Check out our openings in London and in Porto'
+            description='We are continuously looking for highly motivated and ambitious people who are passionate about delivering innovative blockchain-based solutions to global enterprises and disruptive startups'
+        %}
 
         <div class="section__content">
             <div class="tab tab--vertical">
                 <div class="section__filter tab__nav">
-                    <a href="#london" class="nav__button nav__button--active button button--primary-darken button--animate fa fa-check">
+                    <a href="#london" class="nav__button nav__button--active button button--primary-darken button--animate fa fa-map-marker-alt">
                         <p class="button__inner">London</p>
                     </a>
-                    <a href="#porto" class="nav__button button button--primary">
+                    <a href="#porto" class="nav__button nav__button--active button button--animate fa fa-map-marker-alt">
                         <p class="button__inner">Porto</p>
                     </a>
                 </div>
                 <div class="tab__content block accordion jobs">
                     <div id="london" class="tab__item">
+                        <!-- edit data in _data/jobs.html -->
                         {% for job in site.data.jobs.london %}
                             <div class="accordion__item">
                                 <div class="accordion__header">
@@ -54,6 +58,7 @@
                         {% endfor %}
                     </div>
                     <div id="porto" class="tab__item">
+                        <!-- edit data in _data/jobs.html -->
                         {% for job in site.data.jobs.porto %}
                             <div class="accordion__item">
                                 <div class="accordion__header">

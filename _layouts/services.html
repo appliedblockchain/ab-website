@@ -7,16 +7,19 @@
         <span class="menu__icon"></span>
     </header>
 
-    <div class="section section--header section--primary">
-        <h1 class="headline">Services</h1>
-        <p class="section__desc body--large">We work with enterprises and startups across all verticals to design and develop a blockchain solutions best suited to your needs</p>
-    </div>
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        background-color='primary'
+        title='Services'
+        description='We work with enterprises and startups across all verticals to design and develop blockchain solutions best suited to your needs.'
+    %}
 
     <section class="section section--alt section--primary">
 
-        <div class="section__header">
-            <h1 class="section__title title">Our Solutions</h1>
-        </div>
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Our Solutions'
+        %}
 
         <div class="section__content">
         </div>
@@ -25,13 +28,16 @@
 
     <section class="section section--grey">
 
-        <div class="section__header">
-            <h1 class="section__title title">Our approach</h1>
-        </div>
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Our Approach'
+            description='Building your Blockchain Project'
+        %}
 
         <div class="section__content">
             <div class="tab tab--vertical approach">
                 <div class="section__filter tab__nav approach__filter">
+                    <!-- edit data in _data/approach.html -->
                     {% for item in site.data.approach %}
                         <a href="#{{ item.id }}" class="nav__button {{ item.active }} approach__button">
                             <h2 class="comment">{{ item.number }} {{ item.title }}</h2>
@@ -39,6 +45,7 @@
                     {% endfor %}
                 </div>
                 <div class="tab__content block accordion">
+                    <!-- edit data in _data/approach.html -->
                     {% for item in site.data.approach %}
                         <div id="{{ item.id }}" class="tab__item">
                             <div class="approach__item">
@@ -58,10 +65,10 @@
 
     <section class="section section--alt section--grey">
 
-        <div class="section__header">
-            <h1 class="section__title title">Tools & Technologies</h1>
-            <p class="section__desc body--large">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-        </div>
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Technology'
+        %}
 
         <div class="section__content">
         </div>

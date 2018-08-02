@@ -2582,43 +2582,50 @@ select:-webkit-autofill:focus {
 .section--alt {
   padding-top: 0;
 }
-/* line 240, ../sass/partials/_structure.scss */
+/* line 244, ../sass/partials/_structure.scss */
 .section--block {
   padding: 0 6.25vw;
 }
+/* line 248, ../sass/partials/_structure.scss */
+.section--testimonial {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
 /*colors*/
-/* line 253, ../sass/partials/_structure.scss */
+/* line 258, ../sass/partials/_structure.scss */
 .section--primary {
   background-color: #005eff;
   color: #ffffff;
 }
-/* line 257, ../sass/partials/_structure.scss */
+/* line 262, ../sass/partials/_structure.scss */
 .section--primary .lead {
   color: #ffffff;
 }
-/* line 262, ../sass/partials/_structure.scss */
+/* line 267, ../sass/partials/_structure.scss */
 .section--grey {
   background-color: #f0f0f0;
 }
-/* line 265, ../sass/partials/_structure.scss */
+/* line 270, ../sass/partials/_structure.scss */
 .section--grey .title {
   color: #005eff;
 }
 
 /*alignement*/
-/* line 275, ../sass/partials/_structure.scss */
+/* line 280, ../sass/partials/_structure.scss */
 .section--left {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   text-align: left;
 }
-/* line 281, ../sass/partials/_structure.scss */
+/* line 286, ../sass/partials/_structure.scss */
 .section--left .section__header {
   -webkit-align-items: flex-start;
   align-items: flex-start;
 }
-/* line 287, ../sass/partials/_structure.scss */
+/* line 292, ../sass/partials/_structure.scss */
 .section--right {
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -2629,7 +2636,7 @@ select:-webkit-autofill:focus {
  * block
  * —————————————————————————————————————————————————————————————————
 */
-/* line 300, ../sass/partials/_structure.scss */
+/* line 305, ../sass/partials/_structure.scss */
 .block {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
@@ -2666,6 +2673,43 @@ select:-webkit-autofill:focus {
 /* line 28, ../sass/partials/_tabs.scss */
 .tab__item:nth-child(1) {
   display: block;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * STRUCTURE
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 13, ../sass/partials/_testimonials.scss */
+.testimonial__image {
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+}
+/* line 21, ../sass/partials/_testimonials.scss */
+.testimonial__content {
+  text-align: left;
+  margin-left: 80px;
+  position: relative;
+}
+/* line 27, ../sass/partials/_testimonials.scss */
+.testimonial__mark {
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: -40px;
+}
+/* line 34, ../sass/partials/_testimonials.scss */
+.testimonial__meta {
+  margin-top: 10px;
 }
 
 /* 

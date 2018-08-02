@@ -237,12 +237,17 @@ select:-webkit-autofill:focus {
 		padding-top: 0;
 	}
 
+	&--footer {
+	
+	}
+
 	&--block {
 		padding: 0 $col;
 	}
 
-	&--footer {
-
+	&--testimonial {
+		@include flex-direction(row);
+		@include align-items(center);
 	}
 }
 

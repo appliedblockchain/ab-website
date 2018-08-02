@@ -2834,13 +2834,14 @@ select:-webkit-autofill:focus {
 .projects__image {
   padding: 0;
   width: 100%;
+  cursor: pointer;
 }
 
-/* line 111, ../sass/pages/_services.scss */
+/* line 112, ../sass/pages/_services.scss */
 .technology__item {
   padding: 0 40px;
 }
-/* line 115, ../sass/pages/_services.scss */
+/* line 116, ../sass/pages/_services.scss */
 .technology__image {
   display: -webkit-flex;
   display: flex;

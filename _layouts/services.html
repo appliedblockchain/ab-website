@@ -70,7 +70,16 @@
             title='Technology'
         %}
 
-        <div class="section__content">
+        <div class="section__content technology">
+            <!-- edit data in _data/images.html -->
+            {% for item in site.data.images.technology %}
+                <div class="technology__item">
+                    <div class="technology__image">
+                        <img src="resources/images/logos/tools/logo-{{ item.url }}.svg" alt="Logo {{ item.alt }}" class="">
+                    </div>
+                    <p class="body--large">{{ item.alt }}</p>
+                </div>
+            {% endfor %}
         </div>
 
     </section>
@@ -83,8 +92,8 @@
         %}
 
         <div class="section__content projects">
-            <!-- edit data in _data/projects.html -->
-            {% for item in site.data.projects %}
+            <!-- edit data in _data/images.html -->
+            {% for item in site.data.images.projects %}
                 <div class="projects__item">
                     <img src="resources/images/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="block projects__image hover-grayscale">
                 </div>

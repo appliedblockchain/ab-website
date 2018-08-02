@@ -1,0 +1,41 @@
+# technology section
+# in service.html page
+
+technology:
+  - url: ethereum
+    alt: Ethereum
+
+  - url: hyperledger
+    alt: Hyperledger
+
+  - url: r3
+    alt: R3
+
+# projects section
+# in service.html page
+
+projects:
+  - url: appii
+    alt: Appii
+
+  - url: cygnetise
+    alt: Cygnetise
+
+  - url: nuggets
+    alt: Nuggets
+
+  - url: shell
+    alt: Shell
+
+  - url: sita
+    alt: Sita
+
+  - url: toyota
+    alt: Toyota
+
+  - url: UN
+    alt: United Nations
+
+  - url: vodafone
+    alt: Vodafone
+

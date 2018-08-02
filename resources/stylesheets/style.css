@@ -2506,79 +2506,84 @@ select:-webkit-autofill:focus {
 */
 /* line 177, ../sass/partials/_structure.scss */
 .section {
-  padding: 120px 12.5vw;
-}
-/* line 180, ../sass/partials/_structure.scss */
-.section__header {
-  margin-bottom: 80px;
-}
-/* line 184, ../sass/partials/_structure.scss */
-.section__comment {
-  margin-bottom: 40px;
-}
-/* line 191, ../sass/partials/_structure.scss */
-.section__desc {
-  width: 66.666%;
-  margin: 20px auto 0 auto;
-}
-/* line 199, ../sass/partials/_structure.scss */
-.section__filter {
-  margin-bottom: 20px;
-}
-/* line 203, ../sass/partials/_structure.scss */
-.section__link {
-  margin-top: 80px;
-}
-/* line 208, ../sass/partials/_structure.scss */
-.section__link .link__title {
-  margin-bottom: 20px;
-}
-
-/*types*/
-/* line 219, ../sass/partials/_structure.scss */
-.section--header {
-  padding-top: 200px;
-}
-/* line 223, ../sass/partials/_structure.scss */
-.section--alt {
-  padding-top: 0;
-}
-
-/*colors*/
-/* line 236, ../sass/partials/_structure.scss */
-.section--primary {
-  background-color: #005eff;
-  color: #ffffff;
-}
-/* line 241, ../sass/partials/_structure.scss */
-.section--grey {
-  background-color: #f0f0f0;
-}
-/* line 244, ../sass/partials/_structure.scss */
-.section--grey .title {
-  color: #005eff;
-}
-
-/*alignement*/
-/* line 252, ../sass/partials/_structure.scss */
-.section {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  padding: 120px 12.5vw;
 }
-/* line 257, ../sass/partials/_structure.scss */
+/* line 183, ../sass/partials/_structure.scss */
+.section__header {
+  margin-bottom: 80px;
+}
+/* line 187, ../sass/partials/_structure.scss */
+.section__comment {
+  margin-bottom: 40px;
+}
+/* line 194, ../sass/partials/_structure.scss */
+.section__desc {
+  width: 66.666%;
+  margin: 20px auto 0 auto;
+}
+/* line 199, ../sass/partials/_structure.scss */
+.section__content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 205, ../sass/partials/_structure.scss */
+.section__filter {
+  margin-bottom: 20px;
+}
+/* line 209, ../sass/partials/_structure.scss */
+.section__link {
+  margin-top: 80px;
+}
+/* line 214, ../sass/partials/_structure.scss */
+.section__link .link__title {
+  margin-bottom: 20px;
+}
+
+/*types*/
+/* line 225, ../sass/partials/_structure.scss */
+.section--header {
+  padding-top: 200px;
+}
+/* line 229, ../sass/partials/_structure.scss */
+.section--alt {
+  padding-top: 0;
+}
+
+/*colors*/
+/* line 242, ../sass/partials/_structure.scss */
+.section--primary {
+  background-color: #005eff;
+  color: #ffffff;
+}
+/* line 247, ../sass/partials/_structure.scss */
+.section--grey {
+  background-color: #f0f0f0;
+}
+/* line 250, ../sass/partials/_structure.scss */
+.section--grey .title {
+  color: #005eff;
+}
+
+/*alignement*/
+/* line 260, ../sass/partials/_structure.scss */
 .section--left {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   text-align: left;
 }
-/* line 261, ../sass/partials/_structure.scss */
+/* line 264, ../sass/partials/_structure.scss */
 .section--left .section__desc {
   margin-left: 0;
 }
-/* line 266, ../sass/partials/_structure.scss */
+/* line 269, ../sass/partials/_structure.scss */
 .section--right {
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -2589,7 +2594,7 @@ select:-webkit-autofill:focus {
  * block
  * —————————————————————————————————————————————————————————————————
 */
-/* line 279, ../sass/partials/_structure.scss */
+/* line 282, ../sass/partials/_structure.scss */
 .block {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
@@ -2779,19 +2784,30 @@ select:-webkit-autofill:focus {
 
 /* line 63, ../sass/pages/_services.scss */
 .projects {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin: -10px;
 }
-/* line 68, ../sass/pages/_services.scss */
+/* line 66, ../sass/pages/_services.scss */
 .projects__item {
   width: 25%;
   padding: 10px;
 }
-/* line 73, ../sass/pages/_services.scss */
+/* line 71, ../sass/pages/_services.scss */
 .projects__image {
   padding: 0;
   width: 100%;
+}
+
+/* line 79, ../sass/pages/_services.scss */
+.technology__item {
+  padding: 0 40px;
+}
+/* line 83, ../sass/pages/_services.scss */
+.technology__image {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 120px;
 }

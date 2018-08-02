@@ -175,6 +175,9 @@ select:-webkit-autofill:focus {
 */
 
 .section {
+	@include display-flex();
+	@include flex-direction(column);
+	text-align: center;
 	padding: $integer*6 $col*2;
 
 	&__header {
@@ -194,6 +197,9 @@ select:-webkit-autofill:focus {
 	}
 
 	&__content {
+		@include display-flex();
+		@include flex-wrap(wrap);
+		justify-content: center;
 	}
 
 	&__filter {
@@ -250,9 +256,6 @@ select:-webkit-autofill:focus {
 /*alignement*/
 
 .section {
-	@include display-flex();
-	@include flex-direction(column);
-	text-align: center;
 
 	&--left {
 		@include align-items(flex-start);

@@ -997,9 +997,12 @@ html, body {
   line-height: 1.2;
   font-weight: 300;
   color: #000a1e;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: auto;
 }
 
-/* line 28, ../sass/partials/_fonts.scss */
+/* line 31, ../sass/partials/_fonts.scss */
 .headline {
   font-size: 3rem;
   letter-spacing: 0.06rem;
@@ -1008,7 +1011,7 @@ html, body {
   text-transform: uppercase;
 }
 
-/* line 33, ../sass/partials/_fonts.scss */
+/* line 36, ../sass/partials/_fonts.scss */
 .title {
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
@@ -1016,7 +1019,7 @@ html, body {
   font-style: normal;
 }
 
-/* line 37, ../sass/partials/_fonts.scss */
+/* line 40, ../sass/partials/_fonts.scss */
 .subtitle {
   font-size: 2rem;
   letter-spacing: 0.04rem;
@@ -1024,7 +1027,7 @@ html, body {
   font-style: normal;
 }
 
-/* line 41, ../sass/partials/_fonts.scss */
+/* line 44, ../sass/partials/_fonts.scss */
 .comment {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -1033,7 +1036,7 @@ html, body {
   text-transform: uppercase;
 }
 
-/* line 46, ../sass/partials/_fonts.scss */
+/* line 49, ../sass/partials/_fonts.scss */
 .quote {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -1041,7 +1044,7 @@ html, body {
   font-style: normal;
 }
 
-/* line 50, ../sass/partials/_fonts.scss */
+/* line 53, ../sass/partials/_fonts.scss */
 .lead {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -1050,20 +1053,20 @@ html, body {
   color: #005eff;
 }
 
-/* line 57, ../sass/partials/_fonts.scss */
+/* line 60, ../sass/partials/_fonts.scss */
 .body--large {
   font-size: 1.25rem;
 }
-/* line 60, ../sass/partials/_fonts.scss */
+/* line 63, ../sass/partials/_fonts.scss */
 .body--small {
   font-size: 0.8rem;
 }
-/* line 63, ../sass/partials/_fonts.scss */
+/* line 66, ../sass/partials/_fonts.scss */
 .body--bold {
   font-weight: 700;
 }
 
-/* line 68, ../sass/partials/_fonts.scss */
+/* line 71, ../sass/partials/_fonts.scss */
 .label {
   font-size: 0.8rem;
   letter-spacing: 0.016rem;
@@ -1072,7 +1075,7 @@ html, body {
 }
 
 /*buttons*/
-/* line 74, ../sass/partials/_fonts.scss */
+/* line 77, ../sass/partials/_fonts.scss */
 .button {
   font-size: 1rem;
   letter-spacing: 0.02rem;
@@ -1080,9 +1083,6 @@ html, body {
   font-style: normal;
   font-family: "Chivo", Verdana, Geneva, sans-serif;
   letter-spacing: 0.05rem;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: auto;
   line-height: 1;
 }
 /* line 83, ../sass/partials/_fonts.scss */
@@ -2629,27 +2629,32 @@ select:-webkit-autofill:focus {
   color: #ffffff;
 }
 /* line 266, ../sass/partials/_structure.scss */
+.section--dark {
+  background-color: #000076;
+  color: #ffffff;
+}
+/* line 271, ../sass/partials/_structure.scss */
 .section--grey {
   background-color: #f0f0f0;
 }
-/* line 269, ../sass/partials/_structure.scss */
+/* line 274, ../sass/partials/_structure.scss */
 .section--grey .title {
   color: #005eff;
 }
 
 /*alignement*/
-/* line 279, ../sass/partials/_structure.scss */
+/* line 284, ../sass/partials/_structure.scss */
 .section--left {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   text-align: left;
 }
-/* line 285, ../sass/partials/_structure.scss */
+/* line 290, ../sass/partials/_structure.scss */
 .section--left .section__header {
   -webkit-align-items: flex-start;
   align-items: flex-start;
 }
-/* line 291, ../sass/partials/_structure.scss */
+/* line 296, ../sass/partials/_structure.scss */
 .section--right {
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -2660,7 +2665,7 @@ select:-webkit-autofill:focus {
  * block
  * —————————————————————————————————————————————————————————————————
 */
-/* line 304, ../sass/partials/_structure.scss */
+/* line 309, ../sass/partials/_structure.scss */
 .block {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
@@ -2824,6 +2829,11 @@ select:-webkit-autofill:focus {
  * —————————————————————————————————————————————————————————————————
 */
 /* line 11, ../sass/pages/_home.scss */
+#landing {
+  min-height: 100vh;
+}
+
+/* line 15, ../sass/pages/_home.scss */
 #home-case-studies {
   background-position: 15% bottom;
   -webkit-background-size: 50%;
@@ -2832,32 +2842,32 @@ select:-webkit-autofill:focus {
   background-image: url(../images/home-portrait.png);
   padding-left: 50%;
 }
-/* line 18, ../sass/pages/_home.scss */
+/* line 22, ../sass/pages/_home.scss */
 #home-case-studies .section__title, #home-case-studies .section__desc {
   width: 100%;
 }
 
-/* line 24, ../sass/pages/_home.scss */
+/* line 28, ../sass/pages/_home.scss */
 #home-media {
   border-top: 5px solid #f0f0f0;
 }
-/* line 28, ../sass/pages/_home.scss */
+/* line 32, ../sass/pages/_home.scss */
 #home-media .section__header {
   margin-bottom: 0;
 }
 
-/* line 33, ../sass/pages/_home.scss */
+/* line 37, ../sass/pages/_home.scss */
 .logo-media {
   margin-left: -40px;
   margin-right: -40px;
 }
-/* line 37, ../sass/pages/_home.scss */
+/* line 41, ../sass/pages/_home.scss */
 .logo-media__item {
   position: relative;
   width: 25%;
   padding: 20px 40px;
 }
-/* line 44, ../sass/pages/_home.scss */
+/* line 48, ../sass/pages/_home.scss */
 .logo-media__item + .logo-media__item:before {
   content: "";
   position: absolute;
@@ -2872,7 +2882,7 @@ select:-webkit-autofill:focus {
   border-radius: 20px;
   background-color: #f0f0f0;
 }
-/* line 52, ../sass/pages/_home.scss */
+/* line 56, ../sass/pages/_home.scss */
 .logo-media__image {
   width: 100%;
 }

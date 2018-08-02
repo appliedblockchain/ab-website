@@ -263,6 +263,11 @@ select:-webkit-autofill:focus {
 		}
 	}
 
+	&--dark {
+		background-color: $dark;
+		color: $white;
+	}
+
 	&--grey {
 		background-color: $lightgrey;
 

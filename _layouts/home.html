@@ -73,16 +73,20 @@
     </section>
 
     <section class="section section--testimonial testimmonial">
-
-        <div class="testimonial__image" style="background-image: url(resources/images/testimonials/johan-krebbers.jpg);" alt="Portrait"></div>
-        <div class="testimonial__content">
-            <img src="resources/images/icons/quote-mark.svg" class="testimonial__mark">
-            <p class="quote">Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.</p>
-            <div class="testimonial__meta">
-                <p class="body--bold">Johan Krebbers</p>
-                <p>Chief Technology Officer for IT, Shell Global Solutions International</p>
+        <!-- edit data in _data/testimonials.html -->
+        {% for item in site.data.testimonials %}
+            <div class="testimonial__item">
+                <div class="testimonial__image" style="background-image: url(resources/images/testimonials/{{ item.id }}.jpg);" alt="Portrait {{ item.name }}"></div>
+                <div class="testimonial__content">
+                    <img src="resources/images/icons/quote-mark.svg" class="testimonial__mark">
+                    <p class="quote">{{ item.quote }}</p>
+                    <div class="testimonial__meta">
+                        <p class="body--bold">{{ item.name }}</p>
+                        <p>{{ item.job }}</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        {% endfor %}
 
     </section>
 

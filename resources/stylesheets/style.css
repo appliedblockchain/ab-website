@@ -948,6 +948,33 @@ optgroup {
  * —————————————————————————————————————————————————————————————————
 */
 /* line 11, ../sass/partials/_carousel.scss */
+.owl-dot {
+  -moz-transition: background-color 0.4s ease 0s, -moz-transform 0.4s ease 0s;
+  -o-transition: background-color 0.4s ease 0s, -o-transform 0.4s ease 0s;
+  -webkit-transition: background-color 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
+  transition: background-color 0.4s ease 0s, transform 0.4s ease 0s;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: #64f0ff !important;
+  margin: 0 40px;
+}
+/* line 19, ../sass/partials/_carousel.scss */
+.owl-dot.active, .owl-dot:hover {
+  -moz-transition: background-color 0.4s ease 0s, -moz-transform 0.4s ease 0s;
+  -o-transition: background-color 0.4s ease 0s, -o-transform 0.4s ease 0s;
+  -webkit-transition: background-color 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
+  transition: background-color 0.4s ease 0s, transform 0.4s ease 0s;
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  background-color: #005eff !important;
+}
+
+/* line 26, ../sass/partials/_carousel.scss */
 .carousel {
   padding: 0 !important;
 }
@@ -2588,44 +2615,41 @@ select:-webkit-autofill:focus {
 }
 /* line 248, ../sass/partials/_structure.scss */
 .section--testimonial {
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  align-items: center;
+  padding-top: 60px;
 }
 
 /*colors*/
-/* line 258, ../sass/partials/_structure.scss */
+/* line 257, ../sass/partials/_structure.scss */
 .section--primary {
   background-color: #005eff;
   color: #ffffff;
 }
-/* line 262, ../sass/partials/_structure.scss */
+/* line 261, ../sass/partials/_structure.scss */
 .section--primary .lead {
   color: #ffffff;
 }
-/* line 267, ../sass/partials/_structure.scss */
+/* line 266, ../sass/partials/_structure.scss */
 .section--grey {
   background-color: #f0f0f0;
 }
-/* line 270, ../sass/partials/_structure.scss */
+/* line 269, ../sass/partials/_structure.scss */
 .section--grey .title {
   color: #005eff;
 }
 
 /*alignement*/
-/* line 280, ../sass/partials/_structure.scss */
+/* line 279, ../sass/partials/_structure.scss */
 .section--left {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   text-align: left;
 }
-/* line 286, ../sass/partials/_structure.scss */
+/* line 285, ../sass/partials/_structure.scss */
 .section--left .section__header {
   -webkit-align-items: flex-start;
   align-items: flex-start;
 }
-/* line 292, ../sass/partials/_structure.scss */
+/* line 291, ../sass/partials/_structure.scss */
 .section--right {
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -2636,7 +2660,7 @@ select:-webkit-autofill:focus {
  * block
  * —————————————————————————————————————————————————————————————————
 */
-/* line 305, ../sass/partials/_structure.scss */
+/* line 304, ../sass/partials/_structure.scss */
 .block {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
@@ -2681,6 +2705,14 @@ select:-webkit-autofill:focus {
  * —————————————————————————————————————————————————————————————————
 */
 /* line 13, ../sass/partials/_testimonials.scss */
+.testimonial__item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 60px 0;
+}
+/* line 19, ../sass/partials/_testimonials.scss */
 .testimonial__image {
   background-position: center center;
   -webkit-background-size: cover;
@@ -2694,20 +2726,21 @@ select:-webkit-autofill:focus {
   width: 200px;
   height: 200px;
 }
-/* line 21, ../sass/partials/_testimonials.scss */
+/* line 27, ../sass/partials/_testimonials.scss */
 .testimonial__content {
   text-align: left;
   margin-left: 80px;
   position: relative;
 }
-/* line 27, ../sass/partials/_testimonials.scss */
+/* line 33, ../sass/partials/_testimonials.scss */
 .testimonial__mark {
   position: absolute;
   z-index: -1;
   top: -40px;
   left: -40px;
+  width: 200px !important;
 }
-/* line 34, ../sass/partials/_testimonials.scss */
+/* line 41, ../sass/partials/_testimonials.scss */
 .testimonial__meta {
   margin-top: 10px;
 }

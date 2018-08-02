@@ -246,8 +246,7 @@ select:-webkit-autofill:focus {
 	}
 
 	&--testimonial {
-		@include flex-direction(row);
-		@include align-items(center);
+		padding-top: $integer*3;
 	}
 }
 

@@ -46,7 +46,7 @@
     </section>
 
     <section class="section section--block section--grey">
-        <div class="owl-carousel carousel block">
+        <div class="owl-carousel owl-carousel-clients carousel block">
             {% for item in site.data.images.projects %}
                 <img src="resources/images/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
             {% endfor %}
@@ -72,22 +72,23 @@
     
     </section>
 
-    <section class="section section--testimonial testimmonial">
-        <!-- edit data in _data/testimonials.html -->
-        {% for item in site.data.testimonials %}
-            <div class="testimonial__item">
-                <div class="testimonial__image" style="background-image: url(resources/images/testimonials/{{ item.id }}.jpg);" alt="Portrait {{ item.name }}"></div>
-                <div class="testimonial__content">
-                    <img src="resources/images/icons/quote-mark.svg" class="testimonial__mark">
-                    <p class="quote">{{ item.quote }}</p>
-                    <div class="testimonial__meta">
-                        <p class="body--bold">{{ item.name }}</p>
-                        <p>{{ item.job }}</p>
+    <section class="section section--testimonial testimonial">
+        <div class="owl-carousel owl-carousel-testimonial carousel">
+            <!-- edit data in _data/testimonials.html -->
+            {% for item in site.data.testimonials %}
+                <div class="testimonial__item">
+                    <div class="testimonial__image" style="background-image: url(resources/images/testimonials/{{ item.id }}.jpg);" alt="Portrait {{ item.name }}"></div>
+                    <div class="testimonial__content">
+                        <img src="resources/images/icons/quote-mark.svg" class="testimonial__mark">
+                        <p class="quote">{{ item.quote }}</p>
+                        <div class="testimonial__meta">
+                            <p class="body--bold">{{ item.name }}</p>
+                            <p>{{ item.job }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
-
+            {% endfor %}
+        </div>
     </section>
 
 </div>

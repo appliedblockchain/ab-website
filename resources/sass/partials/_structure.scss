@@ -181,6 +181,9 @@ select:-webkit-autofill:focus {
 	padding: $integer*6 $col*2;
 
 	&__header {
+		@include display-flex();
+		@include flex-direction(column);
+		@include align-items(center);
 		margin-bottom: $integer*4;
 	}
 
@@ -189,11 +192,12 @@ select:-webkit-autofill:focus {
 	}
 
 	&__title {
+		width: 75%;
 	}
 	
 	&__desc {
 		width: 66.666%;
-		margin: $integer auto 0 auto;
+		margin-top: $integer;
 	}
 
 	&__content {
@@ -225,7 +229,8 @@ select:-webkit-autofill:focus {
 .section {
 	
 	&--header {
-		padding-top: $integer*10;	
+		padding-top: $integer*10;
+		@include align-items(center);
 	}
 
 	&--alt {
@@ -267,8 +272,11 @@ select:-webkit-autofill:focus {
 		@include align-items(flex-start);
 		text-align: left;
 
-		.section__desc {
-			margin-left: 0;
+		.section {
+
+			&__header {
+				@include align-items(flex-start);
+			}
 		}
 	}
 

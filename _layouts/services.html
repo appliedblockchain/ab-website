@@ -75,47 +75,22 @@
 
     </section>
 
-    <section class="section section--left">
+    <section class="section">
 
-        <div class="section__header">
-            <h1 class="section__title title">Previous Projects</h1>
-            <p class="section__desc body--large">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-        </div>
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Our Projects'
+        %}
 
-        <div class="section__content">
+        <div class="section__content projects">
+            <!-- edit data in _data/projects.html -->
+            {% for item in site.data.projects %}
+                <div class="projects__item">
+                    <img src="resources/images/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="block projects__image hover-grayscale">
+                </div>    
+            {% endfor %}
         </div>
 
     </section>
-
-    <footer class="footer">
-
-            <div class="footer__top">
-            <img src="" alt="" class="footer__logo logo">
-            <div class="footer__social">
-                <h2 class="subtitle"></h2>
-                <p></p>
-            </div>
-            <div class="footer__newsletter newsletter">
-                <h2 class="subtitle"></h2>
-                <p></p>
-            </div>
-        </div>
-    
-            <div class="footer__bottom">
-            <p></p>
-            <div class="footer__links">
-                <h2 class="subtitle"></h2>
-            </div>
-            <div class="footer__links">
-                <h2 class="subtitle"></h2>
-            </div>
-            <div class="footer__links">
-                <h2 class="subtitle"></h2>
-            </div>
-        </div>
-    
-    </footer>
-
-</div>
 
 {% include footer.html %}

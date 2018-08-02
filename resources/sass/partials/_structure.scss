@@ -8,6 +8,7 @@
  * —————————————————————————————————————————————————————————————————
  * general
  * z-index
+ * hover classes
  * section
  * block
  * —————————————————————————————————————————————————————————————————
@@ -149,6 +150,23 @@ select:-webkit-autofill:focus {
  * z-index
  * —————————————————————————————————————————————————————————————————
 */
+
+
+
+/*
+ * hover classes
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.hover-grayscale {
+	@include filter(grayscale(100%));
+	@include transition(filter, $transition);
+	
+	@include hoverLink {
+		@include filter(grayscale(0%));
+	}
+}
+
 
 
 /*

@@ -148,6 +148,8 @@ select:-webkit-autofill:focus {
  * —————————————————————————————————————————————————————————————————
 */
 
+.header { z-index: 2; }
+
 
 
 /*
@@ -329,9 +331,12 @@ select:-webkit-autofill:focus {
 
 	&__logo {
 		@include flex(1);
+		margin-top: $integer*2;
+	}
+	
+	&__image {
 		width: $integer*4;
 		height: $integer*4;
-		margin-top: $integer*2;
 	}
 	
 }

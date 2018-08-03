@@ -1,0 +1,9 @@
+{% assign id = include.id %}
+{% assign title = include.title %}
+
+<div class="anchor__item">
+    <a href="#{{ id }}" class="js-dot-active">
+        <span class="anchor__dot"></span>
+        <p class="anchor__text">{{ title }}</p>
+    </a>
+</div>

@@ -6,17 +6,6 @@ $(document).ready(function() {
 // ANCHOR
 // —————————————————————————————————————————————————————————————————
 
-// SCROLL TO ANCHOR
-
-$('a.js-button-anchor').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
-
-// DOT ANCHOR
-
 $.scrollTo = $.fn.scrollTo = function(x, y, options){
    if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
    options = $.extend({}, {

@@ -560,58 +560,81 @@ optgroup {
 */
 /* line 11, ../sass/partials/_anchor.scss */
 .anchor {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  top: 25vh;
-  left: 5vw;
-  padding-top: 20px;
-}
-/* line 20, ../sass/partials/_anchor.scss */
-.anchor__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
-  background-color: white;
+  position: fixed;
+  left: 6.25vw;
+  height: 100vh;
+}
+/* line 18, ../sass/partials/_anchor.scss */
+.anchor__container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #ffffff;
   width: 1px;
 }
-/* line 35, ../sass/partials/_anchor.scss */
+/* line 26, ../sass/partials/_anchor.scss */
 .anchor__item + .anchor__item {
   padding-top: 40px;
 }
-/* line 39, ../sass/partials/_anchor.scss */
+/* line 30, ../sass/partials/_anchor.scss */
 .anchor__dot {
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
+  -moz-transition: -moz-transform 0.4s ease 0s;
+  -o-transition: -o-transform 0.4s ease 0s;
   -webkit-transition: -webkit-transform 0.4s ease 0s;
-  transition: -webkit-transform 0.4s ease 0s;
-  -o-transition: transform 0.4s ease 0s;
   transition: transform 0.4s ease 0s;
-  transition: transform 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: relative;
 }
-/* line 51, ../sass/partials/_anchor.scss */
-.js-dot-active .anchor__dot, .anchor__dot:hover, .anchor__dot:focus, .anchor__dot:active {
-  -webkit-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
-}
-/* line 59, ../sass/partials/_anchor.scss */
-.anchor__text {
+/* line 39, ../sass/partials/_anchor.scss */
+.anchor__dot:before {
+  -moz-transition: -moz-transform 0.4s ease 0s;
+  -o-transition: -o-transform 0.4s ease 0s;
+  -webkit-transition: -webkit-transform 0.4s ease 0s;
+  transition: transform 0.4s ease 0s;
+  content: "";
   position: absolute;
-  -webkit-transition: opacity 0.4s ease 0s;
+  top: 1px;
+  right: 0;
+  bottom: 0;
+  left: 1px;
+  width: 6px;
+  height: 6px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+/* line 50, ../sass/partials/_anchor.scss */
+.js-dot-active .anchor__dot:before, .anchor__dot:hover:before, .anchor__dot:focus:before, .anchor__dot:active:before {
+  -moz-transition: -moz-transform 0.4s ease 0s;
+  -o-transition: -o-transform 0.4s ease 0s;
+  -webkit-transition: -webkit-transform 0.4s ease 0s;
+  transition: transform 0.4s ease 0s;
+  -moz-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  transform: scale(2.5);
+}
+/* line 57, ../sass/partials/_anchor.scss */
+.anchor__text {
+  -moz-transition: opacity 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s;
+  -webkit-transition: opacity 0.4s ease 0s;
   transition: opacity 0.4s ease 0s;
+  position: absolute;
   left: 15px;
   opacity: 0;
   margin-top: -12px;
@@ -619,7 +642,7 @@ optgroup {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-/* line 71, ../sass/partials/_anchor.scss */
+/* line 67, ../sass/partials/_anchor.scss */
 .js-dot-active .anchor__text, .anchor__dot:hover ~ .anchor__text, .anchor__dot:focus ~ .anchor__text, .anchor__dot:active ~ .anchor__text {
   opacity: 1;
 }
@@ -2835,11 +2858,11 @@ select:-webkit-autofill:focus {
 }
 
 /* line 28, ../sass/pages/_home.scss */
-#home-media {
+#featured-in {
   border-top: 5px solid #f0f0f0;
 }
 /* line 32, ../sass/pages/_home.scss */
-#home-media .section__header {
+#featured-in .section__header {
   margin-bottom: 0;
 }
 

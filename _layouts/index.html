@@ -4,25 +4,32 @@
 
     <div class="anchor">
         <div class="anchor__container">
-            <div class="anchor__item">
-                <a href="#landing" class="js-dot-active">
-                    <span class="anchor__dot"></span>
-                    <p class="anchor__text">Home</p>
-                </a>
-            </div>
-            <div class="anchor__item">
-                <a href="#what-we-do" class="">
-                    <span class="anchor__dot"></span>
-                    <p class="anchor__text">Services</p>
-                </a>
-            </div>
-            <div class="anchor__item">
-                <a href="#who-we-help" class="">
-                    <span class="anchor__dot"></span>
-                    <p class="anchor__text">Case studies</p>
-                </a>
-            </div>
-        </div>
+            <!-- edit component in _includes/components/section-header.html -->
+            {% include components/anchor-item.html
+                id='landing'
+                title='Home'
+            %}
+            {% include components/anchor-item.html
+                id='what-we-do'
+                title='What we do'
+            %}
+            {% include components/anchor-item.html
+                id='who-we-help'
+                title='Who we help'
+            %}
+            {% include components/anchor-item.html
+                id='why-us'
+                title='Why us'
+            %}
+            {% include components/anchor-item.html
+                id='testimonials'
+                title='Testimonials'
+            %}
+            {% include components/anchor-item.html
+                id='featured-in'
+                title='Featured in'
+            %}
+       </div>
     </div>
 
     <div class="section section--dark" id="landing">
@@ -78,7 +85,7 @@
         </div>
     </section>
 
-    <section class="section section--grey">
+    <section class="section section--grey" id="why-us">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -97,7 +104,7 @@
 
     </section>
 
-    <section class="section section--testimonial testimonial">
+    <section class="section section--testimonial testimonial" id="testimonials">
 
         <div class="section__content owl-carousel owl-carousel-testimonial carousel">
             <!-- edit data in _data/testimonials.html -->
@@ -118,7 +125,7 @@
 
     </section>
 
-    <section class="section" id="home-media">
+    <section class="section" id="featured-in">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html

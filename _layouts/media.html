@@ -4,25 +4,31 @@
         {% for category in site.categories %}
             <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
         {% endfor %}
-            <a class="button active" data-filter="*">All</a>
+        <a class="button active" data-filter="*">All</a>
     </div>
 
-    {% if site.posts.size > 0 %}    
-    <div class="grid section">
+    <div class="button-group filter-button-group">
         {% for post in site.posts %}
-            <div class="block element-item {{ post.category }}">
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <p>{{ post.category-name }}</p>
-                <h2>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-                <p>{{ post.excerpt | truncate: 150, "…" }}</p>
-            </div>
+            <a class="button" data-filter=".{{ post.date | date: "%Y" }}">{{ post.date | date: "%Y" }}</a>
         {% endfor %}
+        <a class="button active" data-filter="*">All</a>
     </div>
+    
+    {% if site.posts.size > 0 %}    
+        <div class="grid section">
+            {% for post in site.posts %}
+                <div class="block element-item {{ post.category }} {{ post.date | date: "%Y" }}">
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <p>{{ post.category-name }}</p>
+                    <h2>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    <p>{{ post.excerpt | truncate: 150, "…" }}</p>
+                </div>
+            {% endfor %}
+        </div>
     {% else %}
         <p>There are no posts available right. Come back soon!</p>
     {% endif %}
-    
 
 {% include footer.html %}

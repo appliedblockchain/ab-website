@@ -1123,22 +1123,23 @@ optgroup {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  will-change: transform;
   -moz-transform: translateY(calc(var(--replace-offset) * -1));
   -ms-transform: translateY(calc(var(--replace-offset) * -1));
   -webkit-transform: translateY(calc(var(--replace-offset) * -1));
   transform: translateY(calc(var(--replace-offset) * -1));
+  will-change: transform;
+  padding: 20px 0;
 }
 
 /* previous replace item*/
-/* line 41, ../sass/partials/_change-color.scss */
+/* line 42, ../sass/partials/_change-color.scss */
 .js-replace__item--active {
   -moz-transform: translateY(calc(var(--replace-offset-2) * 1));
   -ms-transform: translateY(calc(var(--replace-offset-2) * 1));
   -webkit-transform: translateY(calc(var(--replace-offset-2) * 1));
   transform: translateY(calc(var(--replace-offset-2) * 1));
 }
-/* line 44, ../sass/partials/_change-color.scss */
+/* line 45, ../sass/partials/_change-color.scss */
 .js-replace__item--active .js-replace__content {
   -moz-transform: translateY(calc(var(--replace-offset-2) * -1));
   -ms-transform: translateY(calc(var(--replace-offset-2) * -1));
@@ -1147,14 +1148,14 @@ optgroup {
 }
 
 /* REVERSE ANIMATION */
-/* line 53, ../sass/partials/_change-color.scss */
+/* line 54, ../sass/partials/_change-color.scss */
 .js-replace--reverse .js-replace__item {
   -moz-transform: translateY(calc(var(--replace-offset-2) * 1));
   -ms-transform: translateY(calc(var(--replace-offset-2) * 1));
   -webkit-transform: translateY(calc(var(--replace-offset-2) * 1));
   transform: translateY(calc(var(--replace-offset-2) * 1));
 }
-/* line 57, ../sass/partials/_change-color.scss */
+/* line 58, ../sass/partials/_change-color.scss */
 .js-replace--reverse .js-replace__content {
   -moz-transform: translateY(calc(var(--replace-offset-2) * -1));
   -ms-transform: translateY(calc(var(--replace-offset-2) * -1));
@@ -1163,14 +1164,14 @@ optgroup {
 }
 
 /* previous replace item*/
-/* line 65, ../sass/partials/_change-color.scss */
+/* line 66, ../sass/partials/_change-color.scss */
 .js-replace--reverse .js-replace__item--active {
   -moz-transform: translateY(calc(var(--replace-offset) * 1));
   -ms-transform: translateY(calc(var(--replace-offset) * 1));
   -webkit-transform: translateY(calc(var(--replace-offset) * 1));
   transform: translateY(calc(var(--replace-offset) * 1));
 }
-/* line 68, ../sass/partials/_change-color.scss */
+/* line 69, ../sass/partials/_change-color.scss */
 .js-replace--reverse .js-replace__item--active .js-replace__content {
   -moz-transform: translateY(calc(var(--replace-offset) * -1));
   -ms-transform: translateY(calc(var(--replace-offset) * -1));
@@ -2766,8 +2767,10 @@ select:-webkit-autofill:focus {
 */
 /* line 308, ../sass/partials/_structure.scss */
 .block {
+  -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 118, 0.05);
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 118, 0.05);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 118, 0.05);
   background-color: #ffffff;
-  box-shadow: 0 0 30px 0 rgba(21, 21, 76, 0.05);
   border-radius: 20px;
   padding: 40px;
   color: #000a1e;
@@ -2786,7 +2789,7 @@ select:-webkit-autofill:focus {
 .header__top {
   display: -webkit-flex;
   display: flex;
-  padding: 40px 6.25vw 0 6.25vw;
+  padding: 20px 6.25vw 0 6.25vw;
   width: 100%;
 }
 /* line 333, ../sass/partials/_structure.scss */
@@ -2800,6 +2803,15 @@ select:-webkit-autofill:focus {
   height: 80px;
 }
 /* line 340, ../sass/partials/_structure.scss */
+.header__image {
+  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 345, ../sass/partials/_structure.scss */
 .header__button {
   position: absolute;
   right: 0;
@@ -2809,20 +2821,20 @@ select:-webkit-autofill:focus {
  * footer
  * —————————————————————————————————————————————————————————————————
 */
-/* line 353, ../sass/partials/_structure.scss */
+/* line 359, ../sass/partials/_structure.scss */
 .footer {
   padding: 120px 6.25vw;
 }
-/* line 356, ../sass/partials/_structure.scss */
+/* line 362, ../sass/partials/_structure.scss */
 .footer > * {
   display: -webkit-flex;
   display: flex;
 }
-/* line 360, ../sass/partials/_structure.scss */
+/* line 366, ../sass/partials/_structure.scss */
 .footer__title {
   margin-bottom: 20px;
 }
-/* line 366, ../sass/partials/_structure.scss */
+/* line 372, ../sass/partials/_structure.scss */
 .footer__adress p + p {
   margin-top: 10px;
 }

@@ -306,8 +306,8 @@ select:-webkit-autofill:focus {
 */
 
 .block {
+	@include box-shadow(0 0 30px 0 rgba($dark, 0.05));
 	background-color: $white;
-	box-shadow: 0 0 30px 0 rgba(21,21,76,0.05);
 	border-radius: $integer;
 	padding: $integer*2;
 	color: $black;
@@ -326,7 +326,7 @@ select:-webkit-autofill:focus {
 	
 	&__top {
 		@include display-flex();
-		padding: $integer*2 $col 0 $col;
+		padding: $integer $col 0 $col;
 		width: 100%;
 	}
 
@@ -337,10 +337,16 @@ select:-webkit-autofill:focus {
 		height: $integer*4;
 	}
 
+	&__image {
+		@include box-shadow(0 0 20px 0 rgba($dark, 0.15));
+		@include border-radius(50%);
+	}
+
 	&__button {
 		position: absolute;
 		right: 0;
 	}
+
 }
 
 

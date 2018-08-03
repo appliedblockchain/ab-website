@@ -1,6 +1,4 @@
 ---
-
-
-
 layout: media
+title: Media
 ---

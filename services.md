@@ -1,6 +1,4 @@
 ---
-
-
-
 layout: services
+title: Services
 ---

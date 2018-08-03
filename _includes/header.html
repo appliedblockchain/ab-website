@@ -4,16 +4,16 @@
 
 	<title>
 		{% if page.title %} 
-			{{ page.title }}
+			{{ page.title }} | {{ site.title }}
 		{% else %} 
-			Applied Blockchain
+			{{ site.title }} | {{ site.description }}
 		{% endif %}
 	</title>	
 
 	<!-- META -->
 	<!-- meta tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="">
+	<meta name="description" content="{{ site.description }} ">
 	<meta name="keywords" content=""/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 	<!-- mobile meta tags -->

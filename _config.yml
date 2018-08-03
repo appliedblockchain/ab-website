@@ -1,4 +1,14 @@
 # site settings
 author: Applied Blockchain
-title: Building Future-Proof, Decentralised Solutions
-description: "We innovate, design, and build decentralised solutions to solve real-world problems."
+title: Applied Blockchain
+description: "Building Future-Proof, Decentralised Solutions"
+
+# site settings
+twitter: https://twitter.com/appblockchain
+github: https://github.com/appliedblockchain/
+
+# site settings
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/

@@ -11,18 +11,12 @@
     <div class="grid section">
         {% for post in site.posts %}
             <div class="block element-item {{ post.category }}">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <p>{{ post.category-name }}</p>
-    
-            <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-    
-            <p>
-                {{ post.excerpt }}
-            </p>
-
-            <br>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <p>{{ post.category-name }}</p>
+                <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <p>{{ post.excerpt | truncate: 150, "…" }}</p>
             </div>
         {% endfor %}
     </div>

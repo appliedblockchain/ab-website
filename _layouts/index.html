@@ -2,13 +2,36 @@
 
 <div class="page">
 
+    <div class="anchor">
+        <div class="anchor__container">
+            <div class="anchor__item">
+                <a href="#landing" class="js-dot-active">
+                    <span class="anchor__dot"></span>
+                    <p class="anchor__text">Home</p>
+                </a>
+            </div>
+            <div class="anchor__item">
+                <a href="#what-we-do" class="">
+                    <span class="anchor__dot"></span>
+                    <p class="anchor__text">Services</p>
+                </a>
+            </div>
+            <div class="anchor__item">
+                <a href="#who-we-help" class="">
+                    <span class="anchor__dot"></span>
+                    <p class="anchor__text">Case studies</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="section section--dark" id="landing">
 
         <h1 class="headline">Building future-proof, decentralised solutions</h1>
 
     </div>
 
-    <section class="section section--primary">
+    <section class="section section--primary" id="what-we-do">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -28,7 +51,7 @@
 
     </section>
 
-    <section class="section section--left section--grey" id="home-case-studies">
+    <section class="section section--left section--grey" id="who-we-help">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html

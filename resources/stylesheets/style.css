@@ -555,6 +555,77 @@ optgroup {
 }
 /* 
  * —————————————————————————————————————————————————————————————————
+ * ANCHOR
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 11, ../sass/partials/_anchor.scss */
+.anchor {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 25vh;
+  left: 5vw;
+  padding-top: 20px;
+}
+/* line 20, ../sass/partials/_anchor.scss */
+.anchor__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: white;
+  width: 1px;
+}
+/* line 35, ../sass/partials/_anchor.scss */
+.anchor__item + .anchor__item {
+  padding-top: 40px;
+}
+/* line 39, ../sass/partials/_anchor.scss */
+.anchor__dot {
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.4s ease 0s;
+  transition: -webkit-transform 0.4s ease 0s;
+  -o-transition: transform 0.4s ease 0s;
+  transition: transform 0.4s ease 0s;
+  transition: transform 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
+}
+/* line 51, ../sass/partials/_anchor.scss */
+.js-dot-active .anchor__dot, .anchor__dot:hover, .anchor__dot:focus, .anchor__dot:active {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+/* line 59, ../sass/partials/_anchor.scss */
+.anchor__text {
+  position: absolute;
+  -webkit-transition: opacity 0.4s ease 0s;
+  -o-transition: opacity 0.4s ease 0s;
+  transition: opacity 0.4s ease 0s;
+  left: 15px;
+  opacity: 0;
+  margin-top: -12px;
+  font-weight: 900;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+/* line 71, ../sass/partials/_anchor.scss */
+.js-dot-active .anchor__text, .anchor__dot:hover ~ .anchor__text, .anchor__dot:focus ~ .anchor__text, .anchor__dot:active ~ .anchor__text {
+  opacity: 1;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
  * ACCORDIONS
  * —————————————————————————————————————————————————————————————————
 */
@@ -2750,7 +2821,7 @@ select:-webkit-autofill:focus {
 }
 
 /* line 15, ../sass/pages/_home.scss */
-#home-case-studies {
+#who-we-help {
   background-position: 15% bottom;
   -webkit-background-size: 50%;
   background-size: 50%;
@@ -2759,7 +2830,7 @@ select:-webkit-autofill:focus {
   padding-left: 50%;
 }
 /* line 22, ../sass/pages/_home.scss */
-#home-case-studies .section__title, #home-case-studies .section__desc {
+#who-we-help .section__title, #who-we-help .section__desc {
   width: 100%;
 }
 

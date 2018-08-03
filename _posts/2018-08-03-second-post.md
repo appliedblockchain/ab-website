@@ -2,6 +2,7 @@
 layout: post
 title: My Second Post
 permalink: /my-second-post/
+category: blog
 introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ---
 

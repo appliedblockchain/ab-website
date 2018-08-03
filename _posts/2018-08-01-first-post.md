@@ -2,6 +2,7 @@
 layout: post
 title: My First Post
 permalink: /my-first-post/
+category: press release
 introduction: Nam elit purus, tempus vel velit non.
 ---
 

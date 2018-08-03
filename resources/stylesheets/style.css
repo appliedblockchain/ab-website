@@ -234,8 +234,8 @@ optgroup {
  * btn menu
  * —————————————————————————————————————————————————————————————————
 */
-/*btn apparition*/
-@-webkit-keyframes btn--menu--opacity {
+/*button apparition*/
+@-webkit-keyframes button--menu--opacity {
   0% {
     opacity: 0;
   }
@@ -246,7 +246,7 @@ optgroup {
     opacity: 100%;
   }
 }
-@-moz-keyframes btn--menu--opacity {
+@-moz-keyframes button--menu--opacity {
   0% {
     opacity: 0;
   }
@@ -257,7 +257,7 @@ optgroup {
     opacity: 100%;
   }
 }
-@-ms-keyframes btn--menu--opacity {
+@-ms-keyframes button--menu--opacity {
   0% {
     opacity: 0;
   }
@@ -268,7 +268,7 @@ optgroup {
     opacity: 100%;
   }
 }
-@keyframes btn--menu--opacity {
+@keyframes button--menu--opacity {
   0% {
     opacity: 0;
   }
@@ -280,9 +280,9 @@ optgroup {
   }
 }
 /*lines > close*/
-@-webkit-keyframes btn--menu--open--before {
+@-webkit-keyframes button--menu--open--before {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
   50% {
     transform: translateY(0);
@@ -292,9 +292,9 @@ optgroup {
     transform: rotate(45deg);
   }
 }
-@-moz-keyframes btn--menu--open--before {
+@-moz-keyframes button--menu--open--before {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
   50% {
     transform: translateY(0);
@@ -304,9 +304,9 @@ optgroup {
     transform: rotate(45deg);
   }
 }
-@-ms-keyframes btn--menu--open--before {
+@-ms-keyframes button--menu--open--before {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
   50% {
     transform: translateY(0);
@@ -316,9 +316,9 @@ optgroup {
     transform: rotate(45deg);
   }
 }
-@keyframes btn--menu--open--before {
+@keyframes button--menu--open--before {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
   50% {
     transform: translateY(0);
@@ -328,9 +328,9 @@ optgroup {
     transform: rotate(45deg);
   }
 }
-@-webkit-keyframes btn--menu--open--after {
+@-webkit-keyframes button--menu--open--after {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   50% {
     transform: translateY(0);
@@ -340,9 +340,9 @@ optgroup {
     transform: rotate(-45deg);
   }
 }
-@-moz-keyframes btn--menu--open--after {
+@-moz-keyframes button--menu--open--after {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   50% {
     transform: translateY(0);
@@ -352,9 +352,9 @@ optgroup {
     transform: rotate(-45deg);
   }
 }
-@-ms-keyframes btn--menu--open--after {
+@-ms-keyframes button--menu--open--after {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   50% {
     transform: translateY(0);
@@ -364,9 +364,9 @@ optgroup {
     transform: rotate(-45deg);
   }
 }
-@keyframes btn--menu--open--after {
+@keyframes button--menu--open--after {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   50% {
     transform: translateY(0);
@@ -377,7 +377,7 @@ optgroup {
   }
 }
 /*close > lines*/
-@-webkit-keyframes btn--menu--close--before {
+@-webkit-keyframes button--menu--close--before {
   0% {
     transform: rotate(45deg);
   }
@@ -386,10 +386,10 @@ optgroup {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
 }
-@-moz-keyframes btn--menu--close--before {
+@-moz-keyframes button--menu--close--before {
   0% {
     transform: rotate(45deg);
   }
@@ -398,10 +398,10 @@ optgroup {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
 }
-@-ms-keyframes btn--menu--close--before {
+@-ms-keyframes button--menu--close--before {
   0% {
     transform: rotate(45deg);
   }
@@ -410,10 +410,10 @@ optgroup {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
 }
-@keyframes btn--menu--close--before {
+@keyframes button--menu--close--before {
   0% {
     transform: rotate(45deg);
   }
@@ -422,10 +422,10 @@ optgroup {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
 }
-@-webkit-keyframes btn--menu--close--after {
+@-webkit-keyframes button--menu--close--after {
   0% {
     transform: rotate(-45deg);
   }
@@ -434,10 +434,10 @@ optgroup {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
-@-moz-keyframes btn--menu--close--after {
+@-moz-keyframes button--menu--close--after {
   0% {
     transform: rotate(-45deg);
   }
@@ -446,10 +446,10 @@ optgroup {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
-@-ms-keyframes btn--menu--close--after {
+@-ms-keyframes button--menu--close--after {
   0% {
     transform: rotate(-45deg);
   }
@@ -458,10 +458,10 @@ optgroup {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
-@keyframes btn--menu--close--after {
+@keyframes button--menu--close--after {
   0% {
     transform: rotate(-45deg);
   }
@@ -470,7 +470,7 @@ optgroup {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
 /*In order to have a clean a easy to use font, give the same font-family name to all styles.
@@ -919,7 +919,7 @@ optgroup {
   bottom: auto;
   left: auto;
   width: 30px;
-  height: 7px;
+  height: 5px;
 }
 /* line 145, ../sass/partials/_buttons.scss */
 .button--close.rotate:before {
@@ -949,24 +949,31 @@ optgroup {
 */
 /* line 166, ../sass/partials/_buttons.scss */
 .button--menu {
-  display: none;
-  cursor: pointer;
-  margin-top: 5px;
-  -moz-animation: btn--menu--opacity 0.8s ease 0s;
-  -webkit-animation: btn--menu--opacity 0.8s ease 0s;
-  animation: btn--menu--opacity 0.8s ease 0s;
+  -moz-animation: button--menu--opacity 0.8s ease 0s;
+  -webkit-animation: button--menu--opacity 0.8s ease 0s;
+  animation: button--menu--opacity 0.8s ease 0s;
+  overflow: visible;
+  width: 30px;
+  height: 30px;
+  background-color: transparent !important;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-/* line 172, ../sass/partials/_buttons.scss */
-.button--menu:before, .button--menu:after {
+/* line 176, ../sass/partials/_buttons.scss */
+.button--menu:hover {
+  opacity: 1;
+}
+/* line 180, ../sass/partials/_buttons.scss */
+.button--menu:before, .button--menu:after, .button--menu .button__inner {
+  background-color: #000a1e;
+}
+/* line 187, ../sass/partials/_buttons.scss */
+.button--menu.alt:before, .button--menu.alt:after, .button--menu.alt .button__inner {
   background-color: #ffffff;
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  width: 20px;
-  height: 2px;
+}
+/* line 193, ../sass/partials/_buttons.scss */
+.button--menu:before, .button--menu:after {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
   -webkit-transition: -webkit-transform 0.4s ease;
@@ -975,39 +982,42 @@ optgroup {
   -moz-border-radius: 0.15rem;
   -webkit-border-radius: 0.15rem;
   border-radius: 0.15rem;
-}
-@media (pointer: coarse) {
-  /* line 172, ../sass/partials/_buttons.scss */
-  .button--menu:before, .button--menu:after {
-    content: none;
-  }
-}
-/* line 182, ../sass/partials/_buttons.scss */
-.button--menu:before {
-  -moz-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
-  -moz-animation: btn--menu--close--before 0.8s ease;
-  -webkit-animation: btn--menu--close--before 0.8s ease;
-  animation: btn--menu--close--before 0.8s ease;
-}
-/* line 187, ../sass/partials/_buttons.scss */
-.button--menu:after {
-  -moz-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-  -moz-animation: btn--menu--close--after 0.8s ease;
-  -webkit-animation: btn--menu--close--after 0.8s ease;
-  animation: btn--menu--close--after 0.8s ease;
-}
-/* line 192, ../sass/partials/_buttons.scss */
-.button--menu .button__inner {
-  width: 20px;
-  height: 2px;
-  background-color: #ffffff;
+  content: "";
   position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 30px;
+  height: 5px;
+  margin-top: -4px;
+}
+/* line 200, ../sass/partials/_buttons.scss */
+.button--menu:before {
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  -moz-animation: button--menu--close--before 0.8s ease;
+  -webkit-animation: button--menu--close--before 0.8s ease;
+  animation: button--menu--close--before 0.8s ease;
+}
+/* line 205, ../sass/partials/_buttons.scss */
+.button--menu:after {
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -moz-animation: button--menu--close--after 0.8s ease;
+  -webkit-animation: button--menu--close--after 0.8s ease;
+  animation: button--menu--close--after 0.8s ease;
+}
+/* line 210, ../sass/partials/_buttons.scss */
+.button--menu .button__inner {
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
   -moz-transition: opacity 0s ease 0.4s;
   -o-transition: opacity 0s ease 0.4s;
   -webkit-transition: opacity 0s ease;
@@ -1016,22 +1026,25 @@ optgroup {
   -moz-border-radius: 0.15rem;
   -webkit-border-radius: 0.15rem;
   border-radius: 0.15rem;
+  width: 30px;
+  height: 5px;
+  position: absolute;
 }
-/* line 203, ../sass/partials/_buttons.scss */
+/* line 221, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:before {
+  -moz-animation: button--menu--open--before 0.8s ease;
+  -webkit-animation: button--menu--open--before 0.8s ease;
+  animation: button--menu--open--before 0.8s ease;
   transform: rotate(45deg);
-  -moz-animation: btn--menu--open--before 0.8s ease;
-  -webkit-animation: btn--menu--open--before 0.8s ease;
-  animation: btn--menu--open--before 0.8s ease;
 }
-/* line 208, ../sass/partials/_buttons.scss */
+/* line 226, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:after {
+  -moz-animation: button--menu--open--after 0.8s ease;
+  -webkit-animation: button--menu--open--after 0.8s ease;
+  animation: button--menu--open--after 0.8s ease;
   transform: rotate(-45deg);
-  -moz-animation: btn--menu--open--after 0.8s ease;
-  -webkit-animation: btn--menu--open--after 0.8s ease;
-  animation: btn--menu--open--after 0.8s ease;
 }
-/* line 213, ../sass/partials/_buttons.scss */
+/* line 231, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open .button__inner {
   opacity: 0;
 }
@@ -1089,9 +1102,13 @@ optgroup {
 /* line 18, ../sass/partials/_change-color.scss */
 .js-replace {
   display: grid;
+  width: 100%;
 }
-/* line 21, ../sass/partials/_change-color.scss */
+/* line 22, ../sass/partials/_change-color.scss */
 .js-replace__item {
+  -moz-transform: translateY(calc(var(--replace-offset) * 1));
+  -ms-transform: translateY(calc(var(--replace-offset) * 1));
+  -webkit-transform: translateY(calc(var(--replace-offset) * 1));
   transform: translateY(calc(var(--replace-offset) * 1));
   grid-row: -1 / 1;
   grid-column: -1 / 1;
@@ -1099,40 +1116,65 @@ optgroup {
   will-change: transform;
   text-align: center;
 }
-/* line 30, ../sass/partials/_change-color.scss */
+/* line 31, ../sass/partials/_change-color.scss */
 .js-replace__content {
   /* fixes problem with calculating correct height in js */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
   will-change: transform;
+  -moz-transform: translateY(calc(var(--replace-offset) * -1));
+  -ms-transform: translateY(calc(var(--replace-offset) * -1));
+  -webkit-transform: translateY(calc(var(--replace-offset) * -1));
   transform: translateY(calc(var(--replace-offset) * -1));
 }
 
 /* previous replace item*/
-/* line 38, ../sass/partials/_change-color.scss */
+/* line 41, ../sass/partials/_change-color.scss */
 .js-replace__item--active {
+  -moz-transform: translateY(calc(var(--replace-offset-2) * 1));
+  -ms-transform: translateY(calc(var(--replace-offset-2) * 1));
+  -webkit-transform: translateY(calc(var(--replace-offset-2) * 1));
   transform: translateY(calc(var(--replace-offset-2) * 1));
 }
-/* line 41, ../sass/partials/_change-color.scss */
+/* line 44, ../sass/partials/_change-color.scss */
 .js-replace__item--active .js-replace__content {
+  -moz-transform: translateY(calc(var(--replace-offset-2) * -1));
+  -ms-transform: translateY(calc(var(--replace-offset-2) * -1));
+  -webkit-transform: translateY(calc(var(--replace-offset-2) * -1));
   transform: translateY(calc(var(--replace-offset-2) * -1));
 }
 
 /* REVERSE ANIMATION */
-/* line 50, ../sass/partials/_change-color.scss */
+/* line 53, ../sass/partials/_change-color.scss */
 .js-replace--reverse .js-replace__item {
+  -moz-transform: translateY(calc(var(--replace-offset-2) * 1));
+  -ms-transform: translateY(calc(var(--replace-offset-2) * 1));
+  -webkit-transform: translateY(calc(var(--replace-offset-2) * 1));
   transform: translateY(calc(var(--replace-offset-2) * 1));
 }
-/* line 54, ../sass/partials/_change-color.scss */
+/* line 57, ../sass/partials/_change-color.scss */
 .js-replace--reverse .js-replace__content {
+  -moz-transform: translateY(calc(var(--replace-offset-2) * -1));
+  -ms-transform: translateY(calc(var(--replace-offset-2) * -1));
+  -webkit-transform: translateY(calc(var(--replace-offset-2) * -1));
   transform: translateY(calc(var(--replace-offset-2) * -1));
 }
 
 /* previous replace item*/
-/* line 62, ../sass/partials/_change-color.scss */
+/* line 65, ../sass/partials/_change-color.scss */
 .js-replace--reverse .js-replace__item--active {
+  -moz-transform: translateY(calc(var(--replace-offset) * 1));
+  -ms-transform: translateY(calc(var(--replace-offset) * 1));
+  -webkit-transform: translateY(calc(var(--replace-offset) * 1));
   transform: translateY(calc(var(--replace-offset) * 1));
 }
-/* line 65, ../sass/partials/_change-color.scss */
+/* line 68, ../sass/partials/_change-color.scss */
 .js-replace--reverse .js-replace__item--active .js-replace__content {
+  -moz-transform: translateY(calc(var(--replace-offset) * -1));
+  -ms-transform: translateY(calc(var(--replace-offset) * -1));
+  -webkit-transform: translateY(calc(var(--replace-offset) * -1));
   transform: translateY(calc(var(--replace-offset) * -1));
 }
 
@@ -2744,38 +2786,43 @@ select:-webkit-autofill:focus {
 .header__top {
   display: -webkit-flex;
   display: flex;
+  padding: 40px 6.25vw 0 6.25vw;
   width: 100%;
 }
-/* line 332, ../sass/partials/_structure.scss */
+/* line 333, ../sass/partials/_structure.scss */
 .header__logo {
   -webkit-flex: 1;
   flex: 1;
-  margin-top: 40px;
-}
-/* line 337, ../sass/partials/_structure.scss */
-.header__image {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   width: 80px;
   height: 80px;
+}
+/* line 340, ../sass/partials/_structure.scss */
+.header__button {
+  position: absolute;
+  right: 0;
 }
 
 /*
  * footer
  * —————————————————————————————————————————————————————————————————
 */
-/* line 351, ../sass/partials/_structure.scss */
+/* line 353, ../sass/partials/_structure.scss */
 .footer {
   padding: 120px 6.25vw;
 }
-/* line 354, ../sass/partials/_structure.scss */
+/* line 356, ../sass/partials/_structure.scss */
 .footer > * {
   display: -webkit-flex;
   display: flex;
 }
-/* line 358, ../sass/partials/_structure.scss */
+/* line 360, ../sass/partials/_structure.scss */
 .footer__title {
   margin-bottom: 20px;
 }
-/* line 364, ../sass/partials/_structure.scss */
+/* line 366, ../sass/partials/_structure.scss */
 .footer__adress p + p {
   margin-top: 10px;
 }

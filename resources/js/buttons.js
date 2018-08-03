@@ -7,8 +7,8 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 
 // MENU BUTTON
-$(".btn--menu").click(function(event) {
-	$(this).toggleClass("btn--menu--open");
+$(".button--menu").click(function(event) {
+	$('.button--menu').toggleClass("button--menu--open");
 });
 
 

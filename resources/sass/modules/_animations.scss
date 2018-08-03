@@ -31,40 +31,37 @@
  * —————————————————————————————————————————————————————————————————
 */
 
-/*btn apparition*/
-@include keyframes(btn--menu--opacity) {
+/*button apparition*/
+@include keyframes(button--menu--opacity) {
 	0% 		{ opacity: 0; }
 	50% 	{ opacity: 0; }
 	100% 	{ opacity: 100%; }
 }
 
 /*lines > close*/
-@include keyframes(btn--menu--open--before) {
-	0% 		{ transform: translateY(5px); }
+@include keyframes(button--menu--open--before) {
+	0% 		{ transform: translateY(10px); }
 	50% 	{ transform: translateY(0); 
 			  transform: rotate(0); }
 	100% 	{ transform: rotate(45deg); }
 }
-@include keyframes(btn--menu--open--after) {
-	0% 		{ transform: translateY(-5px); }
+@include keyframes(button--menu--open--after) {
+	0% 		{ transform: translateY(-10px); }
 	50% 	{ transform: translateY(0); 
 			  transform: rotate(0); }
 	100% 	{ transform: rotate(-45deg); }
 }
 
 /*close > lines*/
-@include keyframes(btn--menu--close--before) {
+@include keyframes(button--menu--close--before) {
 	0% 		{ transform: rotate(45deg); }
 	50% 	{ transform: rotate(0); 
 			  transform: translateY(0); }
-	100% 	{ transform: translateY(5px); }
+	100% 	{ transform: translateY(10px); }
 }
-@include keyframes(btn--menu--close--after) {
+@include keyframes(button--menu--close--after) {
 	0% 		{ transform: rotate(-45deg); }
 	50% 	{ transform: rotate(0); 
 			  transform: translateY(0); }
-	100% 	{ transform: translateY(-5px); }
+	100% 	{ transform: translateY(-10px); }
 }
-
-
-

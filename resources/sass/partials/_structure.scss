@@ -326,19 +326,21 @@ select:-webkit-autofill:focus {
 	
 	&__top {
 		@include display-flex();
+		padding: $integer*2 $col 0 $col;
 		width: 100%;
 	}
 
 	&__logo {
 		@include flex(1);
-		margin-top: $integer*2;
-	}
-	
-	&__image {
+		@include border-radius(50%);
 		width: $integer*4;
 		height: $integer*4;
 	}
-	
+
+	&__button {
+		position: absolute;
+		right: 0;
+	}
 }
 
 

@@ -71,7 +71,7 @@
  * —————————————————————————————————————————————————————————————————
 */
 
-@include btn-color('button--',
+@include button-color('button--',
 //	prefix 			background & border	 color
 	'primary'   	$primary 			$white,
 	'secondary' 	$secondary			$primary,
@@ -139,7 +139,7 @@
 		@include transform(rotate(0deg));
 		@include transition (transform 0.4s ease 0s);
 		@include border-radius(0.15rem);
-		@include pseudo-element('', 50%, auto, auto, auto, 30px, 7px);
+		@include pseudo-element('', 50%, auto, auto, auto, 30px, 5px);
 	}
 
 	&.rotate:before {
@@ -164,50 +164,68 @@
 */
 
 .button--menu {
-	display: none;
-	cursor: pointer;
-	margin-top: 5px;
-	@include animation(btn--menu--opacity 0.8s ease 0s);
+	@include animation(button--menu--opacity 0.8s ease 0s);
+	overflow: visible;
+	width: $integer*1.5;
+	height: $integer*1.5;
+	background-color: transparent !important;
+	border: 0;
+	padding-left: 0;
+	padding-right: 0;
 
+	&:hover {
+		opacity: 1;
+	}
+
+	&:before, &:after, .button__inner {
+		background-color: $black;
+		
+	}
+
+	&.alt {
+
+		&:before, &:after, .button__inner {
+			background-color: $white;
+			
+		}	
+	}
+	
 	&:before, &:after {
-		background-color: $white;
-		@include pseudo-element('', 50%, auto, auto, auto, 20px, 2px);
 		@include transition(transform 0.4s ease 0s);
 		@include border-radius(0.15rem);
-		@include responsive-mobile-devices() {
-			content: none;
-		}
+		@include pseudo-element('', 50%, auto, auto, 0, 30px, 5px);
+		margin-top: -4px;
 	}
 
 	&:before {
-		@include transform(translateY(5px));
-		@include animation(btn--menu--close--before 0.8s ease);
+		@include transform(translateY($integer/2));
+		@include animation(button--menu--close--before 0.8s ease);
 	}
 
 	&:after {
-		@include transform(translateY(-5px));
-		@include animation(btn--menu--close--after 0.8s ease);
+		@include transform(translateY(-$integer/2));
+		@include animation(button--menu--close--after 0.8s ease);
 	}
 
 	.button__inner {
-		width: 20px;
-		height: 2px;
-		background-color: $white;
-		position: absolute;
+		@include transform(translateY(-1px));
 		@include transition(opacity 0s ease 0.4s);
 		@include border-radius(0.15rem);
+		width: $integer*1.5;
+		height: 5px;
+		position: absolute;
 	}
 
 	&.button--menu--open {
 
 		&:before {
+			@include animation(button--menu--open--before 0.8s ease);
 			transform: rotate(45deg); 
-			@include animation(btn--menu--open--before 0.8s ease);
 		}
 
 		&:after {
+			@include animation(button--menu--open--after 0.8s ease);
 			transform: rotate(-45deg); 
-			@include animation(btn--menu--open--after 0.8s ease);
 		}
 
 		.button__inner {

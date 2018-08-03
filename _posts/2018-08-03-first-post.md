@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My First Post
+permalink: /my-first-post/
 introduction: Nam elit purus, tempus vel velit non.
 ---
 

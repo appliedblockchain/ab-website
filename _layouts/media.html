@@ -1,17 +1,16 @@
 {% include header.html %}
 
     <div class="button-group filter-button-group">
+        <a class="button active" data-filter="*">All</a>
         {% for category in site.categories %}
             <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
         {% endfor %}
-        <a class="button active" data-filter="*">All</a>
     </div>
 
     <div class="button-group filter-button-group">
-        {% for post in site.posts %}
-            <a class="button" data-filter=".{{ post.date | date: "%Y" }}">{{ post.date | date: "%Y" }}</a>
-        {% endfor %}
         <a class="button active" data-filter="*">All</a>
+        <a class="button active" data-filter=".2018">2018</a>
+        <a class="button active" data-filter=".2017">2017</a>
     </div>
     
     {% if site.posts.size > 0 %}    

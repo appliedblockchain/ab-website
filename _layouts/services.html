@@ -22,7 +22,7 @@
                 {% for item in site.data.solutions %}
                     <a href="#{{ item.id }}" class="nav__button {{ item.active }} solutions__button">
                         <div class="solutions__background">
-                            <img src="resources/images/icons/solutions/{{ item.icon }}.svg" alt="" class="solutions__icon">
+                            <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/solutions/{{ item.icon }}.svg" alt="" class="solutions__icon">
                         </div>
                         <h2 class="comment">{{ item.title }}</h2>
                     </a>
@@ -67,7 +67,7 @@
                                 <p class="approach__title lead">{{ item.title }}</p>
                                 <p class="approach__text">{{ item.text }}</p>
                             </div>
-                            <img src="resources/images/icons/{{ item.icon }}.svg" alt="Icon" class="apprach__icon">
+                            <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="apprach__icon">
                         </div>
                     </div>
                 {% endfor %}
@@ -88,7 +88,7 @@
             {% for item in site.data.images.technology %}
                 <div class="technology__item">
                     <div class="technology__image">
-                        <img src="resources/images/logos/tools/logo-{{ item.url }}.svg" alt="Logo {{ item.alt }}" class="">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/tools/logo-{{ item.url }}.svg" alt="Logo {{ item.alt }}" class="">
                     </div>
                     <p class="body--large">{{ item.alt }}</p>
                 </div>
@@ -108,7 +108,7 @@
             <!-- edit data in _data/images.html -->
             {% for item in site.data.images.projects %}
                 <div class="projects__item">
-                    <img src="resources/images/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="block projects__image hover-grayscale">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="block projects__image hover-grayscale">
                 </div>
             {% endfor %}
         </div>

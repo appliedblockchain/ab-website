@@ -3,12 +3,15 @@ author: Applied Blockchain
 title: Applied Blockchain
 description: "Building Future-Proof, Decentralised Solutions"
 
-# site settings
+# social links
 twitter: https://twitter.com/appblockchain
 github: https://github.com/appliedblockchain/
 
-# site settings
+# projects config
 collections:
   projects:
     output: true
     permalink: /projects/:path/
+
+resourceurl: /resources
+imageurl: /resources/images

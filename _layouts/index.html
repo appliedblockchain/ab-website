@@ -81,7 +81,7 @@
     <section class="section section--block section--grey">
         <div class="owl-carousel owl-carousel-clients carousel block">
             {% for item in site.data.images.projects %}
-                <img src="resources/images/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
             {% endfor %}
         </div>
     </section>
@@ -111,9 +111,9 @@
             <!-- edit data in _data/testimonials.html -->
             {% for item in site.data.testimonials %}
                 <div class="testimonial__item">
-                    <div class="testimonial__image" style="background-image: url(resources/images/testimonials/{{ item.id }}.jpg);" alt="Portrait {{ item.name }}"></div>
+                    <div class="testimonial__image" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/testimonials/{{ item.id }}.jpg);" alt="Portrait {{ item.name }}"></div>
                     <div class="testimonial__content">
-                        <img src="resources/images/icons/quote-mark.svg" class="testimonial__mark">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
                         <p class="quote">{{ item.quote }}</p>
                         <div class="testimonial__meta">
                             <p class="body--bold">{{ item.name }}</p>
@@ -137,7 +137,7 @@
             <!-- edit data in _data/images.html -->
             {% for item in site.data.images.media %}
                 <div class="logo-media__item">
-                    <img src="resources/images/logos/media/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/media/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
                 </div>
             {% endfor %}    
         </div>

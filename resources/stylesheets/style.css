@@ -672,16 +672,23 @@ optgroup {
   cursor: pointer;
   padding: 15px 20px;
 }
-/* line 34, ../sass/partials/_accordions.scss */
+/* line 31, ../sass/partials/_accordions.scss */
+.accordion__header.js-accordion-active .button--icon {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 41, ../sass/partials/_accordions.scss */
 .accordion__title {
   width: 66.666%;
 }
-/* line 38, ../sass/partials/_accordions.scss */
+/* line 45, ../sass/partials/_accordions.scss */
 .accordion__content {
   cursor: initial;
   display: none;
 }
-/* line 43, ../sass/partials/_accordions.scss */
+/* line 50, ../sass/partials/_accordions.scss */
 .accordion__actions {
   display: -webkit-flex;
   display: flex;
@@ -705,10 +712,10 @@ optgroup {
 */
 /* line 25, ../sass/partials/_buttons.scss */
 .button {
-  -moz-transition: background-color 0.4s ease 0s;
-  -o-transition: background-color 0.4s ease 0s;
-  -webkit-transition: background-color 0.4s ease 0s;
-  transition: background-color 0.4s ease 0s;
+  -moz-transition: background-color 0.4s ease 0s, -moz-transform 0.4s ease 0s;
+  -o-transition: background-color 0.4s ease 0s, -o-transform 0.4s ease 0s;
+  -webkit-transition: background-color 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
+  transition: background-color 0.4s ease 0s, transform 0.4s ease 0s;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;

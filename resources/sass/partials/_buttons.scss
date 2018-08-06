@@ -23,7 +23,7 @@
 */
 
 .button {
-	@include transition(background-color $transition);
+	@include transition(background-color $transition, transform $transition);
 	@include border-radius(100px);
 	@include display-flex(inline-flex !important);
 	@include justify-content(center);

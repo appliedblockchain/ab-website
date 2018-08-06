@@ -65,34 +65,34 @@ html, body {
 	width: 100%;
 }
 
-@for $i from 1 through 15 {
+@for $i from 1 through 12 {
 	.col--#{$i} 				{ width: $i*$col-inner; }
 	.coloffset--#{$i} 			{ margin-left: $i*$col-inner; }
 }
 
 @include responsive(min-width, $break-phones-min) {
-	@for $i from 1 through 15 {
+	@for $i from 1 through 12 {
 		.col--sm#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--sm#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-tablets-min) {
-	@for $i from 1 through 15 {
+	@for $i from 1 through 12 {
 		.col--md#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--md#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-desktop-min) {
-	@for $i from 1 through 15 {
+	@for $i from 1 through 12 {
 		.col--lg#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--lg#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-large-desktop-min) {
-	@for $i from 1 through 15 {
+	@for $i from 1 through 12 {
 		.col--xl#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--xl#{$i} 	{ margin-left: $i*$col-inner; }
 	}

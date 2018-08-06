@@ -3844,15 +3844,15 @@ select:-webkit-autofill:focus {
 }
 /* line 38, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+1):before {
-  background-color: rgba(0, 94, 255, 0.5);
+  background-color: rgba(0, 94, 255, 0.7);
 }
 /* line 41, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+2):before {
-  background-color: rgba(0, 66, 179, 0.5);
+  background-color: rgba(0, 66, 179, 0.7);
 }
 /* line 44, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+3):before {
-  background-color: rgba(77, 142, 255, 0.5);
+  background-color: rgba(77, 142, 255, 0.7);
 }
 /* line 49, ../sass/pages/_case-studies.scss */
 .portfolio__item.alt {

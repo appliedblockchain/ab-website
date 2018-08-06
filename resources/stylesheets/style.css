@@ -708,17 +708,22 @@ optgroup {
   -o-transition: background-color 0.4s ease 0s;
   -webkit-transition: background-color 0.4s ease 0s;
   transition: background-color 0.4s ease 0s;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  display: inline-block;
   cursor: pointer;
   padding: 12px 24px;
   overflow: hidden;
   position: relative;
   white-space: nowrap;
 }
-/* line 34, ../sass/partials/_buttons.scss */
+/* line 36, ../sass/partials/_buttons.scss */
 .button__inner {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -733,7 +738,7 @@ optgroup {
   display: block;
   text-transform: uppercase;
 }
-/* line 42, ../sass/partials/_buttons.scss */
+/* line 44, ../sass/partials/_buttons.scss */
 .button + .button {
   margin-left: 5px;
 }
@@ -742,7 +747,7 @@ optgroup {
  * animate
  * —————————————————————————————————————————————————————————————————
 */
-/* line 54, ../sass/partials/_buttons.scss */
+/* line 56, ../sass/partials/_buttons.scss */
 .button--animate:before {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -757,17 +762,11 @@ optgroup {
   left: -140%;
   width: 100%;
   height: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
   text-align: center;
   background-color: transparent;
 }
 
-/* line 64, ../sass/partials/_buttons.scss */
+/* line 63, ../sass/partials/_buttons.scss */
 .button--animate:hover:before, .button--animate:hover .button__inner {
   -moz-transform: translateX(140%);
   -ms-transform: translateX(140%);
@@ -859,20 +858,20 @@ optgroup {
  * size
  * —————————————————————————————————————————————————————————————————
 */
-/* line 92, ../sass/partials/_buttons.scss */
+/* line 91, ../sass/partials/_buttons.scss */
 .button--large {
   padding: 18px 36px;
 }
-/* line 95, ../sass/partials/_buttons.scss */
+/* line 94, ../sass/partials/_buttons.scss */
 .button--large.button--icon {
   width: 60px;
   height: 60px;
 }
-/* line 101, ../sass/partials/_buttons.scss */
+/* line 100, ../sass/partials/_buttons.scss */
 .button--small {
   padding: 6px 15px;
 }
-/* line 104, ../sass/partials/_buttons.scss */
+/* line 103, ../sass/partials/_buttons.scss */
 .button--small.button--icon {
   width: 30px;
   height: 30px;
@@ -882,14 +881,8 @@ optgroup {
  * icon
  * —————————————————————————————————————————————————————————————————
 */
-/* line 119, ../sass/partials/_buttons.scss */
+/* line 118, ../sass/partials/_buttons.scss */
 .button--icon {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
   padding: 0;
   width: 40px;
   height: 40px;
@@ -899,7 +892,7 @@ optgroup {
  * close
  * —————————————————————————————————————————————————————————————————
 */
-/* line 137, ../sass/partials/_buttons.scss */
+/* line 133, ../sass/partials/_buttons.scss */
 .button--close:before, .button--close:after {
   margin-top: -2px;
   background-color: #000a1e;
@@ -924,21 +917,21 @@ optgroup {
   width: 30px;
   height: 5px;
 }
-/* line 146, ../sass/partials/_buttons.scss */
+/* line 142, ../sass/partials/_buttons.scss */
 .button--close.rotate:before {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 150, ../sass/partials/_buttons.scss */
+/* line 146, ../sass/partials/_buttons.scss */
 .button--close.rotate:after {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 154, ../sass/partials/_buttons.scss */
+/* line 150, ../sass/partials/_buttons.scss */
 .button--close.rotate:hover:before, .button--close.rotate:hover:after {
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -950,7 +943,7 @@ optgroup {
  * menu
  * —————————————————————————————————————————————————————————————————
 */
-/* line 167, ../sass/partials/_buttons.scss */
+/* line 163, ../sass/partials/_buttons.scss */
 .button--menu {
   -moz-animation: button--menu--opacity 0.8s ease 0s;
   -webkit-animation: button--menu--opacity 0.8s ease 0s;
@@ -963,19 +956,19 @@ optgroup {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 177, ../sass/partials/_buttons.scss */
+/* line 173, ../sass/partials/_buttons.scss */
 .button--menu:hover {
   opacity: 1;
 }
-/* line 181, ../sass/partials/_buttons.scss */
+/* line 177, ../sass/partials/_buttons.scss */
 .button--menu:before, .button--menu:after, .button--menu .button__inner {
   background-color: #000a1e;
 }
-/* line 188, ../sass/partials/_buttons.scss */
+/* line 184, ../sass/partials/_buttons.scss */
 .button--menu.alt:before, .button--menu.alt:after, .button--menu.alt .button__inner {
   background-color: #ffffff;
 }
-/* line 193, ../sass/partials/_buttons.scss */
+/* line 189, ../sass/partials/_buttons.scss */
 .button--menu:before, .button--menu:after {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -995,7 +988,7 @@ optgroup {
   height: 5px;
   margin-top: -4px;
 }
-/* line 200, ../sass/partials/_buttons.scss */
+/* line 196, ../sass/partials/_buttons.scss */
 .button--menu:before {
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
@@ -1005,7 +998,7 @@ optgroup {
   -webkit-animation: button--menu--close--before 0.8s ease;
   animation: button--menu--close--before 0.8s ease;
 }
-/* line 205, ../sass/partials/_buttons.scss */
+/* line 201, ../sass/partials/_buttons.scss */
 .button--menu:after {
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
@@ -1015,7 +1008,7 @@ optgroup {
   -webkit-animation: button--menu--close--after 0.8s ease;
   animation: button--menu--close--after 0.8s ease;
 }
-/* line 210, ../sass/partials/_buttons.scss */
+/* line 206, ../sass/partials/_buttons.scss */
 .button--menu .button__inner {
   -moz-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
@@ -1033,21 +1026,21 @@ optgroup {
   height: 5px;
   position: absolute;
 }
-/* line 221, ../sass/partials/_buttons.scss */
+/* line 217, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:before {
   -moz-animation: button--menu--open--before 0.8s ease;
   -webkit-animation: button--menu--open--before 0.8s ease;
   animation: button--menu--open--before 0.8s ease;
   transform: rotate(45deg);
 }
-/* line 226, ../sass/partials/_buttons.scss */
+/* line 222, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:after {
   -moz-animation: button--menu--open--after 0.8s ease;
   -webkit-animation: button--menu--open--after 0.8s ease;
   animation: button--menu--open--after 0.8s ease;
   transform: rotate(-45deg);
 }
-/* line 231, ../sass/partials/_buttons.scss */
+/* line 227, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open .button__inner {
   opacity: 0;
 }

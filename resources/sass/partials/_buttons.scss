@@ -23,8 +23,10 @@
 
 .button {
 	@include transition(background-color $transition);
+	@include display-flex(inline-flex);
+	@include align-items(center);
+	@include justify-content(center);
 	@include border-radius(100px);
-	display: inline-block;
 	cursor: pointer;
 	padding: 12px 24px;
 	overflow: hidden;
@@ -54,9 +56,6 @@
 .button--animate:before {
 	@include transition(transform 0.4s ease 0s);
 	@include pseudo-element('', 0, auto, auto, -140%, 100%, 100%);
-	@include display-flex();
-	@include align-items(center);
-	@include justify-content(center);
 	text-align: center;
 	background-color: transparent;
 }
@@ -117,9 +116,6 @@
 */
 
 .button--icon {
-	@include display-flex();
-	@include justify-content(center);
-	@include align-items(center);
 	padding: 0;
 	width: $integer*2;
 	height: $integer*2;

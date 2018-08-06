@@ -12,11 +12,11 @@
 
             <div class="section__content portfolio">
                 <div class="portfolio__feature block">
-                    {% for project in site.projects.appii %}
-                        <a href="{{ project.url }}">
-                            <h2>{{ project.title }}</h2>
-                        </a>
-                    {% endfor %}
+                    <!-- change slug to change featured project -->
+                    {% assign featureProject = site.projects | where: "slug", "appii" | first %}
+                    <a href="{{ featureProject.url }}">
+                        <h2>{{ featureProject.title }}</h2>
+                    </a>
                 </div>
             </div>
             

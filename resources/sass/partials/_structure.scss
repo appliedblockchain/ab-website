@@ -58,7 +58,7 @@ html, body {
 	@extend .row:after;
 }
 
-[class*="col--"] {
+[class*="col--"], [class*="colfooter--"] {
 	float: left;
 	position: relative;
 	padding: 0 $integer;
@@ -95,6 +95,41 @@ html, body {
 	@for $i from 1 through 15 {
 		.col--xl#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--xl#{$i} 	{ margin-left: $i*$col-inner; }
+	}
+}
+
+/*footer*/
+
+@for $i from 1 through 15 {
+	.colfooter--#{$i} 				{ width: $i*$col-footer; }
+	.colfooteroffset--#{$i} 		{ margin-left: $i*$col-footer; }
+}
+
+@include responsive(min-width, $break-phones-min) {
+	@for $i from 1 through 15 {
+		.colfooter--sm#{$i} 		{ width: $i*$col-footer; }
+		.colfooteroffset--sm#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-tablets-min) {
+	@for $i from 1 through 15 {
+		.colfooter--md#{$i} 		{ width: $i*$col-footer; }
+		.colfooteroffset--md#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-desktop-min) {
+	@for $i from 1 through 15 {
+		.colfooter--lg#{$i} 		{ width: $i*$col-footer; }
+		.colfooteroffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-large-desktop-min) {
+	@for $i from 1 through 15 {
+		.colfooter--xl#{$i} 		{ width: $i*$col-footer; }
+		.colfooteroffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
@@ -449,7 +484,6 @@ select:-webkit-autofill:focus {
 
 	&__logo {
 		padding-right: $integer*4;
-		max-width: $integer*24;
 	}
 
 	&__title {
@@ -484,6 +518,7 @@ select:-webkit-autofill:focus {
 	
 	&-footer {
 		width: 100%;
+		max-width: $integer*20;
 		height: auto;
 
 		&-icon {

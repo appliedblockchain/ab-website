@@ -175,6 +175,7 @@
 	}
 
 	&:before, &:after, .button__inner {
+		@include transition(background-color $transition);
 		background-color: $black;
 		
 	}

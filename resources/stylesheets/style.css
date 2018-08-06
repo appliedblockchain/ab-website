@@ -962,13 +962,17 @@ optgroup {
 }
 /* line 177, ../sass/partials/_buttons.scss */
 .button--menu:before, .button--menu:after, .button--menu .button__inner {
+  -moz-transition: background-color 0.4s ease 0s;
+  -o-transition: background-color 0.4s ease 0s;
+  -webkit-transition: background-color 0.4s ease 0s;
+  transition: background-color 0.4s ease 0s;
   background-color: #000a1e;
 }
-/* line 184, ../sass/partials/_buttons.scss */
+/* line 185, ../sass/partials/_buttons.scss */
 .button--menu.alt:before, .button--menu.alt:after, .button--menu.alt .button__inner {
   background-color: #ffffff;
 }
-/* line 189, ../sass/partials/_buttons.scss */
+/* line 190, ../sass/partials/_buttons.scss */
 .button--menu:before, .button--menu:after {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -988,7 +992,7 @@ optgroup {
   height: 5px;
   margin-top: -4px;
 }
-/* line 196, ../sass/partials/_buttons.scss */
+/* line 197, ../sass/partials/_buttons.scss */
 .button--menu:before {
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
@@ -998,7 +1002,7 @@ optgroup {
   -webkit-animation: button--menu--close--before 0.8s ease;
   animation: button--menu--close--before 0.8s ease;
 }
-/* line 201, ../sass/partials/_buttons.scss */
+/* line 202, ../sass/partials/_buttons.scss */
 .button--menu:after {
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
@@ -1008,7 +1012,7 @@ optgroup {
   -webkit-animation: button--menu--close--after 0.8s ease;
   animation: button--menu--close--after 0.8s ease;
 }
-/* line 206, ../sass/partials/_buttons.scss */
+/* line 207, ../sass/partials/_buttons.scss */
 .button--menu .button__inner {
   -moz-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
@@ -1026,21 +1030,21 @@ optgroup {
   height: 5px;
   position: absolute;
 }
-/* line 217, ../sass/partials/_buttons.scss */
+/* line 218, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:before {
   -moz-animation: button--menu--open--before 0.8s ease;
   -webkit-animation: button--menu--open--before 0.8s ease;
   animation: button--menu--open--before 0.8s ease;
   transform: rotate(45deg);
 }
-/* line 222, ../sass/partials/_buttons.scss */
+/* line 223, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:after {
   -moz-animation: button--menu--open--after 0.8s ease;
   -webkit-animation: button--menu--open--after 0.8s ease;
   animation: button--menu--open--after 0.8s ease;
   transform: rotate(-45deg);
 }
-/* line 227, ../sass/partials/_buttons.scss */
+/* line 228, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open .button__inner {
   opacity: 0;
 }
@@ -2729,16 +2733,32 @@ select:-webkit-autofill:focus {
   width: 80px;
   height: 80px;
 }
-/* line 358, ../sass/partials/_structure.scss */
+/* line 361, ../sass/partials/_structure.scss */
+.header__logo.alt .logo__background {
+  -moz-transition: fill 0.4s ease 0s;
+  -o-transition: fill 0.4s ease 0s;
+  -webkit-transition: fill 0.4s ease 0s;
+  transition: fill 0.4s ease 0s;
+  fill: #ffffff;
+}
+/* line 366, ../sass/partials/_structure.scss */
+.header__logo.alt .logo__icon {
+  -moz-transition: fill 0.4s ease 0s;
+  -o-transition: fill 0.4s ease 0s;
+  -webkit-transition: fill 0.4s ease 0s;
+  transition: fill 0.4s ease 0s;
+  fill: #005eff;
+}
+/* line 374, ../sass/partials/_structure.scss */
 .header__image {
   width: 100%;
 }
-/* line 362, ../sass/partials/_structure.scss */
+/* line 378, ../sass/partials/_structure.scss */
 .header__button {
   position: absolute;
   right: 6.25vw;
 }
-/* line 371, ../sass/partials/_structure.scss */
+/* line 387, ../sass/partials/_structure.scss */
 .header.scrolled .header__bar {
   -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
@@ -2747,30 +2767,42 @@ select:-webkit-autofill:focus {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 378, ../sass/partials/_structure.scss */
+/* line 394, ../sass/partials/_structure.scss */
 .header.scrolled .header__logo {
   width: 40px;
   height: 40px;
+}
+/* line 402, ../sass/partials/_structure.scss */
+.header.scrolled .logo__background {
+  fill: #005eff;
+}
+/* line 406, ../sass/partials/_structure.scss */
+.header.scrolled .logo__icon {
+  fill: #ffffff;
+}
+/* line 413, ../sass/partials/_structure.scss */
+.header.scrolled .button--menu:before, .header.scrolled .button--menu:after, .header.scrolled .button--menu .button__inner {
+  background-color: #000a1e;
 }
 
 /*
  * footer
  * —————————————————————————————————————————————————————————————————
 */
-/* line 397, ../sass/partials/_structure.scss */
+/* line 427, ../sass/partials/_structure.scss */
 .footer {
   padding: 120px 6.25vw;
 }
-/* line 400, ../sass/partials/_structure.scss */
+/* line 430, ../sass/partials/_structure.scss */
 .footer > * {
   display: -webkit-flex;
   display: flex;
 }
-/* line 404, ../sass/partials/_structure.scss */
+/* line 434, ../sass/partials/_structure.scss */
 .footer__title {
   margin-bottom: 20px;
 }
-/* line 410, ../sass/partials/_structure.scss */
+/* line 440, ../sass/partials/_structure.scss */
 .footer__adress p + p {
   margin-top: 10px;
 }

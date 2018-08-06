@@ -353,6 +353,22 @@ select:-webkit-autofill:focus {
 		@include border-radius(50%);
 		width: $integer*4;
 		height: $integer*4;
+
+		&.alt {
+
+			.logo {
+
+				&__background {
+					@include transition(fill $transition);
+					fill: $white
+				}
+
+				&__icon {
+					@include transition(fill $transition);
+					fill: $primary
+				}
+			}
+		}
 	}
 
 	&__image {
@@ -380,10 +396,24 @@ select:-webkit-autofill:focus {
 				height: $integer*2;
 			}
 		}
-	}
 
-	&--alt {
-		
+		.logo {
+
+			&__background {
+				fill: $primary
+			}
+
+			&__icon {
+				fill: $white
+			}
+		}
+
+		.button--menu {
+
+			&:before, &:after, .button__inner {
+				background-color: $black;
+			}
+		}
 	}
 }
 

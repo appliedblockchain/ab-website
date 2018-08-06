@@ -204,7 +204,7 @@
 	}
 
 	.button__inner {
-		@include transform(translateY(-1px));
+		@include transform(translateY(-2px));
 		@include transition(opacity 0s ease 0.4s);
 		@include border-radius(0.15rem);
 		width: $integer*1.5;

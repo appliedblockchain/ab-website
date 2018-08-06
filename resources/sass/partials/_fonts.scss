@@ -35,6 +35,7 @@ html, body {
 
 .title {
 	@include fontSize(2.5, $font-bold, normal);	
+	color: $primary;
 }
 
 .subtitle {

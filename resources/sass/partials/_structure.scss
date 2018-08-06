@@ -236,6 +236,10 @@ select:-webkit-autofill:focus {
 		padding-top: 0;
 	}
 
+	&--nopadding {
+		padding: 0;
+	}
+
 	&--footer {
 	
 	}
@@ -257,6 +261,10 @@ select:-webkit-autofill:focus {
 		background-color: $primary;
 		color: $white;
 
+		.title {
+			color: $white;
+		}
+
 		.lead {
 			color: $white;
 		}
@@ -270,9 +278,6 @@ select:-webkit-autofill:focus {
 	&--grey {
 		background-color: $lightgrey;
 
-		.title {
-			color: $primary;
-		}
 	}
 }
 

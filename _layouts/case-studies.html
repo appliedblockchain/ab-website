@@ -12,8 +12,8 @@
 
             <div class="section__content portfolio">
                 <div class="portfolio__feature block">
-                    <!-- change slug to change featured project -->
-                    {% assign featureProject = site.projects | where: "slug", "appii" | first %}
+                    <!-- change slug to choose featured project -->
+                    {% assign featureProject = site.projects | where: "slug", "traveledger" | first %}
                     <a href="{{ featureProject.url }}">
                         <h2>{{ featureProject.title }}</h2>
                     </a>
@@ -22,12 +22,15 @@
             
         </section>
 
-        <section class="section section--alt portfolio">
-            
+        <section class="section section--nopadding portfolio">
+
             <div class="portfolio__grid">
                 {% for project in site.projects %}
-                    <a href="{{ project.url }}">
-                        <h2>{{ project.title }}</h2>
+                    <a href="{{ project.url }}" class="portfolio__item" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/case-studies/{{ project.slug }}.jpg);">
+                        <p class="portfolio__comment comment">{{ project.industry }}</p>
+                        <p class="portfolio__title subtitle">{{ project.title }}: {{ project.subtitle }}</p>
+                        <p class="portfolio__desc body--large">{{ project.description }}</p>
+                        <span href="" class="button"></span>
                     </a>
                 {% endfor %}
             </div>

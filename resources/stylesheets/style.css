@@ -1354,10 +1354,6 @@ html, body {
 }
 /* line 35, ../sass/partials/_form.scss */
 .form__group {
-  -moz-transition: border 0.4s ease 0s;
-  -o-transition: border 0.4s ease 0s;
-  -webkit-transition: border 0.4s ease 0s;
-  transition: border 0.4s ease 0s;
   position: relative;
   width: 100%;
   margin-bottom: 20px;
@@ -1365,11 +1361,19 @@ html, body {
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
-/* line 45, ../sass/partials/_form.scss */
+/* line 47, ../sass/partials/_form.scss */
+.form__group.focused .form__label {
+  color: #005eff;
+}
+/* line 51, ../sass/partials/_form.scss */
+.form__group.focused .form__input {
+  border-color: #005eff;
+}
+/* line 58, ../sass/partials/_form.scss */
 .form__textarea {
   width: 100%;
 }
-/* line 49, ../sass/partials/_form.scss */
+/* line 62, ../sass/partials/_form.scss */
 .form__label {
   -moz-transition: color 0.4s ease 0s;
   -o-transition: color 0.4s ease 0s;
@@ -1385,7 +1389,7 @@ html, body {
   padding-left: 15px;
   margin-bottom: 10px;
 }
-/* line 61, ../sass/partials/_form.scss */
+/* line 74, ../sass/partials/_form.scss */
 .form__input {
   -moz-transition: border 0.4s ease 0s;
   -o-transition: border 0.4s ease 0s;
@@ -1399,14 +1403,14 @@ html, body {
   width: 100%;
   background-color: transparent;
   padding: 9px 15px;
-  border: 2px solid #005eff;
+  border: 2px solid #d7d7dc;
 }
 
 /*
  * focused
  * —————————————————————————————————————————————————————————————————
 */
-/* line 84, ../sass/partials/_form.scss */
+/* line 97, ../sass/partials/_form.scss */
 .form__control.focused .form__input {
   border-color: #ffffff;
 }
@@ -1415,25 +1419,25 @@ html, body {
  * select
  * —————————————————————————————————————————————————————————————————
 */
-/* line 96, ../sass/partials/_form.scss */
+/* line 109, ../sass/partials/_form.scss */
 .select-hide {
   display: none;
   visibility: hidden;
   padding-right: 10px;
 }
 
-/* line 102, ../sass/partials/_form.scss */
+/* line 115, ../sass/partials/_form.scss */
 .form__select {
   cursor: pointer;
   position: relative;
 }
-/* line 106, ../sass/partials/_form.scss */
+/* line 119, ../sass/partials/_form.scss */
 .form__select .form__input {
   cursor: pointer;
   line-height: 1.5;
   /*position text same place as other inputs*/
 }
-/* line 111, ../sass/partials/_form.scss */
+/* line 124, ../sass/partials/_form.scss */
 .form__select:after {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -1458,7 +1462,7 @@ html, body {
   font-size: 1.2rem;
   pointer-events: none;
 }
-/* line 121, ../sass/partials/_form.scss */
+/* line 134, ../sass/partials/_form.scss */
 .form__select .form__dropdown {
   top: -webkit-calc(100% + 10px);
   top: calc(100% + 10px);
@@ -1478,7 +1482,7 @@ html, body {
   background-color: #ffffff;
   border: 2px solid #005eff;
 }
-/* line 135, ../sass/partials/_form.scss */
+/* line 148, ../sass/partials/_form.scss */
 .form__select .form__dropdown li {
   -moz-transition: color 0.4s ease 0s;
   -o-transition: color 0.4s ease 0s;
@@ -1488,23 +1492,23 @@ html, body {
   padding: 9px 15px;
   cursor: pointer;
 }
-/* line 141, ../sass/partials/_form.scss */
+/* line 154, ../sass/partials/_form.scss */
 .form__select .form__dropdown li:nth-child(1) {
   display: none;
 }
-/* line 145, ../sass/partials/_form.scss */
+/* line 158, ../sass/partials/_form.scss */
 .form__select .form__dropdown li:nth-child(2) {
   border-top: 0;
 }
-/* line 149, ../sass/partials/_form.scss */
+/* line 162, ../sass/partials/_form.scss */
 .form__select .form__dropdown li + li {
   border-top: 1px solid #f0f0f0;
 }
-/* line 153, ../sass/partials/_form.scss */
+/* line 166, ../sass/partials/_form.scss */
 .form__select .form__dropdown li:hover {
   color: #005eff;
 }
-/* line 157, ../sass/partials/_form.scss */
+/* line 170, ../sass/partials/_form.scss */
 .form__select .form__dropdown li[rel="hide"] {
   display: none;
 }
@@ -1513,28 +1517,28 @@ html, body {
  * switch
  * —————————————————————————————————————————————————————————————————
 */
-/* line 173, ../sass/partials/_form.scss */
+/* line 186, ../sass/partials/_form.scss */
 .switch__label {
   position: relative;
   display: inline-block;
   width: 40px;
 }
-/* line 179, ../sass/partials/_form.scss */
+/* line 192, ../sass/partials/_form.scss */
 .switch__input {
   display: none;
 }
-/* line 181, ../sass/partials/_form.scss */
+/* line 194, ../sass/partials/_form.scss */
 .switch__input:checked + .switch__slider {
   background-color: #005eff;
 }
-/* line 184, ../sass/partials/_form.scss */
+/* line 197, ../sass/partials/_form.scss */
 .switch__input:checked + .switch__slider:before {
   -moz-transform: translateX(22px);
   -ms-transform: translateX(22px);
   -webkit-transform: translateX(22px);
   transform: translateX(22px);
 }
-/* line 189, ../sass/partials/_form.scss */
+/* line 202, ../sass/partials/_form.scss */
 .switch__slider {
   position: absolute;
   cursor: pointer;
@@ -1547,7 +1551,7 @@ html, body {
   -webkit-transition: background 0.4s ease 0s;
   transition: background 0.4s ease 0s;
 }
-/* line 197, ../sass/partials/_form.scss */
+/* line 210, ../sass/partials/_form.scss */
 .switch__slider:before {
   background-color: white;
   content: "";
@@ -1567,13 +1571,13 @@ html, body {
   -webkit-transition: -webkit-transform 0.4s ease 0s;
   transition: -webkit-transform 0.4s ease 0s;
 }
-/* line 205, ../sass/partials/_form.scss */
+/* line 218, ../sass/partials/_form.scss */
 .switch__slider--round {
   -moz-border-radius: 34px;
   -webkit-border-radius: 34px;
   border-radius: 34px;
 }
-/* line 207, ../sass/partials/_form.scss */
+/* line 220, ../sass/partials/_form.scss */
 .switch__slider--round:before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1584,21 +1588,21 @@ html, body {
  * checkbox & radio
  * —————————————————————————————————————————————————————————————————
 */
-/* line 222, ../sass/partials/_form.scss */
+/* line 235, ../sass/partials/_form.scss */
 .form__checkbox .form__input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-/* line 226, ../sass/partials/_form.scss */
+/* line 239, ../sass/partials/_form.scss */
 .form__checkbox .form__input:checked + .form__label:before {
   border-color: #005eff;
 }
-/* line 229, ../sass/partials/_form.scss */
+/* line 242, ../sass/partials/_form.scss */
 .form__checkbox .form__input:checked + .form__label:before {
   border-width: 10px;
 }
-/* line 234, ../sass/partials/_form.scss */
+/* line 247, ../sass/partials/_form.scss */
 .form__checkbox .form__label {
   margin-bottom: 0;
   position: relative;
@@ -1612,7 +1616,7 @@ html, body {
   overflow: visible;
   color: inherit !important;
 }
-/* line 246, ../sass/partials/_form.scss */
+/* line 259, ../sass/partials/_form.scss */
 .form__checkbox .form__label:before {
   display: inline-block;
   background-color: transparent;
@@ -1633,7 +1637,7 @@ html, body {
   -webkit-transition-delay: 0s;
   transition: border 0.3s ease 0s;
 }
-/* line 253, ../sass/partials/_form.scss */
+/* line 266, ../sass/partials/_form.scss */
 .form__checkbox .form__label:after {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -1649,21 +1653,21 @@ html, body {
   font-size: 0.5rem;
 }
 
-/* line 262, ../sass/partials/_form.scss */
+/* line 275, ../sass/partials/_form.scss */
 .form__radio .form__input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-/* line 266, ../sass/partials/_form.scss */
+/* line 279, ../sass/partials/_form.scss */
 .form__radio .form__input:checked + .form__label:before {
   border-color: #005eff;
 }
-/* line 269, ../sass/partials/_form.scss */
+/* line 282, ../sass/partials/_form.scss */
 .form__radio .form__input:checked + .form__label:before {
   border-width: 7px;
 }
-/* line 274, ../sass/partials/_form.scss */
+/* line 287, ../sass/partials/_form.scss */
 .form__radio .form__label {
   margin-bottom: 0;
   position: relative;
@@ -1677,7 +1681,7 @@ html, body {
   overflow: visible;
   color: inherit !important;
 }
-/* line 286, ../sass/partials/_form.scss */
+/* line 299, ../sass/partials/_form.scss */
 .form__radio .form__label:before {
   display: inline-block;
   background-color: transparent;
@@ -1698,7 +1702,7 @@ html, body {
   -webkit-transition-delay: 0s;
   transition: border 0.3s ease 0s;
 }
-/* line 293, ../sass/partials/_form.scss */
+/* line 306, ../sass/partials/_form.scss */
 .form__radio .form__label:before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;

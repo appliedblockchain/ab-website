@@ -430,10 +430,15 @@ select:-webkit-autofill:focus {
 */
 
 .footer {
-	padding: $integer*6 $col;
+	padding: $integer*6 $col $integer*2;
+	font-weight: $font-regular;
 
 	> * {
 		@include display-flex();
+	}
+
+	&__item {
+		margin-bottom: $integer*4;
 	}
 
 	&__title {
@@ -445,6 +450,15 @@ select:-webkit-autofill:focus {
 		p + p {
 			margin-top: $integer/2;
 		}
+
+		.body--bold {
+			margin-top: $integer;
+		}
+	}
+
+	&__button {
+		display: block !important;
+		margin-left: 0 !important;
 	}
 }
 

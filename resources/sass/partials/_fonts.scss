@@ -96,6 +96,11 @@ html, body {
 	letter-spacing: 0.05rem;
 	line-height: 1;
 
+	&--text {
+		font-weight: $font-regular;
+		letter-spacing: 0;
+	}
+
 	&.button--large {
 		@include fontSize(1.5, $font-black, normal);
 		letter-spacing: 0.08rem;

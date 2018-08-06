@@ -1,46 +1,61 @@
     <footer class="footer section section--left section--dark">
 
         <div class="footer__top row">
-            <img src="" alt="" class="footer__logo logo col--5">
-            <div class="footer__social col--4">
-                <h2 class="footer__title subtitle">Get in touch</h2>
-               <a href="{{site.twitter}}" target="_blank" class="button button--icon button--highlight button--small">
-                    <i class="fab fa-twitter"></i>
+            <img src="" alt="" class="footer__item logo col--5">
+            <div class="footer__item col--4">
+                <div class="footer__title">
+                    <h2 class="subtitle">Get in touch</h2>
+                    <p>Follow us on social media</p>
+                </div>
+                <a href="{{site.twitter}}" title="Twitter" target="_new" class="button button--icon button--highlight button--animate fab fa-twitter">
+                    <i class="button__inner fab fa-twitter"></i>
                 </a>
-                <a href="{{site.medium}}" target="_blank" class="button button--icon button--highlight button--small">
-                    <i class="fab fa-medium-m"></i>
+                <a href="{{site.medium}}" title="Medium" target="_new" class="button button--icon button--highlight button--animate fab fa-medium-m">
+                    <i class="button__inner fab fa-medium-m"></i>
                 </a>              
-                <a href="{{site.github}}" target="_blank" class="button button--icon button--highlight button--small">
-                    <i class="fab fa-github"></i>
+                <a href="{{site.github}}" title="Github" target="_new" class="button button--icon button--highlight button--animate fab fa-github">
+                    <i class="button__inner fab fa-github"></i>
                 </a>              
-                <a href="{{site.linkedin}}" target="_blank" class="button button--icon button--highlight button--small">
-                    <i class="fab fa-linkedin-in"></i>
+                <a href="{{site.linkedin}}" title="Linkedin" target="_blank" class="button button--icon button--highlight button--animate fab fa-linkedin-in">
+                    <i class="button__inner fab fa-linkedin-in"></i>
                 </a>              
             </div>
-            <div class="footer__newsletter newsletter col--5">
+            <div class="footer__item newsletter col--5">
                 <h2 class="footer__title subtitle">Sign up for  our newsletter</h2>
             </div>
         </div>
 
         <div class="footer__bottom row">
-            <div class="footer__adress col--5">
+            <div class="footer__item footer__adress col--5">
                 <h2 class="footer__title subtitle">Adress</h2>
-                <p>One Canada Square<br>Canary Wharf<br>London E14 5AB</p>
+                <p>Level39<br>One Canada Square<br>Canary Wharf<br>London E14 5AB</p>
                 <p>info@appliedblockchain.com</p>
                 <p class="body--bold">© Copyright 2018 Applied Blockchain Ltd.<br>All rights reserved.<p>
                 <p>Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276. Privacy policy.</p>
             </div>
-            <div class="footer__link  col--3">
+            <div class="footer__item  col--3">
                 <h2 class="footer__title subtitle">External links</h2>
-
+                <a href="https://fern.network/" target="_new" class="footer__button button button--text">Fern</a>
+                <a href="https://github.com/appliedblockchain/cobalt" target="_new" class="footer__button button button--text">Cobalt</a>
+                <a href="https://github.com/appliedblockchain/cobalt" target="_new" class="footer__button button button--text">Mantle</a>
             </div>
-            <div class="footer__link  col--3">
+            <div class="footer__item  col--3">
                 <h2 class="footer__title subtitle">Internal links</h2>
-
+                <a href="{{ site.baseurl }}/" class="footer__button button button--text">Home</a>
+                <a href="{{ site.baseurl }}/services" class="footer__button button button--text">Services</a>
+                <a href="{{ site.baseurl }}/case-studies" class="footer__button button button--text">Case studies</a>
+                <a href="{{ site.baseurl }}/products" class="footer__button button button--text">Products</a>
+                <a href="{{ site.baseurl }}/about" class="footer__button button button--text">About</a>
+                <a href="{{ site.baseurl }}/media" class="footer__button button button--text">Media</a>
+                <a href="{{ site.baseurl }}/resources" class="footer__button button button--text">Resources</a>
+                <a href="{{ site.baseurl }}/join" class="footer__button button button--text">Join</a>
+                <a href="{{ site.baseurl }}/contact" class="footer__button button button--text">Contact</a>
             </div>
-            <div class="footer__link  col--3">
+            <div class="footer__item  col--3">
                 <h2 class="footer__title subtitle">Organisation</h2>
-
+                <a href="{{ site.baseurl }}/faq" class="footer__button button button--text">FAQ</a>
+                <a href="{{ site.baseurl }}/privacy-policy" class="footer__button button button--text">Privacy policy</a>
+                <a href="{{ site.baseurl }}/press-kit" class="footer__button button button--text">Press kit</a>
             </div>
         </div>
 

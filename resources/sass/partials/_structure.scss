@@ -42,6 +42,8 @@ html, body {
 }
 
 .row {
+	@include display-flex();
+	@include flex-wrap(wrap);
 	margin: 0 (-$integer);
 	width: 100%;
 
@@ -57,37 +59,40 @@ html, body {
 }
 
 [class*="col--"] {
+	float: left;
+	position: relative;
 	padding: 0 $integer;
+	width: 100%;
 }
 
-@for $i from 1 through 14 {
+@for $i from 1 through 15 {
 	.col--#{$i} 				{ width: $i*$col-inner; }
 	.coloffset--#{$i} 			{ margin-left: $i*$col-inner; }
 }
 
 @include responsive(min-width, $break-phones-min) {
-	@for $i from 1 through 14 {
+	@for $i from 1 through 15 {
 		.col--sm#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--sm#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-tablets-min) {
-	@for $i from 1 through 14 {
+	@for $i from 1 through 15 {
 		.col--md#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--md#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-desktop-min) {
-	@for $i from 1 through 14 {
+	@for $i from 1 through 15 {
 		.col--lg#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--lg#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-large-desktop-min) {
-	@for $i from 1 through 14 {
+	@for $i from 1 through 15 {
 		.col--xl#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--xl#{$i} 	{ margin-left: $i*$col-inner; }
 	}
@@ -440,6 +445,11 @@ select:-webkit-autofill:focus {
 
 	&__item {
 		margin-bottom: $integer*3;
+	}
+
+	&__logo {
+		padding-right: $integer*4;
+		max-width: $integer*24;
 	}
 
 	&__title {

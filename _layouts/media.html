@@ -1,33 +1,52 @@
 {% include header.html %}
 
-    <div class="button-group filter-button-group">
-        <a class="button active" data-filter="*">All</a>
-        {% for category in site.categories %}
-            <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
-        {% endfor %}
-    </div>
+    <div class="page">
 
-    <!-- <div class="button-group filter-button-group">
-        <a class="button active" data-filter="*">All</a>
-        <a class="button active" data-filter=".2018">2018</a>
-        <a class="button active" data-filter=".2017">2017</a>
-    </div> -->
-    
-    {% if site.posts.size > 0 %}    
-        <div class="grid section">
-            {% for post in site.posts %}
-                <div class="block element-item {{ post.category }} {{ post.date | date: "%Y" }}">
-                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                    <p>{{ post.category-name }}</p>
-                    <h2>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                    <p>{{ post.excerpt | truncate: 150, "…" }}</p>
+        <!-- edit component in _includes/components/page-header.html -->
+        {% include components/page-header.html
+            background-color=''
+            title='Media'
+        %}
+        
+        <!-- <div class="button-group filter-button-group">
+            <a class="button active" data-filter="*">All</a>
+            <a class="button active" data-filter=".2018">2018</a>
+            <a class="button active" data-filter=".2017">2017</a>
+        </div> -->
+        
+        <section class="section section--alt">
+
+            <div class="section__content blog">
+                <div class="button-group section__filter filter-button-group">
+                    <a class="filter__button button button--primary active" data-filter="*">
+                        <p class="button__inner">All</p>
+                    </a>
+                    {% for category in site.categories %}
+                        <a class="filter__button button" data-filter=".{{ category | first }}">
+                            <p class="button__inner">{{ category | first }}</p>
+                        </a>
+                    {% endfor %}
                 </div>
-            {% endfor %}
-        </div>
-    {% else %}
-        <p>There are no posts available right. Come back soon!</p>
-    {% endif %}
+                <div class="grid blog__content">
+                    {% if site.posts.size > 0 %}
+                        {% for post in site.posts %}
+                            <div class="block element-item {{ post.category }} {{ post.date | date: "%Y" }}">
+                                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                                <p>{{ post.category-name }}</p>
+                                <h2>
+                                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                </h2>
+                                <p>{{ post.excerpt | truncate: 150, "…" }}</p>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <p>There are no posts available right. Come back soon!</p>
+                    {% endif %}
+                </div>
+            </div>
+
+        </section>
+
+    </div>
 
 {% include footer.html %}

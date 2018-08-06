@@ -10,7 +10,7 @@
  * z-index
  * hover classes
  * section
- * block
+ * containers
  * header
  * footer
  * —————————————————————————————————————————————————————————————————
@@ -301,7 +301,7 @@ select:-webkit-autofill:focus {
 
 
 /*
- * block
+ * containers
  * —————————————————————————————————————————————————————————————————
 */
 
@@ -311,6 +311,20 @@ select:-webkit-autofill:focus {
 	border-radius: $integer;
 	padding: $integer*2;
 	color: $black;
+}
+
+.filter {
+
+	&__button {
+
+		&:hover {
+			background-color: $primary;
+
+			.button__inner {
+				color: $white;
+			}
+		}		
+	}
 }
 
 

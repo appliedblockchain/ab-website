@@ -22,6 +22,7 @@
 */
 
 .button {
+	@include transition(background-color $transition);
 	@include border-radius(100px);
 	display: inline-block;
 	cursor: pointer;
@@ -33,7 +34,7 @@
 	&__inner {
 		@include transform-style(preserve-3d);
 		@include backface-visibility (hidden);
-		@include transition (color 0.4s ease 0s, transform 0.4s ease 0s);
+		@include transition (color $transition, transform $transition);
 		display: block;
 		text-transform: uppercase;
 	}

@@ -13,6 +13,7 @@
  * containers
  * header
  * footer
+ * logos
  * —————————————————————————————————————————————————————————————————
 */
 
@@ -430,7 +431,7 @@ select:-webkit-autofill:focus {
 */
 
 .footer {
-	padding: $integer*6 $col $integer*2;
+	padding: $integer*6 $col $integer*3;
 	font-weight: $font-regular;
 
 	> * {
@@ -438,7 +439,7 @@ select:-webkit-autofill:focus {
 	}
 
 	&__item {
-		margin-bottom: $integer*4;
+		margin-bottom: $integer*3;
 	}
 
 	&__title {
@@ -462,3 +463,32 @@ select:-webkit-autofill:focus {
 	}
 }
 
+
+
+/*
+ * logos
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.logo {
+	
+	&-footer {
+		width: 100%;
+		height: auto;
+
+		&-icon {
+
+			&-bg {
+				fill: $primary;
+			}
+
+			&-color {
+				fill: $white;
+			}
+		}
+
+		&-name {
+			fill: $white;
+		}
+	}
+}

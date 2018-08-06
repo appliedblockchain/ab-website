@@ -1,18 +1,44 @@
 {% include header.html %}
 
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        background-color='dark'
+        title='Case studies'
+    %}
+
     {% if site.projects.size > 0 %}
-        <ul>
-            {% for project in site.projects %}
-                <li>
+
+        <section class="section section--alt section--dark">
+
+            <div class="section__content portfolio">
+                <div class="portfolio__feature block">
+                    {% for project in site.projects.appii %}
+                        <a href="{{ project.url }}">
+                            <h2>{{ project.title }}</h2>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="section section--alt portfolio">
+            
+            <div class="portfolio__grid">
+                {% for project in site.projects %}
                     <a href="{{ project.url }}">
                         <h2>{{ project.title }}</h2>
                     </a>
-                </li>
-                <br>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </div>
+
+        </section>
+
     {% else %}
+
         <p>There are no project available. Come back soon!</p>
+
     {% endif %}
+
 
 {% include footer.html %}

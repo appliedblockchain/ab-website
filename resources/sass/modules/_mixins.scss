@@ -117,8 +117,8 @@
 
 @mixin fontAwesome($fa, $top, $right, $bottom, $left, $color) {
 	content: $fa;
-	font-family: FontAwesome;
-	font-weight: normal;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	font-style: normal;
 	text-decoration: none;
 	color: $color;

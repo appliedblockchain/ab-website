@@ -25,6 +25,7 @@
 	width: 100%;
 	padding-left: $integer*1.5 !important;
 	padding-right: $integer*1.5 !important;
+	padding-bottom: $integer !important;
 	
 	&__content {
 		@include display-flex();
@@ -32,7 +33,7 @@
 	}
 
 	&__group {
-		@include transition(border 0.4s ease 0s);
+		@include transition(border $transition);
 		position: relative;
 		width: 100%;
 		margin-bottom: $integer;
@@ -46,7 +47,7 @@
 	}
 
 	&__label {
-		@include transition(color 0.4s ease 0s);
+		@include transition(color $transition);
 		@include textOverflow(ellipsis);
 		cursor: pointer;
 		display: block;
@@ -58,13 +59,13 @@
 	}
 
 	&__input {
-    	@include transition(border 0.4s ease 0s);
+    	@include transition(border $transition);
 		@include textOverflow(ellipsis);
 		@include border-radius(20px !important);
 		width: 100%;
 		background-color: transparent;
 		padding: 9px $integer*0.75;
-		border: 2px solid blue;
+		border: 2px solid $primary;
 	}
 
 	&__button {
@@ -101,49 +102,58 @@
 .form__select {
 	cursor: pointer;
 	position: relative;
+
 	.form__input {
 		cursor: pointer;
 		line-height: 1.5; /*position text same place as other inputs*/
 	}
+
 	&:after {
-		@include fontAwesome("\f078", 0, 0, auto, auto, $darkgrey);
-		@include transition(color 0.4s ease 0s);
-		font-size: 1rem;
+		@include fontAwesome("\f078", 0, $integer*0.75, auto, auto, $primary);
+		@include transition(color $transition);
+		@include display-flex();
+		@include align-items(center);
+		height: 100%;
+		font-size: 1.2rem;
+		pointer-events: none;
 	}
+
 	.form__dropdown {
-		@include calc(top, '100% + 14px');
-		@include box-shadow(0px $integer*1.5 $integer rgba($black ,0.05));
+		@include calc(top, '100% +' $integer/2);
+		@include box-shadow(0px $integer*1.5 $integer rgba($black ,0.2));
+		@include border-radius($integer);
 		display: none;
 		position: absolute;
 		right: 0;
 		left: 0;
-		max-height: 150px;
+		max-height: $integer*10;
 		overflow: scroll;
-		border: 1px solid $lightgrey;
-		border-top-width: 0;
-		-webkit-border-bottom-right-radius: 0.2rem;
-				border-bottom-right-radius: 0.2rem;
-		-webkit-border-bottom-left-radius: 0.2rem;
-				border-bottom-left-radius: 0.2rem;
 		z-index: 2;
 		background-color: $white;
+		border: 2px solid $primary;
+
 		li {
-			@include transition(color 0.4s ease 0s);
+			@include transition(color $transition);
 			margin: 0;
-			padding: $integer*2;
+			padding: 9px $integer*0.75;
 			cursor: pointer;
+
 			&:nth-child(1) {
 				display: none;
 			}
+
 			&:nth-child(2) {
 				border-top: 0;
 			}
+
 			& + li {
 				border-top: 1px solid $lightgrey;
 			}
+
 			&:hover {
 				color: $primary;
 			}
+
 			&[rel="hide"] {
 				display: none;
 			}
@@ -183,12 +193,12 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		@include transition(background 0.4s ease 0s);
+		@include transition(background $transition);
 		&:before {
 			background-color: white;
 			@include pseudo-element('', auto, auto, 3px, 3px, 11px, 11px);
-			@include transition(transform 0.4s ease 0s);
-			@include transition(-webkit-transform 0.4s ease 0s);
+			@include transition(transform $transition);
+			@include transition(-webkit-transform $transition);
 		}
 	}
 

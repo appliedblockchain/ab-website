@@ -8,6 +8,7 @@
  * —————————————————————————————————————————————————————————————————
  * general
  * focused
+ * select
  * switch
  * checkbox & radio
  * —————————————————————————————————————————————————————————————————
@@ -21,23 +22,23 @@
 */
 
 .form {
-	margin-bottom: $integer;
-
-	&__group {
+	width: 100%;
+	padding-left: $integer*1.5 !important;
+	padding-right: $integer*1.5 !important;
+	
+	&__content {
 		@include display-flex();
-		@include justify-content(space-between);
-		@include responsive(max-width, $break-tablets-max) {
-			@include flex-direction(column);
-			@include align-items(flex-end);
-		}
+		@include flex-wrap(wrap);
 	}
 
-	&__control {
-		position: relative;
+	&__group {
 		@include transition(border 0.4s ease 0s);
-		@include responsive(max-width, $break-tablets-max) {
-			width: 100%;
-		}
+		position: relative;
+		width: 100%;
+		margin-bottom: $integer;
+		text-align: left;
+		padding-left: $integer/2 !important;
+		padding-right: $integer/2 !important;
 	}
 
 	&__textarea {
@@ -45,23 +46,28 @@
 	}
 
 	&__label {
+		@include transition(color 0.4s ease 0s);
+		@include textOverflow(ellipsis);
 		cursor: pointer;
 		display: block;
 		overflow: hidden;
 		white-space: nowrap;
 		position: relative;
-		@include transition(color 0.4s ease 0s);
-		@include textOverflow(ellipsis);
+		padding-left: $integer*0.75;
+		margin-bottom: $integer/2;
 	}
 
 	&__input {
-		width: 100%;
-    	background-color: transparent;
     	@include transition(border 0.4s ease 0s);
 		@include textOverflow(ellipsis);
+		@include border-radius(20px !important);
+		width: 100%;
+		background-color: transparent;
+		padding: 9px $integer*0.75;
+		border: 2px solid blue;
 	}
 
-	&__btn {
+	&__button {
 	}
 }
 
@@ -76,6 +82,72 @@
 
 	.form__input {
 		border-color: $white
+	}
+}
+
+
+
+/*
+ * select
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.select-hide {
+	display: none;
+	visibility: hidden;
+	padding-right: 10px;
+}
+
+.form__select {
+	cursor: pointer;
+	position: relative;
+	.form__input {
+		cursor: pointer;
+		line-height: 1.5; /*position text same place as other inputs*/
+	}
+	&:after {
+		@include fontAwesome("\f078", 0, 0, auto, auto, $darkgrey);
+		@include transition(color 0.4s ease 0s);
+		font-size: 1rem;
+	}
+	.form__dropdown {
+		@include calc(top, '100% + 14px');
+		@include box-shadow(0px $integer*1.5 $integer rgba($black ,0.05));
+		display: none;
+		position: absolute;
+		right: 0;
+		left: 0;
+		max-height: 150px;
+		overflow: scroll;
+		border: 1px solid $lightgrey;
+		border-top-width: 0;
+		-webkit-border-bottom-right-radius: 0.2rem;
+				border-bottom-right-radius: 0.2rem;
+		-webkit-border-bottom-left-radius: 0.2rem;
+				border-bottom-left-radius: 0.2rem;
+		z-index: 2;
+		background-color: $white;
+		li {
+			@include transition(color 0.4s ease 0s);
+			margin: 0;
+			padding: $integer*2;
+			cursor: pointer;
+			&:nth-child(1) {
+				display: none;
+			}
+			&:nth-child(2) {
+				border-top: 0;
+			}
+			& + li {
+				border-top: 1px solid $lightgrey;
+			}
+			&:hover {
+				color: $primary;
+			}
+			&[rel="hide"] {
+				display: none;
+			}
+		}
 	}
 }
 

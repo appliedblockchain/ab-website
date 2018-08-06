@@ -7,6 +7,8 @@
  * FONTS
  * —————————————————————————————————————————————————————————————————
  * general
+ * buttons
+ * form
  * —————————————————————————————————————————————————————————————————
 */
 
@@ -69,11 +71,24 @@ html, body {
 	}
 }
 
-.label {
-	@include fontSize(0.8, $font-black, normal);
+/*col text*/
+
+@for $i from 1 through 4 {
+	.col-text--#{$i} {
+		@include column-count($i);
+		@include column-gap(2rem);
+		@include responsive(max-width, $break-tablets-max) {
+			@include column-count(1);
+		}
+	}
 }
 
-/*buttons*/
+
+
+/* 
+ * buttons
+ * —————————————————————————————————————————————————————————————————
+*/
 
 .button {
 	@include fontSize(1, $font-black, normal);
@@ -109,14 +124,24 @@ html, body {
 	}
 }
 
-/*col text*/
 
-@for $i from 1 through 4 {
-	.col-text--#{$i} {
-		@include column-count($i);
-		@include column-gap(2rem);
-		@include responsive(max-width, $break-tablets-max) {
-			@include column-count(1);
-		}
+
+/* 
+ * form
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.form__label, .form__input {
+	font-family: $font;
+}
+
+.label, .form__label {
+	@include fontSize(0.8, $font-black, normal);
+}
+
+.form {
+
+	&__input {
+		@include fontSize(1, $font-regular, normal);
 	}
 }

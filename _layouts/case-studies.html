@@ -29,13 +29,16 @@
                     <a href="{{ project.url }}" class="portfolio__item" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/case-studies/{{ project.slug }}.jpg);">
                         <div class="portfolio__content">
                             <p class="portfolio__comment comment">{{ project.industry }}</p>
-                            <p class="portfolio__title subtitle">{{ project.title }}: {{ project.subtitle }}</p>
-                            <p class="portfolio__desc body--large">
+                            <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
+                            <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>
+                            <p class="portfolio__desc">
                                 <span>{{ project.description }}</span>
                             </p>
-                            <span href="" class="button button--highlight button--small">
-                                <p class="button__inner">Read more</p>
-                            </span>
+                            <div class="portfolio__button">
+                                <div href="" class="button button--secondary button--small button--animate fa fa-eye">
+                                    <p class="button__inner">Read more</p>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 {% endfor %}

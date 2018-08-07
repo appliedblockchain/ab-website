@@ -20,10 +20,10 @@
         <div class="section__content tab tab--vertical jobs">
             <div class="section__filter tab__nav">
                 <a href="#london" class="nav__button nav__button--active button button--primary-darken button--animate fa fa-map-marker-alt">
-                    <h2 class="button__inner">London</h2>
+                    <p class="button__inner">London</p>
                 </a>
                 <a href="#porto" class="nav__button nav__button--active button button--animate fa fa-map-marker-alt">
-                    <h2 class="button__inner">Porto</h2>
+                    <p class="button__inner">Porto</p>
                 </a>
             </div>
             <div class="tab__content block accordion jobs__content">
@@ -32,7 +32,7 @@
                     {% for job in site.data.jobs.london %}
                         <div class="accordion__item">
                             <div class="accordion__header">
-                                <p class="accordion__title body--bold">{{ job.title }}</p>
+                                <h2 class="accordion__title body--bold">{{ job.title }}</h2>
                                 <p>{{ job.type }}</p>
                                 <div class="accordion__actions">
                                     <span class="button button--primary button--small button--animate fa fa-edit">
@@ -44,6 +44,7 @@
                                 </div>
                             </div>
                             <div class="accordion__content">
+                                
 
                                 {{ job.description }}
                             </div>
@@ -55,7 +56,7 @@
                     {% for job in site.data.jobs.porto %}
                         <div class="accordion__item">
                             <div class="accordion__header">
-                                <p class="accordion__title body--bold">{{ job.title }}</p>
+                                <h2 class="accordion__title body--bold">{{ job.title }}</h2>
                                 <p>{{ job.type }}</p>
                                 <div class="accordion__actions">
                                     <span class="button button--primary button--small button--animate fa fa-edit">

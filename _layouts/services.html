@@ -107,27 +107,13 @@
         <div class="section__content projects">
             <!-- edit data in _data/projects.html -->
             {% for item in site.data.projects %}
-                <div class="projects__item tooltip tooltip--click" onclick="tooltip{{ item.url }}()">
+                <div class="projects__item tooltip tooltip--click">
                     <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.name }}" class="block projects__image hover-grayscale tooltip__trigger">
-                    <p class="tooltip__inner tooltip--top" id="js-tooltip-inner-{{ item.url }}">{{ item.name }}</p>
+                    <p class="tooltip__inner">{{ item.name }}</p>
                 </div>
             {% endfor %}
         </div>
 
     </section>
 
-    <!-- CLICK FUNCTION -->
-    <script>
-
-        {% for item in site.data.projects %}
-            function tooltip{{ item.url }}() {
-                var popup = document.getElementById("js-tooltip-inner-{{ item.url }}");
-                popup.classList.toggle("show");
-            }
-        {% endfor %}            
-    
-    </script>
-    <!-- / CLICK FUNCTION -->
-    
-    
 {% include footer.html %}

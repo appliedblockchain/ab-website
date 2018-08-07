@@ -8,6 +8,7 @@
  * —————————————————————————————————————————————————————————————————
  * general
  * focused
+ * select
  * switch
  * checkbox & radio
  * —————————————————————————————————————————————————————————————————
@@ -21,22 +22,36 @@
 */
 
 .form {
-	margin-bottom: $integer;
-
-	&__group {
+	width: 100%;
+	padding-left: $integer*1.5 !important;
+	padding-right: $integer*1.5 !important;
+	padding-bottom: $integer !important;
+	
+	&__content {
 		@include display-flex();
-		@include justify-content(space-between);
-		@include responsive(max-width, $break-tablets-max) {
-			@include flex-direction(column);
-			@include align-items(flex-end);
-		}
+		@include flex-wrap(wrap);
 	}
 
-	&__control {
+	&__group {
 		position: relative;
-		@include transition(border 0.4s ease 0s);
-		@include responsive(max-width, $break-tablets-max) {
-			width: 100%;
+		width: 100%;
+		margin-bottom: $integer;
+		text-align: left;
+		padding-left: $integer/2 !important;
+		padding-right: $integer/2 !important;
+
+		&.focused {
+
+			.form {
+
+				&__label {
+					color: $primary;
+				}
+
+				&__input {
+					border-color: $primary;
+				}
+			}
 		}
 	}
 
@@ -45,23 +60,28 @@
 	}
 
 	&__label {
+		@include transition(color $transition);
+		@include textOverflow(ellipsis);
 		cursor: pointer;
 		display: block;
 		overflow: hidden;
 		white-space: nowrap;
 		position: relative;
-		@include transition(color 0.4s ease 0s);
-		@include textOverflow(ellipsis);
+		padding-left: $integer*0.75;
+		margin-bottom: $integer/2;
 	}
 
 	&__input {
-		width: 100%;
-    	background-color: transparent;
-    	@include transition(border 0.4s ease 0s);
+    	@include transition(border $transition);
 		@include textOverflow(ellipsis);
+		@include border-radius(20px !important);
+		width: 100%;
+		background-color: transparent;
+		padding: 9px $integer*0.75;
+		border: 2px solid $mediumgrey;
 	}
 
-	&__btn {
+	&__button {
 	}
 }
 
@@ -76,6 +96,81 @@
 
 	.form__input {
 		border-color: $white
+	}
+}
+
+
+
+/*
+ * select
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.select-hide {
+	display: none;
+	visibility: hidden;
+	padding-right: 10px;
+}
+
+.form__select {
+	cursor: pointer;
+	position: relative;
+
+	.form__input {
+		cursor: pointer;
+		line-height: 1.5; /*position text same place as other inputs*/
+	}
+
+	&:after {
+		@include fontAwesome("\f078", 0, $integer*0.75, auto, auto, $primary);
+		@include transition(color $transition);
+		@include display-flex();
+		@include align-items(center);
+		height: 100%;
+		font-size: 1.2rem;
+		pointer-events: none;
+	}
+
+	.form__dropdown {
+		@include calc(top, '100% +' $integer/2);
+		@include box-shadow(0px $integer*1.5 $integer rgba($black ,0.2));
+		@include border-radius($integer);
+		display: none;
+		position: absolute;
+		right: 0;
+		left: 0;
+		max-height: $integer*10;
+		overflow: scroll;
+		z-index: 2;
+		background-color: $white;
+		border: 2px solid $primary;
+
+		li {
+			@include transition(color $transition);
+			margin: 0;
+			padding: 9px $integer*0.75;
+			cursor: pointer;
+
+			&:nth-child(1) {
+				display: none;
+			}
+
+			&:nth-child(2) {
+				border-top: 0;
+			}
+
+			& + li {
+				border-top: 1px solid $lightgrey;
+			}
+
+			&:hover {
+				color: $primary;
+			}
+
+			&[rel="hide"] {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -111,12 +206,12 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		@include transition(background 0.4s ease 0s);
+		@include transition(background $transition);
 		&:before {
 			background-color: white;
 			@include pseudo-element('', auto, auto, 3px, 3px, 11px, 11px);
-			@include transition(transform 0.4s ease 0s);
-			@include transition(-webkit-transform 0.4s ease 0s);
+			@include transition(transform $transition);
+			@include transition(-webkit-transform $transition);
 		}
 	}
 

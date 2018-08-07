@@ -11,6 +11,7 @@
  * hover classes
  * section
  * containers
+ * logos
  * header
  * footer
  * —————————————————————————————————————————————————————————————————
@@ -23,6 +24,12 @@
 		display: none !important;
 	}
 }
+
+body.js-freeze {
+	overflow: hidden;
+}
+
+
 
 /*
  * general
@@ -41,6 +48,8 @@ html, body {
 }
 
 .row {
+	@include display-flex();
+	@include flex-wrap(wrap);
 	margin: 0 (-$integer);
 	width: 100%;
 
@@ -55,40 +64,78 @@ html, body {
 	@extend .row:after;
 }
 
-[class*="col--"] {
+[class*="col--"], [class*="colalt--"] {
+	float: left;
+	position: relative;
 	padding: 0 $integer;
+	width: 100%;
 }
 
-@for $i from 1 through 14 {
+@for $i from 1 through 12 {
 	.col--#{$i} 				{ width: $i*$col-inner; }
 	.coloffset--#{$i} 			{ margin-left: $i*$col-inner; }
 }
 
 @include responsive(min-width, $break-phones-min) {
-	@for $i from 1 through 14 {
+	@for $i from 1 through 12 {
 		.col--sm#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--sm#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-tablets-min) {
-	@for $i from 1 through 14 {
+	@for $i from 1 through 12 {
 		.col--md#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--md#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-desktop-min) {
-	@for $i from 1 through 14 {
+	@for $i from 1 through 12 {
 		.col--lg#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--lg#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
 @include responsive(min-width, $break-large-desktop-min) {
-	@for $i from 1 through 14 {
+	@for $i from 1 through 12 {
 		.col--xl#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--xl#{$i} 	{ margin-left: $i*$col-inner; }
+	}
+}
+
+/*footer*/
+
+@for $i from 1 through 15 {
+	.colalt--#{$i} 				{ width: $i*$col-footer; }
+	.colaltoffset--#{$i} 		{ margin-left: $i*$col-footer; }
+}
+
+@include responsive(min-width, $break-phones-min) {
+	@for $i from 1 through 15 {
+		.colalt--sm#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--sm#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-tablets-min) {
+	@for $i from 1 through 15 {
+		.colalt--md#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--md#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-desktop-min) {
+	@for $i from 1 through 15 {
+		.colalt--lg#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-large-desktop-min) {
+	@for $i from 1 through 15 {
+		.colalt--xl#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
@@ -335,20 +382,69 @@ select:-webkit-autofill:focus {
 
 
 /*
+ * logos
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.logo {
+	
+	&-header {
+		width: 100%;
+
+		&-bg {
+			@include transition(fill $transition);
+			fill: $primary;
+		}
+
+		&-color {
+			@include transition(fill $transition);
+			fill: $white;
+		}
+	}
+
+	&-footer {
+		width: 100%;
+		max-width: $integer*20;
+		height: auto;
+
+		&-icon {
+
+			&-bg {
+				fill: $primary;
+			}
+
+			&-color {
+				fill: $white;
+			}
+		}
+
+		&-name {
+			fill: $white;
+		}
+	}
+}
+
+
+
+/*
  * header
  * —————————————————————————————————————————————————————————————————
 */
 
 .header {
+	@include transition(height $transition, background-color $transition, box-shadow $transition, padding-top $transition, padding-bottom $transition);
+	overflow: hidden;
 	position: fixed;
+	height: $integer*8;
 	width: 100vw;
 	
 	&__bar {
+		@include transition(height $transition);
 		@include display-flex();
 		@include align-items(center);
 		@include justify-content(center);
-		@include transition(box-shadow $transition, background-color $transition, padding-top $transition, padding-bottom $transition);
-		padding: $integer*2 $col 0 $col;
+		height: $integer*8;
+		padding: 0 $col;
 	}
 
 	&__logo {
@@ -363,21 +459,15 @@ select:-webkit-autofill:focus {
 
 			.logo {
 
-				&__background {
-					@include transition(fill $transition);
+				&-header-bg {
 					fill: $white
 				}
 
-				&__icon {
-					@include transition(fill $transition);
+				&-header-color {
 					fill: $primary
 				}
 			}
 		}
-	}
-
-	&__image {
-		width: 100%;
 	}
 
 	&__button {
@@ -385,30 +475,55 @@ select:-webkit-autofill:focus {
 		right: $col;
 	}
 
-	&.scrolled {
+	&__menu {
+		padding: $integer*2 $col*2 0 $col*2;
+	}
+
+	&.js-scrolled {
+		@include box-shadow(0 0 20px 0 rgba($dark, 0.15));
+		height: $integer*4;
+		background-color: $white;
 		
 		.header {
-			
-			&__bar {
-				@include box-shadow(0 0 20px 0 rgba($dark, 0.15));
-				background-color: $white;
-				padding-top: $integer;
-				padding-bottom: $integer;
-			}
 
+			&__bar {
+				height: $integer*4;
+			}
+			
 			&__logo {
 				width: $integer*2;
 				height: $integer*2;
 			}
 		}
+	}
 
+	&.js-opened {
+		@include transition(height $transition, background-color $transition);
+		height: 100vh;
+		background-color: $white;
+
+		.header {
+
+			&__bar {
+				height: $integer*8;
+			}
+
+			&__logo {
+				width: $integer*4;
+				height: $integer*4;		
+			}
+		}
+	}
+
+	&.js-scrolled, &.js-opened {
+		
 		.logo {
 
-			&__background {
+			&-header-bg {
 				fill: $primary
 			}
 
-			&__icon {
+			&-header-color {
 				fill: $white
 			}
 		}
@@ -422,6 +537,64 @@ select:-webkit-autofill:focus {
 	}
 }
 
+.menu {
+
+	&__row {
+
+		& + & {
+			margin-top: $integer*4;
+		}
+	}
+
+	&__title {
+		margin-bottom: $integer;
+	}
+
+	&__inner {
+		@include display-flex();
+		@include flex-wrap(wrap);
+	}
+
+	&__button {
+		width: 33.333%;
+		position: relative;
+		padding: 0;
+		margin-bottom: $integer/2;
+		
+		.subtitle {
+			padding: 0;
+		}
+
+		&:hover {
+
+			.menu {
+
+				&__description {
+
+					span {
+						@include transform(translateY(0));
+					}
+				}
+			}
+		}
+	}
+
+	&__description {
+		width: 100%;
+		overflow: hidden;
+
+		span {
+			@include transition(transform $transition);
+			@include transform(translateY(-100%));
+			display: block;
+		}
+	}
+
+	&__newsletter {
+		margin-top: $integer*2;
+	}
+}
+
 
 
 /*
@@ -430,10 +603,19 @@ select:-webkit-autofill:focus {
 */
 
 .footer {
-	padding: $integer*6 $col;
+	padding: $integer*6 $col $integer*3;
+	font-weight: $font-regular;
 
 	> * {
 		@include display-flex();
+	}
+
+	&__item {
+		margin-bottom: $integer*3;
+	}
+
+	&__logo {
+		padding-right: $integer*4;
 	}
 
 	&__title {
@@ -445,6 +627,14 @@ select:-webkit-autofill:focus {
 		p + p {
 			margin-top: $integer/2;
 		}
+
+		.body--bold {
+			margin-top: $integer;
+		}
+	}
+
+	&__button {
+		display: block !important;
+		margin-left: 0 !important;
 	}
 }
-

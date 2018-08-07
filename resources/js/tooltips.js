@@ -8,9 +8,9 @@ $(document).ready(function() {
 
 $('.tooltip--click').on('click', function() {
 	// variables
-	var next = $(this).children('.tooltip__inner');
+	var next = $(this);
 	// icon animation
-	$('.tooltip__inner.js-show').not(next).removeClass('js-show');
+	$('.tooltip--click.js-show').not(next).removeClass('js-show');
 	$(next).toggleClass('js-show');
 });
 

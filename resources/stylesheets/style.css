@@ -3928,11 +3928,10 @@ select:-webkit-autofill:focus {
 }
 /* line 14, ../sass/partials/_tooltips.scss */
 .tooltip__inner {
-  -moz-transition: opacity 0.8s ease 0s;
-  -o-transition: opacity 0.8s ease 0s;
-  -webkit-transition: opacity 0.8s ease;
-  -webkit-transition-delay: 0s;
-  transition: opacity 0.8s ease 0s;
+  -moz-transition: opacity 0.4s ease 0s;
+  -o-transition: opacity 0.4s ease 0s;
+  -webkit-transition: opacity 0.4s ease 0s;
+  transition: opacity 0.4s ease 0s;
   pointer-events: none;
   z-index: 1;
   opacity: 0;
@@ -3944,7 +3943,7 @@ select:-webkit-autofill:focus {
   cursor: pointer;
 }
 /* line 27, ../sass/partials/_tooltips.scss */
-.tooltip--click .tooltip__inner.js-show {
+.tooltip--click.js-show .tooltip__inner {
   pointer-events: initial;
   opacity: 1;
 }
@@ -4304,47 +4303,74 @@ select:-webkit-autofill:focus {
 }
 
 /* line 95, ../sass/pages/_services.scss */
-.projects {
+.project {
   margin: -10px;
 }
 /* line 98, ../sass/pages/_services.scss */
-.projects__item {
+.project__item {
+  position: relative;
   width: 25%;
   padding: 10px;
 }
-/* line 102, ../sass/pages/_services.scss */
-.projects__item .block {
+/* line 103, ../sass/pages/_services.scss */
+.project__item .block {
   padding: 20px;
 }
-/* line 107, ../sass/pages/_services.scss */
-.projects__image {
+/* line 108, ../sass/pages/_services.scss */
+.project__container {
+  -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s;
+  -o-transition: height 0.4s ease 0s, width 0.4s ease 0s;
+  -webkit-transition: height 0.4s ease 0s, width 0.4s ease 0s;
+  transition: height 0.4s ease 0s, width 0.4s ease 0s;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 116, ../sass/pages/_services.scss */
+.project__image {
   width: 100%;
 }
-/* line 111, ../sass/pages/_services.scss */
-.projects__inner {
+/* line 120, ../sass/pages/_services.scss */
+.project__inner {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 40px;
   background-color: #ffffff;
   text-align: left;
 }
-/* line 122, ../sass/pages/_services.scss */
-.projects__subtitle {
+/* line 131, ../sass/pages/_services.scss */
+.project__subtitle {
   margin-bottom: 20px;
 }
-/* line 126, ../sass/pages/_services.scss */
-.projects .label {
+/* line 135, ../sass/pages/_services.scss */
+.project .label {
   margin-top: 5px;
 }
+/* line 139, ../sass/pages/_services.scss */
+.project__container.js-show {
+  -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s;
+  -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s;
+  -webkit-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s;
+  transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s;
+  width: -webkit-calc(100% +  40px);
+  width: calc(100% +  40px);
+  height: -webkit-calc(100% +  40px);
+  height: calc(100% +  40px);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+}
 
-/* line 133, ../sass/pages/_services.scss */
+/* line 152, ../sass/pages/_services.scss */
 .technology__item {
   padding: 0 40px;
 }
-/* line 137, ../sass/pages/_services.scss */
+/* line 156, ../sass/pages/_services.scss */
 .technology__image {
   display: -webkit-flex;
   display: flex;

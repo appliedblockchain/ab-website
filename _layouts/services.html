@@ -104,15 +104,15 @@
             title='Our Projects'
         %}
 
-        <div class="section__content projects">
+        <div class="section__content project">
             <!-- edit data in _data/projects.html -->
             {% for item in site.data.projects %}
-                <div class="projects__item">
-                    <div class="block tooltip tooltip--click">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.name }}" class="projects__image hover-grayscale tooltip__trigger">
-                        <div class="projects__inner tooltip__inner">
-                             <p class="projects__title lead">{{ item.name }}</p>
-                             <p class="projects__subtitle body--bold">{{ item.subtitle }}</p>
+                <div class="project__item">
+                    <div class="block project__container tooltip tooltip--click clear">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.name }}" class="project__image hover-grayscale tooltip__trigger">
+                        <div class="project__inner tooltip__inner">
+                             <p class="project__title lead">{{ item.name }}</p>
+                             <p class="project__subtitle body--bold">{{ item.subtitle }}</p>
                              <p class="label">Industry</p>
                              <p>{{ item.industry }}</p>
                              <p class="label">Technology</p>

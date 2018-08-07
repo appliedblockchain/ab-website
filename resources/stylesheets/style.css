@@ -661,7 +661,7 @@ optgroup {
   border-top: 1px solid #d7d7dc;
 }
 /* line 21, ../sass/partials/_accordions.scss */
-.accordion__header {
+.accordion__header, .accordion__content {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -672,19 +672,42 @@ optgroup {
   cursor: pointer;
   padding: 15px 20px;
 }
-/* line 34, ../sass/partials/_accordions.scss */
+/* line 31, ../sass/partials/_accordions.scss */
+.accordion__header.js-accordion-active .button--icon, .js-accordion-active.accordion__content .button--icon {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 41, ../sass/partials/_accordions.scss */
 .accordion__title {
   width: 66.666%;
 }
-/* line 38, ../sass/partials/_accordions.scss */
-.accordion__content {
-  cursor: initial;
-  display: none;
-}
-/* line 43, ../sass/partials/_accordions.scss */
+/* line 45, ../sass/partials/_accordions.scss */
 .accordion__actions {
   display: -webkit-flex;
   display: flex;
+}
+/* line 49, ../sass/partials/_accordions.scss */
+.accordion__content {
+  cursor: initial;
+  display: none;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 0;
+}
+/* line 57, ../sass/partials/_accordions.scss */
+.accordion__subtitle {
+  padding: 15px 0;
+}
+/* line 61, ../sass/partials/_accordions.scss */
+.accordion .lead {
+  color: #005eff !important;
+}
+/* line 65, ../sass/partials/_accordions.scss */
+.accordion ul {
+  list-style: disc;
+  margin-left: 15px;
+  line-height: 1.5;
 }
 
 /* 
@@ -3001,15 +3024,15 @@ select:-webkit-autofill:focus {
 }
 /* line 38, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+1):before {
-  background-color: rgba(0, 94, 255, 0.5);
+  background-color: rgba(0, 94, 255, 0.7);
 }
 /* line 41, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+2):before {
-  background-color: rgba(0, 66, 179, 0.5);
+  background-color: rgba(0, 66, 179, 0.7);
 }
 /* line 44, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+3):before {
-  background-color: rgba(77, 142, 255, 0.5);
+  background-color: rgba(77, 142, 255, 0.7);
 }
 /* line 49, ../sass/pages/_case-studies.scss */
 .portfolio__item.alt {
@@ -3057,10 +3080,10 @@ select:-webkit-autofill:focus {
   -o-transition: -o-transform 0.4s ease 0s;
   -webkit-transition: -webkit-transform 0.4s ease 0s;
   transition: transform 0.4s ease 0s;
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -moz-transform: translateY(-100%) scaleY(0.3);
+  -ms-transform: translateY(-100%) scaleY(0.3);
+  -webkit-transform: translateY(-100%) scaleY(0.3);
+  transform: translateY(-100%) scaleY(0.3);
   display: block;
 }
 /* line 88, ../sass/pages/_case-studies.scss */
@@ -3092,10 +3115,10 @@ select:-webkit-autofill:focus {
 }
 /* line 111, ../sass/pages/_case-studies.scss */
 .portfolio__item:hover .portfolio__desc span {
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+  -moz-transform: translateY(0) scaleY(1);
+  -ms-transform: translateY(0) scaleY(1);
+  -webkit-transform: translateY(0) scaleY(1);
+  transform: translateY(0) scaleY(1);
 }
 /* line 115, ../sass/pages/_case-studies.scss */
 .portfolio__item:hover .portfolio__button .button {

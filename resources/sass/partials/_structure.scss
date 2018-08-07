@@ -433,8 +433,8 @@ select:-webkit-autofill:focus {
 
 .header {
 	@include transition(height $transition, background-color $transition, box-shadow $transition, padding-top $transition, padding-bottom $transition);
+	overflow: hidden;
 	position: fixed;
-	padding: 0 $col;
 	height: $integer*8;
 	width: 100vw;
 	
@@ -444,6 +444,7 @@ select:-webkit-autofill:focus {
 		@include align-items(center);
 		@include justify-content(center);
 		height: $integer*8;
+		padding: 0 $col;
 	}
 
 	&__logo {
@@ -475,7 +476,8 @@ select:-webkit-autofill:focus {
 	}
 
 	&__menu {
-		display: none;
+		padding: $integer*3 $col*2 0 $col*2;
+		line-height: 2;
 	}
 
 	&.js-scrolled {
@@ -536,7 +538,16 @@ select:-webkit-autofill:focus {
 	}
 }
 
+.menu {
 
+	&__nav {
+		@include display-flex();
+		@include flex-direction(column);
+	}
+
+	&__item {
+	}
+}
 
 /*
  * footer

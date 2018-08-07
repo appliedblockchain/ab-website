@@ -25,6 +25,12 @@
 	}
 }
 
+body.js-freeze {
+	overflow: hidden;
+}
+
+
+
 /*
  * general
  * —————————————————————————————————————————————————————————————————
@@ -426,15 +432,18 @@ select:-webkit-autofill:focus {
 */
 
 .header {
+	@include transition(height $transition, background-color $transition, box-shadow $transition, padding-top $transition, padding-bottom $transition);
 	position: fixed;
+	padding: 0 $col;
+	height: $integer*8;
 	width: 100vw;
 	
 	&__bar {
+		@include transition(height $transition);
 		@include display-flex();
 		@include align-items(center);
 		@include justify-content(center);
-		@include transition(box-shadow $transition, background-color $transition, padding-top $transition, padding-bottom $transition);
-		padding: $integer*2 $col 0 $col;
+		height: $integer*8;
 	}
 
 	&__logo {
@@ -465,23 +474,48 @@ select:-webkit-autofill:focus {
 		right: $col;
 	}
 
-	&.scrolled {
+	&__menu {
+		display: none;
+	}
+
+	&.js-scrolled {
+		@include box-shadow(0 0 20px 0 rgba($dark, 0.15));
+		height: $integer*4;
+		background-color: $white;
 		
 		.header {
-			
-			&__bar {
-				@include box-shadow(0 0 20px 0 rgba($dark, 0.15));
-				background-color: $white;
-				padding-top: $integer;
-				padding-bottom: $integer;
-			}
 
+			&__bar {
+				height: $integer*4;
+			}
+			
 			&__logo {
 				width: $integer*2;
 				height: $integer*2;
 			}
 		}
+	}
 
+	&.js-opened {
+		@include transition(height $transition, background-color $transition);
+		height: 100vh;
+		background-color: $white;
+
+		.header {
+
+			&__bar {
+				height: $integer*8;
+			}
+
+			&__logo {
+				width: $integer*4;
+				height: $integer*4;		
+			}
+		}
+	}
+
+	&.js-scrolled, &.js-opened {
+		
 		.logo {
 
 			&-header-bg {

@@ -692,8 +692,8 @@ optgroup {
 .accordion__content {
   cursor: initial;
   display: none;
-  padding-top: 0;
   border-top: 1px solid #f0f0f0;
+  padding-top: 0;
 }
 /* line 57, ../sass/partials/_accordions.scss */
 .accordion__subtitle {
@@ -1874,9 +1874,9 @@ html, body {
  * hover classes
  * section
  * containers
+ * logos
  * header
  * footer
- * logos
  * —————————————————————————————————————————————————————————————————
 */
 @media (pointer: coarse) {
@@ -3526,15 +3526,58 @@ select:-webkit-autofill:focus {
 }
 
 /*
+ * logos
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 385, ../sass/partials/_structure.scss */
+.logo-header {
+  width: 100%;
+}
+/* line 388, ../sass/partials/_structure.scss */
+.logo-header-bg {
+  -moz-transition: fill 0.4s ease 0s;
+  -o-transition: fill 0.4s ease 0s;
+  -webkit-transition: fill 0.4s ease 0s;
+  transition: fill 0.4s ease 0s;
+  fill: #007bff;
+}
+/* line 393, ../sass/partials/_structure.scss */
+.logo-header-color {
+  -moz-transition: fill 0.4s ease 0s;
+  -o-transition: fill 0.4s ease 0s;
+  -webkit-transition: fill 0.4s ease 0s;
+  transition: fill 0.4s ease 0s;
+  fill: #ffffff;
+}
+/* line 399, ../sass/partials/_structure.scss */
+.logo-footer {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+/* line 406, ../sass/partials/_structure.scss */
+.logo-footer-icon-bg {
+  fill: #007bff;
+}
+/* line 410, ../sass/partials/_structure.scss */
+.logo-footer-icon-color {
+  fill: #ffffff;
+}
+/* line 415, ../sass/partials/_structure.scss */
+.logo-footer-name {
+  fill: #ffffff;
+}
+
+/*
  * header
  * —————————————————————————————————————————————————————————————————
 */
-/* line 383, ../sass/partials/_structure.scss */
+/* line 428, ../sass/partials/_structure.scss */
 .header {
   position: fixed;
   width: 100vw;
 }
-/* line 387, ../sass/partials/_structure.scss */
+/* line 432, ../sass/partials/_structure.scss */
 .header__bar {
   display: -webkit-flex;
   display: flex;
@@ -3548,7 +3591,7 @@ select:-webkit-autofill:focus {
   transition: box-shadow 0.4s ease 0s, background-color 0.4s ease 0s, padding-top 0.4s ease 0s, padding-bottom 0.4s ease 0s;
   padding: 40px 6.25vw 0 6.25vw;
 }
-/* line 395, ../sass/partials/_structure.scss */
+/* line 440, ../sass/partials/_structure.scss */
 .header__logo {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s;
@@ -3566,32 +3609,20 @@ select:-webkit-autofill:focus {
   width: 80px;
   height: 80px;
 }
-/* line 407, ../sass/partials/_structure.scss */
-.header__logo.alt .logo__background {
-  -moz-transition: fill 0.4s ease 0s;
-  -o-transition: fill 0.4s ease 0s;
-  -webkit-transition: fill 0.4s ease 0s;
-  transition: fill 0.4s ease 0s;
+/* line 452, ../sass/partials/_structure.scss */
+.header__logo.alt .logo-header-bg {
   fill: #ffffff;
 }
-/* line 412, ../sass/partials/_structure.scss */
-.header__logo.alt .logo__icon {
-  -moz-transition: fill 0.4s ease 0s;
-  -o-transition: fill 0.4s ease 0s;
-  -webkit-transition: fill 0.4s ease 0s;
-  transition: fill 0.4s ease 0s;
+/* line 456, ../sass/partials/_structure.scss */
+.header__logo.alt .logo-header-color {
   fill: #007bff;
 }
-/* line 420, ../sass/partials/_structure.scss */
-.header__image {
-  width: 100%;
-}
-/* line 424, ../sass/partials/_structure.scss */
+/* line 463, ../sass/partials/_structure.scss */
 .header__button {
   position: absolute;
   right: 6.25vw;
 }
-/* line 433, ../sass/partials/_structure.scss */
+/* line 472, ../sass/partials/_structure.scss */
 .header.scrolled .header__bar {
   -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
@@ -3600,20 +3631,20 @@ select:-webkit-autofill:focus {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 440, ../sass/partials/_structure.scss */
+/* line 479, ../sass/partials/_structure.scss */
 .header.scrolled .header__logo {
   width: 40px;
   height: 40px;
 }
-/* line 448, ../sass/partials/_structure.scss */
-.header.scrolled .logo__background {
+/* line 487, ../sass/partials/_structure.scss */
+.header.scrolled .logo-header-bg {
   fill: #007bff;
 }
-/* line 452, ../sass/partials/_structure.scss */
-.header.scrolled .logo__icon {
+/* line 491, ../sass/partials/_structure.scss */
+.header.scrolled .logo-header-color {
   fill: #ffffff;
 }
-/* line 459, ../sass/partials/_structure.scss */
+/* line 498, ../sass/partials/_structure.scss */
 .header.scrolled .button--menu:before, .header.scrolled .button--menu:after, .header.scrolled .button--menu .button__inner {
   background-color: #000a1e;
 }
@@ -3622,63 +3653,40 @@ select:-webkit-autofill:focus {
  * footer
  * —————————————————————————————————————————————————————————————————
 */
-/* line 473, ../sass/partials/_structure.scss */
+/* line 512, ../sass/partials/_structure.scss */
 .footer {
   padding: 120px 6.25vw 60px;
   font-weight: 400;
 }
-/* line 477, ../sass/partials/_structure.scss */
+/* line 516, ../sass/partials/_structure.scss */
 .footer > * {
   display: -webkit-flex;
   display: flex;
 }
-/* line 481, ../sass/partials/_structure.scss */
+/* line 520, ../sass/partials/_structure.scss */
 .footer__item {
   margin-bottom: 60px;
 }
-/* line 485, ../sass/partials/_structure.scss */
+/* line 524, ../sass/partials/_structure.scss */
 .footer__logo {
   padding-right: 80px;
 }
-/* line 489, ../sass/partials/_structure.scss */
+/* line 528, ../sass/partials/_structure.scss */
 .footer__title {
   margin-bottom: 20px;
 }
-/* line 495, ../sass/partials/_structure.scss */
+/* line 534, ../sass/partials/_structure.scss */
 .footer__adress p + p {
   margin-top: 10px;
 }
-/* line 499, ../sass/partials/_structure.scss */
+/* line 538, ../sass/partials/_structure.scss */
 .footer__adress .body--bold {
   margin-top: 20px;
 }
-/* line 504, ../sass/partials/_structure.scss */
+/* line 543, ../sass/partials/_structure.scss */
 .footer__button {
   display: block !important;
   margin-left: 0 !important;
-}
-
-/*
- * logos
- * —————————————————————————————————————————————————————————————————
-*/
-/* line 519, ../sass/partials/_structure.scss */
-.logo-footer {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-/* line 526, ../sass/partials/_structure.scss */
-.logo-footer-icon-bg {
-  fill: #007bff;
-}
-/* line 530, ../sass/partials/_structure.scss */
-.logo-footer-icon-color {
-  fill: #ffffff;
-}
-/* line 535, ../sass/partials/_structure.scss */
-.logo-footer-name {
-  fill: #ffffff;
 }
 
 /* 

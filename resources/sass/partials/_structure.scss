@@ -11,9 +11,9 @@
  * hover classes
  * section
  * containers
+ * logos
  * header
  * footer
- * logos
  * —————————————————————————————————————————————————————————————————
 */
 
@@ -376,6 +376,51 @@ select:-webkit-autofill:focus {
 
 
 /*
+ * logos
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.logo {
+	
+	&-header {
+		width: 100%;
+
+		&-bg {
+			@include transition(fill $transition);
+			fill: $primary;
+		}
+
+		&-color {
+			@include transition(fill $transition);
+			fill: $white;
+		}
+	}
+
+	&-footer {
+		width: 100%;
+		max-width: $integer*20;
+		height: auto;
+
+		&-icon {
+
+			&-bg {
+				fill: $primary;
+			}
+
+			&-color {
+				fill: $white;
+			}
+		}
+
+		&-name {
+			fill: $white;
+		}
+	}
+}
+
+
+
+/*
  * header
  * —————————————————————————————————————————————————————————————————
 */
@@ -404,21 +449,15 @@ select:-webkit-autofill:focus {
 
 			.logo {
 
-				&__background {
-					@include transition(fill $transition);
+				&-header-bg {
 					fill: $white
 				}
 
-				&__icon {
-					@include transition(fill $transition);
+				&-header-color {
 					fill: $primary
 				}
 			}
 		}
-	}
-
-	&__image {
-		width: 100%;
 	}
 
 	&__button {
@@ -445,11 +484,11 @@ select:-webkit-autofill:focus {
 
 		.logo {
 
-			&__background {
+			&-header-bg {
 				fill: $primary
 			}
 
-			&__icon {
+			&-header-color {
 				fill: $white
 			}
 		}
@@ -504,36 +543,5 @@ select:-webkit-autofill:focus {
 	&__button {
 		display: block !important;
 		margin-left: 0 !important;
-	}
-}
-
-
-
-/*
- * logos
- * —————————————————————————————————————————————————————————————————
-*/
-
-.logo {
-	
-	&-footer {
-		width: 100%;
-		max-width: $integer*20;
-		height: auto;
-
-		&-icon {
-
-			&-bg {
-				fill: $primary;
-			}
-
-			&-color {
-				fill: $white;
-			}
-		}
-
-		&-name {
-			fill: $white;
-		}
 	}
 }

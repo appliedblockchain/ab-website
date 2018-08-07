@@ -1927,7 +1927,7 @@ html, body {
 }
 
 /* line 67, ../sass/partials/_structure.scss */
-[class*="col--"], [class*="colfooter--"] {
+[class*="col--"], [class*="colalt--"] {
   float: left;
   position: relative;
   padding: 0 20px;
@@ -2540,756 +2540,756 @@ html, body {
 }
 /*footer*/
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--1 {
+.colalt--1 {
   width: 6.66667%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--1 {
+.colaltoffset--1 {
   margin-left: 6.66667%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--2 {
+.colalt--2 {
   width: 13.33333%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--2 {
+.colaltoffset--2 {
   margin-left: 13.33333%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--3 {
+.colalt--3 {
   width: 20%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--3 {
+.colaltoffset--3 {
   margin-left: 20%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--4 {
+.colalt--4 {
   width: 26.66667%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--4 {
+.colaltoffset--4 {
   margin-left: 26.66667%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--5 {
+.colalt--5 {
   width: 33.33333%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--5 {
+.colaltoffset--5 {
   margin-left: 33.33333%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--6 {
+.colalt--6 {
   width: 40%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--6 {
+.colaltoffset--6 {
   margin-left: 40%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--7 {
+.colalt--7 {
   width: 46.66667%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--7 {
+.colaltoffset--7 {
   margin-left: 46.66667%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--8 {
+.colalt--8 {
   width: 53.33333%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--8 {
+.colaltoffset--8 {
   margin-left: 53.33333%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--9 {
+.colalt--9 {
   width: 60%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--9 {
+.colaltoffset--9 {
   margin-left: 60%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--10 {
+.colalt--10 {
   width: 66.66667%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--10 {
+.colaltoffset--10 {
   margin-left: 66.66667%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--11 {
+.colalt--11 {
   width: 73.33333%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--11 {
+.colaltoffset--11 {
   margin-left: 73.33333%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--12 {
+.colalt--12 {
   width: 80%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--12 {
+.colaltoffset--12 {
   margin-left: 80%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--13 {
+.colalt--13 {
   width: 86.66667%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--13 {
+.colaltoffset--13 {
   margin-left: 86.66667%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--14 {
+.colalt--14 {
   width: 93.33333%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--14 {
+.colaltoffset--14 {
   margin-left: 93.33333%;
 }
 
 /* line 110, ../sass/partials/_structure.scss */
-.colfooter--15 {
+.colalt--15 {
   width: 100%;
 }
 
 /* line 111, ../sass/partials/_structure.scss */
-.colfooteroffset--15 {
+.colaltoffset--15 {
   margin-left: 100%;
 }
 
 @media (min-width: 576px) {
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm1 {
+  .colalt--sm1 {
     width: 6.66667%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm1 {
+  .colaltoffset--sm1 {
     margin-left: 6.66667%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm2 {
+  .colalt--sm2 {
     width: 13.33333%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm2 {
+  .colaltoffset--sm2 {
     margin-left: 13.33333%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm3 {
+  .colalt--sm3 {
     width: 20%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm3 {
+  .colaltoffset--sm3 {
     margin-left: 20%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm4 {
+  .colalt--sm4 {
     width: 26.66667%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm4 {
+  .colaltoffset--sm4 {
     margin-left: 26.66667%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm5 {
+  .colalt--sm5 {
     width: 33.33333%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm5 {
+  .colaltoffset--sm5 {
     margin-left: 33.33333%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm6 {
+  .colalt--sm6 {
     width: 40%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm6 {
+  .colaltoffset--sm6 {
     margin-left: 40%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm7 {
+  .colalt--sm7 {
     width: 46.66667%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm7 {
+  .colaltoffset--sm7 {
     margin-left: 46.66667%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm8 {
+  .colalt--sm8 {
     width: 53.33333%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm8 {
+  .colaltoffset--sm8 {
     margin-left: 53.33333%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm9 {
+  .colalt--sm9 {
     width: 60%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm9 {
+  .colaltoffset--sm9 {
     margin-left: 60%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm10 {
+  .colalt--sm10 {
     width: 66.66667%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm10 {
+  .colaltoffset--sm10 {
     margin-left: 66.66667%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm11 {
+  .colalt--sm11 {
     width: 73.33333%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm11 {
+  .colaltoffset--sm11 {
     margin-left: 73.33333%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm12 {
+  .colalt--sm12 {
     width: 80%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm12 {
+  .colaltoffset--sm12 {
     margin-left: 80%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm13 {
+  .colalt--sm13 {
     width: 86.66667%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm13 {
+  .colaltoffset--sm13 {
     margin-left: 86.66667%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm14 {
+  .colalt--sm14 {
     width: 93.33333%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm14 {
+  .colaltoffset--sm14 {
     margin-left: 93.33333%;
   }
 
   /* line 116, ../sass/partials/_structure.scss */
-  .colfooter--sm15 {
+  .colalt--sm15 {
     width: 100%;
   }
 
   /* line 117, ../sass/partials/_structure.scss */
-  .colfooteroffset--sm15 {
+  .colaltoffset--sm15 {
     margin-left: 100%;
   }
 }
 @media (min-width: 768px) {
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md1 {
+  .colalt--md1 {
     width: 6.66667%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md1 {
+  .colaltoffset--md1 {
     margin-left: 6.66667%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md2 {
+  .colalt--md2 {
     width: 13.33333%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md2 {
+  .colaltoffset--md2 {
     margin-left: 13.33333%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md3 {
+  .colalt--md3 {
     width: 20%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md3 {
+  .colaltoffset--md3 {
     margin-left: 20%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md4 {
+  .colalt--md4 {
     width: 26.66667%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md4 {
+  .colaltoffset--md4 {
     margin-left: 26.66667%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md5 {
+  .colalt--md5 {
     width: 33.33333%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md5 {
+  .colaltoffset--md5 {
     margin-left: 33.33333%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md6 {
+  .colalt--md6 {
     width: 40%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md6 {
+  .colaltoffset--md6 {
     margin-left: 40%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md7 {
+  .colalt--md7 {
     width: 46.66667%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md7 {
+  .colaltoffset--md7 {
     margin-left: 46.66667%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md8 {
+  .colalt--md8 {
     width: 53.33333%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md8 {
+  .colaltoffset--md8 {
     margin-left: 53.33333%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md9 {
+  .colalt--md9 {
     width: 60%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md9 {
+  .colaltoffset--md9 {
     margin-left: 60%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md10 {
+  .colalt--md10 {
     width: 66.66667%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md10 {
+  .colaltoffset--md10 {
     margin-left: 66.66667%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md11 {
+  .colalt--md11 {
     width: 73.33333%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md11 {
+  .colaltoffset--md11 {
     margin-left: 73.33333%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md12 {
+  .colalt--md12 {
     width: 80%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md12 {
+  .colaltoffset--md12 {
     margin-left: 80%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md13 {
+  .colalt--md13 {
     width: 86.66667%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md13 {
+  .colaltoffset--md13 {
     margin-left: 86.66667%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md14 {
+  .colalt--md14 {
     width: 93.33333%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md14 {
+  .colaltoffset--md14 {
     margin-left: 93.33333%;
   }
 
   /* line 123, ../sass/partials/_structure.scss */
-  .colfooter--md15 {
+  .colalt--md15 {
     width: 100%;
   }
 
   /* line 124, ../sass/partials/_structure.scss */
-  .colfooteroffset--md15 {
+  .colaltoffset--md15 {
     margin-left: 100%;
   }
 }
 @media (min-width: 1024px) {
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg1 {
+  .colalt--lg1 {
     width: 6.66667%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg1 {
+  .colaltoffset--lg1 {
     margin-left: 6.66667%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg2 {
+  .colalt--lg2 {
     width: 13.33333%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg2 {
+  .colaltoffset--lg2 {
     margin-left: 13.33333%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg3 {
+  .colalt--lg3 {
     width: 20%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg3 {
+  .colaltoffset--lg3 {
     margin-left: 20%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg4 {
+  .colalt--lg4 {
     width: 26.66667%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg4 {
+  .colaltoffset--lg4 {
     margin-left: 26.66667%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg5 {
+  .colalt--lg5 {
     width: 33.33333%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg5 {
+  .colaltoffset--lg5 {
     margin-left: 33.33333%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg6 {
+  .colalt--lg6 {
     width: 40%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg6 {
+  .colaltoffset--lg6 {
     margin-left: 40%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg7 {
+  .colalt--lg7 {
     width: 46.66667%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg7 {
+  .colaltoffset--lg7 {
     margin-left: 46.66667%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg8 {
+  .colalt--lg8 {
     width: 53.33333%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg8 {
+  .colaltoffset--lg8 {
     margin-left: 53.33333%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg9 {
+  .colalt--lg9 {
     width: 60%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg9 {
+  .colaltoffset--lg9 {
     margin-left: 60%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg10 {
+  .colalt--lg10 {
     width: 66.66667%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg10 {
+  .colaltoffset--lg10 {
     margin-left: 66.66667%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg11 {
+  .colalt--lg11 {
     width: 73.33333%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg11 {
+  .colaltoffset--lg11 {
     margin-left: 73.33333%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg12 {
+  .colalt--lg12 {
     width: 80%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg12 {
+  .colaltoffset--lg12 {
     margin-left: 80%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg13 {
+  .colalt--lg13 {
     width: 86.66667%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg13 {
+  .colaltoffset--lg13 {
     margin-left: 86.66667%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg14 {
+  .colalt--lg14 {
     width: 93.33333%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg14 {
+  .colaltoffset--lg14 {
     margin-left: 93.33333%;
   }
 
   /* line 130, ../sass/partials/_structure.scss */
-  .colfooter--lg15 {
+  .colalt--lg15 {
     width: 100%;
   }
 
   /* line 131, ../sass/partials/_structure.scss */
-  .colfooteroffset--lg15 {
+  .colaltoffset--lg15 {
     margin-left: 100%;
   }
 }
 @media (min-width: 1300px) {
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl1 {
+  .colalt--xl1 {
     width: 6.66667%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl1 {
+  .colaltoffset--xl1 {
     margin-left: 6.66667%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl2 {
+  .colalt--xl2 {
     width: 13.33333%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl2 {
+  .colaltoffset--xl2 {
     margin-left: 13.33333%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl3 {
+  .colalt--xl3 {
     width: 20%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl3 {
+  .colaltoffset--xl3 {
     margin-left: 20%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl4 {
+  .colalt--xl4 {
     width: 26.66667%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl4 {
+  .colaltoffset--xl4 {
     margin-left: 26.66667%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl5 {
+  .colalt--xl5 {
     width: 33.33333%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl5 {
+  .colaltoffset--xl5 {
     margin-left: 33.33333%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl6 {
+  .colalt--xl6 {
     width: 40%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl6 {
+  .colaltoffset--xl6 {
     margin-left: 40%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl7 {
+  .colalt--xl7 {
     width: 46.66667%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl7 {
+  .colaltoffset--xl7 {
     margin-left: 46.66667%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl8 {
+  .colalt--xl8 {
     width: 53.33333%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl8 {
+  .colaltoffset--xl8 {
     margin-left: 53.33333%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl9 {
+  .colalt--xl9 {
     width: 60%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl9 {
+  .colaltoffset--xl9 {
     margin-left: 60%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl10 {
+  .colalt--xl10 {
     width: 66.66667%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl10 {
+  .colaltoffset--xl10 {
     margin-left: 66.66667%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl11 {
+  .colalt--xl11 {
     width: 73.33333%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl11 {
+  .colaltoffset--xl11 {
     margin-left: 73.33333%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl12 {
+  .colalt--xl12 {
     width: 80%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl12 {
+  .colaltoffset--xl12 {
     margin-left: 80%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl13 {
+  .colalt--xl13 {
     width: 86.66667%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl13 {
+  .colaltoffset--xl13 {
     margin-left: 86.66667%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl14 {
+  .colalt--xl14 {
     width: 93.33333%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl14 {
+  .colaltoffset--xl14 {
     margin-left: 93.33333%;
   }
 
   /* line 137, ../sass/partials/_structure.scss */
-  .colfooter--xl15 {
+  .colalt--xl15 {
     width: 100%;
   }
 
   /* line 138, ../sass/partials/_structure.scss */
-  .colfooteroffset--xl15 {
+  .colaltoffset--xl15 {
     margin-left: 100%;
   }
 }
@@ -3636,10 +3636,9 @@ select:-webkit-autofill:focus {
 }
 /* line 478, ../sass/partials/_structure.scss */
 .header__menu {
-  padding: 60px 12.5vw 0 12.5vw;
-  line-height: 2;
+  padding: 40px 12.5vw 0 12.5vw;
 }
-/* line 483, ../sass/partials/_structure.scss */
+/* line 482, ../sass/partials/_structure.scss */
 .header.js-scrolled {
   -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
@@ -3647,16 +3646,16 @@ select:-webkit-autofill:focus {
   height: 80px;
   background-color: #ffffff;
 }
-/* line 490, ../sass/partials/_structure.scss */
+/* line 489, ../sass/partials/_structure.scss */
 .header.js-scrolled .header__bar {
   height: 80px;
 }
-/* line 494, ../sass/partials/_structure.scss */
+/* line 493, ../sass/partials/_structure.scss */
 .header.js-scrolled .header__logo {
   width: 40px;
   height: 40px;
 }
-/* line 501, ../sass/partials/_structure.scss */
+/* line 500, ../sass/partials/_structure.scss */
 .header.js-opened {
   -moz-transition: height 0.4s ease 0s, background-color 0.4s ease 0s;
   -o-transition: height 0.4s ease 0s, background-color 0.4s ease 0s;
@@ -3665,71 +3664,118 @@ select:-webkit-autofill:focus {
   height: 100vh;
   background-color: #ffffff;
 }
-/* line 508, ../sass/partials/_structure.scss */
+/* line 507, ../sass/partials/_structure.scss */
 .header.js-opened .header__bar {
   height: 160px;
 }
-/* line 512, ../sass/partials/_structure.scss */
+/* line 511, ../sass/partials/_structure.scss */
 .header.js-opened .header__logo {
   width: 80px;
   height: 80px;
 }
-/* line 523, ../sass/partials/_structure.scss */
+/* line 522, ../sass/partials/_structure.scss */
 .header.js-scrolled .logo-header-bg, .header.js-opened .logo-header-bg {
   fill: #007bff;
 }
-/* line 527, ../sass/partials/_structure.scss */
+/* line 526, ../sass/partials/_structure.scss */
 .header.js-scrolled .logo-header-color, .header.js-opened .logo-header-color {
   fill: #ffffff;
 }
-/* line 534, ../sass/partials/_structure.scss */
+/* line 533, ../sass/partials/_structure.scss */
 .header.js-scrolled .button--menu:before, .header.js-scrolled .button--menu:after, .header.js-scrolled .button--menu .button__inner, .header.js-opened .button--menu:before, .header.js-opened .button--menu:after, .header.js-opened .button--menu .button__inner {
   background-color: #000a1e;
 }
 
-/* line 543, ../sass/partials/_structure.scss */
-.menu__nav {
+/* line 544, ../sass/partials/_structure.scss */
+.menu__row + .menu__row {
+  margin-top: 80px;
+}
+/* line 549, ../sass/partials/_structure.scss */
+.menu__title {
+  margin-bottom: 20px;
+}
+/* line 553, ../sass/partials/_structure.scss */
+.menu__inner {
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 558, ../sass/partials/_structure.scss */
+.menu__button {
+  width: 33.333%;
+  position: relative;
+  padding: 0;
+  margin-bottom: 10px;
+}
+/* line 564, ../sass/partials/_structure.scss */
+.menu__button .subtitle {
+  padding: 0;
+}
+/* line 574, ../sass/partials/_structure.scss */
+.menu__button:hover .menu__description span {
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 582, ../sass/partials/_structure.scss */
+.menu__description {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 586, ../sass/partials/_structure.scss */
+.menu__description span {
+  -moz-transition: -moz-transform 0.4s ease 0s;
+  -o-transition: -o-transform 0.4s ease 0s;
+  -webkit-transition: -webkit-transform 0.4s ease 0s;
+  transition: transform 0.4s ease 0s;
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  display: block;
+}
+/* line 593, ../sass/partials/_structure.scss */
+.menu__newsletter {
+  margin-top: 40px;
 }
 
 /*
  * footer
  * —————————————————————————————————————————————————————————————————
 */
-/* line 557, ../sass/partials/_structure.scss */
+/* line 605, ../sass/partials/_structure.scss */
 .footer {
   padding: 120px 6.25vw 60px;
   font-weight: 400;
 }
-/* line 561, ../sass/partials/_structure.scss */
+/* line 609, ../sass/partials/_structure.scss */
 .footer > * {
   display: -webkit-flex;
   display: flex;
 }
-/* line 565, ../sass/partials/_structure.scss */
+/* line 613, ../sass/partials/_structure.scss */
 .footer__item {
   margin-bottom: 60px;
 }
-/* line 569, ../sass/partials/_structure.scss */
+/* line 617, ../sass/partials/_structure.scss */
 .footer__logo {
   padding-right: 80px;
 }
-/* line 573, ../sass/partials/_structure.scss */
+/* line 621, ../sass/partials/_structure.scss */
 .footer__title {
   margin-bottom: 20px;
 }
-/* line 579, ../sass/partials/_structure.scss */
+/* line 627, ../sass/partials/_structure.scss */
 .footer__adress p + p {
   margin-top: 10px;
 }
-/* line 583, ../sass/partials/_structure.scss */
+/* line 631, ../sass/partials/_structure.scss */
 .footer__adress .body--bold {
   margin-top: 20px;
 }
-/* line 588, ../sass/partials/_structure.scss */
+/* line 636, ../sass/partials/_structure.scss */
 .footer__button {
   display: block !important;
   margin-left: 0 !important;

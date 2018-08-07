@@ -64,7 +64,7 @@ html, body {
 	@extend .row:after;
 }
 
-[class*="col--"], [class*="colfooter--"] {
+[class*="col--"], [class*="colalt--"] {
 	float: left;
 	position: relative;
 	padding: 0 $integer;
@@ -107,35 +107,35 @@ html, body {
 /*footer*/
 
 @for $i from 1 through 15 {
-	.colfooter--#{$i} 				{ width: $i*$col-footer; }
-	.colfooteroffset--#{$i} 		{ margin-left: $i*$col-footer; }
+	.colalt--#{$i} 				{ width: $i*$col-footer; }
+	.colaltoffset--#{$i} 		{ margin-left: $i*$col-footer; }
 }
 
 @include responsive(min-width, $break-phones-min) {
 	@for $i from 1 through 15 {
-		.colfooter--sm#{$i} 		{ width: $i*$col-footer; }
-		.colfooteroffset--sm#{$i} 	{ margin-left: $i*$col-footer; }
+		.colalt--sm#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--sm#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
 @include responsive(min-width, $break-tablets-min) {
 	@for $i from 1 through 15 {
-		.colfooter--md#{$i} 		{ width: $i*$col-footer; }
-		.colfooteroffset--md#{$i} 	{ margin-left: $i*$col-footer; }
+		.colalt--md#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--md#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
 @include responsive(min-width, $break-desktop-min) {
 	@for $i from 1 through 15 {
-		.colfooter--lg#{$i} 		{ width: $i*$col-footer; }
-		.colfooteroffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
+		.colalt--lg#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
 @include responsive(min-width, $break-large-desktop-min) {
 	@for $i from 1 through 15 {
-		.colfooter--xl#{$i} 		{ width: $i*$col-footer; }
-		.colfooteroffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
+		.colalt--xl#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
@@ -476,8 +476,7 @@ select:-webkit-autofill:focus {
 	}
 
 	&__menu {
-		padding: $integer*3 $col*2 0 $col*2;
-		line-height: 2;
+		padding: $integer*2 $col*2 0 $col*2;
 	}
 
 	&.js-scrolled {
@@ -540,14 +539,63 @@ select:-webkit-autofill:focus {
 
 .menu {
 
-	&__nav {
-		@include display-flex();
-		@include flex-direction(column);
+	&__row {
+
+		& + & {
+			margin-top: $integer*4;
+		}
 	}
 
-	&__item {
+	&__title {
+		margin-bottom: $integer;
+	}
+
+	&__inner {
+		@include display-flex();
+		@include flex-wrap(wrap);
+	}
+
+	&__button {
+		width: 33.333%;
+		position: relative;
+		padding: 0;
+		margin-bottom: $integer/2;
+		
+		.subtitle {
+			padding: 0;
+		}
+
+		&:hover {
+
+			.menu {
+
+				&__description {
+
+					span {
+						@include transform(translateY(0));
+					}
+				}
+			}
+		}
+	}
+
+	&__description {
+		width: 100%;
+		overflow: hidden;
+
+		span {
+			@include transition(transform $transition);
+			@include transform(translateY(-100%));
+			display: block;
+		}
+	}
+
+	&__newsletter {
+		margin-top: $integer*2;
 	}
 }
+
+
 
 /*
  * footer

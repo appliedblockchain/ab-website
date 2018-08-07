@@ -1,50 +1,34 @@
     <footer class="footer section section--left section--dark">
 
         <div class="footer__top row">
-            <div class="footer__item footer__logo colfooter--lg6">
+            <div class="footer__item footer__logo colalt--lg6">
                 {% include components/logo-footer.html %}
             </div>
-            <div class="footer__item colfooter--lg4 colfooter--sm7">
-                <div class="footer__title">
-                    <h2 class="subtitle">Get in touch</h2>
-                    <p>Follow us on social media</p>
-                </div>
-                <a href="{{site.twitter}}" title="Twitter" target="_new" class="button button--icon button--highlight button--animate fab fa-twitter">
-                    <i class="button__inner fab fa-twitter"></i>
-                </a>
-                <a href="{{site.medium}}" title="Medium" target="_new" class="button button--icon button--highlight button--animate fab fa-medium-m">
-                    <i class="button__inner fab fa-medium-m"></i>
-                </a>              
-                <a href="{{site.github}}" title="Github" target="_new" class="button button--icon button--highlight button--animate fab fa-github">
-                    <i class="button__inner fab fa-github"></i>
-                </a>              
-                <a href="{{site.linkedin}}" title="Linkedin" target="_blank" class="button button--icon button--highlight button--animate fab fa-linkedin-in">
-                    <i class="button__inner fab fa-linkedin-in"></i>
-                </a>              
+            <div class="footer__item colalt--lg4 colalt--sm7">
+                <!-- edit component in _includes/components/social.html -->
+                {% include components/social.html %}
             </div>
-            <div class="footer__item newsletter colfooter--lg5 colfooter--sm8">
-                <div class="footer__title">
-                    <h2 class="subtitle">Sign up for our newsletter</h2>
-                    <p>Join our community and stay up to date</p>
-                </div>
+            <div class="footer__item colalt--lg5 colalt--sm8">
+                <!-- edit component in _includes/components/newsletter.html -->
+                {% include components/newsletter.html %}
             </div>
         </div>
 
         <div class="footer__bottom row">
-            <div class="footer__item footer__adress colfooter--md6">
+            <div class="footer__item footer__adress colalt--md6">
                 <h2 class="footer__title subtitle">Adress</h2>
                 <p>Level39<br>One Canada Square<br>Canary Wharf<br>London E14 5AB</p>
                 <p>info@appliedblockchain.com</p>
                 <p class="body--bold">© Copyright 2018 Applied Blockchain Ltd.<br>All rights reserved.<p>
                 <p>Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276. Privacy policy.</p>
             </div>
-            <div class="footer__item  colfooter--md3 colfooter--sm5">
+            <div class="footer__item  colalt--md3 colalt--sm5">
                 <h2 class="footer__title subtitle">External links</h2>
                 <a href="https://fern.network/" target="_new" class="footer__button button button--text">Fern</a>
                 <a href="https://github.com/appliedblockchain/cobalt" target="_new" class="footer__button button button--text">Cobalt</a>
                 <a href="https://github.com/appliedblockchain/cobalt" target="_new" class="footer__button button button--text">Mantle</a>
             </div>
-            <div class="footer__item  colfooter--md3 colfooter--sm5">
+            <div class="footer__item  colalt--md3 colalt--sm5">
                 <h2 class="footer__title subtitle">Internal links</h2>
                 <a href="{{ site.baseurl }}/" class="footer__button button button--text">Home</a>
                 <a href="{{ site.baseurl }}/services" class="footer__button button button--text">Services</a>
@@ -56,7 +40,7 @@
                 <a href="{{ site.baseurl }}/join" class="footer__button button button--text">Join</a>
                 <a href="{{ site.baseurl }}/contact" class="footer__button button button--text">Contact</a>
             </div>
-            <div class="footer__item  colfooter--md3 colfooter--sm5">
+            <div class="footer__item  colalt--md3 colalt--sm5">
                 <h2 class="footer__title subtitle">Organisation</h2>
                 <a href="{{ site.baseurl }}/faq" class="footer__button button button--text">FAQ</a>
                 <a href="{{ site.baseurl }}/privacy-policy" class="footer__button button button--text">Privacy policy</a>

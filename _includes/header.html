@@ -60,7 +60,7 @@
 
 <body>
 
-<header class="header js-opened">
+<header class="header">
 
 	<div class="header__bar">
 		<!-- to change the color of the logo, add the corresponding page title to the condition in the class tag -->
@@ -74,18 +74,86 @@
 	</div>
 
 	<div class="header__menu">
-		<div class="menu__nav">
-			<a href="" class="menu__item subtitle">Home</a>
-			<a href="" class="menu__item subtitle">Services</a>
-			<a href="" class="menu__item subtitle">Case studies</a>
-			<a href="" class="menu__item subtitle">Products</a>
-			<a href="" class="menu__item subtitle">About</a>
-			<a href="" class="menu__item subtitle">Media</a>
-			<a href="" class="menu__item subtitle">Resources</a>
-			<a href="" class="menu__item subtitle">Contact</a>
+		<div class="menu__row">
+			<h1 class="menu__title headline">Menu</h1>
+			<div class="menu__inner">
+				<a href="{{ site.baseurl }}/" class="menu__button">
+					<h2 class="subtitle">Home</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/services" class="menu__button">
+					<h2 class="subtitle">Services</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/case-studies" class="menu__button">
+					<h2 class="subtitle">Case studies</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/products" class="menu__button">
+					<h2 class="subtitle">Products</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/about" class="menu__button">
+					<h2 class="subtitle">About</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/media" class="menu__button">
+					<h2 class="subtitle">Media</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/join" class="menu__button">
+					<h2 class="subtitle">Join</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/resources" class="menu__button">
+					<h2 class="subtitle">Resources</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/contact" class="menu__button">
+					<h2 class="subtitle">Contact</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+			</div>
+			<div class="menu__inner">
+				<a href="{{ site.baseurl }}/faq" class="menu__button">
+					<h2 class="body--large body--bold">FAQ</h2>
+				</a>
+				<a href="{{ site.baseurl }}/privacy-policy" class="menu__button">
+					<h2 class="body--large body--bold">Privacy policy</h2>
+				</a>
+				<a href="{{ site.baseurl }}/press-kit" class="menu__button">
+					<h2 class="body--large body--bold">Press kit</h2>
+				</a>
+			</div>
 		</div>
-		<div class="menu__social"></div>
-		<div class="menu__newsletter"></div>
+		<div class="menu__row row">
+			<div class="col--4">
+				<!-- edit component in _includes/components/social.html -->
+				{% include components/social.html %}
+			</div>
+			<div class="col--8">
+				<!-- edit component in _includes/components/newsletter.html -->
+				{% include components/newsletter.html %}
+			</div>
+		</div>
 	</div>
 
 </header>

@@ -3928,10 +3928,11 @@ select:-webkit-autofill:focus {
 }
 /* line 14, ../sass/partials/_tooltips.scss */
 .tooltip__inner {
-  -moz-transition: opacity 0.4s ease 0s;
-  -o-transition: opacity 0.4s ease 0s;
-  -webkit-transition: opacity 0.4s ease 0s;
-  transition: opacity 0.4s ease 0s;
+  -moz-transition: opacity 0.8s ease 0s;
+  -o-transition: opacity 0.8s ease 0s;
+  -webkit-transition: opacity 0.8s ease;
+  -webkit-transition-delay: 0s;
+  transition: opacity 0.8s ease 0s;
   pointer-events: none;
   z-index: 1;
   opacity: 0;

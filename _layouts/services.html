@@ -107,9 +107,18 @@
         <div class="section__content projects">
             <!-- edit data in _data/projects.html -->
             {% for item in site.data.projects %}
-                <div class="projects__item tooltip tooltip--click">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.name }}" class="block projects__image hover-grayscale tooltip__trigger">
-                    <p class="tooltip__inner">{{ item.name }}</p>
+                <div class="projects__item">
+                    <div class="block tooltip tooltip--click">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.name }}" class="projects__image hover-grayscale tooltip__trigger">
+                        <div class="projects__inner tooltip__inner">
+                             <p class="projects__title lead">{{ item.name }}</p>
+                             <p class="projects__subtitle body--bold">{{ item.subtitle }}</p>
+                             <p class="label">Industry</p>
+                             <p>{{ item.industry }}</p>
+                             <p class="label">Technology</p>
+                             <p>{{ item.technology }}</p>
+                        </div>
+                    </div>
                 </div>
             {% endfor %}
         </div>

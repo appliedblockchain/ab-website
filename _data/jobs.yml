@@ -5,15 +5,104 @@
 london:
   - title: Node.js Software Developer
     type: Permanent
-    description: This is a description
+    role: 
+      '<ul>
+        <li>Develop cutting edge software solutions for startups and corporate clients<br>Engage with clients to understand their product vision and design proof-of-concept and production grade products
+        <li>Develop smart contracts on solidity
+        <li>Liaise with frontend developers to build APIs for web and mobile
+        <li>Write automated tests for smart contracts and server side code
+        <li>Design and build large scale, high volume systems
+      </ul>'
+    required-skills: 
+      '<ul>
+        <li>3+ years of backend development experience
+        <li>1+ years of Node.js
+        <li>Experience in writing automated tests
+        <li>Experience with API design and implementation
+        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)
+        <li>Good understanding of Linux
+        <li>Git knowledge (feature branches, github flow)
+      </ul>'
+    additional-skills:
+      '<ul>
+        <li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
+        <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
+        <li>Testing frameworks (Jest, Mocha/Chai/Should.js, Enzyme)</li>
+        <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
+        <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
+        <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
+        <li>Experience in React</li>
+        <li>Blockchain knowledge – Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
+        <li>HTML and CSS</li>
+      </ul>'
 
   - title: Marketing Assistant
     type: Internship
-    description: This is a description
+    role: 
+      '<ul>
+        <li>Develop cutting edge software solutions for startups and corporate clients<br>Engage with clients to understand their product vision and design proof-of-concept and production grade products
+        <li>Develop smart contracts on solidity
+        <li>Liaise with frontend developers to build APIs for web and mobile
+        <li>Write automated tests for smart contracts and server side code
+        <li>Design and build large scale, high volume systems
+      </ul>'
+    required-skills: 
+      '<ul>
+        <li>3+ years of backend development experience
+        <li>1+ years of Node.js
+        <li>Experience in writing automated tests
+        <li>Experience with API design and implementation
+        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)
+        <li>Good understanding of Linux
+        <li>Git knowledge (feature branches, github flow)
+      </ul>'
+    additional-skills:
+      '<ul>
+        <li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
+        <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
+        <li>Testing frameworks (Jest, Mocha/Chai/Should.js, Enzyme)</li>
+        <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
+        <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
+        <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
+        <li>Experience in React</li>
+        <li>Blockchain knowledge – Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
+        <li>HTML and CSS</li>
+      </ul>'
 
-# porto
+
+
+      # porto
 
 porto:
   - title: Senior React.js Developer
     type: Contract
-    description: This is a description
+    role: 
+      '<ul>
+        <li>Develop cutting edge software solutions for startups and corporate clients<br>Engage with clients to understand their product vision and design proof-of-concept and production grade products
+        <li>Develop smart contracts on solidity
+        <li>Liaise with frontend developers to build APIs for web and mobile
+        <li>Write automated tests for smart contracts and server side code
+        <li>Design and build large scale, high volume systems
+      </ul>'
+    required-skills: 
+      '<ul>
+        <li>3+ years of backend development experience
+        <li>1+ years of Node.js
+        <li>Experience in writing automated tests
+        <li>Experience with API design and implementation
+        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)
+        <li>Good understanding of Linux
+        <li>Git knowledge (feature branches, github flow)
+      </ul>'
+    additional-skills:
+      '<ul>
+        <li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
+        <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
+        <li>Testing frameworks (Jest, Mocha/Chai/Should.js, Enzyme)</li>
+        <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
+        <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
+        <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
+        <li>Experience in React</li>
+        <li>Blockchain knowledge – Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
+        <li>HTML and CSS</li>
+      </ul>'

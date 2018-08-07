@@ -20,10 +20,10 @@
         <div class="section__content tab tab--vertical jobs">
             <div class="section__filter tab__nav">
                 <a href="#london" class="nav__button nav__button--active button button--primary-darken button--animate fa fa-map-marker-alt">
-                    <p class="button__inner">London</p>
+                    <h2 class="button__inner">London</h2>
                 </a>
                 <a href="#porto" class="nav__button nav__button--active button button--animate fa fa-map-marker-alt">
-                    <p class="button__inner">Porto</p>
+                    <h2 class="button__inner">Porto</h2>
                 </a>
             </div>
             <div class="tab__content block accordion jobs__content">
@@ -43,9 +43,10 @@
                                     </span>
                                 </div>
                             </div>
-                            <p class="accordion__content">
+                            <div class="accordion__content">
+
                                 {{ job.description }}
-                            </p>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>
@@ -65,9 +66,9 @@
                                     </span>
                                 </div>
                             </div>
-                            <p class="accordion__content">
+                            <div class="accordion__content">
                                 {{ job.description }}
-                            </p>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>

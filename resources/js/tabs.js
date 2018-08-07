@@ -68,13 +68,13 @@ $(".tab--horizontal .tab__nav a").click(function(event) {
 
 $('.accordion .accordion__header').on('click', function() {
 	// variables
-	var next = $(this).next('p');
-
+	var next = $(this).next('.accordion__content');
+	// slide
 	$('.accordion__content').not(next).each(function() {
 		$(this).slideUp();
 	});
 	next.slideToggle();
-
+	// icon animation
 	$('.accordion__header.js-accordion-active').not(this).removeClass('js-accordion-active');
 	$(this).toggleClass('js-accordion-active');
 });

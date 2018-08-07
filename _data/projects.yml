@@ -1,0 +1,26 @@
+# projects section
+# in service.html page
+
+- url: appii
+  name: Appii
+
+- url: cygnetise
+  name: Cygnetise
+
+- url: nuggets
+  name: Nuggets
+
+- url: shell
+  name: Shell
+
+- url: sita
+  name: Sita
+
+- url: toyota
+  name: Toyota
+
+- url: UN
+  name: United Nations
+
+- url: vodafone
+  name: Vodafone

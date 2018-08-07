@@ -7,21 +7,22 @@ london:
     type: Permanent
     role: 
       '<ul>
-        <li>Develop cutting edge software solutions for startups and corporate clients<br>Engage with clients to understand their product vision and design proof-of-concept and production grade products
-        <li>Develop smart contracts on solidity
-        <li>Liaise with frontend developers to build APIs for web and mobile
-        <li>Write automated tests for smart contracts and server side code
-        <li>Design and build large scale, high volume systems
+        <li>Develop cutting edge software solutions for startups and corporate clients</li>
+        <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
+        <li>Develop smart contracts on solidity</li>
+        <li>Liaise with frontend developers to build APIs for web and mobile</li>
+        <li>Write automated tests for smart contracts and server side code</li>
+        <li>Design and build large scale, high volume systems</li>
       </ul>'
     required-skills: 
       '<ul>
-        <li>3+ years of backend development experience
-        <li>1+ years of Node.js
-        <li>Experience in writing automated tests
-        <li>Experience with API design and implementation
-        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)
-        <li>Good understanding of Linux
-        <li>Git knowledge (feature branches, github flow)
+        <li>3+ years of backend development experience</li>
+        <li>1+ years of Node.js</li>
+        <li>Experience in writing automated tests</li>
+        <li>Experience with API design and implementation</li>
+        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
+        <li>Good understanding of Linux</li>
+        <li>Git knowledge (feature branches, github flow)</li>
       </ul>'
     additional-skills:
       '<ul>
@@ -40,21 +41,22 @@ london:
     type: Internship
     role: 
       '<ul>
-        <li>Develop cutting edge software solutions for startups and corporate clients<br>Engage with clients to understand their product vision and design proof-of-concept and production grade products
-        <li>Develop smart contracts on solidity
-        <li>Liaise with frontend developers to build APIs for web and mobile
-        <li>Write automated tests for smart contracts and server side code
-        <li>Design and build large scale, high volume systems
+        <li>Develop cutting edge software solutions for startups and corporate clients</li>
+        <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
+        <li>Develop smart contracts on solidity</li>
+        <li>Liaise with frontend developers to build APIs for web and mobile</li>
+        <li>Write automated tests for smart contracts and server side code</li>
+        <li>Design and build large scale, high volume systems</li>
       </ul>'
     required-skills: 
       '<ul>
-        <li>3+ years of backend development experience
-        <li>1+ years of Node.js
-        <li>Experience in writing automated tests
-        <li>Experience with API design and implementation
-        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)
-        <li>Good understanding of Linux
-        <li>Git knowledge (feature branches, github flow)
+        <li>3+ years of backend development experience</li>
+        <li>1+ years of Node.js</li>
+        <li>Experience in writing automated tests</li>
+        <li>Experience with API design and implementation</li>
+        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
+        <li>Good understanding of Linux</li>
+        <li>Git knowledge (feature branches, github flow)</li>
       </ul>'
     additional-skills:
       '<ul>
@@ -78,21 +80,22 @@ porto:
     type: Contract
     role: 
       '<ul>
-        <li>Develop cutting edge software solutions for startups and corporate clients<br>Engage with clients to understand their product vision and design proof-of-concept and production grade products
-        <li>Develop smart contracts on solidity
-        <li>Liaise with frontend developers to build APIs for web and mobile
-        <li>Write automated tests for smart contracts and server side code
-        <li>Design and build large scale, high volume systems
+        <li>Develop cutting edge software solutions for startups and corporate clients</li>
+        <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
+        <li>Develop smart contracts on solidity</li>
+        <li>Liaise with frontend developers to build APIs for web and mobile</li>
+        <li>Write automated tests for smart contracts and server side code</li>
+        <li>Design and build large scale, high volume systems</li>
       </ul>'
     required-skills: 
       '<ul>
-        <li>3+ years of backend development experience
-        <li>1+ years of Node.js
-        <li>Experience in writing automated tests
-        <li>Experience with API design and implementation
-        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)
-        <li>Good understanding of Linux
-        <li>Git knowledge (feature branches, github flow)
+        <li>3+ years of backend development experience</li>
+        <li>1+ years of Node.js</li>
+        <li>Experience in writing automated tests</li>
+        <li>Experience with API design and implementation</li>
+        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
+        <li>Good understanding of Linux</li>
+        <li>Git knowledge (feature branches, github flow)</li>
       </ul>'
     additional-skills:
       '<ul>

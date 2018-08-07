@@ -661,7 +661,7 @@ optgroup {
   border-top: 1px solid #d7d7dc;
 }
 /* line 21, ../sass/partials/_accordions.scss */
-.accordion__header {
+.accordion__header, .accordion__content {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -673,7 +673,7 @@ optgroup {
   padding: 15px 20px;
 }
 /* line 31, ../sass/partials/_accordions.scss */
-.accordion__header.js-accordion-active .button--icon {
+.accordion__header.js-accordion-active .button--icon, .js-accordion-active.accordion__content .button--icon {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -684,14 +684,30 @@ optgroup {
   width: 66.666%;
 }
 /* line 45, ../sass/partials/_accordions.scss */
-.accordion__content {
-  cursor: initial;
-  display: none;
-}
-/* line 50, ../sass/partials/_accordions.scss */
 .accordion__actions {
   display: -webkit-flex;
   display: flex;
+}
+/* line 49, ../sass/partials/_accordions.scss */
+.accordion__content {
+  cursor: initial;
+  display: none;
+  padding-top: 0;
+  border-top: 1px solid #f0f0f0;
+}
+/* line 57, ../sass/partials/_accordions.scss */
+.accordion__subtitle {
+  padding: 15px 0;
+}
+/* line 61, ../sass/partials/_accordions.scss */
+.accordion .lead {
+  color: #007bff !important;
+}
+/* line 65, ../sass/partials/_accordions.scss */
+.accordion ul {
+  list-style: disc;
+  margin-left: 15px;
+  line-height: 1.5;
 }
 
 /* 
@@ -822,20 +838,20 @@ optgroup {
 */
 /* line 164, ../sass/modules/_mixins.scss */
 .button--primary {
-  background-color: #005eff;
-  border-color: #005eff;
+  background-color: #007bff;
+  border-color: #007bff;
   color: #ffffff;
 }
 /* line 168, ../sass/modules/_mixins.scss */
 .button--primary-lighten {
-  background-color: #4d8eff;
-  border-color: #4d8eff;
+  background-color: #4da3ff;
+  border-color: #4da3ff;
   color: #ffffff;
 }
 /* line 173, ../sass/modules/_mixins.scss */
 .button--primary-darken {
-  background-color: #0042b3;
-  border-color: #0042b3;
+  background-color: #0056b3;
+  border-color: #0056b3;
   color: #ffffff;
 }
 
@@ -843,19 +859,19 @@ optgroup {
 .button--secondary {
   background-color: #64f0ff;
   border-color: #64f0ff;
-  color: #005eff;
+  color: #007bff;
 }
 /* line 168, ../sass/modules/_mixins.scss */
 .button--secondary-lighten {
   background-color: #b1f7ff;
   border-color: #b1f7ff;
-  color: #005eff;
+  color: #007bff;
 }
 /* line 173, ../sass/modules/_mixins.scss */
 .button--secondary-darken {
   background-color: #18e9ff;
   border-color: #18e9ff;
-  color: #005eff;
+  color: #007bff;
 }
 
 /* line 164, ../sass/modules/_mixins.scss */
@@ -1103,7 +1119,7 @@ optgroup {
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-  background-color: #005eff !important;
+  background-color: #007bff !important;
 }
 
 /* line 26, ../sass/partials/_carousel.scss */
@@ -1151,7 +1167,7 @@ html, body {
   letter-spacing: 0.05rem;
   font-weight: 700;
   font-style: normal;
-  color: #005eff;
+  color: #007bff;
 }
 
 /* line 43, ../sass/partials/_fonts.scss */
@@ -1185,7 +1201,7 @@ html, body {
   letter-spacing: 0.03rem;
   font-weight: 400;
   font-style: normal;
-  color: #005eff;
+  color: #007bff;
 }
 
 /* line 63, ../sass/partials/_fonts.scss */
@@ -1394,11 +1410,11 @@ html, body {
 }
 /* line 47, ../sass/partials/_form.scss */
 .form__group.focused .form__label {
-  color: #005eff;
+  color: #007bff;
 }
 /* line 51, ../sass/partials/_form.scss */
 .form__group.focused .form__input {
-  border-color: #005eff;
+  border-color: #007bff;
 }
 /* line 58, ../sass/partials/_form.scss */
 .form__textarea {
@@ -1475,7 +1491,7 @@ html, body {
   font-weight: 900;
   font-style: normal;
   text-decoration: none;
-  color: #005eff;
+  color: #007bff;
   position: absolute;
   top: 0;
   right: 15px;
@@ -1511,7 +1527,7 @@ html, body {
   overflow: scroll;
   z-index: 2;
   background-color: #ffffff;
-  border: 2px solid #005eff;
+  border: 2px solid #007bff;
 }
 /* line 148, ../sass/partials/_form.scss */
 .form__select .form__dropdown li {
@@ -1537,7 +1553,7 @@ html, body {
 }
 /* line 166, ../sass/partials/_form.scss */
 .form__select .form__dropdown li:hover {
-  color: #005eff;
+  color: #007bff;
 }
 /* line 170, ../sass/partials/_form.scss */
 .form__select .form__dropdown li[rel="hide"] {
@@ -1560,7 +1576,7 @@ html, body {
 }
 /* line 194, ../sass/partials/_form.scss */
 .switch__input:checked + .switch__slider {
-  background-color: #005eff;
+  background-color: #007bff;
 }
 /* line 197, ../sass/partials/_form.scss */
 .switch__input:checked + .switch__slider:before {
@@ -1627,7 +1643,7 @@ html, body {
 }
 /* line 239, ../sass/partials/_form.scss */
 .form__checkbox .form__input:checked + .form__label:before {
-  border-color: #005eff;
+  border-color: #007bff;
 }
 /* line 242, ../sass/partials/_form.scss */
 .form__checkbox .form__input:checked + .form__label:before {
@@ -1692,7 +1708,7 @@ html, body {
 }
 /* line 279, ../sass/partials/_form.scss */
 .form__radio .form__input:checked + .form__label:before {
-  border-color: #005eff;
+  border-color: #007bff;
 }
 /* line 282, ../sass/partials/_form.scss */
 .form__radio .form__input:checked + .form__label:before {
@@ -1823,7 +1839,7 @@ html, body {
   font-weight: 900;
   font-style: normal;
   text-decoration: none;
-  color: #005eff;
+  color: #007bff;
   position: absolute;
   top: auto;
   right: auto;
@@ -1841,7 +1857,7 @@ html, body {
   font-weight: 900;
   font-style: normal;
   text-decoration: none;
-  color: #005eff;
+  color: #007bff;
   position: absolute;
   top: auto;
   right: 15px;
@@ -3293,19 +3309,19 @@ html, body {
 /*text selection*/
 /* line 156, ../sass/partials/_structure.scss */
 ::-moz-selection {
-  background: #005eff;
+  background: #007bff;
   color: #ffffff;
 }
 
 /* line 160, ../sass/partials/_structure.scss */
 ::selection {
-  background: #005eff;
+  background: #007bff;
   color: #ffffff;
 }
 
 /* line 164, ../sass/partials/_structure.scss */
 ::-moz-selection {
-  background: #005eff;
+  background: #007bff;
   color: #ffffff;
 }
 
@@ -3445,7 +3461,7 @@ select:-webkit-autofill:focus {
 /*colors*/
 /* line 301, ../sass/partials/_structure.scss */
 .section--primary {
-  background-color: #005eff;
+  background-color: #007bff;
   color: #ffffff;
 }
 /* line 305, ../sass/partials/_structure.scss */
@@ -3502,7 +3518,7 @@ select:-webkit-autofill:focus {
 
 /* line 366, ../sass/partials/_structure.scss */
 .filter__button:hover {
-  background-color: #005eff;
+  background-color: #007bff;
 }
 /* line 369, ../sass/partials/_structure.scss */
 .filter__button:hover .button__inner {
@@ -3564,7 +3580,7 @@ select:-webkit-autofill:focus {
   -o-transition: fill 0.4s ease 0s;
   -webkit-transition: fill 0.4s ease 0s;
   transition: fill 0.4s ease 0s;
-  fill: #005eff;
+  fill: #007bff;
 }
 /* line 420, ../sass/partials/_structure.scss */
 .header__image {
@@ -3591,7 +3607,7 @@ select:-webkit-autofill:focus {
 }
 /* line 448, ../sass/partials/_structure.scss */
 .header.scrolled .logo__background {
-  fill: #005eff;
+  fill: #007bff;
 }
 /* line 452, ../sass/partials/_structure.scss */
 .header.scrolled .logo__icon {
@@ -3654,7 +3670,7 @@ select:-webkit-autofill:focus {
 }
 /* line 526, ../sass/partials/_structure.scss */
 .logo-footer-icon-bg {
-  fill: #005eff;
+  fill: #007bff;
 }
 /* line 530, ../sass/partials/_structure.scss */
 .logo-footer-icon-color {
@@ -3851,15 +3867,15 @@ select:-webkit-autofill:focus {
 }
 /* line 38, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+1):before {
-  background-color: rgba(0, 94, 255, 0.7);
+  background-color: rgba(0, 123, 255, 0.7);
 }
 /* line 41, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+2):before {
-  background-color: rgba(0, 66, 179, 0.7);
+  background-color: rgba(0, 86, 179, 0.7);
 }
 /* line 44, ../sass/pages/_case-studies.scss */
 .portfolio__item:nth-child(3n+3):before {
-  background-color: rgba(77, 142, 255, 0.7);
+  background-color: rgba(77, 163, 255, 0.7);
 }
 /* line 49, ../sass/pages/_case-studies.scss */
 .portfolio__item.alt {
@@ -3868,12 +3884,12 @@ select:-webkit-autofill:focus {
 }
 /* line 53, ../sass/pages/_case-studies.scss */
 .portfolio__item.alt:before {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNWVmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzAwNWVmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNWVmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwN2JmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzAwN2JmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwN2JmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 94, 255, 0)), color-stop(60%, #005eff), color-stop(100%, #005eff));
-  background-image: -moz-linear-gradient(left, rgba(0, 94, 255, 0), #005eff 60%, #005eff);
-  background-image: -webkit-linear-gradient(left, rgba(0, 94, 255, 0), #005eff 60%, #005eff);
-  background-image: linear-gradient(to right, rgba(0, 94, 255, 0), #005eff 60%, #005eff);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 123, 255, 0)), color-stop(60%, #007bff), color-stop(100%, #007bff));
+  background-image: -moz-linear-gradient(left, rgba(0, 123, 255, 0), #007bff 60%, #007bff);
+  background-image: -webkit-linear-gradient(left, rgba(0, 123, 255, 0), #007bff 60%, #007bff);
+  background-image: linear-gradient(to right, rgba(0, 123, 255, 0), #007bff 60%, #007bff);
   background-color: transparent !important;
 }
 /* line 60, ../sass/pages/_case-studies.scss */
@@ -3930,15 +3946,15 @@ select:-webkit-autofill:focus {
 }
 /* line 99, ../sass/pages/_case-studies.scss */
 .portfolio__item:hover:nth-child(3n+1):before {
-  background-color: #005eff;
+  background-color: #007bff;
 }
 /* line 102, ../sass/pages/_case-studies.scss */
 .portfolio__item:hover:nth-child(3n+2):before {
-  background-color: #0042b3;
+  background-color: #0056b3;
 }
 /* line 105, ../sass/pages/_case-studies.scss */
 .portfolio__item:hover:nth-child(3n+3):before {
-  background-color: #4d8eff;
+  background-color: #4da3ff;
 }
 /* line 111, ../sass/pages/_case-studies.scss */
 .portfolio__item:hover .portfolio__desc span {
@@ -4083,7 +4099,7 @@ select:-webkit-autofill:focus {
 }
 /* line 32, ../sass/pages/_services.scss */
 .solutions__icon:hover, .nav__button--active .solutions__icon {
-  background-color: #0055e6;
+  background-color: #006fe6;
 }
 /* line 37, ../sass/pages/_services.scss */
 .solutions__text {

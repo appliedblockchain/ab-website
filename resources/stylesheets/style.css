@@ -4206,6 +4206,18 @@ select:-webkit-autofill:focus {
 .blog__content {
   padding: 40px;
 }
+/* line 28, ../sass/pages/_media.scss */
+.blog__date {
+  margin-bottom: 20px;
+}
+/* line 32, ../sass/pages/_media.scss */
+.blog__title {
+  margin-bottom: 10px;
+}
+/* line 36, ../sass/pages/_media.scss */
+.blog__text {
+  margin-bottom: 40px;
+}
 
 /* 
  * —————————————————————————————————————————————————————————————————

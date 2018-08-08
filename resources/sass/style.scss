@@ -28,19 +28,20 @@
 	"partials/_accordions",
 	"partials/_buttons",
 	"partials/_carousel",
-	"partials/_change-color",
 	"partials/_fonts",
 	"partials/_form",
 	"partials/_slider",
 	"partials/_structure",
 	"partials/_tabs",
 	"partials/_testimonials",
-	"partials/_timeline";
+	"partials/_timeline",
+	"partials/_tooltips";
 
 // PAGES
 @import
+	"pages/_case-studies",
 	"pages/_contact",
-	"pages/_home",
+	"pages/_index",
 	"pages/_join",
 	"pages/_media",
 	"pages/_services";

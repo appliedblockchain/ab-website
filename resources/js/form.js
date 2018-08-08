@@ -17,10 +17,10 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 
 $(".form__input").focus(function() {
-	$(this).closest(".form__control").addClass('focused');
+	$(this).closest(".form__group").addClass('focused');
 });
 $(".form__input").focusout(function() {
-	$(this).closest(".form__control").removeClass('focused');
+	$(this).closest(".form__group").removeClass('focused');
 });
 
 

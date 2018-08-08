@@ -17,10 +17,13 @@
 // 1. colors
 // —————————————————————————————————————————————————————————————————
 
-$primary: 	#005eff;
+$primary: 	#007bff;
 $secondary: #64f0ff;
 $dark: 	    #000076;
 $highlight:	#ff6f00;
+
+$primary-darken: darken($primary, 15%);
+$primary-lighten: lighten($primary, 15%);
 
 $black: 	#000a1e;
 $darkgrey: 	#8c8c96;
@@ -35,7 +38,8 @@ $white: 	#ffffff;
 // —————————————————————————————————————————————————————————————————
 
 $col:			100vw/16;
-$col-inner:     100%/14;
+$col-inner:     100%/12;
+$col-footer:    100%/15;
 
 $integer:		20px;
 

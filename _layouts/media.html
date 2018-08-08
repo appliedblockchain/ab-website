@@ -27,16 +27,18 @@
                         </a>
                     {% endfor %}
                 </div>
-                <div class="grid blog__content">
+                <div class="grid blog__content row">
                     {% if site.posts.size > 0 %}
                         {% for post in site.posts %}
-                            <div class="block element-item {{ post.category }} {{ post.date | date: "%Y" }}">
-                                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                                <p>{{ post.category-name }}</p>
-                                <h2>
-                                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                                </h2>
-                                <p>{{ post.excerpt | truncate: 150, "…" }}</p>
+                            <div class="col--md4 {{ post.category }} {{ post.date | date: "%Y" }}">
+                                <div class="block blog__item">
+                                    <span class="">{{ post.date | date: "%b %-d, %Y" }}</span>
+                                    <p>{{ post.category-name }}</p>
+                                    <h2>
+                                        <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                    </h2>
+                                    <p>{{ post.excerpt | truncate: 150, "…" }}</p>
+                                </div>
                             </div>
                         {% endfor %}
                     {% else %}

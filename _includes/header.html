@@ -49,7 +49,6 @@
 	<script src="{{ site.baseurl }}{{ site.resourceurl }}/js/anchor.js" type="text/javascript"></script>
 	<script src="{{ site.baseurl }}{{ site.resourceurl }}/js/buttons.js" type="text/javascript"></script>
 	<script src="{{ site.baseurl }}{{ site.resourceurl }}/js/carousel.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}{{ site.resourceurl }}/js/change-color.js" type="text/javascript"></script>
 	<script src="{{ site.baseurl }}{{ site.resourceurl }}/js/filter.js" type="text/javascript"></script>
 	<script src="{{ site.baseurl }}{{ site.resourceurl }}/js/form.js" type="text/javascript"></script>
 	<script src="{{ site.baseurl }}{{ site.resourceurl }}/js/modals.js" type="text/javascript"></script>
@@ -63,30 +62,96 @@
 
 <header class="header">
 
-	<div class="header__top">
-		<div class="js-replace">
-			<!-- header primary -->
-			<div class="js-replace__item js-replace__item--active">
-				<div class="js-replace__content">
-					<div class="header__logo">
-						<img src="{{ site.baseurl }}{{ site.imageurl }}/logos/logo-ab-icon-primary.svg" alt="" class="header__image">
-					</div>
-					<a class="header__button button button--menu">
-						<span class="button__inner"></span>
-					</a>
-				</div>
-			</div>  
-			<!-- header white -->
-			<div class="js-replace__item">
-				<div class="js-replace__content">
-					<div class="header__logo">
-							<img src="{{ site.baseurl }}{{ site.imageurl }}/logos/logo-ab-icon-white.svg" alt="" class="header__image">
-						</div>
-						<a class="header__button button button--menu alt">
-							<span class="button__inner"></span>
-						</a>
-					</div>
-				</div>
+	<div class="header__bar">
+		<!-- to change the color of the logo, add the corresponding page title to the condition in the class tag -->
+		<div class="header__logo {% if page.title == 'Services' %}alt{% endif %}">
+			{% include components/logo-header.html %}
+		</div>
+		<!-- to change the color of the menu icon, add the corresponding page title to the condition in the class tag -->
+		<a class="header__button button button--menu {% if page.title == 'Services' or page.title == 'Home' or page.title == 'Case studies' %}alt{% endif %}">
+			<span class="button__inner"></span>
+		</a>
+	</div>
+
+	<div class="header__menu">
+		<div class="menu__row">
+			<h1 class="menu__title headline">Menu</h1>
+			<div class="menu__inner">
+				<a href="{{ site.baseurl }}/" class="menu__button">
+					<h2 class="subtitle">Home</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/services" class="menu__button">
+					<h2 class="subtitle">Services</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/case-studies" class="menu__button">
+					<h2 class="subtitle">Case studies</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/products" class="menu__button">
+					<h2 class="subtitle">Products</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/about" class="menu__button">
+					<h2 class="subtitle">About</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/media" class="menu__button">
+					<h2 class="subtitle">Media</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/join" class="menu__button">
+					<h2 class="subtitle">Join</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/resources" class="menu__button">
+					<h2 class="subtitle">Resources</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+				<a href="{{ site.baseurl }}/contact" class="menu__button">
+					<h2 class="subtitle">Contact</h2>
+					<p class="menu__description">
+						<span>Lorem ipsum dolor sit amet</span>
+					</p>
+				</a>
+			</div>
+			<div class="menu__inner">
+				<a href="{{ site.baseurl }}/faq" class="menu__button">
+					<h2 class="body--large body--bold">FAQ</h2>
+				</a>
+				<a href="{{ site.baseurl }}/privacy-policy" class="menu__button">
+					<h2 class="body--large body--bold">Privacy policy</h2>
+				</a>
+				<a href="{{ site.baseurl }}/press-kit" class="menu__button">
+					<h2 class="body--large body--bold">Press kit</h2>
+				</a>
+			</div>
+		</div>
+		<div class="menu__row row">
+			<div class="col--4">
+				<!-- edit component in _includes/components/social.html -->
+				{% include components/social.html %}
+			</div>
+			<div class="col--8">
+				<!-- edit component in _includes/components/newsletter.html -->
+				{% include components/newsletter.html %}
 			</div>
 		</div>
 	</div>

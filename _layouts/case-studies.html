@@ -1,18 +1,66 @@
 {% include header.html %}
 
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        background-color='dark'
+        title='Case studies'
+    %}
+
     {% if site.projects.size > 0 %}
-        <ul>
-            {% for project in site.projects %}
-                <li>
-                    <a href="{{ project.url }}">
-                        <h2>{{ project.title }}</h2>
+
+        <section class="section section--alt section--dark">
+
+            <div class="section__content portfolio">
+                <!-- change slug to choose featured project -->
+                {% assign featureProject = site.projects | where: "slug", "traveledger" | first %}
+                <a href="{{ featureProject.url }}" class="portfolio__item alt block" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/case-studies/{{ featureProject.slug }}.jpg);">
+                    <div class="portfolio__content">
+                        <p class="portfolio__comment comment">{{ featureProject.industry }}</p>
+                        <h2 class="portfolio__title subtitle">{{ featureProject.title }}</h2>
+                        <p class="portfolio__subtitle lead">{{ featureProject.subtitle }}</p>
+                        <p class="portfolio__desc">
+                            <span>{{ featureProject.description }}</span>
+                        </p>
+                        <div class="portfolio__button">
+                            <span href="" class="button button--secondary button--small button--animate fa fa-eye">
+                                <p class="button__inner">Read more</p>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+
+        <section class="section section--nopadding portfolio">
+
+            <div class="portfolio__grid">
+                {% for project in site.projects %}
+                    <a href="{{ project.url }}" class="portfolio__item" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/case-studies/{{ project.slug }}.jpg);">
+                        <div class="portfolio__content">
+                            <p class="portfolio__comment comment">{{ project.industry }}</p>
+                            <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
+                            <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>
+                            <p class="portfolio__desc">
+                                <span>{{ project.description }}</span>
+                            </p>
+                            <div class="portfolio__button">
+                                <span href="" class="button button--secondary button--small button--animate fa fa-eye">
+                                    <p class="button__inner">Read more</p>
+                                </span>
+                            </div>
+                        </div>
                     </a>
-                </li>
-                <br>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </div>
+
+        </section>
+
     {% else %}
+
         <p>There are no project available. Come back soon!</p>
+
     {% endif %}
+
 
 {% include footer.html %}

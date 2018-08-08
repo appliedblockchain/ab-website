@@ -8,7 +8,8 @@
  * —————————————————————————————————————————————————————————————————
  * general
  * animate
- * icon
+ * color variant
+ * size
  * close
  * menu
  * —————————————————————————————————————————————————————————————————
@@ -22,9 +23,11 @@
 */
 
 .button {
-	@include transition(background-color $transition);
+	@include transition(background-color $transition, transform $transition);
 	@include border-radius(100px);
-	display: inline-block;
+	@include display-flex(inline-flex !important);
+	@include justify-content(center);
+	@include align-items(center);
 	cursor: pointer;
 	padding: 12px 24px;
 	overflow: hidden;
@@ -42,6 +45,21 @@
 	& + & {
 		margin-left: 5px;
 	}
+	
+	&--icon {
+		padding: 0;
+		width: $integer*2;
+		height: $integer*2;
+	}
+	
+	&--text {
+		@include transition(transform $transition);
+		padding: $integer/4 0;
+
+		&:hover {
+			@include transform(translateX($integer/4));
+		}
+	}
 }
 
 
@@ -52,17 +70,20 @@
 */
 
 .button--animate:before {
-	@include transition(transform 0.4s ease 0s);
+	@include transition(transform $transition);
 	@include pseudo-element('', 0, auto, auto, -140%, 100%, 100%);
-	@include display-flex();
+	@include display-flex(inline-flex);
 	@include align-items(center);
 	@include justify-content(center);
 	text-align: center;
 	background-color: transparent;
 }
 
-.button--animate:hover:before, .button--animate:hover .button__inner {
+.button--animate:hover:before {
 	@include transform(translateX(140%));
+}
+.button--animate:hover .button__inner {
+	@include transform(translateX(145%));
 }
 
 
@@ -112,22 +133,6 @@
 
 
 /*
- * icon
- * —————————————————————————————————————————————————————————————————
-*/
-
-.button--icon {
-	@include display-flex();
-	@include justify-content(center);
-	@include align-items(center);
-	padding: 0;
-	width: $integer*2;
-	height: $integer*2;
-}
-
-
-
-/*
  * close
  * —————————————————————————————————————————————————————————————————
 */
@@ -138,7 +143,7 @@
 		margin-top: -2px;
 		background-color: $black;
 		@include transform(rotate(0deg));
-		@include transition (transform 0.4s ease 0s);
+		@include transition (transform $transition);
 		@include border-radius(0.15rem);
 		@include pseudo-element('', 50%, auto, auto, auto, 30px, 5px);
 	}
@@ -191,7 +196,7 @@
 	}
 	
 	&:before, &:after {
-		@include transition(transform 0.4s ease 0s);
+		@include transition(transform $transition);
 		@include border-radius(0.15rem);
 		@include pseudo-element('', 50%, auto, auto, 0, 30px, 5px);
 		margin-top: -4px;
@@ -208,7 +213,7 @@
 	}
 
 	.button__inner {
-		@include transform(translateY(-1px));
+		@include transform(translateY(-2px));
 		@include transition(opacity 0s ease 0.4s);
 		@include border-radius(0.15rem);
 		width: $integer*1.5;

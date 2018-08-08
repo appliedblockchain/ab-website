@@ -1,40 +1,50 @@
     <footer class="footer section section--left section--dark">
 
         <div class="footer__top row">
-            <img src="" alt="" class="footer__logo logo col--5">
-            <div class="footer__social col--4">
-                <h2 class="footer__title subtitle">Get in touch</h2>
-               <a href="{{site.twitter}}" target="_blank" >
-                    <i class="footer-icon fa fa-twitter"></i>
-                </a>
-                <a href="{{site.github}}" target="_blank" >
-                    <i class="footer-icon fa fa-github-alt"></i>
-                </a>              
+            <div class="footer__item footer__logo colalt--lg6">
+                {% include components/logo-footer.html %}
             </div>
-            <div class="footer__newsletter newsletter col--5">
-                <h2 class="footer__title subtitle">Sign up for  our newsletter</h2>
+            <div class="footer__item colalt--lg4 colalt--sm7">
+                <!-- edit component in _includes/components/social.html -->
+                {% include components/social.html %}
+            </div>
+            <div class="footer__item colalt--lg5 colalt--sm8">
+                <!-- edit component in _includes/components/newsletter.html -->
+                {% include components/newsletter.html %}
             </div>
         </div>
 
         <div class="footer__bottom row">
-            <div class="footer__adress col--5">
+            <div class="footer__item footer__adress colalt--md6">
                 <h2 class="footer__title subtitle">Adress</h2>
-                <p>One Canada Square<br>Canary Wharf<br>London E14 5AB</p>
-                <p>+44 7712 345678<br>contact@appliedblockchain.com</p>
+                <p>Level39<br>One Canada Square<br>Canary Wharf<br>London E14 5AB</p>
+                <p>info@appliedblockchain.com</p>
                 <p class="body--bold">© Copyright 2018 Applied Blockchain Ltd.<br>All rights reserved.<p>
                 <p>Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276. Privacy policy.</p>
             </div>
-            <div class="footer__link  col--3">
+            <div class="footer__item  colalt--md3 colalt--sm5">
                 <h2 class="footer__title subtitle">External links</h2>
-
+                <a href="https://fern.network/" target="_new" class="footer__button button button--text">Fern</a>
+                <a href="https://github.com/appliedblockchain/cobalt" target="_new" class="footer__button button button--text">Cobalt</a>
+                <a href="https://github.com/appliedblockchain/cobalt" target="_new" class="footer__button button button--text">Mantle</a>
             </div>
-            <div class="footer__link  col--3">
+            <div class="footer__item  colalt--md3 colalt--sm5">
                 <h2 class="footer__title subtitle">Internal links</h2>
-
+                <a href="{{ site.baseurl }}/" class="footer__button button button--text">Home</a>
+                <a href="{{ site.baseurl }}/services" class="footer__button button button--text">Services</a>
+                <a href="{{ site.baseurl }}/case-studies" class="footer__button button button--text">Case studies</a>
+                <a href="{{ site.baseurl }}/products" class="footer__button button button--text">Products</a>
+                <a href="{{ site.baseurl }}/about" class="footer__button button button--text">About</a>
+                <a href="{{ site.baseurl }}/media" class="footer__button button button--text">Media</a>
+                <a href="{{ site.baseurl }}/resources" class="footer__button button button--text">Resources</a>
+                <a href="{{ site.baseurl }}/join" class="footer__button button button--text">Join</a>
+                <a href="{{ site.baseurl }}/contact" class="footer__button button button--text">Contact</a>
             </div>
-            <div class="footer__link  col--3">
+            <div class="footer__item  colalt--md3 colalt--sm5">
                 <h2 class="footer__title subtitle">Organisation</h2>
-
+                <a href="{{ site.baseurl }}/faq" class="footer__button button button--text">FAQ</a>
+                <a href="{{ site.baseurl }}/privacy-policy" class="footer__button button button--text">Privacy policy</a>
+                <a href="{{ site.baseurl }}/press-kit" class="footer__button button button--text">Press kit</a>
             </div>
         </div>
 

@@ -32,7 +32,7 @@
                 <!-- edit data in _data/solutions.html -->
                 {% for item in site.data.solutions %}
                     <div id="{{ item.id }}" class="tab__item solutions__item">
-                        <p class="solutions__text">{{ item.text }}</p>
+                        <p class="solutions__text body--large">{{ item.text }}</p>
                     </div>
                 {% endfor %}
             </div>
@@ -104,11 +104,26 @@
             title='Our Projects'
         %}
 
-        <div class="section__content projects">
-            <!-- edit data in _data/images.html -->
-            {% for item in site.data.images.projects %}
-                <div class="projects__item">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="block projects__image hover-grayscale">
+        <div class="section__content project">
+            <!-- edit data in _data/projects.html -->
+            {% for item in site.data.projects %}
+                <div class="project__item tooltip tooltip--click">
+                    <div class="block project__container">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.name }}" class="project__image hover-grayscale tooltip__trigger">
+                    </div>
+                    <div class="block project__inner tooltip__inner">
+                        <div>
+                            <p class="project__title lead">{{ item.name }}</p>
+                            <p class="project__subtitle body--bold">{{ item.subtitle }}</p>
+                            <p class="label">Industry</p>
+                            <p>{{ item.industry }}</p>
+                            <p class="label">Technology</p>
+                            <p>{{ item.technology }}</p>    
+                        </div>
+                        <a href="{{ item.link-url }}" class="project__button button button--primary button--small button--animate fa fa-map-marker-alt">
+                            <p class="button__inner">{{ item.link-title }}</p>
+                        </a>
+                    </div>
                 </div>
             {% endfor %}
         </div>

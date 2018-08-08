@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Cygnetise
+title: BABB
 subtitle: A smarter way to manage your Authorised Signatory Lists
 industry: Legal
 technology: Ethereum

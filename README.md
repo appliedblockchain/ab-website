@@ -3,6 +3,7 @@
 ## Jobs
 ### Add a job
 ### Edit a job
+* explain list system
 
 ## Blog posts
 * file name convention
@@ -19,3 +20,8 @@
 * image (path and name)
     * if doesn't work: check file extension (needs to be jpeg)
     * default image (explanation)
+
+## Projects
+### Add project
+### Edit project
+* Explain p markdozn for content (tag used spacing the paragraphs)

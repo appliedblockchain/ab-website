@@ -1,28 +1,56 @@
 {% include header.html %}
 
-<div class="page">
+<div class="page project">
 
     <div class="section section--header section--left">
         <div class="row">
-            <h1 class="col--6 title">
+            <h1 class="col--6 project__title title">
                 {{ page.title }}:
                 <span>{{ page.subtitle }}</span>
             </h1>
-
+            <div class="coloffset--2 col--4 project__meta">
+                <div class="meta__item body--large">
+                    <p class="body--bold">Industry</p>
+                    <p>{{ page.industry }}</p>
+                </div>
+                <div class="meta__item body--large">
+                    <p class="body--bold">Technology</p>
+                    <p>{{ page.technology }}</p>
+                </div>
+                <div class="meta__item body--large">
+                    <p class="body--bold">Deliverables</p>
+                    <p>{{ page.deliverables }}</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <section class="section section--quote">
+    <section class="section project__summary">
+        <div class="block summary__container">
+            <div class="summary__content">
+                <p class="subtitle">About {{ page.title }}</p>
+                <p>{{ page.summary }}</p>
+            </div>
+            <img src="" alt="" class="summary__image">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="project__header">The Challenge</h2>
+        <div class="project__content">{{ page.challenge }}</div>
+    </section>
+
+    <section class="section">
 
     </section>
 
-    <section class="section"></section>
+    <section class="section">
 
-    <section class="section"></section>
+    </section>
 
-    <section class="section"></section>
+    <section class="section">
 
-    <section class="section"></section>
+    </section>
 
 </div>
 

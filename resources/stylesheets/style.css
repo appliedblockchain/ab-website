@@ -4217,6 +4217,32 @@ select:-webkit-autofill:focus {
 
 /* 
  * —————————————————————————————————————————————————————————————————
+ * PROJECTS
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 15, ../sass/pages/_project.scss */
+.project__title span {
+  color: #000a1e;
+}
+
+/* line 27, ../sass/pages/_project.scss */
+.meta__item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+/* line 33, ../sass/pages/_project.scss */
+.meta__item + .meta__item {
+  padding-top: 20px;
+  border-top: 2px solid #d7d7dc;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
  * MEDIA
  * —————————————————————————————————————————————————————————————————
 */
@@ -4375,25 +4401,25 @@ select:-webkit-autofill:focus {
 }
 
 /* line 95, ../sass/pages/_services.scss */
-.project {
+.projectGrid {
   margin: -10px;
 }
 /* line 98, ../sass/pages/_services.scss */
-.project__item {
+.projectGrid__item {
   position: relative;
   width: 25%;
   padding: 10px;
 }
 /* line 104, ../sass/pages/_services.scss */
-.project__container {
+.projectGrid__container {
   padding: 20px;
 }
 /* line 108, ../sass/pages/_services.scss */
-.project__image {
+.projectGrid__image {
   width: 100%;
 }
 /* line 112, ../sass/pages/_services.scss */
-.project__inner {
+.projectGrid__inner {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
   -webkit-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease;
@@ -4419,7 +4445,7 @@ select:-webkit-autofill:focus {
   text-align: left;
 }
 /* line 127, ../sass/pages/_services.scss */
-.project__inner.js-show {
+.projectGrid__inner.js-show {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
   -webkit-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease;
@@ -4434,15 +4460,15 @@ select:-webkit-autofill:focus {
   z-index: 2;
 }
 /* line 138, ../sass/pages/_services.scss */
-.project__subtitle {
+.projectGrid__subtitle {
   margin-bottom: 20px;
 }
 /* line 142, ../sass/pages/_services.scss */
-.project .label {
+.projectGrid .label {
   margin-top: 5px;
 }
 /* line 146, ../sass/pages/_services.scss */
-.project__button {
+.projectGrid__button {
   margin-top: 10px;
 }
 

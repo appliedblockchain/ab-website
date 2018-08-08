@@ -4,7 +4,7 @@
 
         <!-- edit component in _includes/components/page-header.html -->
         {% include components/page-header.html
-            background-color=''
+            background-color='grey'
             title='Media'
         %}
         
@@ -14,7 +14,7 @@
             <a class="button active" data-filter=".2017">2017</a>
         </div> -->
         
-        <section class="section section--alt">
+        <section class="section section--alt section--grey">
 
             <div class="section__content blog">
                 <div class="button-group section__filter filter-button-group">
@@ -27,17 +27,21 @@
                         </a>
                     {% endfor %}
                 </div>
-                <div class="grid blog__content row">
+                <div class="grid row">
                     {% if site.posts.size > 0 %}
                         {% for post in site.posts %}
                             <div class="col--md4 {{ post.category }} {{ post.date | date: "%Y" }}">
                                 <div class="block blog__item">
-                                    <span class="">{{ post.date | date: "%b %-d, %Y" }}</span>
-                                    <p>{{ post.category-name }}</p>
-                                    <h2>
-                                        <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                                    </h2>
-                                    <p>{{ post.excerpt | truncate: 150, "…" }}</p>
+                                    <div class="blog__image" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image-link }}.jpg);"></div>
+                                    <div class="blog__content">
+                                        <span class="blog__icon"></span>
+                                        <p class="blog__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+                                        <h2 class="blog__title lead">{{ post.title }}</h2>
+                                        <p>{{ post.excerpt | truncate: 150, "…" }}</p>
+                                        <a href="{{ post.url | prepend: site.baseurl }}" class="button button--primary button--small button--animate fas fa-eye">
+                                            <p class="button__inner">Read more</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         {% endfor %}

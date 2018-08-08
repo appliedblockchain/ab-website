@@ -4187,6 +4187,24 @@ select:-webkit-autofill:focus {
  * MEDIA
  * —————————————————————————————————————————————————————————————————
 */
+/* line 13, ../sass/pages/_media.scss */
+.blog__item {
+  text-align: left;
+  padding: 0;
+}
+/* line 18, ../sass/pages/_media.scss */
+.blog__image {
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+/* line 23, ../sass/pages/_media.scss */
+.blog__content {
+  padding: 40px;
+}
+
 /* 
  * —————————————————————————————————————————————————————————————————
  * SERVICES

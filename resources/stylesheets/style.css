@@ -4204,17 +4204,36 @@ select:-webkit-autofill:focus {
 }
 /* line 24, ../sass/pages/_media.scss */
 .blog__content {
+  position: relative;
   padding: 40px;
 }
-/* line 28, ../sass/pages/_media.scss */
+/* line 29, ../sass/pages/_media.scss */
+.blog__icon {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  box-sizing: content-box;
+  overflow: hidden;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -36px;
+  right: 20px;
+  border: 5px solid #ffffff;
+}
+/* line 40, ../sass/pages/_media.scss */
+.blog__icon img {
+  width: 100%;
+}
+/* line 45, ../sass/pages/_media.scss */
 .blog__date {
   margin-bottom: 20px;
 }
-/* line 32, ../sass/pages/_media.scss */
+/* line 49, ../sass/pages/_media.scss */
 .blog__title {
   margin-bottom: 10px;
 }
-/* line 36, ../sass/pages/_media.scss */
+/* line 53, ../sass/pages/_media.scss */
 .blog__text {
   margin-bottom: 40px;
 }

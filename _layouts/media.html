@@ -31,25 +31,27 @@
                     {% if site.posts.size > 0 %}
                         <!-- edit or add post in _posts -->
                         {% for post in site.posts %}
-                            <div class="col--md4 {{ post.category }} {{ post.date | date: "%Y" }}">
-                                <div class="block blog__item">
-                                    {% if post.image-link %}
-                                        <div class="blog__image" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image-link }}.jpg);"></div>
-                                    {% else %}
-                                        <div class="blog__image" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/default.jpg);"></div>
-                                    {% endif %}
-                                    <div class="blog__content">
-                                        <span class="blog__icon">
-                                            <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.png" alt="">
-                                        </span>
-                                        <p class="blog__date">{{ post.date | date: "%b %-d, %Y" }}</p>
-                                        <h2 class="blog__title lead">{{ post.title }}</h2>
-                                        <div class="blog__text">{{ post.excerpt | truncate: 100, "…" }}</div>
-                                        <a href="{{ post.url | prepend: site.baseurl }}" class="button button--primary button--small button--animate fas fa-eye">
-                                            <p class="button__inner">Read more</p>
-                                        </a>
+                            <div class="col--xl4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
+                                <a href="{{ post.url | prepend: site.baseurl }}">
+                                    <div class="block blog__item">
+                                        {% if post.image-link %}
+                                            <div class="blog__image" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image-link }}.jpg);"></div>
+                                        {% else %}
+                                            <div class="blog__image" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/default.jpg);"></div>
+                                        {% endif %}
+                                        <div class="blog__content">
+                                            <span class="blog__icon">
+                                                <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.png" alt="">
+                                            </span>
+                                            <p class="blog__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
+                                            <h2 class="blog__title lead">{{ post.title }}</h2>
+                                            <div class="blog__text">{{ post.excerpt | truncate: 100, "…" }}</div>
+                                            <div class="button button--primary button--small button--animate fas fa-eye">
+                                                <p class="button__inner">Read more</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         {% endfor %}
                     {% else %}

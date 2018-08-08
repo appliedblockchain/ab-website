@@ -1,0 +1,27 @@
+# events list
+# in events.html page
+
+# past
+
+past:
+  - name: Fintech Week
+    slug: fintech-week  
+    dates: July 12-19
+    location: London
+    link: https://www.fintechweek.com/
+
+  - name: Nifty Conference and Hackaton
+    slug: nifty-conference
+    dates: July 24-26
+    location: Honk Kong
+    link: https://www.nifty.gg/
+
+# upcoming
+
+upcoming:
+  - name: Upcoming event
+    slug: upcoming-event
+    dates: September 23-25
+    location: London
+    link: 
+

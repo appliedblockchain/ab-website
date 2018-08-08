@@ -1,3 +1,57 @@
 {% include header.html %}
 
+<div class="page">
+
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        background-color=''
+        title='Events'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit ut et odio lobortis elit commodo pellentesque'
+    %}
+
+    <section class="section section--alt">
+
+        <div class="section__content tab tab--vertical event">
+            <div class="section__filter tab__nav">
+                <a href="#past" class="nav__button nav__button--active button button--primary button--animate fa fa-fast-backward">
+                    <p class="button__inner">Past</p>
+                </a>
+                <a href="#upcoming" class="nav__button nav__button--active button button--animate fa fa-fast-forward">
+                    <p class="button__inner">Upcoming</p>
+                </a>
+            </div>
+            <div class="tab__content block event__content event">
+                <div id="past" class="tab__item">
+                    <!-- edit data in _data/events.html -->
+                    {% for event in site.data.events.past %}
+                        <div class="event__item">
+                            <div class="event__image" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.slug }}.jpg);"></div>
+                            <div class="event__content">
+                                <p class="event__title">{{ event.dates }}</p>
+                                <p class="event__name">{{ event.name }}</p>
+                                <p class="event__location">{{ event.location }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div id="upcoming" class="tab__item">
+                    <!-- edit data in _data/events.html -->
+                    {% for event in site.data.events.upcoming %}
+                        <div class="event__item">
+                            <div class="event__image" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.slug }}.jpg);"></div>
+                            <div class="event__content">
+                                <p class="event__title">{{ event.dates }}</p>
+                                <p class="event__name">{{ event.name }}</p>
+                                <p class="event__location">{{ event.location }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
 {% include footer.html %}

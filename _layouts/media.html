@@ -29,10 +29,15 @@
                 </div>
                 <div class="grid row">
                     {% if site.posts.size > 0 %}
+                        <!-- edit or add post in _posts -->
                         {% for post in site.posts %}
                             <div class="col--md4 {{ post.category }} {{ post.date | date: "%Y" }}">
                                 <div class="block blog__item">
-                                    <div class="blog__image" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image-link }}.jpg);"></div>
+                                    {% if post.image-link %}
+                                        <div class="blog__image" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image-link }}.jpg);"></div>
+                                    {% else %}
+                                        <div class="blog__image" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/default.jpg);"></div>
+                                    {% endif %}
                                     <div class="blog__content">
                                         <span class="blog__icon"></span>
                                         <p class="blog__date">{{ post.date | date: "%b %-d, %Y" }}</p>

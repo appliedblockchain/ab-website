@@ -50,7 +50,8 @@ html, body {
 .row {
 	@include display-flex();
 	@include flex-wrap(wrap);
-	margin: 0 (-$integer/2);
+	margin-left: -$integer/2;
+	margin-right: -$integer/2;
 	width: 100%;
 
 	&:after {

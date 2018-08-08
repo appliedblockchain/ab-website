@@ -16,3 +16,6 @@
 ## Events
 ### Add an events
 ### Edit an events
+* image (path and name)
+    * if doesn't work: check file extension (needs to be jpeg)
+    * default image (explanation)

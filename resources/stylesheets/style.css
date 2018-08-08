@@ -4116,6 +4116,27 @@ select:-webkit-autofill:focus {
 /* line 11, ../sass/pages/_events.scss */
 .event {
   width: 100%;
+  padding: 0;
+}
+/* line 15, ../sass/pages/_events.scss */
+.event__item {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 19, ../sass/pages/_events.scss */
+.event__image {
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.333%;
+}
+/* line 24, ../sass/pages/_events.scss */
+.event__content {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  padding: 40px;
+  text-align: left;
 }
 
 /* 

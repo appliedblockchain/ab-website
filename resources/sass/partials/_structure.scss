@@ -37,8 +37,8 @@ body.js-freeze {
 */
 
 * {
-	outline: none;
 	@include box-sizing(border-box);
+	outline: none;
 }
 
 html, body {
@@ -50,9 +50,9 @@ html, body {
 .row {
 	@include display-flex();
 	@include flex-wrap(wrap);
+	@include calc(width, '100% + '$integer);
 	margin-left: -$integer/2;
 	margin-right: -$integer/2;
-	width: 100%;
 
 	&:after {
 		content: '';

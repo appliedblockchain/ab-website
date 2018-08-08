@@ -1895,10 +1895,10 @@ body.js-freeze {
 */
 /* line 39, ../sass/partials/_structure.scss */
 * {
-  outline: none;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  outline: none;
 }
 
 /* line 44, ../sass/partials/_structure.scss */
@@ -1914,9 +1914,10 @@ html, body {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: -webkit-calc(100% +  20px);
+  width: calc(100% +  20px);
   margin-left: -10px;
   margin-right: -10px;
-  width: 100%;
 }
 /* line 57, ../sass/partials/_structure.scss */
 .row:after, .clear:after {

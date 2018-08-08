@@ -24,27 +24,15 @@
                 <div id="past" class="tab__item">
                     <!-- edit data in _data/events.html -->
                     {% for event in site.data.events.past %}
-                        <div class="event__item">
-                            <div class="event__image" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.slug }}.jpg);"></div>
-                            <div class="event__content">
-                                <p class="event__title">{{ event.dates }}</p>
-                                <p class="event__name">{{ event.name }}</p>
-                                <p class="event__location">{{ event.location }}</p>
-                            </div>
-                        </div>
+                        <!-- edit component in _includes/components/event.html -->
+                        {% include components/event.html %}
                     {% endfor %}
                 </div>
                 <div id="upcoming" class="tab__item">
                     <!-- edit data in _data/events.html -->
                     {% for event in site.data.events.upcoming %}
-                        <div class="event__item">
-                            <div class="event__image" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.slug }}.jpg);"></div>
-                            <div class="event__content">
-                                <p class="event__title">{{ event.dates }}</p>
-                                <p class="event__name">{{ event.name }}</p>
-                                <p class="event__location">{{ event.location }}</p>
-                            </div>
-                        </div>
+                        <!-- edit component in _includes/components/event.html -->
+                        {% include components/event.html %}
                     {% endfor %}
                 </div>
             </div>

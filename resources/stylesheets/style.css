@@ -696,14 +696,17 @@ optgroup {
 .accordion__content {
   cursor: initial;
   display: none;
-  border-top: 1px solid #f8f8f8;
   padding-top: 0;
 }
-/* line 58, ../sass/partials/_accordions.scss */
+/* line 57, ../sass/partials/_accordions.scss */
 .accordion__subtitle {
   padding: 15px 0;
 }
-/* line 62, ../sass/partials/_accordions.scss */
+/* line 60, ../sass/partials/_accordions.scss */
+.accordion__subtitle:nth-child(1) {
+  padding-top: 0;
+}
+/* line 65, ../sass/partials/_accordions.scss */
 .accordion .lead {
   color: #007bff !important;
 }

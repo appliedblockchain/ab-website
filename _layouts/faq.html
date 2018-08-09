@@ -12,42 +12,22 @@
 
         <div class="section__content row">
             <div class="col--6">
+                <h2 class="section__header comment">Applied Blockchain</h2>
                 <div class="block accordion">
                     <!-- edit data in _data/projects.html -->
                     {% for item in site.data.faq.company %}
-                    <div class="accordion__item">
-                        <div class="accordion__header">
-                            <p class="accordion__title body--bold">{{ item.question }}</p>
-                            <div class="accordion__actions">
-                                <span class="button button--icon button--highlight button--small">
-                                    <i class="fa fa-plus"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="accordion__content">
-                            <p>{{ item.answer }}</p >
-                        </div>
-                    </div>
+                        <!-- edit component in _includes/components/faq.html -->
+                        {% include components/faq.html %}
                     {% endfor %}
                 </div>
             </div>
             <div class="col--6">
+                <h2 class="section__header comment">Blockchain Technology</h2>
                 <div class="block accordion">
                     <!-- edit data in _data/projects.html -->
                     {% for item in site.data.faq.technology %}
-                    <div class="accordion__item">
-                        <div class="accordion__header">
-                            <p class="accordion__title body--bold">{{ item.question }}</p>
-                            <div class="accordion__actions">
-                                <span class="button button--icon button--highlight button--small">
-                                    <i class="fa fa-plus"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="accordion__content">
-                            <p>{{ item.answer }}</p >
-                        </div>
-                    </div>
+                        <!-- edit component in _includes/components/faq.html -->
+                        {% include components/faq.html %}
                     {% endfor %}
                 </div>
             </div>

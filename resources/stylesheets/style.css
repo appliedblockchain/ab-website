@@ -4220,12 +4220,16 @@ select:-webkit-autofill:focus {
  * PROJECTS
  * —————————————————————————————————————————————————————————————————
 */
-/* line 15, ../sass/pages/_project.scss */
+/* line 13, ../sass/pages/_project.scss */
+.project__header {
+  padding-top: 300px;
+}
+/* line 19, ../sass/pages/_project.scss */
 .project__title span {
   color: #000a1e;
 }
 
-/* line 27, ../sass/pages/_project.scss */
+/* line 31, ../sass/pages/_project.scss */
 .meta__item {
   display: -webkit-flex;
   display: flex;
@@ -4235,23 +4239,38 @@ select:-webkit-autofill:focus {
   justify-content: space-between;
   padding-bottom: 20px;
 }
-/* line 33, ../sass/pages/_project.scss */
+/* line 37, ../sass/pages/_project.scss */
 .meta__item + .meta__item {
   padding-top: 20px;
   border-top: 2px solid #d7d7dc;
 }
 
-/* line 40, ../sass/pages/_project.scss */
+/* line 44, ../sass/pages/_project.scss */
 .summary {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
   background-attachment: fixed;
   padding-top: 0;
   padding-bottom: 0;
+  margin-top: 120px;
 }
-/* line 46, ../sass/pages/_project.scss */
+/* line 52, ../sass/pages/_project.scss */
+.summary:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.8);
+  background-blend-mode: multiply;
+}
+/* line 58, ../sass/pages/_project.scss */
 .summary__container {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4263,11 +4282,11 @@ select:-webkit-autofill:focus {
   align-items: center;
   padding: 40px 80px;
 }
-/* line 53, ../sass/pages/_project.scss */
+/* line 65, ../sass/pages/_project.scss */
 .summary__content {
   text-align: left;
 }
-/* line 57, ../sass/pages/_project.scss */
+/* line 69, ../sass/pages/_project.scss */
 .summary__image {
   -webkit-align-self: center;
   align-self: center;

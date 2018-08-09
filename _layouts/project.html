@@ -2,7 +2,7 @@
 
 <div class="page project">
 
-    <div class="section section--header section--left">
+    <div class="section section--header section--left project__header">
         <div class="row">
             <h1 class="col--6 project__title title">
                 {{ page.title }}:
@@ -31,17 +31,22 @@
                 <p class="subtitle">About {{ page.title }}</p>
                 <p>{{ page.summary }}</p>
             </div>
-            <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-alt/logo-{{ page.slug }}.png" alt="" class="summary__image">
+            <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-alt/logo-{{ page.slug }}.png" alt="{{ page.title }} Logo" class="summary__image">
         </div>
     </section>
 
     <section class="section section--left">
-        <h2 class="project__header">The Challenge</h2>
-        <div class="project__content">{{ page.challenge }}</div>
+        <div class="row">
+            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-challenge.svg" alt="Challenge icon" class="col--5">
+            <div class="col--7">
+                <h2 class="project__subtitle">The Challenge</h2>
+                <div class="project__content">{{ page.challenge }}</div>
+            </div>
+        </div>
     </section>
 
     <section class="section sewction--left section--grey">
-        <h2 class="project__header">The AB Delivery</h2>
+        <h2 class="project__subtitle">The AB Delivery</h2>
         <div class="project__content">{{ page.delivery }}</div>    
     </section>
 

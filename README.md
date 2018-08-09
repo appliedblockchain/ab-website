@@ -1,5 +1,9 @@
 # ab-website
 
+## Page structure
+### Components
+### Column system
+
 ## Jobs
 ### Add a job
 ### Edit a job
@@ -24,7 +28,7 @@
 ## Projects
 ### Add project
 ### Edit project
-* Explain markdown for content (tag used spacing the paragraphs)
+* Explain markdown for content in .md file ('<p>' tag used spacing the paragraphs)
 * Logo (path and name)
     * Pay attention to clients and clients-alt folders
     * if doesn't work: check file extension (needs to be jpeg)

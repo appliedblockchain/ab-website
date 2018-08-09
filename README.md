@@ -1,10 +1,32 @@
-# ab-website
+# Applied Blockchain Website
+**Tutorial and general queries**
 
 ## Page structure
+
 ### Components
 * Page header
 * Section header
+
 ### Column system
+
+### Logo color on landing
+
+If the `page-header.html` of a page is set to `background='primary'` or `background='dark'`, the logo and menu icon colors change.
+
+To do so, go to `header.html` and add the page title to the condition in the class selector.
+```html
+<div class="header__bar">
+    <div class="header__logo {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
+        {% include components/logo-header.html %}
+    </div>
+    <a class="header__button button button--menu {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
+        <span class="button__inner"></span>
+    </a>
+</div>
+```
+
+*For the `background='primary'`, both the logo and menu logo change.
+*For the `background='dark'`, only the menu icon changes.
 
 ## FAQ
 
@@ -42,19 +64,3 @@
 ## General queries
 * An image diesn't appear
     * Check file extension
-
-### Logo color on landing
-
-If the landing section of a page is set to `background='primary'` or `'background='dark'`, the logo and menu icon colors change.
-
-To do so, go to `header.html` and add the page title to the condition in the class selector.
-```
-<div class="header__bar">
-    <div class="header__logo {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
-        {% include components/logo-header.html %}
-    </div>
-    <a class="header__button button button--menu {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
-        <span class="button__inner"></span>
-    </a>
-</div>
-```

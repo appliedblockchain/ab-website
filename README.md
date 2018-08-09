@@ -22,8 +22,8 @@ To do so, go to `header.html` and add the page title to the condition in the cla
     </a>
 </div>
 ```
-* For the `background='primary'`, both the logo and menu logo change.
-* For the `background='dark'`, only the menu icon changes.
+* If set to `background='primary'`, both the **logo and menu icon** change.
+* If set to `background='dark'`, only the **menu icon** changes.
 
 ## FAQ
 

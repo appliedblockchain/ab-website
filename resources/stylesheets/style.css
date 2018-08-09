@@ -692,7 +692,7 @@ optgroup {
 .accordion__content {
   cursor: initial;
   display: none;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid #f8f8f8;
   padding-top: 0;
 }
 /* line 57, ../sass/partials/_accordions.scss */
@@ -1541,7 +1541,7 @@ html, body {
 }
 /* line 160, ../sass/partials/_form.scss */
 .form__select .form__dropdown li + li {
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid #f8f8f8;
 }
 /* line 164, ../sass/partials/_form.scss */
 .form__select .form__dropdown li:hover {
@@ -3493,7 +3493,7 @@ li + li {
 }
 /* line 338, ../sass/partials/_structure.scss */
 .section--grey {
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
 }
 
 /*alignement*/
@@ -4169,7 +4169,7 @@ li + li {
 
 /* line 28, ../sass/pages/_index.scss */
 #featured-in {
-  border-top: 5px solid #f0f0f0;
+  border-top: 5px solid #f8f8f8;
 }
 /* line 32, ../sass/pages/_index.scss */
 #featured-in .section__header {
@@ -4200,7 +4200,7 @@ li + li {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
 }
 /* line 56, ../sass/pages/_index.scss */
 .logo-media__image {

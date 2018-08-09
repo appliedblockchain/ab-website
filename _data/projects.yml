@@ -1,0 +1,74 @@
+# projects section
+# in service.html page
+
+- url: appii
+  name: Appii
+  subtitle: Identity & payment data management
+  industry: Finance
+  technology: Ethereum
+    <br>Smart Contracts
+  link-title: Case study
+  link-url:
+
+- url: cygnetise
+  name: Cygnetise
+  subtitle: Identity & payment data management
+  industry: Finance
+  technology: Ethereum
+    <br>Smart Contracts
+  link-title: Case study
+  link-url:
+
+- url: nuggets
+  name: Nuggets
+  subtitle: Identity & payment data management
+  industry: Finance
+  technology: Ethereum
+    <br>Smart Contracts
+  link-title: Website
+  link-url:
+
+- url: shell
+  name: Shell
+  subtitle: Identity & payment data management
+  industry: Finance
+  technology: Ethereum
+    <br>Smart Contracts
+  link-title: Website
+  link-url:
+
+- url: sita
+  name: Sita
+  subtitle: Identity & payment data management
+  industry: Finance
+  technology: Ethereum
+    <br>Smart Contracts
+  link-title: Case study
+  link-url:
+
+- url: toyota
+  name: Toyota
+  subtitle: Identity & payment data management
+  industry: Finance
+  technology: Ethereum
+    <br>Smart Contracts
+  link-title: Website
+  link-url:
+
+- url: UN
+  name: United Nations
+  subtitle: Identity & payment data management
+  industry: Finance
+  technology: Ethereum
+    <br>Smart Contracts
+  link-title: Website
+  link-url:
+
+- url: vodafone
+  name: Vodafone
+  subtitle: Identity & payment data management
+  industry: Finance
+  technology: Ethereum
+    <br>Smart Contracts
+  link-title: Case study
+  link-url:

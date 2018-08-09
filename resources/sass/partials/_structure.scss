@@ -29,6 +29,11 @@ body.js-freeze {
 	overflow: hidden;
 }
 
+img {
+	/*prevent images from stretching with flex*/
+	@include align-self(center);
+}
+
 
 
 /*
@@ -37,8 +42,8 @@ body.js-freeze {
 */
 
 * {
-	outline: none;
 	@include box-sizing(border-box);
+	outline: none;
 }
 
 html, body {
@@ -50,8 +55,9 @@ html, body {
 .row {
 	@include display-flex();
 	@include flex-wrap(wrap);
-	margin: 0 (-$integer);
-	width: 100%;
+	@include calc(width, '100% + '$integer);
+	margin-left: -$integer/2;
+	margin-right: -$integer/2;
 
 	&:after {
 		content: '';
@@ -67,7 +73,7 @@ html, body {
 [class*="col--"], [class*="colalt--"] {
 	float: left;
 	position: relative;
-	padding: 0 $integer;
+	padding: 0 $integer/2;
 	width: 100%;
 }
 
@@ -188,6 +194,17 @@ select:-webkit-autofill:focus {
 	@include transition(background-color $transition);
 }
 
+/*lists*/
+
+ul {
+	list-style: disc;
+    margin-left: $integer*0.75;
+}
+
+li + li {
+	padding-top: $integer/2;
+}
+
 
 
 /*
@@ -294,10 +311,6 @@ select:-webkit-autofill:focus {
 	&--block {
 		padding: 0 $col;
 	}
-
-	&--testimonial {
-		padding-top: $integer*3;
-	}
 }
 
 /*colors*/
@@ -359,6 +372,7 @@ select:-webkit-autofill:focus {
 
 .block {
 	@include box-shadow(0 0 30px 0 rgba($dark, 0.05));
+	overflow: hidden;
 	background-color: $white;
 	border-radius: $integer;
 	padding: $integer*2;

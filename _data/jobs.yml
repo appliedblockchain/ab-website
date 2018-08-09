@@ -1,4 +1,5 @@
 # jobs list
+# in join.html page
 
 # london
 
@@ -71,9 +72,7 @@ london:
         <li>HTML and CSS</li>
       </ul>'
 
-
-
-      # porto
+# porto
 
 porto:
   - title: Senior React.js Developer

@@ -1,0 +1,45 @@
+{% include header.html %}
+
+<div class="page">
+
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        background-color=''
+        title='Events'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit ut et odio lobortis elit commodo pellentesque'
+    %}
+
+    <section class="section section--alt">
+
+        <div class="section__content tab tab--vertical event">
+            <div class="section__filter tab__nav">
+                <a href="#past" class="nav__button nav__button--active button button--primary button--animate fa fa-fast-backward">
+                    <p class="button__inner">Past</p>
+                </a>
+                <a href="#upcoming" class="nav__button nav__button--active button button--animate fa fa-fast-forward">
+                    <p class="button__inner">Upcoming</p>
+                </a>
+            </div>
+            <div class="tab__content block event">
+                <div id="past" class="tab__item">
+                    <!-- edit data in _data/events.html -->
+                    {% for event in site.data.events.past %}
+                        <!-- edit component in _includes/components/event.html -->
+                        {% include components/event.html %}
+                    {% endfor %}
+                </div>
+                <div id="upcoming" class="tab__item">
+                    <!-- edit data in _data/events.html -->
+                    {% for event in site.data.events.upcoming %}
+                        <!-- edit component in _includes/components/event.html -->
+                        {% include components/event.html %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+{% include footer.html %}

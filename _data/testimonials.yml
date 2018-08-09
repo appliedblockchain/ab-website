@@ -1,17 +1,27 @@
 # testimonials section
 # in home.html page
 
-- id: stephane-cheikh
-  quote: Applied Blockchain have always been very helpful by coming up with new concepts and new developments. They challenge you as a customer, they say “have you thought about this, have you thought about that?”. This has been very refreshing and I would definitely recommend Applied Blockchain.
-  name: Stephane Cheikh
-  job: Ventures & Innovation Manager, SITA
+# for testimonial carousel on home.html page
+home:
+  - id: stephane-cheikh
+    quote: Applied Blockchain have always been very helpful by coming up with new concepts and new developments. They challenge you as a customer, they say “have you thought about this, have you thought about that?”. This has been very refreshing and I would definitely recommend Applied Blockchain.
+    name: Stephane Cheikh
+    job: Ventures & Innovation Manager, SITA
 
-- id: johan-krebbers
-  quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
-  name: Johan Krebbers
-  job: Chief Technology Officer for IT, Shell Global Solutions International
+  - id: johan-krebbers
+    quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
+    name: Johan Krebbers
+    job: Chief Technology Officer for IT, Shell Global Solutions International
 
-- id: stephen-pomfret
-  quote: Applied Blockchain feel the passion for your business. They don’t just treat the development like a nonsensical piece of work they have been instructed to do and are getting paid for. They actually like to get involved, they feel excited about what you’re doing, being a part of it and advise accordingly.
-  name: Stephen Pomfret
-  job: CEO, Cygnetise
+  - id: stephen-pomfret
+    quote: Applied Blockchain feel the passion for your business. They don’t just treat the development like a nonsensical piece of work they have been instructed to do and are getting paid for. They actually like to get involved, they feel excited about what you’re doing, being a part of it and advise accordingly.
+    name: Stephen Pomfret
+    job: CEO, Cygnetise
+
+
+# individual testimonials for projects
+cygnetise:
+  - id: stephen-pomfret
+    quote: Applied Blockchain are a market leader in building proof-of-concept blockchain applications. They have experience through a broad range of customers, so regardless of whether you are a small startup or large enterprise they are well equipped to deliver a solution.
+    name: Stephen Pomfret
+    job: CEO, Cygnetise  

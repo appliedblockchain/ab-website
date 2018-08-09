@@ -105,22 +105,13 @@
 
     </section>
 
-    <section class="section section--testimonial testimonial" id="testimonials">
+    <section class="section testimonial" id="testimonials">
 
         <div class="section__content owl-carousel owl-carousel-testimonial carousel">
             <!-- edit data in _data/testimonials.html -->
-            {% for item in site.data.testimonials %}
-                <div class="testimonial__item">
-                    <div class="testimonial__image" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/testimonials/{{ item.id }}.jpg);" alt="Portrait {{ item.name }}"></div>
-                    <div class="testimonial__content">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
-                        <p class="quote">{{ item.quote }}</p>
-                        <div class="testimonial__meta">
-                            <p class="body--bold">{{ item.name }}</p>
-                            <p>{{ item.job }}</p>
-                        </div>
-                    </div>
-                </div>
+            {% for item in site.data.testimonials.home %}
+                <!-- edit component in _includes/components/testimonial.html -->
+                {% include components/testimonial.html %}
             {% endfor %}
         </div>
 

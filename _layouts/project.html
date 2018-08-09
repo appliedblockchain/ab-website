@@ -4,11 +4,11 @@
 
     <div class="section section--header section--left project__header">
         <div class="row">
-            <h1 class="col--6 project__title title">
+            <h1 class="col--lg7 project__title title">
                 {{ page.title }}:
                 <span>{{ page.subtitle }}</span>
             </h1>
-            <div class="coloffset--2 col--4 project__meta">
+            <div class="coloffset--lg1 col--lg4 col--md6 project__meta">
                 <div class="meta__item body--large">
                     <p class="body--bold">Industry</p>
                     <p>{{ page.industry }}</p>
@@ -28,17 +28,17 @@
     <section class="section project__summary summary" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
         <div class="block summary__container">
             <div class="summary__content">
-                <h1 class="subtitle">About {{ page.title }}</h1>
+                <h1 class="project__subtitle subtitle">About {{ page.title }}</h1>
                 <p>{{ page.summary }}</p>
             </div>
             <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-alt/logo-{{ page.slug }}.png" alt="{{ page.title }} Logo" class="summary__image">
         </div>
     </section>
 
-    <section class="section section--left">
+    <section class="section section--left challenge">
         <div class="row">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-challenge.svg" alt="Challenge icon" class="col--4">
-            <div class="coloffset--1 col--7">
+            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-challenge.svg" alt="Challenge icon" class="col--md4 challenge__icon">
+            <div class="coloffset--md1 col--md7">
                 <h1 class="project__subtitle subtitle">The Challenge</h1>
                 <div class="project__text">{{ page.challenge }}</div>
             </div>
@@ -47,15 +47,15 @@
 
     <section class="section section--left section--grey delivery" style="background-image: url({{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale.svg);">
         <div class="row">
-            <div class="col--7">
+            <div class="col--xl7 col--lg9">
                 <h1 class="project__subtitle subtitle">The AB Delivery</h1>
                 <div class="project__text body--large">{{ page.delivery }}</div>    
             </div>
             <div class="project__example project__text">
-                <div class="col--4">
+                <div class="col--lg4">
                     {{ page.example }}
                 </div>
-                <img src="{{ site.url }}{{ site.imageurl }}/projects/example/{{ page.slug }}.png" alt="{{ page.title }} example" class="coloffset--1 col--7">
+                <img src="{{ site.url }}{{ site.imageurl }}/projects/example/{{ page.slug }}.png" alt="{{ page.title }} example" class="coloffset--lg1 col--lg7 delivery__image">
             </div>
         </div>
     </section>

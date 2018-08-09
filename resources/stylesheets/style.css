@@ -4236,29 +4236,35 @@ li + li {
 .project__header {
   padding-top: 300px;
 }
-/* line 17, ../sass/pages/_project.scss */
-.project__example {
-  margin-top: 80px;
+@media (max-width: 767px) {
+  /* line 17, ../sass/pages/_project.scss */
+  .project__meta {
+    margin-top: 60px;
+  }
 }
 /* line 23, ../sass/pages/_project.scss */
+.project__example {
+  margin-top: 60px;
+}
+/* line 29, ../sass/pages/_project.scss */
 .project__title span {
   color: #000a1e;
 }
-/* line 28, ../sass/pages/_project.scss */
+/* line 34, ../sass/pages/_project.scss */
 .project__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #007bff;
 }
-/* line 32, ../sass/pages/_project.scss */
+/* line 38, ../sass/pages/_project.scss */
 .section--primary .project__subtitle {
   color: #ffffff;
 }
-/* line 39, ../sass/pages/_project.scss */
+/* line 45, ../sass/pages/_project.scss */
 .project__text p + p, .project__text p + ul {
   margin-top: 20px;
 }
 
-/* line 47, ../sass/pages/_project.scss */
+/* line 53, ../sass/pages/_project.scss */
 .meta__item {
   display: -webkit-flex;
   display: flex;
@@ -4268,13 +4274,13 @@ li + li {
   justify-content: space-between;
   padding-bottom: 20px;
 }
-/* line 53, ../sass/pages/_project.scss */
+/* line 59, ../sass/pages/_project.scss */
 .meta__item + .meta__item {
   padding-top: 20px;
   border-top: 2px solid #d7d7dc;
 }
 
-/* line 60, ../sass/pages/_project.scss */
+/* line 66, ../sass/pages/_project.scss */
 .summary {
   background-position: center;
   -webkit-background-size: cover;
@@ -4286,7 +4292,7 @@ li + li {
   padding-bottom: 0;
   margin-top: 120px;
 }
-/* line 68, ../sass/pages/_project.scss */
+/* line 74, ../sass/pages/_project.scss */
 .summary:before {
   content: "";
   position: absolute;
@@ -4299,7 +4305,7 @@ li + li {
   background-color: rgba(0, 123, 255, 0.8);
   background-blend-mode: multiply;
 }
-/* line 74, ../sass/pages/_project.scss */
+/* line 80, ../sass/pages/_project.scss */
 .summary__container {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4311,21 +4317,47 @@ li + li {
   align-items: center;
   padding: 40px 80px;
 }
-/* line 81, ../sass/pages/_project.scss */
+@media (max-width: 767px) {
+  /* line 80, ../sass/pages/_project.scss */
+  .summary__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+/* line 92, ../sass/pages/_project.scss */
 .summary__content {
   text-align: left;
 }
-/* line 85, ../sass/pages/_project.scss */
+/* line 96, ../sass/pages/_project.scss */
 .summary__image {
   width: 33.333%;
 }
+@media (max-width: 767px) {
+  /* line 96, ../sass/pages/_project.scss */
+  .summary__image {
+    display: none;
+  }
+}
 
-/* line 90, ../sass/pages/_project.scss */
+@media (max-width: 767px) {
+  /* line 106, ../sass/pages/_project.scss */
+  .challenge__icon {
+    display: none;
+  }
+}
+
+/* line 113, ../sass/pages/_project.scss */
 .delivery {
   background-position: 101% -300px;
   -webkit-background-size: 300px;
   background-size: 300px;
   background-repeat: no-repeat;
+}
+@media (max-width: 1023px) {
+  /* line 116, ../sass/pages/_project.scss */
+  .delivery__image {
+    margin-top: 60px;
+  }
 }
 
 /* 

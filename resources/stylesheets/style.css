@@ -697,16 +697,17 @@ optgroup {
   cursor: initial;
   display: none;
   padding-top: 0;
+  padding-bottom: 30px;
 }
-/* line 57, ../sass/partials/_accordions.scss */
+/* line 58, ../sass/partials/_accordions.scss */
 .accordion__subtitle {
   padding: 15px 0;
 }
-/* line 60, ../sass/partials/_accordions.scss */
+/* line 61, ../sass/partials/_accordions.scss */
 .accordion__subtitle:nth-child(1) {
   padding-top: 0;
 }
-/* line 65, ../sass/partials/_accordions.scss */
+/* line 66, ../sass/partials/_accordions.scss */
 .accordion .lead {
   color: #007bff !important;
 }
@@ -4148,6 +4149,18 @@ li + li {
   flex-grow: 1;
   padding: 40px;
   text-align: left;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * JOIN
+ * —————————————————————————————————————————————————————————————————
+*/
+@media (max-width: 767px) {
+  /* line 13, ../sass/pages/_faq.scss */
+  .faq__column:nth-child(2) {
+    margin-top: 60px;
+  }
 }
 
 /* 

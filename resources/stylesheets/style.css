@@ -3449,7 +3449,7 @@ li + li {
   display: flex;
   -webkit-justify-content: space-evenly;
   justify-content: space-evenly;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 /* line 278, ../sass/partials/_structure.scss */
 .section__link {

@@ -2,6 +2,8 @@
 
 ## Page structure
 ### Components
+* Page header
+* Section header
 ### Column system
 
 ## FAQ
@@ -40,3 +42,19 @@
 ## General queries
 * An image diesn't appear
     * Check file extension
+
+### Logo color on landing
+
+If the landing section of a page is set to `background='primary'` or `'background='dark'`, the logo and menu icon colors change.
+
+To do so, go to `header.html` and add the page title to the condition in the class selector.
+```
+<div class="header__bar">
+    <div class="header__logo {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
+        {% include components/logo-header.html %}
+    </div>
+    <a class="header__button button button--menu {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
+        <span class="button__inner"></span>
+    </a>
+</div>
+```

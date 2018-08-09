@@ -59,22 +59,13 @@
     </section>
 
     <section class="section">
-
-    </section>
+        <!-- edit data in _data/testimonials.html -->
+        {% for item in site.data.testimonials.cygnetise %}
+            <!-- edit component in _includes/components/testimonial.html -->
+            {% include components/testimonial.html %}
+        {% endfor %}
+     </section>
 
 </div>
-
-<div>
-
-        <header>
-            <p>{{ page.industry }}</p>
-            <p>{{ page.technology }}</p>
-        </header>
-        
-        <article>
-            {{ content }}
-        </article>
-        
-    </div>
 
 {% include footer.html %}

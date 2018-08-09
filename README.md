@@ -33,6 +33,7 @@
     * Pay attention to clients and clients-alt folders
     * if doesn't work: check file extension (needs to be jpeg)
     * Logo size 
+* Testimonials (take testimonial component and filter by slug)
 
 ## General queries
 * An image diesn't appear

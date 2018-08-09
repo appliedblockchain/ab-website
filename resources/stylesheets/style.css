@@ -652,15 +652,19 @@ optgroup {
  * ACCORDIONS
  * —————————————————————————————————————————————————————————————————
 */
-/* line 13, ../sass/partials/_accordions.scss */
+/* line 11, ../sass/partials/_accordions.scss */
+.accordion {
+  padding: 0 !important;
+}
+/* line 14, ../sass/partials/_accordions.scss */
 .accordion__item {
   width: 100%;
 }
-/* line 16, ../sass/partials/_accordions.scss */
+/* line 17, ../sass/partials/_accordions.scss */
 .accordion__item + .accordion__item {
   border-top: 1px solid #d7d7dc;
 }
-/* line 21, ../sass/partials/_accordions.scss */
+/* line 22, ../sass/partials/_accordions.scss */
 .accordion__header, .accordion__content {
   display: -webkit-flex;
   display: flex;
@@ -670,36 +674,36 @@ optgroup {
   justify-content: space-between;
   text-align: left;
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 20px 30px;
 }
-/* line 31, ../sass/partials/_accordions.scss */
+/* line 32, ../sass/partials/_accordions.scss */
 .accordion__header.js-accordion-active .button--icon, .js-accordion-active.accordion__content .button--icon {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 41, ../sass/partials/_accordions.scss */
+/* line 42, ../sass/partials/_accordions.scss */
 .accordion__title {
   width: 66.666%;
 }
-/* line 45, ../sass/partials/_accordions.scss */
+/* line 46, ../sass/partials/_accordions.scss */
 .accordion__actions {
   display: -webkit-flex;
   display: flex;
 }
-/* line 49, ../sass/partials/_accordions.scss */
+/* line 50, ../sass/partials/_accordions.scss */
 .accordion__content {
   cursor: initial;
   display: none;
   border-top: 1px solid #f8f8f8;
   padding-top: 0;
 }
-/* line 57, ../sass/partials/_accordions.scss */
+/* line 58, ../sass/partials/_accordions.scss */
 .accordion__subtitle {
   padding: 15px 0;
 }
-/* line 61, ../sass/partials/_accordions.scss */
+/* line 62, ../sass/partials/_accordions.scss */
 .accordion .lead {
   color: #007bff !important;
 }
@@ -4214,7 +4218,6 @@ li + li {
 */
 /* line 13, ../sass/pages/_join.scss */
 .jobs__content {
-  padding: 0;
   width: 100%;
 }
 

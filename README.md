@@ -4,6 +4,8 @@
 ### Components
 ### Column system
 
+## FAQ
+
 ## Jobs
 ### Add a job
 ### Edit a job

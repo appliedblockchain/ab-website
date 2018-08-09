@@ -24,4 +24,12 @@
 ## Projects
 ### Add project
 ### Edit project
-* Explain p markdozn for content (tag used spacing the paragraphs)
+* Explain markdown for content (tag used spacing the paragraphs)
+* Logo (path and name)
+    * Pay attention to clients and clients-alt folders
+    * if doesn't work: check file extension (needs to be jpeg)
+    * Logo size 
+
+## General queries
+* An image diesn't appear
+    * Check file extension

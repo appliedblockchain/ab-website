@@ -4241,6 +4241,39 @@ select:-webkit-autofill:focus {
   border-top: 2px solid #d7d7dc;
 }
 
+/* line 40, ../sass/pages/_project.scss */
+.summary {
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 46, ../sass/pages/_project.scss */
+.summary__container {
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 40px 80px;
+}
+/* line 53, ../sass/pages/_project.scss */
+.summary__content {
+  text-align: left;
+}
+/* line 57, ../sass/pages/_project.scss */
+.summary__image {
+  -webkit-align-self: center;
+  align-self: center;
+  width: 33.333%;
+}
+
 /* 
  * —————————————————————————————————————————————————————————————————
  * MEDIA

@@ -25,26 +25,27 @@
         </div>
     </div>
 
-    <section class="section project__summary">
+    <section class="section project__summary summary" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/{{ page.slug }}.jpg);">
         <div class="block summary__container">
             <div class="summary__content">
                 <p class="subtitle">About {{ page.title }}</p>
                 <p>{{ page.summary }}</p>
             </div>
-            <img src="" alt="" class="summary__image">
+            <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-alt/logo-{{ page.slug }}.png" alt="" class="summary__image">
         </div>
     </section>
 
-    <section class="section">
+    <section class="section section--left">
         <h2 class="project__header">The Challenge</h2>
         <div class="project__content">{{ page.challenge }}</div>
     </section>
 
-    <section class="section">
-
+    <section class="section sewction--left section--grey">
+        <h2 class="project__header">The AB Delivery</h2>
+        <div class="project__content">{{ page.delivery }}</div>    
     </section>
 
-    <section class="section">
+    <section class="section section--primary">
 
     </section>
 

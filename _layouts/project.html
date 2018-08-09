@@ -28,7 +28,7 @@
     <section class="section project__summary summary" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/{{ page.slug }}.jpg);">
         <div class="block summary__container">
             <div class="summary__content">
-                <p class="subtitle">About {{ page.title }}</p>
+                <h1 class="subtitle">About {{ page.title }}</h1>
                 <p>{{ page.summary }}</p>
             </div>
             <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-alt/logo-{{ page.slug }}.png" alt="{{ page.title }} Logo" class="summary__image">
@@ -39,15 +39,19 @@
         <div class="row">
             <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-challenge.svg" alt="Challenge icon" class="col--5">
             <div class="col--7">
-                <h2 class="project__subtitle">The Challenge</h2>
-                <div class="project__content">{{ page.challenge }}</div>
+                <h1 class="project__subtitle subtitle">The Challenge</h1>
+                <div class="project__text">{{ page.challenge }}</div>
             </div>
         </div>
     </section>
 
-    <section class="section sewction--left section--grey">
-        <h2 class="project__subtitle">The AB Delivery</h2>
-        <div class="project__content">{{ page.delivery }}</div>    
+    <section class="section section--left section--grey">
+        <div class="row">
+            <div class="col--7">
+                <h1 class="project__subtitle subtitle">The AB Delivery</h1>
+                <div class="project__text">{{ page.delivery }}</div>    
+            </div>
+        </div>
     </section>
 
     <section class="section section--primary">

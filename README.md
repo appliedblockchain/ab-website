@@ -10,9 +10,7 @@
 ### Column system
 
 ### Logo color on landing
-
 If the `page-header.html` of a page is set to `background='primary'` or `background='dark'`, the logo and menu icon colors change.
-
 To do so, go to `header.html` and add the page title to the condition in the class selector.
 ```html
 <div class="header__bar">
@@ -24,9 +22,8 @@ To do so, go to `header.html` and add the page title to the condition in the cla
     </a>
 </div>
 ```
-
-*For the `background='primary'`, both the logo and menu logo change.
-*For the `background='dark'`, only the menu icon changes.
+* For the `background='primary'`, both the logo and menu logo change.
+* For the `background='dark'`, only the menu icon changes.
 
 ## FAQ
 

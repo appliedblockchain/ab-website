@@ -9,9 +9,9 @@
 
 ### Column system
 
-### Logo color on landing
+### Logo and menu icon color on landing
 If the `page-header.html` of a page is set to `background='primary'` or `background='dark'`, the logo and menu icon colors change.
-To do so, go to `header.html` and add the page title to the condition in the class selector.
+To do so, go to `_layouts/header.html` and add the page title to the condition in the class selector.
 ```html
 <div class="header__bar">
     <div class="header__logo {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">

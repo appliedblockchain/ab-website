@@ -1,11 +1,29 @@
 # Applied Blockchain Website
-**Tutorial and general queries**
+
+## Introduction
+* Jekyll and liauid
+* SASS
+* BEM
 
 ## Page structure
 
 ### Components
 * Page header
 * Section header
+
+### Section system
+The whole website is build around a section system. Each page is divided in sections, which obey several rules (rephrase):
+* if two sister sections have the same background color, add the class `section--alt` to the second one. This will narrow the padding between the two of them
+```html
+<section class="section section--primary">
+    <!-- content -->
+</section>
+<section class="section sectin--alt section--primary">
+    <!-- content -->
+</section>
+```
+* Other rule
+* List of types
 
 ### Column system
 

@@ -300,16 +300,22 @@ li + li {
 		padding-top: 0;
 	}
 
-	&--nopadding {
-		padding: 0;
-	}
+	&--fullwidth {
+		padding-left: 0;
+		padding-right: 0;
 
-	&--footer {
+		.section__header {
+			padding-right: $col*2;
+			padding-left: $col*2;
+		}
+	}
 	
-	}
-
 	&--block {
 		padding: 0 $col;
+	}
+
+	&--nopadding {
+		padding: 0;
 	}
 }
 
@@ -333,6 +339,10 @@ li + li {
 	&--dark {
 		background-color: $dark;
 		color: $white;
+
+		.title {
+			color: $white;
+		}
 	}
 
 	&--grey {

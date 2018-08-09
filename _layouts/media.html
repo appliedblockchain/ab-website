@@ -21,11 +21,15 @@
                     <a class="filter__button button button--primary active" data-filter="*">
                         <p class="button__inner">All</p>
                     </a>
-                    {% for category in site.categories %}
-                        <a class="filter__button button" data-filter=".{{ category | first }}">
-                            <p class="button__inner">{{ category | first }}</p>
-                        </a>
-                    {% endfor %}
+                    <a class="filter__button button button--animate fas fa-newspaper" data-filter=".news">
+                        <p class="button__inner">News</p>
+                    </a>
+                    <a class="filter__button button button--animate fas fa-file-alt" data-filter=".press-release">
+                        <p class="button__inner">Press release</p>
+                    </a>
+                    <a class="filter__button button button--animate fas fa-rss" data-filter=".blog">
+                        <p class="button__inner">Blog</p>
+                    </a>
                 </div>
                 <div class="grid row">
                     {% if site.posts.size > 0 %}

@@ -379,20 +379,6 @@ li + li {
 	color: $black;
 }
 
-.filter {
-
-	&__button {
-
-		&:hover {
-			background-color: $primary;
-
-			.button__inner {
-				color: $white;
-			}
-		}		
-	}
-}
-
 
 
 /*

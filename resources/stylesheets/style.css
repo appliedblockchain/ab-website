@@ -3531,24 +3531,15 @@ li + li {
   color: #000a1e;
 }
 
-/* line 386, ../sass/partials/_structure.scss */
-.filter__button:hover {
-  background-color: #007bff;
-}
-/* line 389, ../sass/partials/_structure.scss */
-.filter__button:hover .button__inner {
-  color: #ffffff;
-}
-
 /*
  * logos
  * —————————————————————————————————————————————————————————————————
 */
-/* line 405, ../sass/partials/_structure.scss */
+/* line 391, ../sass/partials/_structure.scss */
 .logo-header {
   width: 100%;
 }
-/* line 408, ../sass/partials/_structure.scss */
+/* line 394, ../sass/partials/_structure.scss */
 .logo-header-bg {
   -moz-transition: fill 0.4s ease 0s;
   -o-transition: fill 0.4s ease 0s;
@@ -3556,7 +3547,7 @@ li + li {
   transition: fill 0.4s ease 0s;
   fill: #007bff;
 }
-/* line 413, ../sass/partials/_structure.scss */
+/* line 399, ../sass/partials/_structure.scss */
 .logo-header-color {
   -moz-transition: fill 0.4s ease 0s;
   -o-transition: fill 0.4s ease 0s;
@@ -3564,21 +3555,21 @@ li + li {
   transition: fill 0.4s ease 0s;
   fill: #ffffff;
 }
-/* line 419, ../sass/partials/_structure.scss */
+/* line 405, ../sass/partials/_structure.scss */
 .logo-footer {
   width: 100%;
   max-width: 400px;
   height: auto;
 }
-/* line 426, ../sass/partials/_structure.scss */
+/* line 412, ../sass/partials/_structure.scss */
 .logo-footer-icon-bg {
   fill: #007bff;
 }
-/* line 430, ../sass/partials/_structure.scss */
+/* line 416, ../sass/partials/_structure.scss */
 .logo-footer-icon-color {
   fill: #ffffff;
 }
-/* line 435, ../sass/partials/_structure.scss */
+/* line 421, ../sass/partials/_structure.scss */
 .logo-footer-name {
   fill: #ffffff;
 }
@@ -3587,7 +3578,7 @@ li + li {
  * header
  * —————————————————————————————————————————————————————————————————
 */
-/* line 448, ../sass/partials/_structure.scss */
+/* line 434, ../sass/partials/_structure.scss */
 .header {
   -moz-transition: height 0.4s ease 0s, background-color 0.4s ease 0s, box-shadow 0.4s ease 0s, padding-top 0.4s ease 0s, padding-bottom 0.4s ease 0s;
   -o-transition: height 0.4s ease 0s, background-color 0.4s ease 0s, box-shadow 0.4s ease 0s, padding-top 0.4s ease 0s, padding-bottom 0.4s ease 0s;
@@ -3598,7 +3589,7 @@ li + li {
   height: 160px;
   width: 100vw;
 }
-/* line 455, ../sass/partials/_structure.scss */
+/* line 441, ../sass/partials/_structure.scss */
 .header__bar {
   -moz-transition: height 0.4s ease 0s;
   -o-transition: height 0.4s ease 0s;
@@ -3613,7 +3604,7 @@ li + li {
   height: 160px;
   padding: 0 6.25vw;
 }
-/* line 464, ../sass/partials/_structure.scss */
+/* line 450, ../sass/partials/_structure.scss */
 .header__logo {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s;
@@ -3631,24 +3622,24 @@ li + li {
   width: 80px;
   height: 80px;
 }
-/* line 476, ../sass/partials/_structure.scss */
+/* line 462, ../sass/partials/_structure.scss */
 .header__logo.alt .logo-header-bg {
   fill: #ffffff;
 }
-/* line 480, ../sass/partials/_structure.scss */
+/* line 466, ../sass/partials/_structure.scss */
 .header__logo.alt .logo-header-color {
   fill: #007bff;
 }
-/* line 487, ../sass/partials/_structure.scss */
+/* line 473, ../sass/partials/_structure.scss */
 .header__button {
   position: absolute;
   right: 6.25vw;
 }
-/* line 492, ../sass/partials/_structure.scss */
+/* line 478, ../sass/partials/_structure.scss */
 .header__menu {
   padding: 40px 12.5vw 0 12.5vw;
 }
-/* line 496, ../sass/partials/_structure.scss */
+/* line 482, ../sass/partials/_structure.scss */
 .header.js-scrolled {
   -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
@@ -3656,16 +3647,16 @@ li + li {
   height: 80px;
   background-color: #ffffff;
 }
-/* line 503, ../sass/partials/_structure.scss */
+/* line 489, ../sass/partials/_structure.scss */
 .header.js-scrolled .header__bar {
   height: 80px;
 }
-/* line 507, ../sass/partials/_structure.scss */
+/* line 493, ../sass/partials/_structure.scss */
 .header.js-scrolled .header__logo {
   width: 40px;
   height: 40px;
 }
-/* line 514, ../sass/partials/_structure.scss */
+/* line 500, ../sass/partials/_structure.scss */
 .header.js-opened {
   -moz-transition: height 0.4s ease 0s, background-color 0.4s ease 0s;
   -o-transition: height 0.4s ease 0s, background-color 0.4s ease 0s;
@@ -3674,67 +3665,67 @@ li + li {
   height: 100vh;
   background-color: #ffffff;
 }
-/* line 521, ../sass/partials/_structure.scss */
+/* line 507, ../sass/partials/_structure.scss */
 .header.js-opened .header__bar {
   height: 160px;
 }
-/* line 525, ../sass/partials/_structure.scss */
+/* line 511, ../sass/partials/_structure.scss */
 .header.js-opened .header__logo {
   width: 80px;
   height: 80px;
 }
-/* line 536, ../sass/partials/_structure.scss */
+/* line 522, ../sass/partials/_structure.scss */
 .header.js-scrolled .logo-header-bg, .header.js-opened .logo-header-bg {
   fill: #007bff;
 }
-/* line 540, ../sass/partials/_structure.scss */
+/* line 526, ../sass/partials/_structure.scss */
 .header.js-scrolled .logo-header-color, .header.js-opened .logo-header-color {
   fill: #ffffff;
 }
-/* line 547, ../sass/partials/_structure.scss */
+/* line 533, ../sass/partials/_structure.scss */
 .header.js-scrolled .button--menu:before, .header.js-scrolled .button--menu:after, .header.js-scrolled .button--menu .button__inner, .header.js-opened .button--menu:before, .header.js-opened .button--menu:after, .header.js-opened .button--menu .button__inner {
   background-color: #000a1e;
 }
 
-/* line 558, ../sass/partials/_structure.scss */
+/* line 544, ../sass/partials/_structure.scss */
 .menu__row + .menu__row {
   margin-top: 80px;
 }
-/* line 563, ../sass/partials/_structure.scss */
+/* line 549, ../sass/partials/_structure.scss */
 .menu__title {
   margin-bottom: 20px;
 }
-/* line 567, ../sass/partials/_structure.scss */
+/* line 553, ../sass/partials/_structure.scss */
 .menu__inner {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 572, ../sass/partials/_structure.scss */
+/* line 558, ../sass/partials/_structure.scss */
 .menu__button {
   width: 33.333%;
   position: relative;
   padding: 0;
   margin-bottom: 10px;
 }
-/* line 578, ../sass/partials/_structure.scss */
+/* line 564, ../sass/partials/_structure.scss */
 .menu__button .subtitle {
   padding: 0;
 }
-/* line 588, ../sass/partials/_structure.scss */
+/* line 574, ../sass/partials/_structure.scss */
 .menu__button:hover .menu__description span {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 596, ../sass/partials/_structure.scss */
+/* line 582, ../sass/partials/_structure.scss */
 .menu__description {
   width: 100%;
   overflow: hidden;
 }
-/* line 600, ../sass/partials/_structure.scss */
+/* line 586, ../sass/partials/_structure.scss */
 .menu__description span {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -3746,7 +3737,7 @@ li + li {
   transform: translateY(-100%);
   display: block;
 }
-/* line 607, ../sass/partials/_structure.scss */
+/* line 593, ../sass/partials/_structure.scss */
 .menu__newsletter {
   margin-top: 40px;
 }
@@ -3755,37 +3746,37 @@ li + li {
  * footer
  * —————————————————————————————————————————————————————————————————
 */
-/* line 619, ../sass/partials/_structure.scss */
+/* line 605, ../sass/partials/_structure.scss */
 .footer {
   padding: 120px 6.25vw 60px;
   font-weight: 400;
 }
-/* line 623, ../sass/partials/_structure.scss */
+/* line 609, ../sass/partials/_structure.scss */
 .footer > * {
   display: -webkit-flex;
   display: flex;
 }
-/* line 627, ../sass/partials/_structure.scss */
+/* line 613, ../sass/partials/_structure.scss */
 .footer__item {
   margin-bottom: 60px;
 }
-/* line 631, ../sass/partials/_structure.scss */
+/* line 617, ../sass/partials/_structure.scss */
 .footer__logo {
   padding-right: 80px;
 }
-/* line 635, ../sass/partials/_structure.scss */
+/* line 621, ../sass/partials/_structure.scss */
 .footer__title {
   margin-bottom: 20px;
 }
-/* line 641, ../sass/partials/_structure.scss */
+/* line 627, ../sass/partials/_structure.scss */
 .footer__adress p + p {
   margin-top: 10px;
 }
-/* line 645, ../sass/partials/_structure.scss */
+/* line 631, ../sass/partials/_structure.scss */
 .footer__adress .body--bold {
   margin-top: 20px;
 }
-/* line 650, ../sass/partials/_structure.scss */
+/* line 636, ../sass/partials/_structure.scss */
 .footer__button {
   display: block !important;
   margin-left: 0 !important;

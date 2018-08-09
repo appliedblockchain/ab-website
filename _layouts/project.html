@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <section class="section project__summary summary" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/{{ page.slug }}.jpg);">
+    <section class="section project__summary summary" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
         <div class="block summary__container">
             <div class="summary__content">
                 <h1 class="subtitle">About {{ page.title }}</h1>
@@ -37,25 +37,32 @@
 
     <section class="section section--left">
         <div class="row">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-challenge.svg" alt="Challenge icon" class="col--5">
-            <div class="col--7">
+            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-challenge.svg" alt="Challenge icon" class="col--4">
+            <div class="coloffset--1 col--7">
                 <h1 class="project__subtitle subtitle">The Challenge</h1>
                 <div class="project__text">{{ page.challenge }}</div>
             </div>
         </div>
     </section>
 
-    <section class="section section--left section--grey">
+    <section class="section section--left section--grey delivery" style="background-image: url({{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale.svg);">
         <div class="row">
             <div class="col--7">
                 <h1 class="project__subtitle subtitle">The AB Delivery</h1>
-                <div class="project__text">{{ page.delivery }}</div>    
+                <div class="project__text body--large">{{ page.delivery }}</div>    
+            </div>
+            <div class="project__example project__text">
+                <div class="col--4">
+                    {{ page.example }}
+                </div>
+                <img src="{{ site.url }}{{ site.imageurl }}/projects/example/{{ page.slug }}.png" alt="{{ page.title }} example" class="coloffset--1 col--7">
             </div>
         </div>
     </section>
 
     <section class="section section--primary">
-
+        <h1 class="project__subtitle subtitle">Results</h1>
+        <div class="project__text body--large">{{ page.results }}</div>    
     </section>
 
     <section class="section">

@@ -13,7 +13,7 @@
             <div class="section__content portfolio">
                 <!-- change slug to choose featured project -->
                 {% assign featureProject = site.projects | where: "slug", "traveledger" | first %}
-                <a href="{{ featureProject.url }}" class="portfolio__item alt block" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/{{ featureProject.slug }}.jpg);">
+                <a href="{{ featureProject.url }}" class="portfolio__item alt block" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ featureProject.slug }}.jpg);">
                     <div class="portfolio__content">
                         <p class="portfolio__comment comment">{{ featureProject.industry }}</p>
                         <h2 class="portfolio__title subtitle">{{ featureProject.title }}</h2>
@@ -36,7 +36,7 @@
 
             <div class="portfolio__grid">
                 {% for project in site.projects %}
-                    <a href="{{ project.url }}" class="portfolio__item" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/{{ project.slug }}.jpg);">
+                    <a href="{{ project.url }}" class="portfolio__item" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                         <div class="portfolio__content">
                             <p class="portfolio__comment comment">{{ project.industry }}</p>
                             <h2 class="portfolio__title subtitle">{{ project.title }}</h2>

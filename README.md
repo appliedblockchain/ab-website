@@ -20,7 +20,7 @@ Every page is build on the same structure:
 <div class="page">
 
     {% include components/page-header.html
-        background-color='primary'
+        background-color=''
         title='Page Title'
         description='Lorem ipsum dolor sit amet.'
     %}
@@ -28,7 +28,7 @@ Every page is build on the same structure:
     <section class="section">
 
         {% include components/section-header.html
-            title='Section 2 Title'
+            title='Section Title'
             description='Lorem ipsum dolor sit amet.'
         %}
 
@@ -40,6 +40,7 @@ Every page is build on the same structure:
         </div>
 
     </section>
+    <!-- repeat section if needed -->
 
 </div>
 
@@ -50,8 +51,9 @@ Every page is build on the same structure:
 * Horizontally, elements are sometimes distributed using a bootstrap like [column system](#column-system).
 
 ### Section system
-The whole website is build around a section system. Each page is divided in sections, which obey several rules (rephrase):
-* if two sister sections have the same background color, add the class `section--alt` to the second one. This will narrow the padding between the two of them
+Each page is divided in sections.
+#### Section types
+* if two sister sections have the same background color, add the class `section--alt` to the second one. This will narrow the padding between the two of them;
 ```html
 <section class="section section--primary">
     <!-- content -->
@@ -60,8 +62,13 @@ The whole website is build around a section system. Each page is divided in sect
     <!-- content -->
 </section>
 ```
-* Other rule
-* List of types
+* if you need a fullwidth section, add the `section--fullwidth` class;
+* if your section is a block (e.g. the **investor section** of the [About](http://next.appliedblockchain.com/about/) page, or the **client section** of the [Home](http://next.appliedblockchain.com/home/) page), add the `section--block` class;
+* if you don't want any padding, add the `section--nopadding` class (e.g. **grid section** of the [Case studies](http://next.appliedblockchain.com/case-studies/) page).
+#### Section colors
+To change the background color of a section, add this class with the corresponding color: `.section--primary`, `.section--dark` or `.section--grey`.
+#### Section alignement
+Most of the text on the website is centered. However, if the text in a section is left or right aligned, simply add the `.section--left` or `.section--class` class.
 
 ### Components
 * Page header

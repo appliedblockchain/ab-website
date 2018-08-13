@@ -13,10 +13,40 @@
 
 
 ## Page structure
-
-### Components
-* Page header
-* Section header
+Every page is build on the same structure:
+```html
+{% include header.html %}
+<div class="page">
+    {% include components/page-header.html
+        background-color='primary'
+        title='Page Title'
+        description='Lorem ipsum dolor sit amet.'
+    %}
+    <section class="section">
+        {% include components/section-header.html
+            title='Section 1 Title'
+        %}
+        <div class="section__content">
+        </div>
+    </section>
+    <section class="section">
+        {% include components/section-header.html
+            title='Section 2 Title'
+            description='Lorem ipsum dolor sit amet.'
+        %}
+        <div class="section__content">
+            <div class="row">
+                <div class="col--4"></div>
+                <div class="col--8"></div>
+            </div>
+        </div>
+    </section>
+</div>
+{% include footer.html %}
+```
+* They are divided in [sections](#section-system), representing each part of the page;
+* the page and section headers are [components](#components), ensuring that they will have the same structure throughout the whole website;
+* Horizontally, elements are sometimes distributed using a bootstrap like [column structure](#column-structure).
 
 ### Section system
 The whole website is build around a section system. Each page is divided in sections, which obey several rules (rephrase):
@@ -31,6 +61,10 @@ The whole website is build around a section system. Each page is divided in sect
 ```
 * Other rule
 * List of types
+
+### Components
+* Page header
+* Section header
 
 ### Column system
 
@@ -59,16 +93,16 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 * Rename the file in lowercase, using the name of the project/client for reference;
 * Fill in the tags according to the case study layout (if you don't understand where they are displayed, [here is an example](http://next.appliedblockchain.com/project/cygnetise/))
 * Add the company logo in the `resources/images/logos/clients-alt` folder;
-> The logo in the about section will link itself automatically, provided the image has the same name as the project page
-* If there is a quote, add it in `_data/testimonials.yml` under the project's page name, and add the portrait in the `resources/images/testimonials` folder;
+> The logo in the about section will link itself automatically, provided the image has the same **title** as the project page
+* If there is a quote, add it in `_data/testimonials.yml` under the project's page title, and add the portrait in the `resources/images/testimonials` folder;
 ```yml
-name-of-project:
+title-of-project:
   - id: name-of-person
     quote: Lorem ipsum dolor sit amet.
     name: Name of Person
     job: Title, Company  
 ```
-> The portrait will link itself automatically, provided the image has the same id as the quote
+> The portrait will link itself automatically, provided the image has the same **id** as the quote
 
 ### Edit project
 * Explain markdown for content in .md file ('<p>' tag used spacing the paragraphs)
@@ -80,7 +114,7 @@ name-of-project:
 
 ### Featured projects
 To add a project to the **featured** section of the **Case Studies** page, simply add `tag: featured` to the values of the page. It will look like this
-```
+```yml
 ---
 layout: project
 tag: featured

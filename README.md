@@ -53,7 +53,7 @@ Every page is build on the same structure:
 ### Section system
 Each page is divided in sections.
 #### Section types
-* if two sister sections have the same background color, add the class `section--alt` to the second one. This will narrow the padding between the two of them;
+`Section--alt` If two sister sections have the same background color, add this class `section--alt` to the second one. This will narrow the padding between the two of them;
 ```html
 <section class="section section--primary">
     <!-- content -->
@@ -62,13 +62,13 @@ Each page is divided in sections.
     <!-- content -->
 </section>
 ```
-* if you need a fullwidth section, add the `section--fullwidth` class;
-* if your section is a block (e.g. the **investor section** of the [About](http://next.appliedblockchain.com/about/) page, or the **client section** of the [Home](http://next.appliedblockchain.com/home/) page), add the `section--block` class;
-* if you don't want any padding, add the `section--nopadding` class (e.g. **grid section** of the [Case studies](http://next.appliedblockchain.com/case-studies/) page).
+`section--fullwidth` Create a fullwidth section;
+`section--block` If your section is a block component (e.g. the **investor section** of the [About](http://next.appliedblockchain.com/about/) page;
+`section--nopadding` remove all paddings (e.g. **grid section** of the [Case studies](http://next.appliedblockchain.com/case-studies/) page).
 #### Section colors
-To change the background color of a section, add this class with the corresponding color: `.section--primary`, `.section--dark` or `.section--grey`.
+`.section--primary`, `.section--dark` or `.section--grey` Change the background color of a section (default is white).
 #### Section alignement
-Most of the text on the website is centered. However, if the text in a section is left or right aligned, simply add the `.section--left` or `.section--class` class.
+`.section--left` or `.section--class` Left or rifght align the text and content of a section (default is centered aligned).
 
 ### Components
 * Page header

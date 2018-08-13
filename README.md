@@ -53,7 +53,7 @@ Every page is build on the same structure:
 ### Section system
 Each page is divided in sections.
 #### Section types
-Add these classes to customize the section:
+Add these classes to customise them:
 * if two sister sections have the same background color, add `section--alt` to the second one;
 ```html
 <section class="section section--primary">
@@ -63,17 +63,34 @@ Add these classes to customize the section:
     <!-- content -->
 </section>
 ```
-* Create a fullwidth section `section--fullwidth`;
-* if your section is a block component (e.g. the **investor section** of the [About](http://next.appliedblockchain.com/about/) page `section--block`;
-* remove all paddings (e.g. **grid section** of the [Case studies](http://next.appliedblockchain.com/case-studies/) page) `section--nopadding`.
+* Create a fullwidth section with `section--fullwidth`;
+* if your section is a block component (e.g. the **investor section** of the [About](http://next.appliedblockchain.com/about/) page) use `section--block`;
+* to remove all paddings (e.g. **grid section** of the [Case studies](http://next.appliedblockchain.com/case-studies/) page) add `section--nopadding`.
 #### Section colors
-* Change the background color of a section (default is white) `.section--primary`, `.section--dark` or `.section--grey`.
+* Change the background color of a section (default is white) using `.section--primary`, `.section--dark` or `.section--grey`.
 #### Section alignement
-* Left or rifght align the text and content of a section (default is centered aligned) `.section--left` or `.section--class`.
+* Left or rifght align the text and content of a section (default is centered aligned) using `.section--left` or `.section--right`.
 
 ### Components
-* Page header
-* Section header
+The components are located in the `_data` folder. They were created to ensure that every iteration has the same structure, and that it will be easy to edit it. Each of them has a set of attributes.
+> if you want one attribute not to appear, simply delete the line.
+####Page header
+The page header component has three attributes.
+```yml
+{% include components/page-header.html
+        background-color=''
+        title='Page Title'
+        description='Lorem ipsum dolor sit amet.'
+%}
+```
+####Section header
+The section header component has three attributes.
+```yml
+{% include components/section-header.html
+    title='Section Title'
+    description='Lorem ipsum dolor sit amet.'
+%}
+```
 
 ### Column system
 

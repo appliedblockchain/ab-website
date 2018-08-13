@@ -79,7 +79,6 @@ The components are located in the `_data` folder. They were created to ensure th
 > if you want one attribute not to appear, simply delete the line.
 
 #### Page header
-The page header component has three attributes.
 ```
 {% include components/page-header.html
         background-color=''
@@ -87,33 +86,27 @@ The page header component has three attributes.
         description='Lorem ipsum dolor sit amet.'
 %}
 ```
+The page header is used once on a page, at the very beginning.
 
 #### Section header
-The section header component has two attributes.
 ```
 {% include components/section-header.html
     title='Section Title'
     description='Lorem ipsum dolor sit amet.'
 %}
 ```
+The section header is used in every section.
 
 ### Column system
-
-### Logo and menu icon color on landing
-If the `page-header.html` of a page is set to `background='primary'` or `background='dark'`, the logo and menu icon colors change.
-To do so, go to `_layouts/header.html` and add the page title to the condition in the class selector.
+If needed, elements can be layed out horizontally using a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) like column system. It as based on a 12 column structure. You can add prefixes to the number to set up the responsive behaviour of each column.
 ```html
-<div class="header__bar">
-    <div class="header__logo {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
-        {% include components/logo-header.html %}
-    </div>
-    <a class="header__button button button--menu {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
-        <span class="button__inner"></span>
-    </a>
+<div class="row">
+    <div class="col--lg3 col--md4"></div>
+    <div class="col--lg7 col--md8"></div>
+    <div class="col--lg2 col--md12"></div>
 </div>
 ```
-* If set to `background='primary'`, both the **logo and menu icon** change.
-* If set to `background='dark'`, only the **menu icon** changes.
+> See the `resources/sass/partials/_structure.html` file to see the code.
 
 
 
@@ -187,5 +180,23 @@ summary:
 
 
 ## General queries
+
+### Logo and menu icon color on landing
+If the `page-header.html` of a page is set to `background='primary'` or `background='dark'`, the logo and menu icon colors change.
+To do so, go to `_layouts/header.html` and add the page title to the condition in the class selector.
+```html
+<div class="header__bar">
+    <div class="header__logo {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
+        {% include components/logo-header.html %}
+    </div>
+    <a class="header__button button button--menu {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
+        <span class="button__inner"></span>
+    </a>
+</div>
+```
+* If set to `background='primary'`, both the **logo and menu icon** change.
+* If set to `background='dark'`, only the **menu icon** changes.
+
 * An image diesn't appear
     * Check file extension
+

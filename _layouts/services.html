@@ -88,7 +88,7 @@
             {% for item in site.data.images.technology %}
                 <div class="technology__item">
                     <div class="technology__image">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/tools/logo-{{ item.url }}.svg" alt="Logo {{ item.alt }}" class="">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/tools/{{ item.url }}.svg" alt="Logo {{ item.alt }}" class="">
                     </div>
                     <p class="body--large">{{ item.alt }}</p>
                 </div>
@@ -109,7 +109,7 @@
             {% for item in site.data.projects %}
                 <div class="projectGrid__item tooltip tooltip--click">
                     <div class="block projectGrid__container">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.name }}" class="projectGrid__image hover-grayscale tooltip__trigger">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ item.url }}.png" alt="Logo {{ item.name }}" class="projectGrid__image hover-grayscale tooltip__trigger">
                     </div>
                     <div class="block projectGrid__inner tooltip__inner">
                         <div>

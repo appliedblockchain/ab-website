@@ -80,8 +80,8 @@
 
     <section class="section section--block section--grey">
         <div class="owl-carousel owl-carousel-clients carousel block">
-            {% for item in site.data.images.projects %}
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
+            {% for item in site.data.images.clients %}
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
             {% endfor %}
         </div>
     </section>
@@ -128,7 +128,7 @@
             <!-- edit data in _data/images.html -->
             {% for item in site.data.images.media %}
                 <div class="logo-media__item">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/media/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
                 </div>
             {% endfor %}    
         </div>

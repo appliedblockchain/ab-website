@@ -35,16 +35,17 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section section--block">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             title='Partners'
         %}
 
-        <div class="section__content">
-            <div class="block">
-            </div>
+        <div class="owl-carousel owl-carousel-clients carousel block">
+            {% for item in site.data.images.partners %}
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
+            {% endfor %}
         </div>
 
     </section>

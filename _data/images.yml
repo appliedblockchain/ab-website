@@ -27,10 +27,10 @@ technology:
   - url: r3
     alt: R3
 
-# projects section
+# clients section
 # in service.html page
 
-projects:
+clients:
   - url: appii
     alt: Appii
 
@@ -55,3 +55,18 @@ projects:
   - url: vodafone
     alt: Vodafone
 
+# partners section
+# in about.html page
+
+partners:
+  - url: microsoft
+    alt: Microsoft
+
+  - url: innovate-finance
+    alt: Innovate Finance
+
+  - url: energy-web
+    alt: Energy Web
+
+  - url: level39
+    alt: Level39    

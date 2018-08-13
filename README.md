@@ -52,6 +52,21 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 ## Projects
 
 ### Add project
+* In the `_projects` folder, duplicate a project;
+* Rename the file in lowercase, using the name of the project/client for reference;
+* Fill in the tags according to the case study layout (if you don't understand where they are displayed, [here is an example](http://next.appliedblockchain.com/project/cygnetise/))
+* Add the company logo in the `resources/images/logos/clients-alt` folder;
+> The logo in the about section will link itself automatically, provided the image has the same name as the project page
+* If there is a quote, add it in `_data/testimonials.yml` under the project's page name, and add the portrait in the `resources/images/testimonials` folder;
+```yml
+name-of-project:
+  - id: name-of-person
+    quote: Lorem ipsum dolor sit amet.
+    name: Name of Person
+    job: Title, Company  
+```
+> The portrait will link itself automatically, provided the image has the same id as the quote
+
 ### Edit project
 * Explain markdown for content in .md file ('<p>' tag used spacing the paragraphs)
 * Logo (path and name)
@@ -60,9 +75,9 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
     * Logo size 
 * Testimonials (take testimonial component and filter by slug [page title])
 
-### Featured section
+### Featured projects
 To add a project to the **featured** section of the **Case Studies** page, simply add `tag: featured` to the values of the page. It will look like this
-```liquid
+```
 ---
 layout: project
 tag: featured

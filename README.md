@@ -16,37 +16,38 @@
 Every page is build on the same structure:
 ```html
 {% include header.html %}
+
 <div class="page">
+
     {% include components/page-header.html
         background-color='primary'
         title='Page Title'
         description='Lorem ipsum dolor sit amet.'
     %}
+
     <section class="section">
-        {% include components/section-header.html
-            title='Section 1 Title'
-        %}
-        <div class="section__content">
-        </div>
-    </section>
-    <section class="section">
+
         {% include components/section-header.html
             title='Section 2 Title'
             description='Lorem ipsum dolor sit amet.'
         %}
+
         <div class="section__content">
             <div class="row">
                 <div class="col--4"></div>
                 <div class="col--8"></div>
             </div>
         </div>
+
     </section>
+
 </div>
+
 {% include footer.html %}
 ```
 * They are divided in [sections](#section-system), representing each part of the page;
 * the page and section headers are [components](#components), ensuring that they will have the same structure throughout the whole website;
-* Horizontally, elements are sometimes distributed using a bootstrap like [column structure](#column-structure).
+* Horizontally, elements are sometimes distributed using a bootstrap like [column system](#column-system).
 
 ### Section system
 The whole website is build around a section system. Each page is divided in sections, which obey several rules (rephrase):

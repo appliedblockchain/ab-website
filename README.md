@@ -1,9 +1,13 @@
 # Applied Blockchain Website
 
+
+
 ## Introduction
-* Jekyll and liauid
+* Jekyll and liquid
 * SASS
 * BEM
+
+
 
 ## Page structure
 
@@ -18,7 +22,7 @@ The whole website is build around a section system. Each page is divided in sect
 <section class="section section--primary">
     <!-- content -->
 </section>
-<section class="section sectin--alt section--primary">
+<section class="section section--alt section--primary">
     <!-- content -->
 </section>
 ```
@@ -43,6 +47,35 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 * If set to `background='primary'`, both the **logo and menu icon** change.
 * If set to `background='dark'`, only the **menu icon** changes.
 
+
+
+## Projects
+
+### Add project
+### Edit project
+* Explain markdown for content in .md file ('<p>' tag used spacing the paragraphs)
+* Logo (path and name)
+    * Pay attention to clients and clients-alt folders
+    * if doesn't work: check file extension (needs to be jpeg)
+    * Logo size 
+* Testimonials (take testimonial component and filter by slug [page title])
+
+### Featured section
+To add a project to the **featured** section of the **Case Studies** page, simply add `tag: featured` to the values of the page. It will look like this
+```liquid
+---
+layout: project
+tag: featured
+title: Title of project
+subtitle: Lorem ipsum dolor sit amet 
+industry: 
+technology: 
+summary: 
+---
+```
+
+
+
 ## FAQ
 
 ## Jobs
@@ -59,6 +92,8 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 ### Add a blog post
 ### Edit a blog post
 
+
+
 ## Events
 ### Add an events
 ### Edit an events
@@ -66,15 +101,7 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
     * if doesn't work: check file extension (needs to be jpeg)
     * default image (explanation)
 
-## Projects
-### Add project
-### Edit project
-* Explain markdown for content in .md file ('<p>' tag used spacing the paragraphs)
-* Logo (path and name)
-    * Pay attention to clients and clients-alt folders
-    * if doesn't work: check file extension (needs to be jpeg)
-    * Logo size 
-* Testimonials (take testimonial component and filter by slug [page title])
+
 
 ## General queries
 * An image diesn't appear

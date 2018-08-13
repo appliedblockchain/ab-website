@@ -12,22 +12,26 @@
 
             <div class="section__content portfolio">
                 <!-- change slug to choose featured project -->
-                {% assign featureProject = site.projects | where: "slug", "traveledger" | first %}
-                <a href="{{ featureProject.url }}" class="portfolio__item alt block" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ featureProject.slug }}.jpg);">
-                    <div class="portfolio__content">
-                        <p class="portfolio__comment comment">{{ featureProject.industry }}</p>
-                        <h2 class="portfolio__title subtitle">{{ featureProject.title }}</h2>
-                        <p class="portfolio__subtitle lead">{{ featureProject.subtitle }}</p>
-                        <p class="portfolio__desc">
-                            <span>{{ featureProject.summary }}</span>
-                        </p>
-                        <div class="portfolio__button">
-                            <span href="" class="button button--secondary button--small button--animate fa fa-eye">
-                                <p class="button__inner">Read more</p>
-                            </span>
+                <!-- {% assign featureProject = site.projects | where: "slug", "traveledger" | first %} -->
+                {% for project in site.projects %}
+                    {% if project.tag contains 'featured' %}
+                    <a href="{{ featureProject.url }}" class="portfolio__item alt block" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                        <div class="portfolio__content">
+                            <p class="portfolio__comment comment">{{ project.industry }}</p>
+                            <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
+                            <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>
+                            <p class="portfolio__desc">
+                                <span>{{ project.summary }}</span>
+                            </p>
+                            <div class="portfolio__button">
+                                <span href="" class="button button--secondary button--small button--animate fa fa-eye">
+                                    <p class="button__inner">Read more</p>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                    {% endif %}
+                {% endfor %}
             </div>
             
         </section>
@@ -36,6 +40,7 @@
 
             <div class="portfolio__grid">
                 {% for project in site.projects %}
+                    {% unless project.tag contains 'featured' %}
                     <a href="{{ project.url }}" class="portfolio__item" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                         <div class="portfolio__content">
                             <p class="portfolio__comment comment">{{ project.industry }}</p>
@@ -51,6 +56,7 @@
                             </div>
                         </div>
                     </a>
+                    {% endunless %}
                 {% endfor %}
             </div>
 

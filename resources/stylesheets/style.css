@@ -1149,9 +1149,9 @@ html, body {
   line-height: 1.2;
   font-weight: 300;
   color: #000a1e;
-  -moz-osx-font-smoothing: grayscale;
+  /*-moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-rendering: auto;
+  text-rendering: auto;*/
 }
 
 /* line 33, ../sass/partials/_fonts.scss */
@@ -3974,6 +3974,20 @@ li + li {
  * ABOUT
  * —————————————————————————————————————————————————————————————————
 */
+/* line 13, ../sass/pages/_about.scss */
+.leadership__content {
+  background-color: #007bff;
+  padding: 80px 6.25vw;
+  text-align: left;
+}
+/* line 19, ../sass/pages/_about.scss */
+.leadership__image {
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* 
  * —————————————————————————————————————————————————————————————————
  * CASE STUDIES

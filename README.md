@@ -53,7 +53,8 @@ Every page is build on the same structure:
 ### Section system
 Each page is divided in sections.
 #### Section types
-`Section--alt` If two sister sections have the same background color, add this class `section--alt` to the second one. This will narrow the padding between the two of them;
+Add these classes to customize the section:
+* if two sister sections have the same background color, add `section--alt` to the second one;
 ```html
 <section class="section section--primary">
     <!-- content -->
@@ -62,13 +63,13 @@ Each page is divided in sections.
     <!-- content -->
 </section>
 ```
-`section--fullwidth` Create a fullwidth section;
-`section--block` If your section is a block component (e.g. the **investor section** of the [About](http://next.appliedblockchain.com/about/) page;
-`section--nopadding` remove all paddings (e.g. **grid section** of the [Case studies](http://next.appliedblockchain.com/case-studies/) page).
+* Create a fullwidth section `section--fullwidth`;
+* if your section is a block component (e.g. the **investor section** of the [About](http://next.appliedblockchain.com/about/) page `section--block`;
+* remove all paddings (e.g. **grid section** of the [Case studies](http://next.appliedblockchain.com/case-studies/) page) `section--nopadding`.
 #### Section colors
-`.section--primary`, `.section--dark` or `.section--grey` Change the background color of a section (default is white).
+* Change the background color of a section (default is white) `.section--primary`, `.section--dark` or `.section--grey`.
 #### Section alignement
-`.section--left` or `.section--class` Left or rifght align the text and content of a section (default is centered aligned).
+* Left or rifght align the text and content of a section (default is centered aligned) `.section--left` or `.section--class`.
 
 ### Components
 * Page header

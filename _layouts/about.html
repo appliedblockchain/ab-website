@@ -70,24 +70,26 @@
             description='Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
         %}
 
-        <div class="section__content leadership">
-            <div class="row">
-                <!-- edit data in _data/testimonials.html -->
-                {% for item in site.data.leadership %}
+        <div class="section__content tab tab--vertical leadership">
+            <!-- edit data in _data/testimonials.html -->
+            {% for item in site.data.leadership %}
+                <div id="{{ item.slug }}" class="tab__item row">
                     <div class="col--6 leadership__content">
                         <p class="blog__date body--bold">{{ item.title }}</p>
                         <h2 class="blog__title subtitle">{{ item.name }}</h2>
                         <p>{{ item.bio }}</p>
                     </div>
-                    <div class="col--6 leadership__image" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);"></div>
-                {% endfor %}
-            </div>
-            <div>
+                    <div class="col--6 leadership__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);"></div>
+                </div>
+            {% endfor %}
+            <div class="tab__nav leadership__nav">
                 <!-- edit data in _data/testimonials.html -->
                 {% for item in site.data.leadership %}
-                    <div class="block"  style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
-                    <p class="body--bold">{{ item.name }}</p>
-                    <p>{{ item.title }}</p>
+                    <a href="#{{ item.slug }}" class="nav__button {{ item.active }} leadership__button">
+                        <div class="block leadership__portrait background--cover"  style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
+                        <p class="body--bold body--large">{{ item.name | truncatewords: 1, "" }}</p>
+                        <p>{{ item.title }}</p>
+                    </a>
                 {% endfor %}
             </div>
         </div>

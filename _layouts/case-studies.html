@@ -15,7 +15,7 @@
                 <!-- {% assign featureProject = site.projects | where: "slug", "traveledger" | first %} -->
                 {% for project in site.projects %}
                     {% if project.tag contains 'featured' %}
-                    <a href="{{ featureProject.url }}" class="portfolio__item alt block" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                    <a href="{{ featureProject.url }}" class="portfolio__item alt block background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                         <div class="portfolio__content">
                             <p class="portfolio__comment comment">{{ project.industry }}</p>
                             <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
@@ -41,7 +41,7 @@
             <div class="portfolio__grid">
                 {% for project in site.projects %}
                     {% unless project.tag contains 'featured' %}
-                    <a href="{{ project.url }}" class="portfolio__item" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                    <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                         <div class="portfolio__content">
                             <p class="portfolio__comment comment">{{ project.industry }}</p>
                             <h2 class="portfolio__title subtitle">{{ project.title }}</h2>

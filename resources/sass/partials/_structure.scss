@@ -389,6 +389,10 @@ li + li {
 	color: $black;
 }
 
+.background--cover {
+	@include background(center center, cover);
+}
+
 
 
 /*

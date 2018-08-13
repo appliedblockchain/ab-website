@@ -73,13 +73,12 @@
         <div class="section__content tab tab--vertical leadership">
             <!-- edit data in _data/testimonials.html -->
             {% for item in site.data.leadership %}
-                <div id="{{ item.slug }}" class="tab__item row">
-                    <div class="col--6 leadership__content">
+                <div id="{{ item.slug }}" class="tab__item row background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
+                    <div class="col--9 leadership__content">
                         <p class="blog__date body--bold">{{ item.title }}</p>
                         <h2 class="blog__title subtitle">{{ item.name }}</h2>
                         <p>{{ item.bio }}</p>
                     </div>
-                    <div class="col--6 leadership__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);"></div>
                 </div>
             {% endfor %}
             <div class="tab__nav leadership__nav">
@@ -88,7 +87,7 @@
                     <a href="#{{ item.slug }}" class="nav__button {{ item.active }} leadership__button">
                         <div class="block leadership__portrait background--cover"  style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
                         <p class="body--bold body--large">{{ item.name | truncatewords: 1, "" }}</p>
-                        <p>{{ item.title }}</p>
+                        <p>{{ item.division }}</p>
                     </a>
                 {% endfor %}
             </div>
@@ -96,14 +95,17 @@
 
     </section>
 
-    <section class="section section--alt section--fullwidth section--dark">
+    <section class="section section--alt section--nopadding section--dark">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             title='Our people'
         %}
 
-        <div class="section__content">
+        <div class="section__content background--cover row team" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
+            <a href="" class="team__button button button--large button--highlight button--animate fas fa-user-plus">
+                <p class="button__inner">Join our growing team</p>
+            </a>
         </div>
 
     </section>

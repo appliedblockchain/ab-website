@@ -35,13 +35,37 @@
 
     <div class="section section--dark landing" id="landing">
 
-        <h1 class="headline">Building platform agnostic blockchain applications</h1>
-        <span class="landing__graphic--lines">
-            {% include elements/graphic-lines.html %}
-        </span>
-        <span class="landing__graphic--circle">
-            {% include elements/graphic-circle.html %}
-        </span>
+        <div class="landing__background">
+            <span class="graphic landing__graphic--lines">
+                <!-- edit elements in _includes/elements/graphic-lines.html -->
+                {% include elements/graphic-lines.html %}
+            </span>
+            <span class="graphic landing__graphic--circle">
+                <!-- edit elements in _includes/elements/graphic-circle.html -->
+                {% include elements/graphic-circle.html %}
+            </span>
+        </div>
+        <h1 class="landing__title headline">Building platform agnostic blockchain applications</h1>
+        <div class="landing__content row">
+            <div class="widget colalt--6">
+                <div class="widget__hiring">
+                    <p class="subtitle">We are hiring</p>
+                    <a href="{{ site.url }}/join" class="button button--small button--highlight button--animate fas fa-user-plus">
+                        <p class="button__inner">See our vacancy list</p>
+                    </a>
+                </div>
+                <div class="widget__news block">
+                    <div class="news__content owl-carousel owl-carousel-news">
+                        {% for post in site.posts limit: 3 %}
+                        <p>{{ post.title | truncate: 100, "…" }}</p>
+                        {% endfor %}
+                    </div>
+                    <a href="{{ site.url }}/media" class="button button--small button--primary-darken button--animate fas fa-plus">
+                        <p class="button__inner">Read more</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <section class="section section--primary" id="what-we-do">

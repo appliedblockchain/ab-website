@@ -440,6 +440,7 @@ li + li {
 }
 
 .graphic {
+	pointer-events: none;
 
 	&__primary { fill: $primary; }
 	&__secondary { fill: $secondary; }

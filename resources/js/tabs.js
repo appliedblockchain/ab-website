@@ -106,23 +106,5 @@ $('.accordion .accordion__header').on('click', function() {
 
 
 // —————————————————————————————————————————————————————————————————
-// CAROUSEL
-// —————————————————————————————————————————————————————————————————
-
-$('.carousel').flexslider({
-	animation: 'slide',
-	direction: 'vertical',
-	controlsContainer: '.carousel',
-	slideshowSpeed: 3000,
-	animationSpeed: 1000,
-	prevText: "",
-	nextText: "",
-	namespace: 'carousel__'
-});
-
-
-
-
-// —————————————————————————————————————————————————————————————————
 
 });

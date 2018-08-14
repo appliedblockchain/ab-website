@@ -43,7 +43,6 @@ $('.owl-carousel-clients').owlCarousel({
 
 $('.owl-carousel-testimonial').owlCarousel({
     items: 1,
-    autoplayHoverPause: true,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
     mouseDrag: false,
@@ -54,6 +53,20 @@ $('.owl-carousel-testimonial').owlCarousel({
     autoplayTimeout: 10000,
     autoplayHoverPause: false,
     smartSpeed: 2000,
+});
+
+
+
+$('.owl-carousel-news').owlCarousel({
+    items: 1,
+    dots: false,
+    autoplayHoverPause: true,
+    mouseDrag: false,
+    touchDrag: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 1000,
 });
 
 

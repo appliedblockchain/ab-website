@@ -4,10 +4,14 @@
 
 <div class="section__header">
     {% if comment %}
-        <p class="section__comment comment">{{ comment }}</p>
-    {% endif %}
-    {% if title %}
-        <h1 class="section__title title">{{ title }}</h1>
+        <h1 class="section__comment comment">{{ comment }}</h1>
+        {% if title %}
+            <p class="section__title title">{{ title }}</p>
+        {% endif %}
+    {% else %}
+        {% if title %}
+            <h1 class="section__title title">{{ title }}</h1>
+        {% endif %}
     {% endif %}
     {% if description %}
         <p class="section__desc body--large">{{ description }}</p>

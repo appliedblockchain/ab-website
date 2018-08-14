@@ -576,14 +576,13 @@ optgroup {
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center;
-  background-color: #ffffff;
   width: 1px;
 }
-/* line 26, ../sass/partials/_anchor.scss */
+/* line 25, ../sass/partials/_anchor.scss */
 .anchor__item + .anchor__item {
   padding-top: 40px;
 }
-/* line 30, ../sass/partials/_anchor.scss */
+/* line 29, ../sass/partials/_anchor.scss */
 .anchor__dot {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -598,7 +597,7 @@ optgroup {
   display: block;
   position: relative;
 }
-/* line 39, ../sass/partials/_anchor.scss */
+/* line 38, ../sass/partials/_anchor.scss */
 .anchor__dot:before {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -617,7 +616,7 @@ optgroup {
   border-radius: 50%;
   border: 1px solid #ffffff;
 }
-/* line 50, ../sass/partials/_anchor.scss */
+/* line 49, ../sass/partials/_anchor.scss */
 .js-dot-active .anchor__dot:before, .anchor__dot:hover:before, .anchor__dot:focus:before, .anchor__dot:active:before {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -628,7 +627,7 @@ optgroup {
   -webkit-transform: scale(2.5);
   transform: scale(2.5);
 }
-/* line 57, ../sass/partials/_anchor.scss */
+/* line 56, ../sass/partials/_anchor.scss */
 .anchor__text {
   -moz-transition: opacity 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s;
@@ -642,7 +641,7 @@ optgroup {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-/* line 67, ../sass/partials/_anchor.scss */
+/* line 66, ../sass/partials/_anchor.scss */
 .js-dot-active .anchor__text, .anchor__dot:hover ~ .anchor__text, .anchor__dot:focus ~ .anchor__text, .anchor__dot:active ~ .anchor__text {
   opacity: 1;
 }

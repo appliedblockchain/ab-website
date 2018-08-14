@@ -11,7 +11,7 @@
  * hover classes
  * section
  * containers
- * logos
+ * elements
  * header
  * footer
  * —————————————————————————————————————————————————————————————————
@@ -396,9 +396,11 @@ li + li {
 
 
 /*
- * logos
+ * elements
  * —————————————————————————————————————————————————————————————————
 */
+
+/* logos */
 
 .logo {
 	
@@ -424,6 +426,26 @@ li + li {
 			fill: $white;
 		}
 	}
+}
+
+/* graphics */
+
+#gradient-secondary {
+	--color-stop-1: #{$secondary};
+	--color-stop-2: #{$secondary-alt};
+}
+#gradient-highlight {
+	--color-stop-1: #{$highlight};
+	--color-stop-2: #{$highlight-alt};
+}
+
+.graphic {
+
+	&__primary { fill: $primary; }
+	&__secondary { fill: $secondary; }
+	&__highlight { fill: $highlight; }
+	&__gradient-secondary { fill: url(#gradient-secondary) $secondary;}
+	&__gradient-highlight { fill: url(#gradient-highlight) $highlight;}
 }
 
 

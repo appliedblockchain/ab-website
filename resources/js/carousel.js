@@ -7,10 +7,8 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 
 $('.owl-carousel-clients').owlCarousel({
-    items: 5,
     dots: false,
     loop: true,
-    margin: 100,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: false,
@@ -42,36 +40,50 @@ $('.owl-carousel-clients').owlCarousel({
 
 
 $('.owl-carousel-technology').owlCarousel({
-    items: 6,
     dots: false,
     loop: true,
-    margin: 40,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: false,
-    smartSpeed: 1000,
+    smartSpeed: 2000,
     responsive: {
         0: {
 			items: 2,
-			margin: 20
+			margin: 5
         },
         450: {
-			items: 2,
-			margin: 50
+			items: 3,
+			margin: 10
         },
 		620: {
-			items: 3,
-			margin: 50
+			items: 4,
+			margin: 10
         },
         767: {
-			items: 4,
-			margin: 50
+			items: 5,
+			margin: 20
         },
         1080: {
-			items: 6,
-			margin: 40
+			items: 7,
+			margin: 20
         }
     }
+});
+
+
+
+$('.owl-carousel-testimonial').owlCarousel({
+    items: 1,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    mouseDrag: false,
+    touchDrag: false,
+    loop: true,
+    margin: 100,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: false,
+    smartSpeed: 2000,
 });
 
 

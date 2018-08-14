@@ -32,6 +32,7 @@ body.js-freeze {
 img {
 	/*prevent images from stretching with flex*/
 	@include align-self(center);
+	width: 100%;
 }
 
 

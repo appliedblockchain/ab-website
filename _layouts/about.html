@@ -1,6 +1,6 @@
 {% include header.html %}
 
-<div class="page">
+<div class="page" id="about">
 
     <!-- edit component in _includes/components/page-header.html -->
     {% include components/page-header.html
@@ -8,6 +8,23 @@
         title='About'
         description='We are a team of blockchain developers [technologists/engineers], designers, and advisors [consultants] with unique expertise in building future proof, platform agnostic blockchain applications that solve our client’s problems.'
     %}
+
+    <section class="section section--alt section--fullwidth section--primary about-intro">
+
+        <div class="row">
+            <div class="col--6 about-intro__item">
+                <h2 class="subtitle">We Solve Problems</h2>
+                <img class="about-intro__image" src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon">
+                <p>At Applied Blockchain we build blockchain applications for our clients, with an even mix between enterprises and startups. We value working through the complex problems that enterprises experience, and using blockchain technology to turn the ideas of startups into disruptive products.</p>
+            </div>
+            <div class="col--6 about-intro__item">
+                <h2 class="subtitle">We Build Products</h2>
+                <img class="about-intro__image" src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon">
+                <p>We build products using our own experience of the problems that blockchain developers need to solve, from tools for automated contract testing through to protocols that make any blockchain network more trustless and secure. We continue to innovate, design and develop new state-of-the-art blockchain products.</p>
+            </div>
+        </div>
+
+    </section>
 
     <section class="section">
 

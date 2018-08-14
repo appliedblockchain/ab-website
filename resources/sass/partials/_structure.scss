@@ -206,6 +206,16 @@ li + li {
 	padding-top: $integer/2;
 }
 
+/*page headers*/
+
+#about {
+
+	.section--header:before {
+		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+		@include background-image(linear-gradient(to bottom, rgba($primary, 0.8), $primary));
+	}
+}
+
 
 
 /*
@@ -294,8 +304,23 @@ li + li {
 .section {
 	
 	&--header {
-		padding-top: $integer*10;
 		@include align-items(center);
+		position: relative;
+		padding-top: $integer*10;
+
+		> * {
+			position: relative;
+		}
+	}
+
+	&--col {
+		padding-left: $col;
+		padding-right: $col;
+
+		.section__header {
+			padding-right: $col;
+			padding-left: $col;
+		}
 	}
 
 	&--alt {

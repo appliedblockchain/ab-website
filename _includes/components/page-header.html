@@ -2,7 +2,7 @@
 {% assign title = include.title %}
 {% assign description = include.description %}
 
-<div class="section section--header section--{{ background-color }}">
+<div class="section section--header section--{{ background-color }} background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.title }}.jpg);">
     {% if title %}
         <h1 class="headline">{{ title }}</h1>
     {% endif %}

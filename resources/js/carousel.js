@@ -41,18 +41,37 @@ $('.owl-carousel-clients').owlCarousel({
 
 
 
-$('.owl-carousel-testimonial').owlCarousel({
-    items: 1,
-    animateIn: 'fadeIn',
-    animateOut: 'fadeOut',
-    mouseDrag: false,
-    touchDrag: false,
+$('.owl-carousel-technology').owlCarousel({
+    items: 6,
+    dots: false,
     loop: true,
-    margin: 100,
+    margin: 40,
     autoplay: true,
-    autoplayTimeout: 10000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: false,
-    smartSpeed: 2000,
+    smartSpeed: 1000,
+    responsive: {
+        0: {
+			items: 2,
+			margin: 20
+        },
+        450: {
+			items: 2,
+			margin: 50
+        },
+		620: {
+			items: 3,
+			margin: 50
+        },
+        767: {
+			items: 4,
+			margin: 50
+        },
+        1080: {
+			items: 6,
+			margin: 40
+        }
+    }
 });
 
 

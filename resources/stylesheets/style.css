@@ -1126,7 +1126,7 @@ optgroup {
 
 /* line 26, ../sass/partials/_carousel.scss */
 .carousel {
-  padding: 0 !important;
+  padding: 0 80px !important;
 }
 
 /* 

@@ -76,7 +76,7 @@
 
     </section>
 
-    <section class="section section--alt section--grey">
+    <section class="section section--alt section--fullwidth section--grey">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -84,15 +84,14 @@
         %}
 
         <div class="section__content technology">
-            <!-- edit data in _data/images.html -->
-            {% for item in site.data.images.technology %}
-                <div class="technology__item">
-                    <div class="technology__image">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/tools/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="">
+            <div class="owl-carousel owl-carousel-technology">
+                <!-- edit data in _data/images.html -->
+                {% for item in site.data.images.technology %}
+                    <div class="technology__item">
+                        <div class="technology__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/logos/tools/{{ item.url }}.png);"></div>
                     </div>
-                    <p class="body--large">{{ item.alt }}</p>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
 
     </section>

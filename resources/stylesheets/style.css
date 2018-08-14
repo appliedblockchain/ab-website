@@ -4663,7 +4663,7 @@ li + li {
   position: absolute;
   top: auto;
   right: 0;
-  bottom: -24px;
+  bottom: -45px;
   left: 50%;
   width: 0;
   height: 8px;
@@ -4700,32 +4700,33 @@ li + li {
 }
 /* line 89, ../sass/pages/_services.scss */
 .approach__content {
-  margin: 0 40px;
+  margin: 0 80px;
+  width: 200%;
 }
-/* line 93, ../sass/pages/_services.scss */
+/* line 94, ../sass/pages/_services.scss */
 .approach__title {
   margin-bottom: 20px;
 }
 
-/* line 98, ../sass/pages/_services.scss */
+/* line 99, ../sass/pages/_services.scss */
 .projectGrid {
   margin: -10px;
 }
-/* line 101, ../sass/pages/_services.scss */
+/* line 102, ../sass/pages/_services.scss */
 .projectGrid__item {
   position: relative;
   width: 25%;
   padding: 10px;
 }
-/* line 107, ../sass/pages/_services.scss */
+/* line 108, ../sass/pages/_services.scss */
 .projectGrid__container {
   padding: 20px;
 }
-/* line 111, ../sass/pages/_services.scss */
+/* line 112, ../sass/pages/_services.scss */
 .projectGrid__image {
   width: 100%;
 }
-/* line 115, ../sass/pages/_services.scss */
+/* line 116, ../sass/pages/_services.scss */
 .projectGrid__inner {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
@@ -4751,7 +4752,7 @@ li + li {
   background-color: #ffffff;
   text-align: left;
 }
-/* line 130, ../sass/pages/_services.scss */
+/* line 131, ../sass/pages/_services.scss */
 .projectGrid__inner.js-show {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
@@ -4766,24 +4767,24 @@ li + li {
   left: -40px;
   z-index: 2;
 }
-/* line 141, ../sass/pages/_services.scss */
+/* line 142, ../sass/pages/_services.scss */
 .projectGrid__subtitle {
   margin-bottom: 20px;
 }
-/* line 145, ../sass/pages/_services.scss */
+/* line 146, ../sass/pages/_services.scss */
 .projectGrid .label {
   margin-top: 5px;
 }
-/* line 149, ../sass/pages/_services.scss */
+/* line 150, ../sass/pages/_services.scss */
 .projectGrid__button {
   margin-top: 10px;
 }
 
-/* line 156, ../sass/pages/_services.scss */
+/* line 157, ../sass/pages/_services.scss */
 .technology__item {
   padding: 0 40px;
 }
-/* line 160, ../sass/pages/_services.scss */
+/* line 161, ../sass/pages/_services.scss */
 .technology__image {
   background-size: contain;
   height: 120px;

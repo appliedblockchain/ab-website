@@ -402,37 +402,25 @@ li + li {
 
 .logo {
 	
-	&-header {
-		width: 100%;
-
-		&-bg {
-			@include transition(fill $transition);
-			fill: $primary;
-		}
-
-		&-color {
-			@include transition(fill $transition);
-			fill: $white;
-		}
-	}
-
-	&-footer {
+	&__item {
 		width: 100%;
 		max-width: $integer*20;
 		height: auto;
 
-		&-icon {
+	}
 
-			&-bg {
-				fill: $primary;
-			}
+	&-icon-bg {
+		fill: $primary;
+	}
 
-			&-color {
-				fill: $white;
-			}
-		}
+	&-icon-color {
+		fill: $white;
+	}
 
-		&-name {
+	&-name {
+		fill: $black;
+
+		.footer__logo & {
 			fill: $white;
 		}
 	}
@@ -451,42 +439,44 @@ li + li {
 	position: fixed;
 	height: $integer*8;
 	width: 100vw;
-	
+
 	&__bar {
 		@include transition(height $transition);
 		@include display-flex();
 		@include align-items(center);
-		@include justify-content(center);
+		@include justify-content(space-between);
 		height: $integer*8;
 		padding: 0 $col;
 	}
 
 	&__logo {
 		@include transition(height $transition, width $transition);
-		@include border-radius(50%);
-		@include box-shadow(0 0 20px 0 rgba($dark, 0.15));
-		@include border-radius(50%);
-		width: $integer*4;
-		height: $integer*4;
+		width: $integer*15;
 
 		&.alt {
 
 			.logo {
-
-				&-header-bg {
-					fill: $white
+				
+				&-icon-bg {
+					fill: $white;
 				}
-
-				&-header-color {
-					fill: $primary
+	
+				&-icon-color {
+					fill: $primary;
+				}
+	
+				&-name {
+					fill: $white;
 				}
 			}
 		}
-	}
 
-	&__button {
-		position: absolute;
-		right: $col;
+		&.alt-bis {
+
+			.logo-name {
+				fill: $white;
+			}
+		}
 	}
 
 	&__menu {
@@ -505,8 +495,7 @@ li + li {
 			}
 			
 			&__logo {
-				width: $integer*2;
-				height: $integer*2;
+				width: $integer*10;
 			}
 		}
 	}
@@ -523,8 +512,7 @@ li + li {
 			}
 
 			&__logo {
-				width: $integer*4;
-				height: $integer*4;		
+				width: $integer*15;
 			}
 		}
 	}
@@ -533,12 +521,16 @@ li + li {
 		
 		.logo {
 
-			&-header-bg {
-				fill: $primary
+			&-icon-bg {
+				fill: $primary;
 			}
 
-			&-header-color {
-				fill: $white
+			&-icon-color {
+				fill: $white;
+			}
+
+			&-name {
+				fill: $black;
 			}
 		}
 

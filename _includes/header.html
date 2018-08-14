@@ -64,8 +64,9 @@
 
 	<div class="header__bar">
 		<!-- to change the color of the logo, add the corresponding page title to the condition in the class tag -->
-		<div class="header__logo {% if page.title == 'Services'  or page.title == 'About' %}alt{% endif %}">
-			{% include components/logo-header.html %}
+		<div class="header__logo logo {% if page.title == 'Services'  or page.title == 'About' %}alt{% endif %} {% if page.title == 'Home'  or page.title == 'Case studies' %}alt-bis{% endif %}">
+			<!-- edit elements in _includes/elements/logo.html -->
+			{% include elements/logo.html %}
 		</div>
 		<!-- to change the color of the menu icon, add the corresponding page title to the condition in the class tag -->
 		<a class="header__button button button--menu {% if page.title == 'Services'  or page.title == 'About' or page.title == 'Home' or page.title == 'Case studies' %}alt{% endif %}">

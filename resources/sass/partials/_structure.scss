@@ -208,9 +208,9 @@ li + li {
 
 /*page headers*/
 
-#about {
+.section--header:before {
 
-	.section--header:before {
+	#about &, #join & {
 		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
 		@include background-image(linear-gradient(to bottom, rgba($primary, 0.8), $primary));
 	}
@@ -270,9 +270,14 @@ li + li {
 		width: 75%;
 	}
 	
-	&__desc {
+	&__subtitle {
 		width: 75%;
 		margin-top: $integer;
+	}
+
+	&__desc {
+		width: 75%;
+		margin-top: $integer/2;
 	}
 
 	&__content {
@@ -522,7 +527,7 @@ li + li {
 		@include transition(height $transition, width $transition);
 		width: $integer*15;
 
-		&.alt {
+		&.logo-white {
 
 			.logo {
 				
@@ -540,7 +545,7 @@ li + li {
 			}
 		}
 
-		&.alt-bis {
+		&.logo-name-white {
 
 			.logo-name {
 				fill: $white;

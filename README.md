@@ -88,6 +88,8 @@ The components are located in the `_data` folder. They were created to ensure th
 ```
 The page header is used once on a page, at the very beginning.
 
+#####background imnage in page header
+
 #### Section header
 ```
 {% include components/section-header.html

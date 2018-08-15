@@ -10,15 +10,15 @@
             </h1>
             <div class="coloffset--lg1 col--lg4 col--md6 project__meta">
                 <div class="meta__item body--large">
-                    <p class="body--bold">Industry</p>
+                    <p class="meta__title body--bold">Industry</p>
                     <p>{{ page.industry }}</p>
                 </div>
                 <div class="meta__item body--large">
-                    <p class="body--bold">Technology</p>
+                    <p class="meta__title body--bold">Technology</p>
                     <p>{{ page.technology }}</p>
                 </div>
                 <div class="meta__item body--large">
-                    <p class="body--bold">Deliverables</p>
+                    <p class="meta__title body--bold">Deliverables</p>
                     <p>{{ page.deliverables }}</p>
                 </div>
             </div>
@@ -60,9 +60,39 @@
         </div>
     </section>
 
-    <section class="section section--primary">
+    <section class="section section--primary results">
         <h1 class="project__subtitle subtitle">Results</h1>
-        <div class="project__text body--large">{{ page.results }}</div>    
+        <div class="project__text coloffset--lg2 col--lg8 body--large">{{ page.results }}</div>
+        <div class="results__content">
+            <p class="results__title lead">{{ page.title }} clients now benefit from :</p>
+            <div class="image-inline row">
+                <div class="results__item image-inline__item col--2">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/project/{{ page.slug }}/icon-cog.svg" alt="" class="results__image image-inline__image">
+                    <p class="body--bold">Transparency</p>
+                </div>
+                <div class="results__item image-inline__item col--2">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/project/{{ page.slug }}/icon-coin.svg" alt="" class="results__image image-inline__image">
+                    <p class="body--bold">Enhanced security</p>
+                </div>
+                <div class="results__item image-inline__item col--2">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/project/{{ page.slug }}/icon-lock.svg" alt="" class="results__image image-inline__image">
+                    <p class="body--bold">Improved traceability</p>
+                </div>
+                <div class="results__item image-inline__item col--2">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/project/{{ page.slug }}/icon-security.svg" alt="" class="results__image image-inline__image">
+                    <p class="body--bold">Speed and Efficiency</p>
+                </div>
+                <div class="results__item image-inline__item col--2">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/project/{{ page.slug }}/icon-traceability.svg" alt="" class="results__image image-inline__image">
+                    <p class="body--bold">Reduced costs</p>
+                </div>
+                <div class="results__item image-inline__item col--2">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/project/{{ page.slug }}/icon-transparency.svg" alt="" class="results__image image-inline__image">
+                    <p class="body--bold">Fraud mitigation</p>
+                </div>
+            </div>
+        </div>
+        <p class="coloffset--lg2 col--lg8">With automated processes and a user friendly-interface, managing authorised signatory lists is simple and efficient.  It also means that the data (signatory lists) are shared peer to peer through a decentralised distributed ledger, providing a much better digitised solution than utilising a 3rd party’s centralised database.  The customers keep complete control of their own data.</p>
     </section>
 
     <section class="section">

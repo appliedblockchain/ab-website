@@ -338,7 +338,13 @@ li + li {
 	}
 	
 	&--block {
-		padding: 0 $col;
+		padding-right: $col;
+		padding-left: $col;
+
+		> .block {
+			padding-right: $col;
+			padding-left: $col;
+		}
 	}
 
 	&--nopadding {

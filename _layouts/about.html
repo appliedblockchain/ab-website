@@ -64,18 +64,21 @@
 
     </section>
 
-    <section class="section section--block">
-        <div class="block">
+    <section class="section section--grey testimonial">
 
             <!-- edit component in _includes/components/section-header.html -->
             {% include components/section-header.html
                 title='Investors'
             %}
     
-            <div class="section__content">
+            <div class="section__content owl-carousel owl-carousel-testimonial carousel">
+                <!-- edit data in _data/testimonials.yml -->
+                {% for item in site.data.testimonials.investors %}
+                    <!-- edit component in _includes/components/testimonial.html -->
+                    {% include components/testimonial.html %}
+                {% endfor %}
             </div>
-
-        </div>
+        
     </section>
 
     <section class="section section--block">
@@ -93,7 +96,7 @@
 
     </section>
 
-    <section class="section">
+    <section class="section section--alt">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html

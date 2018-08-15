@@ -107,7 +107,7 @@
             {% for item in site.data.images.values %}
                 <div class="col--3 image-inline__item">
                     <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
-                    <p>{{ item.alt }}</p>
+                    <p class="body--large">{{ item.alt }}</p>
                 </div>
             {% endfor %}
         </div>
@@ -155,7 +155,7 @@
         %}
 
         <div class="section__content background--cover row team" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
-            <a href="" class="team__button button button--large button--highlight button--animate fas fa-user-plus">
+            <a href="{{ site.url }}/join" class="team__button button button--large button--highlight button--animate fas fa-user-plus">
                 <p class="button__inner">Join our growing team</p>
             </a>
         </div>

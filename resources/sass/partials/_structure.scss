@@ -203,7 +203,7 @@ ul {
 }
 
 li + li {
-	padding-top: $integer/2;
+	padding-top: $integer/2 !important;
 }
 
 /*page headers*/

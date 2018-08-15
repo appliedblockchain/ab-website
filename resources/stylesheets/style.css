@@ -3369,7 +3369,7 @@ ul {
 
 /* line 205, ../sass/partials/_structure.scss */
 li + li {
-  padding-top: 10px;
+  padding-top: 10px !important;
 }
 
 /*page headers*/
@@ -4780,41 +4780,51 @@ li + li {
   padding-left: 12.5vw;
 }
 /* line 15, ../sass/pages/_privacy-policy.scss */
+.privacy .anchor {
+  position: initial;
+  display: inherit;
+  height: auto;
+}
+/* line 21, ../sass/pages/_privacy-policy.scss */
 .privacy ul {
   margin-left: 0;
 }
-/* line 19, ../sass/pages/_privacy-policy.scss */
+/* line 25, ../sass/pages/_privacy-policy.scss */
 .privacy__list {
   /* Creates a new instance of the section counter with each ol element */
   counter-reset: section;
   list-style-type: none;
 }
-/* line 27, ../sass/pages/_privacy-policy.scss */
+/* line 33, ../sass/pages/_privacy-policy.scss */
 .privacy__item:before {
   /* Increments only this instance of the section counter */
   counter-increment: section;
   /* Combines the values of all instances of the section counter, separated by a period */
   content: counters(section,".") ". ";
 }
-/* line 35, ../sass/pages/_privacy-policy.scss */
+/* line 41, ../sass/pages/_privacy-policy.scss */
 .privacy__title {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  padding-top: 120px;
+  padding-bottom: 20px;
 }
-/* line 40, ../sass/pages/_privacy-policy.scss */
+/* line 46, ../sass/pages/_privacy-policy.scss */
 .privacy__subtitle {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
-/* line 45, ../sass/pages/_privacy-policy.scss */
+/* line 50, ../sass/pages/_privacy-policy.scss */
+.privacy__subtitle.alt {
+  padding-top: 0;
+}
+/* line 55, ../sass/pages/_privacy-policy.scss */
 .privacy__content {
   list-style: none;
 }
-/* line 49, ../sass/pages/_privacy-policy.scss */
+/* line 59, ../sass/pages/_privacy-policy.scss */
 .privacy__line {
   padding-top: 0;
 }
-/* line 52, ../sass/pages/_privacy-policy.scss */
+/* line 62, ../sass/pages/_privacy-policy.scss */
 .privacy__line + .privacy__line {
   margin-top: 20px;
 }

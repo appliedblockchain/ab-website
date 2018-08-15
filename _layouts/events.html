@@ -22,14 +22,14 @@
             </div>
             <div class="tab__content block event">
                 <div id="past" class="tab__item">
-                    <!-- edit data in _data/events.html -->
+                    <!-- edit data in _data/events.yml -->
                     {% for event in site.data.events.past %}
                         <!-- edit component in _includes/components/event.html -->
                         {% include components/event.html %}
                     {% endfor %}
                 </div>
                 <div id="upcoming" class="tab__item">
-                    <!-- edit data in _data/events.html -->
+                    <!-- edit data in _data/events.yml -->
                     {% for event in site.data.events.upcoming %}
                         <!-- edit component in _includes/components/event.html -->
                         {% include components/event.html %}

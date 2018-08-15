@@ -79,7 +79,7 @@
 
         <div class="section__content">
             <div class="owl-carousel owl-carousel-technology">
-                <!-- edit data in _data/images.html -->
+                <!-- edit data in _data/images.yml -->
                 {% for item in site.data.images.technology %}
                     <div class="technology__item">
                         <div class="technology__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/logos/tools/{{ item.url }}.png);"></div>
@@ -176,7 +176,7 @@
     <section class="section testimonial" id="testimonials">
 
         <div class="section__content owl-carousel owl-carousel-testimonial carousel">
-            <!-- edit data in _data/testimonials.html -->
+            <!-- edit data in _data/testimonials.yml -->
             {% for item in site.data.testimonials.home %}
                 <!-- edit component in _includes/components/testimonial.html -->
                 {% include components/testimonial.html %}
@@ -193,7 +193,7 @@
         %}
 
         <div class="section__content logo-media">
-            <!-- edit data in _data/images.html -->
+            <!-- edit data in _data/images.yml -->
             {% for item in site.data.images.media %}
                 <div class="logo-media__item">
                     <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">

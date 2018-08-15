@@ -20,7 +20,7 @@
 
         <div class="section__content tab tab--vertical solutions">
             <div class="section__filter tab__nav solutions__filter">
-                <!-- edit data in _data/solutions.html -->
+                <!-- edit data in _data/solutions.yml -->
                 {% for item in site.data.solutions %}
                     <a href="#{{ item.id }}" class="nav__button {{ item.active }} solutions__button">
                         <div class="solutions__background">
@@ -31,7 +31,7 @@
                 {% endfor %}
             </div>
             <div class="tab__content solutions__item">
-                <!-- edit data in _data/solutions.html -->
+                <!-- edit data in _data/solutions.yml -->
                 {% for item in site.data.solutions %}
                     <div id="{{ item.id }}" class="tab__item solutions__item">
                         <p class="solutions__text">{{ item.text }}</p>
@@ -52,7 +52,7 @@
 
         <div class="section__content tab tab--vertical approach">
             <div class="section__filter tab__nav approach__filter">
-                <!-- edit data in _data/approach.html -->
+                <!-- edit data in _data/approach.yml -->
                 {% for item in site.data.approach %}
                     <a href="#{{ item.id }}" class="nav__button {{ item.active }} approach__button">
                         <h2 class="comment">{{ item.number }} {{ item.title }}</h2>
@@ -60,7 +60,7 @@
                 {% endfor %}
             </div>
             <div class="tab__content block">
-                <!-- edit data in _data/approach.html -->
+                <!-- edit data in _data/approach.yml -->
                 {% for item in site.data.approach %}
                     <div id="{{ item.id }}" class="tab__item">
                         <div class="approach__item">
@@ -87,7 +87,7 @@
 
         <div class="section__content technology">
             <div class="owl-carousel owl-carousel-technology">
-                <!-- edit data in _data/images.html -->
+                <!-- edit data in _data/images.yml -->
                 {% for item in site.data.images.technology %}
                     <div class="technology__item">
                         <div class="technology__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/logos/tools/{{ item.url }}.png);"></div>
@@ -106,7 +106,7 @@
         %}
 
         <div class="section__content projectGrid">
-            <!-- edit data in _data/projects.html -->
+            <!-- edit data in _data/projects.yml -->
             {% for item in site.data.projects %}
                 <div class="projectGrid__item tooltip tooltip--click">
                     <div class="block projectGrid__container">

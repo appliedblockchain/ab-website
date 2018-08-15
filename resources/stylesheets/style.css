@@ -4037,11 +4037,16 @@ li + li {
  * ABOUT
  * —————————————————————————————————————————————————————————————————
 */
-/* line 11, ../sass/pages/_about.scss */
+/* line 13, ../sass/pages/_about.scss */
+#about .section--header {
+  background-position: top center;
+}
+
+/* line 18, ../sass/pages/_about.scss */
 .about-intro {
   padding-bottom: 0;
 }
-/* line 16, ../sass/pages/_about.scss */
+/* line 23, ../sass/pages/_about.scss */
 .about-intro__item:nth-child(1) {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkYTNmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZGEzZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -4053,7 +4058,7 @@ li + li {
   padding-left: 12.5vw;
   padding-bottom: 120px;
 }
-/* line 23, ../sass/pages/_about.scss */
+/* line 30, ../sass/pages/_about.scss */
 .about-intro__item:nth-child(2) {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNTZiMyIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDU2YjMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -4065,13 +4070,112 @@ li + li {
   padding-left: 80px;
   padding-bottom: 120px;
 }
-/* line 31, ../sass/pages/_about.scss */
+/* line 38, ../sass/pages/_about.scss */
 .about-intro__image {
   height: 300px;
   margin: 40px 0;
 }
 
-/* line 39, ../sass/pages/_about.scss */
+/* line 44, ../sass/pages/_about.scss */
+.timeline {
+  padding-bottom: 0;
+}
+/* line 47, ../sass/pages/_about.scss */
+.timeline__headline {
+  position: relative;
+}
+/* line 51, ../sass/pages/_about.scss */
+.timeline__dot {
+  -webkit-align-self: center;
+  align-self: center;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  background-color: #64f0ff;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  border: 10px solid #ffffff;
+  box-sizing: content-box;
+}
+/* line 63, ../sass/pages/_about.scss */
+.timeline__date {
+  right: -webkit-calc(50% + 40px);
+  right: calc(50% + 40px);
+  position: absolute;
+  top: -10px;
+}
+/* line 69, ../sass/pages/_about.scss */
+.timeline__content {
+  position: relative;
+  padding: 40px 0;
+}
+/* line 73, ../sass/pages/_about.scss */
+.timeline__content:nth-last-child(1) {
+  padding-bottom: 0;
+}
+/* line 77, ../sass/pages/_about.scss */
+.timeline__content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  width: 1px;
+  height: 100%;
+  background-color: #d7d7dc;
+}
+/* line 83, ../sass/pages/_about.scss */
+.timeline__item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 87, ../sass/pages/_about.scss */
+.timeline__item + .timeline__item {
+  margin-top: -20px;
+}
+/* line 93, ../sass/pages/_about.scss */
+.timeline__item:nth-child(odd) .timeline__text {
+  text-align: right;
+  padding-right: 40px;
+  padding-left: 6.25vw;
+}
+/* line 99, ../sass/pages/_about.scss */
+.timeline__item:nth-child(odd) .timeline__icon {
+  padding-left: 40px;
+}
+/* line 104, ../sass/pages/_about.scss */
+.timeline__item:nth-child(even) {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+/* line 107, ../sass/pages/_about.scss */
+.timeline__item:nth-child(even) .timeline__text {
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 6.25vw;
+}
+/* line 113, ../sass/pages/_about.scss */
+.timeline__item:nth-child(even) .timeline__icon {
+  padding-right: 40px;
+}
+/* line 119, ../sass/pages/_about.scss */
+.timeline__text {
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
+}
+/* line 123, ../sass/pages/_about.scss */
+.timeline__icon {
+  -webkit-flex-basis: 0;
+  flex-basis: 0;
+  height: 200px;
+}
+
+/* line 131, ../sass/pages/_about.scss */
 .leadership__content {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjAuNSIgeDI9IjAuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwN2JmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzAwN2JmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwN2JmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -4084,28 +4188,28 @@ li + li {
   padding: 80px 25vw 160px 12.5vw;
   text-align: left;
 }
-/* line 46, ../sass/pages/_about.scss */
+/* line 138, ../sass/pages/_about.scss */
 .leadership__nav {
   margin-top: -80px;
   z-index: 1;
 }
-/* line 51, ../sass/pages/_about.scss */
+/* line 143, ../sass/pages/_about.scss */
 .leadership__button {
   width: 200px;
 }
-/* line 55, ../sass/pages/_about.scss */
+/* line 147, ../sass/pages/_about.scss */
 .leadership__portrait {
   width: 160px;
   height: 160px;
   margin: 0 auto 20px auto;
 }
 
-/* line 62, ../sass/pages/_about.scss */
+/* line 154, ../sass/pages/_about.scss */
 .team {
   position: relative;
   height: 600px;
 }
-/* line 66, ../sass/pages/_about.scss */
+/* line 158, ../sass/pages/_about.scss */
 .team:before {
   content: "";
   position: absolute;
@@ -4117,7 +4221,7 @@ li + li {
   height: 100%;
   background-color: rgba(0, 123, 255, 0.7);
 }
-/* line 71, ../sass/pages/_about.scss */
+/* line 163, ../sass/pages/_about.scss */
 .team__button {
   -webkit-align-self: center;
   align-self: center;

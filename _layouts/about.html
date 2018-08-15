@@ -26,7 +26,7 @@
 
     </section>
 
-    <section class="section">
+    <section class="section timeline">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -34,6 +34,32 @@
         %}
 
         <div class="section__content">
+            <div class="timeline__headline">
+                <span class="timeline__dot"></span>
+                <p class="timeline__date button button--primary">2015</p>
+            </div>
+            <div class="timeline__content">    
+                <!-- edit data in _data/timeline.yml -->
+                {% for item in site.data.timeline.fifteen %}
+                <div class="timeline__item">
+                    <p class="timeline__text">{{ item.text }}</p>
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                </div>
+                {% endfor %}
+            </div>
+            <div class="timeline__headline">
+                <span class="timeline__dot"></span>
+                <p class="timeline__date button button--primary">2017</p>
+            </div>
+            <div class="timeline__content">
+                <!-- edit data in _data/timeline.yml -->
+                {% for item in site.data.timeline.seventeen %}
+                <div class="timeline__item">
+                    <p class="timeline__text">{{ item.text }}</p>
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                </div>
+                {% endfor %}
+            </div>
         </div>
 
     </section>
@@ -88,7 +114,7 @@
         %}
 
         <div class="section__content tab tab--vertical leadership">
-            <!-- edit data in _data/testimonials.html -->
+            <!-- edit data in _data/testimonials.yml -->
             {% for item in site.data.leadership %}
                 <div id="{{ item.slug }}" class="tab__item row background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
                     <div class="col--9 leadership__content">
@@ -99,7 +125,7 @@
                 </div>
             {% endfor %}
             <div class="tab__nav leadership__nav">
-                <!-- edit data in _data/testimonials.html -->
+                <!-- edit data in _data/testimonials.yml -->
                 {% for item in site.data.leadership %}
                     <a href="#{{ item.slug }}" class="nav__button {{ item.active }} leadership__button">
                         <div class="block leadership__portrait background--cover"  style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>

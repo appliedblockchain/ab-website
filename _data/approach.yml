@@ -5,33 +5,26 @@
   active: nav__button--active
   title: Advisory
   id: advisory
-  text: We work together with you to learn about your project to provide you with independent strategic advise as to whether blockchain is suitable and adds genuine technical value to the problem you are trying to solve.<br><br>We assess your requirements to provide you with an impartial recommendation to approach and implement your blockchain project, and then advise which of the available blockchain technologies is best suited for your product/solution.
-  icon: icon-consultation
+  text: We work  with you to learn about your project and provide independent strategic advice to questions whether blockchain is suitable and adds genuine technical value to the problem you are trying to solve.<br><br>We assess your requirements to provide you with an impartial recommendation to approach and implement your blockchain project, and then advise which of the available blockchain technologies is best suited for your product/solution. We document this for you before moving on to building a prototype.
+  icon: icon-advisory
 
 - number: 2
   active:
-  title: POC
-  id: poc
-  text: Our diverse team in-house develop a strategy complementing your business plan and processes, and scope out your project on paper. The POC takes into account your requirements, technical integrations, limitations and risks, and our recommendations. A proposal is put together along with a development and release plan.
-  icon: icon-consultation
+  title: Prototype
+  id: prototype
+  text: Our solution architects, developers, and designer work together to prove that the concepts for the blockchain application are viable and create a working prototype for you to touch, test, and give feedback on After this we will   to test based on the minimum requirements of the product. The prototype is for you to test against your requirements and technical needs.
+  icon: icon-prototype
 
 - number: 3
   active:
-  title: Prototype
-  id: prototype
-  text: Our developers and designers work together to create a prototype for you to test, along with a detailed product document. The prototype is for you to test against your requirements and technical needs.
-  icon: icon-consultation
+  title: Production
+  id: production
+  text: Our developers build your project and test it at every stage. After the build is complete, we coordinate with your respective Project Manager and Technical Advisor to support in implementing the project for you. We move into production, and then your project is live.
+  icon: icon-production
 
 - number: 4
-  active:
-  title: Delivery
-  id: delivery
-  text: Our developers build your project and test it at every stage. After the built it complete, the project goes through rigorous testing by our assurance experts. Once all tests are clear, your project is ready to be deployed.<br><br>We coordinate with your respective Project Manager and Technical Advisor to support in implementing the project for you.
-  icon: icon-consultation
-
-- number: 5
   active:
   title: Support
   id: support
   text: We provide you with ongoing support from the day we start a conversation with you. After the delivery and deployment of your project, we continue to work with you to ensure its smooth operation and advise on technical enhancements (if required).
-  icon: icon-consultation
+  icon: icon-support

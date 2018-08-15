@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="221px" height="118px" viewBox="0 0 221 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Delivery icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-Services" transform="translate(-926.000000, -1627.000000)">
+            <g id="Delivery-icon" transform="translate(929.000000, 1630.000000)">
+                <path d="M123.474,103.724 C129.434,107.108 133.475,109.402 133.475,109.402 C138.796,112.425 145.401,112.425 150.731,109.402 C150.731,109.402 174.9,95.552 191.965,85.864" id="Stroke-1" stroke="#005EFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M199.6058,81.6554 C205.4058,78.3624 209.3148,76.1434 209.3148,76.1434 C213.1478,73.9624 213.1478,68.5194 209.3148,66.3484 C209.3148,66.3484 203.6268,63.1174 195.7928,58.6694" id="Stroke-3" stroke="#FF6F00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M86.9647,58.8642 C78.0937,63.9022 74.8907,66.3482 74.8907,66.3482 C71.0587,68.5192 71.0587,73.9622 74.8907,76.1432 C74.8907,76.1432 93.1487,86.5082 109.2787,95.6652" id="Stroke-5" stroke="#005EFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M107.9188,16.6742 C91.1518,26.1952 72.1958,36.9602 72.1958,36.9602 C68.2098,39.2182 68.2098,44.8802 72.1958,47.1482 L133.1298,81.7402 C138.6638,84.8842 145.5328,84.8842 151.0768,81.7402 L212.0108,47.1482 C215.9968,44.8802 215.9968,39.2182 212.0108,36.9602 C212.0108,36.9602 202.5848,31.6072 191.1478,25.1122" id="Stroke-7" stroke="#005EFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M180.0331,18.8012 C165.3201,10.4462 151.0761,2.3572 151.0761,2.3572 C145.5431,-0.7858 138.6741,-0.7858 133.1301,2.3572 C133.1301,2.3572 127.9571,5.2952 120.6261,9.4582" id="Stroke-9" stroke="#64EFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M15.9996,48.203 L52.8676,48.203" id="Stroke-11" stroke="#005EFF" stroke-width="6" stroke-linecap="round"></path>
+                <path d="M-0.0001,64.8984 L38.9559,64.8984" id="Stroke-13" stroke="#000000" stroke-width="6" stroke-linecap="round"></path>
+                <g id="Group-18" transform="translate(18.000000, 79.669000)">
+                    <path d="M0.0865,0.5333 L39.7375,0.5333" id="Fill-15" fill="#FFFFFF"></path>
+                    <path d="M0.0865,0.5333 L39.7375,0.5333" id="Stroke-17" stroke="#000076" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <g id="Group-22" transform="translate(36.000000, 94.669000)">
+                    <path d="M0.8685,0.8373 L40.5195,0.8373" id="Fill-19" fill="#FFFFFF"></path>
+                    <path d="M0.8685,0.8373 L40.5195,0.8373" id="Stroke-21" stroke="#005EFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <path d="M129.4476,23.2375 C132.2746,21.5345 135.5866,20.5545 139.1266,20.5545 C149.4996,20.5545 157.9086,28.9635 157.9086,39.3365 C157.9086,41.6685 157.4836,43.9015 156.7076,45.9615" id="Stroke-23" stroke="#64EFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M151.1469,53.7694 C147.8899,56.4854 143.6989,58.1194 139.1269,58.1194 C128.7539,58.1194 120.3449,49.7094 120.3449,39.3364 C120.3449,36.4624 120.9909,33.7384 122.1449,31.3024" id="Stroke-25" stroke="#005EFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M144.0853,52.4091 C144.0853,52.4091 150.3963,54.2121 152.8003,53.3111 C152.8003,53.3111 149.7953,57.8181 150.0953,62.3261" id="Stroke-27" stroke="#005EFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M135.2025,26.2455 C135.2025,26.2455 129.2215,23.5425 126.7115,24.0835 C126.7115,24.0835 130.3415,20.0615 130.7015,15.5585" id="Stroke-29" stroke="#64EFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

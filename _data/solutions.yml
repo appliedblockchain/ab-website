@@ -5,19 +5,13 @@
   icon: icon-decentralised
   title: Future-Proof Decentralised Applications
   id: solutions-decentralised
-  text: Our blockchain agnostic application and privacy framework sits on top of any underlying blockchain platform. This provides identity and key management, data privacy in compliance with GDPR, anonymity, easy integration, development efficiency, and future-proof solutions to work with the best available technology.
+  text: Mantle, our blockchain agnostic application and privacy framework works with any blockchain platform. This provides identity and key management, data privacy in compliance with GDPR, anonymity, easy integration, development efficiency, and future-proofs our clients applications to work with the best available technology.
 
 - active:
   icon: icon-production
   title: Production-Ready
   id: solutions-production
-  text: We understand the difference between writing smart contracts for POCs in a lab environment, and architecting and deploying a distributed blockchain application into a production environment.<br><br>When we design all our applications, we keep in mind the production environments of both enterprises and startups to ensure we are production-ready at delivery.
-
-- active:
-  icon: icon-decentralised
-  title: Token Sale
-  id: solutions-token
-  text: Our team provides the technical tools and support required to carry out a public token sale.<br><br>We review and contribute to a number of whitepapers, provide token model and blockchain application and integration advice, develop POCs to support pre-sales, and also provide our own secure and tested token issuance platform.
+  text: We understand the difference between writing smart contracts for POCs in a lab environment, and architecting and deploying a distributed blockchain application into a production environment.<br><br>When we design all our applications, we keep in mind the end state of a  production environments of both enterprises and startups to ensure we are production-ready at delivery.
 
 - active:
   icon: icon-security

@@ -18,19 +18,94 @@ media:
 # in service.html page
 
 technology:
+  - url: aion
+    alt: Aion
+
+  - url: bigchain
+    alt: Bigchain
+
+  - url: bitcoin
+    alt: Bitcoin
+
+  - url: chain
+    alt: Chain
+
+  - url: corda
+    alt: Corda
+
+  - url: cosmos
+    alt: Cosmos
+
+  - url: dash
+    alt: Dash
+
+  - url: digital-asset
+    alt: Digital Asset
+
+  - url: dragonchain
+    alt: Dragonchain
+
+  - url: enterprise-ethereum-alliance
+    alt: Enterprise Ethereum Alliance
+
+  - url: eos
+    alt: EOS
+
   - url: ethereum
     alt: Ethereum
+
+  - url: hedera-hashgraph
+    alt: Hedera Hashgraph
+
+  - url: hyperledger-fabric
+    alt: Hyperledger Fabric
 
   - url: hyperledger
     alt: Hyperledger
 
+  - url: ibm
+    alt: IBM
+
+  - url: iroha
+    alt: Iroha
+
+  - url: neo
+    alt: Neo
+
+  - url: parity
+    alt: Parity
+
+  - url: polkadot
+    alt: Polkadot
+
+  - url: quorum
+    alt: Quorum
+
   - url: r3
     alt: R3
 
-# projects section
+  - url: raiden
+    alt: Raiden
+
+  - url: ripple
+    alt: Ripple
+
+  - url: sawtooth
+    alt: Sawtooth
+
+  - url: stellar
+    alt: Stellar
+
+  - url: swift
+    alt: Swift
+
+  - url: tendermint
+    alt: Tendermint
+
+# clients section
 # in service.html page
 
-projects:
+clients:
   - url: appii
     alt: Appii
 
@@ -49,9 +124,70 @@ projects:
   - url: toyota
     alt: Toyota
 
-  - url: UN
+  - url: un
     alt: United Nations
 
   - url: vodafone
     alt: Vodafone
 
+# partners section
+# in about.html page
+
+partners:
+  - url: microsoft
+    alt: Microsoft
+
+  - url: innovate-finance
+    alt: Innovate Finance
+
+  - url: energy-web
+    alt: Energy Web
+
+  - url: level39
+    alt: Level39    
+
+# values section
+# in about.html page
+
+values:
+  - url: direction
+    alt: Platform agnostic
+
+  - url: binoculars
+    alt: Future-proof
+
+  - url: shield
+    alt: Integrity
+
+# join section
+# in join.html page
+
+join:
+  - url: node
+    alt: Work with cutting-edge blockchain and Node.js tech
+
+  - url: diversity
+    alt: Multicultural and diverse team
+
+  - url: keynote
+    alt: Opportunities to attend various industry, social and team events
+
+  - url: clock
+    alt: Flexible working hours
+
+# result section
+# in project.html page
+# each entry is for a different project
+
+cygnetise:
+  - url: node
+    alt: Work with cutting-edge blockchain and Node.js tech
+
+  - url: diversity
+    alt: Multicultural and diverse team
+
+  - url: keynote
+    alt: Opportunities to attend various industry, social and team events
+
+  - url: clock
+    alt: Flexible working hours

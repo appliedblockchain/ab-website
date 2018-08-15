@@ -1,0 +1,13 @@
+# timeline section
+# in about.html page
+
+fifteen:
+  - text: Adi started the company in 2015 with the vision of helping companies to solve real world problems by developing blockchain applications and contributing towards creating a trustless ecosystem.
+    icon: rocket
+
+  - text: Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving funding (we know the realities of being a startup!).
+    icon: group
+
+seventeen:
+  - text: In 2017, we received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading that we are now taking into production. 
+    icon: dollar

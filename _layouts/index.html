@@ -33,26 +33,63 @@
        </div>
     </div>
 
-    <div class="section section--dark" id="landing">
+    <div class="section section--dark landing" id="landing">
 
-        <h1 class="headline">Building future-proof, decentralised solutions</h1>
-
+        <div class="landing__background">
+            <span class="graphic landing__graphic--lines">
+                <!-- edit elements in _includes/elements/graphic-lines.html -->
+                {% include elements/graphic-lines.html %}
+            </span>
+            <span class="graphic landing__graphic--circle">
+                <!-- edit elements in _includes/elements/graphic-circle.html -->
+                {% include elements/graphic-circle.html %}
+            </span>
+        </div>
+        <h1 class="landing__title headline">Building platform agnostic blockchain applications</h1>
+        <div class="landing__content row">
+            <div class="widget colalt--6">
+                <div class="widget__hiring">
+                    <p class="subtitle">We are hiring</p>
+                    <a href="{{ site.url }}/join" class="button button--small button--highlight button--animate fas fa-user-plus">
+                        <p class="button__inner">See our vacancy list</p>
+                    </a>
+                </div>
+                <div class="widget__news block">
+                    <div class="news__content owl-carousel owl-carousel-news">
+                        {% for post in site.posts limit: 3 %}
+                        <p>{{ post.title | truncate: 100, "…" }}</p>
+                        {% endfor %}
+                    </div>
+                    <a href="{{ site.url }}/media" class="button button--small button--primary-darken button--animate fas fa-plus">
+                        <p class="button__inner">Read more</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <section class="section section--primary" id="what-we-do">
+    <section class="section section--col section--primary" id="what-we-do">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             comment='What we do'
-            title='We innovate, design, and build decentralised solutions to solve real-world problems'
-            description='We deliver end-to-end blockchain solutions for a range of sectors including banking, wealth management, trade finance, property, aviation, recruitment and legal.'
+            title='We deliver end-to-end blockchain solutions'
+            description='We have built blockchain applications for a range of industries including financial services, energy, commodities, trade finance, automotive, telecoms, corporate treasury, legal, medical, property, and recruitment.'
         %}
 
         <div class="section__content">
+            <div class="owl-carousel owl-carousel-technology">
+                <!-- edit data in _data/images.yml -->
+                {% for item in site.data.images.technology %}
+                    <div class="image-inline__item">
+                        <div class="image-inline__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/logos/tools/{{ item.url }}.png);"></div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
 
         <div class="section__link">
-            <a href="" class="button button--primary-darken button--large button--animate fa fa-search">
+            <a href="{{ site.baseurl }}/services" class="button button--primary-darken button--large button--animate fa fa-search-plus">
                 <p class="button__inner">Find out more</p>
             </a>
         </div>
@@ -64,29 +101,31 @@
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             comment='Who we help'
-            title='Blockchain solutions for enterprise and startups'
-            description='We have developed blockchain solutions for over 30 clients – from startups to enterprises and everything in between.'
+            title='We have developed blockchain solutions for over 30 clients – from startups to enterprises'
+            description='
+                We understand and appreciate functional, non-functional, and integration requirements that startups and enterprises experience and the challenges of delivering new, innovative technology to enterprise production supported environments. Our team comes with two decades of experience in designing, developing, and deploying solutions for global companies and for startups.
+                <br><br>As a startup we understand the value of iterative and agile innovation.'
         %}
 
-        <p>Our founders come with two decades of experience in designing, developing and deploying solutions for the largest global institutions. We fully understand and appreciate non-function and integration requirements, along with the challenges associated with delivering new, innovative technology to enterprise production supported environments. As we are a startup ourselves, we fully understand the pressure of startups – and this forces us to innovate, deliver and deploy at speed. Our team works with companies from inception to establishing long-term relationships.</p>
-
-        <div class="section__link">
-            <a href="" class="button button--secondary button--large button--animate fas fa-fill">
+        <div class="section__content">
+            <a href="{{ site.baseurl }}/case-studies" class="button button--secondary button--large button--animate fas fa-fill">
                 <p class="button__inner">View case studies</p>
             </a>
         </div>
 
     </section>
 
-    <section class="section section--block section--grey">
+    <section class="section section--block section--alt section--grey">
+
         <div class="owl-carousel owl-carousel-clients carousel block">
-            {% for item in site.data.images.projects %}
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
+            {% for item in site.data.images.clients %}
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
             {% endfor %}
         </div>
+
     </section>
 
-    <section class="section section--grey" id="why-us">
+    <section class="section section--alt section--grey" id="why-us">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -94,33 +133,53 @@
             title='A Global Blockchain Solutions Development Firm'
         %}
 
-        <div class="section__content">
+        <div class="section__content why-us">
+            <div class="row">
+                <div class="why-us__item">
+                    <div class="coloffset--1 col--4">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/thought-leader.png" alt="">
+                    </div>
+                    <div class="coloffset--1 col--5">
+                        <p class="blog__title lead">Thought Leaders</p>
+                        <p>We contribute to global industry events and whitepapers, with keynote presentations and commentaries, and also lead blockchain training workshops. Our work has led us to be recognised by the UK government, where Adi Ben-Ari has been invited to the Blockchain Roundtable at the House of Lords and presented at the Department for Digital, Culture, Media and Sport.</p>
+                    </div>
+                </div>
+                <div class="why-us__item">
+                    <div class="coloffset--3 col--3">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/gartner.svg" alt="">
+                    </div>
+                    <div class="coloffset--1 col--5">
+                        <p class="blog__title lead">International Market Leader</p>
+                        <p>We have built and deployed blockchain solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has also recognised Applied Blockchain as one of the Top Global Blockchain Development and Consulting Firm 2017 and 2018.</p>
+                    </div>
+                </div>
+                <div class="why-us__item">
+                    <div class="coloffset--1 col--3">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/blockchain-experts.svg" alt="">
+                    </div>
+                    <div class="coloffset--1 col--5">
+                        <p class="blog__title lead">Blockchain Experts</p>
+                        <p>Our team of in-house development experts along with our highly-skilled advisory, project and operations team work very closely with our clients to bring a blockchain-based project to life – together.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="section__link">
-            <a href="" class="button button--secondary button--large button--animate fas fa-search">
+            <a href="{{ site.url }}/about" class="button button--secondary button--large button--animate fas fa-search">
                 <p class="button__inner">Find out more</p>
             </a>
         </div>
 
     </section>
 
-    <section class="section section--testimonial testimonial" id="testimonials">
+    <section class="section testimonial" id="testimonials">
 
         <div class="section__content owl-carousel owl-carousel-testimonial carousel">
-            <!-- edit data in _data/testimonials.html -->
-            {% for item in site.data.testimonials %}
-                <div class="testimonial__item">
-                    <div class="testimonial__image" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/testimonials/{{ item.id }}.jpg);" alt="Portrait {{ item.name }}"></div>
-                    <div class="testimonial__content">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
-                        <p class="quote">{{ item.quote }}</p>
-                        <div class="testimonial__meta">
-                            <p class="body--bold">{{ item.name }}</p>
-                            <p>{{ item.job }}</p>
-                        </div>
-                    </div>
-                </div>
+            <!-- edit data in _data/testimonials.yml -->
+            {% for item in site.data.testimonials.home %}
+                <!-- edit component in _includes/components/testimonial.html -->
+                {% include components/testimonial.html %}
             {% endfor %}
         </div>
 
@@ -134,18 +193,18 @@
         %}
 
         <div class="section__content logo-media">
-            <!-- edit data in _data/images.html -->
+            <!-- edit data in _data/images.yml -->
             {% for item in site.data.images.media %}
                 <div class="logo-media__item">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/media/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
                 </div>
             {% endfor %}    
         </div>
 
         <div class="section__link">
-            <p class="link__title body--large">To find out more about more about AppliedBlockchan in the media and our events</p>
-            <a href="" class="button button--secondary button--large button--animate fas fa-newspaper">
-                <p class="button__inner">Find out more</p>
+            <p class="link__title lead">To find out more about more about AppliedBlockchan in the media</p>
+            <a href="{{ site.url }}/media" class="button button--primary button--large button--animate fas fa-newspaper">
+                <p class="button__inner">Media page</p>
             </a>
         </div>
 

@@ -1,12 +1,16 @@
 {% assign background-color = include.background-color %}
 {% assign title = include.title %}
+{% assign comment = include.comment %}
 {% assign description = include.description %}
 
-<div class="section section--header section--{{ background-color }}">
+<div class="section section--header section--{{ background-color }} background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.title }}.jpg);">
     {% if title %}
         <h1 class="headline">{{ title }}</h1>
     {% endif %}
     {% if description %}
-        <p class="section__desc lead">{{ description }}</p>
+        <p class="section__subtitle lead">{{ description }}</p>
+    {% endif %}
+    {% if comment %}
+        <p class="section__desc">{{ comment }}</p>
     {% endif %}
 </div>

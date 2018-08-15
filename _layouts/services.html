@@ -7,6 +7,8 @@
         background-color='primary'
         title='Services'
         description='We work with enterprises and startups across all verticals to design and develop blockchain solutions best suited to your needs'
+        comment='We work across the development stack. We advise, design, build, and deploy future proof blockchain applications. We work with you from the initial seed of your idea and continue to support you as you move into production and beyond.'
+
     %}
 
     <section class="section section--alt section--primary">
@@ -18,7 +20,7 @@
 
         <div class="section__content tab tab--vertical solutions">
             <div class="section__filter tab__nav solutions__filter">
-                <!-- edit data in _data/solutions.html -->
+                <!-- edit data in _data/solutions.yml -->
                 {% for item in site.data.solutions %}
                     <a href="#{{ item.id }}" class="nav__button {{ item.active }} solutions__button">
                         <div class="solutions__background">
@@ -29,10 +31,10 @@
                 {% endfor %}
             </div>
             <div class="tab__content solutions__item">
-                <!-- edit data in _data/solutions.html -->
+                <!-- edit data in _data/solutions.yml -->
                 {% for item in site.data.solutions %}
                     <div id="{{ item.id }}" class="tab__item solutions__item">
-                        <p class="solutions__text body--large">{{ item.text }}</p>
+                        <p class="solutions__text">{{ item.text }}</p>
                     </div>
                 {% endfor %}
             </div>
@@ -50,7 +52,7 @@
 
         <div class="section__content tab tab--vertical approach">
             <div class="section__filter tab__nav approach__filter">
-                <!-- edit data in _data/approach.html -->
+                <!-- edit data in _data/approach.yml -->
                 {% for item in site.data.approach %}
                     <a href="#{{ item.id }}" class="nav__button {{ item.active }} approach__button">
                         <h2 class="comment">{{ item.number }} {{ item.title }}</h2>
@@ -58,7 +60,7 @@
                 {% endfor %}
             </div>
             <div class="tab__content block">
-                <!-- edit data in _data/approach.html -->
+                <!-- edit data in _data/approach.yml -->
                 {% for item in site.data.approach %}
                     <div id="{{ item.id }}" class="tab__item">
                         <div class="approach__item">
@@ -76,7 +78,7 @@
 
     </section>
 
-    <section class="section section--alt section--grey">
+    <section class="section section--col section--alt section--grey">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -84,15 +86,14 @@
         %}
 
         <div class="section__content technology">
-            <!-- edit data in _data/images.html -->
-            {% for item in site.data.images.technology %}
-                <div class="technology__item">
-                    <div class="technology__image">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/tools/logo-{{ item.url }}.svg" alt="Logo {{ item.alt }}" class="">
+            <div class="owl-carousel owl-carousel-technology">
+                <!-- edit data in _data/images.yml -->
+                {% for item in site.data.images.technology %}
+                    <div class="image-inline__item">
+                        <div class="image-inline__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/logos/tools/{{ item.url }}.png);"></div>
                     </div>
-                    <p class="body--large">{{ item.alt }}</p>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
 
     </section>
@@ -104,11 +105,26 @@
             title='Our Projects'
         %}
 
-        <div class="section__content projects">
-            <!-- edit data in _data/images.html -->
-            {% for item in site.data.images.projects %}
-                <div class="projects__item">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/logo-{{ item.url }}.png" alt="Logo {{ item.alt }}" class="block projects__image hover-grayscale">
+        <div class="section__content projectGrid">
+            <!-- edit data in _data/projects.yml -->
+            {% for item in site.data.projects %}
+                <div class="projectGrid__item tooltip tooltip--click">
+                    <div class="block projectGrid__container">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ item.url }}.png" alt="Logo {{ item.name }}" class="projectGrid__image hover-grayscale tooltip__trigger">
+                    </div>
+                    <div class="block projectGrid__inner tooltip__inner">
+                        <div>
+                            <p class="projectGrid__title lead">{{ item.name }}</p>
+                            <p class="projectGrid__subtitle body--bold">{{ item.subtitle }}</p>
+                            <p class="label">Industry</p>
+                            <p>{{ item.industry }}</p>
+                            <p class="label">Technology</p>
+                            <p>{{ item.technology }}</p>    
+                        </div>
+                        <a href="{{ item.link-url }}" class="projectGrid__button button button--primary button--small button--animate fa fa-map-marker-alt">
+                            <p class="button__inner">{{ item.link-title }}</p>
+                        </a>
+                    </div>
                 </div>
             {% endfor %}
         </div>

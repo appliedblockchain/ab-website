@@ -4,7 +4,7 @@
 
         <!-- edit component in _includes/components/page-header.html -->
         {% include components/page-header.html
-            background-color=''
+            background-color='grey'
             title='Media'
         %}
         
@@ -14,29 +14,48 @@
             <a class="button active" data-filter=".2017">2017</a>
         </div> -->
         
-        <section class="section section--alt">
+        <section class="section section--block section--alt section--grey">
 
             <div class="section__content blog">
                 <div class="button-group section__filter filter-button-group">
                     <a class="filter__button button button--primary active" data-filter="*">
                         <p class="button__inner">All</p>
                     </a>
-                    {% for category in site.categories %}
-                        <a class="filter__button button" data-filter=".{{ category | first }}">
-                            <p class="button__inner">{{ category | first }}</p>
-                        </a>
-                    {% endfor %}
+                    <a class="filter__button button button--animate fas fa-newspaper" data-filter=".news">
+                        <p class="button__inner">News</p>
+                    </a>
+                    <a class="filter__button button button--animate fas fa-file-alt" data-filter=".press-release">
+                        <p class="button__inner">Press release</p>
+                    </a>
+                    <a class="filter__button button button--animate fas fa-rss" data-filter=".blog">
+                        <p class="button__inner">Blog</p>
+                    </a>
                 </div>
-                <div class="grid blog__content">
+                <div class="grid row">
                     {% if site.posts.size > 0 %}
+                        <!-- edit or add post in _posts -->
                         {% for post in site.posts %}
-                            <div class="block element-item {{ post.category }} {{ post.date | date: "%Y" }}">
-                                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                                <p>{{ post.category-name }}</p>
-                                <h2>
-                                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                                </h2>
-                                <p>{{ post.excerpt | truncate: 150, "…" }}</p>
+                            <div class="col--xl4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
+                                <a href="{{ post.url | prepend: site.baseurl }}">
+                                    <div class="block blog__item">
+                                        {% if post.image-link %}
+                                            <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image-link }}.jpg);"></div>
+                                        {% else %}
+                                            <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/default.jpg);"></div>
+                                        {% endif %}
+                                        <div class="blog__content">
+                                            <span class="blog__icon">
+                                                <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.png" alt="">
+                                            </span>
+                                            <p class="blog__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
+                                            <h2 class="blog__title lead">{{ post.title }}</h2>
+                                            <div class="blog__text">{{ post.excerpt | truncate: 100, "…" }}</div>
+                                            <div class="button button--primary button--small button--animate fas fa-eye">
+                                                <p class="button__inner">Read more</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         {% endfor %}
                     {% else %}

@@ -1,0 +1,27 @@
+# leadership section
+# in about.html page
+
+- name: Adi Ben-Ari
+  active: nav__button--active
+  slug: adi
+  title: Founder & CEO
+  division: Founder
+  bio: Adi has over 20 years of enterprise experience, working as a solution architect for blue chip companies and leading major deliveries of blockchain solutions is widely recognised in the industry. Adi is a noted speaker at major industry conferences, experienced in educating the C-suite on blockchain, and acts as an advisor for a number of early blockchain startups. His work has also been noted by the UK Government, where he was invited to represent industry at the Blockchain Round Table at the House of Lords. Additionally, Adi has co-invented and designed a number of patents within the blockchain and mobile payments space. Adi holds a BSc in Computer Science and an MBA.
+
+- name: Francesco Canessa
+  slug: francesco
+  title: CTO
+  division: Technology
+  bio: Francesco is a seasoned technology expert and a serial hackathon winner, with a decade of experience within software development and four years within building blockchain applications. Francesco  has worked on  large-scale enterprise projects and with startups, building solutions for Sky TV Italia, 5Apps, and Quill Content to name a few. He has also developed tools and libraries for Ethereum and Bitcoin. Francesco is a fan of reading, writing and talking about software development, and is an open source enthusiast. When he’s not looking at code, Francesco builds and rides electric skateboards.
+
+- name: Richard Short
+  slug: richard
+  title: COO
+  division: Operations
+  bio: Richard has over 20 years of experience spanning across financial services operations as a programme manager and COO – including at Deutsche Bank, HSBC, UBS and Arrowgrass Capital Partners LLP. Richard’s capital market institutions and consultancy background has led him to deliver large-scale, post-trade software solutions across a number of technology platforms. Richard also brings a wealth of organisational change experience along with offshoring and outsourcing, operational risk and process efficiency initiatives.
+
+- name: Bilal Ahmed
+  slug: bilal
+  title: Head of Sales & Marketing
+  division: Sales & Marketing
+  bio: Yoda

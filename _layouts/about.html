@@ -1,3 +1,167 @@
 {% include header.html %}
 
+<div class="page" id="about">
+
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        background-color='primary'
+        title='About'
+        description='We are a team of blockchain developers [technologists/engineers], designers, and advisors [consultants] with unique expertise in building future proof, platform agnostic blockchain applications that solve our client’s problems.'
+    %}
+
+    <section class="section section--alt section--fullwidth section--primary about-intro">
+
+        <div class="row">
+            <div class="col--6 about-intro__item">
+                <h2 class="subtitle">We Solve Problems</h2>
+                <img class="about-intro__image" src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon">
+                <p>At Applied Blockchain we build blockchain applications for our clients, with an even mix between enterprises and startups. We value working through the complex problems that enterprises experience, and using blockchain technology to turn the ideas of startups into disruptive products.</p>
+            </div>
+            <div class="col--6 about-intro__item">
+                <h2 class="subtitle">We Build Products</h2>
+                <img class="about-intro__image" src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon">
+                <p>We build products using our own experience of the problems that blockchain developers need to solve, from tools for automated contract testing through to protocols that make any blockchain network more trustless and secure. We continue to innovate, design and develop new state-of-the-art blockchain products.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section timeline">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Our story'
+        %}
+
+        <div class="section__content">
+            <div class="timeline__headline">
+                <span class="timeline__dot"></span>
+                <p class="timeline__date button button--primary">2015</p>
+            </div>
+            <div class="timeline__content">    
+                <!-- edit data in _data/timeline.yml -->
+                {% for item in site.data.timeline.fifteen %}
+                <div class="timeline__item">
+                    <p class="timeline__text">{{ item.text }}</p>
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                </div>
+                {% endfor %}
+            </div>
+            <div class="timeline__headline">
+                <span class="timeline__dot"></span>
+                <p class="timeline__date button button--primary">2017</p>
+            </div>
+            <div class="timeline__content">
+                <!-- edit data in _data/timeline.yml -->
+                {% for item in site.data.timeline.seventeen %}
+                <div class="timeline__item">
+                    <p class="timeline__text">{{ item.text }}</p>
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section section--grey testimonial">
+
+            <!-- edit component in _includes/components/section-header.html -->
+            {% include components/section-header.html
+                title='Investors'
+            %}
+    
+            <div class="section__content owl-carousel owl-carousel-testimonial carousel">
+                <!-- edit data in _data/testimonials.yml -->
+                {% for item in site.data.testimonials.investors %}
+                    <!-- edit component in _includes/components/testimonial.html -->
+                    {% include components/testimonial.html %}
+                {% endfor %}
+            </div>
+        
+    </section>
+
+    <section class="section section--block">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Partners'
+        %}
+
+        <div class="owl-carousel owl-carousel-clients carousel block">
+            {% for item in site.data.images.partners %}
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
+            {% endfor %}
+        </div>
+
+    </section>
+
+    <section class="section section--alt">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Our core values underpin all of our work'
+        %}
+
+        <div class="section__content image-inline">
+            {% for item in site.data.images.values %}
+                <div class="col--3 image-inline__item">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
+                    <p class="body--large">{{ item.alt }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </section>
+
+    <section class="section section--fullwidth section--dark">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Leadership team'
+            description='Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
+        %}
+
+        <div class="section__content tab tab--vertical leadership">
+            <!-- edit data in _data/testimonials.yml -->
+            {% for item in site.data.leadership %}
+                <div id="{{ item.slug }}" class="tab__item row background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
+                    <div class="col--9 leadership__content">
+                        <p class="blog__date body--bold">{{ item.title }}</p>
+                        <h2 class="blog__title subtitle">{{ item.name }}</h2>
+                        <p>{{ item.bio }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="tab__nav leadership__nav">
+                <!-- edit data in _data/testimonials.yml -->
+                {% for item in site.data.leadership %}
+                    <a href="#{{ item.slug }}" class="nav__button {{ item.active }} leadership__button">
+                        <div class="block leadership__portrait background--cover"  style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
+                        <p class="body--bold body--large">{{ item.name | truncatewords: 1, "" }}</p>
+                        <p>{{ item.division }}</p>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section section--alt section--nopadding section--dark">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Our people'
+        %}
+
+        <div class="section__content background--cover row team" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
+            <a href="{{ site.url }}/join" class="team__button button button--large button--highlight button--animate fas fa-user-plus">
+                <p class="button__inner">Join our growing team</p>
+            </a>
+        </div>
+
+    </section>
+
+</div>
+
 {% include footer.html %}

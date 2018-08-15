@@ -1,20 +1,30 @@
 {% include header.html %}
 
-<div class="page">
+<div class="page" id="join">
 
     <!-- edit component in _includes/components/page-header.html -->
     {% include components/page-header.html
-        background-color=''
-        title='Work with us'
+        background-color='primary'
+        title='Join'
         description='Step in a collaborative, unique and fast-paced environment'
+        comment='We are continuously looking for highly motivated and ambitious people who are passionate about delivering innovative blockchain-based solutions to global enterprises and disruptive startups.'
     %}
 
-    <section class="section section--primary">
+    <section class="section section--alt section--primary">
+
+        <div class="image-inline row">
+            <!-- edit data in _data/images.yml -->
+            {% for item in site.data.images.join %}
+                <div class="image-inline__item col--md3">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
+                    <p class="body--bold">{{ item.alt }}</p>
+                </div>
+            {% endfor %}
+        </div>
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             title='Check out our openings in London and in Porto'
-            description='We are continuously looking for highly motivated and ambitious people who are passionate about delivering innovative blockchain-based solutions to global enterprises and disruptive startups'
         %}
 
         <div class="section__content tab tab--vertical jobs">
@@ -28,67 +38,17 @@
             </div>
             <div class="tab__content block accordion jobs__content">
                 <div id="london" class="tab__item">
-                    <!-- edit data in _data/jobs.html -->
+                    <!-- edit data in _data/jobs.yml -->
                     {% for job in site.data.jobs.london %}
-                        <div class="accordion__item">
-                            <div class="accordion__header">
-                                <h2 class="accordion__title body--bold">{{ job.title }}</h2>
-                                <p>{{ job.type }}</p>
-                                <div class="accordion__actions">
-                                    <span class="button button--primary button--small button--animate fa fa-edit">
-                                        <p class="button__inner">Apply</p>
-                                    </span>
-                                    <span class="button button--icon button--highlight button--small">
-                                        <i class="fa fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="accordion__content">
-                                <p class="accordion__subtitle lead">About the role</p>
-                                <p>Applied Blockchain is an innovative applications development company, focusing on distributed ledger technology and smart contracts.
-                                    <br><br>Based in London at Level39 Fintech hub in Canary Wharf, Applied Blockchain has an expert team of blockchain developers that have been building cutting-edge solutions for disruptive startups and corporate clients in banking and finance, e-payments, energy trading, aviation, telecommunications and social impact sectors.
-                                    <br><br>We are building a new generation of decentralised applications, working through some of the most interesting problems in this field such as KYC, identity management, transactions anonymity, encryption and data security.
-                                </p>
-                                <p class="accordion__subtitle lead">What you'll be doing</p>
-                                <p>{{ job.role }}</p>
-                                <p class="accordion__subtitle lead">Required skills & experience</p>
-                                <p>{{ job.required-skills }}</p>
-                                <p class="accordion__subtitle lead">Additional desirable experience</p>
-                                <p>{{ job.additional-skills }}</p>
-                            </div>
-                        </div>
+                        <!-- edit component in _includes/components/job.html -->
+                        {% include components/job.html %}
                     {% endfor %}
                 </div>
                 <div id="porto" class="tab__item">
-                    <!-- edit data in _data/jobs.html -->
+                    <!-- edit data in _data/jobs.yml -->
                     {% for job in site.data.jobs.porto %}
-                        <div class="accordion__item">
-                            <div class="accordion__header">
-                                <h2 class="accordion__title body--bold">{{ job.title }}</h2>
-                                <p>{{ job.type }}</p>
-                                <div class="accordion__actions">
-                                    <span class="button button--primary button--small button--animate fa fa-edit">
-                                        <p class="button__inner">Apply</p>
-                                    </span>
-                                    <span class="button button--icon button--highlight button--small">
-                                        <i class="fa fa-plus"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="accordion__content">
-                                <p class="accordion__subtitle">About the role</p>
-                                <p>Applied Blockchain is an innovative applications development company, focusing on distributed ledger technology and smart contracts.
-                                    <br><br>Based in London at Level39 Fintech hub in Canary Wharf, Applied Blockchain has an expert team of blockchain developers that have been building cutting-edge solutions for disruptive startups and corporate clients in banking and finance, e-payments, energy trading, aviation, telecommunications and social impact sectors.
-                                    <br><br>We are building a new generation of decentralised applications, working through some of the most interesting problems in this field such as KYC, identity management, transactions anonymity, encryption and data security.
-                                </p>
-                                <p class="accordion__subtitle">What you'll be doing</p>
-                                <p>{{ job.role }}</p>
-                                <p class="accordion__subtitle">Required skills & experience</p>
-                                <p>{{ job.required-skills }}</p>
-                                <p class="accordion__subtitle">Additional desirable experience</p>
-                                <p>{{ job.additional-skills }}</p>
-                            </div>
-                        </div>
+                        <!-- edit component in _includes/components/job.html -->
+                        {% include components/job.html %}
                     {% endfor %}
                 </div>
             </div>

@@ -13,7 +13,7 @@ twitter: https://twitter.com/appblockchain
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /project/:path/
 
 resourceurl: /resources
 imageurl: /resources/images

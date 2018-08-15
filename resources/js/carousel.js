@@ -7,10 +7,8 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 
 $('.owl-carousel-clients').owlCarousel({
-    items: 5,
     dots: false,
     loop: true,
-    margin: 100,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: false,
@@ -41,9 +39,41 @@ $('.owl-carousel-clients').owlCarousel({
 
 
 
+$('.owl-carousel-technology').owlCarousel({
+    dots: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false,
+    smartSpeed: 2000,
+    responsive: {
+        0: {
+			items: 2,
+			margin: 5
+        },
+        450: {
+			items: 3,
+			margin: 10
+        },
+		620: {
+			items: 4,
+			margin: 10
+        },
+        767: {
+			items: 5,
+			margin: 20
+        },
+        1080: {
+			items: 7,
+			margin: 20
+        }
+    }
+});
+
+
+
 $('.owl-carousel-testimonial').owlCarousel({
     items: 1,
-    autoplayHoverPause: true,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
     mouseDrag: false,
@@ -54,6 +84,20 @@ $('.owl-carousel-testimonial').owlCarousel({
     autoplayTimeout: 10000,
     autoplayHoverPause: false,
     smartSpeed: 2000,
+});
+
+
+
+$('.owl-carousel-news').owlCarousel({
+    items: 1,
+    dots: false,
+    autoplayHoverPause: true,
+    mouseDrag: false,
+    touchDrag: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 1000,
 });
 
 

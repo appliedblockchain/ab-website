@@ -17,7 +17,7 @@
             {% for item in site.data.images.join %}
                 <div class="image-inline__item col--md3">
                     <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
-                    <p>{{ item.alt }}</p>
+                    <p class="body--bold">{{ item.alt }}</p>
                 </div>
             {% endfor %}
         </div>

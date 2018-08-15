@@ -1,24 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="115px" height="119px" viewBox="0 0 115 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 19</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <g id="9-Join" transform="translate(-760.000000, -593.000000)">
-            <g id="Group-19" transform="translate(763.000000, 596.000000)">
-                <path d="M74,74 L74,109" id="Stroke-1" stroke="#000076" stroke-width="4" stroke-linejoin="round"></path>
-                <g id="Group-18">
-                    <path d="M62.5226575,48.0779143 C56.8065945,48.0779143 52.130752,43.4073429 52.130752,37.6987714 L52.130752,32.7959143 C52.130752,27.0882 56.8065945,22.4176286 62.5226575,22.4176286 C68.2387205,22.4176286 72.9154213,27.0882 72.9154213,32.7959143 L72.9154213,37.6987714 C72.9154213,43.4073429 68.2387205,48.0779143 62.5226575,48.0779143 Z" id="Stroke-2" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"></path>
-                    <path d="M50.9880543,73.7616 L50.9880543,109.1256" id="Stroke-4" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"></path>
-                    <path d="M62.8415898,94.6875429 L62.8415898,113.999829" id="Stroke-6" stroke="#64EFFF" stroke-width="4" stroke-linejoin="round"></path>
-                    <path d="M25.8887016,72.5328 C25.8887016,72.5328 40.1282213,73.7430857 49.3786307,60.5953714" id="Stroke-8" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"></path>
-                    <path d="M57.3412094,55.3326 C57.3412094,55.3326 66.752115,53.1211714 73.3959654,58.0968857" id="Stroke-10" stroke="#FF6F00" stroke-width="4"></path>
-                    <path d="M80.3434709,91.8222857 C81.4506362,91.8222857 89.7543764,75.2357143 79.7898882,62.52" id="Stroke-12" stroke="#FFFFFF" stroke-width="4"></path>
-                    <path d="M17.6878677,77.1788571 L8.59194646,77.1788571 C3.86632441,77.1788571 -0.000171653543,73.428 -0.000171653543,68.8431429 L-0.000171653543,8.73 C-0.000171653543,4.14514286 3.86632441,0.394285714 8.59194646,0.394285714 L67.9480252,0.394285714" id="Stroke-14" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"></path>
-                    <path d="M84.4990315,0.394285714 L100.179583,0.394285714 C104.904346,0.394285714 108.770843,4.14514286 108.770843,8.73 L108.770843,68.8431429 C108.770843,73.428 104.904346,77.1788571 100.179583,77.1788571 L92.9684173,77.1788571" id="Stroke-16" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 166 166" style="enable-background:new 0 0 166 166;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000076;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#64EFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#FF6F00;stroke-width:4;stroke-linecap:round;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>Group 19</title>
+<desc>Created with Sketch.</desc>
+<g id="Desktop">
+	<g id="_x39_-Join" transform="translate(-760.000000, -593.000000)">
+		<g id="Group-19" transform="translate(763.000000, 596.000000)">
+			<path id="Stroke-1" class="st0" d="M99.5,97.5v35"/>
+			<g id="Group-18">
+				<path id="Stroke-2" class="st1" d="M88,71.6c-5.7,0-10.4-4.7-10.4-10.4v-4.9c0-5.7,4.7-10.4,10.4-10.4s10.4,4.7,10.4,10.4v4.9
+					C98.4,66.9,93.7,71.6,88,71.6z"/>
+				<path id="Stroke-4" class="st1" d="M76.5,97.3v35.4"/>
+				<path id="Stroke-6" class="st2" d="M88.3,118.2v19.3"/>
+				<path id="Stroke-8" class="st1" d="M51.4,96c0,0,14.2,1.2,23.5-11.9"/>
+				<path id="Stroke-10" class="st3" d="M82.8,78.8c0,0,9.4-2.2,16.1,2.8"/>
+				<path id="Stroke-12" class="st4" d="M105.8,115.3c1.1,0,9.4-16.6-0.6-29.3"/>
+				<path id="Stroke-14" class="st5" d="M43.2,100.7h-9.1c-4.7,0-8.6-3.8-8.6-8.3V32.2c0-4.6,3.9-8.3,8.6-8.3h59.4"/>
+				<path id="Stroke-16" class="st5" d="M110,23.9h15.7c4.7,0,8.6,3.8,8.6,8.3v60.1c0,4.6-3.9,8.3-8.6,8.3h-7.2"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

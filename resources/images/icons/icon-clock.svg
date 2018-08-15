@@ -1,27 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="122px" height="125px" viewBox="0 0 122 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 14</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="0.8745 0.3782 52.8995 0.3782 52.8995 7 0.8745 7"></polygon>
-    </defs>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="9-Join" transform="translate(-974.000000, -592.000000)">
-            <g id="Group-14" transform="translate(976.000000, 595.000000)">
-                <path d="M11.0094,49.27 C12.2344,32.33 21.5574,16.275 37.3674,7.132 C62.7254,-7.531 95.1694,1.139 109.8334,26.497 C122.0354,47.598 118.0804,73.604 101.7984,90.191" id="Stroke-1" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M87.6984,100.458 C62.7934,112.978 32.1384,104.041 18.0034,79.598 C15.6244,75.482 13.8594,71.181 12.6794,66.798" id="Stroke-3" stroke="#64EFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7,15"></path>
-                <path d="M0.5001,43.0469 C0.8221,42.7539 10.9081,45.8789 11.9541,53.6899 C11.9541,53.6899 11.9041,44.7369 21.2981,41.7289" id="Stroke-5" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M101.7008,75.8574 C102.1348,75.8964 106.6538,85.4404 101.6058,91.4924 C101.6058,91.4924 108.1678,85.4024 116.7368,90.2884" id="Stroke-7" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <polyline id="Stroke-9" stroke="#000076" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" points="58.7623 32.5913 58.2543 64.9273 80.7723 74.0493"></polyline>
-                <g id="Group-13" opacity="0.3" transform="translate(35.000000, 114.843000)">
-                    <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                    </mask>
-                    <g id="Clip-12"></g>
-                    <path d="M52.8995,3.6892 C52.8995,5.5182 41.2535,7.0002 26.8865,7.0002 C12.5205,7.0002 0.8745,5.5182 0.8745,3.6892 C0.8745,1.8602 12.5205,0.3782 26.8865,0.3782 C41.2535,0.3782 52.8995,1.8602 52.8995,3.6892" id="Fill-11" fill="#000076" mask="url(#mask-2)"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 166 166" style="enable-background:new 0 0 166 166;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;stroke:#64EFFF;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7,15;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#000076;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{opacity:0.3;}
+	.st5{filter:url(#Adobe_OpacityMaskFilter);}
+	.st6{fill:#FFFFFF;}
+	.st7{mask:url(#mask-2_1_);fill:#000076;}
+</style>
+<title>Group 14</title>
+<desc>Created with Sketch.</desc>
+<g id="Desktop">
+	<g id="_x39_-Join" transform="translate(-974.000000, -592.000000)">
+		<g id="Group-14" transform="translate(976.000000, 595.000000)">
+			<path id="Stroke-1" class="st0" d="M33,69.8c1.2-16.9,10.5-33,26.4-42.1c25.4-14.7,57.8-6,72.5,19.4c12.2,21.1,8.2,47.1-8,63.7"
+				/>
+			<path id="Stroke-3" class="st1" d="M109.7,121c-24.9,12.5-55.6,3.6-69.7-20.9c-2.4-4.1-4.1-8.4-5.3-12.8"/>
+			<path id="Stroke-5" class="st2" d="M22.5,63.5c0.3-0.3,10.4,2.8,11.5,10.6c0,0,0-9,9.3-12"/>
+			<path id="Stroke-7" class="st2" d="M123.7,96.4c0.4,0,5,9.6-0.1,15.6c0,0,6.6-6.1,15.1-1.2"/>
+			<polyline id="Stroke-9" class="st3" points="80.8,53.1 80.3,85.4 102.8,94.5 			"/>
+			<g id="Group-13" transform="translate(35.000000, 114.843000)" class="st4">
+				<g id="Clip-12">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="22.9" y="20.9" width="52" height="6.6">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="22.9" y="20.9" width="52" height="6.6" id="mask-2_1_">
+					<g class="st5">
+						<polygon id="path-1_1_" class="st6" points="22.9,20.9 74.9,20.9 74.9,27.5 22.9,27.5 						"/>
+					</g>
+				</mask>
+				<path id="Fill-11" class="st7" d="M74.9,24.2c0,1.8-11.6,3.3-26,3.3c-14.4,0-26-1.5-26-3.3c0-1.8,11.6-3.3,26-3.3
+					C63.3,20.9,74.9,22.4,74.9,24.2"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

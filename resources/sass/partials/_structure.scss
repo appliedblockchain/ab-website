@@ -436,7 +436,6 @@ li + li {
 }
 
 .image-inline {
-	@include display-flex();
 
     &__item {
         padding: 0 $integer*2;

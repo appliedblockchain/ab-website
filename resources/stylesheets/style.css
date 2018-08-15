@@ -4771,6 +4771,56 @@ li + li {
 
 /* 
  * —————————————————————————————————————————————————————————————————
+ * PRIVACY POLICY
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 11, ../sass/pages/_privacy-policy.scss */
+.privacy {
+  padding-right: 12.5vw;
+  padding-left: 12.5vw;
+}
+/* line 15, ../sass/pages/_privacy-policy.scss */
+.privacy ul {
+  margin-left: 0;
+}
+/* line 19, ../sass/pages/_privacy-policy.scss */
+.privacy__list {
+  /* Creates a new instance of the section counter with each ol element */
+  counter-reset: section;
+  list-style-type: none;
+}
+/* line 27, ../sass/pages/_privacy-policy.scss */
+.privacy__item:before {
+  /* Increments only this instance of the section counter */
+  counter-increment: section;
+  /* Combines the values of all instances of the section counter, separated by a period */
+  content: counters(section,".") ". ";
+}
+/* line 35, ../sass/pages/_privacy-policy.scss */
+.privacy__title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+/* line 40, ../sass/pages/_privacy-policy.scss */
+.privacy__subtitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 45, ../sass/pages/_privacy-policy.scss */
+.privacy__content {
+  list-style: none;
+}
+/* line 49, ../sass/pages/_privacy-policy.scss */
+.privacy__line {
+  padding-top: 0;
+}
+/* line 52, ../sass/pages/_privacy-policy.scss */
+.privacy__line + .privacy__line {
+  margin-top: 20px;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
  * MEDIA
  * —————————————————————————————————————————————————————————————————
 */

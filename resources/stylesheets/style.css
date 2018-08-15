@@ -1378,8 +1378,10 @@ html, body {
  * FORM
  * —————————————————————————————————————————————————————————————————
  * general
+ * required
  * focused
  * select
+ * file
  * switch
  * checkbox & radio
  * —————————————————————————————————————————————————————————————————
@@ -1388,39 +1390,39 @@ html, body {
  * general
  * —————————————————————————————————————————————————————————————————
 */
-/* line 24, ../sass/partials/_form.scss */
+/* line 26, ../sass/partials/_form.scss */
 .form {
   width: 100%;
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
-/* line 29, ../sass/partials/_form.scss */
+/* line 31, ../sass/partials/_form.scss */
 .form__content {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 34, ../sass/partials/_form.scss */
+/* line 36, ../sass/partials/_form.scss */
 .form__group {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
   text-align: left;
 }
-/* line 44, ../sass/partials/_form.scss */
+/* line 46, ../sass/partials/_form.scss */
 .form__group.focused .form__label {
   color: #007bff;
 }
-/* line 48, ../sass/partials/_form.scss */
+/* line 50, ../sass/partials/_form.scss */
 .form__group.focused .form__input {
   border-color: #007bff;
 }
-/* line 55, ../sass/partials/_form.scss */
+/* line 57, ../sass/partials/_form.scss */
 .form__textarea {
   width: 100%;
 }
-/* line 59, ../sass/partials/_form.scss */
+/* line 61, ../sass/partials/_form.scss */
 .form__label {
   -moz-transition: color 0.4s ease 0s;
   -o-transition: color 0.4s ease 0s;
@@ -1436,7 +1438,7 @@ html, body {
   padding-left: 15px;
   margin-bottom: 10px;
 }
-/* line 71, ../sass/partials/_form.scss */
+/* line 73, ../sass/partials/_form.scss */
 .form__input {
   -moz-transition: border 0.4s ease 0s;
   -o-transition: border 0.4s ease 0s;
@@ -1452,7 +1454,7 @@ html, body {
   padding: 9px 15px;
   border: 2px solid #d7d7dc;
 }
-/* line 81, ../sass/partials/_form.scss */
+/* line 83, ../sass/partials/_form.scss */
 .form__button {
   margin-top: 10px;
 }
@@ -1461,7 +1463,7 @@ html, body {
  * focused
  * —————————————————————————————————————————————————————————————————
 */
-/* line 95, ../sass/partials/_form.scss */
+/* line 97, ../sass/partials/_form.scss */
 .form__control.focused .form__input {
   border-color: #ffffff;
 }
@@ -1470,25 +1472,25 @@ html, body {
  * select
  * —————————————————————————————————————————————————————————————————
 */
-/* line 107, ../sass/partials/_form.scss */
+/* line 109, ../sass/partials/_form.scss */
 .select-hide {
   display: none;
   visibility: hidden;
   padding-right: 10px;
 }
 
-/* line 113, ../sass/partials/_form.scss */
+/* line 115, ../sass/partials/_form.scss */
 .form__select {
   cursor: pointer;
   position: relative;
 }
-/* line 117, ../sass/partials/_form.scss */
+/* line 119, ../sass/partials/_form.scss */
 .form__select .form__input {
   cursor: pointer;
   line-height: 1.5;
   /*position text same place as other inputs*/
 }
-/* line 122, ../sass/partials/_form.scss */
+/* line 124, ../sass/partials/_form.scss */
 .form__select:after {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -1513,7 +1515,7 @@ html, body {
   font-size: 1.2rem;
   pointer-events: none;
 }
-/* line 132, ../sass/partials/_form.scss */
+/* line 134, ../sass/partials/_form.scss */
 .form__select .form__dropdown {
   top: -webkit-calc(100% + 10px);
   top: calc(100% + 10px);
@@ -1533,7 +1535,7 @@ html, body {
   background-color: #ffffff;
   border: 2px solid #007bff;
 }
-/* line 146, ../sass/partials/_form.scss */
+/* line 148, ../sass/partials/_form.scss */
 .form__select .form__dropdown li {
   -moz-transition: color 0.4s ease 0s;
   -o-transition: color 0.4s ease 0s;
@@ -1543,53 +1545,78 @@ html, body {
   padding: 9px 15px;
   cursor: pointer;
 }
-/* line 152, ../sass/partials/_form.scss */
+/* line 154, ../sass/partials/_form.scss */
 .form__select .form__dropdown li:nth-child(1) {
   display: none;
 }
-/* line 156, ../sass/partials/_form.scss */
+/* line 158, ../sass/partials/_form.scss */
 .form__select .form__dropdown li:nth-child(2) {
   border-top: 0;
 }
-/* line 160, ../sass/partials/_form.scss */
+/* line 162, ../sass/partials/_form.scss */
 .form__select .form__dropdown li + li {
   border-top: 1px solid #f8f8f8;
 }
-/* line 164, ../sass/partials/_form.scss */
+/* line 166, ../sass/partials/_form.scss */
 .form__select .form__dropdown li:hover {
   color: #007bff;
 }
-/* line 168, ../sass/partials/_form.scss */
+/* line 170, ../sass/partials/_form.scss */
 .form__select .form__dropdown li[rel="hide"] {
   display: none;
+}
+
+/*
+ * file
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 184, ../sass/partials/_form.scss */
+.form__file {
+  position: relative;
+}
+/* line 190, ../sass/partials/_form.scss */
+.form__file .form__button {
+  -moz-border-radius-bottomright: 0.2rem;
+  -webkit-border-bottom-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  -moz-border-radius-topright: 0.2rem;
+  -webkit-border-top-right-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  background-color: #d7d7dc;
+  color: #ffffff;
+  width: 130px !important;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 /*
  * switch
  * —————————————————————————————————————————————————————————————————
 */
-/* line 184, ../sass/partials/_form.scss */
+/* line 212, ../sass/partials/_form.scss */
 .switch__label {
   position: relative;
   display: inline-block;
   width: 40px;
 }
-/* line 190, ../sass/partials/_form.scss */
+/* line 218, ../sass/partials/_form.scss */
 .switch__input {
   display: none;
 }
-/* line 192, ../sass/partials/_form.scss */
+/* line 221, ../sass/partials/_form.scss */
 .switch__input:checked + .switch__slider {
   background-color: #007bff;
 }
-/* line 195, ../sass/partials/_form.scss */
+/* line 225, ../sass/partials/_form.scss */
 .switch__input:checked + .switch__slider:before {
   -moz-transform: translateX(22px);
   -ms-transform: translateX(22px);
   -webkit-transform: translateX(22px);
   transform: translateX(22px);
 }
-/* line 200, ../sass/partials/_form.scss */
+/* line 230, ../sass/partials/_form.scss */
 .switch__slider {
   position: absolute;
   cursor: pointer;
@@ -1602,7 +1629,7 @@ html, body {
   -webkit-transition: background 0.4s ease 0s;
   transition: background 0.4s ease 0s;
 }
-/* line 208, ../sass/partials/_form.scss */
+/* line 239, ../sass/partials/_form.scss */
 .switch__slider:before {
   background-color: white;
   content: "";
@@ -1622,13 +1649,13 @@ html, body {
   -webkit-transition: -webkit-transform 0.4s ease 0s;
   transition: -webkit-transform 0.4s ease 0s;
 }
-/* line 216, ../sass/partials/_form.scss */
+/* line 247, ../sass/partials/_form.scss */
 .switch__slider--round {
   -moz-border-radius: 34px;
   -webkit-border-radius: 34px;
   border-radius: 34px;
 }
-/* line 218, ../sass/partials/_form.scss */
+/* line 250, ../sass/partials/_form.scss */
 .switch__slider--round:before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1639,41 +1666,36 @@ html, body {
  * checkbox & radio
  * —————————————————————————————————————————————————————————————————
 */
-/* line 233, ../sass/partials/_form.scss */
+/* line 265, ../sass/partials/_form.scss */
 .form__checkbox .form__input {
+  position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
-/* line 237, ../sass/partials/_form.scss */
+/* line 271, ../sass/partials/_form.scss */
+.form__checkbox .form__input:checked + .form__label:after {
+  opacity: 1;
+}
+/* line 275, ../sass/partials/_form.scss */
 .form__checkbox .form__input:checked + .form__label:before {
   border-color: #007bff;
-}
-/* line 240, ../sass/partials/_form.scss */
-.form__checkbox .form__input:checked + .form__label:before {
   border-width: 10px;
 }
-/* line 245, ../sass/partials/_form.scss */
+/* line 281, ../sass/partials/_form.scss */
 .form__checkbox .form__label {
-  margin-bottom: 0;
-  position: relative;
   padding-left: 30px;
   cursor: pointer;
   margin: 0;
-  text-transform: none;
   font-size: 1rem !important;
-  color: #000a1e;
   font-weight: 200;
   overflow: visible;
-  color: inherit !important;
 }
-/* line 257, ../sass/partials/_form.scss */
+/* line 289, ../sass/partials/_form.scss */
 .form__checkbox .form__label:before {
-  display: inline-block;
-  background-color: transparent;
   content: "";
   position: absolute;
-  top: -5px;
+  top: 0;
   right: auto;
   bottom: auto;
   left: 0;
@@ -1687,9 +1709,23 @@ html, body {
   -webkit-transition: border 0.3s ease;
   -webkit-transition-delay: 0s;
   transition: border 0.3s ease 0s;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #d7d7dc;
 }
-/* line 264, ../sass/partials/_form.scss */
+/* line 297, ../sass/partials/_form.scss */
 .form__checkbox .form__label:after {
+  -moz-transition: opacity 0.4s ease 0s;
+  -o-transition: opacity 0.4s ease 0s;
+  -webkit-transition: opacity 0.4s ease 0s;
+  transition: opacity 0.4s ease 0s;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -1697,67 +1733,14 @@ html, body {
   text-decoration: none;
   color: #ffffff;
   position: absolute;
-  top: auto;
-  right: auto;
-  bottom: 4px;
-  left: 4px;
-  font-size: 0.5rem;
-}
-
-/* line 273, ../sass/partials/_form.scss */
-.form__radio .form__input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-/* line 277, ../sass/partials/_form.scss */
-.form__radio .form__input:checked + .form__label:before {
-  border-color: #007bff;
-}
-/* line 280, ../sass/partials/_form.scss */
-.form__radio .form__input:checked + .form__label:before {
-  border-width: 7px;
-}
-/* line 285, ../sass/partials/_form.scss */
-.form__radio .form__label {
-  margin-bottom: 0;
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  margin: 0;
-  text-transform: none;
-  font-size: 1rem !important;
-  color: #000a1e;
-  font-weight: 200;
-  overflow: visible;
-  color: inherit !important;
-}
-/* line 297, ../sass/partials/_form.scss */
-.form__radio .form__label:before {
-  display: inline-block;
-  background-color: transparent;
-  content: "";
-  position: absolute;
-  top: -5px;
+  top: 0;
   right: auto;
   bottom: auto;
   left: 0;
   width: 20px;
   height: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-transition: border 0.3s ease 0s;
-  -o-transition: border 0.3s ease 0s;
-  -webkit-transition: border 0.3s ease;
-  -webkit-transition-delay: 0s;
-  transition: border 0.3s ease 0s;
-}
-/* line 304, ../sass/partials/_form.scss */
-.form__radio .form__label:before {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  font-size: 0.7rem;
+  opacity: 0;
 }
 
 /* 

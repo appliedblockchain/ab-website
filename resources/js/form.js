@@ -112,7 +112,7 @@ $('.form__dropdown').bind('mousewheel DOMMouseScroll', function(e) {
 			$wrap = $('<div class="form__file clear">'),
 			$input = $('<input type="text" class="form__input" />'),
 			// Button that will be used in non-IE browsers
-			$button = $('<button type="button" class="form__input form__label">Select a File</button>'),
+			$button = $('<button type="button" class="form__input form__button">Select a File</button>'),
 			// Hack for IE
 			$label = $('<label class="form__input form__label" for="'+ $file[0].id +'">Select a File</label>');
 

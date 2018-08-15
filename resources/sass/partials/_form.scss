@@ -7,8 +7,10 @@
  * FORM
  * —————————————————————————————————————————————————————————————————
  * general
+ * required
  * focused
  * select
+ * file
  * switch
  * checkbox & radio
  * —————————————————————————————————————————————————————————————————
@@ -175,6 +177,32 @@
 
 
 /*
+ * file
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.form__file {
+	position: relative;
+
+	.form__input {
+	}
+
+	.form__button {
+		@include border-bottom-right-radius(0.2rem);
+		@include border-top-right-radius(0.2rem);
+		background-color: $mediumgrey;
+		color: $white;
+		width: 130px !important;
+		margin: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+	}
+}
+
+
+
+/*
  * switch
  * —————————————————————————————————————————————————————————————————
 */
@@ -189,9 +217,11 @@
 
 	&__input {
 		display:none;
+
 		&:checked + .switch__slider {
 			background-color: $primary;
 		}
+
 		&:checked + .switch__slider:before {
 			@include transform(translateX(22px));
 		}
@@ -205,6 +235,7 @@
 		right: 0;
 		bottom: 0;
 		@include transition(background $transition);
+
 		&:before {
 			background-color: white;
 			@include pseudo-element('', auto, auto, 3px, 3px, 11px, 11px);
@@ -215,6 +246,7 @@
 
 	&__slider--round {
 		@include border-radius(34px);
+
 		&:before {
 			@include border-radius(50%);
 		}	
@@ -231,81 +263,47 @@
 .form__checkbox {
 
 	.form__input {
+		position: absolute;
 		opacity: 0;
 		width: 0;
 		height: 0;
+
+		&:checked + .form__label:after {
+			opacity: 1;
+		}
+		
 		&:checked + .form__label:before {
 			border-color: $primary;
-		}
-		&:checked + .form__label:before {
-			border-width: 10px;
+			border-width: $integer/2;
 		}
 	}
 
 	.form__label {
-		margin-bottom: 0;
-		position: relative;
-		padding-left: 30px;
+		padding-left: $integer*1.5;
 		cursor: pointer;
 		margin: 0;
-		text-transform: none;
 		font-size: 1rem !important;
-		color: $black;
 		font-weight: 200;
 		overflow: visible;
-		color: inherit !important;
+
 		&:before {
-			display: inline-block;
-			background-color: transparent;
-			@include pseudo-element('', -5px, auto, auto, 0, 20px, 20px);
+			@include pseudo-element('', 0, auto, auto, 0, $integer, $integer);
 			@include box-sizing(border-box);
 			@include transition(border 0.3s ease 0s);
+			@include border-radius($integer/4);
+			border: 2px solid $mediumgrey;
 		}
+
 		&:after {
-			@include fontAwesome("\f00c", auto, auto, 4px, 4px, $white);
-			font-size: 0.5rem;
+			@include transition(opacity $transition);
+			@include display-flex();
+			@include align-items(center);
+			@include justify-content(center);
+			@include fontAwesome("\f00c", 0, auto, auto, 0, $white);
+			width: $integer;
+			height: $integer;
+			font-size: 0.7rem;
+			opacity: 0;
 		}
 	}
 }
-
-.form__radio {
-
-	.form__input {
-		opacity: 0;
-		width: 0;
-		height: 0;
-		&:checked + .form__label:before {
-			border-color: $primary;
-		}
-		&:checked + .form__label:before {
-			border-width: 7px;
-		}
-	}
-
-	.form__label {
-		margin-bottom: 0;
-		position: relative;
-		padding-left: 30px;
-		cursor: pointer;
-		margin: 0;
-		text-transform: none;
-		font-size: 1rem !important;
-		color: $black;
-		font-weight: 200;
-		overflow: visible;
-		color: inherit !important;
-		&:before {
-			display: inline-block;
-			background-color: transparent;
-			@include pseudo-element('', -5px, auto, auto, 0, 20px, 20px);
-			@include box-sizing(border-box);
-			@include transition(border 0.3s ease 0s);
-		}
-		&:before {
-			@include border-radius(50%);
-		}
-	}
-}
-
-
-

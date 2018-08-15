@@ -6,25 +6,25 @@
   title: Advisory
   id: advisory
   text: We work  with you to learn about your project and provide independent strategic advice to questions whether blockchain is suitable and adds genuine technical value to the problem you are trying to solve.<br><br>We assess your requirements to provide you with an impartial recommendation to approach and implement your blockchain project, and then advise which of the available blockchain technologies is best suited for your product/solution. We document this for you before moving on to building a prototype.
-  icon: icon-consultation
+  icon: icon-advisory
 
 - number: 2
   active:
   title: Prototype
   id: prototype
   text: Our solution architects, developers, and designer work together to prove that the concepts for the blockchain application are viable and create a working prototype for you to touch, test, and give feedback on After this we will   to test based on the minimum requirements of the product. The prototype is for you to test against your requirements and technical needs.
-  icon: icon-consultation
+  icon: icon-prototype
 
 - number: 3
   active:
   title: Production
   id: production
   text: Our developers build your project and test it at every stage. After the build is complete, we coordinate with your respective Project Manager and Technical Advisor to support in implementing the project for you. We move into production, and then your project is live.
-  icon: icon-consultation
+  icon: icon-production
 
 - number: 4
   active:
   title: Support
   id: support
   text: We provide you with ongoing support from the day we start a conversation with you. After the delivery and deployment of your project, we continue to work with you to ensure its smooth operation and advise on technical enhancements (if required).
-  icon: icon-consultation
+  icon: icon-support

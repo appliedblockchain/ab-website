@@ -103,7 +103,13 @@
             title='Our core values underpin all of our work'
         %}
 
-        <div class="section__content">
+        <div class="section__content image-inline">
+            {% for item in site.data.images.values %}
+                <div class="col--3 image-inline__item">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
+                    <p>{{ item.alt }}</p>
+                </div>
+            {% endfor %}
         </div>
 
     </section>

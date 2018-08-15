@@ -426,6 +426,19 @@ li + li {
 	@include background(center center, cover);
 }
 
+.image-inline {
+
+    &__item {
+        padding: 0 $integer*2;
+    }
+
+    &__image {
+        background-size: contain;
+        height: $integer*6;
+        margin-bottom: $integer;   
+    }
+}
+
 
 
 /*

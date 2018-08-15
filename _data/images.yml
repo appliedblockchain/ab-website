@@ -145,3 +145,16 @@ partners:
 
   - url: level39
     alt: Level39    
+
+# values section
+# in about.html page
+
+values:
+  - url: direction
+    alt: Platform agnostic
+
+  - url: binoculars
+    alt: Future-proof
+
+  - url: shield
+    alt: Integrity

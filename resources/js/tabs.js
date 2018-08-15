@@ -38,7 +38,7 @@ $(".approach.tab--vertical .tab__nav a").click(function(event) {
 	$(tab).fadeIn(400);
 });
 
-// approach
+// jobs
 
 $(".jobs.tab--vertical .tab__nav a").click(function(event) {
 	event.preventDefault();
@@ -60,7 +60,7 @@ $(".event.tab--vertical .tab__nav a").click(function(event) {
 	$(tab).fadeIn(400);
 });
 
-// events
+// leadership
 
 $(".leadership.tab--vertical .tab__nav a").click(function(event) {
 	event.preventDefault();
@@ -68,6 +68,17 @@ $(".leadership.tab--vertical .tab__nav a").click(function(event) {
 	$(this).siblings().removeClass("nav__button--active");
 	var tab = $(this).attr("href");
 	$(".leadership.tab--vertical .tab__item").not(tab).css("display", "none");
+	$(tab).fadeIn(400);
+});
+
+// contact
+
+$(".contact.tab--vertical .tab__nav a").click(function(event) {
+	event.preventDefault();
+	$(this).addClass("nav__button--active");
+	$(this).siblings().removeClass("nav__button--active");
+	var tab = $(this).attr("href");
+	$(".contact.tab--vertical .tab__item").not(tab).css("display", "none");
 	$(tab).fadeIn(400);
 });
 

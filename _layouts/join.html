@@ -10,12 +10,21 @@
         comment='We are continuously looking for highly motivated and ambitious people who are passionate about delivering innovative blockchain-based solutions to global enterprises and disruptive startups.'
     %}
 
-    <section class="section section--primary">
+    <section class="section section--alt section--primary">
+
+        <div class="image-inline row">
+            <!-- edit data in _data/images.yml -->
+            {% for item in site.data.images.join %}
+                <div class="image-inline__item col--md3">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
+                    <p>{{ item.alt }}</p>
+                </div>
+            {% endfor %}
+        </div>
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             title='Check out our openings in London and in Porto'
-            description='We are continuously looking for highly motivated and ambitious people who are passionate about delivering innovative blockchain-based solutions to global enterprises and disruptive startups'
         %}
 
         <div class="section__content tab tab--vertical jobs">

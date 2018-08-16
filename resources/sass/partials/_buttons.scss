@@ -61,6 +61,10 @@
 			@include transform(translateX($integer/4));
 		}
 	}
+
+	&--underline {
+		text-decoration: underline;
+	}
 }
 
 

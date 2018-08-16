@@ -26,6 +26,11 @@
 	width: 100%;
 	padding-left: $integer*1.5 !important;
 	padding-right: $integer*1.5 !important;
+
+	&__header {
+		width: 75%;
+		margin: 0 auto $integer*2 auto;
+	}
 	
 	&__content {
 		@include display-flex();
@@ -82,8 +87,11 @@
 	&__button {
 		margin-top: $integer/2;
 	}
+	
+	&__footer {
+		margin-top: $integer*2;
+	}
 }
-
 
 @include placeholder {
 	color: $mediumgrey;

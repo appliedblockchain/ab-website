@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Microsoft: Fast-growing tech firm brings diverse blockchain solutions to startups and enterprises alike'
-image-link: microsoft-blockchain-solutions
+image-link: microsoft-fast-growing-tech-firm-brings-diverse-blockchain-solutions-startups-enterprises-alike
 category: blog
 ---
 

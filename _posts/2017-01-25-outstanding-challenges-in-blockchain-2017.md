@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Outstanding Challenges in Blockchain Technology in 2017
-image-link: challenges-blockchain-2017
+image-link: outstanding-challenges-in-blockchain-2017
 category: blog
 ---
 

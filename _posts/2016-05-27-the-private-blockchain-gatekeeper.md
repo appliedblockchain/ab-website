@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Private Blockchain Gatekeeper
-image-link: private-blockchain-gatekeeper
+image-link: the-private-blockchain-gatekeeper
 category: blog
 ---
 

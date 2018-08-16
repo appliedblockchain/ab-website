@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Applied Blockchain selected as Travel Ledger Alliance development partner
-image-link: travel-ledger-partner
+image-link: applied-blockchain-travel-ledger-alliance-development-partner
 category: blog
 ---
 

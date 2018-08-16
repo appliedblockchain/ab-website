@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 14 Blockchain Predictions for 2016
-image-link: blockchain-predictions-2016
+image-link: blockchain-predictions-for-2016
 category: blog
 ---
 

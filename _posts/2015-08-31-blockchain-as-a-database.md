@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blockchain as a Database
-image-link: blockchain-database
+image-link: blockchain-as-a-database
 category: blog
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Whole App in a Blockchain
-image-link: whole-app-blockchain
+image-link: the-whole-app-in-a-blockchain
 category: blog
 ---
 

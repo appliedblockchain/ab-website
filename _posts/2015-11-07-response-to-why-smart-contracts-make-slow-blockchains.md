@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Smart Contracts Make Slow Blockchains
-image-link: smart-contract-slow-blockchain
+image-link: response-to-why-smart-contracts-make-slow-blockchains
 category: blog
 ---
 

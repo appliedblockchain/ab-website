@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blockchain for Cross-Organisation Workflow
-image-link: blockchain-cross-organisation-workflow
+image-link: blockchain-for-cross-organisation-workflow
 category: blog
 ---
 

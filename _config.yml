@@ -10,13 +10,10 @@ medium:
 twitter: https://twitter.com/appblockchain
 
 # permalinks config
-# projects
 collections:
   projects:
     output: true
     permalink: /project/:path/
-# posts
-collections:
   posts:
     output: true
     permalink: /:title/

@@ -64,7 +64,14 @@
 
     {% else %}
 
-        <p>There are no project available. Come back soon!</p>
+        <section class="section section--alt section--dark">
+
+            <!-- edit component in _includes/components/section-header.html -->
+            {% include components/section-header.html
+                title='There are no project available. Come back soon!'
+            %}
+
+        </section>
 
     {% endif %}
 

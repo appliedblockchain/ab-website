@@ -115,6 +115,10 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 
 
 
+## Text styles
+
+
+
 ## Projects
 
 ### Add project

@@ -3904,8 +3904,23 @@ li + li {
 /* line 15, ../sass/partials/_tabs.scss */
 .tab__nav .nav__button {
   display: inline-block;
+  background-color: transparent;
 }
-/* line 20, ../sass/partials/_tabs.scss */
+/* line 19, ../sass/partials/_tabs.scss */
+.tab__nav .nav__button.button--primary {
+  color: #000a1e;
+}
+/* line 27, ../sass/partials/_tabs.scss */
+.tab__nav .nav__button--active.button--primary.button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+/* line 38, ../sass/partials/_tabs.scss */
+.tab__nav .nav__button--active.button--primary-darken.button {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+/* line 47, ../sass/partials/_tabs.scss */
 .tab__content {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -3913,11 +3928,11 @@ li + li {
   -webkit-transition-delay: 0s;
   transition: all 0.4s ease 0s;
 }
-/* line 24, ../sass/partials/_tabs.scss */
+/* line 51, ../sass/partials/_tabs.scss */
 .tab__item {
   display: none;
 }
-/* line 27, ../sass/partials/_tabs.scss */
+/* line 54, ../sass/partials/_tabs.scss */
 .tab__item:nth-child(1) {
   display: block;
 }
@@ -4881,6 +4896,17 @@ li + li {
 /* line 52, ../sass/pages/_media.scss */
 .blog__text {
   margin-bottom: 40px;
+}
+
+/* line 59, ../sass/pages/_media.scss */
+.filter__button {
+  background-color: transparent;
+  color: #000a1e;
+}
+/* line 63, ../sass/pages/_media.scss */
+.filter__button.active {
+  background-color: #007bff;
+  color: #ffffff;
 }
 
 /* 

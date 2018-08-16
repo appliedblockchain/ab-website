@@ -14,6 +14,33 @@
 
 		.nav__button {
 			display: inline-block;
+			background-color: transparent;
+
+			&.button--primary {
+				color: $black;
+			}
+
+			&--active {
+				
+				&.button--primary {
+
+					&.button {
+						background-color: $primary;
+						color: $white;
+					}
+				}
+			}
+
+			&--active {
+				
+				&.button--primary-darken {
+	
+					&.button {
+						background-color: $primary-darken;
+						color: $white;
+					}
+				}
+			}
 		}
 	}
 

@@ -1464,11 +1464,11 @@ html, body {
 }
 /* line 87, ../sass/partials/_form.scss */
 .form__button {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 /* line 91, ../sass/partials/_form.scss */
 .form__footer {
-  margin-top: 40px;
+  text-align: left;
 }
 
 /* line 150, ../sass/modules/_mixins.scss */

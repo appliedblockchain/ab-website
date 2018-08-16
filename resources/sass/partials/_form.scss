@@ -85,11 +85,11 @@
 	}
 
 	&__button {
-		margin-top: $integer/2;
+		margin-top: $integer*2;
 	}
 	
 	&__footer {
-		margin-top: $integer*2;
+		text-align: left;
 	}
 }
 

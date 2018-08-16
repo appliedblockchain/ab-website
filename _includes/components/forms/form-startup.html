@@ -27,26 +27,26 @@
             <label for="" class="form__label">Current title</label>
             <input type="text" class="form__input" name="" id="" required="required">
         </div>
-        <div class="form__group col--md12">
+        <div class="form__group col--12">
             <label for="" class="form__label">Message</label>
             <textarea class="form__input" name="" id="" rows="8" placeholder=""></textarea>
         </div>
-        <div class="form__group col--md12">
+        <div class="form__group col--12">
             <span class="form__checkbox">
                 <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
                 <label for="" class="form__label">I consent to Applied Blockchain to collecting my personal details to receive commercial offers**</label>
             </span>
         </div>
-        <div class="form__group col--md12">
+        <div class="form__group col--12">
             <span class="form__checkbox">
                 <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
                 <label for="" class="form__label">Sign-up for our newsletter! I consent Applied Blockchain to add me to their newsletter mailing list, with my data being stored**</label>
             </span>
         </div>
+        <!-- edit component in _includes/components/form-footer.html -->
+        {% include components/forms/form-footer.html %}
     </div>
     <button type="submit" class="form__button button button--secondary button--large button--animate fa fa-share-square">
         <p class="button__inner">Send</p>
     </button>
-    <!-- edit component in _includes/components/form-footer.html -->
-    {% include components/forms/form-footer.html %}
 </form>

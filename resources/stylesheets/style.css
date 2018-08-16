@@ -866,19 +866,19 @@ optgroup {
 .button--secondary {
   background-color: #64f0ff;
   border-color: #64f0ff;
-  color: #007bff;
+  color: #ffffff;
 }
 /* line 168, ../sass/modules/_mixins.scss */
 .button--secondary-lighten {
   background-color: #b1f7ff;
   border-color: #b1f7ff;
-  color: #007bff;
+  color: #ffffff;
 }
 /* line 173, ../sass/modules/_mixins.scss */
 .button--secondary-darken {
   background-color: #18e9ff;
   border-color: #18e9ff;
-  color: #007bff;
+  color: #ffffff;
 }
 
 /* line 164, ../sass/modules/_mixins.scss */
@@ -4707,8 +4707,8 @@ li + li {
  * —————————————————————————————————————————————————————————————————
 */
 /* line 13, ../sass/pages/_join.scss */
-#join .image-inline {
-  margin-bottom: 80px;
+#join .section__title {
+  width: 100%;
 }
 
 /* line 20, ../sass/pages/_join.scss */

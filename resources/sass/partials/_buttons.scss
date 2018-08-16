@@ -101,7 +101,7 @@
 @include button-color('button--',
 //	prefix 			background & border	 color
 	'primary'   	$primary 			$white,
-	'secondary' 	$secondary			$primary,
+	'secondary' 	$secondary			$white,
 	'highlight' 	$highlight			$white,
 	'dark' 			$dark 				$white
 );

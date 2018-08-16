@@ -58,6 +58,10 @@
 		}
 	}
 
+	&__control {
+		@include display-flex();
+	}
+
 	&__textarea {
 		width: 100%;
 	}
@@ -258,7 +262,7 @@
  * —————————————————————————————————————————————————————————————————
 */
 
-.form__checkbox {
+.form__checkbox, .form__radio {
 
 	.form__input {
 		position: absolute;
@@ -266,10 +270,6 @@
 		width: 0;
 		height: 0;
 
-		&:checked + .form__label:after {
-			opacity: 1;
-		}
-		
 		&:checked + .form__label:before {
 			border-color: $primary;
 			border-width: $integer/2;
@@ -283,13 +283,34 @@
 		font-size: 1rem !important;
 		font-weight: 200;
 		overflow: visible;
+		color: $black !important;
 
 		&:before {
-			@include pseudo-element('', 0, auto, auto, 0, $integer, $integer);
+			@include pseudo-element('', -1px, auto, auto, 0, $integer, $integer);
 			@include box-sizing(border-box);
-			@include transition(border 0.3s ease 0s);
-			@include border-radius($integer/4);
+			@include transition(border 0.4s ease 0s);
 			border: 2px solid $mediumgrey;
+		}
+	}
+}
+
+.form__checkbox {
+
+	.form__input {
+
+		&:checked + .form__label:before {
+			border-width: $integer/2;
+		}
+
+		&:checked + .form__label:after {
+			opacity: 1;
+		}		
+	}
+
+	.form__label {
+
+		&:before {
+			@include border-radius($integer/4);
 		}
 
 		&:after {
@@ -306,17 +327,17 @@
 	}
 }
 
-
 .form__radio {
+    @include display-flex();
+    @include align-items(center);
+    @include flex-basis(0);
+    height: $integer*2;
+
+	& + & {
+		margin-left: $integer;
+	}
 
 	.form__input {
-		opacity: 0;
-		width: 0;
-		height: 0;
-
-		&:checked + .form__label:before {
-			border-color: $primary;
-		}
 
 		&:checked + .form__label:before {
 			border-width: 7px;
@@ -324,26 +345,6 @@
 	}
 
 	.form__label {
-		margin-bottom: 0;
-		position: relative;
-		padding-left: 30px;
-		cursor: pointer;
-		margin: 0;
-		text-transform: none;
-		font-size: 1rem !important;
-		color: $black;
-		font-weight: 200;
-		overflow: visible;
-		color: inherit !important;
-
-		&:before {
-			@include pseudo-element('', -5px, auto, auto, 0, 20px, 20px);
-				@include box-sizing(border-box);
-				@include transition(border 0.3s ease 0s);
-			display: inline-block;
-			background-color: transparent;
-			border: 2px solid $mediumgrey;
-		}
 
 		&:before {
 			@include border-radius(50%);

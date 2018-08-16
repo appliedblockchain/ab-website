@@ -1,42 +1,44 @@
 <form action="" class="">
     <div class="form__content">
-        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+        <div class="form__group col--xl4 col--lg6">
             <label for="" class="form__label">First name</label>
             <input type="text" class="form__input" name="" id="" required="required">
         </div>
-        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+        <div class="form__group col--xl4 col--lg6">
             <label for="" class="form__label">Last name</label>
             <input type="text" class="form__input" name="" id="" required required="required">
         </div>
-        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+        <div class="form__group col--xl4 col--lg6">
             <label for="" class="form__label">Email</label>
             <input type="text" class="form__input" name="" id="" required="required">
         </div>
-        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+        <div class="form__group col--lg6">
             <label for="" class="form__label">Industry</label>
             <select class="form__input" name="" id="" required="required">
                 <!-- edit component in _includes/components/forms/input-industries.html -->
                 {% include components/forms/input-industries.html %}
             </select>
         </div>
-        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+        <div class="form__group col--xl6 col--lg12">
+            <label for="" class="form__label nomargin">You are</label>
+            <div class="form__control">
+                <span class="form__radio">
+                    <input type="radio" class="form__input" name="input_radio" id="input_radio-1" value="0">
+                    <label for="input_radio-1" class="form__label">Funded</label>
+                </span>
+                <span class="form__radio">
+                    <input type="radio" class="form__input" name="input_radio" id="input_radio-2" value="1">
+                    <label for="input_radio-2" class="form__label">Require funding</label>
+                </span>
+            </div>
+        </div>
+        <div class="form__group col--lg6">
             <label for="" class="form__label">Current company</label>
             <input type="text" class="form__input" name="" id="" required="required">
         </div>
-        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+        <div class="form__group col--lg6">
             <label for="" class="form__label">Current title</label>
             <input type="text" class="form__input" name="" id="" required="required">
-        </div>
-        <div class="form__group col--md4">
-            <label for="" class="form__label nomargin">Radio</label>
-            <span class="form__radio">
-                <input type="radio" class="form__input" name="input_radio" id="input_radio-1" value="0">
-                <label for="input_radio-1" class="form__label">Radio 1</label>
-            </span>
-            <span class="form__radio">
-                <input type="radio" class="form__input" name="input_radio" id="input_radio-2" value="1">
-                <label for="input_radio-2" class="form__label">Radio 2</label>
-            </span>
         </div>
         <div class="form__group col--12">
             <label for="" class="form__label">Message</label>
@@ -44,14 +46,14 @@
         </div>
         <div class="form__group col--12">
             <span class="form__checkbox">
-                <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
-                <label for="" class="form__label">I consent to Applied Blockchain to collecting my personal details to receive commercial offers**</label>
+                <input type="checkbox" class="form__input" name="startup_nrpd" id="startup_nrpd" value="1" required="required">
+                <label for="startup_nrpd" class="form__label">I consent to Applied Blockchain to collecting my personal details to receive commercial offers**</label>
             </span>
         </div>
         <div class="form__group col--12">
             <span class="form__checkbox">
-                <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
-                <label for="" class="form__label">Sign-up for our newsletter! I consent Applied Blockchain to add me to their newsletter mailing list, with my data being stored**</label>
+                <input type="checkbox" class="form__input" name="startup_newsletter" id="startup_newsletter" value="1">
+                <label for="startup_newsletter" class="form__label">Sign-up for our newsletter! I consent Applied Blockchain to add me to their newsletter mailing list, with my data being stored**</label>
             </span>
         </div>
         <!-- edit component in _includes/components/form-footer.html -->

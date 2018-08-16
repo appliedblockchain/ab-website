@@ -4756,6 +4756,51 @@ li + li {
 
 /* 
  * —————————————————————————————————————————————————————————————————
+ * PRODUCTS
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 13, ../sass/pages/_products.scss */
+#products .section:nth-child(2) {
+  padding-bottom: 240px;
+}
+
+/* line 18, ../sass/pages/_products.scss */
+.products {
+  padding-bottom: 0;
+}
+/* line 21, ../sass/pages/_products.scss */
+.products__item {
+  -moz-transform: translateY(-120px);
+  -ms-transform: translateY(-120px);
+  -webkit-transform: translateY(-120px);
+  transform: translateY(-120px);
+  padding: 80px;
+}
+/* line 26, ../sass/pages/_products.scss */
+.products__logo {
+  width: 40%;
+}
+/* line 30, ../sass/pages/_products.scss */
+.products__name {
+  margin: 20px 0;
+}
+/* line 34, ../sass/pages/_products.scss */
+.products__button {
+  margin-top: 40px;
+}
+
+/* line 39, ../sass/pages/_products.scss */
+.devtools {
+  text-align: left;
+}
+/* line 42, ../sass/pages/_products.scss */
+.devtools__item {
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
  * PROJECTS
  * —————————————————————————————————————————————————————————————————
 */

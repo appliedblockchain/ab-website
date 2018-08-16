@@ -1,55 +1,52 @@
 <form action="" class="">
-        <div class="form__content">
-            <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
-                <label for="" class="form__label">First name</label>
-                <input type="text" class="form__input" name="" id="" required="required">
-            </div>
-            <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
-                <label for="" class="form__label">Last name</label>
-                <input type="text" class="form__input" name="" id="" required required="required">
-            </div>
-            <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
-                <label for="" class="form__label">Email</label>
-                <input type="text" class="form__input" name="" id="" required="required">
-            </div>
-            <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
-                <label for="" class="form__label">Industry</label>
-                <select class="form__input" name="" id="" required="required">
-                    <option value=""> — </option>
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                </select>
-            </div>
-            <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
-                <label for="" class="form__label">Current company</label>
-                <input type="text" class="form__input" name="" id="" required="required">
-            </div>
-            <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
-                <label for="" class="form__label">Current title</label>
-                <input type="text" class="form__input" name="" id="" required="required">
-            </div>
-            <div class="form__group col--md12">
-                <label for="" class="form__label">Message</label>
-                <textarea class="form__input" name="" id="" rows="8" placeholder=""></textarea>
-            </div>
-            <div class="form__group col--md12">
-                <span class="form__checkbox">
-                    <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
-                    <label for="" class="form__label">I consent to Applied Blockchain to collecting my personal details to receive commercial offers**</label>
-                </span>
-            </div>
-            <div class="form__group col--md12">
-                <span class="form__checkbox">
-                    <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
-                    <label for="" class="form__label">Sign-up for our newsletter! I consent Applied Blockchain to add me to their newsletter mailing list, with my data being stored**</label>
-                </span>
-            </div>
+    <div class="form__content">
+        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+            <label for="" class="form__label">First name</label>
+            <input type="text" class="form__input" name="" id="" required="required">
         </div>
-        <button type="submit" class="form__button button button--secondary button--large button--animate fa fa-share-square">
-            <p class="button__inner">Send</p>
-        </button>
-        <!-- edit component in _includes/components/form-footer.html -->
-        {% include components/forms/form-footer.html %}
-    </form>
-    
+        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+            <label for="" class="form__label">Last name</label>
+            <input type="text" class="form__input" name="" id="" required required="required">
+        </div>
+        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+            <label for="" class="form__label">Email</label>
+            <input type="text" class="form__input" name="" id="" required="required">
+        </div>
+        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+            <label for="" class="form__label">Industry</label>
+            <select class="form__input" name="" id="" required="required">
+                <!-- edit component in _includes/components/forms/input-industries.html -->
+                {% include components/forms/input-industries.html %}
+            </select>
+        </div>
+        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+            <label for="" class="form__label">Current company</label>
+            <input type="text" class="form__input" name="" id="" required="required">
+        </div>
+        <div class="form__group col--xl4 col--lg6 col--xl4 col--lg6">
+            <label for="" class="form__label">Current title</label>
+            <input type="text" class="form__input" name="" id="" required="required">
+        </div>
+        <div class="form__group col--md12">
+            <label for="" class="form__label">Message</label>
+            <textarea class="form__input" name="" id="" rows="8" placeholder=""></textarea>
+        </div>
+        <div class="form__group col--md12">
+            <span class="form__checkbox">
+                <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
+                <label for="" class="form__label">I consent to Applied Blockchain to collecting my personal details to receive commercial offers**</label>
+            </span>
+        </div>
+        <div class="form__group col--md12">
+            <span class="form__checkbox">
+                <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
+                <label for="" class="form__label">Sign-up for our newsletter! I consent Applied Blockchain to add me to their newsletter mailing list, with my data being stored**</label>
+            </span>
+        </div>
+    </div>
+    <button type="submit" class="form__button button button--secondary button--large button--animate fa fa-share-square">
+        <p class="button__inner">Send</p>
+    </button>
+    <!-- edit component in _includes/components/form-footer.html -->
+    {% include components/forms/form-footer.html %}
+</form>

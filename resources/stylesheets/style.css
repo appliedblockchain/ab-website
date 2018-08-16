@@ -4827,7 +4827,7 @@ li + li {
 }
 /* line 69, ../sass/pages/_products.scss */
 .devtools__image {
-  min-height: 300px;
+  max-height: 240px;
 }
 @media (max-width: 767px) {
   /* line 69, ../sass/pages/_products.scss */

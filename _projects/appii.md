@@ -1,6 +1,5 @@
 ---
 layout: project
-tag: featured
 title: APPII
 subtitle: Travel settlement platform built on blockchain technology
 industry: Travel

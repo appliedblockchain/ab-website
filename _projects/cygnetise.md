@@ -1,5 +1,6 @@
 ---
 layout: project
+tag: featured
 
 title: Cygnetise
 subtitle: A smarter way to manage your Authorised Signatory Lists

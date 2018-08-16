@@ -11,7 +11,7 @@
   icon: icon-production
   title: Production-Ready
   id: solutions-production
-  text: We understand the difference between writing smart contracts for POCs in a lab environment, and architecting and deploying a distributed blockchain application into a production environment.<br><br>When we design all our applications, we keep in mind the end state of a  production environments of both enterprises and startups to ensure we are production-ready at delivery.
+  text: We understand the difference between writing smart contracts for POCs in a lab environment, and architecting and deploying a distributed blockchain application into a production environment.<br><br>When we design all our applications, we keep in mind the end state of very different production environments of both enterprises and startups to ensure we are production-ready at delivery.
 
 - active:
   icon: icon-security

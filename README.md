@@ -172,7 +172,7 @@ summary:
 * image (path and name)
     * if doesn't work: check file extension (needs to be jpeg)
     * default image (explanation)
-
+* news special tag for link direct to external page
 
 
 ## Events

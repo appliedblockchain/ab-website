@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Applied Blockchain secures investments from Shell Trading and Calibrate Partners
-category: news
+category: press-release
 ---
 
 Applied Blockchain Ltd secures investments from Shell Trading International Ltd and Calibrate Partners LLP

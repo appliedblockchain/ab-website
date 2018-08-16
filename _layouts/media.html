@@ -36,13 +36,17 @@
                         <!-- edit or add post in _posts -->
                         {% for post in site.posts %}
                             <div class="col--xl4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
-                                <a href="{{ post.url | prepend: site.baseurl }}">
+                                {% if post.external-link %}
+                                    <a href="{{ post.external-link }}" target="_blank">
+                                {% else %}
+                                    <a href="{{ post.url | prepend: site.baseurl }}">
+                                {% endif %}        
                                     <div class="block blog__item">
                                         {% if post.image-link %}
                                             <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image-link }}.jpg);"></div>
                                         {% else %}
                                             <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/default.jpg);"></div>
-                                        {% endif %}
+                                        {% endif %} 
                                         <div class="blog__content">
                                             <span class="blog__icon">
                                                 <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.png" alt="">

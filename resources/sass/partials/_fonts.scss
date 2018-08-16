@@ -147,6 +147,6 @@ html, body {
 .form {
 
 	&__input, .form__dropdown li {
-		@include fontSize(1, $font-regular, normal);
+		@include fontSize(1, $font-light, normal);
 	}
 }

@@ -305,3 +305,49 @@
 		}
 	}
 }
+
+
+.form__radio {
+
+	.form__input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+
+		&:checked + .form__label:before {
+			border-color: $primary;
+		}
+
+		&:checked + .form__label:before {
+			border-width: 7px;
+		}
+	}
+
+	.form__label {
+		margin-bottom: 0;
+		position: relative;
+		padding-left: 30px;
+		cursor: pointer;
+		margin: 0;
+		text-transform: none;
+		font-size: 1rem !important;
+		color: $black;
+		font-weight: 200;
+		overflow: visible;
+		color: inherit !important;
+
+		&:before {
+			@include pseudo-element('', -5px, auto, auto, 0, 20px, 20px);
+				@include box-sizing(border-box);
+				@include transition(border 0.3s ease 0s);
+			display: inline-block;
+			background-color: transparent;
+			border: 2px solid $mediumgrey;
+		}
+
+		&:before {
+			@include border-radius(50%);
+		}
+	}
+}
+

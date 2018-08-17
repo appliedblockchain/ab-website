@@ -73,6 +73,11 @@
 	} 
 }
 
+@mixin overflow-scroll {
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
 
 
 // —————————————————————————————————————————————————————————————————

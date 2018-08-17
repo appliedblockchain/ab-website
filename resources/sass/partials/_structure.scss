@@ -567,7 +567,12 @@ li + li {
 	}
 
 	&__menu {
+		@include calc(height, '100vh - '$integer*8);
+		@include overflow-scroll();
 		padding: $integer*2 $col*2 0 $col*2;
+		@include responsive(max-width, $break-tablets-max) {
+			padding: 0 $col $integer*6 $col;
+		}
 	}
 
 	&.js-scrolled {
@@ -639,19 +644,12 @@ li + li {
 		}
 	}
 
-	&__title {
-		margin-bottom: $integer;
-	}
-
 	&__inner {
 		@include display-flex();
 		@include flex-wrap(wrap);
 	}
 
 	&__button {
-		width: 33.333%;
-		position: relative;
-		padding: 0;
 		margin-bottom: $integer/2;
 		
 		.subtitle {

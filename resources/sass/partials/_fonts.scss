@@ -80,13 +80,14 @@ html, body {
 	}
 }
 
-.post {
+/* prevent style from applying to media page */
+.post .post__headline {
+	line-height: 1.5;
+	font-size: 1.5rem;
+	font-weight: $font-bold;
+}
 
-	&__headline {
-		line-height: 1.5;
-		font-size: 1.5rem;
-		font-weight: $font-bold;
-	}
+.post {
 
 	&__title {
 		font-size: 1.8rem;

@@ -102,9 +102,14 @@
         <div class="row">
 
             <div class="col--6 video">
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                <a href="#modal-video" class="js-button-modal">
+                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                </a>
             </div>
-
+            
+            <!-- edit component in _includes/components/modals/video.html -->
+            {% include components/modals/video.html %}
+            
             <div class="col--6">
                 
                 <!-- edit component in _includes/components/section-header.html -->

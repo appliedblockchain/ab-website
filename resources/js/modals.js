@@ -9,13 +9,13 @@ $(document).ready(function() {
 // PREVENT PAGE SCROLL WHEN MODAL OPENED
 
 // open
-$(".button--modal").click(function(event) {
-	$('html, body').addClass("freeze");
+$(".js-button-modal").click(function(event) {
+	$('html, body').addClass("js-freeze");
 });
 
 // close
 $(".modal__close, .modal__button").click(function(event) {
-	$('html, body').removeClass("freeze");
+	$('html, body').removeClass("js-freeze");
 });
 
 

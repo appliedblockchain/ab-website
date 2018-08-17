@@ -5596,11 +5596,17 @@ li + li {
   padding: 0 10px;
   width: 25%;
 }
-/* line 24, ../sass/pages/_services.scss */
+@media (max-width: 1023px) {
+  /* line 19, ../sass/pages/_services.scss */
+  .solutions__button {
+    width: 33.333%;
+  }
+}
+/* line 27, ../sass/pages/_services.scss */
 .solutions__item {
   border-top: 1px solid #4da3ff;
 }
-/* line 28, ../sass/pages/_services.scss */
+/* line 31, ../sass/pages/_services.scss */
 .solutions__icon {
   -moz-transition: background-color, ease 0.4s 0s;
   -o-transition: background-color, ease 0.4s 0s;
@@ -5612,26 +5618,32 @@ li + li {
   margin-bottom: 20px;
   width: 100%;
 }
-/* line 35, ../sass/pages/_services.scss */
+/* line 38, ../sass/pages/_services.scss */
 .solutions__icon:hover, .nav__button--active .solutions__icon {
   background-color: #006fe6;
 }
-/* line 40, ../sass/pages/_services.scss */
+/* line 43, ../sass/pages/_services.scss */
 .solutions__text {
   width: 50%;
   text-align: center;
   margin: 40px auto 0 auto;
 }
+@media (max-width: 1023px) {
+  /* line 43, ../sass/pages/_services.scss */
+  .solutions__text {
+    width: 100%;
+  }
+}
 
-/* line 49, ../sass/pages/_services.scss */
+/* line 55, ../sass/pages/_services.scss */
 .approach__filter {
   width: 100%;
 }
-/* line 53, ../sass/pages/_services.scss */
+/* line 59, ../sass/pages/_services.scss */
 .approach__button {
   position: relative;
 }
-/* line 56, ../sass/pages/_services.scss */
+/* line 62, ../sass/pages/_services.scss */
 .approach__button:before {
   -moz-transition: opacity 0.4s ease 0s, width 0.4s ease 0s, left 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s, width 0.4s ease 0s, left 0.4s ease 0s;
@@ -5651,23 +5663,23 @@ li + li {
   background-color: #000076;
   opacity: 0;
 }
-/* line 64, ../sass/pages/_services.scss */
+/* line 70, ../sass/pages/_services.scss */
 .approach__button:hover:before, .approach__button.nav__button--active:before {
   opacity: 1;
   width: 100%;
   left: 0;
 }
-/* line 71, ../sass/pages/_services.scss */
+/* line 77, ../sass/pages/_services.scss */
 .approach .block {
   padding: 80px;
 }
-/* line 75, ../sass/pages/_services.scss */
+/* line 81, ../sass/pages/_services.scss */
 .approach__item {
   display: -webkit-flex;
   display: flex;
   text-align: left;
 }
-/* line 80, ../sass/pages/_services.scss */
+/* line 86, ../sass/pages/_services.scss */
 .approach__number {
   font-size: 5rem;
   font-weight: 700;
@@ -5676,35 +5688,35 @@ li + li {
   line-height: 0.9;
   width: 80px;
 }
-/* line 89, ../sass/pages/_services.scss */
+/* line 95, ../sass/pages/_services.scss */
 .approach__content {
   margin: 0 80px;
   width: 200%;
 }
-/* line 94, ../sass/pages/_services.scss */
+/* line 100, ../sass/pages/_services.scss */
 .approach__title {
   margin-bottom: 20px;
 }
 
-/* line 99, ../sass/pages/_services.scss */
+/* line 105, ../sass/pages/_services.scss */
 .projectGrid {
   margin: -10px;
 }
-/* line 102, ../sass/pages/_services.scss */
+/* line 108, ../sass/pages/_services.scss */
 .projectGrid__item {
   position: relative;
   width: 25%;
   padding: 10px;
 }
-/* line 108, ../sass/pages/_services.scss */
+/* line 114, ../sass/pages/_services.scss */
 .projectGrid__container {
   padding: 20px;
 }
-/* line 112, ../sass/pages/_services.scss */
+/* line 118, ../sass/pages/_services.scss */
 .projectGrid__image {
   width: 100%;
 }
-/* line 116, ../sass/pages/_services.scss */
+/* line 122, ../sass/pages/_services.scss */
 .projectGrid__inner {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
@@ -5730,7 +5742,7 @@ li + li {
   background-color: #ffffff;
   text-align: left;
 }
-/* line 131, ../sass/pages/_services.scss */
+/* line 137, ../sass/pages/_services.scss */
 .projectGrid__inner.js-show {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
@@ -5745,15 +5757,15 @@ li + li {
   left: -40px;
   z-index: 2;
 }
-/* line 142, ../sass/pages/_services.scss */
+/* line 148, ../sass/pages/_services.scss */
 .projectGrid__subtitle {
   margin-bottom: 20px;
 }
-/* line 146, ../sass/pages/_services.scss */
+/* line 152, ../sass/pages/_services.scss */
 .projectGrid .label {
   margin-top: 5px;
 }
-/* line 150, ../sass/pages/_services.scss */
+/* line 156, ../sass/pages/_services.scss */
 .projectGrid__button {
   margin-top: 10px;
 }

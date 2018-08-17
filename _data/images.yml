@@ -134,17 +134,23 @@ clients:
 # in about.html page
 
 partners:
-  - url: microsoft
-    alt: Microsoft
+  - url: energy-web
+    alt: Energy Web
+
+  - url: fintech-week
+    alt: Fintech Week
 
   - url: innovate-finance
     alt: Innovate Finance
 
-  - url: energy-web
-    alt: Energy Web
+  - url: innovate-uk
+    alt: Innovate UK
 
-  - url: level39
-    alt: Level39    
+  - url: microsoft
+    alt: Microsoft
+
+  - url: rocket-space
+    alt: Rocket Space
 
 # values section
 # in about.html page

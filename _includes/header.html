@@ -72,7 +72,7 @@
 		</div>
 		<!-- to change the color of the menu icon, add the corresponding page title to the condition in the class tag -->
 		<div class="header__button">
-			<a href="{{ site.url }}/contact" class="button button--small button--primary button--animate fas fa-phone">
+			<a href="{{ site.url }}/contact" class="button button--small button--primary button--animate fas fa-phone {% if page.title == 'Services' or page.title == 'Products' %}alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>
 			<a class="header__button button button--menu {% if page.title == 'Services' or page.title == 'Products' or page.title == 'About' or page.title == 'Join' or page.title == 'Home' or page.title == 'Case studies' %}alt{% endif %}">

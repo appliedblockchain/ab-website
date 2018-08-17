@@ -579,6 +579,14 @@ li + li {
 		@include display-flex();
 	}
 
+	.button--primary {
+		background-color: $white;
+
+		.button__inner {
+			color: $primary;
+		}
+	}
+
 	&__menu {
 		@include calc(height, '100vh - '$integer*8);
 		@include overflow-scroll();
@@ -643,6 +651,14 @@ li + li {
 
 			&:before, &:after, .button__inner {
 				background-color: $black;
+			}
+		}
+
+		.button--primary {
+			background-color: $primary;
+	
+			.button__inner {
+				color: $white;
 			}
 		}
 	}

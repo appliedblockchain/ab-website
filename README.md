@@ -178,6 +178,7 @@ summary:
     * default image (explanation)
 * news special tag for link direct to external page
 * external news
+* Posts content structure
 
 
 ## Events

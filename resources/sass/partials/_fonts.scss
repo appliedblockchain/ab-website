@@ -44,16 +44,16 @@ html, body {
 	@include fontSize(1.8, $font-bold, normal);
 }
 
-.comment {
+.comment, .post__update {
 	@include fontSize(1.5, $font-light, normal);
 	text-transform: uppercase;
 }
 
-.quote {
+.quote, .post__quote {
 	@include fontSize(1.5, $font-light, normal);
 }
 
-.lead {
+.lead, .post__title {
 	@include fontSize(1.5, $font-regular, normal);
 	color: $primary;
 }
@@ -68,6 +68,28 @@ html, body {
 	}
 	&--bold {
 		font-weight: $font-bold;
+	}
+}
+
+.post {
+
+	&__headline {
+		line-height: 1.5;
+		font-size: 1.5rem;
+		font-weight: $font-bold;
+	}
+
+	&__title {
+		font-size: 1.8rem;
+	}
+
+	&__subtitle {
+		font-size: 1.5rem;
+	}
+
+	&__content {
+		line-height: 1.5;
+		font-size: 1.25rem;
 	}
 }
 

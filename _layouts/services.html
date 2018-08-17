@@ -26,14 +26,14 @@
                         <div class="solutions__background">
                             <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/solutions/{{ item.icon }}.svg" alt="" class="solutions__icon">
                         </div>
-                        <h2 class="comment">{{ item.title }}</h2>
                     </a>
-                {% endfor %}
-            </div>
-            <div class="tab__content solutions__item">
-                <!-- edit data in _data/solutions.yml -->
-                {% for item in site.data.solutions %}
+                    {% endfor %}
+                </div>
+                <div class="tab__content solutions__item">
+                    <!-- edit data in _data/solutions.yml -->
+                    {% for item in site.data.solutions %}
                     <div id="{{ item.id }}" class="tab__item solutions__item">
+                        <h2 class="solutions__title comment">{{ item.title }}</h2>
                         <p class="solutions__text">{{ item.text }}</p>
                     </div>
                 {% endfor %}
@@ -69,7 +69,7 @@
                                 <p class="approach__title lead">{{ item.title }}</p>
                                 <p class="approach__text">{{ item.text }}</p>
                             </div>
-                            <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="apprach__icon">
+                            <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="approach__icon">
                         </div>
                     </div>
                 {% endfor %}
@@ -118,12 +118,10 @@
                             <p class="projectGrid__subtitle body--bold">{{ item.subtitle }}</p>
                             <p class="label">Industry</p>
                             <p>{{ item.industry }}</p>
-                            <p class="label">Technology</p>
-                            <p>{{ item.technology }}</p>    
+                            {% if item.summary %}
+                                <p class=" projectGrid__summary">{{ item.summary }}</p>
+                            {% endif %}
                         </div>
-                        <a href="{{ item.link-url }}" class="projectGrid__button button button--primary button--small button--animate fa fa-map-marker-alt">
-                            <p class="button__inner">{{ item.link-title }}</p>
-                        </a>
                     </div>
                 </div>
             {% endfor %}

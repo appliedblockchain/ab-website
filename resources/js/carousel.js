@@ -52,18 +52,26 @@ $('.owl-carousel-technology').owlCarousel({
 			margin: 5
         },
         450: {
-			items: 3,
+			items: 2,
 			margin: 10
         },
 		620: {
-			items: 4,
+			items: 3,
 			margin: 10
         },
         767: {
+			items: 4,
+			margin: 20
+        },
+        960: {
 			items: 5,
 			margin: 20
         },
-        1080: {
+        1200: {
+			items: 6,
+			margin: 20
+        },
+        1400: {
 			items: 7,
 			margin: 20
         }

@@ -448,7 +448,6 @@ li + li {
 .image-inline {
 
     &__item {
-		margin-top: $integer;
 		padding: 0 $integer*2;
 		@include responsive(max-width, $break-phones-max) {
 			padding-left: $integer;

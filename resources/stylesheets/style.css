@@ -4977,8 +4977,12 @@ li + li {
  * JOIN
  * —————————————————————————————————————————————————————————————————
 */
-@media (max-width: 768px) {
-  /* line 13, ../sass/pages/_faq.scss */
+/* line 13, ../sass/pages/_faq.scss */
+.faq .section__header {
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  /* line 17, ../sass/pages/_faq.scss */
   .faq__column:nth-child(2) {
     margin-top: 60px;
   }

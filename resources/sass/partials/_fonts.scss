@@ -33,11 +33,17 @@ html, body {
 .headline {
 	@include fontSize(3, $font-black, normal);
 	text-transform: uppercase;
+	@include responsive(max-width, $break-tablets-max) {
+		font-size: 2.5rem;
+	}
 }
 
 .title {
 	@include fontSize(2.5, $font-bold, normal);	
 	color: $primary;
+	@include responsive(max-width, $break-tablets-max) {
+		font-size: 2rem;
+	}
 }
 
 .subtitle {
@@ -51,6 +57,9 @@ html, body {
 
 .quote, .post__quote {
 	@include fontSize(1.5, $font-light, normal);
+	@include responsive(max-width, $break-tablets-max) {
+		font-size: 1.25rem;
+	}
 }
 
 .lead, .post__title {

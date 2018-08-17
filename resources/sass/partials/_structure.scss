@@ -258,6 +258,10 @@ li + li {
 	@include flex-direction(column);
 	text-align: center;
 	padding: $integer*6 $col*2;
+	@include responsive(max-width, $break-tablets-max) {
+		padding-left: $col;
+		padding-right: $col;
+	}
 
 	&__header {
 		@include display-flex();
@@ -330,6 +334,10 @@ li + li {
 		.section__header {
 			padding-right: $col;
 			padding-left: $col;
+			@include responsive(max-width, $break-tablets-max) {
+				padding-right: 0;
+				padding-left: 0;
+			}
 		}
 	}
 

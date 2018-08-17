@@ -4910,11 +4910,18 @@ li + li {
   background-image: -webkit-linear-gradient(top, #007bff, rgba(0, 86, 179, 0.8));
   background-image: linear-gradient(to bottom, #007bff, rgba(0, 86, 179, 0.8));
 }
-/* line 46, ../sass/pages/_contact.scss */
+@media (max-width: 768px) {
+  /* line 21, ../sass/pages/_contact.scss */
+  .office__item {
+    padding-right: 12.5vw !important;
+    padding-left: 12.5vw !important;
+  }
+}
+/* line 51, ../sass/pages/_contact.scss */
 .office__item > * {
   position: relative;
 }
-/* line 51, ../sass/pages/_contact.scss */
+/* line 56, ../sass/pages/_contact.scss */
 .office__title {
   margin-bottom: 40px;
 }

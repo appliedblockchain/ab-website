@@ -212,3 +212,5 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 * An image diesn't appear
     * Check file extension
 
+### Logo carousels
+* image size, difference between regular and alt version

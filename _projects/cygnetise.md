@@ -32,27 +32,27 @@ results:
     Cygnetise’s successful implementation of their product to enterprises and startups has made processes more efficient, transparent and cost-effective.
 
 results-content:
-    <div class="results__item image-inline__item col--2">
+    <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-cog.svg" alt="" class="results__image image-inline__image">
         <p class="body--bold">Transparency</p>
     </div>
-    <div class="results__item image-inline__item col--2">
+    <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-coin.svg" alt="" class="results__image image-inline__image">
         <p class="body--bold">Enhanced security</p>
     </div>
-    <div class="results__item image-inline__item col--2">
+    <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-lock.svg" alt="" class="results__image image-inline__image">
         <p class="body--bold">Improved traceability</p>
     </div>
-    <div class="results__item image-inline__item col--2">
+    <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-security.svg" alt="" class="results__image image-inline__image">
         <p class="body--bold">Speed and Efficiency</p>
     </div>
-    <div class="results__item image-inline__item col--2">
+    <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-traceability.svg" alt="" class="results__image image-inline__image">
         <p class="body--bold">Reduced costs</p>
     </div>
-    <div class="results__item image-inline__item col--2">
+    <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-transparency.svg" alt="" class="results__image image-inline__image">
         <p class="body--bold">Fraud mitigation</p>
     </div>

@@ -4928,16 +4928,34 @@ li + li {
   display: -webkit-flex;
   display: flex;
 }
-/* line 19, ../sass/pages/_events.scss */
-.event__image {
-  width: 33.333%;
+/* line 18, ../sass/pages/_events.scss */
+.event__item + .event__item {
+  border-top: 1px solid #d7d7dc;
 }
 /* line 23, ../sass/pages/_events.scss */
+.event__image {
+  -webkit-flex-basis: 33.333%;
+  flex-basis: 33.333%;
+}
+@media (max-width: 576px) {
+  /* line 23, ../sass/pages/_events.scss */
+  .event__image {
+    display: none;
+  }
+}
+/* line 30, ../sass/pages/_events.scss */
 .event__content {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-flex-basis: 66.666%;
+  flex-basis: 66.666%;
   padding: 40px;
   text-align: left;
+}
+@media (max-width: 576px) {
+  /* line 30, ../sass/pages/_events.scss */
+  .event__content {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+  }
 }
 
 /* 

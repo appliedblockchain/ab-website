@@ -490,6 +490,9 @@ li + li {
 
 	&-name {
 		fill: $black;
+		@include responsive(max-width, $break-phones-max) {
+			display: none;
+		}
 
 		.footer__logo & {
 			fill: $white;
@@ -579,7 +582,7 @@ li + li {
 		@include display-flex();
 	}
 
-	.button--primary {
+	.button--primary.alt {
 		background-color: $white;
 
 		.button__inner {

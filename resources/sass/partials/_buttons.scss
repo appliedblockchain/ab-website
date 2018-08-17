@@ -176,6 +176,8 @@
 
 .button--menu {
 	@include animation(button--menu--opacity 0.8s ease 0s);
+	position: relative;
+	display: block !important;
 	overflow: visible;
 	width: $integer*1.5;
 	height: $integer*1.5;
@@ -190,7 +192,6 @@
 
 	&:before, &:after, .button__inner {
 		background-color: $black;
-		
 	}
 
 	&.alt {
@@ -218,7 +219,7 @@
 	}
 
 	.button__inner {
-		@include transform(translateY(-2px));
+		@include transform(translateY(-1px));
 		@include transition(opacity 0s ease 0.4s);
 		@include border-radius(0.15rem);
 		width: $integer*1.5;

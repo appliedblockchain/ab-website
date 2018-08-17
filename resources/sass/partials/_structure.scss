@@ -539,6 +539,10 @@ li + li {
 		@include justify-content(space-between);
 		height: $integer*8;
 		padding: 0 $col;
+
+		.button + .button {
+			margin-left: $integer;
+		}
 	}
 
 	&__logo {
@@ -569,6 +573,10 @@ li + li {
 				fill: $white;
 			}
 		}
+	}
+
+	&__button {
+		@include display-flex();
 	}
 
 	&__menu {

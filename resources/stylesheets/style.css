@@ -5672,57 +5672,52 @@ li + li {
  * PRIVACY POLICY
  * —————————————————————————————————————————————————————————————————
 */
-/* line 11, ../sass/pages/_privacy-policy.scss */
-.privacy {
-  padding-right: 12.5vw;
-  padding-left: 12.5vw;
-}
-/* line 15, ../sass/pages/_privacy-policy.scss */
+/* line 13, ../sass/pages/_privacy-policy.scss */
 .privacy .anchor {
   position: initial;
   display: inherit;
   height: auto;
 }
-/* line 21, ../sass/pages/_privacy-policy.scss */
+/* line 19, ../sass/pages/_privacy-policy.scss */
 .privacy ul {
   margin-left: 0;
 }
-/* line 25, ../sass/pages/_privacy-policy.scss */
+/* line 23, ../sass/pages/_privacy-policy.scss */
 .privacy__list {
   /* Creates a new instance of the section counter with each ol element */
   counter-reset: section;
   list-style-type: none;
 }
-/* line 33, ../sass/pages/_privacy-policy.scss */
+/* line 31, ../sass/pages/_privacy-policy.scss */
 .privacy__item:before {
   /* Increments only this instance of the section counter */
   counter-increment: section;
   /* Combines the values of all instances of the section counter, separated by a period */
   content: counters(section,".") ". ";
 }
-/* line 41, ../sass/pages/_privacy-policy.scss */
+/* line 39, ../sass/pages/_privacy-policy.scss */
 .privacy__title {
   padding-top: 120px;
   padding-bottom: 20px;
 }
-/* line 46, ../sass/pages/_privacy-policy.scss */
+/* line 44, ../sass/pages/_privacy-policy.scss */
 .privacy__subtitle {
   padding-top: 60px;
   padding-bottom: 20px;
 }
-/* line 50, ../sass/pages/_privacy-policy.scss */
+/* line 48, ../sass/pages/_privacy-policy.scss */
 .privacy__subtitle.alt {
   padding-top: 0;
 }
-/* line 55, ../sass/pages/_privacy-policy.scss */
+/* line 53, ../sass/pages/_privacy-policy.scss */
 .privacy__content {
   list-style: none;
 }
-/* line 59, ../sass/pages/_privacy-policy.scss */
+/* line 57, ../sass/pages/_privacy-policy.scss */
 .privacy__line {
   padding-top: 0;
 }
-/* line 62, ../sass/pages/_privacy-policy.scss */
+/* line 60, ../sass/pages/_privacy-policy.scss */
 .privacy__line + .privacy__line {
   margin-top: 20px;
 }

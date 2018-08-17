@@ -15,7 +15,7 @@
         <div class="image-inline row">
             <!-- edit data in _data/images.yml -->
             {% for item in site.data.images.join %}
-                <div class="image-inline__item col--md3">
+                <div class="image-inline__item col--lg3 col--sm6">
                     <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
                     <p>{{ item.alt }}</p>
                 </div>

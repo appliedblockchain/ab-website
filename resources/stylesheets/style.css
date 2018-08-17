@@ -682,31 +682,37 @@ optgroup {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 42, ../sass/partials/_accordions.scss */
+/* line 38, ../sass/partials/_accordions.scss */
 .accordion__title {
   width: 66.666%;
 }
-/* line 46, ../sass/partials/_accordions.scss */
+@media (max-width: 768px) {
+  /* line 42, ../sass/partials/_accordions.scss */
+  .accordion__type {
+    display: none;
+  }
+}
+/* line 48, ../sass/partials/_accordions.scss */
 .accordion__actions {
   display: -webkit-flex;
   display: flex;
 }
-/* line 50, ../sass/partials/_accordions.scss */
+/* line 52, ../sass/partials/_accordions.scss */
 .accordion__content {
   cursor: initial;
   display: none;
   padding-top: 0;
   padding-bottom: 30px;
 }
-/* line 58, ../sass/partials/_accordions.scss */
+/* line 60, ../sass/partials/_accordions.scss */
 .accordion__subtitle {
   padding: 15px 0;
 }
-/* line 61, ../sass/partials/_accordions.scss */
+/* line 63, ../sass/partials/_accordions.scss */
 .accordion__subtitle:nth-child(1) {
   padding-top: 0;
 }
-/* line 66, ../sass/partials/_accordions.scss */
+/* line 68, ../sass/partials/_accordions.scss */
 .accordion .lead {
   color: #007bff !important;
 }

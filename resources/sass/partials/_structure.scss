@@ -270,17 +270,18 @@ li + li {
 		margin-bottom: $integer*2;
 	}
 
-	&__title {
+	&__title, &__subtitle, &__desc {
 		width: 75%;
+		@include responsive(max-width, $break-desktop-max) {
+			width: 100%;
+		}
 	}
 	
 	&__subtitle {
-		width: 75%;
 		margin-top: $integer;
 	}
 
 	&__desc {
-		width: 75%;
 		margin-top: $integer;
 	}
 

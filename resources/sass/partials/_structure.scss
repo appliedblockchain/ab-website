@@ -402,7 +402,7 @@ li + li {
 
 		.section {
 
-			&__header {
+			&__header, &__content {
 				@include align-items(flex-start);
 			}
 		}

@@ -99,21 +99,32 @@
 
     <section class="section section--left section--grey" id="who-we-help">
 
-        <!-- edit component in _includes/components/section-header.html -->
-        {% include components/section-header.html
-            comment='Who we help'
-            title='We have developed blockchain solutions for over 30 clients – from startups to enterprises'
-            description='
-                We understand and appreciate functional, non-functional, and integration requirements that startups and enterprises experience and the challenges of delivering new, innovative technology to enterprise production supported environments. Our team comes with two decades of experience in designing, developing, and deploying solutions for global companies and for startups.
-                <br><br>As a startup we understand the value of iterative and agile innovation.'
-        %}
+        <div class="row">
 
-        <div class="section__content">
-            <a href="{{ site.baseurl }}/case-studies" class="button button--secondary button--large button--animate fas fa-fill">
-                <p class="button__inner">View case studies</p>
-            </a>
+            <div class="col--6 video">
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+            </div>
+
+            <div class="col--6">
+                
+                <!-- edit component in _includes/components/section-header.html -->
+                {% include components/section-header.html
+                    comment='Who we help'
+                    title='We have developed blockchain solutions for over 30 clients – from startups to enterprises'
+                    description='
+                    We understand and appreciate functional, non-functional, and integration requirements that startups and enterprises experience and the challenges of delivering new, innovative technology to enterprise production supported environments. Our team comes with two decades of experience in designing, developing, and deploying solutions for global companies and for startups.
+                    <br><br>As a startup we understand the value of iterative and agile innovation.'
+                %}
+                
+                <div class="section__content">
+                    <a href="{{ site.baseurl }}/case-studies" class="button button--secondary button--large button--animate fas fa-fill">
+                        <p class="button__inner">View case studies</p>
+                    </a>
+                </div>
+                
+            </div>
         </div>
-
+                
     </section>
 
     <section class="section section--block section--alt section--grey">

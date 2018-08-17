@@ -490,9 +490,6 @@ li + li {
 
 	&-name {
 		fill: $black;
-		@include responsive(max-width, $break-phones-max) {
-			display: none;
-		}
 
 		.footer__logo & {
 			fill: $white;
@@ -575,6 +572,12 @@ li + li {
 			.logo-name {
 				fill: $white;
 			}
+		}
+	}
+
+	.logo-name {
+		@include responsive(max-width, $break-phones-max) {
+			display: none;
 		}
 	}
 

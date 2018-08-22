@@ -19,42 +19,52 @@ delivery:
     <p>Applied Blockchain proposed decentralising control and building the authorised signatory database on a private blockchain.</p>
     <p>Applied Blockchain delivered an end-to-end solution from ground-up, where the signatory lists are managed and shared via a smart blockchain contract. The platform was designed to reduce admin work for the user, and to simplify collating and editing of the database.</p>
 
-example:
-    '<p class="body--bold">The platform enables the following:</p>
+delivery-text:
+    <p class="body--bold">The platform enables the following:</p>
     <ul>
     <li>Clients are able to create new signatory lists within minutes, and adding/removing individuals to multiple lists is a click-of-a-button away.</li>
     <li>A full, immutable audit trail shows what was changed and by whom – in real-time.</li>
     <li>Data is stored in a secure, private blockchain. </li>
     <li>The application makes managing external access to the signatory lists simple and GDPR compliant.</li>
-    </ul>'
+    </ul>
 
 results:
     Cygnetise’s successful implementation of their product to enterprises and startups has made processes more efficient, transparent and cost-effective.
 
+results-subtitle:
+    Cygnetise clients now benefit from
+
 results-content:
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-cog.svg" alt="" class="results__image image-inline__image">
-        <p class="body--bold">Transparency</p>
+        <p>Transparency</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-coin.svg" alt="" class="results__image image-inline__image">
-        <p class="body--bold">Enhanced security</p>
+        <p>Enhanced security</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-lock.svg" alt="" class="results__image image-inline__image">
-        <p class="body--bold">Improved traceability</p>
+        <p>Improved traceability</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-security.svg" alt="" class="results__image image-inline__image">
-        <p class="body--bold">Speed and Efficiency</p>
+        <p>Speed and Efficiency</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-traceability.svg" alt="" class="results__image image-inline__image">
-        <p class="body--bold">Reduced costs</p>
+        <p>Reduced costs</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
         <img src="/resources/images/icons/project/cygnetise/icon-transparency.svg" alt="" class="results__image image-inline__image">
-        <p class="body--bold">Fraud mitigation</p>
+        <p>Fraud mitigation</p>
     </div>
 
+results-comment:
+    'With automated processes and a user friendly-interface, managing authorised signatory lists is simple and efficient.  It also means that the data (signatory lists) are shared peer to peer through a decentralised distributed ledger, providing a much better digitised solution than utilising a 3rd party’s centralised database.  The customers keep complete control of their own data.'
+
+testimonial-id: stephen-pomfret
+testimonial-quote: Applied Blockchain are a market leader in building proof-of-concept blockchain applications. They have experience through a broad range of customers, so regardless of whether you are a small startup or large enterprise they are well equipped to deliver a solution.
+testimonial-name: Stephen Pomfret
+testimonial-job: CEO, Cygnetise
 ---

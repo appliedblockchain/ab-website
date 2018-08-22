@@ -5653,27 +5653,31 @@ li + li {
 }
 /* line 94, ../sass/pages/_project.scss */
 .summary__content {
+  -webkit-flex-basis: 66.666%;
+  flex-basis: 66.666%;
   text-align: left;
 }
-/* line 98, ../sass/pages/_project.scss */
+/* line 99, ../sass/pages/_project.scss */
 .summary__image {
+  -webkit-flex-basis: 33.333%;
+  flex-basis: 33.333%;
   width: 33.333%;
 }
 @media (max-width: 768px) {
-  /* line 98, ../sass/pages/_project.scss */
+  /* line 99, ../sass/pages/_project.scss */
   .summary__image {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 108, ../sass/pages/_project.scss */
+  /* line 110, ../sass/pages/_project.scss */
   .challenge__icon {
     display: none;
   }
 }
 
-/* line 115, ../sass/pages/_project.scss */
+/* line 117, ../sass/pages/_project.scss */
 .delivery {
   background-position: 101% -300px;
   -webkit-background-size: 300px;
@@ -5681,28 +5685,36 @@ li + li {
   background-repeat: no-repeat;
 }
 @media (max-width: 1024px) {
-  /* line 118, ../sass/pages/_project.scss */
+  /* line 120, ../sass/pages/_project.scss */
   .delivery__image {
     margin-top: 60px;
   }
 }
 
-/* line 127, ../sass/pages/_project.scss */
+/* line 129, ../sass/pages/_project.scss */
 .results__content {
-  padding: 80px 0;
+  padding-top: 80px;
 }
-/* line 131, ../sass/pages/_project.scss */
+/* line 133, ../sass/pages/_project.scss */
 .results__title {
   margin-bottom: 40px;
 }
-/* line 135, ../sass/pages/_project.scss */
+/* line 137, ../sass/pages/_project.scss */
 .results__item {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 140, ../sass/pages/_project.scss */
+/* line 142, ../sass/pages/_project.scss */
 .results__image {
   height: 160px;
+}
+/* line 146, ../sass/pages/_project.scss */
+.results__subtitle {
+  margin-bottom: 10px;
+}
+/* line 150, ../sass/pages/_project.scss */
+.results__comment {
+  padding-top: 80px;
 }
 
 /* 

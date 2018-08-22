@@ -29,10 +29,3 @@ investors:
     quote: We believe in the long-term promise and process innovation that blockchain brings and believe Applied Blockchain is strategically positioned to lead in this space.
     name: Remy Kesrouani
     job: Fund Manager and Partner at Calibrate 
-
-# individual testimonials for projects
-cygnetise:
-  - id: stephen-pomfret
-    quote: Applied Blockchain are a market leader in building proof-of-concept blockchain applications. They have experience through a broad range of customers, so regardless of whether you are a small startup or large enterprise they are well equipped to deliver a solution.
-    name: Stephen Pomfret
-    job: CEO, Cygnetise

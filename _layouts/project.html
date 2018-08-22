@@ -48,12 +48,12 @@
     <section class="section section--left section--grey delivery" style="background-image: url({{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale.svg);">
         <div class="row">
             <div class="col--xl7 col--lg9">
-                <h1 class="project__subtitle subtitle">The AB Delivery</h1>
+                <h1 class="project__subtitle subtitle">What Applied Blockchain Delivered</h1>
                 <div class="project__text body--large">{{ page.delivery }}</div>    
             </div>
             <div class="project__example project__text">
                 <div class="col--lg4">
-                    {{ page.example }}
+                    {{ page.delivery-text }}
                 </div>
                 <img src="{{ site.url }}{{ site.imageurl }}/projects/example/{{ page.slug }}.png" alt="{{ page.title }} example" class="coloffset--lg1 col--lg7 delivery__image">
             </div>
@@ -64,18 +64,30 @@
         <h1 class="project__subtitle subtitle">Results</h1>
         <div class="project__text coloffset--lg2 col--lg8 body--large">{{ page.results }}</div>
         <div class="results__content">
-            <p class="results__title lead">{{ page.title }} clients now benefit from :</p>
-            <div class="results__icons image-inline row">{{ page.results-content }}</div>
+            {% if page.results-subtitle %}
+                <p class="results__title lead">{{ page.results-subtitle }}</p>
+            {% endif %}
+            {% if page.results-content %}
+                <div class="results__icons image-inline row">{{ page.results-content }}</div>
+            {% endif %}
         </div>
-        <p class="coloffset--lg2 col--lg8">With automated processes and a user friendly-interface, managing authorised signatory lists is simple and efficient.  It also means that the data (signatory lists) are shared peer to peer through a decentralised distributed ledger, providing a much better digitised solution than utilising a 3rd party’s centralised database.  The customers keep complete control of their own data.</p>
+        {% if page.results-comment %}
+            <p class="coloffset--lg2 col--lg8 results__comment">{{ page.results-comment }}</p>
+        {% endif %}
     </section>
 
     <section class="section">
-        <!-- edit data in _data/testimonials.yml -->
-        {% for item in site.data.testimonials.cygnetise %}
-            <!-- edit component in _includes/components/testimonial.html -->
-            {% include components/testimonial.html %}
-        {% endfor %}
+        <div class="testimonial__item">
+            <div class="testimonial__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/testimonials/{{ page.testimonial-id }}.jpg);" alt="Portrait {{ page.testimonial-name }}"></div>
+            <div class="testimonial__content">
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
+                <p class="quote">{{ page.testimonial-quote }}</p>
+                <div class="testimonial__meta">
+                    <p class="body--bold">{{ page.testimonial-name }}</p>
+                    <p>{{ page.testimonial-job }}</p>
+                </div>
+            </div>
+        </div>
      </section>
 
 </div>

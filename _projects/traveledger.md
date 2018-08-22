@@ -1,6 +1,5 @@
 ---
 layout: project
-tag: featured
 
 title: Traveledger
 subtitle: Travel settlement platform built on blockchain technology

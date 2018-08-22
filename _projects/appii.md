@@ -1,6 +1,5 @@
 ---
 layout: project
-tag: featured
 
 title: APPII
 subtitle: World’s first blockchain career verification and background screening platform

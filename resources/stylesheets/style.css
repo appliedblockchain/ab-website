@@ -908,20 +908,20 @@ optgroup {
 
 /* line 169, ../sass/modules/_mixins.scss */
 .button--dark {
-  background-color: #000076;
-  border-color: #000076;
+  background-color: #161656;
+  border-color: #161656;
   color: #ffffff;
 }
 /* line 173, ../sass/modules/_mixins.scss */
 .button--dark-lighten {
-  background-color: #0000c3;
-  border-color: #0000c3;
+  background-color: #262693;
+  border-color: #262693;
   color: #ffffff;
 }
 /* line 178, ../sass/modules/_mixins.scss */
 .button--dark-darken {
-  background-color: #00002a;
-  border-color: #00002a;
+  background-color: #060619;
+  border-color: #060619;
   color: #ffffff;
 }
 
@@ -3791,7 +3791,7 @@ li + li {
 }
 /* line 391, ../sass/partials/_structure.scss */
 .section--dark {
-  background-color: #000076;
+  background-color: #161656;
   color: #ffffff;
 }
 /* line 395, ../sass/partials/_structure.scss */
@@ -3828,9 +3828,9 @@ li + li {
 */
 /* line 435, ../sass/partials/_structure.scss */
 .block {
-  -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 118, 0.05);
-  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 118, 0.05);
-  box-shadow: 0 0 30px 0 rgba(0, 0, 118, 0.05);
+  -moz-box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.05);
+  -webkit-box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.05);
+  box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.05);
   overflow: hidden;
   background-color: #ffffff;
   border-radius: 20px;
@@ -4023,9 +4023,9 @@ li + li {
 }
 /* line 605, ../sass/partials/_structure.scss */
 .header.js-scrolled {
-  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 118, 0.15);
+  -moz-box-shadow: 0 0 20px 0 rgba(22, 22, 86, 0.15);
+  -webkit-box-shadow: 0 0 20px 0 rgba(22, 22, 86, 0.15);
+  box-shadow: 0 0 20px 0 rgba(22, 22, 86, 0.15);
   height: 80px;
   background-color: #ffffff;
 }
@@ -5063,7 +5063,7 @@ li + li {
 }
 /* line 34, ../sass/pages/_index.scss */
 .landing__graphic--lines, .landing__graphic--circle {
-  opacity: 0.5;
+  /*opacity: 0.5;*/
   position: absolute;
 }
 /* line 39, ../sass/pages/_index.scss */
@@ -5933,7 +5933,7 @@ li + li {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background-color: #000076;
+  background-color: #161656;
   opacity: 0;
 }
 /* line 84, ../sass/pages/_services.scss */

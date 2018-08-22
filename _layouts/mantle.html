@@ -1,0 +1,35 @@
+{% include header.html %}
+
+<div class="page">
+
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        background-color='dark'
+        title='Mantle'
+        description=' Identity and privacy framework'
+        comment='A key element of public distributed ledger technologies is that anyone hosting a node on the network can view all confirmed transactions on that network. This level of transparency naturally creates a barrier to entry for enterprises and startups who wish to deploy blockchain applications but require an element of privacy in order to maintain their competitive advantage.'
+    %}
+    
+    <section class="section section--primary section--left">
+        
+        <div class="section__content row">
+        </div>
+        
+    </section>
+
+    <section class="section section--alt section--primary">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='The layers of Mantle include'
+        %}
+
+        <div class="section__content">
+            
+        </div>
+
+    </section>
+    
+</div>
+
+{% include footer.html %}

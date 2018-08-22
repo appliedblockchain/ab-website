@@ -6120,8 +6120,8 @@ li + li {
   margin-bottom: 20px;
 }
 /* line 219, ../sass/pages/_services.scss */
-.projectGrid .label {
-  margin-top: 5px;
+.projectGrid .body--bold {
+  margin-top: 10px;
 }
 /* line 223, ../sass/pages/_services.scss */
 .projectGrid__summary {

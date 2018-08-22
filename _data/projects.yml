@@ -8,6 +8,7 @@
     Aviation IT<br>
     Telecoms Multinational
   summary: Applied Blockchain has been commissioned by SITA, the world’s leading specialist in air transport communications and information technology for the aviation industry with a turnover of $1.6 Billion and 4,500 employees, to develop the world’s first distributed drone registry.
+  link: https://www.sita.aero/
 
 - url: babb
   name: BABB
@@ -16,6 +17,7 @@
     Financial Technology<br>
     Services
   summary: Applied Blockchain is working with BABB, a financial institution that is applying to become a social bank, to build the core banking infrastructure and a full-stack banking application on a private blockchain using smart contracts.
+  link: https://getbabb.com/
 
 - url: UN
   name: United Nations
@@ -24,6 +26,7 @@
     Biometrics<br>
     Remittance
   summary: Applied Blockchain has been engaged by Cygnetise to build a blockchain platform for the permissioned sharing and management of authorised signatory lists, where data is stored within smart contracts directly onto the blockchain.
+  link: http://www1.wfp.org
 
 - url: nuggets
   name: Nuggets
@@ -32,3 +35,4 @@
     Biometrics<br>
     Data privacy
   summary: Applied Blockchain is working with Nuggets, a consumer blockchain application giving users a single biometric tool for login, payment and identity verification, without sharing or storing private data.
+  link: https://nuggets.life/

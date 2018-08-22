@@ -27,26 +27,14 @@ technology:
   - url: bitcoin
     alt: Bitcoin
 
-  - url: chain
-    alt: Chain
-
   - url: corda
     alt: Corda
 
   - url: cosmos
     alt: Cosmos
 
-  - url: dash
-    alt: Dash
-
   - url: digital-asset
     alt: Digital Asset
-
-  - url: dragonchain
-    alt: Dragonchain
-
-  - url: enterprise-ethereum-alliance
-    alt: Enterprise Ethereum Alliance
 
   - url: eos
     alt: EOS
@@ -59,15 +47,6 @@ technology:
 
   - url: hyperledger-fabric
     alt: Hyperledger Fabric
-
-  - url: hyperledger
-    alt: Hyperledger
-
-  - url: ibm
-    alt: IBM
-
-  - url: iroha
-    alt: Iroha
 
   - url: neo
     alt: Neo
@@ -87,17 +66,11 @@ technology:
   - url: raiden
     alt: Raiden
 
-  - url: ripple
-    alt: Ripple
-
   - url: sawtooth
     alt: Sawtooth
 
   - url: stellar
     alt: Stellar
-
-  - url: swift
-    alt: Swift
 
   - url: tendermint
     alt: Tendermint

@@ -115,16 +115,23 @@
                     <div class="block projectGrid__inner tooltip__inner">
                         <div>
                             <p class="projectGrid__title lead">{{ item.name }}</p>
-                            <p class="projectGrid__subtitle body--bold">{{ item.subtitle }}</p>
-                            <p class="label">Industry</p>
+                            <p class="body--bold">Industry</p>
                             <p>{{ item.industry }}</p>
-                            {% if item.summary %}
-                                <p class=" projectGrid__summary">{{ item.summary }}</p>
-                            {% endif %}
+                            <p class="body--bold">Project</p>
+                            <p>{{ item.subtitle }}</p>
                         </div>
+                        <a href="{{ item.link }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
+                            <p class="button__inner">view Website</p>
+                        </a>
                     </div>
                 </div>
             {% endfor %}
+        </div>
+
+        <div class="section__link">
+            <a href="{{ site.url }}/case-studies" class="button button--large button--secondary button--animate fas fa-fill">
+                <p class="button__inner">view case studies</p>
+            </a>
         </div>
 
     </section>

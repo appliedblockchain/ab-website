@@ -90,7 +90,7 @@ $('.owl-carousel-testimonial').owlCarousel({
     margin: 100,
     autoplay: true,
     autoplayTimeout: 10000,
-    autoplayHoverPause: false,
+    autoplayHoverPause: true,
     smartSpeed: 2000,
 });
 

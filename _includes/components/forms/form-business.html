@@ -20,14 +20,26 @@
             <label for="" class="form__label">Current title</label>
             <input type="text" class="form__input" name="" id="" required="required">
         </div>
-        <div class="form__group col--lg6">
+        <div class="form__group col--xl2 col--lg6">
+            <label for="" class="form__label">Company size</label>
+            <select class="form__input" name="" id="" required="required">
+                <option value=""> — </option>
+                <option value="size-1">1-20</option>
+                <option value="size-2">21-50</option>
+                <option value="size-3">51-200</option>
+                <option value="size-4">201-1000</option>
+                <option value="size-5">1001-5000</option>
+                <option value="size-6">5001+</option>
+            </select>
+        </div>
+        <div class="form__group col--xl5 col--lg6">
             <label for="" class="form__label">Industry</label>
             <select class="form__input" name="" id="" required="required">
                 <!-- edit component in _includes/components/forms/input-industries.html -->
                 {% include components/forms/input-industries.html %}
             </select>
         </div>
-        <div class="form__group col--xl6">
+        <div class="form__group col--xl5 col--lg6">
             <label for="" class="form__label">Interested in</label>
             <select class="form__input" name="" id="" required="required">
                 <option value=""> — </option>

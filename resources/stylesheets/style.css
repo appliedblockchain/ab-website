@@ -1614,7 +1614,7 @@ html, body {
   position: absolute;
   right: 0;
   left: 0;
-  max-height: 200px;
+  max-height: 180px;
   overflow: scroll;
   z-index: 2;
   background-color: #ffffff;

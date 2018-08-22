@@ -13,24 +13,24 @@
 
         <div class="section__content tab tab--vertical event">
             <div class="section__filter tab__nav">
-                <a href="#past" class="nav__button nav__button--active button button--primary button--animate fa fa-fast-backward">
-                    <p class="button__inner">Past</p>
-                </a>
-                <a href="#upcoming" class="nav__button button button--primary button--animate fa fa-fast-forward">
+                <a href="#upcoming" class="nav__button nav__button--active button button--primary button--animate fa fa-fast-forward">
                     <p class="button__inner">Upcoming</p>
+                </a>
+                <a href="#past" class="nav__button button button--primary button--animate fa fa-fast-backward">
+                    <p class="button__inner">Past</p>
                 </a>
             </div>
             <div class="tab__content block event">
-                <div id="past" class="tab__item">
+                <div id="upcoming" class="tab__item">
                     <!-- edit data in _data/events.yml -->
-                    {% for event in site.data.events.past %}
+                    {% for event in site.data.events.upcoming %}
                         <!-- edit component in _includes/components/event.html -->
                         {% include components/event.html %}
                     {% endfor %}
                 </div>
-                <div id="upcoming" class="tab__item">
+                <div id="past" class="tab__item">
                     <!-- edit data in _data/events.yml -->
-                    {% for event in site.data.events.upcoming %}
+                    {% for event in site.data.events.past %}
                         <!-- edit component in _includes/components/event.html -->
                         {% include components/event.html %}
                     {% endfor %}

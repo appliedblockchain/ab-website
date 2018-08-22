@@ -3,15 +3,15 @@
 
 # for testimonial carousel on home.html page
 home:
-  - id: stephane-cheikh
-    quote: Applied Blockchain have always been very helpful by coming up with new concepts and new developments. They challenge you as a customer, they say “have you thought about this, have you thought about that?”. This has been very refreshing and I would definitely recommend Applied Blockchain.
-    name: Stephane Cheikh
-    job: Ventures & Innovation Manager, SITA
-
   - id: johan-krebbers
     quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
     name: Johan Krebbers
     job: Chief Technology Officer for IT, Shell Global Solutions International
+
+  - id: stephane-cheikh
+    quote: Applied Blockchain have always been very helpful by coming up with new concepts and new developments. They challenge you as a customer, they say “have you thought about this, have you thought about that?”. This has been very refreshing and I would definitely recommend Applied Blockchain.
+    name: Stephane Cheikh
+    job: Ventures & Innovation Manager, SITA
 
   - id: stephen-pomfret
     quote: Applied Blockchain feel the passion for your business. They actually like to get involved, they feel excited about what you’re doing, being a part of it and advise accordingly.

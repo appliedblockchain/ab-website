@@ -214,7 +214,7 @@ li + li {
 
 		&:before {		
 			@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-			@include background-image(linear-gradient(to bottom, rgba($primary, 0.8), $primary));
+			@include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary));
 		}
 	}
 }

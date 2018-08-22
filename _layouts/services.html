@@ -7,8 +7,7 @@
         background-color='primary'
         title='Services'
         description='We bring innovative solutions to problems businesses face today'
-        comment='We work with enterprises and startups across all verticals to design and develop blockchain solutions best suited to your needs. We work across the development stack. We advise, design, build, and deploy future proof blockchain applications. We work with you from the initial seed of your idea and continue to support you as you move into production and beyond.'
-
+        comment='We work with enterprises and startups across all verticals. We design and develop blockchain solutions best suited to your needs. We work across the development stack. We advise, design, build and deploy future-proof blockchain applications. We work with you from the initial seed of your idea and continue to support you as you move into production and beyond.'
     %}
 
     <section class="section section--alt section--primary">
@@ -25,6 +24,7 @@
                     <a href="#{{ item.id }}" class="nav__button {{ item.active }} solutions__button">
                         <div class="solutions__background">
                             <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/solutions/{{ item.icon }}.svg" alt="" class="solutions__icon">
+                            <h2 class="solutions__title lead">{{ item.title }}</h2>
                         </div>
                     </a>
                     {% endfor %}
@@ -32,8 +32,8 @@
                 <div class="tab__content solutions__item">
                     <!-- edit data in _data/solutions.yml -->
                     {% for item in site.data.solutions %}
-                    <div id="{{ item.id }}" class="tab__item solutions__item">
-                        <h2 class="solutions__title comment">{{ item.title }}</h2>
+                    <div id="{{ item.id }}" class="tab__item">
+                        <h2 class="solutions__title alt lead">{{ item.title }}</h2>
                         <p class="solutions__text">{{ item.text }}</p>
                     </div>
                 {% endfor %}

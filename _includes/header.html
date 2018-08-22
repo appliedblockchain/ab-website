@@ -64,7 +64,7 @@
 
 	<div class="header__bar">
 		<!-- to change the color of the logo, add the corresponding page title to the condition in the class tag -->
-		<div class="header__logo logo {% if page.title == 'Services' or page.title == 'Products' or page.title == 'About' or page.title == 'Join' %}logo-white{% endif %} {% if page.title == 'Home'  or page.title == 'Case studies' %}logo-name-white{% endif %}">
+		<div class="header__logo logo {% if page.title == 'Services' or page.title == 'Products' or page.title == 'About' or page.title == 'Join' %}logo-white{% endif %} {% if page.title == 'Home' or page.title == 'Mantle' or page.title == 'Case studies' %}logo-name-white{% endif %}">
 			<a href="{{ site.url }}/">
 				<!-- edit elements in _includes/elements/logo.html -->
 				{% include elements/logo.html %}
@@ -75,7 +75,7 @@
 			<a href="{{ site.url }}/contact" class="button button--small button--primary button--animate fas fa-phone {% if page.title == 'Services' or page.title == 'Products' or page.title == 'About' or page.title == 'Join' %}alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>
-			<a class="header__button button button--menu {% if page.title == 'Services' or page.title == 'Products' or page.title == 'About' or page.title == 'Join' or page.title == 'Home' or page.title == 'Case studies' %}alt{% endif %}">
+			<a class="header__button button button--menu {% if page.title == 'Services' or page.title == 'Products' or page.title == 'Mantle' or page.title == 'About' or page.title == 'Join' or page.title == 'Home' or page.title == 'Case studies' %}alt{% endif %}">
 				<span class="button__inner"></span>
 			</a>
 		</div>
@@ -104,7 +104,7 @@
 			<a href="{{ site.baseurl }}/products" class="col--lg4 col--md6 menu__button">
 				<p class="subtitle">Products</p>
 				<p class="menu__description">
-					<span>Explore our different products</span>
+					<span>BLockchain-based products</span>
 				</p>
 			</a>
 			<a href="{{ site.baseurl }}/about" class="col--lg4 col--md6 menu__button">
@@ -134,17 +134,23 @@
 			<a href="{{ site.baseurl }}/contact" class="col--lg4 col--md6 menu__button">
 				<p class="subtitle">Contact</p>
 				<p class="menu__description">
-					<span>Send us a message</span>
+					<span>Get in touch</span>
 				</p>
 			</a>
 		</div>
 		<div class="menu__row row">
 			<a href="{{ site.baseurl }}/faq" class="col--lg4 col--md6 menu__button">
 				<p class="body--large body--bold">FAQ</p>
-			</a>
+				<p class="menu__description body--small">
+					<span>Have questions?</span>
+				</p>
+				</a>
 			<a href="{{ site.baseurl }}/privacy-policy" class="col--lg4 col--md6 menu__button">
 				<p class="body--large body--bold">Privacy policy</p>
-			</a>
+				<p class="menu__description body--small">
+					<span>The legal bit</span>
+				</p>
+				</a>
 		</div>
 		<div class="menu__row row">
 			<div class="col--lg4">

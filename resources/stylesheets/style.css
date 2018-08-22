@@ -1839,10 +1839,11 @@ html, body {
   width: 20px;
   height: 20px;
   font-size: 0.7rem;
+  line-height: 0;
   opacity: 0;
 }
 
-/* line 330, ../sass/partials/_form.scss */
+/* line 331, ../sass/partials/_form.scss */
 .form__radio {
   display: -webkit-flex;
   display: flex;
@@ -1852,15 +1853,15 @@ html, body {
   flex-basis: 0;
   height: 40px;
 }
-/* line 336, ../sass/partials/_form.scss */
+/* line 337, ../sass/partials/_form.scss */
 .form__radio + .form__radio {
   margin-left: 20px;
 }
-/* line 342, ../sass/partials/_form.scss */
+/* line 343, ../sass/partials/_form.scss */
 .form__radio .form__input:checked + .form__label:before {
   border-width: 7px;
 }
-/* line 349, ../sass/partials/_form.scss */
+/* line 350, ../sass/partials/_form.scss */
 .form__radio .form__label:before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;

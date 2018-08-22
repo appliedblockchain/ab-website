@@ -446,20 +446,21 @@ li + li {
 }
 
 .image-inline {
+	margin-bottom: -$integer*2;
 
     &__item {
-		padding: 0 $integer*2;
-		@include responsive(max-width, $break-phones-max) {
-			padding-left: $integer;
-			padding-right: $integer;
-		}
+		padding: 0 $integer $integer*2 $integer;
     }
 
     &__image {
         background-size: contain;
         height: $integer*6;
         margin-bottom: $integer;   
-    }
+	}
+	
+	&__title {
+		margin-bottom: $integer/4;
+	}
 }
 
 

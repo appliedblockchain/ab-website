@@ -154,6 +154,42 @@ join:
   - url: clock
     alt: Flexible working hours
 
+# include section
+# in mantle.html page
+
+mantle:
+  - url: wallet
+    title: Wallet
+    alt: Generate and store private/public key pairs belonging to a user or to another entity, call Smart Contracts and sign transactions
+
+  - url: privacy
+    title: Privacy
+    alt: Compatible on most blockchain platforms, and allows private data to be encrypted and accessed by selected parties
+
+  - url: key
+    title: Key recovery
+    alt: Provides two different key recovery mechanisms
+
+  - url: independant
+    title: Platform independent
+    alt: Can be used on any blockchain application that supports smart contracts
+
+  - url: anonymity
+    title: Anonymity
+    alt: Cryptographic key issuance and storage to securely manage the identities of network members
+
+  - url: compliance
+    title: GDPR compliance
+    alt: Enables the “right to be forgotten”
+
+  - url: management
+    title: Enterprise key management
+    alt: Integration with AWS Key Management Service and Azure Key Vault
+
+  - url: ad
+    title: AD / LDAP
+    alt: Directory services integration
+
 # result section
 # in project.html page
 # each entry is for a different project

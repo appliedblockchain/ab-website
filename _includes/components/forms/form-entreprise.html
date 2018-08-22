@@ -12,20 +12,30 @@
             <label for="" class="form__label">Email</label>
             <input type="text" class="form__input" name="" id="" required="required">
         </div>
-        <div class="form__group col--xl4 col--lg6">
+        <div class="form__group col--lg6">
+            <label for="" class="form__label">Current company</label>
+            <input type="text" class="form__input" name="" id="" required="required">
+        </div>
+        <div class="form__group col--lg6">
+            <label for="" class="form__label">Current title</label>
+            <input type="text" class="form__input" name="" id="" required="required">
+        </div>
+        <div class="form__group col--lg6">
             <label for="" class="form__label">Industry</label>
             <select class="form__input" name="" id="" required="required">
                 <!-- edit component in _includes/components/forms/input-industries.html -->
                 {% include components/forms/input-industries.html %}
             </select>
         </div>
-        <div class="form__group col--xl4 col--lg6">
-            <label for="" class="form__label">Current company</label>
-            <input type="text" class="form__input" name="" id="" required="required">
-        </div>
-        <div class="form__group col--xl4 col--lg6">
-            <label for="" class="form__label">Current title</label>
-            <input type="text" class="form__input" name="" id="" required="required">
+        <div class="form__group col--xl6">
+            <label for="" class="form__label">Interested in</label>
+            <select class="form__input" name="" id="" required="required">
+                <option value=""> — </option>
+                <option value="development-services">Development services</option>
+                <option value="advisory-services">Advisory services</option>
+                <option value="products-mantle">Products: Mantle</option>
+                <option value="products-fern">Products: Fern</option>
+            </select>
         </div>
         <div class="form__group col--12">
             <label for="" class="form__label">Message</label>

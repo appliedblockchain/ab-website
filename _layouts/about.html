@@ -136,7 +136,7 @@
             <div class="tab__nav leadership__nav">
                 <!-- edit data in _data/testimonials.yml -->
                 {% for item in site.data.leadership %}
-                    <a href="#{{ item.slug }}" class="nav__button {{ item.active }} leadership__button">
+                    <a href="#{{ item.slug }}" class="nav__button {{ item.active }} leadership__button hover-grayscale">
                         <div class="block leadership__portrait background--cover"  style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
                         <p class="body--bold body--large">{{ item.name | truncatewords: 1, "" }}</p>
                         <p>{{ item.division }}</p>

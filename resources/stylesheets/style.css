@@ -4805,48 +4805,53 @@ li + li {
   }
 }
 /* line 214, ../sass/pages/_about.scss */
+.leadership .nav__button--active {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+/* line 218, ../sass/pages/_about.scss */
 .leadership__button {
   width: 200px;
 }
 @media (max-width: 1024px) {
-  /* line 214, ../sass/pages/_about.scss */
+  /* line 218, ../sass/pages/_about.scss */
   .leadership__button {
     width: 140px;
   }
 }
 @media (max-width: 768px) {
-  /* line 214, ../sass/pages/_about.scss */
+  /* line 218, ../sass/pages/_about.scss */
   .leadership__button {
     width: 100px;
   }
 }
-/* line 224, ../sass/pages/_about.scss */
+/* line 228, ../sass/pages/_about.scss */
 .leadership__portrait {
   width: 160px;
   height: 160px;
   margin: 0 auto 20px auto;
 }
 @media (max-width: 1024px) {
-  /* line 224, ../sass/pages/_about.scss */
+  /* line 228, ../sass/pages/_about.scss */
   .leadership__portrait {
     width: 120px;
     height: 120px;
   }
 }
 @media (max-width: 768px) {
-  /* line 224, ../sass/pages/_about.scss */
+  /* line 228, ../sass/pages/_about.scss */
   .leadership__portrait {
     width: 80px;
     height: 80px;
   }
 }
 
-/* line 239, ../sass/pages/_about.scss */
+/* line 243, ../sass/pages/_about.scss */
 .team {
   position: relative;
   height: 600px;
 }
-/* line 243, ../sass/pages/_about.scss */
+/* line 247, ../sass/pages/_about.scss */
 .team:before {
   content: "";
   position: absolute;
@@ -4858,7 +4863,7 @@ li + li {
   height: 100%;
   background-color: rgba(0, 123, 255, 0.7);
 }
-/* line 248, ../sass/pages/_about.scss */
+/* line 252, ../sass/pages/_about.scss */
 .team__button {
   -webkit-align-self: center;
   align-self: center;

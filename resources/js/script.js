@@ -39,5 +39,26 @@ $('.button--menu').click(function(){
 
 
 // —————————————————————————————————————————————————————————————————
+// BACK TO TOP
+// —————————————————————————————————————————————————————————————————
+
+var btn = $('.button--scroll-top');
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 1000) {
+		btn.addClass('js-show');
+	} else {
+		btn.removeClass('js-show');
+	}
+});
+
+btn.on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, '400');
+});
+
+
+
+// —————————————————————————————————————————————————————————————————
 
 });

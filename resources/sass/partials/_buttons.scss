@@ -12,6 +12,7 @@
  * size
  * close
  * menu
+ * scroll to top
  * —————————————————————————————————————————————————————————————————
 */
 
@@ -37,7 +38,7 @@
 
 	&__inner {
 		@include transform-style(preserve-3d);
-		@include backface-visibility (hidden);
+		@include backface-visibility (initial);
 		@include transition (color $transition, transform $transition);
 		display: block;
 		text-transform: uppercase;
@@ -243,4 +244,31 @@
 			opacity: 0;
 		}
 	}
+}
+
+
+
+/*
+ * scroll to top
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.button--scroll-top {
+	@include transition(bottom $transition, transform $transition);
+	@include calc(right, $col' - '$integer);
+    position: fixed;
+	bottom: -$integer*4;
+
+	&.js-show {
+		bottom: $integer*2;
+		@include responsive(max-width, $break-tablets-max) {
+			right: $integer;
+			bottom: $integer;
+		}
+	}
+
+	&:hover {
+		@include transform(translateY(-$integer/4));
+	}
+
 }

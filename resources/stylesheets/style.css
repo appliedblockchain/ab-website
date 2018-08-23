@@ -4088,7 +4088,7 @@ li + li {
 
 /* line 678, ../sass/partials/_structure.scss */
 .menu__row + .menu__row {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 /* line 683, ../sass/partials/_structure.scss */
 .menu__inner {
@@ -4380,6 +4380,7 @@ li + li {
  * WIDGETS
  * —————————————————————————————————————————————————————————————————
  * general
+ * social
  * newsletter
  * hiring
  * news
@@ -4389,16 +4390,25 @@ li + li {
  * general
  * —————————————————————————————————————————————————————————————————
 */
-/* line 23, ../sass/partials/_widgets.scss */
+/* line 24, ../sass/partials/_widgets.scss */
 .widget {
   position: relative;
+}
+
+/*
+ * social
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 35, ../sass/partials/_widgets.scss */
+.social {
+  margin-bottom: 40px;
 }
 
 /*
  * newsletter
  * —————————————————————————————————————————————————————————————————
 */
-/* line 36, ../sass/partials/_widgets.scss */
+/* line 48, ../sass/partials/_widgets.scss */
 .newsletter__button {
   margin-top: 10px;
 }
@@ -4407,7 +4417,7 @@ li + li {
  * hiring
  * —————————————————————————————————————————————————————————————————
 */
-/* line 50, ../sass/partials/_widgets.scss */
+/* line 62, ../sass/partials/_widgets.scss */
 .widget__hiring {
   display: -webkit-flex;
   display: flex;
@@ -4416,7 +4426,7 @@ li + li {
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
-  /* line 50, ../sass/partials/_widgets.scss */
+  /* line 62, ../sass/partials/_widgets.scss */
   .widget__hiring {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -4424,19 +4434,19 @@ li + li {
     align-items: flex-start;
   }
 }
-/* line 59, ../sass/partials/_widgets.scss */
+/* line 71, ../sass/partials/_widgets.scss */
 .widget__hiring .subtitle {
   margin-right: 20px;
   white-space: nowrap;
 }
 @media (max-width: 768px) {
-  /* line 59, ../sass/partials/_widgets.scss */
+  /* line 71, ../sass/partials/_widgets.scss */
   .widget__hiring .subtitle {
     margin-right: 0;
     margin-bottom: 10px;
   }
 }
-/* line 68, ../sass/partials/_widgets.scss */
+/* line 80, ../sass/partials/_widgets.scss */
 .widget__hiring .button {
   min-width: 190px;
 }
@@ -4445,7 +4455,7 @@ li + li {
  * hiring
  * —————————————————————————————————————————————————————————————————
 */
-/* line 85, ../sass/partials/_widgets.scss */
+/* line 97, ../sass/partials/_widgets.scss */
 .widget__news {
   display: -webkit-flex;
   display: flex;
@@ -4459,20 +4469,20 @@ li + li {
   color: #ffffff;
 }
 @media (max-width: 768px) {
-  /* line 85, ../sass/partials/_widgets.scss */
+  /* line 97, ../sass/partials/_widgets.scss */
   .widget__news {
     display: none;
   }
 }
-/* line 97, ../sass/partials/_widgets.scss */
+/* line 109, ../sass/partials/_widgets.scss */
 .widget__news > p {
   padding-right: 20px;
 }
-/* line 101, ../sass/partials/_widgets.scss */
+/* line 113, ../sass/partials/_widgets.scss */
 .widget__news .button {
   min-width: 110px;
 }
-/* line 108, ../sass/partials/_widgets.scss */
+/* line 120, ../sass/partials/_widgets.scss */
 .widget .news__content {
   width: -webkit-calc(100% - 130px);
   width: calc(100% - 130px);

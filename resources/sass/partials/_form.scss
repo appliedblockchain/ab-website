@@ -10,7 +10,6 @@
  * required
  * select
  * file
- * switch
  * checkbox & radio
  * —————————————————————————————————————————————————————————————————
 */
@@ -69,6 +68,7 @@
 	&__label {
 		@include transition(color $transition);
 		@include textOverflow(ellipsis);
+		will-change: color;
 		cursor: pointer;
 		display: block;
 		overflow: hidden;
@@ -79,9 +79,10 @@
 	}
 
 	&__input {
-    	@include transition(border $transition);
+		@include transition(border $transition);
 		@include textOverflow(ellipsis);
 		@include border-radius(20px !important);
+		will-change: border;
 		width: 100%;
 		background-color: transparent;
 		padding: 10px $integer*0.75 8px $integer*0.75;
@@ -127,6 +128,7 @@
 		@include transition(color $transition);
 		@include display-flex();
 		@include align-items(center);
+		will-change: color;
 		height: 100%;
 		font-size: 1.2rem;
 		pointer-events: none;
@@ -149,6 +151,7 @@
 
 		li {
 			@include transition(color $transition);
+			will-change: color;
 			margin: 0;
 			padding: 9px $integer*0.75;
 			cursor: pointer;
@@ -205,59 +208,6 @@
 
 
 /*
- * switch
- * —————————————————————————————————————————————————————————————————
-*/
-
-.switch {
-
-	&__label {
-		position: relative;
-		display: inline-block;
-		width: 40px;
-	}
-
-	&__input {
-		display:none;
-
-		&:checked + .switch__slider {
-			background-color: $primary;
-		}
-
-		&:checked + .switch__slider:before {
-			@include transform(translateX(22px));
-		}
-	}
-
-	&__slider {
-		position: absolute;
-		cursor: pointer;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		@include transition(background $transition);
-
-		&:before {
-			background-color: white;
-			@include pseudo-element('', auto, auto, 3px, 3px, 11px, 11px);
-			@include transition(transform $transition);
-			@include transition(-webkit-transform $transition);
-		}
-	}
-
-	&__slider--round {
-		@include border-radius(34px);
-
-		&:before {
-			@include border-radius(50%);
-		}	
-	}
-}
-
-
-
-/*
  * checkbox & radio
  * —————————————————————————————————————————————————————————————————
 */
@@ -290,6 +240,7 @@
 			@include pseudo-element('', -1px, auto, auto, 0, $integer, $integer);
 			@include box-sizing(border-box);
 			@include transition(border 0.4s ease 0s);
+			will-change: border;
 			border: 2px solid $mediumgrey;
 		}
 	}
@@ -320,6 +271,7 @@
 			@include align-items(center);
 			@include justify-content(center);
 			@include fontAwesome("\f00c", 0, auto, auto, 0, $white);
+			will-change: opacity;
 			width: $integer;
 			height: $integer;
 			font-size: 0.7rem;

@@ -30,6 +30,7 @@
 	@include justify-content(center);
 	@include align-items(center);
 	@include align-self(center);
+	will-change: background-color, transform;
 	cursor: pointer;
 	padding: 12px 24px;
 	overflow: hidden;
@@ -40,6 +41,7 @@
 		@include transform-style(preserve-3d);
 		@include backface-visibility (initial);
 		@include transition (color $transition, transform $transition);
+		will-change: color, transform;
 		display: block;
 		text-transform: uppercase;
 	}
@@ -56,6 +58,7 @@
 	
 	&--text {
 		@include transition(transform $transition);
+		will-change: transform;
 		padding: $integer/4 0;
 
 		&:hover {
@@ -94,6 +97,7 @@
 	@include display-flex(inline-flex);
 	@include align-items(center);
 	@include justify-content(center);
+	will-change: transform;
 	text-align: center;
 	background-color: transparent;
 }
@@ -171,6 +175,7 @@
 		background-color: $black;
 		@include transform(rotate(0deg));
 		@include transition (transform $transition);
+		will-change: transform;
 		@include border-radius(0.15rem);
 		@include pseudo-element('', 50%, auto, auto, auto, 30px, 5px);
 	}
@@ -227,6 +232,7 @@
 		@include transition(transform $transition);
 		@include border-radius(0.15rem);
 		@include pseudo-element('', 50%, auto, auto, 0, 30px, 5px);
+		will-change: transform;
 		margin-top: -4px;
 	}
 
@@ -244,6 +250,7 @@
 		@include transform(translateY(-1px));
 		@include transition(opacity 0s ease 0.4s);
 		@include border-radius(0.15rem);
+		will-change: opacity;
 		width: $integer*1.5;
 		height: 5px;
 		position: absolute;
@@ -277,6 +284,7 @@
 .button--scroll-top {
 	@include transition(bottom $transition, transform $transition);
 	@include calc(right, $col' - '$integer);
+	will-change: bottom, transform;
     position: fixed;
 	bottom: -$integer*4;
 

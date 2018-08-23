@@ -241,6 +241,7 @@ li + li {
 .hover-grayscale {
 	@include filter(grayscale(100%));
 	@include transition(filter, $transition);
+	will-change: filter;
 	
 	@include hoverLink {
 		@include filter(grayscale(0%));
@@ -529,6 +530,7 @@ li + li {
 
 .header {
 	@include transition(height $transition, background-color $transition, box-shadow $transition, padding-top $transition, padding-bottom $transition);
+	will-change: height, background-color, box-shadow, padding-top, padding-bottom;
 	overflow: hidden;
 	position: fixed;
 	height: $integer*8;
@@ -539,6 +541,7 @@ li + li {
 		@include display-flex();
 		@include align-items(center);
 		@include justify-content(space-between);
+		will-change: height;
 		height: $integer*8;
 		padding: 0 $col;
 
@@ -549,6 +552,7 @@ li + li {
 
 	&__logo {
 		@include transition(height $transition, width $transition);
+		will-change: height, width;
 		width: $integer*15;
 
 		&.logo-white {
@@ -623,6 +627,7 @@ li + li {
 
 	&.js-opened {
 		@include transition(height $transition, background-color $transition);
+		will-change: height, background-color;
 		height: 100vh;
 		background-color: $white;
 
@@ -722,6 +727,7 @@ li + li {
 		span {
 			@include transition(transform $transition);
 			@include transform(translateY(-100%));
+			will-change: transform;
 			display: block;
 		}
 	}

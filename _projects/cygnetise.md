@@ -21,10 +21,14 @@ delivery:
 delivery-text:
     <p class="body--bold">The platform enables the following:</p>
     <ul>
-    <li>Clients are able to create new signatory lists within minutes, and adding/removing individuals to multiple lists is a click-of-a-button away.</li>
-    <li>A full, immutable audit trail shows what was changed and by whom – in real-time.</li>
-    <li>Data is stored in a secure, private blockchain. </li>
-    <li>The application makes managing external access to the signatory lists simple and GDPR compliant.</li>
+        <div class="col--xl4 col--lg6 col--md8">
+            <li>Clients are able to create new signatory lists within minutes, and adding/removing individuals to multiple lists is a click-of-a-button away.</li>
+            <li>A full, immutable audit trail shows what was changed and by whom – in real-time.</li>
+        </div>
+        <div class="col--xl4 col--lg6 col--md8">
+            <li>Data is stored in a secure, private blockchain. </li>
+            <li>The application makes managing external access to the signatory lists simple and GDPR compliant.</li>
+        </div>
     </ul>
 
 results:

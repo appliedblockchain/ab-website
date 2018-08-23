@@ -3,6 +3,21 @@
 <div class="page project">
 
     <div class="section section--header section--left project__header">
+        <div class="project__nav">
+            <a href="{{ site.url }}/case-studies" class="button button--small button--primary button--animate fas fa-fill">
+                <p class="button__inner">Back</p>
+            </a>
+            {% if page.previous.url %}
+                <a href="{{ page.previous.url }}" class="button button--small button--stroke button--primary button--animate fas fa-chevron-left">
+                    <p class="button__inner">Previous</p>
+                </a>
+            {% endif %}
+            {% if page.next.url %}
+                <a href="{{ page.next.url }}" class="button button--small button--stroke button--primary button--animate fas fa-chevron-right">
+                    <p class="button__inner">Next</p>
+                </a>
+            {% endif %}
+        </div>
         <div class="row">
             <h1 class="col--lg7 project__title title">
                 {{ page.title }}:
@@ -12,10 +27,6 @@
                 <div class="meta__item body--large">
                     <p class="meta__title body--bold">Industry</p>
                     <p>{{ page.industry }}</p>
-                </div>
-                <div class="meta__item body--large">
-                    <p class="meta__title body--bold">Technology</p>
-                    <p>{{ page.technology }}</p>
                 </div>
                 <div class="meta__item body--large">
                     <p class="meta__title body--bold">Deliverables</p>

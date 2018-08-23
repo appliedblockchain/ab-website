@@ -68,7 +68,20 @@
 	}
 }
 
+.button--stroke {
+	padding: 10px 22px;
 
+	&.button {
+
+		&--large {
+			padding: 16px 34px;
+		}
+
+		&--small {
+			padding: 4px 13px;
+		}
+	}
+}
 
 /*
  * animate
@@ -99,12 +112,20 @@
  * —————————————————————————————————————————————————————————————————
 */
 
-@include button-color('button--',
-//	prefix 			background & border	 color
+@include button-fill-color('button--',
+//	prefix 			background	 color
 	'primary'   	$primary 			$white,
 	'secondary' 	$secondary			$white,
 	'highlight' 	$highlight			$white,
 	'dark' 			$dark 				$white
+);
+
+@include button-stroke-color('button--stroke.button--',
+//	prefix 			border-color	 	color
+	'primary'   	$primary 			$black,
+	'secondary' 	$secondary			$black,
+	'highlight' 	$highlight			$black,
+	'dark' 			$dark 				$black
 );
 
 

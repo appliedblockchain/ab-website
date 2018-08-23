@@ -4516,12 +4516,19 @@ li + li {
 .widget__hiring .button {
   min-width: 190px;
 }
+@media (max-width: 768px) {
+  /* line 81, ../sass/partials/_widgets.scss */
+  .widget__hiring .button {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+  }
+}
 
 /*
  * news
  * —————————————————————————————————————————————————————————————————
 */
-/* line 96, ../sass/partials/_widgets.scss */
+/* line 99, ../sass/partials/_widgets.scss */
 .widget__news {
   display: -webkit-flex;
   display: flex;
@@ -4535,20 +4542,20 @@ li + li {
   color: #ffffff;
 }
 @media (max-width: 768px) {
-  /* line 96, ../sass/partials/_widgets.scss */
+  /* line 99, ../sass/partials/_widgets.scss */
   .widget__news {
     display: none;
   }
 }
-/* line 108, ../sass/partials/_widgets.scss */
+/* line 111, ../sass/partials/_widgets.scss */
 .widget__news > p {
   padding-right: 20px;
 }
-/* line 112, ../sass/partials/_widgets.scss */
+/* line 115, ../sass/partials/_widgets.scss */
 .widget__news .button {
   min-width: 110px;
 }
-/* line 119, ../sass/partials/_widgets.scss */
+/* line 122, ../sass/partials/_widgets.scss */
 .widget .news__content {
   width: -webkit-calc(100% - 130px);
   width: calc(100% - 130px);
@@ -4558,7 +4565,7 @@ li + li {
  * cookies
  * —————————————————————————————————————————————————————————————————
 */
-/* line 132, ../sass/partials/_widgets.scss */
+/* line 135, ../sass/partials/_widgets.scss */
 .cookie {
   display: -webkit-flex;
   display: flex;
@@ -4583,7 +4590,7 @@ li + li {
   opacity: 1;
 }
 @media (max-width: 576px) {
-  /* line 132, ../sass/partials/_widgets.scss */
+  /* line 135, ../sass/partials/_widgets.scss */
   .cookie {
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
@@ -4591,22 +4598,22 @@ li + li {
     flex-wrap: wrap;
   }
 }
-/* line 151, ../sass/partials/_widgets.scss */
+/* line 154, ../sass/partials/_widgets.scss */
 .cookie.js-cookie-accepted {
   opacity: 0;
 }
-/* line 155, ../sass/partials/_widgets.scss */
+/* line 158, ../sass/partials/_widgets.scss */
 .cookie__text {
   padding-right: 20px;
 }
 @media (max-width: 576px) {
-  /* line 155, ../sass/partials/_widgets.scss */
+  /* line 158, ../sass/partials/_widgets.scss */
   .cookie__text {
     padding-right: 0;
     margin-bottom: 10px;
   }
 }
-/* line 163, ../sass/partials/_widgets.scss */
+/* line 166, ../sass/partials/_widgets.scss */
 .cookie__button {
   min-width: 75px;
 }

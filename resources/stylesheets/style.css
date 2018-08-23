@@ -1156,15 +1156,15 @@ optgroup {
   -o-transition: bottom 0.4s ease 0s, -o-transform 0.4s ease 0s;
   -webkit-transition: bottom 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
   transition: bottom 0.4s ease 0s, transform 0.4s ease 0s;
-  right: -webkit-calc(6.25vw  -  20px);
-  right: calc(6.25vw  -  20px);
+  right: -webkit-calc(3.125vw  -  20px);
+  right: calc(3.125vw  -  20px);
   will-change: bottom, transform;
   position: fixed;
   bottom: -80px;
 }
 /* line 291, ../sass/partials/_buttons.scss */
 .button--scroll-top.js-show {
-  bottom: 40px;
+  bottom: 50px;
 }
 @media (max-width: 768px) {
   /* line 291, ../sass/partials/_buttons.scss */
@@ -4564,8 +4564,8 @@ li + li {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -moz-transition: opacity 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s;
   -webkit-transition: opacity 0.4s ease 0s;

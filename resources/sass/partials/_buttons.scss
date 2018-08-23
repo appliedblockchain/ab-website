@@ -283,13 +283,13 @@
 
 .button--scroll-top {
 	@include transition(bottom $transition, transform $transition);
-	@include calc(right, $col' - '$integer);
+	@include calc(right, $col/2' - '$integer);
 	will-change: bottom, transform;
     position: fixed;
 	bottom: -$integer*4;
 
 	&.js-show {
-		bottom: $integer*2;
+		bottom: 50px;
 		@include responsive(max-width, $break-tablets-max) {
 			right: $integer;
 			bottom: $integer;

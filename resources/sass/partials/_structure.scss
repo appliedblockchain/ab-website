@@ -542,7 +542,7 @@ li + li {
 		height: $integer*8;
 		padding: 0 $col;
 
-		.button + .button {
+		.button + .button--menu {
 			margin-left: $integer;
 		}
 	}
@@ -667,6 +667,14 @@ li + li {
 	
 			.button__inner {
 				color: $white;
+			}
+
+			&.button--stroke {
+				background-color: transparent;
+
+				.button__inner {
+					color: $black;
+				}
 			}
 		}
 	}

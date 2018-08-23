@@ -519,6 +519,25 @@ li + li {
 	&__highlight { fill: $highlight; }
 	&__gradient-secondary { fill: url(#gradient-secondary) $secondary;}
 	&__gradient-highlight { fill: url(#gradient-highlight) $highlight;}
+
+	&__stroke {
+		fill: none;
+		fill: none;
+		stroke-width: 4;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+
+		&.alt {
+			stroke-width: 8;
+		}
+
+		&.graphic {
+		
+			&__primary { stroke: $primary; }
+			&__secondary { stroke: $secondary; }
+			&__highlight { stroke: $highlight; }
+		}
+	}
 }
 
 

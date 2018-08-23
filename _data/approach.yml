@@ -3,7 +3,7 @@
 
 - number: 1
   active: nav__button--active
-  title: ay
+  title: Advisory
   id: advisory
   text: We work with you to learn about your project and provide independent strategic advice on whether blockchain is suitable and adds genuine technical and business value to the problem you are trying to solve.<br><br>We assess your requirements to provide you with an impartial recommendation to approach and implement your blockchain project and then advise which of the available blockchain technologies is best suited for your application. We document this for you before moving on to building a prototype.
   icon: icon-advisory

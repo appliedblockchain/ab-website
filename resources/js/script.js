@@ -18,7 +18,7 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 
 $(".cookie__button").click(function(){
-    $(".cookies").addClass("js-cookie-accepted");
+    $(".cookie").addClass("js-cookie-accepted");
 })
 
 

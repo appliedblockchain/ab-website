@@ -20,6 +20,7 @@
 
 
 .hide-mobile {
+
 	@include responsive-mobile-devices() {
 		display: none !important;
 	}
@@ -226,7 +227,7 @@ li + li {
  * —————————————————————————————————————————————————————————————————
 */
 
-.cookies { z-index: 9; }
+.cookie { z-index: 9; }
 .header { z-index: 10; }
 .anchor { z-index: 11; }
 .modal { z-index: 12; }

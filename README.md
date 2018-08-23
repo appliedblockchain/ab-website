@@ -91,6 +91,7 @@ The page header is used once on a page, at the very beginning.
 #####background imnage in page header
 * add image in resources/images/background folder
 * same name as page, jpg format
+* add background-image='' to component
 * in _structure.scss
 
 #### Section header

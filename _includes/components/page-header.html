@@ -1,9 +1,10 @@
+{% assign background-image = include.background-image %}
 {% assign background-color = include.background-color %}
 {% assign title = include.title %}
 {% assign comment = include.comment %}
 {% assign description = include.description %}
 
-<div class="section section--header section--{{ background-color }} background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);">
+<div class="section section--header section--{{ background-color }} background--cover" {% if background-image %} style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);" {% endif %}>
     {% if title %}
         <h1 class="headline">{{ title }}</h1>
     {% endif %}

@@ -5,8 +5,15 @@
         <div class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/default.jpg);"></div>
     {% endif %}
     <div class="event__content">
-        <p class="blog__date body--bold">{{ event.dates }}</p>
-        <p class="blog__title lead">{{ event.name }}</p>
+        <div class="event__top blog__date">
+            <p class="body--bold">{{ event.dates }}</p>
+            {{ if event.link }}
+            <a href="{{ event.link }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
+                <p class="button__inner">view website</p>
+            </a>
+            {{ endif }}
+        </div>
+        <h2 class="blog__title lead">{{ event.name }}</h2>
         <p class="blog__location">{{ event.location }}</p>
     </div>
 </div>

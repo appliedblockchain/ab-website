@@ -11,9 +11,8 @@
         <section class="section section--alt section--dark">
 
             <div class="section__content portfolio">
-                <!-- change slug to choose featured project -->
-                <!-- {% assign featureProject = site.projects | where: "slug", "traveledger" | first %} -->
                 {% for project in site.projects %}
+                    <!-- add this tag to project page to featured it -->
                     {% if project.tag contains 'featured' %}
                     <a href="{{ project.url }}" class="portfolio__item alt block background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                         <div class="portfolio__content">

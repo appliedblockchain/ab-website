@@ -136,6 +136,8 @@ title-of-project:
     job: Title, Company  
 ```
 > The portrait will link itself automatically, provided the image has the same **id** as the quote
+* image loop in results section
+* challenge image
 
 ### Edit project
 * Explain markdown for content in .md file ('<p>' tag used spacing the paragraphs)

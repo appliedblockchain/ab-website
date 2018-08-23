@@ -4,9 +4,6 @@
 
     <div class="section section--header section--left project__header">
         <div class="project__nav">
-            <a href="{{ site.url }}/case-studies" class="button button--small button--primary button--animate fas fa-fill">
-                <p class="button__inner">Back</p>
-            </a>
             {% if page.previous.url %}
                 <a href="{{ page.previous.url }}" class="button button--small button--stroke button--primary button--animate fas fa-chevron-left">
                     <p class="button__inner">Previous</p>
@@ -48,7 +45,7 @@
 
     <section class="section section--left challenge">
         <div class="row">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-challenge.svg" alt="Challenge icon" class="col--md4 challenge__icon">
+            <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4 challenge__icon">
             <div class="coloffset--md1 col--md7">
                 <h1 class="project__subtitle subtitle">The Challenge</h1>
                 <div class="project__text">{{ page.challenge }}</div>

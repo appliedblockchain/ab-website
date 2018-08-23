@@ -96,6 +96,11 @@
 					<p class="button__inner">Back</p>
 				</a>
 			{% endif %}
+			{% if page.layout == 'project' %}
+				<a href="{{ site.url }}/case-studies" class="button button--small button--primary button--stroke button--animate fas fa-chevron-left">
+					<p class="button__inner">Back</p>
+				</a>
+			{% endif %}
 			<a href="{{ site.url }}/contact" class="button button--small button--primary button--animate fas fa-phone {% if page.title == 'Services' or page.title == 'Products' or page.title == 'About' or page.title == 'Join' %}alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>

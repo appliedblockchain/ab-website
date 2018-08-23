@@ -189,20 +189,3 @@ mantle:
   - url: ad
     title: AD / LDAP
     alt: Directory services integration
-
-# result section
-# in project.html page
-# each entry is for a different project
-
-cygnetise:
-  - url: node
-    alt: Work with cutting-edge blockchain and Node.js tech
-
-  - url: diversity
-    alt: Multicultural and diverse team
-
-  - url: keynote
-    alt: Opportunities to attend various industry, social and team events
-
-  - url: clock
-    alt: Flexible working hours

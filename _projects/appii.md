@@ -29,27 +29,27 @@ results-subtitle:
 
 results-content:
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-cog.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/appii/icon-integrity.svg" alt="" class="results__image image-inline__image">
         <p>Data integrity</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-coin.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/appii/icon-no-third-party.svg" alt="" class="results__image image-inline__image">
         <p>No third-party authentication process</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-lock.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/appii/icon-permission.svg" alt="" class="results__image image-inline__image">
         <p>Permissioned for users to view and update data</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-security.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/appii/icon-reduction.svg" alt="" class="results__image image-inline__image">
         <p>Cost reduction</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-traceability.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/appii/icon-ux.svg" alt="" class="results__image image-inline__image">
         <p>Brilliant UX</p>
     </div>
     <div class="results__item image-inline__item col--lg2 col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-transparency.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/appii/icon-thumb.svg" alt="" class="results__image image-inline__image">
         <p>Biometric verification</p>
     </div>
 

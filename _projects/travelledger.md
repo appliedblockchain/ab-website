@@ -1,7 +1,7 @@
 ---
 layout: project
 
-title: Traveledger
+title: Travel Ledger
 subtitle: Travel settlement platform built on blockchain technology
 industry: Legal
 deliverables: Blockchain-based billing and settlement platform
@@ -25,17 +25,17 @@ results:
 
 results-content:
     <div class="results__item image-inline__item col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-cog.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/travelledger/icon-invoice.svg" alt="" class="results__image image-inline__image">
         <p class="results__subtitle body--bold">Supplier invoice reconciliationthe</p>
         <p>Invoice is recorded in a single format, for the back office system to automatically read and reconcile</p>
     </div>
     <div class="results__item image-inline__item col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-coin.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/travelledger/icon-commission.svg" alt="" class="results__image image-inline__image">
         <p class="results__subtitle body--bold">Commission payments to agents and hotels</p>
         <p>As the booking is recorded on the platform, the expected seller commission is calculated and the payment is processed</p>
     </div>
     <div class="results__item image-inline__item col--md4 col--6">
-        <img src="/resources/images/icons/project/cygnetise/icon-lock.svg" alt="" class="results__image image-inline__image">
+        <img src="/resources/images/icons/project/travelledger/icon-payment.svg" alt="" class="results__image image-inline__image">
         <p class="results__subtitle body--bold">Payment reconciliation</p>
         <p>All payments are processed and all transactions are recorded on the Travel Ledger platform. This enables the receiving entity to automatically check and reconcile incoming payments against the relevant invoices/transactions.</p>
     </div>
@@ -46,5 +46,5 @@ results-comment:
 testimonial-id: roberto-da-re
 testimonial-quote: In Applied Blockchain we found a development partner that not only was there to turn our requirements into reality, but also acted as a consultant, helping us fill the knowledge gap between traditional development and the new Blockchain world. Especially in the initial phases of a project, this added value is invaluable.
 testimonial-name: Roberto Da Re
-testimonial-job: Founder, Traveledger
+testimonial-job: Founder, Travel Ledger
 ---

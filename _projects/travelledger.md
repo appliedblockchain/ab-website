@@ -3,7 +3,7 @@ layout: project
 
 title: Travel Ledger
 subtitle: Travel settlement platform built on blockchain technology
-industry: Legal
+industry: Travel
 deliverables: Blockchain-based billing and settlement platform
 
 summary: Travel Ledger is a billing and settlement platform for the travel industry, that provides a single source of truth for the purchasing process for non-air travel along the entire distribution chain.
@@ -13,12 +13,14 @@ challenge:
     <p>Travel companies work with numerous suppliers and will often be required to sift through hundreds of statements and invoices from suppliers to settle payments. A further problem is that these invoices and statements come in varying formats, and every supplier wants to be paid in different ways. This creates a lot of problems for when travel companies are reconciling their statements with bookings and there is no match.</p>
 
 delivery:
-    <p>Travel Ledger wanted to simplify the reconciliation process and approached Applied Blockchain to develop a blockchain-based solution. They wanted to use blockchain and smart contracts to replace the existing billing, reconciliation, and settlement process with a quick, easy and inexpensive solution to transact non-airline travel services.</p>
-
-delivery-text:
-    <p class="col--xl4 col--lg6 col--md8">Applied Blockchain developed a proof of concept for Travel Ledger – to provide a decentralised platform where travel agents, tour operators, accommodation wholesalers, hotel companies, car rental suppliers, cruise companies and any similar travel company can access a shared ledger and a shared repository of documents. The ledger is used to track transactions for all connected intermediaries and suppliers in real-time.</p>
-    <p class="col--xl4 col--lg6 col--md8">The Travel Ledger platform will allow payment records between buyers and sellers to be stored in a shared, decentralised and authenticated ledger. This establishes a “single source of truth” for all parties. The platform will also be connected to financial and payment systems to support and record payments in a secure and transparent manner.</p>
-    <p class="col--xl4 col--lg6 col--md8">An easy-to-integrate API will also be made available for all travel companies to use and integrate with – thus, enabling automated reconciliation and/or settlement without the need for the existing business processes to change.</p>
+    <div class="col--xl4 col--lg6 col--md8">
+        <p>Travel Ledger wanted to simplify the reconciliation process and approached Applied Blockchain to develop a blockchain-based solution. They wanted to use blockchain and smart contracts to replace the existing billing, reconciliation, and settlement process with a quick, easy and inexpensive solution to transact non-airline travel services.</p>
+        <p>Applied Blockchain developed a proof of concept for Travel Ledger – to provide a decentralised platform where travel agents, tour operators, accommodation wholesalers, hotel companies, car rental suppliers, cruise companies and any similar travel company can access a shared ledger and a shared repository of documents. The ledger is used to track transactions for all connected intermediaries and suppliers in real-time.</p>
+    </div>
+    <div class="col--xl4 col--lg6 col--md8">
+        <p>The Travel Ledger platform will allow payment records between buyers and sellers to be stored in a shared, decentralised and authenticated ledger. This establishes a “single source of truth” for all parties. The platform will also be connected to financial and payment systems to support and record payments in a secure and transparent manner.</p>
+        <p>An easy-to-integrate API will also be made available for all travel companies to use and integrate with – thus, enabling automated reconciliation and/or settlement without the need for the existing business processes to change.</p>
+    </div>
 
 results:
     Industry adoption of the Travel Ledger platform will provide a shared ledger enabling a host of business processes to be fully integrated with back office and reservation systems.

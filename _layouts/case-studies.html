@@ -10,11 +10,14 @@
 
         <section class="section section--alt section--dark">
 
-            <div class="section__content portfolio">
+            <div class="section__content portfolio portfolio--featured">
                 {% for project in site.projects %}
                     <!-- add this tag to project page to featured it -->
                     {% if project.tag contains 'featured' %}
-                    <a href="{{ project.url }}" class="portfolio__item alt block background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                    <a href="{{ project.url }}" class="portfolio__item block background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                        <div class="portfolio__logo">
+                            <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-alt/{{ project.slug }}.png" alt="{{ project.title }} logo">
+                        </div>
                         <div class="portfolio__content">
                             <p class="portfolio__comment comment">{{ project.industry }}</p>
                             <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
@@ -37,11 +40,14 @@
 
         <section class="section section--nopadding portfolio">
 
-            <div class="portfolio__grid">
+            <div class="portfolio--grid">
                 {% for project in site.projects %}
                     {% unless project.tag contains 'featured' %}
                     <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                         <div class="portfolio__content">
+                            <!-- <div class="portfolio__logo">
+                                <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/{{ project.slug }}.png" alt="{{ project.title }} logo">
+                            </div> -->
                             <p class="portfolio__comment comment">{{ project.industry }}</p>
                             <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
                             <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>

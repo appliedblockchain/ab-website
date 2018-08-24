@@ -89,9 +89,8 @@
             <div class="owl-carousel owl-carousel-technology">
                 <!-- edit data in _data/images.yml -->
                 {% for item in site.data.images.technology %}
-                    <div class="image-inline__item">
-                        <div class="image-inline__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/logos/tools/{{ item.url }}.png);"></div>
-                    </div>
+                    <!-- edit component in _includes/components/technologies.html -->
+                    {% include components/technologies.html %}
                 {% endfor %}
             </div>
         </div>

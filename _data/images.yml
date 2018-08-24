@@ -18,6 +18,27 @@ media:
 # in service.html page
 
 technology:
+  - url: ethereum
+    alt: Ethereum
+
+  - url: hyperledger-fabric
+    alt: Hyperledger Fabric
+
+  - url: r3
+    alt: R3
+
+  - url: stellar
+    alt: Stellar
+
+  - url: quorum
+    alt: Quorum
+
+  - url: neo
+    alt: Neo
+
+  - url: cardano
+    alt: Cardano
+
   - url: aion
     alt: Aion
 
@@ -39,17 +60,8 @@ technology:
   - url: eos
     alt: EOS
 
-  - url: ethereum
-    alt: Ethereum
-
   - url: hedera-hashgraph
     alt: Hedera Hashgraph
-
-  - url: hyperledger-fabric
-    alt: Hyperledger Fabric
-
-  - url: neo
-    alt: Neo
 
   - url: parity
     alt: Parity
@@ -57,20 +69,11 @@ technology:
   - url: polkadot
     alt: Polkadot
 
-  - url: quorum
-    alt: Quorum
-
-  - url: r3
-    alt: R3
-
   - url: raiden
     alt: Raiden
 
   - url: sawtooth
     alt: Sawtooth
-
-  - url: stellar
-    alt: Stellar
 
   - url: tendermint
     alt: Tendermint

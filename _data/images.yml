@@ -79,7 +79,7 @@ technology:
     alt: Tendermint
 
 # clients section
-# in service.html page
+# in index.html page
 
 clients:
   - url: appii
@@ -100,7 +100,7 @@ clients:
   - url: toyota
     alt: Toyota
 
-  - url: un
+  - url: united-nations
     alt: United Nations
 
   - url: vodafone

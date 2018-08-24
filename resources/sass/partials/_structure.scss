@@ -483,7 +483,6 @@ li + li {
 		width: 100%;
 		max-width: $integer*20;
 		height: auto;
-
 	}
 
 	&-icon-bg {
@@ -624,7 +623,7 @@ li + li {
 	&__menu {
 		@include calc(height, '100vh - '$integer*8);
 		@include overflow-scroll();
-		padding: $integer*2 $col*2 0 $col*2;
+		padding: 0  $col*2 $integer*4 $col*2;
 		@include responsive(max-width, $break-tablets-max) {
 			padding: 0 $col $integer*6 $col;
 		}
@@ -733,6 +732,7 @@ li + li {
 			.menu {
 
 				&__description {
+					white-space: nowrap;
 
 					span {
 						@include transform(translateY(0));

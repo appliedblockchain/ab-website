@@ -10,21 +10,12 @@ $(document).ready(function() {
 
 
 $('.js-button-london').on('click', function() {
-    var $container = $('.js-jobs-container');
-    $container.fadeOut(function() {
-        $container.addClass('js-background-london').fadeIn();
-        $container.removeClass('js-background-porto').fadeIn();
-    });
+    $('.jobs__background--porto').removeClass('js-show').fadeIn();
 });
 
 $('.js-button-porto').on('click', function() {
-    var $container = $('.js-jobs-container');
-    $container.fadeOut(function() {
-        $container.addClass('js-background-porto').fadeIn();
-        $container.removeClass('js-background-london').fadeIn();
-    });
+    $('.jobs__background--porto').addClass('js-show').fadeIn();
 });
-
 
 
 

@@ -121,7 +121,8 @@
 	'primary'   	$primary 			$white,
 	'secondary' 	$secondary			$primary,
 	'highlight' 	$highlight			$white,
-	'dark' 			$dark 				$white
+	'dark' 			$dark 				$white,
+	'white' 		$white 				$primary
 );
 
 @include button-stroke-color('button--stroke.button--',

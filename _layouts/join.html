@@ -4,14 +4,12 @@
 
     <!-- edit component in _includes/components/page-header.html -->
     {% include components/page-header.html
-        background-image=''
-        background-color='primary'
         title='Join'
         description='Step into a collaborative, unique and fast-paced environment'
         comment='We are continuously looking for highly motivated and ambitious people who are passionate about delivering innovative blockchain-based solutions to global enterprises and disruptive startups.'
     %}
 
-    <section class="section section--alt section--primary">
+    <section class="section section--alt">
 
         <div class="image-inline row">
             <!-- edit data in _data/images.yml -->
@@ -25,7 +23,9 @@
 
     </section>
 
-    <section class="section">
+    <section class="section section--primary jobs__container jobs__background--london">
+
+        <div class="jobs__background--porto"></div>
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -35,10 +35,10 @@
 
         <div class="section__content tab tab--vertical jobs">
             <div class="section__filter tab__nav">
-                <a href="#london" class="nav__button nav__button--active button button--primary button--animate fa fa-map-marker-alt">
+                <a href="#london" class="js-button-london nav__button nav__button--active button button--primary-darken button--animate fa fa-map-marker-alt">
                     <p class="button__inner">London</p>
                 </a>
-                <a href="#porto" class="nav__button button button--primary button--animate fa fa-map-marker-alt">
+                <a href="#porto" class="js-button-porto nav__button button button--primary-darken button--animate fa fa-map-marker-alt">
                     <p class="button__inner">Porto</p>
                 </a>
             </div>

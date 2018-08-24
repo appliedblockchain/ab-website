@@ -115,7 +115,7 @@
 
     </section>
 
-    <section class="section section--fullwidth section--dark leadership">
+    <section class="section section--fullwidth section--dark">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -123,7 +123,7 @@
             description='Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
         %}
 
-        <div class="section__content tab tab--vertical">
+        <div class="section__content tab tab--vertical leadership">
             <!-- edit data in _data/testimonials.yml -->
             {% for item in site.data.leadership %}
                 <div id="{{ item.slug }}" class="tab__item row background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">

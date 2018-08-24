@@ -227,6 +227,18 @@ li + li {
  * —————————————————————————————————————————————————————————————————
 */
 
+[class*="z-index"] {
+	position: relative;
+}
+
+.z-index {
+
+	&--2 { z-index: 2; }
+	&--3 { z-index: 3; }
+}
+
+.section--header { z-index: -1; }
+.graphic--background { z-index: 0; }
 .cookie { z-index: 9; }
 .header { z-index: 10; }
 .anchor { z-index: 11; }
@@ -540,7 +552,16 @@ li + li {
 			&__highlight { stroke: $highlight; }
 		}
 	}
+
+	&--background {
+		position: absolute;
+		top: 60px;
+		right: -48%;
+		left: auto;
+		width: 70%;
+	}
 }
+
 
 
 

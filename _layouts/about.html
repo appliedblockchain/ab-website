@@ -117,18 +117,13 @@
 
     <section class="section section--fullwidth section--dark leadership">
 
-        <span class="graphic graphic--background">
-            <!-- edit elements in _includes/elements/graphic-circle.svg -->
-            {% include elements/graphic-circle.svg %}
-        </span>
-            
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             title='Leadership team'
             description='Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
         %}
 
-        <div class="section__content tab tab--vertical z-index--3">
+        <div class="section__content tab tab--vertical">
             <!-- edit data in _data/testimonials.yml -->
             {% for item in site.data.leadership %}
                 <div id="{{ item.slug }}" class="tab__item row background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">

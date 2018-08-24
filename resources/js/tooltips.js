@@ -35,7 +35,7 @@ $('.js-tooltip-tracking').hover(function(){
 	$('<p class="tooltip__inner tooltip__inner--tracking block body--bold"></p>')
 	.text(title)
 	.appendTo('body')
-	.fadeIn('slow');
+	.fadeIn(400);
 }, function() {
 	$(this).attr('title', $(this).data('tipText'));
 	$('.tooltip__inner--tracking').remove();

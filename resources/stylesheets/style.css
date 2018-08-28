@@ -1180,7 +1180,7 @@ optgroup {
 }
 /* line 292, ../sass/partials/_buttons.scss */
 .button--scroll-top.js-show {
-  bottom: 50px;
+  bottom: 30px;
 }
 @media (max-width: 768px) {
   /* line 292, ../sass/partials/_buttons.scss */
@@ -4646,7 +4646,7 @@ li + li {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 20px 6.25vw;
+  padding: 10px 6.25vw;
   opacity: 1;
 }
 @media (max-width: 576px) {

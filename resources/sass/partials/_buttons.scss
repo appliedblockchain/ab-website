@@ -290,7 +290,7 @@
 	bottom: -$integer*4;
 
 	&.js-show {
-		bottom: 50px;
+		bottom: 30px;
 		@include responsive(max-width, $break-tablets-max) {
 			right: $integer;
 			bottom: $integer;

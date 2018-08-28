@@ -58,6 +58,7 @@ html, body {
 	@include display-flex();
 	@include flex-wrap(wrap);
 	@include calc(width, '100% + '$integer);
+	//width: 100%;
 	margin-left: -$integer/2;
 	margin-right: -$integer/2;
 
@@ -69,7 +70,9 @@ html, body {
 }
 
 .clear:after {
-	@extend .row:after;
+	content: '';
+	display: block;
+	clear: both;
 }
 
 [class*="col--"], [class*="colalt--"] {
@@ -352,8 +355,8 @@ li + li {
 	}
 
 	&--fullwidth {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: $integer/2;
+		padding-right: $integer/2;
 
 		.section__header {
 			padding-right: $col*2;

@@ -5785,7 +5785,32 @@ li + li {
   position: relative;
 }
 /* line 23, ../sass/pages/_join.scss */
-.jobs__container:before {
+.jobs__container > * {
+  z-index: 2;
+}
+/* line 27, ../sass/pages/_join.scss */
+.jobs__container .section__title, .jobs__container .section__desc {
+  color: #ffffff;
+}
+/* line 33, ../sass/pages/_join.scss */
+.jobs__content {
+  width: 100%;
+}
+/* line 37, ../sass/pages/_join.scss */
+.jobs__background, .jobs__background--london, .jobs__background--porto {
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 420px;
+  z-index: 0;
+}
+/* line 46, ../sass/pages/_join.scss */
+.jobs__background:before, .jobs__background--london:before, .jobs__background--porto:before {
   content: "";
   position: absolute;
   top: 0;
@@ -5794,45 +5819,24 @@ li + li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 123, 255, 0.9);
+  background-color: rgba(0, 123, 255, 0.8);
   z-index: 1;
 }
-/* line 29, ../sass/pages/_join.scss */
-.jobs__container > * {
-  z-index: 2;
-}
-/* line 35, ../sass/pages/_join.scss */
-.jobs__content {
-  width: 100%;
-}
-/* line 39, ../sass/pages/_join.scss */
-.jobs__background, .jobs__background--london, .jobs__background--porto {
-  background-position: center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* line 42, ../sass/pages/_join.scss */
+/* line 52, ../sass/pages/_join.scss */
 .jobs__background--london {
   background-image: url("../images/background/london.jpg");
 }
-/* line 47, ../sass/pages/_join.scss */
+/* line 57, ../sass/pages/_join.scss */
 .jobs__background--porto {
+  background-image: url("../images/background/porto.jpg");
   -moz-transition: opacity 0.8s ease 0s;
   -o-transition: opacity 0.8s ease 0s;
   -webkit-transition: opacity 0.8s ease;
   -webkit-transition-delay: 0s;
   transition: opacity 0.8s ease 0s;
-  background-image: url("../images/background/porto.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
   opacity: 0;
 }
-/* line 59, ../sass/pages/_join.scss */
+/* line 63, ../sass/pages/_join.scss */
 .jobs__background--porto.js-show {
   opacity: 1;
 }

@@ -35,7 +35,7 @@
                     {% if site.posts.size > 0 %}
                         <!-- edit or add post in _posts -->
                         {% for post in site.posts %}
-                            <div class="col--xl4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
+                            <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
                                 {% if post.external-link %}
                                     <a href="{{ post.external-link }}" target="_blank">
                                 {% else %}

@@ -5413,7 +5413,7 @@ li + li {
 #who-we-help .section__title, #who-we-help .section__desc {
   width: 100%;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1024px) {
   /* line 167, ../sass/pages/_index.scss */
   #who-we-help .row {
     -webkit-flex-direction: column-reverse;

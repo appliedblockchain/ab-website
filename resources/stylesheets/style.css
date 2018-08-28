@@ -680,7 +680,7 @@ optgroup {
   padding: 20px 30px;
 }
 /* line 32, ../sass/partials/_accordions.scss */
-.accordion__header.js-accordion-active .button--icon, .js-accordion-active.accordion__content .button--icon {
+.accordion__header.js-accordion-active .accordion__button, .js-accordion-active.accordion__content .accordion__button {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -701,22 +701,29 @@ optgroup {
   display: -webkit-flex;
   display: flex;
 }
-/* line 52, ../sass/partials/_accordions.scss */
+/* line 54, ../sass/partials/_accordions.scss */
+.accordion__button:hover {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 59, ../sass/partials/_accordions.scss */
 .accordion__content {
   cursor: initial;
   display: none;
   padding-top: 0;
   padding-bottom: 30px;
 }
-/* line 60, ../sass/partials/_accordions.scss */
+/* line 67, ../sass/partials/_accordions.scss */
 .accordion__subtitle {
   padding: 15px 0;
 }
-/* line 63, ../sass/partials/_accordions.scss */
+/* line 70, ../sass/partials/_accordions.scss */
 .accordion__subtitle:nth-child(1) {
   padding-top: 0;
 }
-/* line 68, ../sass/partials/_accordions.scss */
+/* line 75, ../sass/partials/_accordions.scss */
 .accordion .lead {
   color: #007bff !important;
 }
@@ -861,10 +868,10 @@ optgroup {
 
 /* line 108, ../sass/partials/_buttons.scss */
 .button--animate:hover .button__inner {
-  -moz-transform: translateX(165%);
-  -ms-transform: translateX(165%);
-  -webkit-transform: translateX(165%);
-  transform: translateX(165%);
+  -moz-transform: translateX(160%);
+  -ms-transform: translateX(160%);
+  -webkit-transform: translateX(160%);
+  transform: translateX(160%);
 }
 
 /*

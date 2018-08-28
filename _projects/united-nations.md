@@ -3,19 +3,22 @@ layout: project
 tag: grid
 
 title: United Nations
-subtitle: 
-industry: 
+subtitle: Cash transfers for aid distribution
+industry: Biometrics<br>
+    Remittance
 deliverables: 
 
 summary: 
 
+challenge: 
+
 delivery:
-    <div class="col--xl4 col--lg6 col--md8">
-        
-    </div>
-    <div class="col--xl4 col--lg6 col--md8">
-        
-    </div>
+
+results:
+
+results-content:
+
+results-comment:
 
 testimonial-id: 
 testimonial-quote: 

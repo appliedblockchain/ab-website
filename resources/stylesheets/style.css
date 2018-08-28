@@ -5283,6 +5283,121 @@ li + li {
   opacity: 1;
 }
 
+/* line 219, ../sass/pages/_case-studies.scss */
+.project-grid {
+  margin: -10px;
+}
+/* line 222, ../sass/pages/_case-studies.scss */
+.project-grid__item {
+  position: relative;
+  width: 25%;
+  padding: 10px;
+}
+@media (max-width: 1024px) {
+  /* line 222, ../sass/pages/_case-studies.scss */
+  .project-grid__item {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  /* line 222, ../sass/pages/_case-studies.scss */
+  .project-grid__item {
+    width: 100%;
+  }
+}
+/* line 234, ../sass/pages/_case-studies.scss */
+.project-grid__container {
+  padding: 20px;
+}
+/* line 238, ../sass/pages/_case-studies.scss */
+.project-grid__image {
+  width: 100%;
+}
+/* line 242, ../sass/pages/_case-studies.scss */
+.project-grid__inner {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
+  -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
+  -webkit-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease;
+  -webkit-transition-delay: 0s, 0s, 0s, 0s, 0.2s;
+  transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: -webkit-calc(100% -  20px);
+  width: calc(100% -  20px);
+  height: -webkit-calc(100% -  20px);
+  height: calc(100% -  20px);
+  will-change: height, width, top, left, opacity;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: left;
+}
+@media (min-width: 1300px) {
+  /* line 242, ../sass/pages/_case-studies.scss */
+  .project-grid__inner {
+    padding: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 242, ../sass/pages/_case-studies.scss */
+  .project-grid__inner {
+    padding: 40px;
+  }
+}
+/* line 265, ../sass/pages/_case-studies.scss */
+.project-grid__inner.js-show {
+  -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
+  -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
+  -webkit-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease;
+  -webkit-transition-delay: 0s, 0s, 0s, 0s, 0s;
+  transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
+  width: -webkit-calc(100% +  40px);
+  width: calc(100% +  40px);
+  height: -webkit-calc(100% +  40px);
+  height: calc(100% +  40px);
+  top: -20px;
+  left: -20px;
+  z-index: 2;
+}
+@media (max-width: 576px) {
+  /* line 265, ../sass/pages/_case-studies.scss */
+  .project-grid__inner.js-show {
+    width: -webkit-calc(100% -  20px);
+    width: calc(100% -  20px);
+    height: -webkit-calc(100% -  20px);
+    height: calc(100% -  20px);
+    top: 10px;
+    left: 10px;
+  }
+}
+/* line 281, ../sass/pages/_case-studies.scss */
+.project-grid__subtitle {
+  margin-bottom: 20px;
+}
+/* line 285, ../sass/pages/_case-studies.scss */
+.project-grid .body--bold {
+  margin-top: 10px;
+}
+/* line 289, ../sass/pages/_case-studies.scss */
+.project-grid__summary {
+  margin-top: 10px;
+}
+/* line 293, ../sass/pages/_case-studies.scss */
+.project-grid__button {
+  margin-top: 10px;
+  min-height: 30px;
+}
+
 /* 
  * —————————————————————————————————————————————————————————————————
  * CONTACT
@@ -6563,106 +6678,4 @@ li + li {
   .approach .tab__item + .tab__item {
     margin-top: 20px;
   }
-}
-
-/* line 182, ../sass/pages/_services.scss */
-.projectGrid {
-  margin: -10px;
-}
-/* line 185, ../sass/pages/_services.scss */
-.projectGrid__item {
-  position: relative;
-  width: 25%;
-  padding: 10px;
-}
-@media (max-width: 1300px) {
-  /* line 185, ../sass/pages/_services.scss */
-  .projectGrid__item {
-    width: 50%;
-  }
-}
-@media (max-width: 576px) {
-  /* line 185, ../sass/pages/_services.scss */
-  .projectGrid__item {
-    width: 100%;
-  }
-}
-/* line 197, ../sass/pages/_services.scss */
-.projectGrid__container {
-  padding: 20px;
-}
-/* line 201, ../sass/pages/_services.scss */
-.projectGrid__image {
-  width: 100%;
-}
-/* line 205, ../sass/pages/_services.scss */
-.projectGrid__inner {
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
-  -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
-  -webkit-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease;
-  -webkit-transition-delay: 0s, 0s, 0s, 0s, 0.2s;
-  transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0.2s;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  width: -webkit-calc(100% -  20px);
-  width: calc(100% -  20px);
-  height: -webkit-calc(100% -  20px);
-  height: calc(100% -  20px);
-  will-change: height, width, top, left, opacity;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 40px;
-  background-color: #ffffff;
-  text-align: left;
-}
-/* line 222, ../sass/pages/_services.scss */
-.projectGrid__inner.js-show {
-  -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
-  -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
-  -webkit-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease;
-  -webkit-transition-delay: 0s, 0s, 0s, 0s, 0s;
-  transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
-  width: -webkit-calc(100% +  40px);
-  width: calc(100% +  40px);
-  height: -webkit-calc(100% +  40px);
-  height: calc(100% +  40px);
-  top: -20px;
-  left: -20px;
-  z-index: 2;
-}
-@media (max-width: 576px) {
-  /* line 222, ../sass/pages/_services.scss */
-  .projectGrid__inner.js-show {
-    width: -webkit-calc(100% -  20px);
-    width: calc(100% -  20px);
-    height: -webkit-calc(100% -  20px);
-    height: calc(100% -  20px);
-    top: 10px;
-    left: 10px;
-  }
-}
-/* line 238, ../sass/pages/_services.scss */
-.projectGrid__subtitle {
-  margin-bottom: 20px;
-}
-/* line 242, ../sass/pages/_services.scss */
-.projectGrid .body--bold {
-  margin-top: 10px;
-}
-/* line 246, ../sass/pages/_services.scss */
-.projectGrid__summary {
-  margin-top: 10px;
-}
-/* line 250, ../sass/pages/_services.scss */
-.projectGrid__button {
-  margin-top: 10px;
 }

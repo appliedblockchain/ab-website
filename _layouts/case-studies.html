@@ -3,7 +3,7 @@
     <!-- edit component in _includes/components/page-header.html -->
     {% include components/page-header.html
         background-color='dark'
-        title='Case studies'
+        title='Projects'
     %}
 
     {% if site.projects.size > 0 %}
@@ -27,7 +27,7 @@
                             </p>
                             <div class="portfolio__button">
                                 <span href="" class="button button--secondary button--small button--animate fa fa-eye">
-                                    <p class="button__inner">Read more</p>
+                                    <p class="button__inner">Case study</p>
                                 </span>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
 
             <div class="portfolio--grid">
                 {% for project in site.projects %}
-                    {% unless project.tag contains 'featured' %}
+                    {% unless project.tag contains 'featured' or project.tag contains 'grid' %}
                     <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                         <div class="portfolio__content">
                             <!-- <div class="portfolio__logo">
@@ -56,7 +56,7 @@
                             </p>
                             <div class="portfolio__button">
                                 <span href="" class="button button--secondary button--small button--animate fa fa-eye">
-                                    <p class="button__inner">Read more</p>
+                                    <p class="button__inner">Case study</p>
                                 </span>
                             </div>
                         </div>
@@ -67,6 +67,40 @@
 
         </section>
 
+        <section class="section">
+
+            <!-- edit component in _includes/components/section-header.html -->
+            {% include components/section-header.html
+                title='Our Projects'
+            %}
+
+            <div class="section__content project-grid">
+                {% for project in site.projects %}
+                    <!-- add this tag to project page to add it o this section it -->
+                    {% if project.tag contains 'grid' %}
+                        <div class="project-grid__item tooltip tooltip--click">
+                            <div class="block project-grid__container">
+                                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png" alt="Logo {{ project.title }}" class="project-grid__image hover-grayscale tooltip__trigger">
+                            </div>
+                            <div class="block project-grid__inner tooltip__inner">
+                                <div>
+                                    <p class="project-grid__title lead">{{ project.title }}</p>
+                                    <p class="body--bold body--small">Industry</p>
+                                    <p class="body--small">{{ project.industry }}</p>
+                                    <p class="body--bold body--small">Project</p>
+                                    <p class="body--small">{{ project.subtitle }}</p>
+                                </div>
+                                <a href="{{ project.url }}" target="_blank" class="project-grid__button button button--small button--primary button--animate fas fa-globe">
+                                    <p class="button__inner">Project overview</p>
+                                </a>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+    
+        </section>
+        
     {% else %}
 
         <section class="section section--alt section--dark">

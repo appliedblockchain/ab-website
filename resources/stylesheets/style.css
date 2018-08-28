@@ -6463,7 +6463,7 @@ li + li {
   padding: 0 10px;
   width: 25%;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1024px) {
   /* line 20, ../sass/pages/_services.scss */
   .solutions__button {
     width: 33.333%;
@@ -6493,7 +6493,7 @@ li + li {
 .solutions__icon:hover, .nav__button--active .solutions__icon {
   background-color: #006fe6;
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   /* line 32, ../sass/pages/_services.scss */
   .solutions__icon {
     padding: 20px;

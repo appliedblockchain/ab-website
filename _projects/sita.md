@@ -8,7 +8,7 @@ industry: Aviation IT<br>
     Telecoms Multinational
 deliverables: 
 
-summary: 
+summary: Development of the world’s first distributed drone registry.
 
 challenge: 
 

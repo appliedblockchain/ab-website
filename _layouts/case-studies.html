@@ -19,7 +19,7 @@
                             <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-alt/{{ project.slug }}.png" alt="{{ project.title }} logo">
                         </div>
                         <div class="portfolio__content">
-                            <p class="portfolio__comment comment">{{ project.industry }}</p>
+                            <p class="portfolio__comment">{{ project.industry }}</p>
                             <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
                             <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>
                             <p class="portfolio__desc">
@@ -43,53 +43,54 @@
             <div class="portfolio--grid">
                 {% for project in site.projects %}
                     {% unless project.tag contains 'featured' or project.tag contains 'grid' %}
-                    <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
-                        <div class="portfolio__content">
-                            <!-- <div class="portfolio__logo">
-                                <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/{{ project.slug }}.png" alt="{{ project.title }} logo">
-                            </div> -->
-                            <p class="portfolio__comment comment">{{ project.industry }}</p>
-                            <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
-                            <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>
-                            <p class="portfolio__desc">
-                                <span>{{ project.summary }}</span>
-                            </p>
-                            <div class="portfolio__button">
-                                <span href="" class="button button--secondary button--small button--animate fa fa-eye">
-                                    <p class="button__inner">Case study</p>
-                                </span>
+                        <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                            <div class="portfolio__content">
+                                <!-- <div class="portfolio__logo">
+                                    <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/{{ project.slug }}.png" alt="{{ project.title }} logo">
+                                </div> -->
+                                <p class="portfolio__comment">{{ project.industry }}</p>
+                                <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
+                                <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>
+                                <p class="portfolio__desc">
+                                    <span>{{ project.summary }}</span>
+                                </p>
+                                <div class="portfolio__button">
+                                    <span href="" class="button button--secondary button--small button--animate fa fa-eye">
+                                        <p class="button__inner">Case study</p>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
                     {% endunless %}
                 {% endfor %}
             </div>
 
         </section>
 
-        <section class="section">
+        <section class="section section--nopadding portfolio">
 
-            <div class="section__content project-grid">
+            <div class="section__content portfolio--grid-bis">
                 {% for project in site.projects %}
                     <!-- add this tag to project page to add it o this section it -->
                     {% if project.tag contains 'grid' %}
-                        <div class="project-grid__item tooltip tooltip--click">
-                            <div class="block project-grid__container">
-                                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png" alt="Logo {{ project.title }}" class="project-grid__image hover-grayscale tooltip__trigger">
-                            </div>
-                            <div class="block project-grid__inner tooltip__inner">
-                                <div>
-                                    <p class="project-grid__title lead">{{ project.title }}</p>
-                                    <p class="body--bold body--small">Industry</p>
-                                    <p class="body--small">{{ project.industry }}</p>
-                                    <p class="body--bold body--small">Project</p>
-                                    <p class="body--small">{{ project.subtitle }}</p>
+                        <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                            <div class="portfolio__content">
+                                <!-- <div class="portfolio__logo">
+                                    <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/{{ project.slug }}.png" alt="{{ project.title }} logo">
+                                </div> -->
+                                <p class="portfolio__comment">{{ project.industry }}</p>
+                                <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
+                                <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>
+                                <p class="portfolio__desc">
+                                    <span>{{ project.summary }}</span>
+                                </p>
+                                <div class="portfolio__button">
+                                    <span href="" class="button button--secondary button--small button--animate fa fa-eye">
+                                        <p class="button__inner">Case study</p>
+                                    </span>
                                 </div>
-                                <a href="{{ project.url }}" target="_blank" class="project-grid__button button button--small button--primary button--animate fas fa-globe">
-                                    <p class="button__inner">Project overview</p>
-                                </a>
                             </div>
-                        </div>
+                        </a>
                     {% endif %}
                 {% endfor %}
             </div>
@@ -102,11 +103,36 @@
 
             <!-- edit component in _includes/components/section-header.html -->
             {% include components/section-header.html
-                title='There are no project available. Come back soon!'
+                title='There are no project at the moment. Come back soon!'
             %}
 
         </section>
 
     {% endif %}
+
+    <!-- PROJECT GRID WITH TOOLTIP -->
+    <!-- <div class="section__content project-grid">
+        {% for project in site.projects %}
+            {% if project.tag contains 'grid' %}
+                <div class="project-grid__item tooltip tooltip--click">
+                    <div class="block project-grid__container">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png" alt="Logo {{ project.title }}" class="project-grid__image hover-grayscale tooltip__trigger">
+                    </div>
+                    <div class="block project-grid__inner tooltip__inner">
+                        <div>
+                            <p class="project-grid__title lead">{{ project.title }}</p>
+                            <p class="body--bold body--small">Industry</p>
+                            <p class="body--small">{{ project.industry }}</p>
+                            <p class="body--bold body--small">Project</p>
+                            <p class="body--small">{{ project.subtitle }}</p>
+                        </div>
+                        <a href="{{ project.url }}" target="_blank" class="project-grid__button button button--small button--primary button--animate fas fa-globe">
+                            <p class="button__inner">Project overview</p>
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div> -->
 
 {% include footer.html %}

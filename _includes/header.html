@@ -83,7 +83,7 @@
 
 	<div class="header__bar">
 		<!-- to change the color of the logo, add the corresponding page title to the condition in the class tag -->
-		<div class="header__logo logo {% if page.title == 'Products' or page.title == 'About' %}logo-white{% endif %} {% if page.title == 'Home' or page.title == 'Mantle' or page.title == 'Case studies' %}logo-name-white{% endif %}">
+		<div class="header__logo logo {% if page.title == 'Products' or page.title == 'About' %}logo-white{% endif %} {% if page.title == 'Home' or page.title == 'Mantle' or page.title == 'Projects' %}logo-name-white{% endif %}">
 			<a href="{{ site.url }}/">
 				<!-- edit elements in _includes/elements/logo.html -->
 				{% include elements/logo.html %}
@@ -97,14 +97,14 @@
 				</a>
 			{% endif %}
 			{% if page.layout == 'project' %}
-				<a href="{{ site.url }}/case-studies" class="button button--small button--primary button--stroke button--animate fas fa-chevron-left">
+				<a href="{{ site.url }}/projects" class="button button--small button--primary button--stroke button--animate fas fa-chevron-left">
 					<p class="button__inner">Back</p>
 				</a>
 			{% endif %}
 			<a href="{{ site.url }}/contact" class="button button--small button--primary button--animate fas fa-phone {% if page.title == 'Products' or page.title == 'About' %}alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>
-			<a class="header__button button button--menu {% if page.title == 'Products' or page.title == 'Mantle' or page.title == 'About' or page.title == 'Home' or page.title == 'Case studies' %}alt{% endif %}">
+			<a class="header__button button button--menu {% if page.title == 'Products' or page.title == 'Mantle' or page.title == 'About' or page.title == 'Home' or page.title == 'Projects' %}alt{% endif %}">
 				<span class="button__inner"></span>
 			</a>
 		</div>
@@ -124,8 +124,8 @@
 					<span>Discover solutions, approach & projects</span>
 				</p>
 			</a>
-			<a href="{{ site.baseurl }}/case-studies" class="col--lg4 col--sm6 menu__button">
-				<p class="subtitle">Case studies</p>
+			<a href="{{ site.baseurl }}/projects" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Projects</p>
 				<p class="menu__description">
 					<span>See what we have worked on</span>
 				</p>

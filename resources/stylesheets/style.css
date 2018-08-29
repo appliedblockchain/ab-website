@@ -5902,23 +5902,17 @@ li + li {
   height: 120px;
   width: 160px;
 }
-/* line 86, ../sass/pages/_projects.scss */
+/* line 87, ../sass/pages/_projects.scss */
 .portfolio--grid-bis .portfolio__item {
-  width: 25% !important;
-}
-@media (max-width: 1024px) {
-  /* line 86, ../sass/pages/_projects.scss */
-  .portfolio--grid-bis .portfolio__item {
-    width: 50% !important;
-  }
+  width: 33.333% !important;
 }
 @media (max-width: 768px) {
-  /* line 86, ../sass/pages/_projects.scss */
+  /* line 87, ../sass/pages/_projects.scss */
   .portfolio--grid-bis .portfolio__item {
     width: 100% !important;
   }
 }
-/* line 97, ../sass/pages/_projects.scss */
+/* line 95, ../sass/pages/_projects.scss */
 .portfolio__item {
   display: -webkit-flex;
   display: flex;
@@ -5931,7 +5925,7 @@ li + li {
   color: #ffffff;
   width: 50%;
 }
-/* line 107, ../sass/pages/_projects.scss */
+/* line 105, ../sass/pages/_projects.scss */
 .portfolio__item:before {
   -moz-transition: background-color 0.4s ease 0s;
   -o-transition: background-color 0.4s ease 0s;
@@ -5947,40 +5941,40 @@ li + li {
   height: 100%;
   will-change: background-color;
 }
-/* line 113, ../sass/pages/_projects.scss */
+/* line 111, ../sass/pages/_projects.scss */
 .portfolio__item:nth-child(5n+1) {
   width: 50%;
 }
-/* line 117, ../sass/pages/_projects.scss */
+/* line 115, ../sass/pages/_projects.scss */
 .portfolio__item:nth-child(3n+1):before {
   background-color: rgba(0, 123, 255, 0.7);
 }
-/* line 120, ../sass/pages/_projects.scss */
+/* line 118, ../sass/pages/_projects.scss */
 .portfolio__item:nth-child(3n+2):before {
   background-color: rgba(0, 86, 179, 0.7);
 }
-/* line 123, ../sass/pages/_projects.scss */
+/* line 121, ../sass/pages/_projects.scss */
 .portfolio__item:nth-child(3n+3):before {
   background-color: rgba(77, 163, 255, 0.7);
 }
 @media (max-width: 768px) {
-  /* line 97, ../sass/pages/_projects.scss */
+  /* line 95, ../sass/pages/_projects.scss */
   .portfolio__item {
     width: 100% !important;
   }
 }
-/* line 143, ../sass/pages/_projects.scss */
+/* line 141, ../sass/pages/_projects.scss */
 .portfolio__item:hover .portfolio__content {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 147, ../sass/pages/_projects.scss */
+/* line 145, ../sass/pages/_projects.scss */
 .portfolio__item:hover .portfolio__comment {
   opacity: 0;
 }
-/* line 154, ../sass/pages/_projects.scss */
+/* line 152, ../sass/pages/_projects.scss */
 .portfolio__content {
   display: -webkit-flex;
   display: flex;
@@ -6000,11 +5994,11 @@ li + li {
   height: 100%;
   position: relative;
 }
-/* line 165, ../sass/pages/_projects.scss */
+/* line 163, ../sass/pages/_projects.scss */
 .portfolio__logo {
   filter: brightness(100);
 }
-/* line 169, ../sass/pages/_projects.scss */
+/* line 167, ../sass/pages/_projects.scss */
 .portfolio__comment {
   -moz-transition: opacity 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s;
@@ -6014,17 +6008,17 @@ li + li {
   margin-bottom: 10px;
   opacity: 1;
 }
-/* line 176, ../sass/pages/_projects.scss */
+/* line 174, ../sass/pages/_projects.scss */
 .portfolio__subtitle {
   color: #ffffff;
 }
-/* line 180, ../sass/pages/_projects.scss */
+/* line 178, ../sass/pages/_projects.scss */
 .portfolio__desc {
   margin: 20px 0 40px 0;
   color: #ffffff;
   overflow: hidden;
 }
-/* line 185, ../sass/pages/_projects.scss */
+/* line 183, ../sass/pages/_projects.scss */
 .portfolio__desc span {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -6037,11 +6031,11 @@ li + li {
   will-change: transform;
   display: block;
 }
-/* line 193, ../sass/pages/_projects.scss */
+/* line 191, ../sass/pages/_projects.scss */
 .portfolio__button {
   overflow: hidden;
 }
-/* line 196, ../sass/pages/_projects.scss */
+/* line 194, ../sass/pages/_projects.scss */
 .portfolio__button .button {
   -moz-transition: opacity 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s;
@@ -6050,61 +6044,61 @@ li + li {
   will-change: opacity;
   opacity: 0;
 }
-/* line 206, ../sass/pages/_projects.scss */
+/* line 204, ../sass/pages/_projects.scss */
 .portfolio__item:hover:nth-child(3n+1):before {
   background-color: #007bff;
 }
-/* line 207, ../sass/pages/_projects.scss */
+/* line 205, ../sass/pages/_projects.scss */
 .portfolio__item:hover:nth-child(3n+2):before {
   background-color: #0056b3;
 }
-/* line 208, ../sass/pages/_projects.scss */
+/* line 206, ../sass/pages/_projects.scss */
 .portfolio__item:hover:nth-child(3n+3):before {
   background-color: #4da3ff;
 }
-/* line 212, ../sass/pages/_projects.scss */
+/* line 210, ../sass/pages/_projects.scss */
 .portfolio__item:hover .portfolio__desc span {
   -moz-transform: translateY(0) scaleY(1);
   -ms-transform: translateY(0) scaleY(1);
   -webkit-transform: translateY(0) scaleY(1);
   transform: translateY(0) scaleY(1);
 }
-/* line 216, ../sass/pages/_projects.scss */
+/* line 214, ../sass/pages/_projects.scss */
 .portfolio__item:hover .portfolio__button .button {
   opacity: 1;
 }
 
-/* line 225, ../sass/pages/_projects.scss */
+/* line 223, ../sass/pages/_projects.scss */
 .project-grid {
   margin: -10px;
 }
-/* line 228, ../sass/pages/_projects.scss */
+/* line 226, ../sass/pages/_projects.scss */
 .project-grid__item {
   position: relative;
   width: 25%;
   padding: 10px;
 }
 @media (max-width: 1024px) {
-  /* line 228, ../sass/pages/_projects.scss */
+  /* line 226, ../sass/pages/_projects.scss */
   .project-grid__item {
     width: 50%;
   }
 }
 @media (max-width: 576px) {
-  /* line 228, ../sass/pages/_projects.scss */
+  /* line 226, ../sass/pages/_projects.scss */
   .project-grid__item {
     width: 100%;
   }
 }
-/* line 240, ../sass/pages/_projects.scss */
+/* line 238, ../sass/pages/_projects.scss */
 .project-grid__container {
   padding: 20px;
 }
-/* line 244, ../sass/pages/_projects.scss */
+/* line 242, ../sass/pages/_projects.scss */
 .project-grid__image {
   width: 100%;
 }
-/* line 248, ../sass/pages/_projects.scss */
+/* line 246, ../sass/pages/_projects.scss */
 .project-grid__inner {
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
@@ -6134,18 +6128,18 @@ li + li {
   text-align: left;
 }
 @media (min-width: 1300px) {
-  /* line 248, ../sass/pages/_projects.scss */
+  /* line 246, ../sass/pages/_projects.scss */
   .project-grid__inner {
     padding: 40px;
   }
 }
 @media (max-width: 1024px) {
-  /* line 248, ../sass/pages/_projects.scss */
+  /* line 246, ../sass/pages/_projects.scss */
   .project-grid__inner {
     padding: 40px;
   }
 }
-/* line 271, ../sass/pages/_projects.scss */
+/* line 269, ../sass/pages/_projects.scss */
 .project-grid__inner.js-show {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
@@ -6161,7 +6155,7 @@ li + li {
   z-index: 2;
 }
 @media (max-width: 576px) {
-  /* line 271, ../sass/pages/_projects.scss */
+  /* line 269, ../sass/pages/_projects.scss */
   .project-grid__inner.js-show {
     width: -webkit-calc(100% -  20px);
     width: calc(100% -  20px);
@@ -6171,19 +6165,19 @@ li + li {
     left: 10px;
   }
 }
-/* line 287, ../sass/pages/_projects.scss */
+/* line 285, ../sass/pages/_projects.scss */
 .project-grid__subtitle {
   margin-bottom: 20px;
 }
-/* line 291, ../sass/pages/_projects.scss */
+/* line 289, ../sass/pages/_projects.scss */
 .project-grid .body--bold {
   margin-top: 10px;
 }
-/* line 295, ../sass/pages/_projects.scss */
+/* line 293, ../sass/pages/_projects.scss */
 .project-grid__summary {
   margin-top: 10px;
 }
-/* line 299, ../sass/pages/_projects.scss */
+/* line 297, ../sass/pages/_projects.scss */
 .project-grid__button {
   margin-top: 10px;
   min-height: 30px;

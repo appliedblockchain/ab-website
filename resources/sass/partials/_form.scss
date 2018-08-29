@@ -110,9 +110,11 @@
 */
 
 .select-hide {
-	display: none;
-	visibility: hidden;
-	padding-right: 10px;
+	opacity: 0;
+    position: absolute;
+    height: 0;
+	padding: 0;
+	bottom: 0;
 }
 
 .form__select {
@@ -170,10 +172,6 @@
 
 			&:hover {
 				color: $primary;
-			}
-
-			&[rel="hide"] {
-				display: none;
 			}
 		}
 	}

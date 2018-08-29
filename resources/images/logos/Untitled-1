@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Contact | Company ff<current_company> | ff<first_name> ff<last_name></title>
+</head>
+<body>
+<p>Date submitted: ff<Date submitted></p>
+
+<p>From: ff<first_name> ff<last_name></p>
+<p>email address: ff<email></p>
+
+<p>Current Company: ff<current_company></p>
+<p>Current Title: ff<current_title></p>
+<p>Company size: ff<company_size></p>
+<p>Industry: ff<industry></p>
+
+<p>Interested in: ff<interest></p>
+<p>Message: </p>
+ff<message>
+
+<p>Consentment to collecting personal details:</p>
+ff<consentment>
+
+<p>Sign-up for our newsletter:</p>
+ff<newsletter_signup>
+</body>
+</html>

@@ -1,47 +1,50 @@
-<form action="" class="">
+<!-- FormToEmail HTML -->	 
+<form enctype="multipart/form-data" action="https://formtoemail.com/user_forms.php" method="post" class="fte">
     <div class="form__content">
-        <div class="form__group col--xl4 col--lg6">
-            <label for="" class="form__label">First name</label>
-            <input type="text" class="form__input" name="" id="" required="required">
+        <input type="hidden" name="user_id" value="KVGT5IR0FJ0USP3PC7N9">
+        <input type="hidden" name="form_id" value="1">
+        <div class="form__group col--lg4 col--md6">
+            <label for="first_name" class="form__label">First name</label>
+            <input type="text" name="first_name" id="first_name" class="form__input" required="required">
         </div>
-        <div class="form__group col--xl4 col--lg6">
-            <label for="" class="form__label">Last name</label>
-            <input type="text" class="form__input" name="" id="" required required="required">
+        <div class="form__group col--lg4 col--md6">
+            <label for="last_name" class="form__label">Last name</label>
+            <input type="text" name="last_name" id="last_name" class="form__input" required="required">
         </div>
-        <div class="form__group col--xl4 col--lg6">
-            <label for="" class="form__label">Email</label>
-            <input type="text" class="form__input" name="" id="" required="required">
+        <div class="form__group col--lg4 col--md6">
+            <label for="email" class="form__label">Email Address</label>
+            <input type="text" name="email" id="email" class="form__input" required="required">
         </div>
-        <div class="form__group col--lg6">
-            <label for="" class="form__label">Current company</label>
-            <input type="text" class="form__input" name="" id="" required="required">
+        <div class="form__group col--md6">
+            <label for="current_company" class="form__label">Current company</label>
+            <input type="text" name="current_company" id="current_company" class="form__input" required="required">
         </div>
-        <div class="form__group col--lg6">
-            <label for="" class="form__label">Current title</label>
-            <input type="text" class="form__input" name="" id="" required="required">
+        <div class="form__group col--md6">
+            <label for="current_title" class="form__label">Current title</label>
+            <input type="text" name="current_title" id="current_title" class="form__input" required="required">
         </div>
-        <div class="form__group col--xl2 col--lg6">
-            <label for="" class="form__label">Company size</label>
-            <select class="form__input" name="" id="" required="required">
-                <option value=""> — </option>
-                <option value="size-1">1-20</option>
-                <option value="size-2">21-50</option>
-                <option value="size-3">51-200</option>
-                <option value="size-4">201-1000</option>
-                <option value="size-5">1001-5000</option>
-                <option value="size-6">5001+</option>
+        <div class="form__group col--lg2 col--md6">
+            <label for="company_size" class="form__label">Company size</label>
+            <select name="company_size" id="company_size" class="form__input" required="required">
+                <option value="">—</option>
+                <option value="1-20">1-20</option>
+                <option value="21-50">21-50</option>
+                <option value="50-200">51-200</option>
+                <option value="201-1000">201-1000</option>
+                <option value="1001-5000">1001-5000</option>
+                <option value="5001+">5001+</option>
             </select>
         </div>
-        <div class="form__group col--xl5 col--lg6">
-            <label for="" class="form__label">Industry</label>
-            <select class="form__input" name="" id="" required="required">
+        <div class="form__group col--lg5 col--md6">
+            <label for="industry" class="form__label">Industry</label>
+            <select name="industry" id="industry" class="form__input" required="required">
                 <!-- edit component in _includes/components/forms/input-industries.html -->
                 {% include components/forms/input-industries.html %}
             </select>
         </div>
-        <div class="form__group col--xl5 col--lg6">
-            <label for="" class="form__label">Interested in</label>
-            <select class="form__input" name="" id="" required="required">
+        <div class="form__group col--lg5 col--md6">
+            <label for="interest" class="form__label">Interested in</label>
+            <select name="interest" id="interest" class="form__input" required="required">
                 <option value=""> — </option>
                 <option value="development-services">Development services</option>
                 <option value="advisory-services">Advisory services</option>
@@ -50,20 +53,20 @@
             </select>
         </div>
         <div class="form__group col--12">
-            <label for="" class="form__label">Message</label>
-            <textarea class="form__input" name="" id="" rows="8" placeholder=""></textarea>
+            <label for="message" class="form__label">Message</label>
+            <textarea name="message" id="message" rows="8" class="form__input" required="required"></textarea>
         </div>
         <div class="form__group col--12">
-            <span class="form__checkbox">
-                <input type="checkbox" class="form__input" name="" id="" value="1" required="required">
-                <label for="" class="form__label">I consent Applied Blockchain to collecting my personal details to receive commercial offers**</label>
-            </span>
+            <div class="fte-ckrad form__checkbox">
+                <input type="checkbox" name="consentment" id="consentment" value="Yes" class="form__input" required="required">
+                <label for="consentment" class="form__label">I consent Applied Blockchain to collecting my personal details to receive commercial offers*</label>
+            </div>
         </div>
         <div class="form__group col--12">
-            <span class="form__checkbox">
-                <input type="checkbox" class="form__input" name="" id="" value="1">
-                <label for="" class="form__label">Sign-up for our newsletter! I consent Applied Blockchain to add me to their newsletter mailing list, with my data being stored**</label>
-            </span>
+            <div class="fte-ckrad form__checkbox">
+                <input type="checkbox" name="newsletter_signup" id="newsletter_signup" value="Yes" class="form__input">
+                <label for="newsletter_signup" class="form__label">Sign-up for our newsletter! I consent Applied Blockchain to add me to their newsletter mailing list, with my data being stored*</label>
+            </div>
         </div>
         <!-- edit component in _includes/components/form-footer.html -->
         {% include components/forms/form-footer.html %}

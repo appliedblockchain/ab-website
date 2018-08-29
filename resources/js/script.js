@@ -9,6 +9,7 @@ $(document).ready(function() {
 // MENU SCROLL ANIMATION
 // MENU OPEN ANIMATION
 // BACK TO TOP
+// COOKIE BAR ACCEPT
 // —————————————————————————————————————————————————————————————————
 
 
@@ -67,6 +68,31 @@ btn.on('click', function(e) {
 	e.preventDefault();
 	$('html, body').animate({scrollTop:0}, '400');
 });
+
+
+var cookieKey = "__applied_blockchain_cookie_banner"
+var cookieClose = function() {
+	if (typeof localStorage !== 'undefined') {
+		localStorage[cookieKey] = "true"
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// COOKIE BAR ACCEPT
+// —————————————————————————————————————————————————————————————————
+
+var displayCookieBar = function() {
+	if (typeof localStorage !== 'undefined') {
+		if (!localStorage[cookieKey]) {
+			$(".cookie").css("display", "flex")
+		}
+	}
+}
+
+$(".cookie__button").on("click", cookieClose)
+displayCookieBar()
 
 
 

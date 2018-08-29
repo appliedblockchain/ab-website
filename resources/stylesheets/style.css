@@ -1179,6 +1179,9 @@ optgroup {
   -o-transition: bottom 0.4s ease 0s, -o-transform 0.4s ease 0s;
   -webkit-transition: bottom 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
   transition: bottom 0.4s ease 0s, transform 0.4s ease 0s;
+  -moz-box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4);
+  -webkit-box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4);
+  box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4);
   right: -webkit-calc(6.25vw  -  25px);
   right: calc(6.25vw  -  25px);
   will-change: bottom, transform;
@@ -1187,18 +1190,18 @@ optgroup {
   width: 50px;
   height: 50px;
 }
-/* line 294, ../sass/partials/_buttons.scss */
+/* line 295, ../sass/partials/_buttons.scss */
 .button--scroll-top.js-show {
-  bottom: 30px;
+  bottom: 25px;
 }
 @media (max-width: 768px) {
-  /* line 294, ../sass/partials/_buttons.scss */
+  /* line 295, ../sass/partials/_buttons.scss */
   .button--scroll-top.js-show {
     right: 20px;
     bottom: 20px;
   }
 }
-/* line 302, ../sass/partials/_buttons.scss */
+/* line 303, ../sass/partials/_buttons.scss */
 .button--scroll-top:hover {
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
@@ -4661,7 +4664,7 @@ li + li {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 10px 6.25vw;
+  padding: 10px 12.5vw;
   opacity: 1;
   display: none;
 }
@@ -4710,30 +4713,33 @@ li + li {
   height: 50px !important;
   min-height: 50px !important;
   max-height: 50px !important;
+  -moz-box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4) !important;
+  -webkit-box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4) !important;
+  box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4) !important;
 }
 
-/* line 215, ../sass/partials/_widgets.scss */
+/* line 216, ../sass/partials/_widgets.scss */
 #userlike.userlike-mobile #userlike-button-symbol, #userlike a#userlike-tab.userlike-button-bubble #userlike-button-symbol {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* line 220, ../sass/partials/_widgets.scss */
-a#userlike-tab.userlike-button-bubble.userlike-button-03 .userlike-symbol {
+/* line 221, ../sass/partials/_widgets.scss */
+a#userlike-tab.userlike-button-bubble .userlike-symbol {
   transform: scale(0.7);
   margin-top: -7px !important;
   margin-left: -2px !important;
 }
 
-/* line 226, ../sass/partials/_widgets.scss */
+/* line 227, ../sass/partials/_widgets.scss */
 #userlike.userlike-mobile a#userlike-tab.userlike-slideup, #userlike a#userlike-tab.userlike-button-bubble.userlike-slideup {
-  bottom: 30px !important;
+  bottom: 25px !important;
 }
 
 /* text banner */
-/* line 232, ../sass/partials/_widgets.scss */
+/* line 233, ../sass/partials/_widgets.scss */
 #userlike-hover-text-container {
-  bottom: 36px !important;
+  bottom: 33px !important;
   height: 40px !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
@@ -4743,7 +4749,7 @@ a#userlike-tab.userlike-button-bubble.userlike-button-03 .userlike-symbol {
   margin-left: -10px !important;
 }
 
-/* line 243, ../sass/partials/_widgets.scss */
+/* line 244, ../sass/partials/_widgets.scss */
 #userlike-hover-text-container, #userlike-eyecatcher {
   -moz-transition: opacity 0.4s !important 0s;
   -o-transition: opacity 0.4s !important 0s;
@@ -4752,12 +4758,12 @@ a#userlike-tab.userlike-button-bubble.userlike-button-03 .userlike-symbol {
   transition: opacity 0.4s !important 0s;
 }
 
-/* line 247, ../sass/partials/_widgets.scss */
+/* line 248, ../sass/partials/_widgets.scss */
 #userlike #userlike-button-hover-text {
   padding-top: 10px !important;
 }
 
-/* line 251, ../sass/partials/_widgets.scss */
+/* line 252, ../sass/partials/_widgets.scss */
 #userlike-hover-text-container.userlike-left #userlike-hover-text-arrow {
   display: none;
 }

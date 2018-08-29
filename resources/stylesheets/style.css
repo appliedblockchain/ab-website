@@ -1179,24 +1179,26 @@ optgroup {
   -o-transition: bottom 0.4s ease 0s, -o-transform 0.4s ease 0s;
   -webkit-transition: bottom 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
   transition: bottom 0.4s ease 0s, transform 0.4s ease 0s;
-  right: -webkit-calc(3.125vw  -  20px);
-  right: calc(3.125vw  -  20px);
+  right: -webkit-calc(6.25vw  -  25px);
+  right: calc(6.25vw  -  25px);
   will-change: bottom, transform;
   position: fixed;
   bottom: -80px;
+  width: 50px;
+  height: 50px;
 }
-/* line 292, ../sass/partials/_buttons.scss */
+/* line 294, ../sass/partials/_buttons.scss */
 .button--scroll-top.js-show {
   bottom: 30px;
 }
 @media (max-width: 768px) {
-  /* line 292, ../sass/partials/_buttons.scss */
+  /* line 294, ../sass/partials/_buttons.scss */
   .button--scroll-top.js-show {
     right: 20px;
     bottom: 20px;
   }
 }
-/* line 300, ../sass/partials/_buttons.scss */
+/* line 302, ../sass/partials/_buttons.scss */
 .button--scroll-top:hover {
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
@@ -4503,17 +4505,18 @@ li + li {
  * hiring
  * news
  * cookies
+ * chat
  * —————————————————————————————————————————————————————————————————
 */
 /*
  * general
  * —————————————————————————————————————————————————————————————————
 */
-/* line 25, ../sass/partials/_widgets.scss */
+/* line 26, ../sass/partials/_widgets.scss */
 .widget {
   position: relative;
 }
-/* line 28, ../sass/partials/_widgets.scss */
+/* line 29, ../sass/partials/_widgets.scss */
 .widget__header {
   display: -webkit-flex;
   display: flex;
@@ -4521,7 +4524,7 @@ li + li {
   justify-content: space-between;
   width: 100%;
 }
-/* line 33, ../sass/partials/_widgets.scss */
+/* line 34, ../sass/partials/_widgets.scss */
 .widget__header + .widget__content {
   margin-top: 10px;
 }
@@ -4530,7 +4533,7 @@ li + li {
  * social
  * —————————————————————————————————————————————————————————————————
 */
-/* line 50, ../sass/partials/_widgets.scss */
+/* line 51, ../sass/partials/_widgets.scss */
 .social {
   margin-bottom: 40px;
 }
@@ -4539,7 +4542,7 @@ li + li {
  * newsletter
  * —————————————————————————————————————————————————————————————————
 */
-/* line 63, ../sass/partials/_widgets.scss */
+/* line 64, ../sass/partials/_widgets.scss */
 .newsletter__button {
   margin-top: 10px;
 }
@@ -4548,7 +4551,7 @@ li + li {
  * hiring
  * —————————————————————————————————————————————————————————————————
 */
-/* line 77, ../sass/partials/_widgets.scss */
+/* line 78, ../sass/partials/_widgets.scss */
 .widget__hiring {
   display: -webkit-flex;
   display: flex;
@@ -4559,7 +4562,7 @@ li + li {
   color: #ffffff !important;
 }
 @media (max-width: 768px) {
-  /* line 77, ../sass/partials/_widgets.scss */
+  /* line 78, ../sass/partials/_widgets.scss */
   .widget__hiring {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -4567,30 +4570,30 @@ li + li {
     align-items: flex-start;
   }
 }
-/* line 88, ../sass/partials/_widgets.scss */
+/* line 89, ../sass/partials/_widgets.scss */
 .widget__hiring .subtitle {
   margin-right: 20px;
   white-space: nowrap;
 }
 @media (max-width: 768px) {
-  /* line 88, ../sass/partials/_widgets.scss */
+  /* line 89, ../sass/partials/_widgets.scss */
   .widget__hiring .subtitle {
     margin-right: 0;
     margin-bottom: 10px;
   }
 }
-/* line 97, ../sass/partials/_widgets.scss */
+/* line 98, ../sass/partials/_widgets.scss */
 .widget__hiring .button {
   min-width: 190px;
 }
 @media (max-width: 768px) {
-  /* line 97, ../sass/partials/_widgets.scss */
+  /* line 98, ../sass/partials/_widgets.scss */
   .widget__hiring .button {
     -webkit-align-self: flex-start;
     align-self: flex-start;
   }
 }
-/* line 104, ../sass/partials/_widgets.scss */
+/* line 105, ../sass/partials/_widgets.scss */
 .widget__hiring .lead {
   color: #ffffff;
 }
@@ -4599,7 +4602,7 @@ li + li {
  * news
  * —————————————————————————————————————————————————————————————————
 */
-/* line 119, ../sass/partials/_widgets.scss */
+/* line 120, ../sass/partials/_widgets.scss */
 .widget__news {
   display: -webkit-flex;
   display: flex;
@@ -4615,20 +4618,20 @@ li + li {
   color: #ffffff !important;
 }
 @media (max-width: 576px) {
-  /* line 119, ../sass/partials/_widgets.scss */
+  /* line 120, ../sass/partials/_widgets.scss */
   .widget__news {
     display: none;
   }
 }
-/* line 132, ../sass/partials/_widgets.scss */
+/* line 133, ../sass/partials/_widgets.scss */
 .widget__news .button {
   min-width: 110px;
 }
-/* line 136, ../sass/partials/_widgets.scss */
+/* line 137, ../sass/partials/_widgets.scss */
 .widget__news .lead {
   color: #ffffff;
 }
-/* line 143, ../sass/partials/_widgets.scss */
+/* line 144, ../sass/partials/_widgets.scss */
 .widget .news__content {
   width: 100%;
 }
@@ -4637,7 +4640,7 @@ li + li {
  * cookies
  * —————————————————————————————————————————————————————————————————
 */
-/* line 156, ../sass/partials/_widgets.scss */
+/* line 157, ../sass/partials/_widgets.scss */
 .cookie {
   display: -webkit-flex;
   display: flex;
@@ -4663,7 +4666,7 @@ li + li {
   display: none;
 }
 @media (max-width: 576px) {
-  /* line 156, ../sass/partials/_widgets.scss */
+  /* line 157, ../sass/partials/_widgets.scss */
   .cookie {
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
@@ -4671,24 +4674,92 @@ li + li {
     flex-wrap: wrap;
   }
 }
-/* line 176, ../sass/partials/_widgets.scss */
+/* line 177, ../sass/partials/_widgets.scss */
 .cookie.js-cookie-accepted {
   opacity: 0;
 }
-/* line 180, ../sass/partials/_widgets.scss */
+/* line 181, ../sass/partials/_widgets.scss */
 .cookie__text {
   padding-right: 20px;
 }
 @media (max-width: 576px) {
-  /* line 180, ../sass/partials/_widgets.scss */
+  /* line 181, ../sass/partials/_widgets.scss */
   .cookie__text {
     padding-right: 0;
     margin-bottom: 10px;
   }
 }
-/* line 188, ../sass/partials/_widgets.scss */
+/* line 189, ../sass/partials/_widgets.scss */
 .cookie__button {
   min-width: 75px;
+}
+
+/*
+ * chat
+ * —————————————————————————————————————————————————————————————————
+*/
+/* chat icon */
+/* line 203, ../sass/partials/_widgets.scss */
+#userlike.userlike-mobile a#userlike-tab, #userlike a#userlike-tab.userlike-button-bubble {
+  margin-left: -webkit-calc(3.125vw + 15px) !important;
+  margin-left: calc(3.125vw + 15px) !important;
+  margin-left: 6.25vw;
+  width: 50px !important;
+  min-width: 50px !important;
+  max-width: 50px !important;
+  height: 50px !important;
+  min-height: 50px !important;
+  max-height: 50px !important;
+}
+
+/* line 215, ../sass/partials/_widgets.scss */
+#userlike.userlike-mobile #userlike-button-symbol, #userlike a#userlike-tab.userlike-button-bubble #userlike-button-symbol {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* line 220, ../sass/partials/_widgets.scss */
+a#userlike-tab.userlike-button-bubble.userlike-button-03 .userlike-symbol {
+  transform: scale(0.7);
+  margin-top: -7px !important;
+  margin-left: -2px !important;
+}
+
+/* line 226, ../sass/partials/_widgets.scss */
+#userlike.userlike-mobile a#userlike-tab.userlike-slideup, #userlike a#userlike-tab.userlike-button-bubble.userlike-slideup {
+  bottom: 30px !important;
+}
+
+/* text banner */
+/* line 232, ../sass/partials/_widgets.scss */
+#userlike-hover-text-container {
+  bottom: 36px !important;
+  height: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  border-radius: 20px !important;
+  margin-left: -10px !important;
+}
+
+/* line 243, ../sass/partials/_widgets.scss */
+#userlike-hover-text-container, #userlike-eyecatcher {
+  -moz-transition: opacity 0.4s !important 0s;
+  -o-transition: opacity 0.4s !important 0s;
+  -webkit-transition: opacity 0.4s !important;
+  -webkit-transition-delay: 0s;
+  transition: opacity 0.4s !important 0s;
+}
+
+/* line 247, ../sass/partials/_widgets.scss */
+#userlike #userlike-button-hover-text {
+  padding-top: 10px !important;
+}
+
+/* line 251, ../sass/partials/_widgets.scss */
+#userlike-hover-text-container.userlike-left #userlike-hover-text-arrow {
+  display: none;
 }
 
 /* 

@@ -284,10 +284,12 @@
 
 .button--scroll-top {
 	@include transition(bottom $transition, transform $transition);
-	@include calc(right, $col/2' - '$integer);
+	@include calc(right, $col' - '$integer*1.25);
 	will-change: bottom, transform;
     position: fixed;
 	bottom: -$integer*4;
+	width: $integer*2.5;
+	height: $integer*2.5;
 
 	&.js-show {
 		bottom: 30px;

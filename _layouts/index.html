@@ -1,11 +1,16 @@
 {% include header.html %}
 
+
     <div class="section section--col section--primary landing" id="landing">
+
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
 
         <h1 class="landing__title headline">Building future-proof<br>blockchain applications</h1>
         <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/landing.svg" alt="Landing icon" class="landing__icon">
         <div class="landing__carousel owl-carousel owl-carousel-clients carousel">
             {% for item in site.data.images.clients %}
+            {% assign item = site.data.images.clients | sort: 'order' %}
                 <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients-white/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
             {% endfor %}
         </div>

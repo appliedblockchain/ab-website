@@ -5,12 +5,24 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 // SCRIPT
 // —————————————————————————————————————————————————————————————————
+// INIT PARTICLE.JS
 // COOKIE ACCEPT
 // MENU SCROLL ANIMATION
 // MENU OPEN ANIMATION
 // BACK TO TOP
 // COOKIE BAR ACCEPT
 // —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// INIT PARTICLE.JS
+// —————————————————————————————————————————————————————————————————
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', function() {
+	console.log('callback - particles.js config loaded');
+});
 
 
 

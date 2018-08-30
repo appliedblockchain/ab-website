@@ -7,6 +7,7 @@
  * STRUCTURE
  * —————————————————————————————————————————————————————————————————
  * general
+ * responsive
  * z-index
  * hover classes
  * section
@@ -223,6 +224,19 @@ li + li {
 	}
 }
 
+
+
+/*
+ * responsive
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.hide {
+
+	&--desktop { @include responsive(max-width, $break-desktop-max) { display: none; } }
+	&--tablets { @include responsive(max-width, $break-tablets-max) { display: none; } }
+	&--phones { @include responsive(max-width, $break-phones-max) { display: none; } }
+}
 
 
 /*
@@ -559,6 +573,7 @@ li + li {
 	position: fixed;
 	height: $integer*8;
 	width: 100vw;
+	pointer-events: none;
 
 	&__bar {
 		@include transition(height $transition);
@@ -578,6 +593,7 @@ li + li {
 		@include transition(height $transition, width $transition);
 		will-change: height, width;
 		width: $integer*15;
+		pointer-events: initial;
 
 		&.logo-white {
 
@@ -615,11 +631,15 @@ li + li {
 		@include display-flex();
 	}
 
-	.button--primary.alt {
-		background-color: $white;
+	.button {
+		pointer-events: initial;
 
-		.button__inner {
-			color: $primary;
+		&--primary.alt {
+			background-color: $white;
+	
+			.button__inner {
+				color: $primary;
+			}
 		}
 	}
 
@@ -627,6 +647,7 @@ li + li {
 		@include calc(height, '100vh - '$integer*8);
 		@include overflow-scroll();
 		padding: 0  $col*2 $integer*4 $col*2;
+		pointer-events: initial;
 		@include responsive(max-width, $break-tablets-max) {
 			padding: 0 $col $integer*6 $col;
 		}

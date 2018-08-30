@@ -89,40 +89,53 @@ technology:
 # in index.html page
 
 clients:
-  - url: shell
-    alt: Shell
+  - url: cygnetise
+    alt: Cygnetise
     order: 1
 
-  - url: toyota
-    alt: Toyota
+  - url: lloyds-register
+    alt: LLoyds Register
     order: 2
-
-  - url: vodafone
-    alt: Vodafone
-    order: 3
 
   - url: united-nations
     alt: United Nations
+    order: 3
+
+  - url: shell
+    alt: Shell
     order: 4
+
+  - url: klm
+    alt: KLM
+    order: 5
+
+  - url: toyota
+    alt: Toyota
+    order: 6
+
+  - url: vodafone
+    alt: Vodafone
+    order: 7
 
   - url: sita
     alt: Sita
-    order: 5
-
-  - url: appii
-    alt: Appii
-
-  - url: babb
-    alt: BABB
-
-  - url: cygnetise
-    alt: Cygnetise
+    order: 8
 
   - url: nuggets
     alt: Nuggets
+    order: 9
+
+  - url: appii
+    alt: Appii
+    order: 10
+
+  - url: babb
+    alt: BABB
+    order: 11
 
   - url: travelledger
     alt: Travel Ledger
+    order: 12
 
 # partners section
 # in about.html page

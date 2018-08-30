@@ -58,21 +58,20 @@
             title='We have developed blockchain solutions for over 30 clients – from startups to enterprises'
             description='We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.'
         %}
-        
+
         <a href="{{ site.baseurl }}/projects" class="button button--secondary button--large button--animate fas fa-fill">
             <p class="button__inner">View our projects</p>
         </a>
 
-        <div class="row">
-            <div class="col--lg6 video">
-                <a href="#modal-video" class="js-button-modal">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-                </a>
-            </div>
-            <!-- edit component in _includes/components/modals/video.html -->
-            {% include components/modals/video.html %}
+        <div class="video block">
+            <a href="#modal-video" class="js-button-modal">
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+            </a>
+            <p class="video__text subtitle">They’re real expert around blockchain</p>
         </div>
-                
+        <!-- edit component in _includes/components/modals/video.html -->
+        {% include components/modals/video.html %}
+
     </section>
 
     <section class="section section--block section--alt section--grey">
@@ -109,7 +108,7 @@
                         <p>We contribute to global industry events and whitepapers, with keynote presentations and commentaries, and also lead blockchain training workshops. Our work has led us to be recognised by the UK government, where Adi Ben-Ari has been invited to the Blockchain Roundtable at the House of Lords and presented at the Department for Digital, Culture, Media and Sport.</p>
                     </div>
                 </div>
-                <div class="why-us__item body--right">
+                <div class="why-us__item">
                     <div class="coloffset--xl1 col--xl5 col--lg6 col--md8">
                         <p class="blog__title lead">International Market Leader</p>
                         <p>We have built and deployed blockchain solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has also recognised Applied Blockchain amongst the Top Global Blockchain Development and Consulting Firm 2017 and 2018.</p>

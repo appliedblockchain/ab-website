@@ -1,78 +1,19 @@
 {% include header.html %}
 
-    <!-- <div class="anchor">
-        <div class="anchor__container"> -->
-            <!-- edit component in _includes/components/section-header.html -->
-            <!-- {% include components/anchor-item.html
-                active='js-dot-active'
-                id='landing'
-                title='Home'
-            %}
-            {% include components/anchor-item.html
-                id='what-we-do'
-                title='What we do'
-            %}
-            {% include components/anchor-item.html
-                id='who-we-help'
-                title='Who we help'
-            %}
-            {% include components/anchor-item.html
-                id='why-us'
-                title='Why us'
-            %}
-            {% include components/anchor-item.html
-                id='testimonials'
-                title='Testimonials'
-            %}
-            {% include components/anchor-item.html
-                id='featured-in'
-                title='Featured in'
-            %}
-       </div>
-    </div> -->
+    <div class="section section--col section--primary landing" id="landing">
 
-    <div class="section section--dark landing" id="landing">
-
-        <div class="landing__background">
-            <span class="graphic landing__graphic--lines">
-                <!-- edit elements in _includes/elements/graphic-lines.svg -->
-                {% include elements/graphic-lines.svg %}
-            </span>
-            <span class="graphic landing__graphic--circle">
-                <!-- edit elements in _includes/elements/graphic-circle.svg -->
-                {% include elements/graphic-circle.svg %}
-            </span>
+        <h1 class="landing__title headline">Building future-proof<br>blockchain applications</h1>
+        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/landing.svg" alt="Landing icon" class="landing__icon">
+        <div class="landing__carousel owl-carousel owl-carousel-clients carousel">
+            {% for item in site.data.images.clients %}
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
+            {% endfor %}
         </div>
-        <h1 class="landing__title headline">Building future proof blockchain applications</h1>
-        <div class="landing__content row">
-            <div class="landing__widget widget block">
-                <div class="widget__hiring">
-                    <div class="widget__header">
-                        <p class="lead">We are hiring</p>
-                        <a href="{{ site.url }}/join" class="button button--small button--highlight button--animate fas fa-user-plus">
-                            <p class="button__inner">See our vacancy list</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="widget__news">
-                    <div class="widget__header">
-                        <p class="lead">Latest news</p>
-                        <a href="{{ site.url }}/media" class="button button--small button--primary-lighten button--animate fas fa-plus">
-                            <p class="button__inner">Read more</p>
-                        </a>
-                    </div>
-                    <div class="widget__content news__content owl-carousel owl-carousel-news">
-                        {% for post in site.posts limit: 3 %}
-                            <p class="">{{ post.title | truncate: 100, "…" }}</p>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/gartner-alt.svg" alt="" class="gartner">
+        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
         </div>
     </div>
 
-    <section class="section section--col section--primary" id="what-we-do">
+    <section class="section section--col section--dark" id="what-we-do">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html

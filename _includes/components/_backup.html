@@ -1,0 +1,68 @@
+<!-- HIRING AND NEWS WIDGETS -->
+<div class="landing__widget widget block">
+    <div class="widget__hiring">
+        <div class="widget__header">
+            <p class="lead">We are hiring</p>
+            <a href="{{ site.url }}/join" class="button button--small button--highlight button--animate fas fa-user-plus">
+                <p class="button__inner">See our vacancy list</p>
+            </a>
+        </div>
+    </div>
+    <div class="widget__news">
+        <div class="widget__header">
+            <p class="lead">Latest news</p>
+            <a href="{{ site.url }}/media" class="button button--small button--primary-lighten button--animate fas fa-plus">
+                <p class="button__inner">Read more</p>
+            </a>
+        </div>
+        <div class="widget__content news__content owl-carousel owl-carousel-news">
+            {% for post in site.posts limit: 3 %}
+                <p class="">{{ post.title | truncate: 100, "…" }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- GRAPHIC BACKGROUND -->
+<div class="landing__background">
+    <span class="graphic landing__graphic--lines">
+        <!-- edit component in _includes/elements/graphic-lines.svg -->
+        {% include elements/graphic-lines.svg %}
+    </span>
+    <span class="graphic landing__graphic--circle">
+        <!-- edit component in _includes/elements/graphic-circle.svg -->
+        {% include elements/graphic-circle.svg %}
+    </span>
+</div>
+
+<!-- ANCHOR NAV -->
+<div class="anchor">
+    <div class="anchor__container"> -->
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/anchor-item.html
+            active='js-dot-active'
+            id='landing'
+            title='Home'
+        %}
+        {% include components/anchor-item.html
+            id='what-we-do'
+            title='What we do'
+        %}
+        {% include components/anchor-item.html
+            id='who-we-help'
+            title='Who we help'
+        %}
+        {% include components/anchor-item.html
+            id='why-us'
+            title='Why us'
+        %}
+        {% include components/anchor-item.html
+            id='testimonials'
+            title='Testimonials'
+        %}
+        {% include components/anchor-item.html
+            id='featured-in'
+            title='Featured in'
+        %}
+    </div>
+</div>

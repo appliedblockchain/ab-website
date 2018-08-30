@@ -89,8 +89,31 @@ technology:
 # in index.html page
 
 clients:
+  - url: shell
+    alt: Shell
+    order: 1
+
+  - url: toyota
+    alt: Toyota
+    order: 2
+
+  - url: vodafone
+    alt: Vodafone
+    order: 3
+
+  - url: united-nations
+    alt: United Nations
+    order: 4
+
+  - url: sita
+    alt: Sita
+    order: 5
+
   - url: appii
     alt: Appii
+
+  - url: babb
+    alt: BABB
 
   - url: cygnetise
     alt: Cygnetise
@@ -98,20 +121,8 @@ clients:
   - url: nuggets
     alt: Nuggets
 
-  - url: shell
-    alt: Shell
-
-  - url: sita
-    alt: Sita
-
-  - url: toyota
-    alt: Toyota
-
-  - url: united-nations
-    alt: United Nations
-
-  - url: vodafone
-    alt: Vodafone
+  - url: travelledger
+    alt: Travel Ledger
 
 # partners section
 # in about.html page

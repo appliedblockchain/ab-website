@@ -126,7 +126,7 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 * In the `_projects` folder, duplicate a project;
 * Rename the file in lowercase, using the name of the project/client for reference;
 * Fill in the tags according to the case study layout (if you don't understand where they are displayed, [here is an example](http://next.appliedblockchain.com/project/cygnetise/))
-* Add the company logo in the `resources/images/logos/clients-alt` folder;
+* Add the company logo in the `resources/images/logos/clients` folder;
 > The logo in the about section will link itself automatically, provided the image has the same **title** as the project page
 * If there is a quote, add it in `_data/testimonials.yml` under the project's page title, and add the portrait in the `resources/images/testimonials` folder;
 ```yml
@@ -143,7 +143,7 @@ title-of-project:
 ### Edit project
 * Explain markdown for content in .md file ('<p>' tag used spacing the paragraphs)
 * Logo (path and name)
-    * Pay attention to clients and clients-alt folders
+    * Pay attention to clients and clients folders
     * if doesn't work: check file extension (needs to be jpeg)
     * Logo size 
 * Testimonials (take testimonial component and filter by slug [page title])

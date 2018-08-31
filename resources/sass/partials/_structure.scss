@@ -405,6 +405,11 @@ li + li {
 	&--nopadding {
 		padding: 0;
 	}
+
+	&--margin-minus {
+		margin-top: -$integer*10;
+		padding-top: $integer*10;
+	}
 }
 
 /*colors*/

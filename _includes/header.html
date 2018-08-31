@@ -109,7 +109,7 @@
 
 	<div class="header__bar">
 		<!-- to change the color of the logo, add the corresponding page title to the condition in the class tag -->
-		<div class="header__logo logo {% if page.title == 'Home' or page.title == 'Products' or page.title == 'About' %}logo-white{% endif %} {% if page.title == 'Services' or page.title == 'Mantle' or page.title == 'Projects' %}logo-name-white{% endif %}">
+		<div class="header__logo logo {% if page.title == 'Home' or page.title == 'About' %}logo-white{% endif %} {% if page.title == 'Services' or page.title == 'Mantle' or page.title == 'Projects' %}logo-name-white{% endif %}">
 			<a href="{{ site.url }}/">
 				<!-- edit elements in _includes/elements/logo.html -->
 				{% include elements/logo.html %}
@@ -127,10 +127,10 @@
 					<p class="button__inner">Back</p>
 				</a>
 			{% endif %}
-			<a href="{{ site.url }}/contact" class="button button--small button--primary button--animate fas fa-phone {% if page.title == 'Home' or page.title == 'Products' or page.title == 'About' %}alt{% endif %}">
+			<a href="{{ site.url }}/contact" class="button button--small button--primary button--animate fas fa-phone {% if page.title == 'Home' or page.title == 'About' %}alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>
-			<a class="header__button button button--menu {% if page.title == 'Products' or page.title == 'Services' or page.title == 'Mantle' or page.title == 'Mantle' or page.title == 'About' or page.title == 'Home' or page.title == 'Projects' %}alt{% endif %}">
+			<a class="header__button button button--menu {% if page.title == 'Services' or page.title == 'Mantle' or page.title == 'Mantle' or page.title == 'About' or page.title == 'Home' or page.title == 'Projects' %}alt{% endif %}">
 				<span class="button__inner"></span>
 			</a>
 		</div>

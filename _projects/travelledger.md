@@ -1,5 +1,6 @@
 ---
 layout: project
+tag: featured
 
 title: Travel Ledger
 subtitle: Travel settlement platform built on blockchain technology

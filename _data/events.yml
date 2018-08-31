@@ -1,26 +1,6 @@
 # events list
 # in events.html page
 
-# past
-
-past:
-  - name: London FinTech Week
-    image: london-fintech-week
-    dates: July 6-13
-    location: London, UK
-    link: https://www.fintechweek.com/
-
-  - name: 'Blockchain: Rethink Trust Conference'
-    dates: June 29
-    location: Amsterdamm, Netherlands
-    link: https://rethinktrust.org/
-
-  - name: BlockShow Europe
-    image: blockShow-europe
-    dates: May 28-29
-    location: Berlin, Deutschland
-    link: https://blockshoweurope.com/
-
 # upcoming
 
 upcoming:
@@ -46,3 +26,23 @@ upcoming:
     dates: November 21
     location: 8 Northumberland, London, UK
     link: https://blockchainventuresummit.com/
+
+# past
+
+past:
+  - name: London FinTech Week
+    image: london-fintech-week
+    dates: July 6-13
+    location: London, UK
+    link: https://www.fintechweek.com/
+
+  - name: 'Blockchain: Rethink Trust Conference'
+    dates: June 29
+    location: Amsterdamm, Netherlands
+    link: https://rethinktrust.org/
+
+  - name: BlockShow Europe
+    image: blockShow-europe
+    dates: May 28-29
+    location: Berlin, Germany
+    link: https://blockshoweurope.com/

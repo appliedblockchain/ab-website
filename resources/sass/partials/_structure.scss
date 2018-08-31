@@ -213,7 +213,7 @@ li + li {
 /*page headers*/
 
 .section--header {
-	background-position: top center;
+	background-position: top center !important;
 
 	&:before {		
 		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
@@ -228,6 +228,12 @@ li + li {
 	&.section--grey {
 		&:before {		
 			@include background-image(linear-gradient(to bottom, rgba($lightgrey, 0.6), $lightgrey));
+		}
+	}
+
+	&.section--dark {
+		&:before {		
+			@include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark));
 		}
 	}
 }

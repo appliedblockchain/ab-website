@@ -51,24 +51,29 @@
     </section>
 
     <section class="section section--grey" id="who-we-help">
-
+        
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
             comment='Who we help'
             title='We have developed blockchain solutions for over 30 clients – from startups to enterprises'
-            description='We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.'
         %}
 
-        <a href="{{ site.baseurl }}/projects" class="button button--secondary button--large button--animate fas fa-fill">
-            <p class="button__inner">View our projects</p>
-        </a>
-
-        <div class="video block">
-            <a href="#modal-video" class="js-button-modal">
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-            </a>
-            <p class="video__text subtitle">They’re real expert around blockchain</p>
+        <div class="section__content">
+            <div class="row">
+                <div class="col--lg7 video">
+                    <a href="#modal-video" class="js-button-modal">
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                    </a>
+                </div>
+                <div class="col--lg5">
+                    <p class="body--large">We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.</p>
+                    <a href="{{ site.baseurl }}/projects" class="button button--secondary button--large button--animate fas fa-fill">
+                        <p class="button__inner">View our projects</p>
+                    </a>
+                </div>
+            </div>
         </div>
+
         <!-- edit component in _includes/components/modals/video.html -->
         {% include components/modals/video.html %}
 

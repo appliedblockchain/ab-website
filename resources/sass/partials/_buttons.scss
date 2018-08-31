@@ -294,7 +294,7 @@
 
 	&.js-show {
 		bottom: 25px;
-		@include responsive(max-width, $break-tablets-max) {
+		@include responsive(max-width, $break-tablets) {
 			right: $integer;
 			bottom: $integer;
 		}

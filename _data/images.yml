@@ -93,12 +93,12 @@ clients:
     alt: Cygnetise
     order: 1
 
-  - url: lloyds-register
-    alt: LLoyds Register
-    order: 2
-
   - url: united-nations
     alt: United Nations
+    order: 2
+
+  - url: nuggets
+    alt: Nuggets
     order: 3
 
   - url: shell
@@ -113,24 +113,24 @@ clients:
     alt: Toyota
     order: 6
 
+  - url: appii
+    alt: Appii
+    order: 7
+
   - url: vodafone
     alt: Vodafone
-    order: 7
+    order: 8
 
   - url: sita
     alt: Sita
-    order: 8
-
-  - url: nuggets
-    alt: Nuggets
     order: 9
-
-  - url: appii
-    alt: Appii
-    order: 10
 
   - url: babb
     alt: BABB
+    order: 10
+
+  - url: lloyds-register
+    alt: LLoyds Register
     order: 11
 
   - url: travelledger

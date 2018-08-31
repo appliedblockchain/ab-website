@@ -212,14 +212,22 @@ li + li {
 
 /*page headers*/
 
-#about {
+.section--header {
+	background-position: top center;
 
-	.section--header {
-		background-position: top center;
+	&:before {		
+		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+	}
 
+	&.section--primary {
 		&:before {		
-			@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
 			@include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary));
+		}
+	}
+
+	&.section--grey {
+		&:before {		
+			@include background-image(linear-gradient(to bottom, rgba($lightgrey, 0.6), $lightgrey));
 		}
 	}
 }
@@ -251,7 +259,12 @@ li + li {
 .userlike { z-index: 14 !important; }
 .modal { z-index: 15; }
 
+.z-index {
 
+	&--1 { z-index: 1; }
+	&--2 { z-index: 2; }
+	&--3 { z-index: 3; }
+}
 
 /*
  * hover classes
@@ -278,6 +291,7 @@ li + li {
 .section {
 	@include display-flex();
 	@include flex-direction(column);
+	position: relative;
 	text-align: center;
 	padding: $integer*6 $col*2;
 	@include responsive(max-width, $break-tablets) {
@@ -401,11 +415,7 @@ li + li {
 		background-color: $primary;
 		color: $white;
 
-		.title {
-			color: $white;
-		}
-
-		.lead {
+		.title, .lead {
 			color: $white;
 		}
 	}
@@ -417,11 +427,13 @@ li + li {
 		.title {
 			color: $white;
 		}
+		.lead {
+			color: $primary;
+		}
 	}
 
 	&--grey {
 		background-color: $lightgrey;
-
 	}
 }
 
@@ -559,6 +571,32 @@ li + li {
 			&__primary { stroke: $primary; }
 			&__secondary { stroke: $secondary; }
 			&__highlight { stroke: $highlight; }
+		}
+	}
+
+	&--greyscale {
+		opacity: 0.3;
+		position: absolute;
+		width: 20vmax;
+		top: -50%;
+
+		.section--primary & {
+			@include filter(invert(100));
+		}
+
+		&-left {
+			@extend .graphic--greyscale;
+			left: 0;
+		}
+	
+		&-center {
+			@extend .graphic--greyscale;
+			left: 40vmax;
+		}
+
+		&-right {
+			@extend .graphic--greyscale;
+			right: 0;
 		}
 	}
 }

@@ -12,7 +12,7 @@
         <div class="landing__carousel owl-carousel owl-carousel-clients carousel">
             {% for item in site.data.images.clients %}
             {% assign item = site.data.images.clients | sort: 'order' %}
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients-white/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients-white/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
             {% endfor %}
         </div>
         <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
@@ -33,7 +33,7 @@
                 %}
                 <div class="section__content">
                     <a href="{{ site.baseurl }}/services" class="button button--primary button--large button--animate fa fa-search-plus">
-                        <p class="button__inner">Find out more</p>
+                        <p class="button__inner">Our services</p>
                     </a>
                 </div>
             </div>            
@@ -88,13 +88,15 @@
 
         <div class="owl-carousel owl-carousel-clients carousel block">
             {% for item in site.data.images.partners %}
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img hover-grayscale">
+                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
             {% endfor %}
         </div>
         
     </section>
 
     <section class="section section--primary" id="why-us">
+
+        <img src="{{ site.baseurl }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-left.svg" alt="" class="graphic graphic--greyscale-left">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -136,7 +138,7 @@
 
         <div class="section__link">
             <a href="{{ site.url }}/about" class="button button--secondary button--large button--animate fas fa-search">
-                <p class="button__inner">Find out more</p>
+                <p class="button__inner">About us</p>
             </a>
         </div>
 

@@ -37,31 +37,50 @@
         %}
 
         <div class="section__content">
-            <div class="timeline__headline">
-                <span class="timeline__dot"></span>
-                <p class="timeline__date button button--primary">2015</p>
-            </div>
-            <div class="timeline__content">    
-                <!-- edit data in _data/timeline.yml -->
-                {% for item in site.data.timeline.fifteen %}
+            <div class="timeline__container">
+                <div class="timeline__headline">
+                    <span class="timeline__dot"></span>
+                    <p class="timeline__date button button--primary">2015</p>
+                </div>
+                <div class="timeline__content">    
+                    <!-- edit data in _data/timeline.yml -->
+                    {% for item in site.data.timeline.fifteen %}
                     <div class="timeline__item">
                         <p class="timeline__text">{{ item.text }}</p>
                         <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
                     </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
-            <div class="timeline__headline">
-                <span class="timeline__dot"></span>
-                <p class="timeline__date button button--primary">2017</p>
-            </div>
-            <div class="timeline__content">
-                <!-- edit data in _data/timeline.yml -->
-                {% for item in site.data.timeline.seventeen %}
+            <div class="timeline__container alt">
+                <div class="timeline__headline">
+                    <span class="timeline__dot"></span>
+                    <p class="timeline__date button button--primary">2017</p>
+                </div>
+                <div class="timeline__content">
+                    <!-- edit data in _data/timeline.yml -->
+                    {% for item in site.data.timeline.seventeen %}
                     <div class="timeline__item">
                         <p class="timeline__text">{{ item.text }}</p>
                         <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
                     </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="timeline__container">
+                <div class="timeline__headline">
+                    <span class="timeline__dot"></span>
+                    <p class="timeline__date button button--primary">2018</p>
+                </div>
+                <div class="timeline__content">
+                    <!-- edit data in _data/timeline.yml -->
+                    {% for item in site.data.timeline.eighteen %}
+                    <div class="timeline__item">
+                        <p class="timeline__text">{{ item.text }}</p>
+                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
 

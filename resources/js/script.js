@@ -6,7 +6,6 @@ $(document).ready(function() {
 // SCRIPT
 // —————————————————————————————————————————————————————————————————
 // INIT PARTICLE.JS
-// COOKIE ACCEPT
 // MENU SCROLL ANIMATION
 // MENU OPEN ANIMATION
 // BACK TO TOP
@@ -23,16 +22,6 @@ $(document).ready(function() {
 particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', function() {
 	console.log('callback - particles.js config loaded');
 });
-
-
-
-// —————————————————————————————————————————————————————————————————
-// COOKIE ACCEPT
-// —————————————————————————————————————————————————————————————————
-
-$(".cookie__button").click(function(){
-    $(".cookie").addClass("js-cookie-accepted");
-})
 
 
 
@@ -105,6 +94,10 @@ var displayCookieBar = function() {
 
 $(".cookie__button").on("click", cookieClose)
 displayCookieBar()
+
+$(".cookie__button").click(function(){
+    $(".cookie").addClass("js-cookie-accepted");
+})
 
 
 

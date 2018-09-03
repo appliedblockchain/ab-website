@@ -6633,7 +6633,13 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   padding: 40px;
 }
 /* line 28, ../sass/pages/_media.scss */
-.blog__icon {
+.blog__icon, .blog__icon--news, .blog__icon--press-release, .blog__icon--blog {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -6646,29 +6652,41 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   right: 20px;
   border: 5px solid #ffffff;
 }
-/* line 39, ../sass/pages/_media.scss */
-.blog__icon img {
-  width: 100%;
+/* line 42, ../sass/pages/_media.scss */
+.blog__icon--news {
+  background-color: #64f0ff;
 }
-/* line 44, ../sass/pages/_media.scss */
+/* line 46, ../sass/pages/_media.scss */
+.blog__icon--press-release {
+  background-color: #ff6f00;
+}
+/* line 50, ../sass/pages/_media.scss */
+.blog__icon--blog {
+  background-color: #007bff;
+}
+/* line 55, ../sass/pages/_media.scss */
+.blog__icon img, .blog__icon--news img, .blog__icon--press-release img, .blog__icon--blog img {
+  width: 60%;
+}
+/* line 60, ../sass/pages/_media.scss */
 .blog__date {
   margin-bottom: 20px;
 }
-/* line 48, ../sass/pages/_media.scss */
+/* line 64, ../sass/pages/_media.scss */
 .blog__title {
   margin-bottom: 10px;
 }
-/* line 52, ../sass/pages/_media.scss */
+/* line 68, ../sass/pages/_media.scss */
 .blog__text {
   margin-bottom: 40px;
 }
 
-/* line 59, ../sass/pages/_media.scss */
+/* line 75, ../sass/pages/_media.scss */
 .filter__button {
   background-color: transparent;
   color: #000a1e;
 }
-/* line 63, ../sass/pages/_media.scss */
+/* line 79, ../sass/pages/_media.scss */
 .filter__button.active {
   background-color: #007bff;
   color: #ffffff;

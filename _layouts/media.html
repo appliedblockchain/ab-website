@@ -46,8 +46,8 @@
                                         <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/default.jpg);"></div>
                                     {% endif %} 
                                     <div class="blog__content">
-                                        <span class="blog__icon">
-                                            <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.png" alt="">
+                                        <span class="blog__icon--{{ post.category }}">
+                                            <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="">
                                         </span>
                                         <p class="blog__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
                                         <h2 class="blog__title lead">{{ post.title }}</h2>

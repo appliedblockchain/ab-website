@@ -1,5 +1,15 @@
 {% include header.html %}
 
+<!-- particle (for homepage) -->
+<script src="{{ site.baseurl }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
+<script>
+    // init particle.js
+    particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
+
+
 <div id="home">
 
     <div class="section section--col section--primary landing" id="landing">
@@ -68,7 +78,7 @@
                 <div class="col--lg5">
                     <p class="body--large">We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.</p>
                     <a href="{{ site.baseurl }}/projects" class="button button--secondary button--large button--animate fas fa-fill">
-                        <p class="button__inner">View our projects</p>
+                        <p class="button__inner"><span class="hide--mobile">View our </span>projects</p>
                     </a>
                 </div>
             </div>

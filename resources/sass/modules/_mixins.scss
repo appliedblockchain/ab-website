@@ -96,6 +96,12 @@
 	}
 }
 
+@mixin responsive-mobile-devices-landscape {
+	@media only screen and (max-device-width: $break-desktop-max) and (orientation: landscape) {
+		@content;
+	}
+}
+
 
 
 // —————————————————————————————————————————————————————————————————

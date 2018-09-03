@@ -36,21 +36,30 @@ html, body {
 .headline {
 	@include fontSize(3, $font-black, normal);
 	text-transform: uppercase;
-	@include responsive(max-width, $break-tablets) {
+	@include responsive(max-width, $break-tablets-max) {
 		font-size: 2.5rem;
+	}
+	@include responsive(max-width, $break-phones-max) {
+		font-size: 2rem;
 	}
 }
 
 .title {
 	@include fontSize(2.5, $font-bold, normal);	
 	color: $primary;
-	@include responsive(max-width, $break-tablets) {
+	@include responsive(max-width, $break-tablets-max) {
 		font-size: 2rem;
+	}
+	@include responsive(max-width, $break-phones-max) {
+		font-size: 1.8rem;
 	}
 }
 
 .subtitle {
 	@include fontSize(1.8, $font-bold, normal);
+	@include responsive(max-width, $break-phones-max) {
+		font-size: 1.5rem;
+	}
 }
 
 .comment, .post__update {
@@ -60,7 +69,7 @@ html, body {
 
 .quote, .post__quote {
 	@include fontSize(1.5, $font-light, normal);
-	@include responsive(max-width, $break-tablets) {
+	@include responsive(max-width, $break-tablets-max) {
 		font-size: 1.25rem;
 	}
 }
@@ -112,7 +121,7 @@ html, body {
 	.col-text--#{$i} {
 		@include column-count($i);
 		@include column-gap(2rem);
-		@include responsive(max-width, $break-tablets) {
+		@include responsive(max-width, $break-tablets-max) {
 			@include column-count(1);
 		}
 	}

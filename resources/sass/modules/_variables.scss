@@ -84,9 +84,18 @@ $font-black: 		900;
 // —————————————————————————————————————————————————————————————————
 
 $break-xlarge-desktop:	1800px;
-$break-large-desktop:	1300px;
-$break-desktop:			1024px;
-$break-tablets:			768px;
-$break-phones:			576px;
-$break-phones-1:		575px;
-$break-small-phones:	350px;
+
+$break-large-desktop-min:	1300px;
+$break-large-desktop-max:	1299px;
+
+$break-desktop-min:			1024px;
+$break-desktop-max:			1023px;
+
+$break-tablets-min:			768px;
+$break-tablets-max:			767px;
+
+$break-phones-min:			576px;
+$break-phones-max:			575px;
+
+$break-small-phones-min:	350px;
+$break-small-phones-max:	349px;

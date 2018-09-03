@@ -20,10 +20,18 @@
 
 
 
-.hide-mobile {
+.hide {
+	
+	&--mobile {
+		@include responsive(max-width, $break-phones-max) {
+			display: none !important;
+		}
+	}
 
-	@include responsive-mobile-devices() {
-		display: none !important;
+	&--touch {
+		@include responsive-mobile-devices() {
+			display: none !important;
+		}
 	}
 }
 
@@ -88,28 +96,28 @@ html, body {
 	.coloffset--#{$i} 			{ margin-left: $i*$col-inner; }
 }
 
-@include responsive(min-width, $break-phones) {
+@include responsive(min-width, $break-phones-min) {
 	@for $i from 1 through 12 {
 		.col--sm#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--sm#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
-@include responsive(min-width, $break-tablets) {
+@include responsive(min-width, $break-tablets-min) {
 	@for $i from 1 through 12 {
 		.col--md#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--md#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
-@include responsive(min-width, $break-desktop) {
+@include responsive(min-width, $break-desktop-min) {
 	@for $i from 1 through 12 {
 		.col--lg#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--lg#{$i} 	{ margin-left: $i*$col-inner; }
 	}
 }
 
-@include responsive(min-width, $break-large-desktop) {
+@include responsive(min-width, $break-large-desktop-min) {
 	@for $i from 1 through 12 {
 		.col--xl#{$i} 			{ width: $i*$col-inner; }
 		.coloffset--xl#{$i} 	{ margin-left: $i*$col-inner; }
@@ -123,28 +131,28 @@ html, body {
 	.colaltoffset--#{$i} 		{ margin-left: $i*$col-footer; }
 }
 
-@include responsive(min-width, $break-phones) {
+@include responsive(min-width, $break-phones-min) {
 	@for $i from 1 through 15 {
 		.colalt--sm#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--sm#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
-@include responsive(min-width, $break-tablets) {
+@include responsive(min-width, $break-tablets-min) {
 	@for $i from 1 through 15 {
 		.colalt--md#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--md#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
-@include responsive(min-width, $break-desktop) {
+@include responsive(min-width, $break-desktop-min) {
 	@for $i from 1 through 15 {
 		.colalt--lg#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
-@include responsive(min-width, $break-large-desktop) {
+@include responsive(min-width, $break-large-desktop-min) {
 	@for $i from 1 through 15 {
 		.colalt--xl#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
@@ -247,9 +255,9 @@ li + li {
 
 .hide {
 
-	&--desktop { @include responsive(max-width, $break-desktop) { display: none; } }
-	&--tablets { @include responsive(max-width, $break-tablets) { display: none; } }
-	&--phones { @include responsive(max-width, $break-phones) { display: none; } }
+	&--desktop { @include responsive(max-width, $break-desktop-max) { display: none; } }
+	&--tablets { @include responsive(max-width, $break-tablets-max) { display: none; } }
+	&--phones { @include responsive(max-width, $break-phones-max) { display: none; } }
 }
 
 
@@ -300,7 +308,7 @@ li + li {
 	position: relative;
 	text-align: center;
 	padding: $integer*6 $col*2;
-	@include responsive(max-width, $break-tablets) {
+	@include responsive(max-width, $break-tablets-max) {
 		padding-left: $col;
 		padding-right: $col;
 	}
@@ -318,7 +326,7 @@ li + li {
 
 	&__title, &__subtitle, &__desc {
 		width: 75%;
-		@include responsive(max-width, $break-desktop) {
+		@include responsive(max-width, $break-desktop-max) {
 			width: 100%;
 		}
 	}
@@ -377,7 +385,7 @@ li + li {
 		.section__header {
 			padding-right: $col;
 			padding-left: $col;
-			@include responsive(max-width, $break-tablets) {
+			@include responsive(max-width, $break-tablets-max) {
 				padding-right: 0;
 				padding-left: 0;
 			}
@@ -675,7 +683,7 @@ li + li {
 	}
 
 	.logo-name {
-		@include responsive(max-width, $break-phones) {
+		@include responsive(max-width, $break-phones-max) {
 			display: none;
 		}
 	}
@@ -701,7 +709,7 @@ li + li {
 		@include overflow-scroll();
 		padding: 0  $col*2 $integer*4 $col*2;
 		pointer-events: initial;
-		@include responsive(max-width, $break-tablets) {
+		@include responsive(max-width, $break-tablets-max) {
 			padding: 0 $col $integer*6 $col;
 		}
 	}

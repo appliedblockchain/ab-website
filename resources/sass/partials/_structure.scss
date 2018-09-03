@@ -817,7 +817,6 @@ li + li {
 			.menu {
 
 				&__description {
-					white-space: nowrap;
 
 					span {
 						@include transform(translateY(0));
@@ -829,13 +828,16 @@ li + li {
 
 	&__description {
 		width: 100%;
-		overflow: hidden;
+		white-space: nowrap;
 
 		span {
 			@include transition(transform $transition);
 			@include transform(translateY(-100%));
 			will-change: transform;
 			display: block;
+			@include responsive-mobile-devices() {
+				@include transform(translateY(0));
+			}
 		}
 	}
 

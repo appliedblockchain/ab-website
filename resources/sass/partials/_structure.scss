@@ -273,12 +273,11 @@ li + li {
 .userlike { z-index: 14 !important; }
 .modal { z-index: 15; }
 
-.z-index {
-
-	&--1 { z-index: 1; }
-	&--2 { z-index: 2; }
-	&--3 { z-index: 3; }
+@for $i from 0 through 9 {
+	.z-index--#{$i} { z-index: $i; }
 }
+
+
 
 /*
  * hover classes
@@ -828,7 +827,11 @@ li + li {
 
 	&__description {
 		width: 100%;
+		overflow: hidden;
 		white-space: nowrap;
+		@include responsive-mobile-devices() {
+			overflow: visible;
+		}
 
 		span {
 			@include transition(transform $transition);

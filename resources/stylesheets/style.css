@@ -5423,7 +5423,6 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
 
 /* line 15, ../sass/pages/_index.scss */
 #particles-js {
-  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -5457,6 +5456,10 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   .landing {
     padding-bottom: 80px;
   }
+}
+/* line 41, ../sass/pages/_index.scss */
+.landing:before, .landing:after, .landing__title, .landing__icon, .landing__carousel, .landing .gartner {
+  pointer-events: none;
 }
 /* line 45, ../sass/pages/_index.scss */
 .landing:before {

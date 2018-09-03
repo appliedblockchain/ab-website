@@ -28,6 +28,9 @@ html, body {
 	/*-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: auto;*/
+	@include responsive(min-width, $break-xlarge-desktop) {
+		font-size: 20px;
+	}
 }
 
 .headline {

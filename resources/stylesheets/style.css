@@ -701,29 +701,22 @@ optgroup {
   display: -webkit-flex;
   display: flex;
 }
-/* line 54, ../sass/partials/_accordions.scss */
-.accordion__button:hover {
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-/* line 59, ../sass/partials/_accordions.scss */
+/* line 52, ../sass/partials/_accordions.scss */
 .accordion__content {
   cursor: initial;
   display: none;
   padding-top: 0;
   padding-bottom: 30px;
 }
-/* line 67, ../sass/partials/_accordions.scss */
+/* line 60, ../sass/partials/_accordions.scss */
 .accordion__subtitle {
   padding: 15px 0;
 }
-/* line 70, ../sass/partials/_accordions.scss */
+/* line 63, ../sass/partials/_accordions.scss */
 .accordion__subtitle:nth-child(1) {
   padding-top: 0;
 }
-/* line 75, ../sass/partials/_accordions.scss */
+/* line 68, ../sass/partials/_accordions.scss */
 .accordion .lead {
   color: #007bff !important;
 }
@@ -794,9 +787,8 @@ optgroup {
   padding: 0;
   width: 40px;
   height: 40px;
-  font-size: 24px !important;
 }
-/* line 60, ../sass/partials/_buttons.scss */
+/* line 59, ../sass/partials/_buttons.scss */
 .button--text {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -805,27 +797,27 @@ optgroup {
   will-change: transform;
   padding: 5px 0;
 }
-/* line 65, ../sass/partials/_buttons.scss */
+/* line 64, ../sass/partials/_buttons.scss */
 .button--text:hover {
   -moz-transform: translateX(5px);
   -ms-transform: translateX(5px);
   -webkit-transform: translateX(5px);
   transform: translateX(5px);
 }
-/* line 70, ../sass/partials/_buttons.scss */
+/* line 69, ../sass/partials/_buttons.scss */
 .button--underline {
   text-decoration: underline;
 }
 
-/* line 75, ../sass/partials/_buttons.scss */
+/* line 74, ../sass/partials/_buttons.scss */
 .button--stroke {
   padding: 10px 22px;
 }
-/* line 80, ../sass/partials/_buttons.scss */
+/* line 79, ../sass/partials/_buttons.scss */
 .button--stroke.button--large {
   padding: 16px 34px;
 }
-/* line 84, ../sass/partials/_buttons.scss */
+/* line 83, ../sass/partials/_buttons.scss */
 .button--stroke.button--small {
   padding: 4px 13px;
 }
@@ -834,7 +826,7 @@ optgroup {
  * animate
  * —————————————————————————————————————————————————————————————————
 */
-/* line 95, ../sass/partials/_buttons.scss */
+/* line 94, ../sass/partials/_buttons.scss */
 .button--animate:before {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -859,7 +851,7 @@ optgroup {
   background-color: transparent;
 }
 
-/* line 106, ../sass/partials/_buttons.scss */
+/* line 105, ../sass/partials/_buttons.scss */
 .button--animate:hover:before {
   -moz-transform: translateX(140%);
   -ms-transform: translateX(140%);
@@ -867,7 +859,7 @@ optgroup {
   transform: translateX(140%);
 }
 
-/* line 109, ../sass/partials/_buttons.scss */
+/* line 108, ../sass/partials/_buttons.scss */
 .button--animate:hover .button__inner {
   -moz-transform: translateX(160%);
   -ms-transform: translateX(160%);
@@ -991,20 +983,20 @@ optgroup {
  * size
  * —————————————————————————————————————————————————————————————————
 */
-/* line 146, ../sass/partials/_buttons.scss */
+/* line 145, ../sass/partials/_buttons.scss */
 .button--large {
   padding: 18px 36px;
 }
-/* line 149, ../sass/partials/_buttons.scss */
+/* line 148, ../sass/partials/_buttons.scss */
 .button--large.button--icon {
   width: 60px;
   height: 60px;
 }
-/* line 155, ../sass/partials/_buttons.scss */
+/* line 154, ../sass/partials/_buttons.scss */
 .button--small {
   padding: 6px 15px;
 }
-/* line 158, ../sass/partials/_buttons.scss */
+/* line 157, ../sass/partials/_buttons.scss */
 .button--small.button--icon {
   width: 30px;
   height: 30px;
@@ -1014,7 +1006,7 @@ optgroup {
  * close
  * —————————————————————————————————————————————————————————————————
 */
-/* line 175, ../sass/partials/_buttons.scss */
+/* line 174, ../sass/partials/_buttons.scss */
 .button--close:before, .button--close:after {
   margin-top: -2px;
   background-color: #000a1e;
@@ -1039,21 +1031,21 @@ optgroup {
   width: 30px;
   height: 5px;
 }
-/* line 185, ../sass/partials/_buttons.scss */
+/* line 184, ../sass/partials/_buttons.scss */
 .button--close.rotate:before {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 189, ../sass/partials/_buttons.scss */
+/* line 188, ../sass/partials/_buttons.scss */
 .button--close.rotate:after {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 193, ../sass/partials/_buttons.scss */
+/* line 192, ../sass/partials/_buttons.scss */
 .button--close.rotate:hover:before, .button--close.rotate:hover:after {
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -1065,7 +1057,7 @@ optgroup {
  * menu
  * —————————————————————————————————————————————————————————————————
 */
-/* line 206, ../sass/partials/_buttons.scss */
+/* line 205, ../sass/partials/_buttons.scss */
 .button--menu {
   -moz-animation: button--menu--opacity 0.8s ease 0s;
   -webkit-animation: button--menu--opacity 0.8s ease 0s;
@@ -1080,19 +1072,19 @@ optgroup {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 218, ../sass/partials/_buttons.scss */
+/* line 217, ../sass/partials/_buttons.scss */
 .button--menu:hover {
   opacity: 1;
 }
-/* line 222, ../sass/partials/_buttons.scss */
+/* line 221, ../sass/partials/_buttons.scss */
 .button--menu:before, .button--menu:after, .button--menu .button__inner {
   background-color: #000a1e;
 }
-/* line 228, ../sass/partials/_buttons.scss */
+/* line 227, ../sass/partials/_buttons.scss */
 .button--menu.alt:before, .button--menu.alt:after, .button--menu.alt .button__inner {
   background-color: #ffffff;
 }
-/* line 233, ../sass/partials/_buttons.scss */
+/* line 232, ../sass/partials/_buttons.scss */
 .button--menu:before, .button--menu:after {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -1112,7 +1104,7 @@ optgroup {
   will-change: transform;
   margin-top: -4px;
 }
-/* line 241, ../sass/partials/_buttons.scss */
+/* line 240, ../sass/partials/_buttons.scss */
 .button--menu:before {
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
@@ -1122,7 +1114,7 @@ optgroup {
   -webkit-animation: button--menu--close--before 0.8s ease;
   animation: button--menu--close--before 0.8s ease;
 }
-/* line 246, ../sass/partials/_buttons.scss */
+/* line 245, ../sass/partials/_buttons.scss */
 .button--menu:after {
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
@@ -1132,7 +1124,7 @@ optgroup {
   -webkit-animation: button--menu--close--after 0.8s ease;
   animation: button--menu--close--after 0.8s ease;
 }
-/* line 251, ../sass/partials/_buttons.scss */
+/* line 250, ../sass/partials/_buttons.scss */
 .button--menu .button__inner {
   -moz-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
@@ -1151,21 +1143,21 @@ optgroup {
   height: 5px;
   position: absolute;
 }
-/* line 263, ../sass/partials/_buttons.scss */
+/* line 262, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:before {
   -moz-animation: button--menu--open--before 0.8s ease;
   -webkit-animation: button--menu--open--before 0.8s ease;
   animation: button--menu--open--before 0.8s ease;
   transform: rotate(45deg);
 }
-/* line 268, ../sass/partials/_buttons.scss */
+/* line 267, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open:after {
   -moz-animation: button--menu--open--after 0.8s ease;
   -webkit-animation: button--menu--open--after 0.8s ease;
   animation: button--menu--open--after 0.8s ease;
   transform: rotate(-45deg);
 }
-/* line 273, ../sass/partials/_buttons.scss */
+/* line 272, ../sass/partials/_buttons.scss */
 .button--menu.button--menu--open .button__inner {
   opacity: 0;
 }
@@ -1174,7 +1166,7 @@ optgroup {
  * scroll to top
  * —————————————————————————————————————————————————————————————————
 */
-/* line 286, ../sass/partials/_buttons.scss */
+/* line 285, ../sass/partials/_buttons.scss */
 .button--scroll-top {
   -moz-transition: bottom 0.4s ease 0s, -moz-transform 0.4s ease 0s;
   -o-transition: bottom 0.4s ease 0s, -o-transform 0.4s ease 0s;
@@ -1191,18 +1183,18 @@ optgroup {
   width: 50px;
   height: 50px;
 }
-/* line 296, ../sass/partials/_buttons.scss */
+/* line 295, ../sass/partials/_buttons.scss */
 .button--scroll-top.js-show {
   bottom: 25px;
 }
 @media (max-width: 767px) {
-  /* line 296, ../sass/partials/_buttons.scss */
+  /* line 295, ../sass/partials/_buttons.scss */
   .button--scroll-top.js-show {
     right: 20px;
     bottom: 20px;
   }
 }
-/* line 304, ../sass/partials/_buttons.scss */
+/* line 303, ../sass/partials/_buttons.scss */
 .button--scroll-top:hover {
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
@@ -1523,15 +1515,15 @@ html, body {
 
 /* line 164, ../sass/partials/_fonts.scss */
 .button--icon {
-  font-size: 1.5rem;
+  font-size: 24px !important;
 }
 /* line 167, ../sass/partials/_fonts.scss */
 .button--icon.button--large {
-  font-size: 2.5rem;
+  font-size: 40px !important;
 }
 /* line 171, ../sass/partials/_fonts.scss */
 .button--icon.button--small {
-  font-size: 1rem;
+  font-size: 16px !important;
 }
 
 /* 
@@ -6289,11 +6281,20 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   height: 100%;
   position: relative;
 }
-/* line 163, ../sass/pages/_projects.scss */
+@media (pointer: coarse) {
+  /* line 152, ../sass/pages/_projects.scss */
+  .portfolio__content {
+    -moz-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    -webkit-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+  }
+}
+/* line 167, ../sass/pages/_projects.scss */
 .portfolio__logo {
   filter: brightness(100);
 }
-/* line 167, ../sass/pages/_projects.scss */
+/* line 171, ../sass/pages/_projects.scss */
 .portfolio__comment {
   -moz-transition: opacity 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s;
@@ -6303,17 +6304,17 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   margin-bottom: 10px;
   opacity: 1;
 }
-/* line 174, ../sass/pages/_projects.scss */
+/* line 178, ../sass/pages/_projects.scss */
 .portfolio__subtitle {
   color: #ffffff;
 }
-/* line 178, ../sass/pages/_projects.scss */
+/* line 182, ../sass/pages/_projects.scss */
 .portfolio__desc {
   margin: 20px 0 40px 0;
   color: #ffffff;
   overflow: hidden;
 }
-/* line 183, ../sass/pages/_projects.scss */
+/* line 187, ../sass/pages/_projects.scss */
 .portfolio__desc span {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -6326,11 +6327,20 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   will-change: transform;
   display: block;
 }
-/* line 191, ../sass/pages/_projects.scss */
+@media (pointer: coarse) {
+  /* line 187, ../sass/pages/_projects.scss */
+  .portfolio__desc span {
+    -moz-transform: translateY(0) scaleY(1) !important;
+    -ms-transform: translateY(0) scaleY(1) !important;
+    -webkit-transform: translateY(0) scaleY(1) !important;
+    transform: translateY(0) scaleY(1) !important;
+  }
+}
+/* line 198, ../sass/pages/_projects.scss */
 .portfolio__button {
   overflow: hidden;
 }
-/* line 194, ../sass/pages/_projects.scss */
+/* line 201, ../sass/pages/_projects.scss */
 .portfolio__button .button {
   -moz-transition: opacity 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s;
@@ -6339,65 +6349,71 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   will-change: opacity;
   opacity: 0;
 }
-/* line 204, ../sass/pages/_projects.scss */
+@media (pointer: coarse) {
+  /* line 201, ../sass/pages/_projects.scss */
+  .portfolio__button .button {
+    opacity: 1 !important;
+  }
+}
+/* line 214, ../sass/pages/_projects.scss */
 .portfolio__item:hover:nth-child(3n+1):before {
   background-color: #007bff;
 }
-/* line 205, ../sass/pages/_projects.scss */
+/* line 215, ../sass/pages/_projects.scss */
 .portfolio__item:hover:nth-child(3n+2):before {
   background-color: #0056b3;
 }
-/* line 206, ../sass/pages/_projects.scss */
+/* line 216, ../sass/pages/_projects.scss */
 .portfolio__item:hover:nth-child(3n+3):before {
   background-color: #4da3ff;
 }
-/* line 210, ../sass/pages/_projects.scss */
+/* line 220, ../sass/pages/_projects.scss */
 .portfolio__item:hover .portfolio__desc span {
   -moz-transform: translateY(0) scaleY(1);
   -ms-transform: translateY(0) scaleY(1);
   -webkit-transform: translateY(0) scaleY(1);
   transform: translateY(0) scaleY(1);
 }
-/* line 214, ../sass/pages/_projects.scss */
+/* line 224, ../sass/pages/_projects.scss */
 .portfolio__item:hover .portfolio__button .button {
   opacity: 1;
 }
-/* line 220, ../sass/pages/_projects.scss */
+/* line 230, ../sass/pages/_projects.scss */
 .portfolio .lead {
   color: #ffffff !important;
 }
 
-/* line 227, ../sass/pages/_projects.scss */
+/* line 237, ../sass/pages/_projects.scss */
 .project-grid {
   margin: -10px;
 }
-/* line 230, ../sass/pages/_projects.scss */
+/* line 240, ../sass/pages/_projects.scss */
 .project-grid__item {
   position: relative;
   width: 25%;
   padding: 10px;
 }
 @media (max-width: 1023px) {
-  /* line 230, ../sass/pages/_projects.scss */
+  /* line 240, ../sass/pages/_projects.scss */
   .project-grid__item {
     width: 50%;
   }
 }
 @media (max-width: 575px) {
-  /* line 230, ../sass/pages/_projects.scss */
+  /* line 240, ../sass/pages/_projects.scss */
   .project-grid__item {
     width: 100%;
   }
 }
-/* line 242, ../sass/pages/_projects.scss */
+/* line 252, ../sass/pages/_projects.scss */
 .project-grid__container {
   padding: 20px;
 }
-/* line 246, ../sass/pages/_projects.scss */
+/* line 256, ../sass/pages/_projects.scss */
 .project-grid__image {
   width: 100%;
 }
-/* line 250, ../sass/pages/_projects.scss */
+/* line 260, ../sass/pages/_projects.scss */
 .project-grid__inner {
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
@@ -6427,18 +6443,18 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   text-align: left;
 }
 @media (min-width: 1300px) {
-  /* line 250, ../sass/pages/_projects.scss */
+  /* line 260, ../sass/pages/_projects.scss */
   .project-grid__inner {
     padding: 40px;
   }
 }
 @media (max-width: 1023px) {
-  /* line 250, ../sass/pages/_projects.scss */
+  /* line 260, ../sass/pages/_projects.scss */
   .project-grid__inner {
     padding: 40px;
   }
 }
-/* line 273, ../sass/pages/_projects.scss */
+/* line 283, ../sass/pages/_projects.scss */
 .project-grid__inner.js-show {
   -moz-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
   -o-transition: height 0.4s ease 0s, width 0.4s ease 0s, top 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
@@ -6454,7 +6470,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   z-index: 2;
 }
 @media (max-width: 575px) {
-  /* line 273, ../sass/pages/_projects.scss */
+  /* line 283, ../sass/pages/_projects.scss */
   .project-grid__inner.js-show {
     width: -webkit-calc(100% -  20px);
     width: calc(100% -  20px);
@@ -6464,19 +6480,19 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
     left: 10px;
   }
 }
-/* line 289, ../sass/pages/_projects.scss */
+/* line 299, ../sass/pages/_projects.scss */
 .project-grid__subtitle {
   margin-bottom: 20px;
 }
-/* line 293, ../sass/pages/_projects.scss */
+/* line 303, ../sass/pages/_projects.scss */
 .project-grid .body--bold {
   margin-top: 10px;
 }
-/* line 297, ../sass/pages/_projects.scss */
+/* line 307, ../sass/pages/_projects.scss */
 .project-grid__summary {
   margin-top: 10px;
 }
-/* line 301, ../sass/pages/_projects.scss */
+/* line 311, ../sass/pages/_projects.scss */
 .project-grid__button {
   margin-top: 10px;
   min-height: 30px;

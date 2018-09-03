@@ -5633,7 +5633,16 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   }
 }
 
-/* line 179, ../sass/pages/_index.scss */
+@media (max-width: 767px) {
+  /* line 181, ../sass/pages/_index.scss */
+  #what-we-do .section__header {
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* line 188, ../sass/pages/_index.scss */
 .video {
   display: -webkit-flex;
   display: flex;
@@ -5642,7 +5651,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 184, ../sass/pages/_index.scss */
+/* line 193, ../sass/pages/_index.scss */
 .video__button {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -5652,7 +5661,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   cursor: pointer;
   width: 120px;
 }
-/* line 190, ../sass/pages/_index.scss */
+/* line 199, ../sass/pages/_index.scss */
 .video__button:hover {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -5661,33 +5670,33 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
 }
 
 @media (max-width: 1023px) {
-  /* line 200, ../sass/pages/_index.scss */
+  /* line 209, ../sass/pages/_index.scss */
   #who-we-help .section__header {
     margin-bottom: 20px;
   }
 }
-/* line 206, ../sass/pages/_index.scss */
+/* line 215, ../sass/pages/_index.scss */
 #who-we-help .section__content {
   text-align: left;
 }
 @media (max-width: 1023px) {
-  /* line 206, ../sass/pages/_index.scss */
+  /* line 215, ../sass/pages/_index.scss */
   #who-we-help .section__content {
     text-align: center;
   }
 }
-/* line 212, ../sass/pages/_index.scss */
+/* line 221, ../sass/pages/_index.scss */
 #who-we-help .section__content .button {
   margin-top: 80px;
 }
 @media (max-width: 1023px) {
-  /* line 218, ../sass/pages/_index.scss */
+  /* line 227, ../sass/pages/_index.scss */
   #who-we-help .row {
     -webkit-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 }
-/* line 224, ../sass/pages/_index.scss */
+/* line 233, ../sass/pages/_index.scss */
 #who-we-help .video {
   background-position: center center;
   -webkit-background-size: contain;
@@ -5697,18 +5706,18 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   height: 30vmax;
 }
 @media (max-width: 1023px) {
-  /* line 224, ../sass/pages/_index.scss */
+  /* line 233, ../sass/pages/_index.scss */
   #who-we-help .video {
     margin-top: 40px;
     min-height: 400px;
   }
 }
 
-/* line 235, ../sass/pages/_index.scss */
+/* line 244, ../sass/pages/_index.scss */
 .why-us {
   text-align: left;
 }
-/* line 238, ../sass/pages/_index.scss */
+/* line 247, ../sass/pages/_index.scss */
 .why-us__item {
   display: -webkit-flex;
   display: flex;
@@ -5716,75 +5725,75 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   align-items: center;
 }
 @media (max-width: 1299px) {
-  /* line 238, ../sass/pages/_index.scss */
+  /* line 247, ../sass/pages/_index.scss */
   .why-us__item {
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 247, ../sass/pages/_index.scss */
+  /* line 256, ../sass/pages/_index.scss */
   .why-us__image {
     display: none;
   }
 }
-/* line 253, ../sass/pages/_index.scss */
+/* line 262, ../sass/pages/_index.scss */
 .why-us__graphic {
   top: -25%;
 }
 
-/* line 262, ../sass/pages/_index.scss */
+/* line 271, ../sass/pages/_index.scss */
 .why-us__item:nth-child(2) {
   text-align: right;
 }
 @media (max-width: 767px) {
-  /* line 262, ../sass/pages/_index.scss */
+  /* line 271, ../sass/pages/_index.scss */
   .why-us__item:nth-child(2) {
     text-align: left;
   }
 }
 
-/* line 271, ../sass/pages/_index.scss */
+/* line 280, ../sass/pages/_index.scss */
 #featured-in {
   border-top: 5px solid #f8f8f8;
 }
-/* line 275, ../sass/pages/_index.scss */
+/* line 284, ../sass/pages/_index.scss */
 #featured-in .section__header {
   margin-bottom: 0;
 }
 
-/* line 280, ../sass/pages/_index.scss */
+/* line 289, ../sass/pages/_index.scss */
 .logo-media {
   margin-left: -40px;
   margin-right: -40px;
 }
 @media (max-width: 1023px) {
-  /* line 280, ../sass/pages/_index.scss */
+  /* line 289, ../sass/pages/_index.scss */
   .logo-media {
     margin-left: -20px;
     margin-right: -20px;
   }
 }
-/* line 289, ../sass/pages/_index.scss */
+/* line 298, ../sass/pages/_index.scss */
 .logo-media__item {
   position: relative;
   width: 25%;
   padding: 20px 40px;
 }
 @media (max-width: 1023px) {
-  /* line 289, ../sass/pages/_index.scss */
+  /* line 298, ../sass/pages/_index.scss */
   .logo-media__item {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 289, ../sass/pages/_index.scss */
+  /* line 298, ../sass/pages/_index.scss */
   .logo-media__item {
     width: 50%;
   }
 }
-/* line 303, ../sass/pages/_index.scss */
+/* line 312, ../sass/pages/_index.scss */
 .logo-media__item + .logo-media__item:before {
   content: "";
   position: absolute;
@@ -5800,12 +5809,12 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   background-color: #f8f8f8;
 }
 @media (max-width: 767px) {
-  /* line 303, ../sass/pages/_index.scss */
+  /* line 312, ../sass/pages/_index.scss */
   .logo-media__item + .logo-media__item:before {
     display: none;
   }
 }
-/* line 314, ../sass/pages/_index.scss */
+/* line 323, ../sass/pages/_index.scss */
 .logo-media__image {
   width: 100%;
 }

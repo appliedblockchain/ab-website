@@ -5841,10 +5841,14 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   color: #ffffff;
 }
 /* line 33, ../sass/pages/_join.scss */
+.jobs__list {
+  margin-top: -120px;
+}
+/* line 37, ../sass/pages/_join.scss */
 .jobs__content {
   width: 100%;
 }
-/* line 37, ../sass/pages/_join.scss */
+/* line 41, ../sass/pages/_join.scss */
 .jobs__background, .jobs__background--london, .jobs__background--porto {
   background-position: center center;
   -webkit-background-size: cover;
@@ -5854,10 +5858,10 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   top: 0;
   left: 0;
   width: 100%;
-  height: 420px;
+  height: 100%;
   z-index: 0;
 }
-/* line 46, ../sass/pages/_join.scss */
+/* line 50, ../sass/pages/_join.scss */
 .jobs__background:before, .jobs__background--london:before, .jobs__background--porto:before {
   content: "";
   position: absolute;
@@ -5870,11 +5874,11 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   background-color: rgba(0, 123, 255, 0.8);
   z-index: 1;
 }
-/* line 52, ../sass/pages/_join.scss */
+/* line 56, ../sass/pages/_join.scss */
 .jobs__background--london {
   background-image: url("../images/background/london.jpg");
 }
-/* line 57, ../sass/pages/_join.scss */
+/* line 61, ../sass/pages/_join.scss */
 .jobs__background--porto {
   background-image: url("../images/background/porto.jpg");
   -moz-transition: opacity 0.8s ease 0s;
@@ -5884,7 +5888,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   transition: opacity 0.8s ease 0s;
   opacity: 0;
 }
-/* line 63, ../sass/pages/_join.scss */
+/* line 67, ../sass/pages/_join.scss */
 .jobs__background--porto.js-show {
   opacity: 1;
 }

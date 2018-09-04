@@ -291,6 +291,9 @@
 	bottom: -$integer*4;
 	width: $integer*2.5;
 	height: $integer*2.5;
+	@include responsive-mobile-devices() {
+		display: none !important;
+	}
 
 	&.js-show {
 		bottom: 25px;

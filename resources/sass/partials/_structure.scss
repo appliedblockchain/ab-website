@@ -402,6 +402,10 @@ li + li {
 		.section__header {
 			padding-right: $col*2;
 			padding-left: $col*2;
+			@include responsive(max-width, $break-tablets-max) {
+				padding-right: 0;
+				padding-left: 0;
+			}
 		}
 	}
 	
@@ -492,6 +496,10 @@ li + li {
 	border-radius: $integer;
 	padding: $integer*2;
 	color: $black;
+
+	&__content {
+		padding: $integer*2;
+	}
 }
 
 .background--cover {

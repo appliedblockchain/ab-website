@@ -39,6 +39,39 @@ $('.owl-carousel-clients').owlCarousel({
 
 
 
+$('.owl-carousel-partners').owlCarousel({
+    dots: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false,
+    smartSpeed: 2000,
+    responsive: {
+        0: {
+			items: 2,
+			margin: 20
+        },
+        450: {
+			items: 2,
+			margin: 25
+        },
+		620: {
+			items: 3,
+			margin: 30
+        },
+        767: {
+			items: 4,
+			margin: 35
+        },
+        1080: {
+			items: 5,
+			margin: 40
+        }
+    }
+});
+
+
+
 $('.owl-carousel-technology').owlCarousel({
     dots: false,
     loop: true,

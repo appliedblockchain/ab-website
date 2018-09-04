@@ -311,6 +311,10 @@ li + li {
 		padding-left: $col;
 		padding-right: $col;
 	}
+	@include responsive(max-width, $break-phones-max) {
+		padding-top: $integer*4;
+		padding-bottom: $integer*4;
+	}
 
 	&__header {
 		@include display-flex();
@@ -426,6 +430,10 @@ li + li {
 	&--margin-minus {
 		margin-top: -$integer*10;
 		padding-top: $integer*10;
+		@include responsive(max-width, $break-phones-max) {
+			margin-top: -$integer*8;
+			padding-top: $integer*8;
+		}
 	}
 }
 
@@ -529,12 +537,20 @@ li + li {
 
     &__item {
 		padding: 0 $integer $integer*2 $integer;
+
+		.owl-carousel & {
+			padding: 0;
+		}
     }
 
     &__image {
         background-size: contain;
         height: $integer*6;
-        margin-bottom: $integer;   
+		margin-bottom: $integer;
+		
+		.owl-carousel & {
+			margin-bottom: 0;
+		}
 	}
 	
 	&__title {

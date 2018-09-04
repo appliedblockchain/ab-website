@@ -25,6 +25,10 @@
 	width: 100%;
 	padding-left: $integer*1.5 !important;
 	padding-right: $integer*1.5 !important;
+	@include responsive(max-width, $break-phones-max) {
+		padding-left: $integer/2 !important;
+		padding-right: $integer/2 !important;
+	}
 
 	&__header {
 		width: 75%;
@@ -41,6 +45,9 @@
 		width: 100%;
 		margin-bottom: $integer;
 		text-align: left;
+		@include responsive(max-width, $break-phones-max) {
+			margin-bottom: $integer/2;
+		}
 
 		&.focused {
 

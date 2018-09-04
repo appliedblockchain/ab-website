@@ -445,9 +445,6 @@ li + li {
 		.title {
 			color: $white;
 		}
-		.lead {
-			color: $primary;
-		}
 	}
 
 	&--grey {
@@ -865,7 +862,7 @@ li + li {
 	}
 
 	&__item {
-		margin-bottom: $integer*3;
+		margin-bottom: $integer*2;
 	}
 
 	&__logo {
@@ -874,6 +871,7 @@ li + li {
 
 	&__title {
 		margin-bottom: $integer;
+		color: $white;
 	}
 
 	&__adress {
@@ -890,5 +888,9 @@ li + li {
 	&__button {
 		display: block !important;
 		margin-left: 0 !important;
+	}
+
+	.social {
+		margin-bottom: 0;
 	}
 }

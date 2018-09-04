@@ -499,7 +499,22 @@ li + li {
 
 	&__content {
 		padding: $integer*2;
+		@include responsive(max-width, $break-tablets-max) {
+			padding: $integer;
+		}
 	}
+
+	&__date {
+		margin-bottom: $integer;
+	}
+
+	&__title {
+        margin-bottom: $integer/2;
+    }
+
+    &__text {
+        margin-bottom: $integer;
+    }
 }
 
 .background--cover {

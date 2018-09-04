@@ -4,8 +4,8 @@
     {% else %}
         <div class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/default.jpg);"></div>
     {% endif %}
-    <div class="event__content">
-        <div class="event__top blog__date">
+    <div class="block__content event__content">
+        <div class="event__top block__date">
             <p class="body--bold">{{ event.dates }}</p>
             {{ if event.link }}
             <a href="{{ event.link }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
@@ -13,7 +13,7 @@
             </a>
             {{ endif }}
         </div>
-        <h2 class="blog__title lead">{{ event.name }}</h2>
-        <p class="blog__location">{{ event.location }}</p>
+        <h2 class="block__title lead">{{ event.name }}</h2>
+        <p>{{ event.location }}</p>
     </div>
 </div>

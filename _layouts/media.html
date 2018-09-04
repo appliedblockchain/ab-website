@@ -45,13 +45,13 @@
                                     {% else %}
                                         <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/default.jpg);"></div>
                                     {% endif %} 
-                                    <div class="blog__content">
+                                    <div class="block__content blog__content">
                                         <span class="blog__icon--{{ post.category }}">
                                             <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="">
                                         </span>
-                                        <p class="blog__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
-                                        <h2 class="blog__title lead">{{ post.title }}</h2>
-                                        <div class="blog__text">{{ post.excerpt | truncate: 100, "…" }}</div>
+                                        <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
+                                        <h2 class="block__title lead">{{ post.title }}</h2>
+                                        <div class="block__text">{{ post.excerpt | truncate: 100, "…" }}</div>
                                         <div class="button button--primary button--small button--animate fas fa-eye">
                                             <p class="button__inner">Read more</p>
                                         </div>

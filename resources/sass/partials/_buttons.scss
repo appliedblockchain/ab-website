@@ -285,22 +285,16 @@
 .button--scroll-top {
 	@include transition(bottom $transition, transform $transition);
 	@include box-shadow(0 0 30px 0 rgba($dark, 0.4));
-	@include calc(right, $col' - '$integer*1.25);
 	will-change: bottom, transform;
     position: fixed;
 	bottom: -$integer*4;
-	width: $integer*2.5;
-	height: $integer*2.5;
+	right: $col;
 	@include responsive-mobile-devices() {
 		display: none !important;
 	}
 
 	&.js-show {
-		bottom: 25px;
-		@include responsive(max-width, $break-tablets-max) {
-			right: $integer;
-			bottom: $integer;
-		}
+		bottom: $integer*1.5;
 	}
 
 	&:hover {

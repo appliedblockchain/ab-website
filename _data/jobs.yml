@@ -4,6 +4,11 @@
 # london
 
 london:
+
+# porto
+
+porto:
+
   - title: Node.js Software Developer
     type: Permanent
     role: 
@@ -38,8 +43,10 @@ london:
         <li>HTML and CSS</li>
       </ul>'
 
-  - title: Marketing Assistant
-    type: Internship
+
+
+  - title: Senior Node.js Software Developer
+    type: Permanent
     role: 
       '<ul>
         <li>Develop cutting edge software solutions for startups and corporate clients</li>
@@ -51,13 +58,13 @@ london:
       </ul>'
     required-skills: 
       '<ul>
-        <li>3+ years of backend development experience</li>
+        <li>5+ years of backend development experience</li>
         <li>1+ years of Node.js</li>
+        <li>2+ years experience using other js frameworks</li>
         <li>Experience in writing automated tests</li>
         <li>Experience with API design and implementation</li>
-        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
-        <li>Good understanding of Linux</li>
-        <li>Git knowledge (feature branches, github flow)</li>
+        <li>Experience with SQL and NoSql Databases</li>
+        <li>Basic  understanding of Linux</li>
       </ul>'
     additional-skills:
       '<ul>
@@ -72,39 +79,80 @@ london:
         <li>HTML and CSS</li>
       </ul>'
 
-# porto
 
-porto:
+  - title: React.js Developer
+    type: Permanent
+    role: 
+      '<ul>
+        <li>Develop cutting edge software solutions for startups and corporate clients</li>
+        <li>Design and build large scale, high volume systems</li>
+        <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
+        <li>Create user-friendly web and mobile interfaces</li>
+        <li>Write automated tests</li>
+      </ul>'
+    required-skills: 
+      '<ul>
+        <li>5+ years of full stack/frontend development experience (Vanilla JS, Angular.js, Ember.js or JQuery)</li>
+        <li>2+ years React Experience</li>
+        <li>Deep web knowledge (DOM, CSS)</li>
+        <li>Experience in writing automated tests</li>
+        <li>Redux or similar Flux-like state-management tools</li>
+        <li>Unit testing</li>
+        <li>Git, Github</li>
+      </ul>'
+    additional-skills:
+      '<ul>
+        <li>React Native</li>
+        <li>Experience with accessibility and legacy browser support (IE)</li>
+        <li>React Web & relevant stack: Webpack, Redux etc</li>
+        <li>Experience in backend development with Node.js (Express.js)</li>
+        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
+        <li>Basic Sysadmin and Bash scripting knowledge</li>
+        <li>Experience with CSS3 new features (CSS3 transitions)</li>
+        <li>Mobile development experience (Native or Phonegap/Cordova)</li>
+        <li>Continuous integration tools</li>
+        <li>End to end testing</li>
+        <li>BDD / TDD</li>
+        <li>Experience working with project management tools, such as Slack, Trello, JIRA, etc.</li>
+      </ul>'
+
+
+
   - title: Senior React.js Developer
-    type: Contract
+    type: Permanent
     role: 
       '<ul>
         <li>Develop cutting edge software solutions for startups and corporate clients</li>
-        <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
-        <li>Develop smart contracts on solidity</li>
-        <li>Liaise with frontend developers to build APIs for web and mobile</li>
-        <li>Write automated tests for smart contracts and server side code</li>
         <li>Design and build large scale, high volume systems</li>
+        <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
+        <li>Create user-friendly web and mobile interfaces</li>
+        <li>Write automated tests</li>
       </ul>'
     required-skills: 
       '<ul>
-        <li>3+ years of backend development experience</li>
-        <li>1+ years of Node.js</li>
+        <li>5+ years of full stack/frontend development experience (Vanilla JS, Angular.js, Ember.js or JQuery)</li>
+        <li>2+ years React Experience</li>
+        <li>Deep web knowledge (DOM, CSS)</li>
         <li>Experience in writing automated tests</li>
-        <li>Experience with API design and implementation</li>
-        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
-        <li>Good understanding of Linux</li>
-        <li>Git knowledge (feature branches, github flow)</li>
+        <li>Redux or similar Flux-like state-management tools</li>
+        <li>Unit testing</li>
+        <li>Git, Github</li>
       </ul>'
     additional-skills:
       '<ul>
-        <li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
-        <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
-        <li>Testing frameworks (Jest, Mocha/Chai/Should.js, Enzyme)</li>
-        <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
-        <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
-        <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
-        <li>Experience in React</li>
-        <li>Blockchain knowledge – Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
-        <li>HTML and CSS</li>
+        <li>React Native</li>
+        <li>Experience with accessibility and legacy browser support (IE)</li>
+        <li>React Web & relevant stack: Webpack, Redux etc</li>
+        <li>Experience in backend development with Node.js (Express.js)</li>
+        <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
+        <li>Basic Sysadmin and Bash scripting knowledge</li>
+        <li>Experience with CSS3 new features (CSS3 transitions)</li>
+        <li>Mobile development experience (Native or Phonegap/Cordova)</li>
+        <li>Continuous integration tools</li>
+        <li>End to end testing</li>
+        <li>BDD / TDD</li>
+        <li>Experience working with project management tools, such as Slack, Trello, JIRA, etc.</li>
       </ul>'
+
+
+

@@ -555,6 +555,7 @@ li + li {
 	
 	&__title {
 		margin-bottom: $integer/4;
+		font-weight: $font-bold;
 	}
 }
 
@@ -736,10 +737,14 @@ li + li {
 		&--primary.alt {
 			background-color: $white;
 	
-			.button__inner {
+			.button__inner, &:before {
 				color: $primary;
 			}
 		}
+	}
+
+	.footer__title {
+		color: $black;
 	}
 
 	&__menu {
@@ -814,7 +819,7 @@ li + li {
 		.button--primary {
 			background-color: $primary;
 	
-			.button__inner {
+			.button__inner, &:before {
 				color: $white;
 			}
 

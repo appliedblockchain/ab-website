@@ -6069,17 +6069,17 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
 .post__content + .post__subtitle {
   margin-top: 40px;
 }
-/* line 45, ../sass/pages/_post.scss */
+/* line 49, ../sass/pages/_post.scss */
 .post__content + .post__content {
   margin-top: 20px;
 }
-/* line 50, ../sass/pages/_post.scss */
+/* line 54, ../sass/pages/_post.scss */
 .post__quote {
   position: relative;
   padding-left: 20px;
   margin: 40px 0;
 }
-/* line 55, ../sass/pages/_post.scss */
+/* line 59, ../sass/pages/_post.scss */
 .post__quote:before {
   content: "";
   position: absolute;
@@ -6094,17 +6094,17 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   border-radius: 5px;
   background-color: #d7d7dc;
 }
-/* line 62, ../sass/pages/_post.scss */
+/* line 66, ../sass/pages/_post.scss */
 .post__update {
   margin-bottom: 40px;
   padding-top: 80px;
   border-top: 5px solid #d7d7dc;
 }
-/* line 67, ../sass/pages/_post.scss */
+/* line 71, ../sass/pages/_post.scss */
 .post__content + .post__update {
   margin-top: 80px;
 }
-/* line 72, ../sass/pages/_post.scss */
+/* line 76, ../sass/pages/_post.scss */
 .post a {
   text-decoration: underline;
 }

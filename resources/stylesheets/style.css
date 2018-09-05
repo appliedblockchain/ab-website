@@ -7145,6 +7145,12 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
 .technology__graphic {
   top: -200%;
 }
+@media (pointer: coarse) {
+  /* line 196, ../sass/pages/_services.scss */
+  .technology__graphic {
+    display: none;
+  }
+}
 
 /* 
  * —————————————————————————————————————————————————————————————————

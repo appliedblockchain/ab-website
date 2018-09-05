@@ -6,7 +6,7 @@ category: press-release
 ---
 
 <p class="post__headline">Classification register updated for the digital age</p>
-<a href="https://www.lr.org/en/events/classification-register-updated-for-the-digital-age/" target="_blank" rel="noopener" class="post__relink">Republished from Lloyds Register</a>
+<a href="https://www.lr.org/en/events/classification-register-updated-for-the-digital-age/" target="_blank" rel="noopener" class="post__content post__relink">Republished from Lloyds Register</a>
 
 <p class="post__content">Applied Blockchain, a leading developer of distributed ledger technology and smart contracts, has become an affiliate of the <a href="https://energyweb.org/" target="_blank">Energy Web Foundation</a> (EWF), a global non-profit organisation focused on unleashing blockchain’s potential in the energy sector by building the first open-source, scalable core blockchain platform tailored specifically to the industry.</p>
 <p class="post__content">As an EWF Affiliate, Applied Blockchain joins an innovative ecosystem of global energy companies, utilities, grid operators, blockchain developers and users, and infrastructure providers, collaborating on implementation of large-scale energy projects at the cutting-edge of blockchain technology.</p>

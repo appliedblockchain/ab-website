@@ -29,7 +29,7 @@ results:
 results-content:
     <div class="results__item image-inline__item col--md4 col--6">
         <img src="/resources/images/icons/project/travelledger/icon-invoice.svg" alt="" class="results__image image-inline__image">
-        <p class="results__subtitle body--bold">Supplier invoice reconciliationthe</p>
+        <p class="results__subtitle body--bold">Supplier invoice reconciliation</p>
         <p>Invoice is recorded in a single format, for the back office system to automatically read and reconcile</p>
     </div>
     <div class="results__item image-inline__item col--md4 col--6">

@@ -38,16 +38,9 @@ technology:
     alt: Quorum
     order: 5
 
-  - url: neo
-    alt: Neo
-    order: 6
-
   - url: cardano
     alt: Cardano
-    order: 7
-
-  - url: aion
-    alt: Aion
+    order: 6
 
   - url: bigchain
     alt: Bigchain
@@ -63,12 +56,6 @@ technology:
 
   - url: digital-asset
     alt: Digital Asset
-
-  - url: eos
-    alt: EOS
-
-  - url: hedera-hashgraph
-    alt: Hedera Hashgraph
 
   - url: parity
     alt: Parity

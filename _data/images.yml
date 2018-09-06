@@ -152,15 +152,15 @@ partners:
 values:
   - url: direction
     alt: Platform agnostic
-    description: We innovate and build for all blockchain platforms
+    #description: We innovate and build for all blockchain platforms
 
   - url: binoculars
     alt: Future-proof
-    description: We ensure the reusability of our products continuously
+    #description: We ensure the reusability of our products continuously
 
   - url: shield
     alt: Integrity
-    description: We are open and honest in our collaboration with clients and partners
+    #description: We are open and honest in our collaboration with clients and partners
 
 # join section
 # in join.html page

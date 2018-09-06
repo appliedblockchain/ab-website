@@ -10,8 +10,8 @@
 # - https://simpleit.rocks/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
 
 # Initialize some vars
-BUILD_DIR="_site"
-DEPLOY_DIR="$.deploy"
+BUILD_DIR="./_site"
+DEPLOY_DIR="deploy"
 
 # Copy the site directory to a temporary location so that modifications we make don't get overwritten by the Jekyll server
 # that is potentially running
@@ -35,8 +35,7 @@ for filename in $DEPLOY_DIR/*.html; do
 done
 
 # Now upload to s3, deleting any items that no longer exist
-aws s3 sync --delete $DEPLOY_DIR s3://$S3_BUCKET_NAME \
-  --exclude '.circleci/*' --exclude '*.git/*' --exclude 'resources/sass/*'
+aws s3 sync --delete $DEPLOY_DIR s3://$S3_BUCKET_NAME
 
 # Finally, upload the blog directory specifically to force the content-type
 aws s3 cp $BUILD_DIR/ s3://$S3_BUCKET_NAME --recursive --content-type "text/html" --exclude "*.*" --acl public-read

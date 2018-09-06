@@ -1,6 +1,31 @@
 defaults: &defaults
   working_directory: ~/repo
 version: 2
+
+references:
+  install_awscli: &install_awscli
+    run:
+      name: Install AWS CLI
+      command: |
+        pip install awscli --upgrade --user
+  add_aws_credentials: &add_aws_credentials
+    run:
+      name: Set AWS credentials
+      command: |
+        ~/.local/bin/aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}
+        ~/.local/bin/aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}
+  deploy_to_s3: &deploy_to_s3
+    run:
+      name: Upload to s3
+      command: |
+        ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read \
+        --exclude '.circleci/*' --exclude '*.git/*' --exclude 'resources/sass/*'
+  clear_cloudfront_cache: &clear_cloudfront_cache
+    run:
+      name: Clear CloudFront cache
+      command: |
+        aws cloudfront create-invalidation --distribution-id "$CLOUD_FRONT_DIST_ID" --paths '/*'
+
 jobs:
   build:
     <<: *defaults
@@ -36,34 +61,49 @@ jobs:
           root: ./
           paths:
             - _site
-  deploy:
+  deploy_staging:
     <<: *defaults
     docker:
       - image: circleci/python:3.6.3
     environment:
       S3_BUCKET_NAME: ab-website-staging
+      CLOUD_FRONT_DIST_ID: E33BX6GM4HWPQD
     steps:
       - attach_workspace:
           at: ./
-      - run:
-          name: Install AWS CLI
-          command: pip install awscli --upgrade --user
-      - run:
-          name: Set AWS credentials
-          command: |
-            ~/.local/bin/aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}
-            ~/.local/bin/aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}
-      - run:
-          name: Upload to s3
-          command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read
+      - *install_awscli
+      - *add_aws_credentials
+      - *deploy_to_s3
+      - *clear_cloudfront_cache
+  deploy_production:
+    <<: *defaults
+    docker:
+      - image: circleci/python:3.6.3
+    environment:
+      S3_BUCKET_NAME: ab-website-prod
+      CLOUD_FRONT_DIST_ID: E229KO5GD2HCRH
+    steps:
+      - attach_workspace:
+          at: ./
+      - *install_awscli
+      - *add_aws_credentials
+      - *deploy_to_s3
+      - *clear_cloudfront_cache
 workflows:
   version: 2
   test-deploy:
     jobs:
       - build
-      - deploy:
+      - deploy_staging:
           requires:
             - build
           filters:
             branches:
               only: master
+      - confirm_deploy:
+          type: approval
+          requires:
+            - deploy_staging
+      - deploy_production:
+          requires:
+            - confirm_deploy

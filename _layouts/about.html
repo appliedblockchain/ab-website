@@ -117,7 +117,8 @@
             {% for item in site.data.images.values %}
                 <div class="col--md3 col--4 image-inline__item">
                     <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
-                    <p class="body--large">{{ item.alt }}</p>
+                    <p class="image-inline__title body--large">{{ item.alt }}</p>
+                    <p>{{ item.description }}</p>
                 </div>
             {% endfor %}
         </div>

@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * PROJECTS
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.project {
+
+    &__header {
+        padding-top: $integer*10;
+    }
+
+    &__nav {
+        margin-bottom: $integer*4;
+    }
+
+    &__meta {
+        @include responsive(max-width, $break-desktop-max) {
+            margin-top: $integer*3;
+        }
+    }
+
+    &__example {
+        margin-top: $integer*3;
+    }
+
+    &__title {
+
+        span {
+            color: $black;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: $integer;
+        color: $primary;
+
+        .section--primary & {
+            color: $white;
+        }
+    }
+
+    &__text p {
+        margin-bottom: $integer;
+    }
+}
+
+.meta {
+    
+    &__item {
+        @include display-flex();
+        @include align-items(baseline);
+        padding-bottom: $integer;
+        
+        & + & {
+            padding-top: $integer;
+            border-top: 2px solid $mediumgrey;
+        }
+
+        > * {
+            flex-basis: 50%;
+        }
+    }
+}
+
+.summary {
+    position: relative;
+    background-attachment: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: $integer*6;
+
+    &:before {
+        @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+        background-color: rgba($primary, 0.8);
+        background-blend-mode: multiply;
+    }
+
+    &__container {
+        @include transform(translateY(-50%));
+        @include display-flex();
+        @include align-items(center);
+        padding: $integer*2 $integer*4;
+        @include responsive(max-width, $break-tablets-max) {
+            padding-left: $integer*2;
+            padding-right: $integer*2;
+        }
+
+    }
+
+    &__content {
+        @include flex-basis(66.666%);
+        text-align: left;
+    }
+
+    &__image {
+        @include flex-basis(33.333%);
+        width: 33.333%;
+        @include responsive(max-width, $break-tablets-max) {
+            display: none;
+        }
+    }
+}
+
+.challenge {
+
+    &__icon {
+        @include responsive(max-width, $break-tablets-max) {
+            display: none;
+        }
+    }
+}
+
+.delivery {
+    @include background(101% -300px, 300px);
+
+    &__image {
+        @include responsive(max-width, $break-desktop-max) {
+            margin-top: $integer*3;
+        }
+    }
+}
+
+.results {
+
+    &__content {
+        padding-top: $integer*4;
+    }
+
+    &__title {
+        margin-bottom: $integer*2;
+    }
+
+    &__image {
+        height: $integer*8;
+    }
+
+    &__subtitle {
+        margin-bottom: $integer/2;
+    }
+
+    &__comment {
+        padding-top: $integer*4;
+    }
+}

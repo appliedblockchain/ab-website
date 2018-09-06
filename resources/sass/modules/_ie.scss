@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * INTERNET EXPLORER
+ * —————————————————————————————————————————————————————————————————
+ * structure
+ * services
+ * about
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+/*
+ * structure
+ * —————————————————————————————————————————————————————————————————
+*/
+
+// make header buttons work in ie
+.header {
+    pointer-events: auto !important;
+}
+
+.graphic {
+
+    &--greyscale {
+        display: none;
+    }
+}
+
+
+
+/*
+ * services
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.approach {
+
+    &__filter {
+        padding: 0 $integer;
+    }
+
+    &__button {
+        width: 25%;
+    }
+
+    &__content {
+        @include flex-basis(50%);
+    }
+
+    &__icon {
+        position: absolute;
+        width: 30%;
+        right: 0;
+    }
+}
+
+
+
+/*
+ * about
+ * —————————————————————————————————————————————————————————————————
+*/
+
+// .timeline {
+
+//     &__item {
+//         position: relative;
+//     }
+
+//     &__icon {
+//         position: absolute;
+//         left: -20%;
+//         top: -60%;
+//     }
+// }
+
+
+
+/*
+ * —————————————————————————————————————————————————————————————————
+ * END
+ * —————————————————————————————————————————————————————————————————
+*/
+
+}

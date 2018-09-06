@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * PRIVACY POLICY
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.privacy {
+
+    .anchor {
+        position: initial;
+        display: inherit;
+        height: auto;
+    }
+
+    ul {
+        margin-left: 0;
+    }
+
+    &__list {
+        /* Creates a new instance of the section counter with each ol element */
+        counter-reset: section;
+        list-style-type: none;
+    }
+      
+    &__item {
+        
+       &:before {
+            /* Increments only this instance of the section counter */
+            counter-increment: section;
+            /* Combines the values of all instances of the section counter, separated by a period */
+            content: counters(section, ".") ". ";
+        }
+    }
+
+    &__title {
+        padding-top: $integer*6;
+        padding-bottom: $integer;
+    }
+
+    &__subtitle {
+        padding-top: $integer*3;
+        padding-bottom: $integer;
+
+        &.alt {
+            padding-top: 0;
+        }
+    }
+
+    &__content {
+        list-style: none;
+    }
+    
+    &__line {
+        padding-top: 0;
+
+        & + & {
+            margin-top: $integer;
+        }
+    }
+}

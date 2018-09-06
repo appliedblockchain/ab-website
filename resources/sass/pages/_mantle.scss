@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * MANTLE
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.mantle {
+     @include align-items(center);
+
+    &__title {
+        margin-bottom: $integer;
+    }
+
+    &__legend {
+        @include display-flex();
+        @include flex-direction(column);
+        @include justify-content(space-evenly);
+        @include align-self(stretch);
+    }
+
+    &__label {
+        position: relative;
+        padding-left: 50%;
+
+        &:before {
+            @include pseudo-element('', 50%, auto, auto, $integer, 40%, 2px);
+            position: absolute;
+            background-color: rgba($white, 0.5);
+        }
+    }
+ }

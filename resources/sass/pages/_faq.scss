@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * JOIN
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.faq {
+
+    .section__header {
+        margin-bottom: $integer*2;
+    }
+
+    &__column:nth-child(2) {
+        @include responsive(max-width, $break-desktop-max) {
+            margin-top: $integer*3;
+        }
+    }
+}

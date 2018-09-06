@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * SERVICES
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.services {
+
+    &__carousel {
+        margin-top: -$integer*2;
+        margin-bottom: -$integer*2;
+    }
+}
+
+.solutions {
+
+    &__filter {
+        width: 100%;
+        margin-right: $integer/2;
+        margin-left: $integer/2;
+        margin-bottom: $integer;
+    }
+
+    &__button {
+        padding: 0 5%;
+        width: 33.333%;
+        @include responsive(max-width, $break-desktop-max) {
+            padding: 0 $integer/2;
+        }
+        @include responsive(max-width, $break-phones-max) {
+            padding-left: $integer/4;
+            padding-right: $integer/4;
+        }
+    }
+
+    &__icon {
+        @include transition(background-color, $transition);
+        will-change: background-color;
+        border-radius: $integer;
+        padding: $integer*2;
+        margin-bottom: $integer;
+        width: 100%;
+
+        &:hover {
+            background-color: darken($primary, 3%);
+        }
+
+        .nav__button--active & {
+            background-color: darken($primary, 6%);
+        }
+
+        @include responsive(max-width, $break-large-desktop-max) {
+            padding: $integer;
+        }
+        @include responsive(max-width, $break-phones-max) {
+            padding: $integer/2;
+        }
+    }
+
+    &__item {
+        border-top: 2px solid rgba($white, 0.2);
+        padding-top: $integer*2;
+        @include responsive(max-width, $break-tablets-max) {
+            border-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: $integer;
+        @include responsive(max-width, $break-tablets-max) {
+            display: none;
+        }
+
+        &.alt {
+            display: block;
+            @include responsive(min-width, $break-tablets-min) {
+                display: none;
+            }
+        }
+    }
+
+    &__text {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        @include responsive(max-width, $break-large-desktop-max) {
+            width: 66.666%;
+        }
+        @include responsive(max-width, $break-desktop-max) {
+            width: 100%;
+        }
+    }
+}
+
+.approach {
+
+    &__filter {
+        width: 100%;
+    }
+
+    &__button {
+        position: relative;
+        
+        &:before {
+            @include transition(opacity $transition, width $transition, left $transition);
+            @include pseudo-element('', auto, 0, -45px, 50%, 0, 8px);
+            @include border-radius(10px);
+            will-change: opacity, width, left;
+            background-color: $dark;
+            opacity: 0;
+        }
+
+        &:hover:before, &.nav__button--active:before {
+            opacity: 1;
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    .block {
+        padding: $integer*4;
+        width: 100%;
+        @include responsive(max-width, $break-desktop-max) {
+            padding: $integer*2;
+        }
+    }
+
+    &__item {
+        @include display-flex();
+        text-align: left;
+    }
+
+    &__number {
+        font-size: 5rem;
+        font-weight: $font-bold;
+        color: $mediumgrey;
+        width: 25%;
+        line-height: 0.9;
+        width: $integer*4;
+        margin-right: $integer*4;
+        @include responsive(max-width, $break-large-desktop-max) {
+            width: $integer*2;
+            margin-right: $integer*2;
+        }
+        @include responsive(max-width, $break-tablets-max) {
+            font-size: 3rem;
+            width: $integer;
+            margin-right: $integer*2;
+        }
+        @include responsive(max-width, $break-phones-max) {
+            display: none;
+        }
+    }
+
+    &__content {
+        @include flex-basis(66.666%);
+        @include responsive(max-width, $break-large-desktop-max) {
+            @include flex-basis(80%);
+        }
+        @include responsive(max-width, $break-desktop-max) {
+            @include flex-basis(100%);
+        }
+    }
+
+    &__title {
+        margin-bottom: $integer;
+    }
+
+    &__icon {
+        @include flex-basis(33.333%);
+        padding-left: $integer*4;
+        @include responsive(max-width, $break-large-desktop-max) {
+            @include flex-basis(20%);
+            padding-left: $integer*2;
+        }
+        @include responsive(max-width, $break-desktop-max) {
+            display: none;
+        }
+    }
+
+    @include responsive(max-width, $break-desktop-max) {
+
+        .tab {
+
+            &__nav {
+                display: none;
+            }
+            
+            &__item {
+                display: block;
+
+                & + .tab__item {
+                    margin-top: $integer;
+                }
+            }
+        }
+    }
+}
+
+.technology {
+
+    &__graphic {
+        top: -200%;
+        @include responsive-mobile-devices() {
+            display: none;
+        }
+    }
+}

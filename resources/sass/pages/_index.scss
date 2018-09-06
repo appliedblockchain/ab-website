@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * HOME
+ * —————————————————————————————————————————————————————————————————
+*/
+
+#particles-js {
+    //display none for development
+    //display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include responsive-mobile-devices() {
+        display: none;
+    }
+}
+
+.landing {
+    @include justify-content(space-between);
+    @include background(center center, cover);
+    background-image: url(../images/background/about.jpg);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding-top: $integer*9;
+    padding-bottom: $integer*2;
+    @include responsive(max-width, $break-desktop-max) {
+        padding-bottom: $integer*4;
+    }
+    @include responsive-mobile-devices-landscape() {
+        padding-top: $integer*6;
+    }
+
+    &:before, &:after, &__title, &__icon, &__carousel, .gartner {
+        pointer-events: none;
+        @include responsive-mobile-devices() {
+            pointer-events: initial;
+        }
+    }
+
+    &:before {
+        @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+        @include background-image(linear-gradient(to bottom, rgba($primary, 0.7), $primary));
+    }    
+    &:after {
+        @include pseudo-element('', auto, 0, 0, 0, 100%, 50%);
+        @include background-image(linear-gradient(to bottom, rgba($dark, 0), $dark));
+    }    
+
+    &__title {
+        z-index: 1;
+    }
+
+    &__icon {
+        z-index: 1;
+        height: 40vh;
+        position: absolute;
+        bottom: $integer*7;
+        @include responsive(max-width, $break-desktop-max) {
+            height: 35vh;
+        }
+        @include responsive(max-width, $break-phones-max) {
+            display: none;
+        }
+        @include responsive-mobile-devices-landscape() {
+            display: none;
+        }
+    }
+
+    &__carousel {
+        @include align-self(flex-end);
+    }
+
+    // PREVIOUS GRAPHIC ELEMENTS
+    // &__graphic {
+    
+    //     &--lines, &--circle {
+    //         @include responsive(max-width, $break-large-desktop-max) {
+    //             opacity: 0.5;
+    //         }
+    //         position: absolute;
+    //     }
+
+    //     &--lines {
+    //         width: 16%;
+    //         left: 42%;
+    //         top: 25%;
+    //         @include responsive(max-width, $break-large-desktop-max) {
+    //             width: 24%;
+    //             left: 38%;
+    //             top: 30%;
+    //         }
+    //         @include responsive(max-width, $break-desktop-max) {
+    //             width: 30%;
+    //             left: 35%;
+    //             top: 35%;
+    //         }
+    //         @include responsive(max-width, $break-tablets-max) {
+    //             width: 36%;
+    //             left: 32%;
+    //             top: 35%;
+    //         }
+    //         @include responsive(max-width, $break-phones-max) {
+    //             width: 40%;
+    //             left: 30%;
+    //             top: 40%;
+    //         }
+    //     }
+
+    //     &--circle {
+    //         width: 70%;
+    //         left: 15%;
+    //         top: 10%;
+    //         @include responsive(max-width, $break-large-desktop-max) {
+    //             width: 80%;
+    //             left: 10%;
+    //             top: 12%;
+    //         }
+    //         @include responsive(max-width, $break-desktop-max) {
+    //             width: 110%;
+    //             left: -5%;
+    //             top: 16%;
+    //         }
+    //         @include responsive(max-width, $break-tablets-max) {
+    //             width: 130%;
+    //             left: -15%;
+    //             top: 20%;
+    //         }
+    //         @include responsive(max-width, $break-phones-max) {
+    //             width: 150%;
+    //             left: -25%;
+    //             top: 24%;
+    //         }
+    //     }
+    // }
+
+    &__content {
+        @include flex-direction(column-reverse);
+        position: absolute;
+        bottom: $integer*6;
+        @include responsive(max-width, $break-large-desktop-max) {
+            @include calc(width, '100vw - '$col*2);
+            @include flex-direction(row);
+        }
+    }
+
+    // &__widget {
+    //     background-color: transparent;
+    //     padding: 0;
+    //     width: $integer*24;
+    //     @include responsive(max-width, $break-phones-max) {
+    //         display: none;
+    //     }
+    // }
+
+    .gartner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        min-width: 220px;
+        width: 15%;
+        z-index: 1;
+        @include responsive(max-width, $break-tablets-max) {
+            display: none;
+        }
+        @include responsive-mobile-devices-landscape() {
+            display: none;
+        }
+    }
+}
+
+#what-we-do {
+    @include responsive(max-width, $break-tablets-max) {
+        .section__header {
+            @include align-items(center);
+            text-align: center;
+        }
+    }
+}
+
+.video {
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
+    &__button {
+        @include transition(transform $transition);
+        will-change: transform;
+        cursor: pointer;
+        width: $integer*6;
+
+        &:hover {
+            @include transform(scale(1.2));
+        }
+    }
+}
+
+#who-we-help {
+
+    .section {
+
+        &__header {
+            @include responsive(max-width, $break-desktop-max) {
+                margin-bottom: $integer;
+            }
+        }
+
+        &__content {
+            text-align: left;
+            @include responsive(max-width, $break-desktop-max) {
+                text-align: center;
+            }
+
+            .button {
+                margin-top: $integer*4;
+            }
+        }
+    }
+
+    .row {
+        @include responsive(max-width, $break-desktop-max) {
+            @include flex-direction(column-reverse);
+        }
+    }
+
+    .video {
+        @include background(center center, contain);
+        background-image: url(../images/icons/index/thumbnail.png);
+        height: 30vmax;
+        @include responsive(max-width, $break-desktop-max) {
+            margin-top: $integer*2;
+            min-height: $integer*20;
+        }
+    }
+}
+
+.why-us {
+    text-align: left;
+
+    &__item {
+        @include display-flex();
+        @include align-items(center);
+        @include responsive(max-width, $break-large-desktop-max) {
+            margin-top: $integer;
+            margin-bottom: $integer;
+        }
+    }
+
+    &__image {
+        @include responsive(max-width, $break-tablets-max) {
+            display: none;
+        }
+    }
+
+    &__graphic {
+        top: -25%;
+    }
+}
+
+.why-us {
+
+    &__item {
+        
+        &:nth-child(2) {
+            text-align: right;
+            @include responsive(max-width, $break-tablets-max) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+#featured-in {
+
+    border-top: $integer/4 solid $lightgrey;
+
+    .section__header {
+        margin-bottom: 0;
+    }
+}
+
+.logo-media {
+    margin-left: -$integer*2;
+    margin-right: -$integer*2;
+    @include responsive(max-width, $break-desktop-max) {
+        margin-left: -$integer;
+        margin-right: -$integer;
+    }
+
+
+    &__item {
+        position: relative;
+        width: 25%;
+        padding: $integer $integer*2;
+        @include responsive(max-width, $break-desktop-max) {
+            padding-left: $integer;
+            padding-right: $integer;
+        }
+        @include responsive(max-width, $break-tablets-max) {
+            width: 50%;
+        }
+
+        & + & {
+
+            &:before {
+                @include pseudo-element('', 0, auto, 0, -$integer/4, $integer/4, 100%);
+                @include border-radius($integer);
+                background-color: $lightgrey;
+                @include responsive(max-width, $break-tablets-max) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+}

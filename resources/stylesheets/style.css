@@ -7239,18 +7239,19 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * —————————————————————————————————————————————————————————————————
    * structure
    * services
+   * about
    * —————————————————————————————————————————————————————————————————
   */
   /*
    * structure
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 24, ../sass/modules/_ie.scss */
+  /* line 25, ../sass/modules/_ie.scss */
   .header {
-    pointer-events: initial !important;
+    pointer-events: auto !important;
   }
 
-  /* line 30, ../sass/modules/_ie.scss */
+  /* line 31, ../sass/modules/_ie.scss */
   .graphic--greyscale, .graphic--greyscale-left, .graphic--greyscale-center, .graphic--greyscale-right {
     display: none;
   }
@@ -7259,12 +7260,33 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * services
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 44, ../sass/modules/_ie.scss */
+  /* line 45, ../sass/modules/_ie.scss */
   .approach__filter {
     padding: 0 20px;
   }
-  /* line 48, ../sass/modules/_ie.scss */
+  /* line 49, ../sass/modules/_ie.scss */
   .approach__button {
     width: 25%;
   }
+  /* line 53, ../sass/modules/_ie.scss */
+  .approach__content {
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+  }
+  /* line 57, ../sass/modules/_ie.scss */
+  .approach__icon {
+    position: absolute;
+    width: 30%;
+    right: 0;
+  }
+
+  /*
+   * about
+   * —————————————————————————————————————————————————————————————————
+  */
+  /*
+   * —————————————————————————————————————————————————————————————————
+   * END
+   * —————————————————————————————————————————————————————————————————
+  */
 }

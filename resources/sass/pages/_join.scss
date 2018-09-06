@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * JOIN
+ * —————————————————————————————————————————————————————————————————
+*/
+
+#join {
+
+    .section__title {
+        width: 100%;
+    }
+}
+
+.jobs {
+
+    &__container {
+        position: relative;
+        
+        > * {
+            z-index: 2;
+        }
+
+        .section__title, .section__desc {
+            color: $white;
+        }
+        
+    }
+
+    &__list {
+        margin-top: -$integer*6;
+    }
+    
+    &__content {
+        width: 100%;
+    }
+    
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+
+        &:before {
+            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+            background-color: rgba($primary, 0.8);
+            z-index: 1;
+        }
+
+        &--london {
+            @extend .jobs__background;
+            @include background(bottom center, cover);
+            background-image: url('../images/background/london.jpg');
+        }
+
+        &--porto {
+            @extend .jobs__background;
+            @include background(center center, cover);
+            @include transition(opacity 0.8s ease 0s);
+            background-image: url('../images/background/porto.jpg');
+            opacity: 0;
+            
+            &.js-show {
+                opacity: 1;
+            }
+        }
+    }
+}

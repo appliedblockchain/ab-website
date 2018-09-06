@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * ANCHOR
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.anchor {
+    @include display-flex();
+    @include align-items(center);
+	position: fixed;
+    left: $col;
+    height: 100vh;
+
+    &__container {
+        @include display-flex();
+        @include flex-direction(column);
+        @include align-items(center);
+        width: 1px;
+    }
+
+    &__item + &__item {
+        padding-top: $integer*2;
+    }
+
+    &__dot {
+        @include border-radius(50%);
+        @include transition(transform $transition);
+        will-change: transforn;
+        background-color: white;
+        width: $integer/2;
+        height: $integer/2;
+        display: block;
+        position: relative;
+
+        &:before {
+            @include transition(transform $transition);
+            @include pseudo-element('', 1px, 0, 0, 1px, 6px, 6px);
+            @include border-radius(50%);
+            will-change: transform;
+            border: 1px solid $white;
+            
+        }
+        
+        .js-dot-active &,    
+        &:hover, &:focus, &:active {
+            
+            &:before {
+                @include transition(transform $transition);
+                will-change: transform;
+                @include transform(scale(2.5));
+            }
+        }
+    }
+
+    &__text {
+        @include transition(opacity $transition);
+        will-change: opacity;
+        position: absolute;
+        left: 15px;
+        opacity: 0;
+        margin-top: -12px;
+        font-weight: 900;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+
+        .js-dot-active &,
+        .anchor__dot:hover ~ &, 
+        .anchor__dot:focus ~ &, 
+        .anchor__dot:active ~ & {
+            opacity: 1;
+        }
+    }
+}

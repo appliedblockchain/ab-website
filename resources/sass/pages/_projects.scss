@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * CASE STUDIES
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.portfolio {
+
+    /* feature project */
+    &--featured {
+
+        .portfolio {
+
+            &__item {
+                @include flex-direction(row);
+                @include align-items(center);
+                width: 100% !important;
+
+                &:before {
+                    @include background-image(linear-gradient(to right, $red, $primary));
+                    opacity: 0.8;
+                    background-color: transparent !important;
+                }
+
+                > * {
+                    @include flex-basis(50%);
+                    @include responsive(max-width, $break-desktop-max) {
+                        @include flex-basis(100%);
+                    }
+                }
+
+                &:hover {
+                    
+                    .portfolio {
+                        
+                        &__content {
+                            @include transform(translateY(0));
+                        }
+                    }
+                }
+            }
+                    
+            &__logo {
+                @include transform(translateX(-$integer));
+                width: 100%;
+                text-align: center;
+                @include responsive(max-width, $break-desktop-max) {
+                    display: none;
+                }
+
+                img {
+                    width: 66.666%;
+                    min-width: $integer*15;
+                    margin: auto;
+                }
+            }
+
+            &__content {
+                @include transform(translateY(25%));
+            }   
+        }
+    }
+
+    // grid structure
+    &--grid {
+        @include display-flex();
+        @include flex-wrap(wrap);
+
+        .portfolio {
+            
+            &__logo {
+                @include align-self(flex-start);
+                margin-bottom: $integer;
+                height: $integer*6;
+                width: $integer*8;
+            }
+        }
+    }
+
+    // smaller grid structure
+    &--grid-bis {
+
+        .portfolio__item {
+            width: 33.333% !important;
+            @include responsive(max-width, $break-tablets-max) {
+                width: 100% !important;
+            }
+        }
+    }
+
+    &__item {
+        @include display-flex();
+        @include flex-direction(column);
+        overflow: hidden;
+        position: relative;
+        padding: $integer*2;
+        text-align: left;
+        color: $white;
+        width: 50%;
+
+        &:before {
+            @include transition(background-color $transition);
+            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+            will-change: background-color;
+        }
+
+        &:nth-child(5n+1) {
+            width: 50%;
+        }
+
+        &:nth-child(3n+1):before {
+            background-color: rgba($primary, 0.8);
+        }
+        &:nth-child(3n+2):before {
+            background-color: rgba($primary-darken, 0.8);
+        }
+        &:nth-child(3n+3):before {
+            background-color: rgba($primary-lighten, 0.8);
+        }
+
+//        @include responsive(max-width, $break-large-desktop) {
+//            width: 50%;
+//
+//            &:nth-child(5n+1) {
+//                width: 100%;
+//            }    
+//        }
+
+        @include responsive(max-width, $break-tablets-max) {
+            width: 100% !important;
+        }
+
+        &:hover {
+
+            .portfolio {
+
+                &__content {
+                    @include transform(translateY(0));
+                }
+
+                &__comment {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    &__content {
+        @include display-flex();
+        @include flex-direction(column);
+        @include align-items(flex-start);
+        @include transition(transform $transition);
+        @include transform(translateY(25%));
+        will-change: transform;
+        height: 100%;
+        position: relative;
+        @include responsive-mobile-devices() {
+            @include transform(translateY(0) !important);
+        }
+
+    }
+
+    &__logo {
+        filter: brightness(100);
+    }
+
+    &__comment {
+        @include transition(opacity $transition);
+        will-change: opacity;
+        margin-bottom: $integer/2;
+        opacity: 1;
+    }
+
+    &__subtitle {
+        color: $white;
+    }
+
+    &__desc {
+        margin: $integer 0 $integer*2 0;
+        color: $white;
+        overflow: hidden;
+        
+        span {
+            @include transition(transform $transition);
+            @include transform(translateY(-100%) scaleY(0.3));
+            will-change: transform;
+            display: block;
+            @include responsive-mobile-devices() {
+                @include transform(translateY(0) scaleY(1) !important);
+            }
+        }
+    }
+
+    &__button {
+        overflow: hidden;
+        
+        .button {
+            @include transition(opacity $transition);
+            will-change: opacity;
+            opacity: 0;
+            @include responsive-mobile-devices() {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    // hover animation
+    &__item:hover {
+
+        &:nth-child(3n+1):before { background-color: $primary; }
+        &:nth-child(3n+2):before { background-color: $primary-darken; }
+        &:nth-child(3n+3):before { background-color: $primary-lighten; }
+
+        .portfolio {
+
+            &__desc span {
+                @include transform(translateY(0) scaleY(1));
+            }
+
+            &__button .button {
+                opacity: 1;
+            }
+        }
+    }
+
+    .lead {
+        color: $white !important;
+    }
+}
+
+
+
+.project-grid {
+    margin: -$integer/2;
+
+    &__item {
+        position: relative;
+        width: 25%;
+        padding: $integer/2;
+        @include responsive(max-width, $break-desktop-max) {
+            width: 50%;
+        }
+        @include responsive(max-width, $break-phones-max) {
+            width: 100%;
+        }
+    }
+
+    &__container {
+        padding: $integer;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__inner {
+        @include overflow-scroll();
+        @include transition(height $transition, width $transition, top $transition, left $transition, opacity 0.2s ease 0.2s);
+        @include display-flex();
+        @include flex-direction(column);
+        @include align-items(flex-start);
+        @include justify-content(space-between);
+        @include calc(width, '100% - '$integer);
+        @include calc(height, '100% - '$integer);
+        will-change: height, width, top, left, opacity;
+        position: absolute;
+        top: $integer/2;
+        left: $integer/2;
+        padding: $integer;
+        background-color: $white;
+        text-align: left;
+        @include responsive(min-width, $break-large-desktop-min) {
+            padding: $integer*2;
+        }
+        @include responsive(max-width, $break-desktop-max) {
+            padding: $integer*2;
+        }
+
+        &.js-show {
+            @include transition(height $transition, width $transition, top $transition, left $transition, opacity 0.2s ease 0s);
+            @include calc(width, '100% + '$integer*2);
+            @include calc(height, '100% + '$integer*2);
+            top: -$integer;
+            left: -$integer;
+            z-index: 2;
+            @include responsive(max-width, $break-phones-max) {
+                @include calc(width, '100% - '$integer);
+                @include calc(height, '100% - '$integer);
+                top: $integer/2;
+                left: $integer/2;
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: $integer;
+    }
+
+    .body--bold {
+        margin-top: $integer/2;
+    }
+
+    &__summary {
+        margin-top: $integer/2;
+    }
+
+    &__button {
+        margin-top: $integer/2;
+        min-height: $integer*1.5;
+    }
+}

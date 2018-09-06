@@ -13,10 +13,10 @@ twitter: https://twitter.com/appblockchain
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects/:path.html/
   posts:
     output: true
-    permalink: /:title/
+    permalink: /:title.html/
 
 # internal path
 resourceurl: /resources

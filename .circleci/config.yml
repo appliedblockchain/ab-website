@@ -51,8 +51,8 @@ jobs:
       - run:
           name: Set AWS credentials
           command: |
-            aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}
-            aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}
+            ~/.local/bin/aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}
+            ~/.local/bin/aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}
       - run:
           name: Upload to s3
           command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read

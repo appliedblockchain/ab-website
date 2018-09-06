@@ -19,10 +19,10 @@ references:
       name: Upload to s3
       command: |
         echo "Copying files to server..."
-        aws s3 sync _site/ "$S3_BUCKET_NAME" --size-only --exclude "*" --include "*.*" --delete
+        aws s3 sync _site/ "s3://$S3_BUCKET_NAME" --size-only --exclude "*" --include "*.*" --delete
 
         echo "Copying files with content type..."
-        aws s3 sync _site/ "$S3_BUCKET_NAME" --size-only --content-type text/html --exclude "*.*"
+        aws s3 sync _site/ "s3://$S3_BUCKET_NAME" --size-only --content-type text/html --exclude "*.*"
   clear_cloudfront_cache: &clear_cloudfront_cache
     run:
       name: Clear CloudFront cache

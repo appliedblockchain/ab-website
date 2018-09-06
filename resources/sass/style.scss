@@ -20,8 +20,7 @@
 	"modules/_variables",
 	"modules/_mixins",
 	"modules/_animations",
-	"modules/_fontface",
-	"modules/_ie";
+	"modules/_fontface";
 
 // PARTIALS
 @import 
@@ -58,3 +57,6 @@
 	"pages/_media",
 	"pages/_services",
 	"pages/_thank_you";
+
+@import
+	"modules/_ie";

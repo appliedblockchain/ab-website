@@ -555,17 +555,6 @@ optgroup {
 }
 /* 
  * —————————————————————————————————————————————————————————————————
- * INTERNET EXPLORER
- * —————————————————————————————————————————————————————————————————
-*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* line 13, ../sass/modules/_ie.scss */
-  .header {
-    pointer-events: initial !important;
-  }
-}
-/* 
- * —————————————————————————————————————————————————————————————————
  * ANCHOR
  * —————————————————————————————————————————————————————————————————
 */
@@ -7224,4 +7213,16 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
 /* line 68, ../sass/pages/_thank_you.scss */
 .thank-you__button .button {
   margin-left: 0 !important;
+}
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * INTERNET EXPLORER
+ * —————————————————————————————————————————————————————————————————
+*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 13, ../sass/modules/_ie.scss */
+  .header {
+    pointer-events: initial !important;
+  }
 }

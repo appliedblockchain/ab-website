@@ -6910,13 +6910,13 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
 }
 /* line 28, ../sass/pages/_services.scss */
 .solutions__button {
-  padding: 0 10px;
-  width: 25%;
+  padding: 0 5%;
+  width: 33.333%;
 }
 @media (max-width: 1023px) {
   /* line 28, ../sass/pages/_services.scss */
   .solutions__button {
-    width: 33.333%;
+    padding: 0 10px;
   }
 }
 @media (max-width: 575px) {
@@ -6941,7 +6941,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
 }
 /* line 48, ../sass/pages/_services.scss */
 .solutions__icon:hover {
-  background-color: #0071eb;
+  background-color: #0074f0;
 }
 /* line 52, ../sass/pages/_services.scss */
 .nav__button--active .solutions__icon {
@@ -7048,6 +7048,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
 /* line 125, ../sass/pages/_services.scss */
 .approach .block {
   padding: 80px;
+  width: 100%;
 }
 @media (max-width: 1023px) {
   /* line 125, ../sass/pages/_services.scss */
@@ -7055,13 +7056,13 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
     padding: 40px;
   }
 }
-/* line 132, ../sass/pages/_services.scss */
+/* line 133, ../sass/pages/_services.scss */
 .approach__item {
   display: -webkit-flex;
   display: flex;
   text-align: left;
 }
-/* line 137, ../sass/pages/_services.scss */
+/* line 138, ../sass/pages/_services.scss */
 .approach__number {
   font-size: 5rem;
   font-weight: 700;
@@ -7072,74 +7073,90 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   margin-right: 80px;
 }
 @media (max-width: 1299px) {
-  /* line 137, ../sass/pages/_services.scss */
+  /* line 138, ../sass/pages/_services.scss */
+  .approach__number {
+    width: 40px;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 138, ../sass/pages/_services.scss */
+  .approach__number {
+    font-size: 3rem;
+    width: 20px;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 575px) {
+  /* line 138, ../sass/pages/_services.scss */
   .approach__number {
     display: none;
   }
 }
-/* line 150, ../sass/pages/_services.scss */
+/* line 160, ../sass/pages/_services.scss */
 .approach__content {
   -webkit-flex-basis: 66.666%;
   flex-basis: 66.666%;
 }
 @media (max-width: 1299px) {
-  /* line 150, ../sass/pages/_services.scss */
+  /* line 160, ../sass/pages/_services.scss */
   .approach__content {
     -webkit-flex-basis: 80%;
     flex-basis: 80%;
   }
 }
 @media (max-width: 1023px) {
-  /* line 150, ../sass/pages/_services.scss */
+  /* line 160, ../sass/pages/_services.scss */
   .approach__content {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
   }
 }
-/* line 160, ../sass/pages/_services.scss */
+/* line 170, ../sass/pages/_services.scss */
 .approach__title {
   margin-bottom: 20px;
 }
-/* line 164, ../sass/pages/_services.scss */
+/* line 174, ../sass/pages/_services.scss */
 .approach__icon {
   -webkit-flex-basis: 33.333%;
   flex-basis: 33.333%;
   padding-left: 80px;
 }
 @media (max-width: 1299px) {
-  /* line 164, ../sass/pages/_services.scss */
+  /* line 174, ../sass/pages/_services.scss */
   .approach__icon {
     -webkit-flex-basis: 20%;
     flex-basis: 20%;
+    padding-left: 40px;
   }
 }
 @media (max-width: 1023px) {
-  /* line 164, ../sass/pages/_services.scss */
+  /* line 174, ../sass/pages/_services.scss */
   .approach__icon {
     display: none;
   }
 }
 @media (max-width: 1023px) {
-  /* line 179, ../sass/pages/_services.scss */
+  /* line 190, ../sass/pages/_services.scss */
   .approach .tab__nav {
     display: none;
   }
-  /* line 183, ../sass/pages/_services.scss */
+  /* line 194, ../sass/pages/_services.scss */
   .approach .tab__item {
     display: block;
   }
-  /* line 186, ../sass/pages/_services.scss */
+  /* line 197, ../sass/pages/_services.scss */
   .approach .tab__item + .tab__item {
     margin-top: 20px;
   }
 }
 
-/* line 196, ../sass/pages/_services.scss */
+/* line 207, ../sass/pages/_services.scss */
 .technology__graphic {
   top: -200%;
 }
 @media (pointer: coarse) {
-  /* line 196, ../sass/pages/_services.scss */
+  /* line 207, ../sass/pages/_services.scss */
   .technology__graphic {
     display: none;
   }
@@ -7215,14 +7232,39 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   margin-left: 0 !important;
 }
 
-/* 
- * —————————————————————————————————————————————————————————————————
- * INTERNET EXPLORER
- * —————————————————————————————————————————————————————————————————
-*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* line 13, ../sass/modules/_ie.scss */
+  /* 
+   * —————————————————————————————————————————————————————————————————
+   * INTERNET EXPLORER
+   * —————————————————————————————————————————————————————————————————
+   * structure
+   * services
+   * —————————————————————————————————————————————————————————————————
+  */
+  /*
+   * structure
+   * —————————————————————————————————————————————————————————————————
+  */
+  /* line 24, ../sass/modules/_ie.scss */
   .header {
     pointer-events: initial !important;
+  }
+
+  /* line 30, ../sass/modules/_ie.scss */
+  .graphic--greyscale, .graphic--greyscale-left, .graphic--greyscale-center, .graphic--greyscale-right {
+    display: none;
+  }
+
+  /*
+   * services
+   * —————————————————————————————————————————————————————————————————
+  */
+  /* line 44, ../sass/modules/_ie.scss */
+  .approach__filter {
+    padding: 0 20px;
+  }
+  /* line 48, ../sass/modules/_ie.scss */
+  .approach__button {
+    width: 25%;
   }
 }

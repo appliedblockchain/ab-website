@@ -13,6 +13,8 @@ seventeen:
     icon: dollar
 
 eighteen:
-  - text: '<span class="body--bold">May</span>: Products: Launched Fern, a protocol that makes any blockchain network more decentralised and secure by connecting the identified node and oracle providers through an anonymous protocol.
-  <br><br><span class="body--bold">July</span>: Opened an office in Porto: We chose Porto as our first non-UK office and as our development centre for European expansion.'
+  - text: '<span class="body--bold">May:</span> Products: Launched Fern, a protocol that makes any blockchain network more decentralised and secure by connecting the identified node and oracle providers through an anonymous protocol.'
     icon: fern
+
+  - text: '<span class="body--bold">July:</span> Opened an office in Porto: We chose Porto as our first non-UK office and as our development centre for European expansion.'
+    icon: pinpoint    

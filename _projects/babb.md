@@ -29,7 +29,7 @@ results-content:
 results-comment:
 
 testimonial-id: guido-branca
-testimonial-quote: Applied Blockchain has experience in all levels of development – the blockchain core, the server level, the interface to the web, the interface to mobile – so they look at the end to end process to minimise costs, maximise performance and improve scalability.
+testimonial-quote: Applied Blockchain has experience in all levels of development – the blockchain core, the server level, the interface to the web, the interface to mobile – so they look at the end-to-end process to minimise costs, maximise performance and improve scalability.
 testimonial-name: Guido Branca
 testimonial-job: Former CEO, BABB
 

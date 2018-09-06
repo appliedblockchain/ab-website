@@ -10,10 +10,8 @@
 # - https://simpleit.rocks/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
 
 # Initialize some vars
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-PROJECT_DIR="$SCRIPT_DIR/.."
-BUILD_DIR="$PROJECT_DIR/_site"
-DEPLOY_DIR="$PROJECT_DIR/.deploy"
+BUILD_DIR="_site"
+DEPLOY_DIR="$.deploy"
 
 # Copy the site directory to a temporary location so that modifications we make don't get overwritten by the Jekyll server
 # that is potentially running

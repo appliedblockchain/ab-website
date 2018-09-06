@@ -10,7 +10,7 @@ deliverables: Blockchain-based billing and settlement platform
 summary: Travel Ledger is a billing and settlement platform for the travel industry, that provides a single source of truth for the purchasing process for non-air travel along the entire distribution chain.
 
 challenge: 
-    <p class="body--bold">The reconciliation process within the travel sector is complicated, time consuming, and impacts costs for travel companies and suppliers.</p>
+    <p class="body--bold">The reconciliation process within the travel sector is complicated, time-consuming, and impacts cost for travel companies and suppliers.</p>
     <p>Travel companies work with numerous suppliers and will often be required to sift through hundreds of statements and invoices from suppliers to settle payments. A further problem is that these invoices and statements come in varying formats, and every supplier wants to be paid in different ways. This creates a lot of problems for when travel companies are reconciling their statements with bookings and there is no match.</p>
 
 delivery:

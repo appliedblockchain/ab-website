@@ -11,7 +11,7 @@ summary: APPII is an online verification, career management, and recruitment pla
 challenge: 
     <p class="body--bold">Verification of educational and work experience is an expensive and time-consuming process for employers and recruiters. The recruitment sector relies on multiple verifications across organisations and intermediaries to check the claims an individual makes about their education and employment.</p>
     <p>The existing process requires the repeated acquisition of the same pieces of data. The failure to do these checks leads to time and expense incurred when the experience of the new hire is discovered to be fraudulent. There is also legal and operational risk where the qualifications are related to health and safety, or compliance.</p>
-    <p>APPII wanted to change the cross-referencing process by providing control of the process to the candidate, enabling quicker and cheaper checks. APPII ensures that the authentication of a candidate’s experience is a one time event, with the record of the verification stored securely and permanently for any person or organisation that requests access to view it.</p>
+    <p>APPII wanted to change the cross-referencing process by providing control of the process to the candidate, enabling quicker and cheaper checks. APPII ensures that the authentication of a candidate’s experience is a one-time event, with the record of the verification stored securely and permanently for any person or organisation that requests access to view it.</p>
 
 delivery:
     <div class="col--xl4 col--lg6 col--md8">
@@ -20,11 +20,11 @@ delivery:
     </div>
     <div class="col--xl4 col--lg6 col--md8">
         <p>The backend development of the application included developing functionality to integrate Know Your Customer (KYC) providers for verification, issuing and storing digital signatures, biometrics, and integrating Applied Blockchain’s ‘Privacy’ component to ensure compliance with data protection and privacy standards.</p>
-        <p>The front end of APPII included a process of user research (for applicants, companies and education institutions), design and development for each of the user groups. A web and mobile version was developed with an intuitive user experience for the ID verification process and storage; and management of digital keys for educational institutions and employers to attest to a user’s experience.</p>
+        <p>The front end of APPII included a process of user research (for applicants, companies and education institutions), design and development for each of the user groups. A web and mobile version were developed with an intuitive user experience for the ID verification process and storage and management of digital keys for educational institutions and employers to attest to a user’s experience.</p>
     </div>
 
 results:
-    Applied Blockchain worked with APPII from the research and design phase through to the release of a production grade platform for developing its career verification platform – which you can download via the Google Play and Apple Store.
+    Applied Blockchain worked with APPII from the research and design phase through to the release of a production-grade platform for developing its career verification platform – which you can download via the Google Play and Apple Store.
 
 results-subtitle: 
     All applicants on APPII are verified, making manual referencing a thing of the past
@@ -56,7 +56,7 @@ results-content:
     </div>
 
 testimonial-id: gary-mckay
-testimonial-quote: Adi and the team at Applied Blockchain have been instrumental in bringing our idea to life. The team delivered an outstanding platform and continue to deliver innovative features that will hopefully lead the way in assisting employers find pre-verified talent, and for talent to increase their employability.
+testimonial-quote: Adi and the team at Applied Blockchain have been instrumental in bringing our idea to life. The team delivered an outstanding platform and continue to deliver innovative features that will hopefully lead the way in assisting employers to find pre-verified talent, and for talent to increase their employability.
 testimonial-name: Gary McKay
 testimonial-job: Managing Director, APPII
 ---

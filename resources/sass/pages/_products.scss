@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * PRODUCTS
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.products-intro__image {
+    @include responsive(max-width, $break-desktop-max) {
+        display: none;
+    }
+}
+
+.products {
+    padding-bottom: 0;
+
+    &__container {
+
+        & + & {
+            @include responsive(max-width, $break-tablets-max) {
+                margin-top: $integer;
+            }
+        }
+    }
+
+    &__intro {
+        @include background(90% center, 45%);
+        @include responsive(max-width, $break-desktop-max) {
+            background-image: none !important;
+        }
+    }
+
+    &__item {
+        @include display-flex();
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        @include transform(translateY(-$integer*6));
+        padding: $integer*4;
+        height: 100%;
+        @include responsive(max-width, $break-tablets-max) {
+            padding: $integer*2;
+        }
+    }
+
+    &__logo {
+        width: 40%;
+        min-width: $integer*6;
+    }
+
+    &__name {
+        margin: $integer 0;
+    }
+
+    &__button {
+        margin-top: $integer*2;
+    }
+}
+
+.devtools {
+    text-align: left;
+
+    &__item {
+        @include align-items(center);
+    }
+
+    &__image {
+        max-height: $integer*12;
+        @include responsive(max-width, $break-tablets-max) {
+            display: none;
+        }
+    }
+}

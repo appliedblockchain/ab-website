@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * WIDGETS
+ * —————————————————————————————————————————————————————————————————
+ * general
+ * social
+ * newsletter
+ * hiring
+ * news
+ * cookies
+ * chat
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+/*
+ * general
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.widget {
+    position: relative;
+
+    &__header {
+        @include display-flex();
+        @include justify-content(space-between);
+        width: 100%;
+
+        & + .widget__content {
+            margin-top: $integer/2;
+        }
+    }
+
+    &__content {
+
+    }
+}
+
+
+
+/*
+ * social
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.social {
+    margin-bottom: $integer*2;
+}
+
+
+
+/*
+ * newsletter
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.newsletter {
+    
+    &__button {
+        margin-top: $integer/2;
+    }
+}
+
+
+
+/*
+ * hiring
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.widget {
+
+    &__hiring {
+        @include display-flex();
+        @include align-items(center);
+        background-color: rgba($primary-lighten, 0.9);
+        padding: $integer;
+        color: $white !important;
+        @include responsive(max-width, $break-tablets-max) {
+            @include flex-direction(column);
+            @include align-items(flex-start);
+        }
+
+        .subtitle {
+            margin-right: $integer;
+            white-space: nowrap;
+            @include responsive(max-width, $break-tablets-max) {
+                margin-right: 0;
+                margin-bottom: $integer/2;
+            }
+        }
+
+        .button {
+            min-width: 190px;
+            @include responsive(max-width, $break-tablets-max) {
+                @include align-self(flex-start);
+            }
+        }
+
+        .lead {
+            color: $white;
+        }
+    }
+}
+
+
+
+/*
+ * news
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.widget {
+
+    &__news {
+        @include display-flex();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(space-between);
+        background-color: rgba($primary-darken, 0.9);
+        padding: $integer;
+        height: $integer*6;
+        color: $white !important;
+        @include responsive(max-width, $break-phones-max) {
+            display: none;
+        }
+
+        .button {
+            min-width: 110px;
+        }
+
+        .lead {
+            color: $white;
+        }
+    }
+
+    .news {
+
+        &__content {
+            width: 100%;
+        }
+    }
+}
+
+
+
+/*
+ * cookies
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.cookie {
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(space-between);
+    @include transition(opacity $transition);
+    @include box-shadow(0 0 20px 0 rgba($dark, 0.15));
+    @include calc(padding-left, $col' + '$integer*3);
+    @include calc(padding-right, $col' + '$integer*3);
+    will-change: opacity;
+    background-color: $primary;
+    color: $white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: $integer/2;
+    padding-bottom: $integer/2;
+    opacity: 1;
+    display: none;
+    @include responsive(max-width, $break-phones-max) {
+        @include justify-content(flex-start);
+        @include flex-wrap(wrap);
+    }
+    @include responsive-mobile-devices() {
+        padding-right: $col;
+    }
+
+    &.js-cookie-accepted {
+        opacity: 0;
+    }
+
+    &__text {
+        padding-right: $integer;
+        @include responsive(max-width, $break-phones-max) {
+            padding-right: 0;
+            margin-bottom: $integer/2;
+        }
+    }
+
+    &__button {
+        min-width: 75px;
+    }
+}
+
+
+
+/*
+ * chat
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.userlike-tracking-img {
+    float: left;
+}
+
+/* chat icon */
+
+#userlike.userlike-mobile a#userlike-tab, #userlike a#userlike-tab.userlike-button-bubble {
+    margin-left: $col !important;
+    width: $integer*2 !important;
+    min-width: $integer*2 !important;
+    max-width: $integer*2 !important;
+    height: $integer*2 !important;
+    min-height: $integer*2 !important;
+    max-height: $integer*2 !important;
+    @include box-shadow(0 0 30px 0 rgba($dark, 0.4) !important);
+}
+
+#userlike.userlike-mobile #userlike-button-symbol, #userlike a#userlike-tab.userlike-button-bubble #userlike-button-symbol {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+a#userlike-tab.userlike-button-bubble .userlike-symbol {
+    transform: scale(0.7);
+    margin-top: -12px !important;
+    margin-left: -4px !important;
+}
+
+#userlike.userlike-mobile a#userlike-tab.userlike-slideup, #userlike a#userlike-tab.userlike-button-bubble.userlike-slideup {
+    bottom: $integer*1.5 !important;
+}
+
+/* text banner */
+
+#userlike-hover-text-container {
+    bottom: 30px !important;
+    height: 40px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    border-radius: 20px !important;
+    margin-left: -10px !important;
+}
+
+#userlike-hover-text-container, #userlike-eyecatcher {
+    @include transition(opacity 0.4s ease 0s !important);
+}
+
+#userlike #userlike-button-hover-text {
+    padding-top: 10px !important;
+}
+
+#userlike-hover-text-container.userlike-left #userlike-hover-text-arrow {
+    display: none;
+}

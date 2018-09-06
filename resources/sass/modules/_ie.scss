@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * INTERNET EXPLORER
+ * —————————————————————————————————————————————————————————————————
+ * structure
+ * services
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+/*
+ * structure
+ * —————————————————————————————————————————————————————————————————
+*/
+
+// make header buttons work in ie
+.header {
+    pointer-events: auto !important;
+}
+
+.graphic {
+
+    &--greyscale {
+        display: none;
+    }
+}
+
+
+
+/*
+ * services
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.approach {
+
+    &__filter {
+        padding: 0 $integer;
+    }
+
+    &__button {
+        width: 25%;
+    }
+}
+
+
+
+}

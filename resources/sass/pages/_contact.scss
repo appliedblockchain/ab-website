@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * CONTACT
+ * —————————————————————————————————————————————————————————————————
+*/
+
+#contact {
+
+    .section__header {
+        margin-bottom: $integer;
+    }
+}
+
+.office {
+    padding-bottom: 0;
+
+    &__item {
+        padding-top: $integer*6;
+        padding-bottom: $integer*6;
+
+        &:nth-child(1) {
+            padding-right: $integer*4; 
+            padding-left: $col*2;
+
+            &:before {
+                @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+                @include background-image(linear-gradient(to bottom, $primary, rgba($primary-lighten, 0.8)));
+            }
+        }
+
+        &:nth-child(2) {
+            padding-right: $col*2; 
+            padding-left: $integer*4;
+            padding-bottom: $integer*6;
+
+            &:before {
+                @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+                @include background-image(linear-gradient(to bottom, $primary, rgba($primary-darken, 0.8)));
+            }
+        }
+
+        @include responsive(max-width, $break-tablets-max) {
+            padding-right: $col*2 !important;
+            padding-left: $col*2 !important;
+        }
+
+        > * {
+            position: relative;
+        }
+    }
+
+    &__title {
+        margin-bottom: $integer*2;
+    }
+}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * EVENTS
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.event {
+    width: 100%;
+    padding: 0;
+
+    &__item {
+        @include display-flex();
+        position: relative;
+
+        & + & {
+            border-top: 1px solid $mediumgrey;
+        }
+    }
+
+    &__image {
+        @include flex-basis(33.333%);
+        @include responsive(max-width, $break-phones-max) {
+            display: none;
+        }
+    }
+
+    &__content {
+        @include flex-basis(66.666%);
+        text-align: left;
+        @include responsive(max-width, $break-phones-max) {
+            @include flex-basis(100%);
+        }
+    }
+
+    &__top {
+        @include display-flex();
+        @include align-items(center);
+        @include justify-content(space-between);
+        @include flex-wrap(wrap);
+    }
+}

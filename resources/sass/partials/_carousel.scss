@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * CAROUSEL
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.owl {
+
+    &-dot {
+        @include transition(background-color $transition, transform $transition);
+        @include border-radius(50%);
+        will-change: background-color, transform;
+        height: $integer/2;
+        width: $integer/2;
+        background-color: $secondary !important;
+        margin: 0 $integer*2;
+        
+        &.active, &:hover {
+            @include transition(background-color $transition, transform $transition);
+            @include transform(scale(1.5));
+            background-color: $primary !important;
+        }
+    }
+}
+
+.carousel {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

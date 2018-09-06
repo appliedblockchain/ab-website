@@ -7247,7 +7247,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   */
   /* line 24, ../sass/modules/_ie.scss */
   .header {
-    pointer-events: initial !important;
+    pointer-events: auto !important;
   }
 
   /* line 30, ../sass/modules/_ie.scss */

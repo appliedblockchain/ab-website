@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * ACCORDIONS
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.accordion {
+	padding: 0 !important;
+
+	&__item {
+		width: 100%;
+
+		& + & {
+			border-top: 1px solid $mediumgrey;
+		}
+	}
+
+	&__header {
+	    @include display-flex();
+    	@include align-items(center);
+		@include justify-content(space-between);
+		text-align: left;
+		cursor: pointer;
+		padding: $integer $integer*1.5;
+
+		&.js-accordion-active {
+
+			.accordion__button {
+				@include transform(rotate(45deg));
+			}
+		}
+	}
+
+	&__title {
+		width: 66.666%;
+	}
+
+	&__type {
+		@include responsive(max-width, $break-tablets-max) {
+			display: none;
+		}
+	}
+
+	&__actions {
+		@include display-flex();
+	}
+
+	&__content {
+		@extend .accordion__header;
+		cursor: initial;
+		display: none;
+		padding-top: 0;
+		padding-bottom: $integer*1.5;
+	}
+
+	&__subtitle {
+		padding: $integer*0.75 0;
+
+		&:nth-child(1) {
+			padding-top: 0;
+		}
+	}
+
+	.lead {
+		color: $primary !important;
+	}
+}

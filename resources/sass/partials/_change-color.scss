@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * ACCORDIONS
+ * —————————————————————————————————————————————————————————————————
+*/
+
+/* variables */
+:root {
+	--replace-offset: 50%;
+	--replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
+}
+
+/* align content above each other without absolute */
+.js-replace {
+	display: grid;
+	width: 100%;
+
+	&__item {
+		@include transform(translateY(calc(var(--replace-offset) * 1)));
+		grid-row: -1 / 1;
+		grid-column: -1 / 1; 
+		overflow: hidden;
+		will-change: transform;
+		text-align: center;
+	}
+
+	&__content {
+		/* fixes problem with calculating correct height in js */
+		@include display-flex();
+		@include align-items(center);
+		@include transform(translateY(calc(var(--replace-offset) * -1)));
+		will-change: transform;
+		padding: $integer 0;
+	}
+}
+
+/* previous replace item*/
+.js-replace__item--active {
+	@include transform(translateY(calc(var(--replace-offset-2) * 1)));
+
+	& .js-replace__content {
+		@include transform(translateY(calc(var(--replace-offset-2) * -1)));
+	}
+}
+  
+  
+/* REVERSE ANIMATION */
+.js-replace--reverse {
+
+	.js-replace__item {
+		@include transform(translateY(calc(var(--replace-offset-2) * 1)));
+	}
+
+	.js-replace__content {
+		@include transform(translateY(calc(var(--replace-offset-2) * -1)));
+	}
+}
+  
+  /* previous replace item*/
+.js-replace--reverse {
+	
+	.js-replace__item--active {
+		@include transform(translateY(calc(var(--replace-offset) * 1)));
+
+		.js-replace__content {
+			@include transform(translateY(calc(var(--replace-offset) * -1)));
+		}
+	}
+}

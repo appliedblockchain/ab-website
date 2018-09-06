@@ -62,6 +62,7 @@ jobs:
           root: ./
           paths:
             - _site
+            - .circleci
   deploy_staging:
     <<: *defaults
     docker:

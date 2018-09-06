@@ -18,9 +18,11 @@ references:
     run:
       name: Upload to s3
       command: |
-        sh .circleci/deploy.sh
-        # aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read \
-        # --exclude '.circleci/*' --exclude '*.git/*' --exclude 'resources/sass/*'
+        echo "Copying files to server..."
+        aws s3 sync _site/ "$S3_BUCKET_NAME" --size-only --exclude "*" --include "*.*" --delete
+
+        echo "Copying files with content type..."
+        aws s3 sync _site/ "$S3_BUCKET_NAME" --size-only --content-type text/html --exclude "*.*"
   clear_cloudfront_cache: &clear_cloudfront_cache
     run:
       name: Clear CloudFront cache
@@ -57,12 +59,14 @@ jobs:
             - vendor/bundle
       - run:
           name: Jekyll build
-          command: bundle exec jekyll build
+          command: JEKYLL_ENV=production bundle exec jekyll build
+      - run:
+          name: Remove .html extension
+          command: find _site/ -type f ! -iname 'index.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
       - persist_to_workspace:
           root: ./
           paths:
             - _site
-            - .circleci
   deploy_staging:
     <<: *defaults
     docker:

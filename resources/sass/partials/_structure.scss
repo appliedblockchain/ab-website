@@ -586,9 +586,6 @@ li + li {
 
 	&-name {
 		fill: $black;
-		@include responsive(max-width, $break-phones-max) {
-			display: none;
-		}
 
 		.footer__logo & {
 			fill: $white;

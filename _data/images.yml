@@ -22,45 +22,50 @@ technology:
     alt: Ethereum
     order: 1
 
-  - url: hyperledger-fabric
-    alt: Hyperledger Fabric
-    order: 2
-
-  - url: r3
-    alt: R3
-    order: 3
-
-  - url: stellar
-    alt: Stellar
-    order: 4
-
-  - url: quorum
-    alt: Quorum
-    order: 5
-
-  - url: bigchain
-    alt: Bigchain
-
-  - url: bitcoin
-    alt: Bitcoin
-
-  - url: corda
-    alt: Corda
-
-  - url: cosmos
-    alt: Cosmos
-
   - url: parity
     alt: Parity
-
-  - url: polkadot
-    alt: Polkadot
-
-  - url: raiden
-    alt: Raiden
+    order: 2
+    
+  - url: hyperledger-fabric
+    alt: Hyperledger Fabric
+    order: 3
 
   - url: tendermint
     alt: Tendermint
+    order: 4
+
+  - url: bitcoin
+    alt: Bitcoin
+    order: 5
+
+  - url: corda
+    alt: Corda
+    order: 6
+
+  - url: polkadot
+    alt: Polkadot
+    order: 7  
+    
+  - url: cosmos
+    alt: Cosmos
+    order: 8
+    
+  - url: raiden
+    alt: Raiden
+    order: 9
+
+  - url: bigchain
+    alt: Bigchain
+    order: 10
+    
+  - url: stellar
+    alt: Stellar
+    order: 11
+
+  - url: quorum
+    alt: Quorum
+    order: 12
+
 
 # clients section
 # in index.html page

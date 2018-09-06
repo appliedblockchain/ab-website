@@ -7,24 +7,25 @@ references:
     run:
       name: Install AWS CLI
       command: |
-        pip install awscli --upgrade --user
+        sudo pip install awscli --upgrade
   add_aws_credentials: &add_aws_credentials
     run:
       name: Set AWS credentials
       command: |
-        ~/.local/bin/aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}
-        ~/.local/bin/aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}
+        aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}
+        aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}
   deploy_to_s3: &deploy_to_s3
     run:
       name: Upload to s3
       command: |
-        ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read \
-        --exclude '.circleci/*' --exclude '*.git/*' --exclude 'resources/sass/*'
+        sh .circleci/deploy.sh
+        # aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read \
+        # --exclude '.circleci/*' --exclude '*.git/*' --exclude 'resources/sass/*'
   clear_cloudfront_cache: &clear_cloudfront_cache
     run:
       name: Clear CloudFront cache
       command: |
-        ~/.local/bin/aws cloudfront create-invalidation --distribution-id "$CLOUD_FRONT_DIST_ID" --paths '/*'
+        aws cloudfront create-invalidation --distribution-id "$CLOUD_FRONT_DIST_ID" --paths '/*'
 
 jobs:
   build:

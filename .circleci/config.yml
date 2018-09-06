@@ -18,9 +18,9 @@ references:
     run:
       name: Upload to s3
       command: |
-        # sh .circleci/deploy.sh
-        aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read \
-        --exclude '.circleci/*' --exclude '*.git/*' --exclude 'resources/sass/*'
+        sh .circleci/deploy.sh
+        # aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read \
+        # --exclude '.circleci/*' --exclude '*.git/*' --exclude 'resources/sass/*'
   clear_cloudfront_cache: &clear_cloudfront_cache
     run:
       name: Clear CloudFront cache

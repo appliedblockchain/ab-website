@@ -38,10 +38,6 @@ technology:
     alt: Quorum
     order: 5
 
-  - url: cardano
-    alt: Cardano
-    order: 6
-
   - url: bigchain
     alt: Bigchain
 
@@ -54,9 +50,6 @@ technology:
   - url: cosmos
     alt: Cosmos
 
-  - url: digital-asset
-    alt: Digital Asset
-
   - url: parity
     alt: Parity
 
@@ -65,9 +58,6 @@ technology:
 
   - url: raiden
     alt: Raiden
-
-  - url: sawtooth
-    alt: Sawtooth
 
   - url: tendermint
     alt: Tendermint

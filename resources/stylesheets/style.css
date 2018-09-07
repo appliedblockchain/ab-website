@@ -7305,7 +7305,9 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * —————————————————————————————————————————————————————————————————
    * INTERNET EXPLORER
    * —————————————————————————————————————————————————————————————————
+   * partials / acccordions
    * partials / structure
+   * —————————————————————————————————————————————————————————————————
    * pages / index
    * pages / services
    * pages / products
@@ -7313,15 +7315,27 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * —————————————————————————————————————————————————————————————————
   */
   /*
+   * partials / acccordions
+   * —————————————————————————————————————————————————————————————————
+  */
+  /* line 28, ../sass/modules/_ie.scss */
+  .accordion__button .fa {
+    -moz-transform: translateX(-7px);
+    -ms-transform: translateX(-7px);
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+
+  /*
    * partials / structure
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 27, ../sass/modules/_ie.scss */
+  /* line 40, ../sass/modules/_ie.scss */
   .header {
     pointer-events: auto !important;
   }
 
-  /* line 33, ../sass/modules/_ie.scss */
+  /* line 46, ../sass/modules/_ie.scss */
   .graphic--greyscale, .graphic--greyscale-left, .graphic--greyscale-center, .graphic--greyscale-right {
     display: none;
   }
@@ -7330,13 +7344,13 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * pages / index
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 45, ../sass/modules/_ie.scss */
+  /* line 58, ../sass/modules/_ie.scss */
   .landing {
     padding-top: 80px;
     padding-bottom: 0;
   }
 
-  /* line 50, ../sass/modules/_ie.scss */
+  /* line 63, ../sass/modules/_ie.scss */
   .logo-media {
     height: 40%;
   }
@@ -7345,20 +7359,20 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * pages / services
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 63, ../sass/modules/_ie.scss */
+  /* line 76, ../sass/modules/_ie.scss */
   .approach__filter {
     padding: 0 20px;
   }
-  /* line 67, ../sass/modules/_ie.scss */
+  /* line 80, ../sass/modules/_ie.scss */
   .approach__button {
     width: 25%;
   }
-  /* line 71, ../sass/modules/_ie.scss */
+  /* line 84, ../sass/modules/_ie.scss */
   .approach__content {
     -webkit-flex-basis: 50%;
     flex-basis: 50%;
   }
-  /* line 75, ../sass/modules/_ie.scss */
+  /* line 88, ../sass/modules/_ie.scss */
   .approach__icon {
     position: absolute;
     width: 30%;
@@ -7369,20 +7383,20 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * pages / products
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 91, ../sass/modules/_ie.scss */
+  /* line 104, ../sass/modules/_ie.scss */
   .products__intro {
     display: block;
   }
-  /* line 95, ../sass/modules/_ie.scss */
+  /* line 108, ../sass/modules/_ie.scss */
   .products__container {
     height: 500px;
   }
-  /* line 99, ../sass/modules/_ie.scss */
+  /* line 112, ../sass/modules/_ie.scss */
   .products__item {
     display: inline-block;
   }
 
-  /* line 104, ../sass/modules/_ie.scss */
+  /* line 117, ../sass/modules/_ie.scss */
   .devtools__image {
     max-width: none;
   }
@@ -7391,11 +7405,11 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * pages / about
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 117, ../sass/modules/_ie.scss */
+  /* line 130, ../sass/modules/_ie.scss */
   .timeline__text {
     width: 100%;
   }
-  /* line 121, ../sass/modules/_ie.scss */
+  /* line 134, ../sass/modules/_ie.scss */
   .timeline__icon {
     -webkit-flex-basis: none;
     flex-basis: none;

@@ -7308,6 +7308,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * partials / structure
    * pages / index
    * pages / services
+   * pages / products
    * pages / about
    * —————————————————————————————————————————————————————————————————
   */
@@ -7315,12 +7316,12 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * partials / structure
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 26, ../sass/modules/_ie.scss */
+  /* line 27, ../sass/modules/_ie.scss */
   .header {
     pointer-events: auto !important;
   }
 
-  /* line 32, ../sass/modules/_ie.scss */
+  /* line 33, ../sass/modules/_ie.scss */
   .graphic--greyscale, .graphic--greyscale-left, .graphic--greyscale-center, .graphic--greyscale-right {
     display: none;
   }
@@ -7329,13 +7330,13 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * pages / index
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 44, ../sass/modules/_ie.scss */
+  /* line 45, ../sass/modules/_ie.scss */
   .landing {
     padding-top: 80px;
     padding-bottom: 0;
   }
 
-  /* line 49, ../sass/modules/_ie.scss */
+  /* line 50, ../sass/modules/_ie.scss */
   .logo-media {
     height: 40%;
   }
@@ -7344,24 +7345,46 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * pages / services
    * —————————————————————————————————————————————————————————————————
   */
-  /* line 62, ../sass/modules/_ie.scss */
+  /* line 63, ../sass/modules/_ie.scss */
   .approach__filter {
     padding: 0 20px;
   }
-  /* line 66, ../sass/modules/_ie.scss */
+  /* line 67, ../sass/modules/_ie.scss */
   .approach__button {
     width: 25%;
   }
-  /* line 70, ../sass/modules/_ie.scss */
+  /* line 71, ../sass/modules/_ie.scss */
   .approach__content {
     -webkit-flex-basis: 50%;
     flex-basis: 50%;
   }
-  /* line 74, ../sass/modules/_ie.scss */
+  /* line 75, ../sass/modules/_ie.scss */
   .approach__icon {
     position: absolute;
     width: 30%;
     right: 0;
+  }
+
+  /*
+   * pages / products
+   * —————————————————————————————————————————————————————————————————
+  */
+  /* line 91, ../sass/modules/_ie.scss */
+  .products__intro {
+    display: block;
+  }
+  /* line 95, ../sass/modules/_ie.scss */
+  .products__container {
+    height: 500px;
+  }
+  /* line 99, ../sass/modules/_ie.scss */
+  .products__item {
+    display: inline-block;
+  }
+
+  /* line 104, ../sass/modules/_ie.scss */
+  .devtools__image {
+    max-width: none;
   }
 
   /*

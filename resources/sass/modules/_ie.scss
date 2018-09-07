@@ -11,6 +11,7 @@
  * partials / structure
  * pages / index
  * pages / services
+ * pages / products
  * pages / about
  * —————————————————————————————————————————————————————————————————
 */
@@ -76,6 +77,32 @@
         width: 30%;
         right: 0;
     }
+}
+
+
+
+/*
+ * pages / products
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.products {
+
+    &__intro {
+        display: block;
+    }
+
+    &__container {
+        height: 500px;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+}
+
+.devtools__image {
+    max-width: none;
 }
 
 

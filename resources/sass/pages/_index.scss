@@ -28,8 +28,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    padding-top: $integer*9;
-    padding-bottom: $integer*2;
+    padding: $integer*9 0 $integer*2 0;
     @include responsive(max-width, $break-desktop-max) {
         padding-bottom: $integer*4;
     }
@@ -75,6 +74,8 @@
 
     &__carousel {
         @include align-self(flex-end);
+        padding-left: $col;
+        padding-right: $col;
     }
 
     // PREVIOUS GRAPHIC ELEMENTS

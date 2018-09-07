@@ -7391,6 +7391,16 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
    * pages / about
    * —————————————————————————————————————————————————————————————————
   */
+  /* line 117, ../sass/modules/_ie.scss */
+  .timeline__text {
+    width: 100%;
+  }
+  /* line 121, ../sass/modules/_ie.scss */
+  .timeline__icon {
+    -webkit-flex-basis: none;
+    flex-basis: none;
+  }
+
   /*
    * —————————————————————————————————————————————————————————————————
    * END

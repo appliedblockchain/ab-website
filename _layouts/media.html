@@ -51,7 +51,7 @@
                                         </span>
                                         <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
                                         <h2 class="block__title lead">{{ post.title }}</h2>
-                                        <div class="block__text">{{ post.excerpt | truncate: 100, "…" }}</div>
+                                        <div class="block__text">{{ post.headline | truncate: 100, "…" }}</div>
                                         <div class="button button--primary button--small button--animate fas fa-eye">
                                             <p class="button__inner">Read more</p>
                                         </div>

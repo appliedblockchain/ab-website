@@ -3,9 +3,9 @@ layout: post
 title: LR announces the launch of prototype blockchain-enabled Class register
 image-link: classification-register-updated-for-the-digital-age
 category: press-release
+headline: Classification register updated for the digital age
 ---
 
-<p class="post__headline">Classification register updated for the digital age</p>
 <a href="https://www.lr.org/en/events/classification-register-updated-for-the-digital-age/" target="_blank" rel="noopener" class="post__content post__relink">Republished from Lloyds Register</a>
 
 <p class="post__content">Applied Blockchain, a leading developer of distributed ledger technology and smart contracts, has become an affiliate of the <a href="https://energyweb.org/" target="_blank">Energy Web Foundation</a> (EWF), a global non-profit organisation focused on unleashing blockchain’s potential in the energy sector by building the first open-source, scalable core blockchain platform tailored specifically to the industry.</p>

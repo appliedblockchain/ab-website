@@ -3,9 +3,9 @@ layout: post
 title: 14 Blockchain Predictions for 2016
 image-link: blockchain-predictions-for-2016
 category: blog
+headline: Wishing you a happy, healthy and successful 2016! Here are my 14 blockchain predictions for the coming year.
 ---
 
-<p class="post__headline">Wishing you a happy, healthy and successful 2016! Here are my 14 blockchain predictions for the coming year.</p>
 
 <p class="post__title">The hype won’t last</p>
 

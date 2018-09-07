@@ -2,9 +2,8 @@
 layout: post
 title: Applied Blockchain secures investments from Shell Trading and Calibrate Partners
 category: press-release
+headline: Applied Blockchain Ltd, a London-based blockchain start-up, has secured its first funding round with investments from Shell Trading International Ltd (“Shell”) and Calibrate Partners LLP for minority stakes in the company.
 ---
-
-<p class="post__headline">Applied Blockchain Ltd, a London-based blockchain start-up, has secured its first funding round with investments from Shell Trading International Ltd (“Shell”) and Calibrate Partners LLP for minority stakes in the company.</p>
 
 <p class="post__content">Founded in 2015 and based in London’s Level39 Fintech Accelerator, Applied Blockchain develops blockchain applications with a focus on distributed ledger technology and smart contracts. The start-up grew organically through 20 successful client engagements in two years and was featured in Gartner’s 2017 ‘Market Guide for Blockchain Consulting and Proof-of-Concept Development Services’ report. Its clients include global players in banking, telecoms, automotive, manufacturing, aviation, as well as a range of blockchain start-ups and partners. This agreement marks the first entry into the energy industry for Applied Blockchain.</p>
 <p class="post__content">Prior to making an investment in Applied Blockchain alongside Calibrate Partners LLP, Shell selected the start-up as winner of a development competition for Shell’s downstream businesses.</p>

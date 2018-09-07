@@ -3,9 +3,8 @@ layout: post
 title: Applied Blockchain selected as Travel Ledger Alliance development partner
 image-link: applied-blockchain-travel-ledger-alliance-development-partner
 category: press-release
+headline: Travel Ledger Alliance has announced that it has selected Applied Blockchain as its development partner to build and deliver the base architecture and minimum viable product for Travel Ledger, a distributed billing and settlement platform for the travel industry.
 ---
-
-<p class="post__headline">Travel Ledger Alliance has announced that it has selected Applied Blockchain as its development partner to build and deliver the base architecture and minimum viable product for Travel Ledger, a distributed billing and settlement platform for the travel industry.</p>
 
 <p class="post__content">Based in Canary Wharf, Applied Blockchain has an expert team of in-house blockchain developers that have been building solutions for the past two years. The team has built blockchain applications that are now live in production environments, being used by real customers.</p>
 <p class="post__content">During the initial analysis stage of the project the Travel Ledger team built a platform “prototype” to validate the technology and learn which areas to focus on during the upcoming development phase.</p>

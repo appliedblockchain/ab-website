@@ -47,6 +47,7 @@
             &__logo {
                 @include transform(translateX(-$integer));
                 width: 100%;
+                margin: -$integer 0;
                 text-align: center;
                 @include responsive(max-width, $break-desktop-max) {
                     display: none;
@@ -150,9 +151,6 @@
     }
 
     &__content {
-        @include display-flex();
-        @include flex-direction(column);
-        @include align-items(flex-start);
         @include transition(transform $transition);
         @include transform(translateY(25%));
         will-change: transform;

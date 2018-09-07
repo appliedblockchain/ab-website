@@ -1247,6 +1247,7 @@ optgroup {
  * FONTS
  * —————————————————————————————————————————————————————————————————
  * general
+ * chat
  * buttons
  * form
  * —————————————————————————————————————————————————————————————————
@@ -1255,7 +1256,7 @@ optgroup {
  * general
  * —————————————————————————————————————————————————————————————————
 */
-/* line 22, ../sass/partials/_fonts.scss */
+/* line 23, ../sass/partials/_fonts.scss */
 html, body {
   font-family: "Chivo", Verdana, Geneva, sans-serif;
   font-size: 16px;
@@ -1267,13 +1268,13 @@ html, body {
   text-rendering: auto;*/
 }
 @media (min-width: 1800px) {
-  /* line 22, ../sass/partials/_fonts.scss */
+  /* line 23, ../sass/partials/_fonts.scss */
   html, body {
     font-size: 20px;
   }
 }
 
-/* line 36, ../sass/partials/_fonts.scss */
+/* line 37, ../sass/partials/_fonts.scss */
 .headline {
   font-size: 3rem;
   letter-spacing: 0.06rem;
@@ -1282,19 +1283,19 @@ html, body {
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
-  /* line 36, ../sass/partials/_fonts.scss */
+  /* line 37, ../sass/partials/_fonts.scss */
   .headline {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 575px) {
-  /* line 36, ../sass/partials/_fonts.scss */
+  /* line 37, ../sass/partials/_fonts.scss */
   .headline {
     font-size: 2rem;
   }
 }
 
-/* line 47, ../sass/partials/_fonts.scss */
+/* line 48, ../sass/partials/_fonts.scss */
 .title {
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
@@ -1303,19 +1304,19 @@ html, body {
   color: #007bff;
 }
 @media (max-width: 767px) {
-  /* line 47, ../sass/partials/_fonts.scss */
+  /* line 48, ../sass/partials/_fonts.scss */
   .title {
     font-size: 2rem;
   }
 }
 @media (max-width: 575px) {
-  /* line 47, ../sass/partials/_fonts.scss */
+  /* line 48, ../sass/partials/_fonts.scss */
   .title {
     font-size: 1.8rem;
   }
 }
 
-/* line 58, ../sass/partials/_fonts.scss */
+/* line 59, ../sass/partials/_fonts.scss */
 .subtitle {
   font-size: 1.8rem;
   letter-spacing: 0.036rem;
@@ -1323,13 +1324,13 @@ html, body {
   font-style: normal;
 }
 @media (max-width: 575px) {
-  /* line 58, ../sass/partials/_fonts.scss */
+  /* line 59, ../sass/partials/_fonts.scss */
   .subtitle {
     font-size: 1.5rem;
   }
 }
 
-/* line 65, ../sass/partials/_fonts.scss */
+/* line 66, ../sass/partials/_fonts.scss */
 .comment, .post__update {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -1338,7 +1339,7 @@ html, body {
   text-transform: uppercase;
 }
 
-/* line 70, ../sass/partials/_fonts.scss */
+/* line 71, ../sass/partials/_fonts.scss */
 .quote, .post__quote {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -1346,13 +1347,13 @@ html, body {
   font-style: normal;
 }
 @media (max-width: 767px) {
-  /* line 70, ../sass/partials/_fonts.scss */
+  /* line 71, ../sass/partials/_fonts.scss */
   .quote, .post__quote {
     font-size: 1.25rem;
   }
 }
 
-/* line 77, ../sass/partials/_fonts.scss */
+/* line 78, ../sass/partials/_fonts.scss */
 .lead, .post__title {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -1361,43 +1362,43 @@ html, body {
   color: #007bff;
 }
 
-/* line 84, ../sass/partials/_fonts.scss */
+/* line 85, ../sass/partials/_fonts.scss */
 .body--large {
   font-size: 1.25rem;
 }
-/* line 87, ../sass/partials/_fonts.scss */
+/* line 88, ../sass/partials/_fonts.scss */
 .body--small {
   font-size: 0.8rem;
 }
-/* line 90, ../sass/partials/_fonts.scss */
+/* line 91, ../sass/partials/_fonts.scss */
 .body--bold {
   font-weight: 700;
 }
 
 /* prevent style from applying to media page */
-/* line 96, ../sass/partials/_fonts.scss */
+/* line 97, ../sass/partials/_fonts.scss */
 .post .post__headline {
   line-height: 1.5;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-/* line 104, ../sass/partials/_fonts.scss */
+/* line 105, ../sass/partials/_fonts.scss */
 .post__title {
   font-size: 1.8rem;
 }
-/* line 108, ../sass/partials/_fonts.scss */
+/* line 109, ../sass/partials/_fonts.scss */
 .post__subtitle {
   font-size: 1.5rem;
 }
-/* line 112, ../sass/partials/_fonts.scss */
+/* line 113, ../sass/partials/_fonts.scss */
 .post__content {
   line-height: 1.5;
   font-size: 1.25rem;
 }
 
 /*col text*/
-/* line 121, ../sass/partials/_fonts.scss */
+/* line 122, ../sass/partials/_fonts.scss */
 .col-text--1 {
   -moz-column-count: 1;
   -webkit-column-count: 1;
@@ -1407,7 +1408,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 121, ../sass/partials/_fonts.scss */
+  /* line 122, ../sass/partials/_fonts.scss */
   .col-text--1 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1415,7 +1416,7 @@ html, body {
   }
 }
 
-/* line 121, ../sass/partials/_fonts.scss */
+/* line 122, ../sass/partials/_fonts.scss */
 .col-text--2 {
   -moz-column-count: 2;
   -webkit-column-count: 2;
@@ -1425,7 +1426,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 121, ../sass/partials/_fonts.scss */
+  /* line 122, ../sass/partials/_fonts.scss */
   .col-text--2 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1433,7 +1434,7 @@ html, body {
   }
 }
 
-/* line 121, ../sass/partials/_fonts.scss */
+/* line 122, ../sass/partials/_fonts.scss */
 .col-text--3 {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -1443,7 +1444,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 121, ../sass/partials/_fonts.scss */
+  /* line 122, ../sass/partials/_fonts.scss */
   .col-text--3 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1451,7 +1452,7 @@ html, body {
   }
 }
 
-/* line 121, ../sass/partials/_fonts.scss */
+/* line 122, ../sass/partials/_fonts.scss */
 .col-text--4 {
   -moz-column-count: 4;
   -webkit-column-count: 4;
@@ -1461,7 +1462,7 @@ html, body {
   column-gap: 2rem;
 }
 @media (max-width: 767px) {
-  /* line 121, ../sass/partials/_fonts.scss */
+  /* line 122, ../sass/partials/_fonts.scss */
   .col-text--4 {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -1470,10 +1471,30 @@ html, body {
 }
 
 /* 
+ * chat
+ * —————————————————————————————————————————————————————————————————
+*/
+/* line 138, ../sass/partials/_fonts.scss */
+#userlike * {
+  font-family: "Chivo", Verdana, Geneva, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+  color: #000a1e !important;
+}
+
+/* line 145, ../sass/partials/_fonts.scss */
+#userlike #userlike-poweredby,
+#userlike #userlike-poweredby-link,
+#userlike-chat-content .userlike-message-timestamp {
+  margin-top: 5px !important;
+  font-size: 0.8rem !important;
+}
+
+/* 
  * buttons
  * —————————————————————————————————————————————————————————————————
 */
-/* line 137, ../sass/partials/_fonts.scss */
+/* line 159, ../sass/partials/_fonts.scss */
 .button {
   font-size: 1rem;
   letter-spacing: 0.02rem;
@@ -1483,12 +1504,12 @@ html, body {
   letter-spacing: 0.05rem;
   line-height: 1;
 }
-/* line 143, ../sass/partials/_fonts.scss */
+/* line 165, ../sass/partials/_fonts.scss */
 .button--text {
   font-weight: 400;
   letter-spacing: 0;
 }
-/* line 148, ../sass/partials/_fonts.scss */
+/* line 170, ../sass/partials/_fonts.scss */
 .button.button--large {
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -1496,7 +1517,7 @@ html, body {
   font-style: normal;
   letter-spacing: 0.08rem;
 }
-/* line 153, ../sass/partials/_fonts.scss */
+/* line 175, ../sass/partials/_fonts.scss */
 .button.button--small {
   font-size: 0.8rem;
   letter-spacing: 0.016rem;
@@ -1506,20 +1527,20 @@ html, body {
   line-height: 1.5;
 }
 
-/* line 160, ../sass/partials/_fonts.scss */
+/* line 182, ../sass/partials/_fonts.scss */
 .button__inner {
   font-family: "Chivo", Verdana, Geneva, sans-serif;
 }
 
-/* line 164, ../sass/partials/_fonts.scss */
+/* line 186, ../sass/partials/_fonts.scss */
 .button--icon {
   font-size: 24px !important;
 }
-/* line 167, ../sass/partials/_fonts.scss */
+/* line 189, ../sass/partials/_fonts.scss */
 .button--icon.button--large {
   font-size: 40px !important;
 }
-/* line 171, ../sass/partials/_fonts.scss */
+/* line 193, ../sass/partials/_fonts.scss */
 .button--icon.button--small {
   font-size: 16px !important;
 }
@@ -1528,12 +1549,12 @@ html, body {
  * form
  * —————————————————————————————————————————————————————————————————
 */
-/* line 183, ../sass/partials/_fonts.scss */
+/* line 205, ../sass/partials/_fonts.scss */
 .form__label, .form__input {
   font-family: "Chivo", Verdana, Geneva, sans-serif;
 }
 
-/* line 187, ../sass/partials/_fonts.scss */
+/* line 209, ../sass/partials/_fonts.scss */
 .label, .form__label {
   font-size: 0.8rem;
   letter-spacing: 0.016rem;
@@ -1541,7 +1562,7 @@ html, body {
   font-style: normal;
 }
 
-/* line 193, ../sass/partials/_fonts.scss */
+/* line 215, ../sass/partials/_fonts.scss */
 .form__input, .form .form__dropdown li {
   font-size: 1rem;
   letter-spacing: 0.02rem;
@@ -4904,8 +4925,8 @@ li + li {
   -moz-box-shadow: 0 0 20px 0 rgba(22, 22, 86, 0.15);
   -webkit-box-shadow: 0 0 20px 0 rgba(22, 22, 86, 0.15);
   box-shadow: 0 0 20px 0 rgba(22, 22, 86, 0.15);
-  padding-left: -webkit-calc(6.25vw  +  60px);
-  padding-left: calc(6.25vw  +  60px);
+  padding-left: -webkit-calc(6.25vw  +  80px);
+  padding-left: calc(6.25vw  +  80px);
   padding-right: -webkit-calc(6.25vw  +  60px);
   padding-right: calc(6.25vw  +  60px);
   will-change: opacity;
@@ -4958,46 +4979,66 @@ li + li {
  * chat
  * —————————————————————————————————————————————————————————————————
 */
-/* line 207, ../sass/partials/_widgets.scss */
+/* general */
+/* line 209, ../sass/partials/_widgets.scss */
 .userlike-tracking-img {
   float: left;
 }
 
-/* chat icon */
 /* line 213, ../sass/partials/_widgets.scss */
+#userlike-popup,
+#userlike #userlike-headerbar {
+  border-top-right-radius: 20px !important;
+}
+
+/*fonts*/
+/* line 220, ../sass/partials/_widgets.scss */
+.userlike-close,
+#userlike-button-symbol i.userlike-symbol,
+#userlike #userlike-button-hover-text,
+#userlike .userlike-symbol.userlike-symbol-close {
+  color: #ffffff !important;
+}
+
+/* line 227, ../sass/partials/_widgets.scss */
+#userlike-button-symbol i.userlike-symbol {
+  font-size: 43px !important;
+}
+
+/*chat icon*/
+/* line 233, ../sass/partials/_widgets.scss */
 #userlike.userlike-mobile a#userlike-tab, #userlike a#userlike-tab.userlike-button-bubble {
   margin-left: 6.25vw !important;
-  width: 40px !important;
-  min-width: 40px !important;
-  max-width: 40px !important;
-  height: 40px !important;
-  min-height: 40px !important;
-  max-height: 40px !important;
+  width: 60px !important;
+  min-width: 60px !important;
+  max-width: 60px !important;
+  height: 60px !important;
+  min-height: 60px !important;
+  max-height: 60px !important;
   -moz-box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4) !important;
   -webkit-box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4) !important;
   box-shadow: 0 0 30px 0 rgba(22, 22, 86, 0.4) !important;
 }
 
-/* line 224, ../sass/partials/_widgets.scss */
+/* line 244, ../sass/partials/_widgets.scss */
 #userlike.userlike-mobile #userlike-button-symbol, #userlike a#userlike-tab.userlike-button-bubble #userlike-button-symbol {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* line 229, ../sass/partials/_widgets.scss */
+/* line 249, ../sass/partials/_widgets.scss */
 a#userlike-tab.userlike-button-bubble .userlike-symbol {
-  transform: scale(0.7);
-  margin-top: -12px !important;
-  margin-left: -4px !important;
+  margin-top: -2px !important;
+  margin-left: -1px !important;
 }
 
-/* line 235, ../sass/partials/_widgets.scss */
+/* line 254, ../sass/partials/_widgets.scss */
 #userlike.userlike-mobile a#userlike-tab.userlike-slideup, #userlike a#userlike-tab.userlike-button-bubble.userlike-slideup {
-  bottom: 30px !important;
+  bottom: 20px !important;
 }
 
-/* text banner */
-/* line 241, ../sass/partials/_widgets.scss */
+/*text banner*/
+/* line 260, ../sass/partials/_widgets.scss */
 #userlike-hover-text-container {
   bottom: 30px !important;
   height: 40px !important;
@@ -5009,7 +5050,7 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   margin-left: -10px !important;
 }
 
-/* line 252, ../sass/partials/_widgets.scss */
+/* line 271, ../sass/partials/_widgets.scss */
 #userlike-hover-text-container, #userlike-eyecatcher {
   -moz-transition: opacity 0.4s !important 0s;
   -o-transition: opacity 0.4s !important 0s;
@@ -5018,14 +5059,45 @@ a#userlike-tab.userlike-button-bubble .userlike-symbol {
   transition: opacity 0.4s !important 0s;
 }
 
-/* line 256, ../sass/partials/_widgets.scss */
+/* line 275, ../sass/partials/_widgets.scss */
 #userlike #userlike-button-hover-text {
-  padding-top: 10px !important;
+  padding-top: 12px !important;
 }
 
-/* line 260, ../sass/partials/_widgets.scss */
+/* line 279, ../sass/partials/_widgets.scss */
 #userlike-hover-text-container.userlike-left #userlike-hover-text-arrow {
   display: none;
+}
+
+/*chat box*/
+/* line 285, ../sass/partials/_widgets.scss */
+#userlike-chat-content {
+  padding: 20px !important;
+}
+
+/*chat bubbles*/
+/* line 291, ../sass/partials/_widgets.scss */
+#userlike-chat-content .userlike-message-container {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+/* line 296, ../sass/partials/_widgets.scss */
+#userlike-chat-content .userlike-message-bubble-ct,
+#userlike-chat-content .userlike-message-bubble-co,
+#userlike-chat-content .userlike-message-bubble-preview {
+  padding: 10px !important;
+}
+
+/* line 302, ../sass/partials/_widgets.scss */
+#userlike-chat-content .userlike-message-bubble-ct {
+  background-color: #d7d7dc !important;
+}
+
+/* line 306, ../sass/partials/_widgets.scss */
+#userlike-chat-content .userlike-message-bubble-co,
+#userlike-chat-content .userlike-message-bubble-preview {
+  background-color: #f8f8f8 !important;
 }
 
 /* 

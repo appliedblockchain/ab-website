@@ -1,9 +1,9 @@
 # Applied Blockchain Website
 * [Introduction](#introduction)
 * [Page structure](#page-structure)
-* [Projects](#projects)
-* [Jobs](#jobs)
-* [Events](#events)
+* [Add projects](#add-projects)
+* [add job](#add-job)
+* [add event](#add-event)
 
 
 
@@ -22,7 +22,7 @@ bundle exec jekyll serve
 ```
 > Open http://localhost:4000 to view it in the browser.
 
-## Comments
+### Comments
 Along with SASS, this project is based on the BEM markdown. To learn more about BEM:
 * [bem.info](https://en.bem.info/methodology/quick-start/)
 * [getbem.com](http://getbem.com/introduction/)
@@ -68,13 +68,13 @@ Every page is build on the same structure:
 
 #### Section types
 Add these classes to customise them:
-Class | Description
------------- | -------------
-`section--col` | divide by two the left and right padding of the section
-`section--alt` | Remove the top padding of a section; used when too sisters section have the same background color
-`section--fullwidth` | Fullwidth section
-`section--nopadding` | Remove all paddings (e.g. **grid section** of the [Projects](https://appliedblockchain.com/case-studies/) page)
-`section--margin-minus` | Add a negative margin top to the section to make them overlap (e.g. **why us section** of the [Homepage](https://appliedblockchain.com/))
+| Class                   | Description |
+| ----------------------- | ----------------------- |
+| `section--col`          | divide by two the left and right padding of the section |
+| `section--alt`          | Remove the top padding of a section; used when too sisters section have the same background color |
+| `section--fullwidth`    | Fullwidth section |
+| `section--nopadding`    | Remove all paddings (e.g. **grid section** of the [Projects](https://appliedblockchain.com/case-studies/) page) |
+| `section--margin-minus` | Add a negative margin top to the section to make them overlap (e.g. **why us section** of the [Homepage](https://appliedblockchain.com/)) |
 
 #### Section colors
 Change the background color of a section (default is white) using `.section--primary`, `.section--dark` or `.section--grey`.
@@ -92,11 +92,12 @@ The components are located in the `_data` folder. They were created to ensure th
         background-color=''
         title='Page Title'
         description='Lorem ipsum dolor sit amet.'
+        comment=''
 %}
 ```
 The page header is used once on a page, at the very beginning.
 
-#####background imnage in page header
+##### Background imnage in page header
 * Add image in `resources/images/background` folder
 * Same name as page, jpg format
 * Add `background-image=''` to component
@@ -105,11 +106,11 @@ The page header is used once on a page, at the very beginning.
 #### Section header
 ```
 {% include components/section-header.html
+    comment='Lorem ipsum'
     title='Section Title'
     description='Lorem ipsum dolor sit amet.'
 %}
 ```
-The section header is used in every section.
 
 ### Column system
 If needed, elements can be layed out horizontally using a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) like column system. It as based on a 12 column structure. You can add prefixes to the number to set up the responsive behaviour of each column.
@@ -124,9 +125,8 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 
 
 
-## Projects
+## Add project
 
-### Add project
 * In the `_projects` folder, create a new file, named after the client
 * Copy this code in the file
 ```yml
@@ -169,13 +169,12 @@ testimonial-job:
 
 
 
-## FAQ
+<!-- ## FAQ -->
 
 
 
-## Jobs
+## Add job
 
-### Add job
 * Open the `job.yml` file in `_data` folder
 * Copy/paste this code onto the location you want to have the job in (London or Porto)
 ```yml
@@ -188,7 +187,7 @@ testimonial-job:
 
 
 
-## Blog posts
+<!-- ## Add blog posts
 * file name convention
 * file name = url link in file
 * image (path and name)
@@ -196,12 +195,11 @@ testimonial-job:
     * default image (explanation)
 * news special tag for link direct to external page
 * external news
-* Posts content structure
+* Posts content structure -->
 
 
-## Events
 
-### Add event
+## Add event
 * Open the `event.yml` file in `_data` folder
 * Copy/paste this code in the section you want it to appear (past or upcoming)
 ```yml
@@ -218,7 +216,7 @@ testimonial-job:
 
 
 
-## General queries
+<!-- ## General queries
 
 ### Logo and menu icon color on landing
 If the `page-header.html` of a page is set to `background='primary'` or `background='dark'`, the logo and menu icon colors change.
@@ -240,4 +238,4 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
     * Check file extension
 
 ### Logo carousels
-* image size, difference between regular and alt version
+* image size, difference between regular and alt version -->

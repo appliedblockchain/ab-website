@@ -17,6 +17,7 @@ upcoming:
     link: http://www.bpc-events.com/
 
   - name: Consensus Singapore
+    image: 
     dates: September 19-20
     location: Marina Bay Sands, Singapore
     link: https://www.coindesk.com/events/consensus-singapore-2018/
@@ -37,6 +38,7 @@ past:
     link: https://www.fintechweek.com/
 
   - name: 'Blockchain: Rethink Trust Conference'
+    image: blockchain-rethink-trust-conference
     dates: June 29
     location: Amsterdamm, Netherlands
     link: https://rethinktrust.org/

@@ -723,6 +723,7 @@ li + li {
 
 	&__button {
 		@include display-flex();
+		margin-left: $integer;
 	}
 
 	&__contact {

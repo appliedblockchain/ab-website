@@ -239,7 +239,7 @@
 		font-weight: 200;
 		overflow: visible;
 		color: $black !important;
-		white-space: initial;
+		white-space: normal;
 
 		&:before {
 			@include pseudo-element('', -1px, auto, auto, 0, $integer, $integer);

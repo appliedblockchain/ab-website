@@ -11,7 +11,7 @@
 .privacy {
 
     .anchor {
-        position: initial;
+        position: inherit;
         display: inherit;
         height: auto;
     }
@@ -39,15 +39,15 @@
     &__title {
         padding-top: $integer*6;
         padding-bottom: $integer;
+
+        &.alt {
+            padding-top: 0;
+        }
     }
 
     &__subtitle {
         padding-top: $integer*3;
         padding-bottom: $integer;
-
-        &.alt {
-            padding-top: 0;
-        }
     }
 
     &__content {

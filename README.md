@@ -1,14 +1,32 @@
 # Applied Blockchain Website
+* [Getting started](#getting-started)
+* [Introduction](#introduction)
 * [Page structure](#page-structure)
 * [Projects](#projects)
 * [Jobs](#jobs)
+* [Events](#events)
+
+
+
+## Getting started
+* Install [Jekyll](https://jekyllrb.com/)
+```
+gem install bundler jekyll
+jekyll new my-awesome-site
+cd my-awesome-site
+```
+* Runs the website in the development mode
+```
+bundle exec jekyll serve
+```
+> Open http://localhost:3000 to view it in the browser.
 
 
 
 ## Introduction
-* Jekyll and liquid
-* SASS
-* BEM
+Along with SASS, this project is based on the BEM markdown. To learn more about BEM:
+* [bem.info](https://en.bem.info/methodology/quick-start/)
+* [getbem.com](http://getbem.com/introduction/)
 
 
 
@@ -107,10 +125,6 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 
 
 
-## Text styles
-
-
-
 ## Projects
 
 ### Add project
@@ -202,10 +216,6 @@ testimonial-job:
     * If doesn't work: check file extension (needs to be jpeg)
     * File cannot be over 1000 px wide and 100 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
-
-
-
-## Events
 
 
 

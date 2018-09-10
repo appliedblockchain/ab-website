@@ -1,5 +1,4 @@
 # Applied Blockchain Website
-* [Getting started](#getting-started)
 * [Introduction](#introduction)
 * [Page structure](#page-structure)
 * [Projects](#projects)
@@ -8,22 +7,22 @@
 
 
 
-## Getting started
+## Introduction
+
+### Getting started
 * Install [Jekyll](https://jekyllrb.com/)
 ```
 gem install bundler jekyll
 jekyll new my-awesome-site
 cd my-awesome-site
 ```
-* Runs the website in the development mode
+* Runs the website in development mode
 ```
 bundle exec jekyll serve
 ```
-> Open http://localhost:3000 to view it in the browser.
+> Open http://localhost:4000 to view it in the browser.
 
-
-
-## Introduction
+## Comments
 Along with SASS, this project is based on the BEM markdown. To learn more about BEM:
 * [bem.info](https://en.bem.info/methodology/quick-start/)
 * [getbem.com](http://getbem.com/introduction/)

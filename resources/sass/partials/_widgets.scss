@@ -213,6 +213,9 @@
 #userlike-popup,
 #userlike #userlike-headerbar {
     border-top-right-radius: $integer !important;
+    @include responsive(max-width, $break-phones-max) {
+        border-top-right-radius: 0 !important;
+    }
 }
 
 /*fonts*/
@@ -226,11 +229,15 @@
 
 #userlike-button-symbol i.userlike-symbol {
     font-size: 43px !important;
+    @include responsive(max-width, $break-phones-max) {
+        font-size: 33px !important;
+    }
 }
 
 /*chat icon*/
 
 #userlike.userlike-mobile a#userlike-tab, #userlike a#userlike-tab.userlike-button-bubble {
+    @include box-shadow(0 0 30px 0 rgba($dark, 0.4) !important);
     margin-left: $col !important;
     width: $integer*3 !important;
     min-width: $integer*3 !important;
@@ -238,7 +245,14 @@
     height: $integer*3 !important;
     min-height: $integer*3 !important;
     max-height: $integer*3 !important;
-    @include box-shadow(0 0 30px 0 rgba($dark, 0.4) !important);
+    @include responsive(max-width, $break-phones-max) {
+        width: $integer*2 !important;
+        min-width: $integer*2 !important;
+        max-width: $integer*2 !important;
+        height: $integer*2 !important;
+        min-height: $integer*2 !important;
+        max-height: $integer*2 !important;    
+    }
 }
 
 #userlike.userlike-mobile #userlike-button-symbol, #userlike a#userlike-tab.userlike-button-bubble #userlike-button-symbol {
@@ -249,6 +263,9 @@
 a#userlike-tab.userlike-button-bubble .userlike-symbol {
     margin-top: -2px !important;
     margin-left: -1px !important;
+    @include responsive(max-width, $break-phones-max) {
+        margin-top: -7px !important;
+    }
 }
 
 #userlike.userlike-mobile a#userlike-tab.userlike-slideup, #userlike a#userlike-tab.userlike-button-bubble.userlike-slideup {

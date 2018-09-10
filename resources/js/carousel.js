@@ -37,8 +37,6 @@ $('.owl-carousel-clients').owlCarousel({
     }
 });
 
-
-
 $('.owl-carousel-partners').owlCarousel({
     dots: false,
     loop: true,
@@ -69,8 +67,6 @@ $('.owl-carousel-partners').owlCarousel({
         }
     }
 });
-
-
 
 $('.owl-carousel-technology').owlCarousel({
     dots: false,
@@ -111,34 +107,16 @@ $('.owl-carousel-technology').owlCarousel({
     }
 });
 
-
-
 $('.owl-carousel-testimonial').owlCarousel({
-    items: 1,
-    animateIn: 'fadeIn',
-    animateOut: 'fadeOut',
-    mouseDrag: false,
-    touchDrag: false,
     loop: true,
-    margin: 100,
     autoplay: true,
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
     smartSpeed: 2000,
-});
-
-
-
-$('.owl-carousel-news').owlCarousel({
-    items: 1,
-    dots: false,
-    autoplayHoverPause: true,
     mouseDrag: false,
     touchDrag: false,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    smartSpeed: 1000,
+    items: 1,
+    margin: 100,
 });
 
 

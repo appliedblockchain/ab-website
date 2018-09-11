@@ -15,6 +15,12 @@
         margin-bottom: $integer;
     }
 
+    &__diagram {
+        @include responsive(max-width, $break-desktop-max) {
+            margin-top: $integer*2;
+        }
+    }
+
     &__legend {
         @include display-flex();
         @include flex-direction(column);

@@ -9,6 +9,29 @@ london:
 
 porto:
 
+  - title: Senior DevOps
+    type: Permanent
+    role: 
+      'DevOps Engineer is responsible for deploying, automating, maintaining, troubleshooting and improving the systems that keep the backend infrastructure running smoothly. 
+      <br><br>The role requires you to have hands-on technical experience and a can-do approach towards environment automation/management and continuous improvement.
+      <br><br>The DevOps Engineer works collaboratively with software engineering to deploy and operate our systems. 
+      <br><br>Help automate and streamline our operations and processes. Build and maintain tools for deployment, monitoring and operations. And troubleshoot and resolve issues in our dev, test and production environments.'
+    required-skills: 
+      '<li>2+ years experience as a DevOps Engineer in a commercial environment</li>
+      <li>2+ years experience with Docker</li>
+      <li>1+ year experience with Docker Swarm or Kubernetes</li>
+      <li>Experienced with CI processes and tools (Jenkins)</li>
+      <li>Ability to analyse and resolve complex infrastructure resource and application deployment issues</li>
+      <li>Bash scripting/programming skills + knowledge of the Linux Operating System</li>
+      <li>Have hands-on technical experience and a can-do approach towards environment automation/management and continuous improvement</li>
+      <li>Extensive familiarity with at least one major cloud provider (Azure, AWS)</li>'
+    additional-skills:
+      '<li>Professional experience managing and operating solutions built on blockchain</li>
+      <li>3+ years experience in a major programming language (Ruby/ Python/Javascript/C++/Java/C#)</li>
+      <li>Knowledge and experience of Terraform and Packer</li>
+      <li>Experience maintaining high traffic websites and web services</li>
+      <li>B.Sc. in Computer Science or another equivalent technical discipline</li>'
+
   - title: Node.js Software Developer
     type: Permanent
     role: 

@@ -16,10 +16,6 @@
         height: auto;
     }
 
-    ul {
-        margin-left: 0;
-    }
-
     &__list {
         /* Creates a new instance of the section counter with each ol element */
         counter-reset: section;
@@ -34,6 +30,10 @@
             /* Combines the values of all instances of the section counter, separated by a period */
             content: counters(section, ".") ". ";
         }
+    }
+
+    li {
+        margin-left: 0;
     }
 
     &__title {
@@ -59,6 +59,10 @@
 
         & + & {
             margin-top: $integer;
+        }
+
+        li {
+            margin-left: 18px;
         }
     }
 }

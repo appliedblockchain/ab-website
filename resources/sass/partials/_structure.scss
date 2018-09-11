@@ -211,11 +211,14 @@ select:-webkit-autofill:focus {
 
 ul {
 	list-style: disc;
-    margin-left: $integer*0.75;
 }
 
-li + li {
-	padding-top: $integer/2 !important;
+li {
+	margin-left: 18px;
+
+	& + & {
+		padding-top: $integer/2 !important;
+	}
 }
 
 /*page headers*/

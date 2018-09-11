@@ -11,7 +11,7 @@ $.scrollTo = $.fn.scrollTo = function(x, y, options){
    options = $.extend({}, {
        gap: {
            x: 0,
-           y: 0
+           y: -60
        },
        animation: {
            easing: 'swing',
@@ -43,7 +43,7 @@ $(window).scroll(function(){
         var theID = aArray[i];
         var divPos = $(theID).offset().top; 
         var divHeight = $(theID).height(); 
-        if (windowPos >= divPos - 200 && windowPos < (divPos - 200 + divHeight)) {
+        if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
             $(".anchor a[href='" + theID + "']").addClass("js-dot-active");
         } else {
             $(".anchor a[href='" + theID + "']").removeClass("js-dot-active");

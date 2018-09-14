@@ -55,14 +55,12 @@
         &--london {
             @extend .jobs__background;
             @include background(bottom center, cover);
-            background-image: url('../images/background/london.jpg');
         }
 
         &--porto {
             @extend .jobs__background;
             @include background(center center, cover);
             @include transition(opacity 0.8s ease 0s);
-            background-image: url('../images/background/porto.jpg');
             opacity: 0;
             
             &.js-show {

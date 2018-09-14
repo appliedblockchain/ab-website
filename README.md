@@ -178,7 +178,7 @@ testimonial-job:
 ## Add job
 
 * Open the `job.yml` file in `_data` folder
-* Copy/paste this code onto the location you want to have the job in (London or Porto)
+* Copy/paste this code in the section you want it to appear (London or Porto)
 ```yml
   - title: 
     type: 

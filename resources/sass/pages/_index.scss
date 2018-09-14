@@ -231,7 +231,6 @@
 
     .video {
         @include background(center center, contain);
-        background-image: url(../images/icons/index/thumbnail.png);
         height: 30vmax;
         @include responsive(max-width, $break-desktop-max) {
             margin-top: $integer*2;

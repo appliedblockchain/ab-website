@@ -1,9 +1,9 @@
 # Applied Blockchain Website
 * [Introduction](#introduction)
 * [Page structure](#page-structure)
-* [Add projects](#add-projects)
-* [add job](#add-job)
-* [add event](#add-event)
+* [Add project](#add-project)
+* [Add job](#add-job)
+* [Add event](#add-event)
 
 
 
@@ -16,11 +16,12 @@ gem install bundler jekyll
 jekyll new my-awesome-site
 cd my-awesome-site
 ```
-* Runs the website in development mode
+* Run the website in development mode
 ```
 bundle exec jekyll serve
 ```
 > Open http://localhost:4000 to view it in the browser.
+* Test URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
 
 ### Comments
 Along with SASS, this project is based on the BEM markdown. To learn more about BEM:

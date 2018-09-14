@@ -23,8 +23,7 @@
 
 .landing {
     @include justify-content(space-between);
-    @include background(center center, cover);
-    background-image: url(../images/background/about.jpg);
+    @include background(bottom center, cover);
     height: 100vh;
     overflow: hidden;
     position: relative;

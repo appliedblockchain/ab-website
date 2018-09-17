@@ -53,6 +53,8 @@
 
     &__title {
         z-index: 1;
+        padding-left: $col;
+        padding-right: $col;
     }
 
     &__icon {

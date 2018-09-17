@@ -91,6 +91,9 @@ html, body {
 	&--bold {
 		font-weight: $font-bold;
 	}
+	&--block {
+		display: inline-block;
+	}
 }
 
 /* prevent style from applying to media page */

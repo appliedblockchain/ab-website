@@ -900,7 +900,7 @@ li {
 */
 
 .footer {
-	padding: $integer*6 $col $integer*3;
+	padding: $integer*6 $col $integer*4;
 	font-weight: $font-regular;
 
 	> * {
@@ -908,7 +908,10 @@ li {
 	}
 
 	&__item {
-		margin-bottom: $integer*2;
+		margin-bottom: $integer*3;
+		@include responsive(max-width, $break-phones-max) {
+			margin-bottom: $integer*2;
+		}
 	}
 
 	&__logo {

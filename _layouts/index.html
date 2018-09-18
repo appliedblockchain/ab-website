@@ -1,7 +1,7 @@
 {% include header.html %}
 
 <!-- particle (for homepage) -->
-<script src="{{ site.baseurl }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
+<script src="{{ site.url }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
 <script>
     // init particle.js
     particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', function() {
@@ -18,21 +18,21 @@
         <div id="particles-js"></div>
 
         <h1 class="landing__title headline">Building <span class="body--block">future-proof</span><br>blockchain applications</h1>
-        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/landing.svg" alt="Landing icon" class="landing__icon">
+        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/landing.svg" alt="Landing icon" class="landing__icon">
         <div class="landing__carousel owl-carousel owl-carousel-clients carousel">
             {% for item in site.data.images.clients %}
             {% assign item = site.data.images.clients | sort: 'order' %}
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients-white/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
+                <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-white/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
             {% endfor %}
         </div>
-        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
+        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
     </div>
 
     <section class="section section--left section--dark" id="what-we-do">
 
         <div class="row">
             <div class="col--lg5 col--md3 hide--tablets">
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/what-we-do.svg" alt="Solution icon">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/index/what-we-do.svg" alt="Solution icon">
             </div>
             <div class="col--lg6 coloffset--md1 col--md8">                
                 <!-- edit component in _includes/components/section-header.html -->
@@ -42,7 +42,7 @@
                     description='We have built blockchain applications for enterprises and startups within financial services, energy, supply chain, commodities, automotive, telecoms, legal, medical, property and recruitment.'
                 %}
                 <div class="section__content">
-                    <a href="{{ site.baseurl }}/services" class="button button--primary button--large button--animate fa fa-search-plus">
+                    <a href="{{ site.url }}/services" class="ga-button-services button button--primary button--large button--animate fa fa-search-plus">
                         <p class="button__inner">Our services</p>
                     </a>
                 </div>
@@ -72,14 +72,14 @@
 
         <div class="section__content">
             <div class="row">
-                <div class="col--lg7 video" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/icons/index/thumbnail.png);">
+                <div class="col--lg7 video" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/thumbnail.png);">
                     <a href="#modal-video" class="js-button-modal">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                        <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
                     </a>
                 </div>
                 <div class="col--lg5">
                     <p class="body--large">We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next-generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.</p>
-                    <a href="{{ site.baseurl }}/our-projects" class="button button--secondary button--large button--animate fas fa-fill">
+                    <a href="{{ site.url }}/our-projects" class="ga-button-projects button button--secondary button--large button--animate fas fa-fill">
                         <p class="button__inner"><span class="hide--mobile">View our </span>projects</p>
                     </a>
                 </div>
@@ -100,7 +100,7 @@
 
         <div class="owl-carousel owl-carousel-partners carousel block">
             {% for item in site.data.images.partners %}
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
+                <img src="{{ site.url }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
             {% endfor %}
         </div>
         
@@ -108,7 +108,7 @@
 
     <section class="section section--margin-minus section--primary" id="why-us">
 
-        <img src="{{ site.baseurl }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-left.svg" alt="" class="why-us__graphic graphic graphic--greyscale-left">
+        <img src="{{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-left.svg" alt="" class="why-us__graphic graphic graphic--greyscale-left">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
@@ -120,7 +120,7 @@
             <div class="row">
                 <div class="why-us__item">
                     <div class="coloffset--lg1 col--lg4 col--md3 why-us__image"> 
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/thought-leader.png" alt="">
+                        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/thought-leader.png" alt="">
                     </div>
                     <div class="col--xl5 coloffset--lg1 col--lg6 coloffset--md1 col--md8">
                         <p class="block__title lead">Thought Leaders</p>
@@ -133,12 +133,12 @@
                         <p>We have built and deployed blockchain solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has also recognised Applied Blockchain amongst the Top Global Blockchain Development and Consulting Firm 2017 and 2018.</p>
                     </div>
                     <div class="coloffset--lg1 col--lg3 coloffset--md1 col--md3 why-us__image">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/market-leader.svg" alt="">
+                        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/market-leader.svg" alt="">
                     </div>
                 </div>
                 <div class="why-us__item">
                     <div class="coloffset--lg2 col--lg3 col--md3 why-us__image"> 
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/index/blockchain-experts.svg" alt="">
+                        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg" alt="">
                     </div>
                     <div class="col--xl5 coloffset--lg1 col--lg6 coloffset--md1 col--md8">
                         <p class="block__title lead">Blockchain Experts</p>
@@ -149,7 +149,7 @@
         </div>
 
         <div class="section__link">
-            <a href="{{ site.url }}/about" class="button button--secondary button--large button--animate fas fa-search">
+            <a href="{{ site.url }}/about" class="ga-button-about button button--secondary button--large button--animate fas fa-search">
                 <p class="button__inner">About us</p>
             </a>
         </div>
@@ -179,14 +179,14 @@
             <!-- edit data in _data/images.yml -->
             {% for item in site.data.images.media %}
                 <div class="logo-media__item">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
+                    <img src="{{ site.url }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
                 </div>
             {% endfor %}    
         </div>
 
         <div class="section__link">
             <p class="link__title lead">See what's making news at Applied Blockchain</p>
-            <a href="{{ site.url }}/media" class="button button--primary button--large button--animate fas fa-newspaper">
+            <a href="{{ site.url }}/media" class="ga-button-media button button--primary button--large button--animate fas fa-newspaper">
                 <p class="button__inner">Media</p>
             </a>
         </div>

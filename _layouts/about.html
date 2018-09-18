@@ -16,12 +16,12 @@
             <div class="row">
                 <div class="col--md6 about-intro__item">
                     <h2 class="subtitle">We Solve Problems</h2>
-                    <img class="about-intro__image" src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon">
+                    <img class="about-intro__image" src="{{ site.url }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon">
                     <p>At Applied Blockchain we build blockchain applications for our clients, with an even mix of enterprises and startups. We value working through the complex problems enterprises experience, and use blockchain technology to turn ideas into disruptive products.</p>
                 </div>
                 <div class="col--md6 about-intro__item">
                     <h2 class="subtitle">We Build Products</h2>
-                    <img class="about-intro__image" src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon">
+                    <img class="about-intro__image" src="{{ site.url }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon">
                     <p>We build products using our own experience of the problems that blockchain developers need to solve from tools for automated contract testing through to protocols that make any blockchain network more trustless and secure. We continue to innovate, design and develop state-of-the-art blockchain products.</p>
                 </div>
             </div>
@@ -45,7 +45,7 @@
             {% for item in site.data.timeline.fifteen %}
                 <div class="timeline__item">
                     <p class="timeline__text">{{ item.text }}</p>
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
                 </div>
             {% endfor %}
             <span class="timeline__headline">
@@ -56,7 +56,7 @@
             {% for item in site.data.timeline.seventeen %}
                 <div class="timeline__item">
                     <p class="timeline__text">{{ item.text }}</p>
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
                 </div>
             {% endfor %}
             <span class="timeline__headline">
@@ -67,7 +67,7 @@
             {% for item in site.data.timeline.eighteen %}
                 <div class="timeline__item">
                     <p class="timeline__text">{{ item.text }}</p>
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
                 </div>
             {% endfor %}
         </div>
@@ -100,7 +100,7 @@
 
         <div class="owl-carousel owl-carousel-partners carousel block">
             {% for item in site.data.images.partners %}
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
+                <img src="{{ site.url }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
             {% endfor %}
         </div>
 
@@ -116,7 +116,7 @@
         <div class="section__content image-inline">
             {% for item in site.data.images.values %}
                 <div class="col--md3 col--4 image-inline__item">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
                     <p class="image-inline__title body--large">{{ item.alt }}</p>
                     <p>{{ item.description }}</p>
                 </div>
@@ -161,7 +161,7 @@
     <section class="section section--alt section--nopadding section--dark">
 
         <div class="section__content background--cover team" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
-            <a href="{{ site.url }}/join" class="team__button button button--large button--primary-lighten button--animate fas fa-user-plus">
+            <a href="{{ site.url }}/join" class="ga-button-join team__button button button--large button--primary-lighten button--animate fas fa-user-plus">
                 <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
             </a>
         </div>

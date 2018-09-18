@@ -14,7 +14,7 @@
                 {% for project in site.projects %}
                     <!-- add this tag to project page to featured it -->
                     {% if project.tag contains 'featured' %}
-                    <a href="{{ project.url }}" class="portfolio__item block background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                    <a href="{{ project.url }}" class="portfolio__item block background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                         <div class="portfolio__logo">
                             <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-white/{{ project.slug }}.png" alt="{{ project.title }} logo">
                         </div>
@@ -43,7 +43,7 @@
             <div class="portfolio--grid">
                 {% for project in site.projects %}
                     {% unless project.tag contains 'featured' or project.tag contains 'grid' %}
-                        <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                        <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                             <div class="portfolio__content">
                                 <!-- <div class="portfolio__logo">
                                     <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/{{ project.slug }}.png" alt="{{ project.title }} logo">
@@ -73,7 +73,7 @@
                 {% for project in site.projects %}
                     <!-- add this tag to project page to add it o this section it -->
                     {% if project.tag contains 'grid' %}
-                        <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                        <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                             <div class="portfolio__content">
                                 <!-- <div class="portfolio__logo">
                                     <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/{{ project.slug }}.png" alt="{{ project.title }} logo">
@@ -116,7 +116,7 @@
             {% if project.tag contains 'grid' %}
                 <div class="project-grid__item tooltip tooltip--click">
                     <div class="block project-grid__container">
-                        <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png" alt="Logo {{ project.title }}" class="project-grid__image hover-grayscale tooltip__trigger">
+                        <img src="{{ site.url }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png" alt="Logo {{ project.title }}" class="project-grid__image hover-grayscale tooltip__trigger">
                     </div>
                     <div class="block project-grid__inner tooltip__inner">
                         <div>

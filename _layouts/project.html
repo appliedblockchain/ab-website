@@ -5,12 +5,12 @@
     <div class="section section--header section--left project__header">
         <div class="project__nav">
             {% if page.previous.url %}
-                <a href="{{ page.previous.url }}" class="button button--small button--stroke button--primary button--animate fas fa-chevron-left">
+                <a href="{{ page.previous.url }}" class="ga-button-project-nav button button--small button--stroke button--primary button--animate fas fa-chevron-left">
                     <p class="button__inner">Previous</p>
                 </a>
             {% endif %}
             {% if page.next.url %}
-                <a href="{{ page.next.url }}" class="button button--small button--stroke button--primary button--animate fas fa-chevron-right">
+                <a href="{{ page.next.url }}" class="ga-button-project-nav button button--small button--stroke button--primary button--animate fas fa-chevron-right">
                     <p class="button__inner">Next</p>
                 </a>
             {% endif %}
@@ -94,9 +94,9 @@
     {% if page.testimonial-quote %}
         <section class="section">
             <div class="testimonial__item">
-                <div class="testimonial__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/testimonials/{{ page.testimonial-id }}.jpg);" alt="Portrait {{ page.testimonial-name }}"></div>
+                <div class="testimonial__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/testimonials/{{ page.testimonial-id }}.jpg);" alt="Portrait {{ page.testimonial-name }}"></div>
                 <div class="testimonial__content">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
                     <p class="quote">{{ page.testimonial-quote }}</p>
                     <div class="testimonial__meta">
                         <p class="body--bold">{{ page.testimonial-name }}</p>

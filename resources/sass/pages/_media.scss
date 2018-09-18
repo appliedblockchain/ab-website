@@ -63,6 +63,10 @@
         background-color: transparent;
         color: $black;
 
+        &.button--primary-darken {
+            color: $white;
+        }
+
         &.active {
             background-color: $primary;
             color: $white;

@@ -21,7 +21,7 @@
                         <br><br>Mantle enables data caching to greatly improve system performance and data retrieval to run application operations.</p>
                 </div>
                 <div class="col--lg3 coloffset--md1 col--md5 col--6">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-mantle.svg" alt="Mantle schematic" class="mantle__diagram">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-mantle.svg" alt="Mantle schematic" class="mantle__diagram">
                 </div>
                 <div class="col--lg4 col--md5 col--6 mantle__legend">
                     <p class="mantle__label">Mantle and its layers</p>
@@ -45,7 +45,7 @@
             <!-- edit data in _data/images.yml -->
             {% for item in site.data.images.mantle %}
                 <div class="image-inline__item col--lg3 col--sm6">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
                     <p class="image-inline__title">{{ item.title }}</p>
                     <p class="body--small">{{ item.alt }}</p>
                 </div>

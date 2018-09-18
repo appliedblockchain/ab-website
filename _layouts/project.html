@@ -94,9 +94,9 @@
     {% if page.testimonial-quote %}
         <section class="section">
             <div class="testimonial__item">
-                <div class="testimonial__image background--cover" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/testimonials/{{ page.testimonial-id }}.jpg);" alt="Portrait {{ page.testimonial-name }}"></div>
+                <div class="testimonial__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/testimonials/{{ page.testimonial-id }}.jpg);" alt="Portrait {{ page.testimonial-name }}"></div>
                 <div class="testimonial__content">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
                     <p class="quote">{{ page.testimonial-quote }}</p>
                     <div class="testimonial__meta">
                         <p class="body--bold">{{ page.testimonial-name }}</p>

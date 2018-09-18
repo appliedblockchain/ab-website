@@ -15,7 +15,7 @@
             <!-- edit data in _data/images.yml -->
             {% for item in site.data.images.join %}
                 <div class="image-inline__item col--lg3 col--sm6">
-                    <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
                     <p>{{ item.alt }}</p>
                 </div>
             {% endfor %}
@@ -26,8 +26,8 @@
     <section class="section jobs__container">
 
         <!-- images for chaging background -->
-        <div class="jobs__background--london" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/background/london.jpg);"></div>
-        <div class="jobs__background--porto" style="background-image: url({{ site.baseurl }}{{ site.imageurl }}/background/porto.jpg);"></div>
+        <div class="jobs__background--london" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);"></div>
+        <div class="jobs__background--porto" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);"></div>
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html

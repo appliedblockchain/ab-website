@@ -11,16 +11,16 @@
 
     <section class="section section--col section--alt section--dark">
 
-        <img src="{{ site.baseurl }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-left.svg" alt="" class="graphic graphic--greyscale-left">
+        <img src="{{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-left.svg" alt="" class="graphic graphic--greyscale-left">
 
         <div class="owl-carousel owl-carousel-clients carousel services__carousel">
             {% for item in site.data.images.clients %}
-                <img src="{{ site.baseurl }}{{ site.imageurl }}/logos/clients-square/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
+                <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-square/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
             {% endfor %}
         </div>
     
         <div class="section__link">
-            <a href="{{ site.url }}/our-projects" class="button button--large button--secondary button--animate fas fa-fill">
+            <a href="{{ site.url }}/our-projects" class="ga-button-projects button button--large button--secondary button--animate fas fa-fill">
                 <p class="button__inner"><span class="hide--mobile">View our </span>projects</p>
             </a>
         </div>
@@ -40,7 +40,7 @@
                 {% for item in site.data.solutions %}
                     <a href="#{{ item.id }}" class="nav__button {{ item.active }} solutions__button">
                         <div class="solutions__background">
-                            <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/solutions/{{ item.icon }}.svg" alt="" class="solutions__icon">
+                            <img src="{{ site.url }}{{ site.imageurl }}/icons/solutions/{{ item.icon }}.svg" alt="" class="solutions__icon">
                             <h2 class="solutions__title lead">{{ item.title }}</h2>
                         </div>
                     </a>
@@ -86,7 +86,7 @@
                                 <p class="approach__title lead">{{ item.title }}</p>
                                 <p class="approach__text">{{ item.text }}</p>
                             </div>
-                            <img src="{{ site.baseurl }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="approach__icon">
+                            <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="approach__icon">
                         </div>
                     </div>
                 {% endfor %}
@@ -97,7 +97,7 @@
 
     <section class="section section--col section--alt section--grey">
 
-        <img src="{{ site.baseurl }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-right.svg" alt="" class="technology__graphic graphic graphic--greyscale-right">
+        <img src="{{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-right.svg" alt="" class="technology__graphic graphic graphic--greyscale-right">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html

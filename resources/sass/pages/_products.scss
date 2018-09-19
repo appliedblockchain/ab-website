@@ -15,21 +15,21 @@
 }
 
 .products {
-    padding-bottom: 0;
 
     &__container {
 
         & + & {
-            @include responsive(max-width, $break-tablets-max) {
+            @include responsive(max-width, $break-phones-max) {
                 margin-top: $integer;
             }
         }
     }
 
     &__intro {
-        @include background(90% center, 45%);
+        @include background(85% center, 65%);
         @include responsive(max-width, $break-desktop-max) {
             background-image: none !important;
+            text-align: center;
         }
     }
 
@@ -37,7 +37,6 @@
         @include display-flex();
         @include flex-direction(column);
         @include justify-content(space-between);
-        @include transform(translateY(-$integer*6));
         padding: $integer*4;
         height: 100%;
         @include responsive(max-width, $break-tablets-max) {
@@ -46,21 +45,25 @@
     }
 
     &__logo {
-        width: 40%;
-        min-width: $integer*6;
+        width: 20%;
+        min-width: $integer*4;
+        max-width: $integer*6;
     }
 
     &__name {
-        margin: $integer 0;
+        margin: $integer 0 $integer/2 0;
     }
 
     &__button {
-        margin-top: $integer*2;
+        margin-top: $integer;
     }
 }
 
 .devtools {
     text-align: left;
+    @include responsive(max-width, $break-tablets-max) {
+        text-align: center;
+    }
 
     &__item {
         @include align-items(center);

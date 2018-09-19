@@ -17,14 +17,14 @@
 .products {
 
     &__container {
-
+        
         & + & {
             @include responsive(max-width, $break-phones-max) {
                 margin-top: $integer;
             }
         }
     }
-
+    
     &__intro {
         @include background(85% top, 65%);
         @include responsive(min-width, $break-large-desktop-min) {
@@ -35,13 +35,14 @@
             text-align: center;
         }
     }
-
+    
     &__item {
         @include display-flex();
         @include flex-direction(column);
         @include justify-content(space-between);
         padding: $integer*4;
         height: 100%;
+        width: 100%;
         @include responsive(max-width, $break-tablets-max) {
             padding: $integer*2;
         }

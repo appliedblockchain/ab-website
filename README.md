@@ -178,7 +178,7 @@ testimonial-job:
 ## Add job
 
 * Open the `job.yml` file in `_data` folder
-* Copy/paste this code in the section you want it to appear (London or Porto)
+* Copy/paste this code in the section you want it to appear (London or Porto) and fill the content
 ```yml
   - title: 
     type: 
@@ -203,14 +203,16 @@ testimonial-job:
 
 ## Add event
 * Open the `event.yml` file in `_data` folder
-* Copy/paste this code in the section you want it to appear (past or upcoming)
+* Copy/paste this code and fill the content
 ```yml
   - name: 
     image: 
-    dates: 
+    date-from: #use this one only if the event is spanned on several days
+    date:
     location: 
     link: 
 ```
+> Use the YYYY-MM-DD format for the date, it will automatically be displayed in the right format on the website
 * Add the corresponding image in `resources/images/events`
     * If doesn't work: check file extension (needs to be jpeg)
     * File cannot be over 1000 px wide and 100 KB

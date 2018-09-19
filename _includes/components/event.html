@@ -6,7 +6,12 @@
     {% endif %}
     <div class="block__content event__content">
         <div class="event__top block__date">
-            <p class="body--bold">{{ event.date }}</p>
+            <p class="body--bold">
+                {% if event.date-from %}
+                    {{ event.date-from | date: '%b %d' }} to
+                {% endif %}
+                {{ event.date | date: '%b %d, %Y' }}
+            </p>
             {{ if event.link }}
             <a href="{{ event.link }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
                 <p class="button__inner">view website</p>

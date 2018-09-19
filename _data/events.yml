@@ -1,50 +1,47 @@
 # events list
 # in events.html page
 
-# upcoming
+- name: Blockchain Venture Summit 2018
+  image: blockchain-venture-summit-2018
+  date: '2018-11-21'
+  location: 8 Northumberland, London, UK
+  link: https://blockchainventuresummit.com/
 
-upcoming:
-  - name: Blockchain Live 2018
-    image: blockchain-live-2018
-    date: September 26
-    location: Olympia, London, UK
-    link: https://blockchainlive.com/
+- name: Blockchain Live 2018
+  image: blockchain-live-2018
+  date: '2018-09-26'
+  location: Olympia, London, UK
+  link: https://blockchainlive.com/
 
-  - name: Blockchain Practitioner Conference
-    image: blockchain-practitioner-conference
-    date: September 18
-    location: Shanghai, China
-    link: http://www.bpc-events.com/
+- name: Consensus Singapore
+  image: 
+  date-from: '2018-09-19'
+  date: '2018-09-20'
+  location: Marina Bay Sands, Singapore
+  link: https://www.coindesk.com/events/consensus-singapore-2018/
 
-  - name: Consensus Singapore
-    image: 
-    date: September 19-20
-    location: Marina Bay Sands, Singapore
-    link: https://www.coindesk.com/events/consensus-singapore-2018/
+- name: Blockchain Practitioner Conference
+  image: blockchain-practitioner-conference
+  date: '2018-09-18'
+  location: Shanghai, China
+  link: http://www.bpc-events.com/
 
-  - name: Blockchain Venture Summit 2018
-    image: blockchain-venture-summit-2018
-    date: November 21
-    location: 8 Northumberland, London, UK
-    link: https://blockchainventuresummit.com/
+- name: London FinTech Week
+  image: london-fintech-week
+  date-from: '2018-07-06'
+  date: '2018-07-13'
+  location: London, UK
+  link: https://www.fintechweek.com/
 
-# past
+- name: 'Blockchain: Rethink Trust Conference'
+  image: blockchain-rethink-trust-conference
+  date: '2018-06-29'
+  location: Amsterdamm, Netherlands
+  link: https://rethinktrust.org/
 
-past:
-  - name: London FinTech Week
-    image: london-fintech-week
-    date: July 6-13
-    location: London, UK
-    link: https://www.fintechweek.com/
-
-  - name: 'Blockchain: Rethink Trust Conference'
-    image: blockchain-rethink-trust-conference
-    date: June 29
-    location: Amsterdamm, Netherlands
-    link: https://rethinktrust.org/
-
-  - name: BlockShow Europe
-    image: blockShow-europe
-    date: May 28-29
-    location: Berlin, Germany
-    link: https://blockshoweurope.com/
+- name: BlockShow Europe
+  image: blockShow-europe
+  date-from: '2018-05-28'
+  date: '2018-05-29'
+  location: Berlin, Germany
+  link: https://blockshoweurope.com/

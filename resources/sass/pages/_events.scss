@@ -29,17 +29,36 @@
     }
 
     &__content {
+        @include display-flex();
+        @include justify-content(space-between);
         @include flex-basis(66.666%);
         text-align: left;
+        @include responsive(max-width, $break-tablets-max) {
+            @include flex-direction(column);
+        }
         @include responsive(max-width, $break-phones-max) {
             @include flex-basis(100%);
         }
     }
 
-    &__top {
+    &__meta {
+        padding-right: $integer;
+    }
+    
+    &__actions {
         @include display-flex();
-        @include align-items(center);
-        @include justify-content(space-between);
-        @include flex-wrap(wrap);
+        @include flex-direction(column);
+        @include responsive(max-width, $break-tablets-max) {
+            @include flex-direction(row);
+            margin-top: 10px;
+        }
+    }
+
+    &__button {
+        @include align-self(flex-end);
+
+        & + & {
+            margin-top: $integer/4;
+        }
     }
 }

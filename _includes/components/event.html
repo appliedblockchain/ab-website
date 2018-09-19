@@ -2,23 +2,34 @@
     {% if event.image %}
         <div class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.image }}.jpg);"></div>
     {% else %}
-        <div class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/default.jpg);"></div>
+        <div class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/default.jpg);"></div>
     {% endif %}
     <div class="block__content event__content">
-        <div class="event__top block__date">
-            <p class="body--bold">
+        <div class="event__meta">
+            <p class="block__date body--bold">
                 {% if event.date-from %}
-                    {{ event.date-from | date: '%b %d' }} to
+                    {{ event.date-from | date: '%b %-d' }} to
                 {% endif %}
-                {{ event.date | date: '%b %d, %Y' }}
+                {{ event.date | date: '%b %-d, %Y' }}
             </p>
-            {{ if event.link }}
-            <a href="{{ event.link }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
-                <p class="button__inner">view website</p>
-            </a>
-            {{ endif }}
+            <h2 class="block__title lead">{{ event.name }}</h2>
+            <p>{{ event.location }}</p>
         </div>
-        <h2 class="block__title lead">{{ event.name }}</h2>
-        <p>{{ event.location }}</p>
+        <div class="event__actions">
+            {% if event.link %}
+                <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--primary button--animate fas fa-globe">
+                    <p class="button__inner">view website</p>
+                </a>
+            {% endif %}
+            {% if event.directions %}
+                {% capture now %} {{'now' | date: '%s' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
+                {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} <!-- capture event date -->
+                {% if date > now %}
+                    <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">
+                        <p class="button__inner">Get directions</p>
+                    </a>
+                {% endif %}
+            {% endif %}
+        </div>
     </div>
 </div>

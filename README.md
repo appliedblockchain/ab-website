@@ -208,9 +208,10 @@ testimonial-job:
   - name: 
     image: 
     date-from: #use this one only if the event is spanned on several days
-    date:
-    location: 
-    link: 
+    date: #'YYYY-MM-DD'
+    location: #venue ,city, country
+    directions: #Google maps link
+    link: #link to the website
 ```
 > Use the YYYY-MM-DD format for the date, it will automatically be displayed in the right format on the website
 * Add the corresponding image in `resources/images/events`

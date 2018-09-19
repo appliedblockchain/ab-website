@@ -26,7 +26,10 @@
     }
 
     &__intro {
-        @include background(85% center, 65%);
+        @include background(85% top, 65%);
+        @include responsive(min-width, $break-large-desktop-min) {
+            @include background(85% top, 45%);
+        }
         @include responsive(max-width, $break-desktop-max) {
             background-image: none !important;
             text-align: center;

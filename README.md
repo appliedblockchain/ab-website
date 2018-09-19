@@ -20,8 +20,8 @@ cd my-awesome-site
 ```
 bundle exec jekyll serve
 ```
-> Open http://localhost:4000 to view it in the browser.
-* Test URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
+> Local URL: [localhost:4000](http://localhost:4000)
+> Test URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
 
 ### Comments
 Along with SASS, this project is based on the BEM markdown. To learn more about BEM:

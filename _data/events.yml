@@ -6,25 +6,25 @@
 upcoming:
   - name: Blockchain Live 2018
     image: blockchain-live-2018
-    dates: September 26
+    date: September 26
     location: Olympia, London, UK
     link: https://blockchainlive.com/
 
   - name: Blockchain Practitioner Conference
     image: blockchain-practitioner-conference
-    dates: September 18
+    date: September 18
     location: Shanghai, China
     link: http://www.bpc-events.com/
 
   - name: Consensus Singapore
     image: 
-    dates: September 19-20
+    date: September 19-20
     location: Marina Bay Sands, Singapore
     link: https://www.coindesk.com/events/consensus-singapore-2018/
 
   - name: Blockchain Venture Summit 2018
     image: blockchain-venture-summit-2018
-    dates: November 21
+    date: November 21
     location: 8 Northumberland, London, UK
     link: https://blockchainventuresummit.com/
 
@@ -33,18 +33,18 @@ upcoming:
 past:
   - name: London FinTech Week
     image: london-fintech-week
-    dates: July 6-13
+    date: July 6-13
     location: London, UK
     link: https://www.fintechweek.com/
 
   - name: 'Blockchain: Rethink Trust Conference'
     image: blockchain-rethink-trust-conference
-    dates: June 29
+    date: June 29
     location: Amsterdamm, Netherlands
     link: https://rethinktrust.org/
 
   - name: BlockShow Europe
     image: blockShow-europe
-    dates: May 28-29
+    date: May 28-29
     location: Berlin, Germany
     link: https://blockshoweurope.com/

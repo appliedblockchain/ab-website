@@ -314,7 +314,7 @@ li {
 		padding-left: $col;
 		padding-right: $col;
 	}
-	@include responsive(max-width, $break-phones-max) {
+	@include responsive(max-width, $break-tablets-max) {
 		padding-top: $integer*4;
 		padding-bottom: $integer*4;
 	}
@@ -324,6 +324,9 @@ li {
 		@include flex-direction(column);
 		@include align-items(center);
 		margin-bottom: $integer*4;
+		@include responsive(max-width, $break-tablets-max) {
+			margin-bottom: $integer*3;
+		}
 	}
 
 	&__comment {
@@ -428,7 +431,7 @@ li {
 	&--margin-minus {
 		margin-top: -$integer*10;
 		padding-top: $integer*10;
-		@include responsive(max-width, $break-phones-max) {
+		@include responsive(max-width, $break-tablets-max) {
 			margin-top: -$integer*8;
 			padding-top: $integer*8;
 		}
@@ -900,7 +903,7 @@ li {
 */
 
 .footer {
-	padding: $integer*6 $col $integer*3;
+	padding: $integer*6 $col $integer*4;
 	font-weight: $font-regular;
 
 	> * {
@@ -908,7 +911,10 @@ li {
 	}
 
 	&__item {
-		margin-bottom: $integer*2;
+		margin-bottom: $integer*3;
+		@include responsive(max-width, $break-phones-max) {
+			margin-bottom: $integer*2;
+		}
 	}
 
 	&__logo {

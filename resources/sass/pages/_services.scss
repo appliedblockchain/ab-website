@@ -153,7 +153,8 @@
             margin-right: $integer*2;
         }
         @include responsive(max-width, $break-phones-max) {
-            display: none;
+            position: absolute;
+            font-size: 2rem;
         }
     }
 
@@ -169,6 +170,9 @@
 
     &__title {
         margin-bottom: $integer;
+        @include responsive(max-width, $break-phones-max) {
+            padding-left: $integer*2;
+        }
     }
 
     &__icon {

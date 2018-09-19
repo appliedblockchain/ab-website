@@ -248,8 +248,7 @@
         @include display-flex();
         @include align-items(center);
         @include responsive(max-width, $break-large-desktop-max) {
-            margin-top: $integer;
-            margin-bottom: $integer;
+            margin-bottom: $integer*2;
         }
     }
 

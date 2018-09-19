@@ -745,10 +745,6 @@ li {
 		}
 	}
 
-	.footer__title {
-		color: $black;
-	}
-
 	&__menu {
 		@include calc(height, '100vh - '$integer*8);
 		@include overflow-scroll();
@@ -923,7 +919,10 @@ li {
 
 	&__title {
 		margin-bottom: $integer;
-		color: $white;
+
+		.footer & {
+			color: $white;
+		}
 	}
 
 	&__adress {

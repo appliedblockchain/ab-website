@@ -4,7 +4,6 @@
 - name: Blockchain Venture Summit 2018
   image: blockchain-venture-summit-2018
   date: '2018-11-21'
-  participation: Speaker
   location: 8 Northumberland, London, UK
   directions: https://www.google.com/maps/place/8+Northumberland+Ave,+Central+London,+London+WC2N+5BY/@51.506983,-0.1281987,17z/data=!4m5!3m4!1s0x487604ce53876e91:0x93b57031fb1f77e2!8m2!3d51.506983!4d-0.12601
   link: https://blockchainventuresummit.com/
@@ -13,7 +12,6 @@
   image: energy-trading-conference
   date-from: '2018-10-10'
   date: '2018-10-12'
-  participation: Speaker
   location: Central Hall Westminster, London, UK
   directions: https://www.google.co.uk/maps/place/Central+Hall+Westminster/@51.5000559,-0.1296481,15z/data=!4m5!3m4!1s0x0:0xb32c3c182d15cfaa!8m2!3d51.5000559!4d-0.1296481
   link: https://www.etotsummit.com/
@@ -21,7 +19,6 @@
 - name: Polkadot Meetup
   image: polkadot-meetup
   date: '2018-10-03'
-  participation: Speaker
   location: Second Home, London, UK
   directions: https://www.google.com/maps/search/?api=1&query=51.520080%2C-0.070423
   link: https://www.meetup.com/fr-FR/Polkadot-London/
@@ -29,7 +26,6 @@
 - name: Blockchain Live 2018
   image: blockchain-live-2018
   date: '2018-09-26'
-  participation: Exhibitor & speaker
   location: Olympia, London, UK
   directions: https://www.google.co.uk/maps/place/Olympia+London/@51.4965005,-0.2106881,15z/data=!4m2!3m1!1s0x0:0x26fa091340f02f99?sa=X&ved=2ahUKEwiK78bWlcfdAhUsIsAKHd4yDqsQ_BIwFnoECAcQCw
   link: https://blockchainlive.com/
@@ -38,14 +34,12 @@
   image: london-fintech-week
   date-from: '2018-07-06'
   date: '2018-07-13'
-  participation: 
   location: London, UK
   link: https://www.fintechweek.com/
 
 - name: 'Blockchain: Rethink Trust Conference'
   image: blockchain-rethink-trust-conference
   date: '2018-06-29'
-  participation: 
   location: Amsterdam, Netherlands
   link: https://rethinktrust.org/
 
@@ -53,6 +47,5 @@
   image: blockShow-europe
   date-from: '2018-05-28'
   date: '2018-05-29'
-  participation: 
   location: Berlin, Germany
   link: https://blockshoweurope.com/

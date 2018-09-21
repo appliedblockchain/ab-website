@@ -209,6 +209,7 @@ testimonial-job:
     image: 
     date-from: #use this one only if the event is spanned on several days
     date: #'YYYY-MM-DD'
+    participation: #speaker, exhibitor, etc.
     location: #venue ,city, country
     directions: #Google maps link
     link: #link to the website

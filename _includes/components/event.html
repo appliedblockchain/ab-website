@@ -14,6 +14,9 @@
             </p>
             <h2 class="block__title lead">{{ event.name }}</h2>
             <p>{{ event.location }}</p>
+            {% if event.participation %}
+                <p class="block__label body--bold">{{ event.participation }}</p>
+            {% endif %}
         </div>
         <div class="event__actions">
             {% if event.link %}

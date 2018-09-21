@@ -524,9 +524,12 @@ li {
         margin-bottom: $integer/2;
     }
 
+	&__label {
+		margin-top: $integer/4;
+	}
     &__text {
         margin-bottom: $integer;
-    }
+	}
 }
 
 .background--cover {

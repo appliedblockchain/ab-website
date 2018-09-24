@@ -9,9 +9,9 @@
 
 
 ***
-## Introduction
+### Introduction
 
-### Getting started
+#### Getting started
 * Install [Jekyll](https://jekyllrb.com/)
 ```
 gem install bundler jekyll
@@ -25,7 +25,7 @@ bundle exec jekyll serve
 > Local URL: [localhost:4000](http://localhost:4000)
 > Test URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
 
-### Comments
+#### Comments
 Along with SASS, this project is based on the BEM markdown. To learn more about BEM:
 * [bem.info](https://en.bem.info/methodology/quick-start/)
 * [getbem.com](http://getbem.com/introduction/)
@@ -33,7 +33,7 @@ Along with SASS, this project is based on the BEM markdown. To learn more about 
 
 
 ***
-## Page structure
+### Page structure
 Every page is build on the same structure:
 * They are divided in [sections](#section-system), representing each part of the page
 * The page and section headers are [components](#components), ensuring that they will have the same structure throughout the whole website
@@ -68,9 +68,9 @@ Every page is build on the same structure:
 {% include footer.html %}
 ```
 
-### Section system
+#### Section system
 
-#### Section types
+##### Section types
 Add these classes to customise them:
 
 | Class                   | Description |
@@ -81,17 +81,17 @@ Add these classes to customise them:
 | `section--nopadding`    | Remove all paddings (e.g. **grid section** of the [Projects](https://appliedblockchain.com/case-studies/) page) |
 | `section--margin-minus` | Add a negative margin top to the section to make them overlap (e.g. **why us section** of the [Homepage](https://appliedblockchain.com/)) |
 
-#### Section colors
+##### Section colors
 Change the background color of a section (default is white) using `.section--primary`, `.section--dark` or `.section--grey`.
 
-#### Section alignement
+##### Section alignement
 Left or rifght align the text and content of a section (default is centered aligned) using `.section--left` or `.section--right`.
 
-### Components
+#### Components
 The components are located in the `_data` folder. They were created to ensure that every iteration has the same structure, and that it will be easy to edit it. Each of them has a set of attributes.
 > if you want one attribute not to appear, simply delete the line.
 
-#### Page header
+##### Page header
 ```
 {% include components/page-header.html
         background-color=''
@@ -102,13 +102,13 @@ The components are located in the `_data` folder. They were created to ensure th
 ```
 The page header is used once on a page, at the very beginning.
 
-##### Background imnage in page header
+###### Background imnage in page header
 * Add image in `resources/images/background` folder
 * Same name as page, jpg format
 * Add `background-image=''` to component
 * Set `background-color=''` for gradient color
 
-#### Section header
+##### Section header
 ```
 {% include components/section-header.html
     comment='Lorem ipsum'
@@ -117,7 +117,7 @@ The page header is used once on a page, at the very beginning.
 %}
 ```
 
-### Column system
+#### Column system
 If needed, elements can be layed out horizontally using a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) like column system. It as based on a 12 column structure. You can add prefixes to the number to set up the responsive behaviour of each column.
 ```html
 <div class="row">
@@ -131,7 +131,7 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 
 
 ***
-## Add project
+### Add project
 
 * In the `_projects` folder, create a new file, named after the client
 * Copy this code in the file
@@ -167,7 +167,7 @@ testimonial-job:
 * Add the company logo in the `resources/images/logos/clients` folder;
 > The logo in the about section will link itself automatically, provided the image has the same **title** as the project page
 
-#### Additionnal comments
+##### Additionnal comments
 * Add `tag: featured` to the project to feature it
 * Add `tag: grid` to the project to place it on the last line
 * If the logo doesn't appear, check the file extension.
@@ -180,7 +180,7 @@ testimonial-job:
 
 
 ***
-## Add job
+### Add job
 
 * Open the `jobs.yml` file in `_data` folder
 * Copy/paste this code in the section you want it to appear (London or Porto) and fill the content
@@ -195,7 +195,7 @@ testimonial-job:
 
 
 ***
-## Add event
+### Add event
 * Open the `events.yml` file in `_data` folder
 * Copy/paste this code and fill the content
 ```yml
@@ -216,7 +216,7 @@ testimonial-job:
 
 
 ***
-## Add blog post
+### Add blog post
 * Create a new file in the `_posts` folder
 * Name the file with a slugged version of the title, preceded by the date of the post
 > If the title is `Blockchain as a Database`, it becomes `YYYY-MM-DD-blockchain-as-a-database`
@@ -239,7 +239,7 @@ headline:
     * File cannot be over 1000 px wide and 100 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
-### Post content html structure
+#### Post content html structure
 ```html
 <p class="post__title">This a title</p>
 
@@ -260,7 +260,7 @@ headline:
 
 <!-- ## General queries
 
-### Logo and menu icon color on landing
+#### Logo and menu icon color on landing
 If the `page-header.html` of a page is set to `background='primary'` or `background='dark'`, the logo and menu icon colors change.
 To do so, go to `_layouts/header.html` and add the page title to the condition in the class selector.
 ```html
@@ -279,5 +279,5 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 * An image diesn't appear
     * Check file extension
 
-### Logo carousels
+#### Logo carousels
 * image size, difference between regular and alt version -->

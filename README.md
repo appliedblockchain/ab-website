@@ -8,6 +8,7 @@
 
 
 
+***
 ## Introduction
 
 ### Getting started
@@ -31,6 +32,7 @@ Along with SASS, this project is based on the BEM markdown. To learn more about 
 
 
 
+***
 ## Page structure
 Every page is build on the same structure:
 * They are divided in [sections](#section-system), representing each part of the page
@@ -128,6 +130,7 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 
 
 
+***
 ## Add project
 
 * In the `_projects` folder, create a new file, named after the client
@@ -176,6 +179,7 @@ testimonial-job:
 
 
 
+***
 ## Add job
 
 * Open the `jobs.yml` file in `_data` folder
@@ -190,6 +194,7 @@ testimonial-job:
 
 
 
+***
 ## Add event
 * Open the `events.yml` file in `_data` folder
 * Copy/paste this code and fill the content
@@ -210,6 +215,7 @@ testimonial-job:
 
 
 
+***
 ## Add blog post
 * Create a new file in the `_posts` folder
 * Name the file with a slugged version of the title, preceded by the date of the post

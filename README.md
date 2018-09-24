@@ -23,6 +23,7 @@ cd my-awesome-site
 bundle exec jekyll serve
 ```
 > Local URL: [localhost:4000](http://localhost:4000)
+
 > Test URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
 
 #### Comments

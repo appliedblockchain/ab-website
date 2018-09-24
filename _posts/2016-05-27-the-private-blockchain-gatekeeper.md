@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Private Blockchain Gatekeeper
-image-link: the-private-blockchain-gatekeeper
+image: the-private-blockchain-gatekeeper
 category: blog
 headline: This piece proposes concepts for designing a Private Blockchain Smart Contract Application.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Smart Contracts Make Slow Blockchains
-image-link: response-to-why-smart-contracts-make-slow-blockchains
+image: response-to-why-smart-contracts-make-slow-blockchains
 category: blog
 headline: You have raised some real issues with the current implementation of Ethereum. However, I think that most of organisations playing and building with Ethereum as a private chain today don’t believe that Ethereum, certainly not in it’s current form, will be their target platform.
 ---

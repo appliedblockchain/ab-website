@@ -2,8 +2,8 @@
 
 <div class="post">
 
-    {% if page.image-link %}
-        <div class="section section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ page.image-link }}.jpg);">
+    {% if page.image %}
+        <div class="section section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ page.image }}.jpg);">
     {% else %}
         <div class="section section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);">
     {% endif %} 

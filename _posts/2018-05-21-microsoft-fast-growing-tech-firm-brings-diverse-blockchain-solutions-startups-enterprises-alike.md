@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Microsoft: Fast-growing tech firm brings diverse blockchain solutions to startups and enterprises alike'
-image-link: microsoft-fast-growing-tech-firm-brings-diverse-blockchain-solutions-startups-enterprises-alike
+image: microsoft-fast-growing-tech-firm-brings-diverse-blockchain-solutions-startups-enterprises-alike
 category: blog
 headline: At Applied Blockchain, we focus on blockchain and Smart Contracts (verifiable digital agreements based on blockchain). Our company is just two years old, but our team of developers has created blockchain applications that are already live in production environments in both startups and enterprises that operate around the world.
 ---

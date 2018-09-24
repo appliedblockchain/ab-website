@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LR announces the launch of prototype blockchain-enabled Class register
-image-link: classification-register-updated-for-the-digital-age
+image: classification-register-updated-for-the-digital-age
 category: press-release
 headline: Classification register updated for the digital age
 ---

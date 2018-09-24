@@ -40,8 +40,8 @@
                                 <a href="{{ post.url | prepend: site.baseurl }}">
                             {% endif %}
                                 <div class="block blog__item">
-                                    {% if post.image-link %}
-                                        <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image-link }}.jpg);"></div>
+                                    {% if post.image %}
+                                        <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image }}.jpg);"></div>
                                     {% else %}
                                         <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);"></div>
                                     {% endif %} 

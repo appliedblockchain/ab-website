@@ -4,6 +4,7 @@
 * [Add project](#add-project)
 * [Add job](#add-job)
 * [Add event](#add-event)
+* [Add blog post](#add-blog-post)
 
 
 
@@ -177,7 +178,7 @@ testimonial-job:
 
 ## Add job
 
-* Open the `job.yml` file in `_data` folder
+* Open the `jobs.yml` file in `_data` folder
 * Copy/paste this code in the section you want it to appear (London or Porto) and fill the content
 ```yml
   - title: 
@@ -189,36 +190,65 @@ testimonial-job:
 
 
 
-<!-- ## Add blog posts
-* file name convention
-* file name = url link in file
-* image (path and name)
-    * if doesn't work: check file extension (needs to be jpeg)
-    * default image (explanation)
-* news special tag for link direct to external page
-* external news
-* Posts content structure -->
-
-
-
 ## Add event
-* Open the `event.yml` file in `_data` folder
+* Open the `events.yml` file in `_data` folder
 * Copy/paste this code and fill the content
 ```yml
-  - name: 
-    image: 
-    date-from: #use this one only if the event is spanned on several days
-    date: #'YYYY-MM-DD'
-    participation: #speaker, exhibitor, etc.
-    location: #venue ,city, country
-    directions: #Google maps link
-    link: #link to the website
+- name: 
+  image: #image file name > use a slugged version of the name
+  date-from: #use this one only if the event is spanned on several days
+  date: #'YYYY-MM-DD'
+  location: #venue, city, country
+  directions: #Google maps link
+  link: #link to the event website
 ```
 > Use the YYYY-MM-DD format for the date, it will automatically be displayed in the right format on the website
 * Add the corresponding image in `resources/images/events`
     * If doesn't work: check file extension (needs to be jpeg)
     * File cannot be over 1000 px wide and 100 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
+
+
+
+## Add blog post
+* Create a new file in the `_posts` folder
+* Name the file with a slugged version of the title, preceded by the date of the post
+> If the title is `Blockchain as a Database`, it becomes `YYYY-MM-DD-blockchain-as-a-database`
+* Copy/paste this code in the file and fill the content
+```yml
+---
+layout: post
+title: 
+image: #image file name > use a slugged version of the title
+category: #blog / press-release / news
+link: #add if an external news or a medium post
+headline: 
+---
+# HTML CONTENT OF THE POST (only for local posts; not for external news or medium posts)
+```
+> the corresponding category for **any** Medium post is `blog`
+> the corresponding category for **any** external news post is `news`
+* Add the corresponding image in `resources/images/posts`
+    * If doesn't work: check file extension (needs to be jpeg)
+    * File cannot be over 1000 px wide and 100 KB
+    * If you don't have an image, leave the `image:` tag empty, a default image is set.
+
+### Post content html structure
+```html
+<p class="post__title">This a title</p>
+
+<p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus tristique enim consequat fringilla. Donec ultrices vitae nisl sit amet blandit.<a href="http://www.multichain.com/" target="_blank">Duis dignissim rutrum sollicitudin</a>.</p>
+<p class="post__content">Aliquam volutpat diam diam, in eleifend urna posuere sit amet. Integer vitae augue a felis tempor commodo pulvinar quis sapien. Phasellus scelerisque lacus eu neque rhoncus, vel hendrerit urna eleifend.</p>
+
+<p class="post__title">This is another title</p>
+
+<p class="post__subtitle">This is a subtitle</p>
+<p class="post__content">Vestibulum posuere ac justo eu interdum. Nunc ex lacus, feugiat a ultrices in, efficitur et mauris. Maecenas eu ex eu mauris venenatis tempus in quis lacus.</p>
+<p class="post__quote">This is a quote</p>
+```
+Will be output like this
+![Blog structure](resources/images/github/post.jpg)
+> For every new paragraph, open a new `<p>` tag with the `post__content` class
 
 
 

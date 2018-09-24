@@ -246,9 +246,8 @@ headline:
 <p class="post__content">Vestibulum posuere ac justo eu interdum. Nunc ex lacus, feugiat a ultrices in, efficitur et mauris. Maecenas eu ex eu mauris venenatis tempus in quis lacus.</p>
 <p class="post__quote">This is a quote</p>
 ```
-Will be output like this
-![Blog structure](resources/images/github/post.jpg)
 > For every new paragraph, open a new `<p>` tag with the `post__content` class
+![Blog structure](resources/images/github/post.jpg)
 
 
 

@@ -247,6 +247,7 @@ headline:
 <p class="post__quote">This is a quote</p>
 ```
 > For every new paragraph, open a new `<p>` tag with the `post__content` class
+
 ![Blog structure](resources/images/github/post.jpg)
 
 

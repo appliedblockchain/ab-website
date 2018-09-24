@@ -1,14 +1,9 @@
 # Applied Blockchain Website
 [Introduction](#introduction)
-
 [Page structure](#page-structure)
-
 [Add project](#add-project)
-
 [Add job](#add-job)
-
 [Add event](#add-event)
-
 [Add blog post](#add-blog-post)
 
 

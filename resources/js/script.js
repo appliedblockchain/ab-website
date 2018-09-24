@@ -13,6 +13,43 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 
 
+// —————————————————————————————————————————————————————————————————
+// SHARE BAR
+// —————————————————————————————————————————————————————————————————
+
+var shareBar = $('.share__button');
+var shareDelay = 0;
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 500) {
+		shareBar.each(function() {
+			setTimeout(function() {
+				shareBar.addClass('js-show');
+			}, shareDelay+=400);
+		});
+	} else {
+		shareBar.removeClass('js-show');
+	}
+});
+
+
+var shareBar = $('.share__button');
+var loop = 0;
+var addMs = 50;
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 500) {
+		shareBar.each(function(index, value) {
+			var li = $(this);
+			setTimeout(function() {	li.addClass('js-show'); }, loop);
+			loop += addMs;
+		});
+	} else {
+		shareBar.removeClass('js-show');
+	}
+});
+
+
 
 // —————————————————————————————————————————————————————————————————
 // MENU SCROLL ANIMATION
@@ -60,18 +97,17 @@ btn.on('click', function(e) {
 });
 
 
+
+// —————————————————————————————————————————————————————————————————
+// COOKIE BAR ACCEPT
+// —————————————————————————————————————————————————————————————————
+
 var cookieKey = "__applied_blockchain_cookie_banner"
 var cookieClose = function() {
 	if (typeof localStorage !== 'undefined') {
 		localStorage[cookieKey] = "true"
 	}
 }
-
-
-
-// —————————————————————————————————————————————————————————————————
-// COOKIE BAR ACCEPT
-// —————————————————————————————————————————————————————————————————
 
 var displayCookieBar = function() {
 	if (typeof localStorage !== 'undefined') {

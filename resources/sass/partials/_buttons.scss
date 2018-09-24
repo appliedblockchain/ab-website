@@ -9,6 +9,7 @@
  * general
  * animate
  * color variant
+ * social
  * size
  * close
  * menu
@@ -43,19 +44,21 @@
 		@include transition (color $transition, transform $transition);
 		will-change: color, transform;
 		display: block;
+		width: 100%;
 		text-transform: uppercase;
+		text-align: center;
 	}
 
 	& + & {
 		margin-left: 5px;
 	}
-	
+
 	&--icon {
 		padding: 0;
 		width: $integer*2;
 		height: $integer*2;
 	}
-	
+
 	&--text {
 		@include transition(transform $transition);
 		will-change: transform;
@@ -86,6 +89,8 @@
 	}
 }
 
+
+
 /*
  * animate
  * —————————————————————————————————————————————————————————————————
@@ -106,7 +111,7 @@
 	@include transform(translateX(140%));
 }
 .button--animate:hover .button__inner {
-	@include transform(translateX(160%));
+	@include transform(translateX(150%));
 }
 
 
@@ -122,7 +127,11 @@
 	'secondary' 	$secondary			$primary,
 	'highlight' 	$highlight			$white,
 	'dark' 			$dark 				$white,
-	'white' 		$white 				$primary
+	'white' 		$white 				$primary,
+	'facebook' 		$facebook 			$white,
+	'twitter' 		$twitter 			$white,
+	'google' 		$google 			$white,
+	'linkedin' 		$linkedin 			$white
 );
 
 @include button-stroke-color('button--stroke.button--',

@@ -1,5 +1,6 @@
 # Applied Blockchain Website
 * [Introduction](#introduction)
+* [Deployment](#deployment)
 * [Page structure](#page-structure)
 * [Add project](#add-project)
 * [Add job](#add-job)
@@ -24,12 +25,31 @@ bundle exec jekyll serve
 ```
 > Local URL: [localhost:4000](http://localhost:4000)
 
-> Test URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
+> Staging URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
 
 #### Comments
 Along with SASS, this project is based on the BEM markdown. To learn more about BEM:
 * [bem.info](https://en.bem.info/methodology/quick-start/)
 * [getbem.com](http://getbem.com/introduction/)
+
+
+
+***
+### Deployment
+
+The deployment process is run throught CircleCI.
+
+When the **develop** branch is merged with **master**, it automatically prompts a workflow in CircleCI that builds the website and deploys it to the [staging URL](https://next.appliedblockchain.com/).
+Once you have tested the changes (on both mobile and desktop, and on all browsers, including IE11), click the `confirm_deploy` button in the workflow, and the deployment will start.
+
+![CircleCI worflow](resources/images/github/circleci.png)
+
+> Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on the content.
+
+#### Test
+Use [Browserstack](https://www.browserstack.com/users/sign_in) to test the website on different devices and browsers.
+> The website is fully fonctionnal on Internet Explorer 11 and above
+
 
 
 
@@ -90,7 +110,7 @@ Left or rifght align the text and content of a section (default is centered alig
 
 #### Components
 The components are located in the `_data` folder. They were created to ensure that every iteration has the same structure, and that it will be easy to edit it. Each of them has a set of attributes.
-> if you want one attribute not to appear, simply delete the line.
+> if you want one attribute not to appear, simply delete the line
 
 ##### Page header
 ```
@@ -127,7 +147,7 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
     <div class="col--lg2 col--md12"></div>
 </div>
 ```
-> See the `resources/sass/partials/_structure.html`for reference.
+> See the `resources/sass/partials/_structure.scss` for reference
 
 
 
@@ -139,7 +159,7 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 ```yml
 ---
 layout: project
-tag: 
+tag: #featured or grid
 
 title: 
 subtitle: 
@@ -188,10 +208,17 @@ testimonial-job:
 ```yml
   - title: 
     type: 
-    role: 
-    required-skills: 
-    additional-skills:
+    role: #see below for html structure
+    required-skills: #see below for html structure
+    additional-skills: #see below for html structure
 ```
+#### html
+```html
+
+```
+> For every new paragraph, open a new `<p>` tag with the `post__content` class
+
+![Blog structure](resources/images/github/post.jpg)
 
 
 
@@ -210,8 +237,8 @@ testimonial-job:
 ```
 > Use the YYYY-MM-DD format for the date, it will automatically be displayed in the right format on the website
 * Add the corresponding image in `resources/images/events`
-    * If doesn't work: check file extension (needs to be jpeg)
-    * File cannot be over 1000 px wide and 100 KB
+    * If doesn't work: check file extension (needs to be `.jpg`)
+    * File cannot be over 800 px wide and 100 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
 
@@ -233,12 +260,14 @@ headline:
 ---
 # HTML CONTENT OF THE POST (only for local posts; not for external news or medium posts)
 ```
-> the corresponding category for **any** Medium post is `blog`
-> the corresponding category for **any** external news post is `news`
+> the corresponding category for **any** Medium post is `blog`.
+
+> the corresponding category for **any** external news post is `news`.
+
 * Add the corresponding image in `resources/images/posts`
-    * If doesn't work: check file extension (needs to be jpeg)
-    * File cannot be over 1000 px wide and 100 KB
-    * If you don't have an image, leave the `image:` tag empty, a default image is set.
+    * If doesn't work: check file extension (needs to be `.jpg`)
+    * File cannot be over 1000 px wide and 150 KB
+    * If you don't have an image, leave the `image:` tag empty, a default image is set
 
 #### Post content html structure
 ```html

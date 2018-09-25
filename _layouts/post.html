@@ -3,13 +3,18 @@
 <div class="post">
 
     {% if page.image %}
-        <div class="section section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ page.image }}.jpg);">
+        <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ page.image }}.jpg);">
     {% else %}
-        <div class="section section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);">
+        <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);">
     {% endif %} 
         <p class="section__comment comment">{{ page.category }}</p>
         <h1 class="section__title title">{{ page.title }}</h1>
         <p class="section__desc body--large">{{ page.date | date: "%b %-d, %Y" }}</p>
+        {% if page.category == 'press-release' %}
+            <a href="{{ site.url }}{{ site.resourceurl }}/dlc/press-releases/appliedBlockchain-{{ page.image }}.zip" class="post__button button button--secondary button--animate fas fa-download" download>
+                <p class="button__inner">Download press kit</p>
+            </a>
+        {% endif %}
     </div>
     
     <article class="section">

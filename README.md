@@ -127,7 +127,7 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
     <div class="col--lg2 col--md12"></div>
 </div>
 ```
-> See the `resources/sass/partials/_structure.html`for reference.
+> See the `resources/sass/partials/_structure.scss` for reference.
 
 
 

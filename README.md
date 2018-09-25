@@ -39,8 +39,11 @@ Along with SASS, this project is based on the BEM markdown. To learn more about 
 
 The deployment process is run throught CircleCI.
 
-When the *develop* branch is merged with *master*, it automatically prompts a workflow in CircleCI that tests and deploy the website into the [staging URL](https://next.appliedblockchain.com/).
-Once you have tested the changes (on both mobile and desktop, and on all the major browsers, including IE11), click the **confirm_deploy** button in the workflow, and the deployment will start.
+When the **develop** branch is merged with **master**, it automatically prompts a workflow in CircleCI that tests and deploys the website into the [staging URL](https://next.appliedblockchain.com/).
+Once you have tested the changes (on both mobile and desktop, and on all browsers, including IE11), click the `confirm_deploy` button in the workflow, and the deployment will start.
+
+![CircleCI worflow](resources/images/github/circleci.png)
+
 > Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on the content.
 
 #### Test

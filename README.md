@@ -210,8 +210,8 @@ testimonial-job:
 ```
 > Use the YYYY-MM-DD format for the date, it will automatically be displayed in the right format on the website
 * Add the corresponding image in `resources/images/events`
-    * If doesn't work: check file extension (needs to be jpeg)
-    * File cannot be over 1000 px wide and 100 KB
+    * If doesn't work: check file extension (needs to be `.jpg`)
+    * File cannot be over 800 px wide and 100 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
 
@@ -234,10 +234,12 @@ headline:
 # HTML CONTENT OF THE POST (only for local posts; not for external news or medium posts)
 ```
 > the corresponding category for **any** Medium post is `blog`
+
 > the corresponding category for **any** external news post is `news`
+
 * Add the corresponding image in `resources/images/posts`
-    * If doesn't work: check file extension (needs to be jpeg)
-    * File cannot be over 1000 px wide and 100 KB
+    * If doesn't work: check file extension (needs to be `.jpg`)
+    * File cannot be over 1000 px wide and 150 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
 #### Post content html structure

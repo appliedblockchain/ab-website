@@ -106,7 +106,7 @@
 	@include transform(translateX(140%));
 }
 .button--animate:hover .button__inner {
-	@include transform(translateX(160%));
+	@include transform(translateX(180%));
 }
 
 

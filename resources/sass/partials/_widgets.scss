@@ -53,9 +53,16 @@
     @include display-flex();
     @include align-items(center);
     @include transform(translateX(-$integer*5));
+    @include transition(opacity $transition);
     position: fixed;
     top: 0;
     height: 100%;
+    opacity: 0;
+    will-change: opacity;
+    
+    &.js-show {
+        opacity: 1;
+    }
     
     &__container {
         @include display-flex();
@@ -64,13 +71,6 @@
     }
     
     &__button {
-        @include transition(opacity $transition);
-        opacity: 0;
-        will-change: opacity;
-        
-        &.js-show {
-            opacity: 1;
-        }
         
         .post & {
             margin-left: 0;

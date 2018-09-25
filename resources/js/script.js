@@ -17,35 +17,13 @@ $(document).ready(function() {
 // SHARE BAR
 // —————————————————————————————————————————————————————————————————
 
-var shareBar = $('.share__button');
-var shareDelay = 0;
+var shareElement = $('.share');
 
 $(window).scroll(function() {
 	if ($(window).scrollTop() > 500) {
-		shareBar.each(function() {
-			setTimeout(function() {
-				shareBar.addClass('js-show');
-			}, shareDelay+=400);
-		});
+		shareElement.addClass('js-show');
 	} else {
-		shareBar.removeClass('js-show');
-	}
-});
-
-
-var shareBar = $('.share__button');
-var loop = 0;
-var addMs = 50;
-
-$(window).scroll(function() {
-	if ($(window).scrollTop() > 500) {
-		shareBar.each(function(index, value) {
-			var li = $(this);
-			setTimeout(function() {	li.addClass('js-show'); }, loop);
-			loop += addMs;
-		});
-	} else {
-		shareBar.removeClass('js-show');
+		shareElement.removeClass('js-show');
 	}
 });
 

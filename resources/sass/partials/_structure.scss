@@ -832,6 +832,11 @@ li {
 				}
 			}
 		}
+
+		.button--white.button--stroke {
+			border-color: $primary;
+			color: $black;
+		}
 	}
 }
 

@@ -16,6 +16,7 @@
 .post {
 
     &__header {
+        background-attachment: fixed;
 
         &.section--primary {
 
@@ -25,10 +26,6 @@
                 background-image: none;
             }        
         }
-    }
-
-    &__button {
-        margin-top: $integer;
     }
 
     &__title {

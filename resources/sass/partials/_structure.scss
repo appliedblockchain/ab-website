@@ -22,6 +22,12 @@
 
 .hide {
 	
+	&--desktop {
+		@include responsive(max-width, $break-desktop-max) {
+			display: none !important;
+		}
+	}
+
 	&--mobile {
 		@include responsive(max-width, $break-phones-max) {
 			display: none !important;

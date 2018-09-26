@@ -28,6 +28,12 @@
         }
     }
 
+    &__button {
+        @include responsive(max-width, $break-tablets-max) {
+            display: none !important;
+        }
+    }
+
     &__title {
         margin-bottom: $integer*2;
 
@@ -83,9 +89,5 @@
 
     a {
         text-decoration: underline;
-
-        &.post__button {
-            text-decoration: none;
-        }    
     }
 }

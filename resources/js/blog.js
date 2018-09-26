@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 
 // —————————————————————————————————————————————————————————————————
-// SCRIPT
+// BLOG
 // —————————————————————————————————————————————————————————————————
 // SHARE BAR
 // —————————————————————————————————————————————————————————————————
@@ -14,31 +14,19 @@ $(document).ready(function() {
 // SHARE BAR
 // —————————————————————————————————————————————————————————————————
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 400) {
-        var delay = 0;
-        $('.share__button').each(function() {
-            var $li = $(this);
-            setTimeout(function() {
-            $li.addClass('js-show');
-            }, delay+=50); // delay 50 ms
-        });
+var elementPosition = $('.share').offset();
+
+$(window).scroll(function(){
+    if($(window).scrollTop() > elementPosition.top - 120){
+        $('.share').css('position','fixed').css('top','120px');
     } else {
-        var delay = 0;
-        $('.share__button').each(function() {
-            var $li = $(this);
-            setTimeout(function() {
-            $li.removeClass('js-show');
-            }, delay+=50); // delay 50 ms
-        });
-    }
+        $('.share').css('position','absolute').css('top','0');
+    }    
 });
 
 
 
-
-
-
 // —————————————————————————————————————————————————————————————————
 
-});    
+});
+

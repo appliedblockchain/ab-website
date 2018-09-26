@@ -5,27 +5,11 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 // SCRIPT
 // —————————————————————————————————————————————————————————————————
-// INIT PARTICLE.JS
 // MENU SCROLL ANIMATION
 // MENU OPEN ANIMATION
 // BACK TO TOP
 // COOKIE BAR ACCEPT
 // —————————————————————————————————————————————————————————————————
-
-
-// —————————————————————————————————————————————————————————————————
-// SHARE BAR
-// —————————————————————————————————————————————————————————————————
-
-var shareElement = $('.share');
-
-$(window).scroll(function() {
-	if ($(window).scrollTop() > 500) {
-		shareElement.addClass('js-show');
-	} else {
-		shareElement.removeClass('js-show');
-	}
-});
 
 
 

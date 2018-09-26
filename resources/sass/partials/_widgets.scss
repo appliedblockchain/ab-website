@@ -52,25 +52,25 @@
 .share {
     @include display-flex();
     @include align-items(center);
-    @include transform(translateX(-$integer*5));
-    @include transition(opacity $transition);
+    @include transform(translateX(-$integer*4.5));
     position: fixed;
     top: 0;
     height: 100%;
-    opacity: 0;
-    will-change: opacity;
-    
-    &.js-show {
-        opacity: 1;
-    }
     
     &__container {
         @include display-flex();
         @include flex-direction(column);
         @include align-items(center);
     }
-    
+
     &__button {
+        @include transition(opacity $transition);
+        opacity: 0;
+        will-change: opacity;
+        
+        &.js-show {
+            opacity: 1;
+        }
         
         .post & {
             margin-left: 0;

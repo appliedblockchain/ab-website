@@ -8,18 +8,18 @@
  * —————————————————————————————————————————————————————————————————
 */
 
-/* prevent style from applying to media page */
-.post .post__headline {
-    margin-bottom: $integer*3;
-}
+.imVisible { color: blue; }
+
+
+
 
 .post {
 
     &__header {
         background-attachment: fixed;
-
+        
         &.section--primary {
-
+            
             &:before {
                 @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
                 background-color: rgba($primary, 0.8);
@@ -27,11 +27,15 @@
             }        
         }
     }
-
+    
     &__button {
         @include responsive(max-width, $break-tablets-max) {
             display: none !important;
         }
+    }
+
+    &__headline {
+        margin-bottom: $integer*3;
     }
 
     &__title {

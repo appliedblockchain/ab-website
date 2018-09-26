@@ -156,6 +156,7 @@
 		padding: 18px 36px;
 
 		&.button--icon {
+			padding: 0;
 			width: $integer*3;
 			height: $integer*3;
 		}
@@ -165,6 +166,7 @@
 		padding: 6px 15px;
 
 		&.button--icon {
+			padding: 0;
 			width: $integer*1.5;
 			height: $integer*1.5;
 		}

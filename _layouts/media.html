@@ -52,13 +52,26 @@
                                         <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
                                         <h2 class="block__title lead">{{ post.title }}</h2>
                                         <div class="block__text">{{ post.headline | truncate: 100, "…" }}</div>
-                                        <div class="button button--primary button--small button--animate {% if post.category contains "news" and post.link %} fas fa-external-link-alt {% endif %} {% if post.category contains "blog" and post.link %} fab fa-medium-m {% endif %} {% if post.link %} {% else %} fas fa-eye {% endif %}">
-                                            <p class="button__inner">Read 
-                                                {% if post.category contains "news" and post.link %} article {% endif %}
-                                                {% if post.category contains "blog" and post.link %} on medium {% endif %}
-                                                {% if post.link %} {% else %} more {% endif %}
-                                            </p>
-                                        </div>
+                                        {% if post.category contains "news" and post.link %}
+                                            <div class="button button--primary button--small button--animate fas fa-external-link-alt">
+                                                <p class="button__inner">Read article</p>
+                                            </div>
+                                        {% endif %}
+                                        {% if post.category contains "blog" and post.social contains "linkedin" and post.link %}
+                                            <div class="button button--linkedin button--small button--animate ffab fa-linkedin-in">
+                                                <p class="button__inner">Read on Linkedin</p>
+                                            </div>
+                                        {% endif %}
+                                        {% if post.category contains "blog" and post.social contains "medium" and post.link %}
+                                            <div class="button button--medium button--small button--animate fab fa-medium-m">
+                                                <p class="button__inner">Read on Medium</p>
+                                            </div>
+                                        {% endif %}
+                                        {% if post.link %} {% else %}
+                                            <div class="button button--primary button--small button--animate fas fa-eye">
+                                                <p class="button__inner">Read more</p>
+                                            </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </a>

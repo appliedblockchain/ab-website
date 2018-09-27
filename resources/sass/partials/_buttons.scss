@@ -129,9 +129,10 @@
 	'dark' 			$dark 				$white,
 	'white' 		$white 				$primary,
 	'facebook' 		$facebook 			$white,
-	'twitter' 		$twitter 			$white,
 	'google' 		$google 			$white,
-	'linkedin' 		$linkedin 			$white
+	'linkedin' 		$linkedin 			$white,
+	'medium' 		$medium 			$white,
+	'twitter' 		$twitter 			$white
 );
 
 @include button-stroke-color('button--stroke.button--',

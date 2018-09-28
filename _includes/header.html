@@ -114,11 +114,11 @@
 				<a href="{{ site.url }}/media" class="button button--small button--white button--stroke button--animate fas fa-chevron-left">
 					<p class="button__inner">Back</p>
 				</a>
-				<!-- {% if page.category == 'press-release' %}
+				{% if page.category == 'press-release' and page.dlc %}
 					<a href="{{ site.url }}{{ site.resourceurl }}/dlc/press-releases/appliedBlockchain-{{ page.image }}.zip" class="post__button button button--small button--highlight button--animate fas fa-download" download>
 						<p class="button__inner"><span class="hide--desktop">Download </span>Press kit</p>
 					</a>
-				{% endif %} -->
+				{% endif %}
 			{% endif %}
 			{% if page.layout == 'project' %}
 				<a href="{{ site.url }}/our-projects" class="button button--small button--primary button--stroke button--animate fas fa-chevron-left">

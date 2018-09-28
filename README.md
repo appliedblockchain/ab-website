@@ -255,6 +255,7 @@ layout: post
 title: 
 image: #image file name > use a slugged version of the title; remove if no image
 category: #blog / press-release / news
+dlc: true #add for PRESS RELEASES if there is a press kit 
 social: #linkedin / medium
 link: #add if an external news or a medium post
 headline: 

@@ -6,7 +6,6 @@ category: blog
 headline: Wishing you a happy, healthy and successful 2016! Here are my 14 blockchain predictions for the coming year.
 ---
 
-
 <p class="post__title">The hype won’t last</p>
 
 <p class="post__content">This time next year, not everyone will be talking about Blockchain. The hype will not last. Blockchain is at the peak of a tech hype cycle. As with any hype cycle, this will not last forever. In fact, by the end of 2016 it’s unlikely to be centre stage. I do however believe that over time, some aspects of Blockchain technology will enable meaningful changes in a number of verticals including financial services.</p>

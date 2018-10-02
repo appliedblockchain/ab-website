@@ -6,7 +6,6 @@ category: blog
 headline: This piece proposes concepts for designing a Private Blockchain Smart Contract Application.
 ---
 
-
 <p class="post__content"><span class="body--bold">Private:</span> because we don’t want the whole world to access it, or take on the load</p>
 <p class="post__content"><span class="body--bold">Blockchain:</span> because different entities that don’t necessarily trust each other need to transact</p>
 <p class="post__content"><span class="body--bold">Smart Contract:</span> because we’re going to be implementing a workflow and share data between organisations that do not trust each other</p>

@@ -208,17 +208,31 @@ testimonial-job:
 ```yml
   - title: 
     type: 
-    role: #see below for html structure
+    role:  #see below for html structure
+        ``
+    responsabilities:  #see below for html structure
+        ``
     required-skills: #see below for html structure
+        ``
     additional-skills: #see below for html structure
+        ``
 ```
-#### html
-```html
-
+#### Content HTML structure
+* The content of each tag will be inserted between single quotes. This ensures the HTML to be read correctly by Jekyll.
+* Each paragraph in the **role** section will be created by adding the `<br><br>` tag after each paragraph
+```yml
+    role: 
+      'Lorem ipsum dolor sit amet.
+      <br><br>Consectetur adipiscing elit.
+      <br><br>Curabitur ultricies vitae odio sit amet rhoncus.'
 ```
-> For every new paragraph, open a new `<p>` tag with the `post__content` class
-
-![Blog structure](resources/images/github/post.jpg)
+* For the **responsabilities**, **required-skills** and **additional-skills** content, each line will be determimed by a `<li>` tag.
+```yml
+    responsabilities:
+        '<li>Lorem ipsum dolor sit amet.</li>
+        <li>Consectetur adipiscing elit.</li>
+        <li>Curabitur ultricies vitae odio sit amet rhoncus.'</li>
+```
 
 
 

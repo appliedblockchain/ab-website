@@ -1,11 +1,72 @@
 # jobs list
 # in join.html page
 
+# ––––––––––––––––––––––––––––––––––––––––––––
 # london
+# ––––––––––––––––––––––––––––––––––––––––––––
 
 london:
 
+  - title: Sales Administrator
+    type: Permanent
+    role: 
+      'We are looking for a Sales Administrator to play a key role and provide the link between the sales, operation and technical teams, ensuring a smooth order journey for our clients.
+      <br><br>You will be committed to providing outstanding customer service, showing fearlessness and drive when receiving and making sales and new business calls and emails, alongside showcasing your outstanding organisational skills, facilitating with sales and order processing support and providing daily administrative and sales support to our sales team. 
+      <br><br>This is a full time permanent position, in our London office, reporting to the Head of Sales.'
+    responsabilities: 
+      '<li>Responsibility for day to day transactions with clients and day-to-day administrative tasks.
+      <li>Book client meetings and diary management
+      <li>Providing timely and professional support and responds to all clients enquiries.
+      <li>Preparing and raising sales invoices
+      <li>Create regular Sales reports including Sales activity and pipeline values
+      <li>Maintain and accurately update all customer sales related information.
+      <li>Attending trade shows when required.
+      <li>General administration as well as any ad hoc duties.'
+    required-skills: 
+      '<li>2 years of general administration experience.
+      <li>Must have the drive and confidence to make decision and work unsupervised.
+      <li>This job requires extensive email and telephone interactions so good written and verbal English communication is essential.
+      <li>The ability to learn quickly and meet regular and required deadlines.
+      <li>A can-do attitude with the passion and commitment to grow in the role and go the extra mile.
+      <li>Ability to act on initiative & solve problems quickly and calmly.
+      <li>Sociable, positive with a good sense of humour.'
+
+  - title: Finance Administrator
+    type: Permanent
+    role:
+      'This role will be ideal for hard-working and ambitious team player, with serious career progression plans in the finance space. As the first and only distinct finance person in our company you will manage and shape the day-to-day financial processes and administrative procedures ensuring compliance with the requirements. 
+      <br><br>You will be expected to get involved in all areas of Operational Finance including Accounts Payable, Bank statements , Invoices and payments tracking.  You will assist where possible on all finance issues, like checking and reviewing payments, invoice processing, managing the finance system; ensuring details are kept up to date daily and any other ad hoc duties.
+      <br><br>We will also ask you to keep up to date with all payments, make sure all inbound and outbound are paid correctly on time, make sure any outstanding receipts and invoices are updated. 
+      <br><br>This is a full time, permanent position in our Canary Wharf, London based office.'
+    responsabilities: 
+      '<li>Preparing sales ledger records and recording invoices raised and payments received.
+      <li>Assisting with Month End procedures.
+      <li>Manage inbound invoices and accounts payable.
+      <li>Track and report on receivables (outbound invoices)
+      <li>Manage company expense controls and employee expense (including use of company cards).
+      <li>Ensure income and expenses are correctly captured and categorised correctly in the accounting system.
+      <li>Contribute to the production and improvement of monthly management accounts/projections (including cash flow).
+      <li>Participate in the payroll process.
+      <li>Supporting our team and undertaking administrative duties.
+      <li>Chasing individuals for information when required.
+      <li>Deal with customer, accountants, managers and team members queries in an efficient manner.'
+    required-skills: 
+      '<li>Accounts Payable experience
+      <li>Good working knowledge of Microsoft Office Package (particularly Excel)
+      <li>Numerate with good computer skills
+      <li>Analytical ability and logical approach
+      <li>Strong attention to detail
+      <li>Organisation and time management skills
+      <li>Honesty and discretion
+      <li>Ambitious, independent and keen to learn
+      <li>Confident dealing with various different levels of management
+      <li>Experience working with multiple deadlines and prioritising work accordingly'
+
+
+
+# ––––––––––––––––––––––––––––––––––––––––––––
 # porto
+# ––––––––––––––––––––––––––––––––––––––––––––
 
 porto:
 

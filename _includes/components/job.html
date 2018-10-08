@@ -19,9 +19,17 @@
         </p>
         <p class="accordion__subtitle lead">About the position</p>
         <ul>{{ job.role }}</ul>
-        <p class="accordion__subtitle lead">Required skills & experience</p>
-        <ul>{{ job.required-skills }}</ul>
-        <p class="accordion__subtitle lead">Additional desirable experience</p>
-        <ul>{{ job.additional-skills }}</ul>
+        {% if job.responsabilities %}
+            <p class="accordion__subtitle lead">Responsabilities</p>
+            <ul>{{ job.responsabilities }}</ul>
+        {% endif %}
+        {% if job.required-skills %}
+            <p class="accordion__subtitle lead">Required skills & experience</p>
+            <ul>{{ job.required-skills }}</ul>
+        {% endif %}
+        {% if job.additional-skills %}
+            <p class="accordion__subtitle lead">Additional desirable experience</p>
+            <ul>{{ job.additional-skills }}</ul>
+        {% endif %}
     </div>
 </div>

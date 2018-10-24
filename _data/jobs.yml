@@ -7,6 +7,34 @@
 
 london:
 
+  - title: Senior Blockchain Node Developer
+    type: Permanent
+    role: 
+      '<li>Develop cutting edge blockchain solutions for startups and corporate clients</li>
+      <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
+      <li>Develop smart contracts on solidity</li>
+      <li>Design and build large scale, high volume systems</li>'
+    required-skills: 
+      '<li>5+ years of backend development experience</li>
+      <li>1+ years of Node.js</li>
+      <li>1+ years of Blockchain development experience</li>
+      <li>Blockchain knowledge - Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
+      <li>Team leading skills and experience</li>
+      <li>Experience in writing automated tests</li>
+      <li>Experience with API design and implementation</li>
+      <li>Experience with SQL and NoSql Databases</li>
+      <li>Basic understanding of Linux</li>
+      <li>Git knowledge (feature branches, github flow)</li>'
+    additional-skills:
+      '<li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
+      <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
+      <li>Testing Frameworks (Jest, Mocha/Chai/Should.js)</li>
+      <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
+      <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
+      <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
+      <li>Experience in React</li>
+      <li>HTML and CSS</li>'
+
   - title: Sales Administrator
     type: Permanent
     role: 

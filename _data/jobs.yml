@@ -7,6 +7,36 @@
 
 london:
 
+  - title: Senior Blockchain Node Developer
+    type: Permanent
+    closing-date: Nov 24, 2018
+    salary: £50,000 - £85,000
+    role: 
+      '<li>Develop cutting edge blockchain solutions for startups and corporate clients</li>
+      <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
+      <li>Develop smart contracts on solidity</li>
+      <li>Design and build large scale, high volume systems</li>'
+    required-skills: 
+      '<li>5+ years of backend development experience</li>
+      <li>1+ years of Node.js</li>
+      <li>1+ years of Blockchain development experience</li>
+      <li>Blockchain knowledge - Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
+      <li>Team leading skills and experience</li>
+      <li>Experience in writing automated tests</li>
+      <li>Experience with API design and implementation</li>
+      <li>Experience with SQL and NoSql Databases</li>
+      <li>Basic understanding of Linux</li>
+      <li>Git knowledge (feature branches, github flow)</li>'
+    additional-skills:
+      '<li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
+      <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
+      <li>Testing Frameworks (Jest, Mocha/Chai/Should.js)</li>
+      <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
+      <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
+      <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
+      <li>Experience in React</li>
+      <li>HTML and CSS</li>'
+
   - title: Sales Administrator
     type: Permanent
     role: 
@@ -14,22 +44,22 @@ london:
       <br><br>You will be committed to providing outstanding customer service, showing fearlessness and drive when receiving and making sales and new business calls and emails, alongside showcasing your outstanding organisational skills, facilitating with sales and order processing support and providing daily administrative and sales support to our sales team. 
       <br><br>This is a full time permanent position, in our London office, reporting to the Head of Sales.'
     responsabilities: 
-      '<li>Responsibility for day to day transactions with clients and day-to-day administrative tasks.
-      <li>Book client meetings and diary management
-      <li>Providing timely and professional support and responds to all clients enquiries.
-      <li>Preparing and raising sales invoices
-      <li>Create regular Sales reports including Sales activity and pipeline values
-      <li>Maintain and accurately update all customer sales related information.
-      <li>Attending trade shows when required.
-      <li>General administration as well as any ad hoc duties.'
+      '<li>Responsibility for day to day transactions with clients and day-to-day administrative tasks</li>
+      <li>Book client meetings and diary management</li>
+      <li>Providing timely and professional support and responds to all clients enquiries</li>
+      <li>Preparing and raising sales invoices</li>
+      <li>Create regular Sales reports including Sales activity and pipeline values</li>
+      <li>Maintain and accurately update all customer sales related information</li>
+      <li>Attending trade shows when required</li>
+      <li>General administration as well as any ad hoc duties</li>'
     required-skills: 
-      '<li>2 years of general administration experience.
-      <li>Must have the drive and confidence to make decision and work unsupervised.
-      <li>This job requires extensive email and telephone interactions so good written and verbal English communication is essential.
-      <li>The ability to learn quickly and meet regular and required deadlines.
-      <li>A can-do attitude with the passion and commitment to grow in the role and go the extra mile.
-      <li>Ability to act on initiative & solve problems quickly and calmly.
-      <li>Sociable, positive with a good sense of humour.'
+      '<li>2 years of general administration experience</li>
+      <li>Must have the drive and confidence to make decision and work unsupervised</li>
+      <li>This job requires extensive email and telephone interactions so good written and verbal English communication is essential</li>
+      <li>The ability to learn quickly and meet regular and required deadlines</li>
+      <li>A can-do attitude with the passion and commitment to grow in the role and go the extra mile</li>
+      <li>Ability to act on initiative & solve problems quickly and calmly</li>
+      <li>Sociable, positive with a good sense of humour</li>'
 
   - title: Finance Administrator
     type: Permanent
@@ -39,28 +69,28 @@ london:
       <br><br>We will also ask you to keep up to date with all payments, make sure all inbound and outbound are paid correctly on time, make sure any outstanding receipts and invoices are updated. 
       <br><br>This is a full time, permanent position in our Canary Wharf, London based office.'
     responsabilities: 
-      '<li>Preparing sales ledger records and recording invoices raised and payments received.
-      <li>Assisting with Month End procedures.
-      <li>Manage inbound invoices and accounts payable.
-      <li>Track and report on receivables (outbound invoices)
-      <li>Manage company expense controls and employee expense (including use of company cards).
-      <li>Ensure income and expenses are correctly captured and categorised correctly in the accounting system.
-      <li>Contribute to the production and improvement of monthly management accounts/projections (including cash flow).
-      <li>Participate in the payroll process.
-      <li>Supporting our team and undertaking administrative duties.
-      <li>Chasing individuals for information when required.
-      <li>Deal with customer, accountants, managers and team members queries in an efficient manner.'
+      '<li>Preparing sales ledger records and recording invoices raised and payments received</li>
+      <li>Assisting with Month End procedures</li>
+      <li>Manage inbound invoices and accounts payable</li>
+      <li>Track and report on receivables (outbound invoices)</li>
+      <li>Manage company expense controls and employee expense (including use of company cards)</li>
+      <li>Ensure income and expenses are correctly captured and categorised correctly in the accounting system</li>
+      <li>Contribute to the production and improvement of monthly management accounts/projections (including cash flow)</li>
+      <li>Participate in the payroll process</li>
+      <li>Supporting our team and undertaking administrative duties</li>
+      <li>Chasing individuals for information when required</li>
+      <li>Deal with customer, accountants, managers and team members queries in an efficient manner</li>'
     required-skills: 
-      '<li>Accounts Payable experience
-      <li>Good working knowledge of Microsoft Office Package (particularly Excel)
-      <li>Numerate with good computer skills
-      <li>Analytical ability and logical approach
-      <li>Strong attention to detail
-      <li>Organisation and time management skills
-      <li>Honesty and discretion
-      <li>Ambitious, independent and keen to learn
-      <li>Confident dealing with various different levels of management
-      <li>Experience working with multiple deadlines and prioritising work accordingly'
+      '<li>Accounts Payable experience</li>
+      <li>Good working knowledge of Microsoft Office Package (particularly Excel)</li>
+      <li>Numerate with good computer skills</li>
+      <li>Analytical ability and logical approach</li>
+      <li>Strong attention to detail</li>
+      <li>Organisation and time management skills</li>
+      <li>Honesty and discretion</li>
+      <li>Ambitious, independent and keen to learn</li>
+      <li>Confident dealing with various different levels of management</li>
+      <li>Experience working with multiple deadlines and prioritising work accordingly</li>'
 
 
 
@@ -180,7 +210,7 @@ porto:
       <li>Continuous integration tools</li>
       <li>End to end testing</li>
       <li>BDD / TDD</li>
-      <li>Experience working with project management tools, such as Slack, Trello, JIRA, etc.</li>'
+      <li>Experience working with project management tools, such as Slack, Trello, JIRA, etc</li>'
 
 
 
@@ -212,7 +242,4 @@ porto:
       <li>Continuous integration tools</li>
       <li>End to end testing</li>
       <li>BDD / TDD</li>
-      <li>Experience working with project management tools, such as Slack, Trello, JIRA, etc.</li>'
-
-
-
+      <li>Experience working with project management tools, such as Slack, Trello, JIRA, etc</li>'

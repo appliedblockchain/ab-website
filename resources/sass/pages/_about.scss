@@ -277,7 +277,7 @@
 
 .team {
     position: relative;
-    height: $integer*30;
+    height: $integer*25;
 
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);

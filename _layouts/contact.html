@@ -43,19 +43,19 @@
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include components/section-header.html
-            title='We are headquartered at Level39 with views overlooking London, and have offices in Porto'
+            title='We are headquartered in London Bridge, and have offices in Porto'
         %}
 
         <div class="section__content">
             <div class="row">
                 <div class="col--md6 office__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
-                    <p class="office__title comment">Level39, Canary Wharf, London, UK</p>
-                    <a href="https://goo.gl/maps/6ZGinKLzUf82" target="_blank" class="button button--primary-darken button--animate fas fa-directions">
+                    <p class="office__title lead">{{ site.adress-london }}</p>
+                    <a href="https://goo.gl/maps/2RqjmEGqHhP2" target="_blank" class="button button--primary-darken button--animate fas fa-directions">
                         <p class="button__inner">Get directions</p>
                     </a>
                 </div>
                 <div class="col--md6 office__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
-                    <p class="office__title comment">Rua de Cândido dos Reis, Porto, Portugal</p>
+                    <p class="office__title lead">{{ site.adress-porto }}</p>
                     <a href="https://goo.gl/maps/8dY5FRFHCik" target="_blank" class="button button--primary-lighten button--animate fas fa-directions">
                         <p class="button__inner">Get directions</p>
                     </a>

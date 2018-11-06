@@ -4,8 +4,10 @@ title: Applied Blockchain
 description: "Building Future-Proof Blockchain Applications"
 
 # contact 
-adress-london: Runway East<br>20 St Thomas St<br>London, SE1 9RG<br>United Kingdom
-adress-porto: Rua de Cândido dos Reis<br>Porto<br>Portugal
+address-london: Runway East<br>20 St Thomas St<br>London, SE1 9RG<br>United Kingdom
+map-london: https://goo.gl/maps/2RqjmEGqHhP2
+address-porto: District – Offices & Lifestyle<br>Rua Augusto Rosa 39<br>4000-098 Porto<br>Portugal
+map-porto: https://goo.gl/maps/uomitvdoreF2
 
 # social links
 github: https://github.com/appliedblockchain/

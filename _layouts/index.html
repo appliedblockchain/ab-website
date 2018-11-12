@@ -25,17 +25,18 @@
             {% endfor %}
         </div>
         <img src="{{ site.url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
-        <div class="widget__news">
-            <div class="widget__header">
-                <p class="body--large">Shell and Applied Blockchain launched the first product derivative trade on blockchain</p>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433" target="_blank" class="button button--small button--primary-lighten button--animate fas fa-plus">
-                    <p class="button__inner">See more</p>
+        <div class="widget__news block">
+            <p class="widget__header body--large body--bold">Shell and Applied Blockchain launched the first product derivative trade on blockchain</p>                    
+            <div class="widget__content">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
+                <!-- <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/shell.png" alt="" class="widget__logo"> -->
+                <div>
+                    <p>“We did the first product derivative trade on blockchain together with our partner Applied Blockchain.”</p>
+                    <p><span class="body--bold">Ben van Beurden</span>, CEO, Shell</p>
+                </div>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433" target="_blank" class="button button--small button--highlight button--animate fas fa-plus">
+                    <p class="button__inner">Watch video</p>
                 </a>
-            </div>
-            <div class="widget__content news__content owl-carousel owl-carousel-news">
-                {% for post in site.posts limit: 3 %}
-                    <p class="">{{ post.title | truncate: 100, "…" }}</p>
-                {% endfor %}
             </div>
         </div>
         

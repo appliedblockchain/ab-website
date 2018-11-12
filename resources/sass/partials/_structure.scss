@@ -275,12 +275,12 @@ li {
  * —————————————————————————————————————————————————————————————————
 */
 
-.cookie { z-index: 10; }
-.button--scroll-top { z-index: 11; }
-.header { z-index: 12; }
-.anchor { z-index: 13; }
-.userlike { z-index: 14 !important; }
-.modal { z-index: 15; }
+.cookie, .widget__news 	{ z-index: 10; }
+.button--scroll-top 	{ z-index: 11; }
+.header 				{ z-index: 12; }
+.anchor 				{ z-index: 13; }
+.userlike 				{ z-index: 14 !important; }
+.modal 					{ z-index: 15; }
 
 @for $i from 0 through 9 {
 	.z-index--#{$i} { z-index: $i; }

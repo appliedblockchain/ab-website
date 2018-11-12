@@ -61,7 +61,7 @@
         z-index: 1;
         height: 40vh;
         position: absolute;
-        bottom: $integer*7;
+        top: 40%;
         @include responsive(max-width, $break-desktop-max) {
             height: 35vh;
         }

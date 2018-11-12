@@ -18,7 +18,7 @@ $(document).ready(function() {
 // NEWS WIDGET ANIMATION
 // —————————————————————————————————————————————————————————————————
 
-if ($(window).width() > 768) {   
+if ($(window).width() > 575) {   
 	setTimeout(function() {
 		$('.widget--news').animate({
 			right: '0'

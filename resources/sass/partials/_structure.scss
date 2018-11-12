@@ -269,6 +269,10 @@ li {
 	&--phones { @include responsive(max-width, $break-phones-max) { display: none; } }
 }
 
+.show {
+
+	&--phones { @include responsive(min-width, $break-phones-min) { display: none !important; } }
+}
 
 /*
  * z-index

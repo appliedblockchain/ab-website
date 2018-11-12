@@ -148,16 +148,12 @@
         background-color: $primary;
         text-align: left;
         color: $white;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $break-phones-max) {
             @include border-top-right-radius($integer);
             @include border-bottom-right-radius($integer);
-            right: 5%;
-            bottom: 80px;
-            top: auto;
+            position: initial;
+            margin-left: 5%;
             width: 90%;
-        }
-        @include responsive(max-width, $break-phones-max) {
-            bottom: 125px;
         }
 
         &.block {
@@ -167,32 +163,36 @@
         .button {
             @include align-self(flex-start);
             min-width: 128px;
-            margin-top: $integer/2;
         }
 
         .widget {
-
+            
             &__header {
                 @include align-items(center);
                 background-color: $primary-darken;
                 padding: $integer;
-                // @include responsive(max-width, $break-phones-max) {
-                //     background-color: $highlight;
-                // }
+                @include responsive(max-width, $break-phones-max) {
+                    background-color: $highlight;
+                    font-size: 1rem;
+                }
             }
-
+            
             &__content {
                 @include display-flex();
                 @include flex-direction(column);
                 padding: $integer;
-                // @include responsive(max-width, $break-phones-max) {
-                //     display: none;
-                // }
+                @include responsive(max-width, $break-phones-max) {
+                    display: none;
+                }
+
+                .button {
+                    margin-top: $integer/2;
+                }
             }
             &__logo {
                 width: $integer*3;
                 padding-right: $integer/2;
-                @include responsive(max-width, $break-tablets-max) {
+                @include responsive(max-width, $break-phones-max) {
                     display: none;
                 }
             }

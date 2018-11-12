@@ -103,21 +103,25 @@ clients:
     alt: Vodafone
     order: 8
 
+  - url: supermoney
+    alt: Supermoney
+    order: 9
+
   - url: sita
     alt: Sita
-    order: 9
+    order: 10
 
   - url: babb
     alt: BABB
-    order: 10
+    order: 11
 
   - url: lloyds-register
     alt: LLoyds Register
-    order: 11
+    order: 12
 
   - url: travelledger
     alt: Travel Ledger
-    order: 12
+    order: 13
 
 # partners section
 # in about.html page

@@ -25,21 +25,8 @@
             {% endfor %}
         </div>
         <img src="{{ site.url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
-        <div class="widget__news block">
-            <p class="widget__header body--large body--bold">Shell and Applied Blockchain launched the first product derivative trade on blockchain</p>                    
-            <div class="widget__content">
-                <img src="{{ site.url }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
-                <!-- <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/shell.png" alt="" class="widget__logo"> -->
-                <div>
-                    <p>“We did the first product derivative trade on blockchain together with our partner Applied Blockchain.”</p>
-                    <p><span class="body--bold">Ben van Beurden</span>, CEO, Shell</p>
-                </div>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433" target="_blank" class="button button--small button--highlight button--animate fas fa-plus">
-                    <p class="button__inner">Watch video</p>
-                </a>
-            </div>
-        </div>
-        
+        <!-- edit component in _includes/components/widgets/news.html -->
+        {% include components/widgets/news.html %}
     </div>
 
     <section class="section section--left section--dark" id="what-we-do">

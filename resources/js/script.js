@@ -5,18 +5,29 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 // SCRIPT
 // —————————————————————————————————————————————————————————————————
-
+// NEWS WIDGET ANIMATION
 // MENU SCROLL ANIMATION
 // MENU OPEN ANIMATION
 // BACK TO TOP
 // COOKIE BAR ACCEPT
 // —————————————————————————————————————————————————————————————————
 
-setTimeout(function() {
-	$('.widget__news').animate({
-		right: '0'
-	}, 800, 'swing');
-}, 3000);
+
+
+// —————————————————————————————————————————————————————————————————
+// NEWS WIDGET ANIMATION
+// —————————————————————————————————————————————————————————————————
+
+if ($(window).width() > 768) {   
+	setTimeout(function() {
+		$('.widget--news').animate({
+			right: '0'
+		}, 800, 'swing');
+	}, 1200);
+}
+else {  
+}; 
+
 
 
 // —————————————————————————————————————————————————————————————————
@@ -89,7 +100,7 @@ $(".cookie__button").on("click", cookieClose)
 displayCookieBar()
 
 $(".cookie__button").click(function(){
-    $(".cookie").addClass("js-cookie-accepted");
+	$(".cookie").addClass("js-cookie-accepted");
 })
 
 

@@ -178,6 +178,7 @@
 }
 
 #what-we-do {
+    margin-top: -1px;
     @include responsive(max-width, $break-tablets-max) {
         .section__header {
             @include align-items(center);

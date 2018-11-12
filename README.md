@@ -1,12 +1,21 @@
 # Applied Blockchain Website
 * [Introduction](#introduction)
+    * [Getting started](#getting-started)
+    * [Comments](#comments)
 * [Deployment](#deployment)
+    * [Test](#test)
 * [Page structure](#page-structure)
+    * [Section system](#section-system)
+    * [Components](#components)
+    * [Column system](#column-system)
+* [Add image to carousel](#add-image-to-carousel)
 * [Add project](#add-project)
+
 * [Add job](#add-job)
+    * [Content YML structure](#content-yml-structure)
 * [Add event](#add-event)
 * [Add blog post](#add-blog-post)
-
+    * [Content html structure](#content-html-structure)
 
 
 ***
@@ -49,7 +58,6 @@ Once you have tested the changes (on both mobile and desktop, and on all browser
 #### Test
 Use [Browserstack](https://www.browserstack.com/users/sign_in) to test the website on different devices and browsers.
 > The website is fully fonctionnal on Internet Explorer 11 and above
-
 
 
 
@@ -152,6 +160,14 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 
 
 ***
+### Add image to carousel
+
+Add the image in the corresponding folder
+> To check which folder is used for each carousel
+
+
+
+***
 ### Add project
 
 * In the `_projects` folder, create a new file, named after the client
@@ -188,7 +204,7 @@ testimonial-job:
 * Add the company logo in the `resources/images/logos/clients` folder;
 > The logo in the about section will link itself automatically, provided the image has the same **title** as the project page
 
-##### Additionnal comments
+#### Additionnal comments
 * Add `tag: featured` to the project to feature it
 * Add `tag: grid` to the project to place it on the last line
 * If the logo doesn't appear, check the file extension.
@@ -217,7 +233,7 @@ testimonial-job:
     additional-skills: #see below for html structure
         ``
 ```
-#### Content HTML structure
+#### Content YML structure
 * The content of each tag will be inserted between single quotes. This ensures the HTML to be read correctly by Jekyll.
 * Each paragraph in the **role** section will be created by adding the `<br><br>` tag after each paragraph
 ```yml
@@ -285,7 +301,7 @@ headline:
     * File cannot be over 1000 px wide and 150 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set
 
-#### Post content html structure
+#### Content html structure
 ```html
 <p class="post__title">This a title</p>
 

@@ -29,7 +29,6 @@
 
     &__header {
         @include display-flex();
-        @include justify-content(space-between);
         width: 100%;
     }
 }
@@ -92,40 +91,40 @@
  * —————————————————————————————————————————————————————————————————
 */
 
-.widget {
+// .widget {
 
-    &__hiring {
-        @include display-flex();
-        @include align-items(center);
-        background-color: rgba($primary-lighten, 0.9);
-        padding: $integer;
-        color: $white !important;
-        @include responsive(max-width, $break-tablets-max) {
-            @include flex-direction(column);
-            @include align-items(flex-start);
-        }
+//     &--hiring {
+//         @include display-flex();
+//         @include align-items(center);
+//         background-color: rgba($primary-lighten, 0.9);
+//         padding: $integer;
+//         color: $white !important;
+//         @include responsive(max-width, $break-tablets-max) {
+//             @include flex-direction(column);
+//             @include align-items(flex-start);
+//         }
 
-        .subtitle {
-            margin-right: $integer;
-            white-space: nowrap;
-            @include responsive(max-width, $break-tablets-max) {
-                margin-right: 0;
-                margin-bottom: $integer/2;
-            }
-        }
+//         .subtitle {
+//             margin-right: $integer;
+//             white-space: nowrap;
+//             @include responsive(max-width, $break-tablets-max) {
+//                 margin-right: 0;
+//                 margin-bottom: $integer/2;
+//             }
+//         }
 
-        .button {
-            min-width: 190px;
-            @include responsive(max-width, $break-tablets-max) {
-                @include align-self(flex-start);
-            }
-        }
+//         .button {
+//             min-width: 190px;
+//             @include responsive(max-width, $break-tablets-max) {
+//                 @include align-self(flex-start);
+//             }
+//         }
 
-        .lead {
-            color: $white;
-        }
-    }
-}
+//         .lead {
+//             color: $white;
+//         }
+//     }
+// }
 
 
 
@@ -136,22 +135,29 @@
 
 .widget {
 
-    &__news {
+    &--news {
         @include display-flex();
         @include flex-direction(column);
         @include align-items(center);
-        right: -50%;
-        @include animation(slideIn-right 0.8s ease 0.8s);
+        @include border-top-right-radius(0);
+        @include border-bottom-right-radius(0);
         position: absolute;
         top: 50%;
-        width: $integer*30;
+        right: -$integer*26;
+        width: $integer*20;
         background-color: $primary;
         text-align: left;
         color: $white;
-        @include border-top-right-radius(0);
-        @include border-bottom-right-radius(0);
+        @include responsive(max-width, $break-tablets-max) {
+            @include border-top-right-radius($integer);
+            @include border-bottom-right-radius($integer);
+            right: 5%;
+            bottom: 80px;
+            top: auto;
+            width: 90%;
+        }
         @include responsive(max-width, $break-phones-max) {
-            display: none;
+            bottom: 125px;
         }
 
         &.block {
@@ -159,24 +165,36 @@
         }
 
         .button {
+            @include align-self(flex-start);
             min-width: 128px;
+            margin-top: $integer/2;
         }
 
         .widget {
 
             &__header {
+                @include align-items(center);
                 background-color: $primary-darken;
                 padding: $integer;
+                // @include responsive(max-width, $break-phones-max) {
+                //     background-color: $highlight;
+                // }
             }
 
             &__content {
                 @include display-flex();
-                @include flex-direction(row);
+                @include flex-direction(column);
                 padding: $integer;
+                // @include responsive(max-width, $break-phones-max) {
+                //     display: none;
+                // }
             }
-
             &__logo {
-                width: $integer*4;
+                width: $integer*3;
+                padding-right: $integer/2;
+                @include responsive(max-width, $break-tablets-max) {
+                    display: none;
+                }
             }
         }
 

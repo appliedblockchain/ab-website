@@ -1,21 +1,21 @@
 # Applied Blockchain Website
 * [Introduction](#introduction)
-    * [Getting started](#getting-started)
-    * [Comments](#comments)
+    - [Getting started](#getting-started)
+    - [Comments](#comments)
 * [Deployment](#deployment)
-    * [Test](#test)
+    - [Test](#test)
 * [Page structure](#page-structure)
-    * [Section system](#section-system)
-    * [Components](#components)
-    * [Column system](#column-system)
+    - [Section system](#section-system)
+    - [Components](#components)
+    - [Column system](#column-system)
 * [Add image to carousel](#add-image-to-carousel)
+* [Add testimonial to homepage](#add-testimonial-to-homepage)
 * [Add project](#add-project)
-
 * [Add job](#add-job)
-    * [Content YML structure](#content-yml-structure)
+    - [Content YML structure](#content-yml-structure)
 * [Add event](#add-event)
 * [Add blog post](#add-blog-post)
-    * [Content html structure](#content-html-structure)
+    - [Content HTML structure](#content-html-structure)
 
 
 ***
@@ -25,8 +25,8 @@
 * Install [Jekyll](https://jekyllrb.com/)
 ```
 gem install bundler jekyll
-jekyll new my-awesome-site
-cd my-awesome-site
+jekyll new my-site
+cd my-site
 ```
 * Run the website in development mode
 ```
@@ -301,7 +301,7 @@ headline:
     * File cannot be over 1000 px wide and 150 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set
 
-#### Content html structure
+#### Content HTML structure
 ```html
 <p class="post__title">This a title</p>
 

@@ -31,6 +31,10 @@
     @include responsive(max-width, $break-desktop-max) {
         padding-bottom: $integer*4;
     }
+    @include responsive(max-width, $break-phones-max) {
+        padding-top: $integer*7;
+        @include justify-content(flex-start);
+    }
     @include responsive-mobile-devices-landscape() {
         padding-top: $integer*6;
     }
@@ -77,6 +81,9 @@
         @include align-self(flex-end);
         padding-left: $col;
         padding-right: $col;
+        @include responsive(max-width, $break-phones-max) {
+            display: none !important;
+        }
     }
 
     // PREVIOUS GRAPHIC ELEMENTS

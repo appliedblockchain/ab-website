@@ -279,7 +279,8 @@ li {
  * —————————————————————————————————————————————————————————————————
 */
 
-.cookie, .widget--news 	{ z-index: 10; }
+.widget--news 			{ z-index: 9; }
+.cookie				 	{ z-index: 10; }
 .button--scroll-top 	{ z-index: 11; }
 .header 				{ z-index: 12; }
 .anchor 				{ z-index: 13; }

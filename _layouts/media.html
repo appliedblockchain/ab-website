@@ -57,6 +57,11 @@
                                                 <p class="button__inner">Read article</p>
                                             </div>
                                         {% endif %}
+                                        {% if post.social contains "podcast" and post.link %}
+                                            <div class="button button--secondary button--small button--animate fas fa-headphones">
+                                                <p class="button__inner">Listen</p>
+                                            </div>
+                                        {% endif %}
                                         {% if post.social contains "linkedin" and post.link %}
                                             <div class="button button--linkedin button--small button--animate fab fa-linkedin-in">
                                                 <p class="button__inner">Read on Linkedin</p>

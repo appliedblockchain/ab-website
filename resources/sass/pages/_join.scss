@@ -36,6 +36,11 @@
     
     &__content {
         width: 100%;
+
+        .block {
+            padding-top: $integer*1.3;
+            padding-bottom: $integer*1.3;
+        }
     }
     
     &__background {

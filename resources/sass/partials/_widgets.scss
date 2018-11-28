@@ -86,6 +86,11 @@
 */
 
 .newsletter {
+
+    &__notice {
+        margin-top: $integer/2;
+        margin-bottom: $integer/2;
+    }
     
     &__button {
         margin-top: $integer/2;

@@ -52,6 +52,11 @@
                                         <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
                                         <h2 class="block__title lead">{{ post.title }}</h2>
                                         <div class="block__text">{{ post.headline | truncate: 100, "…" }}</div>
+                                        {% if post.social contains "newsletter" and post.link %}
+                                            <div class="button button--highlight button--small button--animate fas fa-newspaper">
+                                                <p class="button__inner">Read newsletter</p>
+                                            </div>
+                                        {% endif %}
                                         {% if post.social contains "external" and post.link %}
                                             <div class="button button--secondary button--small button--animate fas fa-external-link-alt">
                                                 <p class="button__inner">Read article</p>

@@ -122,9 +122,9 @@
 */
 
 @include button-fill-color('button--',
-//	prefix 			background	 color
+//	prefix 			background	 		color
 	'primary'   	$primary 			$white,
-	'secondary' 	$secondary			$primary,
+	'secondary' 	$secondary			$white,
 	'highlight' 	$highlight			$white,
 	'dark' 			$dark 				$white,
 	'white' 		$white 				$primary,

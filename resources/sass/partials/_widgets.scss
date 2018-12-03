@@ -76,6 +76,10 @@
 
 .social {
     margin-bottom: $integer*2;
+
+    .footer & {
+        margin-top: $integer*2;
+    }
 }
 
 
@@ -86,7 +90,7 @@
 */
 
 .newsletter {
-
+    
     &__notice {
         margin-top: $integer/2;
         margin-bottom: $integer/2;
@@ -94,6 +98,10 @@
     
     &__button {
         margin-top: $integer/2;
+    }
+
+    .form__label {
+        color: $white !important;
     }
 }
 

@@ -453,6 +453,13 @@ li {
 
 .section {
 
+	&--primary, &--dark {
+
+		.form__input {
+			color: $white;
+		}
+	}
+
 	&--primary {
 		background-color: $primary;
 		color: $white;

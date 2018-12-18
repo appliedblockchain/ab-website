@@ -6,13 +6,13 @@ fifteen:
     icon: rocket
 
 sixteen:
-  - text: Received an Innovate UK grant to develop Mantle, an identity and privacy toolkit.<br><br><a href="/mantle/" class="button button--highlight button--small button--animate fas fa-plus"><span class="button__inner">Learn more about Mantle</span></a>
+  - text: We received an Innovate UK grant to develop Mantle, an identity and privacy toolkit.<br><br><a href="/mantle/" class="button button--highlight button--small button--animate fas fa-plus"><span class="button__inner">Learn more about Mantle</span></a>
     icon: mantle-logo
   - text: Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving funding (thus, we know the realities of being a startup!).
     icon: group
 
 seventeen:
-  - text: In 2017, we received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading.
+  - text: We received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading.
     icon: dollar
 
 eighteen:

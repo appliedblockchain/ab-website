@@ -50,6 +50,17 @@
             {% endfor %}
             <span class="timeline__headline">
                 <span class="timeline__dot"></span>
+                <p class="timeline__date button button--primary">2016</p>
+            </span>
+            <!-- edit data in _data/timeline.yml -->
+            {% for item in site.data.timeline.sixteen %}
+                <div class="timeline__item">
+                    <p class="timeline__text">{{ item.text }}</p>
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+                </div>
+            {% endfor %}
+            <span class="timeline__headline">
+                <span class="timeline__dot"></span>
                 <p class="timeline__date button button--primary">2017</p>
             </span>
             <!-- edit data in _data/timeline.yml -->

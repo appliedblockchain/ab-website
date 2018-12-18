@@ -5,16 +5,17 @@ fifteen:
   - text: Adi started the company in 2015 with the vision of helping companies solve real-world problems by developing blockchain applications and contributing towards creating a trustless ecosystem.
     icon: rocket
 
+sixteen:
   - text: Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving funding (thus, we know the realities of being a startup!).
     icon: group
+
+  - text: Received an Innovate UK grant to develop Mantle, an identity and privacy toolkit.<br><br><a href="/mantle/" class="button button--highlight button--small button--animate fas fa-plus"><span class="button__inner">Learn more about Mantle</span></a>
+    icon: mantle-logo
 
 seventeen:
   - text: In 2017, we received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading.
     icon: dollar
 
 eighteen:
-  - text: '<span class="body--bold">May:</span> Launched <a href="https://fern.network/" target="_blank" class="products__button button--underline">Fern</a>, a protocol that makes any blockchain network more decentralised and secure by connecting the identified node and oracle providers through an anonymous protocol.'
-    icon: fern
-
-  - text: '<span class="body--bold">July:</span> We opened an office in Porto! We have chosen Porto as our first non-UK office and as our development centre for European expansion.'
+  - text: We opened an office in Porto! We have chosen Porto as our first non-UK office and as our development centre for European expansion.
     icon: pinpoint

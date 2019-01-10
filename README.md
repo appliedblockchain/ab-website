@@ -343,3 +343,7 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 
 #### Logo carousels
 * image size, difference between regular and alt version -->
+
+
+#### [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)
+

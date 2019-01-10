@@ -7,38 +7,38 @@
 
 london:
 
-  - title: Senior Agile Delivery Manager
-    type: Permanent
-    role: 
-      '<p>As Senior Agile Delivery Manager  you will oversee a wide variety of projects from conceptual design through implementation, engaging directly with large and small clients and coordinating development teams to deliver solutions. 
-<br><br>Working in advanced technology architecture you will help to define and deliver solutions for clients and integrate both custom and packaged technologies to cover the complete life cycle of systems delivery. You will be responsible for taking solutions’ functional and technical requirements through the development process to delivery and implementation.
-<br><br>You will assist with the ongoing development and improvement of Applied Blockchain’s project delivery framework (including which methodologies are used and how they are implemented), promote and ensure that projects are run according to the agreed framework.
-<br><br>This role reports to the Chief Operating Officer, and is a full time, permanent position in our London office.</p><br>
-<p>You will be directly accountable for delivering individual projects, including:</p><br>
-<li>Engaging closely with clients and other stakeholders to define the vision and roadmap</li>
-<li>Working with the delivery team to translate client requirements into sprint deliverables</li>
-<li>Coordinating delivery activities (both on and offshore) including running planning sessions and daily stand ups</li>
-<li>Arranging end of sprint demos with internal stakeholders and external clients</li>
-<li>Proactively managing scope changes, risks and issues</li>
-<li>Tracking delivery versus plan and budget</li>
-<li>Generating relevant reporting and providing a high level of transparency to clients and internal stakeholders</li>
-<li>Making clients aware of the time and financial impact of scope and requirement changes (“no surprise environment”)</li>
-<li>Define, develop and generate metrics for teams, internal stakeholder and external stakeholders</li>
-<li>Ensuring that the overall delivery to the client includes non-functional requirements (and documentation)</li>'
-    required-skills: 
-      '<li>Proven experience as an Agile practitioner with a minimum of 5 years’ experience organising teams to deliver large scale, complex strategic projects. This person should personify Scrum and Agile</li>
-<li>Evidence of building a trusting and safe environment where problems can be raised without fear of blame, retribution, or being judged, with an emphasis on continuous improvement and problem solving</li>
-<li>Knowledge of numerous well documented patterns and techniques for filling in the intentional gaps left in the Scrum approach (e.g. Burndown/Burn Up techniques, Retrospective formats, handling issues/bugs)</li>
-<li>Knowledge and experience with widely successful Agile techniques (e.g. User Stories, BDD, TDD, Continuous Integration, Continuous Testing, Pairing, Automated Testing, Agile Games)</li>
-<li>Excellent communication and mentoring skills</li>
-<li>Ability to hold team members accountable via appropriate empowerment, set clear performance standards, resolve performance issues and keep the team engaged and on track</li>
-<li>1-2 years practical software development experience in one of the mainstream programming languages</li>
-<li>Bachelor’s degree (ideally in engineering, computer science or related field)</li>'
-    additional-skills:
-      '<li>Bitcoin/Ethereum</li>
-<li>Node.js</li>
-<li>React Native</li>
-<li>Jira and Trello</li>'
+#   - title: Senior Agile Delivery Manager
+#     type: Permanent
+#     role: 
+#       '<p>As Senior Agile Delivery Manager  you will oversee a wide variety of projects from conceptual design through implementation, engaging directly with large and small clients and coordinating development teams to deliver solutions. 
+# <br><br>Working in advanced technology architecture you will help to define and deliver solutions for clients and integrate both custom and packaged technologies to cover the complete life cycle of systems delivery. You will be responsible for taking solutions’ functional and technical requirements through the development process to delivery and implementation.
+# <br><br>You will assist with the ongoing development and improvement of Applied Blockchain’s project delivery framework (including which methodologies are used and how they are implemented), promote and ensure that projects are run according to the agreed framework.
+# <br><br>This role reports to the Chief Operating Officer, and is a full time, permanent position in our London office.</p><br>
+# <p>You will be directly accountable for delivering individual projects, including:</p><br>
+# <li>Engaging closely with clients and other stakeholders to define the vision and roadmap</li>
+# <li>Working with the delivery team to translate client requirements into sprint deliverables</li>
+# <li>Coordinating delivery activities (both on and offshore) including running planning sessions and daily stand ups</li>
+# <li>Arranging end of sprint demos with internal stakeholders and external clients</li>
+# <li>Proactively managing scope changes, risks and issues</li>
+# <li>Tracking delivery versus plan and budget</li>
+# <li>Generating relevant reporting and providing a high level of transparency to clients and internal stakeholders</li>
+# <li>Making clients aware of the time and financial impact of scope and requirement changes (“no surprise environment”)</li>
+# <li>Define, develop and generate metrics for teams, internal stakeholder and external stakeholders</li>
+# <li>Ensuring that the overall delivery to the client includes non-functional requirements (and documentation)</li>'
+#     required-skills: 
+#       '<li>Proven experience as an Agile practitioner with a minimum of 5 years’ experience organising teams to deliver large scale, complex strategic projects. This person should personify Scrum and Agile</li>
+# <li>Evidence of building a trusting and safe environment where problems can be raised without fear of blame, retribution, or being judged, with an emphasis on continuous improvement and problem solving</li>
+# <li>Knowledge of numerous well documented patterns and techniques for filling in the intentional gaps left in the Scrum approach (e.g. Burndown/Burn Up techniques, Retrospective formats, handling issues/bugs)</li>
+# <li>Knowledge and experience with widely successful Agile techniques (e.g. User Stories, BDD, TDD, Continuous Integration, Continuous Testing, Pairing, Automated Testing, Agile Games)</li>
+# <li>Excellent communication and mentoring skills</li>
+# <li>Ability to hold team members accountable via appropriate empowerment, set clear performance standards, resolve performance issues and keep the team engaged and on track</li>
+# <li>1-2 years practical software development experience in one of the mainstream programming languages</li>
+# <li>Bachelor’s degree (ideally in engineering, computer science or related field)</li>'
+#     additional-skills:
+#       '<li>Bitcoin/Ethereum</li>
+# <li>Node.js</li>
+# <li>React Native</li>
+# <li>Jira and Trello</li>'
 
   # - title: Senior Blockchain Node Developer
   #   type: Permanent

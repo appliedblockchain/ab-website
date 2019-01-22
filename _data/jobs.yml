@@ -156,33 +156,39 @@ porto:
       <li>Experience maintaining high traffic websites and web services</li>
       <li>B.Sc. in Computer Science or another equivalent technical discipline</li>'
 
-  # - title: Node.js Software Developer
-  #   type: Permanent
-  #   role: 
-  #     '<li>Develop cutting edge software solutions for startups and corporate clients</li>
-  #     <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
-  #     <li>Develop smart contracts on solidity</li>
-  #     <li>Liaise with frontend developers to build APIs for web and mobile</li>
-  #     <li>Write automated tests for smart contracts and server side code</li>
-  #     <li>Design and build large scale, high volume systems</li>'
-  #   required-skills: 
-  #     '<li>3+ years of backend development experience</li>
-  #     <li>1+ years of Node.js</li>
-  #     <li>Experience in writing automated tests</li>
-  #     <li>Experience with API design and implementation</li>
-  #     <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
-  #     <li>Good understanding of Linux</li>
-  #     <li>Git knowledge (feature branches, github flow)</li>'
-  #   additional-skills:
-  #     '<li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
-  #     <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
-  #     <li>Testing frameworks (Jest, Mocha/Chai/Should.js, Enzyme)</li>
-  #     <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
-  #     <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
-  #     <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
-  #     <li>Experience in React</li>
-  #     <li>Blockchain knowledge – Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
-  #     <li>HTML and CSS</li>'
+  - title: Frontend React Software Developer
+    type: Permanent
+    role: 
+      '<li>Developing cutting edge software solutions for startups and corporate clients,/li>
+      <li>Developing DApps (Decentralized applications) based on the Ethereum blockchain platform</li>
+      <li>Integrating with Applied Blockchain proprietary SDK library that will handle the communication with the blockchain</li>
+      <li>Integrating with REST APIs</li>
+      <li>Engaging with the developers in your team, share ideas and come up with a practical implementation</li>
+      <li>Creating user-friendly web and mobile UX/UIs</li>
+      <li>Writing automated tests for both React components and for browser-based end to end tests</li>
+      <li>Reviewing other developers code in form of github pull requests</li>
+      <li>Ensuring that the features you developed are deployed and working on the staging or production environment</li>'
+    required-skills: 
+      '<li>3+ years of professional javascript frontend or full-stack development experience (any framework: React, Angular.js, Ember.js, JQuery, Vanilla JS, etc.)</li>
+      <li>0.5+ years of professional React experience</li>
+      <li>Experience with Redux or others Flux-like state-management libraries</li>
+      <li>Deep web knowledge (DOM, HTML, CSS)</li>
+      <li>Experience in writing automated tests</li>
+      <li>Experience with Git and Github and common development flows</li>
+      <li>Good teamwork skills</li>'
+    additional-skills:
+      '<li>Mobile development experience (Swift/Objective C and Cocoa for iOS, Java/Kotlin and Android SDK for Android)</li>
+      <li>React Native experience</li>
+      <li>Experience with CSS preprocessors (SASS, LESS, Stylus, ...)</li>
+      <li>Experience supporting legacy browsers (IE10)</li>
+      <li>Experience with CSS3 new features (CSS3 transitions)</li>
+      <li>Mobile development experience via Phonegap/Cordova</li>
+      <li>Knowledge of continuous integration workflow and tools</li>
+      <li>Experience in End to end testing</li>
+      <li>Experience working with project management tools, such as Trello, JIRA, Pivotal Tracker, Zube etc</li>
+      <li>Experience in backend development with Node.js (Express.js)</li>
+      <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
+      <li>Bash scripting knowledge</li>'
 
   # - title: Senior Node.js Software Developer
   #   type: Permanent

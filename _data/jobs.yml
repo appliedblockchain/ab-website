@@ -7,124 +7,6 @@
 
 london:
 
-#   - title: Senior Agile Delivery Manager
-#     type: Permanent
-#     role: 
-#       '<p>As Senior Agile Delivery Manager  you will oversee a wide variety of projects from conceptual design through implementation, engaging directly with large and small clients and coordinating development teams to deliver solutions. 
-# <br><br>Working in advanced technology architecture you will help to define and deliver solutions for clients and integrate both custom and packaged technologies to cover the complete life cycle of systems delivery. You will be responsible for taking solutions’ functional and technical requirements through the development process to delivery and implementation.
-# <br><br>You will assist with the ongoing development and improvement of Applied Blockchain’s project delivery framework (including which methodologies are used and how they are implemented), promote and ensure that projects are run according to the agreed framework.
-# <br><br>This role reports to the Chief Operating Officer, and is a full time, permanent position in our London office.</p><br>
-# <p>You will be directly accountable for delivering individual projects, including:</p><br>
-# <li>Engaging closely with clients and other stakeholders to define the vision and roadmap</li>
-# <li>Working with the delivery team to translate client requirements into sprint deliverables</li>
-# <li>Coordinating delivery activities (both on and offshore) including running planning sessions and daily stand ups</li>
-# <li>Arranging end of sprint demos with internal stakeholders and external clients</li>
-# <li>Proactively managing scope changes, risks and issues</li>
-# <li>Tracking delivery versus plan and budget</li>
-# <li>Generating relevant reporting and providing a high level of transparency to clients and internal stakeholders</li>
-# <li>Making clients aware of the time and financial impact of scope and requirement changes (“no surprise environment”)</li>
-# <li>Define, develop and generate metrics for teams, internal stakeholder and external stakeholders</li>
-# <li>Ensuring that the overall delivery to the client includes non-functional requirements (and documentation)</li>'
-#     required-skills: 
-#       '<li>Proven experience as an Agile practitioner with a minimum of 5 years’ experience organising teams to deliver large scale, complex strategic projects. This person should personify Scrum and Agile</li>
-# <li>Evidence of building a trusting and safe environment where problems can be raised without fear of blame, retribution, or being judged, with an emphasis on continuous improvement and problem solving</li>
-# <li>Knowledge of numerous well documented patterns and techniques for filling in the intentional gaps left in the Scrum approach (e.g. Burndown/Burn Up techniques, Retrospective formats, handling issues/bugs)</li>
-# <li>Knowledge and experience with widely successful Agile techniques (e.g. User Stories, BDD, TDD, Continuous Integration, Continuous Testing, Pairing, Automated Testing, Agile Games)</li>
-# <li>Excellent communication and mentoring skills</li>
-# <li>Ability to hold team members accountable via appropriate empowerment, set clear performance standards, resolve performance issues and keep the team engaged and on track</li>
-# <li>1-2 years practical software development experience in one of the mainstream programming languages</li>
-# <li>Bachelor’s degree (ideally in engineering, computer science or related field)</li>'
-#     additional-skills:
-#       '<li>Bitcoin/Ethereum</li>
-# <li>Node.js</li>
-# <li>React Native</li>
-# <li>Jira and Trello</li>'
-
-# - title: Senior Blockchain Node Developer
-#   type: Permanent
-#   closing-date: Nov 24, 2018
-#   salary: £50,000 - £85,000
-#   role: 
-#     '<li>Develop cutting edge blockchain solutions for startups and corporate clients</li>
-#     <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
-#     <li>Develop smart contracts on solidity</li>
-#     <li>Design and build large scale, high volume systems</li>'
-#   required-skills: 
-#     '<li>5+ years of backend development experience</li>
-#     <li>1+ years of Node.js</li>
-#     <li>1+ years of Blockchain development experience</li>
-#     <li>Blockchain knowledge - Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
-#     <li>Team leading skills and experience</li>
-#     <li>Experience in writing automated tests</li>
-#     <li>Experience with API design and implementation</li>
-#     <li>Experience with SQL and NoSql Databases</li>
-#     <li>Basic understanding of Linux</li>
-#     <li>Git knowledge (feature branches, github flow)</li>'
-#   additional-skills:
-#     '<li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
-#     <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
-#     <li>Testing Frameworks (Jest, Mocha/Chai/Should.js)</li>
-#     <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
-#     <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
-#     <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
-#     <li>Experience in React</li>
-#     <li>HTML and CSS</li>'
-
-# - title: Sales Administrator
-#   type: Permanent
-#   role: 
-#     'We are looking for a Sales Administrator to play a key role and provide the link between the sales, operation and technical teams, ensuring a smooth order journey for our clients.
-#     <br><br>You will be committed to providing outstanding customer service, showing fearlessness and drive when receiving and making sales and new business calls and emails, alongside showcasing your outstanding organisational skills, facilitating with sales and order processing support and providing daily administrative and sales support to our sales team. 
-#     <br><br>This is a full time permanent position, in our London office, reporting to the Head of Sales.'
-#   responsabilities: 
-#     '<li>Responsibility for day to day transactions with clients and day-to-day administrative tasks</li>
-#     <li>Book client meetings and diary management</li>
-#     <li>Providing timely and professional support and responds to all clients enquiries</li>
-#     <li>Preparing and raising sales invoices</li>
-#     <li>Create regular Sales reports including Sales activity and pipeline values</li>
-#     <li>Maintain and accurately update all customer sales related information</li>
-#     <li>Attending trade shows when required</li>
-#     <li>General administration as well as any ad hoc duties</li>'
-#   required-skills: 
-#     '<li>2 years of general administration experience</li>
-#     <li>Must have the drive and confidence to make decision and work unsupervised</li>
-#     <li>This job requires extensive email and telephone interactions so good written and verbal English communication is essential</li>
-#     <li>The ability to learn quickly and meet regular and required deadlines</li>
-#     <li>A can-do attitude with the passion and commitment to grow in the role and go the extra mile</li>
-#     <li>Ability to act on initiative & solve problems quickly and calmly</li>
-#     <li>Sociable, positive with a good sense of humour</li>'
-
-# - title: Finance Administrator
-#   type: Permanent
-#   role:
-#     'This role will be ideal for hard-working and ambitious team player, with serious career progression plans in the finance space. As the first and only distinct finance person in our company you will manage and shape the day-to-day financial processes and administrative procedures ensuring compliance with the requirements. 
-#     <br><br>You will be expected to get involved in all areas of Operational Finance including Accounts Payable, Bank statements , Invoices and payments tracking.  You will assist where possible on all finance issues, like checking and reviewing payments, invoice processing, managing the finance system; ensuring details are kept up to date daily and any other ad hoc duties.
-#     <br><br>We will also ask you to keep up to date with all payments, make sure all inbound and outbound are paid correctly on time, make sure any outstanding receipts and invoices are updated. 
-#     <br><br>This is a full time, permanent position in our Canary Wharf, London based office.'
-#   responsabilities: 
-#     '<li>Preparing sales ledger records and recording invoices raised and payments received</li>
-#     <li>Assisting with Month End procedures</li>
-#     <li>Manage inbound invoices and accounts payable</li>
-#     <li>Track and report on receivables (outbound invoices)</li>
-#     <li>Manage company expense controls and employee expense (including use of company cards)</li>
-#     <li>Ensure income and expenses are correctly captured and categorised correctly in the accounting system</li>
-#     <li>Contribute to the production and improvement of monthly management accounts/projections (including cash flow)</li>
-#     <li>Participate in the payroll process</li>
-#     <li>Supporting our team and undertaking administrative duties</li>
-#     <li>Chasing individuals for information when required</li>
-#     <li>Deal with customer, accountants, managers and team members queries in an efficient manner</li>'
-#   required-skills: 
-#     '<li>Accounts Payable experience</li>
-#     <li>Good working knowledge of Microsoft Office Package (particularly Excel)</li>
-#     <li>Numerate with good computer skills</li>
-#     <li>Analytical ability and logical approach</li>
-#     <li>Strong attention to detail</li>
-#     <li>Organisation and time management skills</li>
-#     <li>Honesty and discretion</li>
-#     <li>Ambitious, independent and keen to learn</li>
-#     <li>Confident dealing with various different levels of management</li>
-#     <li>Experience working with multiple deadlines and prioritising work accordingly</li>'
-
 
 
 # ––––––––––––––––––––––––––––––––––––––––––––
@@ -151,7 +33,7 @@ porto:
       <li>Extensive familiarity with at least one major cloud provider (Azure, AWS)</li>'
     additional-skills:
       '<li>Professional experience managing and operating solutions built on blockchain</li>
-      <li>3+ years experience in a major programming language (Ruby/ Python/Javascript/C++/Java/C#)</li>
+      <li>3+ years experience in a major programming langu.gitage (Ruby/ Python/Javascript/C++/Java/C#)</li>
       <li>Knowledge and experience of Terraform and Packer</li>
       <li>Experience maintaining high traffic websites and web services</li>
       <li>B.Sc. in Computer Science or another equivalent technical discipline</li>'
@@ -190,90 +72,31 @@ porto:
       <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
       <li>Bash scripting knowledge</li>'
 
-  # - title: Senior Node.js Software Developer
-  #   type: Permanent
-  #   role: 
-  #     '<li>Develop cutting edge software solutions for startups and corporate clients</li>
-  #     <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
-  #     <li>Develop smart contracts on solidity</li>
-  #     <li>Liaise with frontend developers to build APIs for web and mobile</li>
-  #     <li>Write automated tests for smart contracts and server side code</li>
-  #     <li>Design and build large scale, high volume systems</li>'
-  #   required-skills: 
-  #     '<li>5+ years of backend development experience</li>
-  #     <li>1+ years of Node.js</li>
-  #     <li>2+ years experience using other js frameworks</li>
-  #     <li>Experience in writing automated tests</li>
-  #     <li>Experience with API design and implementation</li>
-  #     <li>Experience with SQL and NoSql Databases</li>
-  #     <li>Basic  understanding of Linux</li>'
-  #   additional-skills:
-  #     '<li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
-  #     <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
-  #     <li>Testing frameworks (Jest, Mocha/Chai/Should.js, Enzyme)</li>
-  #     <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
-  #     <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
-  #     <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
-  #     <li>Experience in React</li>
-  #     <li>Blockchain knowledge – Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
-  #     <li>HTML and CSS</li>'
-
-  # - title: React.js Developer
-  #   type: Permanent
-  #   role: 
-  #     '<li>Develop cutting edge software solutions for startups and corporate clients</li>
-  #     <li>Design and build large scale, high volume systems</li>
-  #     <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
-  #     <li>Create user-friendly web and mobile interfaces</li>
-  #     <li>Write automated tests</li>'
-  #   required-skills: 
-  #     '<li>5+ years of full stack/frontend development experience (Vanilla JS, Angular.js, Ember.js or JQuery)</li>
-  #     <li>2+ years React Experience</li>
-  #     <li>Deep web knowledge (DOM, CSS)</li>
-  #     <li>Experience in writing automated tests</li>
-  #     <li>Redux or similar Flux-like state-management tools</li>
-  #     <li>Unit testing</li>
-  #     <li>Git, Github</li>'
-  #   additional-skills:
-  #     '<li>React Native</li>
-  #     <li>Experience with accessibility and legacy browser support (IE)</li>
-  #     <li>React Web & relevant stack: Webpack, Redux etc</li>
-  #     <li>Experience in backend development with Node.js (Express.js)</li>
-  #     <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
-  #     <li>Basic Sysadmin and Bash scripting knowledge</li>
-  #     <li>Experience with CSS3 new features (CSS3 transitions)</li>
-  #     <li>Mobile development experience (Native or Phonegap/Cordova)</li>
-  #     <li>Continuous integration tools</li>
-  #     <li>End to end testing</li>
-  #     <li>BDD / TDD</li>
-  #     <li>Experience working with project management tools, such as Slack, Trello, JIRA, etc</li>'
-
-  # - title: Senior React.js Developer
-  #   type: Permanent
-  #   role: 
-  #     '<li>Develop cutting edge software solutions for startups and corporate clients</li>
-  #     <li>Design and build large scale, high volume systems</li>
-  #     <li>Engage with clients to understand their product vision and design proof-of-concept and production grade products</li>
-  #     <li>Create user-friendly web and mobile interfaces</li>
-  #     <li>Write automated tests</li>'
-  #   required-skills: 
-  #     '<li>5+ years of full stack/frontend development experience (Vanilla JS, Angular.js, Ember.js or JQuery)</li>
-  #     <li>2+ years React Experience</li>
-  #     <li>Deep web knowledge (DOM, CSS)</li>
-  #     <li>Experience in writing automated tests</li>
-  #     <li>Redux or similar Flux-like state-management tools</li>
-  #     <li>Unit testing</li>
-  #     <li>Git, Github</li>'
-  #   additional-skills:
-  #     '<li>React Native</li>
-  #     <li>Experience with accessibility and legacy browser support (IE)</li>
-  #     <li>React Web & relevant stack: Webpack, Redux etc</li>
-  #     <li>Experience in backend development with Node.js (Express.js)</li>
-  #     <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
-  #     <li>Basic Sysadmin and Bash scripting knowledge</li>
-  #     <li>Experience with CSS3 new features (CSS3 transitions)</li>
-  #     <li>Mobile development experience (Native or Phonegap/Cordova)</li>
-  #     <li>Continuous integration tools</li>
-  #     <li>End to end testing</li>
-  #     <li>BDD / TDD</li>
-  #     <li>Experience working with project management tools, such as Slack, Trello, JIRA, etc</li>'
+  - title: Backend Node Software Developer
+    type: Permanent
+    role: 
+      '<li>Develop cutting edge software solutions for startups and corporate clients</li>
+      <li>Engage with clients to understand their product vision and design proof-of-concept</li>
+      <li>and production grade products</li>
+      <li>Develop smart contracts on solidity</li>
+      <li>Liaise with frontend developers to build APIs for web and mobile</li>
+      <li>Write automated tests for smart contracts and server side code</li>
+      <li>Design and build large scale, high volume systems</li>'
+    required-skills: 
+      '<li>3+ years of backend development experience</li>
+      <li>1+ years of Node.js</li>
+      <li>Experience in writing automated tests</li>
+      <li>Experience with API design and implementation</li>
+      <li>Experience with SQL and NoSql Databases</li>
+      <li>Basic understanding of Linux</li>
+      <li>Git knowledge (feature branches, github flow)</li>'
+    additional-skills:
+      '<li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
+      <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
+      <li>Testing Frameworks (Jest, Mocha/Chai/Should.js)</li>
+      <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
+      <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
+      <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
+      <li>Experience in React</li>
+      <li>Blockchain knowledge - Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
+      <li>HTML and CSS</li>'

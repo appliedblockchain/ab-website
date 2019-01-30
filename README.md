@@ -20,7 +20,6 @@
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## Introduction
 
 ### Getting started
@@ -46,7 +45,6 @@ Along with SASS, this project is based on the BEM markdown. To learn more about 
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## Deployment
 
 The deployment process is run throught CircleCI.
@@ -65,7 +63,6 @@ Use [Browserstack](https://www.browserstack.com/users/sign_in) to test the websi
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## Page structure
 Every page is build on the same structure:
 * They are divided in [sections](#section-system), representing each part of the page
@@ -164,7 +161,6 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## Add image to carousel
 
 Add the image in the corresponding folder
@@ -173,7 +169,6 @@ Add the image in the corresponding folder
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## Add project
 
 * In the `_projects` folder, create a new file, named after the client
@@ -223,7 +218,6 @@ testimonial-job:
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## Add job
 
 * Open the `jobs.yml` file in `_data` folder
@@ -260,7 +254,6 @@ testimonial-job:
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## Add event
 * Open the `events.yml` file in `_data` folder
 * Copy/paste this code and fill the content
@@ -282,7 +275,6 @@ testimonial-job:
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## Add blog post
 * Create a new file in the `_posts` folder
 * Name the file with a slugged version of the title, preceded by the date of the post
@@ -356,5 +348,4 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 <!-- spacing -->
 <p>&nbsp;</p>
 
-***
 ## [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)

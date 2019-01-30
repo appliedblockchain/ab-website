@@ -348,5 +348,4 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 <p>&nbsp;</p>
 
 ***
-***
 ## [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)

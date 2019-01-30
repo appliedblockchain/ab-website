@@ -17,8 +17,9 @@
 * [Add blog post](#add-blog-post)
     - [Content HTML structure](#content-html-structure)
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ## Introduction
@@ -43,8 +44,9 @@ Along with SASS, this project is based on the BEM markdown. To learn more about 
 * [bem.info](https://en.bem.info/methodology/quick-start/)
 * [getbem.com](http://getbem.com/introduction/)
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ## Deployment
@@ -62,8 +64,9 @@ Once you have tested the changes (on both mobile and desktop, and on all browser
 Use [Browserstack](https://www.browserstack.com/users/sign_in) to test the website on different devices and browsers.
 > The website is fully fonctionnal on Internet Explorer 11 and above
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ## Page structure
@@ -161,8 +164,9 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 ```
 > See the `resources/sass/partials/_structure.scss` for reference
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ## Add image to carousel
@@ -170,8 +174,9 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 Add the image in the corresponding folder
 > To check which folder is used for each carousel
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ## Add project
@@ -220,8 +225,9 @@ testimonial-job:
 
 <!-- ## FAQ -->
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ## Add job
@@ -257,8 +263,9 @@ testimonial-job:
         <li>Curabitur ultricies vitae odio sit amet rhoncus.'</li>
 ```
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ## Add event
@@ -279,8 +286,9 @@ testimonial-job:
     * File cannot be over 800 px wide and 100 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ## Add blog post
@@ -353,8 +361,9 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 ### Logo carousels
 * image size, difference between regular and alt version -->
 
+<p>&nbsp;</p>
+
 ***
-<!-- spacing -->
 <p>&nbsp;</p>
 
 ***

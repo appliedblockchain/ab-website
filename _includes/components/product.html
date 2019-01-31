@@ -1,0 +1,16 @@
+<div class="products__item">
+    <div class="block products__container">
+        <div class="products__content z-index--1">
+            {% if product.logo %}
+                <img src="{{ site.url }}{{ site.imageurl }}/logos/products/{{ product.logo }}.svg" alt="" class="products__logo">
+            {% endif %}
+            <h3 class="products__name lead">{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            {% if product.link %}
+                <a href="{{ site.url }}/mantle" class="products__button button button--secondary button--animate fas fa-search-plus">
+                    <p class="button__inner">Learn more</p>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>

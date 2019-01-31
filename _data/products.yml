@@ -1,0 +1,12 @@
+# products section
+# in products.html page
+
+  - name: Mantle 
+    description: Data privacy toolkit
+    logo: mantle
+    link: true
+
+  - name: Blockchain Node Hosting
+    description: Lorem ipsum dolor sit amet
+    logo: fern
+    link: true

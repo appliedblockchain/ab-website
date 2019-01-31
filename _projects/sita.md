@@ -1,6 +1,6 @@
 ---
 layout: project
-tag: grid
+order: 5
 
 title: SITA
 subtitle: Distributed drone registry

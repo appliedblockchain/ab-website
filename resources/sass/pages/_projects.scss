@@ -101,7 +101,7 @@
         padding: $integer*2;
         text-align: left;
         color: $white;
-        width: 50%;
+        width: 25%;
 
         &:before {
             @include transition(background-color $transition);

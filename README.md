@@ -212,6 +212,8 @@ testimonial-job:
 ```
 * Fill in the tags according layout (if you don't understand where they are displayed, [here is an example](https://appliedblockchain.com/projects/cygnetise/))
 * Add the company logo in the `resources/images/logos/clients` folder;
+* Add a white verions of the company logo in the `resources/images/logos/clients-white` folder;
+> The logo need to be in a 800x400px format
 > The logo in the about section will link itself automatically, provided the image has the same **title** as the project page
 
 ### Additionnal comments

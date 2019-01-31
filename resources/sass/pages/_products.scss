@@ -16,67 +16,65 @@
 
 .products {
 
-    &__container {
-        
-        & + & {
-            @include responsive(max-width, $break-phones-max) {
-                margin-top: $integer;
-            }
-        }
-    }
-    
     &__intro {
-        @include background(85% top, 65%);
+        @include background(85% 40%, 65%);
         @include responsive(min-width, $break-large-desktop-min) {
-            @include background(85% top, 45%);
+            @include background(85% 40%, 45%);
         }
         @include responsive(max-width, $break-desktop-max) {
             background-image: none !important;
             text-align: center;
         }
+
+        .section__header {
+            margin-bottom: 0;
+        }
     }
     
     &__item {
         @include display-flex();
-        @include flex-direction(column);
-        @include justify-content(space-between);
-        padding: $integer*4;
-        height: 100%;
-        width: 100%;
-        @include responsive(max-width, $break-tablets-max) {
-            padding: $integer*2;
+        padding: $integer/2;
+        width: 25%;
+        @include responsive(max-width, $break-desktop-max) {
+            width: 50%;
         }
+        @include responsive(max-width, $break-phones-max) {
+            width: 100%;
+        }
+
+        &:nth-child(-n+2) {
+            width: 50%;
+            @include responsive(max-width, $break-phones-max) {
+                width: 100%;
+            }
+        }
+    }
+    
+    &__container {
+        width: 100%;
     }
 
     &__logo {
         width: 20%;
         min-width: $integer*4;
         max-width: $integer*6;
+        margin-bottom: $integer
     }
 
     &__name {
-        margin: $integer 0 $integer/2 0;
+        margin-bottom: $integer/2;
     }
 
     &__button {
         margin-top: $integer;
     }
-}
 
-.devtools {
-    text-align: left;
-    @include responsive(max-width, $break-tablets-max) {
-        text-align: center;
-    }
-
-    &__item {
-        @include align-items(center);
-    }
-
-    &__image {
-        max-height: $integer*12;
-        @include responsive(max-width, $break-tablets-max) {
-            display: none;
-        }
+    &__completion {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
     }
 }

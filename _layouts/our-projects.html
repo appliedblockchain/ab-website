@@ -42,7 +42,8 @@
 
             <div class="portfolio--grid">
                 {% for project in site.projects %}
-                    {% unless project.tag contains 'featured' or project.tag contains 'grid' %}
+                {% assign project = site.projects | sort: 'order' %}
+                    {% unless project.tag contains 'featured' %}
                         <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                             <div class="portfolio__content">
                                 <!-- <div class="portfolio__logo">
@@ -67,36 +68,6 @@
 
         </section>
 
-        <section class="section section--nopadding portfolio">
-
-            <div class="section__content portfolio--grid-bis">
-                {% for project in site.projects %}
-                    <!-- add this tag to project page to add it o this section it -->
-                    {% if project.tag contains 'grid' %}
-                        <a href="{{ project.url }}" class="portfolio__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
-                            <div class="portfolio__content">
-                                <!-- <div class="portfolio__logo">
-                                    <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-bis/{{ project.slug }}.png" alt="{{ project.title }} logo">
-                                </div> -->
-                                <p class="portfolio__comment">{{ project.industry }}</p>
-                                <h2 class="portfolio__title subtitle">{{ project.title }}</h2>
-                                <p class="portfolio__subtitle lead">{{ project.subtitle }}</p>
-                                <p class="portfolio__desc">
-                                    <span>{{ project.summary }}</span>
-                                </p>
-                                <div class="portfolio__button">
-                                    <span href="" class="button button--secondary button--small button--animate fa fa-eye">
-                                        <p class="button__inner">Case study</p>
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                    {% endif %}
-                {% endfor %}
-            </div>
-    
-        </section>
-        
     {% else %}
 
         <section class="section section--alt section--dark">

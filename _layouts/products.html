@@ -9,37 +9,42 @@
         comment="Applied Blockchain Labs is our research and development centre. We research technologies and solutions to further develop internal tools which support the deployment of our products and client projects."
     %}
 
-    <section class="section section--alt products z-index--1">
+    <section class="section section--grey section--left products__intro" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/icon-products-page.svg);">
 
-        <div class="section__content">
-            <div class="row">
-                <div class="coloffset--sm3 col--sm6 products__container">
-                    <div class="block products__item">
-                        <div>
-                            <img src="{{ site.url }}{{ site.imageurl }}/logos/products/mantle.svg" alt="" class="products__logo">
-                            <h2 class="products__name subtitle">Discover Mantle</h2>
-                            <p>An identity and privacy toolkit</p>
-                        </div>
-                        <a href="{{ site.url }}/mantle" class="products__button button button--secondary button--animate fas fa-search-plus">
-                            <p class="button__inner">Learn more</p>
-                        </a>
-                    </div>
+        <div class="row">    
+            <div class="col--6">
+                <!-- edit component in _includes/components/page-header.html -->
+                {% include components/section-header.html
+                    description='While we work on multiple projects across different industries, we tend to identify common problems amongst all projects. As we identify the gap, we develop products internally.<br><br>Our products solve problems which we have encountered over three years of developing blockchain applications. They are all designed to be future-proof and to be used across different blockchain platforms.'
+                %}
                 </div>
-            </div>
         </div>
 
     </section>
 
-    <section class="section section--margin-minus section--primary section--left products__intro" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/icon-products-page.svg);">
+    <section class="section">
 
-        <div class="section__content">
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='Discover our products'
+        %}
+
+        <div class="section__content z-index--1">
             <div class="row">
-                <div class="col--lg6">
-                    <p class="body--large">While we work on multiple projects across different industries, we tend to identify common problems amongst all projects. As we identify the gap, we develop products internally.
-                        <br><br>Our products solve problems which we have encountered over three years of developing blockchain applications. They are all designed to be future-proof and to be used across different blockchain platforms.
-                    </p>
-                </div>
+                <!-- edit data in _data/products.yml -->
+                {% for product in site.data.products %}
+                    <!-- edit component in _includes/components/product.html -->
+                    {% include components/product.html %}
+                {% endfor %}
             </div>
+        </div>
+
+    </section>
+    
+    <section class="section section--margin-minus section--primary">
+
+        <div class="section__content devtools">
+            
         </div>
 
     </section>

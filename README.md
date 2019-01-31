@@ -1,21 +1,21 @@
 # Applied Blockchain Website
 * [Introduction](#introduction)
-    - [Getting started](#getting-started)
-    - [Comments](#comments)
+  * [Getting started](#getting-started)
+  * [Dependencies & Methodology](#comments)
 * [Deployment](#deployment)
-    - [Test](#test)
+  * [Test](#test)
 * [Page structure](#page-structure)
-    - [Section system](#section-system)
-    - [Components](#components)
-    - [Column system](#column-system)
+  * [Section system](#section-system)
+  * [Components](#components)
+  * [Column system](#column-system)
 * [Add image to carousel](#add-image-to-carousel)
 * [Add testimonial to homepage](#add-testimonial-to-homepage)
 * [Add project](#add-project)
 * [Add job](#add-job)
-    - [Content YML structure](#content-yml-structure)
+  * [Content YML structure](#content-yml-structure)
 * [Add event](#add-event)
 * [Add blog post](#add-blog-post)
-    - [Content HTML structure](#content-html-structure)
+  * [Content HTML structure](#content-html-structure)
 
 <p>&nbsp;</p>
 
@@ -37,7 +37,16 @@ bundle exec jekyll serve
 
 > Staging URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
 
-### Comments
+### Dependencies & Methodologies
+
+#### SASS & Compass
+Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
+> You need Ruby and npm to run SASS and Compass
+* [Install Sass](https://sass-lang.com/install)
+* [Install Compass](http://compass-style.org/install/)
+
+
+#### BEM Markdown
 Along with SASS, this project is based on the BEM markdown. To learn more about BEM:
 * [bem.info](https://en.bem.info/methodology/quick-start/)
 * [getbem.com](http://getbem.com/introduction/)

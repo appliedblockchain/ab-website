@@ -77,14 +77,14 @@
         <section class="section section--primary results">
             <h1 class="project__subtitle subtitle">Results</h1>
             <div class="project__text coloffset--lg2 col--lg8 body--large">{{ page.results }}</div>
-            <div class="results__content">
-                {% if page.results-subtitle %}
-                    <p class="results__title lead">{{ page.results-subtitle }}</p>
-                {% endif %}
-                {% if page.results-content %}
+            {% if page.results-content %}
+                <div class="results__content">
+                    {% if page.results-subtitle %}
+                        <p class="results__title lead">{{ page.results-subtitle }}</p>
+                    {% endif %}
                     <div class="results__icons image-inline row">{{ page.results-content }}</div>
-                {% endif %}
-            </div>
+                </div>
+            {% endif %}
             {% if page.results-comment %}
                 <p class="coloffset--lg2 col--lg8 results__comment">{{ page.results-comment }}</p>
             {% endif %}

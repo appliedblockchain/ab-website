@@ -50,11 +50,21 @@
     {% if page.challenge %}
         <section class="section section--left challenge">
             <div class="row">
-                <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4 challenge__icon">
-                <div class="coloffset--md1 col--md7">
-                    <h1 class="project__subtitle subtitle">The Challenge</h1>
-                    <div class="project__text">{{ page.challenge }}</div>
-                </div>
+                {% if page.challenge-diagram %}
+                    <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4 challenge__icon">
+                    <div class="coloffset--md1 col--md7">
+                {% else %}
+                    <div class="col--md6">
+                {% endif %}
+                        <h1 class="project__subtitle subtitle">The Challenge</h1>
+                        <div class="project__text">{{ page.challenge }}</div>
+                    </div>
+                {% if page.outcome %}
+                    <div class="coloffset--md1 col--md5">
+                        <h1 class="project__subtitle subtitle">The Outcome</h1>
+                        <div class="project__text">{{ page.outcome }}</div>
+                    </div>
+                {% endif %}
             </div>
         </section>
     {% endif %}

@@ -9,6 +9,7 @@ deliverables: Blockchain-based career verification application
 
 summary: APPII is an online verification, career management, and recruitment platform.
 
+challenge-diagram: true
 challenge: 
     <p class="body--bold">Verification of educational and work experience is an expensive and time-consuming process for employers and recruiters. The recruitment sector relies on multiple verifications across organisations and intermediaries to check the claims an individual makes about their education and employment.</p>
     <p>The existing process requires the repeated acquisition of the same pieces of data. The failure to do these checks leads to time and expense incurred when the experience of the new hire is discovered to be fraudulent. There is also legal and operational risk where the qualifications are related to health and safety, or compliance.</p>

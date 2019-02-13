@@ -15,13 +15,9 @@ challenge:
     <p class="body--bold">A blockchain network’s security comes from its decentralisation.</p>
     <p>A blockchain network’s security is enabled via decentralisation, but finding parties with the capacity and desire to run a node is challenging. If the blockchain sits with one or a small number of parties it is easier to undermine than if it is hosted with many disintermediated parties. The EWF Web Chain uses the PoA (Proof of Authority) consensus mechanism which relies on authorities to secure the network, if more than 50% of the authorities were to collude they could undermine the network. Running a reliable PoA node in the network requires blockchain expertise and experience which makes distributing the network difficult.</p>
 
-delivery:
-    <div class="col--xl4 col--lg6 col--md8">
-        The EWF approached Applied Blockchain to run an authority node in their Energy Web Chain blockchain network. Applied Blockchain provisioned infrastructure and ran an Ethereum Parity node which met the requirements and configuration of the Energy Web Chain network.
-    </div>
-    <div class="col--xl4 col--lg6 col--md8">
-        The Applied Blockchain Block Explorer was deployed on top of the node to enable exploration of the blockchain and monitoring of forks/ReOrgs.
-    </div>
+outcome: 
+    The EWF approached Applied Blockchain to run an authority node in their Energy Web Chain blockchain network. Applied Blockchain provisioned infrastructure and ran an Ethereum Parity node which met the requirements and configuration of the Energy Web Chain network.
+    The Applied Blockchain Block Explorer was deployed on top of the node to enable exploration of the blockchain and monitoring of forks/ReOrgs.
 
 results:
     <div class="results__item image-inline__item col--md6">

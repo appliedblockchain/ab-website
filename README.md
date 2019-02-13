@@ -213,7 +213,10 @@ deliverables:
 
 summary:
 
+challenge-diagram: true #insert that line of the project has a challenge diagram
 challenge: 
+
+outcome: #in the case of a project without an actual product delivery (e.i. EWF)
 
 delivery: 
 

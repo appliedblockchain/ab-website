@@ -1,5 +1,50 @@
 # events list
 # in events.html page
+# ordered from most to least recent
+
+- name: Zero Knowledge Summit
+  date: '2019-03-22'
+  location: Berlin
+  directions: 
+  link: https://www.zeroknowledge.fm/summit
+
+- name: Blockchain Technology World
+  image: blockchain-technology-world
+  date-from: '2019-03-12'
+  date: '2019-03-13'
+  location: ExCel London, London, UK
+  directions: https://www.google.com/maps?ll=51.50846,0.029846&z=16&t=m&hl=fr-FR&gl=GB&mapclient=embed&cid=724487964194221767
+  link: https://www.blockchaintechnologyworld.com/
+
+- name: The Global Fintech & Blockchain Conference
+  image: global-fintech-blockchain-conference
+  date: '2019-02-28'
+  location: Imperial College London, London, UK
+  directions: https://www.google.com/maps/place/Imperial+College+London/@51.4987997,-0.1748772,15z/data=!4m2!3m1!1s0x0:0x31911b371c692e86?ved=2ahUKEwih0NKI36TgAhWITBUIHQP_CVIQ_BIwGHoECAIQCA
+  link: https://globalfintechandblockchainconference.com/
+
+- name: Mobile World Congress
+  image: mobile-world-congress
+  date-from: '2019-02-25'
+  date: '2019-02-28'
+  location: Fira Gran Via, Barcelona, Spain
+  directions: https://www.google.com/maps/place/Fira+Barcelona+Gran+Via/@41.3578122,2.1251351,15.37z/data=!4m5!3m4!1s0x0:0xb0d0cc966887d153!8m2!3d41.35457!4d2.1280828
+  link: https://www.mwcbarcelona.com/
+
+- name: The Global Fintech & Blockchain Conference Hackathon
+  image: global-fintech-blockchain-conference
+  date-from: '2019-02-23'
+  date: '2019-02-24'
+  location: Imperial College London, London, UK
+  directions: https://www.google.com/maps/place/Imperial+College+London/@51.4987997,-0.1748772,15z/data=!4m2!3m1!1s0x0:0x31911b371c692e86?ved=2ahUKEwih0NKI36TgAhWITBUIHQP_CVIQ_BIwGHoECAIQCA
+  link: https://globalfintechandblockchainconference.com/hackathon/
+
+- name: Blockchain Regulation & Law
+  image: blockchain-regulation-law
+  date: '2019-02-05'
+  location: Sofitel London St James, London, UK
+  directions: https://www.google.co.uk/maps/place/Sofitel+London+St+James/@51.513336,-0.140247,14z/data=!4m5!3m4!1s0x487604d0ffc74e29:0x77355e3d14382ae3!8m2!3d51.507583!4d-0.1323289?hl=en
+  link: https://iclg.com/glgevents/blockchain-regulation-and-the-law-2019
 
 - name: Blockchain Venture Summit 2018
   image: blockchain-venture-summit-2018

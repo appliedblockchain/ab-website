@@ -7,6 +7,11 @@ dlc: true
 headline: Following recent investment from Shell, Applied Blockchain collaborates with non-profit organisation.
 ---
 
+<div class="post__content">
+    <a href="{{ site.url }}/projects/ewf" class="button button--primary button--animate fas fa-eye">
+        <span class="button__inner">See the case study</span>
+    </a>
+</div>
 <p class="post__content">Applied Blockchain, a leading developer of distributed ledger technology and smart contracts, has become an affiliate of the <a href="https://energyweb.org/" target="_blank">Energy Web Foundation</a> (EWF), a global non-profit organisation focused on unleashing blockchain’s potential in the energy sector by building the first open-source, scalable core blockchain platform tailored specifically to the industry.</p>
 <p class="post__content">As an EWF Affiliate, Applied Blockchain joins an innovative ecosystem of global energy companies, utilities, grid operators, blockchain developers and users, and infrastructure providers, collaborating on implementation of large-scale energy projects at the cutting-edge of blockchain technology.</p>
 <p class="post__content">“Our affiliation with the Energy Web Foundation allows us to expand our work in the energy space, following our successful engagement with Shell. We discovered that our technical visions are aligned and that we are in a great position to contribute, making this an easy decision for us. It is a brilliant opportunity for Applied Blockchain to work with key global organisations to unleash blockchain’s true potential for decentralising and democratising solutions in the energy industry,” said Adi Ben-Ari, Founder and CEO at Applied Blockchain.</p>

@@ -10,6 +10,17 @@
 
 .owl {
 
+    &-carousel {
+
+        &-technology {
+
+            &.block {
+                padding-top: $integer !important;
+                padding-bottom: $integer !important;
+            }
+        }
+    }
+
     &-dot {
         @include transition(background-color $transition, transform $transition);
         @include border-radius(50%);

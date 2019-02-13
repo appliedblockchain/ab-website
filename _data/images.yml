@@ -212,3 +212,23 @@ mantle:
   - url: ad
     title: AD / LDAP
     alt: Directory services integration
+
+# values section
+# in node-hosting.html page
+
+node-hosting:
+  - url: independant-white
+    title: An enterprise block explorer for providing transparency
+    alt: Transparency
+
+  - url: management-white
+    title: Production grade key management and blockchain network security
+    alt: Key management
+
+  - url: node
+    title: Experience with dealing with Forks/ReOrgs
+    alt: Experience
+
+  - url: keynote
+    title: A trusted brand providing independence of solutions and technology
+    alt: Brand

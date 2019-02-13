@@ -8,6 +8,7 @@
   * [Section system](#section-system)
   * [Components](#components)
   * [Column system](#column-system)
+* [Create new page](#create-new-page)  
 * [Add image to carousel](#add-image-to-carousel)
 * [Add testimonial to homepage](#add-testimonial-to-homepage)
 * [Add project](#add-project)
@@ -18,6 +19,8 @@
   * [Content HTML structure](#content-html-structure)
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Introduction
@@ -53,6 +56,8 @@ Along with SASS, this project is based on the BEM markdown. To learn more about 
 
 <p>&nbsp;</p>
 
+
+
 ***
 ## Deployment
 
@@ -70,6 +75,8 @@ Use [Browserstack](https://www.browserstack.com/users/sign_in) to test the websi
 > The website is fully fonctionnal on Internet Explorer 11 and above
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Page structure
@@ -133,10 +140,10 @@ The components are located in the `_data` folder. They were created to ensure th
 #### Page header
 ```
 {% include components/page-header.html
-        background-color=''
-        title='Page Title'
-        description='Lorem ipsum dolor sit amet.'
-        comment=''
+    background-color=''
+    title='Page Title'
+    description='Lorem ipsum dolor sit amet.'
+    comment=''
 %}
 ```
 The page header is used once on a page, at the very beginning.
@@ -151,7 +158,8 @@ The page header is used once on a page, at the very beginning.
 ```
 {% include components/section-header.html
     comment='Lorem ipsum'
-    title='Section Title'
+    title='Section title'
+    subtitle='Section subitle'
     description='Lorem ipsum dolor sit amet.'
 %}
 ```
@@ -169,6 +177,15 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 
 <p>&nbsp;</p>
 
+
+
+***
+## Create new page
+
+<p>&nbsp;</p>
+
+
+
 ***
 ## Add image to carousel
 
@@ -176,6 +193,8 @@ Add the image in the corresponding folder
 > To check which folder is used for each carousel
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Add project
@@ -228,6 +247,8 @@ testimonial-job:
 
 <p>&nbsp;</p>
 
+
+
 ***
 ## Add job
 
@@ -264,6 +285,8 @@ testimonial-job:
 
 <p>&nbsp;</p>
 
+
+
 ***
 ## Add event
 * Open the `events.yml` file in `_data` folder
@@ -284,6 +307,8 @@ testimonial-job:
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Add blog post
@@ -357,6 +382,8 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 * image size, difference between regular and alt version -->
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)

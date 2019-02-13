@@ -545,8 +545,16 @@ li {
 	&__label {
 		margin-top: $integer/4;
 	}
+
     &__text {
         margin-bottom: $integer;
+	}
+
+	.section--primary & {
+
+		.lead, .title {
+			color: $primary;
+		}
 	}
 }
 

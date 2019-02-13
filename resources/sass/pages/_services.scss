@@ -102,13 +102,12 @@
     .block {
         @include display-flex();
         @include align-items(center);
-        padding-top: $integer*4;
-        padding-bottom: $integer*4;
+        padding: $integer*4;
     }
 
     &__image {
-        width: 40%;
-        margin-right: 40px;
+        width: $integer*20;
+        margin-right: $integer*4;
     }
 }
 

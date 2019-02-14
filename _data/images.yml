@@ -34,37 +34,21 @@ technology:
     alt: Tendermint
     order: 4
 
-  - url: bitcoin
-    alt: Bitcoin
-    order: 5
-
   - url: corda
     alt: Corda
-    order: 6
+    order: 5
 
   - url: polkadot
     alt: Polkadot
-    order: 7  
-    
-  - url: cosmos
-    alt: Cosmos
-    order: 8
-    
-  - url: raiden
-    alt: Raiden
-    order: 9
-
-  - url: bigchain
-    alt: Bigchain
-    order: 10
+    order: 6  
     
   - url: stellar
     alt: Stellar
-    order: 11
+    order: 7
 
   - url: quorum
     alt: Quorum
-    order: 12
+    order: 8
 
 
 # clients section
@@ -218,17 +202,13 @@ mantle:
 
 node-hosting:
   - url: independant
-    title: An enterprise block explorer for providing transparency
+    title: An enterprise blockchain explorer for independent transparency
     alt: Transparency
 
-  - url: management
-    title: Production grade key management and blockchain network security
-    alt: Key management
-
   - url: node-primary
-    title: Experience with dealing with Forks/ReOrgs
+    title: Detect, alert and report forks and reorgs
     alt: Experience
 
   - url: keynote-primary
-    title: A trusted brand providing independence of solutions and technology
+    title: A trusted brand used by global corporations as well as independent startups
     alt: Brand

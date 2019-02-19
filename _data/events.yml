@@ -2,11 +2,14 @@
 # in events.html page
 # ordered from most to least recent
 
-- name: Zero Knowledge Summit
-  date: '2019-03-22'
-  location: Berlin
-  directions: 
-  link: https://www.zeroknowledge.fm/summit
+# event spreadsheet link
+# https://docs.google.com/spreadsheets/d/123Tbe-gan5LFYsunyEzH3gDyje6Nv613n8Y_1mK-MUE/edit?usp=sharing
+
+# - name: Zero Knowledge Summit
+#   date: '2019-03-22'
+#   location: Berlin
+#   directions: 
+#   link: https://www.zeroknowledge.fm/summit
 
 - name: Blockchain Technology World
   image: blockchain-technology-world

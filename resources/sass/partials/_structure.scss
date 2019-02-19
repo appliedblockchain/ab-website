@@ -342,6 +342,7 @@ li {
 
 	&__comment {
 		margin-bottom: $integer*2;
+		width: 100%;
 	}
 
 	&__title, &__subtitle, &__desc {
@@ -545,8 +546,16 @@ li {
 	&__label {
 		margin-top: $integer/4;
 	}
+
     &__text {
         margin-bottom: $integer;
+	}
+
+	.section--primary & {
+
+		.lead, .title {
+			color: $primary;
+		}
 	}
 }
 

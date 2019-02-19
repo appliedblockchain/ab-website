@@ -1,5 +1,5 @@
 ---
 layout: our-projects
 title: Projects
-description: See what we have worked on
+description: We have built blockchain applications for enterprises and startups within financial services, energy, supply chain, commodities, automotive, telecoms, legal, medical, property and recruitment.
 ---

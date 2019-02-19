@@ -1,6 +1,6 @@
 ---
 layout: project
-tag: grid
+order: 3
 
 title: Nuggets
 subtitle: Reinventing consumer data security

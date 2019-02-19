@@ -1,0 +1,15 @@
+# products section
+# in products.html page
+
+  - name: Mantle 
+    description: Data privacy toolkit
+    logo: mantle
+    link: mantle
+
+  - name: Block explorer
+    description: Our own block explorer, both simple and easy to customise
+    logo: fern
+    link: https://github.com/appliedblockchain/explorer
+    external-link: true
+    additionnal-link: https://www.superledger.net/
+    additionnal-link-text: See it working

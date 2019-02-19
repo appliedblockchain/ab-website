@@ -97,6 +97,20 @@
     }
 }
 
+.node-hosting {
+
+    .block {
+        @include display-flex();
+        @include align-items(center);
+        padding: $integer*4;
+    }
+
+    &__image {
+        width: $integer*20;
+        margin-right: $integer*4;
+    }
+}
+
 .approach {
 
     &__filter {

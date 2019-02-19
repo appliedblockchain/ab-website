@@ -1,23 +1,26 @@
 # Applied Blockchain Website
 * [Introduction](#introduction)
-    - [Getting started](#getting-started)
-    - [Comments](#comments)
+  * [Getting started](#getting-started)
+  * [Dependencies & Methodology](#comments)
 * [Deployment](#deployment)
-    - [Test](#test)
+  * [Test](#test)
 * [Page structure](#page-structure)
-    - [Section system](#section-system)
-    - [Components](#components)
-    - [Column system](#column-system)
+  * [Section system](#section-system)
+  * [Components](#components)
+  * [Column system](#column-system)
+* [Create new page](#create-new-page)  
 * [Add image to carousel](#add-image-to-carousel)
 * [Add testimonial to homepage](#add-testimonial-to-homepage)
 * [Add project](#add-project)
 * [Add job](#add-job)
-    - [Content YML structure](#content-yml-structure)
+  * [Content YML structure](#content-yml-structure)
 * [Add event](#add-event)
 * [Add blog post](#add-blog-post)
-    - [Content HTML structure](#content-html-structure)
+  * [Content HTML structure](#content-html-structure)
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Introduction
@@ -37,12 +40,23 @@ bundle exec jekyll serve
 
 > Staging URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
 
-### Comments
+### Dependencies & Methodologies
+
+#### SASS & Compass
+Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
+> You need Ruby and npm to run SASS and Compass
+* [Install Sass](https://sass-lang.com/install)
+* [Install Compass](http://compass-style.org/install/)
+
+
+#### BEM Markdown
 Along with SASS, this project is based on the BEM markdown. To learn more about BEM:
 * [bem.info](https://en.bem.info/methodology/quick-start/)
 * [getbem.com](http://getbem.com/introduction/)
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Deployment
@@ -61,6 +75,8 @@ Use [Browserstack](https://www.browserstack.com/users/sign_in) to test the websi
 > The website is fully fonctionnal on Internet Explorer 11 and above
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Page structure
@@ -124,10 +140,10 @@ The components are located in the `_data` folder. They were created to ensure th
 #### Page header
 ```
 {% include components/page-header.html
-        background-color=''
-        title='Page Title'
-        description='Lorem ipsum dolor sit amet.'
-        comment=''
+    background-color=''
+    title='Page Title'
+    description='Lorem ipsum dolor sit amet.'
+    comment=''
 %}
 ```
 The page header is used once on a page, at the very beginning.
@@ -142,7 +158,8 @@ The page header is used once on a page, at the very beginning.
 ```
 {% include components/section-header.html
     comment='Lorem ipsum'
-    title='Section Title'
+    title='Section title'
+    subtitle='Section subitle'
     description='Lorem ipsum dolor sit amet.'
 %}
 ```
@@ -160,6 +177,15 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 
 <p>&nbsp;</p>
 
+
+
+***
+## Create new page
+
+<p>&nbsp;</p>
+
+
+
 ***
 ## Add image to carousel
 
@@ -167,6 +193,8 @@ Add the image in the corresponding folder
 > To check which folder is used for each carousel
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Add project
@@ -185,7 +213,10 @@ deliverables:
 
 summary:
 
+challenge-diagram: true #insert that line of the project has a challenge diagram
 challenge: 
+
+outcome: #in the case of a project without an actual product delivery (e.g. EWF)
 
 delivery: 
 
@@ -203,6 +234,8 @@ testimonial-job:
 ```
 * Fill in the tags according layout (if you don't understand where they are displayed, [here is an example](https://appliedblockchain.com/projects/cygnetise/))
 * Add the company logo in the `resources/images/logos/clients` folder;
+* Add a white verions of the company logo in the `resources/images/logos/clients-white` folder;
+> The logo need to be in a 800x400px format
 > The logo in the about section will link itself automatically, provided the image has the same **title** as the project page
 
 ### Additionnal comments
@@ -216,6 +249,8 @@ testimonial-job:
 <!-- ## FAQ -->
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Add job
@@ -253,6 +288,8 @@ testimonial-job:
 
 <p>&nbsp;</p>
 
+
+
 ***
 ## Add event
 * Open the `events.yml` file in `_data` folder
@@ -273,6 +310,8 @@ testimonial-job:
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## Add blog post
@@ -346,6 +385,8 @@ To do so, go to `_layouts/header.html` and add the page title to the condition i
 * image size, difference between regular and alt version -->
 
 <p>&nbsp;</p>
+
+
 
 ***
 ## [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)

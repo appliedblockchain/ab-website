@@ -1,6 +1,6 @@
 ---
 layout: project
-tag: grid
+order: 4
 
 title: BABB
 subtitle: Blockchain-based social bank

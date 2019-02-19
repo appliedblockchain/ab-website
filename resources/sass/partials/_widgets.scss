@@ -99,6 +99,10 @@
     .form__label {
         color: $white !important;
     }
+
+    &__input {
+        max-width: $integer*25
+    }
 }
 
 

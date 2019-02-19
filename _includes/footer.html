@@ -1,22 +1,27 @@
-<footer class="footer section section--left section--dark">
+<footer class="footer section section--left section--col section--dark">
     <div class="row">
-        <div class="footer__item colalt--xl6 colalt--lg8 colalt--md10">
-            <!-- edit component in _includes/components/newsletter.html -->
-            {% include components/newsletter.html %}
-        </div>
-        <div class="footer__item  colaltoffset--xl3 colalt--lg5 colaltoffset--lg1 colalt--md14">
+        <div class="footer__item footer__logo colalt--lg5">
+            <div class="logo logo-name-white">
+                <a href="{{ site.url }}/">
+                    <!-- edit elements in _includes/elements/logo.html -->
+                    {% include elements/logo.html %}
+                </a>
+            </div>
             <!-- edit component in _includes/components/social.html -->
             {% include components/social.html %}
         </div>
-        <div class="footer__item footer__adress colalt--sm6">
-            <p class="footer__title lead">Address</p>
+        <div class="footer__item colalt--lg8 colaltoffset--lg1">
+            <!-- edit component in _includes/components/newsletter.html -->
+            {% include components/newsletter.html %}
+        </div>
+        <div class="footer__item footer__adress colalt--md5">
+            <p class="footer__title subtitle">Address</p>
             <p>{{ site.address-london }}</p>
-            <p>info@appliedblockchain.com</p>
             <p class="body--bold">© Copyright 2018 Applied Blockchain Ltd.<br>All rights reserved.<p>
             <p>Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276.</p>
         </div>
-        <div class="footer__item colaltoffset--sm1 colalt--sm4 colalt--7">
-            <p class="footer__title lead">Site map</p>
+        <div class="footer__item colalt--md3 colaltoffset--md1 colalt--sm5">
+            <p class="footer__title subtitle">Site map</p>
             <a href="{{ site.url }}/" class="footer__button button button--text">Home</a>
             <a href="{{ site.url }}/services" class="footer__button button button--text">Services</a>
             <a href="{{ site.url }}/our-projects" class="footer__button button button--text">Projects</a>
@@ -27,10 +32,16 @@
             <a href="{{ site.url }}/join" class="footer__button button button--text">Join</a>
             <a href="{{ site.url }}/contact" class="footer__button button button--text">Contact</a>
         </div>
-        <div class="footer__item  colalt--sm4 colalt--7">
-            <p class="footer__title lead">Resources</p>
+        <div class="footer__item colalt--md3 colalt--sm5">
+            <p class="footer__title subtitle">Support</p>
             <a href="{{ site.url }}/faq" class="footer__button button button--text">FAQ</a>
             <a href="{{ site.url }}/privacy-policy" class="footer__button button button--text">Privacy policy</a>
+        </div>
+        <div class="footer__item colalt--md3 colalt--sm5">
+            <p class="footer__title subtitle">Projects</p>
+            {% for project in site.projects %}
+                <a href="{{ project.url }}" class="footer__button button button--text">{{ project.title }}</a>
+            {% endfor %}
         </div>
     </div>
 </footer>

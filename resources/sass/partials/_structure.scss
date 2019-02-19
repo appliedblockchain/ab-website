@@ -948,7 +948,27 @@ li {
 	}
 
 	&__logo {
-		padding-right: $integer*4;
+		@include display-flex();
+		@include flex-direction(column);
+		@include justify-content(space-between);
+		@include responsive(max-width, $break-desktop-max) {
+			@include flex-direction(row);
+			@include justify-content(flex-start);
+
+			.logo {
+				min-width: $integer*20;
+				margin-right: $integer*4;
+			}
+		}
+		@include responsive(max-width, $break-desktop-max) {
+			@include flex-direction(column);
+
+			.logo {
+				min-width: auto;
+				margin-right: 0;
+				margin-bottom: $integer*2;
+			}
+		}
 	}
 
 	&__title {

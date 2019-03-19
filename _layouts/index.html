@@ -49,22 +49,24 @@
     <section class="section section--left section--dark" id="what-we-do">
 
         <div class="row">
-            <div class="col--lg5 col--md3 hide--tablets">
+            <div class="col--lg5 hide--desktop">
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/index/what-we-do.svg" alt="Solution icon">
             </div>
-            <div class="col--lg6 coloffset--md1 col--md8">
+            <div class="coloffset--lg1 col--lg6">
                 <!-- edit component in _includes/components/section-header.html -->
                 {% include components/section-header.html
                     comment='What we do'
                     title='We deliver end-to-end zero-knowledge & blockchain technology solutions'
                     description='We have zero-knowledge built blockchain applications for enterprises and startups within financial services, energy, supply chain, commodities, automotive, telecoms, legal, medical, property and recruitment.'
                 %}
-                <a href="{{ site.url }}/services" class="ga-button-services button button--primary button--large button--animate fa fa-search-plus">
-                    <p class="button__inner">Our services</p>
-                </a>
-                <a href="{{ site.url }}/products" class="ga-button-services button button--highlight button--large button--animate fa fa-search-plus">
-                    <p class="button__inner">Our products</p>
-                </a>
+                <div class="thank-you__button">
+                    <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--large button--animate fa fa-cogs">
+                        <p class="button__inner">Services</p>
+                    </a>
+                    <a href="{{ site.url }}/products" class="ga-button-services button button--primary-lighten button--large button--animate fa fa-box">
+                        <p class="button__inner">Products</p>
+                    </a>
+                </div>
             </div>
         </div>
         

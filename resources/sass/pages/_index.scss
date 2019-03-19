@@ -65,7 +65,10 @@
         z-index: 1;
         height: 40vh;
         position: absolute;
-        top: 40%;
+        top: 50%;
+        @include responsive(min-width, $break-large-desktop-min) {
+            top: 40%;
+        }
         @include responsive(max-width, $break-desktop-max) {
             height: 35vh;
         }
@@ -186,10 +189,14 @@
 
 #what-we-do {
     margin-top: -1px;
-    @include responsive(max-width, $break-tablets-max) {
+    @include responsive(max-width, $break-desktop-max) {
         .section__header {
             @include align-items(center);
             text-align: center;
+        }
+
+        .thank-you__button {
+            @include justify-content(center);
         }
     }
 }

@@ -17,9 +17,9 @@
 .products {
 
     &__intro {
-        @include background(85% 40%, 65%);
+        @include background(85% top, 80%);
         @include responsive(min-width, $break-large-desktop-min) {
-            @include background(85% 40%, 45%);
+            @include background(85% 40%, 70%);
         }
         @include responsive(max-width, $break-desktop-max) {
             background-image: none !important;

@@ -1,15 +1,38 @@
 # events list
-# in events.html page
+# in events.html pagehttps://www.atpco.net/events/blockchain-travel-summit
 # ordered from most to least recent
 
 # event spreadsheet link
 # https://docs.google.com/spreadsheets/d/123Tbe-gan5LFYsunyEzH3gDyje6Nv613n8Y_1mK-MUE/edit?usp=sharing
 
-# - name: Zero Knowledge Summit
-#   date: '2019-03-22'
-#   location: Berlin
-#   directions: 
-#   link: https://www.zeroknowledge.fm/summit
+- name: Event Horizon
+  image: event-horizon
+  date: '2019-06-20'
+  date-from: '2019-06-19'
+  location: Kraftwerk, Berlin, Germany
+  directions: https://www.google.com/maps/place/Kraftwerk+Berlin/@52.5104716,13.4202275,16z/data=!4m5!3m4!1s0x0:0xd0bedb2a54979b86!8m2!3d52.5105434!4d13.4203241
+  link: https://eventhorizonsummit.com/
+
+- name: The 2nd ZKProof Workshop 2019
+  image: the-2nd-zkproof-workshop-2019
+  date: '2019-04-12'
+  date-from: '2019-04-10'
+  location: DoubleTree Hotel, Berkeley, CA, USA
+  directions: https://www.google.com/maps?ll=37.869243,-122.314284&z=14&t=m&hl=fr-FR&gl=IL&mapclient=embed&cid=13788427899024276120
+  link: https://zkproof.org/workshop2/main.html
+
+- name: Zero Knowledge Summit - ZK0X03
+  image: zero-knowledge-summit
+  date: '2019-03-22'
+  location: Berlin, Germany
+  link: https://www.zeroknowledge.fm/summit
+
+- name: Blockchain Travel Summit
+  image: blockchain-travel-summit
+  date: '2019-03-20'
+  location: Company, NYC, USA
+  directions: https://www.google.com/maps?sll=40.753558,-73.978136&q=335+Madison+Avenue+New+York,+NY,+10173,+United+States&z=11
+  link: https://www.blockchaintravelsummit.com/
 
 - name: Blockchain Technology World
   image: blockchain-technology-world

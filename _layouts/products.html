@@ -6,7 +6,7 @@
     {% include components/page-header.html
         title='Products'
         description='It is in our DNA to innovate'
-        comment="Applied Blockchain Labs is our research and development centre. We research technologies and solutions to further develop internal tools which support the deployment of our products and client projects."
+        comment="Applied Blockchain Labs is our research and development centre. We build our own technology to support our client requirements."
     %}
 
     <section class="section section--grey section--left products__intro" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/icon-products-page.svg);">
@@ -15,47 +15,14 @@
             <div class="col--lg6">
                 <!-- edit component in _includes/components/page-header.html -->
                 {% include components/section-header.html
-                    subtitle='While we work on multiple projects across different industries, we have identified a common problem'
-                    description='Entreprise blockchain platforms provide very restrictive configurations that undermine some benefits of blockchain such:'
+                    subtitle='We pride ourselves on being at the cutting edge of our industry'
+                    description='By working on real world projects we see the technology gaps and understand how evolving technology can be applied. That’s why we’ve been focusing on cryptography and zero knowledge proofs (ZKP). We think they will profoundly shape the future of our industry.'
                 %}
-                <p>
-                    <br>• size of the security consensus group;
-                    <br>• easy asset transfer;
-                    <br>• network interoperability.
-                    <br>
-                    <br>We believe we have solved these major problems in enterprise blockchain by moving assets to a zero knowledge proof that is private, platform agnostic, and transferrable acress different enterprise blockchain platforms, opening up a potential network effect in enterprise blockchains.'
-                </p>
-        </div>
-
-    </section>
-
-    <section class="section">
-
-        <!-- edit component in _includes/components/section-header.html -->
-        {% include components/section-header.html
-            title='Discover our products'
-        %}
-
-        <div class="section__content z-index--1">
-            <div class="row">
-                <!-- edit data in _data/products.yml -->
-                {% for product in site.data.products %}
-                    <!-- edit component in _includes/components/product.html -->
-                    {% include components/product.html %}
-                {% endfor %}
-            </div>
+                <p><br>We are developing and will soon release a new flagship product: K0 for supply chain & trading. K0 (pronounced “K zero”) is our vision to enable digital assets, and digital twins of physical assets, to be created, verified and traded privately and seamlessly across multiple enterprise blockchain platforms & networks.</p>
         </div>
 
     </section>
     
-    <section class="section section--margin-minus section--primary">
-
-        <div class="section__content devtools">
-            
-        </div>
-
-    </section>
-
 </div>
 
 {% include footer.html %}

@@ -29,6 +29,13 @@
         .section__header {
             margin-bottom: 0;
         }
+
+        img {
+            @include responsive(max-width, $break-tablets-max) {
+                width: $integer*7;
+                margin-top: -$integer*7.5;
+            }
+        }
     }
     
     &__item {

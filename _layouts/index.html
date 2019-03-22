@@ -114,11 +114,6 @@
 
     <section class="section section--col section--alt section--grey">
 
-        <!-- edit component in _includes/components/section-header.html -->
-        {% include components/section-header.html
-            title='Partners'
-        %}
-
         <div class="owl-carousel owl-carousel-partners carousel block">
             {% for item in site.data.images.partners %}
                 <img src="{{ site.url }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">

@@ -32,7 +32,7 @@
 
 
 /* 
- * chivo
+ * chivo (content)
  * —————————————————————————————————————————————————————————————————
 */
 
@@ -48,3 +48,24 @@
 /*black*/
 @include fontface('Chivo', chivo/chivo-black, $font-black, normal);
 @include fontface('Chivo', chivo/chivo-blackitalic, $font-black, italic);
+
+
+
+
+/* 
+ * roboto mono (code)
+ * —————————————————————————————————————————————————————————————————
+*/
+
+/*light*/
+@include fontface('Roboto Mono', roboto-mono/roboto-mono-light, $font-light, normal);
+@include fontface('Roboto Mono', roboto-mono/roboto-mono-lightitalic, $font-light, italic);
+/*regular*/
+@include fontface('Roboto Mono', roboto-mono/roboto-mono-regular, $font-regular, normal);
+@include fontface('Roboto Mono', roboto-mono/roboto-mono-regularitalic, $font-regular, italic);
+/*bold*/
+@include fontface('Roboto Mono', roboto-mono/roboto-mono-medium, $font-bold, normal);
+@include fontface('Roboto Mono', roboto-mono/roboto-mono-mediumitalic, $font-bold, italic);
+/*black*/
+@include fontface('Roboto Mono', roboto-mono/roboto-mono-bold, $font-black, normal);
+@include fontface('Roboto Mono', roboto-mono/roboto-mono-bolditalic, $font-black, italic);

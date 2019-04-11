@@ -18,5 +18,5 @@ seventeen:
 eighteen:
   - text: We opened an office in Porto! We have chosen Porto as our first non-UK office and as our development centre for European expansion.
     icon: pinpoint
-  - text: We began building K0, a zero knowledge proof framework for trading assets privately on smart contract blockchains.
+  - text: We began building K<span class="body--zero">0</span>, a zero knowledge proof framework for trading assets privately on smart contract blockchains.
     icon: node

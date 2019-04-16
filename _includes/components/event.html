@@ -21,15 +21,9 @@
                     <p class="button__inner">view website</p>
                 </a>
             {% endif %}
-            {% if event.directions %}
-                {% capture now %} {{'now' | date: '%s' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
-                {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} <!-- capture event date -->
-                {% if date > now %}
-                    <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">
-                        <p class="button__inner">Get directions</p>
-                    </a>
-                {% endif %}
-            {% endif %}
+            <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">
+                <p class="button__inner">Get directions</p>
+            </a>
         </div>
     </div>
 </div>

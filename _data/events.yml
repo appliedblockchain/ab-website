@@ -5,6 +5,13 @@
 # event spreadsheet link
 # https://docs.google.com/spreadsheets/d/123Tbe-gan5LFYsunyEzH3gDyje6Nv613n8Y_1mK-MUE/edit?usp=sharing
 
+- name: 'BC-POR 0x01: Bitcoin & Ethereum Wallets'
+  image: meetup-porto
+  date: '2019-04-16'
+  location: Porto i/o Downtown, Porto, Portugal
+  directions: https://www.google.com/maps/place/Porto+i%2Fo+Downtown/@41.1470472,-8.6140042,15z/data=!4m2!3m1!1s0x0:0xace2178567e6a944?sa=X&ved=2ahUKEwiu85ffl9ThAhX-UhUIHeuYACkQ_BIwCnoECA8QCA
+  link:  https://www.meetup.com/fr-FR/Porto-Blockchain/events/260258072/
+
 - name: Event Horizon
   image: event-horizon
   date: '2019-06-20'

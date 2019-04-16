@@ -2,12 +2,31 @@
 
     <!-- edit component in _includes/components/page-header.html -->
     {% include components/page-header.html
-        background-color='grey'
         title='Events'
         description='Meet our team at blockchain events!'
     %}
 
-    <section class="section section--alt section--grey">
+    <section class="section section--alt">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='On today'
+        %}
+
+        <div class="block event">
+            {% for event in site.data.events %}
+                {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
+                {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
+                {% if date == now %}
+                    <!-- edit component in _includes/components/event.html -->
+                    {% include components/event.html %}
+                {% endif %}
+            {% endfor %} 
+        </div>
+
+    </section>
+
+    <section class="section section--alt">
 
         <div class="section__content tab tab--vertical event">
             <div class="section__filter tab__nav">
@@ -25,7 +44,7 @@
                     {% for event in sorted %}
                         {% capture now %} {{'now' | date: '%s' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
                         {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} <!-- capture event date -->
-                        {% if date > now %}
+                        {% if date >= now %}
                             <!-- edit component in _includes/components/event.html -->
                             {% include components/event.html %}
                         {% endif %}

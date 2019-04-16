@@ -5,13 +5,6 @@
 # event spreadsheet link
 # https://docs.google.com/spreadsheets/d/123Tbe-gan5LFYsunyEzH3gDyje6Nv613n8Y_1mK-MUE/edit?usp=sharing
 
-- name: 'BC-POR 0x01: Bitcoin & Ethereum Wallets'
-  image: meetup-porto
-  date: '2019-04-16'
-  location: Porto i/o Downtown, Porto, Portugal
-  directions: https://www.google.com/maps/place/Porto+i%2Fo+Downtown/@41.1470472,-8.6140042,15z/data=!4m2!3m1!1s0x0:0xace2178567e6a944?sa=X&ved=2ahUKEwiu85ffl9ThAhX-UhUIHeuYACkQ_BIwCnoECA8QCA
-  link:  https://www.meetup.com/fr-FR/Porto-Blockchain/events/260258072/
-
 - name: Event Horizon
   image: event-horizon
   date: '2019-06-20'
@@ -19,6 +12,20 @@
   location: Kraftwerk, Berlin, Germany
   directions: https://www.google.com/maps/place/Kraftwerk+Berlin/@52.5104716,13.4202275,16z/data=!4m5!3m4!1s0x0:0xd0bedb2a54979b86!8m2!3d52.5105434!4d13.4203241
   link: https://eventhorizonsummit.com/
+
+- name: 'ZK-LDN 0x01: zk-SNARKs - How to develop and use them in practice'
+  image: meetup-london
+  date: '2019-05-01'
+  location: Runway East London Bridge, London, UK
+  directions: https://www.google.com/maps/place/Runway+East+London+Bridge/@51.5046676,-0.0885661,15z/data=!4m2!3m1!1s0x0:0x726b7722e74aae46?sa=X&ved=2ahUKEwiCxs2p89ThAhVhThUIHTCjAjIQ_BIwEHoECA0QCA
+  link:  https://www.meetup.com/fr-FR/Zero-Knowledge-London/events/260669657/
+
+- name: 'BC-POR 0x01: Bitcoin & Ethereum Wallets'
+  image: meetup-porto
+  date: '2019-04-16'
+  location: Porto i/o Downtown, Porto, Portugal
+  directions: https://www.google.com/maps/place/Porto+i%2Fo+Downtown/@41.1470472,-8.6140042,15z/data=!4m2!3m1!1s0x0:0xace2178567e6a944?sa=X&ved=2ahUKEwiu85ffl9ThAhX-UhUIHeuYACkQ_BIwCnoECA8QCA
+  link:  https://www.meetup.com/fr-FR/Porto-Blockchain/events/260258072/
 
 - name: The 2nd ZKProof Workshop 2019
   image: the-2nd-zkproof-workshop-2019

@@ -13,6 +13,14 @@
   directions: https://www.google.com/maps/place/Kraftwerk+Berlin/@52.5104716,13.4202275,16z/data=!4m5!3m4!1s0x0:0xd0bedb2a54979b86!8m2!3d52.5105434!4d13.4203241
   link: https://eventhorizonsummit.com/
 
+- name: Consortia 2019
+  image: consortia-2019
+  date-from: '2019-05-21'
+  date: '2019-05-22'
+  location: Hilton London Metropole, London, UK
+  directions: https://www.google.co.uk/maps/place/Hilton+London+Metropole/@51.5193474,-0.171651,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ab40e13c71b:0xf53163b89efae942!8m2!3d51.5193441!4d-0.1694623
+  link: https://bcrpub.com/events/consortia-2019
+
 - name: 'ZK-LDN 0x01: zk-SNARKs - How to develop and use them in practice'
   image: meetup-london
   date: '2019-05-01'

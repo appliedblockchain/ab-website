@@ -6,25 +6,31 @@
         description='Meet our team at blockchain events!'
     %}
 
-    <section class="section section--alt">
+    {% for event in site.data.events %}
+        {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
+        {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
+        {% if date == now %}
+            <section class="section section--alt">
 
-        <!-- edit component in _includes/components/section-header.html -->
-        {% include components/section-header.html
-            title='On today'
-        %}
-
-        <div class="block event">
-            {% for event in site.data.events %}
-                {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
-                {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
-                {% if date == now %}
-                    <!-- edit component in _includes/components/event.html -->
-                    {% include components/event.html %}
-                {% endif %}
-            {% endfor %} 
-        </div>
-
-    </section>
+                <!-- edit component in _includes/components/section-header.html -->
+                {% include components/section-header.html
+                    title='On today'
+                %}
+                
+                <div class="block event">
+                    {% for event in site.data.events %}
+                        {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
+                        {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
+                        {% if date == now %}
+                            <!-- edit component in _includes/components/event.html -->
+                            {% include components/event.html %}
+                        {% endif %}
+                    {% endfor %} 
+                </div>
+                
+            </section>
+        {% endif %}
+    {% endfor %} 
 
     <section class="section section--alt">
 

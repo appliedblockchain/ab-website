@@ -18,6 +18,7 @@
 * [Add blog post](#add-blog-post)
   * [Content HTML structure](#content-html-structure)
 
+
 <p>&nbsp;</p>
 
 ***

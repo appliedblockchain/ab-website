@@ -20,7 +20,9 @@
                 <div class="coloffset--xl2 col--xl8 coloffset--lg1 col--lg10">
                     <!-- edit component in _includes/components/share.html -->
                     {% include components/share.html %}
-                    <p class="post__headline">{{ page.headline }}</p>
+                    {% if page.headline %}
+                        <p class="post__headline">{{ page.headline }}</p>
+                    {% endif %}
                     {{ content }}
                 </div>
             </div>

@@ -71,7 +71,7 @@
 
     &__quote {
         position: relative;
-        padding-left: $integer;
+        padding-left: $integer*2;
         margin: $integer*2 0;
 
         &:before {

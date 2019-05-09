@@ -114,9 +114,12 @@ html, body {
 		font-size: 1.5rem;
 	}
 
-	&__content {
-		line-height: 1.5;
+	&__content, &__content ul, &__content li {
 		font-size: 1.25rem;
+	}
+
+	&__quote, &__content {
+		line-height: 1.5;
 	}
 }
 

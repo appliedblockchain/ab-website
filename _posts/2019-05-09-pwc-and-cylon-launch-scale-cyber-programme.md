@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Applied Blockchain one of 8 companies selected from 400 to join PwC Scale | Cyber programme
+title: Applied Blockchain one of eight companies selected from 400 to join PwC Scale | Cyber programme
 image: pwc-and-cylon-launch-scale-cyber-programme
 headline: PwC is collaborating with CyLon to launch its first Scale | Cyber programme to support high potential scale-up businesses focused on building a more secure and innovative digital economy.
 category: press-release

@@ -19,7 +19,7 @@
   active:
   title: Production
   id: production
-  text: Our developers build your project and test it at every stage. After the build is complete, we coordinate with your respective Project Manager and Technical a to support in implementing the project for you. We move into production, and then your project is live.
+  text: Our developers build your project and test it at every stage. After the build is complete, we coordinate with your team and support you implementing the project.  We move into production, and then your project is live.
   icon: icon-production
 
 - number: 4

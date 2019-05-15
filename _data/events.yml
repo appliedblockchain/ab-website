@@ -13,6 +13,20 @@
   directions: https://www.google.com/maps/place/Kraftwerk+Berlin/@52.5104716,13.4202275,16z/data=!4m5!3m4!1s0x0:0xd0bedb2a54979b86!8m2!3d52.5105434!4d13.4203241
   link: https://eventhorizonsummit.com/
 
+- name: Blockchain Innovation Conference 2019
+  image: bic2019
+  date: '2019-06-07'
+  location: ABN AMRO, Amsterdam, The Netherlands
+  directions: https://www.google.co.uk/maps/place/ABN+AMRO+Corporate+Headquarters/@52.3374762,4.874887,15z/data=!4m2!3m1!1s0x0:0x28491827abd8079a?sa=X&ved=2ahUKEwiu4c2OpJ3iAhXCShUIHQFWDasQ_BIwCnoECAsQCA
+  link: https://blockchaininnovationconference.com/
+
+- name: Accord Project Forum on Smart Legal Contracts
+  image: accord-project-forum
+  date: '2019-06-06'
+  location: The Brewery, London, UK
+  directions: https://www.google.co.uk/maps/place/The+Brewery/@51.5206334,-0.0937828,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca99b36dc23:0xb8605024f3360e44!8m2!3d51.5206301!4d-0.0915941
+  link: https://www.accordprojectforum.com/
+
 - name: Consortia 2019
   image: consortia-2019
   date-from: '2019-05-21'

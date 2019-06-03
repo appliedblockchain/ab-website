@@ -35,6 +35,13 @@
   directions: https://www.google.co.uk/maps/place/The+Brewery/@51.5206334,-0.0937828,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca99b36dc23:0xb8605024f3360e44!8m2!3d51.5206301!4d-0.0915941
   link: https://www.accordprojectforum.com/
 
+- name: 'ZK-LDN 0x02: On Sonic and Efficient Private Transactions'
+  image: meetup-london
+  date: '2019-06-03'
+  location: Consensys, London, UK
+  directions: https://www.google.com/maps/place/ConsenSys/@51.5244649,-0.0859061,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca8b6ae2ebd:0xf5178ccfec00c8fc!8m2!3d51.5244649!4d-0.0837121
+  link: https://www.meetup.com/fr-FR/Zero-Knowledge-London/events/261120491/
+
 - name: Consortia 2019
   image: consortia-2019
   date-from: '2019-05-21'
@@ -131,12 +138,12 @@
   directions: https://www.google.co.uk/maps/place/Central+Hall+Westminster/@51.5000559,-0.1296481,15z/data=!4m5!3m4!1s0x0:0xb32c3c182d15cfaa!8m2!3d51.5000559!4d-0.1296481
   link: https://www.etotsummit.com/
 
-- name: Polkadot Meetup
-  image: polkadot-meetup
-  date: '2018-10-03'
-  location: Second Home, London, UK
-  directions: https://www.google.com/maps/search/?api=1&query=51.520080%2C-0.070423
-  link: https://www.meetup.com/fr-FR/Polkadot-London/
+# - name: Polkadot Meetup
+#   image: polkadot-meetup
+#   date: '2018-10-03'
+#   location: Second Home, London, UK
+#   directions: https://www.google.com/maps/search/?api=1&query=51.520080%2C-0.070423
+#   link: https://www.meetup.com/fr-FR/Polkadot-London/
 
 - name: Blockchain Live 2018
   image: blockchain-live-2018

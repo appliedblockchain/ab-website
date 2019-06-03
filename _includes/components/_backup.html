@@ -1,3 +1,33 @@
+<!-- TODAY'S EVENT (EVENT ) -->
+{% for event in site.data.events %}
+{% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
+{% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
+{% if date == now %}
+    <section class="section section--alt">
+
+        <!-- edit component in _includes/components/section-header.html -->
+        {% include components/section-header.html
+            title='On today'
+        %}
+        
+        <div class="block event">
+            <!-- edit data in _data/events.yml -->
+            {% for event in site.data.events %}
+                {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
+                {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
+                {% if date == now %}
+                    <!-- edit component in _includes/components/event.html -->
+                    {% include components/event.html %}
+                {% endif %}
+            {% endfor %} 
+        </div>
+        
+    </section>
+{% endif %}
+{% endfor %} 
+
+
+
 <!-- HIRING AND NEWS WIDGETS -->
 <div class="landing__widget widget block">
     <div class="widget--hiring">
@@ -23,6 +53,8 @@
     </div>
 </div>
 
+
+
 <!-- GRAPHIC BACKGROUND -->
 <div class="landing__background">
     <span class="graphic landing__graphic--lines">
@@ -34,6 +66,8 @@
         {% include elements/graphic-circle.svg %}
     </span>
 </div>
+
+
 
 <!-- ANCHOR NAV -->
 <div class="anchor">
@@ -67,8 +101,9 @@
     </div>
 </div>
 
-<!-- COBALT SECTION (on product page) -->
 
+
+<!-- COBALT SECTION (on product page) -->
 <section class="section section--grey">
 
     <!-- edit component in _includes/components/section-header.html -->

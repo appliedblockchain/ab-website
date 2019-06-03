@@ -5,10 +5,18 @@
 # event spreadsheet link
 # https://docs.google.com/spreadsheets/d/123Tbe-gan5LFYsunyEzH3gDyje6Nv613n8Y_1mK-MUE/edit?usp=sharing
 
+- name: Internet of Energy
+  image: internet-of-energy
+  date-from: '2019-09-03'
+  date: '2019-09-04'
+  location: Meliá Berlin, Berlin, Germany
+  directions: https://www.google.co.uk/maps/place/Meli%C3%A1+Berlin/@52.52144,13.3883,15z/data=!4m5!3m4!1s0x0:0xb56f0bf928f6ed00!8m2!3d52.52144!4d13.3883
+  link: https://ioe-de.internetofbusiness.com/
+
 - name: Event Horizon
   image: event-horizon
-  date: '2019-06-20'
   date-from: '2019-06-19'
+  date: '2019-06-20'
   location: Kraftwerk, Berlin, Germany
   directions: https://www.google.com/maps/place/Kraftwerk+Berlin/@52.5104716,13.4202275,16z/data=!4m5!3m4!1s0x0:0xd0bedb2a54979b86!8m2!3d52.5105434!4d13.4203241
   link: https://eventhorizonsummit.com/

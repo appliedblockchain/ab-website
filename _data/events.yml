@@ -138,12 +138,12 @@
   directions: https://www.google.co.uk/maps/place/Central+Hall+Westminster/@51.5000559,-0.1296481,15z/data=!4m5!3m4!1s0x0:0xb32c3c182d15cfaa!8m2!3d51.5000559!4d-0.1296481
   link: https://www.etotsummit.com/
 
-# - name: Polkadot Meetup
-#   image: polkadot-meetup
-#   date: '2018-10-03'
-#   location: Second Home, London, UK
-#   directions: https://www.google.com/maps/search/?api=1&query=51.520080%2C-0.070423
-#   link: https://www.meetup.com/fr-FR/Polkadot-London/
+- name: Polkadot Meetup
+  image: polkadot-meetup
+  date: '2018-10-03'
+  location: Second Home, London, UK
+  directions: https://www.google.com/maps/search/?api=1&query=51.520080%2C-0.070423
+  link: https://www.meetup.com/fr-FR/Polkadot-London/
 
 - name: Blockchain Live 2018
   image: blockchain-live-2018

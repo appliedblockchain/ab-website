@@ -193,8 +193,10 @@ Add the image in the corresponding folder
 ---
 layout: project
 tag: #featured or grid
+dlc: true #if the project has a downloadable pdf case study
 
 title: 
+slug: 
 subtitle: 
 industry: 
 deliverables: 

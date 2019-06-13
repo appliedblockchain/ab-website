@@ -1,8 +1,10 @@
 ---
 layout: project
 order: 2
+dlc: true
 
 title: Cygnetise
+slug: cygnetise
 subtitle: A smarter way to manage your Authorised Signatory Lists
 industry: Legal
 deliverables: Blockchain-based authorised signatory list

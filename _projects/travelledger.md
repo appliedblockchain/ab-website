@@ -1,8 +1,10 @@
 ---
 layout: project
 tag: featured
+dlc: true
 
 title: Travel Ledger
+slug: travelledger
 subtitle: Travel settlement platform built on blockchain technology
 industry: Travel
 deliverables: Blockchain-based billing and settlement platform

@@ -130,6 +130,11 @@
 				<a href="{{ site.url }}/our-projects" class="button button--small button--primary button--stroke button--animate fas fa-chevron-left">
 					<p class="button__inner">Back</p>
 				</a>
+				{% if page.dlc %}
+					<a href="{{ site.url }}{{ site.resourceurl }}/dlc/case-studies/appliedBlockchain-caseStudies-{{ page.slug }}.pdf" class="post__button button button--small button--highlight button--animate fas fa-download" download>
+						<p class="button__inner"><span class="hide--desktop">Download </span>case study</p>
+					</a>
+				{% endif %}
 			{% endif %}
 			<a href="{{ site.url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope {% if page.layout == 'index' or page.title == 'About' or page.layout == 'post' %}alt{% endif %}">
 				<p class="button__inner">Contact us</p>

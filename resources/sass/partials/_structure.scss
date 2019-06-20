@@ -518,7 +518,7 @@ li {
 */
 
 .block {
-	@include box-shadow(0 0 30px 0 rgba($dark, 0.05));
+	@include box-shadow($box-shadow-1);
 	overflow: hidden;
 	background-color: $white;
 	border-radius: $integer;
@@ -786,7 +786,7 @@ li {
 	}
 
 	&.js-scrolled {
-		@include box-shadow(0 0 20px 0 rgba($dark, 0.15));
+		@include box-shadow($box-shadow-2);
 		height: $integer*4;
 		background-color: $white;
 		

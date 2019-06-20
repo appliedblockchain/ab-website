@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * RESOURCES
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+.card {
+
+    &--download {
+        height: 100%;
+        padding: 0;
+    }
+}
+
+.card {
+
+    &__header, &__content {
+        padding: $integer*2;
+    }
+
+    &__header {
+        position: relative;
+        &:before {
+            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+            background-color: rgba($white, 0.8);
+        }
+
+        > * {
+            position: relative;
+        }
+
+        .lead {
+            margin-bottom: $integer/2;
+        }
+    }
+
+    &__download {
+        @include display-flex();
+        @include align-items(center);
+
+        & + & {
+            margin-top: $integer/2;
+        }
+    
+        .button {
+            @include flex-shrink(0);
+            margin-right: $integer/2;
+        }
+    }
+}

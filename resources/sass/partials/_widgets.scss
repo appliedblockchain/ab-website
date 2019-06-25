@@ -196,10 +196,9 @@
                 background-color: $primary-darken;
                 padding: $integer;
                 @include responsive(max-width, $break-phones-max) {
-                    @include border-radius($integer);
+                    @include border-top-left-radius($integer);
+                    @include border-top-right-radius($integer);
                     @include flex-direction(column);
-                    padding: $integer/2;
-                    background-color: $highlight;
                     font-size: 1rem;
 
                     .button {
@@ -213,11 +212,11 @@
                 @include flex-direction(row);
                 padding: $integer;
                 @include responsive(max-width, $break-phones-max) {
-                    display: none;
+                    font-size: 0.8rem;
                 }
 
                 .button {
-                    margin-top: $integer/2;
+                    margin-top: $integer;
                 }
             }
 

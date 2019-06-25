@@ -50,7 +50,14 @@
     
         .button {
             @include flex-shrink(0);
-            margin-right: $integer/2;
+            
+            & + .button {
+                margin-left: $integer/4;
+            }
         }
+    }
+
+    &__meta {
+        margin-left: $integer/2;
     }
 }

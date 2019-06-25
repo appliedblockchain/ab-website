@@ -33,7 +33,7 @@
                             <a class="button button--icon button--small button--highlight button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}.zip" download>
                                 <i class="button__inner fas fa-download"></i>
                             </a>
-                            <p class="body--bold">Download all</p>
+                            <p class="card__meta body--bold">Download all</p>
                         </div>
                         <!-- edit data in _data/resources.yml -->
                         {% for doc in category.docs %}
@@ -41,10 +41,15 @@
                                 <a class="button button--icon button--small button--primary button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" download>
                                     <i class="button__inner fas fa-download"></i>
                                 </a>
-                                <div>
+                                {% if category.slug == 'case-studies' or category.slug == 'one-pagers' %}
+                                    <a class="button button--icon button--small button--primary-lighten button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" target="_blank">
+                                        <i class="button__inner fas fa-eye"></i>
+                                    </a>
+                                {% endif %}
+                                <div class="card__meta">
                                     <p class="body--bold">{{ doc.title }}</p>
                                     {% if doc.subtitle %}
-                                    <p class="body--small">{{ doc.subtitle }}</p>
+                                        <p class="body--small">{{ doc.subtitle }}</p>
                                     {% endif %}
                                 </div>
                             </div>

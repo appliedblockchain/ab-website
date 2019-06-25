@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Newsletter Mar 2019 – Flying Start
+title: Newsletter March 2019 – Flying Start
 category: news
 social: newsletter
 link:  https://mailchi.mp/858a2c49b2d6/rvo7od5f0h-566123

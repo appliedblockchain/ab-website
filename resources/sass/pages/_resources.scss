@@ -20,12 +20,9 @@
 
 .card {
 
-    &__header, &__content {
-        padding: $integer*2;
-    }
-
     &__header {
         position: relative;
+        padding: $integer*2;
         &:before {
             @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
             background-color: rgba($white, 0.8);
@@ -43,9 +40,12 @@
     &__download {
         @include display-flex();
         @include align-items(center);
+        @include justify-content(space-between);
+        padding: $integer/2 $integer/2 $integer/2 $integer;
+        border-bottom: 2px solid $lightgrey;
 
-        & + & {
-            margin-top: $integer/2;
+        &:last-child {
+            border-bottom:0;
         }
     
         .button {
@@ -58,6 +58,10 @@
     }
 
     &__meta {
-        margin-left: $integer/2;
+        margin-right: $integer;
+    }
+
+    &__buttons {
+        @include display-flex();
     }
 }

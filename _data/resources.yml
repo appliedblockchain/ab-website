@@ -39,6 +39,9 @@ sales:
         subtitle: Identity and Privacy Toolkit
         file: appliedBlockchain-onePagers-mantle.pdf
 
+      - title: Technical design worksohps
+        file: appliedBlockchain-onePagers-consulting.pdf
+
   - title: Press releases
     slug: press-releases
     subtitle: Our press releases come with a light brand kit

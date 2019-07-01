@@ -492,14 +492,17 @@ li {
 		@include align-items(flex-start);
 		text-align: left;
 
+		[class*="coloffset--"] .section {
+
+			&__title, &__subtitle, &__desc {
+				width: 100%;
+			}
+		}
+
 		.section {
 
 			&__header, &__content {
 				@include align-items(flex-start);
-			}
-
-			&__title, &__subtitle, &__desc {
-				width: 100%;
 			}
 		}
 	}
@@ -507,6 +510,20 @@ li {
 	&--right {
 		@include align-items(flex-end);
 		text-align: right;
+
+		[class*="coloffset--"] .section {
+
+			&__title, &__subtitle, &__desc {
+				width: 100%;
+			}
+		}
+
+		.section {
+	
+			&__header, &__content {
+				@include align-items(flex-end);
+			}
+		}
 	}
 }
 

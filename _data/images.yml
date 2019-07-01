@@ -212,3 +212,40 @@ node-hosting:
   - url: keynote-primary
     title: A trusted brand used by global corporations as well as independent startups
     alt: Brand
+
+# solve section
+# in k0.html page
+
+k0-solve:
+  - url: white-keys
+    title: Security
+    body: More independent validators can validate a transaction without being privy to private transaction details
+
+  - url: white-privacy
+    title: Privacy
+    body: Sender, the recipient, amounts and other transaction details remain hidden from validators
+
+  - url: white-anonimity
+    title: Provenance
+    body: Asset provenance is secured by the entire group of validators, and not just a small subset for each transaction
+
+  - url: white-scale
+    title: Interoperability
+    body: Private asset records that are verifiable and compatible with existing enterprise blockchain smart contract platforms
+
+# properties section
+# in k0.html page
+
+k0-properties:
+  - url: circle-primary-file-check
+    title: Completeness
+    body: If the statement is true, the honest verifier (that is, one following the protocol properly) will be convinced of this fact by an honest prover.
+
+  - url: circle-secondary-user-settings
+    title: Soundness
+    body: If the statement is false, no cheating prover can convince the honest verifier that it is true, except with some small probability.
+
+  - url: circle-highlight-check
+    title: Zero knowledge
+    body:  if the statement is true, no verifier learns anything other than the fact that the statement is true.
+

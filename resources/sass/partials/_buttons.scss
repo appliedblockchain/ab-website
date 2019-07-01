@@ -114,6 +114,24 @@
 	@include transform(translateX(180%));
 }
 
+.button--animate-top:before {
+	@include transition(transform $transition);
+	@include pseudo-element('', -140%, auto, auto, 0, 100%, 100%);
+	@include display-flex(inline-flex);
+	@include align-items(center);
+	@include justify-content(center);
+	will-change: transform;
+	text-align: center;
+	background-color: transparent;
+}
+
+.button--animate-top:hover:before {
+	@include transform(translateY(140%));
+}
+.button--animate-top:hover .button__inner {
+	@include transform(translateY(180%));
+}
+
 
 
 /*

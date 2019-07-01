@@ -2,8 +2,9 @@
 {% assign title = include.title %}
 {% assign subtitle = include.subtitle %}
 {% assign description = include.description %}
+{% assign no-margin = include.no-margin %}
 
-<div class="section__header">
+<div class="section__header" {% if no-margin %}style="margin: 0;"{% endif %}>
     {% if comment %}
         <h1 class="section__comment comment">{{ comment }}</h1>
         {% if title %}

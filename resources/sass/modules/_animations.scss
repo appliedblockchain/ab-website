@@ -24,7 +24,11 @@
 	to 		{ opacity: 1; } 
 }
 
-
+@include keyframes(spin) {
+	100% { 
+		@include transform(rotate(360deg)); 
+	}
+}
 
 /* 
  * btn menu

@@ -543,9 +543,9 @@ li {
 
 .block {
 	@include box-shadow(0 0 30px 0 rgba($dark, 0.05));
+	@include border-radius($integer);
 	overflow: hidden;
 	background-color: $white;
-	border-radius: $integer;
 	padding: $integer*2;
 	color: $black;
 	@include responsive(max-width, $break-tablets-max) {
@@ -601,6 +601,11 @@ li {
 
 	&--image {
 		padding: 0;
+	}
+
+	&--download {
+		@include border-radius($integer/2);
+		padding: $integer/2;
 	}
 }
 

@@ -590,9 +590,11 @@ li {
 
 			&__icon {
 				position: absolute;
-				top: -$integer*1.5;
+				top: -$integer*2;
 				left: 50%;
-				margin-left: -$integer*1.5;
+				margin-left: -$integer*2;
+				width: $integer*4;
+				height: auto;
 			}
 		}
 	}

@@ -53,9 +53,7 @@
             {% for item in site.data.images.k0-properties %}
                 <div class="col--md4 col--sm6">
                     <div class="block block--icon">
-                        <span class="button button--large button--icon button--{{ item.color }} block__icon">
-                            <i class="button__inner fas fa-{{ item.icon }}"></i>
-                        </span>
+                        <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.png" alt="{{ item.title }} icon" class="block__icon image-inline__image">
                         <p class="block__title lead">{{ item.title }}</p>
                         <p>{{ item.body }}</p>
                     </div>

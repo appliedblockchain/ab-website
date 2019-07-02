@@ -239,16 +239,19 @@ k0-solve:
 k0-properties:
   - icon: clipboard-check
     color: primary
+    url: circle-primary-file-check
     title: Completeness
     body: If the statement is true, the honest verifier (that is, one following the protocol properly) will be convinced of this fact by an honest prover.
 
   - icon: user-cog
     color: secondary
+    url: circle-secondary-user-settings
     title: Soundness
     body: If the statement is false, no cheating prover can convince the honest verifier that it is true, except with some small probability.
 
   - icon: check
     color: highlight
+    url: circle-highlight-check
     title: Zero knowledge
     body:  if the statement is true, no verifier learns anything other than the fact that the statement is true.
 

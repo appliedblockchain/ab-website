@@ -13,7 +13,6 @@
 
     .section--header {
         @include display-flex();
-        @include align-items(center);
         @include justify-content(center);
         padding-top: $integer*7;
         padding-bottom: $integer*4;
@@ -27,6 +26,22 @@
 
     .title {
         width: 80%;
+    }
+}
+
+#k0--downloads {
+
+    .section--header {
+        padding-bottom: $integer*7;
+    }
+    
+    .k0__logo {
+        @include align-self(flex-start);
+        margin-left: -35px;
+    }
+
+    .title {
+        width: 60%;
     }
 }
 

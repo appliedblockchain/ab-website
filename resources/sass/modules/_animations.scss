@@ -30,6 +30,12 @@
 	}
 }
 
+@include keyframes(spin-reverse) {
+	100% { 
+		@include transform(rotate(-360deg)); 
+	}
+}
+
 /* 
  * btn menu
  * —————————————————————————————————————————————————————————————————

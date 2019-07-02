@@ -3,17 +3,17 @@
 <!-- <div id="k0" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/k0.svg);"> -->
 <div id="k0">
 
-    <div class="k0__background">
+    <!-- <div class="k0__background"> -->
         <!-- <span class="k0__circle k0__circle--1"></span> -->
-        <span class="k0__circle k0__circle--2">
+        <!-- <span class="k0__circle k0__circle--2">
             <span class="k0__circle-inner k0__circle-inner--2"></span>
-        </span>
+        </span> -->
         <!-- <span class="k0__circle k0__circle--3"></span>
         <span class="k0__circle k0__circle--4"></span>
         <span class="k0__circle k0__circle--5"></span>
         <span class="k0__circle k0__circle--6"></span>
         <span class="k0__circle k0__circle--7"></span> -->
-    </div>
+    <!-- </div> -->
 
     <div class="section section--header background--cover">
         <img src="{{ site.url }}{{ site.imageurl }}/logos/products/k0.png" alt="K0 logo" class="k0__logo">
@@ -53,7 +53,9 @@
             {% for item in site.data.images.k0-properties %}
                 <div class="col--md4 col--sm6">
                     <div class="block block--icon">
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.png" alt="{{ item.title }} icon" class="block__icon">
+                        <span class="button button--large button--icon button--{{ item.color }} block__icon">
+                            <i class="button__inner fas fa-{{ item.icon }}"></i>
+                        </span>
                         <p class="block__title lead">{{ item.title }}</p>
                         <p>{{ item.body }}</p>
                     </div>

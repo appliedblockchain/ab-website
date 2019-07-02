@@ -162,6 +162,7 @@
         @include align-items(center);
         @include border-top-right-radius(0);
         @include border-bottom-right-radius(0);
+        @include box-shadow($box-shadow-1);
         position: absolute;
         top: 50%;
         right: -$integer*26;
@@ -255,7 +256,7 @@
     @include align-items(center);
     @include justify-content(space-between);
     @include transition(opacity $transition);
-    @include box-shadow(0 0 20px 0 rgba($dark, 0.15));
+    @include box-shadow($box-shadow-2);
     padding-left: $col*2;
     padding-right: $col*2;
     will-change: opacity;

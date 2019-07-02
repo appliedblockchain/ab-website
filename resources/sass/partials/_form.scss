@@ -145,7 +145,7 @@
 
 	.form__dropdown {
 		@include calc(top, '100% +' $integer/2);
-		@include box-shadow(0px $integer/2 $integer rgba($black ,0.2));
+		@include box-shadow($box-shadow-2);
 		@include border-radius($integer);
 		display: none;
 		position: absolute;

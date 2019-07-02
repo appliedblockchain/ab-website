@@ -1,0 +1,69 @@
+# DLC download data
+# in resources.html page
+
+# ––––––––––––––––––––––––––––––––––––––––––––
+# sales
+# ––––––––––––––––––––––––––––––––––––––––––––
+
+sales:
+
+  - title: Case studies
+    slug: case-studies
+    subtitle: Download a selection of case studies
+    docs:
+
+      - title: Cygnetise
+        subtitle: A smarter way to manage your Authorised Signatory List
+        file: appliedBlockchain-caseStudies-cygnetise.pdf
+
+      - title: Travel Ledger
+        subtitle: Travel settlement platform built on blockchain technology
+        file: appliedBlockchain-caseStudies-travelledger.pdf
+
+  - title: One pagers
+    slug: one-pagers
+    subtitle: Read about our berand, our products, industries, etc.
+    docs:
+
+      - title: Company one-pager
+        subtitle: Information about the Company
+        file: appliedBlockchain-onePagers-generic.pdf
+
+      - title: Energy
+        file: appliedBlockchain-onePagers-industries-energy.pdf
+
+      - title: Supply Chain
+        file: appliedBlockchain-onePagers-industries-supplyChain.pdf
+
+      - title: Mantle
+        subtitle: Identity and Privacy Toolkit
+        file: appliedBlockchain-onePagers-mantle.pdf
+
+      - title: Technical design worksohps
+        file: appliedBlockchain-onePagers-consulting.pdf
+
+  - title: Press releases
+    slug: press-releases
+    subtitle: Our press releases come with a light brand kit
+    docs:
+
+      - title: EWF affiliate
+        file: appliedBlockchain-energy-web-affiliate.zip
+
+      - title: Porto expansion
+        file: appliedBlockchain-porto-european-expansion.zip
+
+# ––––––––––––––––––––––––––––––––––––––––––––
+# k0
+# ––––––––––––––––––––––––––––––––––––––––––––
+
+k0:
+
+  - title: Lightpaper
+    subtitle: 
+    file: 
+
+  - title: Executive paper
+    subtitle: 
+    file: 
+

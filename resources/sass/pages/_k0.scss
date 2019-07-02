@@ -32,20 +32,42 @@
 #k0--downloads {
 
     .section--header {
+        @include justify-content(center);
+        height: 100vh;
+        padding-top: $integer*7;
         padding-bottom: $integer*7;
+
+        & > * {
+
+        }
     }
     
     .k0__logo {
         @include align-self(flex-start);
         margin-left: -35px;
+        margin-bottom: 0;
     }
 
     .title {
-        width: 60%;
+        width: 100%;
+    }
+
+    .card__download {
+        @include display-flex(inline-flex);
+        width: 100%;
+    }
+
+    .button--large {
+        margin-top: $integer*4;
     }
 }
 
 .k0 {
+
+    &__header {
+        @include display-flex();
+        @include align-items(center);
+    }
 
     &__logo {
         margin-bottom: $integer;

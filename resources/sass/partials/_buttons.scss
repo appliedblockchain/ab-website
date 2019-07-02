@@ -315,7 +315,7 @@
 
 .button--scroll-top {
 	@include transition(bottom $transition, transform $transition);
-	@include box-shadow(0 0 30px 0 rgba($dark, 0.4));
+	@include box-shadow($box-shadow-2);
 	will-change: bottom, transform;
     position: fixed;
 	bottom: -$integer*4;

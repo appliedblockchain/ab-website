@@ -172,6 +172,7 @@
     // }
 
     .gartner {
+        @include box-shadow($box-shadow-1);
         position: absolute;
         top: 50%;
         left: 0;
@@ -247,7 +248,7 @@
     }
 
     .video {
-        @include box-shadow(0 0 30px 0 rgba($dark, 0.05));
+        @include box-shadow($box-shadow-1);
         @include background(center center, cover);
         @include border-radius($integer*2);
         height: 100%;

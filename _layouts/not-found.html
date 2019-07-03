@@ -1,0 +1,26 @@
+{% include header.html %}
+
+<div id="thank-you">
+
+    <!-- edit component in _includes/components/page-header.html -->
+    {% include components/page-header.html
+        title='404'
+        description='Page Not Found'
+    %}
+
+    <section class="section section--alt thank-you">
+
+        <div class="section__content body--large">
+            <div class="thank-you__item">
+                <p class="thank-you__title">
+                  Please go back to the
+                  <a href="/"><span class="body--bold">home page</span></a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+{% include footer.html %}

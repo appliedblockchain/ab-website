@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * SCROLL ANIM
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+
+    &.slide {
+        visibility: visible; 
+        @include animation(slide 1s);
+    }
+}

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * APPLIED PROOFS
+ * —————————————————————————————————————————————————————————————————
+*/
+
+#applied-proofs {
+    background-color: $dark;
+
+    &:before {
+        @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+        @include background-image(linear-gradient(to bottom, rgba($dark, 0.7), $dark));
+        position: fixed;
+    }
+
+    .section--dark {
+        background-color: transparent;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .section__header {
+        margin-bottom: 0;
+    }
+}
+
+.ap {
+
+    &__header {
+        @include display-flex();
+        @include align-items(flex-start);
+        @include justify-content(space-evenly);
+        height: 100vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        text-align: left;
+    }
+
+    &__headline {
+        font-size: 6rem;
+    }
+
+    &__description {
+        @include display-flex();
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+        .lead {
+            width: 75%;
+        }
+    }
+    
+    &__anchor {
+        @include flex-direction(column);
+        position: initial;
+        left: auto;
+        height: auto;
+        
+        .button {
+            @include align-self(flex-end);
+            margin-left: 0;
+            padding-top: $integer/4;
+            padding-right: 0;
+            padding-bottom: $integer;
+            overflow: visible;
+
+            &:hover {
+                transform: translateX(-$integer/4);
+            }
+        }
+    }
+}
+
+.timeline--gdpr {
+
+    .timeline {
+        
+        &__content {
+            @include flex-direction(row);
+    
+            &:before {
+                display: none;
+            }
+        }
+    
+        &__item {
+            @include flex-direction(column);
+            @include justify-content(flex-start);
+            @include flex-direction(column !important);
+            margin-top: 0;
+            padding: 0;
+
+            &:before {
+                @include pseudo-element('', 34px, 50%, 0, auto, 100%, 2px);
+                @include transform(scaleX(3));
+                @include transform-origin(right);
+                background-color: $primary;
+            }
+        }
+        
+        &__date {
+            position: initial;
+            top: auto;
+        }
+        
+        &__dot {
+            margin-top: $integer/2;
+            background-color: $primary;
+            border: 0;
+
+            &.triangle {
+                @include pseudo-element('', auto, auto, auto, auto, $integer*5/4, $integer);
+                @include transform(rotate(90deg));
+                position: initial;
+                -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
+                background-color: $primary;
+                border-radius: 0;
+            }
+        }
+
+        &__title {
+            margin-top: $integer;
+        }
+
+        &__text {
+            @include flex-basis(auto);
+            padding: 0 !important;
+            text-align: center !important;
+        }
+    }
+}

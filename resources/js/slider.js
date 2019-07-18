@@ -6,7 +6,7 @@ $(document).ready(function() {
 // SLIDER
 // —————————————————————————————————————————————————————————————————
 
-$('.master__content .slider').flexslider({
+$('.slider').flexslider({
 	controlsContainer: '.slider__nav',
 	manualControls: '.slider__icon',
 	animation: 'fade',

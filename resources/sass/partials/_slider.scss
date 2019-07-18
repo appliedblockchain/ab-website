@@ -9,7 +9,7 @@
 */
 
 .slider {
-	height: 500px;
+	height: 600px;
 	position: relative;
 
 	&__content {
@@ -32,6 +32,8 @@
 	&__item {
 		@include background(center center, contain);
 		height: 100%;
+		margin: 0;
+		padding: 0 !important;
 		/* Hide the slides before the JS is loaded. Avoids image jumping */
 		display: none;
 		-webkit-backface-visibility: hidden;
@@ -45,6 +47,7 @@
 
 		a {
 			@include border-radius(50%);
+			background-color: $white;
 			width: $integer*2;
 			height: $integer*2;
 			position: absolute;
@@ -66,14 +69,14 @@
 		.slides__prev {
 			left: $integer;
 			&:before {
-				@include fontAwesome("\f104", auto, auto, auto, $integer*0.75, $primary);
+				@include fontAwesome("\f104", auto, auto, auto, 13px, $primary);
 			}
 		}
 
 		.slides__next {
 			right: $integer;
 			&:before {
-				@include fontAwesome("\f105", auto, $integer*0.75, auto, auto, $primary);
+				@include fontAwesome("\f105", auto, 13px, auto, auto, $primary);
 			}
 		}
 	}

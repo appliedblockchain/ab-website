@@ -258,6 +258,8 @@ li {
 
 
 
+
+
 /*
  * responsive
  * —————————————————————————————————————————————————————————————————
@@ -349,6 +351,10 @@ li {
 	&__title, &__subtitle, &__desc {
 		width: 75%;
 		@include responsive(max-width, $break-desktop-max) {
+			width: 100%;
+		}
+
+		.section__header--ap & {
 			width: 100%;
 		}
 	}
@@ -472,7 +478,7 @@ li {
 		background-color: $primary;
 		color: $white;
 
-		.title, .lead {
+		.title, .lead, .label {
 			color: $white;
 		}
 	}
@@ -480,14 +486,14 @@ li {
 	&--dark {
 		background-color: $dark;
 		color: $white;
-
-		.title {
-			color: $white;
-		}
 	}
 
 	&--grey {
 		background-color: $lightgrey;
+	}
+
+	&--white {
+		background-color: $white;
 	}
 }
 
@@ -1060,8 +1066,8 @@ li {
 */
 
 .no-margin {
+	margin: 0 !important;
 
-	&--full { margin: 0 !important; }
 	&--top { margin-top: 0 !important; }
 	&--right { margin-right: 0 !important; }
 	&--bottom { margin-bottom: 0 !important; }
@@ -1069,8 +1075,8 @@ li {
 }
 
 .no-padding {
+	padding: 0 !important;
 
-	&--full { padding: 0 !important; }
 	&--top { padding-top: 0 !important; }
 	&--right { padding-right: 0 !important; }
 	&--bottom { padding-bottom: 0 !important; }

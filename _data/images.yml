@@ -234,24 +234,33 @@ k0-solve:
     body: Private asset records that are verifiable and compatible with existing enterprise blockchain smart contract platforms
 
 # properties section
-# in k0.html page
+# in applied-proofs.html
 
-k0-properties:
-  - icon: clipboard-check
-    color: primary
-    url: circle-primary-file-check
-    title: Completeness
-    body: If the statement is true, the honest verifier (that is, one following the protocol properly) will be convinced of this fact by an honest prover.
+applied-proofs:
+  - url: primary-keys
+    title: Data security
+    alt: Data security
+    
+  - url: primary-privacy
+    title: Data privacy
+    alt: Data privacy
+    
+  - url: primary-anonimity
+    title: GDPR compliance
+    alt: GDPR compliance
 
-  - icon: user-cog
-    color: secondary
-    url: circle-secondary-user-settings
-    title: Soundness
-    body: If the statement is false, no cheating prover can convince the honest verifier that it is true, except with some small probability.
+  - url: primary-scale
+    title: Reduced threat of data leakage
+    alt: Reduced threat of data leakage
 
-  - icon: check
-    color: highlight
-    url: circle-highlight-check
-    title: Zero knowledge
-    body:  if the statement is true, no verifier learns anything other than the fact that the statement is true.
-
+applied-proofs-slider:
+  - count: 1
+  - count: 2
+  - count: 3
+  - count: 4
+  - count: 5
+  - count: 6
+  - count: 7
+  - count: 8
+  - count: 9
+  - count: 10    

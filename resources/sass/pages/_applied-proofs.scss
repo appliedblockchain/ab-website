@@ -10,6 +10,10 @@
 
 #applied-proofs {
     background-color: $dark;
+    
+    #contact {
+        padding-bottom: $integer*9;
+    }
 
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
@@ -40,19 +44,32 @@
         padding-top: 10vh;
         padding-bottom: 10vh;
         text-align: left;
+        @include responsive(max-width, $break-tablets-max) {
+            @include justify-content(flex-start);
+            height: auto;
+            padding-top: $integer*2;
+            padding-bottom: $integer*2;
+        }
     }
 
     &__headline {
         font-size: 6rem;
+        @include responsive(max-width, $break-tablets-max) {
+            font-size: 4rem;
+            margin-bottom: $integer;
+        }
+        @include responsive(max-width, $break-phones-max) {
+            font-size: 3rem;
+        }
     }
 
     &__description {
         @include display-flex();
         @include flex-direction(row);
         @include justify-content(space-between);
-
-        .lead {
-            width: 75%;
+        @include responsive(max-width, $break-tablets-max) {
+            @include flex-direction(column);
+            margin-top: $integer*2;
         }
     }
     
@@ -61,6 +78,9 @@
         position: initial;
         left: auto;
         height: auto;
+        @include responsive(max-width, $break-tablets-max) {
+            margin-top: $integer;
+        }
         
         .button {
             @include align-self(flex-end);
@@ -68,10 +88,17 @@
             padding-top: $integer/4;
             padding-right: 0;
             padding-bottom: $integer;
+            padding-left: 0;
             overflow: visible;
+            @include responsive(max-width, $break-tablets-max) {
+                @include align-self(flex-start);
+            }
 
             &:hover {
                 transform: translateX(-$integer/4);
+                @include responsive(max-width, $break-tablets-max) {
+                    transform: translateX($integer/4);
+                }
             }
         }
     }
@@ -121,6 +148,9 @@
                 -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
                 background-color: $primary;
                 border-radius: 0;
+                @include responsive(max-width, $break-tablets-max) {
+                    height: 50px;
+                }
             }
         }
 

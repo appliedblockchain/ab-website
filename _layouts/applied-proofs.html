@@ -108,9 +108,9 @@
         <p class="title">GDPR, GDPR, GDPR</p>
         <p class="subtitle">Hold on to, and share as little customer data as possible</p>
     </div>
-    <div class="ap__description">
-        <p class="lead slideanim">One of the greatest assets any business has today is data, however the greatest challenge remains how data can be shared securely and privately.</p>
-        <div class="ap__anchor anchor slideanim">
+    <div class="ap__description row">
+        <p class="lead slideanim col--lg6 col--md9">One of the greatest assets any business has today is data, however the greatest challenge remains how data can be shared securely and privately.</p> 
+        <div class="ap__anchor anchor slideanim coloffset--lg3 col--md3 z-index--1">
             <div class="button "><a class="anchor__item button__inner" href="#the-technology">The technology</a></div>
             <div class="button "><a class="anchor__item button__inner" href="#properties">Properties</a></div>
             <div class="button "><a class="anchor__item button__inner" href="#use-case">Use case</a></div>
@@ -124,17 +124,17 @@
 
     <div class="timeline--gdpr">
         <div class="timeline__content row">
-            <div class="coloffset--3 col--3 timeline__item">
+            <div class="coloffset--lg3 col--lg3 col--md4 timeline__item">
                 <p class="timeline__date label">April 2016</p>
                 <span class="timeline__dot"></span>
                 <p class="timeline__title body--large body--bold">GDPR adoption</p>
             </div>
-            <div class="col--3 timeline__item">
+            <div class="col--lg3 col--md4 timeline__item">
                 <p class="timeline__date label">May 2018</p>
                 <span class="timeline__dot"></span>
                 <p class="timeline__title body--large body--bold">GDPR enforcement</p>
             </div>
-            <div class="col--3 timeline__item">
+            <div class="col--lg3 col--md4 timeline__item">
                 <p class="timeline__date label">Today</p>
                 <span class="timeline__dot triangle"></span>
                 <p class="timeline__title body--large body--bold">The data economy</p>
@@ -176,7 +176,7 @@
 
     <div class="section__content image-inline">
         {% for item in site.data.images.applied-proofs %}
-            <div class="col--md3 col--4 image-inline__item">
+            <div class="col--lg3 col--sm6 col--12 image-inline__item">
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.png" alt="{{ item.url }} icon" class="image-inline__image">
                 <p class="image-inline__title body--large">{{ item.title }}</p>
             </div>

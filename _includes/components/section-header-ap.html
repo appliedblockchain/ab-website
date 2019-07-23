@@ -17,11 +17,11 @@
     {% if description %}
         <div class="section__desc">
             {% if position == 'left' %}
-                <p class="body--large col--6">{{ description }}</p>
+                <p class="body--large col--lg6">{{ description }}</p>
             {% elsif position == 'right' %}
-                <p class="body--large coloffset--6 col--6">{{ description }}</p>
+                <p class="body--large coloffset--lg6 col--lg6">{{ description }}</p>
             {% elsif position == 'center' %}
-                <p class="body--large coloffset--3 col--6">{{ description }}</p>
+                <p class="body--large coloffset--lg3 col--lg6">{{ description }}</p>
             {% endif %}
         </div>
     {% endif %}

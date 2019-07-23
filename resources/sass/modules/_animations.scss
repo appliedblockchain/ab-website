@@ -7,6 +7,7 @@
  * ANIMATIONS
  * —————————————————————————————————————————————————————————————————
  * general
+ * scroll anim
  * btn menu
  * fade in gallery images
  * —————————————————————————————————————————————————————————————————
@@ -35,6 +36,26 @@
 		@include transform(rotate(-360deg)); 
 	}
 }
+
+
+
+/* 
+ * scroll anim
+ * —————————————————————————————————————————————————————————————————
+*/
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        @include transform(translateY(-30%));
+    }
+    100% {
+        opacity: 1;
+        @include transform(translateY(0));
+    } 
+}
+
+
 
 /* 
  * btn menu

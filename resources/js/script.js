@@ -5,12 +5,25 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 // SCRIPT
 // —————————————————————————————————————————————————————————————————
+// PARALLAX SCROLLING
 // NEWS WIDGET ANIMATION
 // MENU SCROLL ANIMATION
 // MENU OPEN ANIMATION
 // BACK TO TOP
 // COOKIE BAR ACCEPT
 // —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// NEWS WIDGET ANIMATION
+// —————————————————————————————————————————————————————————————————
+
+window.addEventListener('scroll', doParallax);
+function doParallax(){
+   var positionY = window.pageYOffset/4;
+   document.body.style.backgroundPosition = "0 -" + positionY + "px";
+}
 
 
 

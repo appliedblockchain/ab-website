@@ -1,0 +1,28 @@
+{% assign position = include.position %}
+{% assign label = include.label %}
+{% assign title = include.title %}
+{% assign description = include.description %}
+
+<div class="section__header section__header--ap row">
+    {% if label %}
+        <div class="section__comment">
+            <p class="label col--12">{{ label }}</p>
+        </div>
+    {% endif %}
+    {% if title %}
+        <div class="section__title">
+            <h1 class="title col--12">{{ title }}</h1>
+        </div>
+    {% endif %}
+    {% if description %}
+        <div class="section__desc">
+            {% if position == 'left' %}
+                <p class="body--large col--6">{{ description }}</p>
+            {% elsif position == 'right' %}
+                <p class="body--large coloffset--6 col--6">{{ description }}</p>
+            {% elsif position == 'center' %}
+                <p class="body--large coloffset--3 col--6">{{ description }}</p>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>

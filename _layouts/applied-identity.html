@@ -90,7 +90,7 @@
 
 </head>
 
-<body id="applied-proofs" class="background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg); background-position: 0 0;">
+<body id="applied-proofs" class="applied-identity background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg); background-position: 0 0;">
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -105,7 +105,7 @@
     </button>
 </div>
 
-<div class="section section--header section--dark ap__header">
+<div class="section section--header ap__header">
     <h1 class="ap__headline headline slideanim">{{ page.title }}</h1>
     <div class="slideanim">
         <p class="title">GDPR, GDPR, GDPR</p>
@@ -123,7 +123,7 @@
     </div>
 </div>
 
-<section class="section section--dark slideanim">
+<section class="section slideanim">
 
     <div class="timeline--gdpr">
         <div class="timeline__content row">
@@ -148,7 +148,7 @@
 
 </section>
 
-<section id="the-technology" class="section section--dark section--alt section--left slideanim">
+<section id="the-technology" class="section section--alt section--left slideanim">
 
     <!-- edit component in _includes/components/section-header.html -->
     {% include components/section-header-ap.html
@@ -163,7 +163,7 @@
         
 </section>
 
-<section id="properties" class="section section--dark section--alt section--right slideanim">
+<section id="properties" class="section section--alt section--right slideanim">
 
     <!-- edit component in _includes/components/section-header.html -->
     {% include components/section-header-ap.html
@@ -175,10 +175,10 @@
 
 </section>
 
-<section class="section section--dark section--alt">
+<section class="section section--alt">
 
     <div class="section__content image-inline">
-        {% for item in site.data.images.applied-proofs %}
+        {% for item in site.data.images.applied-identity %}
             <div class="col--lg3 col--sm6 col--12 image-inline__item">
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.png" alt="{{ item.url }} icon" class="image-inline__image">
                 <p class="image-inline__title body--large">{{ item.title }}</p>
@@ -188,7 +188,7 @@
         
 </section>
 
-<section id="use-case" class="section section--dark section--alt section--left slideanim">
+<section id="use-case" class="section section--alt section--left slideanim">
 
     <!-- edit component in _includes/components/section-header.html -->
     {% include components/section-header-ap.html
@@ -208,9 +208,9 @@
         
 </section>
 
-<section class="section section--dark section--alt"></section>
+<section class="section section--alt"></section>
 
-<section id="events" class="section section--dark section--alt section--right slideanim">
+<section id="events" class="section section--alt section--right slideanim">
 
     <!-- edit component in _includes/components/section-header.html -->
     {% include components/section-header-ap.html
@@ -222,7 +222,7 @@
 
 </section>
 
-<section class="section section--alt section--dark">
+<section class="section section--alt">
     <div class="block no-padding z-index--1">
         <div class="embed-container">
             <iframe src="https://www.youtube.com/embed/-Jslgdcz_ho" frameborder="0" allowfullscreen></iframe>

@@ -21,9 +21,9 @@
         position: fixed;
     }
 
-    .section--dark {
+    .section--dark, .section--primary {
         background-color: transparent;
-
+    
         &:before {
             display: none;
         }
@@ -32,6 +32,14 @@
     .section__header {
         margin-bottom: 0;
     }
+
+    &.applied-identity {
+        background-color: $white;
+    
+        &:before {
+            @include background-image(linear-gradient(to bottom, rgba($white, 0.7), $white));
+        }
+    }    
 }
 
 .ap {

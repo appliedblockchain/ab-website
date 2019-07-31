@@ -253,14 +253,22 @@ applied-proofs:
     title: Reduced threat of data leakage
     alt: Reduced threat of data leakage
 
-applied-proofs-slider:
-  - count: 1
-  - count: 2
-  - count: 3
-  - count: 4
-  - count: 5
-  - count: 6
-  - count: 7
-  - count: 8
-  - count: 9
-  - count: 10    
+# properties section
+# in applied-identity.html
+
+applied-identity:
+  - url: white-keys
+    title: Data security
+    alt: Data security
+    
+  - url: white-privacy
+    title: Data privacy
+    alt: Data privacy
+    
+  - url: white-anonimity
+    title: GDPR compliance
+    alt: GDPR compliance
+
+  - url: white-scale
+    title: Reduced threat of data leakage
+    alt: Reduced threat of data leakage

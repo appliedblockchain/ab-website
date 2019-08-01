@@ -258,12 +258,12 @@ applied-proofs:
 
 applied-identity:
   - url: white-keys
-    title: Data security
-    alt: Data security
+    title: Identity security
+    alt: Identity security
     
   - url: white-privacy
-    title: Data privacy
-    alt: Data privacy
+    title: Identity privacy
+    alt: Identity privacy
     
   - url: white-anonimity
     title: GDPR compliance

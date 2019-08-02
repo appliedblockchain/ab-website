@@ -56,25 +56,25 @@
                                             <div class="button button--highlight button--small button--animate fas fa-newspaper">
                                                 <p class="button__inner">Read newsletter</p>
                                             </div>
-                                        {% endif %}
-                                        {% if post.social contains "external" and post.link %}
+                                        {% elsif post.social contains "external" and post.link %}
                                             <div class="button button--secondary button--small button--animate fas fa-external-link-alt">
                                                 <p class="button__inner">Read article</p>
                                             </div>
-                                        {% endif %}
-                                        {% if post.social contains "podcast" and post.link %}
+                                        {% elsif post.social contains "podcast" and post.link %}
                                             <div class="button button--secondary button--small button--animate fas fa-headphones">
                                                 <p class="button__inner">Listen</p>
                                             </div>
-                                        {% endif %}
-                                        {% if post.social contains "linkedin" and post.link %}
+                                        {% elsif post.social contains "linkedin" and post.link %}
                                             <div class="button button--linkedin button--small button--animate fab fa-linkedin-in">
                                                 <p class="button__inner">Read on Linkedin</p>
                                             </div>
-                                        {% endif %}
-                                        {% if post.social contains "medium" and post.link %}
+                                        {% elsif post.social contains "medium" and post.link %}
                                             <div class="button button--medium button--small button--animate fab fa-medium-m">
                                                 <p class="button__inner">Read on Medium</p>
+                                            </div>
+                                        {% elsif post.social contains "video" and post.link %}
+                                            <div class="button button--dark button--small button--animate fas fa-play">
+                                                <p class="button__inner">Watch video </p>
                                             </div>
                                         {% endif %}
                                         {% if post.link %} {% else %}

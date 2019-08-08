@@ -5,6 +5,13 @@
 # event spreadsheet link
 # https://docs.google.com/spreadsheets/d/123Tbe-gan5LFYsunyEzH3gDyje6Nv613n8Y_1mK-MUE/edit?usp=sharing
 
+- name: Blockchain Live 2019
+  image: blockchain-live-2019
+  date: '2019-09-25'
+  location: Olympia, London, UK
+  directions: https://www.google.co.uk/maps/place/Olympia+London/@51.4965005,-0.2106881,15z/data=!4m2!3m1!1s0x0:0x26fa091340f02f99?sa=X&ved=2ahUKEwiK78bWlcfdAhUsIsAKHd4yDqsQ_BIwFnoECAcQCw
+  link: https://blockchainlive.com/
+
 - name: Internet of Energy
   image: internet-of-energy
   date-from: '2019-09-03'

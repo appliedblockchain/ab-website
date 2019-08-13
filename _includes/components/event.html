@@ -17,9 +17,15 @@
         </div>
         <div class="event__actions">
             {% if event.link %}
-                <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--primary button--animate fas fa-globe">
-                    <p class="button__inner">website</p>
-                </a>
+                {% if event.link-title %}
+                    <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--highlight button--animate fas fa-globe">
+                        <p class="button__inner">{{ event.link-title }}</p>
+                    </a>
+                {% else %}
+                    <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--primary button--animate fas fa-globe">
+                        <p class="button__inner">website</p>
+                    </a>
+                {% endif %}
             {% endif %}
             <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">
                 <p class="button__inner">directions</p>

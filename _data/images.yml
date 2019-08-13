@@ -30,25 +30,17 @@ technology:
     alt: Hyperledger Fabric
     order: 3
 
-  - url: tendermint
-    alt: Tendermint
-    order: 4
-
   - url: corda
     alt: Corda
-    order: 5
-
-  - url: polkadot
-    alt: Polkadot
-    order: 6  
-    
-  - url: stellar
-    alt: Stellar
-    order: 7
+    order: 4
 
   - url: quorum
     alt: Quorum
-    order: 8
+    order: 5
+
+  - url: ifps
+    alt: IFPS
+    order: 6
 
 
 # clients section

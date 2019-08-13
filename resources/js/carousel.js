@@ -96,14 +96,6 @@ $('.owl-carousel-technology').owlCarousel({
 			items: 5,
 			margin: 20
         },
-        1200: {
-			items: 6,
-			margin: 20
-        },
-        1400: {
-			items: 7,
-			margin: 20
-        }
     }
 });
 

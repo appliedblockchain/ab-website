@@ -38,6 +38,10 @@
         right: $integer;
         border: $integer/4 solid $white;
 
+        img {
+            width: 60%;
+        }
+
         &--news {
             @extend .blog__icon;
             background-color: $secondary;
@@ -50,10 +54,16 @@
             @extend .blog__icon;
             background-color: $primary;
         }
-        
-        img {
-            width: 60%;
+        &--videos {
+            @extend .blog__icon;
+            background-color: $dark;
+
+            img {
+                width: 45%;
+                margin-left: 5px;
+            }
         }
+        
     }
 }
 

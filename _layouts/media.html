@@ -37,57 +37,56 @@
                     <!-- edit or add post in _posts -->
                     {% for post in site.posts %}
                         <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
-                            {% if post.link %}
-                                <a href="{{ post.link }}" target="_blank">
-                            {% else %}
-                                <a href="{{ post.url | prepend: site.baseurl }}">
-                            {% endif %}
-                                <div class="block blog__item">
-                                    {% if post.image %}
-                                        <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image }}.jpg);"></div>
-                                    {% else %}
-                                        <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);"></div>
-                                    {% endif %} 
-                                    <div class="block__content blog__content">
-                                        <span class="blog__icon--{{ post.category }}">
-                                            <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="">
-                                        </span>
-                                        <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
-                                        <h2 class="block__title lead">{{ post.title }}</h2>
-                                        <div class="block__text">{{ post.headline | truncate: 100, "…" }}</div>
-                                        {% if post.social contains "newsletter" and post.link %}
-                                            <div class="button button--highlight button--small button--animate fas fa-newspaper">
-                                                <p class="button__inner">Read newsletter</p>
-                                            </div>
-                                        {% elsif post.social contains "external" and post.link %}
-                                            <div class="button button--secondary button--small button--animate fas fa-external-link-alt">
-                                                <p class="button__inner">Read article</p>
-                                            </div>
-                                        {% elsif post.social contains "podcast" and post.link %}
-                                            <div class="button button--secondary button--small button--animate fas fa-headphones">
-                                                <p class="button__inner">Listen</p>
-                                            </div>
-                                        {% elsif post.social contains "linkedin" and post.link %}
-                                            <div class="button button--linkedin button--small button--animate fab fa-linkedin-in">
-                                                <p class="button__inner">Read on Linkedin</p>
-                                            </div>
-                                        {% elsif post.social contains "medium" and post.link %}
-                                            <div class="button button--medium button--small button--animate fab fa-medium-m">
-                                                <p class="button__inner">Read on Medium</p>
-                                            </div>
-                                        {% elsif post.social contains "video" and post.link %}
-                                            <div class="button button--dark button--small button--animate fas fa-play">
-                                                <p class="button__inner">Watch video </p>
-                                            </div>
-                                        {% endif %}
-                                        {% if post.link %} {% else %}
-                                            <div class="button button--primary button--small button--animate fas fa-eye">
-                                                <p class="button__inner">Read more</p>
-                                            </div>
-                                        {% endif %}
-                                    </div>
+                            <div class="block blog__item">
+                                {% if post.image %}
+                                    <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image }}.jpg);"></div>
+                                {% else %}
+                                    <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);"></div>
+                                {% endif %} 
+                                <div class="block__content blog__content">
+                                    <span class="blog__icon--{{ post.category }}">
+                                        <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="">
+                                    </span>
+                                    <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
+                                    <h2 class="block__title lead">{{ post.title }}</h2>
+                                    <div class="block__text">{{ post.headline | truncate: 100, "…" }}</div>
+                                    {% if post.social contains "newsletter" and post.link %}
+                                        <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-newspaper">
+                                            <p class="button__inner">Read more</p>
+                                        </a>
+                                    {% elsif post.social contains "external" and post.link %}
+                                        <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-external-link-alt">
+                                            <p class="button__inner">Read article</p>
+                                        </a>
+                                    {% elsif post.social contains "podcast" and post.link %}
+                                        <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-headphones">
+                                            <p class="button__inner">Listen</p>
+                                        </a>
+                                    {% elsif post.social contains "linkedin" and post.link %}
+                                        <a href="{{ post.link }}" target="_blank" class="button button--linkedin button--small button--animate fab fa-linkedin-in">
+                                            <p class="button__inner">Read on Linkedin</p>
+                                        </a>
+                                    {% elsif post.social contains "medium" and post.link %}
+                                        <a href="{{ post.link }}" target="_blank" class="button button--medium button--small button--animate fab fa-medium-m">
+                                            <p class="button__inner">Read on Medium</p>
+                                        </a>
+                                    {% elsif post.social contains "video" and post.link %}
+                                        <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-play">
+                                            <p class="button__inner">Watch video </p>
+                                        </a>
+                                    {% endif %}
+                                    {% if post.link %} {% else %}
+                                        <a href="{{ post.url | prepend: site.baseurl }}" class="button button--primary button--small button--animate fas fa-eye">
+                                            <p class="button__inner">Read more</p>
+                                        </a>
+                                    {% endif %}
+                                    {% if post.event %}
+                                        <a href="{{ post.register }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+                                            <p class="button__inner">Register</p>
+                                        </a>
+                                    {% endif %}
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     {% endfor %}
                 {% else %}

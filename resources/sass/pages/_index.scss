@@ -28,6 +28,9 @@
     overflow: hidden;
     position: relative;
     padding: $integer*9 0 $integer*2 0;
+    @include responsive(max-width, $break-large-desktop-max) {
+        padding-top: $integer*12;
+    }
     @include responsive(max-width, $break-desktop-max) {
         padding-bottom: $integer*4;
     }
@@ -69,13 +72,7 @@
         @include responsive(min-width, $break-large-desktop-min) {
             top: 40%;
         }
-        @include responsive(max-width, $break-desktop-max) {
-            height: 35vh;
-        }
-        @include responsive(max-width, $break-phones-max) {
-            display: none;
-        }
-        @include responsive-mobile-devices-landscape() {
+        @include responsive(max-width, $break-large-desktop-max) {
             display: none;
         }
     }
@@ -179,7 +176,7 @@
         min-width: 220px;
         width: 15%;
         z-index: 1;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $break-desktop-max) {
             display: none;
         }
         @include responsive-mobile-devices-landscape() {

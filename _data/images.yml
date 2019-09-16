@@ -38,8 +38,8 @@ technology:
     alt: Quorum
     order: 5
 
-  - url: ifps
-    alt: IFPS
+  - url: ipfs
+    alt: IPFS
     order: 6
 
 

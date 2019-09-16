@@ -10,7 +10,7 @@
  * share
  * social
  * newsletter
- * hiring
+ * event
  * news
  * cookies
  * chat
@@ -108,45 +108,66 @@
 
 
 /*
- * hiring
+ * event
  * —————————————————————————————————————————————————————————————————
 */
 
-// .widget {
+.widget--event {
 
-//     &--hiring {
-//         @include display-flex();
-//         @include align-items(center);
-//         background-color: rgba($primary-lighten, 0.9);
-//         padding: $integer;
-//         color: $white !important;
-//         @include responsive(max-width, $break-tablets-max) {
-//             @include flex-direction(column);
-//             @include align-items(flex-start);
-//         }
+    @include display-flex();
+    @include flex-direction(column);
+    @include box-shadow($box-shadow-1);
+    position: absolute;
+    top: $integer*1.5;
+    left: 30vw;
+    width: 40vw;
+    padding: $integer*0.75 $integer;
+    background-color: rgba($white, 0.15);
+    text-align: left;
+    color: $white;
+    @include responsive(max-width, $break-large-desktop-max) {
+        left: 38vw;
+    }    
+    @include responsive(max-width, $break-desktop-max) {
+        top: auto;
+        bottom: 380px;
+        left: 5%;
+        width: 90%;
+    }
+    @include responsive(max-width, $break-tablets-max) {
+        bottom: 260px;
+    }
+    @include responsive(max-width, $break-phones-max) {
+        bottom: 280px;
+    }
+    
+    .widget {
+        
+        &__content {
+            @include display-flex();
+            padding-top: $integer/4;
+            @include responsive(max-width, $break-large-desktop-max) {
+                @include flex-direction(column);
+            }
+        }
 
-//         .subtitle {
-//             margin-right: $integer;
-//             white-space: nowrap;
-//             @include responsive(max-width, $break-tablets-max) {
-//                 margin-right: 0;
-//                 margin-bottom: $integer/2;
-//             }
-//         }
-
-//         .button {
-//             min-width: 190px;
-//             @include responsive(max-width, $break-tablets-max) {
-//                 @include align-self(flex-start);
-//             }
-//         }
-
-//         .lead {
-//             color: $white;
-//         }
-//     }
-// }
-
+        &__body {
+            padding-right: $integer/2;
+            @include responsive(max-width, $break-large-desktop-max) {
+                padding-right: 0;
+                padding-bottom: $integer/2;
+            }
+        }
+    }
+    
+    .button {
+        @include align-self(flex-end);
+        @include flex-shrink(0);
+        @include responsive(max-width, $break-large-desktop-max) {
+            @include align-self(flex-start);
+        }
+    }
+}
 
 
 /*
@@ -167,13 +188,15 @@
         top: 50%;
         right: -$integer*26;
         width: $integer*26;
-        background-color: $primary;
+        background-color: rgba($black, 0.15);
         text-align: left;
         color: $white;
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $break-desktop-max) {
             @include border-top-right-radius($integer);
             @include border-bottom-right-radius($integer);
-            position: static;
+            top: auto;
+            right: auto;
+            bottom: 120px;
             margin-top: $integer;
             margin-left: 5%;
             width: 90%;
@@ -191,15 +214,19 @@
         .widget {
             
             &__header {
-                @include align-items(center);
                 @include border-top-right-radius(0);
-                background-color: $primary-darken;
+                background-color: rgba($black, 0.15);
                 padding: $integer;
-                @include responsive(max-width, $break-phones-max) {
+                @include responsive(max-width, $break-tablets-max) {
+                    background-color: transparent;
+                    padding: $integer*0.75 $integer;
+                    padding-bottom: 0;
+                    font-size: 1rem;
+                }
+                @include responsive(max-width, $break-tablets-max) {
                     @include border-top-left-radius($integer);
                     @include border-top-right-radius($integer);
                     @include flex-direction(column);
-                    font-size: 1rem;
 
                     .button {
                         margin-top: $integer/4;
@@ -211,19 +238,23 @@
                 @include display-flex();
                 @include flex-direction(row);
                 padding: $integer;
-                @include responsive(max-width, $break-phones-max) {
+                @include responsive(max-width, $break-tablets-max) {
+                    padding: $integer/4 $integer $integer/2 $integer;
                     font-size: 0.8rem;
                 }
 
                 .button {
                     margin-top: $integer;
+                    @include responsive(max-width, $break-tablets-max) {
+                        margin-top: $integer/2;
+                    }
                 }
             }
 
             &__logo {
                 width: $integer*3;
                 margin-right: $integer;
-                @include responsive(max-width, $break-phones-max) {
+                @include responsive(max-width, $break-tablets-max) {
                     display: none;
                 }
             }
@@ -232,6 +263,9 @@
                 width: $integer*5;
                 height: $integer*5;
                 margin-right: $integer;                
+                @include responsive(max-width, $break-tablets-max) {
+                    display: none;
+                }
             }
         }
 

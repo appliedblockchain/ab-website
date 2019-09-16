@@ -23,8 +23,20 @@
 
 .hide {
 	
+	&--large-desktop {
+		@include responsive(max-width, $break-desktop-max) {
+			display: none !important;
+		}
+	}
+
 	&--desktop {
 		@include responsive(max-width, $break-desktop-max) {
+			display: none !important;
+		}
+	}
+
+	&--tablets {
+		@include responsive(max-width, $break-tablets-max) {
 			display: none !important;
 		}
 	}

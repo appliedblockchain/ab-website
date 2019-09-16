@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 
 // —————————————————————————————————————————————————————————————————
-// NEWS WIDGET ANIMATION
+// PARALLAX BACKGROUND
 // —————————————————————————————————————————————————————————————————
 
 window.addEventListener('scroll', doParallax);
@@ -31,7 +31,7 @@ function doParallax(){
 // NEWS WIDGET ANIMATION
 // —————————————————————————————————————————————————————————————————
 
-if ($(window).width() > 575) {   
+if ($(window).width() > 1023) {   
 	setTimeout(function() {
 		$('.widget--news').animate({
 			right: '0'

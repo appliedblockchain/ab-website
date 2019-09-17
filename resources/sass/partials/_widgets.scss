@@ -175,6 +175,15 @@
  * —————————————————————————————————————————————————————————————————
 */
 
+.block--news {
+    position: absolute;
+    bottom: 15vh;
+    right: 0;
+    @include responsive(max-width, $break-desktop-max) {
+        bottom: 22vh;
+    }
+}
+
 .widget {
 
     &--news {
@@ -184,22 +193,26 @@
         @include border-top-right-radius(0);
         @include border-bottom-right-radius(0);
         @include box-shadow($box-shadow-1);
-        position: absolute;
-        top: 50%;
         right: -$integer*26;
         width: $integer*26;
-        background-color: rgba($black, 0.15);
+        padding: $integer;
+        background-color: rgba($primary, 0.8);
         text-align: left;
         color: $white;
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $break-tablets-max) {
             @include border-top-right-radius($integer);
             @include border-bottom-right-radius($integer);
-            top: auto;
             right: auto;
-            bottom: 120px;
-            margin-top: $integer;
             margin-left: 5%;
             width: 90%;
+        }
+
+        &-1 {
+            background-color: rgba($black, 0.8);
+        }
+
+        & + & {
+            margin-top: $integer/2;
         }
 
         &.block {
@@ -215,15 +228,11 @@
             
             &__header {
                 @include border-top-right-radius(0);
-                background-color: rgba($black, 0.15);
-                padding: $integer;
-                @include responsive(max-width, $break-tablets-max) {
-                    background-color: transparent;
-                    padding: $integer*0.75 $integer;
-                    padding-bottom: 0;
+                padding-bottom: $integer/2;
+                @include responsive(max-width, $break-phones-max) {
                     font-size: 1rem;
                 }
-                @include responsive(max-width, $break-tablets-max) {
+                @include responsive(max-width, $break-phones-max) {
                     @include border-top-left-radius($integer);
                     @include border-top-right-radius($integer);
                     @include flex-direction(column);
@@ -237,9 +246,7 @@
             &__content {
                 @include display-flex();
                 @include flex-direction(row);
-                padding: $integer;
-                @include responsive(max-width, $break-tablets-max) {
-                    padding: $integer/4 $integer $integer/2 $integer;
+                @include responsive(max-width, $break-phones-max) {
                     font-size: 0.8rem;
                 }
 
@@ -254,7 +261,7 @@
             &__logo {
                 width: $integer*3;
                 margin-right: $integer;
-                @include responsive(max-width, $break-tablets-max) {
+                @include responsive(max-width, $break-phones-max) {
                     display: none;
                 }
             }

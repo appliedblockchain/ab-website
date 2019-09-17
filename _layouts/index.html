@@ -15,24 +15,24 @@
 
         <!-- particles.js container -->
         <div id="particles-js"></div>
-
-        <div class="widget widget--event z-index--9">
-            <p class="widget__header body--bold">Zero Knowledge Proofs for Business: Sharing Data without Revealing It</p>
-            <div class="widget__content">
-                <p class="widget__body body--small">Applied Blockchain is pleased to announce a day long training workshop learn about the emerging technology of zero knowledge proofs.</p>
-                <a href="https://www.eventbrite.co.uk/e/zero-knowledge-proofs-for-business-sharing-data-without-revealing-it-october-2019-tickets-68471290473" target="_blank" class="button button--small button--highlight button--animate fas fa-edit z-index--9">
-                    <p class="button__inner">Early bird tickets</p>
-                </a>
-            </div>
-        </div>        
-
         <h1 class="landing__title headline">Building future-proof<br>blockchain applications</h1>
-        <div class="widget widget--news">
-            <!-- select component in _includes/components/news -->
-            {% include components/news/shell.html %}
+        <div class="block--news">
+            <div class="widget widget--news widget--news-1">
+                {% include components/news/zkp-event.html %}
+            </div>
+            <div class="widget widget--news widget--news-2">
+                <!-- select component in _includes/components/news -->
+                {% include components/news/shell.html %}
+            </div>
         </div>
         <img src="{{ site.url }}{{ site.imageurl }}/icons/index/landing.svg" alt="Landing icon" class="landing__icon">
         <img src="{{ site.url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
+        <div class="landing__carousel owl-carousel owl-carousel-clients carousel">
+            {% for item in site.data.images.clients %}
+                {% assign item = site.data.images.clients | sort: 'order' %}
+                <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-white/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
+            {% endfor %}
+        </div>
     </div>
 
     <section class="section section--left section--dark" id="what-we-do">
@@ -63,11 +63,11 @@
 
     <section class="section section--fullwidth section--alt section--dark">
 
-        <div class="landing__carousel owl-carousel owl-carousel-clients carousel">
-            {% for item in site.data.images.clients %}
-                {% assign item = site.data.images.clients | sort: 'order' %}
-                <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-white/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
-            {% endfor %}
+        <div class="owl-carousel owl-carousel-technology">
+            <!-- edit component in _includes/components/technologies.html -->
+            {% include components/technologies.html 
+                color='white'
+            %}
         </div>
 
     </section>

@@ -28,15 +28,8 @@
     overflow: hidden;
     position: relative;
     padding: $integer*9 0 $integer*2 0;
-    @include responsive(max-width, $break-large-desktop-max) {
-        padding-top: $integer*12;
-    }
     @include responsive(max-width, $break-desktop-max) {
-        padding-bottom: $integer*4;
-    }
-    @include responsive(max-width, $break-phones-max) {
         padding-top: $integer*7;
-        @include justify-content(flex-start);
     }
     @include responsive-mobile-devices-landscape() {
         padding-top: $integer*6;
@@ -62,17 +55,20 @@
         z-index: 1;
         padding-left: $col;
         padding-right: $col;
+        @include responsive(min-width, $break-tablets-min) {
+            font-size: 2.5rem;
+        }
     }
 
     &__icon {
         z-index: 1;
         height: 40vh;
         position: absolute;
-        top: 50%;
+        top: 40%;
         @include responsive(min-width, $break-large-desktop-min) {
             top: 40%;
         }
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $break-tablets-max) {
             display: none;
         }
     }

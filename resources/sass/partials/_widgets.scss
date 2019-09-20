@@ -10,7 +10,7 @@
  * share
  * social
  * newsletter
- * event
+ * hiring
  * news
  * cookies
  * chat
@@ -108,81 +108,51 @@
 
 
 /*
- * event
+ * hiring
  * —————————————————————————————————————————————————————————————————
 */
 
-.widget--event {
+// .widget {
 
-    @include display-flex();
-    @include flex-direction(column);
-    @include box-shadow($box-shadow-1);
-    position: absolute;
-    top: $integer*1.5;
-    left: 30vw;
-    width: 40vw;
-    padding: $integer*0.75 $integer;
-    background-color: rgba($white, 0.15);
-    text-align: left;
-    color: $white;
-    @include responsive(max-width, $break-large-desktop-max) {
-        left: 38vw;
-    }    
-    @include responsive(max-width, $break-desktop-max) {
-        top: auto;
-        bottom: 380px;
-        left: 5%;
-        width: 90%;
-    }
-    @include responsive(max-width, $break-tablets-max) {
-        bottom: 260px;
-    }
-    @include responsive(max-width, $break-phones-max) {
-        bottom: 280px;
-    }
-    
-    .widget {
-        
-        &__content {
-            @include display-flex();
-            padding-top: $integer/4;
-            @include responsive(max-width, $break-large-desktop-max) {
-                @include flex-direction(column);
-            }
-        }
+//     &--hiring {
+//         @include display-flex();
+//         @include align-items(center);
+//         background-color: rgba($primary-lighten, 0.9);
+//         padding: $integer;
+//         color: $white !important;
+//         @include responsive(max-width, $break-tablets-max) {
+//             @include flex-direction(column);
+//             @include align-items(flex-start);
+//         }
 
-        &__body {
-            padding-right: $integer/2;
-            @include responsive(max-width, $break-large-desktop-max) {
-                padding-right: 0;
-                padding-bottom: $integer/2;
-            }
-        }
-    }
-    
-    .button {
-        @include align-self(flex-end);
-        @include flex-shrink(0);
-        @include responsive(max-width, $break-large-desktop-max) {
-            @include align-self(flex-start);
-        }
-    }
-}
+//         .subtitle {
+//             margin-right: $integer;
+//             white-space: nowrap;
+//             @include responsive(max-width, $break-tablets-max) {
+//                 margin-right: 0;
+//                 margin-bottom: $integer/2;
+//             }
+//         }
+
+//         .button {
+//             min-width: 190px;
+//             @include responsive(max-width, $break-tablets-max) {
+//                 @include align-self(flex-start);
+//             }
+//         }
+
+//         .lead {
+//             color: $white;
+//         }
+//     }
+// }
+
 
 
 /*
  * news
  * —————————————————————————————————————————————————————————————————
 */
-
-.block--news {
-    position: absolute;
-    bottom: 15vh;
-    right: 0;
-    @include responsive(max-width, $break-desktop-max) {
-        bottom: 22vh;
-    }
-}
 
 .widget {
 
@@ -193,26 +163,20 @@
         @include border-top-right-radius(0);
         @include border-bottom-right-radius(0);
         @include box-shadow($box-shadow-1);
+        position: absolute;
+        top: 50%;
         right: -$integer*26;
         width: $integer*26;
-        padding: $integer;
-        background-color: rgba($primary, 0.8);
+        background-color: $primary;
         text-align: left;
         color: $white;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $break-phones-max) {
             @include border-top-right-radius($integer);
             @include border-bottom-right-radius($integer);
-            right: auto;
+            position: static;
+            margin-top: $integer;
             margin-left: 5%;
             width: 90%;
-        }
-
-        &-1 {
-            background-color: rgba($black, 0.8);
-        }
-
-        & + & {
-            margin-top: $integer/2;
         }
 
         &.block {
@@ -227,15 +191,15 @@
         .widget {
             
             &__header {
+                @include align-items(center);
                 @include border-top-right-radius(0);
-                padding-bottom: $integer/2;
-                @include responsive(max-width, $break-phones-max) {
-                    font-size: 1rem;
-                }
+                background-color: $primary-darken;
+                padding: $integer;
                 @include responsive(max-width, $break-phones-max) {
                     @include border-top-left-radius($integer);
                     @include border-top-right-radius($integer);
                     @include flex-direction(column);
+                    font-size: 1rem;
 
                     .button {
                         margin-top: $integer/4;
@@ -246,15 +210,13 @@
             &__content {
                 @include display-flex();
                 @include flex-direction(row);
+                padding: $integer;
                 @include responsive(max-width, $break-phones-max) {
                     font-size: 0.8rem;
                 }
 
                 .button {
                     margin-top: $integer;
-                    @include responsive(max-width, $break-tablets-max) {
-                        margin-top: $integer/2;
-                    }
                 }
             }
 
@@ -270,9 +232,6 @@
                 width: $integer*5;
                 height: $integer*5;
                 margin-right: $integer;                
-                @include responsive(max-width, $break-tablets-max) {
-                    display: none;
-                }
             }
         }
 

@@ -31,6 +31,9 @@
     @include responsive(max-width, $break-desktop-max) {
         padding-top: $integer*7;
     }
+    @include responsive(max-width, $break-phones-max) {
+        @include justify-content(flex-start);
+    }
     @include responsive-mobile-devices-landscape() {
         padding-top: $integer*6;
     }
@@ -55,7 +58,7 @@
         z-index: 1;
         padding-left: $col;
         padding-right: $col;
-        @include responsive(min-width, $break-tablets-min) {
+        @include responsive(max-width, $break-tablets-max) {
             font-size: 2.5rem;
         }
     }

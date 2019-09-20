@@ -31,21 +31,30 @@ function doParallax(){
 // NEWS WIDGET ANIMATION
 // —————————————————————————————————————————————————————————————————
 
-if ($(window).width() > 767) {   
+// if ($(window).width() > 767) {   
+// 	setTimeout(function() {
+// 		$('.widget--news-1').animate({
+// 			right: '0'
+// 		}, 800, 'swing');
+// 	}, 1200);
+// 	setTimeout(function() {
+// 		$('.widget--news-2').animate({
+// 			right: '0'
+// 		}, 800, 'swing');
+// 	}, 1400);
+// }
+// else {  
+// }; 
+
+if ($(window).width() > 575) {   
 	setTimeout(function() {
-		$('.widget--news-1').animate({
+		$('.widget--news').animate({
 			right: '0'
 		}, 800, 'swing');
 	}, 1200);
-	setTimeout(function() {
-		$('.widget--news-2').animate({
-			right: '0'
-		}, 800, 'swing');
-	}, 1400);
 }
 else {  
 }; 
-
 
 
 // —————————————————————————————————————————————————————————————————

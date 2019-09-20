@@ -91,6 +91,10 @@
         }
     }
 
+    &__image {
+        margin-top: $integer*4;
+    }
+
     a {
         text-decoration: underline;
 

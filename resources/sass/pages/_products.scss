@@ -36,6 +36,13 @@
                 margin-top: -$integer*7.5;
             }
         }
+
+        .button {
+            @include responsive(max-width, $break-tablets-max) {
+                display: block !important;
+                margin-bottom: $integer/2;
+            }
+        }
     }
     
     &__item {

@@ -5,6 +5,14 @@
 # event spreadsheet link
 # https://docs.google.com/spreadsheets/d/123Tbe-gan5LFYsunyEzH3gDyje6Nv613n8Y_1mK-MUE/edit?usp=sharing
 
+- name: 'Applied Blockchain Zero-Knowledge Proofs Drinks Reception'
+  image: zkp-drinks
+  date: '2019-10-15'
+  location: Level39, London, UK
+  directions: https://www.google.com/maps/place/Level39/@51.504981,-0.019459,17z/data=!3m1!4b1!4m5!3m4!1s0x487602b766104115:0x2936fbc8438dd3a4!8m2!3d51.504981!4d-0.019459
+  link-title: Register
+  link: https://www.eventbrite.co.uk/e/applied-blockchain-zero-knowledge-proofs-drinks-reception-tickets-73574953667
+
 - name: 'Zero Knowledge Proofs for Business: Sharing Data without Revealing It'
   image: zkp-workshop
   date: '2019-10-15'

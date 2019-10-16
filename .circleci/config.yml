@@ -29,7 +29,7 @@ references:
     run:
       name: Clear CloudFront cache
       command: |
-        aws cloudfront create-invalidation --distribution-id "$CLOUD_FRONT_DIST_ID" --paths '/*'
+        aws cloudfront create-invalidation --distribution-id "$CLOUD_FRONT_DIST_ID" --paths '/*' --profile default
 
 jobs:
   build:

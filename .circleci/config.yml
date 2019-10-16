@@ -1,7 +1,6 @@
 defaults: &defaults
   working_directory: ~/repo
 
-
 version: 2
 
 references:
@@ -13,7 +12,7 @@ references:
   add_aws_credentials: &add_aws_credentials
     run:
       name: Set AWS credentials
-      context: ab-website
+      # context: ab-website
       command: |
         aws configure set aws_access_key_id ${AB_AWS_ACCESS_KEY_ID}
         aws configure set aws_secret_access_key ${AB_AWS_SECRET_ACCESS_KEY}

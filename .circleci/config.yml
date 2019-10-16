@@ -1,5 +1,7 @@
 defaults: &defaults
   working_directory: ~/repo
+  context: ab-website
+
 version: 2
 
 references:

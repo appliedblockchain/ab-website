@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * ABOUT
+ * —————————————————————————————————————————————————————————————————
+*/
+
+#webinar {
+    @include background(center center, cover);
+    min-height: 100vh;
+    
+    &:before {
+        @include pseudo-element('', 0, 0, 0, 0, 100vw, 100vh);
+        background-color: rgba($primary, 0.9);
+    }
+
+    .section--primary {
+        background-color: transparent;
+
+        &:before {
+            background-image: none;
+        }
+    }
+}

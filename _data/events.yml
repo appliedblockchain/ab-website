@@ -39,14 +39,6 @@
   directions: https://www.google.com/maps/place/etc.venues+133+Houndsditch/@51.5157826,-0.0880208,15z/data=!4m8!1m2!2m1!1setc.venues+133+Houndsditch+London+EC3A+7AH+United+Kingdom!3m4!1s0x48761da7882e4c13:0xdc4a1ab973a3fbd7!8m2!3d51.515187!4d-0.0782798
   link: https://www.cordacon.com/events/cordacon-london-2019/event-summary-48e259ee8ab5479ba457a3deed777252.aspx?5S,M3,48e259ee-8ab5-479b-a457-a3deed777252=
 
-- name: Gartner IT Symposium
-  image: gartner-it-symposium
-  date-from: '2019-10-20'
-  date: '2019-10-24'
-  location: Orlando, Florida
-  directions: https://www.google.com/maps/place/Walt+Disney+World+Dolphin+Resort/@28.3675012,-81.561286,17z/data=!3m1!4b1!4m8!3m7!1s0x88dd7e536aa54b81:0x3200e47f9cfd0913!5m2!4m1!1i2!8m2!3d28.3675012!4d-81.561286
-  link: https://www.gartner.com/en/conferences/na/symposium-us
-
 - name: Blockchain Live 2019
   image: blockchain-live-2019
   date: '2019-09-25'

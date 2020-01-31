@@ -9,19 +9,31 @@ london:
 
   - title: Project Manager
     type: Permanent
-    role: 'We are looking for a talented PM to join our team for work high-profile projects.'
+    role: 'The Project Manager will be responsible for a portfolio of projects throughout the entire project lifecycle, and have a passion for customers that is demonstrated through professionalism and striving for excellence in all aspects of the customer experience. The Project Manager ensures transparent communication between the client, management team and developers and manages the progress and delivery of projects to be on time and on budget. The successful candidate will help translate business needs into technology solutions which will be formulated in statements of work.'
     responsabilities: 
-      '<li class="list--alt">The "Day to day" of the job would entail: </li>
-      <li>translating stated business requirements into Kanban cards (some experience with Jira, or any software based on agile methodology would be great);</li>
-      <li>manual testing the applications;</li>
-      <li>managing the expectations of all project stakeholders.);</li>
-      <li>estimating and monitoring costs, timescales and resources requirements so they align with the agreed terms.'
+      '<li>Overall Responsibility for Project Delivery</li>
+      <li>Engagement / Stakeholder management</li> 
+      <li>Proven Technical Team Leadership</li> 
+      <li>Scope Management & Change Control: Requirements amendments and track of priorities</li> 
+      <li>Project Issue Management: Expectations management</li> 
+      <li>Project Risk / Crisis Management</li> 
+      <li>Weekly Status Reporting and Project Health</li> 
+      <li>Additional Internal reporting to the CEO</li> 
+      <li>Personnel On-boarding / Rolling-off</li> 
+      <li>Task Management</li> 
+      <li>Initial Testing and Bugs Management</li> 
+      <li>Manage Project Documentation</li>'
     required-skills: 
-      '<li class="list--alt">In particular, the ideal candidate would be:;</li>
-      <li>switched on, proactive candidate;</li>
-      <li>able to learn on the go;</li>
-      <li>very responsible;</li>
-      <li>likeable/personable (he/she will liaise directly with important clients).</li>'
+      '<li>Easily approachable, attentive to detail, with excellent communication (up / down / peers), presentation and organisational skills</li> 
+      <li>Successfully delivered multiple tech projects</li> 
+      <li>Experience in supporting contractual & commercial management and execution</li> 
+      <li>Executive relationship management</li> 
+      <li>Proven track level in business domain & technical conversation</li> 
+      <li>Experienced in day to day project management including documentation updates, milestones, client updates, deliverables, answering client enquires and developers support </li>'
+    additional-skills: 
+      '<li>Experience working within the blockchain sector</li> 
+      <li>Experience woking with both corporate and start-up clients</li> 
+      <li>Experience working with project management tools, such as Jira, Slack, Trello, G-Drive, etc.</li>'
 
 # ––––––––––––––––––––––––––––––––––––––––––––
 # porto

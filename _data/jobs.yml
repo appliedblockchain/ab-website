@@ -7,131 +7,24 @@
 
 london:
 
-  - title: Sales and Marketing Assistant
+  - title: Project Manager
     type: Permanent
-    role: 
-      '<li>Organising and attending client sales meetings</li>
-      <li>Monitoring and responding to inbound Sales enquiries</li>
-      <li>Sending outbound marketing communications (e.g. LinkedIn posts, LinkedIn Sales)</li>
-      <li>Helping to create and manage marketing materials, including client case studies, client video interviews, company website, company banners, company blog posts and press releases
-      <li>Measuring the effectiveness of our marketing approach and channels</li>
-      <li>Creating statements of work/proposals for new client projects</li>
-      <li>Creating regular sales reports including sales activity and pipeline</li>
-      <li>Organising company events</li>
-      <li>Coordinating Applied Blockchain’s participation at industry events</li>'
+    role: 'We are looking for a talented PM to join our team for work high-profile projects.'
+    responsabilities: 
+      '<li class="list--alt">The "Day to day" of the job would entail: </li>
+      <li>translating stated business requirements into Kanban cards (some experience with Jira, or any software based on agile methodology would be great);</li>
+      <li>manual testing the applications;</li>
+      <li>managing the expectations of all project stakeholders.);</li>
+      <li>estimating and monitoring costs, timescales and resources requirements so they align with the agreed terms.'
     required-skills: 
-      '<li>Minimum 1 year’s experience in Sales and Marketing</li>
-      <li>Comfortable using social media platforms, including LinkedIn, Twitter, MailChimp, Meetup, Eventbrite</li>
-      <li>Excellent communication skills (verbal and written) and numeracy</li>
-      <li>Experience writing professional, client facing documents</li>
-      <li>Proficient in MS Office (Word, Excel, Powerpoint) or Google Docs equivalents</li>
-      <li>English as a first language</li>
-      <li>University degree</li>
-      <li>Able to take on new tasks and responsibilities quickly and calmly</li>
-      <li>A proactive and positive “can do” attitude where nothing is too hard - if you don’t know how to do something, you’ll find out</li>
-      <li>A desire to learn and take on more</li>'
-    additional-skills:
-      '<li>Experience with Pipedrive or another CRM</li>'
+      '<li class="list--alt">In particular, the ideal candidate would be:;</li>
+      <li>switched on, proactive candidate;</li>
+      <li>able to learn on the go;</li>
+      <li>very responsible;</li>
+      <li>likeable/personable (he/she will liaise directly with important clients).</li>'
 
 # ––––––––––––––––––––––––––––––––––––––––––––
 # porto
 # ––––––––––––––––––––––––––––––––––––––––––––
 
 porto:
-
-  - title: Head of DevOps
-    type: Permanent
-    role: 
-      'This is a new role in our organisation, accountable for owning, building out and improving our DevOps capability across the company (London and Porto)
-      <br><br>The Head of DevOps will work with the CTO and the whole development team to set up and improve the provisioning, monitoring and maintenance of development and production stack(s)
-      <br><br><ul>
-        <li>Automate and streamline our operations and processes</li>
-        <li>Build and maintain tools for deployment, monitoring and operations</li>
-        <li>Troubleshoot and plan solutions for our own development/test environments and for our clients’ environments</li>
-        <li>Improve and security harden the Terraform setup for enterprise beta and production environments</li>
-      </ul>
-      <br>Create guides and instruct developers on how to use the DevOps infrastructure stack.'
-    required-skills: 
-      '<li>5+ years of experience as a DevOps Engineer in a commercial environment</li>
-      <li>2+ years of general experience with Docker</li>
-      <li>1+ year experience with Docker Swarm or Kubernetes</li>
-      <li>Experienced with CI processes and tools (Jenkins)</li>
-      <li>Ability to analyse and resolve complex infrastructure resource and application deployment issues</li>
-      <li>Bash scripting/programming skills + knowledge of the Linux Operating System</li>
-      <li>Hands-on technical experience and a can-do approach towards environment automation/management and continuous improvement</li>
-      <li>Extensive familiarity with at least one major cloud provider (AWS and/or Azure)</li>'
-    additional-skills:
-      '<li>Professional experience managing and operating solutions built on blockchain</li>
-      <li>3+ years experience in a major programming language (Ruby/Python/Golang/Javascript/Perl or equivalent)</li>
-      <li>Experience with AWS and Azure CLI and APIs (e.g. S3, EC2, ELB, …)</li>
-      <li>Knowledge and experience of Terraform and Packer</li>
-      <li>Experience with these provisioning tools: Chef, Puppet, Ansible, Salt or equivalent</li>
-      <li>Experience with the ELK and Prometheus stacks</li>
-      <li>Experience maintaining and scaling infrastructure with high volume workloads</li>
-      <li>Experience working on cloud infrastructure</li>
-      <li>Experience setting up H/A and D.R. on existing environments</li>
-      <li>Experience with Hashicorp Vault or other secret sharing solutions</li>
-      <li>B.Sc. in Computer Science or another equivalent technical discipline</li>'
-
-  - title: Frontend React Software Developer
-    type: Permanent
-    role: 
-      '<li>Developing cutting edge software solutions for startups and corporate clients</li>
-      <li>Developing DApps (Decentralized applications) based on the Ethereum blockchain platform</li>
-      <li>Integrating with Applied Blockchain proprietary SDK library that will handle the communication with the blockchain</li>
-      <li>Integrating with REST APIs</li>
-      <li>Engaging with the developers in your team, share ideas and come up with a practical implementation</li>
-      <li>Creating user-friendly web and mobile UX/UIs</li>
-      <li>Writing automated tests for both React components and for browser-based end to end tests</li>
-      <li>Reviewing other developers code in form of github pull requests</li>
-      <li>Ensuring that the features you developed are deployed and working on the staging or production environment</li>'
-    required-skills: 
-      '<li>3+ years of professional javascript frontend or full-stack development experience (any framework: React, Angular.js, Ember.js, JQuery, Vanilla JS, etc.)</li>
-      <li>0.5+ years of professional React experience</li>
-      <li>Experience with Redux or others Flux-like state-management libraries</li>
-      <li>Deep web knowledge (DOM, HTML, CSS)</li>
-      <li>Experience in writing automated tests</li>
-      <li>Experience with Git and Github and common development flows</li>
-      <li>Good teamwork skills</li>'
-    additional-skills:
-      '<li>Mobile development experience (Swift/Objective C and Cocoa for iOS, Java/Kotlin and Android SDK for Android)</li>
-      <li>React Native experience</li>
-      <li>Experience with CSS preprocessors (SASS, LESS, Stylus, ...)</li>
-      <li>Experience supporting legacy browsers (IE10)</li>
-      <li>Experience with CSS3 new features (CSS3 transitions)</li>
-      <li>Mobile development experience via Phonegap/Cordova</li>
-      <li>Knowledge of continuous integration workflow and tools</li>
-      <li>Experience in End to end testing</li>
-      <li>Experience working with project management tools, such as Trello, JIRA, Pivotal Tracker, Zube etc</li>
-      <li>Experience in backend development with Node.js (Express.js)</li>
-      <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
-      <li>Bash scripting knowledge</li>'
-
-  - title: Backend Node Software Developer
-    type: Permanent
-    role: 
-      '<li>Develop cutting edge software solutions for startups and corporate clients</li>
-      <li>Engage with clients to understand their product vision and design proof-of-concept</li>
-      <li>and production grade products</li>
-      <li>Develop smart contracts on solidity</li>
-      <li>Liaise with frontend developers to build APIs for web and mobile</li>
-      <li>Write automated tests for smart contracts and server side code</li>
-      <li>Design and build large scale, high volume systems</li>'
-    required-skills: 
-      '<li>3+ years of backend development experience</li>
-      <li>1+ years of Node.js</li>
-      <li>Experience in writing automated tests</li>
-      <li>Experience with API design and implementation</li>
-      <li>Experience with SQL and NoSql Databases</li>
-      <li>Basic understanding of Linux</li>
-      <li>Git knowledge (feature branches, github flow)</li>'
-    additional-skills:
-      '<li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
-      <li>Experience in API development and best practices (testing, documenting, versioning, monitoring)</li>
-      <li>Testing Frameworks (Jest, Mocha/Chai/Should.js)</li>
-      <li>Docker experience (Docker Compose, Docker Swarm, Kubernetes)</li>
-      <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
-      <li>Experience with EC2 APIs (S3, creating and configuring networks and VMs programmatically)</li>
-      <li>Experience in React</li>
-      <li>Blockchain knowledge - Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js, setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
-      <li>HTML and CSS</li>'

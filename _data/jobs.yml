@@ -7,36 +7,76 @@
 
 london:
 
-  - title: Project Manager
-    type: Permanent
-    role: 'The Project Manager will be responsible for a portfolio of projects throughout the entire project lifecycle, and have a passion for customers that is demonstrated through professionalism and striving for excellence in all aspects of the customer experience. The Project Manager ensures transparent communication between the client, management team and developers and manages the progress and delivery of projects to be on time and on budget. The successful candidate will help translate business needs into technology solutions which will be formulated in statements of work.'
-    responsabilities: 
-      '<li>Overall Responsibility for Project Delivery</li>
-      <li>Engagement / Stakeholder management</li> 
-      <li>Proven Technical Team Leadership</li> 
-      <li>Scope Management & Change Control: Requirements amendments and track of priorities</li> 
-      <li>Project Issue Management: Expectations management</li> 
-      <li>Project Risk / Crisis Management</li> 
-      <li>Weekly Status Reporting and Project Health</li> 
-      <li>Additional Internal reporting to the CEO</li> 
-      <li>Personnel On-boarding / Rolling-off</li> 
-      <li>Task Management</li> 
-      <li>Initial Testing and Bugs Management</li> 
-      <li>Manage Project Documentation</li>'
-    required-skills: 
-      '<li>Easily approachable, attentive to detail, with excellent communication (up / down / peers), presentation and organisational skills</li> 
-      <li>Successfully delivered multiple tech projects</li> 
-      <li>Experience in supporting contractual & commercial management and execution</li> 
-      <li>Executive relationship management</li> 
-      <li>Proven track level in business domain & technical conversation</li> 
-      <li>Experienced in day to day project management including documentation updates, milestones, client updates, deliverables, answering client enquires and developers support </li>'
-    additional-skills: 
-      '<li>Experience working within the blockchain sector</li> 
-      <li>Experience woking with both corporate and start-up clients</li> 
-      <li>Experience working with project management tools, such as Jira, Slack, Trello, G-Drive, etc.</li>'
-
 # ––––––––––––––––––––––––––––––––––––––––––––
 # porto
 # ––––––––––––––––––––––––––––––––––––––––––––
 
 porto:
+
+  - title: Senior Front End Developer
+    type: Permanent
+    responsabilities: 
+      '<li>Developing cutting edge software solutions for startups and corporate clients</li>
+      <li>Developing front ends for DApps (Decentralized applications) based on the Ethereum blockchain platform</li>
+      <li>Integrating with Applied Blockchain proprietary SDK libraries that will handle the communication with the blockchain</li>
+      <li>Integrating with REST APIs</li>
+      <li>Engaging with the developers in your team, share ideas and come up with a practical implementation</li>
+      <li>Creating user-friendly web and mobile UX/UIs</li>
+      <li>Writing automated tests for React components, frontend logic and for browser-based end to end tests</li>
+      <li>Reviewing other developers code in form of GitHub pull requests</li>
+      <li>Ensuring that the features you developed are deployed and working on staging and production environments</li>'
+    required-skills: 
+      '<li>4+ years of professional javascript frontend or full-stack development experience (any framework: React, Angular.js, Ember.js, JQuery, Vanilla JS, etc.)</li>
+      <li>1+ years of professional React experience</li>
+      <li>Experience with Redux or others Flux-like state-management libraries</li>
+      <li>Experience with web technologies (DOM, HTML, CSS)</li>
+      <li>Experience in writing automated tests</li>
+      <li>Experience with Git and Github and common development flows</li>
+      <li>Good teamwork skills</li>'
+    additional-skills: 
+      '<li>Mobile development experience (Swift/Objective C and Cocoa for iOS, Java/Kotlin and Android SDK for Android)</li>
+      <li>React Native experience</li>
+      <li>Experience with CSS preprocessors (SASS, LESS, Stylus, ...)</li>
+      <li>Experience supporting legacy browsers (IE10)</li>
+      <li>Experience with CSS3 new features (CSS3 transitions)</li>
+      <li>Mobile development experience via Phonegap/Cordova</li>
+      <li>Knowledge of continuous integration workflow and tools</li>
+      <li>Experience in End to end testing</li>
+      <li>Experience working with project management tools, such as Trello, JIRA, Pivotal Tracker, Zube, etc.</li>
+      <li>Experience in backend development with Node.js (Express.js)</li>
+      <li>Experience with SQL and NoSql Databases (MySQL/Postgres, Redis)</li>
+      <li>Bash scripting knowledge</li>'
+
+  - title: Senior Back End Developer
+    type: Permanent
+    responsabilities: 
+      '<li>Developing cutting edge software solutions for startups and corporate clients</li>
+      <li>Developing DApps (Decentralized applications) based on the Ethereum blockchain platform</li>
+      <li>Working alongside other developers in your team and come up with solid and resilient implementations</li>
+      <li>Engaging with clients to understand the product business proposition and make sure the code is aiming to that</li>
+      <li>Developing smart contracts using Solidity</li>
+      <li>Aligning with front end developers to build efficient JSON REST APIs to be consumed by React-based web and mobile apps</li>
+      <li>Writing automated tests for Solidity smart contracts and NodeJS models and API code</li>
+      <li>Reviewing other developers code in form of github pull requests</li>
+      <li>Ensuring that the features you developed are deployed and working on staging and production environments</li>'
+    required-skills: 
+      '<li>4+ years of professional backend development experience</li>
+      <li>2+ years of professional Node.js experience</li>
+      <li>Experience in writing automated tests</li>
+      <li>Experience with REST API design and implementation</li>
+      <li>Experience with SQL and NoSql Databases.</li>
+      <li>Basic understanding of Linux and bash</li>
+      <li>Git knowledge (feature branches, github flow)</li>
+      <li>Good teamwork skills</li>'
+    additional-skills: 
+      '<li>Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)</li>
+      <li>Knowledge of how NodeJS work and how to write clean, resilient and performant code</li>
+      <li>Experience in REST API development and best practices (testing, documenting, versioning, monitoring)</li>
+      <li>Testing Framework experience (Jest, Mocha/Chai/Should.js)</li>
+      <li>Docker experience (Docker, Docker Compose, Docker Swarm, Kubernetes)</li>
+      <li>Terraform experience</li>
+      <li>Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)</li>
+      <li>Experience with EC2 Web Console and APIs</li>
+      <li>Experience in React</li>
+      <li>Blockchain knowledge - Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js,      setting up and running geth/parity nodes, solidity smart contracts, truffle.js</li>
+      <li>HTML and CSS experience</li>'

@@ -13,30 +13,32 @@
     </div>
     <div class="accordion__content">
         {% if job.closing-date %}
-            <div>
-                <p class="body--bold">Application closing date</p>
-                <p>{{ job.closing-date }}</p>
-            </div>
+        <div>
+            <p class="body--bold">Application closing date</p>
+            <p>{{ job.closing-date }}</p>
+        </div>
         {% endif %}
         {% if job.salary %}
-            <div class="accordion__subtitle">
-                <p class="body--bold">Annual Salary</p>
-                <p>{{ job.salary }}</p>
-            </div>
+        <div class="accordion__subtitle">
+            <p class="body--bold">Annual Salary</p>
+            <p>{{ job.salary }}</p>
+        </div>
         {% endif %}
+        {% if job.role %}
         <p class="accordion__subtitle lead">About the position</p>
         <ul>{{ job.role }}</ul>
+        {% endif %}
         {% if job.responsabilities %}
-            <p class="accordion__subtitle lead">Responsabilities</p>
-            <ul>{{ job.responsabilities }}</ul>
+        <p class="accordion__subtitle lead">Responsabilities</p>
+        <ul>{{ job.responsabilities }}</ul>
         {% endif %}
         {% if job.required-skills %}
-            <p class="accordion__subtitle lead">Required skills & experience</p>
-            <ul>{{ job.required-skills }}</ul>
+        <p class="accordion__subtitle lead">Required skills & experience</p>
+        <ul>{{ job.required-skills }}</ul>
         {% endif %}
         {% if job.additional-skills %}
-            <p class="accordion__subtitle lead">Additional desirable experience</p>
-            <ul>{{ job.additional-skills }}</ul>
+        <p class="accordion__subtitle lead">Additional desirable experience</p>
+        <ul>{{ job.additional-skills }}</ul>
         {% endif %}
     </div>
 </div>

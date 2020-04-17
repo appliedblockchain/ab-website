@@ -1,8 +1,8 @@
 <div class="event__item">
     {% if event.image %}
-        <div class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.image }}.jpg);"></div>
+    <a href="{{ event.link }}" target="_blank" class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.image }}.jpg);"></a>
     {% else %}
-        <div class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/default.jpg);"></div>
+    <a href="{{ event.link }}" target="_blank" class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/default.jpg);"></a>
     {% endif %}
     <div class="block__content event__content">
         <div class="event__meta">
@@ -12,7 +12,9 @@
                 {% endif %}
                 {{ event.date | date: '%b %-d, %Y' }}
             </p>
-            <h2 class="block__title lead">{{ event.name }}</h2>
+            <a href="{{ event.link }}" target="_blank">
+                <h2 class="block__title lead">{{ event.name }}</h2>
+            </a>
             <p>{{ event.location }}</p>
         </div>
         <div class="event__actions">

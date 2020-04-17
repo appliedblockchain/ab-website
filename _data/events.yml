@@ -16,15 +16,15 @@
 
 
 - name: 'Webinar: Blockchains for Business'
-  image: register-for-our-webinar
+  image: webinar-banner-b
   date: '2020-05-07'
 
 - name: 'Webinar: Zero Knowledge Proofs for Business'
-  image: register-for-our-webinar
+  image: webinar-banner-zkp
   date: '2020-04-30'
 
 - name: 'Webinar: Privacy Enhancing Technologies for Business'
-  image: register-for-our-webinar
+  image: webinar-banner-pet
   date: '2020-04-23'
   video: https://www.youtube.com/watch?v=jSVluJA77Pg&feature=youtu.be
   link-title: Register

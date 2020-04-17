@@ -3,6 +3,12 @@ author: Applied Blockchain
 title: Applied Blockchain
 description: "Building Future-Proof Blockchain Applications"
 
+run:
+  name: install dependencies
+  command: |
+    gem update --system
+    gem install bundler
+
 # contact 
 address-london: Level 39<br>One Canada Square, Canary Wharf<br>London E14 5AB<br>United Kingdom
 map-london: https://goo.gl/maps/2RqjmEGqHhP2

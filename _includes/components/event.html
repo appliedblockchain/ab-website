@@ -26,6 +26,8 @@
                         <p class="button__inner">website</p>
                     </a>
                 {% endif %}
+                {% else %}
+                <p class="label">Coming soon</p>
             {% endif %}
             {% if event.directions %}
             <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">

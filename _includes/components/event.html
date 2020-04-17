@@ -27,9 +27,16 @@
                     </a>
                 {% endif %}
             {% endif %}
+            {% if event.directions %}
             <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">
                 <p class="button__inner">directions</p>
             </a>
+            {% endif %}
+            {% if event.video %}
+            <a href="{{ event.video }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-play">
+                <p class="button__inner">Watch video</p>
+            </a>
+            {% endif %}
         </div>
     </div>
 </div>

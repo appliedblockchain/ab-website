@@ -15,6 +15,13 @@
 #   link: 
 
 
+- name: 'Webinar: Zero Knowledge Proofs for Business'
+  image: register-for-our-webinar
+  date: '2020-04-23'
+  video: https://www.youtube.com/watch?v=jSVluJA77Pg&feature=youtu.be
+  link-title: Register
+  link: https://zoom.us/webinar/register/WN_ex2LDfNOS2mPVVCSxoROng
+
 - name: 'Applied Blockchain Zero-Knowledge Proofs Drinks Reception'
   image: zkp-drinks
   date: '2019-11-14'

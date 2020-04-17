@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Want to learn about zero knowledge proofs: register for out webinar'
+title: 'Want to learn about zero knowledge proofs: register for our webinar'
 image: register-for-our-webinar
 category: news
 social: video

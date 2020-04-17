@@ -19,11 +19,11 @@
   image: register-for-our-webinar
   date: '2020-05-07'
 
-- name: 'Webinar: Privacy Enhancing Technologies for Business'
+- name: 'Webinar: Zero Knowledge Proofs for Business'
   image: register-for-our-webinar
   date: '2020-04-30'
 
-- name: 'Webinar: Zero Knowledge Proofs for Business'
+- name: 'Webinar: Privacy Enhancing Technologies for Business'
   image: register-for-our-webinar
   date: '2020-04-23'
   video: https://www.youtube.com/watch?v=jSVluJA77Pg&feature=youtu.be

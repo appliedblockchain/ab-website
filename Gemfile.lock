@@ -95,7 +95,7 @@ PLATFORMS
 DEPENDENCIES
   compass
   html-proofer
-  jekyll (~> 3.8.3)
+  jekyll (~> 3.8.6)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
   tzinfo-data

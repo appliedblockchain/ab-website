@@ -2,13 +2,13 @@
 # in about.html page
 
 fifteen:
-  - text: Adi started the company in 2015 with the vision of helping companies solve real-world problems by developing blockchain applications and contributing towards creating a trustless ecosystem.
+  - text: Adi started the company in 2015 with the vision of helping companies solve real-world problems by developing distributed applications and contributing towards creating a trustless ecosystem.
     icon: rocket
 
 sixteen:
-  - text: We received an Innovate UK grant to develop Mantle, an identity and privacy toolkit.<br><br><a href="/mantle" class="button button--highlight button--small button--animate fas fa-plus"><span class="button__inner">Learn more about Mantle</span></a>
+  - text: We received an Innovate UK grant to develop identity and privacy toolkit.
     icon: mantle-logo
-  - text: Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving funding (thus, we know the realities of being a startup!).
+  - text: Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving venture funding.
     icon: group
 
 seventeen:

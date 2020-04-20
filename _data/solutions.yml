@@ -3,9 +3,8 @@
 
 - active: nav__button--active
   icon: icon-decentralised
-  title: Future-Proof Decentralised Applications
+  title: Future-Proof Secure, Privacy-Preserving Applications
   id: solutions-decentralised
-  text: Mantle, our blockchain agnostic application and privacy toolkit works with any blockchain platform. This provides identity and key management, data privacy in compliance with GDPR, anonymity, easy integration, development efficiency, and future-proofs our clients applications to work with the best available technology.
 
 - active:
   icon: icon-production
@@ -15,6 +14,6 @@
 
 - active:
   icon: icon-security
-  title: Blockchain Security Audits
+  title: Security Audits
   id: solutions-security
   text: Blockchain technology is implemented to create a trustless network and to significantly reduce fraud. Before deploying a decentralised solution, a third party penetration testing is always recommended.<br><br>With our team of blockchain and assurance experts, we provide auditing services for blockchain smart contracts developed by other providers.

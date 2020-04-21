@@ -50,32 +50,34 @@
                                     <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
                                     <h2 class="block__title lead">{{ post.title }}</h2>
                                     <div class="block__text">{{ post.headline | truncate: 100, "…" }}</div>
-                                    {% if post.social contains "newsletter" and post.link %}
+                                    {% if post.link %}
+                                    {% if post.social contains "newsletter"%}
                                         <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-newspaper">
                                             <p class="button__inner">Read more</p>
                                         </a>
-                                    {% elsif post.social contains "external" and post.link %}
+                                    {% elsif post.social contains "external"%}
                                         <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-external-link-alt">
                                             <p class="button__inner">Read article</p>
                                         </a>
-                                    {% elsif post.social contains "podcast" and post.link %}
+                                    {% elsif post.social contains "podcast"%}
                                         <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-headphones">
                                             <p class="button__inner">Listen</p>
                                         </a>
-                                    {% elsif post.social contains "linkedin" and post.link %}
+                                    {% elsif post.social contains "linkedin"%}
                                         <a href="{{ post.link }}" target="_blank" class="button button--linkedin button--small button--animate fab fa-linkedin-in">
                                             <p class="button__inner">Read on Linkedin</p>
                                         </a>
-                                    {% elsif post.social contains "medium" and post.link %}
+                                    {% elsif post.social contains "medium"%}
                                         <a href="{{ post.link }}" target="_blank" class="button button--medium button--small button--animate fab fa-medium-m">
                                             <p class="button__inner">Read on Medium</p>
                                         </a>
-                                    {% elsif post.social contains "video" and post.link %}
+                                    {% elsif post.social contains "video"%}
                                         <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-play">
                                             <p class="button__inner">Watch video </p>
                                         </a>
+                                    {% elsif post.social contains "blank"%}
                                     {% endif %}
-                                    {% if post.link %} {% else %}
+                                    {% else %}
                                         <a href="{{ post.url | prepend: site.baseurl }}" class="button button--primary button--small button--animate fas fa-eye">
                                             <p class="button__inner">Read more</p>
                                         </a>

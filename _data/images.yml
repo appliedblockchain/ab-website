@@ -2,8 +2,8 @@
 # in home.html page
 
 media:
-  - url: bloomberg
-    alt: bloomberg
+  - url: private-equity-wire
+    alt: private-equity-wire
 
   - url: finextra
     alt: finextra

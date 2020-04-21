@@ -39,16 +39,16 @@
                         <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
                             <div class="block blog__item">
                                 {% if post.image %}
-                                    <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image }}.jpg);"></div>
+                                    <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}><div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image }}.jpg);"></div></a>
                                 {% else %}
-                                    <div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);"></div>
+                                    <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}><div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);"></div></a>
                                 {% endif %} 
                                 <div class="block__content blog__content">
                                     <span class="blog__icon--{{ post.category }}">
                                         <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="">
                                     </span>
                                     <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
-                                    <h2 class="block__title lead">{{ post.title }}</h2>
+                                    <h2 class="block__title lead"><a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>{{ post.title }}</a></h2>
                                     <div class="block__text">{{ post.headline | truncate: 100, "…" }}</div>
                                     {% if post.link %}
                                     {% if post.social contains "newsletter"%}

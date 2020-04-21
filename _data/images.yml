@@ -14,6 +14,9 @@ media:
   - url: venturebeat
     alt: venturebeat
 
+  - url: fortune
+    alt: fortune
+
 # technology section
 # in service.html page
 

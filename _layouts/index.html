@@ -186,11 +186,11 @@
         <div class="section__content logo-media">
             <!-- edit data in _data/images.yml -->
             {% for item in site.data.images.media %}
-                <div class="logo-media__item">
-                    {% if item.alt == 'private-equity-wire' %}<a href="https://www.privateequitywire.co.uk/2020/04/20/284845/applied-blockchain-raises-gbp2m-funding-round-led-qbn-capital" target="_blank">{% endif %}
-                    <img src="{{ site.url }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
-                    {% if item.alt == 'private-equity-wire' %}</a>{% endif %}
-                </div>
+            <div class="logo-media__item">
+                {% if item.alt == 'private-equity-wire' %}<a href="https://www.privateequitywire.co.uk/2020/04/20/284845/applied-blockchain-raises-gbp2m-funding-round-led-qbn-capital" target="_blank">{% endif %}
+                <img src="{{ site.url }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
+                {% if item.alt == 'private-equity-wire' %}</a>{% endif %}
+            </div>
             {% endfor %}    
         </div>
 

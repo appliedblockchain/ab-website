@@ -11,7 +11,7 @@ headline: Leading distributed solutions specialist Applied Blockchain has comple
 
 <p class="post__content">Applied Blockchain has already started working with its growing enterprise client base to test the platform in their respective markets, including energy, shipping, aviation, automotive, telecoms and financial services, demonstrating that it substantially improves their data security and data privacy.</p>
 
-<p class="post__content">Based at Level39 in London, Applied Blockchain has developed over 70 distributed solutions for both start-ups and corporates and was selected by Shell to build and deploy the first distributed platform for energy derivative trading, which has been live in production since 2018.  Shell also lead the seed investment round in 2017.</p>
+<p class="post__content">Based at Level39 in London, Applied Blockchain has developed over 70 distributed solutions for both start-ups and corporates and was selected by Shell to build and deploy the first distributed platform for energy derivative trading, which has been live in production since 2018. Shell also lead the seed investment round in 2017 alongside venture capital firm Calibrate.</p>
 
 <p class="post__content">Adi Ben-Ari, founder and CEO Applied Blockchain, said: “We are very excited to be building a platform to meet the demands of our enterprise clients to do more with their data, while keeping it safe, secure and private. We have now received funding from a strategic venture capital firm, QBN Capital, and we look forward to further developing our privacy-preserving technology and working with them to extend our reach into the Asian markets.”</p>
 

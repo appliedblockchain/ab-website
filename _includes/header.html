@@ -21,13 +21,7 @@
 		})(window,document,'script','dataLayer','GTM-P69MF67');
 	</script>
 
-	<title>
-		{% if page.title %}
-			{{ page.title }} | {{ site.title }}
-		{% else %}
-			{{ site.title }} | {{ site.description }}
-		{% endif %}
-	</title>	
+	<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>	
 
 	<!-- META -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -93,13 +87,15 @@
 
 		var ml_account = ml('accounts', '1227436', 'y5n5k7k4d8', 'load');
 	</script>
-	<!-- End MailerLite Universal -->
+
+	<!-- Pipedrive LeadBooster -->
+	<script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 2026773,playbookUuid: '86b25df7-8f29-4d01-a304-b9308e085b8b',version: 2};</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
 
 </head>
 
 <body>
 
-<!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager -->
 <noscript>
 	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P69MF67" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
@@ -227,7 +223,7 @@
 </header>
 
 <!-- scroll to top button -->
-<a class="button--scroll-top button button--icon button--highlight fas fa-chevron-up"></a>
+<!-- <a class="button--scroll-top button button--icon button--highlight fas fa-chevron-up"></a> -->
 
 <!-- cookie banner -->
 <div class="cookie">

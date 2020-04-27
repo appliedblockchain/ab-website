@@ -309,11 +309,17 @@
 
 
     &__item {
+        position: relative;
+        width: 25%;
         padding: $integer $integer*2;
-
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $break-desktop-max) {
             padding-left: $integer;
             padding-right: $integer;
+        }
+        @include responsive(max-width, $break-tablets-max) {
+            padding-left: $integer*2;
+            padding-right: $integer*2;
+            width: 50%;
         }
     }
 

@@ -263,8 +263,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding-top: $integer/2;
-    padding-bottom: $integer/2;
+    padding-top: $integer/4;
+    padding-bottom: $integer/4;
     opacity: 1;
     display: none;
     @include responsive(max-width, $break-phones-max) {

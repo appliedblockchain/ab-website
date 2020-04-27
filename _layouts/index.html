@@ -184,14 +184,22 @@
         %}
 
         <div class="section__content logo-media">
-            <!-- edit data in _data/images.yml -->
-            {% for item in site.data.images.media %}
-            <div class="logo-media__item">
-                {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}
-                <img src="{{ site.url }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
-                {% if item.link %}</a>{% endif %}
+            <div class="row">
+                <!-- edit data in _data/images.yml -->
+                {% for item in site.data.images.media %}
+                <div class="col--lg3 col--md4 col--6">
+                    <div class="logo-media__item">
+                        {% if item.link %}
+                        <a href="{{ item.link }}" target="_blank">
+                        {% endif %}
+                            <img src="{{ site.url }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
+                        {% if item.link %}
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}    
             </div>
-            {% endfor %}    
         </div>
 
         <div class="section__link">

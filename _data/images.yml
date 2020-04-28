@@ -16,12 +16,15 @@ media:
 
   - url: coindesk
     alt: coindesk
+    link: https://www.coindesk.com/british-maritime-society-builds-blockchain-tool-for-ship-registration
 
   - url: finextra
     alt: finextra
+    link: https://www.finextra.com/pressarticle/72235/applied-blockchain-secures-investments-from-shell-trading-and-calibrate-partners
 
   - url: forbes
     alt: forbes
+    link: https://www.forbes.com/sites/gauravsharma/2018/01/18/shells-trading-arm-bags-stake-in-london-based-blockchain-start-up/#1f42a442213e
 
   - url: venturebeat
     alt: venturebeat

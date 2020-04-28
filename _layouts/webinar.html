@@ -1,31 +1,13 @@
 {% include header.html %}
 
-<div id="webinar" style="background-image: url({{ site.url}}{{ site.imageurl}}/background/webinar.png);">
-    <!-- edit component in _includes/components/page-header.html -->
-    {% include components/page-header.html
-        background-color='primary'
-        title='Register for our webinar'
-        description='Want to learn about Zero knowledge Proofs?'
-        comment='Applied Blockchain is pleased to announce an online session aimed at a business audience to learn about the emerging technology of zero knowledge proofs and how it can be applied to enhance security and privacy in a business setting.'
-    %}
-    <section class="section section--alt">
-        <a href="https://zoom.us/webinar/register/WN_ex2LDfNOS2mPVVCSxoROng" target="_blank" class="button button--large button--dark button--animate fas fa-calendar">
-            <p class="button__inner">Register</p>
-        </a>
-    </section>
-    <section class="section section--alt">
-        <div class="section__content">
-            <div class="row">
-                <div class="coloffset--md2 col--md8">
-                    <div class="block no-padding">
-                        <div class="embed-container">
-                            <iframe src="https://www.youtube.com/embed/jSVluJA77Pg?controls=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section id="webinar" style="background-image: url({{ site.url}}{{ site.imageurl}}/background/webinar.jpg);">
+    <div class="section section--header section--primary background--cover">
+        <h1 class="headline">Webinar podcast</h1>
+        <p class="section__subtitle lead">Interested in getting materials about zer-knowledge proofs? Fill in the form below and we will send you our latest podcast on Zero Knowledge Proofs for Business</p>
+        <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/0297c28818798955b112baab8fe456922026773">
+            <script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
 {% include footer.html %}

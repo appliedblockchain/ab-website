@@ -3,15 +3,12 @@
         <div class="footer__item footer__logo colalt--lg5">
             <div class="logo logo-name-white">
                 <a href="{{ site.url }}/">
-                    <!-- edit elements in _includes/elements/logo.html -->
                     {% include elements/logo.html %}
                 </a>
             </div>
-            <!-- edit component in _includes/components/social.html -->
             {% include components/social.html %}
         </div>
         <div class="footer__item colalt--lg8 colaltoffset--lg1">
-            <!-- edit component in _includes/components/newsletter.html -->
             {% include components/newsletter.html %}
         </div>
         <div class="footer__item footer__adress colalt--md5">
@@ -44,11 +41,8 @@
             <p class="footer__button button button--text">Toyota</p>
             <p class="footer__button button button--text">Emsurge</p>
             {% for project in site.projects %}
-                <a href="{{ project.url }}" class="footer__button button button--text">{{ project.title }}</a>
+            <a href="{{ project.url }}" class="footer__button button button--text">{{ project.title }}</a>
             {% endfor %}
         </div>
     </div>
 </footer>
-
-</body>
-</html>

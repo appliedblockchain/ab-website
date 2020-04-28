@@ -1,35 +1,28 @@
-{% include header.html %}
+{% include containers/site/header.html %}
 
-<div id="thank-you">
+{% include components/page-header.html
+    title='Thank you!'
+    description='Your form has been sent, our team will be in touch with you shortly'
+%}
 
-    <!-- edit component in _includes/components/page-header.html -->
-    {% include components/page-header.html
-        title='Thank you!'
-        description='Your form has been sent, our team will be in touch with you shortly'
-    %}
-
-    <section class="section section--alt thank-you">
-
-        <div class="section__content body--large">
-            <div class="thank-you__item">
-                <p class="thank-you__title">In the meantime, don't hesitate to</p>
-                <div class="thank-you__button">
-                    <a href="{{ site.url }}/our-projects" class="ga-button-projects thank-you__button button button--primary-darken button--animate fas fa-fill">
-                        <p class="button__inner">Check our projects</p>
-                    </a>
-                    <a href="{{ site.url }}/products" class="ga-button-products thank-you__button button button--primary-lighten button--animate fas fa-box">
-                        <p class="button__inner">See our products</p>
-                    </a>
-                </div>
-            </div>
-            <div class="thank-you__item">
-                <p class="thank-you__title">And don't forget to follow us on our social media to stay in touch</p>
-                {% include components/social.html %}
+<section class="section section--alt thank-you">
+    <div class="section__content body--large">
+        <div class="thank-you__item">
+            <p class="thank-you__title">In the meantime, don't hesitate to</p>
+            <div class="thank-you__button">
+                <a href="{{ site.url }}/our-projects" class="ga-button-projects thank-you__button button button--primary-darken button--animate fas fa-fill">
+                    <p class="button__inner">Check our projects</p>
+                </a>
+                <a href="{{ site.url }}/products" class="ga-button-products thank-you__button button button--primary-lighten button--animate fas fa-box">
+                    <p class="button__inner">See our products</p>
+                </a>
             </div>
         </div>
+        <div class="thank-you__item">
+            <p class="thank-you__title">And don't forget to follow us on our social media to stay in touch</p>
+            {% include components/social.html %}
+        </div>
+    </div>
+</section>
 
-    </section>
-
-</div>
-
-{% include footer.html %}
+{% include containers/site/footer.html %}

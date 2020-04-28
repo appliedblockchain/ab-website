@@ -1,24 +1,21 @@
-{% include header.html %}
+{% include containers/site/header.html %}
 
 <script src="{{ site.url }}{{ site.resourceurl }}/js/blog.js"></script>
 
 <div class="post">
-
     {% if page.image %}
-        <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ page.image }}.jpg);">
+    <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ page.image }}.jpg);">
     {% else %}
-        <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);">
+    <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);">
     {% endif %} 
         <p class="section__comment comment">{{ page.category }}</p>
         <h1 class="section__title title">{{ page.title }}</h1>
         <p class="section__desc body--large">{{ page.date | date: "%b %-d, %Y" }}</p>
-    </div>
-            
+    </div>     
     <article class="section">
         <div class="section__content section--left">
             <div class="row">
                 <div class="coloffset--xl2 col--xl8 coloffset--lg1 col--lg10">
-                    <!-- edit component in _includes/components/share.html -->
                     {% include components/share.html %}
                     {% if page.headline %}
                         <p class="post__headline">{{ page.headline }}</p>
@@ -28,7 +25,6 @@
             </div>
         </div>
     </article>
-
 </div>
 
-{% include footer.html %}
+{% include containers/site/footer.html %}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125324953-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-125324953-1');
+	</script>
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-P69MF67');
+	</script>
+
+	<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>	
+
+	<!-- META -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }} ">
+	{% else %}
+	<meta name="description" content="{{ site.description }} ">
+	{% endif %}
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- image for share button -->
+	<meta property="og:image" content="https://appliedblockchain.com/{{ site.imageurl }}/posts/{{ page.image }}.jpg"/>
+
+	<!-- FAVICONS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
+	<link rel="manifest" href="{{ site.url }}/site.webmanifest">
+	<link rel="mask-icon" href="{{ site.url }}/safari-pinned-tab.svg" color="#007bff">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ site.url }}{{ site.resourceurl }}/stylesheets/style.css" />
+	
+	<!-- VENDOR CSS -->
+	<!-- font awesome -->
+	<link href="{{ site.url }}{{ site.resourceurl }}/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- owl carousel -->
+	<link href="{{ site.url }}{{ site.resourceurl }}/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+	
+	<!-- Pipedrive LeadBooster -->
+	<script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 2026773,playbookUuid: '86b25df7-8f29-4d01-a304-b9308e085b8b',version: 2};</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P69MF67" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- cookie banner -->
+<div class="cookie">
+	<p class="cookie__text body--small">We want to give you the best service by using cookies. Carry on browsing if you are happy with this, or <a href="{{ site.url }}/privacy-policy" class="button--underline">find out</a> how we manage your cookies.</p>
+	<button class="cookie__button button button--small button--primary-darken button--animate fas fa-check">
+		<p class="button__inner">Got it</p>
+	</button>
+</div>
+
+{% include containers/page/header.html %}
+
+<div{% if page.layout == 'posts' %} id="posts"{% else %} id="{{ page.path | remove: ".html" }}"{% endif %} class="page">

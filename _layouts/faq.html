@@ -1,36 +1,29 @@
-{% include header.html %}
+{% include containers/site/header.html %}
 
-    <!-- edit component in _includes/components/page-header.html -->
-    {% include components/page-header.html
-        title='Frequently Asked Questions'
-        description='Below we’ve provided a bit of background on Applied Blockchain, blockchain technology, cryptocurrencies, mining and smart contracts'
-    %}
+{% include components/page-header.html
+    title='Frequently Asked Questions'
+    description='Below we’ve provided a bit of background on Applied Blockchain, blockchain technology, cryptocurrencies, mining and smart contracts'
+%}
 
-    <section class="section section--alt">
-
-        <div class="section__content row faq">
-            <div class="col--lg6 faq__column">
-                <h2 class="section__header comment">Applied Blockchain</h2>
-                <div class="block accordion">
-                    <!-- edit data in _data/projects.yml -->
-                    {% for item in site.data.faq.company %}
-                        <!-- edit component in _includes/components/faq.html -->
-                        {% include components/faq.html %}
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="col--lg6 faq__column">
-                <h2 class="section__header comment">Blockchain Technology</h2>
-                <div class="block accordion">
-                    <!-- edit data in _data/projects.yml -->
-                    {% for item in site.data.faq.technology %}
-                        <!-- edit component in _includes/components/faq.html -->
-                        {% include components/faq.html %}
-                    {% endfor %}
-                </div>
+<section class="section section--alt">
+    <div class="section__content row faq">
+        <div class="col--lg6 faq__column">
+            <h2 class="section__header comment">Applied Blockchain</h2>
+            <div class="block accordion">
+                {% for item in site.data.faq.company %}
+                {% include components/faq.html %}
+                {% endfor %}
             </div>
         </div>
+        <div class="col--lg6 faq__column">
+            <h2 class="section__header comment">Blockchain Technology</h2>
+            <div class="block accordion">
+                {% for item in site.data.faq.technology %}
+                {% include components/faq.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
 
-    </section>
-
-{% include footer.html %}
+{% include containers/site/footer.html %}

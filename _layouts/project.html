@@ -1,122 +1,118 @@
-{% include header.html %}
+{% include containers/site/header.html %}
 
-<div class="project">
-
-    <div class="section section--header section--left project__header">
-        <div class="project__nav">
-            {% if page.previous.url %}
-                <a href="{{ page.previous.url }}" class="ga-button-project-nav button button--small button--stroke button--primary button--animate fas fa-chevron-left">
-                    <p class="button__inner">Previous</p>
-                </a>
-            {% endif %}
-            {% if page.next.url %}
-                <a href="{{ page.next.url }}" class="ga-button-project-nav button button--small button--stroke button--primary button--animate fas fa-chevron-right">
-                    <p class="button__inner">Next</p>
-                </a>
-            {% endif %}
-        </div>
-        <div class="row">
-            <h1 class="col--lg7 project__title title">
-                {{ page.title }}:
-                <span>{{ page.subtitle }}</span>
-            </h1>
-            <div class="coloffset--lg1 col--lg4 col--md12 project__meta">
-                <div class="meta__item body--large">
-                    <p class="meta__title body--bold">Industry</p>
-                    <p>{{ page.industry }}</p>
-                </div>
-                <div class="meta__item body--large">
-                    {% if page.deliverables %}
-                        <p class="meta__title body--bold">Deliverables</p>
-                        <p>{{ page.deliverables }}</p>
-                    {% endif %}
-                </div>
+<div class="section section--header section--left project__header">
+    <div class="project__nav">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="ga-button-project-nav button button--small button--stroke button--primary button--animate fas fa-chevron-left">
+            <p class="button__inner">Previous</p>
+        </a>
+        {% endif %}
+        {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="ga-button-project-nav button button--small button--stroke button--primary button--animate fas fa-chevron-right">
+            <p class="button__inner">Next</p>
+        </a>
+        {% endif %}
+    </div>
+    <div class="row">
+        <h1 class="col--lg7 project__title title">
+            {{ page.title }}:
+            <span>{{ page.subtitle }}</span>
+        </h1>
+        <div class="coloffset--lg1 col--lg4 col--md12 project__meta">
+            <div class="meta__item body--large">
+                <p class="meta__title body--bold">Industry</p>
+                <p>{{ page.industry }}</p>
+            </div>
+            <div class="meta__item body--large">
+                {% if page.deliverables %}
+                <p class="meta__title body--bold">Deliverables</p>
+                <p>{{ page.deliverables }}</p>
+                {% endif %}
             </div>
         </div>
     </div>
-
-    {% if page.summary %}
-        <section class="section section--col project__summary summary background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
-            <div class="block summary__container">
-                <div class="summary__content">
-                    <h1 class="project__subtitle subtitle">About {{ page.title }}</h1>
-                    <p>{{ page.summary }}</p>
-                </div>
-                <img src="{{ site.url }}{{ site.imageurl }}/logos/clients/{{ page.slug }}.png" alt="{{ page.title }} Logo" class="summary__image">
-            </div>
-        </section>
-    {% endif %}
-
-    {% if page.challenge %}
-        <section class="section section--left challenge">
-            <div class="row">
-                {% if page.challenge-diagram %}
-                    <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4 challenge__icon">
-                    <div class="coloffset--md1 col--md7">
-                {% else %}
-                    <div class="col--md6">
-                {% endif %}
-                        <h1 class="project__subtitle subtitle">The Challenge</h1>
-                        <div class="project__text">{{ page.challenge }}</div>
-                    </div>
-                {% if page.outcome %}
-                    <div class="coloffset--md1 col--md5">
-                        <h1 class="project__subtitle subtitle">The Outcome</h1>
-                        <div class="project__text">{{ page.outcome }}</div>
-                    </div>
-                {% endif %}
-            </div>
-        </section>
-    {% endif %}
-
-    {% if page.delivery %}
-        <section class="section section--left section--grey delivery" style="background-image: url({{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale.svg);">
-            <div class="row">
-                <div class="col--xl7 col--lg9">
-                    <h1 class="project__subtitle subtitle">What Applied Blockchain Delivered</h1>
-                </div>
-                <div class="project__text">
-                    {{ page.delivery }}
-                    <!-- <img src="{{ site.url }}{{ site.imageurl }}/projects/example/{{ page.slug }}.png" alt="{{ page.title }} example" class="coloffset--lg1 col--lg7 delivery__image"> -->
-                </div>
-            </div>
-        </section>
-    {% endif %}
-
-    {% if page.results %}
-        <section class="section section--primary results">
-            <h1 class="project__subtitle subtitle">Results</h1>
-            <div class="project__text coloffset--lg2 col--lg8 body--large">{{ page.results }}</div>
-            {% if page.results-content %}
-                <div class="results__content">
-                    {% if page.results-subtitle %}
-                        <p class="results__title lead">{{ page.results-subtitle }}</p>
-                    {% endif %}
-                    <div class="results__icons image-inline row">{{ page.results-content }}</div>
-                </div>
-            {% endif %}
-            {% if page.results-comment %}
-                <p class="coloffset--lg2 col--lg8 results__comment">{{ page.results-comment }}</p>
-            {% endif %}
-        </section>
-    {% endif %}
-
-    {% if page.testimonial-quote %}
-        <section class="section">
-            <div class="testimonial__item">
-                <div class="testimonial__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/testimonials/{{ page.testimonial-id }}.jpg);" alt="Portrait {{ page.testimonial-name }}"></div>
-                <div class="testimonial__content">
-                    <img src="{{ site.url }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
-                    <p class="quote">{{ page.testimonial-quote }}</p>
-                    <div class="testimonial__meta">
-                        <p class="body--bold">{{ page.testimonial-name }}</p>
-                        <p>{{ page.testimonial-job }}</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-     {% endif %}
-
 </div>
 
-{% include footer.html %}
+{% if page.summary %}
+<section class="section section--col project__summary summary background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
+    <div class="block summary__container">
+        <div class="summary__content">
+            <h1 class="project__subtitle subtitle">About {{ page.title }}</h1>
+            <p>{{ page.summary }}</p>
+        </div>
+        <img src="{{ site.url }}{{ site.imageurl }}/logos/clients/{{ page.slug }}.png" alt="{{ page.title }} Logo" class="summary__image">
+    </div>
+</section>
+{% endif %}
+
+{% if page.challenge %}
+<section class="section section--left challenge">
+    <div class="row">
+        {% if page.challenge-diagram %}
+        <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4 challenge__icon">
+        <div class="coloffset--md1 col--md7">
+        {% else %}
+        <div class="col--md6">
+        {% endif %}
+            <h1 class="project__subtitle subtitle">The Challenge</h1>
+            <div class="project__text">{{ page.challenge }}</div>
+        </div>
+        {% if page.outcome %}
+        <div class="coloffset--md1 col--md5">
+            <h1 class="project__subtitle subtitle">The Outcome</h1>
+            <div class="project__text">{{ page.outcome }}</div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+
+{% if page.delivery %}
+<section class="section section--left section--grey delivery" style="background-image: url({{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale.svg);">
+    <div class="row">
+        <div class="col--xl7 col--lg9">
+            <h1 class="project__subtitle subtitle">What Applied Blockchain Delivered</h1>
+        </div>
+        <div class="project__text">
+            {{ page.delivery }}
+            <!-- <img src="{{ site.url }}{{ site.imageurl }}/projects/example/{{ page.slug }}.png" alt="{{ page.title }} example" class="coloffset--lg1 col--lg7 delivery__image"> -->
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.results %}
+<section class="section section--primary results">
+    <h1 class="project__subtitle subtitle">Results</h1>
+    <div class="project__text coloffset--lg2 col--lg8 body--large">{{ page.results }}</div>
+    {% if page.results-content %}
+    <div class="results__content">
+        {% if page.results-subtitle %}
+        <p class="results__title lead">{{ page.results-subtitle }}</p>
+        {% endif %}
+        <div class="results__icons image-inline row">{{ page.results-content }}</div>
+    </div>
+    {% endif %}
+    {% if page.results-comment %}
+    <p class="coloffset--lg2 col--lg8 results__comment">{{ page.results-comment }}</p>
+    {% endif %}
+</section>
+{% endif %}
+
+{% if page.testimonial-quote %}
+<section class="section">
+    <div class="testimonial__item">
+        <div class="testimonial__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/testimonials/{{ page.testimonial-id }}.jpg);" alt="Portrait {{ page.testimonial-name }}"></div>
+        <div class="testimonial__content">
+            <img src="{{ site.url }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
+            <p class="quote">{{ page.testimonial-quote }}</p>
+            <div class="testimonial__meta">
+                <p class="body--bold">{{ page.testimonial-name }}</p>
+                <p>{{ page.testimonial-job }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% include containers/site/footer.html %}

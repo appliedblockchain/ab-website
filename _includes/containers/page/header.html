@@ -1,0 +1,118 @@
+<header class="header">
+	<div class="header__bar">
+		<!-- to change the color of the logo, add the corresponding page title to the condition in the class tag -->
+		<div class="header__logo logo {% if page.layout == 'index' or page.layout == 'post' or page.title == 'About' or page.title == 'Resources' or page.title == 'Webinar' %}logo-white{% endif %} {% if page.title == 'Services' or page.title == 'Mantle' or page.title == 'Projects' %}logo-name-white{% endif %}">
+			<a href="{{ site.url }}/">
+				<!-- edit elements in _includes/elements/logo.html -->
+				{% include elements/logo.html %}
+			</a>
+		</div>
+		<!-- to change the color of the menu icon, add the corresponding page title to the condition in the class tag -->
+		<div class="header__button">
+			{% if page.layout == 'post' %}
+				<a href="{{ site.url }}/media" class="button button--small button--white button--stroke button--animate fas fa-chevron-left">
+					<p class="button__inner">Back</p>
+				</a>
+				{% if page.category == 'press-release' and page.dlc %}
+					<a href="{{ site.url }}{{ site.resourceurl }}/dlc/press-releases/appliedBlockchain-{{ page.image }}.zip" class="post__button button button--small button--highlight button--animate fas fa-download" download>
+						<p class="button__inner"><span class="hide--desktop">Download </span>Press kit</p>
+					</a>
+				{% endif %}
+			{% endif %}
+			{% if page.layout == 'project' %}
+				<a href="{{ site.url }}/our-projects" class="button button--small button--primary button--stroke button--animate fas fa-chevron-left">
+					<p class="button__inner">Back</p>
+				</a>
+				{% if page.dlc %}
+					<a href="{{ site.url }}{{ site.resourceurl }}/dlc/case-studies/appliedBlockchain-caseStudies-{{ page.slug }}.pdf" class="post__button button button--small button--highlight button--animate fas fa-download" download>
+						<p class="button__inner"><span class="hide--desktop">Download </span>case study</p>
+					</a>
+				{% endif %}
+			{% endif %}
+			<a href="{{ site.url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope {% if page.layout == 'index' or page.layout == 'post' or page.title == 'About' or page.title == 'Resources' or page.title == 'Webinar' %}alt{% endif %}">
+				<p class="button__inner">Contact us</p>
+			</a>
+			<a class="button button--menu {% if page.layout == 'index' or page.layout == 'post' or page.title == 'Services' or page.title == 'Mantle' or page.title == 'About' or page.title == 'Projects' or page.title == 'Resources' or page.title == 'Webinar' %}alt{% endif %}">
+				<span class="button__inner"></span>
+			</a>
+		</div>
+	</div>
+	<div class="header__menu">
+		<div class="row">
+			<a href="{{ site.url }}/" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Home</p>
+				<p class="menu__description">
+					<span>Start your journey here</span>
+				</p>
+			</a>
+			<a href="{{ site.url }}/services" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Services</p>
+				<p class="menu__description">
+					<span>Discover solutions, approach & projects</span>
+				</p>
+			</a>
+			<a href="{{ site.url }}/our-projects" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Projects</p>
+				<p class="menu__description">
+					<span>See what we have worked on</span>
+				</p>
+			</a>
+			<a href="{{ site.url }}/products" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Products</p>
+				<p class="menu__description">
+					<span>Blockchain-based products</span>
+				</p>
+			</a>
+			<a href="{{ site.url }}/about" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">About</p>
+				<p class="menu__description">
+					<span>The team, our story, our values</span>
+				</p>
+			</a>
+			<a href="{{ site.url }}/media" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Media</p>
+				<p class="menu__description">
+					<span>Read our news and press releases</span>
+				</p>
+			</a>
+			<a href="{{ site.url }}/events" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Events</p>
+				<p class="menu__description">
+					<span>Find us at events</span>
+				</p>
+			</a>
+			<a href="{{ site.url }}/join" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Join</p>
+				<p class="menu__description">
+					<span>Step into a unique environment</span>
+				</p>
+			</a>
+			<a href="{{ site.url }}/contact" class="col--lg4 col--sm6 menu__button">
+				<p class="subtitle">Contact</p>
+				<p class="menu__description">
+					<span>Get in touch</span>
+				</p>
+			</a>
+		</div>
+		<div class="menu__row row">
+			<a href="{{ site.url }}/faq" class="col--lg4 col--sm6 menu__button">
+				<p class="body--large body--bold">FAQ</p>
+				<p class="menu__description body--small">
+					<span>Have questions?</span>
+				</p>
+				</a>
+			<a href="{{ site.url }}/privacy-policy" class="col--lg4 col--sm6 menu__button">
+				<p class="body--large body--bold">Privacy policy</p>
+				<p class="menu__description body--small">
+					<span>The legal bit</span>
+				</p>
+				</a>
+		</div>
+		<div class="menu__row row">
+			<div class="col--lg4 col--md5">
+				<!-- edit component in _includes/components/social.html -->
+				{% include components/social.html %}
+			</div>
+		</div>
+	</div>
+</header>

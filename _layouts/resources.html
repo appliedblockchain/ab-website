@@ -1,67 +1,60 @@
-{% include header.html %}
+{% include containers/site/header.html %}
 
-    <!-- edit component in _includes/components/page-header.html -->
-    {% include components/page-header.html
-        title='Resources'
-        description='Resources and content about our brand, our processes, our clients'
-        background-color='primary'
-    %}
+{% include components/page-header.html
+    title='Resources'
+    description='Resources and content about our brand, our processes, our clients'
+    background-color='primary'
+%}
 
-    <section class="section section--left z-index--2">
-
-        <div class="row">
-            <div class="col--md6">
-                <!-- edit component in _includes/components/section-header.html -->
-                {% include components/section-header.html
-                    title='Sales collaterals'
-                    description='Download our resources Fusce sed facilisis diam. Curabitur suscipit dolor tempor ante scelerisque consequat.'
-                %}
-            </div>
+<section class="section section--left z-index--2">
+    <div class="row">
+        <div class="col--md6">
+            {% include components/section-header.html
+                title='Sales collaterals'
+                description='Download our resources Fusce sed facilisis diam. Curabitur suscipit dolor tempor ante scelerisque consequat.'
+            %}
         </div>
-
-        <div class="row">
-            <!-- edit data in _data/resources.yml -->
-            {% for category in site.data.resources.sales %}
-                <div class="col--md4">
-                    <div class="block card--download">
-                        <div class="card__header background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/resources/{{ category.slug }}.jpg);">
-                            <h3 class="lead">{{ category.title }}</h3>
-                            <p>{{ category.subtitle }}</p>
+    </div>
+    <div class="row">
+        {% for category in site.data.resources.sales %}
+        <div class="col--md4">
+            <div class="block card--download">
+                <div class="card__header background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/resources/{{ category.slug }}.jpg);">
+                    <h3 class="lead">{{ category.title }}</h3>
+                    <p>{{ category.subtitle }}</p>
+                </div>
+                <div class="card__content">
+                    <div class="card__download">
+                        <p class="card__meta body--bold">Download all</p>
+                        <a class="button button--icon button--small button--highlight button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}.zip" download>
+                            <i class="button__inner fas fa-download"></i>
+                        </a>
+                    </div>
+                    {% for doc in category.docs %}
+                    <div class="card__download">
+                        <div class="card__meta">
+                            <p class="body--bold">{{ doc.title }}</p>
+                            {% if doc.subtitle %}
+                            <p class="body--small">{{ doc.subtitle }}</p>
+                            {% endif %}
                         </div>
-                        <div class="card__content">
-                            <div class="card__download">
-                                <p class="card__meta body--bold">Download all</p>
-                                <a class="button button--icon button--small button--highlight button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}.zip" download>
-                                    <i class="button__inner fas fa-download"></i>
-                                </a>
-                            </div>
-                            <!-- edit data in _data/resources.yml -->
-                            {% for doc in category.docs %}
-                                <div class="card__download">
-                                    <div class="card__meta">
-                                        <p class="body--bold">{{ doc.title }}</p>
-                                        {% if doc.subtitle %}
-                                            <p class="body--small">{{ doc.subtitle }}</p>
-                                        {% endif %}
-                                    </div>
-                                    <div class="card__buttons">
-                                        {% if category.slug == 'case-studies' or category.slug == 'one-pagers' %}
-                                            <a class="button button--icon button--small button--primary-lighten button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" target="_blank">
-                                                <i class="button__inner fas fa-eye"></i>
-                                            </a>
-                                        {% endif %}
-                                        <a class="button button--icon button--small button--primary button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" download>
-                                            <i class="button__inner fas fa-download"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            {% endfor %}
+                        <div class="card__buttons">
+                            {% if category.slug == 'case-studies' or category.slug == 'one-pagers' %}
+                            <a class="button button--icon button--small button--primary-lighten button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" target="_blank">
+                                <i class="button__inner fas fa-eye"></i>
+                            </a>
+                            {% endif %}
+                            <a class="button button--icon button--small button--primary button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" download>
+                                <i class="button__inner fas fa-download"></i>
+                            </a>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
-            {% endfor %}
+            </div>
         </div>
+        {% endfor %}
+    </div>
+</section>
 
-    </section>
-
-{% include footer.html %}
+{% include containers/site/footer.html %}

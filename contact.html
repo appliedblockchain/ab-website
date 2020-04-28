@@ -1,5 +1,57 @@
 ---
-layout: contact
+layout: default
 title: Contact
 description: Learn more about our blockchain solutions and how we can support you in implementing your project
 ---
+
+{% include components/page-header.html
+    title='Get in touch today!'
+    description='Learn more about our blockchain solutions and how we can support you in implementing your project'
+    comment='Send us a message and our team will be in touch'
+%}
+
+<section class="section section--alt">
+    {% include components/section-header.html
+        title='I am a'
+    %}
+    <div class="section__content tab tab--vertical contact">
+        <div class="section__filter tab__nav">
+            <a href="#company" class="filter__button nav__button nav__button--active button button--primary button--animate fas fa-building">
+                <p class="button__inner">Company</p>
+            </a>
+            <a href="#candidate" class="filter__button nav__button button button--primary button--animate fas fa-code">
+                <p class="button__inner">Candidate</p>
+            </a>
+        </div>
+        <div class="tab__content form block">
+            <div id="company" class="tab__item">
+                {% include components/forms/form-company.html %}
+            </div>
+            <div id="candidate" class="tab__item">
+                {% include components/forms/form-candidate.html %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--primary section--fullwidth office">
+    {% include components/section-header.html
+        title='We are headquartered in London Bridge, and have offices in Porto'
+    %}
+    <div class="section__content">
+        <div class="row">
+            <div class="col--md6 office__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
+                <p class="office__title lead">{{ site.address-london }}</p>
+                <a href="{{ site.map-london }}" target="_blank" class="button button--primary-darken button--animate fas fa-directions">
+                    <p class="button__inner">Get directions</p>
+                </a>
+            </div>
+            <div class="col--md6 office__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
+                <p class="office__title lead">{{ site.address-porto }}</p>
+                <a href="{{ site.map-porto }}" target="_blank" class="button button--primary-lighten button--animate fas fa-directions">
+                    <p class="button__inner">Get directions</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

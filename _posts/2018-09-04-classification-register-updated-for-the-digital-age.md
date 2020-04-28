@@ -6,7 +6,7 @@ category: press-release
 headline: Classification register updated for the digital age
 ---
 
-<a href="https://www.lr.org/en/events/classification-register-updated-for-the-digital-age/" target="_blank" rel="noopener" class="post__content post__relink ga-blog-relink-lr">Republished from Lloyds Register</a>
+<a href="https://www.lr.org/en/latest-news/classification-for-the-digital-age/" target="_blank" rel="noopener" class="post__content post__relink ga-blog-relink-lr">Republished from Lloyds Register</a>
 
 <p class="post__content">Announced today at SMM – the leading international maritime trade fair taking place 4-7 September in Hamburg, Germany – LR has created the first demonstrator that can register ships into Class using blockchain technology.</p>
 <p class="post__content">LR created the first register of ships in 1764, a tool used to provide merchants and underwriters information about the quality and condition of vessels they chartered and insured. Today, LR is re-imagining the Class register for the digital age having successfully applied blockchain technology to the classification process of registering new ships into Class and launching a prototype blockchain-enabled register tool in collaboration with Applied Blockchain.</p>

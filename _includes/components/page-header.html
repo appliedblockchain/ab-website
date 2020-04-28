@@ -6,12 +6,12 @@
 
 <div class="section section--header section--{{ background-color }} background--cover" {% if background-image %} style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);" {% endif %}>
     {% if title %}
-        <h1 class="headline">{{ title }}</h1>
+    <h1 class="headline">{{ title }}</h1>
     {% endif %}
     {% if description %}
-        <p class="section__subtitle lead">{{ description }}</p>
+    <p class="section__subtitle lead">{{ description }}</p>
     {% endif %}
     {% if comment %}
-        <p class="section__desc body--large">{{ comment }}</p>
+    <p class="section__desc body--large">{{ comment }}</p>
     {% endif %}
 </div>

@@ -14,7 +14,7 @@
     
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100vw, 200%);
-        background-color: rgba($primary, 0.9);
+        background-color: rgba($dark, 0.8);
     }
 
     .section--primary {

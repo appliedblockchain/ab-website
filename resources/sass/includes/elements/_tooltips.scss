@@ -1,12 +1,8 @@
 @charset "UTF-8";
 
-
-
-/* 
- * —————————————————————————————————————————————————————————————————
- * TOOLTIPS
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// TOOLTIPS
+// —————————————————————————————————————————————————————————————————
 
 .tooltip {
 	position: relative;
@@ -19,7 +15,7 @@
     }
 }
 
-/*click*/
+// click
 
 .tooltip--click {
     cursor: pointer;
@@ -30,7 +26,7 @@
     }
 }
 
-/*with tracking*/
+// with tracking
 
 .tooltip__inner--tracking {
     @include transform(translateX(-60%) translateY(10%));

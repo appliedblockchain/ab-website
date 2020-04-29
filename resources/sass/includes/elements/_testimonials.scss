@@ -1,12 +1,8 @@
 @charset "UTF-8";
 
-
-
-/* 
- * —————————————————————————————————————————————————————————————————
- * STRUCTURE
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// TESTIMONIALS
+// —————————————————————————————————————————————————————————————————
 
 .testimonial {
 
@@ -22,27 +18,31 @@
         position: relative;
         width: $integer*10;
         height: $integer*10;
+
         @include responsive(max-width, $break-desktop-max) {
             width: $integer*8;
             height: $integer*8;
         }
+
         @include responsive(max-width, $break-tablets-max) {
             width: $integer*6;
             height: $integer*6;
         }
+
         @include responsive(max-width, $break-phones-max) {
             display: none;
         }
-
     }
 
     &__content {
         text-align: left;
         margin-left: $integer*4;
         position: relative;
+
         @include responsive(max-width, $break-desktop-max) {
             margin-left: $integer*2;
         }    
+
         @include responsive(max-width, $break-phones-max) {
             margin-left: 0;
         }    

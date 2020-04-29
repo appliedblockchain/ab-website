@@ -22,47 +22,54 @@
 	"modules/_animations",
 	"modules/_fontface";
 
-// PARTIALS
+// INCLUDES
 @import 
-	"partials/_anchor",
-	"partials/_accordions",
-	"partials/_buttons",
-	"partials/_carousel",
-	"partials/_cursor",
-	"partials/_fonts",
-	"partials/_form",
-	"partials/_modals",
-	"partials/_scroll-anim",
-	"partials/_slider",
-	"partials/_structure",
-	"partials/_tabs",
-	"partials/_testimonials",
-	"partials/_timeline",
-	"partials/_tooltips",
-	"partials/_widgets";
+	// mixins
+	"includes/mixins/_graphics",
+	"includes/mixins/_logos",
+	"includes/mixins/_typography",
+	// elements
+	"includes/elements/_accordions",
+	"includes/elements/_buttons",
+	"includes/elements/_carousel",
+	"includes/elements/_form",
+	"includes/elements/_modals",
+	"includes/elements/_scroll-anim",
+	"includes/elements/_tabs",
+	"includes/elements/_testimonials",
+	"includes/elements/_tooltips",
+	"includes/elements/_widgets",
+	// containers
+	"includes/containers/_cards",
+	"includes/containers/_blocks",
+	"includes/containers/_sections",
+	"includes/containers/_page",
+	"includes/containers/_site";
 
 // PAGES
 @import
-	"pages/_about",
-	"pages/_applied-proofs",
-	"pages/_contact",
-	"pages/_events",
-	"pages/_faq",
-	"pages/_index",
-	"pages/_join",
-	"pages/_k0",
-	"pages/_node-hosting",
-	"pages/_mantle",
-	"pages/_post",
-	"pages/_products",
-	"pages/_projects",
-	"pages/_project",
-	"pages/_privacy-policy",
-	"pages/_resources",
-	"pages/_media",
-	"pages/_services",
-	"pages/_thank_you",
-	"pages/_webinar";
+	"layouts/_about",
+	"layouts/_applied-proofs",
+	"layouts/_contact",
+	"layouts/_events",
+	"layouts/_faq",
+	"layouts/_index",
+	"layouts/_join",
+	"layouts/_k0",
+	"layouts/_node-hosting",
+	"layouts/_mantle",
+	"layouts/_post",
+	"layouts/_products",
+	"layouts/_projects",
+	"layouts/_project",
+	"layouts/_privacy-policy",
+	"layouts/_resources",
+	"layouts/_media",
+	"layouts/_services",
+	"layouts/_thank_you",
+	"layouts/_webinar";
 
+// OVERRIDES
 @import
-	"modules/_ie";
+	"overrides/_ie",
+	"overrides/_responsive";

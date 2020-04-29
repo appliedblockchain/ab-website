@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// MODALS
+// —————————————————————————————————————————————————————————————————
+// general
+// video
+// —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
+
+.modal {
+	@include display-flex();
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+	@include transition(opacity $transition);
+	will-change: opacity;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba($black, 0.9);
+	z-index: 10;
+	opacity: 0;
+	pointer-events: none;
+
+    &__inner {
+		@include transition(all $transition);
+		will-change: transform;
+		width: 60%;
+        min-width: 300px;
+		position: relative;
+        opacity: 0;
+	}
+
+    &:target {
+		opacity:1;
+		pointer-events: auto;
+		.modal__inner {
+			opacity: 1;
+		}
+	}
+
+    &__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		cursor: default;
+	}
+
+    &__button {
+	    position: absolute;
+	    right: -$integer/2;
+		top: -$integer*2;
+		
+		&:before, &:after {
+			background-color: $white;
+		}
+	}
+
+	.block {
+		padding: 0 !important;
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// video
+// —————————————————————————————————————————————————————————————————
+
+.modal-video {
+
+    .modal__inner {
+		@include transform(scale(0));
+	}
+
+    &:target .modal__inner {
+		@include transform(scale(1));
+	}
+}

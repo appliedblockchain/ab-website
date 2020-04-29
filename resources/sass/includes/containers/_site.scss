@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// SITE
+// —————————————————————————————————————————————————————————————————
+// general
+// responsive
+// z-index
+// hover classes
+// overrides
+// —————————————————————————————————————————————————————————————————
+
+body.js-freeze {
+	overflow: hidden;
+}
+
+img {
+	// prevent images from stretching with flex
+	@include align-self(center);
+	width: 100%;
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
+
+* {
+	@include box-sizing(border-box);
+	outline: none;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.row {
+	@include display-flex();
+	@include flex-wrap(wrap);
+	@include calc(width, '100% + '$integer);
+	//width: 100%;
+	margin-left: -$integer/2;
+	margin-right: -$integer/2;
+
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+[class*="col--"], [class*="colalt--"] {
+	float: left;
+	position: relative;
+	padding: 0 $integer/2;
+	width: 100%;
+}
+
+@for $i from 1 through 12 {
+	.col--#{$i} 				{ width: $i*$col-inner; }
+	.coloffset--#{$i} 			{ margin-left: $i*$col-inner; }
+}
+
+@include responsive(min-width, $break-phones-min) {
+	@for $i from 1 through 12 {
+		.col--sm#{$i} 			{ width: $i*$col-inner; }
+		.coloffset--sm#{$i} 	{ margin-left: $i*$col-inner; }
+	}
+}
+
+@include responsive(min-width, $break-tablets-min) {
+	@for $i from 1 through 12 {
+		.col--md#{$i} 			{ width: $i*$col-inner; }
+		.coloffset--md#{$i} 	{ margin-left: $i*$col-inner; }
+	}
+}
+
+@include responsive(min-width, $break-desktop-min) {
+	@for $i from 1 through 12 {
+		.col--lg#{$i} 			{ width: $i*$col-inner; }
+		.coloffset--lg#{$i} 	{ margin-left: $i*$col-inner; }
+	}
+}
+
+@include responsive(min-width, $break-large-desktop-min) {
+	@for $i from 1 through 12 {
+		.col--xl#{$i} 			{ width: $i*$col-inner; }
+		.coloffset--xl#{$i} 	{ margin-left: $i*$col-inner; }
+	}
+}
+
+// footer
+
+@for $i from 1 through 15 {
+	.colalt--#{$i} 				{ width: $i*$col-footer; }
+	.colaltoffset--#{$i} 		{ margin-left: $i*$col-footer; }
+}
+
+@include responsive(min-width, $break-phones-min) {
+	@for $i from 1 through 15 {
+		.colalt--sm#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--sm#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-tablets-min) {
+	@for $i from 1 through 15 {
+		.colalt--md#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--md#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-desktop-min) {
+	@for $i from 1 through 15 {
+		.colalt--lg#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+@include responsive(min-width, $break-large-desktop-min) {
+	@for $i from 1 through 15 {
+		.colalt--xl#{$i} 		{ width: $i*$col-footer; }
+		.colaltoffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
+	}
+}
+
+// embed responsively
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+
+	iframe, object, embed { 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%; 
+	}
+}        
+
+// text selection
+
+::-moz-selection {
+	background: $primary;
+	color: $white;
+}
+::selection {
+	background: $primary;
+	color: $white;
+}
+::-moz-selection {
+	background: $primary;
+	color: $white;
+}
+
+// remove autocomplete from webkit browsers
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0px 1000px $white inset;
+	@include transition(background-color $transition);
+}
+
+// lists
+
+ul {
+	list-style: disc;
+}
+
+li {
+	margin-left: 18px;
+
+	& + & {
+		padding-top: $integer/2 !important;
+	}
+}
+
+// images
+
+.background--cover {
+	@include background(center center, cover);
+}
+
+.image-inline {
+	margin-bottom: -$integer*2;
+
+    &__item {
+		padding: 0 $integer $integer*2 $integer;
+
+		.owl-carousel & {
+			padding: 0;
+		}
+    }
+
+    &__image {
+        background-size: contain;
+		height: $integer*6;
+		width: auto;
+		margin-bottom: $integer;
+		
+		.owl-carousel & {
+			margin-bottom: 0;
+		}
+	}
+	
+	&__title {
+		margin-bottom: $integer/4;
+		font-weight: $font-bold;
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// responsive
+// —————————————————————————————————————————————————————————————————
+
+.hide {
+
+	&--large-desktop { @include responsive(max-width, $break-desktop-max) { display: none !important; } }
+	&--desktop { @include responsive(max-width, $break-desktop-max) { display: none !important; } }
+	&--tablets { @include responsive(max-width, $break-tablets-max) { display: none !important; } }
+	&--phones { @include responsive(max-width, $break-phones-max) { display: none !important; } }
+	&--touch { @include responsive-mobile-devices() { display: none !important; } }
+}
+
+.show {
+
+	&--phones { @include responsive(min-width, $break-phones-min) { display: none !important; } }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// z-index
+// —————————————————————————————————————————————————————————————————
+
+.widget--news 			{ z-index: 9; }
+.cookie				 	{ z-index: 10; }
+.button--scroll-top 	{ z-index: 11; }
+.header 				{ z-index: 12; }
+.anchor 				{ z-index: 13; }
+.userlike 				{ z-index: 14 !important; }
+.modal 					{ z-index: 15; }
+
+@for $i from 0 through 9 {
+	.z-index--#{$i} { z-index: $i; }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// hover classes
+// —————————————————————————————————————————————————————————————————
+
+.hover-grayscale {
+	@include filter(grayscale(100%));
+	@include transition(filter, $transition);
+	will-change: filter;
+	
+	@include hoverLink {
+		@include filter(grayscale(0%));
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// overrides
+// —————————————————————————————————————————————————————————————————
+
+.no-margin {
+	margin: 0 !important;
+
+	&--top { margin-top: 0 !important; }
+	&--right { margin-right: 0 !important; }
+	&--bottom { margin-bottom: 0 !important; }
+	&--left { margin-left: 0 !important; }
+}
+
+.no-padding {
+	padding: 0 !important;
+
+	&--top { padding-top: 0 !important; }
+	&--right { padding-right: 0 !important; }
+	&--bottom { padding-bottom: 0 !important; }
+	&--left { padding-left: 0 !important; }
+}

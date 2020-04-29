@@ -1,0 +1,17 @@
+{% assign headline = include.headline %}
+{% assign subtitle = include.subtitle %}
+{% assign body = include.body %}
+{% assign background_image = include.background_image %}
+{% assign background_color = include.background_color %}
+
+<div class="section section--header{% if page.background_color %} section--{{ page.background_color }}{% endif %} background--cover"{% if page.background_image %} style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.title | slugify }}.jpg);"{% endif %}>
+    {% if page.headline %}
+    <h1 class="page__title headline">{{ page.headline }}</h1>
+    {% endif %}
+    {% if page.subtitle %}
+    <p class="page__subtitle lead">{{ page.subtitle }}</p>
+    {% endif %}
+    {% if page.body %}
+    <p class="page__body body--large">{{ page.body }}</p>
+    {% endif %}
+</div>

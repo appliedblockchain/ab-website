@@ -4,8 +4,9 @@
 // PAGE
 // —————————————————————————————————————————————————————————————————
 // header
-// footer
+// menu
 // title
+// footer
 // —————————————————————————————————————————————————————————————————
 
 
@@ -186,6 +187,12 @@
 	}
 }
 
+
+
+// —————————————————————————————————————————————————————————————————
+// menu
+// —————————————————————————————————————————————————————————————————
+
 .menu {
 
 	&__row {
@@ -244,6 +251,45 @@
 
 	&__newsletter {
 		margin-top: $integer*2;
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// title
+// —————————————————————————————————————————————————————————————————
+
+.page {
+	
+	&__header {
+		padding: $integer*10 $col*2 $integer*6 $col*2;
+	}
+}
+
+.section--header {
+	background-position: top center !important;
+
+	&:before {		
+		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+	}
+
+	&.section--primary {
+		&:before {		
+			@include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary));
+		}
+	}
+
+	&.section--grey {
+		&:before {		
+			@include background-image(linear-gradient(to bottom, rgba($lightgrey, 0.6), $lightgrey));
+		}
+	}
+
+	&.section--dark {
+		&:before {		
+			@include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark));
+		}
 	}
 }
 
@@ -320,37 +366,5 @@
 
 	.social {
 		margin-bottom: 0;
-	}
-}
-
-
-
-// —————————————————————————————————————————————————————————————————
-// title
-// —————————————————————————————————————————————————————————————————
-
-.section--header {
-	background-position: top center !important;
-
-	&:before {		
-		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-	}
-
-	&.section--primary {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary));
-		}
-	}
-
-	&.section--grey {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($lightgrey, 0.6), $lightgrey));
-		}
-	}
-
-	&.section--dark {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark));
-		}
 	}
 }

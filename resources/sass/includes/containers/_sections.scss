@@ -105,16 +105,6 @@
 
 .section {
 	
-	&--header {
-		@include align-items(center);
-		position: relative;
-		padding-top: $integer*10;
-
-		> * {
-			position: relative;
-		}
-	}
-
 	&--col {
 		padding-left: $col;
 		padding-right: $col;

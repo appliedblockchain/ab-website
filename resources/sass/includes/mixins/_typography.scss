@@ -1,25 +1,20 @@
 @charset "UTF-8";
 
-
-
-/* 
- * —————————————————————————————————————————————————————————————————
- * FONTS
- * —————————————————————————————————————————————————————————————————
- * general
- * chat
- * buttons
- * form
- * misc
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// TYPOGRAPHY
+// —————————————————————————————————————————————————————————————————
+// general
+// variants
+// buttons
+// form
+// misc
+// —————————————————————————————————————————————————————————————————
 
 
 
-/* 
- * general
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
 
 html, body {
 	font-family: $font;
@@ -27,9 +22,7 @@ html, body {
 	line-height: 1.2;
 	font-weight: $font-light;
 	color: $black;
-	/*-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: auto;*/
+
 	@include responsive(min-width, $break-xlarge-desktop) {
 		font-size: 20px;
 	}
@@ -38,9 +31,11 @@ html, body {
 .headline {
 	@include fontSize(3, $font-black, normal);
 	text-transform: uppercase;
+
 	@include responsive(max-width, $break-tablets-max) {
 		font-size: 2.5rem;
 	}
+
 	@include responsive(max-width, $break-phones-max) {
 		font-size: 2rem;
 	}
@@ -49,9 +44,11 @@ html, body {
 .title {
 	@include fontSize(2.5, $font-bold, normal);	
 	color: $primary;
+
 	@include responsive(max-width, $break-tablets-max) {
 		font-size: 2rem;
 	}
+
 	@include responsive(max-width, $break-phones-max) {
 		font-size: 1.8rem;
 	}
@@ -59,6 +56,7 @@ html, body {
 
 .subtitle {
 	@include fontSize(1.8, $font-bold, normal);
+
 	@include responsive(max-width, $break-phones-max) {
 		font-size: 1.5rem;
 	}
@@ -71,6 +69,7 @@ html, body {
 
 .quote, .post__quote {
 	@include fontSize(1.5, $font-light, normal);
+
 	@include responsive(max-width, $break-tablets-max) {
 		font-size: 1.25rem;
 	}
@@ -97,7 +96,8 @@ html, body {
 	}
 }
 
-/* prevent style from applying to media page */
+// prevent style from applying to media page
+
 .post .post__headline {
 	line-height: 1.5;
 	font-size: 1.5rem;
@@ -123,22 +123,40 @@ html, body {
 	}
 }
 
-/*col text*/
+
+
+// —————————————————————————————————————————————————————————————————
+// variants
+// —————————————————————————————————————————————————————————————————
+
+// alignement
+
+.body {
+
+	&--left 	{ text-align: left; }
+	&--center 	{ text-align: center; }
+	&--right 	{ text-align: right; }
+	&--justify 	{ text-align: justify; }
+}
+
+// col text
 
 @for $i from 1 through 4 {
 	.col-text--#{$i} {
 		@include column-count($i);
 		@include column-gap(2rem);
+	
 		@include responsive(max-width, $break-tablets-max) {
 			@include column-count(1);
 		}
 	}
 }
 
-/* 
- * buttons
- * —————————————————————————————————————————————————————————————————
-*/
+
+
+// —————————————————————————————————————————————————————————————————
+// buttons
+// —————————————————————————————————————————————————————————————————
 
 .button {
 	@include fontSize(1, $font-black, normal);
@@ -181,10 +199,9 @@ html, body {
 
 
 
-/* 
- * form
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// form
+// —————————————————————————————————————————————————————————————————
 
 .form__label, .form__input {
 	font-family: $font;
@@ -203,10 +220,9 @@ html, body {
 
 
 
-/* 
- * misc
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// misc
+// —————————————————————————————————————————————————————————————————
 
 .body {
 

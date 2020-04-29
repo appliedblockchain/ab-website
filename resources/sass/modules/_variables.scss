@@ -47,17 +47,36 @@ $twitter:   #1da1f2;
 // 2. general
 // —————————————————————————————————————————————————————————————————
 
-$col:			100vw/16;
-$col-inner:     100%/12;
+$col:           100%/12;
 $col-footer:    100%/15;
 
-$integer:		20px;
+$integer:		0.5rem;         // 8px
 
-$transition:    0.4s ease 0s;
+$integer-xxs:   $integer/8;     // 1px
+$integer-xs:    $integer/4;     // 2px 
+$integer-sm:    $integer/2;     // 4px
 
-$box-shadow-1:    0 0 10px 0 rgba($dark, 0.15);
-$box-shadow-2:    0 0 20px 0 rgba($dark, 0.25);
-$box-shadow-3:    0 0 15px 0 rgba($dark, 0.05);
+$integer-md:    $integer*2;     // 16px
+$integer-lg:    $integer*4;     // 32px
+$integer-xl:    $integer*5;     // 40px
+$integer-xxl:   $integer*8;     // 64px
+$integer-xxxl:  $integer*10;    // 80px
+$integer-xxxxl: $integer*15;    // 120px
+
+$transition:        0.4s ease 0s;
+$transition-delay:  0.4s ease 0.2s;
+$transition-long:   0.6s ease 0s;
+
+$box-shadow-xs:     0 0 15px 0 rgba($dark, 0.05);
+$box-shadow-sm:     0 0 10px 0 rgba($dark, 0.15);
+$box-shadow-md:     0 0 20px 0 rgba($dark, 0.20);
+
+$border-sm: $integer-xs solid;
+$border-md: $integer-sm solid;
+$border-lg: $integer solid;
+
+// one border radius to keep consistency througbout your website
+$border-radius: $integer;
 
 
 

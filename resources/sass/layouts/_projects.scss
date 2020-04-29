@@ -76,7 +76,7 @@
             &__logo {
                 @include align-self(flex-start);
                 margin-bottom: $integer;
-                height: $integer*6;
+                height: $integer-xl;
                 width: $integer*8;
             }
         }

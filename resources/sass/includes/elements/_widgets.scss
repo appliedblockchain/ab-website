@@ -109,7 +109,7 @@
         @include align-items(center);
         @include border-top-right-radius(0);
         @include border-bottom-right-radius(0);
-        @include box-shadow($box-shadow-1);
+        @include box-shadow($box-shadow-sm);
         position: absolute;
         top: 50%;
         right: -$integer*26;
@@ -189,7 +189,7 @@
         .testimonial__mark {
             opacity: 0.1 !important;
             top: $integer*3;
-            left: $integer*6;
+            left: $integer-xl;
             width: $integer*5 !important;
         }
     }
@@ -206,7 +206,7 @@
     @include align-items(center);
     @include justify-content(space-between);
     @include transition(opacity $transition);
-    @include box-shadow($box-shadow-2);
+    @include box-shadow($box-shadow-md);
     padding-left: $col*2;
     padding-right: $col*2;
     will-change: opacity;

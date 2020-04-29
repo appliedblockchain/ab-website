@@ -19,8 +19,8 @@
     padding-bottom: 0;
 
     &__item {
-        padding-top: $integer*6;
-        padding-bottom: $integer*6;
+        padding-top: $integer-xl;
+        padding-bottom: $integer-xl;
 
         &:nth-child(1) {
             padding-right: $integer*4; 
@@ -35,7 +35,7 @@
         &:nth-child(2) {
             padding-right: $col*2; 
             padding-left: $integer*4;
-            padding-bottom: $integer*6;
+            padding-bottom: $integer-xl;
 
             &:before {
                 @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);

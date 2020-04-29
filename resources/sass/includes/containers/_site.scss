@@ -66,35 +66,35 @@ html, body {
 }
 
 @for $i from 1 through 12 {
-	.col--#{$i} 				{ width: $i*$col-inner; }
-	.coloffset--#{$i} 			{ margin-left: $i*$col-inner; }
+	.col--#{$i} 				{ width: $i*$col; }
+	.coloffset--#{$i} 			{ margin-left: $i*$col; }
 }
 
 @include responsive(min-width, $break-phones-min) {
 	@for $i from 1 through 12 {
-		.col--sm#{$i} 			{ width: $i*$col-inner; }
-		.coloffset--sm#{$i} 	{ margin-left: $i*$col-inner; }
+		.col--sm#{$i} 			{ width: $i*$col; }
+		.coloffset--sm#{$i} 	{ margin-left: $i*$col; }
 	}
 }
 
 @include responsive(min-width, $break-tablets-min) {
 	@for $i from 1 through 12 {
-		.col--md#{$i} 			{ width: $i*$col-inner; }
-		.coloffset--md#{$i} 	{ margin-left: $i*$col-inner; }
+		.col--md#{$i} 			{ width: $i*$col; }
+		.coloffset--md#{$i} 	{ margin-left: $i*$col; }
 	}
 }
 
 @include responsive(min-width, $break-desktop-min) {
 	@for $i from 1 through 12 {
-		.col--lg#{$i} 			{ width: $i*$col-inner; }
-		.coloffset--lg#{$i} 	{ margin-left: $i*$col-inner; }
+		.col--lg#{$i} 			{ width: $i*$col; }
+		.coloffset--lg#{$i} 	{ margin-left: $i*$col; }
 	}
 }
 
 @include responsive(min-width, $break-large-desktop-min) {
 	@for $i from 1 through 12 {
-		.col--xl#{$i} 			{ width: $i*$col-inner; }
-		.coloffset--xl#{$i} 	{ margin-left: $i*$col-inner; }
+		.col--xl#{$i} 			{ width: $i*$col; }
+		.coloffset--xl#{$i} 	{ margin-left: $i*$col; }
 	}
 }
 
@@ -214,7 +214,7 @@ li {
 
     &__image {
         background-size: contain;
-		height: $integer*6;
+		height: $integer-xl;
 		width: auto;
 		margin-bottom: $integer;
 		

@@ -101,12 +101,12 @@
 		pointer-events: initial;
 
 		@include responsive(max-width, $break-tablets-max) {
-			padding: 0 $col $integer*6 $col;
+			padding: 0 $col $integer-xl $col;
 		}
 	}
 
 	&.js-scrolled {
-		@include box-shadow($box-shadow-2);
+		@include box-shadow($box-shadow-md);
 		height: $integer*4;
 		background-color: $white;
 		
@@ -117,7 +117,7 @@
 			}
 			
 			&__logo {
-				width: $integer*10;
+				width: $integer-xxxl;
 			}
 		}
 	}
@@ -261,9 +261,34 @@
 // —————————————————————————————————————————————————————————————————
 
 .page {
-	
+	min-height: 100vh;
+
 	&__header {
-		padding: $integer*10 $col*2 $integer*6 $col*2;
+		padding-top: $integer-xxxl+$integer-xxxxl;
+		padding-bottom: $integer-xxxl;
+		text-align: center;
+	}
+
+	&__title {
+
+	}
+
+	&__subtitle {
+
+		.page__title + & {
+			margin-top: $integer-lg;
+		}
+	}
+
+	&__body {
+
+		.page__title & {
+			margin-top: $integer-lg;
+		}
+
+		.page__subtitle + & {
+			margin-top: $integer-lg;
+		}
 	}
 }
 

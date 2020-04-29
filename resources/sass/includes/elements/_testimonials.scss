@@ -16,8 +16,8 @@
         @include flex-shrink(0);
         overflow: hidden;
         position: relative;
-        width: $integer*10;
-        height: $integer*10;
+        width: $integer-xxxl;
+        height: $integer-xxxl;
 
         @include responsive(max-width, $break-desktop-max) {
             width: $integer*8;
@@ -25,8 +25,8 @@
         }
 
         @include responsive(max-width, $break-tablets-max) {
-            width: $integer*6;
-            height: $integer*6;
+            width: $integer-xl;
+            height: $integer-xl;
         }
 
         @include responsive(max-width, $break-phones-max) {
@@ -53,7 +53,7 @@
         z-index: -1;
         top: -$integer*2;
         left: -$integer*2;
-        width: $integer*10 !important;
+        width: $integer-xxxl !important;
     }
 
     &__meta {

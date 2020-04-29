@@ -1,5 +1,94 @@
 ---
-layout: media
+layout: default
 title: Media
-description: Read our news and press releases
+subtitle: Read our news and press releases
 ---
+
+<section class="section section--col section--alt">
+    <div class="section__content blog">
+        <div class="button-group section__filter filter-button-group">
+            <a class="filter__button button button--primary button--animate fas fa-infinity active" data-filter="*">
+                <p class="button__inner">All</p>
+            </a>
+            <a class="filter__button button button--primary button--animate fas fa-newspaper" data-filter=".news">
+                <p class="button__inner">News</p>
+            </a>
+            <a class="filter__button button button--primary button--animate fas fa-file-alt" data-filter=".press-release">
+                <p class="button__inner">Press release</p>
+            </a>
+            <a class="filter__button button button--primary button--animate fas fa-rss" data-filter=".blog">
+                <p class="button__inner">Blog</p>
+            </a>
+            <a class="filter__button button button--primary button--animate fas fa-play" data-filter=".videos">
+                <p class="button__inner">Videos</p>
+            </a>
+        </div>
+        <div class="grid row">
+            {% if site.posts.size > 0 %}
+            {% for post in site.posts %}
+            <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
+                <div class="block blog__item">
+                    {% if post.image %}
+                    <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}><div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ post.image }}.jpg);"></div></a>
+                    {% else %}
+                    <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}><div class="blog__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);"></div></a>
+                    {% endif %} 
+                    <div class="block__content blog__content">
+                        <span class="blog__icon--{{ post.category }}">
+                            <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="">
+                        </span>
+                        <p class="block__date body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
+                        <h2 class="block__title lead"><a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>{{ post.title }}</a></h2>
+                        <div class="block__text">{{ post.headline | truncate: 100, "…" }}</div>
+                        {% if post.link %}
+                        {% if post.social contains "newsletter"%}
+                        <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-newspaper">
+                            <p class="button__inner">Read more</p>
+                        </a>
+                        {% elsif post.social contains "external"%}
+                        <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-external-link-alt">
+                            <p class="button__inner">Read article</p>
+                        </a>
+                        {% elsif post.social contains "podcast"%}
+                        <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-headphones">
+                            <p class="button__inner">Listen</p>
+                        </a>
+                        {% elsif post.social contains "linkedin"%}
+                        <a href="{{ post.link }}" target="_blank" class="button button--linkedin button--small button--animate fab fa-linkedin-in">
+                            <p class="button__inner">Read on Linkedin</p>
+                        </a>
+                        {% elsif post.social contains "medium"%}
+                        <a href="{{ post.link }}" target="_blank" class="button button--medium button--small button--animate fab fa-medium-m">
+                            <p class="button__inner">Read on Medium</p>
+                        </a>
+                        {% elsif post.social contains "video"%}
+                        <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-play">
+                            <p class="button__inner">Watch video </p>
+                        </a>
+                        {% elsif post.social contains "blank"%}
+                        {% endif %}
+                        {% else %}
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="button button--primary button--small button--animate fas fa-eye">
+                            <p class="button__inner">Read more</p>
+                        </a>
+                        {% endif %}
+                        {% if post.event %}
+                        <a href="{{ post.event }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+                            <p class="button__inner">Register</p>
+                        </a>
+                        {% endif %}
+                        {% if post.social == 'webinar' %}
+                        <a href="{{ site.url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+                            <p class="button__inner">View recording</p>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+            <p>There are no posts available right. Come back soon!</p>
+            {% endif %}
+        </div>
+    </div>
+</section>

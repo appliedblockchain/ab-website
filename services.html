@@ -1,5 +1,93 @@
 ---
-layout: services
+layout: default
 title: Services
-description: Discover solutions, approach & projects. We bring innovative solutions to problems businesses face today.
+subtitle: We bring innovative solutions to problems businesses face today
+body: We work with enterprises and startups across all verticals. We design and develop solutions best suited to your needs. We work across the entire development stack. We advise, design, build and deploy future-proof, secure and private-preserving business applications. We work with you from the initial seed of your idea and continue to support you as you move into production and beyond.
+background_image: true
+background_color: dark
 ---
+
+<section class="section section--col section--alt section--dark">
+    <img src="{{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-left.svg" alt="" class="graphic graphic--greyscale-left">
+    <div class="owl-carousel owl-carousel-clients carousel services__carousel">
+        {% for item in site.data.images.clients %}
+        <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-square/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
+        {% endfor %}
+    </div>
+    <div class="section__link">
+        <a href="{{ site.url }}/our-projects" class="ga-button-projects button button--large button--secondary button--animate fas fa-fill">
+            <p class="button__inner"><span class="hide--mobile">View our </span>projects</p>
+        </a>
+    </div>
+</section>
+
+<section class="section section--primary">
+    {% include components/section-header.html
+        title='Our Solutions'
+    %}
+    <div class="section__content tab tab--vertical solutions">
+        <div class="section__filter tab__nav solutions__filter">
+            {% for item in site.data.solutions %}
+            <a href="#{{ item.id }}" class="nav__button {{ item.active }} solutions__button">
+                <div class="solutions__background">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/solutions/{{ item.icon }}.svg" alt="" class="solutions__icon">
+                    <h2 class="solutions__title lead">{{ item.title }}</h2>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="tab__content solutions__item">
+            {% for item in site.data.solutions %}
+            <div id="{{ item.id }}" class="tab__item">
+                <h2 class="solutions__title alt lead">{{ item.title }}</h2>
+                <p class="solutions__text">{{ item.text }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section section--grey">
+    {% include components/section-header.html
+        title='Our Approach'
+        description='Building your Project'
+    %}
+    <div class="section__content tab tab--vertical approach">
+        <div class="section__filter tab__nav approach__filter z-index--2">
+            {% for item in site.data.approach %}
+            <a href="#{{ item.id }}" class="nav__button {{ item.active }} approach__button">
+                <h2 class="comment">{{ item.number }} {{ item.title }}</h2>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="tab__content block z-index--1">
+            {% for item in site.data.approach %}
+            <div id="{{ item.id }}" class="tab__item">
+                <div class="approach__item">
+                    <p class="approach__number">{{ item.number }}</p>
+                    <div class="approach__content">
+                        <p class="approach__title lead">{{ item.title }}</p>
+                        <p class="approach__text">{{ item.text }}</p>
+                    </div>
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="approach__icon">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+
+<section class="section section--col section--alt section--grey">
+    <img src="{{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-right.svg" alt="" class="technology__graphic graphic graphic--greyscale-right">
+    {% include components/section-header.html
+        title='Technology'
+    %}
+    <div class="section__content technology">
+        <div class="owl-carousel owl-carousel-technology">
+            {% include components/technologies.html 
+                color='black'
+            %}
+        </div>
+    </div>
+</section>

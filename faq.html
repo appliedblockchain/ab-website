@@ -1,5 +1,27 @@
 ---
-layout: faq
+layout: default
 title: FAQ
-description: We’ve provided a bit of background on Applied Blockchain, blockchain technology, cryptocurrencies, mining and smart contracts
+headline: Frequently Asked Questions
+subtitle: Below we’ve provided a bit of background on Applied Blockchain, blockchain technology, cryptocurrencies, mining and smart contracts
 ---
+
+<section class="section section--alt">
+    <div class="section__content row faq">
+        <div class="col--lg6 faq__column">
+            <h2 class="section__header comment">Applied Blockchain</h2>
+            <div class="block accordion">
+                {% for item in site.data.faq.company %}
+                {% include components/faq.html %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col--lg6 faq__column">
+            <h2 class="section__header comment">Blockchain Technology</h2>
+            <div class="block accordion">
+                {% for item in site.data.faq.technology %}
+                {% include components/faq.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// PAGE
+// —————————————————————————————————————————————————————————————————
+// header
+// footer
+// title
+// —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// header
+// —————————————————————————————————————————————————————————————————
+
+.header {
+	@include transition(height $transition, background-color $transition, box-shadow $transition, padding-top $transition, padding-bottom $transition);
+	will-change: height, background-color, box-shadow, padding-top, padding-bottom;
+	overflow: hidden;
+	position: fixed;
+	height: $integer*8;
+	width: 100vw;
+	pointer-events: none;
+
+	&__bar {
+		@include transition(height $transition);
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(space-between);
+		will-change: height;
+		height: $integer*8;
+		padding: 0 $col;
+
+		.button + .button--menu {
+			margin-left: $integer;
+		}
+	}
+
+	&__logo {
+		@include transition(height $transition, width $transition);
+		will-change: height, width;
+		width: $integer*15;
+		pointer-events: initial;
+
+		&.logo-white {
+
+			.logo {
+				
+				&-icon-bg {
+					fill: $white;
+				}
+	
+				&-icon-color {
+					fill: $primary;
+				}
+	
+				&-name {
+					fill: $white;
+				}
+			}
+		}
+
+		&.logo-name-white {
+
+			.logo-name {
+				fill: $white;
+			}
+		}
+	}
+
+	&__button {
+		@include display-flex();
+		margin-left: $integer;
+	}
+
+	&__contact {
+
+		@include responsive(max-width, $break-phones-max) {
+			display: none !important;
+		}
+	}
+
+	.button {
+		pointer-events: initial;
+
+		&--primary.alt {
+			background-color: $white;
+	
+			.button__inner, &:before {
+				color: $primary;
+			}
+		}
+	}
+
+	&__menu {
+		@include calc(height, '100vh - '$integer*8);
+		@include overflow-scroll();
+		padding: 0  $col*2 $integer*4 $col*2;
+		pointer-events: initial;
+
+		@include responsive(max-width, $break-tablets-max) {
+			padding: 0 $col $integer*6 $col;
+		}
+	}
+
+	&.js-scrolled {
+		@include box-shadow($box-shadow-2);
+		height: $integer*4;
+		background-color: $white;
+		
+		.header {
+
+			&__bar {
+				height: $integer*4;
+			}
+			
+			&__logo {
+				width: $integer*10;
+			}
+		}
+	}
+
+	&.js-opened {
+		@include transition(height $transition, background-color $transition);
+		will-change: height, background-color;
+		height: 100vh;
+		background-color: $white;
+
+		.header {
+
+			&__bar {
+				height: $integer*8;
+			}
+
+			&__logo {
+				width: $integer*15;
+			}
+		}
+	}
+
+	&.js-scrolled, &.js-opened {
+		
+		.logo {
+
+			&-icon-bg {
+				fill: $primary;
+			}
+
+			&-icon-color {
+				fill: $white;
+			}
+
+			&-name {
+				fill: $black;
+			}
+		}
+
+		.button--menu {
+
+			&:before, &:after, .button__inner {
+				background-color: $black;
+			}
+		}
+
+		.button--primary {
+			background-color: $primary;
+	
+			.button__inner, &:before {
+				color: $white;
+			}
+
+			&.button--stroke {
+				background-color: transparent;
+
+				.button__inner {
+					color: $black;
+				}
+			}
+		}
+
+		.button--white.button--stroke {
+			border-color: $primary;
+			color: $black;
+		}
+	}
+}
+
+.menu {
+
+	&__row {
+
+		& + & {
+			margin-top: $integer*2;
+		}
+	}
+
+	&__inner {
+		@include display-flex();
+		@include flex-wrap(wrap);
+	}
+
+	&__button {
+		margin-bottom: $integer/2;
+		
+		.subtitle {
+			padding: 0;
+		}
+
+		&:hover {
+
+			.menu {
+
+				&__description {
+
+					span {
+						@include transform(translateY(0));
+					}
+				}
+			}
+		}
+	}
+
+	&__description {
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+
+		@include responsive-mobile-devices() {
+			overflow: visible;
+		}
+
+		span {
+			@include transition(transform $transition);
+			@include transform(translateY(-100%));
+			will-change: transform;
+			display: block;
+
+			@include responsive-mobile-devices() {
+				@include transform(translateY(0));
+			}
+		}
+	}
+
+	&__newsletter {
+		margin-top: $integer*2;
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// footer
+// —————————————————————————————————————————————————————————————————
+
+.footer {
+	font-weight: $font-regular;
+
+	> * {
+		@include display-flex();
+	}
+
+	&__item {
+		margin-bottom: $integer*3;
+
+		@include responsive(max-width, $break-phones-max) {
+			margin-bottom: $integer*2;
+		}
+	}
+
+	&__logo {
+		@include display-flex();
+		@include flex-direction(column);
+		@include justify-content(space-between);
+
+		@include responsive(max-width, $break-desktop-max) {
+			@include flex-direction(row);
+			@include justify-content(flex-start);
+
+			.logo {
+				min-width: $integer*20;
+				margin-right: $integer*4;
+			}
+		}
+
+		@include responsive(max-width, $break-desktop-max) {
+			@include flex-direction(column);
+
+			.logo {
+				min-width: auto;
+				margin-right: 0;
+				margin-bottom: $integer*2;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: $integer;
+
+		.footer & {
+			color: $white;
+		}
+	}
+
+	&__adress {
+
+		p + p {
+			margin-top: $integer/2;
+		}
+
+		.body--bold {
+			margin-top: $integer;
+		}
+	}
+
+	&__button {
+		display: block !important;
+		margin-left: 0 !important;
+	}
+
+	.social {
+		margin-bottom: 0;
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// title
+// —————————————————————————————————————————————————————————————————
+
+.section--header {
+	background-position: top center !important;
+
+	&:before {		
+		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+	}
+
+	&.section--primary {
+		&:before {		
+			@include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary));
+		}
+	}
+
+	&.section--grey {
+		&:before {		
+			@include background-image(linear-gradient(to bottom, rgba($lightgrey, 0.6), $lightgrey));
+		}
+	}
+
+	&.section--dark {
+		&:before {		
+			@include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark));
+		}
+	}
+}

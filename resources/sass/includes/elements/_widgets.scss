@@ -1,26 +1,21 @@
 @charset "UTF-8";
 
-/* 
- * —————————————————————————————————————————————————————————————————
- * WIDGETS
- * —————————————————————————————————————————————————————————————————
- * general
- * share
- * social
- * newsletter
- * hiring
- * news
- * cookies
- * chat
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// WIDGETS
+// —————————————————————————————————————————————————————————————————
+// general
+// share
+// social
+// newsletter
+// news
+// cookies
+// —————————————————————————————————————————————————————————————————
 
 
 
-/*
- * general
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
 
 .widget {
     position: relative;
@@ -41,10 +36,9 @@
 
 
 
-/*
- * share
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// share
+// —————————————————————————————————————————————————————————————————
 
 .share {
     @include display-flex();
@@ -67,10 +61,9 @@
 
 
 
-/*
- * social
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// social
+// —————————————————————————————————————————————————————————————————
 
 .social {
     margin-bottom: $integer*2;
@@ -78,10 +71,9 @@
 
 
 
-/*
- * newsletter
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// newsletter
+// —————————————————————————————————————————————————————————————————
 
 .newsletter {
     
@@ -105,52 +97,9 @@
 
 
 
-/*
- * hiring
- * —————————————————————————————————————————————————————————————————
-*/
-
-// .widget {
-
-//     &--hiring {
-//         @include display-flex();
-//         @include align-items(center);
-//         background-color: rgba($primary-lighten, 0.9);
-//         padding: $integer;
-//         color: $white !important;
-//         @include responsive(max-width, $break-tablets-max) {
-//             @include flex-direction(column);
-//             @include align-items(flex-start);
-//         }
-
-//         .subtitle {
-//             margin-right: $integer;
-//             white-space: nowrap;
-//             @include responsive(max-width, $break-tablets-max) {
-//                 margin-right: 0;
-//                 margin-bottom: $integer/2;
-//             }
-//         }
-
-//         .button {
-//             min-width: 190px;
-//             @include responsive(max-width, $break-tablets-max) {
-//                 @include align-self(flex-start);
-//             }
-//         }
-
-//         .lead {
-//             color: $white;
-//         }
-//     }
-// }
-
-
-
-/*
- * news
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// news
+// —————————————————————————————————————————————————————————————————
 
 .widget {
 
@@ -168,6 +117,7 @@
         background-color: $primary;
         text-align: left;
         color: $white;
+
         @include responsive(max-width, $break-phones-max) {
             @include border-top-right-radius($integer);
             @include border-bottom-right-radius($integer);
@@ -193,6 +143,7 @@
                 @include border-top-right-radius(0);
                 background-color: $primary-darken;
                 padding: $integer;
+
                 @include responsive(max-width, $break-phones-max) {
                     @include border-top-left-radius($integer);
                     @include border-top-right-radius($integer);
@@ -209,6 +160,7 @@
                 @include display-flex();
                 @include flex-direction(row);
                 padding: $integer;
+
                 @include responsive(max-width, $break-phones-max) {
                     font-size: 0.8rem;
                 }
@@ -221,6 +173,7 @@
             &__logo {
                 width: $integer*3;
                 margin-right: $integer;
+
                 @include responsive(max-width, $break-phones-max) {
                     display: none;
                 }
@@ -244,10 +197,9 @@
 
 
 
-/*
- * cookies
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// cookies
+// —————————————————————————————————————————————————————————————————
 
 .cookie {
     @include display-flex();
@@ -267,12 +219,14 @@
     padding-bottom: $integer/4;
     opacity: 1;
     display: none;
+
     @include responsive(max-width, $break-phones-max) {
         @include justify-content(flex-start);
         @include flex-wrap(wrap);
         padding-left: $col;
         padding-right: $col;
     }
+
     @include responsive-mobile-devices() {
         padding-right: $col;
     }
@@ -283,6 +237,7 @@
 
     &__text {
         padding-right: $integer;
+
         @include responsive(max-width, $break-phones-max) {
             padding-right: 0;
             margin-bottom: $integer/2;

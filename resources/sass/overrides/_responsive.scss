@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+/* 
+ * —————————————————————————————————————————————————————————————————
+ * INTERNET EXPLORER
+ * —————————————————————————————————————————————————————————————————
+ * partials / acccordions
+ * partials / structure
+ * —————————————————————————————————————————————————————————————————
+ * pages / about
+ * pages / index
+ * pages / mantle
+ * pages / products
+ * pages / services
+ * —————————————————————————————————————————————————————————————————
+*/
+
+
+
+/*
+ * partials / acccordions
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.accordion__button .fa {
+    @include transform(translateX(-7px));
+}
+
+
+
+/*
+ * partials / structure
+ * —————————————————————————————————————————————————————————————————
+*/
+
+// make header buttons work in ie
+.header {
+    pointer-events: auto !important;
+}
+
+.graphic {
+
+    &--greyscale {
+        display: none;
+    }
+}
+
+
+
+/*
+ * pages / about
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.timeline {
+
+    &__text {
+        @include flex-basis(auto);
+        width: 100%;
+    }
+
+    &__icon {
+        @include flex-basis(auto);
+    }
+}
+
+
+
+/*
+ * pages / index
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.landing {
+    padding-top: $integer*4;
+    padding-bottom: 0;
+}
+
+.logo-media {
+    height: 40%;
+}
+
+
+
+/*
+ * partials / mantle
+ * —————————————————————————————————————————————————————————————————
+*/
+
+#mantle {
+
+    .section__content {
+        width: 100%;
+    }
+}
+
+.mantle {
+    
+    &__label {
+
+        & + & {
+            margin-top: 25%;
+        }
+    }
+}
+
+/*
+ * pages / products
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.products {
+
+    &__intro {
+        display: block;
+    }
+
+    &__container {
+        height: 400px;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+}
+
+.devtools__image {
+    max-height: none;
+}
+
+
+
+/*
+ * pages / products
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.portfolio {
+
+    &--featured {
+
+        .portfolio {
+
+            &__item {
+                height: 400px;
+            }
+        }
+    }
+}
+
+
+
+/*
+ * pages / services
+ * —————————————————————————————————————————————————————————————————
+*/
+
+.approach {
+
+    &__filter {
+        padding: 0 $integer;
+    }
+
+    &__button {
+        width: 25%;
+        white-space: nowrap;
+
+        &:hover:before, &.nav__button--active:before {
+            width: 80%;
+            left: 10%;
+        }
+    }
+
+    &__content {
+        @include flex-basis(50%);
+    }
+
+    &__icon {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+
+
+/*
+ * —————————————————————————————————————————————————————————————————
+ * END
+ * —————————————————————————————————————————————————————————————————
+*/
+
+}

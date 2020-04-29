@@ -1,15 +1,7 @@
-# run:
-#   name: Force Bundler Version
-#   command: |
-#     sudo gem update --system
-#     echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
-#     source $BASH_ENV
-#     gem install bundler
-
 # site settings
 author: Applied Blockchain
 title: Applied Blockchain
-description: "Building Private & Secure Business Applications"
+description: "Private, Secure, Distributed Solutions for Enterprise"
 
 # contact 
 address-london: Level 39<br>One Canada Square, Canary Wharf<br>London E14 5AB<br>United Kingdom

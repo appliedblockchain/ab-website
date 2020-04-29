@@ -21,10 +21,12 @@
 	position: relative;
 	text-align: center;
 	padding: $integer*6 $col*2;
+
 	@include responsive(max-width, $break-tablets-max) {
 		padding-left: $col;
 		padding-right: $col;
 	}
+
 	@include responsive(max-width, $break-tablets-max) {
 		padding-top: $integer*4;
 		padding-bottom: $integer*4;
@@ -35,6 +37,7 @@
 		@include flex-direction(column);
 		@include align-items(center);
 		margin-bottom: $integer*4;
+
 
 		@include responsive(max-width, $break-tablets-max) {
 			margin-bottom: $integer*3;
@@ -48,6 +51,7 @@
 
 	&__title, &__subtitle, &__desc {
 		width: 75%;
+
 
 		@include responsive(max-width, $break-desktop-max) {
 			width: 100%;
@@ -123,6 +127,7 @@
 			padding-right: $col;
 			padding-left: $col;
 
+
 			@include responsive(max-width, $break-tablets-max) {
 				padding-right: 0;
 				padding-left: 0;
@@ -147,6 +152,7 @@
 			padding-right: $col*2;
 			padding-left: $col*2;
 
+
 			@include responsive(max-width, $break-tablets-max) {
 				padding-right: 0;
 				padding-left: 0;
@@ -161,6 +167,7 @@
 	&--margin-minus {
 		margin-top: -$integer*10;
 		padding-top: $integer*10;
+
 
 		@include responsive(max-width, $break-tablets-max) {
 			margin-top: -$integer*8;

@@ -20,19 +20,24 @@
   date: '2020-05-07'
   link-title: Register
   link: https://zoom.us/webinar/register/WN_r1OAtkhwRvmJ_dy7whJydQ
+  type: webinar
+  id: blockchains
 
 - name: 'Webinar: Privacy Enhancing Technologies for Business'
   image: webinar-banner-pet
   date: '2020-04-30'
   link-title: Register
   link: https://zoom.us/webinar/register/WN_Bns5FfQpS1SLEqZHIxyXjA
+  type: webinar
+  id: privacy-enhancing-technologies
 
 - name: 'Webinar: Zero Knowledge Proofs for Business'
   image: webinar-banner-zkp
   date: '2020-04-23'
-  video: https://www.youtube.com/watch?v=jSVluJA77Pg&feature=youtu.be
   link-title: Register
   link: https://zoom.us/webinar/register/WN_ex2LDfNOS2mPVVCSxoROng
+  type: webinar
+  id: zero-knowledge-proofs
 
 - name: 'Applied Blockchain Zero-Knowledge Proofs Drinks Reception'
   image: zkp-drinks
@@ -55,7 +60,6 @@
   date: '2019-11-13'
   location: IET London, London, UK
   directions: https://www.google.com/maps/dir//IET+London:+Savoy+Place,+2+Savoy+Pl,+London+WC2R+0BL/@51.5099502,-0.1214293,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x487604ca27203d8b:0xe19dbe082ea09376!2m2!1d-0.1192353!2d51.5099502!3e0
-  link: https://events.theiet.org/blockchain-applications-in-the-real-world/
 
 - name: Gartner IT Symposium
   image: gartner-it-symposium

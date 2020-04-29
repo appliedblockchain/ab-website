@@ -89,7 +89,7 @@ Every page is build on the same structure:
 
     <section class="section">
 
-        {% include components/section-header.html
+        {% include containers/sections/header.html
             HERE YOU CAN ADD THE VARIABLES
         %}
 
@@ -150,7 +150,7 @@ The page header is used once on a page, at the very beginning.
 
 #### Section header
 ```
-{% include components/section-header.html
+{% include containers/sections/header.html
     comment='Lorem ipsum'
     title='Section title'
     subtitle='Section subitle'

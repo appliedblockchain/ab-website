@@ -22,8 +22,8 @@ background_color: dark
 </section>
 
 <section class="section section--primary">
-    {% include components/section-header.html
-        title='Our Solutions'
+    {% include containers/sections/header.html
+        title = 'Our Solutions'
     %}
     <div class="section__content tab tab--vertical solutions">
         <div class="section__filter tab__nav solutions__filter">
@@ -48,9 +48,9 @@ background_color: dark
 </section>
 
 <section class="section section--grey">
-    {% include components/section-header.html
-        title='Our Approach'
-        description='Building your Project'
+    {% include containers/sections/header.html
+        title = 'Our Approach'
+        subtitle = 'Building your Project'
     %}
     <div class="section__content tab tab--vertical approach">
         <div class="section__filter tab__nav approach__filter z-index--2">
@@ -80,8 +80,8 @@ background_color: dark
 
 <section class="section section--col section--alt section--grey">
     <img src="{{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-right.svg" alt="" class="technology__graphic graphic graphic--greyscale-right">
-    {% include components/section-header.html
-        title='Technology'
+    {% include containers/sections/header.html
+        title = 'Technology'
     %}
     <div class="section__content technology">
         <div class="owl-carousel owl-carousel-technology">

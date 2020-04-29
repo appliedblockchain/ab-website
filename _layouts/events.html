@@ -36,7 +36,9 @@
                 <!-- capture event date -->
                 {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
                 {% if date < now %}
-                {% include components/event.html %}
+                {% include components/event.html 
+                    variant = 'past'
+                %}
                 {% endif %}
                 {% endfor %} 
             </div>

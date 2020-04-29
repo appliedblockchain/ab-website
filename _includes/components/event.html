@@ -1,3 +1,5 @@
+{% assign variant = include.variant %}
+
 <div class="event__item">
     {% if event.image %}
     <a href="{{ event.link }}" target="_blank" class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.image }}.jpg);"></a>
@@ -18,23 +20,33 @@
             <p>{{ event.location }}</p>
         </div>
         <div class="event__actions">
-            {% if event.link %}
-                {% if event.link-title %}
-                    <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--highlight button--animate fas fa-globe">
-                        <p class="button__inner">{{ event.link-title }}</p>
-                    </a>
-                {% else %}
-                    <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--primary button--animate fas fa-globe">
-                        <p class="button__inner">website</p>
-                    </a>
+            {% if variant == 'past' %}
+                {% if event.type =='webinar' %}
+                <a href="{{ site.url }}/webinar-{{ event.id }}" target="_blank" class="event__button button button--small button--highlight button--animate fas fa-globe">
+                    <p class="button__inner">View recording</p>
+                </a>
                 {% endif %}
+            {% else %}
+                {% if event.link-title %}
+                <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--highlight button--animate fas fa-globe">
+                    <p class="button__inner">{{ event.link-title }}</p>
+                </a>
                 {% else %}
                 <p class="label">Coming soon</p>
+                {% endif %}
+                {% if event.directions %}
+                <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">
+                    <p class="button__inner">directions</p>
+                </a>
+                {% endif %}
             {% endif %}
-            {% if event.directions %}
-            <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">
-                <p class="button__inner">directions</p>
-            </a>
+            {% if event.link %}
+                {% if event.link-title %}
+                {% else %}
+                <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--primary button--animate fas fa-globe">
+                    <p class="button__inner">website</p>
+                </a>
+                {% endif %}
             {% endif %}
             {% if event.video %}
             <a href="{{ event.video }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-play">

@@ -4,6 +4,7 @@
 // BLOCKS
 // —————————————————————————————————————————————————————————————————
 // general
+// variants
 // —————————————————————————————————————————————————————————————————
 
 
@@ -13,70 +14,92 @@
 // —————————————————————————————————————————————————————————————————
 
 .block {
-	@include box-shadow($box-shadow-sm);
-	@include border-radius($integer);
-	overflow: hidden;
-	background-color: $white;
-	padding: $integer*2;
-	color: $black;
-	@include responsive(max-width, $tablet-max) {
-		padding: $integer;
-	}
+	padding: $integer-xxl;
 
 	&__content {
-		padding: $integer*2;
-		@include responsive(max-width, $tablet-max) {
-			padding: $integer;
-		}
-	}
 
-	&__date {
-		margin-bottom: $integer;
+		.block__header + & {
+			margin-top: $integer-xl;
+		}
 	}
 
 	&__title {
-        margin-bottom: $integer/2;
-    }
 
-	&__label {
-		margin-top: $integer/4;
-	}
-
-    &__text {
-        margin-bottom: $integer;
-	}
-
-	.section--primary & {
-
-		.lead, .title {
-			color: $primary;
+		.block__label + & {
+			margin-top: $integer-md;
 		}
 	}
+}
 
-	&--icon {
-		padding-top: $integer*3;
-		height: 100%;
 
-		.block {
 
-			&__icon {
-				position: absolute;
-				top: -$integer*2;
-				left: 50%;
-				margin-left: -$integer*2;
-				width: $integer*4;
-				height: auto;
-			}
-		}
+// —————————————————————————————————————————————————————————————————
+// variants
+// —————————————————————————————————————————————————————————————————
+
+.block {
+
+	&--shadow {
+		@include box-shadow($box-shadow-sm);
+		width: 100%;
+		border-radius: $border-radius;
+		overflow: hidden;
+		background-color: $white;
 	}
 
-	&--image {
+	&--carousel,
+	&--transparent {
 		padding: 0;
 	}
 
-	&--download {
-		@include border-radius($integer/2);
-		padding: $integer/2;
-		border: 0 !important;
-	}
+	// &__content {
+	// 	padding: $integer-xl;
+
+	// 	@include responsive(max-width, $tablet-max) {
+	// 		padding: $integer;
+	// 	}
+	// }
+
+	// &__date {
+	// 	margin-bottom: $integer;
+	// }
+	
+	// &__title {
+	// 	margin-bottom: $integer;
+	// }
+	
+	// &__label {
+	// 	margin-top: $integer/4;
+	// }
+	
+	// &__text {
+	// 	margin-bottom: $integer;
+	// }
+	
+	// &--icon {
+	// 	padding-top: $integer-xxl;
+	// 	height: 100%;
+		
+	// 	.block {
+			
+	// 		&__icon {
+	// 			position: absolute;
+	// 			top: -$integer-xl;
+	// 			left: 50%;
+	// 			margin-left: -$integer-xl;
+	// 			width: $integer-xxxl;
+	// 			height: auto;
+	// 		}
+	// 	}
+	// }
+	
+	// &--image {
+	// 	padding: 0;
+	// }
+	
+	// &--download {
+	// 	border-radius: $border-radius;
+	// 	padding: $integer;
+	// 	border: 0 !important;
+	// }
 }

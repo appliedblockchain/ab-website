@@ -3,7 +3,7 @@
 {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
 {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
 {% if date == now %}
-    <section class="section section--alt">
+    <section class="section">
 
         <!-- edit component in _includes/components/section-header.html -->
         {% include containers/sections/header.html

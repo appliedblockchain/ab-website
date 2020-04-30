@@ -4,7 +4,7 @@
 // SECTIONS
 // —————————————————————————————————————————————————————————————————
 // general
-// types
+// variants
 // colors
 // alignement
 // —————————————————————————————————————————————————————————————————
@@ -19,51 +19,59 @@
 	@include display-flex();
 	@include flex-direction(column);
 	position: relative;
-	padding-left: 12.5vw;
-	padding-right: 12.5vw;
+	padding-left: $page;
+	padding-top: $integer-xxxxl;
+	padding-bottom: $integer-xxxxl;
+	padding-right: $page;
+	text-align: center;
 
 	&__header {
+		padding-right: $page;
+		padding-left: $page;
 	}
 
 	&__comment {
 	}
 
-	&__title, 
-	&__subtitle, 
-	&__desc {
+	&__subtitle {
 
-		.section__header--ap & {
-			width: 100%;
+		.section__title + & {
+			margin-top: $integer-md;
 		}
 	}
-	
-	&__subtitle {
-	}
 
-	&__desc {
-	}
+	&__body {
 
-	&__subheader {
-		// check in k0.html for example
-		@extend .section__header;
-		margin-bottom: $integer*3;
+		.section__title + & {
+			margin-top: $integer-md;
+		}
+
+		.section__subtitle + & {
+			margin-top: $integer-md;
+		}
 	}
 
 	&__content {
 		@include display-flex();
+		@include align-items(center);
+		@include flex-direction(column);
 		@include flex-wrap(wrap);
-		justify-content: center;
+
+
+		.section__header + & {
+			margin-top: $integer-xxxl;
+		}
 	}
 
 	&__filter {
         @include display-flex();
 		@include justify-content(space-evenly);
 		@include flex-wrap(wrap);
-		margin-bottom: $integer*2;
+		margin-bottom: $integer-xl;
 	}
 
 	&__link {
-		margin-top: $integer*4;
+		margin-top: $integer-xxxl;
 
 		.link {
 
@@ -77,18 +85,97 @@
 
 
 // —————————————————————————————————————————————————————————————————
-// types
+// variants
 // —————————————————————————————————————————————————————————————————
 
 .section {
+
+	&--full {
+		padding: 0 !important;
+		overflow: hidden;
+
+		.section {
+
+			&__header {
+				padding-top: $integer-xxxxl;
+				padding-right: $page*2;			
+				padding-left: $page*2;
+			}
+		}
+	}
+
+	&--alt {
+		padding-left: $page/2;
+		padding-right: $page/2;
+	}
 	
-	&--margin-minus {
-		margin-top: -$integer-xxxl;
-		padding-top: $integer-xxxl;
-	
-		@include responsive(max-width, $tablet-max) {
-			margin-top: -$integer*8;
-			padding-top: $integer*8;
+	&--overlap {
+		margin-top: -$integer-xxxxl*2;
+		padding-top: $integer-xxxxl*2;
+	}
+
+	&__content {
+
+		&--2 {
+			@include display-flex();
+			@include align-items(stretch);
+			@include flex-direction(row);
+
+			.block {
+				width: 50%;
+				padding-top: 0;
+				padding-bottom: $integer-xxxxl;
+				position: relative;
+
+				> * { 
+					position: relative;
+				}
+
+				&:nth-child(1),
+				&:nth-child(2) {
+
+					&:before {
+						@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+					}
+				}
+
+				&:nth-child(1) {
+					padding-left: $page;
+
+					&:before {
+						@include background-image(linear-gradient(to bottom, $primary, rgba($primary-lighten, 0.8)));
+					}
+				}
+
+				&:nth-child(2) {
+					padding-right: $page;
+
+					&:before {
+						@include background-image(linear-gradient(to bottom, $primary, rgba($primary-darken, 0.8)));
+					}
+				}
+
+				@include responsive(max-width, $tablet-max) {
+					background-image: none !important;
+					background-color: $primary;
+					padding-left: $col*3 !important;
+					padding-right: $col*3 !important;
+				}
+
+				@include responsive(max-width, $mobile-max) {
+					padding-left: $col*2 !important;
+					padding-right: $col*2 !important;
+				}
+
+				img {
+					height: $integer-xxxxl*2;
+					margin-bottom: $integer-xl;
+
+					@include responsive(max-width, $tablet-max) {
+						height: $integer-xxl;
+					}
+				}
+			}
 		}
 	}
 }
@@ -101,10 +188,41 @@
 
 .section {
 
-	&--primary 	{ background-color: $primary; }
-	&--dark 	{ background-color: $dark; }
-	&--grey 	{ background-color: $lightgrey; }
-	&--white 	{ background-color: $white; }
+	&--primary { 
+		background-color: $primary; 
+
+		& + & {
+			padding-top: 0; 
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+	&--dark { 
+		background-color: $dark; 
+
+		& + & {
+			padding-top: 0; 
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+	&--grey { 
+		background-color: $lightgrey; 
+
+		& + & {
+			padding-top: 0; 
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+	&--white { 
+		background-color: $white; 
+
+		& + & {
+			padding-top: 0; 
+			.section__header { padding-top: 0; } 
+		}
+	}
 
 	&--primary, 
 	&--dark 	{ 
@@ -133,25 +251,16 @@
 
 .section {
 
-	&--left,
-	&--right {
-
-		[class*="coloffset--"] .section {
-	
-			&__title, &__subtitle, &__desc {
-				width: 100%;
-			}
-		}
-	}	
-
 	&--left {
 		@include align-items(flex-start);
 		text-align: left;
 
 		.section {
 
-			&__header, &__content {
+			&__header, 
+			&__content {
 				@include align-items(flex-start);
+				text-align: left;
 			}
 		}
 	}
@@ -162,8 +271,10 @@
 
 		.section {
 	
-			&__header, &__content {
+			&__header, 
+			&__content {
 				@include align-items(flex-end);
+				text-align: right;
 			}
 		}
 	}

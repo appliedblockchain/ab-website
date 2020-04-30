@@ -58,8 +58,8 @@
 
     &__button {
 	    position: absolute;
-	    right: -$integer/2;
-		top: -$integer*2;
+	    right: -$integer;
+		top: -$integer-xl;
 		
 		&:before, &:after {
 			background-color: $white;

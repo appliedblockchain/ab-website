@@ -37,7 +37,7 @@
     }
 
     &__title {
-        padding-top: $integer*3;
+        padding-top: $integer-xxl;
         padding-bottom: $integer;
 
         &.alt {
@@ -46,7 +46,7 @@
     }
 
     &__subtitle {
-        padding-top: $integer*3;
+        padding-top: $integer-xxl;
         padding-bottom: $integer;
     }
 

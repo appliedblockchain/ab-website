@@ -98,7 +98,7 @@
         @include flex-direction(column);
         overflow: hidden;
         position: relative;
-        padding: $integer*2;
+        padding: $integer-xl;
         text-align: left;
         color: $white;
         width: 25%;
@@ -169,7 +169,7 @@
     &__comment {
         @include transition(opacity $transition);
         will-change: opacity;
-        margin-bottom: $integer/2;
+        margin-bottom: $integer;
         opacity: 1;
     }
 
@@ -178,7 +178,7 @@
     }
 
     &__desc {
-        margin: $integer 0 $integer*2 0;
+        margin: $integer 0 $integer-xl 0;
         color: $white;
         overflow: hidden;
         
@@ -233,12 +233,12 @@
 
 
 .project-grid {
-    margin: -$integer/2;
+    margin: -$integer;
 
     &__item {
         position: relative;
         width: 25%;
-        padding: $integer/2;
+        padding: $integer;
         @include responsive(max-width, $desktop-max) {
             width: 50%;
         }
@@ -266,30 +266,30 @@
         @include calc(height, '100% - '$integer);
         will-change: height, width, top, left, opacity;
         position: absolute;
-        top: $integer/2;
-        left: $integer/2;
+        top: $integer;
+        left: $integer;
         padding: $integer;
         background-color: $white;
         text-align: left;
         @include responsive(min-width, $desktop-lg-min) {
-            padding: $integer*2;
+            padding: $integer-xl;
         }
         @include responsive(max-width, $desktop-max) {
-            padding: $integer*2;
+            padding: $integer-xl;
         }
 
         &.js-show {
             @include transition(height $transition, width $transition, top $transition, left $transition, opacity 0.2s ease 0s);
-            @include calc(width, '100% + '$integer*2);
-            @include calc(height, '100% + '$integer*2);
+            @include calc(width, '100% + '$integer-xl);
+            @include calc(height, '100% + '$integer-xl);
             top: -$integer;
             left: -$integer;
             z-index: 2;
             @include responsive(max-width, $mobile-max) {
                 @include calc(width, '100% - '$integer);
                 @include calc(height, '100% - '$integer);
-                top: $integer/2;
-                left: $integer/2;
+                top: $integer;
+                left: $integer;
             }
         }
     }
@@ -299,15 +299,15 @@
     }
 
     .body--bold {
-        margin-top: $integer/2;
+        margin-top: $integer;
     }
 
     &__summary {
-        margin-top: $integer/2;
+        margin-top: $integer;
     }
 
     &__button {
-        margin-top: $integer/2;
+        margin-top: $integer;
         min-height: $integer*1.5;
     }
 }

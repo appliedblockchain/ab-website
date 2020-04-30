@@ -97,7 +97,7 @@
 	&__menu {
 		@include calc(height, '100vh - '$integer*8);
 		@include overflow-scroll();
-		padding: 0  $col*2 $integer*4 $col*2;
+		padding: 0  $col*2 $integer-xxxl $col*2;
 		pointer-events: initial;
 
 		@include responsive(max-width, $tablet-max) {
@@ -107,13 +107,13 @@
 
 	&.js-scrolled {
 		@include box-shadow($box-shadow-md);
-		height: $integer*4;
+		height: $integer-xxxl;
 		background-color: $white;
 		
 		.header {
 
 			&__bar {
-				height: $integer*4;
+				height: $integer-xxxl;
 			}
 			
 			&__logo {
@@ -198,7 +198,7 @@
 	&__row {
 
 		& + & {
-			margin-top: $integer*2;
+			margin-top: $integer-xl;
 		}
 	}
 
@@ -208,7 +208,7 @@
 	}
 
 	&__button {
-		margin-bottom: $integer/2;
+		margin-bottom: $integer;
 		
 		.subtitle {
 			padding: 0;
@@ -250,7 +250,7 @@
 	}
 
 	&__newsletter {
-		margin-top: $integer*2;
+		margin-top: $integer-xl;
 	}
 }
 
@@ -267,7 +267,7 @@
 		background-position: top center !important;
 		padding-top: $integer-xxxl+$integer-xxxxl;
 		padding-right: 25vw;
-		padding-bottom: $integer-xxxl;
+		padding-bottom: $integer-xxxxl;
 		padding-left: 25vw;
 		text-align: center;
 
@@ -318,10 +318,10 @@
 	}
 
 	&__item {
-		margin-bottom: $integer*3;
+		margin-bottom: $integer-xxl;
 
 		@include responsive(max-width, $mobile-max) {
-			margin-bottom: $integer*2;
+			margin-bottom: $integer-xl;
 		}
 	}
 
@@ -335,8 +335,8 @@
 			@include justify-content(flex-start);
 
 			.logo {
-				min-width: $integer*20;
-				margin-right: $integer*4;
+				min-width: $integer-xl;
+				margin-right: $integer-xxxl;
 			}
 		}
 
@@ -346,7 +346,7 @@
 			.logo {
 				min-width: auto;
 				margin-right: 0;
-				margin-bottom: $integer*2;
+				margin-bottom: $integer-xl;
 			}
 		}
 	}
@@ -362,7 +362,7 @@
 	&__adress {
 
 		p + p {
-			margin-top: $integer/2;
+			margin-top: $integer;
 		}
 
 		.body--bold {

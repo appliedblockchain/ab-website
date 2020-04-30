@@ -40,10 +40,9 @@ html, body {
 .row {
 	@include display-flex();
 	@include flex-wrap(wrap);
-	@include calc(width, '100% + '$integer);
-	//width: 100%;
-	margin-left: -$integer/2;
-	margin-right: -$integer/2;
+	@include calc(width, '100% + '$integer-xl);
+	margin-right: -$integer;
+	margin-left: -$integer;
 
 	&:after {
 		content: '';
@@ -58,43 +57,43 @@ html, body {
 	clear: both;
 }
 
-[class*="col--"], [class*="colalt--"] {
+[class*="col--"] {
 	float: left;
 	position: relative;
-	padding: 0 $integer/2;
+	padding: 0 $integer;
 	width: 100%;
 }
 
 @for $i from 1 through 12 {
-	.col--#{$i} 				{ width: $i*$col; }
-	.coloffset--#{$i} 			{ margin-left: $i*$col; }
+	.col--#{$i} 			{ width: $i*$col; }
+	.coloffset--#{$i} 		{ margin-left: $i*$col; }
 }
 
 @include responsive(min-width, $mobile-min) {
 	@for $i from 1 through 12 {
-		.col--sm#{$i} 			{ width: $i*$col; }
-		.coloffset--sm#{$i} 	{ margin-left: $i*$col; }
+		.col--sm#{$i} 		{ width: $i*$col; }
+		.coloffset--sm#{$i} { margin-left: $i*$col; }
 	}
 }
 
 @include responsive(min-width, $tablet-min) {
 	@for $i from 1 through 12 {
-		.col--md#{$i} 			{ width: $i*$col; }
-		.coloffset--md#{$i} 	{ margin-left: $i*$col; }
+		.col--md#{$i} 		{ width: $i*$col; }
+		.coloffset--md#{$i} { margin-left: $i*$col; }
 	}
 }
 
 @include responsive(min-width, $desktop-min) {
 	@for $i from 1 through 12 {
-		.col--lg#{$i} 			{ width: $i*$col; }
-		.coloffset--lg#{$i} 	{ margin-left: $i*$col; }
+		.col--lg#{$i} 		{ width: $i*$col; }
+		.coloffset--lg#{$i} { margin-left: $i*$col; }
 	}
 }
 
 @include responsive(min-width, $desktop-lg-min) {
 	@for $i from 1 through 12 {
-		.col--xl#{$i} 			{ width: $i*$col; }
-		.coloffset--xl#{$i} 	{ margin-left: $i*$col; }
+		.col--xl#{$i} 		{ width: $i*$col; }
+		.coloffset--xl#{$i} { margin-left: $i*$col; }
 	}
 }
 
@@ -202,14 +201,10 @@ li {
 }
 
 .image-inline {
-	margin-bottom: -$integer*2;
+	margin-bottom: -$integer-xl;
 
     &__item {
-		padding: 0 $integer $integer*2 $integer;
-
-		.owl-carousel & {
-			padding: 0;
-		}
+		padding: 0 $integer $integer-xl $integer;
     }
 
     &__image {
@@ -217,10 +212,6 @@ li {
 		height: $integer-xl;
 		width: auto;
 		margin-bottom: $integer;
-		
-		.owl-carousel & {
-			margin-bottom: 0;
-		}
 	}
 	
 	&__title {

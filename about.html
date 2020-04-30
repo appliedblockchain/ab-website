@@ -6,24 +6,26 @@ background_image: true
 background_color: primary
 ---
 
-<section class="section section--alt section--fullwidth section--primary about-intro">
-    <div class="section__content">
-        <div class="row">
-            <div class="col--md6 about-intro__item">
-                <h2 class="subtitle">We Solve Problems</h2>
-                <img class="about-intro__image" src="{{ site.url }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon">
-                <p>At Applied Blockchain we build applications for our clients, with an even mix of enterprises and startups. We value working through the complex problems enterprises experience, and use advanced cryptographic technology to turn ideas into disruptive products.</p>
+<section class="section section--primary section--full">
+    <div class="section__content section__content--2">
+        <div class="block">
+            <p class="block__header subtitle">We Solve Problems</p>
+            <div class="block__content">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon">
+                <p class="body">At Applied Blockchain we build applications for our clients, with an even mix of enterprises and startups. We value working through the complex problems enterprises experience, and use advanced cryptographic technology to turn ideas into disruptive products.</p>
             </div>
-            <div class="col--md6 about-intro__item">
-                <h2 class="subtitle">We Build Products</h2>
-                <img class="about-intro__image" src="{{ site.url }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon">
-                <p>We build products to solve a problem once for our many clients. We focus on advanced cryptography to enable businesses to do more with each other, while sharing less data.</p>
+        </div>
+        <div class="block">
+            <p class="block__header subtitle">We Build Products</p>
+            <div class="block__content">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon">
+                <p class="body">We build products to solve a problem once for our many clients. We focus on advanced cryptography to enable businesses to do more with each other, while sharing less data.</p>
             </div>
         </div>
     </div>   
 </section>
 
-<section class="section timeline">
+<section class="section section--white timeline">
     {% include containers/sections/header.html
         title = 'Our story'
     %}
@@ -35,7 +37,9 @@ background_color: primary
         {% for item in site.data.timeline.fifteen %}
         <div class="timeline__item">
             <p class="timeline__text">{{ item.text }}</p>
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+            <div class="timeline__icon">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon">
+            </div>
         </div>
         {% endfor %}
         <span class="timeline__headline">
@@ -45,7 +49,9 @@ background_color: primary
         {% for item in site.data.timeline.sixteen %}
         <div class="timeline__item">
             <p class="timeline__text">{{ item.text }}</p>
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+            <div class="timeline__icon">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon">
+            </div>
         </div>
         {% endfor %}
         <span class="timeline__headline">
@@ -55,7 +61,9 @@ background_color: primary
         {% for item in site.data.timeline.seventeen %}
         <div class="timeline__item">
             <p class="timeline__text">{{ item.text }}</p>
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+            <div class="timeline__icon">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon">
+            </div>
         </div>
         {% endfor %}
         <span class="timeline__headline">
@@ -65,7 +73,9 @@ background_color: primary
         {% for item in site.data.timeline.eighteen %}
         <div class="timeline__item">
             <p class="timeline__text">{{ item.text }}</p>
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon" class="timeline__icon">
+            <div class="timeline__icon">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon">
+            </div>
         </div>
         {% endfor %}
     </div>
@@ -75,71 +85,76 @@ background_color: primary
     {% include containers/sections/header.html
         title = 'Investors'
     %}
-    <div class="section__content owl-carousel owl-carousel-testimonial carousel">
-        {% for item in site.data.testimonials.investors %}
-        {% include components/testimonial.html %}
-        {% endfor %}
+    <div class="section__content">
+        {% include elements/carousel.html 
+            type = 'testimonials'
+            variant = 'investors' 
+        %}
     </div>
 </section>
 
-<section class="section section--col">
+<section class="section section--grey section--alt">
     {% include containers/sections/header.html
         title = 'Partners'
     %}
-    <div class="owl-carousel owl-carousel-partners carousel block">
-        {% for item in site.data.images.partners %}
-        <img src="{{ site.url }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
-        {% endfor %}
+    <div class="section__content z-index--1">
+        <div class="block block--shadow block--carousel">
+            {% include elements/carousel.html 
+                variant = 'partners' 
+            %}
+        </div>
     </div>
-
 </section>
 
-<section class="section section--alt">
+<section class="section section--white section--overlap">
     {% include containers/sections/header.html
         title = 'Our core values underpin all of our work'
     %}
-    <div class="section__content image-inline">
-        {% for item in site.data.images.values %}
-        <div class="col--md3 col--4 image-inline__item">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
-            <p class="image-inline__title body--large">{{ item.alt }}</p>
-            <p>{{ item.description }}</p>
+    <div class="section__content">
+        <div class="row">
+            {% for item in site.data.images.values %}
+            <div class="col--4">
+                <div class="card">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
+                    <p class="card__title lead">{{ item.alt }}</p>
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </section>
 
-<section class="section section--fullwidth section--dark">
+<section class="section section--dark section--full">
     {% include containers/sections/header.html
         title = 'Leadership team'
-        description='Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
+        body = 'Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
     %}
-    <div class="section__content tab tab--vertical leadership">
+    <div class="section__content body--left tab tab--leadership">
         {% for item in site.data.leadership %}
-        <div id="{{ item.slug }}" class="tab__item row background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
-            <div class="col--lg9 leadership__content">
-                <p class="block__date body--bold">{{ item.title }}</p>
-                <h2 class="block__title subtitle">{{ item.name }}</h2>
-                <p>{{ item.bio }}</p>
+        <div id="{{ item.slug }}" class="tab__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
+            <div class="block block--transparent">
+                <div class="block__header">
+                    <p class="block__label body--bold">{{ item.title }}</p>
+                    <h2 class="block__title subtitle">{{ item.name }}</h2>
+                </div>
+                <p class="block__content">{{ item.bio }}</p>
             </div>
         </div>
         {% endfor %}
-        <div class="tab__nav leadership__nav">
+        <div class="tab__nav">
             {% for item in site.data.leadership %}
-            <a href="#{{ item.slug }}" class="nav__button {{ item.active }} leadership__button hover-grayscale">
-                <div class="block leadership__portrait background--cover"  style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
-                <p class="body--bold body--large">{{ item.name | truncatewords: 1, "" }}</p>
-                <p>{{ item.division }}</p>
+            <a href="#{{ item.slug }}" class="card card--small tab__button {{ item.active }}">
+                <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
+                <p class="card__title body--large body--bold">{{ item.name | truncatewords: 1, "" }}</p>
+                <p class="body">{{ item.division }}</p>
             </a>
             {% endfor %}
         </div>
     </div>
 </section>
 
-<section class="section section--alt section--nopadding section--dark">
-    <div class="section__content background--cover team" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
-        <a href="{{ site.url }}/join" class="ga-button-join team__button button button--large button--primary-lighten button--animate fas fa-user-plus">
-            <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
-        </a>
-    </div>
+<section id="about-team" class="section section--dark section--full background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
+    <a href="{{ site.url }}/join" class="ga-button-join team__button button button--large button--primary-lighten button--animate fas fa-user-plus">
+        <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
+    </a>
 </section>

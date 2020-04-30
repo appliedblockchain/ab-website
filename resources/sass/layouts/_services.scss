@@ -11,8 +11,8 @@
 .services {
 
     &__carousel {
-        margin-top: -$integer*2;
-        margin-bottom: -$integer*2;
+        margin-top: -$integer-xl;
+        margin-bottom: -$integer-xl;
     }
 }
 
@@ -20,8 +20,8 @@
 
     &__filter {
         width: 100%;
-        margin-right: $integer/2;
-        margin-left: $integer/2;
+        margin-right: $integer;
+        margin-left: $integer;
         margin-bottom: $integer;
     }
 
@@ -29,7 +29,7 @@
         padding: 0 5%;
         width: 33.333%;
         @include responsive(max-width, $desktop-max) {
-            padding: 0 $integer/2;
+            padding: 0 $integer;
         }
         @include responsive(max-width, $mobile-max) {
             padding-left: $integer/4;
@@ -41,7 +41,7 @@
         @include transition(background-color, $transition);
         will-change: background-color;
         border-radius: $integer;
-        padding: $integer*2;
+        padding: $integer-xl;
         margin-bottom: $integer;
         width: 100%;
 
@@ -57,13 +57,13 @@
             padding: $integer;
         }
         @include responsive(max-width, $mobile-max) {
-            padding: $integer/2;
+            padding: $integer;
         }
     }
 
     &__item {
         border-top: 2px solid rgba($white, 0.2);
-        padding-top: $integer*2;
+        padding-top: $integer-xl;
         @include responsive(max-width, $tablet-max) {
             border-top: 0;
             padding-top: 0;
@@ -102,12 +102,12 @@
     .block {
         @include display-flex();
         @include align-items(center);
-        padding: $integer*4;
+        padding: $integer-xxxl;
     }
 
     &__image {
-        width: $integer*20;
-        margin-right: $integer*4;
+        width: $integer-xl;
+        margin-right: $integer-xxxl;
     }
 }
 
@@ -137,10 +137,10 @@
     }
 
     .block {
-        padding: $integer*4;
+        padding: $integer-xxxl;
         width: 100%;
         @include responsive(max-width, $desktop-max) {
-            padding: $integer*2;
+            padding: $integer-xl;
         }
     }
 
@@ -155,16 +155,16 @@
         color: $mediumgrey;
         width: 25%;
         line-height: 0.9;
-        width: $integer*4;
-        margin-right: $integer*4;
+        width: $integer-xxxl;
+        margin-right: $integer-xxxl;
         @include responsive(max-width, $desktop-lg-max) {
-            width: $integer*2;
-            margin-right: $integer*2;
+            width: $integer-xl;
+            margin-right: $integer-xl;
         }
         @include responsive(max-width, $tablet-max) {
             font-size: 3rem;
             width: $integer;
-            margin-right: $integer*2;
+            margin-right: $integer-xl;
         }
         @include responsive(max-width, $mobile-max) {
             position: absolute;
@@ -185,16 +185,16 @@
     &__title {
         margin-bottom: $integer;
         @include responsive(max-width, $mobile-max) {
-            padding-left: $integer*2;
+            padding-left: $integer-xl;
         }
     }
 
     &__icon {
         @include flex-basis(33.333%);
-        padding-left: $integer*4;
+        padding-left: $integer-xxxl;
         @include responsive(max-width, $desktop-lg-max) {
             @include flex-basis(20%);
-            padding-left: $integer*2;
+            padding-left: $integer-xl;
         }
         @include responsive(max-width, $desktop-max) {
             display: none;

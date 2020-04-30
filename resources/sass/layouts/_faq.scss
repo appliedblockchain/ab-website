@@ -11,12 +11,12 @@
 .faq {
 
     .section__header {
-        margin-bottom: $integer*2;
+        margin-bottom: $integer-xl;
     }
 
     &__column:nth-child(2) {
         @include responsive(max-width, $desktop-max) {
-            margin-top: $integer*3;
+            margin-top: $integer-xxl;
         }
     }
 }

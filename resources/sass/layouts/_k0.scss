@@ -15,11 +15,11 @@
         @include display-flex();
         @include justify-content(center);
         padding-top: $integer*7;
-        padding-bottom: $integer*4;
+        padding-bottom: $integer-xxxl;
         height: 100vh;
 
         .body--bold {
-            margin-top: $integer*2;
+            margin-top: $integer-xl;
             margin-bottom: $integer;
         }
     }
@@ -58,7 +58,7 @@
     }
 
     .button--large {
-        margin-top: $integer*4;
+        margin-top: $integer-xxxl;
     }
 }
 

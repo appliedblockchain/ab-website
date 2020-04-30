@@ -40,14 +40,14 @@
         .button {
             @include responsive(max-width, $tablet-max) {
                 display: block !important;
-                margin-bottom: $integer/2;
+                margin-bottom: $integer;
             }
         }
     }
     
     &__item {
         @include display-flex();
-        padding: $integer/2;
+        padding: $integer;
         width: 25%;
         @include responsive(max-width, $desktop-max) {
             width: 50%;
@@ -70,13 +70,13 @@
 
     &__logo {
         width: 20%;
-        min-width: $integer*4;
+        min-width: $integer-xxxl;
         max-width: $integer-xl;
         margin-bottom: $integer
     }
 
     &__name {
-        margin-bottom: $integer/2;
+        margin-bottom: $integer;
     }
 
     &__button {

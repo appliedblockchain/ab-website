@@ -19,7 +19,7 @@
 
 .widget {
     position: relative;
-    @include border-radius($integer);
+    border-radius: $border-radius;
 
     &__header {
         @include display-flex();
@@ -44,7 +44,7 @@
     @include display-flex();
     @include flex-direction(column);
     @include align-items(center);
-    @include transform(translateX(-$integer*4.5));
+    @include transform(translateX(-$integer-xxxl));
     position: absolute;
     top: 0;
     padding-top: $integer/4;
@@ -66,7 +66,7 @@
 // —————————————————————————————————————————————————————————————————
 
 .social {
-    margin-bottom: $integer*2;
+    margin-bottom: $integer-xl;
 }
 
 
@@ -78,12 +78,12 @@
 .newsletter {
     
     &__notice {
-        margin-top: $integer/2;
-        margin-bottom: $integer/2;
+        margin-top: $integer;
+        margin-bottom: $integer;
     }
     
     &__button {
-        margin-top: $integer/2;
+        margin-top: $integer;
     }
 
     .form__label {
@@ -91,7 +91,7 @@
     }
 
     &__input {
-        max-width: $integer*25
+        max-width: $integer-xl;
     }
 }
 
@@ -112,8 +112,8 @@
         @include box-shadow($box-shadow-sm);
         position: absolute;
         top: 50%;
-        right: -$integer*26;
-        width: $integer*26;
+        right: -$integer-xl;
+        width: $integer-xl;
         background-color: $primary;
         text-align: left;
         color: $white;
@@ -171,7 +171,7 @@
             }
 
             &__logo {
-                width: $integer*3;
+                width: $integer-xxl;
                 margin-right: $integer;
 
                 @include responsive(max-width, $mobile-max) {
@@ -188,7 +188,7 @@
 
         .testimonial__mark {
             opacity: 0.1 !important;
-            top: $integer*3;
+            top: $integer-xxl;
             left: $integer-xl;
             width: $integer*5 !important;
         }
@@ -240,7 +240,7 @@
 
         @include responsive(max-width, $mobile-max) {
             padding-right: 0;
-            margin-bottom: $integer/2;
+            margin-bottom: $integer;
         }
     }
 

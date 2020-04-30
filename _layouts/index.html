@@ -53,7 +53,7 @@ particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', f
     </div>
 </section>
 
-<section class="section section--fullwidth section--alt section--dark">
+<section class="section section--full section--dark">
     <div class="owl-carousel owl-carousel-technology">
         {% include components/technologies.html 
             color='white'
@@ -84,7 +84,7 @@ particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', f
     {% include components/modals/video.html %}
 </section>
 
-<section class="section section--col section--alt section--grey">
+<section class="section section--col section--grey">
     <div class="owl-carousel owl-carousel-partners carousel block">
         {% for item in site.data.images.partners %}
         <img src="{{ site.url }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">

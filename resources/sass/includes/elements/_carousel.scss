@@ -3,38 +3,90 @@
 // —————————————————————————————————————————————————————————————————
 // CAROUSEL
 // —————————————————————————————————————————————————————————————————
+// general
+// variants
+// owl
+// —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
+
+.carousel {
+
+    &__item {
+        @include display-flex();
+        @include align-items(center);
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// variants
+// —————————————————————————————————————————————————————————————————
+
+.carousel {
+
+    &--testimonials {
+
+        .carousel {
+
+            &__image {
+                @include border-radius(50%);
+                @include flex-shrink(0);
+                overflow: hidden;
+                position: relative;
+                margin-right: $integer-xxxl;
+                width: $integer-max !important;
+                height: $integer-max;
+
+                @include responsive(max-width, $desktop-max) {
+                    width: $integer-xxxxl+$integer-xl;
+                    height: $integer-xxxxl+$integer-xl;
+                    margin-right: $integer-xxl;
+                }
+
+                @include responsive(max-width, $tablet-max) {
+                    width: $integer-xxxl;
+                    height: $integer-xxxl;
+                }
+
+                @include responsive(max-width, $mobile-max) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// owl
+// —————————————————————————————————————————————————————————————————
 
 .owl {
 
-    &-carousel {
-
-        &-technology {
-
-            &.block {
-                padding-top: $integer !important;
-                padding-bottom: $integer !important;
-            }
-        }
+    &-dots {
+        margin-top: $integer-xl;
     }
 
     &-dot {
         @include transition(background-color $transition, transform $transition);
         @include border-radius(50%);
         will-change: background-color, transform;
-        height: $integer/2;
-        width: $integer/2;
+        height: $integer;
+        width: $integer;
         background-color: $secondary !important;
-        margin: 0 $integer*2;
-        
+        margin: 0 $integer-md;
+
         &.active, &:hover {
             @include transition(background-color $transition, transform $transition);
             @include transform(scale(1.5));
             background-color: $primary !important;
         }
     }
-}
-
-.carousel {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
 }

@@ -65,8 +65,8 @@
         @include responsive(max-width, $tablet-max) {
             @include justify-content(flex-start);
             height: auto;
-            padding-top: $integer*2;
-            padding-bottom: $integer*2;
+            padding-top: $integer-xl;
+            padding-bottom: $integer-xl;
         }
     }
 
@@ -91,7 +91,7 @@
         @include justify-content(space-between);
         @include responsive(max-width, $tablet-max) {
             @include flex-direction(column);
-            margin-top: $integer*2;
+            margin-top: $integer-xl;
         }
     }
     
@@ -159,7 +159,7 @@
         }
         
         &__dot {
-            margin-top: $integer/2;
+            margin-top: $integer;
             background-color: $primary;
             border: 0;
 

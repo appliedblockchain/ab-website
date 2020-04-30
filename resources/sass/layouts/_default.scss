@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// DEFAULT
+// —————————————————————————————————————————————————————————————————
+// about
+// —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// about
+// —————————————————————————————————————————————————————————————————
+
+.timeline {
+
+    &__content {
+
+        &:before {
+            @include pseudo-element('', $integer-max, auto, 0, 50%, 2px, 100%);
+            @include transform(translateX(-1px));
+            background-color: $mediumgrey;
+
+            @include responsive(max-width, $tablet-max) {
+                left: $integer;
+            }
+        }
+    }
+
+    &__headline {
+        @include display-flex();
+        position: relative;
+        margin: $integer-xl 0;
+
+        &:nth-of-type(odd)  { .timeline__date { @include calc(left, '50% +' $integer-xl); } }
+        &:nth-of-type(even) { .timeline__date { @include calc(right, '50% +' $integer-xl);} }
+
+        @include responsive(max-width, $tablet-max) {
+            width: 100%;
+            text-align: left;
+        }
+
+        @include responsive(max-width, $tablet-max) {
+            margin-bottom: $integer;
+        }
+
+        &:nth-child(1) {
+            margin-top: 0;            
+        }
+    }
+
+    &__dot {
+        border-radius: $border-radius;     
+        display: inline-block;
+        background-color: $secondary;
+        width: $integer-md;
+        height: $integer-md;
+        border: $border-lg $white;
+        box-sizing: content-box;
+    }
+
+    &__date {
+        position: absolute;
+        pointer-events: none;
+
+        @include responsive(max-width, $tablet-max) {
+            right: auto !important;
+            left: $integer-xxl !important;
+        }
+    }
+
+    &__item {
+        @include display-flex();
+        @include align-items(center);
+
+        &:nth-of-type(odd) { 
+            .timeline__text { text-align: right; } 
+            .timeline__icon { text-align: left; }
+        }
+
+        &:nth-of-type(even) {
+            @include flex-direction(row-reverse);
+            .timeline__text { text-align: left; } 
+            .timeline__icon { text-align: right; }
+        }
+
+        @include responsive(min-width, $desktop-xl) {
+            margin-top: $integer;
+            margin-bottom: $integer;
+        }
+
+        @include responsive(max-width, $desktop-max) {
+            margin-top: $integer;
+            margin-bottom: $integer;
+        }
+    }
+
+    &__text, 
+    &__icon {
+        @include flex-basis(50%);
+        padding: 0 $integer-xxl;
+    }
+    
+    &__text {
+
+        @include responsive(max-width, $tablet-max) {
+            @include flex-basis(100% !important);
+            padding: 0;
+        }
+    }
+
+    &__icon {
+        height: $integer-xxxxl;
+        
+        @include responsive(max-width, $tablet-max) {
+            display: none;
+        }
+        
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+#about-team {
+    @include justify-content(center);
+    height: 75vh;
+
+    &:before {
+        @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+        background-color: rgba($primary, 0.7);
+    }
+}

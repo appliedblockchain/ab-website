@@ -15,17 +15,17 @@
     }
 
     &__nav {
-        margin-bottom: $integer*4;
+        margin-bottom: $integer-xxxl;
     }
 
     &__meta {
         @include responsive(max-width, $desktop-max) {
-            margin-top: $integer*3;
+            margin-top: $integer-xxl;
         }
     }
 
     &__example {
-        margin-top: $integer*3;
+        margin-top: $integer-xxl;
     }
 
     &__title {
@@ -84,10 +84,10 @@
         @include transform(translateY(-50%));
         @include display-flex();
         @include align-items(center);
-        padding: $integer*2 $integer*4;
+        padding: $integer-xl $integer-xxxl;
         @include responsive(max-width, $tablet-max) {
-            padding-left: $integer*2;
-            padding-right: $integer*2;
+            padding-left: $integer-xl;
+            padding-right: $integer-xl;
         }
 
     }
@@ -120,7 +120,7 @@
 
     &__image {
         @include responsive(max-width, $desktop-max) {
-            margin-top: $integer*3;
+            margin-top: $integer-xxl;
         }
     }
 }
@@ -128,11 +128,11 @@
 .results {
 
     &__content {
-        padding-top: $integer*4;
+        padding-top: $integer-xxxl;
     }
 
     &__title {
-        margin-bottom: $integer*2;
+        margin-bottom: $integer-xl;
     }
 
     &__image {
@@ -140,10 +140,10 @@
     }
 
     &__subtitle {
-        margin-bottom: $integer/2;
+        margin-bottom: $integer;
     }
 
     &__comment {
-        padding-top: $integer*4;
+        padding-top: $integer-xxxl;
     }
 }

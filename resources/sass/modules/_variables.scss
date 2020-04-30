@@ -40,32 +40,34 @@ $facebook:  #3b5998;
 $google:	#dd4b39;
 $linkedin:  #0077b5;
 $medium:	#00ab6c;
-$twitter:   #1da1f2;
+$twitter:	#1da1f2;
 
 
 // —————————————————————————————————————————————————————————————————
 // 2. general
 // —————————————————————————————————————————————————————————————————
 
-$col:		   100%/12;
+$page:			12.5vw;
+$col:			100%/12;
 $col-footer:	100%/15;
 
 $integer:		0.5rem;		 // 8px
 
-$integer-xxs:   $integer/8;	 // 1px
+$integer-xxs:	$integer/8;	 // 1px
 $integer-xs:	$integer/4;	 // 2px 
 $integer-sm:	$integer/2;	 // 4px
 
 $integer-md:	$integer*2;	 // 16px
 $integer-lg:	$integer*4;	 // 32px
 $integer-xl:	$integer*5;	 // 40px
-$integer-xxl:   $integer*8;	 // 64px
-$integer-xxxl:  $integer*10;	// 80px
-$integer-xxxxl: $integer*15;	// 120px
+$integer-xxl:	$integer*8;	 // 64px
+$integer-xxxl:  $integer*10; // 80px
+$integer-xxxxl: $integer*15; // 120px
+$integer-max:	$integer*25; // 200px
 
 $transition:		0.4s ease 0s;
 $transition-delay:  0.4s ease 0.2s;
-$transition-long:   0.6s ease 0s;
+$transition-long:	0.6s ease 0s;
 
 $box-shadow-xs:	 0 0 15px 0 rgba($dark, 0.05);
 $box-shadow-sm:	 0 0 10px 0 rgba($dark, 0.15);
@@ -76,7 +78,7 @@ $border-md: $integer-sm solid;
 $border-lg: $integer solid;
 
 // one border radius to keep consistency througbout your website
-$border-radius: $integer;
+$border-radius: $integer-lg;
 
 
 
@@ -107,9 +109,9 @@ $font-black: 		900;
 // extralarge desktops	1300px  >  ...
 // large desktops		1024px  >  1199px
 // desktops				 768px  >  1023px
-// tablets				 576px  >   767px
-// phones			 	 350px  >   575px
-// small phones 		   ...	>   349px
+// tablets				 576px  >	767px
+// phones			 	 350px  >	575px
+// small phones 			...	>	349px
 // —————————————————————————————————————————————————————————————————
 
 $desktop-xl:		1800px;

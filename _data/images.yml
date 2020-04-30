@@ -117,43 +117,18 @@ clients:
     alt: Travel Ledger
     order: 13
 
-# partners section
-# in about.html page
-
-partners:
-  - url: energy-web
-    alt: Energy Web
-
-  - url: fintech-week
-    alt: Fintech Week
-
-  - url: innovate-finance
-    alt: Innovate Finance
-
-  - url: nnovate-uk
-    alt: Innovate UK
-
-  - url: microsoft
-    alt: Microsoft
-
-  - url: rocket-space
-    alt: Rocket Space
-
 # values section
 # in about.html page
 
 values:
   - url: direction
     alt: Platform agnostic
-    #description: We innovate and build for all blockchain platforms
 
   - url: binoculars
     alt: Future-proof
-    #description: We ensure the reusability of our products continuously
 
   - url: shield
     alt: Integrity
-    #description: We are open and honest in our collaboration with clients and partners
 
 # join section
 # in join.html page

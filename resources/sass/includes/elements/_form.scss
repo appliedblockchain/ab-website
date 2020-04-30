@@ -27,7 +27,7 @@
 
 	&__header {
 		width: 75%;
-		margin: 0 auto $integer*2 auto;
+		margin: 0 auto $integer-xl auto;
 	}
 	
 	&__content {
@@ -42,7 +42,7 @@
 		text-align: left;
 
 		@include responsive(max-width, $mobile-max) {
-			margin-bottom: $integer/2;
+			margin-bottom: $integer;
 		}
 
 		&.focused {
@@ -78,7 +78,7 @@
 		white-space: nowrap;
 		position: relative;
 		padding-left: $integer*0.75;
-		margin-bottom: $integer/2;
+		margin-bottom: $integer;
 	}
 
 	&__input {
@@ -93,7 +93,7 @@
 	}
 
 	&__button {
-		margin-top: $integer*2;
+		margin-top: $integer-xl;
 	}
 	
 	&__footer {
@@ -142,7 +142,7 @@
 	.form__dropdown {
 		@include calc(top, '100% +' $integer/2);
 		@include box-shadow($box-shadow-md);
-		@include border-radius($integer);
+		border-radius: $border-radius;
 		display: none;
 		position: absolute;
 		right: 0;
@@ -221,7 +221,7 @@
 
 		&:checked + .form__label:before {
 			border-color: $primary;
-			border-width: $integer/2;
+			border-width: $integer;
 		}
 	}
 
@@ -250,7 +250,7 @@
 	.form__input {
 
 		&:checked + .form__label:before {
-			border-width: $integer/2;
+			border-width: $integer;
 		}
 
 		&:checked + .form__label:after {
@@ -261,7 +261,7 @@
 	.form__label {
 
 		&:before {
-			@include border-radius($integer/4);
+			border-radius: $border-radius;
 		}
 
 		&:after {
@@ -284,7 +284,7 @@
     @include display-flex();
     @include align-items(center);
     @include flex-basis(0);
-    height: $integer*2;
+    height: $integer-xl;
 
 	& + & {
 		margin-left: $integer;

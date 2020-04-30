@@ -27,7 +27,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    padding: $integer*9 0 $integer*2 0;
+    padding: $integer*9 0 $integer-xl 0;
     @include responsive(max-width, $desktop-max) {
         padding-top: $integer*7;
     }
@@ -161,7 +161,7 @@
     // &__widget {
     //     background-color: transparent;
     //     padding: 0;
-    //     width: $integer*24;
+    //     width: $integer-xl4;
     //     @include responsive(max-width, $mobile-max) {
     //         display: none;
     //     }
@@ -232,7 +232,7 @@
             }
 
             .button {
-                margin-top: $integer*4;
+                margin-top: $integer-xxxl;
             }
         }
     }
@@ -246,11 +246,11 @@
     .video {
         @include box-shadow($box-shadow-sm);
         @include background(center center, cover);
-        @include border-radius($integer*2);
+        border-radius: $border-radius;
         height: 100%;
         @include responsive(max-width, $desktop-max) {
             height: $integer*18;
-            margin-top: $integer*2;
+            margin-top: $integer-xl;
         }
     }
 }
@@ -262,7 +262,7 @@
         @include display-flex();
         @include align-items(center);
         @include responsive(max-width, $desktop-lg-max) {
-            margin-bottom: $integer*2;
+            margin-bottom: $integer-xl;
         }
     }
 
@@ -300,8 +300,8 @@
 }
 
 .logo-media {
-    margin-left: -$integer*2;
-    margin-right: -$integer*2;
+    margin-left: -$integer-xl;
+    margin-right: -$integer-xl;
     @include responsive(max-width, $desktop-max) {
         margin-left: -$integer;
         margin-right: -$integer;
@@ -311,14 +311,14 @@
     &__item {
         position: relative;
         width: 25%;
-        padding: $integer $integer*2;
+        padding: $integer $integer-xl;
         @include responsive(max-width, $desktop-max) {
             padding-left: $integer;
             padding-right: $integer;
         }
         @include responsive(max-width, $tablet-max) {
-            padding-left: $integer*2;
-            padding-right: $integer*2;
+            padding-left: $integer-xl;
+            padding-right: $integer-xl;
             width: 50%;
         }
     }

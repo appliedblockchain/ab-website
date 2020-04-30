@@ -3,31 +3,27 @@
 // —————————————————————————————————————————————————————————————————
 // TABS
 // —————————————————————————————————————————————————————————————————
+// general
+// variants
+// —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
 
 .tab {
 
 	&__nav {
+		@include display-flex();
+		text-align: center;
+	}
 
-		.nav__button {
-			display: inline-block;
-			background-color: transparent;
+	&__button {
 
-			&.button--primary {
-				color: $black;
-			}
-
-			&--active {
-				
-				&.button--primary {
-					background-color: $primary;
-					color: $white;
-				}
-
-				&.button--primary-darken {
-					background-color: $primary-darken;
-					color: $white;
-				}
-			}
+		& + & {
+			margin-left: $integer-lg;
 		}
 	}
 
@@ -40,6 +36,56 @@
 
 		&:nth-child(1) {
 			display: block;
+		}
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// variants
+// —————————————————————————————————————————————————————————————————
+
+.tab {
+
+	&--leadership {
+		padding-bottom: $integer-xxxxl;
+
+		.tab {
+
+			&__item {
+				position: relative;
+				padding: $integer-xxxl*2 $page;
+		
+				&:before {
+					@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+					@include background-image(linear-gradient(to bottom, rgba($dark, 0.5), $dark));
+				}
+
+				.block {
+					width: 50%;
+					
+					> * {
+						position: relative;
+					}
+				}
+			}	
+
+			&__nav {
+				margin-top: -$integer-xxxl;
+				z-index: 1;
+			}
+		}
+		
+		.card__image {
+			@include transition($transition);
+			height: $integer-xxxxl;
+			width: $integer-xxxxl;
+			will-change: transform;
+	
+			&:hover {
+				@include transform(scale(1.05));
+			}
 		}
 	}
 }

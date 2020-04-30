@@ -7,7 +7,7 @@ background_color: dark
 
 {% if site.projects.size > 0 %}
 
-<section class="section section--alt section--dark">
+<section class="section section--dark">
     <div class="section__content portfolio portfolio--featured">
         {% for project in site.projects %}
         {% if project.tag contains 'featured' %}
@@ -61,7 +61,7 @@ background_color: dark
 
 {% else %}
 
-<section class="section section--alt section--dark">
+<section class="section section--dark">
     {% include containers/sections/header.html
         title = 'There are no project at the moment. Come back soon!'
     %}

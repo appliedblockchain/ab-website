@@ -49,8 +49,8 @@
 
 	&--icon {
 		padding: 0;
-		width: $integer*2;
-		height: $integer*2;
+		width: $integer-xl;
+		height: $integer-xl;
 	}
 
 	&--text {
@@ -167,8 +167,8 @@
 
 		&.button--icon {
 			padding: 0;
-			width: $integer*3;
-			height: $integer*3;
+			width: $integer-xxl;
+			height: $integer-xxl;
 		}
 	}
 
@@ -306,7 +306,7 @@
 	@include box-shadow($box-shadow-md);
 	will-change: bottom, transform;
     position: fixed;
-	bottom: -$integer*4;
+	bottom: -$integer-xxxl;
 	right: $col;
 
 	@include responsive-mobile-devices() {

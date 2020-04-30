@@ -4,9 +4,10 @@ title: Contact
 headline: Get in touch today!
 subtitle: Learn more about our blockchain solutions and how we can support you in implementing your project
 body: Send us a message and our team will be in touch
+background_color: white
 ---
 
-<section class="section section--alt">
+<section class="section section--white">
     {% include containers/sections/header.html
         title = 'I am a'
     %}
@@ -30,20 +31,22 @@ body: Send us a message and our team will be in touch
     </div>
 </section>
 
-<section class="section section--primary section--fullwidth office">
+<section class="section section--primary section--full">
     {% include containers/sections/header.html
         title = 'We are headquartered in London Bridge, and have offices in Porto'
     %}
-    <div class="section__content">
-        <div class="row">
-            <div class="col--md6 office__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
-                <p class="office__title lead">{{ site.address-london }}</p>
+    <div class="section__content section__content--2">
+        <div class="block background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
+            <p class="block__title lead">{{ site.address-london }}</p>
+            <div class="block__content">
                 <a href="{{ site.map-london }}" target="_blank" class="button button--primary-darken button--animate fas fa-directions">
                     <p class="button__inner">Get directions</p>
                 </a>
             </div>
-            <div class="col--md6 office__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
-                <p class="office__title lead">{{ site.address-porto }}</p>
+        </div>
+        <div class="block background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
+            <p class="block__title lead">{{ site.address-porto }}</p>
+            <div class="block__content">
                 <a href="{{ site.map-porto }}" target="_blank" class="button button--primary-lighten button--animate fas fa-directions">
                     <p class="button__inner">Get directions</p>
                 </a>

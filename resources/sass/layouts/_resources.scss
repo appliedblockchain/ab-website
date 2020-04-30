@@ -22,7 +22,7 @@
 
     &__header {
         position: relative;
-        padding: $integer*2;
+        padding: $integer-xl;
         &:before {
             @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
             background-color: rgba($white, 0.8);
@@ -33,7 +33,7 @@
         }
 
         .lead {
-            margin-bottom: $integer/2;
+            margin-bottom: $integer;
         }
     }
 

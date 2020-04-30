@@ -13,7 +13,7 @@
     .section {
 
         &--header {
-            padding-bottom: $integer*3;
+            padding-bottom: $integer-xxl;
         }
         
         &__content {
@@ -32,12 +32,12 @@
     &__item {
 
         & + & {
-            margin-top: $integer*2;
+            margin-top: $integer-xl;
         }
     }
     
     &__title {
-        margin-bottom: $integer/2;
+        margin-bottom: $integer;
     }
     
     &__button {

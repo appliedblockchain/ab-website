@@ -14,28 +14,46 @@
 
 @include responsive(max-width, $desktop-lg-max) {
 
-    .page__header {
-		padding-right: 12.5vw;
-		padding-left: 12.5vw;
+    .page__header,
+    .section--full .section__header {
+		padding-right: $page;
+		padding-left: $page;
+    }
+    
+    .section__header {
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
 
 @include responsive(max-width, $desktop-max) {
 
     .page__header,
-	.section {
+    .section,
+    .section--full .section__header {
 		padding-right: 10vw;
 		padding-left: 10vw;
-	}
+    }
+
+    .section__alt {
+        padding-right: 5vw;
+		padding-left: 5vw;
+    }
 }
 
 @include responsive(max-width, $tablet-max) {
 
     .page__header,
-	.section {
-		padding-right: 6.25vw;
-		padding-left: 6.25vw;
+    .section,
+    .section--full .section__header {
+		padding-right: $page/2;
+		padding-left: $page/2;
 	}
+
+    .section__alt {
+        padding-right: $page/4;
+		padding-left: $page/4;
+    }
 }
 
 @include responsive(max-width, $mobile-max) {
@@ -59,7 +77,9 @@
 	}
 
     .page__header,
-	.section {
+    .section,
+    .section--full .section__header,
+    .section__alt {
 		padding-right: $integer-md*2;
 		padding-left: $integer-md*2;
 	}

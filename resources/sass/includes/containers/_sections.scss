@@ -63,13 +63,6 @@
 		}
 	}
 
-	&__filter {
-        @include display-flex();
-		@include justify-content(space-evenly);
-		@include flex-wrap(wrap);
-		margin-bottom: $integer-xl;
-	}
-
 	&__link {
 		margin-top: $integer-xxxl;
 

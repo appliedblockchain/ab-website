@@ -24,7 +24,6 @@
 	@include display-flex(inline-flex !important);
 	@include justify-content(center);
 	@include align-items(center);
-	@include align-self(center);
 	will-change: background-color, transform;
 	cursor: pointer;
 	padding: 12px 24px;

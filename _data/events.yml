@@ -1,58 +1,50 @@
-# events list
-# in events.html pagehttps://www.atpco.net/events/blockchain-travel-summit
 # ordered from most to least recent
-
-# event spreadsheet link
-# https://docs.google.com/spreadsheets/d/123Tbe-gan5LFYsunyEzH3gDyje6Nv613n8Y_1mK-MUE/edit?usp=sharing
 
 # - name: 
 #   image: 
-#   date-from: [optional]
-#   date: 
-#   location: 
-#   directions: 
-#   link-title: [optional – to override button title]
+#   date:
+#   date_to: [if relevant]
+#   location: [if relevant]
+#   directions: [if relevant]
+#   type: internal, external
+#   webinar_id: [link to recording form page]
 #   link: 
-
 
 - name: 'Webinar: Blockchains for Business'
   image: webinar-banner-b
   date: '2020-05-07'
-  link-title: Register
+  type: internal
+  webinar_id: blockchains
   link: https://zoom.us/webinar/register/WN_r1OAtkhwRvmJ_dy7whJydQ
-  type: webinar
-  id: blockchains
 
 - name: 'Webinar: Privacy Enhancing Technologies for Business'
   image: webinar-banner-pet
   date: '2020-04-30'
-  link-title: Register
+  type: internal
+  webinar_id: privacy-enhancing-technologies
   link: https://zoom.us/webinar/register/WN_Bns5FfQpS1SLEqZHIxyXjA
-  type: webinar
-  id: privacy-enhancing-technologies
 
 - name: 'Webinar: Zero Knowledge Proofs for Business'
   image: webinar-banner-zkp
   date: '2020-04-23'
-  link-title: Register
+  type: internal
+  webinar_id: zero-knowledge-proofs
   link: https://zoom.us/webinar/register/WN_ex2LDfNOS2mPVVCSxoROng
-  type: webinar
-  id: zero-knowledge-proofs
 
 - name: 'Applied Blockchain Zero-Knowledge Proofs Drinks Reception'
+  type: internal
   image: zkp-drinks
   date: '2019-11-14'
   location: Level39, London, UK
   directions: https://www.google.com/maps/place/Level39/@51.504981,-0.019459,17z/data=!3m1!4b1!4m5!3m4!1s0x487602b766104115:0x2936fbc8438dd3a4!8m2!3d51.504981!4d-0.019459
-  link-title: Register
   link: https://www.eventbrite.co.uk/e/applied-blockchain-zero-knowledge-proofs-drinks-reception-tickets-73574953667
 
 - name: 'Zero Knowledge Proofs for Business: Sharing Data without Revealing It'
+  type: internal
   image: zkp-workshop
   date: '2019-11-14'
   location: Level39, London, UK
   directions: https://www.google.com/maps/place/Level39/@51.504981,-0.019459,17z/data=!3m1!4b1!4m5!3m4!1s0x487602b766104115:0x2936fbc8438dd3a4!8m2!3d51.504981!4d-0.019459
-  link-title: Early bird registration
   link: https://www.eventbrite.co.uk/e/zero-knowledge-proofs-for-business-sharing-data-without-revealing-it-october-2019-tickets-68471290473
 
 - name: 'Lecture: Blockchain Applications in the Real World'
@@ -70,8 +62,8 @@
 
 - name: CordaCon
   image: cordacon
-  date-from: '2019-10-23'
-  date: '2019-10-24'
+  date: '2019-10-23'
+  date_to: '2019-10-24'
   location: etc.venues, London, UK
   directions: https://www.google.com/maps/place/etc.venues+133+Houndsditch/@51.5157826,-0.0880208,15z/data=!4m8!1m2!2m1!1setc.venues+133+Houndsditch+London+EC3A+7AH+United+Kingdom!3m4!1s0x48761da7882e4c13:0xdc4a1ab973a3fbd7!8m2!3d51.515187!4d-0.0782798
   link: https://www.cordacon.com/events/cordacon-london-2019/event-summary-48e259ee8ab5479ba457a3deed777252.aspx?5S,M3,48e259ee-8ab5-479b-a457-a3deed777252=
@@ -85,16 +77,16 @@
 
 - name: Internet of Energy
   image: internet-of-energy
-  date-from: '2019-09-03'
-  date: '2019-09-04'
+  date: '2019-09-03'
+  date_to: '2019-09-04'
   location: Meliá Berlin, Berlin, Germany
   directions: https://www.google.co.uk/maps/place/Meli%C3%A1+Berlin/@52.52144,13.3883,15z/data=!4m5!3m4!1s0x0:0xb56f0bf928f6ed00!8m2!3d52.52144!4d13.3883
   link: https://ioe-de.internetofbusiness.com/
 
 - name: Event Horizon
   image: event-horizon
-  date-from: '2019-06-19'
-  date: '2019-06-20'
+  date: '2019-06-19'
+  date_to: '2019-06-20'
   location: Kraftwerk, Berlin, Germany
   directions: https://www.google.com/maps/place/Kraftwerk+Berlin/@52.5104716,13.4202275,16z/data=!4m5!3m4!1s0x0:0xd0bedb2a54979b86!8m2!3d52.5105434!4d13.4203241
   link: https://eventhorizonsummit.com/
@@ -122,8 +114,8 @@
 
 - name: Consortia 2019
   image: consortia-2019
-  date-from: '2019-05-21'
-  date: '2019-05-22'
+  date: '2019-05-21'
+  date_to: '2019-05-22'
   location: Hilton London Metropole, London, UK
   directions: https://www.google.co.uk/maps/place/Hilton+London+Metropole/@51.5193474,-0.171651,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ab40e13c71b:0xf53163b89efae942!8m2!3d51.5193441!4d-0.1694623
   link: https://bcrpub.com/events/consortia-2019
@@ -145,7 +137,7 @@
 - name: The 2nd ZKProof Workshop 2019
   image: the-2nd-zkproof-workshop-2019
   date: '2019-04-12'
-  date-from: '2019-04-10'
+  date: '2019-04-10'
   location: DoubleTree Hotel, Berkeley, CA, USA
   directions: https://www.google.com/maps?ll=37.869243,-122.314284&z=14&t=m&hl=fr-FR&gl=IL&mapclient=embed&cid=13788427899024276120
   link: https://zkproof.org/workshop2/main.html
@@ -165,8 +157,8 @@
 
 - name: Blockchain Technology World
   image: blockchain-technology-world
-  date-from: '2019-03-12'
-  date: '2019-03-13'
+  date: '2019-03-12'
+  date_to: '2019-03-13'
   location: ExCel London, London, UK
   directions: https://www.google.com/maps?ll=51.50846,0.029846&z=16&t=m&hl=fr-FR&gl=GB&mapclient=embed&cid=724487964194221767
   link: https://www.blockchaintechnologyworld.com/
@@ -180,16 +172,16 @@
 
 - name: Mobile World Congress
   image: mobile-world-congress
-  date-from: '2019-02-25'
-  date: '2019-02-28'
+  date: '2019-02-25'
+  date_to: '2019-02-28'
   location: Fira Gran Via, Barcelona, Spain
   directions: https://www.google.com/maps/place/Fira+Barcelona+Gran+Via/@41.3578122,2.1251351,15.37z/data=!4m5!3m4!1s0x0:0xb0d0cc966887d153!8m2!3d41.35457!4d2.1280828
   link: https://www.mwcbarcelona.com/
 
 - name: The Global Fintech & Blockchain Conference Hackathon
   image: global-fintech-blockchain-conference
-  date-from: '2019-02-23'
-  date: '2019-02-24'
+  date: '2019-02-23'
+  date_to: '2019-02-24'
   location: Imperial College London, London, UK
   directions: https://www.google.com/maps/place/Imperial+College+London/@51.4987997,-0.1748772,15z/data=!4m2!3m1!1s0x0:0x31911b371c692e86?ved=2ahUKEwih0NKI36TgAhWITBUIHQP_CVIQ_BIwGHoECAIQCA
   link: https://globalfintechandblockchainconference.com/hackathon/
@@ -210,8 +202,8 @@
 
 - name: Energy Trading Conference
   image: energy-trading-conference
-  date-from: '2018-10-10'
-  date: '2018-10-12'
+  date: '2018-10-10'
+  date_to: '2018-10-12'
   location: Central Hall Westminster, London, UK
   directions: https://www.google.co.uk/maps/place/Central+Hall+Westminster/@51.5000559,-0.1296481,15z/data=!4m5!3m4!1s0x0:0xb32c3c182d15cfaa!8m2!3d51.5000559!4d-0.1296481
   link: https://www.etotsummit.com/
@@ -232,8 +224,8 @@
 
 - name: London FinTech Week
   image: london-fintech-week
-  date-from: '2018-07-06'
-  date: '2018-07-13'
+  date: '2018-07-06'
+  date_to: '2018-07-13'
   location: London, UK
   link: https://www.fintechweek.com/
 
@@ -245,7 +237,7 @@
 
 - name: BlockShow Europe
   image: blockShow-europe
-  date-from: '2018-05-28'
-  date: '2018-05-29'
+  date: '2018-05-28'
+  date_to: '2018-05-29'
   location: Berlin, Germany
   link: https://blockshoweurope.com/

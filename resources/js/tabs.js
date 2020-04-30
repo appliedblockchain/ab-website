@@ -43,12 +43,12 @@ $(".jobs.tab--vertical .tab__nav a").click(function(event) {
 
 // events
 
-$(".event.tab--vertical .tab__nav a").click(function(event) {
+$(".tab--events .tab__nav a").click(function(event) {
 	event.preventDefault();
-	$(this).addClass("tab__button--active");
-	$(this).siblings().removeClass("tab__button--active");
+	$(this).removeClass("button--primary-lighten");
+	$(this).siblings().addClass("button--primary-lighten");
 	var tab = $(this).attr("href");
-	$(".event.tab--vertical .tab__item").not(tab).css("display", "none");
+	$(".tab--events .tab__item").not(tab).css("display", "none");
 	$(tab).fadeIn(400);
 });
 

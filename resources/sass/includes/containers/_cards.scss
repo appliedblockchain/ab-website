@@ -5,6 +5,8 @@
 // —————————————————————————————————————————————————————————————————
 // general
 // sizes
+// orientation
+// special
 // —————————————————————————————————————————————————————————————————
 
 
@@ -14,6 +16,15 @@
 // —————————————————————————————————————————————————————————————————
 
 .card {
+    @include display-flex();
+    @include flex-direction(column);
+
+    &__label {
+
+        & + .card__title {
+            margin-top: $integer-md;
+        }
+    }
 
     &__title {
 
@@ -23,7 +34,6 @@
     }
     
     &__image {
-        border-radius: $border-radius;
         max-width: $integer-xxxxl;
         
         & + .card__title {
@@ -65,6 +75,80 @@
             &__meta {
                 margin-top: $integer;
             }
+        }
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// orientation
+// —————————————————————————————————————————————————————————————————
+
+.card {
+
+    &--landscape {
+        @include flex-direction(row);
+        text-align: left;
+
+        .card {
+            
+            &__image {
+                @include flex-basis(33.333%);
+                max-width: none;
+
+                @include responsive(max-width, $mobile-max) {
+                    display: none;
+                }
+            }
+
+            &__content {
+                @include display-flex();
+                @include justify-content(space-between);
+                @include flex-basis(66.666%);
+                padding: $integer-xl;
+
+                @include responsive(max-width, $tablet-max) {
+                    @include flex-direction(column);
+                }
+        
+                @include responsive(max-width, $mobile-max) {
+                    @include flex-basis(100%);
+                }
+            }
+
+            &__actions {
+                @include display-flex();
+                @include flex-direction(column); 
+                @include align-items(flex-end);
+
+                .button + .button {
+                    margin-top: $integer;
+                }
+            }
+        }
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// special
+// —————————————————————————————————————————————————————————————————
+
+#about {
+
+    .card__image {
+        border-radius: $border-radius;
+    }
+}
+
+#events {
+
+    .card {
+
+        & + .card {
+            border-top: 1px solid $mediumgrey;
         }
     }
 }

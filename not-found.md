@@ -1,5 +1,5 @@
 ---
 layout: not-found
 title: 404 - Page Not Found
-permalink: /404
+permalink: /404.html 
 ---

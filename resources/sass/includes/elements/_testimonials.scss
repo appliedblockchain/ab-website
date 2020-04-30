@@ -19,17 +19,17 @@
         width: $integer-xxxl;
         height: $integer-xxxl;
 
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             width: $integer*8;
             height: $integer*8;
         }
 
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             width: $integer-xl;
             height: $integer-xl;
         }
 
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             display: none;
         }
     }
@@ -39,11 +39,11 @@
         margin-left: $integer*4;
         position: relative;
 
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             margin-left: $integer*2;
         }    
 
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             margin-left: 0;
         }    
     }

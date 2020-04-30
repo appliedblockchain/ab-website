@@ -28,7 +28,7 @@
 
                 > * {
                     @include flex-basis(50%);
-                    @include responsive(max-width, $break-desktop-max) {
+                    @include responsive(max-width, $desktop-max) {
                         @include flex-basis(100%);
                     }
                 }
@@ -49,7 +49,7 @@
                 width: 100%;
                 margin: -$integer 0;
                 text-align: center;
-                @include responsive(max-width, $break-desktop-max) {
+                @include responsive(max-width, $desktop-max) {
                     display: none;
                 }
 
@@ -87,7 +87,7 @@
 
         .portfolio__item {
             width: 33.333% !important;
-            @include responsive(max-width, $break-tablets-max) {
+            @include responsive(max-width, $tablet-max) {
                 width: 100% !important;
             }
         }
@@ -131,7 +131,7 @@
 //            }    
 //        }
 
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             width: 100% !important;
         }
 
@@ -239,10 +239,10 @@
         position: relative;
         width: 25%;
         padding: $integer/2;
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             width: 50%;
         }
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             width: 100%;
         }
     }
@@ -271,10 +271,10 @@
         padding: $integer;
         background-color: $white;
         text-align: left;
-        @include responsive(min-width, $break-large-desktop-min) {
+        @include responsive(min-width, $desktop-lg-min) {
             padding: $integer*2;
         }
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             padding: $integer*2;
         }
 
@@ -285,7 +285,7 @@
             top: -$integer;
             left: -$integer;
             z-index: 2;
-            @include responsive(max-width, $break-phones-max) {
+            @include responsive(max-width, $mobile-max) {
                 @include calc(width, '100% - '$integer);
                 @include calc(height, '100% - '$integer);
                 top: $integer/2;

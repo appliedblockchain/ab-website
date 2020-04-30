@@ -23,7 +23,7 @@
 
     &__image {
         @include flex-basis(33.333%);
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             display: none;
         }
     }
@@ -33,10 +33,10 @@
         @include justify-content(space-between);
         @include flex-basis(66.666%);
         text-align: left;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             @include flex-direction(column);
         }
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             @include flex-basis(100%);
         }
     }
@@ -48,7 +48,7 @@
     &__actions {
         @include display-flex();
         @include flex-direction(column);
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             @include flex-direction(row);
             margin-top: 10px;
         }

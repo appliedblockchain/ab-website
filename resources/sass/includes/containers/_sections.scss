@@ -22,40 +22,15 @@
 	padding-left: 12.5vw;
 	padding-right: 12.5vw;
 
-	@include responsive(max-width, $break-tablets-max) {
-		padding-left: $col;
-		padding-right: $col;
-	}
-
-	@include responsive(max-width, $break-tablets-max) {
-		padding-top: $integer*4;
-		padding-bottom: $integer*4;
-	}
-
 	&__header {
-		@include display-flex();
-		@include flex-direction(column);
-		@include align-items(center);
-		margin-bottom: $integer*4;
-
-	
-		@include responsive(max-width, $break-tablets-max) {
-			margin-bottom: $integer*3;
-		}
 	}
 
 	&__comment {
-		margin-bottom: $integer*2;
-		width: 100%;
 	}
 
-	&__title, &__subtitle, &__desc {
-		width: 75%;
-
-	
-		@include responsive(max-width, $break-desktop-max) {
-			width: 100%;
-		}
+	&__title, 
+	&__subtitle, 
+	&__desc {
 
 		.section__header--ap & {
 			width: 100%;
@@ -63,11 +38,9 @@
 	}
 	
 	&__subtitle {
-		margin-top: $integer;
 	}
 
 	&__desc {
-		margin-top: $integer;
 	}
 
 	&__subheader {
@@ -109,57 +82,11 @@
 
 .section {
 	
-	&--col {
-		padding-left: $col;
-		padding-right: $col;
-
-		.section__header {
-			padding-right: $col;
-			padding-left: $col;
-
-		
-			@include responsive(max-width, $break-tablets-max) {
-				padding-right: 0;
-				padding-left: 0;
-			}
-		}
-
-		> .block {
-			padding-right: $col;
-			padding-left: $col;
-		}
-	}
-
-	&--alt {
-		padding-top: 0;
-	}
-
-	&--fullwidth {
-		padding-left: $integer/2;
-		padding-right: $integer/2;
-
-		.section__header {
-			padding-right: $col*2;
-			padding-left: $col*2;
-
-		
-			@include responsive(max-width, $break-tablets-max) {
-				padding-right: 0;
-				padding-left: 0;
-			}
-		}
-	}
-	
-	&--nopadding {
-		padding: 0;
-	}
-
 	&--margin-minus {
 		margin-top: -$integer-xxxl;
 		padding-top: $integer-xxxl;
-
 	
-		@include responsive(max-width, $break-tablets-max) {
+		@include responsive(max-width, $tablet-max) {
 			margin-top: -$integer*8;
 			padding-top: $integer*8;
 		}
@@ -174,7 +101,14 @@
 
 .section {
 
-	&--primary, &--dark {
+	&--primary 	{ background-color: $primary; }
+	&--dark 	{ background-color: $dark; }
+	&--grey 	{ background-color: $lightgrey; }
+	&--white 	{ background-color: $white; }
+
+	&--primary, 
+	&--dark 	{ 
+		color: $white; 
 
 		.form__input {
 			color: $white;
@@ -182,25 +116,12 @@
 	}
 
 	&--primary {
-		background-color: $primary;
-		color: $white;
 
-		.title, .lead, .label {
+		.title, 
+		.lead, 
+		.label {
 			color: $white;
 		}
-	}
-
-	&--dark {
-		background-color: $dark;
-		color: $white;
-	}
-
-	&--grey {
-		background-color: $lightgrey;
-	}
-
-	&--white {
-		background-color: $white;
 	}
 }
 
@@ -212,16 +133,20 @@
 
 .section {
 
-	&--left {
-		@include align-items(flex-start);
-		text-align: left;
+	&--left,
+	&--right {
 
 		[class*="coloffset--"] .section {
-
+	
 			&__title, &__subtitle, &__desc {
 				width: 100%;
 			}
 		}
+	}	
+
+	&--left {
+		@include align-items(flex-start);
+		text-align: left;
 
 		.section {
 
@@ -234,13 +159,6 @@
 	&--right {
 		@include align-items(flex-end);
 		text-align: right;
-
-		[class*="coloffset--"] .section {
-
-			&__title, &__subtitle, &__desc {
-				width: 100%;
-			}
-		}
 
 		.section {
 	

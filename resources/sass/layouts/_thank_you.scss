@@ -42,14 +42,14 @@
     
     &__button {
         @include display-flex();
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             @include flex-direction(column);
 
             .button + .button {
                 margin-top: $integer/2 !important;
             }
         }
-        @include responsive(min-width, $break-phones-min) {
+        @include responsive(min-width, $mobile-min) {
             
             .button {
 

@@ -15,7 +15,7 @@
     }
 
     &__column:nth-child(2) {
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             margin-top: $integer*3;
         }
     }

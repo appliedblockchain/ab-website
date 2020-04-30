@@ -28,10 +28,10 @@
     &__button {
         padding: 0 5%;
         width: 33.333%;
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             padding: 0 $integer/2;
         }
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             padding-left: $integer/4;
             padding-right: $integer/4;
         }
@@ -53,10 +53,10 @@
             background-color: darken($primary, 6%);
         }
 
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $desktop-lg-max) {
             padding: $integer;
         }
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             padding: $integer/2;
         }
     }
@@ -64,7 +64,7 @@
     &__item {
         border-top: 2px solid rgba($white, 0.2);
         padding-top: $integer*2;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             border-top: 0;
             padding-top: 0;
         }
@@ -72,13 +72,13 @@
 
     &__title {
         margin-bottom: $integer;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             display: none;
         }
 
         &.alt {
             display: block;
-            @include responsive(min-width, $break-tablets-min) {
+            @include responsive(min-width, $tablet-min) {
                 display: none;
             }
         }
@@ -88,10 +88,10 @@
         width: 50%;
         text-align: center;
         margin: 0 auto;
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $desktop-lg-max) {
             width: 66.666%;
         }
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             width: 100%;
         }
     }
@@ -139,7 +139,7 @@
     .block {
         padding: $integer*4;
         width: 100%;
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             padding: $integer*2;
         }
     }
@@ -157,16 +157,16 @@
         line-height: 0.9;
         width: $integer*4;
         margin-right: $integer*4;
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $desktop-lg-max) {
             width: $integer*2;
             margin-right: $integer*2;
         }
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             font-size: 3rem;
             width: $integer;
             margin-right: $integer*2;
         }
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             position: absolute;
             font-size: 2rem;
         }
@@ -174,17 +174,17 @@
 
     &__content {
         @include flex-basis(66.666%);
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $desktop-lg-max) {
             @include flex-basis(80%);
         }
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             @include flex-basis(100%);
         }
     }
 
     &__title {
         margin-bottom: $integer;
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             padding-left: $integer*2;
         }
     }
@@ -192,16 +192,16 @@
     &__icon {
         @include flex-basis(33.333%);
         padding-left: $integer*4;
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $desktop-lg-max) {
             @include flex-basis(20%);
             padding-left: $integer*2;
         }
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             display: none;
         }
     }
 
-    @include responsive(max-width, $break-desktop-max) {
+    @include responsive(max-width, $desktop-max) {
 
         .tab {
 

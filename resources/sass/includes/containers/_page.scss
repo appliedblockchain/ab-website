@@ -77,7 +77,7 @@
 
 	&__contact {
 
-		@include responsive(max-width, $break-phones-max) {
+		@include responsive(max-width, $mobile-max) {
 			display: none !important;
 		}
 	}
@@ -100,7 +100,7 @@
 		padding: 0  $col*2 $integer*4 $col*2;
 		pointer-events: initial;
 
-		@include responsive(max-width, $break-tablets-max) {
+		@include responsive(max-width, $tablet-max) {
 			padding: 0 $col $integer-xl $col;
 		}
 	}
@@ -264,13 +264,25 @@
 	min-height: 100vh;
 
 	&__header {
+		background-position: top center !important;
 		padding-top: $integer-xxxl+$integer-xxxxl;
+		padding-right: 25vw;
 		padding-bottom: $integer-xxxl;
+		padding-left: 25vw;
 		text-align: center;
-	}
 
-	&__title {
+		&:before {		
+			@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+		}
+	
+		&.section--primary { &:before { @include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary)); } }
+		&.section--grey { &:before { @include background-image(linear-gradient(to bottom, rgba($lightgrey, 0.6), $lightgrey)); } }
+		&.section--dark { &:before { @include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark)); } }
 
+		> * {
+			// display elements on top of gradient
+			position: relative;
+		}
 	}
 
 	&__subtitle {
@@ -292,32 +304,6 @@
 	}
 }
 
-.section--header {
-	background-position: top center !important;
-
-	&:before {		
-		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-	}
-
-	&.section--primary {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary));
-		}
-	}
-
-	&.section--grey {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($lightgrey, 0.6), $lightgrey));
-		}
-	}
-
-	&.section--dark {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark));
-		}
-	}
-}
-
 
 
 // —————————————————————————————————————————————————————————————————
@@ -334,7 +320,7 @@
 	&__item {
 		margin-bottom: $integer*3;
 
-		@include responsive(max-width, $break-phones-max) {
+		@include responsive(max-width, $mobile-max) {
 			margin-bottom: $integer*2;
 		}
 	}
@@ -344,7 +330,7 @@
 		@include flex-direction(column);
 		@include justify-content(space-between);
 
-		@include responsive(max-width, $break-desktop-max) {
+		@include responsive(max-width, $desktop-max) {
 			@include flex-direction(row);
 			@include justify-content(flex-start);
 
@@ -354,7 +340,7 @@
 			}
 		}
 
-		@include responsive(max-width, $break-desktop-max) {
+		@include responsive(max-width, $desktop-max) {
 			@include flex-direction(column);
 
 			.logo {

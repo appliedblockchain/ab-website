@@ -23,7 +23,7 @@ html, body {
 	font-weight: $font-light;
 	color: $black;
 
-	@include responsive(min-width, $break-xlarge-desktop) {
+	@include responsive(min-width, $desktop-xl) {
 		font-size: 20px;
 	}
 }
@@ -32,11 +32,11 @@ html, body {
 	@include fontSize(3, $font-black, normal);
 	text-transform: uppercase;
 
-	@include responsive(max-width, $break-tablets-max) {
+	@include responsive(max-width, $tablet-max) {
 		font-size: 2.5rem;
 	}
 
-	@include responsive(max-width, $break-phones-max) {
+	@include responsive(max-width, $mobile-max) {
 		font-size: 2rem;
 	}
 }
@@ -45,11 +45,11 @@ html, body {
 	@include fontSize(2.5, $font-bold, normal);	
 	color: $primary;
 
-	@include responsive(max-width, $break-tablets-max) {
+	@include responsive(max-width, $tablet-max) {
 		font-size: 2rem;
 	}
 
-	@include responsive(max-width, $break-phones-max) {
+	@include responsive(max-width, $mobile-max) {
 		font-size: 1.8rem;
 	}
 }
@@ -57,7 +57,7 @@ html, body {
 .subtitle {
 	@include fontSize(1.8, $font-bold, normal);
 
-	@include responsive(max-width, $break-phones-max) {
+	@include responsive(max-width, $mobile-max) {
 		font-size: 1.5rem;
 	}
 }
@@ -70,7 +70,7 @@ html, body {
 .quote, .post__quote {
 	@include fontSize(1.5, $font-light, normal);
 
-	@include responsive(max-width, $break-tablets-max) {
+	@include responsive(max-width, $tablet-max) {
 		font-size: 1.25rem;
 	}
 }
@@ -146,7 +146,7 @@ html, body {
 		@include column-count($i);
 		@include column-gap(2rem);
 	
-		@include responsive(max-width, $break-tablets-max) {
+		@include responsive(max-width, $tablet-max) {
 			@include column-count(1);
 		}
 	}

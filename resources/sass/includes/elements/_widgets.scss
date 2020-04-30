@@ -118,7 +118,7 @@
         text-align: left;
         color: $white;
 
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             @include border-top-right-radius($integer);
             @include border-bottom-right-radius($integer);
             position: static;
@@ -144,7 +144,7 @@
                 background-color: $primary-darken;
                 padding: $integer;
 
-                @include responsive(max-width, $break-phones-max) {
+                @include responsive(max-width, $mobile-max) {
                     @include border-top-left-radius($integer);
                     @include border-top-right-radius($integer);
                     @include flex-direction(column);
@@ -161,7 +161,7 @@
                 @include flex-direction(row);
                 padding: $integer;
 
-                @include responsive(max-width, $break-phones-max) {
+                @include responsive(max-width, $mobile-max) {
                     font-size: 0.8rem;
                 }
 
@@ -174,7 +174,7 @@
                 width: $integer*3;
                 margin-right: $integer;
 
-                @include responsive(max-width, $break-phones-max) {
+                @include responsive(max-width, $mobile-max) {
                     display: none;
                 }
             }
@@ -220,7 +220,7 @@
     opacity: 1;
     display: none;
 
-    @include responsive(max-width, $break-phones-max) {
+    @include responsive(max-width, $mobile-max) {
         @include justify-content(flex-start);
         @include flex-wrap(wrap);
         padding-left: $col;
@@ -238,7 +238,7 @@
     &__text {
         padding-right: $integer;
 
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             padding-right: 0;
             margin-bottom: $integer/2;
         }

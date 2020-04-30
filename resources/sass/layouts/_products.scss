@@ -9,7 +9,7 @@
 */
 
 .products-intro__image {
-    @include responsive(max-width, $break-desktop-max) {
+    @include responsive(max-width, $desktop-max) {
         display: none;
     }
 }
@@ -18,10 +18,10 @@
 
     &__intro {
         @include background(85% top, 80%);
-        @include responsive(min-width, $break-large-desktop-min) {
+        @include responsive(min-width, $desktop-lg-min) {
             @include background(85% 40%, 70%);
         }
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             background-image: none !important;
             text-align: center;
         }
@@ -31,14 +31,14 @@
         }
 
         img {
-            @include responsive(max-width, $break-tablets-max) {
+            @include responsive(max-width, $tablet-max) {
                 width: $integer*7;
                 margin-top: -$integer*7.5;
             }
         }
 
         .button {
-            @include responsive(max-width, $break-tablets-max) {
+            @include responsive(max-width, $tablet-max) {
                 display: block !important;
                 margin-bottom: $integer/2;
             }
@@ -49,16 +49,16 @@
         @include display-flex();
         padding: $integer/2;
         width: 25%;
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             width: 50%;
         }
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             width: 100%;
         }
 
         &:nth-child(-n+2) {
             width: 50%;
-            @include responsive(max-width, $break-phones-max) {
+            @include responsive(max-width, $mobile-max) {
                 width: 100%;
             }
         }

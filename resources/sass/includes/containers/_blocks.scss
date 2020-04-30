@@ -19,13 +19,13 @@
 	background-color: $white;
 	padding: $integer*2;
 	color: $black;
-	@include responsive(max-width, $break-tablets-max) {
+	@include responsive(max-width, $tablet-max) {
 		padding: $integer;
 	}
 
 	&__content {
 		padding: $integer*2;
-		@include responsive(max-width, $break-tablets-max) {
+		@include responsive(max-width, $tablet-max) {
 			padding: $integer;
 		}
 	}

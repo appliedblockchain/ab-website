@@ -11,7 +11,7 @@
 #node-hosting {
 
     .ewf {
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             text-align: center;
 
             &__image {

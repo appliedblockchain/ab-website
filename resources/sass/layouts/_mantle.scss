@@ -16,7 +16,7 @@
     }
 
     &__diagram {
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             margin-top: $integer*2;
         }
     }

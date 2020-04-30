@@ -29,7 +29,7 @@
     }
     
     &__button {
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             display: none !important;
         }
     }

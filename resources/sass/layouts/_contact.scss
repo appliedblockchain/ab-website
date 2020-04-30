@@ -43,7 +43,7 @@
             }
         }
 
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             padding-right: $col*2 !important;
             padding-left: $col*2 !important;
         }

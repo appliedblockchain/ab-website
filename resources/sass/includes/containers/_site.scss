@@ -70,28 +70,28 @@ html, body {
 	.coloffset--#{$i} 			{ margin-left: $i*$col; }
 }
 
-@include responsive(min-width, $break-phones-min) {
+@include responsive(min-width, $mobile-min) {
 	@for $i from 1 through 12 {
 		.col--sm#{$i} 			{ width: $i*$col; }
 		.coloffset--sm#{$i} 	{ margin-left: $i*$col; }
 	}
 }
 
-@include responsive(min-width, $break-tablets-min) {
+@include responsive(min-width, $tablet-min) {
 	@for $i from 1 through 12 {
 		.col--md#{$i} 			{ width: $i*$col; }
 		.coloffset--md#{$i} 	{ margin-left: $i*$col; }
 	}
 }
 
-@include responsive(min-width, $break-desktop-min) {
+@include responsive(min-width, $desktop-min) {
 	@for $i from 1 through 12 {
 		.col--lg#{$i} 			{ width: $i*$col; }
 		.coloffset--lg#{$i} 	{ margin-left: $i*$col; }
 	}
 }
 
-@include responsive(min-width, $break-large-desktop-min) {
+@include responsive(min-width, $desktop-lg-min) {
 	@for $i from 1 through 12 {
 		.col--xl#{$i} 			{ width: $i*$col; }
 		.coloffset--xl#{$i} 	{ margin-left: $i*$col; }
@@ -105,28 +105,28 @@ html, body {
 	.colaltoffset--#{$i} 		{ margin-left: $i*$col-footer; }
 }
 
-@include responsive(min-width, $break-phones-min) {
+@include responsive(min-width, $mobile-min) {
 	@for $i from 1 through 15 {
 		.colalt--sm#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--sm#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
-@include responsive(min-width, $break-tablets-min) {
+@include responsive(min-width, $tablet-min) {
 	@for $i from 1 through 15 {
 		.colalt--md#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--md#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
-@include responsive(min-width, $break-desktop-min) {
+@include responsive(min-width, $desktop-min) {
 	@for $i from 1 through 15 {
 		.colalt--lg#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
-@include responsive(min-width, $break-large-desktop-min) {
+@include responsive(min-width, $desktop-lg-min) {
 	@for $i from 1 through 15 {
 		.colalt--xl#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
@@ -237,16 +237,16 @@ li {
 
 .hide {
 
-	&--large-desktop { @include responsive(max-width, $break-desktop-max) { display: none !important; } }
-	&--desktop { @include responsive(max-width, $break-desktop-max) { display: none !important; } }
-	&--tablets { @include responsive(max-width, $break-tablets-max) { display: none !important; } }
-	&--phones { @include responsive(max-width, $break-phones-max) { display: none !important; } }
+	&--large-desktop { @include responsive(max-width, $desktop-max) { display: none !important; } }
+	&--desktop { @include responsive(max-width, $desktop-max) { display: none !important; } }
+	&--tablets { @include responsive(max-width, $tablet-max) { display: none !important; } }
+	&--phones { @include responsive(max-width, $mobile-max) { display: none !important; } }
 	&--touch { @include responsive-mobile-devices() { display: none !important; } }
 }
 
 .show {
 
-	&--phones { @include responsive(min-width, $break-phones-min) { display: none !important; } }
+	&--phones { @include responsive(min-width, $mobile-min) { display: none !important; } }
 }
 
 

@@ -28,10 +28,10 @@
     overflow: hidden;
     position: relative;
     padding: $integer*9 0 $integer*2 0;
-    @include responsive(max-width, $break-desktop-max) {
+    @include responsive(max-width, $desktop-max) {
         padding-top: $integer*7;
     }
-    @include responsive(max-width, $break-phones-max) {
+    @include responsive(max-width, $mobile-max) {
         @include justify-content(flex-start);
     }
     @include responsive-mobile-devices-landscape() {
@@ -58,7 +58,7 @@
         z-index: 1;
         padding-left: $col;
         padding-right: $col;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             font-size: 2.5rem;
         }
     }
@@ -68,10 +68,10 @@
         height: 40vh;
         position: absolute;
         top: 40%;
-        @include responsive(min-width, $break-large-desktop-min) {
+        @include responsive(min-width, $desktop-lg-min) {
             top: 40%;
         }
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             display: none;
         }
     }
@@ -80,7 +80,7 @@
         @include align-self(flex-end);
         padding-left: $col;
         padding-right: $col;
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             display: none !important;
         }
     }
@@ -89,7 +89,7 @@
     // &__graphic {
     
     //     &--lines, &--circle {
-    //         @include responsive(max-width, $break-large-desktop-max) {
+    //         @include responsive(max-width, $desktop-lg-max) {
     //             opacity: 0.5;
     //         }
     //         position: absolute;
@@ -99,22 +99,22 @@
     //         width: 16%;
     //         left: 42%;
     //         top: 25%;
-    //         @include responsive(max-width, $break-large-desktop-max) {
+    //         @include responsive(max-width, $desktop-lg-max) {
     //             width: 24%;
     //             left: 38%;
     //             top: 30%;
     //         }
-    //         @include responsive(max-width, $break-desktop-max) {
+    //         @include responsive(max-width, $desktop-max) {
     //             width: 30%;
     //             left: 35%;
     //             top: 35%;
     //         }
-    //         @include responsive(max-width, $break-tablets-max) {
+    //         @include responsive(max-width, $tablet-max) {
     //             width: 36%;
     //             left: 32%;
     //             top: 35%;
     //         }
-    //         @include responsive(max-width, $break-phones-max) {
+    //         @include responsive(max-width, $mobile-max) {
     //             width: 40%;
     //             left: 30%;
     //             top: 40%;
@@ -125,22 +125,22 @@
     //         width: 70%;
     //         left: 15%;
     //         top: 10%;
-    //         @include responsive(max-width, $break-large-desktop-max) {
+    //         @include responsive(max-width, $desktop-lg-max) {
     //             width: 80%;
     //             left: 10%;
     //             top: 12%;
     //         }
-    //         @include responsive(max-width, $break-desktop-max) {
+    //         @include responsive(max-width, $desktop-max) {
     //             width: 110%;
     //             left: -5%;
     //             top: 16%;
     //         }
-    //         @include responsive(max-width, $break-tablets-max) {
+    //         @include responsive(max-width, $tablet-max) {
     //             width: 130%;
     //             left: -15%;
     //             top: 20%;
     //         }
-    //         @include responsive(max-width, $break-phones-max) {
+    //         @include responsive(max-width, $mobile-max) {
     //             width: 150%;
     //             left: -25%;
     //             top: 24%;
@@ -152,7 +152,7 @@
         @include flex-direction(column-reverse);
         position: absolute;
         bottom: $integer-xl;
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $desktop-lg-max) {
             @include calc(width, '100vw - '$col*2);
             @include flex-direction(row);
         }
@@ -162,7 +162,7 @@
     //     background-color: transparent;
     //     padding: 0;
     //     width: $integer*24;
-    //     @include responsive(max-width, $break-phones-max) {
+    //     @include responsive(max-width, $mobile-max) {
     //         display: none;
     //     }
     // }
@@ -175,7 +175,7 @@
         min-width: 220px;
         width: 15%;
         z-index: 1;
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             display: none;
         }
         @include responsive-mobile-devices-landscape() {
@@ -186,7 +186,7 @@
 
 #what-we-do {
     margin-top: -1px;
-    @include responsive(max-width, $break-desktop-max) {
+    @include responsive(max-width, $desktop-max) {
         .section__header {
             @include align-items(center);
             text-align: center;
@@ -220,14 +220,14 @@
     .section {
 
         &__header {
-            @include responsive(max-width, $break-desktop-max) {
+            @include responsive(max-width, $desktop-max) {
                 margin-bottom: $integer;
             }
         }
 
         &__content {
             text-align: left;
-            @include responsive(max-width, $break-desktop-max) {
+            @include responsive(max-width, $desktop-max) {
                 text-align: center;
             }
 
@@ -238,7 +238,7 @@
     }
 
     .row {
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             @include flex-direction(column-reverse);
         }
     }
@@ -248,7 +248,7 @@
         @include background(center center, cover);
         @include border-radius($integer*2);
         height: 100%;
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             height: $integer*18;
             margin-top: $integer*2;
         }
@@ -261,13 +261,13 @@
     &__item {
         @include display-flex();
         @include align-items(center);
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $desktop-lg-max) {
             margin-bottom: $integer*2;
         }
     }
 
     &__image {
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             display: none;
         }
     }
@@ -283,7 +283,7 @@
         
         &:nth-child(2) {
             text-align: right;
-            @include responsive(max-width, $break-tablets-max) {
+            @include responsive(max-width, $tablet-max) {
                 text-align: left;
             }
         }
@@ -302,7 +302,7 @@
 .logo-media {
     margin-left: -$integer*2;
     margin-right: -$integer*2;
-    @include responsive(max-width, $break-desktop-max) {
+    @include responsive(max-width, $desktop-max) {
         margin-left: -$integer;
         margin-right: -$integer;
     }
@@ -312,11 +312,11 @@
         position: relative;
         width: 25%;
         padding: $integer $integer*2;
-        @include responsive(max-width, $break-desktop-max) {
+        @include responsive(max-width, $desktop-max) {
             padding-left: $integer;
             padding-right: $integer;
         }
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             padding-left: $integer*2;
             padding-right: $integer*2;
             width: 50%;

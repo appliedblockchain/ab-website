@@ -62,7 +62,7 @@
         padding-top: 10vh;
         padding-bottom: 10vh;
         text-align: left;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             @include justify-content(flex-start);
             height: auto;
             padding-top: $integer*2;
@@ -72,15 +72,15 @@
 
     &__headline {
         font-size: 6rem;
-        @include responsive(max-width, $break-large-desktop-max) {
+        @include responsive(max-width, $desktop-lg-max) {
             font-size: 4rem;
             margin-bottom: $integer;
         }
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             font-size: 3rem;
             margin-bottom: $integer;
         }
-        @include responsive(max-width, $break-phones-max) {
+        @include responsive(max-width, $mobile-max) {
             font-size: 2.5rem;
         }
     }
@@ -89,7 +89,7 @@
         @include display-flex();
         @include flex-direction(row);
         @include justify-content(space-between);
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             @include flex-direction(column);
             margin-top: $integer*2;
         }
@@ -100,7 +100,7 @@
         position: initial;
         left: auto;
         height: auto;
-        @include responsive(max-width, $break-tablets-max) {
+        @include responsive(max-width, $tablet-max) {
             margin-top: $integer;
         }
         
@@ -112,13 +112,13 @@
             padding-bottom: $integer;
             padding-left: 0;
             overflow: visible;
-            @include responsive(max-width, $break-tablets-max) {
+            @include responsive(max-width, $tablet-max) {
                 @include align-self(flex-start);
             }
 
             &:hover {
                 transform: translateX(-$integer/4);
-                @include responsive(max-width, $break-tablets-max) {
+                @include responsive(max-width, $tablet-max) {
                     transform: translateX($integer/4);
                 }
             }
@@ -170,7 +170,7 @@
                 -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
                 background-color: $primary;
                 border-radius: 0;
-                @include responsive(max-width, $break-tablets-max) {
+                @include responsive(max-width, $tablet-max) {
                     height: 50px;
                 }
             }

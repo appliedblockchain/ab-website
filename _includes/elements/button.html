@@ -1,0 +1,12 @@
+{% assign size = include.size %}
+{% assign variant = include.variant %}
+{% assign color = include.color %}
+{% assign animate = include.animate %}
+{% assign icon = include.icon %}
+{% assign body = include.body %}
+{% assign link_type = include.link_type %}
+{% assign link = include.link %}
+
+{% if link == 'submit' %}<button type="submit"{% else %}<a{% endif %}{% if link == 'none' or link == 'submit' %}{% else %} href="{% if link %}{% if link_type == 'internal' %}{{ site.base-url }}/{{ link }}{% elsif link_type == 'external' %}{{ link }}{% elsif link_type == 'modal' %}#{{ link }}{% endif %}{% else %}{{ site.base-url }}/{{ body }}{% endif %}"{% endif %} class="button{% if size %} button--{{ size }}{% endif %}{% if variant %} button--{{ variant }}{% endif %}{% if color %} button--{{ color }}{% endif %}{% if animate %} button--animate-{{ animate }}{% endif %}{% if variant == 'text-icon' or animate %} {{ icon }}{% endif %}{% if link_type == 'modal' %} button--modal{% endif %}"{% if link_type == 'external' %}  target="_blank"{% endif %}>
+    {% if variant == 'icon' %}<i class="{{ icon }}"></i>{% else %}<p class="button__inner">{{ body }}</p>{% endif %}
+{% if link == 'submit' %}</button>{% else %}</a>{% endif %}

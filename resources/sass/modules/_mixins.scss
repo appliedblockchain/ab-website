@@ -176,11 +176,11 @@
 			background-color: nth($i, 2);
 			color: nth($i, 3);
 			&-lighten {
-				background-color: lighten(nth($i, 2), 15%);
+				background-color: lighten(nth($i, 2), 30%);
 				color: nth($i, 3);
 			}
 			&-darken {
-				background-color: darken(nth($i, 2), 15%);
+				background-color: darken(nth($i, 2), 30%);
 				color: nth($i, 3);
 			}
 		}

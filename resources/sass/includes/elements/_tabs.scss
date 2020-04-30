@@ -18,6 +18,10 @@
 	&__nav {
 		@include display-flex();
 		text-align: center;
+
+		& + .tab__content {
+			margin-top: $integer-xxl;
+		}
 	}
 
 	&__button {

@@ -8,19 +8,16 @@ background_color: white
 ---
 
 <section class="section section--white">
-    {% include containers/sections/header.html
-        title = 'I am a'
-    %}
-    <div class="section__content tab tab--vertical contact">
-        <div class="section__filter tab__nav">
-            <a href="#company" class="filter__button nav__button nav__button--active button button--primary button--animate fas fa-building">
+    <div class="section__content tab tab--contact">
+        <div class="tab__nav">
+            <a href="#company" class="tab__button button button--primary button--animate fas fa-building">
                 <p class="button__inner">Company</p>
             </a>
-            <a href="#candidate" class="filter__button nav__button button button--primary button--animate fas fa-code">
+            <a href="#candidate" class="tab__button button button--primary button--primary-lighten button--animate fas fa-code">
                 <p class="button__inner">Candidate</p>
             </a>
         </div>
-        <div class="tab__content form block">
+        <div class="tab__content block block--shadow">
             <div id="company" class="tab__item">
                 {% include components/forms/form-company.html %}
             </div>

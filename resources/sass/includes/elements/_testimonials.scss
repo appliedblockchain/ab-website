@@ -59,8 +59,22 @@
     &__meta {
         margin-top: $integer/2;
     }
+}
 
-    .owl-dots {
-        padding-top: $integer*3;
+#webinar {
+
+    .carousel {
+        margin-top: $integer*3;
+    }
+
+    .testimonial {
+
+        &__item {
+            @include justify-content(center);
+        }
+
+        &__content {
+            margin-left: 0;
+        }
     }
 }

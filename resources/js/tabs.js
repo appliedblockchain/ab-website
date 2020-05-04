@@ -34,8 +34,8 @@ $(".approach.tab--vertical .tab__nav a").click(function(event) {
 
 $(".tab--jobs .tab__nav a").click(function(event) {
 	event.preventDefault();
-	$(this).addClass("button--primary-lighten");
-	$(this).siblings().removeClass("button--primary-lighten");
+	$(this).removeClass("button--primary-lighten");
+	$(this).siblings().addClass("button--primary-lighten");
 	var tab = $(this).attr("href");
 	$(".tab--jobs .tab__item").not(tab).css("display", "none");
 	$(tab).fadeIn(400);

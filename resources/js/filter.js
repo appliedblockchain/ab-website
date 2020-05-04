@@ -11,13 +11,13 @@ var $grid = $('.grid').isotope({
     // options
   });
   // filter items on button click
-  $('.filter-button-group').on( 'click', 'a', function() {
+  $('.js-blog-filter').on( 'click', 'a', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
-  $('.button-group a.button').on('click', function(){
-      $('.button-group a.button').removeClass('active');
-      $(this).addClass('active');
+  $('.js-blog-filter .tab__button').on('click', function(){
+      $('.js-blog-filter .tab__button').addClass('button--primary-lighten');
+      $(this).removeClass('button--primary-lighten');
   });
 
 

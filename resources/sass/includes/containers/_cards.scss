@@ -6,7 +6,7 @@
 // general
 // sizes
 // orientation
-// special
+// layouts
 // —————————————————————————————————————————————————————————————————
 
 
@@ -33,7 +33,7 @@
     &__label {
 
         & + .card__title {
-            margin-top: $integer-md;
+            margin-top: $integer;
         }
     }
 
@@ -49,6 +49,14 @@
         
         & + .card__title {
             margin-top: $integer-xl;
+        }
+    }
+
+    &__content {
+        position: relative;
+
+        .card.no-padding & {
+            padding: $integer-md*2;
         }
     }
 
@@ -140,12 +148,27 @@
             }
         }
     }
+
+    &--portrait {
+
+        .card { 
+
+            &__image {
+                height: $integer-xxxxl*2;
+                max-width: none;
+            }
+        }
+
+        .card__actions {
+            margin-top: $integer-lg;
+        }
+    }
 }
 
 
 
 // —————————————————————————————————————————————————————————————————
-// special
+// layouts
 // —————————————————————————————————————————————————————————————————
 
 #about {
@@ -174,7 +197,6 @@
 
                 &__content {
                     @include flex-basis(66.666%);
-                    padding: $integer-xl;
 
                     @include responsive(max-width, $tablet-max) {
                         @include flex-direction(column);
@@ -196,6 +218,35 @@
 
         & + .card {
             border-top: 1px solid $medium-grey;
+        }
+    }
+}
+
+#media {
+
+    .card {
+        margin-bottom: $integer-md;
+
+        &__wrapper {
+            margin-bottom: -$integer-md;
+        }
+
+        &__icon {
+            @include border-radius(50%);
+            box-sizing: content-box;
+            position: absolute;
+            top: -$integer-lg;
+            right: $integer-lg;
+            height: $integer-lg;
+            width: $integer-lg;
+            border: $integer solid $white;
+            padding: $integer;
+            background-color: $primary;
+            
+            &--news             { background-color: $secondary; }
+            &--press-release    { background-color: $highlight; }
+            &--blog             { background-color: $primary; }
+            &--videos           { background-color: $dark; }   
         }
     }
 }

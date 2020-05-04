@@ -26,6 +26,10 @@
 
 	&__button {
 
+		&.js-active {
+			color: $primary;
+		}
+
 		& + & {
 			margin-left: $integer-lg;
 		}

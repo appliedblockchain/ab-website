@@ -2212,10 +2212,14 @@ header .button:hover,
   margin-top: 4rem;
 }
 /* line 29, ../sass/includes/elements/_tabs.scss */
+.tab__button.js-active {
+  color: #007bff;
+}
+/* line 33, ../sass/includes/elements/_tabs.scss */
 .tab__button + .tab__button {
   margin-left: 2rem;
 }
-/* line 34, ../sass/includes/elements/_tabs.scss */
+/* line 38, ../sass/includes/elements/_tabs.scss */
 .tab__content {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -2223,25 +2227,25 @@ header .button:hover,
   -webkit-transition-delay: 0s;
   transition: all 0.4s ease 0s;
 }
-/* line 38, ../sass/includes/elements/_tabs.scss */
+/* line 42, ../sass/includes/elements/_tabs.scss */
 .tab__item {
   display: none;
 }
-/* line 41, ../sass/includes/elements/_tabs.scss */
+/* line 45, ../sass/includes/elements/_tabs.scss */
 .tab__item:nth-child(1) {
   display: block;
 }
 
-/* line 55, ../sass/includes/elements/_tabs.scss */
+/* line 59, ../sass/includes/elements/_tabs.scss */
 .tab--leadership {
   padding-bottom: 7.5rem;
 }
-/* line 60, ../sass/includes/elements/_tabs.scss */
+/* line 64, ../sass/includes/elements/_tabs.scss */
 .tab--leadership .tab__item {
   position: relative;
   padding: 10rem 12.5vw;
 }
-/* line 64, ../sass/includes/elements/_tabs.scss */
+/* line 68, ../sass/includes/elements/_tabs.scss */
 .tab--leadership .tab__item:before {
   content: "";
   position: absolute;
@@ -2258,20 +2262,20 @@ header .button:hover,
   background-image: -webkit-linear-gradient(top, rgba(22, 22, 86, 0.5), #161656);
   background-image: linear-gradient(to bottom, rgba(22, 22, 86, 0.5), #161656);
 }
-/* line 69, ../sass/includes/elements/_tabs.scss */
+/* line 73, ../sass/includes/elements/_tabs.scss */
 .tab--leadership .tab__item .block {
   width: 50%;
 }
-/* line 72, ../sass/includes/elements/_tabs.scss */
+/* line 76, ../sass/includes/elements/_tabs.scss */
 .tab--leadership .tab__item .block > * {
   position: relative;
 }
-/* line 78, ../sass/includes/elements/_tabs.scss */
+/* line 82, ../sass/includes/elements/_tabs.scss */
 .tab--leadership .tab__nav {
   margin-top: -5rem;
   z-index: 1;
 }
-/* line 84, ../sass/includes/elements/_tabs.scss */
+/* line 88, ../sass/includes/elements/_tabs.scss */
 .tab--leadership .card__image {
   -moz-transition: ease 0.4s 0s;
   -o-transition: ease 0.4s 0s;
@@ -2282,7 +2286,7 @@ header .button:hover,
   width: 7.5rem;
   will-change: transform;
 }
-/* line 90, ../sass/includes/elements/_tabs.scss */
+/* line 94, ../sass/includes/elements/_tabs.scss */
 .tab--leadership .card__image:hover {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -2610,7 +2614,7 @@ header .button:hover,
 }
 /* line 35, ../sass/includes/containers/_cards.scss */
 .card__label + .card__title {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 /* line 42, ../sass/includes/containers/_cards.scss */
 .card__title + .card__body {
@@ -2625,44 +2629,52 @@ header .button:hover,
   margin-top: 2.5rem;
 }
 /* line 55, ../sass/includes/containers/_cards.scss */
+.card__content {
+  position: relative;
+}
+/* line 58, ../sass/includes/containers/_cards.scss */
+.card.no-padding .card__content {
+  padding: 2rem;
+}
+/* line 63, ../sass/includes/containers/_cards.scss */
 .card__meta {
   margin-top: 1rem;
 }
 
-/* line 74, ../sass/includes/containers/_cards.scss */
+/* line 82, ../sass/includes/containers/_cards.scss */
 .card--small .card__title + .card__body {
   margin-top: 0.5rem;
 }
-/* line 81, ../sass/includes/containers/_cards.scss */
+/* line 89, ../sass/includes/containers/_cards.scss */
 .card--small .card__image + .card__title {
   margin-top: 1rem;
 }
-/* line 86, ../sass/includes/containers/_cards.scss */
+/* line 94, ../sass/includes/containers/_cards.scss */
 .card--small .card__meta {
   margin-top: 0.5rem;
 }
 
-/* line 101, ../sass/includes/containers/_cards.scss */
+/* line 109, ../sass/includes/containers/_cards.scss */
 .card--landscape {
   -webkit-flex-direction: row;
   flex-direction: row;
   text-align: left;
 }
-/* line 105, ../sass/includes/containers/_cards.scss */
+/* line 113, ../sass/includes/containers/_cards.scss */
 .card--landscape + .card--landscape {
   border-top: 1px solid #d7d7dc;
 }
-/* line 111, ../sass/includes/containers/_cards.scss */
+/* line 119, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__image {
   max-width: none;
 }
 @media (max-width: 575.98px) {
-  /* line 111, ../sass/includes/containers/_cards.scss */
+  /* line 119, ../sass/includes/containers/_cards.scss */
   .card--landscape .card__image {
     display: none;
   }
 }
-/* line 119, ../sass/includes/containers/_cards.scss */
+/* line 127, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__content {
   display: -webkit-flex;
   display: flex;
@@ -2670,20 +2682,20 @@ header .button:hover,
   justify-content: space-between;
 }
 @media (max-width: 767.98px) {
-  /* line 119, ../sass/includes/containers/_cards.scss */
+  /* line 127, ../sass/includes/containers/_cards.scss */
   .card--landscape .card__content {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 @media (max-width: 575.98px) {
-  /* line 119, ../sass/includes/containers/_cards.scss */
+  /* line 127, ../sass/includes/containers/_cards.scss */
   .card--landscape .card__content {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
   }
 }
-/* line 132, ../sass/includes/containers/_cards.scss */
+/* line 140, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__actions {
   display: -webkit-flex;
   display: flex;
@@ -2692,53 +2704,101 @@ header .button:hover,
   -webkit-align-items: flex-end;
   align-items: flex-end;
 }
-/* line 137, ../sass/includes/containers/_cards.scss */
+/* line 145, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__actions .button + .button {
   margin-top: 0.5rem;
 }
+/* line 156, ../sass/includes/containers/_cards.scss */
+.card--portrait .card__image {
+  height: 15rem;
+  max-width: none;
+}
+/* line 162, ../sass/includes/containers/_cards.scss */
+.card--portrait .card__actions {
+  margin-top: 2rem;
+}
 
-/* line 153, ../sass/includes/containers/_cards.scss */
+/* line 176, ../sass/includes/containers/_cards.scss */
 #about .card__image {
   border-radius: 1rem;
 }
 
-/* line 166, ../sass/includes/containers/_cards.scss */
+/* line 189, ../sass/includes/containers/_cards.scss */
 #events .card--landscape .card__image {
   -webkit-flex-basis: 33.333%;
   flex-basis: 33.333%;
   max-width: none;
 }
 @media (max-width: 575.98px) {
-  /* line 166, ../sass/includes/containers/_cards.scss */
+  /* line 189, ../sass/includes/containers/_cards.scss */
   #events .card--landscape .card__image {
     display: none;
   }
 }
-/* line 175, ../sass/includes/containers/_cards.scss */
+/* line 198, ../sass/includes/containers/_cards.scss */
 #events .card--landscape .card__content {
   -webkit-flex-basis: 66.666%;
   flex-basis: 66.666%;
-  padding: 2.5rem;
 }
 @media (max-width: 767.98px) {
-  /* line 175, ../sass/includes/containers/_cards.scss */
+  /* line 198, ../sass/includes/containers/_cards.scss */
   #events .card--landscape .card__content {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 @media (max-width: 575.98px) {
-  /* line 175, ../sass/includes/containers/_cards.scss */
+  /* line 198, ../sass/includes/containers/_cards.scss */
   #events .card--landscape .card__content {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
   }
 }
 
-/* line 197, ../sass/includes/containers/_cards.scss */
+/* line 219, ../sass/includes/containers/_cards.scss */
 #faq .card + .card,
 #join .card + .card {
   border-top: 1px solid #d7d7dc;
+}
+
+/* line 227, ../sass/includes/containers/_cards.scss */
+#media .card {
+  margin-bottom: 1rem;
+}
+/* line 230, ../sass/includes/containers/_cards.scss */
+#media .card__wrapper {
+  margin-bottom: -1rem;
+}
+/* line 234, ../sass/includes/containers/_cards.scss */
+#media .card__icon {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  box-sizing: content-box;
+  position: absolute;
+  top: -2rem;
+  right: 2rem;
+  height: 2rem;
+  width: 2rem;
+  border: 0.5rem solid #ffffff;
+  padding: 0.5rem;
+  background-color: #007bff;
+}
+/* line 246, ../sass/includes/containers/_cards.scss */
+#media .card__icon--news {
+  background-color: #64f0ff;
+}
+/* line 247, ../sass/includes/containers/_cards.scss */
+#media .card__icon--press-release {
+  background-color: #ff6f00;
+}
+/* line 248, ../sass/includes/containers/_cards.scss */
+#media .card__icon--blog {
+  background-color: #007bff;
+}
+/* line 249, ../sass/includes/containers/_cards.scss */
+#media .card__icon--videos {
+  background-color: #161656;
 }
 
 /* line 16, ../sass/includes/containers/_blocks.scss */
@@ -6925,71 +6985,6 @@ li + li {
  * RESOURCES
  * —————————————————————————————————————————————————————————————————
 */
-/* 
- * —————————————————————————————————————————————————————————————————
- * MEDIA
- * —————————————————————————————————————————————————————————————————
-*/
-/* line 13, ../sass/layouts/_media.scss */
-.blog__item {
-  text-align: left;
-  padding: 0;
-  margin-bottom: 0.5rem;
-}
-/* line 19, ../sass/layouts/_media.scss */
-.blog__image {
-  height: 5rem;
-}
-/* line 23, ../sass/layouts/_media.scss */
-.blog__content {
-  position: relative;
-}
-/* line 27, ../sass/layouts/_media.scss */
-.blog__icon, .blog__icon--news, .blog__icon--press-release, .blog__icon--blog, .blog__icon--videos {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  box-sizing: content-box;
-  overflow: hidden;
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  top: -36px;
-  right: 0.5rem;
-  border: 0.125rem solid #ffffff;
-}
-/* line 41, ../sass/layouts/_media.scss */
-.blog__icon img, .blog__icon--news img, .blog__icon--press-release img, .blog__icon--blog img, .blog__icon--videos img {
-  width: 60%;
-}
-/* line 45, ../sass/layouts/_media.scss */
-.blog__icon--news {
-  background-color: #64f0ff;
-}
-/* line 49, ../sass/layouts/_media.scss */
-.blog__icon--press-release {
-  background-color: #ff6f00;
-}
-/* line 53, ../sass/layouts/_media.scss */
-.blog__icon--blog {
-  background-color: #007bff;
-}
-/* line 57, ../sass/layouts/_media.scss */
-.blog__icon--videos {
-  background-color: #161656;
-}
-/* line 61, ../sass/layouts/_media.scss */
-.blog__icon--videos img {
-  width: 45%;
-  margin-left: 5px;
-}
-
 /* 
  * —————————————————————————————————————————————————————————————————
  * SERVICES

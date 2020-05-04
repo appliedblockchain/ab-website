@@ -70,7 +70,7 @@
 
 	&__label {
 		@include transition(color $transition);
-		@include textOverflow(ellipsis);
+		@include text-overflow(ellipsis);
 		will-change: color;
 		cursor: pointer;
 		display: block;
@@ -83,13 +83,13 @@
 
 	&__input {
 		@include transition(border $transition);
-		@include textOverflow(ellipsis);
+		@include text-overflow(ellipsis);
 		@include border-radius(20px !important);
 		will-change: border;
 		width: 100%;
 		background-color: transparent;
 		padding: 10px $integer*0.75 8px $integer*0.75;
-		border: 2px solid $mediumgrey;
+		border: 2px solid $medium-grey;
 	}
 
 	&__button {
@@ -102,7 +102,7 @@
 }
 
 @include placeholder {
-	color: $mediumgrey;
+	color: $medium-grey;
 	opacity: 1;
 }
 
@@ -170,7 +170,7 @@
 			}
 
 			& + li {
-				border-top: 1px solid $lightgrey;
+				border-top: 1px solid $light-grey;
 			}
 
 			&:hover {
@@ -195,7 +195,7 @@
 	.form__button {
 		@include border-bottom-right-radius(0.2rem);
 		@include border-top-right-radius(0.2rem);
-		background-color: $mediumgrey;
+		background-color: $medium-grey;
 		color: $white;
 		width: 130px !important;
 		margin: 0;
@@ -240,7 +240,7 @@
 			@include box-sizing(border-box);
 			@include transition(border 0.4s ease 0s);
 			will-change: border;
-			border: 2px solid $mediumgrey;
+			border: 2px solid $medium-grey;
 		}
 	}
 }

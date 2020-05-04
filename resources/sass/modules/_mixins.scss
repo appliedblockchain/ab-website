@@ -42,7 +42,7 @@
 	height: $height;
 }
 
-@mixin hoverLink {
+@mixin hover-link {
 	&:hover, &:active, &:focus {
 		@content;
 	}
@@ -119,7 +119,7 @@
 	}
 }
 
-@mixin fontSize($font-size, $font-weight, $font-style) {
+@mixin font-size($font-size, $font-weight, $font-style) {
 	font-size: $font-size + rem;
 	letter-spacing: $font-size*.02 + rem;
 	font-weight: $font-weight;
@@ -140,7 +140,7 @@
 	left: $left;
 }
 
-@mixin textOverflow($property) {
+@mixin text-overflow($property) {
 	-o-text-overflow: $property;
 	   text-overflow: $property;
 }

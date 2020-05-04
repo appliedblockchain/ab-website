@@ -19,7 +19,7 @@
         &:before {
             @include pseudo-element('', $integer-max, auto, 0, 50%, 2px, 100%);
             @include transform(translateX(-1px));
-            background-color: $mediumgrey;
+            background-color: $medium-grey;
 
             @include responsive(max-width, $tablet-max) {
                 left: $integer;

@@ -30,10 +30,20 @@ particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', f
     </div>
 </div>
 
-<section class="section section--left section--dark" id="what-we-do">
-    <div class="row">
-        <div class="col--lg5 hide--desktop">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/index/what-we-do.svg" alt="Solution icon">
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <h1 class="landing__title headline">Building Secure, Private<br>Solutions for Enterprise</h1>
+        <!-- <div class="block--news">
+            <div class="widget widget--news widget--news-1">
+                {% include components/news/zkp-event.html %}
+            </div>
+            <div class="widget widget--news widget--news-2">
+               {% include components/news/shell.html %}
+            </div>
+        </div> -->
+        <div class="widget widget--news">
+            <!-- select component in _includes/components/news -->
+            {% include components/news/press-release.html %}
         </div>
         <div class="coloffset--lg1 col--lg6">
             {% include containers/sections/header.html

@@ -6,7 +6,7 @@
     <div class="carousel__item">
         <img src="{{ site.url }}{{ site.imageurl }}/carousel/{{ variant }}/{{ item.name | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
         {% if type == 'testimonials' %}
-        <div class="card body--left">
+        <div class="card body--left no-padding">
             <p class="card__body quote">{{ item.quote }}</p>
             <div class="card__meta">
                 <p class="body--large body--bold">{{ item.author }}</p>

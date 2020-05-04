@@ -29,9 +29,9 @@ $primary-darken:  darken($primary, 15%);
 $primary-lighten: lighten($primary, 15%);
 
 $black: 	#000a1e;
-$darkgrey: 	#8c8c96;
-$mediumgrey:#d7d7dc;
-$lightgrey: #f8f8f8;
+$dark-grey: 	#8c8c96;
+$medium-grey:#d7d7dc;
+$light-grey: #f8f8f8;
 $white: 	#ffffff;
 
 $red: #ff224a;
@@ -78,7 +78,7 @@ $border-md: $integer-sm solid;
 $border-lg: $integer solid;
 
 // one border radius to keep consistency througbout your website
-$border-radius: $integer-lg;
+$border-radius: $integer-md;
 
 
 

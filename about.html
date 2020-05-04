@@ -114,7 +114,7 @@ background_color: primary
         <div class="row">
             {% for item in site.data.images.values %}
             <div class="col--4">
-                <div class="card">
+                <div class="card no-padding">
                     <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
                     <p class="card__title lead">{{ item.alt }}</p>
                 </div>

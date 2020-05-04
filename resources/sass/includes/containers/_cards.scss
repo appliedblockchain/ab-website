@@ -18,6 +18,11 @@
 .card {
     @include display-flex();
     @include flex-direction(column);
+    padding: $integer-md*1.5;
+
+    &__header {
+        width: 100%;
+    }
 
     &__label {
 
@@ -27,6 +32,8 @@
     }
 
     &__title {
+        @include display-flex();
+        @include justify-content(space-between);
 
         & + .card__body {
             margin-top: $integer-md;
@@ -91,10 +98,13 @@
         @include flex-direction(row);
         text-align: left;
 
+        & + & {
+            border-top: 1px solid $medium-grey;
+        }
+
         .card {
             
             &__image {
-                @include flex-basis(33.333%);
                 max-width: none;
 
                 @include responsive(max-width, $mobile-max) {
@@ -105,8 +115,6 @@
             &__content {
                 @include display-flex();
                 @include justify-content(space-between);
-                @include flex-basis(66.666%);
-                padding: $integer-xl;
 
                 @include responsive(max-width, $tablet-max) {
                     @include flex-direction(column);
@@ -147,8 +155,32 @@
 
     .card {
 
-        & + .card {
-            border-top: 1px solid $mediumgrey;
+        &--landscape {
+    
+            .card {
+
+                &__image {
+                    @include flex-basis(33.333%);
+                    max-width: none;
+
+                    @include responsive(max-width, $mobile-max) {
+                        display: none;
+                    }
+                }
+
+                &__content {
+                    @include flex-basis(66.666%);
+                    padding: $integer-xl;
+
+                    @include responsive(max-width, $tablet-max) {
+                        @include flex-direction(column);
+                    }
+
+                    @include responsive(max-width, $mobile-max) {
+                        @include flex-basis(100%);
+                    }
+                }
+            }
         }
     }
 }

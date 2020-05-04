@@ -1,6 +1,6 @@
 {% assign variant = include.variant %}
 
-<div class="card card--landscape">
+<div class="card card--landscape no-padding">
     <a href="{{ event.link }}" target="_blank" class="card__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg);"></a>
     <div class="card__content">
         <div class="card__header">

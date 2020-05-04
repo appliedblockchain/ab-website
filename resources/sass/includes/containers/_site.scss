@@ -269,7 +269,7 @@ li {
 	@include transition(filter, $transition);
 	will-change: filter;
 	
-	@include hoverLink {
+	@include hover-link {
 		@include filter(grayscale(0%));
 	}
 }

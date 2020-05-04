@@ -77,14 +77,14 @@
         &:before {
             @include pseudo-element('', 0, auto, 0, 0, 5px, 100%);
             @include border-radius(5px);
-            background-color: $mediumgrey;
+            background-color: $medium-grey;
         }
     }
 
     &__update {
         margin-bottom: $integer-xl;
         padding-top: $integer-xxxl;
-        border-top: 5px solid $mediumgrey;
+        border-top: 5px solid $medium-grey;
 
         .post__content + & {
             margin-top: $integer-xxxl;

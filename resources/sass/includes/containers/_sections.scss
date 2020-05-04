@@ -7,6 +7,7 @@
 // variants
 // colors
 // alignement
+// layouts
 // —————————————————————————————————————————————————————————————————
 
 
@@ -57,20 +58,12 @@
 		@include flex-direction(column);
 		@include flex-wrap(wrap);
 
+		& + & {
+			margin-top: $integer-xxl;
+		}
 
 		.section__header + & {
 			margin-top: $integer-xxxl;
-		}
-	}
-
-	&__link {
-		margin-top: $integer-xxxl;
-
-		.link {
-
-			&__title {
-				margin-bottom: $integer;
-			}
 		}
 	}
 }
@@ -270,5 +263,25 @@
 				text-align: right;
 			}
 		}
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// layouts
+// —————————————————————————————————————————————————————————————————
+
+#join {
+
+	.section--overlap {
+		margin-top: -$integer-xxxxl*3;
+	}
+}
+
+#join-header {
+
+	&.section {
+		padding-bottom: $integer-xxxxl+$integer-xxxl;
 	}
 }

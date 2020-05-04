@@ -143,7 +143,7 @@ background_color: primary
         {% endfor %}
         <div class="tab__nav">
             {% for item in site.data.leadership %}
-            <a href="#{{ item.slug }}" class="card card--small tab__button {{ item.active }}">
+            <a href="#{{ item.slug }}" class="card card--small tab__button {{ item.active }} no--padding">
                 <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
                 <p class="card__title body--large body--bold">{{ item.name | truncatewords: 1, "" }}</p>
                 <p class="body">{{ item.division }}</p>

@@ -21,7 +21,13 @@
     padding: $integer-md*1.5;
 
     &__header {
+        @include display-flex();
+        @include justify-content(space-between);
         width: 100%;
+
+        & + .card__content {
+            margin-top: $integer-md;
+        }
     }
 
     &__label {
@@ -32,8 +38,6 @@
     }
 
     &__title {
-        @include display-flex();
-        @include justify-content(space-between);
 
         & + .card__body {
             margin-top: $integer-md;
@@ -181,6 +185,17 @@
                     }
                 }
             }
+        }
+    }
+}
+
+#faq,
+#join {
+
+    .card {
+
+        & + .card {
+            border-top: 1px solid $medium-grey;
         }
     }
 }

@@ -11,7 +11,7 @@
 
 		&.js-accordion-active {
 
-			.button {
+			.button--icon {
 				@include transform(rotate(45deg));
 			}
 		}
@@ -19,6 +19,5 @@
 
 	&__content {
 		display: none;
-		margin-top: $integer;
 	}
 }

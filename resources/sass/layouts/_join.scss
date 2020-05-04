@@ -1,48 +1,18 @@
 @charset "UTF-8";
 
+// —————————————————————————————————————————————————————————————————
+// JOIN
+// —————————————————————————————————————————————————————————————————
 
+#join-header {
 
-/* 
- * —————————————————————————————————————————————————————————————————
- * JOIN
- * —————————————————————————————————————————————————————————————————
-*/
-
-#join {
-
-    .section__title {
-        width: 100%;
+    .section__header {
+        z-index: 2;
     }
 }
 
-.jobs {
+.join {
 
-    &__container {
-        position: relative;
-        
-        > * {
-            z-index: 2;
-        }
-
-        .section__title, .section__desc {
-            color: $white;
-        }
-        
-    }
-
-    &__list {
-        margin-top: -$integer-xl;
-    }
-    
-    &__content {
-        width: 100%;
-
-        .block {
-            padding-top: $integer*1.3;
-            padding-bottom: $integer*1.3;
-        }
-    }
-    
     &__background {
         position: absolute;
         top: 0;
@@ -58,12 +28,12 @@
         }
 
         &--london {
-            @extend .jobs__background;
+            @extend .join__background;
             @include background(bottom center, cover);
         }
 
         &--porto {
-            @extend .jobs__background;
+            @extend .join__background;
             @include background(center center, cover);
             @include transition(opacity 0.8s ease 0s);
             opacity: 0;

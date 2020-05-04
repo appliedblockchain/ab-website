@@ -28,6 +28,10 @@
 		.block__label + & {
 			margin-top: $integer;
 		}
+
+		& + .button {
+			margin-top: $integer-xl;
+		}
 	}
 }
 

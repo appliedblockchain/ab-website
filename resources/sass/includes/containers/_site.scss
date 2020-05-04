@@ -200,26 +200,6 @@ li {
 	@include background(center center, cover);
 }
 
-.image-inline {
-	margin-bottom: -$integer-xl;
-
-    &__item {
-		padding: 0 $integer $integer-xl $integer;
-    }
-
-    &__image {
-        background-size: contain;
-		height: $integer-xl;
-		width: auto;
-		margin-bottom: $integer;
-	}
-	
-	&__title {
-		margin-bottom: $integer/4;
-		font-weight: $font-bold;
-	}
-}
-
 
 
 // —————————————————————————————————————————————————————————————————

@@ -25,7 +25,7 @@
 	@include justify-content(center);
 	@include align-items(center);
 	// @include align-self(center);
-	border-radius: $border-radius;
+	border-radius: $border-radius*4;
 	will-change: background-color, transform, opacity;
 	cursor: pointer;
 	overflow: hidden;
@@ -204,50 +204,26 @@
 // animate
 // —————————————————————————————————————————————————————————————————
 
-[class*="button--animate-"] {
+.button--animate {
 
 	&:before {
 		@include transition(transform $transition);
+		@include pseudo-element('', 0, auto, auto, -140%, 100%, 100%);
 		@include display-flex(inline-flex);
 		@include align-items(center);
 		@include justify-content(center);
 		will-change: transform;
 		text-align: center;
-		background-color: transparent;	
+		background-color: transparent;
 	}
-}	
+	
+	&:hover {
 
-.button--animate {
-
-	&-top {
-		&:before { @include pseudo-element('', -140%, auto, auto, 0, 100%, 100%); }
-		&:hover {
-			&:before { @include transform(translateY(140%)); }
-			.button__inner { @include transform(translateY(180%)); }
+		&:before {
+			@include transform(translateX(140%));
 		}
-	}
-
-	&-right {
-		&:before { @include pseudo-element('', 0, -140%, auto, auto, 100%, 100%); }
-		&:hover {
-			&:before { @include transform(translateX(-140%)); }
-			.button__inner { @include transform(translateX(-180%)); }
-		}
-	}
-
-	&-bottom {
-		&:before { @include pseudo-element('', auto, auto, -140%, 0, 100%, 100%); }
-		&:hover {
-			&:before { @include transform(translateY(-140%)); }
-			.button__inner { @include transform(translateY(-180%)); }
-		}
-	}
-
-	&-left {
-		&:before { @include pseudo-element('', 0, auto, auto, -140%, 100%, 100%); }
-		&:hover {
-			&:before { @include transform(translateX(140%)); }
-			.button__inner { @include transform(translateX(180%)); }
+		.button__inner {
+			@include transform(translateX(180%));
 		}
 	}
 }

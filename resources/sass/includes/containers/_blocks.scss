@@ -14,25 +14,7 @@
 // —————————————————————————————————————————————————————————————————
 
 .block {
-	padding: $integer-xxl;
-
-	&__content {
-
-		.block__header + & {
-			margin-top: $integer-xl;
-		}
-	}
-
-	&__title {
-
-		.block__label + & {
-			margin-top: $integer;
-		}
-
-		& + .button {
-			margin-top: $integer-xl;
-		}
-	}
+    width: 100%;
 }
 
 
@@ -41,69 +23,3 @@
 // variants
 // —————————————————————————————————————————————————————————————————
 
-.block {
-
-	&--shadow {
-		@include box-shadow($box-shadow-sm);
-		width: 100%;
-		border-radius: $border-radius;
-		overflow: hidden;
-		background-color: $white;
-	}
-
-	&--carousel,
-	&--transparent {
-		padding: 0;
-	}
-
-	// &__content {
-	// 	padding: $integer-xl;
-
-	// 	@include responsive(max-width, $tablet-max) {
-	// 		padding: $integer;
-	// 	}
-	// }
-
-	// &__date {
-	// 	margin-bottom: $integer;
-	// }
-	
-	// &__title {
-	// 	margin-bottom: $integer;
-	// }
-	
-	// &__label {
-	// 	margin-top: $integer/4;
-	// }
-	
-	// &__text {
-	// 	margin-bottom: $integer;
-	// }
-	
-	// &--icon {
-	// 	padding-top: $integer-xxl;
-	// 	height: 100%;
-		
-	// 	.block {
-			
-	// 		&__icon {
-	// 			position: absolute;
-	// 			top: -$integer-xl;
-	// 			left: 50%;
-	// 			margin-left: -$integer-xl;
-	// 			width: $integer-xxxl;
-	// 			height: auto;
-	// 		}
-	// 	}
-	// }
-	
-	// &--image {
-	// 	padding: 0;
-	// }
-	
-	// &--download {
-	// 	border-radius: $border-radius;
-	// 	padding: $integer;
-	// 	border: 0 !important;
-	// }
-}

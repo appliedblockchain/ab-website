@@ -196,8 +196,18 @@ li {
 
 // images
 
-.background--cover {
-	@include background(center center, cover);
+.background {
+	
+	&--cover {
+		@include background(center center, cover);
+	}
+
+	&--shadow {
+		@include box-shadow($box-shadow-sm);
+		border-radius: $border-radius;
+		overflow: hidden;
+		background-color: $white;
+	}
 }
 
 

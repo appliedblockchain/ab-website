@@ -20,7 +20,7 @@ background_color: white
                 <p class="button__inner">Past</p>
             </a>
         </div>
-        <div class="tab__content block block--shadow no-padding">
+        <div class="tab__content block background--shadow no-padding">
             <div id="upcoming" class="tab__item">
                 {% for event in sorted %}
                 {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 

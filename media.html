@@ -27,15 +27,17 @@ background_color: white
             {% if site.posts.size > 0 %}
             {% for post in site.posts %}
             <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
-                <div class="card card--portrait block--shadow no-padding body--left">
+                <div class="card card--portrait background--shadow no-padding">
                     <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}><div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg);"></div></a>
-                    <div class="card__content">
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="" class="card__icon card__icon--{{ post.category }}">
-                        <p class="card__label body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
-                        <h2 class="card__title lead">
-                            <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>{{ post.title }}</a>
-                        </h2>
-                        <p class="card__body">{{ post.headline | truncate: 100, "…" }}</p>
+                    <div class="card__inner">
+                        <div class="card__content">
+                            <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="" class="card__icon card__icon--{{ post.category }}">
+                            <p class="card__label body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
+                            <h2 class="card__title lead">
+                                <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>{{ post.title }}</a>
+                            </h2>
+                            <p class="card__body">{{ post.headline | truncate: 100, "…" }}</p>
+                        </div>
                         <div class="card__actions">
                             {% if post.link %}
                             {% if post.social contains "newsletter" %}

@@ -1,34 +1,36 @@
-<div class="card body--left">
-    <div class="accordion__header card__header">
-        <div>
-            <h2 class="card__title body--bold">{{ job.title }}</h2>
-            <p class="body">{{ job.type }}</p>
+<div class="card card--small body--left">
+    <div class="card__inner">
+        <div class="accordion__header card__header">
+            <div>
+                <h2 class="card__title body--bold">{{ job.title }}</h2>
+                <p class="body">{{ job.type }}</p>
+            </div>
+            <div class="card__actions">
+                <a href="mailto:careers@appliedblockchain.com?subject=Application | {{ job.title }}" class="ga-button-apply button button--primary button--small button--animate fa fa-edit">
+                    <p class="button__inner">Apply</p>
+                </a>
+                <span class="accordion__button button button--icon button--highlight button--small">
+                    <i class="fa fa-plus"></i>
+                </span>
+            </div>
         </div>
-        <div class="card__actions">
-            <a href="mailto:careers@appliedblockchain.com?subject=Application | {{ job.title }}" class="ga-button-apply button button--primary button--small button--animate fa fa-edit">
-                <p class="button__inner">Apply</p>
-            </a>
-            <span class="accordion__button button button--icon button--highlight button--small">
-                <i class="fa fa-plus"></i>
-            </span>
+        <div class="accordion__content card__body">
+            {% if job.role %}
+            <p class="body body--bold">About the position</p>
+            <ul class="body">{{ job.role }}</ul>
+            {% endif %}
+            {% if job.responsabilities %}
+            <p class="body body--bold">Responsabilities</p>
+            <ul class="body">{{ job.responsabilities }}</ul>
+            {% endif %}
+            {% if job.required-skills %}
+            <p class="body body--bold">Required skills & experience</p>
+            <ul class="body">{{ job.required-skills }}</ul>
+            {% endif %}
+            {% if job.additional-skills %}
+            <p class="body body--bold">Additional desirable experience</p>
+            <ul class="body">{{ job.additional-skills }}</ul>
+            {% endif %}
         </div>
-    </div>
-    <div class="accordion__content card__content">
-        {% if job.role %}
-        <p class="body body--bold">About the position</p>
-        <ul class="body">{{ job.role }}</ul>
-        {% endif %}
-        {% if job.responsabilities %}
-        <p class="body body--bold">Responsabilities</p>
-        <ul class="body">{{ job.responsabilities }}</ul>
-        {% endif %}
-        {% if job.required-skills %}
-        <p class="body body--bold">Required skills & experience</p>
-        <ul class="body">{{ job.required-skills }}</ul>
-        {% endif %}
-        {% if job.additional-skills %}
-        <p class="body body--bold">Additional desirable experience</p>
-        <ul class="body">{{ job.additional-skills }}</ul>
-        {% endif %}
     </div>
 </div>

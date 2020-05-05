@@ -107,13 +107,13 @@
 			@include align-items(stretch);
 			@include flex-direction(row);
 
-			.block {
+			.card {
 				width: 50%;
-				padding-top: 0;
-				padding-bottom: $integer-xxxxl;
 				position: relative;
-
-				> * { 
+				
+				&__inner { 
+					padding-top: 0;
+					padding-bottom: $integer-xxxxl;
 					position: relative;
 				}
 
@@ -151,15 +151,6 @@
 				@include responsive(max-width, $mobile-max) {
 					padding-left: $col*2 !important;
 					padding-right: $col*2 !important;
-				}
-
-				img {
-					height: $integer-xxxxl*2;
-					margin-bottom: $integer-xl;
-
-					@include responsive(max-width, $tablet-max) {
-						height: $integer-xxl;
-					}
 				}
 			}
 		}

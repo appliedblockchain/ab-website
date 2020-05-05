@@ -18,50 +18,85 @@
 .card {
     @include display-flex();
     @include flex-direction(column);
-    padding: $integer-md*1.5;
+    position: relative;
+    width: 100%;
+
+    &__image {
+        max-width: $integer-xxxxl;
+
+        & + .card__inner,
+        & + .card__header, 
+        & + .card__title,
+        & + .card__body {
+            margin-top: $integer-md;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        padding: $integer-lg;
+
+        & + .card__image {
+            margin-top: $integer-md;
+        }
+    }
+
+    &__content {
+
+        & + .card__actions {
+            margin-top: $integer-lg;
+        }
+    }
+
+    &__label {
+
+        & + .card__title,
+        & + .card__header {
+            margin-top: $integer;
+        }
+    }
 
     &__header {
         @include display-flex();
         @include justify-content(space-between);
         width: 100%;
 
-        & + .card__content {
+        & + .card__image,
+        & + .card__body,
+        & + .card__meta {
             margin-top: $integer-md;
-        }
-    }
-
-    &__label {
-
-        & + .card__title {
-            margin-top: $integer;
         }
     }
 
     &__title {
 
-        & + .card__body {
+        & + .card__image,
+        & + .card__body,
+        & + .card__meta {
             margin-top: $integer-md;
         }
-    }
-    
-    &__image {
-        max-width: $integer-xxxxl;
-        
-        & + .card__title {
-            margin-top: $integer-xl;
+
+        & + .card__actions {
+            padding-left: $integer-lg;
         }
     }
 
-    &__content {
-        position: relative;
+    &__body {
 
-        .card.no-padding & {
-            padding: $integer-md*2;
+        & + .card__meta {
+            margin-top: $integer;
         }
     }
 
     &__meta {
-        margin-top: $integer-md;
+
+        & + .card__actions {
+            margin-top: $integer-lg;
+        }
+    }
+
+    &__actions {
+
     }
 }
 
@@ -77,23 +112,75 @@
 
         .card {
 
-            &__title {
-        
-                & + .card__body {
+            &__inner {
+                padding: $integer-md*1.5;
+            }
+
+            &__header {
+                
+                & + .card__image,
+                & + .card__body,
+                & + .card__meta {
                     margin-top: $integer;
                 }
             }
+
+            &__title {
+            }
             
             &__image {
-                
-                & + .card__title {
-                    margin-top: $integer-md;
-                }
             }
             
             &__meta {
-                margin-top: $integer;
             }
+        }
+    }
+
+    &--large {
+
+        .card {
+
+            &__image {
+                max-width: $integer-xxxxl*2;
+
+                & + .card__inner,
+                & + .card__header, 
+                & + .card__title,
+                & + .card__body {
+                    margin-top: $integer-xl;
+                }
+            }
+
+            &__inner {
+                padding: $integer-xxl;
+            }
+            &__content {
+
+                & + .card__actions {
+                    margin-top: $integer-xl;
+                }        
+            }
+
+            &__label {}
+            &__header {
+
+                & + .card__image,
+                & + .card__body,
+                & + .card__meta {
+                    margin-top: $integer-xl;
+                }        
+            }
+            &__title {
+
+                & + .card__image,
+                & + .card__body,
+                & + .card__meta {
+                    margin-top: $integer-xl;
+                }        
+            }
+            &__body {}
+            &__meta {}
+            &__actions {}
         }
     }
 }
@@ -119,12 +206,19 @@
             &__image {
                 max-width: none;
 
+                & + .card__inner,
+                & + .card__header, 
+                & + .card__title,
+                & + .card__body {
+                    margin-top: 0;
+                }
+        
                 @include responsive(max-width, $mobile-max) {
                     display: none;
                 }
             }
 
-            &__content {
+            &__inner {
                 @include display-flex();
                 @include justify-content(space-between);
 
@@ -137,6 +231,14 @@
                 }
             }
 
+            &__content {
+
+                & + .card__actions {
+                    margin-top: 0;
+                    padding-left: $integer-md;
+                }
+            }
+    
             &__actions {
                 @include display-flex();
                 @include flex-direction(column); 
@@ -150,6 +252,7 @@
     }
 
     &--portrait {
+        text-align: left;
 
         .card { 
 
@@ -157,10 +260,6 @@
                 height: $integer-xxxxl*2;
                 max-width: none;
             }
-        }
-
-        .card__actions {
-            margin-top: $integer-lg;
         }
     }
 }
@@ -195,7 +294,7 @@
                     }
                 }
 
-                &__content {
+                &__inner {
                     @include flex-basis(66.666%);
 
                     @include responsive(max-width, $tablet-max) {

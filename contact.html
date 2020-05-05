@@ -17,7 +17,7 @@ background_color: white
                 <p class="button__inner">Candidate</p>
             </a>
         </div>
-        <div class="tab__content block block--shadow">
+        <div class="tab__content block background--shadow">
             <div id="company" class="tab__item">
                 {% include components/forms/form-company.html %}
             </div>
@@ -33,20 +33,28 @@ background_color: white
         title = 'We are headquartered in London Bridge, and have offices in Porto'
     %}
     <div class="section__content section__content--2">
-        <div class="block background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
-            <p class="block__header lead">{{ site.address-london }}</p>
-            <div class="block__content">
-                <a href="{{ site.map-london }}" target="_blank" class="button button--primary-darken button--animate fas fa-directions">
-                    <p class="button__inner">Get directions</p>
-                </a>
+        <div class="card card--large background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
+            <div class="card__inner">
+                <div class="card__content">
+                    <p class="card__title lead">{{ site.address-london }}</p>
+                </div>
+                <div class="card__actions">
+                    <a href="{{ site.map-london }}" target="_blank" class="card__actions button button--primary-darken button--animate fas fa-directions">
+                        <p class="button__inner">Get directions</p>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="block background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
-            <p class="block__header lead">{{ site.address-porto }}</p>
-            <div class="block__content">
-                <a href="{{ site.map-porto }}" target="_blank" class="button button--primary-lighten button--animate fas fa-directions">
-                    <p class="button__inner">Get directions</p>
-                </a>
+        <div class="card card--large background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
+            <div class="card__inner">
+                <div class="card__content">
+                    <p class="card__title lead">{{ site.address-porto }}</p>
+                </div>
+                <div class="card__actions">
+                    <a href="{{ site.map-porto }}" target="_blank" class="card__actions button button--primary-lighten button--animate fas fa-directions">
+                        <p class="button__inner">Get directions</p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

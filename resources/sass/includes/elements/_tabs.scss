@@ -67,10 +67,10 @@
 		
 				&:before {
 					@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-					@include background-image(linear-gradient(to bottom, rgba($dark, 0.5), $dark));
+					@include background-image(linear-gradient(to left, rgba($primary, 0.5), $primary));
 				}
 
-				.block {
+				.card {
 					width: 50%;
 					
 					> * {

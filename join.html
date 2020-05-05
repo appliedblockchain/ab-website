@@ -10,7 +10,7 @@ background_color: white
     <div class="row">
         {% for item in site.data.images.join %}
         <div class="col--lg3 col--sm6">
-            <div class="card no-padding">
+            <div class="card">
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
                 <p class="card__title">{{ item.alt }}</p>
             </div>
@@ -38,14 +38,17 @@ background_color: white
                 <p class="button__inner">London</p>
             </a>
         </div>
-        <div class="tab__content block block--shadow no-padding accordion">
+        <div class="tab__content block background--shadow no-padding accordion">
             <div id="porto" class="tab__item">
                 {% if site.data.jobs.porto %}
                 {% for job in site.data.jobs.porto %}
                 {% include components/job.html %}
                 {% endfor %}
                 {% else %}
-                <p class="card body--bold">There are no positions available in our Porto office at the moment. Come back soon!</p>
+                <p class="card card--small">
+                    <p class="card__inner body--bold">
+                        There are no positions available in our Porto office at the moment. Come back soon!</p>
+                    </p>
                 {% endif %}
             </div>
             <div id="london" class="tab__item">
@@ -54,14 +57,17 @@ background_color: white
                 {% include components/job.html %}
                 {% endfor %}
                 {% else %}
-                <p class="card body--bold">There are no positions available in our London office at the moment. Come back soon!</p>
+                <p class="card card--small">
+                    <p class="card__inner body--bold">
+                        There are no positions available in our London office at the moment. Come back soon!</p>
+                    </p>
                 {% endif %}
             </div>
         </div>
     </div>
     <div class="section__content">
         <p class="block__title lead">Can’t find what you’re looking for?</p>
-        <a href="{{ site.url }}/contact" class="ga-button-contact button button--secondary button--large button--animate fa fa-file-alt">
+        <a href="{{ site.url }}/contact" class="ga-button-contact button button--highlight button--animate fa fa-file-alt">
             <p class="button__inner"><span class="hide--mobile">Drop us a </span>message!</p>
         </a>
     </div>

@@ -74,6 +74,10 @@
         margin-top: $integer-xl;
     }
 
+    &-dots {
+        padding-top: $integer*1;
+    }
+
     &-dot {
         @include transition(background-color $transition, transform $transition);
         @include border-radius(50%);

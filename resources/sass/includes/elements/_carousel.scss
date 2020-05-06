@@ -4,8 +4,8 @@
 // CAROUSEL
 // —————————————————————————————————————————————————————————————————
 // general
-// variants
 // owl
+// variants
 // —————————————————————————————————————————————————————————————————
 
 
@@ -19,6 +19,34 @@
     &__item {
         @include display-flex();
         @include align-items(center);
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// owl
+// —————————————————————————————————————————————————————————————————
+
+.owl {
+
+    &-dots {
+        margin-top: $integer-xl;
+    }
+
+    &-dot {
+        @include transition(background-color $transition, transform $transition);
+        @include border-radius(50%);
+        will-change: background-color;
+        height: $integer-md;
+        width: $integer-md;
+        background-color: $secondary !important;
+        margin: 0 $integer-md;
+
+        &.active, &:hover {
+            @include transition(background-color $transition);
+            background-color: $primary !important;
+        }
     }
 }
 
@@ -59,38 +87,15 @@
                 }
             }
         }
-    }
-}
 
+        .owl {
 
-
-// —————————————————————————————————————————————————————————————————
-// owl
-// —————————————————————————————————————————————————————————————————
-
-.owl {
-
-    &-dots {
-        margin-top: $integer-xl;
-    }
-
-    &-dots {
-        padding-top: $integer*1;
-    }
-
-    &-dot {
-        @include transition(background-color $transition, transform $transition);
-        @include border-radius(50%);
-        will-change: background-color, transform;
-        height: $integer;
-        width: $integer;
-        background-color: $secondary !important;
-        margin: 0 $integer-md;
-
-        &.active, &:hover {
-            @include transition(background-color $transition, transform $transition);
-            @include transform(scale(1.5));
-            background-color: $primary !important;
+            &-dots {
+                position: absolute;
+                @include calc(bottom, -($integer-xxl+$integer*1.5));
+                margin-top: 0;
+                width: 100%;
+            }
         }
     }
 }

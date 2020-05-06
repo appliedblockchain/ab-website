@@ -58,6 +58,7 @@
 
     &__header {
         @include display-flex();
+        @include align-items(center);
         @include justify-content(space-between);
         width: 100%;
 
@@ -108,7 +109,24 @@
 
 .card {
 
-    &--small {
+    &--xs {
+
+        .card {
+
+            &__inner {
+                padding: $integer-md;
+            }
+
+            &__content {
+
+                & + .card__actions {
+                    margin-top: $integer;
+                }
+            }
+        }
+    }
+
+    &--sm {
 
         .card {
 
@@ -142,7 +160,7 @@
         }
     }
 
-    &--large {
+    &--lg {
 
         .card {
 
@@ -204,7 +222,7 @@
         text-align: left;
 
         & + & {
-            border-top: 1px solid $medium-grey;
+            border-top: $border-sm $light-grey;
         }
 
         .card {
@@ -339,7 +357,7 @@
     .card {
 
         & + .card {
-            border-top: 1px solid $medium-grey;
+            border-top: $border-sm $light-grey;
         }
     }
 }

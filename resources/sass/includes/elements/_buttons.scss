@@ -32,7 +32,7 @@
 	position: relative;
 	white-space: nowrap;
 	font-family: $font;
-	letter-spacing: 0.05rem;
+	letter-spacing: 0.04rem;
 	line-height: 1;
 
 	&.fa, &.fab, &.fal, &.far, &.fas {
@@ -75,7 +75,7 @@
 	&.button--small {
 		@include font-size(0.75, $font-black, normal);
 		padding: 7px 14px;
-		letter-spacing: 0.04rem;
+		letter-spacing: 0.02rem;
 		line-height: 1.5;
 	}
 
@@ -97,8 +97,8 @@
 	
 		&.button--small {
 			padding: 0;
-			width: $integer-md+$integer;
-			height: $integer-md+$integer;
+			width: $integer-md*2;
+			height: $integer-md*2;
 	
 			.fab {
 				font-weight: 100;
@@ -191,8 +191,7 @@
 	'grey' 			$medium-grey 	$black,
 	'white' 		$white 			$black,
 
-	'facebook' 		$facebook 		$white,
-	'google' 		$google 		$white,
+	'github' 		$github 		$white,
 	'linkedin' 		$linkedin 		$white,
 	'medium' 		$medium 		$white,
 	'twitter' 		$twitter 		$white

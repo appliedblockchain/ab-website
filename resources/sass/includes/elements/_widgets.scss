@@ -21,16 +21,10 @@
     position: relative;
     border-radius: $border-radius;
 
-    &__header {
-        @include display-flex();
-        @include border-top-right-radius($integer);
-        @include border-top-left-radius($integer);
-        width: 100%;
-    }
-
-    &__content {
-        @include border-bottom-right-radius($integer);
-        @include border-bottom-left-radius($integer);
+    &__bar {
+        @include calc(width, '100vw - '$page);
+        position: absolute;
+        bottom: $integer-xl;
     }
 }
 
@@ -64,10 +58,6 @@
 // —————————————————————————————————————————————————————————————————
 // social
 // —————————————————————————————————————————————————————————————————
-
-.social {
-    margin-bottom: $integer-xl;
-}
 
 
 
@@ -104,94 +94,7 @@
 .widget {
 
     &--news {
-        @include display-flex();
-        @include flex-direction(column);
-        @include align-items(center);
-        @include border-top-right-radius(0);
-        @include border-bottom-right-radius(0);
-        @include box-shadow($box-shadow-sm);
-        position: absolute;
-        top: 50%;
-        right: -$integer-xl;
-        width: $integer-xl;
-        background-color: $primary;
-        text-align: left;
-        color: $white;
 
-        @include responsive(max-width, $mobile-max) {
-            @include border-top-right-radius($integer);
-            @include border-bottom-right-radius($integer);
-            position: static;
-            margin-top: $integer;
-            margin-left: 5%;
-            width: 90%;
-        }
-
-        &.block {
-            padding: 0;
-        }
-
-        .button {
-            @include align-self(flex-start);
-            min-width: 128px;
-        }
-
-        .widget {
-            
-            &__header {
-                @include align-items(center);
-                @include border-top-right-radius(0);
-                background-color: $primary-darken;
-                padding: $integer;
-
-                @include responsive(max-width, $mobile-max) {
-                    @include border-top-left-radius($integer);
-                    @include border-top-right-radius($integer);
-                    @include flex-direction(column);
-                    font-size: 1rem;
-
-                    .button {
-                        margin-top: $integer/4;
-                    }
-                }
-            }
-            
-            &__content {
-                @include display-flex();
-                @include flex-direction(row);
-                padding: $integer;
-
-                @include responsive(max-width, $mobile-max) {
-                    font-size: 0.8rem;
-                }
-
-                .button {
-                    margin-top: $integer;
-                }
-            }
-
-            &__logo {
-                width: $integer-xxl;
-                margin-right: $integer;
-
-                @include responsive(max-width, $mobile-max) {
-                    display: none;
-                }
-            }
-
-            &__portrait {
-                width: $integer*5;
-                height: $integer*5;
-                margin-right: $integer;                
-            }
-        }
-
-        .testimonial__mark {
-            opacity: 0.1 !important;
-            top: $integer-xxl;
-            left: $integer-xl;
-            width: $integer*5 !important;
-        }
     }
 }
 

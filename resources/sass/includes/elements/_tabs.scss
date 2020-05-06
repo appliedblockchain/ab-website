@@ -73,7 +73,7 @@
 		
 				&:before {
 					@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-					@include background-image(linear-gradient(to left, rgba($primary, 0.5), $primary));
+					@include background-image(linear-gradient(to left, rgba($dark, 0.2), $dark));
 				}
 
 				.card {

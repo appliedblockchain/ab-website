@@ -1,5 +1,27 @@
 # home.html
-home:
+clients:
+  - name: Shell
+  - name: KLM
+  - name: Toyota
+  - name: Vodafone
+  - name: LLoyds Register
+  - name: United Nations
+  - name: Cygnetise
+  - name: Nuggets
+  - name: APPII
+  - name: Supermoney
+  - name: Sita
+  - name: BABB
+  - name: Travel Ledger
+
+# home.html
+testimonials_clients:
+  - name: ben-van-beurden
+    quote: We did the first product derivative trade on blockchain together with our partner Applied Blockchain
+    author: Ben van Beurden
+    position: CEO
+    company: Shell
+
   - name: johan-krebbers
     quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
     author: Johan Krebbers
@@ -19,7 +41,7 @@ home:
     company: Cygnetise
 
 # about.html
-investors:
+testimonials_investors:
   - name: Shell
     quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
     author: Johan Krebbers
@@ -36,16 +58,6 @@ investors:
     author: Remy Kesrouani
     position: Fund Manager and Partner
     company: Calibrate
-
-# about.html
-partners:
-  - name: Energy Web
-  - name: Fintech Week
-  - name: Innovate Finance
-  - name: Innovate UK
-  - name: Level 39
-  - name: Microsoft
-  - name: Rocket Space
 
 # services.html
 technologies:

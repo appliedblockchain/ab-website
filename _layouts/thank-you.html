@@ -4,21 +4,19 @@ layout: compress
 
 {% include containers/site/header.html %}
 
-<section class="section">
-    <div class="section__content body--large">
-        <div class="thank-you__item">
-            <p class="thank-you__title">In the meantime, don't hesitate to</p>
-            <div class="thank-you__button">
-                <a href="{{ site.url }}/our-projects" class="ga-button-projects thank-you__button button button--primary-darken button--animate fas fa-fill">
-                    <p class="button__inner">Check our projects</p>
-                </a>
-                <a href="{{ site.url }}/products" class="ga-button-products thank-you__button button button--primary-lighten button--animate fas fa-box">
-                    <p class="button__inner">See our products</p>
-                </a>
-            </div>
+<section class="section section--white">
+    <div class="section__content">
+        <p class="block__subtitle body--large">In the meantime, don't hesitate to</p>
+        <div class="block__content">
+            <a href="{{ site.url }}/our-projects" class="ga-button-projects button button--primary-darken button--animate fas fa-fill">
+                <p class="button__inner">Check our projects</p>
+            </a>
+            <a href="{{ site.url }}/products" class="ga-button-products button button--primary-lighten button--animate fas fa-box">
+                <p class="button__inner">See our products</p>
+            </a>
         </div>
-        <div class="thank-you__item">
-            <p class="thank-you__title">And don't forget to follow us on our social media to stay in touch</p>
+        <p class="block__subtitle body--large">And don't forget to follow us on our social media</p>
+        <div class="block__content">
             {% include components/social.html %}
         </div>
     </div>

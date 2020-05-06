@@ -84,7 +84,7 @@
     &__update {
         margin-bottom: $integer-xl;
         padding-top: $integer-xxxl;
-        border-top: 5px solid $medium-grey;
+        border-top: $border-sm $medium-grey;
 
         .post__content + & {
             margin-top: $integer-xxxl;

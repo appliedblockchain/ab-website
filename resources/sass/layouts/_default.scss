@@ -16,16 +16,13 @@
 
 .timeline {
 
-    &__content {
+    &:before {
+        @include pseudo-element('', $integer-max+$integer-xxxl, auto, 0, 50%, 2px, 100%);
+        @include transform(translateX(-1px));
+        background-color: $medium-grey;
 
-        &:before {
-            @include pseudo-element('', $integer-max, auto, 0, 50%, 2px, 100%);
-            @include transform(translateX(-1px));
-            background-color: $medium-grey;
-
-            @include responsive(max-width, $tablet-max) {
-                left: $integer;
-            }
+        @include responsive(max-width, $tablet-max) {
+            left: $integer;
         }
     }
 
@@ -34,8 +31,8 @@
         position: relative;
         margin: $integer-xl 0;
 
-        &:nth-of-type(odd)  { .timeline__date { @include calc(left, '50% +' $integer-xl); } }
-        &:nth-of-type(even) { .timeline__date { @include calc(right, '50% +' $integer-xl);} }
+        &:nth-of-type(odd)  { .timeline__date { left: 0; } }
+        &:nth-of-type(even) { .timeline__date { right: 0; } }
 
         @include responsive(max-width, $tablet-max) {
             width: 100%;
@@ -63,7 +60,7 @@
 
     &__date {
         position: absolute;
-        pointer-events: none;
+        padding: 0 $integer-xxl+$integer-md;
 
         @include responsive(max-width, $tablet-max) {
             right: auto !important;
@@ -74,6 +71,10 @@
     &__item {
         @include display-flex();
         @include align-items(center);
+
+        & + & {
+            margin-top: $integer-xl;
+        }
 
         &:nth-of-type(odd) { 
             .timeline__text { text-align: right; } 
@@ -102,7 +103,7 @@
         @include flex-basis(50%);
         padding: 0 $integer-xxl;
     }
-    
+
     &__text {
 
         @include responsive(max-width, $tablet-max) {
@@ -122,6 +123,10 @@
             height: 100%;
             width: auto;
         }
+    }
+
+    .body--zero {
+        display: contents;
     }
 }
 

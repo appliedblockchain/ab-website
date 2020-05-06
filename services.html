@@ -14,7 +14,7 @@ background_color: white
         <div class="row">
             {% for item in site.data.solutions %}
             <div class="col--4">
-                <div class="card card--large background--shadow">
+                <div class="card card--lg background--shadow">
                     <div class="card__inner">
                         <img src="{{ site.url }}{{ site.imageurl }}/icons/solutions/{{ item.icon }}.svg" alt="" class="card__image">
                         <h2 class="card__title lead">{{ item.title }}</h2>
@@ -42,7 +42,7 @@ background_color: white
         <div class="tab__content background--shadow">
             {% for item in site.data.approach %}
             <div id="{{ item.id }}" class="tab__item">
-                <div class="card card--large card--landscape">
+                <div class="card card--lg card--landscape">
                     <div class="card__inner">
                         <div class="card__content z-index--2">
                             <p class="card__title subtitle">{{ item.title }}</p>

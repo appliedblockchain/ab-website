@@ -1,3 +1,71 @@
+<!-- why is section index.html -->
+<section class="section section--margin-minus section--primary" id="why-us">
+    {% include containers/sections/header.html
+        comment='Why us'
+        title='A Global Specialist in Applications of Advanced Cryptography'
+    %}
+    <div class="section__content why-us">
+        <div class="row">
+            <div class="why-us__item">
+                <div class="coloffset--lg1 col--lg4 col--md3 why-us__image"> 
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/index/thought-leader.png" alt="">
+                </div>
+                <div class="col--xl5 coloffset--lg1 col--lg6 coloffset--md1 col--md8">
+                    <p class="block__title lead">Thought Leaders</p>
+                    <p>We contribute to global industry events and whitepapers, with keynote presentations and commentaries, and also lead training workshops. Our work has led us to be recognised by the UK government, where Adi Ben-Ari has been invited to Roundtables at the House of Lords and presented at the Department for Digital, Culture, Media and Sport.</p>
+                </div>
+            </div>
+            <div class="why-us__item">
+                <div class="coloffset--xl1 col--xl5 col--lg6 col--md8">
+                    <p class="block__title lead">International Market Leader</p>
+                    <p>We have built and deployed distributed solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has also recognised Applied Blockchain amongst the Top Global Blockchain Development and Consulting Firm 2017, 2018 & 2019.</p>
+                </div>
+                <div class="coloffset--lg1 col--lg3 coloffset--md1 col--md3 why-us__image">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/index/market-leader.svg" alt="">
+                </div>
+            </div>
+            <div class="why-us__item">
+                <div class="coloffset--lg2 col--lg3 col--md3 why-us__image"> 
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg" alt="">
+                </div>
+                <div class="col--xl5 coloffset--lg1 col--lg6 coloffset--md1 col--md8">
+                    <p class="block__title lead">Experts in Applications of Advanced Cryptography</p>
+                    <p>Our team of in-house development experts along with our highly-skilled advisory, project and operations team work very closely with our clients to bring advanced cryptography and distributed solutions to life – together.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section__link">
+        <a href="{{ site.url }}/about" class="ga-button-about button button--secondary button--large button--animate fas fa-search">
+            <p class="button__inner">About us</p>
+        </a>
+    </div>
+</section>
+
+<!-- Who we help section / garys video -->
+<section class="section section--grey" id="who-we-help">
+    {% include containers/sections/header.html
+        comment='Who we help'
+        title='We develop distributed, privacy preserving solutions for startups and enterprises alike'
+    %}
+    <div class="section__content">
+        <div class="row">
+            <div class="col--lg6 video z-index--1" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/videoTestimonials.jpg);">
+                <a href="#modal-video" class="js-button-modal">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                </a>
+            </div>
+            <div class="coloffset--lg1 col--lg5">
+                <p class="body--large">We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next-generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.</p>
+                <a href="{{ site.url }}/our-projects" class="ga-button-projects button button--secondary button--large button--animate fas fa-fill">
+                    <p class="button__inner"><span class="hide--mobile">View our </span>projects</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% include components/modals/video.html %}
+</section>
+
 <!-- TODAY'S EVENT (EVENT ) -->
 {% for event in site.data.events %}
 {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->

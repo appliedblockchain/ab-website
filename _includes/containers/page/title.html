@@ -5,7 +5,7 @@
 {% assign background_color = include.background_color %}
 
 <div class="section page__header{% if page.background_color %} section--{{ page.background_color }}{% endif %} background--cover"{% if page.background_image %} style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.title | slugify }}.jpg);"{% endif %}>
-    <h1 class="page__title headline">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+    <h1 class="page__title headline">{% if headline %}{{ headline }}{% else %}{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}{% endif %}</h1>
     {% if page.subtitle %}
     <p class="page__subtitle lead">{{ page.subtitle }}</p>
     {% endif %}

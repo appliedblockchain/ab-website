@@ -54,7 +54,7 @@ $('.owl-carousel-partners').owlCarousel({
     }
 });
 
-$('.owl-carousel-investors').owlCarousel({
+$('.owl-carousel-testimonials').owlCarousel({
     loop: true,
     autoplay: true,
     autoplayTimeout: 10000,

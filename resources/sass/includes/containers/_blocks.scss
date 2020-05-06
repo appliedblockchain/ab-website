@@ -29,6 +29,24 @@
             margin-top: $integer-xl;
         }
     }
+
+    &__subtitle {
+
+        & + .block__content {
+            margin-top: $integer-md;
+        }
+    }
+
+    &__content {
+        
+        & + & {
+            margin-top: $integer-lg;
+        }
+
+        & + .block__subtitle {
+            margin-top: $integer-lg;
+        }
+    }
 }
 
 

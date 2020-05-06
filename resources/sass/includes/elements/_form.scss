@@ -89,7 +89,7 @@
 		width: 100%;
 		background-color: transparent;
 		padding: 10px $integer*0.75 8px $integer*0.75;
-		border: 2px solid $medium-grey;
+		border: $border-sm $medium-grey;
 	}
 
 	&__button {
@@ -151,7 +151,7 @@
 		overflow: scroll;
 		z-index: 2;
 		background-color: $white;
-		border: 2px solid $primary;
+		border: $border-sm $primary;
 		margin-left: 0;
 
 		li {
@@ -170,7 +170,7 @@
 			}
 
 			& + li {
-				border-top: 1px solid $light-grey;
+				border-top: $border-sm $light-grey;
 			}
 
 			&:hover {
@@ -240,7 +240,7 @@
 			@include box-sizing(border-box);
 			@include transition(border $transition);
 			will-change: border;
-			border: 2px solid $medium-grey;
+			border: $border-sm $medium-grey;
 		}
 	}
 }

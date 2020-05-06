@@ -87,6 +87,13 @@
 				padding-left: $page*2;
 			}
 		}
+
+		&.section--overlap {
+
+			.section__header {
+				padding-top: $integer-xxxxl*2;
+			}
+		}
 	}
 
 	&--alt {
@@ -236,5 +243,13 @@
 		&.section {
 			padding-bottom: $integer-xxxxl+$integer-xxxl;
 		}
+	}
+}
+
+#index-intro {
+
+	.section__header {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }

@@ -4,6 +4,8 @@
 // DEFAULT
 // —————————————————————————————————————————————————————————————————
 // about
+// join
+// privacy-policy
 // —————————————————————————————————————————————————————————————————
 
 
@@ -130,5 +132,98 @@
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
         background-color: rgba($primary, 0.7);
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// join
+// —————————————————————————————————————————————————————————————————
+
+#join-header {
+
+    .section__header {
+        z-index: 2;
+    }
+}
+
+.join {
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+
+        &:before {
+            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+            background-color: rgba($primary, 0.8);
+            z-index: 1;
+        }
+
+        &--london {
+            @extend .join__background;
+            @include background(bottom center, cover);
+        }
+
+        &--porto {
+            @extend .join__background;
+            @include background(center center, cover);
+            @include transition(opacity 0.8s ease 0s);
+            opacity: 0;
+            
+            &.js-show {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// privacy-policy
+// —————————————————————————————————————————————————————————————————
+
+.privacy {
+    /* Creates a new instance of the section counter with each ol element */
+    counter-reset: section;
+    list-style-type: none;
+      
+    &__title,
+    &__subtitle {
+        
+       &:before {
+            /* Increments only this instance of the section counter */
+            counter-increment: section;
+            /* Combines the values of all instances of the section counter, separated by a period */
+            content: counters(section, ".") ". ";
+        }
+    }
+
+    &__title {
+
+        & + .privacy__content {
+            padding-top: $integer-lg;
+        }
+    }
+
+    &__subtitle {
+        padding-top: $integer-lg;
+
+        & + .privacy__content {
+            padding-top: $integer-md;
+        }
+    }
+
+    &__content {
+        list-style: none;
+
+        & + .privacy__title {
+            padding-top: $integer-xl;
+        }
     }
 }

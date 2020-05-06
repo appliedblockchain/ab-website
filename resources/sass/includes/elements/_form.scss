@@ -238,7 +238,7 @@
 		&:before {
 			@include pseudo-element('', -1px, auto, auto, 0, $integer, $integer);
 			@include box-sizing(border-box);
-			@include transition(border 0.4s ease 0s);
+			@include transition(border $transition);
 			will-change: border;
 			border: 2px solid $medium-grey;
 		}

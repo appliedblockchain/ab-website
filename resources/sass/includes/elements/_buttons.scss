@@ -144,12 +144,12 @@
 	}
 
 	&--underline {
-		@include transition(color 0.4s ease);
+		@include transition(color $transition);
 		will-change: color;
 		text-decoration: underline;
 
 		@include hover-link {
-			color: $secondary;
+			color: $primary;
 		}
 	}
 

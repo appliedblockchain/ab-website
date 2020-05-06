@@ -186,14 +186,6 @@ ul {
 	list-style: disc;
 }
 
-li {
-	margin-left: 18px;
-
-	& + & {
-		padding-top: $integer/2 !important;
-	}
-}
-
 // images
 
 .background {

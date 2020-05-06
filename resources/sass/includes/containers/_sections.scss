@@ -6,7 +6,6 @@
 // general
 // variants
 // colors
-// alignement
 // layouts
 // —————————————————————————————————————————————————————————————————
 
@@ -223,43 +222,6 @@
 
 
 // —————————————————————————————————————————————————————————————————
-// alignement
-// —————————————————————————————————————————————————————————————————
-
-.section {
-
-	&--left {
-		@include align-items(flex-start);
-		text-align: left;
-
-		.section {
-
-			&__header, 
-			&__content {
-				@include align-items(flex-start);
-				text-align: left;
-			}
-		}
-	}
-
-	&--right {
-		@include align-items(flex-end);
-		text-align: right;
-
-		.section {
-	
-			&__header, 
-			&__content {
-				@include align-items(flex-end);
-				text-align: right;
-			}
-		}
-	}
-}
-
-
-
-// —————————————————————————————————————————————————————————————————
 // layouts
 // —————————————————————————————————————————————————————————————————
 
@@ -268,11 +230,11 @@
 	.section--overlap {
 		margin-top: -$integer-xxxxl*3;
 	}
-}
-
-#join-header {
-
-	&.section {
-		padding-bottom: $integer-xxxxl+$integer-xxxl;
+	
+	&-header {
+		
+		&.section {
+			padding-bottom: $integer-xxxxl+$integer-xxxl;
+		}
 	}
 }

@@ -311,67 +311,27 @@
 // —————————————————————————————————————————————————————————————————
 
 .footer {
-	font-weight: $font-regular;
+	text-align: left;
+	margin-bottom: -$integer-xl;
 
-	> * {
-		@include display-flex();
-	}
-
-	&__item {
-		margin-bottom: $integer-xxl;
-
-		@include responsive(max-width, $mobile-max) {
-			margin-bottom: $integer-xl;
-		}
+	.card {
+		margin-bottom: $integer-xl;
 	}
 
 	&__logo {
-		@include display-flex();
-		@include flex-direction(column);
-		@include justify-content(space-between);
-
-		@include responsive(max-width, $desktop-max) {
-			@include flex-direction(row);
-			@include justify-content(flex-start);
-
-			.logo {
-				min-width: $integer-xl;
-				margin-right: $integer-xxxl;
-			}
-		}
-
-		@include responsive(max-width, $desktop-max) {
-			@include flex-direction(column);
-
-			.logo {
-				min-width: auto;
-				margin-right: 0;
-				margin-bottom: $integer-xl;
-			}
-		}
+		margin-bottom: $integer-xl;
 	}
 
-	&__title {
-		margin-bottom: $integer;
-
-		.footer & {
-			color: $white;
-		}
-	}
-
-	&__adress {
-
-		p + p {
-			margin-top: $integer;
-		}
-
-		.body--bold {
-			margin-top: $integer;
-		}
+	.form__checkbox {
+		margin-top: $integer-md;
 	}
 
 	&__button {
 		display: block !important;
 		margin-left: 0 !important;
+
+		&:hover {
+			color: $primary;
+		}
 	}
 }

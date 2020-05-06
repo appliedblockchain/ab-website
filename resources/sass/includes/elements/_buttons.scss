@@ -10,7 +10,6 @@
 // animate
 // close
 // menu
-// special
 // —————————————————————————————————————————————————————————————————
 
 
@@ -49,6 +48,7 @@
 		font-family: $font;
 		text-transform: uppercase;
 		letter-spacing: 0.1rem;
+		text-align: center;
 	}
 
 	& + & {
@@ -131,11 +131,18 @@
 	}
 
 	&--text {
+		@include transition(color $transition);
+		will-change: color;
 		display: block;
 		overflow: initial;
 		padding: 0;
-		font-weight: $font-bold;
+		font-weight: $font-regular;
 		letter-spacing: 0.025rem;
+
+		& + & {
+			margin-left: 0;
+			margin-top: $integer;
+		}
 
 		&.button--small, 
 		&.button--large {
@@ -323,23 +330,6 @@
 
 		.button__inner {
 			opacity: 0;
-		}
-	}
-}
-
-
-
-// —————————————————————————————————————————————————————————————————
-// special
-// —————————————————————————————————————————————————————————————————
-
-header,
-.footer {
-
-	.button {
-
-		&:hover {
-			color: $primary;
 		}
 	}
 }

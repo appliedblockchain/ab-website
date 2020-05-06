@@ -693,7 +693,7 @@ optgroup {
 /* line 9, ../sass/includes/mixins/_logos.scss */
 .logo__item {
   width: 100%;
-  max-width: 2.5rem;
+  max-width: 25rem;
   height: auto;
 }
 /* line 15, ../sass/includes/mixins/_logos.scss */
@@ -1069,7 +1069,7 @@ html, body {
   display: none;
 }
 
-/* line 22, ../sass/includes/elements/_buttons.scss */
+/* line 21, ../sass/includes/elements/_buttons.scss */
 .button {
   -moz-transition: background-color 0.4s ease 0s, -moz-transform 0.4s ease 0s, opacity 0.4s ease 0s;
   -o-transition: background-color 0.4s ease 0s, -o-transform 0.4s ease 0s, opacity 0.4s ease 0s;
@@ -1091,12 +1091,12 @@ html, body {
   letter-spacing: 0.04rem;
   line-height: 1;
 }
-/* line 38, ../sass/includes/elements/_buttons.scss */
+/* line 37, ../sass/includes/elements/_buttons.scss */
 .button.fa, .button.fab, .button.fal, .button.far, .button.fas {
   display: -webkit-inline-flex;
   display: inline-flex;
 }
-/* line 42, ../sass/includes/elements/_buttons.scss */
+/* line 41, ../sass/includes/elements/_buttons.scss */
 .button__inner {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -1114,6 +1114,7 @@ html, body {
   font-family: "Chivo", Verdana, Geneva, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 /* line 54, ../sass/includes/elements/_buttons.scss */
 .button + .button {
@@ -1189,17 +1190,27 @@ html, body {
 }
 /* line 133, ../sass/includes/elements/_buttons.scss */
 .button--text {
+  -moz-transition: color 0.4s ease 0s;
+  -o-transition: color 0.4s ease 0s;
+  -webkit-transition: color 0.4s ease 0s;
+  transition: color 0.4s ease 0s;
+  will-change: color;
   display: block;
   overflow: initial;
   padding: 0;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.025rem;
 }
-/* line 140, ../sass/includes/elements/_buttons.scss */
+/* line 142, ../sass/includes/elements/_buttons.scss */
+.button--text + .button--text {
+  margin-left: 0;
+  margin-top: 0.5rem;
+}
+/* line 147, ../sass/includes/elements/_buttons.scss */
 .button--text.button--small, .button--text.button--large {
   padding: 0;
 }
-/* line 146, ../sass/includes/elements/_buttons.scss */
+/* line 153, ../sass/includes/elements/_buttons.scss */
 .button--underline {
   -moz-transition: color 0.4s ease 0s;
   -o-transition: color 0.4s ease 0s;
@@ -1212,20 +1223,20 @@ html, body {
 .button--underline:hover, .button--underline:active, .button--underline:focus {
   color: #007bff;
 }
-/* line 156, ../sass/includes/elements/_buttons.scss */
+/* line 163, ../sass/includes/elements/_buttons.scss */
 .button--block {
   display: block;
 }
-/* line 159, ../sass/includes/elements/_buttons.scss */
+/* line 166, ../sass/includes/elements/_buttons.scss */
 .button--block + .button--block {
   margin-left: 0;
   margin-top: 0.25rem;
 }
-/* line 166, ../sass/includes/elements/_buttons.scss */
+/* line 173, ../sass/includes/elements/_buttons.scss */
 .button--block.button--text + .button--block.button--text {
   margin-top: 0.5rem;
 }
-/* line 171, ../sass/includes/elements/_buttons.scss */
+/* line 178, ../sass/includes/elements/_buttons.scss */
 .button--block.fa, .button--block.fab, .button--block.fal, .button--block.far, .button--block.fas {
   display: block;
 }
@@ -1406,7 +1417,7 @@ html, body {
   color: #ffffff;
 }
 
-/* line 208, ../sass/includes/elements/_buttons.scss */
+/* line 215, ../sass/includes/elements/_buttons.scss */
 .button--animate:before {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -1430,14 +1441,14 @@ html, body {
   text-align: center;
   background-color: transparent;
 }
-/* line 221, ../sass/includes/elements/_buttons.scss */
+/* line 228, ../sass/includes/elements/_buttons.scss */
 .button--animate:hover:before {
   -moz-transform: translateX(140%);
   -ms-transform: translateX(140%);
   -webkit-transform: translateX(140%);
   transform: translateX(140%);
 }
-/* line 224, ../sass/includes/elements/_buttons.scss */
+/* line 231, ../sass/includes/elements/_buttons.scss */
 .button--animate:hover .button__inner {
   -moz-transform: translateX(180%);
   -ms-transform: translateX(180%);
@@ -1445,13 +1456,13 @@ html, body {
   transform: translateX(180%);
 }
 
-/* line 236, ../sass/includes/elements/_buttons.scss */
+/* line 243, ../sass/includes/elements/_buttons.scss */
 .button--close {
   height: 3rem;
   width: 3rem;
   padding: 0;
 }
-/* line 241, ../sass/includes/elements/_buttons.scss */
+/* line 248, ../sass/includes/elements/_buttons.scss */
 .button--close:before, .button--close:after {
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -1474,21 +1485,21 @@ html, body {
   will-change: transform;
   border-radius: 0.15rem;
 }
-/* line 251, ../sass/includes/elements/_buttons.scss */
+/* line 258, ../sass/includes/elements/_buttons.scss */
 .button--close.rotate:before {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 255, ../sass/includes/elements/_buttons.scss */
+/* line 262, ../sass/includes/elements/_buttons.scss */
 .button--close.rotate:after {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 259, ../sass/includes/elements/_buttons.scss */
+/* line 266, ../sass/includes/elements/_buttons.scss */
 .button--close.rotate:hover:before, .button--close.rotate:hover:after {
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -1496,7 +1507,7 @@ html, body {
   transform: rotate(0deg);
 }
 
-/* line 270, ../sass/includes/elements/_buttons.scss */
+/* line 277, ../sass/includes/elements/_buttons.scss */
 .button--menu {
   display: -webkit-flex;
   display: flex;
@@ -1516,11 +1527,11 @@ html, body {
   border: 0;
   padding: 0;
 }
-/* line 284, ../sass/includes/elements/_buttons.scss */
+/* line 291, ../sass/includes/elements/_buttons.scss */
 .button--menu:before, .button--menu:after, .button--menu .button__inner {
   background-color: #ffffff;
 }
-/* line 288, ../sass/includes/elements/_buttons.scss */
+/* line 295, ../sass/includes/elements/_buttons.scss */
 .button--menu:before, .button--menu:after {
   -moz-transition: -moz-transform 0.4s ease 0s;
   -o-transition: -o-transform 0.4s ease 0s;
@@ -1537,7 +1548,7 @@ html, body {
   border-radius: 0.15rem;
   will-change: transform;
 }
-/* line 295, ../sass/includes/elements/_buttons.scss */
+/* line 302, ../sass/includes/elements/_buttons.scss */
 .button--menu:before {
   -moz-transform: translateY(0.5rem);
   -ms-transform: translateY(0.5rem);
@@ -1547,7 +1558,7 @@ html, body {
   -webkit-animation: button-menu-close-before 0.8s ease 0s;
   animation: button-menu-close-before 0.8s ease 0s;
 }
-/* line 300, ../sass/includes/elements/_buttons.scss */
+/* line 307, ../sass/includes/elements/_buttons.scss */
 .button--menu:after {
   -moz-transform: translateY(-0.5rem);
   -ms-transform: translateY(-0.5rem);
@@ -1557,7 +1568,7 @@ html, body {
   -webkit-animation: button-menu-close-after 0.8s ease 0s;
   animation: button-menu-close-after 0.8s ease 0s;
 }
-/* line 305, ../sass/includes/elements/_buttons.scss */
+/* line 312, ../sass/includes/elements/_buttons.scss */
 .button--menu .button__inner {
   -moz-transition: opacity 0s ease 0.4s;
   -o-transition: opacity 0s ease 0.4s;
@@ -1570,27 +1581,21 @@ html, body {
   height: 0.25rem;
   position: absolute;
 }
-/* line 316, ../sass/includes/elements/_buttons.scss */
+/* line 323, ../sass/includes/elements/_buttons.scss */
 .button--menu.button--menu--open:before {
   -moz-animation: button-menu-open-before 0.8s ease 0s forwards;
   -webkit-animation: button-menu-open-before 0.8s ease 0s forwards;
   animation: button-menu-open-before 0.8s ease 0s forwards;
 }
-/* line 320, ../sass/includes/elements/_buttons.scss */
+/* line 327, ../sass/includes/elements/_buttons.scss */
 .button--menu.button--menu--open:after {
   -moz-animation: button-menu-open-after 0.8s ease 0s forwards;
   -webkit-animation: button-menu-open-after 0.8s ease 0s forwards;
   animation: button-menu-open-after 0.8s ease 0s forwards;
 }
-/* line 324, ../sass/includes/elements/_buttons.scss */
+/* line 331, ../sass/includes/elements/_buttons.scss */
 .button--menu.button--menu--open .button__inner {
   opacity: 0;
-}
-
-/* line 341, ../sass/includes/elements/_buttons.scss */
-header .button:hover,
-.footer .button:hover {
-  color: #007bff;
 }
 
 /* line 19, ../sass/includes/elements/_carousel.scss */
@@ -1752,22 +1757,24 @@ header .button:hover,
   transition: border 0.4s ease 0s;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  -moz-border-radius: 20px !important;
-  -webkit-border-radius: 20px;
-  border-radius: 20px !important;
   will-change: border;
   width: 100%;
   background-color: transparent;
-  padding: 10px 0.375rem 8px 0.375rem;
+  padding: 0.5rem 0.75rem;
   border: 0.125rem solid #d7d7dc;
+  border-radius: 2rem !important;
 }
 /* line 95, ../sass/includes/elements/_form.scss */
 .form__button {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 /* line 99, ../sass/includes/elements/_form.scss */
 .form__footer {
   text-align: left;
+}
+/* line 103, ../sass/includes/elements/_form.scss */
+.form__notice {
+  margin-top: 0.5rem;
 }
 
 /* line 161, ../sass/modules/_mixins.scss */
@@ -1794,7 +1801,7 @@ header .button:hover,
   opacity: 1;
 }
 
-/* line 115, ../sass/includes/elements/_form.scss */
+/* line 119, ../sass/includes/elements/_form.scss */
 .select-hide {
   opacity: 0;
   position: absolute;
@@ -1803,16 +1810,16 @@ header .button:hover,
   bottom: 0;
 }
 
-/* line 123, ../sass/includes/elements/_form.scss */
+/* line 127, ../sass/includes/elements/_form.scss */
 .form__select {
   cursor: pointer;
   position: relative;
 }
-/* line 127, ../sass/includes/elements/_form.scss */
+/* line 131, ../sass/includes/elements/_form.scss */
 .form__select .form__input {
   cursor: pointer;
 }
-/* line 131, ../sass/includes/elements/_form.scss */
+/* line 135, ../sass/includes/elements/_form.scss */
 .form__select:after {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -1838,7 +1845,7 @@ header .button:hover,
   font-size: 1.2rem;
   pointer-events: none;
 }
-/* line 142, ../sass/includes/elements/_form.scss */
+/* line 146, ../sass/includes/elements/_form.scss */
 .form__select .form__dropdown {
   top: -webkit-calc(100% + 0.25rem);
   top: calc(100% + 0.25rem);
@@ -1857,7 +1864,7 @@ header .button:hover,
   border: 0.125rem solid #007bff;
   margin-left: 0;
 }
-/* line 157, ../sass/includes/elements/_form.scss */
+/* line 161, ../sass/includes/elements/_form.scss */
 .form__select .form__dropdown li {
   -moz-transition: color 0.4s ease 0s;
   -o-transition: color 0.4s ease 0s;
@@ -1868,28 +1875,28 @@ header .button:hover,
   padding: 9px 0.375rem;
   cursor: pointer;
 }
-/* line 164, ../sass/includes/elements/_form.scss */
+/* line 168, ../sass/includes/elements/_form.scss */
 .form__select .form__dropdown li:nth-child(1) {
   display: none;
 }
-/* line 168, ../sass/includes/elements/_form.scss */
+/* line 172, ../sass/includes/elements/_form.scss */
 .form__select .form__dropdown li:nth-child(2) {
   border-top: 0;
 }
-/* line 172, ../sass/includes/elements/_form.scss */
+/* line 176, ../sass/includes/elements/_form.scss */
 .form__select .form__dropdown li + li {
   border-top: 0.125rem solid #f8f8f8;
 }
-/* line 176, ../sass/includes/elements/_form.scss */
+/* line 180, ../sass/includes/elements/_form.scss */
 .form__select .form__dropdown li:hover {
   color: #007bff;
 }
 
-/* line 189, ../sass/includes/elements/_form.scss */
+/* line 193, ../sass/includes/elements/_form.scss */
 .form__file {
   position: relative;
 }
-/* line 195, ../sass/includes/elements/_form.scss */
+/* line 199, ../sass/includes/elements/_form.scss */
 .form__file .form__button {
   -moz-border-radius-bottomright: 0.2rem;
   -webkit-border-bottom-right-radius: 0.2rem;
@@ -1906,21 +1913,24 @@ header .button:hover,
   position: absolute;
 }
 
-/* line 216, ../sass/includes/elements/_form.scss */
-.form__checkbox .form__input, .form__radio .form__input {
+/* line 221, ../sass/includes/elements/_form.scss */
+.form__checkbox .form__input,
+.form__radio .form__input {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
-/* line 222, ../sass/includes/elements/_form.scss */
-.form__checkbox .form__input:checked + .form__label:before, .form__radio .form__input:checked + .form__label:before {
+/* line 227, ../sass/includes/elements/_form.scss */
+.form__checkbox .form__input:checked + .form__label:before,
+.form__radio .form__input:checked + .form__label:before {
   border-color: #007bff;
   border-width: 0.5rem;
 }
-/* line 228, ../sass/includes/elements/_form.scss */
-.form__checkbox .form__label, .form__radio .form__label {
-  padding-left: 0.75rem;
+/* line 233, ../sass/includes/elements/_form.scss */
+.form__checkbox .form__label,
+.form__radio .form__label {
+  padding-left: 2rem;
   cursor: pointer;
   margin: 0;
   font-size: 1rem !important;
@@ -1929,16 +1939,17 @@ header .button:hover,
   color: #000a1e !important;
   white-space: normal;
 }
-/* line 238, ../sass/includes/elements/_form.scss */
-.form__checkbox .form__label:before, .form__radio .form__label:before {
+/* line 243, ../sass/includes/elements/_form.scss */
+.form__checkbox .form__label:before,
+.form__radio .form__label:before {
   content: "";
   position: absolute;
   top: -1px;
   right: auto;
   bottom: auto;
   left: 0;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1950,19 +1961,19 @@ header .button:hover,
   border: 0.125rem solid #d7d7dc;
 }
 
-/* line 252, ../sass/includes/elements/_form.scss */
+/* line 257, ../sass/includes/elements/_form.scss */
 .form__checkbox .form__input:checked + .form__label:before {
-  border-width: 0.5rem;
+  border-width: 0.75rem;
 }
-/* line 256, ../sass/includes/elements/_form.scss */
+/* line 261, ../sass/includes/elements/_form.scss */
 .form__checkbox .form__input:checked + .form__label:after {
   opacity: 1;
 }
-/* line 263, ../sass/includes/elements/_form.scss */
+/* line 268, ../sass/includes/elements/_form.scss */
 .form__checkbox .form__label:before {
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
 }
-/* line 267, ../sass/includes/elements/_form.scss */
+/* line 272, ../sass/includes/elements/_form.scss */
 .form__checkbox .form__label:after {
   -moz-transition: opacity 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s;
@@ -1986,14 +1997,14 @@ header .button:hover,
   bottom: auto;
   left: 0;
   will-change: opacity;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   font-size: 0.7rem;
   line-height: 0;
   opacity: 0;
 }
 
-/* line 283, ../sass/includes/elements/_form.scss */
+/* line 288, ../sass/includes/elements/_form.scss */
 .form__radio {
   display: -webkit-flex;
   display: flex;
@@ -2003,15 +2014,15 @@ header .button:hover,
   flex-basis: 0;
   height: 2.5rem;
 }
-/* line 289, ../sass/includes/elements/_form.scss */
+/* line 294, ../sass/includes/elements/_form.scss */
 .form__radio + .form__radio {
   margin-left: 0.5rem;
 }
-/* line 295, ../sass/includes/elements/_form.scss */
+/* line 300, ../sass/includes/elements/_form.scss */
 .form__radio .form__input:checked + .form__label:before {
   border-width: 7px;
 }
-/* line 302, ../sass/includes/elements/_form.scss */
+/* line 307, ../sass/includes/elements/_form.scss */
 .form__radio .form__label:before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -2324,24 +2335,19 @@ header .button:hover,
 }
 
 /* line 70, ../sass/includes/elements/_widgets.scss */
-.newsletter__notice {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-/* line 75, ../sass/includes/elements/_widgets.scss */
 .newsletter__button {
   margin-top: 0.5rem;
 }
-/* line 79, ../sass/includes/elements/_widgets.scss */
+/* line 74, ../sass/includes/elements/_widgets.scss */
 .newsletter .form__label {
   color: #ffffff !important;
 }
-/* line 83, ../sass/includes/elements/_widgets.scss */
+/* line 78, ../sass/includes/elements/_widgets.scss */
 .newsletter__input {
-  max-width: 2.5rem;
+  max-width: 25rem;
 }
 
-/* line 107, ../sass/includes/elements/_widgets.scss */
+/* line 102, ../sass/includes/elements/_widgets.scss */
 .cookie {
   display: -webkit-flex;
   display: flex;
@@ -2370,7 +2376,7 @@ header .button:hover,
   display: none;
 }
 @media (max-width: 575.98px) {
-  /* line 107, ../sass/includes/elements/_widgets.scss */
+  /* line 102, ../sass/includes/elements/_widgets.scss */
   .cookie {
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
@@ -2381,27 +2387,27 @@ header .button:hover,
   }
 }
 @media (pointer: coarse) {
-  /* line 107, ../sass/includes/elements/_widgets.scss */
+  /* line 102, ../sass/includes/elements/_widgets.scss */
   .cookie {
     padding-right: 8.33333%;
   }
 }
-/* line 137, ../sass/includes/elements/_widgets.scss */
+/* line 132, ../sass/includes/elements/_widgets.scss */
 .cookie.js-cookie-accepted {
   opacity: 0;
 }
-/* line 141, ../sass/includes/elements/_widgets.scss */
+/* line 136, ../sass/includes/elements/_widgets.scss */
 .cookie__text {
   padding-right: 0.5rem;
 }
 @media (max-width: 575.98px) {
-  /* line 141, ../sass/includes/elements/_widgets.scss */
+  /* line 136, ../sass/includes/elements/_widgets.scss */
   .cookie__text {
     padding-right: 0;
     margin-bottom: 0.5rem;
   }
 }
-/* line 150, ../sass/includes/elements/_widgets.scss */
+/* line 145, ../sass/includes/elements/_widgets.scss */
 .cookie__button {
   min-width: 75px;
 }
@@ -3239,79 +3245,29 @@ header .button:hover,
 
 /* line 313, ../sass/includes/containers/_page.scss */
 .footer {
-  font-weight: 400;
+  text-align: left;
+  margin-bottom: -2.5rem;
 }
-/* line 316, ../sass/includes/containers/_page.scss */
-.footer > * {
-  display: -webkit-flex;
-  display: flex;
+/* line 317, ../sass/includes/containers/_page.scss */
+.footer .card {
+  margin-bottom: 2.5rem;
 }
-/* line 320, ../sass/includes/containers/_page.scss */
-.footer__item {
-  margin-bottom: 4rem;
-}
-@media (max-width: 575.98px) {
-  /* line 320, ../sass/includes/containers/_page.scss */
-  .footer__item {
-    margin-bottom: 2.5rem;
-  }
-}
-/* line 328, ../sass/includes/containers/_page.scss */
+/* line 321, ../sass/includes/containers/_page.scss */
 .footer__logo {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  margin-bottom: 2.5rem;
 }
-@media (max-width: 1023.98px) {
-  /* line 328, ../sass/includes/containers/_page.scss */
-  .footer__logo {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-  }
-  /* line 337, ../sass/includes/containers/_page.scss */
-  .footer__logo .logo {
-    min-width: 2.5rem;
-    margin-right: 5rem;
-  }
+/* line 325, ../sass/includes/containers/_page.scss */
+.footer .form__checkbox {
+  margin-top: 1rem;
 }
-@media (max-width: 1023.98px) {
-  /* line 328, ../sass/includes/containers/_page.scss */
-  .footer__logo {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-  /* line 346, ../sass/includes/containers/_page.scss */
-  .footer__logo .logo {
-    min-width: auto;
-    margin-right: 0;
-    margin-bottom: 2.5rem;
-  }
-}
-/* line 354, ../sass/includes/containers/_page.scss */
-.footer__title {
-  margin-bottom: 0.5rem;
-}
-/* line 357, ../sass/includes/containers/_page.scss */
-.footer .footer__title {
-  color: #ffffff;
-}
-/* line 364, ../sass/includes/containers/_page.scss */
-.footer__adress p + p {
-  margin-top: 0.5rem;
-}
-/* line 368, ../sass/includes/containers/_page.scss */
-.footer__adress .body--bold {
-  margin-top: 0.5rem;
-}
-/* line 373, ../sass/includes/containers/_page.scss */
+/* line 329, ../sass/includes/containers/_page.scss */
 .footer__button {
   display: block !important;
   margin-left: 0 !important;
+}
+/* line 333, ../sass/includes/containers/_page.scss */
+.footer__button:hover {
+  color: #007bff;
 }
 
 /* line 13, ../sass/includes/containers/_site.scss */

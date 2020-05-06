@@ -67,11 +67,6 @@
 
 .newsletter {
     
-    &__notice {
-        margin-top: $integer;
-        margin-bottom: $integer;
-    }
-    
     &__button {
         margin-top: $integer;
     }
@@ -81,7 +76,7 @@
     }
 
     &__input {
-        max-width: $integer-xl;
+        max-width: $integer-max*2;
     }
 }
 

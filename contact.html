@@ -17,12 +17,14 @@ background_color: white
                 <p class="button__inner">Candidate</p>
             </a>
         </div>
-        <div class="tab__content block background--shadow">
-            <div id="company" class="tab__item">
-                {% include components/forms/form-company.html %}
-            </div>
-            <div id="candidate" class="tab__item">
-                {% include components/forms/form-candidate.html %}
+        <div class="tab__content card background--shadow">
+            <div class="card__inner">
+                <div id="company" class="tab__item">
+                    {% include components/forms/form-company.html %}
+                </div>
+                <div id="candidate" class="tab__item">
+                    {% include components/forms/form-candidate.html %}
+                </div>
             </div>
         </div>
     </div>

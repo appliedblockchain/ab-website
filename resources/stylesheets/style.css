@@ -2667,56 +2667,60 @@ header .button:hover,
 .card--small .card__header + .card__image, .card--small .card__header + .card__body, .card--small .card__header + .card__meta {
   margin-top: 0.5rem;
 }
-/* line 143, ../sass/includes/containers/_cards.scss */
+/* line 130, ../sass/includes/containers/_cards.scss */
+.card--small .card__title + .card__image, .card--small .card__title + .card__body, .card--small .card__title + .card__meta {
+  margin-top: 0.5rem;
+}
+/* line 149, ../sass/includes/containers/_cards.scss */
 .card--large .card__image {
   max-width: 15rem;
 }
-/* line 146, ../sass/includes/containers/_cards.scss */
+/* line 152, ../sass/includes/containers/_cards.scss */
 .card--large .card__image + .card__inner, .card--large .card__image + .card__header, .card--large .card__image + .card__title, .card--large .card__image + .card__body {
   margin-top: 2.5rem;
 }
-/* line 154, ../sass/includes/containers/_cards.scss */
+/* line 160, ../sass/includes/containers/_cards.scss */
 .card--large .card__inner {
   padding: 4rem;
 }
-/* line 159, ../sass/includes/containers/_cards.scss */
+/* line 165, ../sass/includes/containers/_cards.scss */
 .card--large .card__content + .card__actions {
   margin-top: 2.5rem;
 }
-/* line 167, ../sass/includes/containers/_cards.scss */
+/* line 173, ../sass/includes/containers/_cards.scss */
 .card--large .card__header + .card__image, .card--large .card__header + .card__body, .card--large .card__header + .card__meta {
   margin-top: 2.5rem;
 }
-/* line 175, ../sass/includes/containers/_cards.scss */
+/* line 181, ../sass/includes/containers/_cards.scss */
 .card--large .card__title + .card__image, .card--large .card__title + .card__body, .card--large .card__title + .card__meta {
   margin-top: 2.5rem;
 }
 
-/* line 196, ../sass/includes/containers/_cards.scss */
+/* line 202, ../sass/includes/containers/_cards.scss */
 .card--landscape {
   -webkit-flex-direction: row;
   flex-direction: row;
   text-align: left;
 }
-/* line 200, ../sass/includes/containers/_cards.scss */
+/* line 206, ../sass/includes/containers/_cards.scss */
 .card--landscape + .card--landscape {
   border-top: 1px solid #d7d7dc;
 }
-/* line 206, ../sass/includes/containers/_cards.scss */
+/* line 212, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__image {
   max-width: none;
 }
-/* line 209, ../sass/includes/containers/_cards.scss */
+/* line 215, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__image + .card__inner, .card--landscape .card__image + .card__header, .card--landscape .card__image + .card__title, .card--landscape .card__image + .card__body {
   margin-top: 0;
 }
 @media (max-width: 575.98px) {
-  /* line 206, ../sass/includes/containers/_cards.scss */
+  /* line 212, ../sass/includes/containers/_cards.scss */
   .card--landscape .card__image {
     display: none;
   }
 }
-/* line 221, ../sass/includes/containers/_cards.scss */
+/* line 227, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__inner {
   display: -webkit-flex;
   display: flex;
@@ -2724,25 +2728,25 @@ header .button:hover,
   justify-content: space-between;
 }
 @media (max-width: 767.98px) {
-  /* line 221, ../sass/includes/containers/_cards.scss */
+  /* line 227, ../sass/includes/containers/_cards.scss */
   .card--landscape .card__inner {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 @media (max-width: 575.98px) {
-  /* line 221, ../sass/includes/containers/_cards.scss */
+  /* line 227, ../sass/includes/containers/_cards.scss */
   .card--landscape .card__inner {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
   }
 }
-/* line 236, ../sass/includes/containers/_cards.scss */
+/* line 242, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__content + .card__actions {
   margin-top: 0;
   padding-left: 1rem;
 }
-/* line 242, ../sass/includes/containers/_cards.scss */
+/* line 248, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__actions {
   display: -webkit-flex;
   display: flex;
@@ -2751,72 +2755,72 @@ header .button:hover,
   -webkit-align-items: flex-end;
   align-items: flex-end;
 }
-/* line 247, ../sass/includes/containers/_cards.scss */
+/* line 253, ../sass/includes/containers/_cards.scss */
 .card--landscape .card__actions .button + .button {
   margin-top: 0.5rem;
 }
-/* line 254, ../sass/includes/containers/_cards.scss */
+/* line 260, ../sass/includes/containers/_cards.scss */
 .card--portrait {
   text-align: left;
 }
-/* line 259, ../sass/includes/containers/_cards.scss */
+/* line 265, ../sass/includes/containers/_cards.scss */
 .card--portrait .card__image {
   height: 15rem;
   max-width: none;
 }
 
-/* line 275, ../sass/includes/containers/_cards.scss */
+/* line 281, ../sass/includes/containers/_cards.scss */
 #about .card__image {
   border-radius: 1rem;
 }
 
-/* line 288, ../sass/includes/containers/_cards.scss */
+/* line 294, ../sass/includes/containers/_cards.scss */
 #events .card--landscape .card__image {
   -webkit-flex-basis: 33.333%;
   flex-basis: 33.333%;
   max-width: none;
 }
 @media (max-width: 575.98px) {
-  /* line 288, ../sass/includes/containers/_cards.scss */
+  /* line 294, ../sass/includes/containers/_cards.scss */
   #events .card--landscape .card__image {
     display: none;
   }
 }
-/* line 297, ../sass/includes/containers/_cards.scss */
+/* line 303, ../sass/includes/containers/_cards.scss */
 #events .card--landscape .card__inner {
   -webkit-flex-basis: 66.666%;
   flex-basis: 66.666%;
 }
 @media (max-width: 767.98px) {
-  /* line 297, ../sass/includes/containers/_cards.scss */
+  /* line 303, ../sass/includes/containers/_cards.scss */
   #events .card--landscape .card__inner {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 @media (max-width: 575.98px) {
-  /* line 297, ../sass/includes/containers/_cards.scss */
+  /* line 303, ../sass/includes/containers/_cards.scss */
   #events .card--landscape .card__inner {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
   }
 }
 
-/* line 318, ../sass/includes/containers/_cards.scss */
+/* line 324, ../sass/includes/containers/_cards.scss */
 #faq .card + .card,
 #join .card + .card {
   border-top: 1px solid #d7d7dc;
 }
 
-/* line 326, ../sass/includes/containers/_cards.scss */
+/* line 332, ../sass/includes/containers/_cards.scss */
 #media .card {
   margin-bottom: 1rem;
 }
-/* line 329, ../sass/includes/containers/_cards.scss */
+/* line 335, ../sass/includes/containers/_cards.scss */
 #media .card__wrapper {
   margin-bottom: -1rem;
 }
-/* line 333, ../sass/includes/containers/_cards.scss */
+/* line 339, ../sass/includes/containers/_cards.scss */
 #media .card__icon {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -2831,19 +2835,19 @@ header .button:hover,
   padding: 0.5rem;
   background-color: #007bff;
 }
-/* line 345, ../sass/includes/containers/_cards.scss */
+/* line 351, ../sass/includes/containers/_cards.scss */
 #media .card__icon--news {
   background-color: #64f0ff;
 }
-/* line 346, ../sass/includes/containers/_cards.scss */
+/* line 352, ../sass/includes/containers/_cards.scss */
 #media .card__icon--press-release {
   background-color: #ff6f00;
 }
-/* line 347, ../sass/includes/containers/_cards.scss */
+/* line 353, ../sass/includes/containers/_cards.scss */
 #media .card__icon--blog {
   background-color: #007bff;
 }
-/* line 348, ../sass/includes/containers/_cards.scss */
+/* line 354, ../sass/includes/containers/_cards.scss */
 #media .card__icon--videos {
   background-color: #161656;
 }
@@ -2851,6 +2855,14 @@ header .button:hover,
 /* line 16, ../sass/includes/containers/_blocks.scss */
 .block {
   width: 100%;
+}
+/* line 21, ../sass/includes/containers/_blocks.scss */
+.block__header + .block__content {
+  margin-top: 2.5rem;
+}
+/* line 28, ../sass/includes/containers/_blocks.scss */
+.block__title + .block__content {
+  margin-top: 2.5rem;
 }
 
 /* line 19, ../sass/includes/containers/_sections.scss */

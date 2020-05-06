@@ -126,6 +126,12 @@
             }
 
             &__title {
+        
+                & + .card__image,
+                & + .card__body,
+                & + .card__meta {
+                    margin-top: $integer;
+                }
             }
             
             &__image {

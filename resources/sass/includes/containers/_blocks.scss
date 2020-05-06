@@ -15,6 +15,20 @@
 
 .block {
     width: 100%;
+
+    &__header {
+
+        & + .block__content {
+            margin-top: $integer-xl;
+        }
+    }
+
+    &__title {
+
+        & + .block__content {
+            margin-top: $integer-xl;
+        }
+    }
 }
 
 

@@ -153,7 +153,7 @@
                 & + .card__header, 
                 & + .card__title,
                 & + .card__body {
-                    margin-top: $integer-xl;
+                    margin-top: $integer-lg;
                 }
             }
 
@@ -163,8 +163,8 @@
             &__content {
 
                 & + .card__actions {
-                    margin-top: $integer-xl;
-                }        
+                    margin-top: $integer-lg;
+                }
             }
 
             &__label {}
@@ -173,16 +173,16 @@
                 & + .card__image,
                 & + .card__body,
                 & + .card__meta {
-                    margin-top: $integer-xl;
-                }        
+                    margin-top: $integer-lg;
+                }
             }
             &__title {
 
                 & + .card__image,
                 & + .card__body,
                 & + .card__meta {
-                    margin-top: $integer-xl;
-                }        
+                    margin-top: $integer-lg;
+                }
             }
             &__body {}
             &__meta {}
@@ -283,7 +283,8 @@
     }
 }
 
-#events {
+#events,
+#services {
 
     .card {
 
@@ -310,6 +311,22 @@
                     @include responsive(max-width, $mobile-max) {
                         @include flex-basis(100%);
                     }
+                }
+            }
+        }
+    }
+}
+
+#services {
+
+    .card {
+
+        &--landscape {
+
+            .card {
+
+                &__image {
+                    padding: $integer-xxl;
                 }
             }
         }

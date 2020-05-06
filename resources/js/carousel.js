@@ -22,7 +22,7 @@ $('.owl-carousel-clients').owlCarousel({
     }
 });
 
-$('.owl-carousel-technology').owlCarousel({
+$('.owl-carousel-technologies').owlCarousel({
     dots: false,
     loop: true,
     autoplay: true,
@@ -30,11 +30,11 @@ $('.owl-carousel-technology').owlCarousel({
     autoplayHoverPause: false,
     smartSpeed: 2000,
     responsive: {
-        0:      { items: 2, margin: 5 },
-        450:    { items: 2, margin: 10 },
-		620:    { items: 3, margin: 10 },
-        767:    { items: 4, margin: 20 },
-        960:    { items: 5, margin: 20 }
+        0:      { items: 2, margin: 20 },
+        450:    { items: 2, margin: 25 },
+		620:    { items: 3, margin: 30 },
+        767:    { items: 4, margin: 35 },
+        1280:   { items: 6, margin: 40, autoplay: false }
     }
 });
 
@@ -50,7 +50,7 @@ $('.owl-carousel-partners').owlCarousel({
         450:    { items: 2, margin: 25 },
 		620:    { items: 3, margin: 30 },
         767:    { items: 4, margin: 35 },
-        1080:   { items: 5, margin: 40 }
+        1280:   { items: 5, margin: 40 }
     }
 });
 

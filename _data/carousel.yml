@@ -46,3 +46,12 @@ partners:
   - name: Level 39
   - name: Microsoft
   - name: Rocket Space
+
+# services.html
+technologies:
+  - name: Ethereum
+  - name: Quorum
+  - name: Hyperledger Fabric
+  - name: Corda
+  - name: Algorand
+  - name: Elements

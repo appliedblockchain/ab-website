@@ -32,35 +32,6 @@ media:
   - url: fortune
     alt: fortune
 
-# technology section
-# in service.html page
-
-technology:
-  - url: ethereum
-    alt: Ethereum
-    order: 1
-
-  - url: parity
-    alt: Parity
-    order: 2
-    
-  - url: hyperledger-fabric
-    alt: Hyperledger Fabric
-    order: 3
-
-  - url: corda
-    alt: Corda
-    order: 4
-
-  - url: quorum
-    alt: Quorum
-    order: 5
-
-  - url: ipfs
-    alt: IPFS
-    order: 6
-
-
 # clients section
 # in index.html page
 

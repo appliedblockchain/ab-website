@@ -98,7 +98,7 @@ background_color: primary
         title = 'Partners'
     %}
     <div class="section__content z-index--1">
-        <div class="block background--shadow block--carousel">
+        <div class="card background--shadow">
             {% include elements/carousel.html 
                 variant = 'partners' 
             %}
@@ -114,7 +114,7 @@ background_color: primary
     <div class="section__content body--left tab tab--leadership">
         {% for item in site.data.leadership %}
         <div id="{{ item.slug }}" class="tab__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
-            <div class="card card--small">
+            <div class="card card--large">
                 <p class="card__label body--bold">{{ item.title }}</p>
                 <h2 class="card__title subtitle">{{ item.name }}</h2>
                 <p class="card__body body">{{ item.bio }}</p>

@@ -17,6 +17,8 @@
 
 	&__nav {
 		@include display-flex();
+		@include justify-content(center);
+		width: 100%;
 		text-align: center;
 
 		& + .tab__content {
@@ -61,6 +63,10 @@
 
 		.tab {
 
+			&__nav {
+				width: auto;
+			}
+
 			&__item {
 				position: relative;
 				padding: $integer-xxxl*2 $page;
@@ -94,6 +100,34 @@
 			&:hover {
 				@include transform(scale(1.05));
 			}
+		}
+	}
+
+	&--approach {
+
+		.tab {
+
+			&__content {
+				margin-top: $integer-xl;
+			}	
+
+			&__button {
+				position: relative;
+
+				&:before {
+					@include transition(opacity $transition, width $transition, left $transition);
+					@include pseudo-element('', auto, 0, -($integer-xl+$integer-sm), 50%, 0, $integer);
+					@include border-radius($integer);
+					will-change: opacity, width, left;
+					background-color: $dark;
+				}
+		
+				&:hover:before, 
+				&.tab__button--active:before {
+					width: 100%;
+					left: 0;
+				}
+			}			
 		}
 	}
 }

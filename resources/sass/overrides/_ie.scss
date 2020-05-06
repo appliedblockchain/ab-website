@@ -159,7 +159,7 @@
         width: 25%;
         white-space: nowrap;
 
-        &:hover:before, &.nav__button--active:before {
+        &:hover:before, &.tab__button--active:before {
             width: 80%;
             left: 10%;
         }

@@ -20,7 +20,7 @@
 	will-change: height, background-color, box-shadow, padding-top, padding-bottom;
 	overflow: hidden;
 	position: fixed;
-	height: $integer*8;
+	height: $integer-xxxl*2;
 	width: 100vw;
 	pointer-events: none;
 
@@ -30,18 +30,18 @@
 		@include align-items(center);
 		@include justify-content(space-between);
 		will-change: height;
-		height: $integer*8;
-		padding: 0 $col;
+		height: $integer-xxxl*2;
+		padding: 0 $page/2;
 
 		.button + .button--menu {
-			margin-left: $integer;
+			margin-left: $integer-md;
 		}
 	}
 
 	&__logo {
 		@include transition(height $transition, width $transition);
 		will-change: height, width;
-		width: $integer*15;
+		width: $integer-max*1.5;
 		pointer-events: initial;
 
 		&.logo-white {
@@ -97,12 +97,8 @@
 	&__menu {
 		@include calc(height, '100vh - '$integer*8);
 		@include overflow-scroll();
-		padding: 0  $col*2 $integer-xxxl $col*2;
+		padding: 0  $page $integer-xl $page;
 		pointer-events: initial;
-
-		@include responsive(max-width, $tablet-max) {
-			padding: 0 $col $integer-xl $col;
-		}
 	}
 
 	&.js-scrolled {
@@ -117,7 +113,7 @@
 			}
 			
 			&__logo {
-				width: $integer-xxxl;
+				width: $integer-xxxxl*1.5;
 			}
 		}
 	}
@@ -131,16 +127,17 @@
 		.header {
 
 			&__bar {
-				height: $integer*8;
+				height: $integer-xxxl*2;
 			}
 
 			&__logo {
-				width: $integer*15;
+				width: $integer-max*1.5;
 			}
 		}
 	}
 
-	&.js-scrolled, &.js-opened {
+	&.js-scrolled, 
+	&.js-opened {
 		
 		.logo {
 

@@ -1,13 +1,10 @@
 <header class="header">
 	<div class="header__bar">
-		<!-- to change the color of the logo, add the corresponding page title to the condition in the class tag -->
-		<div class="header__logo logo {% if page.layout == 'index' or page.layout == 'post' or page.title == 'About' or page.title == 'Resources' or page.title == 'Webinar' %}logo-white{% endif %} {% if page.title == 'Services' or page.title == 'Mantle' or page.title == 'Projects' %}logo-name-white{% endif %}">
+		<div class="header__logo logo{% if page.background_color == 'primary' or page.layout =='index' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
 			<a href="{{ site.url }}/">
-				<!-- edit elements in _includes/elements/logo.html -->
 				{% include mixins/logo.html %}
 			</a>
 		</div>
-		<!-- to change the color of the menu icon, add the corresponding page title to the condition in the class tag -->
 		<div class="header__button">
 			{% if page.layout == 'post' %}
 				<a href="{{ site.url }}/media" class="button button--small button--white button--stroke button--animate fas fa-chevron-left">
@@ -32,9 +29,9 @@
 			<a href="{{ site.url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope {% if page.layout == 'index' or page.layout == 'post' or page.title == 'About' or page.title == 'Resources' or page.title == 'Webinar' %}alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>
-			<a class="button button--menu {% if page.layout == 'index' or page.layout == 'post' or page.title == 'Services' or page.title == 'Mantle' or page.title == 'About' or page.title == 'Projects' or page.title == 'Resources' or page.title == 'Webinar' %}alt{% endif %}">
-				<span class="button__inner"></span>
-			</a>
+			<div class="button button--menu{% if page.background_color == 'white' %} alt{% endif %}">
+                <i class="button__inner"></i>
+            </div>
 		</div>
 	</div>
 	<div class="header__menu">
@@ -133,7 +130,9 @@
 		<div class="row">
 			<div class="col--lg4 col--md5">
 				<!-- edit component in _includes/components/social.html -->
-				{% include components/social.html %}
+				{% include components/social.html 
+					header = 'true'
+				%}
 			</div>
 		</div>
 	</div>

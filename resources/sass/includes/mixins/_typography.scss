@@ -28,6 +28,12 @@ html, body {
 	}
 }
 
+.headline,
+.title,
+.subtitle {
+	line-height: 1.2;
+}
+
 .headline {
 	@include font-size(3, $font-black, normal);
 	text-transform: uppercase;

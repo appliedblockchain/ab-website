@@ -28,7 +28,8 @@
 
 @include responsive(max-width, $desktop-max) {
 
-    .page__header,
+	.header__menu,
+	.page__header,
     .section,
     .section--full .section__header {
 		padding-right: 10vw;
@@ -43,7 +44,8 @@
 
 @include responsive(max-width, $tablet-max) {
 
-    .page__header,
+	.header__menu,
+	.page__header,
     .section,
     .section--full .section__header {
 		padding-right: $page/2;
@@ -76,6 +78,7 @@
 		width: 100% !important;
 	}
 
+	.header__menu,
     .page__header,
     .section,
     .section--full .section__header,

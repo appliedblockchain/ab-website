@@ -40,9 +40,9 @@ html, body {
 .row {
 	@include display-flex();
 	@include flex-wrap(wrap);
-	@include calc(width, '100% + '$integer-xl);
-	margin-right: -$integer;
-	margin-left: -$integer;
+	@include calc(width, '100% + '$integer-md*2);
+	margin-right: -$integer-md;
+	margin-left: -$integer-md;
 
 	&:after {
 		content: '';
@@ -60,7 +60,7 @@ html, body {
 [class*="col--"] {
 	float: left;
 	position: relative;
-	padding: 0 $integer;
+	padding: 0 $integer-md;
 	width: 100%;
 }
 

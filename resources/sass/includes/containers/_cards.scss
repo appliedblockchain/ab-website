@@ -365,10 +365,10 @@
 #media {
 
     .card {
-        margin-bottom: $integer-md;
+        margin-bottom: $integer-md*2;
 
         &__wrapper {
-            margin-bottom: -$integer-md;
+            margin-bottom: -$integer-md*2;
         }
 
         &__icon {

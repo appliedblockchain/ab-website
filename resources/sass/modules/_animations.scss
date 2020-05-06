@@ -1,24 +1,18 @@
 @charset "UTF-8";
 
-
-
-/* 
- * —————————————————————————————————————————————————————————————————
- * ANIMATIONS
- * —————————————————————————————————————————————————————————————————
- * general
- * scroll anim
- * btn menu
- * fade in gallery images
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// ANIMATIONS
+// —————————————————————————————————————————————————————————————————
+// general
+// scroll anim
+// button menu
+// —————————————————————————————————————————————————————————————————
 
 
 
-/* 
- * general
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
 
 @include keyframes(fade-in) {
 	from 	{ opacity: 0; } 
@@ -39,10 +33,9 @@
 
 
 
-/* 
- * scroll anim
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// scroll anim
+// —————————————————————————————————————————————————————————————————
 
 @keyframes slide {
     0% {
@@ -57,42 +50,74 @@
 
 
 
-/* 
- * btn menu
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// button menu
+// —————————————————————————————————————————————————————————————————
 
-/*button apparition*/
-@include keyframes(button--menu--opacity) {
-	0% 		{ opacity: 0; }
-	50% 	{ opacity: 0; }
-	100% 	{ opacity: 100%; }
-}
+// button apparition
 
-/*lines > close*/
-@include keyframes(button--menu--open--before) {
-	0% 		{ transform: translateY(10px); }
-	50% 	{ transform: translateY(0); 
-			  transform: rotate(0); }
-	100% 	{ transform: rotate(45deg); }
-}
-@include keyframes(button--menu--open--after) {
-	0% 		{ transform: translateY(-10px); }
-	50% 	{ transform: translateY(0); 
-			  transform: rotate(0); }
-	100% 	{ transform: rotate(-45deg); }
+@include keyframes(button-menu-opacity) {
+	0% { 
+		opacity: 0; 
+	}
+	50% { 
+		opacity: 0; 
+	}
+	100% { 
+		opacity: 100%; 
+	}
 }
 
-/*close > lines*/
-@include keyframes(button--menu--close--before) {
-	0% 		{ transform: rotate(45deg); }
-	50% 	{ transform: rotate(0); 
-			  transform: translateY(0); }
-	100% 	{ transform: translateY(10px); }
+// open > close
+
+@include keyframes(button-menu-open-before) {
+	0% { 
+		@include transform(translateY($integer+$integer-xs));
+	}
+	50% { 
+		@include transform(translateY(0));
+		@include transform(rotate(0));
+	}
+	100% { 
+		@include transform(rotate(45deg));
+	}
 }
-@include keyframes(button--menu--close--after) {
-	0% 		{ transform: rotate(-45deg); }
-	50% 	{ transform: rotate(0); 
-			  transform: translateY(0); }
-	100% 	{ transform: translateY(-10px); }
+@include keyframes(button-menu-open-after) {
+	0% { 
+		@include transform(translateY(-($integer+$integer-xs)));
+	}
+	50% { 
+		@include transform(translateY(0));
+		@include transform(rotate(0));
+	}
+	100% { 
+		@include transform(rotate(-45deg));
+	}
+}
+
+// close > open
+
+@include keyframes(button-menu-close-before) {
+	0% { 
+		@include transform(rotate(45deg));
+	}
+	50% { 
+		@include transform(rotate(0));
+		@include transform(translateY(0));
+	}
+	100% { 
+		@include transform(translateY($integer+$integer-xs));
+	}
+}
+@include keyframes(button-menu-close-after) {
+	0% { 
+		@include transform(rotate(-45deg));
+	}
+	50% { 
+		@include transform(rotate(0));
+		@include transform(translateY(0));
+	}
+	100% { 
+		@include transform(translateY(-($integer+$integer-xs)));
+	}
 }

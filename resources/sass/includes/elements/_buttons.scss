@@ -47,7 +47,7 @@
 		width: 100%;
 		font-family: $font;
 		text-transform: uppercase;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.04rem;
 		text-align: center;
 	}
 
@@ -252,7 +252,7 @@
 		margin-top: -2px;
 		background-color: $white;
 		will-change: transform;
-		border-radius: 0.15rem;
+		border-radius: $integer;
 	}
 
 	&.rotate:before {
@@ -288,33 +288,44 @@
 	border: 0;
 	padding: 0;
 
-	&:before, &:after, .button__inner {
+	&:before, 
+	&:after, 
+	.button__inner {
 		background-color: $white;
+	}
+
+	&.alt {
+
+		&:before, 
+		&:after, 
+		.button__inner {
+			background-color: $black;
+		}	
 	}
 
 	&:before, &:after {
 		@include transition(transform $transition);
-		@include pseudo-element('', auto, auto, auto, auto, $integer-lg, $integer-sm);
-		border-radius: 0.15rem;
+		@include pseudo-element('', auto, auto, auto, auto, $integer-lg, $integer-sm+$integer-xs);
+		border-radius: $integer;
 		will-change: transform;
 	}
 
 	&:before {
-		@include transform(translateY($integer));
+		@include transform(translateY($integer+$integer-xs));
 		@include animation(button-menu-close-before 0.8s ease 0s);
 	}
 
 	&:after {
-		@include transform(translateY(-$integer));
+		@include transform(translateY(-($integer+$integer-xs)));
 		@include animation(button-menu-close-after 0.8s ease 0s);
 	}
 
 	.button__inner {
 		@include transition(opacity 0s ease 0.4s);
-		border-radius: 0.15rem;
+		border-radius: $integer;
 		will-change: opacity;
 		width: $integer-lg;
-		height: $integer-sm;
+		height: $integer-sm+$integer-xs;
 		position: absolute;
 	}
 

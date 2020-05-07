@@ -1,12 +1,8 @@
 ---
 layout: project
-order: 5
-
 title: SITA
 subtitle: Distributed drone registry
 industry: Aviation IT
-deliverables: 
-
 summary: Development of the world’s first distributed drone registry.
 
 delivery:

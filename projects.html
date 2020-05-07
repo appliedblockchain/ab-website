@@ -1,0 +1,84 @@
+---
+layout: default
+title: Projects
+subtitle: We develop distributed, privacy preserving solutions for startups and enterprises alike
+background_color: dark
+---
+
+{% if site.projects.size > 0 %}
+
+<section class="section section--dark">
+    <div class="section__content">
+        {% for project in site.projects %}
+        {% if project.tag contains 'featured' %}
+        <div class="card card--lg card--landscape background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+            <div class="card__image">
+                <img src="{{ site.url }}{{ site.imageurl }}/carousel/clients/{{ project.slug }}.png" alt="{{ project.title }} logo">
+            </div>
+            <div class="card__inner">
+                <div class="card__content">
+                    <p class="card__label label">{{ project.industry }}</p>
+                    <h2 class="card__title title body--white">
+                        <a href="{{ project.url }}">{{ project.title }}</a>
+                    </h2>
+                    <p class="card__subtitle subtitle">
+                        <a href="{{ project.url }}">{{ project.subtitle }}</a>
+                    </p>
+                    <p class="card__body body--large">
+                        <span>{{ project.summary }}</span>
+                    </p>
+                    <div class="card__actions">
+                        <a href="{{ project.url }}" class="button button--secondary button--small button--animate fa fa-eye">
+                            <p class="button__inner">View project</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section section--alt section--dark">
+    <div class="grid row">
+        {% for project in site.projects %}
+        {% assign project = site.projects | sort: 'order' %}
+        {% unless project.tag contains 'featured' %}
+        <div class="col--4">
+            <div class="card card--portrait background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+                <div class="card__inner">
+                    <div class="card__content">
+                        <p class="card__label label">{{ project.industry }}</p>
+                        <h2 class="card__title subtitle">
+                            <a href="{{ project.url }}">{{ project.title }}</a>
+                        </h2>
+                        <p class="card__subtitle lead body--white">
+                            <a href="{{ project.url }}">{{ project.subtitle }}</a>
+                        </p>
+                        <p class="card__body">
+                            <span>{{ project.summary }}</span>
+                        </p>
+                    </div>
+                    <div class="card__actions">
+                        <a href="{{ project.url }}" class="button button--secondary button--small button--animate fa fa-eye">
+                            <p class="button__inner">View project</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endunless %}
+        {% endfor %}
+    </div>
+</section>
+
+{% else %}
+
+<section class="section section--dark">
+    {% include containers/sections/header.html
+        title = 'There are no project at the moment. Come back soon!'
+    %}
+</section>
+
+{% endif %}

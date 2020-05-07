@@ -92,6 +92,10 @@
 
     &__title {
 
+        & + .card__subtitle {
+            margin-top: $integer;
+        }
+
         & + .card__image,
         & + .card__body,
         & + .card__meta {
@@ -100,6 +104,15 @@
 
         & + .card__actions {
             padding-left: $integer-lg;
+        }
+    }
+
+    &__subtitle {
+
+        & + .card__image,
+        & + .card__body,
+        & + .card__meta {
+            margin-top: $integer-md;
         }
     }
 
@@ -215,14 +228,33 @@
                     margin-top: $integer-lg;
                 }
             }
+
             &__title {
 
+                & + .card__subtitle {
+                    margin-top: $integer-md;
+                }
+        
+                & + .card__image,
+                & + .card__body,
+                & + .card__meta {
+                    margin-top: $integer-lg;
+                }
+        
+                & + .card__actions {
+                    padding-left: $integer-xl;
+                }
+            }
+        
+            &__subtitle {
+        
                 & + .card__image,
                 & + .card__body,
                 & + .card__meta {
                     margin-top: $integer-lg;
                 }
             }
+        
             &__body {}
             &__meta {}
             &__actions {}
@@ -249,6 +281,7 @@
         .card {
             
             &__image {
+                @include display-flex();
                 max-width: none;
 
                 & + .card__inner,
@@ -384,7 +417,8 @@
     }
 }
 
-#media {
+#media,
+#projects {
 
     .card {
         margin-bottom: $integer-md*2;
@@ -449,6 +483,114 @@
         .card__image {
             height: $integer-max;
             max-width: $integer-xxxxl*1.5;
+        }
+    }
+}
+
+#projects {
+
+    .card {
+
+        &:before {
+            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+            @include transition(background-color $transition);
+            will-change: background-color;
+            background-color: rgba($dark, 0.7);
+        }
+
+        &--lg {
+
+            &:before {
+                @include background-image(linear-gradient(to right, $red, $primary));
+                opacity: 0.8;
+                background-color: transparent !important;
+            }
+
+            .card {
+
+                &__actions {
+                    margin-top: $integer-xl;
+                }
+            }
+        }
+
+        > * {
+            position: relative;
+        }
+
+        &__inner {
+            padding-top: $integer-xxxl;
+            padding-bottom: $integer-xxxl;
+        }
+
+        &__content {
+            @include transition(transform $transition);
+            @include transform(translateY(25%));
+            will-change: transform;
+
+            @include responsive-mobile-devices() {
+                @include transform(translateY(0) !important);
+            }
+            
+        }
+
+        &__label {
+            @include transition(opacity $transition);
+            will-change: opacity;
+            opacity: 1;
+        }
+
+        &__body {
+            overflow: hidden;
+
+            span {
+
+                @include transition(transform $transition);
+                @include transform(translateY(-100%) scaleY(0.3));
+                will-change: transform;
+                display: block;
+                
+                @include responsive-mobile-devices() {
+                    @include transform(translateY(0) scaleY(1) !important);
+                }
+            }
+        }
+
+        &__actions {
+            @include transition(opacity $transition);
+            @include align-items(flex-start);
+            will-change: opacity;
+            opacity: 0;
+
+            @include responsive-mobile-devices() {
+                opacity: 1 !important;
+            }
+        }
+
+        &:hover {
+            
+            &:before {
+                background-color: $dark;
+            }
+    
+            .card {
+                
+                &__content {
+                    @include transform(translateY(0));
+                }
+                
+                &__label {
+                    opacity: 0;
+                }
+
+                &__body span {
+                    @include transform(translateY(0) scaleY(1));
+                }
+
+                &__actions {
+                    opacity: 1;
+                }
+            }
         }
     }
 }

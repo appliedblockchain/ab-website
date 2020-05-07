@@ -133,7 +133,7 @@
 	}
 
 	&:after {
-		@include fontAwesome("\f078", 0, $integer*0.75, auto, auto, $primary);
+		@include font-awesome("\f078", 0, $integer*0.75, auto, auto, $primary);
 		@include transition(color $transition);
 		@include display-flex();
 		@include align-items(center);
@@ -274,7 +274,7 @@
 			@include display-flex();
 			@include align-items(center);
 			@include justify-content(center);
-			@include fontAwesome("\f00c", 0, auto, auto, 0, $white);
+			@include font-awesome("\f00c", 0, auto, auto, 0, $white);
 			will-change: opacity;
 			width: $integer-md*1.5;
 			height: $integer-md*1.5;

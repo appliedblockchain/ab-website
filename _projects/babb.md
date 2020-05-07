@@ -1,11 +1,8 @@
 ---
 layout: project
-order: 4
-
 title: BABB
 subtitle: Blockchain-based social bank
 industry: Financial Technology<br>Services
-
 summary: Core banking infrastructure and full-stack banking application on a private blockchain using smart contracts.
 
 delivery:

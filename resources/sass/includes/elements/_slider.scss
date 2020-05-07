@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// SLIDER
+// —————————————————————————————————————————————————————————————————
+
+.slides {
+
+	&__item {
+		/* Hide the slides before the JS is loaded. Avoids image jumping */
+		display: none;
+		-webkit-backface-visibility: hidden;
+	}
+
+	&__direction-nav {
+		@include display-flex();
+		@include justify-content(space-between);
+		position: absolute;
+		top: $integer-xl;
+		right: $integer-lg;
+		z-index: 2;
+
+		a {
+			height: $integer-xl;
+			width: $integer-xl;
+			cursor: pointer;
+
+			&:before {
+				font-size: 2rem;
+
+				@include responsive(max-width, $mobile-max) {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+
+	&__prev, &__next {
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(center);
+	}
+
+	&__prev {
+
+		&:before {
+			@include font-awesome("\f104", auto, auto, auto, $integer-md, $black);
+			position: initial;
+		}
+	}
+
+	&__next {
+
+		&:before {
+			@include font-awesome("\f105", auto, $integer-md, auto, auto, $black);
+			position: initial;
+		}
+	}
+}

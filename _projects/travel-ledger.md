@@ -1,13 +1,10 @@
 ---
 layout: project
-tag: featured
 dlc: true
-
 title: Travel Ledger
 subtitle: Travel settlement platform built on blockchain technology
 industry: Travel
 deliverables: Blockchain-based billing and settlement platform
-
 summary: Travel Ledger is a billing and settlement platform for the travel industry, that provides a single source of truth for the purchasing process for non-air travel along the entire distribution chain.
 
 challenge-diagram: true

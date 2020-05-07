@@ -1,12 +1,9 @@
 ---
 layout: project
-order: 1
-
 title: Energy Web Foundation
 subtitle: Node hosting for an energy blockchain
 industry: Energy
 deliverables: Node hosting
-
 summary: The Energy Web Foundation (EWF) is a global non-profit organization focused on accelerating blockchain technology across the energy sector. Applied Blockchain is an EWF affiliate.
 
 challenge: 

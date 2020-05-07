@@ -68,6 +68,6 @@
 	</button>
 </div>
 
-<div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page">
+<div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page background--cover"{% if page.layout == 'webinar' %} style="background-image: url({{ site.url }}{{ site.imageurl }}/background/webinar.jpg);"{% endif %}>
 
 {% include containers/page/header.html %}

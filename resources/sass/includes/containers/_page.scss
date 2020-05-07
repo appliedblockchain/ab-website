@@ -268,11 +268,6 @@
 		padding-left: 25vw;
 		text-align: center;
 
-		#project &,
-		#post & {
-			display: none;
-		}
-
 		&:before {		
 			@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
 		}
@@ -285,6 +280,18 @@
 			// display elements on top of gradient
 			position: relative;
 		}
+
+		#project &,
+		#post & {
+			display: none;
+		}
+	}
+
+	&__comment {
+
+		& + .page__title {
+			margin-top: $integer-md;
+		}
 	}
 
 	&__subtitle {
@@ -296,7 +303,7 @@
 
 	&__body {
 
-		.page__title & {
+		.page__title + & {
 			margin-top: $integer-lg;
 		}
 

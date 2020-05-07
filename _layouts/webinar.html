@@ -4,18 +4,8 @@ layout: compress
 
 {% include containers/site/header.html %}
 
-<section id="webinar" class="section--dark background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/background/webinar.jpg);">
-    <div class="section section--header">
-        <p class="subtitle">Webinar podcast</p>
-        <h1 class="section__subtitle headline">{{ page.subtitle }}</h1>
-        <p class="section__desc body--large">{{ page.body }}</p>
-        <div class="owl-carousel owl-carousel-testimonial carousel">
-            <!-- edit data in _data/testimonials.yml -->
-            {% for item in site.data.testimonials.webinar %}
-            <!-- edit component in _includes/components/testimonial.html -->
-            {% include components/testimonial.html %}
-            {% endfor %}
-        </div>                
+<section class="section section--dark">
+    <div class="section__content">
         {{ content }}
 </section>
 

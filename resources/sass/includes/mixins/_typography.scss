@@ -68,12 +68,12 @@ html, body {
 	}
 }
 
-.comment, .post__update {
+.comment {
 	@include font-size(1.5, $font-light, normal);
 	text-transform: uppercase;
 }
 
-.quote, .post__quote {
+.quote {
 	@include font-size(1.5, $font-light, normal);
 
 	@include responsive(max-width, $tablet-max) {
@@ -81,7 +81,7 @@ html, body {
 	}
 }
 
-.lead, .post__title {
+.lead {
 	@include font-size(1.5, $font-regular, normal);
 	color: $primary;
 }
@@ -102,6 +102,14 @@ html, body {
 	}
 }
 
+.post__content {
+
+	h1 { @extend .subtitle; }
+	h2 { @extend .lead; }
+	p, li { @extend .body--large; }
+	blockquote p { @extend .quote; }
+}
+
 // spacing between paragraphs
 
 .body {
@@ -110,46 +118,19 @@ html, body {
 		margin-top: $integer; 
 	}
 
-	&--large { 
+	&--large, { 
 
 		& + &,
 		& + .body { 
-			margin-top: $integer*2; 
+			margin-top: $integer-md; 
 		}
 	}
 
 	&--small { 
 
 		& + & { 
-			margin-top: $integer*0.5; 
+			margin-top: $integer-sm; 
 		}
-	}
-}
-
-// prevent style from applying to media page
-
-.post .post__headline {
-	line-height: 1.5;
-	font-size: 1.5rem;
-	font-weight: $font-bold;
-}
-
-.post {
-
-	&__title {
-		font-size: 1.8rem;
-	}
-
-	&__subtitle {
-		font-size: 1.5rem;
-	}
-
-	&__content, &__content ul, &__content li {
-		font-size: 1.25rem;
-	}
-
-	&__quote, &__content {
-		line-height: 1.5;
 	}
 }
 

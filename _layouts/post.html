@@ -4,17 +4,14 @@ layout: compress
 
 {% include containers/site/header.html %}
 
-<script src="{{ site.url }}{{ site.resourceurl }}/js/blog.js"></script>
-
 <div class="post">
-    {% if page.image %}
-    <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/posts/{{ page.image }}.jpg);">
-    {% else %}
-    <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/default.jpg);">
-    {% endif %} 
-        <p class="section__comment comment">{{ page.category }}</p>
-        <h1 class="section__title title">{{ page.title }}</h1>
-        <p class="section__body body--large">{{ page.date | date: "%b %-d, %Y" }}</p>
+    <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/{% if page.image %}posts/{{ page.image }}{% else %}default{% endif %}.jpg);">
+        {% capture date %}{{ page.date | date: "%b %-d, %Y" }}{% endcapture %}
+        {% include containers/sections/header.html
+            comment = page.category
+            title = page.title
+            body = date
+        %}
     </div>     
     <article class="section">
         <div class="section__content section--left">
@@ -22,9 +19,11 @@ layout: compress
                 <div class="coloffset--xl2 col--xl8 coloffset--lg1 col--lg10">
                     {% include components/share.html %}
                     {% if page.headline %}
-                        <p class="post__headline">{{ page.headline }}</p>
+                    <p class="lead">{{ page.headline }}</p>
                     {% endif %}
-                    {{ content }}
+                    <div class="post__content">
+                        {{ content }}
+                    </div>
                 </div>
             </div>
         </div>

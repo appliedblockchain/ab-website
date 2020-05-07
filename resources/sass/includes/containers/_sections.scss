@@ -25,28 +25,38 @@
 	padding-right: $page;
 	text-align: center;
 
+	#project &,
+	#post & {
+		text-align: left;
+	}
+
 	&__header {
 		padding-right: $page;
 		padding-left: $page;
+
+		& + .section__content {
+			margin-top: $integer-xxxl;
+		}
 	}
 
 	&__comment {
+
+		& + .section__title {
+			margin-top: $integer-lg;
+		}
+	}
+
+	&__title {
+
+		& + .section__subtitle,
+		& + .section__body {
+			margin-top: $integer-md;
+		}
 	}
 
 	&__subtitle {
 
-		.section__title + & {
-			margin-top: $integer-md;
-		}
-	}
-
-	&__body {
-
-		.section__title + & {
-			margin-top: $integer-md;
-		}
-
-		.section__subtitle + & {
+		& + .section__body {
 			margin-top: $integer-md;
 		}
 	}
@@ -60,10 +70,6 @@
 		& + & {
 			margin-top: $integer-xxl;
 		}
-
-		.section__header + & {
-			margin-top: $integer-xxxl;
-		}
 	}
 }
 
@@ -74,6 +80,14 @@
 // —————————————————————————————————————————————————————————————————
 
 .section {
+
+	&--header {
+		padding-top: $integer-xxxl+$integer-xxxxl;
+
+		#post & {
+			text-align: center;
+		}
+	}
 
 	&--full {
 		padding: 0 !important;

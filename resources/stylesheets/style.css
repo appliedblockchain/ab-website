@@ -6312,13 +6312,13 @@ ul {
     width: 80%;
     left: 10%;
   }
-  /* line 150, ../sass/overrides/_ie.scss */
+  /* line 151, ../sass/overrides/_ie.scss */
   #services .tab__content {
     -webkit-flex-basis: 50%;
     flex-basis: 50%;
   }
-  /* line 154, ../sass/overrides/_ie.scss */
-  #services .tab__icon {
+  /* line 159, ../sass/overrides/_ie.scss */
+  #services .card__image {
     width: 30%;
     height: 30%;
   }

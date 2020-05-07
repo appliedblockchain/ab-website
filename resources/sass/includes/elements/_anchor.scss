@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// ANCHOR
+// —————————————————————————————————————————————————————————————————
+
+.anchor {
+	@include display-flex();
+	@include flex-direction(column);
+	@include align-items(flex-start);
+
+	&__item {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

@@ -185,6 +185,15 @@
 
 .section {
 
+	&--transparent {
+
+		& + & {
+			padding-top: 0;
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+
 	&--primary { 
 		background-color: $primary; 
 

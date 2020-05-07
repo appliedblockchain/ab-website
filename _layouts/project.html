@@ -130,7 +130,7 @@ layout: compress
     </div>
     {% if page.results-icons %}
     <div class="section__content">
-        <div class="card__wrapper">
+        <div class="card__wrapper--inline">
             {% for item in page.results-icons %}
             <div class="card">
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.image }}.svg" alt="Icon {{ item.title }}" class="card__image">

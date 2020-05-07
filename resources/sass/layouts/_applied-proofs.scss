@@ -8,139 +8,38 @@
  * —————————————————————————————————————————————————————————————————
 */
 
-#applied-proofs {
-    background-color: $dark;
-
-    #contact {
-        padding-bottom: $integer*9;
-    }
+#applied {
 
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-        @include background-image(linear-gradient(to bottom, rgba($dark, 0.7), $dark));
         position: fixed;
     }
 
-    .section--dark, .section--primary {
-        background-color: transparent;
-    
-        &:before {
-            display: none;
-        }
-    }
-
-    .section__header {
-        margin-bottom: 0;
-    }
-
-    &.applied-identity {
-        background-color: $white;
-    
-        &:before {
-            @include background-image(linear-gradient(to bottom, rgba($white, 0.7), $white));
-        }
-    }   
-    
-    .block {
-        background-color: rgba(255,255,255,0.2);
-        color: white;
-        padding: $integer;
-    }
-}
-
-.ap {
-
-    &__header {
-        @include display-flex();
-        @include align-items(flex-start);
-        @include justify-content(space-evenly);
-        height: 100vh;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+    .page__header {
+        padding-left: $page;
+        padding-right: $page;
         text-align: left;
-        @include responsive(max-width, $tablet-max) {
-            @include justify-content(flex-start);
-            height: auto;
-            padding-top: $integer-xl;
-            padding-bottom: $integer-xl;
+    }
+
+    .page__header,
+    .section--dark {
+        background-color: transparent !important;
+
+        &:before {
+            content: none !important
         }
     }
 
-    &__headline {
+    .headline {
         font-size: 6rem;
-        @include responsive(max-width, $desktop-lg-max) {
-            font-size: 4rem;
-            margin-bottom: $integer;
-        }
-        @include responsive(max-width, $tablet-max) {
-            font-size: 3rem;
-            margin-bottom: $integer;
-        }
-        @include responsive(max-width, $mobile-max) {
-            font-size: 2.5rem;
-        }
     }
-
-    &__description {
-        @include display-flex();
-        @include flex-direction(row);
-        @include justify-content(space-between);
-        @include responsive(max-width, $tablet-max) {
-            @include flex-direction(column);
-            margin-top: $integer-xl;
-        }
-    }
-    
-    &__anchor {
-        @include flex-direction(column);
-        position: initial;
-        left: auto;
-        height: auto;
-        @include responsive(max-width, $tablet-max) {
-            margin-top: $integer;
-        }
-        
-        .button {
-            @include align-self(flex-end);
-            margin-left: 0;
-            padding-top: $integer/4;
-            padding-right: 0;
-            padding-bottom: $integer;
-            padding-left: 0;
-            overflow: visible;
-            @include responsive(max-width, $tablet-max) {
-                @include align-self(flex-start);
-            }
-
-            &:hover {
-                transform: translateX(-$integer/4);
-                @include responsive(max-width, $tablet-max) {
-                    transform: translateX($integer/4);
-                }
-            }
-        }
-    }
-}
-
-.timeline--gdpr {
 
     .timeline {
         
-        &__content {
-            @include flex-direction(row);
-    
-            &:before {
-                display: none;
-            }
-        }
-    
         &__item {
             @include flex-direction(column);
-            @include justify-content(flex-start);
-            @include flex-direction(column !important);
             margin-top: 0;
-            padding: 0;
-
+            
             &:before {
                 @include pseudo-element('', 34px, 50%, 0, auto, 100%, 2px);
                 @include transform(scaleX(3));
@@ -151,16 +50,15 @@
         
         &__date {
             position: initial;
-            top: auto;
         }
         
         &__dot {
             margin-top: $integer;
             background-color: $primary;
             border: 0;
-
+            
             &.triangle {
-                @include pseudo-element('', auto, auto, auto, auto, $integer*5/4, $integer);
+                @include pseudo-element('', auto, auto, auto, auto, $integer-md, $integer-md);
                 @include transform(rotate(90deg));
                 position: initial;
                 -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
@@ -171,15 +69,23 @@
                 }
             }
         }
-
+        
         &__title {
             margin-top: $integer;
         }
-
+        
         &__text {
-            @include flex-basis(auto);
-            padding: 0 !important;
             text-align: center !important;
         }
     }
+}
+
+.applied-proofs { 
+
+    &:before { @include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark)); } 
+}
+
+.applied-identity { 
+
+    &:before { @include background-image(linear-gradient(to bottom, rgba($white, 0.9), $white)); } 
 }

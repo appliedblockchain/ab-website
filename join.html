@@ -45,10 +45,9 @@ background_color: white
                 {% include components/job.html %}
                 {% endfor %}
                 {% else %}
-                <p class="card card--sm">
-                    <p class="card__inner body--bold">
-                        There are no positions available in our Porto office at the moment. Come back soon!</p>
-                    </p>
+                <div class="card card--sm">
+                    <p class="card__inner body--large body--bold">There are no positions available in our Porto office at the moment. Come back soon!</p>
+                </div>
                 {% endif %}
             </div>
             <div id="london" class="tab__item">
@@ -57,10 +56,9 @@ background_color: white
                 {% include components/job.html %}
                 {% endfor %}
                 {% else %}
-                <p class="card card--sm">
-                    <p class="card__inner body--bold">
-                        There are no positions available in our London office at the moment. Come back soon!</p>
-                    </p>
+                <div class="card card--sm">
+                    <p class="card__inner body--large body--bold">There are no positions available in our London office at the moment. Come back soon!</p>
+                </div>
                 {% endif %}
             </div>
         </div>

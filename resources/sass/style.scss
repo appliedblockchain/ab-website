@@ -45,19 +45,16 @@
 	"includes/containers/_page",
 	"includes/containers/_site";
 
-// PAGES
+// LAYOUTS
 @import
 	"layouts/_default",
-
-	"layouts/_applied-proofs",
+	"layouts/_applied",
 	"layouts/_index",
 	"layouts/_k0",
 	"layouts/_node-hosting",
-	"layouts/_mantle",
 	"layouts/_post",
 	"layouts/_projects",
 	"layouts/_project",
-	"layouts/_resources",
 	"layouts/_webinar";
 
 // OVERRIDES

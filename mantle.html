@@ -8,12 +8,14 @@ background_color: dark
 
 <section class="section section--primary section--left">
     <div class="section__content">
-        <div class="row mantle">
+        <div class="row mantle body--left">
             <div class="col--lg4">
-                <h1 class="subtitle mantle__title">What Mantle delivers</h1>
-                <p>Mantle solves the problem of privacy and anonymity by adding an additional layer of security on top of any blockchain application that supports smart contracts. 
-                    <br><br>This enables confidential data to be encrypted within smart contracts and kept anonymous, whilst other data can be shared on the ledger for users to see.
-                    <br><br>Mantle enables data caching to greatly improve system performance and data retrieval to run application operations.</p>
+                <h1 class="subtitle block__title">What Mantle delivers</h1>
+                <div class="block__content">
+                    <p class="body">Mantle solves the problem of privacy and anonymity by adding an additional layer of security on top of any blockchain application that supports smart contracts.</p>
+                    <p class="body">This enables confidential data to be encrypted within smart contracts and kept anonymous, whilst other data can be shared on the ledger for users to see.</p>
+                    <p class="body">Mantle enables data caching to greatly improve system performance and data retrieval to run application operations.</p>
+                </div>
             </div>
             <div class="col--lg3 coloffset--md1 col--md5 col--6">
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-mantle.svg" alt="Mantle schematic" class="mantle__diagram">
@@ -32,13 +34,15 @@ background_color: dark
     {% include containers/sections/header.html
         title = 'The layers of Mantle include'
     %}
-    <div class="section__content image-inline">
-        {% for item in site.data.images.mantle %}
-        <div class="image-inline__item col--lg3 col--sm6">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="image-inline__image">
-            <p class="image-inline__title">{{ item.title }}</p>
-            <p class="body--small">{{ item.alt }}</p>
+    <div class="section__content">
+        <div class="row">
+            {% for item in site.data.images.mantle %}
+            <div class="col--lg3 col--sm6 card">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
+                <p class="card__title body--large body--bold">{{ item.title }}</p>
+                <p class="card__body body--small">{{ item.alt }}</p>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </section>

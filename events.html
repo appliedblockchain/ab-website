@@ -22,6 +22,7 @@ background_color: white
         </div>
         <div class="tab__content block background--shadow no-padding">
             <div id="upcoming" class="tab__item">
+                {% if sorted > 0 %}
                 {% for event in sorted %}
                 {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
                 {% if date >= now %}
@@ -30,6 +31,11 @@ background_color: white
                 %}
                 {% endif %}
                 {% endfor %} 
+                {% else %}
+                <div class="card card--sm">
+                    <p class="card__inner body--large body--bold">There are no upcoming events at the moment. Come back soon!</p>
+                </div>
+                {% endif %}
             </div>
             <div id="past" class="tab__item">
                 {% for event in site.data.events %}

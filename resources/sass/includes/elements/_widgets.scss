@@ -50,6 +50,10 @@
             margin-bottom: $integer/4;
             text-decoration: none;
         }
+
+        & + & {
+            margin-top: $integer-md;
+        }
     }
 }
 

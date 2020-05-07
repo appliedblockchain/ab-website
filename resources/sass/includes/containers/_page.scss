@@ -167,19 +167,6 @@
 			.button__inner, &:before {
 				color: $white;
 			}
-
-			&.button--stroke {
-				background-color: transparent;
-
-				.button__inner {
-					color: $black;
-				}
-			}
-		}
-
-		.button--white.button--stroke {
-			border-color: $primary;
-			color: $black;
 		}
 	}
 }

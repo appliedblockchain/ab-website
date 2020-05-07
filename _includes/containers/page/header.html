@@ -1,13 +1,13 @@
 <header class="header">
 	<div class="header__bar">
-		<div class="header__logo logo{% if page.background_color == 'primary' or page.layout =='index' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
+		<div class="header__logo logo{% if page.background_color == 'primary' or page.layout =='index' or page.layout =='post' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
 			<a href="{{ site.url }}/">
 				{% include mixins/logo.html %}
 			</a>
 		</div>
 		<div class="header__button">
 			{% if page.layout == 'post' %}
-				<a href="{{ site.url }}/media" class="button button--small button--white button--stroke button--animate fas fa-chevron-left">
+				<a href="{{ site.url }}/media" class="button button--small button--primary button--animate fas fa-chevron-left alt">
 					<p class="button__inner">Back</p>
 				</a>
 				{% if page.category == 'press-release' and page.dlc %}
@@ -17,7 +17,7 @@
 				{% endif %}
 			{% endif %}
 			{% if page.layout == 'project' %}
-				<a href="{{ site.url }}/our-projects" class="button button--small button--primary button--stroke button--animate fas fa-chevron-left">
+				<a href="{{ site.url }}/our-projects" class="button button--small button--primary button--animate fas fa-chevron-left">
 					<p class="button__inner">Back</p>
 				</a>
 				{% if page.dlc %}
@@ -26,7 +26,7 @@
 					</a>
 				{% endif %}
 			{% endif %}
-			<a href="{{ site.url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope {% if page.layout == 'index' or page.layout == 'post' or page.title == 'About' or page.title == 'Resources' or page.title == 'Webinar' %}alt{% endif %}">
+			<a href="{{ site.url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>
 			<div class="button button--menu{% if page.background_color == 'white' %} alt{% endif %}">

@@ -32,15 +32,9 @@
 // —————————————————————————————————————————————————————————————————
 
 // make header buttons work in ie
+
 .header {
     pointer-events: auto !important;
-}
-
-.graphic {
-
-    &--greyscale {
-        display: none;
-    }
 }
 
 
@@ -70,10 +64,6 @@
 .landing {
     padding-top: $integer-xxxl;
     padding-bottom: 0;
-}
-
-.logo-media {
-    height: 40%;
 }
 
 
@@ -120,26 +110,16 @@
     }
 }
 
-.devtools__image {
-    max-height: none;
-}
-
 
 
 // —————————————————————————————————————————————————————————————————
-// layouts / products
+// layouts / projects
 // —————————————————————————————————————————————————————————————————
 
-.portfolio {
+#projects {
 
-    &--featured {
-
-        .portfolio {
-
-            &__item {
-                height: 400px;
-            }
-        }
+    .card--lg {
+        height: 400px;
     }
 }
 
@@ -149,29 +129,37 @@
 // layouts / services
 // —————————————————————————————————————————————————————————————————
 
-.approach {
+#services {
 
-    &__filter {
-        padding: 0 $integer;
-    }
-
-    &__button {
-        width: 25%;
-        white-space: nowrap;
-
-        &:hover:before, &.tab__button--active:before {
-            width: 80%;
-            left: 10%;
+    .tab {
+        
+        &__nav {
+            padding: 0 $integer;
         }
+        
+        &__button {
+            width: 25%;
+            white-space: nowrap;
+            
+            &:hover:before, 
+            &.tab__button--active:before {
+                width: 80%;
+                left: 10%;
+            }
+        }
+        
+        &__content {
+            @include flex-basis(50%);
+        }
+        
     }
 
-    &__content {
-        @include flex-basis(50%);
-    }
+    .card {
 
-    &__icon {
-        width: 30%;
-        height: 30%;
+        &__image {
+            width: 30%;
+            height: 30%;
+        }
     }
 }
 

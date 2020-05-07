@@ -19,14 +19,14 @@ challenge:
 
 delivery:
     - item: 
-        - body: Applied Blockchain proposed decentralising control and building the authorised signatory database on a private blockchain.
-        - body: Applied Blockchain delivered an end-to-end solution from ground-up, where the signatory lists are managed and shared via a smart blockchain contract. The platform was designed to reduce admin work for the user and to simplify the collating and editing of the database.
+        - paragraph: Applied Blockchain proposed decentralising control and building the authorised signatory database on a private blockchain.
+        - paragraph: Applied Blockchain delivered an end-to-end solution from ground-up, where the signatory lists are managed and shared via a smart blockchain contract. The platform was designed to reduce admin work for the user and to simplify the collating and editing of the database.
     - item: 
-        - body: 'The platform enables the following:'
-        - body: • Clients are able to create new signatory lists within minutes, and adding/removing individuals to multiple lists is a click-of-a-button away.
-        - body: • A full, immutable audit trail shows what was changed and by whom – in real-time.
-        - body: • Data is stored in a secure, private blockchain.
-        - body: • The application makes managing external access to the signatory lists simple and GDPR compliant.
+        - paragraph: 'The platform enables the following:'
+        - paragraph: • Clients are able to create new signatory lists within minutes, and adding/removing individuals to multiple lists is a click-of-a-button away.
+        - paragraph: • A full, immutable audit trail shows what was changed and by whom – in real-time.
+        - paragraph: • Data is stored in a secure, private blockchain.
+        - paragraph: • The application makes managing external access to the signatory lists simple and GDPR compliant.
 
 results:
     - paragraph: Cygnetise’s successful implementation of their product to enterprises and startups has made processes more efficient, transparent and cost-effective.

@@ -49,18 +49,29 @@ layout: compress
             </div>
         </div>
         <div class="card__image">
-            <img src="{{ site.url }}{{ site.imageurl }}/logos/clients/{{ page.slug }}.png" alt="{{ page.title }} Logo">
+            <img src="{{ site.url }}{{ site.imageurl }}/carousel/clients_color/{{ page.slug }}.png" alt="{{ page.title }} Logo">
         </div>
     </div>
 </section>
 {% endif %}
 
 {% if page.challenge %}
-<section id="project-challenge" class="section">
+<section id="project-challenge" class="section section--white">
     <div class="row">
         {% if page.challenge-diagram %}
         <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4">
         <div class="coloffset--md1 col--md7">
+        {% elsif page.challenge-video %}
+        <div class="col--md5">
+            <div class="video background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/videoTestimonials.jpg);">
+                <a href="#modal-video" class="js-button-modal">
+                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                </a>
+            </div>
+            <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
+        </div>
+        {% include elements/modals/video.html %}
+        <div class="coloffset--md1 col--md6">
         {% else %}
         <div class="col--md6">
         {% endif %}
@@ -93,10 +104,10 @@ layout: compress
             <h1 class="subtitle">What Applied Blockchain Delivered</h1>
         </div>
         <div class="block__content">
-            {% for column in page.delivery %}
+            {% for content in page.delivery %}
             <div class="block__column col--xl4 col--lg6 col--md8">
-                {% for paragraph in column.item %}
-                <p class="body">{{ paragraph.body }}</p>
+                {% for column in content.item %}
+                <p class="body">{{ column.paragraph }}</p>
                 {% endfor %}
             </div>
             {% endfor %}
@@ -139,9 +150,9 @@ layout: compress
 {% endif %}
 
 {% if page.testimonial %}
-{% for item in page.testimonial %}
-<section class="section">
-    <div class="carousel--testimonials">
+<section class="section section--grey">
+    <div class="{% if page.title == 'Shell' %} owl-carousel owl-carousel-testimonials{% endif %} carousel--testimonials">
+        {% for item in page.testimonial %}
         <div class="carousel__item">
             <img src="{{ site.url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
             <div class="card body--left">
@@ -152,9 +163,9 @@ layout: compress
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 </section>
-{% endfor %}
 {% endif %}
 
 {% include containers/site/footer.html %}

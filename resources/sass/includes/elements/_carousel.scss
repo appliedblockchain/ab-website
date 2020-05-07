@@ -91,10 +91,11 @@
         .owl {
 
             &-dots {
-                position: absolute;
                 @include calc(bottom, -($integer-xxl+$integer*1.5));
+                position: absolute;
                 margin-top: 0;
                 width: 100%;
+                text-align: center;
             }
         }
     }

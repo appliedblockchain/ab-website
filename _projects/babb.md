@@ -10,9 +10,9 @@ summary: Core banking infrastructure and full-stack banking application on a pri
 
 delivery:
     - item: 
-        - body: The solution stores customer data within smart contracts on the blockchain and connects customers and banking service providers on a shared network, where the permissions for who can access or use that data is entirely controlled directly by the customer.
+        - paragraph: The solution stores customer data within smart contracts on the blockchain and connects customers and banking service providers on a shared network, where the permissions for who can access or use that data is entirely controlled directly by the customer.
     - item: 
-        - body: BABB is a multi-sided platform built to provide banking and other financial services to individuals and small businesses. It is a unique opportunity to bring financial inclusion and social cohesion to the widest possible audience, connecting the Beneficiary and the Sender without resorting to unnecessary middlemen or middle-layers of technologies.
+        - paragraph: BABB is a multi-sided platform built to provide banking and other financial services to individuals and small businesses. It is a unique opportunity to bring financial inclusion and social cohesion to the widest possible audience, connecting the Beneficiary and the Sender without resorting to unnecessary middlemen or middle-layers of technologies.
 
 testimonial:
     - quote: Applied Blockchain has experience in all levels of development – the blockchain core, the server level, the interface to the web, the interface to mobile – so they look at the end-to-end process to minimise costs, maximise performance and improve scalability.

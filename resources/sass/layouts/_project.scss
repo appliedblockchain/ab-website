@@ -22,7 +22,7 @@
     }
 
     .title {
-        margin-bottom: $integer-xxxl;
+        margin-bottom: $integer-xxxxl;
     }
 
     &-summary,
@@ -40,7 +40,6 @@
     &-summary {
         padding-top: 0;
         padding-bottom: 0;
-        margin-top: $integer-xl;
 
         & + #project-delivery {
             padding-top: 0;

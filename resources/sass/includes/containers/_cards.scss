@@ -410,7 +410,7 @@
         .card--xsmall {
             @include display-flex();
             @include align-items(baseline);
-
+            
             & + .card {
                 border-top: $border-sm $medium-grey;
                 padding-top: $integer-md;
@@ -442,6 +442,13 @@
                     max-width: $integer-max;
                 }
             }
+        }
+    }
+
+    &-results {
+
+        .card__image {
+            height: $integer-max;
         }
     }
 }

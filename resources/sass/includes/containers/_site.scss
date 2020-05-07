@@ -8,6 +8,7 @@
 // z-index
 // hover classes
 // overrides
+// misc
 // —————————————————————————————————————————————————————————————————
 
 body.js-freeze {
@@ -282,4 +283,24 @@ ul {
 	&--right { padding-right: 0 !important; }
 	&--bottom { padding-bottom: 0 !important; }
 	&--left { padding-left: 0 !important; }
+}
+
+
+// —————————————————————————————————————————————————————————————————
+// misc
+// —————————————————————————————————————————————————————————————————
+
+.video {
+	@include display-flex();
+	@include align-items(center);
+	@include justify-content(center);
+	height: 20vw;
+
+	&__button {
+		width: $integer-xxxl;
+	}
+
+	&__notice {
+		margin-top: $integer-lg;
+	}
 }

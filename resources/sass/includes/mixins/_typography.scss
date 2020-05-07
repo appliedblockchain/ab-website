@@ -106,9 +106,24 @@ html, body {
 
 .body {
 	
-	& + & { margin-top: $integer; }
-	&--large { & + & { margin-top: $integer*2; }}
-	&--small { & + & { margin-top: $integer*0.5; }}
+	& + & { 
+		margin-top: $integer; 
+	}
+
+	&--large { 
+
+		& + &,
+		& + .body { 
+			margin-top: $integer*2; 
+		}
+	}
+
+	&--small { 
+
+		& + & { 
+			margin-top: $integer*0.5; 
+		}
+	}
 }
 
 // prevent style from applying to media page

@@ -4,7 +4,7 @@
 // BLOCKS
 // —————————————————————————————————————————————————————————————————
 // general
-// variants
+// layouts
 // —————————————————————————————————————————————————————————————————
 
 
@@ -24,6 +24,10 @@
     }
 
     &__title {
+
+        & + .block__subtitle {
+            margin-top: $integer-md;
+        }
 
         & + .block__content {
             margin-top: $integer-xl;
@@ -47,11 +51,38 @@
             margin-top: $integer-lg;
         }
     }
+
+    &__column {
+
+        @include responsive(max-width, $desktop-max) {
+
+            & + & {
+                margin-top: $integer;
+            }
+        }
+    }
 }
 
 
 
 // —————————————————————————————————————————————————————————————————
-// variants
+// layouts
 // —————————————————————————————————————————————————————————————————
 
+#project {
+
+    &-results {
+
+        .block {
+
+            &__subtitle {
+                width: 75%;
+                margin: 0 auto;
+
+                @include responsive(max-width, $tablet-max) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

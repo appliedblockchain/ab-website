@@ -68,6 +68,6 @@
 	</button>
 </div>
 
-<div{% if page.layout == 'posts' %} id="posts"{% else %} id="{{ page.title | slugify }}"{% endif %} class="page">
+<div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page">
 
 {% include containers/page/header.html %}

@@ -85,7 +85,7 @@
     &__body {
 
         & + .card__meta {
-            margin-top: $integer;
+            margin-top: $integer-md;
         }
     }
 
@@ -302,7 +302,8 @@
 }
 
 #events,
-#services {
+#services,
+#project {
 
     .card {
 
@@ -357,7 +358,7 @@
     .card {
 
         & + .card {
-            border-top: $border-sm $light-grey;
+            border-top: $border-sm $medium-grey;
         }
     }
 }
@@ -387,6 +388,60 @@
             &--press-release    { background-color: $highlight; }
             &--blog             { background-color: $primary; }
             &--videos           { background-color: $dark; }   
+        }
+    }
+}
+
+#project {
+
+    &-summary {
+
+        .card {
+            @include transform(translateY(-$integer-xxxxl));
+                
+            &__image {
+                padding: $integer-xl;
+            }
+        }
+    }
+
+    &-intro {
+                
+        .card--xsmall {
+            @include display-flex();
+            @include align-items(baseline);
+
+            & + .card {
+                border-top: $border-sm $medium-grey;
+                padding-top: $integer-md;
+            }
+    
+            > * {
+                flex-basis: 50%;
+                margin-top: 0;
+            }    
+        }
+    }
+
+    .card {
+
+        &__wrapper {
+            @include display-flex();
+            @include justify-content(center);
+
+            @include responsive(max-width, $desktop-max) {
+                @include flex-wrap(wrap);
+            }
+            
+            .card {
+                padding-left: $integer;
+                padding-right: $integer;
+                max-width: $integer-max*2;
+
+                @include responsive(max-width, $desktop-max) {
+                    max-width: $integer-max;
+                }
+            }
         }
     }
 }

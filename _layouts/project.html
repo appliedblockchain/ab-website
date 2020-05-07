@@ -4,8 +4,8 @@ layout: compress
 
 {% include containers/site/header.html %}
 
-<div class="section section--header section--left project__header">
-    <div class="project__nav">
+<div id="project-intro" class="section section--header">
+    <div class="block__header">
         {% if page.previous.url %}
         <a href="{{ page.previous.url }}" class="ga-button-project-nav button button--small button--stroke button--primary button--animate fas fa-chevron-left">
             <p class="button__inner">Previous</p>
@@ -17,20 +17,22 @@ layout: compress
         </a>
         {% endif %}
     </div>
-    <div class="row">
-        <h1 class="col--lg7 project__title title">
-            {{ page.title }}:
-            <span>{{ page.subtitle }}</span>
-        </h1>
-        <div class="coloffset--lg1 col--lg4 col--md12 project__meta">
-            <div class="meta__item body--large">
-                <p class="meta__title body--bold">Industry</p>
-                <p>{{ page.industry }}</p>
-            </div>
-            <div class="meta__item body--large">
+    <div class="block__content">
+        <div class="row">
+            <p class="col--lg7 title">
+                {{ page.title }}:
+                <span class="body--black">{{ page.subtitle }}</span>
+            </p>
+            <div class="coloffset--lg1 col--lg4 col--md12">
+                <div class="card card--xsmall card--landscape body--large">
+                    <p class="card__title body--bold">Industry</p>
+                    <p class="card__body">{{ page.industry }}</p>
+                </div>
                 {% if page.deliverables %}
-                <p class="meta__title body--bold">Deliverables</p>
-                <p>{{ page.deliverables }}</p>
+                <div class="card card--xsmall card--landscape body--large">
+                    <p class="card__title body--bold">Deliverables</p>
+                    <p class="card__body">{{ page.deliverables }}</p>
+                </div>
                 {% endif %}
             </div>
         </div>
@@ -38,33 +40,46 @@ layout: compress
 </div>
 
 {% if page.summary %}
-<section class="section section--col project__summary summary background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
-    <div class="block summary__container">
-        <div class="summary__content">
-            <h1 class="project__subtitle subtitle">About {{ page.title }}</h1>
-            <p>{{ page.summary }}</p>
+<section id="project-summary" class="section background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
+    <div class="card card--lg card--landscape background--shadow">
+        <div class="card__inner">
+            <div class="card__content">
+                <h1 class="card__title subtitle">About {{ page.title }}</h1>
+                <p class="card__body body">{{ page.summary }}</p>
+            </div>
         </div>
-        <img src="{{ site.url }}{{ site.imageurl }}/logos/clients/{{ page.slug }}.png" alt="{{ page.title }} Logo" class="summary__image">
+        <div class="card__image">
+            <img src="{{ site.url }}{{ site.imageurl }}/logos/clients/{{ page.slug }}.png" alt="{{ page.title }} Logo">
+        </div>
     </div>
 </section>
 {% endif %}
 
 {% if page.challenge %}
-<section class="section section--left challenge">
+<section id="project-challenge" class="section">
     <div class="row">
         {% if page.challenge-diagram %}
-        <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4 challenge__icon">
+        <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4">
         <div class="coloffset--md1 col--md7">
         {% else %}
         <div class="col--md6">
         {% endif %}
-            <h1 class="project__subtitle subtitle">The Challenge</h1>
-            <div class="project__text">{{ page.challenge }}</div>
+            <h1 class="block__title subtitle">The Challenge</h1>
+            <div class="block__content">
+                {% for item in page.challenge %}
+                <p class="body--large body--bold">{{ item.lead }}</p>
+                <p class="body">{{ item.paragraph }}</p>
+                {% endfor %}
+            </div>
         </div>
         {% if page.outcome %}
         <div class="coloffset--md1 col--md5">
-            <h1 class="project__subtitle subtitle">The Outcome</h1>
-            <div class="project__text">{{ page.outcome }}</div>
+            <h1 class="block__title subtitle">The Outcome</h1>
+            <div class="block__content">
+                {% for item in page.outcome %}
+                <p class="body">{{ item.paragraph }}</p>
+                {% endfor %}
+            </div>
         </div>
         {% endif %}
     </div>
@@ -72,51 +87,74 @@ layout: compress
 {% endif %}
 
 {% if page.delivery %}
-<section class="section section--left section--grey delivery" style="background-image: url({{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale.svg);">
+<section id="project-delivery" class="section section--dark background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
     <div class="row">
-        <div class="col--xl7 col--lg9">
-            <h1 class="project__subtitle subtitle">What Applied Blockchain Delivered</h1>
+        <div class="col--xl7 col--lg9 block__title">
+            <h1 class="subtitle">What Applied Blockchain Delivered</h1>
         </div>
-        <div class="project__text">
-            {{ page.delivery }}
-            <!-- <img src="{{ site.url }}{{ site.imageurl }}/projects/example/{{ page.slug }}.png" alt="{{ page.title }} example" class="coloffset--lg1 col--lg7 delivery__image"> -->
-        </div>
+        <div class="block__content">
+            {% for column in page.delivery %}
+            <div class="block__column col--xl4 col--lg6 col--md8">
+                {% for paragraph in column.item %}
+                <p class="body">{{ paragraph.body }}</p>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>        
     </div>
 </section>
 {% endif %}
 
-{% if page.results %}
-<section class="section section--primary results">
-    <h1 class="project__subtitle subtitle">Results</h1>
-    <div class="project__text coloffset--lg2 col--lg8 body--large">{{ page.results }}</div>
-    {% if page.results-content %}
-    <div class="results__content">
-        {% if page.results-subtitle %}
-        <p class="results__title lead">{{ page.results-subtitle }}</p>
+{% if page.results or page.results-icons %}
+<section id="project-results" class="section section--primary">
+    <div class="section__header">
+        <p class="section__title subtitle">Results</p>
+        {% if page.results %}
+        <div class="section__body">
+            {% for item in page.results %}
+            <p class="body--large">{{ item.paragraph }}</p>
+            {% endfor %}
+        </div>
         {% endif %}
-        <div class="results__icons image-inline row">{{ page.results-content }}</div>
+    </div>
+    {% if page.results-icons %}
+    <div class="section__content">
+        <div class="card__wrapper">
+            {% for item in page.results-icons %}
+            <div class="card">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.image }}.svg" alt="Icon {{ item.title }}" class="card__image">
+                <p class="card__title body--large body--bold">{{ item.title }}</p>
+                <p class="card__body body">{{ item.body }}</p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
     {% endif %}
     {% if page.results-comment %}
-    <p class="coloffset--lg2 col--lg8 results__comment">{{ page.results-comment }}</p>
+    <div class="section__content">
+        <p class="block__subtitle body">{{ page.results-comment }}</p>
+    </div>
     {% endif %}
 </section>
 {% endif %}
 
-{% if page.testimonial-quote %}
+{% if page.testimonial %}
+{% for item in page.testimonial %}
 <section class="section">
-    <div class="testimonial__item">
-        <div class="testimonial__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/testimonials/{{ page.testimonial-id }}.jpg);" alt="Portrait {{ page.testimonial-name }}"></div>
-        <div class="testimonial__content">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/quote-mark.svg" class="testimonial__mark">
-            <p class="quote">{{ page.testimonial-quote }}</p>
-            <div class="testimonial__meta">
-                <p class="body--bold">{{ page.testimonial-name }}</p>
-                <p>{{ page.testimonial-job }}</p>
+    <div class="carousel--testimonials">
+        <div class="carousel__item">
+            <img src="{{ site.url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
+            <div class="card body--left">
+                <p class="card__body quote">{{ item.quote }}</p>
+                <div class="card__meta">
+                    <p class="body--large body--bold">{{ item.author }}</p>
+                    <p>{% if item.position %}{{ item.position }}, {% endif %}{{ item.company }}</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+{% endfor %}
 {% endif %}
 
 {% include containers/site/footer.html %}

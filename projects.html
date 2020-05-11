@@ -12,7 +12,7 @@ background_color: dark
         {% for project in site.projects %}
         {% if project.tag contains 'featured' %}
         <div class="card card--lg card--landscape background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
-            <div class="card__image">
+            <div class="card__image hide--desktop">
                 <img src="{{ site.url }}{{ site.imageurl }}/carousel/clients/{{ project.slug }}.png" alt="{{ project.title }} logo">
             </div>
             <div class="card__inner">
@@ -41,11 +41,11 @@ background_color: dark
 </section>
 
 <section class="section section--alt section--dark">
-    <div class="grid row">
+    <div class="grid row card__wrapper">
         {% for project in site.projects %}
         {% assign project = site.projects | sort: 'order' %}
         {% unless project.tag contains 'featured' %}
-        <div class="col--4">
+        <div class="col--lg4 col--md6">
             <div class="card card--portrait background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
                 <div class="card__inner">
                     <div class="card__content">

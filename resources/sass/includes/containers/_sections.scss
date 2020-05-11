@@ -142,6 +142,10 @@
 
 					&:before {
 						@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+
+						@include responsive(max-width, $tablet-max) {
+							display: none;
+						}
 					}
 				}
 
@@ -151,6 +155,14 @@
 					&:before {
 						@include background-image(linear-gradient(to bottom, $primary, rgba($primary-lighten, 0.8)));
 					}
+
+					.card__inner {
+						padding-left: 0;
+						
+						@include responsive(max-width, $tablet-max) {
+							padding-right: 0;
+						}
+					}
 				}
 
 				&:nth-child(2) {
@@ -159,18 +171,18 @@
 					&:before {
 						@include background-image(linear-gradient(to bottom, $primary, rgba($primary-darken, 0.8)));
 					}
+
+					.card__inner {
+						padding-right: 0;
+						
+						@include responsive(max-width, $tablet-max) {
+							padding-left: 0;
+						}
+					}
 				}
 
 				@include responsive(max-width, $tablet-max) {
-					background-image: none !important;
-					background-color: $primary;
-					padding-left: $col*3 !important;
-					padding-right: $col*3 !important;
-				}
-
-				@include responsive(max-width, $mobile-max) {
-					padding-left: $col*2 !important;
-					padding-right: $col*2 !important;
+					width: 100%;
 				}
 			}
 		}

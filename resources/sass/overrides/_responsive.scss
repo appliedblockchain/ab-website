@@ -31,9 +31,16 @@
 	.header__menu,
 	.page__header,
     .section,
-    .section--full .section__header {
+	.section--full .section__header {
 		padding-right: 10vw;
 		padding-left: 10vw;
+	}
+
+	.section__content--2 .card:nth-child(1) {
+		padding-left: 10vw;
+    }
+	.section__content--2 .card:nth-child(2) {
+		padding-right: 10vw;
     }
 
     .section--alt {
@@ -47,12 +54,15 @@
 	.header__menu,
 	.page__header,
     .section,
-    .section--full .section__header {
+	.section--full .section__header,
+	.section__content--2 .card:nth-child(1),
+	.section__content--2 .card:nth-child(2),
+	.tab--leadership .tab__item {
 		padding-right: $page/2;
 		padding-left: $page/2;
 	}
 
-    .section--alt {
+	.section--alt {
         padding-right: $page/4;
 		padding-left: $page/4;
     }
@@ -82,7 +92,10 @@
     .page__header,
     .section,
     .section--full .section__header,
-    .section--alt {
+    .section--alt,
+	.section__content--2 .card:nth-child(1),
+	.section__content--2 .card:nth-child(2),
+	.tab--leadership .tab__item {
 		padding-right: $integer-md;
 		padding-left: $integer-md;
 	}

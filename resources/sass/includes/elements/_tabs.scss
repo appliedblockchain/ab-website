@@ -59,13 +59,8 @@
 .tab {
 
 	&--leadership {
-		padding-bottom: $integer-xxxxl;
 
 		.tab {
-
-			&__nav {
-				width: auto;
-			}
 
 			&__item {
 				position: relative;
@@ -76,8 +71,12 @@
 					@include background-image(linear-gradient(to left, rgba($dark, 0.2), $dark));
 				}
 
+				@include responsive(max-width, $tablet-max) {
+					background-image: none !important;
+					text-align: center;
+				}
+
 				.card {
-					width: 50%;
 					
 					> * {
 						position: relative;
@@ -86,7 +85,8 @@
 			}	
 
 			&__nav {
-				margin-top: -$integer-xxxl;
+				width: auto;
+				margin-bottom: -$integer-xxxl*1.5;
 				z-index: 1;
 			}
 		}

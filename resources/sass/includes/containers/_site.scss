@@ -214,16 +214,16 @@ ul {
 
 .hide {
 
-	&--large-desktop { @include responsive(max-width, $desktop-max) { display: none !important; } }
+	&--desktop-lg { @include responsive(max-width, $desktop-lg-max) { display: none !important; } }
 	&--desktop { @include responsive(max-width, $desktop-max) { display: none !important; } }
-	&--tablets { @include responsive(max-width, $tablet-max) { display: none !important; } }
-	&--phones { @include responsive(max-width, $mobile-max) { display: none !important; } }
+	&--tablet { @include responsive(max-width, $tablet-max) { display: none !important; } }
+	&--mobile { @include responsive(max-width, $mobile-max) { display: none !important; } }
 	&--touch { @include responsive-mobile-devices() { display: none !important; } }
 }
 
 .show {
 
-	&--phones { @include responsive(min-width, $mobile-min) { display: none !important; } }
+	&--mobile { @include responsive(min-width, $mobile-min) { display: none !important; } }
 }
 
 

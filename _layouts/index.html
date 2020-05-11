@@ -13,16 +13,16 @@ particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', f
 });
 </script>
 
-<div id="landing" class="section section--alt section--dark background--cover" id="landing" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);">
+<div id="landing" class="section section--alt section--dark background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);">
     <!-- particles.js container -->
     <div id="particles-js"></div>
     {% include containers/page/title.html
         headline = site.description
     %}
     <div class="section__content body--black">
-        <div class="row">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
-            <div class="coloffset--3 col--3">
+        <div class="row card__wrapper">
+            <img src="{{ site.url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop">
+            <div class="coloffset--xl3 col--xl3 coloffset--lg2 col--lg4 col--md6">
                 <div class="card card--xs background--shadow">
                     <div class="card__inner">
                         <div class="card__header">
@@ -34,7 +34,7 @@ particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', f
                     </div>
                 </div>
             </div>
-            <div class="col--3">
+            <div class="col--xl3 col--lg4 col--md6">
                 <div class="card card--xs background--shadow">
                     <div class="card__inner">
                         <div class="card__header">
@@ -50,13 +50,13 @@ particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', f
     </div>
     <div class="widget__bar">
         <div class="row">
-            <div class="col--8 body--left">
+            <div class="col--xl8 body--left">
                 <p class="body body--bold">Trusted by leading organisations and startups alike</p>
                 {% include elements/carousel.html 
                     variant = 'clients' 
                 %}
             </div>
-            <div class="col--4">
+            <div class="col--xl4">
                 {% include containers/cards/news.html %}
             </div>
         </div>

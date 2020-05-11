@@ -20,12 +20,6 @@
 .widget {
     position: relative;
     border-radius: $border-radius;
-
-    &__bar {
-        @include calc(width, '100vw - '$page);
-        position: absolute;
-        bottom: $integer-xl;
-    }
 }
 
 

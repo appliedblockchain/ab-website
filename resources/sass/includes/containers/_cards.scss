@@ -66,6 +66,10 @@
         position: relative;
         padding: $integer-lg;
 
+        @include responsive(max-width, $tablet-max) {
+            padding: $integer-md;
+        }
+
         & + .card__image {
             margin-top: $integer-md;
         }
@@ -159,7 +163,7 @@
             &__inner {
                 padding: $integer-md;
             }
-
+        
             &__content {
 
                 & + .card__actions {
@@ -175,8 +179,12 @@
 
             &__inner {
                 padding: $integer-md*1.5;
+                
+                @include responsive(max-width, $tablet-max) {
+                    padding: $integer-md;
+                }
             }
-
+        
             &__header {
                 
                 & + .card__image,
@@ -220,7 +228,13 @@
 
             &__inner {
                 padding: $integer-xxl;
+
+                @include responsive(max-width, $tablet-max) {
+                    padding: $integer-lg;
+                }
+
             }
+
             &__content {
 
                 & + .card__actions {

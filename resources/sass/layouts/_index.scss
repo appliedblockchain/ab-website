@@ -17,10 +17,13 @@
 }
 
 #landing {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(space-between);
     min-height: 100vh;
     position: relative;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: $integer-xxl;
 
     &:before, 
     &:after, 
@@ -46,6 +49,7 @@
 
     .section__content {
         position: relative;
+        padding-bottom: $integer-xxxl*2;
     }
 
     .gartner {
@@ -55,9 +59,7 @@
         min-width: 220px;
         width: 10%;
         z-index: 1;
-        @include responsive(max-width, $desktop-max) {
-            display: none;
-        }
+
         @include responsive-mobile-devices-landscape() {
             display: none;
         }

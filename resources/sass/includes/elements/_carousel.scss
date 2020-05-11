@@ -19,6 +19,10 @@
     &__item {
         @include display-flex();
         @include align-items(center);
+
+        @include responsive(max-width, $desktop-max) {
+            @include flex-direction(column);
+        }
     }
 }
 
@@ -63,6 +67,7 @@
         .carousel {
 
             &__image {
+                @include align-self(flex-start);
                 @include border-radius(50%);
                 @include flex-shrink(0);
                 overflow: hidden;
@@ -72,18 +77,13 @@
                 height: $integer-max;
 
                 @include responsive(max-width, $desktop-max) {
-                    width: $integer-xxxxl+$integer-xl;
+                    width: $integer-xxxxl+$integer-xl !important;
                     height: $integer-xxxxl+$integer-xl;
-                    margin-right: $integer-xxl;
+                    margin-bottom: $integer-lg;
                 }
 
                 @include responsive(max-width, $tablet-max) {
-                    width: $integer-xxxl;
-                    height: $integer-xxxl;
-                }
-
-                @include responsive(max-width, $mobile-max) {
-                    display: none;
+                    display: none !important;
                 }
             }
         }
@@ -96,6 +96,10 @@
                 margin-top: 0;
                 width: 100%;
                 text-align: center;
+
+                @include responsive(max-width, $tablet-max) {
+                    @include calc(bottom, -($integer-lg+$integer*1.5));
+                }
             }
         }
     }

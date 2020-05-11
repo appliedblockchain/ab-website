@@ -1,22 +1,34 @@
 # timeline section
 # in about.html page
 
-fifteen:
-  - text: Adi started the company in 2015 with the vision of helping companies solve real-world problems by developing distributed applications and contributing towards creating a trustless ecosystem.
-    icon: rocket
+- year: '2015'
+  item:
+   - body: 'Adi started the company in 2015, and was soon joined by Francesco, with the vision of helping companies solve real-world problems by developing distributed applications and contributing towards creating a trustless ecosystem.'
+     icon: 'rocket'
 
-sixteen:
-  - text: We received an Innovate UK grant to develop identity and privacy toolkit.
-    icon: mantle-logo
-  - text: Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving venture funding.
-    icon: group
+- year: '2016'
+  item:
+   - body: 'We received an Innovate UK grant to develop identity and privacy toolkit.'
+     icon: 'mantle-logo'
+   - body: 'Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving venture funding.'
+     icon: 'group'
 
-seventeen:
-  - text: We received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading.
-    icon: dollar
+- year: '2017'
+  item:
+   - body: 'We received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading. The application was productionized and is used on a daily basis by their trading team.'
+     link: 'projects/shell'
+     link_title: 'View project'
+     link_icon: 'fill'
+     icon: 'dollar'
 
-eighteen:
-  - text: We opened an office in Porto! We have chosen Porto as our first non-UK office and as our development centre for European expansion.
-    icon: pinpoint
-  - text: We began building K<span class="body--zero">0</span>, a zero knowledge proof framework for trading assets privately on smart contract blockchains.
-    icon: node
+- year: '2018'
+  item:
+   - body: 'We opened an office in Porto! We have chosen Porto as our first non-UK office and as our development centre for European expansion.'
+     icon: 'pinpoint'
+
+- year: '2019'
+  item:
+   - body: 'We launched K<span class="body--zero">0</span>, an open source zero knowledge proof framework for trading assets privately on smart contract blockchains.'
+     link: 'products'
+     link_icon: 'box'
+     icon: 'node'

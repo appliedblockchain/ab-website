@@ -109,16 +109,13 @@
     @include justify-content(space-between);
     @include transition(opacity $transition);
     @include box-shadow($box-shadow-md);
-    padding-left: $col*2;
-    padding-right: $col*2;
+    padding: $integer-xs $page;
     will-change: opacity;
     background-color: $primary;
     color: $white;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding-top: $integer/4;
-    padding-bottom: $integer/4;
     opacity: 1;
     display: none;
 
@@ -147,6 +144,6 @@
     }
 
     &__button {
-        min-width: 75px;
+        color: white;
     }
 }

@@ -190,10 +190,9 @@ ul {
 // images
 
 .background {
-	
-	&--cover {
-		@include background(center center, cover);
-	}
+
+	&--cover { @include background(center center, cover); }
+	&--contain { @include background(center center, contain); }
 
 	&--shadow {
 		@include box-shadow($box-shadow-sm);

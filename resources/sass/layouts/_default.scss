@@ -4,6 +4,7 @@
 // DEFAULT
 // —————————————————————————————————————————————————————————————————
 // about
+// services
 // join
 // privacy-policy
 // mantle
@@ -138,6 +139,25 @@
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
         background-color: rgba($primary, 0.7);
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// services
+// —————————————————————————————————————————————————————————————————
+
+#services {
+
+    &-stack {
+
+        .body--right {
+
+            @include responsive(max-width, $desktop-max) {
+                text-align: left;
+            }
+        }
     }
 }
 

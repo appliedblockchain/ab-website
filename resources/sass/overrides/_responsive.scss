@@ -36,7 +36,7 @@
 		padding-left: 10vw;
     }
 
-    .section__alt {
+    .section--alt {
         padding-right: 5vw;
 		padding-left: 5vw;
     }
@@ -52,7 +52,7 @@
 		padding-left: $page/2;
 	}
 
-    .section__alt {
+    .section--alt {
         padding-right: $page/4;
 		padding-left: $page/4;
     }
@@ -82,7 +82,7 @@
     .page__header,
     .section,
     .section--full .section__header,
-    .section__alt {
+    .section--alt {
 		padding-right: $integer-md*2;
 		padding-left: $integer-md*2;
 	}

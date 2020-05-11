@@ -2,31 +2,67 @@
 layout: default
 title: Services
 subtitle: We bring innovative solutions to problems businesses face today
-body: We work with enterprises and startups across all verticals. We design and develop solutions best suited to your needs. We work across the entire development stack. We advise, design, build and deploy future-proof, secure and private-preserving business applications. We work with you from the initial seed of your idea and continue to support you as you move into production and beyond
-background_color: white
+body: We work with enterprises and startups across all verticals. We advise, design and develop solutions best suited to your needs, keeping solutions simple, and only using advanced technologies such as privacy-preserving technologies and blockchains when they’re absolutely required. We work across the entire development stack. We work with you from the initial seed of your idea and continue to support you as you move into production and beyond
+background_color: dark
 ---
 
-<section class="section section--grey">
-    {% include containers/sections/header.html
-        title = 'Quality of service'
-    %}
-    <div class="section__content z-index--2">
-        <div class="row">
-            {% for item in site.data.solutions %}
-            <div class="col--4">
-                <div class="card card--lg background--shadow">
-                    <div class="card__inner">
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/solutions/{{ item.icon }}.svg" alt="" class="card__image">
-                        <h2 class="card__title lead">{{ item.title }}</h2>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+<section class="section section--alt section--dark">
+    <div class="section__content">
+        <div class="card block___title">
+            {% include elements/carousel.html 
+                variant = 'clients' 
+            %}
+        </div>
+        <div class="block__content">
+            <a href="{{ site.url }}/projects" class="ga-button-projects button button--primary button--large button--animate fas fa-fill">
+                <p class="button__inner">Projects</p>
+            </a>
         </div>
     </div>
 </section>
 
-<section class="section section--white section--overlap">
+<section class="section section--alt section--dark">
+    {% include containers/sections/header.html
+        title = 'Our solutions'
+    %}
+    <div class="section__content z-index--2">
+        <div class="row">
+            <div class="card__wrapper">
+                {% for item in site.data.services.solutions %}
+                <div class="col--md4">
+                    <div class="card card--lg background--shadow">
+                        <div class="card__inner">
+                            <img src="{{ site.url }}{{ site.imageurl }}/icons/solutions/icon-{{ item.icon }}.svg" alt="" class="card__image">
+                            <h2 class="card__title lead">{{ item.title }}</h2>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services-stack" class="section section--white section--overlap background--contain" style="background-image: url({{ site.url }}{{ site.imageurl}}/graphics/stack.png);">
+    <div class="section__content">
+        <div class="card__wrapper">
+            <div class="row">
+                {% for col in site.data.services.stack %}
+                <div class="{% if col.side == 'right' %}coloffset--lg2{% endif %} col--lg5 col--md6 body--{{ col.side }}">
+                    {% for item in col.item %}
+                    <div class="card">
+                        <div class="card__title lead">{{ item.title }}</div>
+                        <div class="card__body">{{ item.body }}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--white">
     {% include containers/sections/header.html
         title = 'Our Approach'
         subtitle = 'Building your Project'
@@ -61,7 +97,7 @@ background_color: white
 
 <section class="section section--grey section--alt section--overlap">
     {% include containers/sections/header.html
-        title = 'Blockchain platforms'
+        title = 'Technology'
     %}
     <div class="section__content">
         {% include elements/carousel.html 

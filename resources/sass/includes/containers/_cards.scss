@@ -21,6 +21,14 @@
     position: relative;
     width: 100%;
 
+    &__wrapper {
+        margin-bottom: -$integer-md*2;
+
+        .card {
+            margin-bottom: $integer-md*2;
+        }
+    }
+
     &__wrapper--inline {
         @include display-flex();
         @include justify-content(center);
@@ -421,11 +429,6 @@
 #projects {
 
     .card {
-        margin-bottom: $integer-md*2;
-
-        &__wrapper {
-            margin-bottom: -$integer-md*2;
-        }
 
         &__icon {
             @include border-radius(50%);

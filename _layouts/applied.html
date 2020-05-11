@@ -154,10 +154,10 @@
         body = 'Zero Knowledge Proofs are designed to provide your business with the following:'
     %}
     <div class="section__content">
-        <div class="card__wrapper--inline">
+        <div class="row">
             {% capture page_id %}{{ page.title | slugify }}{% endcapture %}
             {% for item in site.data.images.[page_id] %}
-            <div class="card">
+            <div class="col--md3 col--6 card">
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.png" alt="{{ item.url }} icon" class="card__image">
                 <p class="card__title body body--bold">{{ item.title }}</p>
             </div>

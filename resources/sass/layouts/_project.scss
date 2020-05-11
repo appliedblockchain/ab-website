@@ -5,6 +5,10 @@
 // —————————————————————————————————————————————————————————————————
 
 #project {
+
+    .title h1 {
+        display: inline-block;
+    }
     
     &-summary,
     &-delivery {

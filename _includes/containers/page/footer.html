@@ -32,7 +32,7 @@
                     <div class="card__body">
                         <a href="{{ site.url }}/" class="footer__button button button--text">Home</a>
                         <a href="{{ site.url }}/services" class="footer__button button button--text">Services</a>
-                        <a href="{{ site.url }}/our-projects" class="footer__button button button--text">Projects</a>
+                        <a href="{{ site.url }}/projects" class="footer__button button button--text">Projects</a>
                         <a href="{{ site.url }}/products" class="footer__button button button--text">Products</a>
                         <a href="{{ site.url }}/about" class="footer__button button button--text">About</a>
                         <a href="{{ site.url }}/media" class="footer__button button button--text">Media</a>
@@ -44,8 +44,8 @@
                 <div class="card col--md4">
                     <p class="card__title body--large body--bold">Support</p>
                     <div class="card__body">
-                        <a href="{{ site.url }}/faq" class="button button--text">FAQ</a>
-                        <a href="{{ site.url }}/privacy-policy" class="button button--text">Privacy policy</a>
+                        <a href="{{ site.url }}/faq" class="footer__button button button--text">FAQ</a>
+                        <a href="{{ site.url }}/privacy-policy" class="footer__button button button--text">Privacy policy</a>
                     </div>
                 </div>
                 <div class="card col--md4">
@@ -56,7 +56,7 @@
                         <p class="button button--text">Toyota</p>
                         <p class="button button--text">Emsurge</p>
                         {% for project in site.projects %}
-                        <a href="{{ project.url }}" class="button button--text">{{ project.title }}</a>
+                        <a href="{{ project.url }}" class="footer__button button button--text">{{ project.title }}</a>
                         {% endfor %}
                     </div>
                 </div>

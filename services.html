@@ -68,7 +68,7 @@ background_color: dark
         subtitle = 'Building your Project'
     %}
     <div class="section__content tab tab--approach z-index--2">
-        <div class="tab__nav z-index--2">
+        <div class="tab__nav z-index--2 hide--tablet">
             {% for item in site.data.approach %}
             <a href="#{{ item.id }}" class="tab__button{% if item.active %} tab__button--active{% endif %}">
                 <h2 class="comment">{{ item.number }}. {{ item.title }}</h2>
@@ -85,7 +85,7 @@ background_color: dark
                             <p class="card__body body">{{ item.text }}</p>
                         </div>
                     </div>
-                    <div class="card__image">
+                    <div class="card__image hide--mobile">
                         <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="">
                     </div>
                 </div>

@@ -2496,11 +2496,21 @@ html, body {
 .tab--approach .tab__content {
   margin-top: 2.5rem;
 }
-/* line 114, ../sass/includes/elements/_tabs.scss */
+@media (max-width: 767.98px) {
+  /* line 114, ../sass/includes/elements/_tabs.scss */
+  .tab--approach .tab__item {
+    display: block;
+  }
+  /* line 123, ../sass/includes/elements/_tabs.scss */
+  .tab--approach .tab__item + .tab__item .card__inner {
+    padding-top: 0;
+  }
+}
+/* line 131, ../sass/includes/elements/_tabs.scss */
 .tab--approach .tab__button {
   position: relative;
 }
-/* line 117, ../sass/includes/elements/_tabs.scss */
+/* line 134, ../sass/includes/elements/_tabs.scss */
 .tab--approach .tab__button:before {
   -moz-transition: opacity 0.4s ease 0s, width 0.4s ease 0s, left 0.4s ease 0s;
   -o-transition: opacity 0.4s ease 0s, width 0.4s ease 0s, left 0.4s ease 0s;
@@ -2520,10 +2530,14 @@ html, body {
   will-change: opacity, width, left;
   background-color: #161656;
 }
-/* line 125, ../sass/includes/elements/_tabs.scss */
+/* line 142, ../sass/includes/elements/_tabs.scss */
 .tab--approach .tab__button:hover:before, .tab--approach .tab__button.tab__button--active:before {
   width: 100%;
   left: 0;
+}
+/* line 152, ../sass/includes/elements/_tabs.scss */
+.tab--approach .card__image {
+  padding-left: 0 !important;
 }
 
 /* line 7, ../sass/includes/elements/_tooltips.scss */

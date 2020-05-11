@@ -65,7 +65,7 @@
 			&__item {
 				position: relative;
 				padding: $integer-xxxl*2 $page;
-		
+
 				&:before {
 					@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
 					@include background-image(linear-gradient(to left, rgba($dark, 0.2), $dark));
@@ -77,7 +77,7 @@
 				}
 
 				.card {
-					
+
 					> * {
 						position: relative;
 					}
@@ -90,13 +90,13 @@
 				z-index: 1;
 			}
 		}
-		
+
 		.card__image {
 			@include transition($transition);
 			height: $integer-xxxxl;
 			width: $integer-xxxxl;
 			will-change: transform;
-	
+
 			&:hover {
 				@include transform(scale(1.05));
 			}
@@ -109,7 +109,24 @@
 
 			&__content {
 				margin-top: $integer-xl;
-			}	
+			}
+
+			&__item {
+
+				@include responsive(max-width, $tablet-max) {
+					display: block;
+
+					& + .tab__item {
+
+						.card {
+
+							&__inner {
+								padding-top: 0;
+							}
+						}
+					}
+				}
+			}
 
 			&__button {
 				position: relative;
@@ -127,7 +144,14 @@
 					width: 100%;
 					left: 0;
 				}
-			}			
+			}
+		}
+
+		.card {
+
+			&__image {
+				padding-left: 0 !important;
+			}
 		}
 	}
 }

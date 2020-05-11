@@ -6224,16 +6224,22 @@ ul {
   font-style: italic;
 }
 
-/* line 9, ../sass/layouts/_project.scss */
+@media (max-width: 1023.98px) {
+  /* line 9, ../sass/layouts/_project.scss */
+  #project .title {
+    margin-bottom: 2rem;
+  }
+}
+/* line 15, ../sass/layouts/_project.scss */
 #project .title h1 {
   display: inline-block;
 }
-/* line 13, ../sass/layouts/_project.scss */
+/* line 20, ../sass/layouts/_project.scss */
 #project-summary, #project-delivery {
   position: relative;
   background-attachment: fixed;
 }
-/* line 18, ../sass/layouts/_project.scss */
+/* line 25, ../sass/layouts/_project.scss */
 #project-summary:before, #project-delivery:before {
   content: "";
   position: absolute;
@@ -6246,23 +6252,23 @@ ul {
   background-color: rgba(0, 123, 255, 0.8);
   background-blend-mode: multiply;
 }
-/* line 25, ../sass/layouts/_project.scss */
+/* line 32, ../sass/layouts/_project.scss */
 #project-summary {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 7.5rem;
 }
-/* line 30, ../sass/layouts/_project.scss */
+/* line 37, ../sass/layouts/_project.scss */
 #project-summary + #project-delivery {
   padding-top: 0;
 }
 @media (max-width: 767.98px) {
-  /* line 37, ../sass/layouts/_project.scss */
+  /* line 44, ../sass/layouts/_project.scss */
   #project-challenge img {
     display: none;
   }
 }
-/* line 47, ../sass/layouts/_project.scss */
+/* line 54, ../sass/layouts/_project.scss */
 #project-results.section {
   text-align: center;
 }

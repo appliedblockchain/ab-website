@@ -6,9 +6,16 @@
 
 #project {
 
-    .title h1 {
-        display: inline-block;
-    }
+    .title {
+
+        @include responsive(max-width, $desktop-max) {
+            margin-bottom: $integer-lg;
+        }
+
+        h1 {
+            display: inline-block;
+        }
+    } 
     
     &-summary,
     &-delivery {

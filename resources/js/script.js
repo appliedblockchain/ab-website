@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 window.addEventListener('scroll', doParallax);
 function doParallax(){
-   var positionY = window.pageYOffset/4;
+   var positionY = window.pageYOffset/8;
    document.body.style.backgroundPosition = "0 -" + positionY + "px";
 }
 

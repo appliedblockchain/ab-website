@@ -1,0 +1,120 @@
+---
+layout: default
+title: About
+subtitle: We are a team of engineers, designers, and advisors with unique expertise in applying advances in cryptography to solve our client’s business problems
+background_image: true
+background_color: primary
+---
+
+<section class="section section--primary section--full">
+    <div class="section__content section__content--2">
+        <div class="card card--lg">
+            <div class="card__inner">
+                <p class="card__title subtitle">We Solve Problems</p>
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon" class="card__image">
+                <p class="card__body body">At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced cryptographic technology to build applications that maximise data privacy and security.</p>
+                <a href="{{ site.url }}/services" class="body ga-button-services button button--primary-darken button--animate fas fa-user-cogs">
+                    <p class="button__inner">Services</p>
+                </a>
+            </div>
+        </div>
+        <div class="card card--lg">
+            <div class="card__inner">
+                <p class="card__title subtitle">We Build Products</p>
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon" class="card__image">
+                <p class="card__body body">We build products to solve a problem once for our many clients. We focus on advanced cryptography to enable businesses to do more with each other, while sharing less data.</p>
+                <a href="{{ site.url }}/products" class="body ga-button-products button button--primary-lighten button--animate fas fa-box">
+                    <p class="button__inner">Products</p>
+                </a>
+            </div>
+        </div>
+    </div>   
+</section>
+
+<section class="section section--white timeline">
+    {% include containers/sections/header.html
+        title = 'Our story'
+    %}
+    <div class="section__content timeline">
+        {% for year in site.data.timeline %}
+        <span class="timeline__headline">
+            <span class="timeline__dot"></span>
+            <p class="timeline__date lead">{{ year.year }}</p>
+        </span>
+        {% for item in year.item %}
+        <div class="timeline__item">
+            <div class="timeline__text">
+                <div class="card card--sm card__inner background--shadow">
+                    <p class="card__title body">{{ item.body }}</p>
+                    {% if item.link %}
+                    <div class="body">
+                        <a href="{{ site.url }}/{{ item.link }}" class="button button--small button--highlight button--animate fas fa-{{ item.link_icon }}">
+                            <p class="button__inner">{% if item.link_title %}{{ item.link_title }}{% else %}{{ item.link }}{% endif %}</p>
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="timeline__icon">
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.icon }}.svg" alt="{{ item.icon }} icon">
+            </div>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section section--grey">
+    {% include containers/sections/header.html
+        title = 'Investors'
+    %}
+    <div class="section__content body--black z-index--2">
+        <div class="card card--lg background--shadow testimonials">
+            <div class="card__inner">
+                {% include elements/carousel.html 
+                    type = 'testimonials'
+                    variant = 'testimonials_investors' 
+                %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--dark section--overlap section--full">
+    {% include containers/sections/header.html
+        title = 'Leadership team'
+        body = 'Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
+    %}
+    <div class="section__content body--left tab tab--leadership">
+        <div class="tab__nav">
+            {% for item in site.data.leadership %}
+            <a href="#{{ item.slug }}" class="card card--sm tab__button {{ item.active }} no--padding">
+                <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
+                <p class="card__title body--large body--bold">{{ item.name | truncatewords: 1, "" }}</p>
+                <p class="">{{ item.division }}</p>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="">
+            {% for item in site.data.leadership %}
+            <div id="{{ item.slug }}" class="tab__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
+                <div class="row">
+                    <div class="col--lg6 card card--lg">
+                        <p class="card__label body--bold">{{ item.title }}</p>
+                        <h2 class="card__title subtitle">{{ item.name }}</h2>
+                        <p class="card__body body">{{ item.bio }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="about-team" class="section section--dark section--full background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
+    <div class="section__content">
+        <a href="{{ site.url }}/join" class="ga-button-join button button--large button--primary-lighten button--animate fas fa-user-plus">
+            <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
+        </a>
+    </div>
+</section>

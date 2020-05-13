@@ -1,7 +1,11 @@
 # site settings
 author: Applied Blockchain
 title: Applied Blockchain 
-description: "Building Secure, Private & Collaborative Applications"
+description: "Building Secure, Private, Collaborative Business Applications"
+
+# internal path
+resourceurl: /resources
+imageurl: /resources/images
 
 # contact 
 address-london: Level 39<br>One Canada Square, Canary Wharf<br>London E14 5AB<br>United Kingdom
@@ -24,6 +28,14 @@ collections:
     output: true
     permalink: /:title/
 
-# internal path
-resourceurl: /resources
-imageurl: /resources/images
+# compress 
+# http://jch.penibelst.de/
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
+  startings: []

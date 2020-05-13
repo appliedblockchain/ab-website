@@ -4,12 +4,12 @@
 // BUTTONS
 // —————————————————————————————————————————————————————————————————
 // general
+// sizes
+// variants
+// colors
 // animate
-// color variant
-// size
 // close
 // menu
-// scroll to top
 // —————————————————————————————————————————————————————————————————
 
 
@@ -19,18 +19,24 @@
 // —————————————————————————————————————————————————————————————————
 
 .button {
-	@include transition(background-color $transition, transform $transition);
-	@include border-radius(100px);
-	@include display-flex(inline-flex !important);
+	@include transition(background-color $transition, transform $transition, opacity $transition);
+	@include display-flex(inline-flex);
 	@include justify-content(center);
 	@include align-items(center);
-	@include align-self(center);
-	will-change: background-color, transform;
+	// @include align-self(center);
+	border-radius: $border-radius*4;
+	will-change: background-color, transform, opacity;
 	cursor: pointer;
-	padding: 12px 24px;
 	overflow: hidden;
 	position: relative;
 	white-space: nowrap;
+	font-family: $font;
+	letter-spacing: 0.04rem;
+	line-height: 1;
+
+	&.fa, &.fab, &.fal, &.far, &.fas {
+		@include display-flex(inline-flex);
+	}
 
 	&__inner {
 		@include transform-style(preserve-3d);
@@ -39,49 +45,189 @@
 		will-change: color, transform;
 		display: block;
 		width: 100%;
+		font-family: $font;
 		text-transform: uppercase;
+		letter-spacing: 0.04rem;
 		text-align: center;
 	}
 
 	& + & {
-		margin-left: 5px;
+		margin-left: $integer-sm;
+	}
+
+	&__wrapper {
+		@include display-flex();
+		@include flex-wrap(wrap);
+		margin-bottom: -$integer-md;
+
+		.button {
+			margin-bottom: $integer-md;
+			margin-left: 0 !important;
+			margin-right: $integer-md;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		@include responsive(max-width, $mobile-max) {
+			@include flex-direction(column);
+
+			.button {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// sizes
+// —————————————————————————————————————————————————————————————————
+
+.button {
+	@include font-size(1, $font-black, normal);
+	padding: $integer+$integer-sm $integer-md+$integer;
+
+	&.button--large {
+		@include font-size(1.5, $font-black, normal);
+		padding: $integer-md $integer-lg;
+		letter-spacing: 0.08rem;
+	}
+
+	&.button--small {
+		@include font-size(0.75, $font-black, normal);
+		padding: 7px 14px;
+		letter-spacing: 0.02rem;
+		line-height: 1.5;
 	}
 
 	&--icon {
 		padding: 0;
-		width: $integer*2;
-		height: $integer*2;
+		width: $integer-xl;
+		height: $integer-xl;
+		font-weight: 100;
+	
+		&.button--large {
+			padding: 0;
+			width: $integer-xxl;
+			height: $integer-xxl;
+	
+			.fab {
+				font-weight: 100;
+			}
+		}
+	
+		&.button--small {
+			padding: 0;
+			width: $integer-md*2;
+			height: $integer-md*2;
+	
+			.fab {
+				font-weight: 100;
+			}
+		}
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// variants
+// —————————————————————————————————————————————————————————————————
+
+.button {
+
+	&--text-icon {
+
+		&.fab:before { 
+			font-weight: normal; 
+		}
+
+		&:before {
+			margin-right: $integer;
+		}
+
+		.button__inner {
+			display: inline;
+		}
 	}
 
 	&--text {
-		@include transition(transform $transition);
-		will-change: transform;
-		padding: $integer/4 0;
+		@include transition(color $transition);
+		will-change: color;
+		display: block;
+		overflow: initial;
+		padding: 0;
+		font-weight: $font-regular;
+		letter-spacing: 0.025rem;
 
-		&:hover {
-			@include transform(translateX($integer/4));
+		& + & {
+			margin-left: 0;
+			margin-top: $integer;
+		}
+
+		&.button--small, 
+		&.button--large {
+			padding: 0;
 		}
 	}
 
 	&--underline {
+		@include transition(color $transition);
+		will-change: color;
 		text-decoration: underline;
+
+		@include hover-link {
+			color: $primary;
+		}
+	}
+
+	&--block {
+		display: block;
+
+		& + & {
+			margin-left: 0;
+			margin-top: $integer-sm;
+		}
+		
+		&.button--text {
+
+			& + & {
+				margin-top: $integer;
+			}			
+		}
+
+		&.fa, &.fab, &.fal, &.far, &.fas {
+			display: block;
+		}
 	}
 }
 
-.button--stroke {
-	padding: 10px 22px;
 
-	&.button {
 
-		&--large {
-			padding: 16px 34px;
-		}
+// —————————————————————————————————————————————————————————————————
+// colors
+// —————————————————————————————————————————————————————————————————
 
-		&--small {
-			padding: 4px 13px;
-		}
-	}
-}
+@include button-fill-color('button--',
+//	 prefix 		 background		 color
+	'primary'   	$primary 		$white,
+	'secondary' 	$secondary		$black,
+	'highlight' 	$highlight		$white,
+	'dark' 			$dark 			$white,
+
+	'black' 		$black 			$white,
+	'grey' 			$medium-grey 	$black,
+	'white' 		$white 			$black,
+
+	'facebook' 		$facebook 		$white,
+	'github' 		$github 		$white,
+	'linkedin' 		$linkedin 		$white,
+	'medium' 		$medium 		$white,
+	'twitter' 		$twitter 		$white
+);
 
 
 
@@ -89,99 +235,42 @@
 // animate
 // —————————————————————————————————————————————————————————————————
 
-.button--animate:before {
-	@include transition(transform $transition);
-	@include pseudo-element('', 0, auto, auto, -140%, 100%, 100%);
-	@include display-flex(inline-flex);
-	@include align-items(center);
-	@include justify-content(center);
-	will-change: transform;
-	text-align: center;
-	background-color: transparent;
-}
+.button--animate {
 
-.button--animate:hover:before {
-	@include transform(translateX(140%));
-}
-.button--animate:hover .button__inner {
-	@include transform(translateX(180%));
-}
+	&:before {
+		@include transition(transform $transition);
+		@include pseudo-element('', 0, auto, auto, -140%, 100%, 100%);
+		@include display-flex(inline-flex);
+		@include align-items(center);
+		@include justify-content(center);
+		will-change: transform;
+		text-align: center;
+		background-color: transparent;
+	}
+	
+	&:hover {
 
-.button--animate-top:before {
-	@include transition(transform $transition);
-	@include pseudo-element('', -140%, auto, auto, 0, 100%, 100%);
-	@include display-flex(inline-flex);
-	@include align-items(center);
-	@include justify-content(center);
-	will-change: transform;
-	text-align: center;
-	background-color: transparent;
-}
+		&:before {
+			@include transform(translateX(140%));
+		}
 
-.button--animate-top:hover:before {
-	@include transform(translateY(140%));
-}
-.button--animate-top:hover .button__inner {
-	@include transform(translateY(180%));
-}
-
-
-
-// —————————————————————————————————————————————————————————————————
-// color variant
-// —————————————————————————————————————————————————————————————————
-
-@include button-fill-color('button--',
-//	prefix 			background	 		color
-	'primary'   	$primary 			$white,
-	'secondary' 	$secondary			$black,
-	'highlight' 	$highlight			$white,
-	'dark' 			$dark 				$white,
-	'white' 		$white 				$primary,
-	'facebook' 		$facebook 			$white,
-	'google' 		$google 			$white,
-	'linkedin' 		$linkedin 			$white,
-	'medium' 		$medium 			$white,
-	'twitter' 		$twitter 			$white
-);
-
-@include button-stroke-color('button--stroke.button--',
-//	prefix 			border-color	 	color
-	'primary'   	$primary 			$black,
-	'secondary' 	$secondary			$black,
-	'highlight' 	$highlight			$black,
-	'dark' 			$dark 				$black,
-	'white' 		$white 				$white
-);
-
-
-
-// —————————————————————————————————————————————————————————————————
-// size
-// —————————————————————————————————————————————————————————————————
-
-.button {
-
-	&--large {
-		padding: 18px 36px;
-
-		&.button--icon {
-			padding: 0;
-			width: $integer*3;
-			height: $integer*3;
+		.button__inner {
+			@include transform(translateX(180%));
 		}
 	}
 
-	&--small {
-		padding: 6px 15px;
+	// prevent animation on touch devices
+	&:focus,
+	&:active {
 
-		&.button--icon {
-			padding: 0;
-			width: $integer*1.5;
-			height: $integer*1.5;
+		&:before {
+			@include transform(translateX(0));
+		}
+
+		.button__inner {
+			@include transform(translateX(0));
 		}
 	}
-
 }
 
 
@@ -191,15 +280,18 @@
 // —————————————————————————————————————————————————————————————————
 
 .button--close {
+	height: $integer-xl+$integer;
+	width: $integer-xl+$integer;
+	padding: 0;
 
 	&:before, &:after {
-		margin-top: -2px;
-		background-color: $black;
 		@include transform(rotate(0deg));
 		@include transition (transform $transition);
+		@include pseudo-element('', 50%, auto, auto, auto, $integer-md+$integer, $integer-sm);
+		margin-top: -2px;
+		background-color: $white;
 		will-change: transform;
-		@include border-radius(0.15rem);
-		@include pseudo-element('', 50%, auto, auto, auto, 30px, 5px);
+		border-radius: $integer;
 	}
 
 	&.rotate:before {
@@ -213,7 +305,6 @@
 	&.rotate:hover:before, &.rotate:hover:after {
 		@include transform(rotate(0deg));
 	}
-	
 }
 
 
@@ -223,101 +314,72 @@
 // —————————————————————————————————————————————————————————————————
 
 .button--menu {
-	@include animation(button--menu--opacity 0.8s ease 0s);
+	@include display-flex();
+	@include align-items(center);
+	@include justify-content(center);
+	@include animation(button-menu-opacity 0.8s ease 0s);
+	cursor: pointer;
 	position: relative;
-	display: block !important;
 	overflow: visible;
-	width: $integer*1.5;
-	height: $integer*1.5;
+	width: $integer-lg;
+	height: $integer-lg;
 	background-color: transparent !important;
 	border: 0;
-	padding-left: 0;
-	padding-right: 0;
+	padding: 0;
 
-	&:hover {
-		opacity: 1;
-	}
-
-	&:before, &:after, .button__inner {
-		background-color: $black;
+	&:before, 
+	&:after, 
+	.button__inner {
+		background-color: $white;
 	}
 
 	&.alt {
 
-		&:before, &:after, .button__inner {
-			background-color: $white;
+		&:before, 
+		&:after, 
+		.button__inner {
+			background-color: $black;
 		}	
 	}
-	
+
 	&:before, &:after {
 		@include transition(transform $transition);
-		@include border-radius(0.15rem);
-		@include pseudo-element('', 50%, auto, auto, 0, 30px, 5px);
+		@include pseudo-element('', auto, auto, auto, auto, $integer-lg, $integer-sm+$integer-xs);
+		border-radius: $integer;
 		will-change: transform;
-		margin-top: -4px;
 	}
 
 	&:before {
-		@include transform(translateY($integer/2));
-		@include animation(button--menu--close--before 0.8s ease);
+		@include transform(translateY($integer+$integer-xs));
+		@include animation(button-menu-close-before 0.8s ease 0s);
 	}
 
 	&:after {
-		@include transform(translateY(-$integer/2));
-		@include animation(button--menu--close--after 0.8s ease);
+		@include transform(translateY(-($integer+$integer-xs)));
+		@include animation(button-menu-close-after 0.8s ease 0s);
 	}
 
 	.button__inner {
-		@include transform(translateY(-1px));
 		@include transition(opacity 0s ease 0.4s);
-		@include border-radius(0.15rem);
+		border-radius: $integer;
 		will-change: opacity;
-		width: $integer*1.5;
-		height: 5px;
+		width: $integer-lg;
+		height: $integer-sm+$integer-xs;
 		position: absolute;
 	}
 
 	&.button--menu--open {
 
 		&:before {
-			@include animation(button--menu--open--before 0.8s ease);
-			transform: rotate(45deg); 
+			@include animation(button-menu-open-before 0.8s ease 0s forwards);
 		}
 
 		&:after {
-			@include animation(button--menu--open--after 0.8s ease);
-			transform: rotate(-45deg); 
+			@include animation(button-menu-open-after 0.8s ease 0s forwards);
 		}
 
 		.button__inner {
 			opacity: 0;
 		}
-	}
-}
-
-
-
-// —————————————————————————————————————————————————————————————————
-// scroll to top
-// —————————————————————————————————————————————————————————————————
-
-.button--scroll-top {
-	@include transition(bottom $transition, transform $transition);
-	@include box-shadow($box-shadow-2);
-	will-change: bottom, transform;
-    position: fixed;
-	bottom: -$integer*4;
-	right: $col;
-
-	@include responsive-mobile-devices() {
-		display: none !important;
-	}
-
-	&.js-show {
-		bottom: $integer*1.5;
-	}
-
-	&:hover {
-		@include transform(translateY(-$integer/4));
 	}
 }

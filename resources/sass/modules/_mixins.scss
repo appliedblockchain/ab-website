@@ -42,7 +42,7 @@
 	height: $height;
 }
 
-@mixin hoverLink {
+@mixin hover-link {
 	&:hover, &:active, &:focus {
 		@content;
 	}
@@ -97,7 +97,7 @@
 }
 
 @mixin responsive-mobile-devices-landscape {
-	@media only screen and (max-device-width: $break-desktop-max) and (orientation: landscape) {
+	@media only screen and (max-device-width: $desktop-max) and (orientation: landscape) {
 		@content;
 	}
 }
@@ -119,14 +119,14 @@
 	}
 }
 
-@mixin fontSize($font-size, $font-weight, $font-style) {
+@mixin font-size($font-size, $font-weight, $font-style) {
 	font-size: $font-size + rem;
 	letter-spacing: $font-size*.02 + rem;
 	font-weight: $font-weight;
 	font-style: $font-style;
 }
 
-@mixin fontAwesome($fa, $top, $right, $bottom, $left, $color) {
+@mixin font-awesome($fa, $top, $right, $bottom, $left, $color) {
 	content: $fa;
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
@@ -140,7 +140,7 @@
 	left: $left;
 }
 
-@mixin textOverflow($property) {
+@mixin text-overflow($property) {
 	-o-text-overflow: $property;
 	   text-overflow: $property;
 }
@@ -176,11 +176,11 @@
 			background-color: nth($i, 2);
 			color: nth($i, 3);
 			&-lighten {
-				background-color: lighten(nth($i, 2), 15%);
+				background-color: lighten(nth($i, 2), 20%);
 				color: nth($i, 3);
 			}
 			&-darken {
-				background-color: darken(nth($i, 2), 15%);
+				background-color: darken(nth($i, 2), 20%);
 				color: nth($i, 3);
 			}
 		}

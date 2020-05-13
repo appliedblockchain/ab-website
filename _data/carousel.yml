@@ -1,0 +1,69 @@
+# home.html
+clients:
+  - name: Shell
+  - name: KLM
+  - name: Toyota
+  - name: Vodafone
+  - name: LLoyds Register
+  - name: United Nations
+  - name: Cygnetise
+  - name: Nuggets
+  - name: APPII
+  - name: Supermoney
+  - name: Sita
+  - name: BABB
+  - name: Travel Ledger
+
+# home.html
+testimonials_clients:
+  - name: ben-van-beurden
+    quote: We did the first product derivative trade on blockchain together with our partner Applied Blockchain
+    author: Ben van Beurden
+    position: CEO
+    company: Shell
+
+  - name: johan-krebbers
+    quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
+    author: Johan Krebbers
+    position: Chief Technology Officer for IT
+    company: Shell Global Solutions International
+
+  - name: stephane-cheikh
+    quote: Applied Blockchain have always been very helpful by coming up with new concepts and new developments. They challenge you as a customer, they say “have you thought about this, have you thought about that?”. This has been very refreshing and I would definitely recommend Applied Blockchain.
+    author: Stephane Cheikh
+    position: Ventures & Innovation Manager
+    company: SITA
+
+  - name: stephen-pomfret
+    quote: Applied Blockchain feel the passion for your business. They actually like to get involved, they feel excited about what you’re doing, being a part of it and advise accordingly.
+    author: Stephen Pomfret
+    position: CEO
+    company: Cygnetise
+
+# about.html
+testimonials_investors:
+  - name: Shell
+    quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
+    author: Johan Krebbers
+    position: Chief Technology Officer for IT
+    company: Shell Global Solutions International
+
+  - name: QBN
+    quote: Governments, corporates, and individuals are increasingly concerned about data privacy and data security. We believe zero knowledge proof offers a new and better way to share and handle data. We are very excited to be supporting Applied Blockchain, a pioneer in this space, and we can’t wait to see an abundance of applications for ZKP coming out in the near future.
+    author: Philea Chim
+    company: QBN Capital
+
+  - name: Calibrate
+    quote: We believe in the long-term promise and process innovation that blockchain brings and believe Applied Blockchain is strategically positioned to lead in this space.
+    author: Remy Kesrouani
+    position: Fund Manager and Partner
+    company: Calibrate
+
+# services.html
+technologies:
+  - name: Ethereum
+  - name: Quorum
+  - name: Hyperledger Fabric
+  - name: Corda
+  - name: Algorand
+  - name: Elements

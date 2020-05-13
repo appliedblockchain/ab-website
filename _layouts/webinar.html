@@ -1,11 +1,12 @@
-{% include header.html %}
+---
+layout: compress
+---
 
-<section id="webinar" class="section--dark background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/background/webinar.jpg);">
-    <div class="section section--header">
-        <p class="subtitle">Webinar podcast</p>
-        <h1 class="section__subtitle headline">{{ page.subtitle }}</h1>
-        <p class="section__desc body--large">{{ page.body }}</p>
+{% include containers/site/header.html %}
+
+<section class="section section--dark">
+    <div class="section__content">
         {{ content }}
 </section>
 
-{% include footer.html %}
+{% include containers/site/footer.html %}

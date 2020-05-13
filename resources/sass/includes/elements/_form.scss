@@ -20,14 +20,18 @@
 	padding-left: $integer*1.5 !important;
 	padding-right: $integer*1.5 !important;
 
-	@include responsive(max-width, $break-phones-max) {
+	&--pipedrive {
+		max-width: 792px;
+	}
+
+	@include responsive(max-width, $mobile-max) {
 		padding-left: $integer/2 !important;
 		padding-right: $integer/2 !important;
 	}
 
 	&__header {
 		width: 75%;
-		margin: 0 auto $integer*2 auto;
+		margin: 0 auto $integer-xl auto;
 	}
 	
 	&__content {
@@ -41,8 +45,8 @@
 		margin-bottom: $integer;
 		text-align: left;
 
-		@include responsive(max-width, $break-phones-max) {
-			margin-bottom: $integer/2;
+		@include responsive(max-width, $mobile-max) {
+			margin-bottom: $integer;
 		}
 
 		&.focused {
@@ -70,7 +74,7 @@
 
 	&__label {
 		@include transition(color $transition);
-		@include textOverflow(ellipsis);
+		@include text-overflow(ellipsis);
 		will-change: color;
 		cursor: pointer;
 		display: block;
@@ -78,31 +82,35 @@
 		white-space: nowrap;
 		position: relative;
 		padding-left: $integer*0.75;
-		margin-bottom: $integer/2;
+		margin-bottom: $integer;
 	}
 
 	&__input {
 		@include transition(border $transition);
-		@include textOverflow(ellipsis);
-		@include border-radius(20px !important);
+		@include text-overflow(ellipsis);
 		will-change: border;
 		width: 100%;
 		background-color: transparent;
-		padding: 10px $integer*0.75 8px $integer*0.75;
-		border: 2px solid $mediumgrey;
+		padding: $integer $integer*1.5;
+		border: $border-sm $medium-grey;
+		border-radius: $integer-lg !important;
 	}
 
 	&__button {
-		margin-top: $integer*2;
+		margin-top: $integer-md;
 	}
 	
 	&__footer {
 		text-align: left;
 	}
+
+	&__notice {
+		margin-top: $integer;
+	}
 }
 
 @include placeholder {
-	color: $mediumgrey;
+	color: $medium-grey;
 	opacity: 1;
 }
 
@@ -129,7 +137,7 @@
 	}
 
 	&:after {
-		@include fontAwesome("\f078", 0, $integer*0.75, auto, auto, $primary);
+		@include font-awesome("\f078", 0, $integer*0.75, auto, auto, $primary);
 		@include transition(color $transition);
 		@include display-flex();
 		@include align-items(center);
@@ -141,8 +149,8 @@
 
 	.form__dropdown {
 		@include calc(top, '100% +' $integer/2);
-		@include box-shadow($box-shadow-2);
-		@include border-radius($integer);
+		@include box-shadow($box-shadow-md);
+		border-radius: $border-radius;
 		display: none;
 		position: absolute;
 		right: 0;
@@ -151,7 +159,7 @@
 		overflow: scroll;
 		z-index: 2;
 		background-color: $white;
-		border: 2px solid $primary;
+		border: $border-sm $primary;
 		margin-left: 0;
 
 		li {
@@ -170,7 +178,7 @@
 			}
 
 			& + li {
-				border-top: 1px solid $lightgrey;
+				border-top: $border-sm $light-grey;
 			}
 
 			&:hover {
@@ -195,7 +203,7 @@
 	.form__button {
 		@include border-bottom-right-radius(0.2rem);
 		@include border-top-right-radius(0.2rem);
-		background-color: $mediumgrey;
+		background-color: $medium-grey;
 		color: $white;
 		width: 130px !important;
 		margin: 0;
@@ -211,7 +219,8 @@
 // checkbox & radio
 // —————————————————————————————————————————————————————————————————
 
-.form__checkbox, .form__radio {
+.form__checkbox, 
+.form__radio {
 
 	.form__input {
 		position: absolute;
@@ -221,12 +230,12 @@
 
 		&:checked + .form__label:before {
 			border-color: $primary;
-			border-width: $integer/2;
+			border-width: $integer;
 		}
 	}
 
 	.form__label {
-		padding-left: $integer*1.5;
+		padding-left: $integer-lg;
 		cursor: pointer;
 		margin: 0;
 		font-size: 1rem !important;
@@ -236,11 +245,11 @@
 		white-space: normal;
 
 		&:before {
-			@include pseudo-element('', -1px, auto, auto, 0, $integer, $integer);
+			@include pseudo-element('', -1px, auto, auto, 0, $integer-md*1.5, $integer-md*1.5);
 			@include box-sizing(border-box);
-			@include transition(border 0.4s ease 0s);
+			@include transition(border $transition);
 			will-change: border;
-			border: 2px solid $mediumgrey;
+			border: $border-sm $medium-grey;
 		}
 	}
 }
@@ -250,7 +259,7 @@
 	.form__input {
 
 		&:checked + .form__label:before {
-			border-width: $integer/2;
+			border-width: $integer-md*0.75;
 		}
 
 		&:checked + .form__label:after {
@@ -261,7 +270,7 @@
 	.form__label {
 
 		&:before {
-			@include border-radius($integer/4);
+			border-radius: $integer;
 		}
 
 		&:after {
@@ -269,10 +278,10 @@
 			@include display-flex();
 			@include align-items(center);
 			@include justify-content(center);
-			@include fontAwesome("\f00c", 0, auto, auto, 0, $white);
+			@include font-awesome("\f00c", 0, auto, auto, 0, $white);
 			will-change: opacity;
-			width: $integer;
-			height: $integer;
+			width: $integer-md*1.5;
+			height: $integer-md*1.5;
 			font-size: 0.7rem;
 			line-height: 0;
 			opacity: 0;
@@ -284,7 +293,7 @@
     @include display-flex();
     @include align-items(center);
     @include flex-basis(0);
-    height: $integer*2;
+    height: $integer-xl;
 
 	& + & {
 		margin-left: $integer;

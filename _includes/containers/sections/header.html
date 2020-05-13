@@ -1,0 +1,19 @@
+{% assign comment = include.comment %}
+{% assign title = include.title %}
+{% assign subtitle = include.subtitle %}
+{% assign body = include.body %}
+
+<div class="section__header">
+    {% if comment %}
+    <p class="section__comment comment">{{ comment }}</p>
+    {% endif %}
+    {% if title %}
+    <h1 class="section__title title">{{ title }}</h1>
+    {% endif %}
+    {% if subtitle %}
+    <p class="section__subtitle lead">{{ subtitle }}</p>
+    {% endif %}
+    {% if body %}
+    <p class="section__body body--large">{{ body }}</p>
+    {% endif %}
+</div>

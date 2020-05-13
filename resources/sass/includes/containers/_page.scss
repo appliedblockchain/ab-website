@@ -4,8 +4,9 @@
 // PAGE
 // —————————————————————————————————————————————————————————————————
 // header
-// footer
+// menu
 // title
+// footer
 // —————————————————————————————————————————————————————————————————
 
 
@@ -19,7 +20,7 @@
 	will-change: height, background-color, box-shadow, padding-top, padding-bottom;
 	overflow: hidden;
 	position: fixed;
-	height: $integer*8;
+	height: $integer-xxxl*2;
 	width: 100vw;
 	pointer-events: none;
 
@@ -29,18 +30,18 @@
 		@include align-items(center);
 		@include justify-content(space-between);
 		will-change: height;
-		height: $integer*8;
-		padding: 0 $col;
+		height: $integer-xxxl*2;
+		padding: 0 $page/2;
 
 		.button + .button--menu {
-			margin-left: $integer;
+			margin-left: $integer-md;
 		}
 	}
 
 	&__logo {
 		@include transition(height $transition, width $transition);
 		will-change: height, width;
-		width: $integer*15;
+		width: $integer-max*1.5;
 		pointer-events: initial;
 
 		&.logo-white {
@@ -76,7 +77,7 @@
 
 	&__contact {
 
-		@include responsive(max-width, $break-phones-max) {
+		@include responsive(max-width, $mobile-max) {
 			display: none !important;
 		}
 	}
@@ -96,27 +97,23 @@
 	&__menu {
 		@include calc(height, '100vh - '$integer*8);
 		@include overflow-scroll();
-		padding: 0  $col*2 $integer*4 $col*2;
+		padding: 0  $page $integer-xl $page;
 		pointer-events: initial;
-
-		@include responsive(max-width, $break-tablets-max) {
-			padding: 0 $col $integer*6 $col;
-		}
 	}
 
 	&.js-scrolled {
-		@include box-shadow($box-shadow-2);
-		height: $integer*4;
+		@include box-shadow($box-shadow-md);
+		height: $integer-xxxl;
 		background-color: $white;
 		
 		.header {
 
 			&__bar {
-				height: $integer*4;
+				height: $integer-xxxl;
 			}
 			
 			&__logo {
-				width: $integer*10;
+				width: $integer-xxxxl*1.5;
 			}
 		}
 	}
@@ -130,16 +127,17 @@
 		.header {
 
 			&__bar {
-				height: $integer*8;
+				height: $integer-xxxl*2;
 			}
 
 			&__logo {
-				width: $integer*15;
+				width: $integer-max*1.5;
 			}
 		}
 	}
 
-	&.js-scrolled, &.js-opened {
+	&.js-scrolled, 
+	&.js-opened {
 		
 		.logo {
 
@@ -169,29 +167,22 @@
 			.button__inner, &:before {
 				color: $white;
 			}
-
-			&.button--stroke {
-				background-color: transparent;
-
-				.button__inner {
-					color: $black;
-				}
-			}
-		}
-
-		.button--white.button--stroke {
-			border-color: $primary;
-			color: $black;
 		}
 	}
 }
+
+
+
+// —————————————————————————————————————————————————————————————————
+// menu
+// —————————————————————————————————————————————————————————————————
 
 .menu {
 
 	&__row {
 
 		& + & {
-			margin-top: $integer*2;
+			margin-top: $integer-xl;
 		}
 	}
 
@@ -201,7 +192,7 @@
 	}
 
 	&__button {
-		margin-bottom: $integer/2;
+		margin-bottom: $integer;
 		
 		.subtitle {
 			padding: 0;
@@ -243,7 +234,64 @@
 	}
 
 	&__newsletter {
-		margin-top: $integer*2;
+		margin-top: $integer-xl;
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// title
+// —————————————————————————————————————————————————————————————————
+
+.page {
+	min-height: 100vh;
+
+	&__header {
+		background-position: top center !important;
+		padding-top: $integer-xxxl+$integer-xxxxl;
+		padding-right: 25vw;
+		padding-bottom: $integer-xxxxl;
+		padding-left: 25vw;
+		text-align: center;
+
+		&:before {		
+			@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+		}
+	
+		&.section--primary { &:before { @include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary)); } }
+		&.section--grey { &:before { @include background-image(linear-gradient(to bottom, rgba($light-grey, 0.6), $light-grey)); } }
+		&.section--dark { &:before { @include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark)); } }
+
+		> * {
+			// display elements on top of gradient
+			position: relative;
+		}
+	}
+
+	&__comment {
+
+		& + .page__title {
+			margin-top: $integer-md;
+		}
+	}
+
+	&__subtitle {
+
+		.page__title + & {
+			margin-top: $integer-lg;
+		}
+	}
+
+	&__body {
+
+		.page__title + & {
+			margin-top: $integer-lg;
+		}
+
+		.page__subtitle + & {
+			margin-top: $integer-lg;
+		}
 	}
 }
 
@@ -254,103 +302,27 @@
 // —————————————————————————————————————————————————————————————————
 
 .footer {
-	font-weight: $font-regular;
+	text-align: left;
+	margin-bottom: -$integer-xl;
 
-	> * {
-		@include display-flex();
-	}
-
-	&__item {
-		margin-bottom: $integer*3;
-
-		@include responsive(max-width, $break-phones-max) {
-			margin-bottom: $integer*2;
-		}
+	.card {
+		margin-bottom: $integer-xl;
 	}
 
 	&__logo {
-		@include display-flex();
-		@include flex-direction(column);
-		@include justify-content(space-between);
-
-		@include responsive(max-width, $break-desktop-max) {
-			@include flex-direction(row);
-			@include justify-content(flex-start);
-
-			.logo {
-				min-width: $integer*20;
-				margin-right: $integer*4;
-			}
-		}
-
-		@include responsive(max-width, $break-desktop-max) {
-			@include flex-direction(column);
-
-			.logo {
-				min-width: auto;
-				margin-right: 0;
-				margin-bottom: $integer*2;
-			}
-		}
+		margin-bottom: $integer-xl;
 	}
 
-	&__title {
-		margin-bottom: $integer;
-
-		.footer & {
-			color: $white;
-		}
-	}
-
-	&__adress {
-
-		p + p {
-			margin-top: $integer/2;
-		}
-
-		.body--bold {
-			margin-top: $integer;
-		}
+	.form__checkbox {
+		margin-top: $integer-md;
 	}
 
 	&__button {
 		display: block !important;
 		margin-left: 0 !important;
-	}
 
-	.social {
-		margin-bottom: 0;
-	}
-}
-
-
-
-// —————————————————————————————————————————————————————————————————
-// title
-// —————————————————————————————————————————————————————————————————
-
-.section--header {
-	background-position: top center !important;
-
-	&:before {		
-		@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-	}
-
-	&.section--primary {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($primary, 0.5), $primary));
-		}
-	}
-
-	&.section--grey {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($lightgrey, 0.6), $lightgrey));
-		}
-	}
-
-	&.section--dark {
-		&:before {		
-			@include background-image(linear-gradient(to bottom, rgba($dark, 0.9), $dark));
+		&:hover {
+			color: $primary;
 		}
 	}
 }

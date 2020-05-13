@@ -1,216 +1,125 @@
-{% include header.html %}
+---
+layout: compress
+---
 
-<!-- particle (for homepage) -->
-<script src="{{ site.url }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
-<script>
-    // init particle.js
-    particlesJS.load('particles-js', '/resources/vendor/particles/particles.json', function() {
-        console.log('callback - particles.js config loaded');
-    });
-</script>
+{% include containers/site/header.html %}
 
-<div id="home">
-
-    <div class="section section--col section--primary landing" id="landing" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);">
-
-        <!-- particles.js container -->
-        <div id="particles-js"></div>
-        <h1 class="landing__title headline">Building Secure, Private<br>& Collaborative Applications</h1>
-        <!-- <div class="block--news">
-            <div class="widget widget--news widget--news-1">
-                {% include components/news/zkp-event.html %}
+<div id="landing" class="section section--alt section--dark background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);">
+    {% include containers/page/title.html
+        headline = site.description
+    %}
+    <div class="section__content body--black">
+        <div class="row card__wrapper">
+            <img src="{{ site.url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop">
+            <div class="coloffset--xl3 col--xl3 coloffset--lg2 col--lg4 col--md6">
+                <div class="card card--xxs anchor background--shadow">
+                    <div class="card__inner">
+                        <div class="card__header">
+                            <p class="card__title body--bold">Sign up to our newsletter</p>
+                            <a href="#footer" title="Newsletter anchor" class="button button--small button--icon button--highlight button--animate fas fa-plus">
+                                <i class="button__inner fas fa-newspaper"></i>
+                            </a>                
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="widget widget--news widget--news-2">
-               {% include components/news/shell.html %}
+            <div class="col--xl3 col--lg4 col--md6">
+                <div class="card card--xxs background--shadow">
+                    <div class="card__inner">
+                        <div class="card__header">
+                            <p class="card__title body--bold">Follow us</p>
+                            {% include components/social.html
+                                size = 'small' 
+                            %}
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
-        <div class="widget widget--news">
-            <!-- select component in _includes/components/news -->
-            {% include components/news/press-release.html %}
-        </div>
-        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/landing.svg" alt="Landing icon" class="landing__icon">
-        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner">
-        <div class="landing__carousel owl-carousel owl-carousel-clients carousel">
-            {% for item in site.data.images.clients %}
-                {% assign item = site.data.images.clients | sort: 'order' %}
-                <img src="{{ site.url }}{{ site.imageurl }}/logos/clients-white/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
-            {% endfor %}
         </div>
     </div>
-
-    <section class="section section--left section--dark" id="what-we-do">
-
+    <div class="widget__bar">
         <div class="row">
-            <div class="col--lg5 hide--desktop">
-                <img src="{{ site.url }}{{ site.imageurl }}/icons/index/what-we-do.svg" alt="Solution icon">
-            </div>
-            <div class="coloffset--lg1 col--lg6">
-                <!-- edit component in _includes/components/section-header.html -->
-                {% include components/section-header.html
-                    comment='What we do'
-                    title='We build business applications using advanced cryptography to provide superior data security and data privacy'
-                    description='We specialise in privacy enhancing technologies and distributed ledgers, and have built applications for enterprises and startups in financial services, energy, aviation, automotive, supply chain, commodities, telecoms, legal, medical, property and recruitment.'
+            <div class="col--xl8 body--left">
+                <p class="body body--bold">Trusted by leading organisations and startups alike</p>
+                {% include elements/carousel.html 
+                    variant = 'clients' 
                 %}
-                <div class="thank-you__button">
-                    <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--large button--animate fa fa-cogs">
+            </div>
+            <div class="col--xl4">
+                {% include containers/cards/news.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="index-intro" class="section section--primary">
+    <div class="row">
+        <div class="col--lg5 body--left">
+            {% include containers/sections/header.html
+                title = 'Using advanced cryptography to solve real world business problems'
+            %}
+        </div>
+        <div class="coloffset--lg1 col--lg6 body--left">
+            <p class="block__title body--large">Our team of experts advise, build and deploy full-stack, secure, privacy-preserving applications that protect individual and company data, while maximising business collaboration. Our customers range from the largest global enterprises, to the most innovative early stage startups in financial services, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.</p>
+            <div class="block__content">
+                <div class="button__wrapper">
+                    <a href="{{ site.url }}/about" class="ga-button-about button button--white button--animate fa fa-address-card">
+                        <p class="button__inner">About</p>
+                    </a>
+                    <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--animate fa fa-cogs">
                         <p class="button__inner">Services</p>
                     </a>
-                    <a href="{{ site.url }}/products" class="ga-button-services button button--primary-lighten button--large button--animate fa fa-box">
+                    <a href="{{ site.url }}/products" class="ga-button-services button button--primary-lighten button--animate fa fa-box">
                         <p class="button__inner">Products</p>
                     </a>
                 </div>
             </div>
         </div>
-        
-    </section>
+    </div>
+</section>
 
-    <section class="section section--fullwidth section--alt section--dark">
-
-        <div class="owl-carousel owl-carousel-technology">
-            <!-- edit component in _includes/components/technologies.html -->
-            {% include components/technologies.html 
-                color='white'
-            %}
-        </div>
-
-    </section>
-
-    <section class="section section--grey" id="who-we-help">
-        
-        <!-- edit component in _includes/components/section-header.html -->
-        {% include components/section-header.html
-            comment='Who we help'
-            title='We develop distributed, privacy preserving solutions for startups and enterprises alike'
-        %}
-
-        <div class="section__content">
-            <div class="row">
-                <div class="col--lg6 video z-index--1" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/videoTestimonials.jpg);">
-                    <a href="#modal-video" class="js-button-modal">
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-                    </a>
-                </div>
-                <div class="coloffset--lg1 col--lg5">
-                    <p class="body--large">We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next-generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.</p>
-                    <a href="{{ site.url }}/our-projects" class="ga-button-projects button button--secondary button--large button--animate fas fa-fill">
-                        <p class="button__inner"><span class="hide--mobile">View our </span>projects</p>
-                    </a>
-                </div>
+<section class="section section--primary">
+    <div class="section__content body--black z-index--2">
+        <div class="card card--lg background--shadow testimonials">
+            <div class="card__inner">
+                {% include elements/carousel.html 
+                    type = 'testimonials'
+                    variant = 'testimonials_clients' 
+                %}
             </div>
         </div>
+    </div>
+</section>
 
-        <!-- edit component in _includes/components/modals/video.html -->
-        {% include components/modals/video.html %}
-
-    </section>
-
-    <section class="section section--col section--alt section--grey">
-
-        <div class="owl-carousel owl-carousel-partners carousel block">
-            {% for item in site.data.images.partners %}
-                <img src="{{ site.url }}{{ site.imageurl }}/logos/partners/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="carousel__img">
-            {% endfor %}
-        </div>
-        
-    </section>
-
-    <section class="section section--margin-minus section--primary" id="why-us">
-
-        <img src="{{ site.url }}{{ site.imageurl }}/graphics/graphic-vertical-greyscale-left.svg" alt="" class="why-us__graphic graphic graphic--greyscale-left">
-
-        <!-- edit component in _includes/components/section-header.html -->
-        {% include components/section-header.html
-            comment='Why us'
-            title='A Global Specialist in Applications of Advanced Cryptography'
-        %}
-
-        <div class="section__content why-us">
-            <div class="row">
-                <div class="why-us__item">
-                    <div class="coloffset--lg1 col--lg4 col--md3 why-us__image"> 
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/thought-leader.png" alt="">
-                    </div>
-                    <div class="col--xl5 coloffset--lg1 col--lg6 coloffset--md1 col--md8">
-                        <p class="block__title lead">Thought Leaders</p>
-                        <p>We contribute to global industry events and whitepapers, with keynote presentations and commentaries, and also lead training workshops. Our work has led us to be recognised by the UK government, where Adi Ben-Ari has been invited to Roundtables at the House of Lords and presented at the Department for Digital, Culture, Media and Sport.</p>
-                    </div>
-                </div>
-                <div class="why-us__item">
-                    <div class="coloffset--xl1 col--xl5 col--lg6 col--md8">
-                        <p class="block__title lead">International Market Leader</p>
-                        <p>We have built and deployed distributed solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has also recognised Applied Blockchain amongst the Top Global Blockchain Development and Consulting Firm 2017, 2018 & 2019.</p>
-                    </div>
-                    <div class="coloffset--lg1 col--lg3 coloffset--md1 col--md3 why-us__image">
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/market-leader.svg" alt="">
-                    </div>
-                </div>
-                <div class="why-us__item">
-                    <div class="coloffset--lg2 col--lg3 col--md3 why-us__image"> 
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg" alt="">
-                    </div>
-                    <div class="col--xl5 coloffset--lg1 col--lg6 coloffset--md1 col--md8">
-                        <p class="block__title lead">Experts in Applications of Advanced Cryptography</p>
-                        <p>Our team of in-house development experts along with our highly-skilled advisory, project and operations team work very closely with our clients to bring advanced cryptography and distributed solutions to life – together.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section__link">
-            <a href="{{ site.url }}/about" class="ga-button-about button button--secondary button--large button--animate fas fa-search">
-                <p class="button__inner">About us</p>
-            </a>
-        </div>
-
-    </section>
-
-    <section class="section testimonial" id="testimonials">
-
-        <div class="section__content owl-carousel owl-carousel-testimonial carousel">
-            <!-- edit data in _data/testimonials.yml -->
-            {% for item in site.data.testimonials.home %}
-                <!-- edit component in _includes/components/testimonial.html -->
-                {% include components/testimonial.html %}
-            {% endfor %}
-        </div>
-
-    </section>
-
-    <section class="section" id="featured-in">
-
-        <!-- edit component in _includes/components/section-header.html -->
-        {% include components/section-header.html
-            comment='Featured In'
-        %}
-
-        <div class="section__content logo-media">
-            <div class="row">
-                <!-- edit data in _data/images.yml -->
-                {% for item in site.data.images.media %}
-                <!-- <div class="col--lg3 col--md4 col--6"> -->
-                    <div class="logo-media__item">
-                        {% if item.link %}
-                        <a href="{{ item.link }}" target="_blank">
+<section class="section section--white section--overlap" id="featured-in">
+    {% include containers/sections/header.html
+        title = 'Featured In'
+    %}
+    <div class="section__content">
+        <div class="row">
+            {% for item in site.data.images.media %}
+            <div class="col--lg3 col--6">
+                <div class="card card__inner">
+                    {% if item.link %}
+                    <a href="{{ item.link }}" target="_blank">
                         {% endif %}
-                            <img src="{{ site.url }}{{ site.imageurl }}/logos/media/{{ item.url }}.png" alt="Logo {{ item.alt }}" class="logo-media__image">
+                        <img src="{{ site.url }}{{ site.imageurl }}/logos/media/{{ item.name | slugify }}.png" alt="Logo {{ item.name }}" class="logo-media__image">
                         {% if item.link %}
-                        </a>
-                        {% endif %}
-                    </div>
-                <!-- </div> -->
-                {% endfor %}    
+                    </a>
+                    {% endif %}
+                </div>
             </div>
+            {% endfor %}    
         </div>
-
-        <div class="section__link">
-            <p class="link__title lead">See what's making news at Applied Blockchain</p>
+    </div>
+    <div class="section__content">
+        <p class="block__title lead">See what's making news at Applied Blockchain</p>
+        <div class="block__content">
             <a href="{{ site.url }}/media" class="ga-button-media button button--primary button--large button--animate fas fa-newspaper">
                 <p class="button__inner">Media</p>
             </a>
         </div>
+    </div>
+</section>
 
-    </section>
-
-</div>
-
-{% include footer.html %}
+{% include containers/site/footer.html %}

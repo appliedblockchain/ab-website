@@ -25,18 +25,18 @@
 // INCLUDES
 @import 
 	// mixins
-	"includes/mixins/_graphics",
 	"includes/mixins/_logos",
 	"includes/mixins/_typography",
 	// elements
 	"includes/elements/_accordions",
+	"includes/elements/_anchor",
 	"includes/elements/_buttons",
 	"includes/elements/_carousel",
 	"includes/elements/_form",
 	"includes/elements/_modals",
+	"includes/elements/_slider",
 	"includes/elements/_scroll-anim",
 	"includes/elements/_tabs",
-	"includes/elements/_testimonials",
 	"includes/elements/_tooltips",
 	"includes/elements/_widgets",
 	// containers
@@ -46,27 +46,13 @@
 	"includes/containers/_page",
 	"includes/containers/_site";
 
-// PAGES
+// LAYOUTS
 @import
-	"layouts/_about",
-	"layouts/_applied-proofs",
-	"layouts/_contact",
-	"layouts/_events",
-	"layouts/_faq",
+	"layouts/_default",
+	"layouts/_applied",
 	"layouts/_index",
-	"layouts/_join",
-	"layouts/_k0",
-	"layouts/_node-hosting",
-	"layouts/_mantle",
 	"layouts/_post",
-	"layouts/_products",
-	"layouts/_projects",
 	"layouts/_project",
-	"layouts/_privacy-policy",
-	"layouts/_resources",
-	"layouts/_media",
-	"layouts/_services",
-	"layouts/_thank_you",
 	"layouts/_webinar";
 
 // OVERRIDES

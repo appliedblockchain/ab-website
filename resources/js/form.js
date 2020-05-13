@@ -3,17 +3,17 @@ $(document).ready(function() {
 
 
 // —————————————————————————————————————————————————————————————————
-// FORM
+// form
 // —————————————————————————————————————————————————————————————————
-// CHANGE STYLE ON FOCUS
-// CUSTOM SELECT
-// CUSTOM FILE UPLOAD
+// change style on focus
+// custom select
+// custom file upload
 // —————————————————————————————————————————————————————————————————
 
 
 
 // —————————————————————————————————————————————————————————————————
-// CHANGE STYLE ON FOCUS
+// change style on focus
 // —————————————————————————————————————————————————————————————————
 
 $(".form__input").focus(function() {
@@ -26,76 +26,7 @@ $(".form__input").focusout(function() {
 
 
 // —————————————————————————————————————————————————————————————————
-// CUSTOM SELECT
-// —————————————————————————————————————————————————————————————————
-
-$('select').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;
-  
-    $this.addClass('select-hide'); 
-    $this.wrap('<div class="form__select"></div>');
-    $this.after('<div class="form__input"></div>');
-
-    var $styledSelect = $this.next('div.form__input');
-    $styledSelect.text($this.children('option').eq(0).text());
-  
-    var $list = $('<ul />', {
-        'class': 'form__dropdown'
-    }).insertAfter($styledSelect);
-  
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-    }
-  
-    var $listItems = $list.children('li');
-  
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.form__input.active').not(this).each(function(){
-            $(this).removeClass('active').next('ul.form__dropdown').hide();
-        });
-        $(this).toggleClass('active').next('ul.form__dropdown').toggle();
-    });
-  
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-        //console.log($this.val());
-    });
-  
-    $(document).click(function() {
-        $styledSelect.removeClass('active');
-        $list.hide();
-    });
-
-});
-
-// prevent page scroll when hovering dropdown
-$('.form__dropdown').bind('mousewheel DOMMouseScroll', function(e) {
-    var scrollTo = null;
-
-    if (e.type == 'mousewheel') {
-        scrollTo = (e.originalEvent.wheelDelta * -1);
-    }
-    else if (e.type == 'DOMMouseScroll') {
-        scrollTo = 40 * e.originalEvent.detail;
-    }
-
-    if (scrollTo) {
-        e.preventDefault();
-        $(this).scrollTop(scrollTo + $(this).scrollTop());
-    }
-});
-
-
-
-// —————————————————————————————————————————————————————————————————
-// CUSTOM FILE UPLOAD
+// custom file upload
 // —————————————————————————————————————————————————————————————————
 
 ;(function($) {

@@ -1,196 +1,104 @@
 @charset "UTF-8";
 
-
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-
-/* 
- * —————————————————————————————————————————————————————————————————
- * INTERNET EXPLORER
- * —————————————————————————————————————————————————————————————————
- * partials / acccordions
- * partials / structure
- * —————————————————————————————————————————————————————————————————
- * pages / about
- * pages / index
- * pages / mantle
- * pages / products
- * pages / services
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// RESPONSIVE
+// —————————————————————————————————————————————————————————————————
+// structure
+// —————————————————————————————————————————————————————————————————
 
 
 
-/*
- * partials / acccordions
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// structure
+// —————————————————————————————————————————————————————————————————
 
-.accordion__button .fa {
-    @include transform(translateX(-7px));
-}
+@include responsive(max-width, $desktop-lg-max) {
 
-
-
-/*
- * partials / structure
- * —————————————————————————————————————————————————————————————————
-*/
-
-// make header buttons work in ie
-.header {
-    pointer-events: auto !important;
-}
-
-.graphic {
-
-    &--greyscale {
-        display: none;
+    .page__header,
+    .section--full .section__header {
+		padding-right: $page;
+		padding-left: $page;
     }
-}
-
-
-
-/*
- * pages / about
- * —————————————————————————————————————————————————————————————————
-*/
-
-.timeline {
-
-    &__text {
-        @include flex-basis(auto);
-        width: 100%;
-    }
-
-    &__icon {
-        @include flex-basis(auto);
-    }
-}
-
-
-
-/*
- * pages / index
- * —————————————————————————————————————————————————————————————————
-*/
-
-.landing {
-    padding-top: $integer*4;
-    padding-bottom: 0;
-}
-
-.logo-media {
-    height: 40%;
-}
-
-
-
-/*
- * partials / mantle
- * —————————————————————————————————————————————————————————————————
-*/
-
-#mantle {
-
-    .section__content {
-        width: 100%;
-    }
-}
-
-.mantle {
     
-    &__label {
+    .section__header {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
 
-        & + & {
-            margin-top: 25%;
-        }
+@include responsive(max-width, $desktop-max) {
+
+	.header__menu,
+	.page__header,
+    .section,
+	.section--full .section__header,
+	#landing {
+		padding-right: 10vw;
+		padding-left: 10vw;
+	}
+
+	.section__content--2 .card:nth-child(1) {
+		padding-left: 10vw;
+    }
+	.section__content--2 .card:nth-child(2) {
+		padding-right: 10vw;
+    }
+
+    .section--alt {
+        padding-right: 5vw;
+		padding-left: 5vw;
     }
 }
 
-/*
- * pages / products
- * —————————————————————————————————————————————————————————————————
-*/
+@include responsive(max-width, $tablet-max) {
 
-.products {
+	.header__menu,
+	.page__header,
+    .section,
+	.section--full .section__header,
+	.section__content--2 .card:nth-child(1),
+	.section__content--2 .card:nth-child(2),
+	.tab--leadership .tab__item,
+	#landing {
+		padding-right: $page/2;
+		padding-left: $page/2;
+	}
 
-    &__intro {
-        display: block;
-    }
-
-    &__container {
-        height: 400px;
-    }
-
-    &__item {
-        display: inline-block;
-    }
-}
-
-.devtools__image {
-    max-height: none;
-}
-
-
-
-/*
- * pages / products
- * —————————————————————————————————————————————————————————————————
-*/
-
-.portfolio {
-
-    &--featured {
-
-        .portfolio {
-
-            &__item {
-                height: 400px;
-            }
-        }
+	.section--alt {
+        padding-right: $page/4;
+		padding-left: $page/4;
     }
 }
 
+@include responsive(max-width, $mobile-max) {
 
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	[class*="col--"] {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		width: 100% !important;
+	}
+	
+	[class*="coloffset--"] {
+		@include transform(none);
+		margin-left: 0 !important;
+		width: 100% !important;
+	}
 
-/*
- * pages / services
- * —————————————————————————————————————————————————————————————————
-*/
-
-.approach {
-
-    &__filter {
-        padding: 0 $integer;
-    }
-
-    &__button {
-        width: 25%;
-        white-space: nowrap;
-
-        &:hover:before, &.nav__button--active:before {
-            width: 80%;
-            left: 10%;
-        }
-    }
-
-    &__content {
-        @include flex-basis(50%);
-    }
-
-    &__icon {
-        width: 30%;
-        height: 30%;
-    }
-}
-
-
-
-/*
- * —————————————————————————————————————————————————————————————————
- * END
- * —————————————————————————————————————————————————————————————————
-*/
-
+	.header__menu,
+    .page__header,
+    .section,
+    .section--full .section__header,
+    .section--alt,
+	.section__content--2 .card:nth-child(1),
+	.section__content--2 .card:nth-child(2),
+	.tab--leadership .tab__item {
+		padding-right: $integer-md;
+		padding-left: $integer-md;
+	}
 }

@@ -3,36 +3,42 @@
 // —————————————————————————————————————————————————————————————————
 // TABS
 // —————————————————————————————————————————————————————————————————
+// general
+// variants
+// —————————————————————————————————————————————————————————————————
+
+
+
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
 
 .tab {
 
 	&__nav {
+		@include display-flex();
+		@include justify-content(center);
+		width: 100%;
+		text-align: center;
 
-		.nav__button {
-			display: inline-block;
-			background-color: transparent;
+		& + .tab__content {
+			margin-top: $integer-xxl;
+		}
+	}
 
-			&.button--primary {
-				color: $black;
-			}
+	&__button {
 
-			&--active {
-				
-				&.button--primary {
-					background-color: $primary;
-					color: $white;
-				}
+		&.js-active {
+			color: $primary;
+		}
 
-				&.button--primary-darken {
-					background-color: $primary-darken;
-					color: $white;
-				}
-			}
+		& + & {
+			margin-left: $integer-lg;
 		}
 	}
 
 	&__content {
-	    @include transition(all 0.4s ease 0s);
+	    @include transition(all $transition);
 	}
 
 	&__item {
@@ -40,6 +46,112 @@
 
 		&:nth-child(1) {
 			display: block;
+		}
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// variants
+// —————————————————————————————————————————————————————————————————
+
+.tab {
+
+	&--leadership {
+
+		.tab {
+
+			&__item {
+				position: relative;
+				padding: $integer-xxxl*2 $page;
+
+				&:before {
+					@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+					@include background-image(linear-gradient(to left, rgba($dark, 0.2), $dark));
+				}
+
+				@include responsive(max-width, $tablet-max) {
+					background-image: none !important;
+					text-align: center;
+				}
+
+				.card {
+
+					> * {
+						position: relative;
+					}
+				}
+			}	
+
+			&__nav {
+				width: auto;
+				margin-bottom: -$integer-xxxl*1.5;
+				z-index: 1;
+			}
+		}
+
+		.card__image {
+			@include transition($transition);
+			height: $integer-xxxxl;
+			width: $integer-xxxxl;
+			will-change: transform;
+
+			&:hover {
+				@include transform(scale(1.05));
+			}
+		}
+	}
+
+	&--approach {
+
+		.tab {
+
+			&__content {
+				margin-top: $integer-xl;
+			}
+
+			&__item {
+
+				@include responsive(max-width, $tablet-max) {
+					display: block;
+
+					& + .tab__item {
+
+						.card {
+
+							&__inner {
+								padding-top: 0;
+							}
+						}
+					}
+				}
+			}
+
+			&__button {
+				position: relative;
+
+				&:before {
+					@include transition(opacity $transition, width $transition, left $transition);
+					@include pseudo-element('', auto, 0, -($integer-xl+$integer-sm), 50%, 0, $integer);
+					@include border-radius($integer);
+					will-change: opacity, width, left;
+					background-color: $dark;
+				}
+		
+				&:hover:before, 
+				&.tab__button--active:before {
+					width: 100%;
+					left: 0;
+				}
+			}
+		}
+
+		.card {
+
+			&__image {
+				padding-left: 0 !important;
+			}
 		}
 	}
 }

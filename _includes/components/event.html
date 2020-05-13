@@ -1,57 +1,39 @@
 {% assign variant = include.variant %}
 
-<div class="event__item">
-    {% if event.image %}
-    <a href="{{ event.link }}" target="_blank" class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/events/{{ event.image }}.jpg);"></a>
-    {% else %}
-    <a href="{{ event.link }}" target="_blank" class="event__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/default.jpg);"></a>
-    {% endif %}
-    <div class="block__content event__content">
-        <div class="event__meta">
-            <p class="block__date body--bold">
-                {% if event.date-from %}
-                    {{ event.date-from | date: '%b %-d' }} to
-                {% endif %}
-                {{ event.date | date: '%b %-d, %Y' }}
-            </p>
-            <a href="{{ event.link }}" target="_blank">
-                <h2 class="block__title lead">{{ event.name }}</h2>
-            </a>
-            <p>{{ event.location }}</p>
+<div class="card card--landscape no-padding">
+    <a href="{{ event.link }}" target="_blank" class="card__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg);"></a>
+    <div class="card__inner">
+        <div class="card__content">
+            <p class="card__label body--bold">{% if event.date_to %}{{ event.date | date: '%b %-d' }} to {{ event.date_to | date: '%b %-d, %Y' }}{% else %}{{ event.date | date: '%b %-d, %Y' }}{% endif %}</p>
+            <h2 class="card__title lead">
+                <a href="{{ event.link }}" target="_blank">{{ event.name }}</a>
+            </h2>
+            {% if event.location %}
+            <p class="body">{{ event.location }}</p>
+            {% endif %}
         </div>
-        <div class="event__actions">
-            {% if variant == 'past' %}
-                {% if event.type =='webinar' %}
-                <a href="{{ site.url }}/webinar-{{ event.id }}" target="_blank" class="event__button button button--small button--highlight button--animate fas fa-globe">
-                    <p class="button__inner">View recording</p>
-                </a>
-                {% endif %}
-            {% else %}
-                {% if event.link-title %}
-                <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--highlight button--animate fas fa-globe">
-                    <p class="button__inner">{{ event.link-title }}</p>
-                </a>
-                {% else %}
-                <p class="label">Coming soon</p>
-                {% endif %}
-                {% if event.directions %}
-                <a href="{{ event.directions }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-directions">
-                    <p class="button__inner">directions</p>
-                </a>
-                {% endif %}
-            {% endif %}
-            {% if event.link %}
-                {% if event.link-title %}
-                {% else %}
-                <a href="{{ event.link }}" target="_blank" class="event__button button button--small button--primary button--animate fas fa-globe">
-                    <p class="button__inner">website</p>
-                </a>
-                {% endif %}
-            {% endif %}
-            {% if event.video %}
-            <a href="{{ event.video }}" target="_blank" class="event__button button button--small button--secondary button--animate fas fa-play">
-                <p class="button__inner">Watch video</p>
+        <div class="card__actions">
+            {% if variant == 'past' and event.webinar_id %}
+            <a href="{{ site.url }}/webinar-{{ event.webinar_id }}" target="_blank" class="button button--small button--highlight button--animate fas fa-globe">
+                <p class="button__inner">View recording</p>
             </a>
+            {% endif %}
+            {% if event.link and event.type != 'internal' %}
+            <a href="{{ event.link }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
+                <p class="button__inner">Website</p>
+            </a>
+            {% endif %}
+            {% if variant == 'upcoming' %}
+            {% if event.link and event.type == 'internal' %}
+            <a href="{{ event.link }}" target="_blank" class="button button--small button--highlight button--animate fas fa-globe">
+                <p class="button__inner">Register</p>
+            </a>
+            {% endif %}
+            {% if event.directions %}
+            <a href="{{ event.directions }}" target="_blank" class="button button--small button--secondary button--animate fas fa-directions">
+                <p class="button__inner">directions</p>
+            </a>
+            {% endif %}
             {% endif %}
         </div>
     </div>

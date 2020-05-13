@@ -1,13 +1,11 @@
-<div class="accordion__item">
-    <div class="accordion__header">
-        <p class="accordion__title body--bold">{{ item.question }}</p>
-        <div class="accordion__actions">
+<div class="card card--sm body--left">
+    <div class="card__inner">
+        <div class="accordion__header card__header">
+            <p class="card__title body--bold">{{ item.question }}</p>
             <span class="accordion__button button button--icon button--highlight button--small">
                 <i class="fa fa-plus"></i>
             </span>
         </div>
-    </div>
-    <div class="accordion__content">
-        <p>{{ item.answer }}</p >
+        <p class="accordion__content card__body">{{ item.answer }}</p>
     </div>
 </div>

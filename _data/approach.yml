@@ -2,28 +2,25 @@
 # in service.html page
 
 - number: 1
-  active: nav__button--active
+  active: true
   title: Advisory
   id: advisory
-  text: We work with you to learn about your requirements and provide independent strategic advice on whether advanced cryptography, privacy-preserving technologies or distributed ledgers are suitable and add genuine technical and business value to the problem you are trying to solve.<br><br>We assess your requirements to provide you with an impartial recommendation to approach and implement your project and then advise which of the available technologies is best suited for your application. We document this for you before moving on to building a prototype.
+  text: We work with you to learn about your requirements and provide independent strategic advice on whether advanced cryptography, privacy-preserving technologies or distributed ledgers are suitable and add genuine technical and business value to the problem you are trying to solve. We assess your requirements to provide you with an impartial recommendation to approach and implement your project and then advise which of the available technologies is best suited for your application. We document this for you before moving on to building a prototype.
   icon: icon-advisory
 
 - number: 2
-  active:
   title: Prototype
   id: prototype
   text: The prototype is for you to test against your requirements and technical needs. Our solution architects, developers and designers work together to prove that the concepts and technologies for the proposed application are viable. We create a working prototype based on the minimum requirements of the product, for you to test and to give feedback on.
   icon: icon-prototype
 
 - number: 3
-  active:
   title: Production
   id: production
   text: Our developers build your project and test it at every stage. After the build is complete, we coordinate with your team and support you implementing the project.  We move into production, and then your project is live.
   icon: icon-production
 
 - number: 4
-  active:
   title: Support
   id: support
   text: We provide you with ongoing support from the day we start a conversation with you. After the delivery and deployment of your project, we continue to work with you to ensure its smooth operation and advise on technical enhancements if required.

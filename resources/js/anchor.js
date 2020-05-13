@@ -57,6 +57,7 @@ $(window).scroll(function(){
         }
     }
 });
+
 $(".anchor a").click(function(evn){
     evn.preventDefault();
     $('html,body').scrollTo(this.hash, this.hash);

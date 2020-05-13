@@ -19,7 +19,7 @@
 
 $primary: 	#007bff;
 $secondary: #64f0ff;
-$dark: 	    #161656;
+$dark: 		#161656;
 $highlight:	#ff6f00;
 
 $secondary-alt: #46FFC3;
@@ -29,35 +29,56 @@ $primary-darken:  darken($primary, 15%);
 $primary-lighten: lighten($primary, 15%);
 
 $black: 	#000a1e;
-$darkgrey: 	#8c8c96;
-$mediumgrey:#d7d7dc;
-$lightgrey: #f8f8f8;
+$dark-grey: 	#8c8c96;
+$medium-grey:#d7d7dc;
+$light-grey: #f8f8f8;
 $white: 	#ffffff;
 
 $red: #ff224a;
 
-$facebook:  #3b5998;
-$google:    #dd4b39;
+$facebook:	#3b5998;
+$github:	#4078c0;
 $linkedin:  #0077b5;
-$medium:    #00ab6c;
-$twitter:   #1da1f2;
+$medium:	#00ab6c;
+$twitter:	#1da1f2;
 
 
 // —————————————————————————————————————————————————————————————————
 // 2. general
 // —————————————————————————————————————————————————————————————————
 
-$col:			100vw/16;
-$col-inner:     100%/12;
-$col-footer:    100%/15;
+$page:			12.5vw;
+$col:			100%/12;
+$col-footer:	100%/15;
 
-$integer:		20px;
+$integer:		0.5rem;		 // 8px
 
-$transition:    0.4s ease 0s;
+$integer-xxs:	$integer/8;	 // 1px
+$integer-xs:	$integer/4;	 // 2px 
+$integer-sm:	$integer/2;	 // 4px
 
-$box-shadow-1:    0 0 10px 0 rgba($dark, 0.15);
-$box-shadow-2:    0 0 20px 0 rgba($dark, 0.25);
-$box-shadow-3:    0 0 15px 0 rgba($dark, 0.05);
+$integer-md:	$integer*2;	 // 16px
+$integer-lg:	$integer*4;	 // 32px
+$integer-xl:	$integer*5;	 // 40px
+$integer-xxl:	$integer*8;	 // 64px
+$integer-xxxl:  $integer*10; // 80px
+$integer-xxxxl: $integer*15; // 120px
+$integer-max:	$integer*25; // 200px
+
+$transition:		0.4s ease 0s;
+$transition-delay:  0.4s ease 0.2s;
+$transition-long:	0.6s ease 0s;
+
+$box-shadow-xs:	 0 0 15px 0 rgba($dark, 0.05);
+$box-shadow-sm:	 0 0 10px 0 rgba($dark, 0.15);
+$box-shadow-md:	 0 0 20px 0 rgba($dark, 0.20);
+
+$border-sm: $integer-xs solid;
+$border-md: $integer-sm solid;
+$border-lg: $integer solid;
+
+// one border radius to keep consistency througbout your website
+$border-radius: $integer-md*1.5;
 
 
 
@@ -88,24 +109,24 @@ $font-black: 		900;
 // extralarge desktops	1300px  >  ...
 // large desktops		1024px  >  1199px
 // desktops				 768px  >  1023px
-// tablets				 576px  >   767px
-// phones			 	 350px  >   575px
-// small phones 		   ...	>   349px
+// tablets				 576px  >	767px
+// phones			 	 350px  >	575px
+// small phones 			...	>	349px
 // —————————————————————————————————————————————————————————————————
 
-$break-xlarge-desktop:	1800px;
+$desktop-xl:		1800px;
 
-$break-large-desktop-min:	1300px;
-$break-large-desktop-max:	1299px;
+$desktop-lg-min:	1300px;
+$desktop-lg-max:	1299.98px;
 
-$break-desktop-min:			1024px;
-$break-desktop-max:			1023px;
+$desktop-min:		1024px;
+$desktop-max:		1023.98px;
 
-$break-tablets-min:			768px;
-$break-tablets-max:			767px;
+$tablet-min:		768px;
+$tablet-max:		767.98px;
 
-$break-phones-min:			576px;
-$break-phones-max:			575px;
+$mobile-min:		576px;
+$mobile-max:		575.98px;
 
-$break-small-phones-min:	350px;
-$break-small-phones-max:	349px;
+$mobile-sm-min:		350px;
+$mobile-sm-max:		349.98px;

@@ -19,64 +19,66 @@
 html, body {
 	font-family: $font;
 	font-size: 16px;
-	line-height: 1.2;
+	line-height: 1.5;
 	font-weight: $font-light;
 	color: $black;
 
-	@include responsive(min-width, $break-xlarge-desktop) {
+	@include responsive(min-width, $desktop-xl) {
 		font-size: 20px;
 	}
 }
 
+.headline,
+.title,
+.subtitle {
+	line-height: 1.2;
+}
+
 .headline {
-	@include fontSize(3, $font-black, normal);
+	@include font-size(3, $font-black, normal);
 	text-transform: uppercase;
 
-	@include responsive(max-width, $break-tablets-max) {
+	@include responsive(max-width, $tablet-max) {
 		font-size: 2.5rem;
-	}
-
-	@include responsive(max-width, $break-phones-max) {
-		font-size: 2rem;
 	}
 }
 
 .title {
-	@include fontSize(2.5, $font-bold, normal);	
+	@include font-size(2.5, $font-bold, normal);	
 	color: $primary;
 
-	@include responsive(max-width, $break-tablets-max) {
+	@include responsive(max-width, $tablet-max) {
 		font-size: 2rem;
 	}
 
-	@include responsive(max-width, $break-phones-max) {
+	@include responsive(max-width, $mobile-max) {
 		font-size: 1.8rem;
 	}
 }
 
 .subtitle {
-	@include fontSize(1.8, $font-bold, normal);
+	@include font-size(1.8, $font-bold, normal);
 
-	@include responsive(max-width, $break-phones-max) {
+	@include responsive(max-width, $mobile-max) {
 		font-size: 1.5rem;
 	}
 }
 
-.comment, .post__update {
-	@include fontSize(1.5, $font-light, normal);
+.comment {
+	@include font-size(1.5, $font-light, normal);
 	text-transform: uppercase;
 }
 
-.quote, .post__quote {
-	@include fontSize(1.5, $font-light, normal);
+.quote {
+	@include font-size(1.5, $font-light, normal);
 
-	@include responsive(max-width, $break-tablets-max) {
+	@include responsive(max-width, $tablet-max) {
 		font-size: 1.25rem;
 	}
 }
 
-.lead, .post__title {
-	@include fontSize(1.5, $font-regular, normal);
+.lead {
+	@include font-size(1.5, $font-regular, normal);
 	color: $primary;
 }
 
@@ -96,30 +98,35 @@ html, body {
 	}
 }
 
-// prevent style from applying to media page
+.post__content {
 
-.post .post__headline {
-	line-height: 1.5;
-	font-size: 1.5rem;
-	font-weight: $font-bold;
+	h1 { @extend .subtitle; }
+	h2 { @extend .lead; }
+	p, li { @extend .body--large; }
+	blockquote p { @extend .quote; }
 }
 
-.post {
+// spacing between paragraphs
 
-	&__title {
-		font-size: 1.8rem;
+.body {
+	
+	& + & { 
+		margin-top: $integer; 
 	}
 
-	&__subtitle {
-		font-size: 1.5rem;
+	&--large, { 
+
+		& + &,
+		& + .body { 
+			margin-top: $integer-md; 
+		}
 	}
 
-	&__content, &__content ul, &__content li {
-		font-size: 1.25rem;
-	}
+	&--small { 
 
-	&__quote, &__content {
-		line-height: 1.5;
+		& + & { 
+			margin-top: $integer-sm; 
+		}
 	}
 }
 
@@ -128,6 +135,15 @@ html, body {
 // —————————————————————————————————————————————————————————————————
 // variants
 // —————————————————————————————————————————————————————————————————
+
+// color
+
+.body {
+
+	&--black 	{ color: $black; }
+	&--white 	{ color: $white; }
+	&--primary 	{ color: $primary; }
+}
 
 // alignement
 
@@ -146,7 +162,7 @@ html, body {
 		@include column-count($i);
 		@include column-gap(2rem);
 	
-		@include responsive(max-width, $break-tablets-max) {
+		@include responsive(max-width, $tablet-max) {
 			@include column-count(1);
 		}
 	}
@@ -159,7 +175,7 @@ html, body {
 // —————————————————————————————————————————————————————————————————
 
 .button {
-	@include fontSize(1, $font-black, normal);
+	@include font-size(1, $font-black, normal);
 	font-family: $font;
 	letter-spacing: 0.05rem;
 	line-height: 1;
@@ -170,12 +186,12 @@ html, body {
 	}
 
 	&.button--large {
-		@include fontSize(1.5, $font-black, normal);
+		@include font-size(1.5, $font-black, normal);
 		letter-spacing: 0.08rem;
 	}
 
 	&.button--small {
-		@include fontSize(0.8, $font-black, normal);
+		@include font-size(0.8, $font-black, normal);
 		letter-spacing: 0.04rem;
 		line-height: 1.5;
 	}
@@ -208,13 +224,13 @@ html, body {
 }
 
 .label, .form__label {
-	@include fontSize(0.8, $font-black, normal);
+	@include font-size(0.8, $font-black, normal);
 }
 
 .form {
 
 	&__input, .form__dropdown li {
-		@include fontSize(1, $font-light, normal);
+		@include font-size(1, $font-light, normal);
 	}
 }
 

@@ -2,142 +2,27 @@
 # in home.html page
 
 media:
-  - url: private-equity-wire
-    alt: private-equity-wire
+  - name: Private Equity Wire
     link: https://www.privateequitywire.co.uk/2020/04/20/284845/applied-blockchain-raises-gbp2m-funding-round-led-qbn-capital
 
-  - url: coin-telegraph
-    alt: coin-telegraph
+  - name: Coin Telegraph
     link: https://cointelegraph.com/news/shell-backed-firm-raises-25m-for-zero-knowledge-proof-platform
 
-  - url: yahoo-finance
-    alt: yahoo-finance
+  - name: Yahoo Finance
     link: https://uk.finance.yahoo.com/news/shell-backed-applied-blockchain-raises-125537688.html
 
-  - url: coindesk
-    alt: coindesk
+  - name: Coindesk
     link: https://www.coindesk.com/british-maritime-society-builds-blockchain-tool-for-ship-registration
 
-  - url: finextra
-    alt: finextra
+  - name: Finextra
     link: https://www.finextra.com/pressarticle/72235/applied-blockchain-secures-investments-from-shell-trading-and-calibrate-partners
 
-  - url: forbes
-    alt: forbes
+  - name: Forbes
     link: https://www.forbes.com/sites/gauravsharma/2018/01/18/shells-trading-arm-bags-stake-in-london-based-blockchain-start-up/#1f42a442213e
 
-  - url: venturebeat
-    alt: venturebeat
+  - name: Venturebeat
 
-  - url: fortune
-    alt: fortune
-
-# technology section
-# in service.html page
-
-technology:
-  - url: ethereum
-    alt: Ethereum
-    order: 1
-
-  - url: parity
-    alt: Parity
-    order: 2
-    
-  - url: hyperledger-fabric
-    alt: Hyperledger Fabric
-    order: 3
-
-  - url: corda
-    alt: Corda
-    order: 4
-
-  - url: quorum
-    alt: Quorum
-    order: 5
-
-  - url: ipfs
-    alt: IPFS
-    order: 6
-
-
-# clients section
-# in index.html page
-
-clients:
-  - url: cygnetise
-    alt: Cygnetise
-    order: 1
-
-  - url: united-nations
-    alt: United Nations
-    order: 2
-
-  - url: nuggets
-    alt: Nuggets
-    order: 3
-
-  - url: shell
-    alt: Shell
-    order: 4
-
-  - url: klm
-    alt: KLM
-    order: 5
-
-  - url: toyota
-    alt: Toyota
-    order: 6
-
-  - url: appii
-    alt: Appii
-    order: 7
-
-  - url: vodafone
-    alt: Vodafone
-    order: 8
-
-  - url: supermoney
-    alt: Supermoney
-    order: 9
-
-  - url: sita
-    alt: Sita
-    order: 10
-
-  - url: babb
-    alt: BABB
-    order: 11
-
-  - url: lloyds-register
-    alt: LLoyds Register
-    order: 12
-
-  - url: travelledger
-    alt: Travel Ledger
-    order: 13
-
-# partners section
-# in about.html page
-
-partners:
-  - url: energy-web
-    alt: Energy Web
-
-  - url: fintech-week
-    alt: Fintech Week
-
-  - url: innovate-finance
-    alt: Innovate Finance
-
-  - url: nnovate-uk
-    alt: Innovate UK
-
-  - url: microsoft
-    alt: Microsoft
-
-  - url: rocket-space
-    alt: Rocket Space
+  - name: Fortune
 
 # values section
 # in about.html page
@@ -145,22 +30,19 @@ partners:
 values:
   - url: direction
     alt: Platform agnostic
-    #description: We innovate and build for all blockchain platforms
 
   - url: binoculars
     alt: Future-proof
-    #description: We ensure the reusability of our products continuously
 
   - url: shield
     alt: Integrity
-    #description: We are open and honest in our collaboration with clients and partners
 
 # join section
 # in join.html page
 
 join:
   - url: node
-    alt: Work with cutting-edge blockchain and Node.js tech
+    alt: Work with cutting-edge cryptography, blockchain and full stack javascript tech
 
   - url: diversity
     alt: Multicultural and diverse team

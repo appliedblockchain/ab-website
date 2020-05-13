@@ -4,6 +4,7 @@
 // BLOCKS
 // —————————————————————————————————————————————————————————————————
 // general
+// layouts
 // —————————————————————————————————————————————————————————————————
 
 
@@ -13,70 +14,90 @@
 // —————————————————————————————————————————————————————————————————
 
 .block {
-	@include box-shadow($box-shadow-1);
-	@include border-radius($integer);
-	overflow: hidden;
-	background-color: $white;
-	padding: $integer*2;
-	color: $black;
-	@include responsive(max-width, $break-tablets-max) {
-		padding: $integer;
-	}
+    width: 100%;
 
-	&__content {
-		padding: $integer*2;
-		@include responsive(max-width, $break-tablets-max) {
-			padding: $integer;
-		}
-	}
+    &__header {
 
-	&__date {
-		margin-bottom: $integer;
-	}
-
-	&__title {
-        margin-bottom: $integer/2;
+        & + .block__content {
+            margin-top: $integer-xl;
+        }
     }
 
-	&__label {
-		margin-top: $integer/4;
-	}
+    &__title {
 
-    &__text {
-        margin-bottom: $integer;
-	}
+        & + .block__subtitle {
+            margin-top: $integer-md;
+        }
 
-	.section--primary & {
+        & + .block__content {
+            margin-top: $integer-xl;
+        }
+    }
 
-		.lead, .title {
-			color: $primary;
-		}
-	}
+    &__subtitle {
 
-	&--icon {
-		padding-top: $integer*3;
-		height: 100%;
+        & + .block__content {
+            margin-top: $integer-md;
+        }
+    }
 
-		.block {
+    &__content {
+        
+        & + & {
+            margin-top: $integer-lg;
+        }
 
-			&__icon {
-				position: absolute;
-				top: -$integer*2;
-				left: 50%;
-				margin-left: -$integer*2;
-				width: $integer*4;
-				height: auto;
-			}
-		}
-	}
+        & + .block__subtitle {
+            margin-top: $integer-lg;
+        }
+    }
 
-	&--image {
-		padding: 0;
-	}
+    &__column {
 
-	&--download {
-		@include border-radius($integer/2);
-		padding: $integer/2;
-		border: 0 !important;
-	}
+        @include responsive(max-width, $desktop-max) {
+
+            & + & {
+                margin-top: $integer;
+            }
+        }
+    }
+}
+
+.block {
+
+    &.col {
+
+        &--lg6 {
+
+            & + .block {
+
+                @include responsive(max-width, $desktop-max) {
+                    margin-top: $integer-xxxl;
+                }
+            }
+        }
+    }
+}
+
+
+// —————————————————————————————————————————————————————————————————
+// layouts
+// —————————————————————————————————————————————————————————————————
+
+#project {
+
+    &-results {
+
+        .block {
+
+            &__subtitle {
+                width: 75%;
+                margin: 0 auto;
+
+                @include responsive(max-width, $tablet-max) {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

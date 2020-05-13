@@ -1,0 +1,33 @@
+# service.html
+
+solutions:
+  - icon: decentralised
+    title: Future-Proof
+    id: solutions-decentralised
+
+  - icon: production
+    title: Production-Ready
+    id: solutions-production
+
+  - icon: security
+    title: Private & secure
+    id: solutions-security
+
+stack:
+  - side: 'left'
+    item:
+    - title: 'Front End'
+      body: 'We design and develop responsive, rich front end applications using React.js. These range from mission critical enterprise trading platforms, to beautifully designed consumer facing user experiences.'
+    - title: 'Backend'
+      body: 'We develop fast, scalable backend applications using node.js and Typescript. We develop, implement and extensively test API’s, enterprise systems integrations, and integration with multiple databases and data sources.'
+    - title: 'Blockchain'
+      body: 'We’ve been developing blockchain applications since 2015, and have deep, independent expertise in a range of enterprise and public platforms, as well as an opinion on when they should be used. We develop applications that are relatively platform agnostic in order to protect investment, and be ready for future evolution of the technology.'
+
+  - side: 'right'
+    item:
+    - title: 'Mobile'
+      body: 'We develop business and consumer applications using React Native that support both iOS and Android. We have extensive experience incorporating mobile wallets, data encryption and advanced cryptography, as well as KYC and biometric authentication in mobile applications.'
+    - title: 'Advanced Cryptography'
+      body: 'Our expertise in cutting edge advanced cryptography enables us to develop applications for our clients that protect data, and avoid the risks associated with sharing data, while at the same time enabling the most secure forms of business collaboration.'
+    - title: 'Infrastructure'
+      body: 'Our team has extensive experience deploying and supporting enterprise-grade production applications in customer cloud environments. We use Docker and Kubernetes to ensure platform agnostic deployments, and at the same time have extensive experience with both AWS and Azure, ensuring that applications are well architected, optimised and non-functional requirements for security, performance and resilience are met.'

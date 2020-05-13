@@ -1,329 +1,66 @@
 @charset "UTF-8";
 
-
-
-/* 
- * —————————————————————————————————————————————————————————————————
- * HOME
- * —————————————————————————————————————————————————————————————————
-*/
+// —————————————————————————————————————————————————————————————————
+// INDEX
+// —————————————————————————————————————————————————————————————————
 
 #particles-js {
-    //display none for development
-    //display: none;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+
     @include responsive-mobile-devices() {
         display: none;
     }
 }
 
-.landing {
+#landing {
+    @include display-flex();
+    @include flex-direction(column);
     @include justify-content(space-between);
-    @include background(bottom center, cover);
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     position: relative;
-    padding: $integer*9 0 $integer*2 0;
-    @include responsive(max-width, $break-desktop-max) {
-        padding-top: $integer*7;
-    }
-    @include responsive(max-width, $break-phones-max) {
-        @include justify-content(flex-start);
-    }
-    @include responsive-mobile-devices-landscape() {
-        padding-top: $integer*6;
-    }
-
-    &:before, &:after, &__title, &__icon, &__carousel, .gartner {
-        pointer-events: none;
-        @include responsive-mobile-devices() {
-            pointer-events: initial;
-        }
-    }
+    padding-top: 0;
+    padding-bottom: $integer-xxl;
 
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
         @include background-image(linear-gradient(to bottom, rgba($primary, 0.7), $primary));
-    }    
-    &:after {
-        @include pseudo-element('', auto, 0, 0, 0, 100%, 50%);
-        @include background-image(linear-gradient(to bottom, rgba($dark, 0), $dark));
-    }    
-
-    &__title {
-        z-index: 1;
-        padding-left: $col;
-        padding-right: $col;
-        @include responsive(max-width, $break-tablets-max) {
-            font-size: 2.5rem;
-        }
     }
 
-    &__icon {
-        z-index: 1;
-        height: 40vh;
-        position: absolute;
-        top: 40%;
-        @include responsive(min-width, $break-large-desktop-min) {
-            top: 40%;
-        }
-        @include responsive(max-width, $break-tablets-max) {
-            display: none;
-        }
+    .page__header {
+        padding-left: $page;
+        padding-bottom: $integer-xxl;
+        padding-right: $page;
     }
 
-    &__carousel {
-        @include align-self(flex-end);
-        padding-left: $col;
-        padding-right: $col;
-        @include responsive(max-width, $break-phones-max) {
-            display: none !important;
-        }
+    .section__content {
+        position: relative;
+        padding-bottom: $integer-xxxl*2;
     }
-
-    // PREVIOUS GRAPHIC ELEMENTS
-    // &__graphic {
-    
-    //     &--lines, &--circle {
-    //         @include responsive(max-width, $break-large-desktop-max) {
-    //             opacity: 0.5;
-    //         }
-    //         position: absolute;
-    //     }
-
-    //     &--lines {
-    //         width: 16%;
-    //         left: 42%;
-    //         top: 25%;
-    //         @include responsive(max-width, $break-large-desktop-max) {
-    //             width: 24%;
-    //             left: 38%;
-    //             top: 30%;
-    //         }
-    //         @include responsive(max-width, $break-desktop-max) {
-    //             width: 30%;
-    //             left: 35%;
-    //             top: 35%;
-    //         }
-    //         @include responsive(max-width, $break-tablets-max) {
-    //             width: 36%;
-    //             left: 32%;
-    //             top: 35%;
-    //         }
-    //         @include responsive(max-width, $break-phones-max) {
-    //             width: 40%;
-    //             left: 30%;
-    //             top: 40%;
-    //         }
-    //     }
-
-    //     &--circle {
-    //         width: 70%;
-    //         left: 15%;
-    //         top: 10%;
-    //         @include responsive(max-width, $break-large-desktop-max) {
-    //             width: 80%;
-    //             left: 10%;
-    //             top: 12%;
-    //         }
-    //         @include responsive(max-width, $break-desktop-max) {
-    //             width: 110%;
-    //             left: -5%;
-    //             top: 16%;
-    //         }
-    //         @include responsive(max-width, $break-tablets-max) {
-    //             width: 130%;
-    //             left: -15%;
-    //             top: 20%;
-    //         }
-    //         @include responsive(max-width, $break-phones-max) {
-    //             width: 150%;
-    //             left: -25%;
-    //             top: 24%;
-    //         }
-    //     }
-    // }
-
-    &__content {
-        @include flex-direction(column-reverse);
-        position: absolute;
-        bottom: $integer*6;
-        @include responsive(max-width, $break-large-desktop-max) {
-            @include calc(width, '100vw - '$col*2);
-            @include flex-direction(row);
-        }
-    }
-
-    // &__widget {
-    //     background-color: transparent;
-    //     padding: 0;
-    //     width: $integer*24;
-    //     @include responsive(max-width, $break-phones-max) {
-    //         display: none;
-    //     }
-    // }
 
     .gartner {
-        @include box-shadow($box-shadow-1);
         position: absolute;
-        top: 50%;
-        left: 0;
-        min-width: 220px;
-        width: 15%;
+        top: 0;
+        left: -$page/2;
+        min-width: 320px;
+        width: 10%;
         z-index: 1;
-        @include responsive(max-width, $break-desktop-max) {
-            display: none;
-        }
+
         @include responsive-mobile-devices-landscape() {
             display: none;
         }
     }
 }
 
-#what-we-do {
-    margin-top: -1px;
-    @include responsive(max-width, $break-desktop-max) {
-        .section__header {
-            @include align-items(center);
-            text-align: center;
-        }
-
-        .thank-you__button {
-            @include justify-content(center);
-        }
-    }
-}
-
-.video {
-    @include display-flex();
-    @include align-items(center);
-    @include justify-content(center);
-
-    &__button {
-        @include transition(transform $transition);
-        will-change: transform;
-        cursor: pointer;
-        width: $integer*6;
-
-        &:hover {
-            @include transform(scale(1.2));
-        }
-    }
-}
-
-#who-we-help {
-
-    .section {
-
-        &__header {
-            @include responsive(max-width, $break-desktop-max) {
-                margin-bottom: $integer;
-            }
-        }
-
-        &__content {
-            text-align: left;
-            @include responsive(max-width, $break-desktop-max) {
-                text-align: center;
-            }
-
-            .button {
-                margin-top: $integer*4;
-            }
-        }
-    }
-
-    .row {
-        @include responsive(max-width, $break-desktop-max) {
-            @include flex-direction(column-reverse);
-        }
-    }
-
-    .video {
-        @include box-shadow($box-shadow-1);
-        @include background(center center, cover);
-        @include border-radius($integer*2);
-        height: 100%;
-        @include responsive(max-width, $break-desktop-max) {
-            height: $integer*18;
-            margin-top: $integer*2;
-        }
-    }
-}
-
-.why-us {
-    text-align: left;
-
-    &__item {
-        @include display-flex();
-        @include align-items(center);
-        @include responsive(max-width, $break-large-desktop-max) {
-            margin-bottom: $integer*2;
-        }
-    }
-
-    &__image {
-        @include responsive(max-width, $break-tablets-max) {
-            display: none;
-        }
-    }
-
-    &__graphic {
-        top: -25%;
-    }
-}
-
-.why-us {
-
-    &__item {
-        
-        &:nth-child(2) {
-            text-align: right;
-            @include responsive(max-width, $break-tablets-max) {
-                text-align: left;
-            }
-        }
-    }
-}
-
 #featured-in {
 
-    border-top: $integer/4 solid $lightgrey;
+    @include responsive(max-width, $mobile-max) {
 
-    .section__header {
-        margin-bottom: 0;
-    }
-}
-
-.logo-media {
-    margin-left: -$integer*2;
-    margin-right: -$integer*2;
-    @include responsive(max-width, $break-desktop-max) {
-        margin-left: -$integer;
-        margin-right: -$integer;
-    }
-
-
-    &__item {
-        position: relative;
-        width: 25%;
-        padding: $integer $integer*2;
-        @include responsive(max-width, $break-desktop-max) {
-            padding-left: $integer;
-            padding-right: $integer;
-        }
-        @include responsive(max-width, $break-tablets-max) {
-            padding-left: $integer*2;
-            padding-right: $integer*2;
+        img {
             width: 50%;
         }
-    }
-
-    &__image {
-        width: 100%;
     }
 }

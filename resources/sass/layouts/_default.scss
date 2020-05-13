@@ -4,10 +4,11 @@
 // DEFAULT
 // —————————————————————————————————————————————————————————————————
 // about
-// services
+// contact
 // join
-// privacy-policy
 // mantle
+// privacy-policy
+// services
 // —————————————————————————————————————————————————————————————————
 
 
@@ -155,18 +156,15 @@
 
 
 // —————————————————————————————————————————————————————————————————
-// services
+// contact
 // —————————————————————————————————————————————————————————————————
 
-#services {
+#contact {
 
-    &-stack {
+    .background--cover {
 
-        .body--right {
-
-            @include responsive(max-width, $desktop-max) {
-                text-align: left;
-            }
+        @include responsive(max-width, $tablet-max) {
+            background-image: none !important;
         }
     }
 }
@@ -177,10 +175,21 @@
 // join
 // —————————————————————————————————————————————————————————————————
 
-#join-header {
+#join {
 
-    .section__header {
-        z-index: 2;
+    ul {
+        padding-left: $integer-md;
+    }
+    
+    // li + li {
+    //     margin-top: $integer;
+    // }
+        
+    &-header {
+        
+        .section__header {
+            z-index: 2;
+        }
     }
 }
 
@@ -221,52 +230,6 @@
 
 
 // —————————————————————————————————————————————————————————————————
-// privacy-policy
-// —————————————————————————————————————————————————————————————————
-
-.privacy {
-    /* Creates a new instance of the section counter with each ol element */
-    counter-reset: section;
-    list-style-type: none;
-      
-    &__title,
-    &__subtitle {
-        
-       &:before {
-            /* Increments only this instance of the section counter */
-            counter-increment: section;
-            /* Combines the values of all instances of the section counter, separated by a period */
-            content: counters(section, ".") ". ";
-        }
-    }
-
-    &__title {
-
-        & + .privacy__content {
-            padding-top: $integer-lg;
-        }
-    }
-
-    &__subtitle {
-        padding-top: $integer-lg;
-
-        & + .privacy__content {
-            padding-top: $integer-md;
-        }
-    }
-
-    &__content {
-        list-style: none;
-
-        & + .privacy__title {
-            padding-top: $integer-xl;
-        }
-    }
-}
-
-
-
-// —————————————————————————————————————————————————————————————————
 // mantle
 // —————————————————————————————————————————————————————————————————
 
@@ -296,4 +259,73 @@
            background-color: rgba($white, 0.5);
        }
    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// privacy-policy
+// —————————————————————————————————————————————————————————————————
+
+.privacy {
+    // Creates a new instance of the section counter with each ol element
+    counter-reset: section;
+    list-style-type: none;
+      
+    &__title,
+    &__subtitle {
+        
+       &:before {
+            // Increments only this instance of the section counter
+            counter-increment: section;
+            // Combines the values of all instances of the section counter, separated by a period
+            content: counters(section, ".") ". ";
+        }
+    }
+
+    &__title {
+
+        & + .privacy__content {
+            padding-top: $integer-lg;
+        }
+    }
+
+    &__subtitle {
+        padding-top: $integer-lg;
+
+        & + .privacy__content {
+            padding-top: $integer-md;
+        }
+    }
+
+    &__content {
+        list-style: none;
+
+        & + .privacy__title {
+            padding-top: $integer-xl;
+        }
+    }
+
+    ul.body {
+        padding-left: $integer-md;
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// services
+// —————————————————————————————————————————————————————————————————
+
+#services {
+
+    &-stack {
+
+        .body--right {
+
+            @include responsive(max-width, $desktop-max) {
+                text-align: left;
+            }
+        }
+    }
 }

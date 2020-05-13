@@ -20,6 +20,10 @@
 	padding-left: $integer*1.5 !important;
 	padding-right: $integer*1.5 !important;
 
+	&--pipedrive {
+		max-width: 792px;
+	}
+
 	@include responsive(max-width, $mobile-max) {
 		padding-left: $integer/2 !important;
 		padding-right: $integer/2 !important;

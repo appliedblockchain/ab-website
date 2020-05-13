@@ -8,23 +8,10 @@ background_color: white
 ---
 
 <section class="section section--white">
-    <div class="section__content tab tab--contact">
-        <div class="tab__nav">
-            <a href="#company" class="tab__button button button--primary button--animate fas fa-building">
-                <p class="button__inner">Company</p>
-            </a>
-            <a href="#candidate" class="tab__button button button--primary button--primary-lighten button--animate fas fa-code">
-                <p class="button__inner">Candidate</p>
-            </a>
-        </div>
-        <div class="tab__content card background--shadow">
-            <div class="card__inner">
-                <div id="company" class="tab__item">
-                    {% include components/forms/form-company.html %}
-                </div>
-                <div id="candidate" class="tab__item">
-                    {% include components/forms/form-candidate.html %}
-                </div>
+    <div class="section__content">
+        <div class="form form--pipedrive background--shadow">
+            <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/273256c741bb877073d9fe9c923f1c942026773">
+                <script src="https://cdn.eu-central-1.pipedriveassets.com/web-form-assets/webforms.min.js"></script>
             </div>
         </div>
     </div>

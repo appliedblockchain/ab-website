@@ -25,17 +25,6 @@
     padding-top: 0;
     padding-bottom: $integer-xxl;
 
-    &:before, 
-    &:after, 
-    .page__header,
-    .gartner {
-        pointer-events: none;
-
-        @include responsive-mobile-devices() {
-            pointer-events: initial;
-        }
-    }
-
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
         @include background-image(linear-gradient(to bottom, rgba($primary, 0.7), $primary));
@@ -56,12 +45,22 @@
         position: absolute;
         top: 0;
         left: -$page/2;
-        min-width: 220px;
+        min-width: 320px;
         width: 10%;
         z-index: 1;
 
         @include responsive-mobile-devices-landscape() {
             display: none;
+        }
+    }
+}
+
+#featured-in {
+
+    @include responsive(max-width, $mobile-max) {
+
+        img {
+            width: 50%;
         }
     }
 }

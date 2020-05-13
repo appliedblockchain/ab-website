@@ -31,7 +31,8 @@
 	.header__menu,
 	.page__header,
     .section,
-	.section--full .section__header {
+	.section--full .section__header,
+	#landing {
 		padding-right: 10vw;
 		padding-left: 10vw;
 	}
@@ -57,7 +58,8 @@
 	.section--full .section__header,
 	.section__content--2 .card:nth-child(1),
 	.section__content--2 .card:nth-child(2),
-	.tab--leadership .tab__item {
+	.tab--leadership .tab__item,
+	#landing {
 		padding-right: $page/2;
 		padding-left: $page/2;
 	}

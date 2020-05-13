@@ -41,10 +41,6 @@ html, body {
 	@include responsive(max-width, $tablet-max) {
 		font-size: 2.5rem;
 	}
-
-	@include responsive(max-width, $mobile-max) {
-		font-size: 2rem;
-	}
 }
 
 .title {

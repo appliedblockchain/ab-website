@@ -1,6 +1,6 @@
-<footer class="footer section section--dark">
+<footer id="footer" class="footer section section--dark">
     <div class="row">
-        <div class="col--lg4">
+        <div class="col--xl4">
             <div class="card footer__logo">
                 <div class="logo logo-name-white">
                     <a href="{{ site.url }}/">
@@ -12,7 +12,7 @@
                 header = 'true'
             %}
         </div>
-        <div class="card coloffset--xl1 col--xl7 col--lg8">
+        <div class="card coloffset--xl1 col--xl7">
             {% include components/newsletter.html %}
         </div>
     </div>
@@ -51,8 +51,6 @@
                 <div class="card col--md4">
                     <p class="card__title body--large body--bold">Projects</p>
                     <div class="card__body">
-                        <p class="button button--text">Shell</p>
-                        <p class="button button--text">Lloyd's Register</p>
                         <p class="button button--text">Toyota</p>
                         <p class="button button--text">Emsurge</p>
                         {% for project in site.projects %}

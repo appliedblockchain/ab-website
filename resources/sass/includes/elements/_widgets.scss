@@ -64,6 +64,10 @@
 // —————————————————————————————————————————————————————————————————
 
 .newsletter {
+
+    @include responsive(max-width, $desktop-lg-max) {
+        margin-top: $integer-lg;
+    }
     
     &__button {
         margin-top: $integer;

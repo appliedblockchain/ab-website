@@ -63,6 +63,21 @@
     }
 }
 
+.block {
+
+    &.col {
+
+        &--lg6 {
+
+            & + .block {
+
+                @include responsive(max-width, $desktop-max) {
+                    margin-top: $integer-xxxl;
+                }
+            }
+        }
+    }
+}
 
 
 // —————————————————————————————————————————————————————————————————

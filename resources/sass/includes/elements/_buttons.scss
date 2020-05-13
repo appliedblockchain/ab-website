@@ -54,6 +54,30 @@
 	& + & {
 		margin-left: $integer-sm;
 	}
+
+	&__wrapper {
+		@include display-flex();
+		@include flex-wrap(wrap);
+		margin-bottom: -$integer-md;
+
+		.button {
+			margin-bottom: $integer-md;
+			margin-left: 0 !important;
+			margin-right: $integer-md;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		@include responsive(max-width, $mobile-max) {
+			@include flex-direction(column);
+
+			.button {
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 
@@ -229,8 +253,22 @@
 		&:before {
 			@include transform(translateX(140%));
 		}
+
 		.button__inner {
 			@include transform(translateX(180%));
+		}
+	}
+
+	// prevent animation on touch devices
+	&:focus,
+	&:active {
+
+		&:before {
+			@include transform(translateX(0));
+		}
+
+		.button__inner {
+			@include transform(translateX(0));
 		}
 	}
 }

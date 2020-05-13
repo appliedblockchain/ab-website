@@ -233,12 +233,11 @@ ul {
 // —————————————————————————————————————————————————————————————————
 
 .widget--news 			{ z-index: 9; }
+.anchor 				{ z-index: 9; }
 .cookie				 	{ z-index: 10; }
 .button--scroll-top 	{ z-index: 11; }
-.header 				{ z-index: 12; }
-.anchor 				{ z-index: 13; }
-.userlike 				{ z-index: 14 !important; }
-.modal 					{ z-index: 15; }
+.modal 					{ z-index: 20; }
+.header 				{ z-index: 100; }
 
 @for $i from 0 through 9 {
 	.z-index--#{$i} { z-index: $i; }

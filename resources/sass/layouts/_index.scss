@@ -4,18 +4,6 @@
 // INDEX
 // —————————————————————————————————————————————————————————————————
 
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-
-    @include responsive-mobile-devices() {
-        display: none;
-    }
-}
-
 #landing {
     @include display-flex();
     @include flex-direction(column);
@@ -53,14 +41,44 @@
             display: none;
         }
     }
+
+    .page__header,
+    .section__content,
+    .widget__bar {
+        pointer-events: none;
+    }
+
+    .button {
+        pointer-events: initial;
+    }
 }
 
-#featured-in {
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 
-    @include responsive(max-width, $mobile-max) {
+    @include responsive-mobile-devices() {
+        display: none;
+    }
+}
 
-        img {
-            width: 50%;
+#index {
+
+    &-intro {
+        background-size: 50%;
+        background-position: -20% 30%;
+    }
+    
+    &-featured-in {
+        
+        @include responsive(max-width, $mobile-max) {
+            
+            img {
+                width: 50%;
+            }
         }
     }
 }

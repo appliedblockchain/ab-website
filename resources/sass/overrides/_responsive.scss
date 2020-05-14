@@ -32,21 +32,22 @@
 	.page__header,
     .section,
 	.section--full .section__header,
-	#landing {
-		padding-right: 10vw;
-		padding-left: 10vw;
+	#landing,
+	#landing .page__header {
+		padding-right: $page/2;
+		padding-left: $page/2;
 	}
 
 	.section__content--2 .card:nth-child(1) {
-		padding-left: 10vw;
+		padding-left: $page/2;
     }
 	.section__content--2 .card:nth-child(2) {
-		padding-right: 10vw;
+		padding-right: $page/2;
     }
 
     .section--alt {
-        padding-right: 5vw;
-		padding-left: 5vw;
+        padding-right: $page/4;
+		padding-left: $page/4;
     }
 }
 
@@ -59,14 +60,15 @@
 	.section__content--2 .card:nth-child(1),
 	.section__content--2 .card:nth-child(2),
 	.tab--leadership .tab__item,
-	#landing {
-		padding-right: $page/2;
-		padding-left: $page/2;
+	#landing,
+	#landing .page__header {
+		padding-right: $page/3;
+		padding-left: $page/3;
 	}
 
 	.section--alt {
-        padding-right: $page/4;
-		padding-left: $page/4;
+        padding-right: $page/6;
+		padding-left: $page/6;
     }
 }
 
@@ -97,7 +99,8 @@
     .section--alt,
 	.section__content--2 .card:nth-child(1),
 	.section__content--2 .card:nth-child(2),
-	.tab--leadership .tab__item {
+	.tab--leadership .tab__item,
+	#landing .page__header {
 		padding-right: $integer-md;
 		padding-left: $integer-md;
 	}

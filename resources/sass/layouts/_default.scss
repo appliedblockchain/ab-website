@@ -20,9 +20,9 @@
 .timeline {
 
     &:before {
-        @include pseudo-element('', $integer-max+$integer-xxxl, auto, 0, 50%, 2px, 100%);
-        @include transform(translateX(-1px));
-        background-color: $medium-grey;
+        @include pseudo-element('', $integer-max+$integer-xxxl, auto, 0, 50%, $integer, 100%);
+        @include transform(translateX(-$integer/2));
+        background-color: $light-grey;
 
         @include responsive(max-width, $tablet-max) {
             display: none;

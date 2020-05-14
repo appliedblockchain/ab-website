@@ -1,5 +1,4 @@
-# media section
-# in home.html page
+# index.html
 
 media:
   - name: Private Equity Wire
@@ -24,21 +23,7 @@ media:
 
   - name: Fortune
 
-# values section
-# in about.html page
-
-values:
-  - url: direction
-    alt: Platform agnostic
-
-  - url: binoculars
-    alt: Future-proof
-
-  - url: shield
-    alt: Integrity
-
-# join section
-# in join.html page
+# join.html
 
 join:
   - url: node
@@ -53,8 +38,7 @@ join:
   - url: clock
     alt: Flexible working hours
 
-# include section
-# in mantle.html page
+# mantle.html
 
 mantle:
   - url: wallet
@@ -89,8 +73,7 @@ mantle:
     title: AD / LDAP
     alt: Directory services integration
 
-# values section
-# in node-hosting.html page
+# node-hosting.html
 
 node-hosting:
   - url: independant
@@ -105,28 +88,7 @@ node-hosting:
     title: A trusted brand used by global corporations as well as independent startups
     alt: Brand
 
-# solve section
-# in k0.html page
-
-k0-solve:
-  - url: white-keys
-    title: Security
-    body: More independent validators can validate a transaction without being privy to private transaction details
-
-  - url: white-privacy
-    title: Privacy
-    body: Sender, the recipient, amounts and other transaction details remain hidden from validators
-
-  - url: white-anonimity
-    title: Provenance
-    body: Asset provenance is secured by the entire group of validators, and not just a small subset for each transaction
-
-  - url: white-scale
-    title: Interoperability
-    body: Private asset records that are verifiable and compatible with existing enterprise blockchain smart contract platforms
-
-# properties section
-# in applied-proofs.html
+# applied-proofs.html
 
 applied-proofs:
   - url: primary-keys
@@ -145,8 +107,7 @@ applied-proofs:
     title: Reduced threat of data leakage
     alt: Reduced threat of data leakage
 
-# properties section
-# in applied-identity.html
+# applied-identity.html
 
 applied-identity:
   - url: white-keys

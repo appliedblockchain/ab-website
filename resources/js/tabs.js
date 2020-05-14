@@ -50,17 +50,6 @@ $(".tab--leadership .tab__nav a").click(function(event) {
 	$(tab).fadeIn(400);
 });
 
-// contact
-
-$(".tab--contact .tab__nav a").click(function(event) {
-	event.preventDefault();
-	$(this).removeClass("button--primary-lighten");
-	$(this).siblings().addClass("button--primary-lighten");
-	var tab = $(this).attr("href");
-	$(".tab--contact .tab__item").not(tab).css("display", "none");
-	$(tab).fadeIn(400);
-});
-
 
 
 // —————————————————————————————————————————————————————————————————

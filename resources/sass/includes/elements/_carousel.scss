@@ -66,19 +66,37 @@
 
         .carousel {
 
+            &__item {
+                padding: $integer-xxl;
+
+                @include responsive(max-width, $desktop-max) {
+                    padding: $integer-xl;
+                }
+
+                @include responsive(max-width, $tablet-max) {
+                    padding: $integer-lg;
+                }
+            }
+
             &__image {
                 @include align-self(flex-start);
                 @include border-radius(50%);
                 @include flex-shrink(0);
                 overflow: hidden;
                 position: relative;
-                margin-right: $integer-xxxl;
+                margin-right: $integer-xl;
                 width: $integer-max !important;
                 height: $integer-max;
 
-                @include responsive(max-width, $desktop-max) {
+                @include responsive(max-width, $desktop-lg-max) {
                     width: $integer-xxxxl+$integer-xl !important;
                     height: $integer-xxxxl+$integer-xl;
+                    margin-bottom: $integer-lg;
+                }
+
+                @include responsive(max-width, $desktop-max) {
+                    width: $integer-xxxxl !important;
+                    height: $integer-xxxxl;
                     margin-bottom: $integer-lg;
                 }
 
@@ -91,15 +109,11 @@
         .owl {
 
             &-dots {
-                @include calc(bottom, -($integer-xxl+$integer*1.5));
                 position: absolute;
+                bottom: -$integer*1.5;
                 margin-top: 0;
                 width: 100%;
                 text-align: center;
-
-                @include responsive(max-width, $tablet-max) {
-                    @include calc(bottom, -($integer-lg+$integer*1.5));
-                }
             }
         }
     }

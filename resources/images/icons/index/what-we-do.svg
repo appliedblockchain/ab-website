@@ -1,47 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="356px" height="355px" viewBox="0 0 356 355" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 4</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="0.924173985 0.306 83.7368013 0.306 83.7368013 48.0748038 0.924173985 48.0748038"></polygon>
-        <polygon id="path-3" points="0.748598941 0.60656576 45.608 0.60656576 45.608 72 0.748598941 72"></polygon>
-    </defs>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="HOME-+-Dark-Gradient--Copy" transform="translate(-224.000000, -1058.000000)">
-            <g id="Group-4" transform="translate(224.000000, 1058.000000)">
-                <g id="Group-25" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M0.872,185.186 C0.764,182.645 0.708,180.091 0.708,177.523 C0.708,80.027 80.027,0.708 177.523,0.708" id="Stroke-1" stroke="#64EFFF" stroke-width="1.417"></path>
-                    <path d="M223.4638,6.7602 C237.2868,10.4822 250.4448,15.8432 262.7168,22.6192" id="Stroke-3" stroke="#64EFFF" stroke-width="1.417"></path>
-                    <path d="M266.0322,24.4965 C309.6362,49.8135 341.4862,93.2305 351.2242,144.3875" id="Stroke-5" stroke="#007BFF" stroke-width="1.417"></path>
-                    <path d="M354.3281,179.4311 C353.3941,267.2521 288.1111,339.9271 203.4951,352.4361" id="Stroke-7" stroke="#64EFFF" stroke-width="1.417"></path>
-                    <path d="M165.8867,353.9599 C91.4237,349.0989 29.3877,297.9339 8.3647,229.0519" id="Stroke-9" stroke="#FF6F00" stroke-width="1.417"></path>
-                    <path d="M170.332,35.8671 C172.714,35.7471 175.112,35.6871 177.523,35.6871 C255.732,35.6871 319.359,99.3151 319.359,177.5231 C319.359,187.0611 318.413,196.3811 316.61,205.3951" id="Stroke-11" stroke="#FF6F00" stroke-width="2.833"></path>
-                    <path d="M301.999,245.4716 C283.91,278.4776 253.075,303.5476 216.163,314.0116" id="Stroke-13" stroke="#007BFF" stroke-width="2.833"></path>
-                    <path d="M195.247,318.2582 C189.439,318.9852 183.524,319.3602 177.523,319.3602 C138.994,319.3602 104.004,303.9182 78.417,278.8982" id="Stroke-15" stroke="#007BFF" stroke-width="2.833"></path>
-                    <path d="M48.3193,236.0253 C40.2073,218.1793 35.6863,198.3693 35.6863,177.5233 C35.6863,132.0463 57.2013,91.4993 90.5863,65.5253" id="Stroke-17" stroke="#007BFF" stroke-width="2.833"></path>
-                    <path d="M80.3662,123.476 C99.3912,89.411 135.8122,66.326 177.5232,66.326 C209.4742,66.326 238.3212,79.871 258.6232,101.522" id="Stroke-19" stroke="#64EFFF" stroke-width="8.499"></path>
-                    <path d="M275.4169,124.8168 C283.9009,140.5108 288.7209,158.4648 288.7209,177.5238 C288.7209,238.8378 238.8379,288.7208 177.5229,288.7208 C160.2039,288.7208 143.7979,284.7408 129.1689,277.6478" id="Stroke-21" stroke="#64EFFF" stroke-width="8.499"></path>
-                    <path d="M112.8027,267.8974 C84.6787,247.6994 66.3257,214.7144 66.3257,177.5234 C66.3257,171.4934 66.8087,165.5734 67.7367,159.8004" id="Stroke-23" stroke="#64EFFF" stroke-width="8.499"></path>
-                </g>
-                <g id="Group-9" transform="translate(129.000000, 125.000000)">
-                    <path d="M5.1325,33.6778 C2.8695,32.3928 0.0355,33.9958 0.0325,36.5668 L0.0005,75.8648 C-0.0035,79.4368 1.9475,82.7608 5.0895,84.5498 L39.6845,104.2278 C41.9475,105.5178 44.7815,103.9098 44.7835,101.3378 L44.8175,62.0408 C44.8205,58.4688 42.8745,55.1448 39.7275,53.3558 L5.1325,33.6778 Z" id="Fill-1" fill="#007BFF"></path>
-                    <g id="Group-5" transform="translate(6.000000, 0.694000)">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <g id="Clip-4"></g>
-                        <path d="M82.0363,27.1198 C84.3013,25.8338 84.3043,22.6178 82.0413,21.3328 L47.4463,1.6498 C44.3053,-0.1392 40.4033,-0.1422 37.2523,1.6408 L2.6243,21.2658 C0.3593,22.5468 0.3573,25.7628 2.6193,27.0528 L37.2143,46.7308 C40.3563,48.5198 44.2583,48.5228 47.4093,46.7398 L82.0363,27.1198 Z" id="Fill-3" fill="#FFFFFF" mask="url(#mask-2)"></path>
-                    </g>
-                    <g id="Group-8" transform="translate(51.000000, 32.694000)">
-                        <mask id="mask-4" fill="white">
-                            <use xlink:href="#path-3"></use>
-                        </mask>
-                        <g id="Clip-7"></g>
-                        <path d="M45.6086,3.9543 C45.6106,1.3833 42.7786,-0.2247 40.5136,1.0563 L5.8856,20.6763 C2.7356,22.4593 0.7846,25.7803 0.7816,29.3523 L0.7486,68.6503 C0.7466,71.2213 3.5786,72.8343 5.8436,71.5483 L40.4706,51.9283 C43.6156,50.1453 45.5726,46.8233 45.5756,43.2523 L45.6086,3.9543 Z" id="Fill-6" fill="#64EFFF" mask="url(#mask-4)"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 356 355" style="enable-background:new 0 0 356 355;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;stroke:#004A99;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#66B0FF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#66B0FF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st5{fill:none;stroke:#004A99;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st6{fill:none;stroke:#004A99;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;}
+	.st7{fill:none;stroke:#66B0FF;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#66B0FF;}
+	.st10{filter:url(#Adobe_OpacityMaskFilter);}
+	.st11{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st12{mask:url(#mask-2_1_);fill:#FFFFFF;}
+	.st13{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st14{mask:url(#mask-4_1_);fill-rule:evenodd;clip-rule:evenodd;fill:#004A99;}
+</style>
+<desc>Created with Sketch.</desc>
+<path id="Stroke-1" class="st0" d="M0.9,185.2c-0.1-2.5-0.2-5.1-0.2-7.7C0.7,80,80,0.7,177.5,0.7"/>
+<path id="Stroke-3" class="st1" d="M223.5,6.8c13.8,3.7,27,9.1,39.3,15.9"/>
+<path id="Stroke-5" class="st2" d="M266,24.5c43.6,25.3,75.5,68.7,85.2,119.9"/>
+<path id="Stroke-7" class="st1" d="M354.3,179.4c-0.9,87.8-66.2,160.5-150.8,173"/>
+<path id="Stroke-9" class="st2" d="M165.9,354c-74.5-4.9-136.5-56-157.5-124.9"/>
+<path id="Stroke-11" class="st3" d="M170.3,35.9c2.4-0.1,4.8-0.2,7.2-0.2c78.2,0,141.8,63.6,141.8,141.8c0,9.5-0.9,18.9-2.7,27.9"/>
+<path id="Stroke-13" class="st4" d="M302,245.5c-18.1,33-48.9,58.1-85.8,68.5"/>
+<path id="Stroke-15" class="st5" d="M195.2,318.3c-5.8,0.7-11.7,1.1-17.7,1.1c-38.5,0-73.5-15.4-99.1-40.5"/>
+<path id="Stroke-17" class="st3" d="M48.3,236c-8.1-17.8-12.6-37.7-12.6-58.5c0-45.5,21.5-86,54.9-112"/>
+<path id="Stroke-19" class="st6" d="M80.4,123.5c19-34.1,55.4-57.2,97.2-57.2c32,0,60.8,13.5,81.1,35.2"/>
+<path id="Stroke-21" class="st7" d="M275.4,124.8c8.5,15.7,13.3,33.6,13.3,52.7c0,61.3-49.9,111.2-111.2,111.2
+	c-17.3,0-33.7-4-48.4-11.1"/>
+<path id="Stroke-23" class="st8" d="M112.8,267.9c-28.1-20.2-46.5-53.2-46.5-90.4c0-6,0.5-12,1.4-17.7"/>
+<g id="square">
+	<path id="square_x5F_left" class="st9" d="M134.1,158.7c-2.3-1.3-5.1,0.3-5.1,2.9l0,39.3c0,3.6,1.9,6.9,5.1,8.7l34.6,19.7
+		c2.3,1.3,5.1-0.3,5.1-2.9l0-39.3c0-3.6-1.9-6.9-5.1-8.7L134.1,158.7z"/>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="135.9" y="126" width="82.8" height="47.8">
+			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="135.9" y="126" width="82.8" height="47.8" id="mask-2_1_">
+		<g class="st10">
+			<polygon id="path-1_1_" class="st11" points="135.9,126 218.7,126 218.7,173.8 135.9,173.8 			"/>
+		</g>
+	</mask>
+	<path id="square_x5F_top" class="st12" d="M217,152.8c2.3-1.3,2.3-4.5,0-5.8l-34.6-19.7c-3.1-1.8-7-1.8-10.2,0L137.6,147
+		c-2.3,1.3-2.3,4.5,0,5.8l34.6,19.7c3.1,1.8,7,1.8,10.2,0L217,152.8z"/>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="180.7" y="158.3" width="44.9" height="71.4">
+			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="180.7" y="158.3" width="44.9" height="71.4" id="mask-4_1_">
+		<g class="st13">
+			<polygon id="path-3_1_" class="st11" points="180.7,158.3 225.6,158.3 225.6,229.7 180.7,229.7 			"/>
+		</g>
+	</mask>
+	<path id="square_x5F_right" class="st14" d="M225.6,161.6c0-2.6-2.8-4.2-5.1-2.9l-34.6,19.6c-3.2,1.8-5.1,5.1-5.1,8.7l0,39.3
+		c0,2.6,2.8,4.2,5.1,2.9l34.6-19.6c3.1-1.8,5.1-5.1,5.1-8.7L225.6,161.6z"/>
+</g>
 </svg>

@@ -69,13 +69,11 @@ background_color: primary
         title = 'Investors'
     %}
     <div class="section__content body--black z-index--2">
-        <div class="card card--lg background--shadow testimonials">
-            <div class="card__inner">
-                {% include elements/carousel.html 
-                    type = 'testimonials'
-                    variant = 'testimonials_investors' 
-                %}
-            </div>
+        <div class="card background--shadow testimonials">
+            {% include elements/carousel.html 
+                type = 'testimonials'
+                variant = 'testimonials_investors' 
+            %}
         </div>
     </div>
 </section>

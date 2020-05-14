@@ -4,7 +4,15 @@ layout: compress
 
 {% include containers/site/header.html %}
 
+<script src="{{ site.url }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
+<script>
+    particlesJS.load('particles-js', 'resources/vendor/particles/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
+
 <div id="landing" class="section section--alt section--dark background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);">
+    <div id="particles-js"></div>
     {% include containers/page/title.html
         headline = site.description
     %}
@@ -18,7 +26,7 @@ layout: compress
                             <p class="card__title body--bold">Sign up to our newsletter</p>
                             <a href="#footer" title="Newsletter anchor" class="button button--small button--icon button--highlight button--animate fas fa-plus">
                                 <i class="button__inner fas fa-newspaper"></i>
-                            </a>                
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -52,46 +60,43 @@ layout: compress
     </div>
 </div>
 
-<section id="index-intro" class="section section--primary">
-    <div class="row">
-        <div class="col--lg5 body--left">
-            {% include containers/sections/header.html
-                title = 'Using advanced cryptography to solve real world business problems'
-            %}
-        </div>
-        <div class="coloffset--lg1 col--lg6 body--left">
-            <p class="block__title body--large">Our team of experts advise, build and deploy full-stack, secure, privacy-preserving applications that protect individual and company data, while maximising business collaboration. Our customers range from the largest global enterprises, to the most innovative early stage startups in financial services, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.</p>
-            <div class="block__content">
-                <div class="button__wrapper">
-                    <a href="{{ site.url }}/about" class="ga-button-about button button--white button--animate fa fa-address-card">
-                        <p class="button__inner">About</p>
-                    </a>
-                    <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--animate fa fa-cogs">
-                        <p class="button__inner">Services</p>
-                    </a>
-                    <a href="{{ site.url }}/products" class="ga-button-services button button--primary-lighten button--animate fa fa-box">
-                        <p class="button__inner">Products</p>
-                    </a>
+<section id="index-intro" class="section section--primary background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/what-we-do.svg);">
+    <div class="section__content">
+        <div class="row">
+            <div class="col--lg5 body--left section__title">
+                {% include containers/sections/header.html
+                    title = 'Using advanced cryptography to solve real world business problems'
+                %}
+            </div>
+            <div class="coloffset--lg1 col--lg6 body--left section__body">
+                <p class="block__title body--large">Our team of experts advise, build and deploy full-stack, secure, privacy-preserving applications that protect individual and company data, while maximising business collaboration. Our customers range from the largest global enterprises, to the most innovative early stage startups in financial services, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.</p>
+                <div class="block__content">
+                    <div class="button__wrapper">
+                        <a href="{{ site.url }}/about" class="ga-button-about button button--white button--animate fa fa-address-card">
+                            <p class="button__inner">About</p>
+                        </a>
+                        <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--animate fa fa-cogs">
+                            <p class="button__inner">Services</p>
+                        </a>
+                        <a href="{{ site.url }}/products" class="ga-button-services button button--primary-lighten button--animate fa fa-box">
+                            <p class="button__inner">Products</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-<section class="section section--primary">
     <div class="section__content body--black z-index--2">
-        <div class="card card--lg background--shadow testimonials">
-            <div class="card__inner">
-                {% include elements/carousel.html 
-                    type = 'testimonials'
-                    variant = 'testimonials_clients' 
-                %}
-            </div>
+        <div class="card background--shadow testimonials">
+            {% include elements/carousel.html 
+                type = 'testimonials'
+                variant = 'testimonials_clients' 
+            %}
         </div>
     </div>
 </section>
 
-<section class="section section--white section--overlap" id="featured-in">
+<section id="index-featured-in" class="section section--white section--overlap">
     {% include containers/sections/header.html
         title = 'Featured In'
     %}

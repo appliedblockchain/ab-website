@@ -5,18 +5,112 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 // SCRIPT
 // —————————————————————————————————————————————————————————————————
-// PARALLAX SCROLLING
-// NEWS WIDGET ANIMATION
-// MENU SCROLL ANIMATION
-// MENU OPEN ANIMATION
-// BACK TO TOP
-// COOKIE BAR ACCEPT
+// modals
+// join
+// form
+// buttons
+// accordions
+// parallax scrolling
+// news widget animation
+// header scroll animation
+// cookie bar accept
 // —————————————————————————————————————————————————————————————————
 
 
 
 // —————————————————————————————————————————————————————————————————
-// PARALLAX BACKGROUND
+// modals
+// —————————————————————————————————————————————————————————————————
+
+// prevent page scroll when modal opened
+
+// open
+$(".js-button-modal").click(function(event) {
+	$('html, body').addClass("js-freeze");
+});
+
+// close
+$(".modal__close, .modal__button").click(function(event) {
+	$('html, body').removeClass("js-freeze");
+});
+
+
+
+// —————————————————————————————————————————————————————————————————
+// join
+// —————————————————————————————————————————————————————————————————
+
+// change background image
+
+$('.js-button-london').on('click', function() {
+    $('.join__background--porto').removeClass('js-show').fadeIn();
+});
+
+$('.js-button-porto').on('click', function() {
+    $('.join__background--porto').addClass('js-show').fadeIn();
+});
+
+
+
+// —————————————————————————————————————————————————————————————————
+// form
+// —————————————————————————————————————————————————————————————————
+
+// change style on focus
+
+$(".form__input").focus(function() {
+	$(this).closest(".form__group").addClass('focused');
+});
+$(".form__input").focusout(function() {
+	$(this).closest(".form__group").removeClass('focused');
+});
+
+
+
+// —————————————————————————————————————————————————————————————————
+// buttons
+// —————————————————————————————————————————————————————————————————
+
+// menu button
+
+$(".button--menu").click(function(event) {
+	$('.button--menu').toggleClass("button--menu--open");
+	$('.header').toggleClass('js-opened');
+	$('body').toggleClass('js-freeze');
+});
+
+
+
+// —————————————————————————————————————————————————————————————————
+// accordions
+// —————————————————————————————————————————————————————————————————
+
+$('.accordion .accordion__header').on('click', function() {
+
+	// variables
+	var next = $(this).next('.accordion__content');
+
+	// trigger accordion toggle
+	if( ! $(event.target).is('.button--primary') ){
+		// slide
+		$('.accordion__content').not(next).each(function() {
+			$(this).slideUp();
+		});
+		next.slideToggle();
+		// icon animation
+		$('.accordion__header.js-accordion-active').not(this).removeClass('js-accordion-active');
+		$(this).toggleClass('js-accordion-active');
+
+	// prevent trigger when click on apply button
+	} else {
+	}
+
+});
+
+
+
+// —————————————————————————————————————————————————————————————————
+// parallax background
 // —————————————————————————————————————————————————————————————————
 
 window.addEventListener('scroll', doParallax);
@@ -28,23 +122,8 @@ function doParallax(){
 
 
 // —————————————————————————————————————————————————————————————————
-// NEWS WIDGET ANIMATION
+// news widget animation
 // —————————————————————————————————————————————————————————————————
-
-// if ($(window).width() > 767) {   
-// 	setTimeout(function() {
-// 		$('.widget--news-1').animate({
-// 			right: '0'
-// 		}, 800, 'swing');
-// 	}, 1200);
-// 	setTimeout(function() {
-// 		$('.widget--news-2').animate({
-// 			right: '0'
-// 		}, 800, 'swing');
-// 	}, 1400);
-// }
-// else {  
-// }; 
 
 if ($(window).width() > 575) {   
 	setTimeout(function() {
@@ -57,8 +136,9 @@ else {
 }; 
 
 
+
 // —————————————————————————————————————————————————————————————————
-// MENU SCROLL ANIMATION
+// header scroll animation
 // —————————————————————————————————————————————————————————————————
 
 $(window).scroll(function() { //the scrolled element
@@ -73,39 +153,7 @@ $(window).scroll(function() { //the scrolled element
 
 
 // —————————————————————————————————————————————————————————————————
-// MENU OPEN ANIMATION
-// —————————————————————————————————————————————————————————————————
-
-$('.button--menu').click(function(){
-	$('.header').toggleClass('js-opened');
-	$('body').toggleClass('js-freeze');
-});
-
-
-
-// —————————————————————————————————————————————————————————————————
-// BACK TO TOP
-// —————————————————————————————————————————————————————————————————
-
-var btn = $('.button--scroll-top');
-
-$(window).scroll(function() {
-	if ($(window).scrollTop() > 600) {
-		btn.addClass('js-show');
-	} else {
-		btn.removeClass('js-show');
-	}
-});
-
-btn.on('click', function(e) {
-	e.preventDefault();
-	$('html, body').animate({scrollTop:0}, '400');
-});
-
-
-
-// —————————————————————————————————————————————————————————————————
-// COOKIE BAR ACCEPT
+// cookie bar accept
 // —————————————————————————————————————————————————————————————————
 
 var cookieKey = "__applied_blockchain_cookie_banner"

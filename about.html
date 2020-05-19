@@ -2,18 +2,17 @@
 layout: default
 title: About
 subtitle: We are a team of engineers, designers, and advisors with unique expertise in applying advances in cryptography to solve our client’s business problems
-background_image: true
-background_color: primary
+background_color: white
 ---
 
-<section class="section section--primary section--full">
+<section id="about-intro" class="section section--white section--full">
     <div class="section__content section__content--2">
         <div class="card card--lg">
             <div class="card__inner">
                 <p class="card__title subtitle">We Solve Problems</p>
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon" class="card__image">
                 <p class="card__body body">At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced cryptographic technology to build applications that maximise data privacy and security.</p>
-                <a href="{{ site.url }}/services" class="body ga-button-services button button--primary-darken button--animate fas fa-user-cogs">
+                <a href="{{ site.url }}/services" class="card__button ga-button-services button button--primary button--animate fas fa-cogs">
                     <p class="button__inner">Services</p>
                 </a>
             </div>
@@ -23,7 +22,7 @@ background_color: primary
                 <p class="card__title subtitle">We Build Products</p>
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon" class="card__image">
                 <p class="card__body body">We build products to solve a problem once for our many clients. We focus on advanced cryptography to enable businesses to do more with each other, while sharing less data.</p>
-                <a href="{{ site.url }}/products" class="body ga-button-products button button--primary-lighten button--animate fas fa-box">
+                <a href="{{ site.url }}/products" class="card__button ga-button-products button button--primary button--animate fas fa-box">
                     <p class="button__inner">Products</p>
                 </a>
             </div>
@@ -68,8 +67,8 @@ background_color: primary
     {% include containers/sections/header.html
         title = 'Investors'
     %}
-    <div class="section__content body--black z-index--2">
-        <div class="card background--shadow testimonials">
+    <div class="section__content">
+        <div class="card testimonials">
             {% include elements/carousel.html 
                 type = 'testimonials'
                 variant = 'testimonials_investors' 
@@ -78,7 +77,7 @@ background_color: primary
     </div>
 </section>
 
-<section class="section section--dark section--overlap section--full">
+<section class="section section--white section--full">
     {% include containers/sections/header.html
         title = 'Leadership team'
         body = 'Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
@@ -109,9 +108,9 @@ background_color: primary
     </div>
 </section>
 
-<section id="about-team" class="section section--dark section--full background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
+<section id="about-team" class="section section--white section--full background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
     <div class="section__content">
-        <a href="{{ site.url }}/join" class="ga-button-join button button--large button--primary-lighten button--animate fas fa-user-plus">
+        <a href="{{ site.url }}/join" class="ga-button-join button button--large button--white button--animate fas fa-user-plus">
             <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
         </a>
     </div>

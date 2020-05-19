@@ -20,8 +20,8 @@
 	@include flex-direction(column);
 	position: relative;
 	padding-left: $page;
-	padding-top: $integer-xxxxl;
-	padding-bottom: $integer-xxxxl;
+	padding-top: $integer-xxxl;
+	padding-bottom: $integer-xxxl;
 	padding-right: $page;
 	text-align: center;
 
@@ -35,7 +35,7 @@
 		padding-left: $page;
 
 		& + .section__content {
-			margin-top: $integer-xxxl;
+			margin-top: $integer-xxl;
 		}
 	}
 
@@ -68,7 +68,7 @@
 		@include flex-wrap(wrap);
 
 		& + & {
-			margin-top: $integer-xxxxl;
+			margin-top: $integer-xxl;
 		}
 	}
 }
@@ -82,7 +82,7 @@
 .section {
 
 	&--header {
-		padding-top: $integer-xxxl+$integer-xxxxl;
+		padding-top: $integer-xxxl+$integer-xxxl;
 
 		#post & {
 			text-align: center;
@@ -96,7 +96,7 @@
 		.section {
 
 			&__header {
-				padding-top: $integer-xxxxl;
+				padding-top: $integer-xxxl;
 				padding-right: $page*2;			
 				padding-left: $page*2;
 			}
@@ -105,7 +105,7 @@
 		&.section--overlap {
 
 			.section__header {
-				padding-top: $integer-xxxxl*2;
+				padding-top: $integer-xxxl*2;
 			}
 		}
 	}
@@ -116,8 +116,8 @@
 	}
 	
 	&--overlap {
-		margin-top: -$integer-xxxxl*2;
-		padding-top: $integer-xxxxl*2;
+		margin-top: -$integer-xxxl*2;
+		padding-top: $integer-xxxl*2;
 	}
 
 	&__content {
@@ -133,7 +133,7 @@
 				
 				&__inner { 
 					padding-top: 0;
-					padding-bottom: $integer-xxxxl;
+					padding-bottom: $integer-xxxl;
 					position: relative;
 				}
 
@@ -153,7 +153,7 @@
 					padding-left: $page;
 
 					&:before {
-						@include background-image(linear-gradient(to bottom, $primary, rgba($primary-lighten, 0.8)));
+						@include background-image(linear-gradient(to bottom, $light-grey, rgba($light-grey, 0.6)));
 					}
 
 					.card__inner {
@@ -169,7 +169,7 @@
 					padding-right: $page;
 
 					&:before {
-						@include background-image(linear-gradient(to bottom, $primary, rgba($primary-darken, 0.8)));
+						@include background-image(linear-gradient(to bottom, $light-grey, rgba($light-grey, 0.6)));
 					}
 
 					.card__inner {
@@ -270,13 +270,13 @@
 #join {
 
 	.section--overlap {
-		margin-top: -$integer-xxxxl*3;
+		margin-top: -$integer-xxxl*4;
 	}
 	
 	&-header {
 		
 		&.section {
-			padding-bottom: $integer-xxxxl+$integer-xxxl;
+			padding-bottom: $integer-xxxl*3;
 		}
 	}
 }

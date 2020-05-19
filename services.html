@@ -3,14 +3,15 @@ layout: default
 title: Services
 subtitle: We bring innovative solutions to problems businesses face today
 body: We work with enterprises and startups across all verticals. We advise, design and develop solutions best suited to your needs, keeping solutions simple, and only using advanced technologies such as privacy-preserving technologies and blockchains when they’re absolutely required. We work across the entire development stack. We work with you from the initial seed of your idea and continue to support you as you move into production and beyond
-background_color: dark
+background_color: white
 ---
 
-<section class="section section--alt section--dark">
+<section class="section section--alt section--white">
     <div class="section__content">
-        <div class="card block___title">
+        <div class="card block__title">
             {% include elements/carousel.html 
                 variant = 'clients' 
+                colour = 'color'
             %}
         </div>
         <div class="block__content">
@@ -21,7 +22,7 @@ background_color: dark
     </div>
 </section>
 
-<section class="section section--alt section--dark">
+<section class="section section--alt section--white">
     {% include containers/sections/header.html
         title = 'Our solutions'
     %}
@@ -43,7 +44,7 @@ background_color: dark
     </div>
 </section>
 
-<section id="services-stack" class="section section--white section--overlap background--contain" style="background-image: url({{ site.url }}{{ site.imageurl}}/graphics/stack.png);">
+<section id="services-stack" class="section section--grey section--overlap background--contain" style="background-image: url({{ site.url }}{{ site.imageurl}}/graphics/stack.png);">
     <div class="section__content">
         <div class="card__wrapper">
             <div class="row">
@@ -62,7 +63,7 @@ background_color: dark
     </div>
 </section>
 
-<section class="section section--white">
+<section class="section section--grey">
     {% include containers/sections/header.html
         title = 'Our Approach'
         subtitle = 'Building your Project'
@@ -95,7 +96,7 @@ background_color: dark
     </div>
 </section>
 
-<section class="section section--grey section--alt section--overlap">
+<section class="section section--white section--alt section--overlap">
     {% include containers/sections/header.html
         title = 'Technology'
     %}

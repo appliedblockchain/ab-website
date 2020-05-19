@@ -35,7 +35,7 @@
 .owl {
 
     &-dots {
-        margin-top: $integer-xl;
+        margin-top: $integer-md;
     }
 
     &-dot {
@@ -67,7 +67,6 @@
         .carousel {
 
             &__item {
-                padding: $integer-xxl;
 
                 @include responsive(max-width, $desktop-max) {
                     padding: $integer-xl;
@@ -103,17 +102,6 @@
                 @include responsive(max-width, $tablet-max) {
                     display: none !important;
                 }
-            }
-        }
-
-        .owl {
-
-            &-dots {
-                position: absolute;
-                bottom: -$integer*1.5;
-                margin-top: 0;
-                width: 100%;
-                text-align: center;
             }
         }
     }

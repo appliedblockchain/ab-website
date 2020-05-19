@@ -8,7 +8,7 @@ background_color: white
 ---
 
 <section class="section section--white">
-    <div class="section__content">
+    <div class="section__content z-index--2">
         <div class="form form--pipedrive background--shadow">
             <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/273256c741bb877073d9fe9c923f1c942026773">
                 <script src="https://cdn.eu-central-1.pipedriveassets.com/web-form-assets/webforms.min.js"></script>
@@ -17,34 +17,24 @@ background_color: white
     </div>
 </section>
 
-<section class="section section--primary section--full">
+<section class="section section--grey section--overlap section--full">
     {% include containers/sections/header.html
         title = 'We are headquartered in London Bridge, and have offices in Porto'
     %}
     <div class="section__content section__content--2">
+        {% for office in site.contact %}
         <div class="card card--lg background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
             <div class="card__inner">
                 <div class="card__content">
-                    <p class="card__title lead">{{ site.address-london }}</p>
+                    <p class="card__title body--large">{{ office.address }}</p>
                 </div>
                 <div class="card__actions">
-                    <a href="{{ site.map-london }}" target="_blank" class="card__actions button button--primary-darken button--animate fas fa-directions">
+                    <a href="{{ office.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
                         <p class="button__inner">Get directions</p>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="card card--lg background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
-            <div class="card__inner">
-                <div class="card__content">
-                    <p class="card__title lead">{{ site.address-porto }}</p>
-                </div>
-                <div class="card__actions">
-                    <a href="{{ site.map-porto }}" target="_blank" class="card__actions button button--primary-lighten button--animate fas fa-directions">
-                        <p class="button__inner">Get directions</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </section>

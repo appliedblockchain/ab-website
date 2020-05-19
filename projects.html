@@ -2,12 +2,10 @@
 layout: default
 title: Projects
 subtitle: We develop distributed, privacy preserving solutions for startups and enterprises alike
-background_color: dark
+background_color: white
 ---
 
-{% if site.projects.size > 0 %}
-
-<section class="section section--dark">
+<section class="section section--white ">
     <div class="section__content">
         {% for project in site.projects %}
         {% if project.tag contains 'featured' %}
@@ -16,7 +14,7 @@ background_color: dark
                 <img src="{{ site.url }}{{ site.imageurl }}/carousel/clients/{{ project.slug }}.png" alt="{{ project.title }} logo">
             </div>
             <div class="card__inner">
-                <div class="card__content">
+                <div class="card__content body--white">
                     <p class="card__label label">{{ project.industry }}</p>
                     <h2 class="card__title title body--white">
                         <a href="{{ project.url }}">{{ project.title }}</a>
@@ -28,7 +26,7 @@ background_color: dark
                         <span>{{ project.summary }}</span>
                     </p>
                     <div class="card__actions">
-                        <a href="{{ project.url }}" class="button button--secondary button--small button--animate fa fa-eye">
+                        <a href="{{ project.url }}" class="button button--white button--small button--animate fa fa-eye">
                             <p class="button__inner">View project</p>
                         </a>
                     </div>
@@ -40,7 +38,7 @@ background_color: dark
     </div>
 </section>
 
-<section class="section section--alt section--dark">
+<section class="section section--alt section--white">
     <div class="grid row card__wrapper">
         {% for project in site.projects %}
         {% assign project = site.projects | sort: 'order' %}
@@ -53,7 +51,7 @@ background_color: dark
                         <h2 class="card__title subtitle">
                             <a href="{{ project.url }}">{{ project.title }}</a>
                         </h2>
-                        <p class="card__subtitle lead body--white">
+                        <p class="card__subtitle lead">
                             <a href="{{ project.url }}">{{ project.subtitle }}</a>
                         </p>
                         <p class="card__body">
@@ -61,7 +59,7 @@ background_color: dark
                         </p>
                     </div>
                     <div class="card__actions">
-                        <a href="{{ project.url }}" class="button button--secondary button--small button--animate fa fa-eye">
+                        <a href="{{ project.url }}" class="button button--primary button--small button--animate fa fa-eye">
                             <p class="button__inner">View project</p>
                         </a>
                     </div>
@@ -72,13 +70,3 @@ background_color: dark
         {% endfor %}
     </div>
 </section>
-
-{% else %}
-
-<section class="section section--dark">
-    {% include containers/sections/header.html
-        title = 'There are no project at the moment. Come back soon!'
-    %}
-</section>
-
-{% endif %}

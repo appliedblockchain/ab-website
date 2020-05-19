@@ -10,6 +10,7 @@
 // animate
 // close
 // menu
+// overrides
 // —————————————————————————————————————————————————————————————————
 
 
@@ -220,7 +221,7 @@
 
 	'black' 		$black 			$white,
 	'grey' 			$medium-grey 	$black,
-	'white' 		$white 			$black,
+	'white' 		$white 			$primary,
 
 	'facebook' 		$facebook 		$white,
 	'github' 		$github 		$white,
@@ -380,6 +381,25 @@
 
 		.button__inner {
 			opacity: 0;
+		}
+	}
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// overrides
+// —————————————————————————————————————————————————————————————————
+
+#faq,
+#join {
+
+	.accordion {
+
+		.button--white {
+			height: auto;
+			width: auto;
+			margin-left: $integer-md;
 		}
 	}
 }

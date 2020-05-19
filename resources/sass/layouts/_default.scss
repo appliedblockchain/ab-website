@@ -20,7 +20,7 @@
 .timeline {
 
     &:before {
-        @include pseudo-element('', $integer-max+$integer-xxxl, auto, 0, 50%, $integer, 100%);
+        @include pseudo-element('', $integer-xxxxl, auto, 0, 50%, $integer, 100%);
         @include transform(translateX(-$integer/2));
         background-color: $light-grey;
 
@@ -143,13 +143,22 @@
     }
 }
 
-#about-team {
-    @include justify-content(center);
-    height: 75vh;
+#about {
 
-    &:before {
-        @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-        background-color: rgba($primary, 0.8);
+    &-intro {
+        .card:before {
+            content: none;
+        }
+    }
+    
+    &-team {
+        @include justify-content(center);
+        height: 75vh;
+
+        &:before {
+            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+            background-color: rgba($primary, 0.8);
+        }
     }
 }
 

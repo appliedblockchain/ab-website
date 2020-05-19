@@ -134,6 +134,10 @@
         & + .card__meta {
             margin-top: $integer-md;
         }
+
+        & + .card__button {
+            margin-top: $integer-lg;
+        }
     }
 
     &__meta {
@@ -454,6 +458,10 @@
         & + .card {
             border-top: $border-sm $medium-grey;
         }
+
+        &__actions {
+            @include display-flex();
+        }
     }
 }
 
@@ -530,7 +538,7 @@
             @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
             @include transition(background-color $transition);
             will-change: background-color;
-            background-color: rgba($dark, 0.7);
+            background-color: rgba($white, 0.9);
         }
 
         &--lg {
@@ -605,7 +613,7 @@
         &:hover {
             
             &:before {
-                background-color: $dark;
+                background-color: $white;
             }
     
             .card {

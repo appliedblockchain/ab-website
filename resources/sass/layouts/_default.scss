@@ -263,7 +263,8 @@
     @include align-items(center);
 
    &__diagram {
-       @include responsive(max-width, $desktop-max) {
+
+    @include responsive(max-width, $desktop-max) {
            margin-top: $integer-xl;
        }
    }
@@ -354,7 +355,12 @@
                 padding-left: $integer-lg;
 
                 @include responsive-mobile-devices() {
-                    padding-top: $integer-lg;
+                    padding-top: 0;
+                    padding-bottom: $integer-lg;
+                }
+
+                @include responsive(max-width, $desktop-max) {
+                    padding-top: 0;
                     padding-bottom: $integer-lg;
                 }
             }
@@ -369,6 +375,10 @@
                 @include responsive-mobile-devices() {
                     @include transform(scale(1));
                 }
+
+                @include responsive(max-width, $desktop-max) {
+                    @include transform(scale(1));
+                }
             }
 
             &__title {
@@ -378,7 +388,13 @@
 
                 @include responsive-mobile-devices() {
                     @include transform(translateY(0));
-                }   
+                    margin-top: $integer-md;
+                }
+
+                @include responsive(max-width, $desktop-max) {
+                    @include transform(translateY(0));
+                    margin-top: $integer-md;
+                }
             }
 
             &__body {
@@ -391,7 +407,12 @@
                 @include responsive-mobile-devices() {
                     @include transform(translateY(0));
                     opacity: 1;
-                }   
+                }
+
+                @include responsive(max-width, $desktop-max) {
+                    @include transform(translateY(0));
+                    opacity: 1;
+                }
             }
 
             &:hover {

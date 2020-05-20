@@ -49,16 +49,15 @@
 	&--k0 {
 
 		@include responsive(max-width, $tablet-max) {
-			position: absolute;
-			width: 30%;
-			left: 35%;
-			top: -$integer-xxxxl*1.8;			
+			width: 25%;
+			margin-top: -$integer-lg;
+			margin-bottom: $integer-xl;
 		}
 
 		@include responsive(max-width, $mobile-max) {
-			position: absolute;
-			width: 40%;
-			left: 30%;
+			width: 50%;
+			margin-top: -$integer-md;
+			margin-bottom: $integer-lg;
 		}
 	}
 }

@@ -215,7 +215,7 @@
 
         &:before {
             @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-            background-color: rgba($primary, 0.8);
+            background-color: rgba($primary, 0.5);
             z-index: 1;
         }
 
@@ -233,6 +233,22 @@
             &.js-show {
                 opacity: 1;
             }
+        }
+    }
+}
+
+
+
+// —————————————————————————————————————————————————————————————————
+// k0
+// —————————————————————————————————————————————————————————————————
+
+#products {
+
+    .body--left {
+
+        @include responsive(max-width, $tablet-max) {
+            text-align: center;
         }
     }
 }
@@ -328,6 +344,76 @@
 // —————————————————————————————————————————————————————————————————
 
 #services {
+
+    &-solutions {
+
+        .card {
+
+            &__inner {
+                padding-right: $integer-lg;
+                padding-left: $integer-lg;
+
+                @include responsive-mobile-devices() {
+                    padding-top: $integer-lg;
+                    padding-bottom: $integer-lg;
+                }
+            }
+
+            &__image {
+                @include transform(scale(3.5));
+                @include transform-origin(center, top);
+                @include transition(transform $transition);
+                will-change: transform;
+                max-width: $integer-xxl;
+                
+                @include responsive-mobile-devices() {
+                    @include transform(scale(1));
+                }
+            }
+
+            &__title {
+                @include transform(translateY(13rem));
+                @include transition(transform $transition);
+                will-change: transform;
+
+                @include responsive-mobile-devices() {
+                    @include transform(translateY(0));
+                }   
+            }
+
+            &__body {
+                @include transform(translateY(13rem));
+                @include transition(opacity $transition, transform $transition);
+                will-change: opacity, transform;
+                opacity: 0;
+                margin-top: $integer-md;
+
+                @include responsive-mobile-devices() {
+                    @include transform(translateY(0));
+                    opacity: 1;
+                }   
+            }
+
+            &:hover {
+
+                .card {
+
+                    &__image {
+                        @include transform(scale(1));
+                    }
+
+                    &__title {
+                        @include transform(translateY(0));
+                    }
+
+                    &__body {
+                        @include transform(translateY(0));
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
 
     &-stack {
 

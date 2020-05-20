@@ -27,16 +27,12 @@
 * Install [Jekyll](https://jekyllrb.com/)
 ```
 gem install bundler jekyll
-jekyll new my-site
-cd my-site
 ```
 * Run the website in development mode
 ```
 bundle exec jekyll serve
 ```
 > Local URL: [localhost:4000](http://localhost:4000)
-
-> Staging URL: [next.appliedblockchain.com](https://next.appliedblockchain.com/)
 
 ### Dependencies & Methodologies
 
@@ -57,18 +53,17 @@ Along with SASS, this project is based on the BEM markdown. To learn more about 
 ***
 ## Deployment
 
-The deployment process is run throught CircleCI.
+The deployment process is run throught Netlify.
 
-When the **develop** branch is merged with **master**, it automatically prompts a workflow in CircleCI that builds the website and deploys it to the [staging URL](https://next.appliedblockchain.com/).
-Once you have tested the changes (on both mobile and desktop, and on all browsers, including IE11), click the `confirm_deploy` button in the workflow, and the deployment will start.
+### Staging environment
+| Branch | staging |
+| URL    | [beta.appliedblockchain.com](https://beta.appliedblockchain.com/) |
 
-![CircleCI worflow](resources/images/github/circleci.png)
+### Production environment
+| Branch | master |
+| URL    | [appliedblockchain.com](https://appliedblockchain.com/) |
 
 > Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on the content.
-
-### Test
-Use [Browserstack](https://www.browserstack.com/users/sign_in) to test the website on different devices and browsers.
-> The website is fully fonctionnal on Internet Explorer 11 and above
 
 <p>&nbsp;</p>
 
@@ -113,48 +108,26 @@ Every page is build on the same structure:
 #### Section types
 Add these classes to customise them:
 
-| Class                   | Description |
-| ----------------------- | ----------------------- |
-| `section--col`          | divide by two the left and right padding of the section |
-| `section--alt`          | Remove the top padding of a section; used when too sisters section have the same background color |
-| `section--full`    | Fullwidth section |
-| `section--nopadding`    | Remove all paddings (e.g. **grid section** of the [Projects](https://appliedblockchain.com/case-studies/) page) |
-| `section--margin-minus` | Add a negative margin top to the section to make them overlap (e.g. **why us section** of the [Homepage](https://appliedblockchain.com/)) |
+| Class                 | Description |
+| --------------------- | ----------------------- |
+| `section--alt`        | Divide left and right padding by two |
+| `section--full`       | Fullwidth section |
+| `section--overlap`    | Add a negative margin top to the section to make them overlap |
 
 #### Section colors
 Change the background color of a section (default is white) using `.section--primary`, `.section--dark` or `.section--grey`.
 
-#### Section alignement
-Left or rifght align the text and content of a section (default is centered aligned) using `.section--left` or `.section--right`.
-
 ### Components
-The components are located in the `_data` folder. They were created to ensure that every iteration has the same structure, and that it will be easy to edit it. Each of them has a set of attributes.
+The components are located in the `_include` folder. They were created to ensure that every iteration has the same structure, and that it will be easy to edit it. Each of them has a set of attributes.
 > if you want one attribute not to appear, simply delete the line
-
-#### Page header
-```
-{% include components/page-header.html
-    background-color=''
-    title='Page Title'
-    description='Lorem ipsum dolor sit amet.'
-    comment=''
-%}
-```
-The page header is used once on a page, at the very beginning.
-
-##### Background imnage in page header
-* Add image in `resources/images/background` folder
-* Same name as page, jpg format
-* Add `background-image=''` to component
-* Set `background-color=''` for gradient color
 
 #### Section header
 ```
 {% include containers/sections/header.html
-    comment='Lorem ipsum'
-    title='Section title'
-    subtitle='Section subitle'
-    description='Lorem ipsum dolor sit amet.'
+    comment = 'Lorem ipsum'
+    title = 'Section title'
+    subtitle = 'Section subitle'
+    description = 'Lorem ipsum dolor sit amet.'
 %}
 ```
 
@@ -167,20 +140,11 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
     <div class="col--lg2 col--md12"></div>
 </div>
 ```
-> See the `resources/sass/partials/_structure.scss` for reference
 
 <p>&nbsp;</p>
 
 ***
 ## Create new page
-
-<p>&nbsp;</p>
-
-***
-## Add image to carousel
-
-Add the image in the corresponding folder
-> To check which folder is used for each carousel
 
 <p>&nbsp;</p>
 
@@ -192,34 +156,36 @@ Add the image in the corresponding folder
 ```yml
 ---
 layout: project
-tag: #featured or grid
-dlc: true #if the project has a downloadable pdf case study
-
 title: 
-slug: 
 subtitle: 
 industry: 
 deliverables: 
+summary: 
+background_color: white
 
-summary:
-
-challenge-diagram: true #insert that line of the project has a challenge diagram
+challenge-diagram: 
 challenge: 
+    - lead: 
+    - paragraph: 
+    - paragraph: 
 
-outcome: #in the case of a project without an actual product delivery (e.g. EWF)
+delivery:
+    - item:
+        - paragraph: 
+        - paragraph: 
 
-delivery: 
+results:
+    - paragraph: 
+    - paragraph: 
+results-icons:
+    - image: 
+      title: 
 
-results: 
-
-results-content: 
-
-results-comment: 
-
-testimonial-id: 
-testimonial-quote: 
-testimonial-name: 
-testimonial-job: 
+testimonial:
+    - quote: 
+      author: 
+      position: 
+      company: 
 ---
 ```
 * Fill in the tags according layout (if you don't understand where they are displayed, [here is an example](https://appliedblockchain.com/projects/cygnetise/))
@@ -230,13 +196,8 @@ testimonial-job:
 
 ### Additionnal comments
 * Add `tag: featured` to the project to feature it
-* Add `tag: grid` to the project to place it on the last line
 * If the logo doesn't appear, check the file extension.
 * The logo needs to be 800x400px
-
-
-
-<!-- ## FAQ -->
 
 <p>&nbsp;</p>
 
@@ -283,8 +244,8 @@ testimonial-job:
 ```yml
 - name: 
   image: #image file name > use a slugged version of the name
-  date-from: #use this one only if the event is spanned on several days
-  date: #'YYYY-MM-DD'
+  date: #use this one only if the event is spanned on several days
+  date_to: #'YYYY-MM-DD'
   location: #venue, city, country
   directions: #Google maps link
   link: #link to the event website
@@ -314,59 +275,7 @@ social: #linkedin / medium
 link: #add if an external news or a medium post
 headline: 
 ---
- HTML CONTENT OF THE POST (only for local posts; not for external news or medium posts)
 ```
-> the corresponding category for **any** Medium post is `blog`.
-
-> the corresponding category for **any** external news post is `news`.
-
-* Add the corresponding image in `resources/images/posts`
-    * If doesn't work: check file extension (needs to be `.jpg`)
-    * File cannot be over 1000 px wide and 150 KB
-    * If you don't have an image, leave the `image:` tag empty, a default image is set
-
-### Content HTML structure
-```html
-<p class="post__title">This a title</p>
-
-<p class="post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus tristique enim consequat fringilla. Donec ultrices vitae nisl sit amet blandit.<a href="http://www.multichain.com/" target="_blank">Duis dignissim rutrum sollicitudin</a>.</p>
-<p class="post__content">Aliquam volutpat diam diam, in eleifend urna posuere sit amet. Integer vitae augue a felis tempor commodo pulvinar quis sapien. Phasellus scelerisque lacus eu neque rhoncus, vel hendrerit urna eleifend.</p>
-
-<p class="post__title">This is another title</p>
-
-<p class="post__subtitle">This is a subtitle</p>
-<p class="post__content">Vestibulum posuere ac justo eu interdum. Nunc ex lacus, feugiat a ultrices in, efficitur et mauris. Maecenas eu ex eu mauris venenatis tempus in quis lacus.</p>
-<p class="post__quote">This is a quote</p>
-```
-> For every new paragraph, open a new `<p>` tag with the `post__content` class
-
-![Blog structure](resources/images/github/post.jpg)
-
-
-
-<!-- ## General queries
-
-### Logo and menu icon color on landing
-If the `page-header.html` of a page is set to `background='primary'` or `background='dark'`, the logo and menu icon colors change.
-To do so, go to `_layouts/header.html` and add the page title to the condition in the class selector.
-```html
-<div class="header__bar">
-    <div class="header__logo {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
-        {% include components/logo-header.html %}
-    </div>
-    <a class="header__button button button--menu {% if page.title == 'Name of the page'  or page.title == 'Name of other page' %}alt{% endif %}">
-        <span class="button__inner"></span>
-    </a>
-</div>
-```
-* If set to `background='primary'`, both the **logo and menu icon** change.
-* If set to `background='dark'`, only the **menu icon** changes.
-
-* An image diesn't appear
-    * Check file extension
-
-### Logo carousels
-* image size, difference between regular and alt version -->
 
 <p>&nbsp;</p>
 

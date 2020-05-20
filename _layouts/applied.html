@@ -52,35 +52,16 @@
 	<!-- VENDOR -->
 	<!-- font awesome -->
 	<link href="{{ site.url }}{{ site.resourceurl }}/vendor/fontawesome/css/all.min.css" rel="stylesheet">
-    <!-- owl carousel -->
-	<link href="{{ site.url }}{{ site.resourceurl }}/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
 	
     <!-- VENDOR -->
 	<!-- jquery -->
 	<script src="{{ site.url }}{{ site.resourceurl }}/vendor/jquery/jquery-3.3.1.min.js"></script>
-	<!-- owl carousel -->
-	<script src="{{ site.url }}{{ site.resourceurl }}/vendor/owlcarousel/owl.carousel.min.js"></script>
-	<!-- flexslider -->
-	<script src="{{ site.url }}{{ site.resourceurl }}/vendor/flexslider/jquery.flexslider-min.js"></script>
-	<!-- isotope (blog filter) -->
-	<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
 	<!-- float-panel (animations) -->
 	<script src="{{ site.url }}{{ site.resourceurl }}/vendor/float-panel.js"></script>
 
 	<!-- JAVASCRIPT -->
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/accordions.js"></script>
 	<script src="{{ site.url }}{{ site.resourceurl }}/js/anchor.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/buttons.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/carousel.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/cursor.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/filter.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/form.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/join.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/modals.js"></script>
 	<script src="{{ site.url }}{{ site.resourceurl }}/js/script.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/slider.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/tabs.js"></script>
-	<script src="{{ site.url }}{{ site.resourceurl }}/js/tooltips.js"></script>
 
 </head>
 
@@ -99,47 +80,54 @@
     </button>
 </div>
 
-<div class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %} page__header slideanim">
-    <h1 class="page__title headline">{{ page.title }}</h1>
-    <p class="page__subtitle title">{{ page.subtitle }}</p>
-    <p class="page__body subtitle">{{ page.body }}</p>
-</div>
-
-<div class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %} slideanim">
-    <div class="body--left row">
-        <p class="slideanim lead col--lg6 col--md9">{{ page.intro }}</p> 
-        <div class="slideanim ap__anchor anchor coloffset--lg3 col--md3 z-index--1">
-            <div class="button anchor__item"><a class="button__inner" href="#the-technology">The technology</a></div>
-            <div class="button anchor__item"><a class="button__inner" href="#properties">Properties</a></div>
-            <div class="button anchor__item"><a class="button__inner" href="#use-case">Use case</a></div>
-            <div class="button anchor__item"><a class="button__inner" href="#events">Events</a></div>
-            <div class="button anchor__item"><a class="button__inner" href="#contact">Contact</a></div>
+<div id="landing">
+    <div class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %} page__header slideanim">
+        <h1 class="page__title headline">{{ page.title }}</h1>
+        <p class="page__subtitle title">{{ page.subtitle }}</p>
+        <p class="page__body subtitle">{{ page.body }}</p>
+    </div>
+    <div class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %} slideanim">
+        <div class="body--left row">
+            <p class="slideanim lead col--lg6 col--md9">{{ page.intro }}</p> 
+            <div class="slideanim ap__anchor anchor coloffset--lg3 col--md3 z-index--1">
+                <div class="button anchor__item"><a class="button__inner" href="#the-technology">The technology</a></div>
+                <div class="button anchor__item"><a class="button__inner" href="#properties">Properties</a></div>
+                <div class="button anchor__item"><a class="button__inner" href="#use-case">Use case</a></div>
+                <div class="button anchor__item"><a class="button__inner" href="#events">Events</a></div>
+                <div class="button anchor__item"><a class="button__inner" href="#contact">Contact</a></div>
+            </div>
         </div>
     </div>
 </div>
 
 <section class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %} slideanim">
     <div class="timeline__content row">
-        <div class="coloffset--lg3 col--lg3 col--md4 timeline__item">
-            <p class="timeline__date label">April 2016</p>
-            <span class="timeline__dot"></span>
-            <p class="timeline__title body--large body--bold">GDPR adoption</p>
+        <div class="coloffset--lg3 col--lg3 col--md4">
+            <div class="timeline__item">
+                <p class="timeline__date label">April 2016</p>    
+                <span class="timeline__dot"></span>
+                <p class="timeline__title body--large body--bold">GDPR adoption</p>
+            </div>
         </div>
-        <div class="col--lg3 col--md4 timeline__item">
-            <p class="timeline__date label">May 2018</p>
-            <span class="timeline__dot"></span>
-            <p class="timeline__title body--large body--bold">GDPR enforcement</p>
+        <div class="col--lg3 col--md4">
+            <div class="timeline__item">
+                <p class="timeline__date label">May 2018</p>    
+                <span class="timeline__dot"></span>
+                <p class="timeline__title body--large body--bold">GDPR enforcement</p>
+            </div>
         </div>
-        <div class="col--lg3 col--md4 timeline__item">
-            <p class="timeline__date label">Today</p>
-            <span class="timeline__dot triangle"></span>
-            <p class="timeline__title body--large body--bold">The data economy</p>
-            <p class="timeline__text body">Data innovation that enables sharing without revealing</p>
+        <div class="col--lg3 col--md4">
+            <div class="timeline__item">
+                <p class="timeline__date label">Today</p>    
+                <span class="timeline__dot triangle"></span>
+                <p class="timeline__title body--large body--bold">The data economy</p>
+                <p class="timeline__text body">Data innovation that enables sharing without revealing</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="the-technology" class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %}">
+<section id="the-technology" class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %} body--left">
     {% include containers/sections/header.html
         comment = 'The technology'
         title = 'What are zero knowledge proofs?'

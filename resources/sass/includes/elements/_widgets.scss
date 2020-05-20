@@ -17,9 +17,15 @@
 // general
 // —————————————————————————————————————————————————————————————————
 
+
 .widget {
     position: relative;
     border-radius: $border-radius;
+
+    &__bar {
+        @include display-flex();
+        @include align-items(flex-end);
+    }
 }
 
 

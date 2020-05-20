@@ -2,7 +2,7 @@
 {% assign variant = include.variant %}
 {% assign colour = include.colour %}
 
-<div class="owl-carousel owl-carousel-{% if type == 'testimonials' %}testimonials{% else %}{{ variant }}{% endif %}{% if type == 'testimonials' %} carousel--testimonials{% endif %}">
+<div class="owl-carousel owl-carousel-{% if type == 'testimonials' %}testimonials{% else %}{{ variant }}{% if colour %}_{{ colour }}{% endif %}{% endif %}{% if type == 'testimonials' %} carousel--testimonials{% endif %}">
     {% for item in site.data.carousel.[variant] %}
     <div class="carousel__item">
         <img src="{{ site.url }}{{ site.imageurl }}/carousel/{{ variant }}{% if colour %}_{{ colour }}{% endif %}/{{ item.name | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">

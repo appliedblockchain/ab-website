@@ -68,7 +68,7 @@
 
 				&:before {
 					@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-					@include background-image(linear-gradient(to left, rgba($white, 0.6), $white));
+					@include background-image(linear-gradient(to left, rgba($white, 0.2), $white 60%));
 				}
 
 				@include responsive(max-width, $tablet-max) {

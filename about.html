@@ -63,7 +63,7 @@ background_color: white
     </div>
 </section>
 
-<section class="section section--grey">
+<section class="section section--grey no-padding--left no-padding--right">
     {% include containers/sections/header.html
         title = 'Investors'
     %}
@@ -98,7 +98,7 @@ background_color: white
                 <div class="row">
                     <div class="col--lg6 card card--lg">
                         <p class="card__label body--bold">{{ item.title }}</p>
-                        <h2 class="card__title subtitle">{{ item.name }}</h2>
+                        <h2 class="card__title lead">{{ item.name }}</h2>
                         <p class="card__body body">{{ item.bio }}</p>
                     </div>
                 </div>

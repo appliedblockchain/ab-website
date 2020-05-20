@@ -26,10 +26,10 @@ twitter: https://twitter.com/appblockchain
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects/:path
   posts:
     output: true
-    permalink: /:title/
+    permalink: /:title
 
 # compress 
 # http://jch.penibelst.de/

@@ -98,7 +98,7 @@ layout: compress
 {% endif %}
 
 {% if page.delivery %}
-<section id="project-delivery" class="section section--dark background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
+<section id="project-delivery" class="section section--transparent background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
     <div class="row">
         <div class="col--xl7 col--lg9 block__title">
             <h1 class="subtitle">What Applied Blockchain Delivered</h1>
@@ -117,7 +117,7 @@ layout: compress
 {% endif %}
 
 {% if page.results or page.results-icons %}
-<section id="project-results" class="section section--primary">
+<section id="project-results" class="section section--white">
     <div class="section__header">
         <p class="section__title subtitle">Results</p>
         {% if page.results %}
@@ -150,20 +150,24 @@ layout: compress
 {% endif %}
 
 {% if page.testimonial %}
-<section class="section section--white">
-    <div class="{% if page.title == 'Shell' %} owl-carousel owl-carousel-testimonials{% endif %} carousel--testimonials">
-        {% for item in page.testimonial %}
-        <div class="carousel__item">
-            <img src="{{ site.url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
-            <div class="card body--left">
-                <p class="card__body quote">{{ item.quote }}</p>
-                <div class="card__meta">
-                    <p class="body--large body--bold">{{ item.author }}</p>
-                    <p>{% if item.position %}{{ item.position }}, {% endif %}{{ item.company }}</p>
+<section class="section section--grey no-padding--left no-padding--right">
+    <div class="section__content">
+        <div class="card testimonials">
+            <div class="{% if page.title == 'Shell' %} owl-carousel owl-carousel-testimonials{% endif %} carousel--testimonials">
+                {% for item in page.testimonial %}
+                <div class="carousel__item">
+                    <img src="{{ site.url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
+                    <div class="card body--left">
+                        <p class="card__body quote">{{ item.quote }}</p>
+                        <div class="card__meta">
+                            <p class="body--large body--bold">{{ item.author }}</p>
+                            <p>{% if item.position %}{{ item.position }}, {% endif %}{{ item.company }}</p>
+                        </div>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
-        {% endfor %}
     </div>
 </section>
 {% endif %}

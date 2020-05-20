@@ -24,7 +24,7 @@
 
         &:before {
             @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-            background-color: rgba($primary, 0.8);
+            background-color: rgba($white, 0.9);
             background-blend-mode: multiply;
         }
     }

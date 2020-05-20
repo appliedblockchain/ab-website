@@ -35,20 +35,21 @@
 .owl {
 
     &-dots {
-        margin-top: $integer-md;
+        margin-top: $integer-lg;
+        text-align: center;
     }
 
     &-dot {
         @include transition(background-color $transition, transform $transition);
         @include border-radius(50%);
-        will-change: background-color;
-        height: $integer-md;
-        width: $integer-md;
+        will-change: background-color, transform;
+        height: $integer;
+        width: $integer;
         background-color: $secondary !important;
         margin: 0 $integer-md;
 
         &.active, &:hover {
-            @include transition(background-color $transition);
+            @include transform(scale(1.5));
             background-color: $primary !important;
         }
     }
@@ -67,13 +68,14 @@
         .carousel {
 
             &__item {
+                padding-right: $page;
+                padding-left: $page;
 
                 @include responsive(max-width, $desktop-max) {
-                    padding: $integer-xl;
-                }
 
-                @include responsive(max-width, $tablet-max) {
-                    padding: $integer-lg;
+                    .body--left {
+                        text-align: center;
+                    }
                 }
             }
 
@@ -90,16 +92,9 @@
                 @include responsive(max-width, $desktop-lg-max) {
                     width: $integer-xxxxl+$integer-xl !important;
                     height: $integer-xxxxl+$integer-xl;
-                    margin-bottom: $integer-lg;
                 }
 
                 @include responsive(max-width, $desktop-max) {
-                    width: $integer-xxxxl !important;
-                    height: $integer-xxxxl;
-                    margin-bottom: $integer-lg;
-                }
-
-                @include responsive(max-width, $tablet-max) {
                     display: none !important;
                 }
             }

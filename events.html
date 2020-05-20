@@ -13,7 +13,10 @@ background_color: white
 <section class="section section--white">
     <div class="section__content tab tab--events">
         <div class="tab__nav">
-            <a href="#upcoming" class="tab__button button button--primary button--animate fa fa-fast-forward">
+            <a href="#webinars" class="tab__button button button--primary button--animate fa fa-desktop">
+                <p class="button__inner">Webinars</p>
+            </a>
+            <a href="#upcoming" class="tab__button button button--primary button--primary-lighten button--animate fa fa-fast-forward">
                 <p class="button__inner">Upcoming</p>
             </a>
             <a href="#past" class="tab__button button button--primary button--primary-lighten button--animate fa fa-fast-backward">
@@ -21,6 +24,15 @@ background_color: white
             </a>
         </div>
         <div class="tab__content block background--shadow no-padding">
+            <div id="webinars" class="tab__item">
+                {% for event in site.data.events %}
+                {% if event.display == 'upcoming' %}
+                {% include components/event.html 
+                    variant = 'past'
+                %}
+                {% endif %}
+                {% endfor %} 
+            </div>
             <div id="upcoming" class="tab__item">
                 {% if sorted > 0 %}
                 {% for event in sorted %}

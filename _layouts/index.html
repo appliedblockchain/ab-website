@@ -60,34 +60,58 @@ layout: compress
     </div>
 </div>
 
-<section id="index-intro" class="section section--primary background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/what-we-do.svg);">
+<section id="index-intro" class="section section--white background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/what-we-do.svg);">
+    {% include containers/sections/header.html
+        comment = 'What we do'
+        title = 'We use advanced cryptography to solve real world business problems'
+        body = 'Our team of experts advise, build and deploy full-stack, secure, privacy-preserving applications that protect individual and company data, while maximising business collaboration. Our customers range from the largest global enterprises, to the most innovative early stage startups in financial services, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.'
+    %}
+    <div class="section__content">
+        <div class="button__wrapper">
+            <a href="{{ site.url }}/about" class="ga-button-about button button--primary button--animate fa fa-address-card">
+                <p class="button__inner">About</p>
+            </a>
+            <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--animate fa fa-cogs">
+                <p class="button__inner">Services</p>
+            </a>
+            <a href="{{ site.url }}/products" class="ga-button-services button button--primary-lighten button--animate fa fa-box">
+                <p class="button__inner">Products</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section section--grey" id="who-we-help">
+    {% include containers/sections/header.html
+        comment = 'Who we help'
+        title = 'We develop distributed, privacy preserving solutions for startups and enterprises alike'
+    %}
     <div class="section__content">
         <div class="row">
-            <div class="col--lg5 body--left section__title">
-                {% include containers/sections/header.html
-                    title = 'Using advanced cryptography to solve real world business problems'
-                %}
-            </div>
-            <div class="coloffset--lg1 col--lg6 body--left section__body">
-                <p class="block__title body--large">Our team of experts advise, build and deploy full-stack, secure, privacy-preserving applications that protect individual and company data, while maximising business collaboration. Our customers range from the largest global enterprises, to the most innovative early stage startups in financial services, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.</p>
-                <div class="block__content">
-                    <div class="button__wrapper">
-                        <a href="{{ site.url }}/about" class="ga-button-about button button--white button--animate fa fa-address-card">
-                            <p class="button__inner">About</p>
-                        </a>
-                        <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--animate fa fa-cogs">
-                            <p class="button__inner">Services</p>
-                        </a>
-                        <a href="{{ site.url }}/products" class="ga-button-services button button--primary-lighten button--animate fa fa-box">
-                            <p class="button__inner">Products</p>
-                        </a>
-                    </div>
+            <div class="col--lg6">
+                <div class="video background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/video.jpg);">
+                    <a href="#modal-video" class="js-button-modal">
+                        <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                    </a>
                 </div>
+            </div>
+            <div class="coloffset--lg1 col--lg5 body--left">
+                <p class="block__title body--large">We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next-generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.</p>
+                <a href="{{ site.url }}/projects" class="block__content ga-button-projects button button--primary button--animate fas fa-fill">
+                    <p class="button__inner"><span class="hide--mobile">View our </span>projects</p>
+                </a>
             </div>
         </div>
     </div>
-    <div class="section__content body--black z-index--2">
-        <div class="card background--shadow testimonials">
+    {% include elements/modals/video.html %}
+</section>
+
+<section class="section section--grey no-padding--left no-padding--right">
+    {% include containers/sections/header.html
+        subtitle = 'What our clients say about us'
+    %}
+    <div class="section__content">
+        <div class="card testimonials">
             {% include elements/carousel.html 
                 type = 'testimonials'
                 variant = 'testimonials_clients' 
@@ -96,7 +120,41 @@ layout: compress
     </div>
 </section>
 
-<section id="index-featured-in" class="section section--white section--overlap">
+<section id="index-why-us" class="section section--white">
+    {% include containers/sections/header.html
+        comment = 'Why us'
+        title = 'A Global Specialist in Applications of Advanced Cryptography'
+    %}
+    <div class="section__content">
+        <div class="row">
+            <div class="col--6 background--contain" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/thought-leader.png);"></div>
+            <div class="card col--6 body--left">
+                <h2 class="card__title lead">Thought Leaders</h2>
+                <p class="card__body body">We contribute to global industry events and whitepapers, with keynote presentations and commentaries, and also lead training workshops. Our work has led us to be recognised by the UK government, where Adi Ben-Ari has been invited to Roundtables at the House of Lords and presented at the Department for Digital, Culture, Media and Sport.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section__content">
+        <div class="row">
+            <div class="card col--6 body--right">
+                <h2 class="card__title lead">International Market Leader</h2>
+                <p class="card__body body">We have built and deployed distributed solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has also recognised Applied Blockchain amongst the Top Global Blockchain Development and Consulting Firm 2017, 2018 & 2019.</p>
+            </div>
+            <div class="col--6 background--contain" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/market-leader.svg);"></div>
+        </div>
+    </div>
+    <div class="section__content">
+        <div class="row">
+            <div class="col--6 background--contain" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg);"></div>
+            <div class="card col--6 body--left">
+                <h2 class="card__title lead">Experts in Applications of Advanced Cryptography</h2>
+                <p class="card__body body">Our team of in-house development experts along with our highly-skilled advisory, project and operations team work very closely with our clients to bring advanced cryptography and distributed solutions to life – together.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="index-featured-in" class="section section--grey">
     {% include containers/sections/header.html
         title = 'Featured In'
     %}

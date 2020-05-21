@@ -465,8 +465,7 @@
     }
 }
 
-#media,
-#projects {
+#media {
 
     .card {
 
@@ -534,38 +533,6 @@
 
     .card {
 
-        &:before {
-            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-            @include transition(background-color $transition);
-            will-change: background-color;
-            background-color: rgba($white, 0.9);
-        }
-
-        &--lg {
-
-            &:before {
-                @include background-image(linear-gradient(to right, $red, $primary));
-                opacity: 0.8;
-                background-color: transparent !important;
-            }
-
-            .card {
-
-                &__actions {
-                    margin-top: $integer-xl;
-                }
-            }
-        }
-
-        > * {
-            position: relative;
-        }
-
-        &__inner {
-            padding-top: $integer-xxxl;
-            padding-bottom: $integer-xxxl;
-        }
-
         &__content {
             @include transition(transform $transition);
             @include transform(translateY(25%));
@@ -573,8 +540,22 @@
 
             @include responsive-mobile-devices() {
                 @include transform(translateY(0) !important);
+            } 
+        }
+
+        &__image {
+            @include transform-origin(bottom, left);
+            @include transform(scale(1.5));
+            @include transition(transform $transition);
+            will-change: transform;
+            height: auto;
+            width: 25%;
+            min-width: $integer-xxxxl;
+            margin-bottom: $integer-xl;
+
+            @include responsive-mobile-devices() {
+                @include transform(scale(1));
             }
-            
         }
 
         &__label {
@@ -592,7 +573,7 @@
                 @include transform(translateY(-100%) scaleY(0.3));
                 will-change: transform;
                 display: block;
-                
+
                 @include responsive-mobile-devices() {
                     @include transform(translateY(0) scaleY(1) !important);
                 }
@@ -600,12 +581,14 @@
         }
 
         &__actions {
-            @include transition(opacity $transition);
+            @include transition(opacity $transition, transform $transition);
+            @include transform(translateY($integer-xl));
             @include align-items(flex-start);
-            will-change: opacity;
+            will-change: opacity, transform;
             opacity: 0;
 
             @include responsive-mobile-devices() {
+                @include transform(translateY(0));
                 opacity: 1 !important;
             }
         }
@@ -621,6 +604,10 @@
                 &__content {
                     @include transform(translateY(0));
                 }
+
+                &__image {
+                    @include transform(scale(1));
+                }
                 
                 &__label {
                     opacity: 0;
@@ -631,6 +618,8 @@
                 }
 
                 &__actions {
+                    @include transition(opacity $transition-delay, transform $transition-delay);
+                    @include transform(translateY(0));
                     opacity: 1;
                 }
             }

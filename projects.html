@@ -5,48 +5,14 @@ subtitle: We develop distributed, privacy preserving solutions for startups and 
 background_color: white
 ---
 
-<section class="section section--white ">
-    <div class="section__content">
-        {% for project in site.projects %}
-        {% if project.tag contains 'featured' %}
-        <div class="card card--lg card--landscape background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
-            <div class="card__image hide--desktop">
-                <img src="{{ site.url }}{{ site.imageurl }}/carousel/clients/{{ project.slug }}.png" alt="{{ project.title }} logo">
-            </div>
-            <div class="card__inner">
-                <div class="card__content body--white">
-                    <p class="card__label label">{{ project.industry }}</p>
-                    <h2 class="card__title title body--white">
-                        <a href="{{ project.url }}">{{ project.title }}</a>
-                    </h2>
-                    <p class="card__subtitle subtitle">
-                        <a href="{{ project.url }}">{{ project.subtitle }}</a>
-                    </p>
-                    <p class="card__body body--large">
-                        <span>{{ project.summary }}</span>
-                    </p>
-                    <div class="card__actions">
-                        <a href="{{ project.url }}" class="button button--white button--small button--animate fa fa-eye">
-                            <p class="button__inner">View project</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-    </div>
-</section>
-
 <section class="section section--alt section--white">
     <div class="grid row card__wrapper">
         {% for project in site.projects %}
-        {% assign project = site.projects | sort: 'order' %}
-        {% unless project.tag contains 'featured' %}
         <div class="col--lg4 col--md6">
-            <div class="card card--portrait background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ project.slug }}.jpg);">
+            <div class="card card--portrait background--shadow">
                 <div class="card__inner">
                     <div class="card__content">
+                        <img src="{{ site.url }}{{ site.imageurl }}/carousel/clients_projects/{{ project.slug }}.png" alt="{{ project.title }} logo" class="card__image">
                         <p class="card__label label">{{ project.industry }}</p>
                         <h2 class="card__title subtitle">
                             <a href="{{ project.url }}">{{ project.title }}</a>
@@ -66,7 +32,6 @@ background_color: white
                 </div>
             </div>
         </div>
-        {% endunless %}
         {% endfor %}
     </div>
 </section>

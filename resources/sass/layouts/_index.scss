@@ -76,8 +76,8 @@
 
         .section__content {
 
-            &:nth-child(odd)    { .background--contain { background-position: 25% center; }}
-            &:nth-child(even)   { .background--contain { background-position: 75% center; }}
+            &:nth-child(even)    { .background--contain { background-position: 25% center; }}
+            &:nth-child(odd)   { .background--contain { background-position: 75% center; }}
 
             .card {
                 padding-top: $integer-lg;

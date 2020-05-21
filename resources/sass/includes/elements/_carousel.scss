@@ -34,6 +34,10 @@
 
 .owl {
 
+    &-stage {
+        @include display-flex();
+    }
+
     &-dots {
         margin-top: $integer-lg;
         text-align: center;

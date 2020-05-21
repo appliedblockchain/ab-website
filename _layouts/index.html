@@ -68,9 +68,6 @@ layout: compress
     %}
     <div class="section__content">
         <div class="button__wrapper">
-            <a href="{{ site.url }}/about" class="ga-button-about button button--primary button--animate fa fa-address-card">
-                <p class="button__inner">About</p>
-            </a>
             <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--animate fa fa-cogs">
                 <p class="button__inner">Services</p>
             </a>
@@ -107,9 +104,6 @@ layout: compress
 </section>
 
 <section class="section section--grey no-padding--left no-padding--right">
-    {% include containers/sections/header.html
-        subtitle = 'What our clients say about us'
-    %}
     <div class="section__content">
         <div class="card testimonials">
             {% include elements/carousel.html 
@@ -125,6 +119,11 @@ layout: compress
         comment = 'Why us'
         title = 'A Global Specialist in Applications of Advanced Cryptography'
     %}
+    <div class="section__content">
+        <a href="{{ site.url }}/about" class="ga-button-about button button--primary button--animate fa fa-address-card">
+            <p class="button__inner">About us</p>
+        </a>
+    </div>
     <div class="section__content">
         <div class="row">
             <div class="col--6 background--contain" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/thought-leader.png);"></div>

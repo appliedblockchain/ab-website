@@ -22,19 +22,29 @@ background_color: white
         title = 'We are headquartered in London Bridge, and have offices in Porto'
     %}
     <div class="section__content section__content--2">
-        {% for office in site.contact %}
         <div class="card card--lg background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
             <div class="card__inner">
                 <div class="card__content">
-                    <p class="card__title body--large">{{ office.address }}</p>
+                    <p class="card__title body--large">{{ site.contact.london.address }}</p>
                 </div>
                 <div class="card__actions">
-                    <a href="{{ office.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
+                    <a href="{{ site.contact.london.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
                         <p class="button__inner">Get directions</p>
                     </a>
                 </div>
             </div>
         </div>
-        {% endfor %}
+        <div class="card card--lg background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
+            <div class="card__inner">
+                <div class="card__content">
+                    <p class="card__title body--large">{{ site.contact.porto.address }}</p>
+                </div>
+                <div class="card__actions">
+                    <a href="{{ site.contact.porto.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
+                        <p class="button__inner">Get directions</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

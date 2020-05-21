@@ -63,12 +63,13 @@
 		.tab {
 
 			&__item {
+				background-position: top right;
 				position: relative;
 				padding: $integer-xxxl*2 $page;
 
 				&:before {
 					@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-					@include background-image(linear-gradient(to left, rgba($white, 0.2), $white 60%));
+					@include background-image(linear-gradient(to left, rgba($light-grey, 0.2), $light-grey 60%));
 				}
 
 				@include responsive(max-width, $tablet-max) {

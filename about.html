@@ -12,9 +12,6 @@ background_color: white
                 <p class="card__title subtitle">We Solve Problems</p>
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon" class="card__image">
                 <p class="card__body body">At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced cryptographic technology to build applications that maximise data privacy and security.</p>
-                <a href="{{ site.url }}/services" class="card__button ga-button-services button button--primary button--animate fas fa-cogs">
-                    <p class="button__inner">Services</p>
-                </a>
             </div>
         </div>
         <div class="card card--lg">
@@ -22,12 +19,54 @@ background_color: white
                 <p class="card__title subtitle">We Build Products</p>
                 <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon" class="card__image">
                 <p class="card__body body">We build products to solve a problem once for our many clients. We focus on advanced cryptography to enable businesses to do more with each other, while sharing less data.</p>
-                <a href="{{ site.url }}/products" class="card__button ga-button-products button button--primary button--animate fas fa-box">
-                    <p class="button__inner">Products</p>
-                </a>
             </div>
         </div>
     </div>   
+</section>
+
+<section id="about-leadership" class="section section--grey section--full">
+    {% include containers/sections/header.html
+        title = 'Leadership team'
+        body = 'Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
+    %}
+    <div class="section__content body--left tab tab--leadership">
+        <div class="tab__nav">
+            {% for item in site.data.leadership %}
+            <a href="#{{ item.slug }}" class="card card--sm tab__button {{ item.active }} no--padding">
+                <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
+                <p class="card__title body--large body--bold">{{ item.name | truncatewords: 1, "" }}</p>
+                <p class="">{{ item.division }}</p>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="">
+            {% for item in site.data.leadership %}
+            <div id="{{ item.slug }}" class="tab__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
+                <div class="row">
+                    <div class="col--lg6 card card--lg">
+                        <p class="card__label body--bold">{{ item.title }}</p>
+                        <h2 class="card__title lead">{{ item.name }}</h2>
+                        <p class="card__body body">{{ item.bio }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section section--grey no-padding--left no-padding--right">
+    {% include containers/sections/header.html
+        title = 'Investors'
+    %}
+    <div class="section__content">
+        <div class="card testimonials">
+            {% include elements/carousel.html 
+                type = 'testimonials'
+                variant = 'testimonials_investors' 
+            %}
+        </div>
+    </div>
 </section>
 
 <section class="section section--white timeline">
@@ -60,51 +99,6 @@ background_color: white
         </div>
         {% endfor %}
         {% endfor %}
-    </div>
-</section>
-
-<section class="section section--grey no-padding--left no-padding--right">
-    {% include containers/sections/header.html
-        title = 'Investors'
-    %}
-    <div class="section__content">
-        <div class="card testimonials">
-            {% include elements/carousel.html 
-                type = 'testimonials'
-                variant = 'testimonials_investors' 
-            %}
-        </div>
-    </div>
-</section>
-
-<section class="section section--white section--full">
-    {% include containers/sections/header.html
-        title = 'Leadership team'
-        body = 'Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
-    %}
-    <div class="section__content body--left tab tab--leadership">
-        <div class="tab__nav">
-            {% for item in site.data.leadership %}
-            <a href="#{{ item.slug }}" class="card card--sm tab__button {{ item.active }} no--padding">
-                <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
-                <p class="card__title body--large body--bold">{{ item.name | truncatewords: 1, "" }}</p>
-                <p class="">{{ item.division }}</p>
-            </a>
-            {% endfor %}
-        </div>
-        <div class="">
-            {% for item in site.data.leadership %}
-            <div id="{{ item.slug }}" class="tab__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
-                <div class="row">
-                    <div class="col--lg6 card card--lg">
-                        <p class="card__label body--bold">{{ item.title }}</p>
-                        <h2 class="card__title lead">{{ item.name }}</h2>
-                        <p class="card__body body">{{ item.bio }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
     </div>
 </section>
 

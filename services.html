@@ -14,15 +14,15 @@ background_color: white
                 colour = 'color'
             %}
         </div>
-        <div class="block__content">
-            <a href="{{ site.url }}/projects" class="ga-button-projects button button--primary button--large button--animate fas fa-fill">
-                <p class="button__inner">Projects</p>
-            </a>
-        </div>
+    </div>
+    <div class="section__content">
+        <a href="{{ site.url }}/projects" class="ga-button-projects button button--primary button--large button--animate fas fa-fill">
+            <p class="button__inner">Projects</p>
+        </a>
     </div>
 </section>
 
-<section id="services-solutions" class="section section--white">
+<section id="services-solutions" class="section section--grey">
     {% include containers/sections/header.html
         title = 'Our solutions'
     %}
@@ -43,31 +43,36 @@ background_color: white
     </div>
 </section>
 
-<section id="services-stack" class="section section--grey z-index--2">
+<section id="services-stack" class="section section--white z-index--2">
     {% include containers/sections/header.html
         title = 'Technology'
         body = 'We offer a wide range of elementum dui ac libero convallis, a sagittis mauris sagittis vivamus a posuere urna maecenas accumsan sed dolor id sodales.'
     %}
     <div class="section__content">
-        {% include elements/carousel.html 
-            variant = 'technologies' 
-        %}
-    </div>
-    <div class="section__content">
         <div class="card__wrapper">
             <div class="row">
-                {% for col in site.data.services.stack %}
-                <div class="{% if col.side == 'right' %}coloffset--lg2{% endif %} col--lg5 col--md6 body--{{ col.side }}">
-                    {% for item in col.item %}
-                    <div class="card">
-                        <div class="card__title lead">{{ item.title }}</div>
-                        <div class="card__body">{{ item.body }}</div>
+                {% for item in site.data.services.stack %}
+                <div class="col--md6">
+                    <div class="card body--left">
+                        <div class="background--shadow">
+                            <div class="card__inner">
+                                <div class="card__title">
+                                    <img src="{{ site.url }}{{ site.imageurl }}/icons/services/{{ item.title | slugify }}.png" alt="{{ item.title }} icon" class="card__image">
+                                    <h2 class="lead">{{ item.title }}</h2>
+                                </div>
+                                <p class="card__body">{{ item.body }}</p>
+                            </div>
+                        </div>
                     </div>
-                    {% endfor %}
                 </div>
                 {% endfor %}
             </div>
         </div>
+    </div>
+    <div class="section__content">
+        {% include elements/carousel.html 
+            variant = 'technologies'
+        %}
     </div>
 </section>
 

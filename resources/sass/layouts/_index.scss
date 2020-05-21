@@ -85,6 +85,17 @@
             }
         }
     }
+
+    &-testimonials {
+
+        &.section--overlap {
+
+            @include responsive(max-width, $mobile-max) {
+                margin-top: 0;
+                padding-top: $integer-xxxl;
+            }
+        }
+    }
     
     &-featured-in {
         

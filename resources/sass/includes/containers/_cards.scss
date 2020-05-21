@@ -436,6 +436,33 @@
 
 #services {
 
+    &-stack {
+
+        .background--shadow {
+            overflow: visible;
+            height: 100%;
+        }
+
+        .card {
+            height: 100%;
+            margin-bottom: 0;
+            padding-bottom: $integer-lg;
+
+            &__title {
+                position: relative;
+            }
+
+            &__image {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                max-width: none;
+                width: auto;
+                height: $integer-xxxxl;
+            }
+        }
+    }
+
     .card {
 
         &--landscape {

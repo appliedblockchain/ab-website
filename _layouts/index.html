@@ -68,10 +68,10 @@ layout: compress
     %}
     <div class="section__content">
         <div class="button__wrapper">
-            <a href="{{ site.url }}/services" class="ga-button-services button button--primary-darken button--animate fa fa-cogs">
+            <a href="{{ site.url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
                 <p class="button__inner">Services</p>
             </a>
-            <a href="{{ site.url }}/products" class="ga-button-services button button--primary-lighten button--animate fa fa-box">
+            <a href="{{ site.url }}/products" class="ga-button-services button button--primary button--animate fa fa-box">
                 <p class="button__inner">Products</p>
             </a>
         </div>
@@ -82,28 +82,55 @@ layout: compress
     {% include containers/sections/header.html
         comment = 'Who we help'
         title = 'We develop distributed, privacy preserving solutions for startups and enterprises alike'
+        body = 'We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next-generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.'
     %}
     <div class="section__content">
+        <a href="{{ site.url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
+            <p class="button__inner">Projects</p>
+        </a>
+    </div>
+    <div class="section__content z-index--2 hide--mobile">
         <div class="row">
             <div class="col--lg6">
-                <div class="video background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/video.jpg);">
+                <div class="block__title card body--left">
+                    <div class="card__header">
+                        <p class="card__title body">Watch Gary Pogson talk about our relationship with Lloyd's Register and how we helped them</p>
+                        <div class="card__actions">
+                            <a href="{{ site.url }}/projects/lloyds-register" class="button button--secondary button--small button--animate fas fa-fill">
+                                <p class="button__inner">Case study</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__content video background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/video-lloyds-register.jpg);">
                     <a href="#modal-video" class="js-button-modal">
                         <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
                     </a>
                 </div>
             </div>
-            <div class="coloffset--lg1 col--lg5 body--left">
-                <p class="block__title body--large">We identify and understand functional, non-functional and integration requirements that startups and enterprises encounter and the challenges of delivering next-generation technology within enterprise production environments. Our team comes with two decades of experience in designing, developing and deploying solutions for global companies.</p>
-                <a href="{{ site.url }}/projects" class="block__content ga-button-projects button button--primary button--animate fas fa-fill">
-                    <p class="button__inner"><span class="hide--mobile">View our </span>projects</p>
-                </a>
+            <div class="col--lg6">
+                <div class="block__title card body--left">
+                    <div class="card__header">
+                        <p class="card__title body">Watch Ben Van Beurden, CEO at Shell, mention our partnership with them</p>
+                        <div class="card__actions">
+                            <a href="{{ site.url }}/projects/shell" class="button button--secondary button--small button--animate fas fa-fill">
+                                <p class="button__inner">Case study</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__content video background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/video-shell.jpg);">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433" class="js-button-modal" target="_blank">
+                        <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     {% include elements/modals/video.html %}
 </section>
 
-<section class="section section--grey no-padding--left no-padding--right">
+<section id="index-testimonials" class="section section--white section--overlap no-padding--left no-padding--right">
     <div class="section__content">
         <div class="card testimonials">
             {% include elements/carousel.html 
@@ -114,7 +141,7 @@ layout: compress
     </div>
 </section>
 
-<section id="index-why-us" class="section section--white">
+<section id="index-why-us" class="section section--grey">
     {% include containers/sections/header.html
         comment = 'Why us'
         title = 'A Global Specialist in Applications of Advanced Cryptography'
@@ -153,7 +180,7 @@ layout: compress
     </div>
 </section>
 
-<section id="index-featured-in" class="section section--grey">
+<section id="index-featured-in" class="section section--white">
     {% include containers/sections/header.html
         title = 'Featured In'
     %}

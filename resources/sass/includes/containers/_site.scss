@@ -301,7 +301,13 @@ ul {
 	height: 20vw;
 
 	&__button {
+		@include transition(transform $transition);
+		will-change: transform;
 		width: $integer-xxxl;
+
+		&:hover {
+			@include transform(scale(1.2));
+		}
 	}
 
 	&__notice {

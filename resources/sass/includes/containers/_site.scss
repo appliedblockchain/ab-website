@@ -236,8 +236,8 @@ ul {
 .anchor 				{ z-index: 9; }
 .cookie				 	{ z-index: 10; }
 .button--scroll-top 	{ z-index: 11; }
-.modal 					{ z-index: 20; }
-.header 				{ z-index: 100; }
+.header 				{ z-index: 20; }
+.modal 					{ z-index: 30; }
 
 @for $i from 0 through 9 {
 	.z-index--#{$i} { z-index: $i; }
@@ -298,7 +298,8 @@ ul {
 	@include display-flex();
 	@include align-items(center);
 	@include justify-content(center);
-	height: 20vw;
+	padding-top: 16.6667%;
+	padding-bottom: 16.6667%; 
 
 	&__button {
 		@include transition(transform $transition);

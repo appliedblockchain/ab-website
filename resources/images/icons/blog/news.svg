@@ -1,26 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 57 57" style="enable-background:new 0 0 57 57;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;}
-	.st1{fill:#F8F8F8;}
+	.st0{fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#ffffff;}
 </style>
-<title>Group 22</title>
-<desc>Created with Sketch.</desc>
-<g id="Desktop">
-	<g id="_x37_-Media" transform="translate(-1109.000000, -1666.000000)">
-		<g id="Group-22" transform="translate(1111.000000, 1668.000000)">
-			<path id="Stroke-6" class="st0" d="M10,17.3V39c0,2.7-2.2,4.9-4.9,4.9c-2.7,0-4.9-2.2-4.9-4.9V17.9h4.9"/>
-			<path id="Stroke-8" class="st0" d="M10,20.5V9.3h36.8c3,0,5.5,2.5,5.5,5.5v7.3"/>
-			<path id="Stroke-10" class="st0" d="M52.4,29.9v8.5c0,3-2.5,5.5-5.5,5.5H5.1"/>
-			<path id="Stroke-12" class="st0" d="M18.9,29.3h11.4"/>
-			<path id="Fill-14" class="st1" d="M42.2,24.7H20.3c-1.4,0-2.6-1.1-2.6-2.5v-1.6c0-1.4,1.1-2.5,2.6-2.5h21.9
-				c1.4,0,2.6,1.1,2.6,2.5v1.6C44.7,23.6,43.6,24.7,42.2,24.7"/>
-			<path id="Stroke-16" class="st0" d="M34.2,29.2h8.8"/>
-			<path id="Stroke-18" class="st0" d="M18.9,34.5H25"/>
-			<path id="Stroke-20" class="st0" d="M29.3,34.4h13.8"/>
-		</g>
-	</g>
+<title>News icon</title>
+<g>
+	<path id="Stroke-6" class="st0" d="M10,17.3V39c0,2.7-2.2,4.9-4.9,4.9c-2.7,0-4.9-2.2-4.9-4.9V17.9h4.9"/>
+	<path id="Stroke-8" class="st0" d="M10,20.5V9.3h36.8c3,0,5.5,2.5,5.5,5.5v7.3"/>
+	<path id="Stroke-10" class="st0" d="M52.4,29.9v8.5c0,3-2.5,5.5-5.5,5.5H5.1"/>
+	<path id="Stroke-12" class="st0" d="M18.9,29.3h11.4"/>
+	<path id="Fill-14" class="st1" d="M42.2,24.7H20.3c-1.4,0-2.6-1.1-2.6-2.5v-1.6c0-1.4,1.1-2.5,2.6-2.5h21.9
+		c1.4,0,2.6,1.1,2.6,2.5v1.6C44.7,23.6,43.6,24.7,42.2,24.7"/>
+	<path id="Stroke-16" class="st0" d="M34.2,29.2h8.8"/>
+	<path id="Stroke-18" class="st0" d="M18.9,34.5H25"/>
+	<path id="Stroke-20" class="st0" d="M29.3,34.4h13.8"/>
 </g>
 </svg>

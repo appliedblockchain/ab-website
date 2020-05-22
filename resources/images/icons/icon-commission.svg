@@ -1,58 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 248 152" style="enable-background:new 0 0 248 152;" xml:space="preserve">
 <style type="text/css">
 	.st0{filter:url(#Adobe_OpacityMaskFilter);}
-	.st1{fill:#FFFFFF;}
-	.st2{mask:url(#mask-2_1_);fill:#000076;fill-opacity:0.3;}
-	.st3{fill:#000076;fill-opacity:0.3;}
-	.st4{fill:#FF6F00;}
-	.st5{fill:none;stroke:#FF6F00;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
-	.st6{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#ffffff;}
+	.st2{mask:url(#mask-2_1_);fill:#161656;fill-opacity:0.3;}
+	.st3{fill:#161656;fill-opacity:0.3;}
+	.st4{fill:#ff6f00;}
+	.st5{fill:none;stroke:#ff6f00;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st6{fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
 	.st7{filter:url(#Adobe_OpacityMaskFilter_1_);}
-	.st8{mask:url(#mask-4_1_);fill:none;stroke:#64EFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st8{mask:url(#mask-4_1_);fill:none;stroke:#64f0ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
 	.st9{filter:url(#Adobe_OpacityMaskFilter_2_);}
-	.st10{mask:url(#mask-4_2_);fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st10{mask:url(#mask-4_2_);fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
 	.st11{filter:url(#Adobe_OpacityMaskFilter_3_);}
-	.st12{mask:url(#mask-4_3_);fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st12{mask:url(#mask-4_3_);fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
 	.st13{filter:url(#Adobe_OpacityMaskFilter_4_);}
-	.st14{mask:url(#mask-4_4_);fill:none;stroke:#64EFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st14{mask:url(#mask-4_4_);fill:none;stroke:#64f0ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
 	.st15{filter:url(#Adobe_OpacityMaskFilter_5_);}
-	.st16{mask:url(#mask-4_5_);fill:#000076;}
+	.st16{mask:url(#mask-4_5_);fill:#161656;}
 	.st17{filter:url(#Adobe_OpacityMaskFilter_6_);}
-	.st18{mask:url(#mask-4_6_);fill:#000076;}
+	.st18{mask:url(#mask-4_6_);fill:#161656;}
 	.st19{filter:url(#Adobe_OpacityMaskFilter_7_);}
-	.st20{mask:url(#mask-4_7_);fill:#64EFFF;}
+	.st20{mask:url(#mask-4_7_);fill:#64f0ff;}
 	.st21{filter:url(#Adobe_OpacityMaskFilter_8_);}
-	.st22{mask:url(#mask-4_8_);fill:#FF6F00;}
+	.st22{mask:url(#mask-4_8_);fill:#ff6f00;}
 	.st23{filter:url(#Adobe_OpacityMaskFilter_9_);}
-	.st24{mask:url(#mask-4_9_);fill:#FFFFFF;}
+	.st24{mask:url(#mask-4_9_);fill:#ffffff;}
 	.st25{filter:url(#Adobe_OpacityMaskFilter_10_);}
-	.st26{mask:url(#mask-4_10_);fill:#64EFFF;}
+	.st26{mask:url(#mask-4_10_);fill:#64f0ff;}
 	.st27{filter:url(#Adobe_OpacityMaskFilter_11_);}
-	.st28{mask:url(#mask-4_11_);fill:#000076;}
+	.st28{mask:url(#mask-4_11_);fill:#161656;}
 	.st29{filter:url(#Adobe_OpacityMaskFilter_12_);}
-	.st30{mask:url(#mask-4_12_);fill:#FF6F00;}
+	.st30{mask:url(#mask-4_12_);fill:#ff6f00;}
 	.st31{filter:url(#Adobe_OpacityMaskFilter_13_);}
-	.st32{mask:url(#mask-4_13_);fill:#FFFFFF;}
+	.st32{mask:url(#mask-4_13_);fill:#ffffff;}
 	.st33{filter:url(#Adobe_OpacityMaskFilter_14_);}
-	.st34{mask:url(#mask-4_14_);fill:#FFFFFF;}
+	.st34{mask:url(#mask-4_14_);fill:#ffffff;}
 	.st35{filter:url(#Adobe_OpacityMaskFilter_15_);}
-	.st36{mask:url(#mask-4_15_);fill:#64EFFF;}
+	.st36{mask:url(#mask-4_15_);fill:#64f0ff;}
 	.st37{filter:url(#Adobe_OpacityMaskFilter_16_);}
-	.st38{mask:url(#mask-4_16_);fill:#000076;}
+	.st38{mask:url(#mask-4_16_);fill:#161656;}
 	.st39{filter:url(#Adobe_OpacityMaskFilter_17_);}
-	.st40{mask:url(#mask-4_17_);fill:#FFFFFF;}
+	.st40{mask:url(#mask-4_17_);fill:#ffffff;}
 	.st41{filter:url(#Adobe_OpacityMaskFilter_18_);}
-	.st42{mask:url(#mask-4_18_);fill:#64EFFF;}
+	.st42{mask:url(#mask-4_18_);fill:#64f0ff;}
 	.st43{filter:url(#Adobe_OpacityMaskFilter_19_);}
-	.st44{mask:url(#mask-4_19_);fill:#FF6F00;}
+	.st44{mask:url(#mask-4_19_);fill:#ff6f00;}
 	.st45{filter:url(#Adobe_OpacityMaskFilter_20_);}
-	.st46{mask:url(#mask-4_20_);fill:#FFFFFF;}
+	.st46{mask:url(#mask-4_20_);fill:#ffffff;}
 </style>
-<title>Group 45</title>
-<desc>Created with Sketch.</desc>
+<title>Commission icon</title>
 <g id="Desktop">
 	<g id="Travel-Ledger" transform="translate(-638.000000, -3010.000000)">
 		<g id="Group-45" transform="translate(638.000000, 3011.000000)">

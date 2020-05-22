@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Icon</title>
-    <desc>Created with Sketch.</desc>
+    <title>Play icon</title>
     <defs></defs>
     <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="1-Home" transform="translate(-381.000000, -2516.000000)">
             <g id="Element-/-Image-/-Icon-/-Play" transform="translate(381.000000, 2516.000000)">
-                <path d="M160,80 C160,124.182439 124.182439,160 80,160 C35.817561,160 0,124.182439 0,80 C0,35.817561 35.817561,0 80,0 C124.182439,0 160,35.817561 160,80" id="Background" fill="#000076"></path>
+                <path d="M160,80 C160,124.182439 124.182439,160 80,160 C35.817561,160 0,124.182439 0,80 C0,35.817561 35.817561,0 80,0 C124.182439,0 160,35.817561 160,80" id="Background" fill="#161656"></path>
                 <g id="Icon" stroke-width="1" transform="translate(60.000000, 45.333333)" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M41.3973418,42.4558738 C50.9460402,36.0148427 58.3873947,30.9946827 58.3873947,30.9946827 L0.465701587,0.471393778 L0.465701587,41.8481404" id="Stroke-1" stroke="#005EFF" stroke-width="4.66666667"></path>
-                    <path d="M0.465608466,54.3742311 L0.465608466,70.066 C0.465608466,70.066 17.4724233,58.5944444 33.0544762,48.0830133" id="Stroke-3" stroke="#64EFFF" stroke-width="4.66666667"></path>
+                    <path d="M41.3973418,42.4558738 C50.9460402,36.0148427 58.3873947,30.9946827 58.3873947,30.9946827 L0.465701587,0.471393778 L0.465701587,41.8481404" id="Stroke-1" stroke="#007bff" stroke-width="4.66666667"></path>
+                    <path d="M0.465608466,54.3742311 L0.465608466,70.066 C0.465608466,70.066 17.4724233,58.5944444 33.0544762,48.0830133" id="Stroke-3" stroke="#64f0ff" stroke-width="4.66666667"></path>
                 </g>
             </g>
         </g>

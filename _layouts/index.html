@@ -12,7 +12,7 @@ layout: compress
 </script>
 
 <div id="landing" class="section section--alt section--dark background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg);">
-    <div id="particles-js"></div> 
+    <div id="particles-js"></div>
     {% include containers/page/title.html
         headline = site.description
     %}
@@ -37,7 +37,7 @@ layout: compress
                         <div class="card__header">
                             <p class="card__title body--bold">Follow us</p>
                             {% include components/social.html
-                                size = 'small' 
+                                size = 'small'
                             %}
                         </div>
                     </div>
@@ -49,8 +49,8 @@ layout: compress
         <div class="card col--xl8 body--left">
             <p class="body body--bold card__title">Trusted by leading organisations and startups alike</p>
             <div class="card__body">
-                {% include elements/carousel.html 
-                    variant = 'clients' 
+                {% include elements/carousel.html
+                    variant = 'clients'
                 %}
             </div>
         </div>
@@ -63,7 +63,7 @@ layout: compress
 <section id="index-intro" class="section section--white">
     {% include containers/sections/header.html
         comment = 'What we do'
-        title = 'We use advanced cryptography to solve real world business problems'
+        title = 'We solve business problems using blockchains and advanced cryptography'
         body = 'Our team of experts advise, build and deploy full-stack, secure, privacy-preserving applications that protect individual and company data, while maximising business collaboration. Our customers range from the largest global enterprises, to the most innovative early stage startups in financial services, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.'
     %}
     <div class="section__content">
@@ -135,9 +135,9 @@ layout: compress
 <section id="index-testimonials" class="section section--white no-padding--left no-padding--right">
     <div class="section__content">
         <div class="card testimonials">
-            {% include elements/carousel.html 
+            {% include elements/carousel.html
                 type = 'testimonials'
-                variant = 'testimonials_clients' 
+                variant = 'testimonials_clients'
             %}
         </div>
     </div>
@@ -200,7 +200,7 @@ layout: compress
                     {% endif %}
                 </div>
             </div>
-            {% endfor %}    
+            {% endfor %}
         </div>
     </div>
     <div class="section__content">

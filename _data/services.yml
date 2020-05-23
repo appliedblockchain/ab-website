@@ -3,15 +3,15 @@
 solutions:
   - icon: decentralised
     title: Future-Proof
-    body: Proin luctus ut lorem in dignissim. Etiam vulputate aliquet nunc, nec tincidunt lorem suscipit ut. Sed ullamcorper elementum porttitor. Suspendisse rhoncus convallis nibh nec hendrerit. Nunc non neque efficitur, tempor mi eu, fermentum augue. Sed sed nisl tristique, vulputate ipsum aliquam, aliquam dui. Quisque non interdum elit, ac luctus turpis. Etiam sit amet leo erat.
+    body: We work with nascient emerging technologies in a space that is evolving rapidly with technoligies available today that we couldn't have imagined even 2 or 3 years ago. We design our solutions to allows for flexibility and change with minumal impact, based on our own understanding of the directions in which the various technologies are heading.
 
   - icon: production
     title: Production-Ready
-    body: We understand the difference between writing smart contracts for POCs in a lab environment and architecting and deploying a distributed blockchain application into a production environment. When we design all our applications, we keep in mind the end state of very different production environments of both enterprises and startups to ensure we are production-ready at delivery.
+    body: There's a major difference between writing POCs in a lab environment and architecting and deploying distributed blockchain applications into enterprise production environments. When we design all our applications, we keep in mind the end state of very different production environments of both enterprises and startups to ensure we are production-ready at delivery.
 
   - icon: security
     title: Private & secure
-    body: Blockchain technology is implemented to create a trustless network and to significantly reduce fraud. Before deploying a decentralised solution, a third party penetration testing is always recommended. With our team of blockchain and assurance experts, we provide auditing services for blockchain smart contracts developed by other providers.
+    body: Blockchain and advanced privacy and cryptographic technology is implemented to create a trustless network and to significantly reduce fraud. Before deploying a decentralised solution, a third party penetration testing is always recommended.
 
 stack:
   - title: 'Front End'

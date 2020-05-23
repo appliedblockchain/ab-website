@@ -7,11 +7,11 @@ solutions:
 
   - icon: production
     title: Production-Ready
-    body: There's a major difference between writing POCs in a lab environment and architecting and deploying distributed blockchain applications into enterprise production environments. When we design all our applications, we keep in mind the end state of very different production environments of both enterprises and startups to ensure we are production-ready at delivery.
+    body: There's a major difference between writing POCs in a lab environment and architecting and deploying distributed applications into enterprise production environments. When we design applications we keep in mind the end state of production requirements of both enterprises and startups.
 
   - icon: security
     title: Private & secure
-    body: Blockchain and advanced privacy and cryptographic technology is implemented to create a trustless network and to significantly reduce fraud. Before deploying a decentralised solution, a third party penetration testing is always recommended.
+    body: We apply blockchain to solutions in order to increase the security of digital records across a group, and advanced cryptography to ensure that sensitive data is never shared.
 
 stack:
   - title: 'Front End'

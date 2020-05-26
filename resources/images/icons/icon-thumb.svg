@@ -5,9 +5,9 @@
 	.st0{opacity:0.3;fill:#161656;enable-background:new    ;}
 	.st1{fill:#161656;}
 	.st2{fill:#ff6f00;}
-	.st3{fill:#ffffff;}
+	.st3{fill:#007bff;}
 	.st4{fill:#64f0ff;}
-	.st5{fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st5{fill:none;stroke:#007bff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
 	.st6{fill:none;stroke:#161656;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
 	.st7{fill:none;stroke:#ff6f00;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
 </style>

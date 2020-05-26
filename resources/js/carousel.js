@@ -52,7 +52,7 @@ $('.owl-carousel-technologies').owlCarousel({
         450:    { items: 2, margin: 25 },
 		575:    { items: 3, margin: 30 },
         767:    { items: 4, margin: 35 },
-        1299:   { items: 6, margin: 40, autoplay: false }
+        1299:   { items: 6, margin: 40 }
     }
 });
 

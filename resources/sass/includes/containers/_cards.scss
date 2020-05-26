@@ -540,6 +540,11 @@
             @include justify-content(center);
             margin-top: $integer-md;
         }
+
+        &__icon {
+            width: auto;
+            height: $integer-xxxxl;
+        }
     }
 }
 

@@ -59,12 +59,12 @@
 	&__wrapper {
 		@include display-flex();
 		@include flex-wrap(wrap);
-		margin-bottom: -$integer-md;
+		margin-bottom: -$integer;
 
 		.button {
-			margin-bottom: $integer-md;
+			margin-bottom: $integer;
 			margin-left: 0 !important;
-			margin-right: $integer-md;
+			margin-right: $integer;
 
 			&:last-child {
 				margin-right: 0;

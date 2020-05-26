@@ -57,7 +57,8 @@
         & + .card__inner,
         & + .card__header, 
         & + .card__title,
-        & + .card__body {
+        & + .card__body,
+        & + .card__label {
             margin-top: $integer-md;
         }
     }
@@ -512,6 +513,32 @@
             &--press-release    { background-color: $highlight; }
             &--blog             { background-color: $primary; }
             &--videos           { background-color: $dark; }   
+        }
+    }
+}
+
+#products {
+
+    .card {
+
+        &__image {
+            height: $integer-xxxxl;
+            width: auto;
+            max-width: none;
+
+            @include responsive(max-width, $desktop-max) {
+                height: $integer-xxxl;
+            }
+        }
+
+        &__label {
+            margin-top: $integer-lg;
+        }
+
+        &__actions {
+            @include display-flex();
+            @include justify-content(center);
+            margin-top: $integer-md;
         }
     }
 }

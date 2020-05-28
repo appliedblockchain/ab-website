@@ -84,6 +84,18 @@ $('.owl-carousel-testimonials').owlCarousel({
     margin: 100 
 });
 
+$('.owl-carousel-webinar').owlCarousel({
+    dots: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 2000,
+    mouseDrag: false,
+    touchDrag: true, 
+    items: 1, 
+    margin: 0 
+});
+
 
 
 // —————————————————————————————————————————————————————————————————

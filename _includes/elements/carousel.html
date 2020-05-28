@@ -5,7 +5,12 @@
 <div class="owl-carousel owl-carousel-{% if type == 'testimonials' %}testimonials{% else %}{{ variant }}{% if colour %}_{{ colour }}{% endif %}{% endif %}{% if type == 'testimonials' %} carousel--testimonials{% endif %}">
     {% for item in site.data.carousel.[variant] %}
     <div class="carousel__item">
+        {% if type != 'text' %}
         <img src="{{ site.url }}{{ site.imageurl }}/carousel/{{ variant }}{% if colour %}_{{ colour }}{% endif %}/{{ item.name | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
+        {% endif %}
+        {% if type == 'text' %}
+        <p class="card__body quote">{{ item.quote }}</p>
+        {% endif %}
         {% if type == 'testimonials' %}
         <div class="card body--left">
             <p class="card__body quote">{{ item.quote }}</p>

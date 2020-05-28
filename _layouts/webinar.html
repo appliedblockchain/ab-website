@@ -6,7 +6,30 @@ layout: compress
 
 <section class="section section--dark">
     <div class="section__content">
-        {{ content }}
+        <div class="row">
+            <div class="col--md6 hide--tablet body--left">
+                <div class="card__wrapper">
+                    <div class="card">
+                        <p class="card__title quote"><span class="body--bold">100%</span> of attendees<br>found the webinar useful</p>
+                    </div>
+                    <div class="card">
+                        <p class="card__title quote"><span class="body--bold">100%</span> of attendees<br>would recommend to friends and colleagues</p>
+                    </div>
+                    <div class="card">
+                        <p class="card__title body body--bold">What they say about it</p>
+                        <div class="card__body">
+                            {% include elements/carousel.html 
+                                type = 'text'
+                                variant = 'webinar'
+                            %}                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col--md6">
+                {{ content }}
+            </div>
+        </div>
 </section>
 
 {% include containers/site/footer.html %}

@@ -7,45 +7,39 @@ background_color: white
 
 <section id="about-intro" class="section section--white section--full">
     <div class="section__content section__content--2">
+        {% for item in site.data.about.intro %}
         <div class="card card--lg">
             <div class="card__inner">
-                <p class="card__title subtitle">We Solve Problems</p>
-                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-problems.svg" alt="Problems icon" class="card__image">
-                <p class="card__body body">At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced cryptographic technology to build applications that maximise data privacy and security.</p>
+                <p class="card__title subtitle">{{ item.title }}</p>
+                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.id | slugify }}.svg" alt="{{ item.id }} icon" class="card__image">
+                <p class="card__body body">{{ item.body }}</p>
             </div>
         </div>
-        <div class="card card--lg">
-            <div class="card__inner">
-                <p class="card__title subtitle">We Build Products</p>
-                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-products.svg" alt="Products icon" class="card__image">
-                <p class="card__body body">We build products to solve a problem once for our many clients. We focus on advanced cryptography to enable businesses to do more with each other, while sharing less data.</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>   
 </section>
 
-<section id="about-leadership" class="section section--grey section--full">
+<section id="about-leadership" class="section section--grey">
     {% include containers/sections/header.html
         title = 'Leadership team'
         body = 'Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
     %}
-    <div class="section__content body--left tab tab--leadership">
-        <div class="tab__nav">
-            {% for item in site.data.leadership %}
-            <a href="#{{ item.slug }}" class="card card--sm tab__button {{ item.active }} no--padding">
-                <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}-portrait.jpg);"></div>
-                <p class="card__title body--large body--bold">{{ item.name | truncatewords: 1, "" }}</p>
-                <p class="">{{ item.division }}</p>
-            </a>
-            {% endfor %}
-        </div>
-        <div class="">
-            {% for item in site.data.leadership %}
-            <div id="{{ item.slug }}" class="tab__item background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.slug }}.jpg);">
-                <div class="row">
-                    <div class="col--lg6 card card--lg">
-                        <p class="card__label body--bold">{{ item.title }}</p>
-                        <h2 class="card__title lead">{{ item.name }}</h2>
+    <div class="section__content">
+        <a href="{{ site.url }}/join" class="ga-button-join button button--primary button--animate fas fa-user-plus">
+            <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
+        </a>
+    </div>
+    <div class="section__content body--left">
+        <div class="row card__wrapper">
+            {% for item in site.data.about.leadership %}
+            <div class="card__outer col--xl5 col--lg6">
+                <div class="card card--portrait background--shadow">
+                    <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.name | slugify }}.jpg);">
+                        <p class="card__body-hidden body">{{ item.bio }}</p>
+                    </div>
+                    <div class="card__inner">
+                        <p class="card__label label">{{ item.title }}</p>
+                        <p class="card__title lead">{{ item.name }}</p>
                         <p class="card__body body">{{ item.bio }}</p>
                     </div>
                 </div>
@@ -99,13 +93,5 @@ background_color: white
         </div>
         {% endfor %}
         {% endfor %}
-    </div>
-</section>
-
-<section id="about-team" class="section section--white section--full background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/team.jpg);">
-    <div class="section__content">
-        <a href="{{ site.url }}/join" class="ga-button-join button button--white button--animate fas fa-user-plus">
-            <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
-        </a>
     </div>
 </section>

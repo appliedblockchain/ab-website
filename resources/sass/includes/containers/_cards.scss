@@ -386,17 +386,100 @@
 // layouts
 // —————————————————————————————————————————————————————————————————
 
+#about-leadership {
+
+    .card {
+
+        &__body-hidden {
+            opacity: 0;
+        }
+
+        @include responsive(max-width, $desktop-max) {
+            @include flex-direction(row);
+
+            .card {
+
+                &__image {
+                    height: auto;
+                    min-width: 5rem;
+                }
+
+                &__inner {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        @include responsive(max-width, $tablet-max) {
+
+            .card__image {
+                display: none;
+            }
+        }
+        
+        @include responsive(min-width, $desktop-min) {
+            @include justify-content(space-between);
+            
+            &__outer {
+                @include display-flex();
+            }
+            
+            &__image {
+                @include flex-grow(1);
+                @include transition(max-height $transition);
+                will-change: max-height;
+                max-height: 22rem;
+                height: auto;
+            }
+            
+            &__inner {
+                margin-top: 0;
+            }
+            
+            &__body {
+                @include transition(padding $transition, max-height $transition);
+                will-change: padding, max-height;
+                opacity: 0;
+                max-height: 0;
+                
+                &-hidden {
+                    @include transition(padding $transition, max-height $transition);
+                    will-change: padding, max-height;
+                    max-height: 22rem;
+                    padding: $integer-lg;
+                }
+            }
+            
+            &:hover {
+                
+                .card {
+                    
+                    &__image {
+                        max-height: 0;
+                    }
+                    
+                    &__inner {
+                    }
+                    
+                    &__body {
+                        opacity: 1;
+                        max-height: 22rem;
+                        
+                        &-hidden {
+                            max-height: 0;
+                            padding: 0;
+                        }        
+                    }
+                }
+            }
+        }
+    }
+}
+
 #landing {
 
     .card--xxs .card__inner {
         padding-left: $integer-md;
-    }
-}
-
-#about {
-
-    .card__image {
-        border-radius: $border-radius;
     }
 }
 

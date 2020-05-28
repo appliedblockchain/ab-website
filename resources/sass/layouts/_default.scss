@@ -20,9 +20,9 @@
 .timeline {
 
     &:before {
-        @include pseudo-element('', $integer-xxxxl+$integer-xxxl, auto, 0, 50%, $integer-xs, 100%);
-        @include transform(translateX(-$integer-xs/2));
-        background-color: $medium-grey;
+        @include pseudo-element('', $integer-xxxxl+$integer-xxxl, auto, 0, 50%, $integer, 100%);
+        @include transform(translateX(-$integer/2));
+        background-color: $light-grey;
 
         @include responsive(max-width, $tablet-max) {
             display: none;
@@ -151,14 +151,11 @@
             display: none;
         }
     }
-    
-    &-team {
-        @include justify-content(center);
-        height: 75vh;
 
-        &:before {
-            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-            background-color: rgba($primary, 0.8);
+    &-leadership {
+
+        .row {
+            @include justify-content(center);
         }
     }
 }

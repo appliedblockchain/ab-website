@@ -1,5 +1,6 @@
 ---
 layout: project
+order: 4
 dlc: true
 title: Travel Ledger
 subtitle: Travel settlement platform built on blockchain technology

@@ -1,5 +1,6 @@
 ---
 layout: project
+order: 100
 title: Nuggets
 subtitle: Reinventing consumer data security
 industry: Biometrics<br>

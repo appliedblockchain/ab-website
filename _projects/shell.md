@@ -1,5 +1,6 @@
 ---
 layout: project
+order: 1
 title: Shell
 subtitle: First energy product derivative trade on blockchain
 industry: Energy

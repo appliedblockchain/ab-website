@@ -1,5 +1,6 @@
 ---
 layout: project
+order: 100
 dlc: true
 title: Cygnetise
 slug: cygnetise

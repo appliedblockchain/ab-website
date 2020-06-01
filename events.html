@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Events
-subtitle: Meet our team at blockchain events!
 background_color: white
 ---
 
@@ -23,41 +22,60 @@ background_color: white
                 <p class="button__inner">Past</p>
             </a>
         </div>
-        <div class="tab__content block background--shadow no-padding">
+        <div class="tab__content">
             <div id="webinars" class="tab__item">
-                {% for event in site.data.events %}
-                {% if event.display == 'upcoming' %}
-                {% include components/event.html 
-                    variant = 'past'
-                %}
-                {% endif %}
-                {% endfor %} 
+                <div class="tab__content">
+                    <div class="row">
+                        <div class="col--4">
+                            <div class="block background--shadow">
+                                <div class="card__inner body--left">
+                                    {% include containers/cards/webinar.html %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--8">
+                            <div class="block background--shadow no-padding">
+                                {% for event in sorted %}
+                                {% if event.display == 'upcoming' %}
+                                {% include components/event.html 
+                                    variant = 'past'
+                                %}
+                                {% endif %}
+                                {% endfor %} 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="upcoming" class="tab__item">
-                {% if sorted > 0 %}
-                {% for event in sorted %}
-                {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
-                {% if date >= now %}
-                {% include components/event.html 
-                    variant = 'upcoming'
-                %}
-                {% endif %}
-                {% endfor %} 
-                {% else %}
-                <div class="card card--sm">
-                    <p class="card__inner body--large body--bold">There are no upcoming events at the moment. Come back soon!</p>
+                <div class="tab__content block background--shadow no-padding">
+                    {% if sorted > 0 %}
+                    {% for event in sorted %}
+                    {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
+                    {% if date >= now %}
+                    {% include components/event.html 
+                        variant = 'upcoming'
+                    %}
+                    {% endif %}
+                    {% endfor %} 
+                    {% else %}
+                    <div class="card card--sm">
+                        <p class="card__inner body--large body--bold">There are no upcoming events at the moment. Come back soon!</p>
+                    </div>
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
             <div id="past" class="tab__item">
-                {% for event in site.data.events %}
-                {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
-                {% if date < now %}
-                {% include components/event.html 
-                    variant = 'past'
-                %}
-                {% endif %}
-                {% endfor %} 
+                <div class="tab__content block background--shadow no-padding">
+                    {% for event in site.data.events %}
+                    {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
+                    {% if date < now %}
+                    {% include components/event.html 
+                        variant = 'past'
+                    %}
+                    {% endif %}
+                    {% endfor %} 
+                </div>
             </div>
         </div>
     </div>

@@ -80,7 +80,7 @@ background_color: white
                     <p class="card__title body">{{ item.body }}</p>
                     {% if item.link %}
                     <div class="body">
-                        <a href="{{ site.url }}/{{ item.link }}" class="button button--small button--highlight button--animate fas fa-{{ item.link_icon }}">
+                        <a href="{{ site.url }}/{{ item.link }}" class="button button--small button--primary button--animate fas fa-{{ item.link_icon }}">
                             <p class="button__inner">{% if item.link_title %}{{ item.link_title }}{% else %}{{ item.link }}{% endif %}</p>
                         </a>
                     </div>

@@ -1,5 +1,6 @@
 ---
 layout: project
+order: 3
 title: SITA
 subtitle: Distributed drone registry
 industry: Aviation IT

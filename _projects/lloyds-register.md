@@ -1,5 +1,6 @@
 ---
 layout: project
+order: 2
 tag: featured
 title: Lloyd's Register
 subtitle: Creating the first demonstrator that can register ships into Class using blockchain technology

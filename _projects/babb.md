@@ -1,5 +1,6 @@
 ---
 layout: project
+order: 100
 title: BABB
 subtitle: Blockchain-based social bank
 industry: Financial Technology<br>Services

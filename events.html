@@ -26,14 +26,14 @@ background_color: white
             <div id="webinars" class="tab__item">
                 <div class="tab__content">
                     <div class="row">
-                        <div class="col--4">
+                        <div class="col--lg4 hide--desktop">
                             <div class="block background--shadow">
                                 <div class="card__inner body--left">
                                     {% include containers/cards/webinar.html %}
                                 </div>
                             </div>
                         </div>
-                        <div class="col--8">
+                        <div class="col--lg8">
                             <div class="block background--shadow no-padding">
                                 {% for event in sorted %}
                                 {% if event.display == 'upcoming' %}

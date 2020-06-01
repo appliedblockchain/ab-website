@@ -527,6 +527,34 @@
     }
 }
 
+#events {
+
+    @include responsive(max-width, $desktop-lg-max) {
+
+        .card {
+            
+            &__inner {
+                @include flex-direction(column);
+            }
+
+            &__actions {
+                @include flex-direction(row);
+                @include align-items(flex-start);
+                margin-top: $integer-md;
+                padding-left: 0;
+
+                .button {
+                    margin-right: $integer;
+                    
+                    & + .button {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
 #services {
 
     &-stack {

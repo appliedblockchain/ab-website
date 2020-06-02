@@ -76,10 +76,6 @@
         position: relative;
         padding: $integer-lg;
 
-        @include responsive(max-width, $tablet-max) {
-            padding: $integer-md;
-        }
-
         & + .card__image {
             margin-top: $integer-md;
         }

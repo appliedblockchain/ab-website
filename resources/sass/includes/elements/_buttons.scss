@@ -214,14 +214,14 @@
 
 @include button-fill-color('button--',
 //	 prefix 		 background		 color
+	'black' 		$black 			$white,
+	'grey' 			$medium-grey 	$black,
+	'white' 		$white 			$primary,
+
 	'primary'   	$primary 		$white,
 	'secondary' 	$secondary		$black,
 	'highlight' 	$highlight		$white,
 	'dark' 			$dark 			$white,
-
-	'black' 		$black 			$white,
-	'grey' 			$medium-grey 	$black,
-	'white' 		$white 			$primary,
 
 	'facebook' 		$facebook 		$white,
 	'github' 		$github 		$white,

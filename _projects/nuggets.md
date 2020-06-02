@@ -1,6 +1,7 @@
 ---
 layout: project
 order: 100
+case_study: true
 title: Nuggets
 subtitle: Reinventing consumer data security
 industry: Biometrics<br>

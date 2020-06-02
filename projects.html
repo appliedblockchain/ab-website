@@ -27,9 +27,11 @@ background_color: white
                         </p>
                     </div>
                     <div class="card__actions">
+                        {% if project.case_study == true %}
                         <a href="{{ project.url }}" class="button button--primary button--small button--animate fa fa-eye">
-                            <p class="button__inner">View project</p>
+                            <p class="button__inner">Learn more</p>
                         </a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

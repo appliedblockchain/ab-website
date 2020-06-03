@@ -2,8 +2,8 @@
 layout: project
 order: 1
 title: KLM
-subtitle: ~Quick description of the project/deliverable~
+subtitle: Aircraft component tracking solution
 industry: Aviation
-summary: ~More in depth description of the project and the company~
+summary: A component tracking solution for the Engineering & Maintenance team to improve safety and better understand the lifecycle of each component. 
 background_color: white
 ---

@@ -2,8 +2,8 @@
 layout: project
 order: 1
 title: Vodafone
-subtitle: ~Quick description of the project/deliverable~
+subtitle: VodaCoin Group Finance
 industry: Telecom
-summary: ~More in depth description of the project and the company~
+summary: A solution for Group Finance to account for local operating company performance using a uniform token of exchange
 background_color: white
 ---

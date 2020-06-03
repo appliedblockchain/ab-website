@@ -2,8 +2,8 @@
 layout: project
 order: 100
 title: Lymited
-subtitle: ~Quick description of the project/deliverable~
+subtitle: Changing the Game for Luxury Vendors
 industry: ~add industry~
-summary: ~More in depth description of the project and the company~
+summary: The Lymited platform seamlessly connects vendors and their most sought-after pieces with a targeted global audience of discerning buyers.
 background_color: white
 ---

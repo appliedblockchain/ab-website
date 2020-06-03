@@ -2,8 +2,8 @@
 layout: project
 order: 100
 title: Emsurge
-subtitle: ~Quick description of the project/deliverable~
+subtitle: Streamlining the pre to post trade process and create more interactive, efficient LNG networks
 industry: LNG Trading
-summary: ~More in depth description of the project and the company~
+summary: A powerful suite of tools adopts emerging technologies that dramatically improve how LNG is traded.
 background_color: white
 ---

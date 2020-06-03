@@ -2,8 +2,8 @@
 layout: project
 order: 100
 title: Wyzepay
-subtitle: ~Quick description of the project/deliverable~
+subtitle: The payments platform for forward thinkers
 industry: Financial Technology
-summary: ~More in depth description of the project and the company~
+summary: Consumer payments solution
 background_color: white
 ---

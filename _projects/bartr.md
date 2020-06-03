@@ -2,8 +2,8 @@
 layout: project
 order: 100
 title: BARTR
-subtitle: ~Quick description of the project/deliverable~
+subtitle: Wholesale telecoms billing and reconciliation
 industry: Telecom
-summary: ~More in depth description of the project and the company~
+summary: Bartr is creating a standardised, decentralised value layer that brings together global telecoms
 background_color: white
 ---

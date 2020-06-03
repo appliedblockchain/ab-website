@@ -2,8 +2,8 @@
 layout: project
 order: 1
 title: Telecom Italia
-subtitle: ~Quick description of the project/deliverable~
+subtitle: TIM WCAP Innovation Program
 industry: Telecom
-summary: ~More in depth description of the project and the company~
+summary: Showcasing privacy-preserving technology
 background_color: white
 ---

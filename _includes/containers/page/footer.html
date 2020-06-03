@@ -51,8 +51,6 @@
                 <div class="card col--md4">
                     <p class="card__title body--large body--bold">Projects</p>
                     <div class="card__body">
-                        <p class="button button--text">Toyota</p>
-                        <p class="button button--text">Emsurge</p>
                         {% for project in site.projects %}
                         <a href="{{ project.url }}" class="footer__button button button--text">{{ project.title }}</a>
                         {% endfor %}

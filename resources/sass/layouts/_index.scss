@@ -82,6 +82,19 @@
             .card {
                 padding-top: $integer-lg;
                 padding-bottom: $integer-lg;
+
+                @include responsive(max-width, $mobile-max) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+
+            @include responsive(max-width, $mobile-max) {
+
+                .body--right,
+                .body--left {
+                    text-align: center;
+                }
             }
         }
     }
@@ -101,8 +114,8 @@
         
         @include responsive(max-width, $mobile-max) {
             
-            img {
-                width: 50%;
+            .col--6 {
+                width: 50% !important;
             }
         }
     }

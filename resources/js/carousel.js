@@ -52,7 +52,7 @@ $('.owl-carousel-technologies').owlCarousel({
         450:    { items: 2, margin: 25 },
 		575:    { items: 3, margin: 30 },
         767:    { items: 4, margin: 35 },
-        1299:   { items: 6, margin: 40, autoplay: false }
+        1299:   { items: 6, margin: 40 }
     }
 });
 
@@ -82,6 +82,18 @@ $('.owl-carousel-testimonials').owlCarousel({
     touchDrag: true, 
     items: 1, 
     margin: 100 
+});
+
+$('.owl-carousel-webinar').owlCarousel({
+    dots: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 2000,
+    mouseDrag: false,
+    touchDrag: true, 
+    items: 1, 
+    margin: 0 
 });
 
 

@@ -28,6 +28,15 @@
         .card {
             margin-bottom: $integer-md*2;
         }
+
+        &--sm {
+            width: 100%;
+            margin-bottom: -$integer-md;
+
+            .card {
+                margin-bottom: $integer-md;
+            }
+        }
     }
 
     &__wrapper--inline {
@@ -57,7 +66,8 @@
         & + .card__inner,
         & + .card__header, 
         & + .card__title,
-        & + .card__body {
+        & + .card__body,
+        & + .card__label {
             margin-top: $integer-md;
         }
     }
@@ -65,10 +75,6 @@
     &__inner {
         position: relative;
         padding: $integer-lg;
-
-        @include responsive(max-width, $tablet-max) {
-            padding: $integer-md;
-        }
 
         & + .card__image {
             margin-top: $integer-md;
@@ -385,17 +391,100 @@
 // layouts
 // —————————————————————————————————————————————————————————————————
 
+#about-leadership {
+
+    .card {
+
+        &__body-hidden {
+            opacity: 0;
+        }
+
+        @include responsive(max-width, $desktop-max) {
+            @include flex-direction(row);
+
+            .card {
+
+                &__image {
+                    height: auto;
+                    min-width: 5rem;
+                }
+
+                &__inner {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        @include responsive(max-width, $tablet-max) {
+
+            .card__image {
+                display: none;
+            }
+        }
+        
+        @include responsive(min-width, $desktop-min) {
+            @include justify-content(space-between);
+            
+            &__outer {
+                @include display-flex();
+            }
+            
+            &__image {
+                @include flex-grow(1);
+                @include transition(max-height $transition);
+                will-change: max-height;
+                max-height: 22rem;
+                height: auto;
+            }
+            
+            &__inner {
+                margin-top: 0;
+            }
+            
+            &__body {
+                @include transition(padding $transition, max-height $transition);
+                will-change: padding, max-height;
+                opacity: 0;
+                max-height: 0;
+                
+                &-hidden {
+                    @include transition(padding $transition, max-height $transition);
+                    will-change: padding, max-height;
+                    max-height: 22rem;
+                    padding: $integer-lg;
+                }
+            }
+            
+            &:hover {
+                
+                .card {
+                    
+                    &__image {
+                        max-height: 0;
+                    }
+                    
+                    &__inner {
+                    }
+                    
+                    &__body {
+                        opacity: 1;
+                        max-height: 22rem;
+                        
+                        &-hidden {
+                            max-height: 0;
+                            padding: 0;
+                        }        
+                    }
+                }
+            }
+        }
+    }
+}
+
 #landing {
 
     .card--xxs .card__inner {
         padding-left: $integer-md;
-    }
-}
-
-#about {
-
-    .card__image {
-        border-radius: $border-radius;
     }
 }
 
@@ -427,6 +516,34 @@
 
                     @include responsive(max-width, $mobile-max) {
                         @include flex-basis(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#events {
+
+    @include responsive(max-width, $desktop-lg-max) {
+
+        .card {
+            
+            &__inner {
+                @include flex-direction(column);
+            }
+
+            &__actions {
+                @include flex-direction(row);
+                @include align-items(flex-start);
+                margin-top: $integer-md;
+                padding-left: 0;
+
+                .button {
+                    margin-right: $integer;
+                    
+                    & + .button {
+                        margin-top: 0;
                     }
                 }
             }
@@ -516,6 +633,37 @@
     }
 }
 
+#products {
+
+    .card {
+
+        &__image {
+            height: $integer-xxxxl;
+            width: auto;
+            max-width: none;
+
+            @include responsive(max-width, $desktop-max) {
+                height: $integer-xxxl;
+            }
+        }
+
+        &__label {
+            margin-top: $integer-lg;
+        }
+
+        &__actions {
+            @include display-flex();
+            @include justify-content(center);
+            margin-top: $integer-md;
+        }
+
+        &__icon {
+            width: auto;
+            height: $integer-xxxxl;
+        }
+    }
+}
+
 #project {
 
     &-summary {
@@ -576,8 +724,9 @@
             @include transition(transform $transition);
             will-change: transform;
             height: auto;
-            width: 25%;
-            min-width: $integer-xxxxl;
+            width: auto;
+            max-height: 4rem;
+            max-width: 25%;
             margin-bottom: $integer-xl;
 
             @include responsive-mobile-devices() {
@@ -608,16 +757,7 @@
         }
 
         &__actions {
-            @include transition(opacity $transition, transform $transition);
-            @include transform(translateY($integer-xl));
             @include align-items(flex-start);
-            will-change: opacity, transform;
-            opacity: 0;
-
-            @include responsive-mobile-devices() {
-                @include transform(translateY(0));
-                opacity: 1 !important;
-            }
         }
 
         &:hover {
@@ -642,12 +782,6 @@
 
                 &__body span {
                     @include transform(translateY(0) scaleY(1));
-                }
-
-                &__actions {
-                    @include transition(opacity $transition-delay, transform $transition-delay);
-                    @include transform(translateY(0));
-                    opacity: 1;
                 }
             }
         }

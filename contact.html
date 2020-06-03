@@ -3,7 +3,6 @@ layout: default
 title: Contact
 headline: Get in touch today!
 subtitle: Send us a message to learn more about our services and how we can support you
-body:
 background_color: white
 ---
 
@@ -21,11 +20,12 @@ background_color: white
     {% include containers/sections/header.html
         title = ''
     %}
-    <div class="section__content section__content--2">
+    <div class="section__content--2">
         <div class="card card--lg background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/london.jpg);">
             <div class="card__inner">
                 <div class="card__content">
-                    <p class="card__title body--large">{{ site.contact.london.address }}</p>
+                    <h2 class="card__title lead">London</h2>
+                    <p class="card__body body--large">{{ site.contact.london.address }}</p>
                 </div>
                 <div class="card__actions">
                     <a href="{{ site.contact.london.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
@@ -37,7 +37,8 @@ background_color: white
         <div class="card card--lg background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/background/porto.jpg);">
             <div class="card__inner">
                 <div class="card__content">
-                    <p class="card__title body--large">{{ site.contact.porto.address }}</p>
+                    <h2 class="card__title lead">Porto</h2>
+                    <p class="card__body body--large">{{ site.contact.porto.address }}</p>
                 </div>
                 <div class="card__actions">
                     <a href="{{ site.contact.porto.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">

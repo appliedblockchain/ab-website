@@ -6,7 +6,14 @@ layout: compress
 
 <section class="section section--dark">
     <div class="section__content">
-        {{ content }}
+        <div class="row">
+            <div class="col--md6 hide--tablet body--left">
+                {% include containers/cards/webinar.html %}
+            </div>
+            <div class="col--md6">
+                {{ content }}
+            </div>
+        </div>
 </section>
 
 {% include containers/site/footer.html %}

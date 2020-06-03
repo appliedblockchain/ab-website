@@ -1,5 +1,7 @@
 ---
 layout: project
+order: 100
+case_study: true
 dlc: true
 title: Cygnetise
 slug: cygnetise

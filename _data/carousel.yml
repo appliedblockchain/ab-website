@@ -66,4 +66,13 @@ technologies:
   - name: Hyperledger Fabric
   - name: Corda
   - name: Algorand
+  - name: Libra
   - name: Elements
+
+# webinar.html
+webinar:
+  - quote: “Very well done and right paced”
+  - quote: “Another major learning module”
+  - quote: “Informative & at right level”
+  - quote: “Really Excellent”
+  - quote: “Interesting and timely topic”

@@ -33,7 +33,7 @@
 		}
 
 		& + & {
-			margin-left: $integer-lg;
+			margin-left: $integer-md !important;
 		}
 	}
 
@@ -57,52 +57,6 @@
 // —————————————————————————————————————————————————————————————————
 
 .tab {
-
-	&--leadership {
-
-		.tab {
-
-			&__item {
-				background-position: top right;
-				position: relative;
-				padding: $integer-xxxl*2 $page;
-
-				&:before {
-					@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-					@include background-image(linear-gradient(to left, rgba($light-grey, 0.2), $light-grey 60%));
-				}
-
-				@include responsive(max-width, $tablet-max) {
-					background-image: none !important;
-					text-align: center;
-				}
-
-				.card {
-
-					> * {
-						position: relative;
-					}
-				}
-			}	
-
-			&__nav {
-				width: auto;
-				margin-bottom: -$integer-xxxl*1.5;
-				z-index: 1;
-			}
-		}
-
-		.card__image {
-			@include transition($transition);
-			height: $integer-xxxxl;
-			width: $integer-xxxxl;
-			will-change: transform;
-
-			&:hover {
-				@include transform(scale(1.05));
-			}
-		}
-	}
 
 	&--approach {
 
@@ -153,6 +107,13 @@
 			&__image {
 				padding-left: 0 !important;
 			}
+		}
+	}
+
+	&--events {
+
+		.tab__content {
+			width: 100%;
 		}
 	}
 }

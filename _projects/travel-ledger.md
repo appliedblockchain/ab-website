@@ -1,5 +1,7 @@
 ---
 layout: project
+order: 1
+case_study: true
 dlc: true
 title: Travel Ledger
 subtitle: Travel settlement platform built on blockchain technology

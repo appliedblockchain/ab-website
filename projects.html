@@ -26,13 +26,20 @@ background_color: white
                             <span>{{ project.summary }}</span>
                         </p>
                     </div>
+                    {% if project.case_study == true or project.link %}
                     <div class="card__actions">
                         {% if project.case_study == true %}
                         <a href="{{ project.url }}" class="button button--primary button--small button--animate fa fa-eye">
                             <p class="button__inner">Learn more</p>
                         </a>
                         {% endif %}
+                        {% if project.link %}
+                        <a href="{{ project.link }}" target="_blank" class="button button--highlight button--small button--animate fa fa-globe">
+                            <p class="button__inner">{% if project.link_title %}{{ project.link_title }}{% else %}Website{% endif %}</p>
+                        </a>
+                        {% endif %}
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

@@ -151,17 +151,24 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 ***
 ## Add project
 
-* In the `_projects` folder, create a new file, named after the client
-* Copy this code in the file
+* In the `_projects` folder, create a new .md file
+* Name it with a slugified version of the client name (e.g. Lloyd's register becomes lloyd-s-register.md)
+* Copy/paste the code below and fill it accordingly
+* [Here is an example](https://appliedblockchain.com/projects/appii/) of how each is displayed
+
 ```yml
 ---
-layout: project
-title: 
-subtitle: 
+layout: project # do not edit
+order: # number, specify the order it will appear on the projects page
+case_study: true # add if the project has a standalone page
+title: # company name
+subtitle: # short project/deliverable description
 industry: 
 deliverables: 
-summary: 
-background_color: white
+summary: # longer description of the company/project
+link: # [optionnal] external link to company website (or other)
+link_title: # [optionnal] # overrides default link title
+background_color: white # do not edit
 
 challenge-diagram: 
 challenge: 
@@ -188,16 +195,11 @@ testimonial:
       company: 
 ---
 ```
-* Fill in the tags according layout (if you don't understand where they are displayed, [here is an example](https://appliedblockchain.com/projects/cygnetise/))
-* Add the company logo in the `resources/images/logos/clients` folder;
-* Add a white verions of the company logo in the `resources/images/logos/clients-white` folder;
-> The logo need to be in a 800x400px format
-> The logo in the about section will link itself automatically, provided the image has the same **title** as the project page
 
-### Additionnal comments
-* Add `tag: featured` to the project to feature it
-* If the logo doesn't appear, check the file extension.
-* The logo needs to be 800x400px
+* Add logo in the `resources/images/carousel/clients_projects` folder
+> Png format
+> No white space around the logo
+> File name should be the same as the .md file
 
 <p>&nbsp;</p>
 

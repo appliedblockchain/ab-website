@@ -723,10 +723,10 @@
             // @include transform(scale(1.5));
             // @include transition(transform $transition);
             // will-change: transform;
-            height: auto;
+            height: 4rem;
             width: auto;
-            max-height: 4rem;
-            max-width: 25%;
+            // max-height: 4rem;
+            // max-width: 25%;
             margin-bottom: $integer-xl;
 
             // @include responsive-mobile-devices() {

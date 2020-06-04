@@ -710,7 +710,7 @@
 
         &__content {
             @include transition(transform $transition);
-            @include transform(translateY(25%));
+            @include transform(translateY(3rem));
             will-change: transform;
 
             @include responsive-mobile-devices() {
@@ -720,24 +720,18 @@
 
         &__image {
             @include transform-origin(bottom, left);
-            @include transform(scale(1.5));
+            @include transform(scale(1));
             @include transition(transform $transition);
             will-change: transform;
-            height: auto;
+            height: 5rem;
             width: auto;
-            max-height: 4rem;
-            max-width: 25%;
+            // max-height: 4rem;
+            // max-width: 25%;
             margin-bottom: $integer-xl;
 
             @include responsive-mobile-devices() {
-                @include transform(scale(1));
+                @include transform(scale(0.8));
             }
-        }
-
-        &__label {
-            @include transition(opacity $transition);
-            will-change: opacity;
-            opacity: 1;
         }
 
         &__body {
@@ -773,13 +767,9 @@
                 }
 
                 &__image {
-                    @include transform(scale(1));
+                    @include transform(scale(0.8));
                 }
                 
-                &__label {
-                    opacity: 0;
-                }
-
                 &__body span {
                     @include transform(translateY(0) scaleY(1));
                 }

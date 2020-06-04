@@ -7,6 +7,7 @@ subtitle: Reinventing consumer data security
 industry: Biometrics<br>
     Data privacy
 summary: Biometric tool for login, payment and identity verification, without sharing or storing private data.
+link: http://nuggets.life/
 background_color: white
 
 delivery:

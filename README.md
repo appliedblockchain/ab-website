@@ -164,29 +164,39 @@ case_study: true # add if the project has a standalone page
 title: # company name
 subtitle: # short project/deliverable description
 industry: 
-deliverables: 
 summary: # longer description of the company/project
 link: # [optionnal] external link to company website (or other)
 link_title: # [optionnal] # overrides default link title
 background_color: white # do not change
+
+deliverables: 
 
 challenge-diagram: 
 challenge: 
     - lead: 
     - paragraph: 
     - paragraph: 
+    # etc.
 
 delivery:
     - item:
         - paragraph: 
         - paragraph: 
+        # etc.
+    - item:
+        - paragraph: 
+        # etc.
 
 results:
     - paragraph: 
     - paragraph: 
+    # etc.
 results-icons:
     - image: 
       title: 
+    - image: 
+      title: 
+    # etc.
 
 testimonial:
     - quote: 
@@ -215,15 +225,15 @@ testimonial:
     responsabilities:
       - li: ''
       - li: ''
-      # etc…
+      # etc.
     required-skills:
       - li: ''
       - li: ''
-      # etc…
+      # etc.
     additional-skills:
       - li: ''
       - li: ''
-      # etc…
+      # etc.
 ```
 - The content of each tag must be inside single quotes. This ensures the HTML to be read correctly by Jekyll.
 - Each new line is set by a `- li:` tag.
@@ -281,4 +291,4 @@ headline: # introduction text
 
 ---
 
-## [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)
+### [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)

@@ -3,12 +3,11 @@
   * [Getting started](#getting-started)
   * [Dependencies & Methodology](#comments)
 * [Deployment](#deployment)
-  * [Test](#test)
 * [Page structure](#page-structure)
   * [Section system](#section-system)
   * [Components](#components)
   * [Column system](#column-system)
-* [Create new page](#create-new-page)  
+* [Create page](#create-page)  
 * [Add image to carousel](#add-image-to-carousel)
 * [Add testimonial to homepage](#add-testimonial-to-homepage)
 * [Add project](#add-project)
@@ -18,17 +17,16 @@
 * [Add blog post](#add-blog-post)
   * [Content HTML structure](#content-html-structure)
 
-<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-***
 ## Introduction
 
 ### Getting started
-* Install [Jekyll](https://jekyllrb.com/)
+#### Install [Jekyll](https://jekyllrb.com/)
 ```
 gem install bundler jekyll
 ```
-* Run the website in development mode
+#### Run the website in development mode
 ```
 bundle exec jekyll serve
 ```
@@ -38,19 +36,17 @@ bundle exec jekyll serve
 
 #### SASS & Compass
 Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
-> You need Ruby and npm to run SASS and Compass
 * [Install Sass](https://sass-lang.com/install)
 * [Install Compass](http://compass-style.org/install/)
 
-
 #### BEM Markdown
-Along with SASS, this project is based on the BEM markdown. To learn more about BEM:
+Along with SASS, the CSS styles are based on BEM terminology.
 * [bem.info](https://en.bem.info/methodology/quick-start/)
 * [getbem.com](http://getbem.com/introduction/)
 
-<p>&nbsp;</p>
 
-***
+<!------------------------------------------------------>
+
 ## Deployment
 
 The deployment process is run throught Netlify.
@@ -65,9 +61,8 @@ The deployment process is run throught Netlify.
 
 > Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on the content.
 
-<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-***
 ## Page structure
 Every page is build on the same structure:
 * They are divided in [sections](#section-system), representing each part of the page
@@ -141,14 +136,23 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 </div>
 ```
 
-<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-***
-## Create new page
+## Create page
 
-<p>&nbsp;</p>
+- Create a .html file at the root of the website, with the name of the new page.
+- Copy/paste the following code in the file
+```yml
+layout: default # do not edit
+title: # this will appear as the screen header and the html header in the browser tab
+headline: # [optional] overrides the screen header
+subtitle: # [optional]
+background_color: white # do not edit
+```
+- Start coding the page content
 
-***
+<!------------------------------------------------------>
+
 ## Add project
 
 * In the `_projects` folder, create a new .md file
@@ -201,9 +205,8 @@ testimonial:
 > No white space around the logo
 > File name should be the same as the .md file
 
-<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-***
 ## Add job
 
 * Open the `jobs.yml` file in `_data` folder
@@ -237,9 +240,8 @@ testimonial:
         <li>Curabitur ultricies vitae odio sit amet rhoncus.'</li>
 ```
 
-<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-***
 ## Add event
 * Open the `events.yml` file in `_data` folder
 * Copy/paste this code and fill the content
@@ -258,9 +260,8 @@ testimonial:
     * File cannot be over 800 px wide and 100 KB
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
-<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-***
 ## Add blog post
 * Create a new file in the `_posts` folder
 * Name the file with a slugged version of the title, preceded by the date of the post
@@ -279,7 +280,6 @@ headline:
 ---
 ```
 
-<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-***
 ## [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)

@@ -8,14 +8,10 @@
   - [Components](#components)
   - [Column system](#column-system)
 - [Create page](#create-page)  
-- [Add image to carousel](#add-image-to-carousel)
-- [Add testimonial to homepage](#add-testimonial-to-homepage)
-- [Add project](#add-project)
-- [Add job](#add-job)
-  - [Content YML structure](#content-yml-structure)
-- [Add event](#add-event)
-- [Add blog post](#add-blog-post)
-  - [Content HTML structure](#content-html-structure)
+- [Create project](#create-project)
+- [Create job](#create-job)
+- [Create event](#create-event)
+- [Create blog post](#create-blog-post)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -103,7 +99,7 @@ The deployment process is run throught Netlify.
 
 #### Section colors
 
-Change the background color of a section (default is white) using `.section--primary`, `.section--dark` or `.section--grey`.
+Change the background color of a section (default is white) using `section--primary`, `section--dark` or `section--grey`.
 
 ### Components
 
@@ -155,7 +151,7 @@ background_color: white # do not edit
 <p>&nbsp;</p>
 <!------------------------------------------------------>
 
-## Add project
+## Create project
 
 - In the `_projects` folder, create a new .md file.
 - Name it with a slugified version of the client name (e.g. Lloyd's register becomes `lloyd-s-register.md`).
@@ -209,7 +205,7 @@ testimonial:
 <p>&nbsp;</p>
 <!------------------------------------------------------>
 
-## Add job
+## Create job
 
 - Open the `jobs.yml` file in `_data` folder.
 - Copy/paste this code in the section you want it to appear (London or Porto) and fill the content.
@@ -236,7 +232,7 @@ testimonial:
 <p>&nbsp;</p>
 <!------------------------------------------------------>
 
-## Add event
+## Create event
 
 - Open the `events.yml` file in `_data` folder.
 - Copy/paste this code and fill the content.
@@ -259,7 +255,7 @@ testimonial:
 <p>&nbsp;</p>
 <!------------------------------------------------------>
 
-## Add blog post
+## Create blog post
 
 - Create a new file in the `_posts` folder.
 - Name the file with a slugged version of the title, preceded by the date of the post.

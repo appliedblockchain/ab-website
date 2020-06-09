@@ -21,15 +21,27 @@
             {% endif %}
             {% if job.responsabilities %}
             <p class="body body--bold">Responsabilities</p>
-            <ul class="body">{{ job.responsabilities }}</ul>
+            <ul class="body">
+                {% for item in job.responsabilities %}
+                <li>{{ item.li }}</li>
+                {% endfor %}
+            </ul>
             {% endif %}
             {% if job.required-skills %}
             <p class="body body--bold">Required skills & experience</p>
-            <ul class="body">{{ job.required-skills }}</ul>
+            <ul class="body">
+                {% for item in job.required-skills %}
+                <li>{{ item.li }}</li>
+                {% endfor %}
+            </ul>
             {% endif %}
             {% if job.additional-skills %}
             <p class="body body--bold">Additional desirable experience</p>
-            <ul class="body">{{ job.additional-skills }}</ul>
+            <ul class="body">
+                {% for item in job.additional-skills %}
+                <li>{{ item.li }}</li>
+                {% endfor %}
+            </ul>
             {% endif %}
         </div>
     </div>

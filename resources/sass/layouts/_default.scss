@@ -186,14 +186,18 @@
 
     ul {
         padding-left: $integer-md;
+
+        & + .body {
+            margin-top: $integer-md;
+        }
     }
-    
-    // li + li {
-    //     margin-top: $integer;
-    // }
+
+    li + li {
+        margin-top: $integer-sm;
+    }
         
     &-header {
-        
+
         .section__header {
             z-index: 2;
         }

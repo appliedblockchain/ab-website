@@ -138,14 +138,14 @@ The website uses a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_gri
 - Copy/paste the following code in the file.
 ```yml
 ---
-layout: default # do not edit
+layout: default # do not change
 title: # this will appear as the screen header and the html header in the browser tab
 headline: # [optional] overrides the screen header
 subtitle: # [optional]
-background_color: white # do not edit
+background_color: white # do not change
 ---
 ```
-- Start coding!
+- Start coding your HTML content below this snippet.
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -158,7 +158,7 @@ background_color: white # do not edit
 - Copy/paste the code below and fill it accordingly.
 ```yml
 ---
-layout: project # do not edit
+layout: project # do not change
 order: # number, specify the order it will appear on the projects page
 case_study: true # add if the project has a standalone page
 title: # company name
@@ -168,7 +168,7 @@ deliverables:
 summary: # longer description of the company/project
 link: # [optionnal] external link to company website (or other)
 link_title: # [optionnal] # overrides default link title
-background_color: white # do not edit
+background_color: white # do not change
 
 challenge-diagram: 
 challenge: 

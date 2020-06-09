@@ -18,6 +18,8 @@
   * [Content HTML structure](#content-html-structure)
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Introduction
 
@@ -46,6 +48,8 @@ Along with SASS, the CSS styles are based on BEM terminology.
 
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Deployment
 
@@ -62,6 +66,8 @@ The deployment process is run throught Netlify.
 > Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on the content.
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Page structure
 Every page is build on the same structure:
@@ -137,6 +143,8 @@ If needed, elements can be layed out horizontally using a [bootstrap](https://ww
 ```
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Create page
 
@@ -152,6 +160,8 @@ background_color: white # do not edit
 - Start coding the page content
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Add project
 
@@ -206,6 +216,8 @@ testimonial:
 > File name should be the same as the .md file
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Add job
 
@@ -241,6 +253,8 @@ testimonial:
 ```
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Add event
 * Open the `events.yml` file in `_data` folder
@@ -261,6 +275,8 @@ testimonial:
     * If you don't have an image, leave the `image:` tag empty, a default image is set.
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Add blog post
 * Create a new file in the `_posts` folder
@@ -281,5 +297,7 @@ headline:
 ```
 
 <!------------------------------------------------------>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)

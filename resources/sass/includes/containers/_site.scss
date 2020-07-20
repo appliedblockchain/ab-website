@@ -213,6 +213,7 @@ ul {
 // —————————————————————————————————————————————————————————————————
 
 .hide {
+	opacity: 0;
 
 	&--desktop-lg { @include responsive(max-width, $desktop-lg-max) { display: none !important; } }
 	&--desktop { @include responsive(max-width, $desktop-max) { display: none !important; } }
@@ -222,6 +223,7 @@ ul {
 }
 
 .show {
+	opacity: 1;
 
 	&--mobile { @include responsive(min-width, $mobile-min) { display: none !important; } }
 }

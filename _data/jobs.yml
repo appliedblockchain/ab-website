@@ -2,6 +2,33 @@
 
 london:
 
+  - title: Sales and Marketing Assistant
+    type: Permanent
+    responsabilities:
+      - li: 'Working with the CEO and Sales to define the sales and marketing strategy'
+      - li: 'Organising and attending client sales meetings '
+      - li: 'Monitoring and responding to inbound Sales enquiries'
+      - li: 'Sending outbound marketing communications (e.g. LinkedIn posts, LinkedIn Sales)'
+      - li: 'Helping to create and manage marketing materials, including client case studies, client video interviews, company website, company banners, company blog posts and press releases'
+      - li: 'Measuring the effectiveness of our marketing approach and channels'
+      - li: 'Creating statements of work/proposals for new client projects'
+      - li: 'Creating regular sales reports including sales activity and pipeline'
+      - li: 'Organising company events'
+      - li: 'Coordinating Applied Blockchain’s participation at industry events'
+    required-skills:
+      - li: 'Minimum 1 year’s experience in Sales and Marketing '
+      - li: 'Experience using LinkedIn, LinkedIn Sales Navigator, Twitter, MailChimp, Meetup, Eventbrite, HubSpot, Google Analytics, Zoom, Google Docs, Google Forms'
+      - li: 'Excellent communication skills (verbal and written) and numeracy'
+      - li: 'Experience writing professional, client facing documents'
+      - li: 'Proficient in MS Office (Word, Excel, Powerpoint) or Google Docs equivalents'
+      - li: 'English as a first language'
+      - li: 'University degree'
+      - li: 'Able to take on new tasks and responsibilities quickly and calmly'
+      - li: 'A proactive and positive “can do” attitude where nothing is too hard - if you don’t know how to do something, you’ll find out'
+      - li: 'A desire to learn and take on more'
+    additional-skills:
+      - li: 'Experience with Pipedrive or another CRM'
+
 porto:
 
   - title: Senior Front End Developer

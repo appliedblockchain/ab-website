@@ -124,12 +124,12 @@ $(window).scroll(function() { //the scrolled element
 
 // change background image
 
-$('.js-button-london').on('click', function() {
-    $('.join__background--porto').removeClass('js-show').fadeIn();
+$('.js-button-porto').on('click', function() {
+    $('.join__background--london').addClass('hide').fadeIn();
 });
 
-$('.js-button-porto').on('click', function() {
-    $('.join__background--porto').addClass('js-show').fadeIn();
+$('.js-button-london').on('click', function() {
+    $('.join__background--london').removeClass('hide').fadeIn();
 });
 
 

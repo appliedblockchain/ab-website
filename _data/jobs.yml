@@ -29,6 +29,20 @@ london:
     additional-skills:
       - li: 'Experience with Pipedrive or another CRM'
 
+  - title: Junior C++/Rust Developer
+    type: Permanent
+    responsabilities:
+      - li: 'Working on a cutting edge product that uses next generation cryptography to enable parties to act together and generate meaningful outcomes without having to share their sensitive data.'
+    required-skills:
+      - li: 'Computer Science or STEM degree'
+      - li: 'C/C++ knowledge'
+      - li: 'Good understanding of low level programming'
+      - li: 'Basic understanding of Linux and shell scripting'
+    additional-skills:
+      - li: 'Rust experience (or some basic understanding of it)'
+      - li: 'Knowledge of SQL and NoSql Databases'
+      - li: 'Git knowledge (feature branches, github flow)'
+
 porto:
 
   - title: Senior Front End Developer

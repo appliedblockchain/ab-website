@@ -15,34 +15,44 @@
             </div>
         </div>
         <div class="accordion__content card__body">
-            {% if job.role %}
-            <p class="body body--bold">About the position</p>
-            <ul class="body">{{ job.role }}</ul>
-            {% endif %}
-            {% if job.responsabilities %}
-            <p class="body body--bold">Responsabilities</p>
-            <ul class="body">
-                {% for item in job.responsabilities %}
-                <li>{{ item.li }}</li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-            {% if job.required-skills %}
-            <p class="body body--bold">Required skills & experience</p>
-            <ul class="body">
-                {% for item in job.required-skills %}
-                <li>{{ item.li }}</li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-            {% if job.additional-skills %}
-            <p class="body body--bold">Additional desirable experience</p>
-            <ul class="body">
-                {% for item in job.additional-skills %}
-                <li>{{ item.li }}</li>
-                {% endfor %}
-            </ul>
-            {% endif %}
+            <div class="row card__wrapper--sm">
+                <!-- {% if job.role %}
+                <div class="col--xl4">
+                    <p class="body body--bold">About the position</p>
+                    <ul class="body">{{ job.role }}</ul>
+                </div>
+                {% endif %} -->
+                {% if job.responsabilities %}
+                <div class="card col--xl4">
+                    <p class="body body--bold">Responsabilities</p>
+                    <ul class="body">
+                        {% for item in job.responsabilities %}
+                        <li>{{ item.li }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                {% if job.required-skills %}
+                <div class="card col--xl4">
+                    <p class="body body--bold">Required skills & experience</p>
+                    <ul class="body">
+                        {% for item in job.required-skills %}
+                        <li>{{ item.li }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                {% if job.additional-skills %}
+                <div class="card col--xl4">
+                    <p class="body body--bold">Additional desirable experience</p>
+                    <ul class="body">
+                        {% for item in job.additional-skills %}
+                        <li>{{ item.li }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>

@@ -603,6 +603,10 @@
             border-top: $border-sm $medium-grey;
         }
 
+        &__wrapper--sm .card {
+            border-top: 0;
+        }
+
         &__actions {
             @include display-flex();
         }

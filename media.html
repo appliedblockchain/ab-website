@@ -38,7 +38,7 @@ background_color: white
                             <h2 class="card__title lead">
                                 <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>{{ post.title }}</a>
                             </h2>
-                            <p class="card__body">{{ post.headline | truncate: 100, "…" }}</p>
+                            <p class="card__body">{{ post.headline | truncate: 200, "…" }}</p>
                         </div>
                         <div class="card__actions">
                             {% if post.link %}

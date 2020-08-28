@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Applied Blockchain is  featured in The Global City'
+title: 'Applied Blockchain is featured in The Global City'
 image: the-global-city
 category: news
 social: external

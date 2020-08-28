@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Applied Blockchain is part of the World Economic Forum'
+title: 'Applied Blockchain signs up to the World Economic Forum Presidio Principles'
 image: world-economic-forum
 category: news
 social: external

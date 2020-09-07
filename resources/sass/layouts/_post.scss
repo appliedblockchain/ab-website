@@ -121,5 +121,9 @@
         em {
             font-style: italic;
         }
+
+        img {
+            border-radius: $integer;
+        }
     }
 }

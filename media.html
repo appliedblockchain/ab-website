@@ -66,6 +66,10 @@ background_color: white
                             <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-play">
                                 <p class="button__inner">Watch video </p>
                             </a>
+                            {% elsif post.social contains "pdf" %}
+                            <a href="{{ site.url }}/resources/pdfs/{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-eye">
+                                <p class="button__inner">Read</p>
+                            </a>
                             {% elsif post.social contains "blank" %}
                             {% endif %}
                             {% else %}

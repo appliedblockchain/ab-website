@@ -378,7 +378,7 @@
         .card { 
 
             &__image {
-                height: $integer-xxxxl*2;
+                padding-bottom: 50%;
                 max-width: none;
             }
         }
@@ -394,6 +394,10 @@
 #about-leadership {
 
     .card {
+
+        &__image {
+            padding-bottom: 0;
+        }
 
         &__body-hidden {
             opacity: 0;
@@ -727,6 +731,7 @@
             @include transform(scale(1));
             @include transition(transform $transition);
             will-change: transform;
+            padding-bottom: 0;
             height: 5rem;
             width: auto;
             // max-height: 4rem;

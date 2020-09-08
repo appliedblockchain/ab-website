@@ -716,72 +716,13 @@
 
     .card {
 
-        &__content {
-            @include transition(transform $transition);
-            @include transform(translateY(3rem));
-            will-change: transform;
-
-            @include responsive-mobile-devices() {
-                @include transform(translateY(0) !important);
-            } 
-        }
-
         &__image {
-            @include transform-origin(bottom, left);
-            @include transform(scale(1));
-            @include transition(transform $transition);
-            will-change: transform;
-            padding-bottom: 0;
-            height: 5rem;
-            width: auto;
-            // max-height: 4rem;
-            // max-width: 25%;
-            margin-bottom: $integer-xl;
+            background-color: $light-grey;
+            padding: 5%;
+            text-align: center;
 
-            @include responsive-mobile-devices() {
-                @include transform(scale(0.8));
-            }
-        }
-
-        &__body {
-            overflow: hidden;
-
-            span {
-
-                @include transition(transform $transition);
-                @include transform(translateY(-100%) scaleY(0.3));
-                will-change: transform;
-                display: block;
-
-                @include responsive-mobile-devices() {
-                    @include transform(translateY(0) scaleY(1) !important);
-                }
-            }
-        }
-
-        &__actions {
-            @include align-items(flex-start);
-        }
-
-        &:hover {
-            
-            &:before {
-                background-color: $white;
-            }
-    
-            .card {
-                
-                &__content {
-                    @include transform(translateY(0));
-                }
-
-                &__image {
-                    @include transform(scale(0.8));
-                }
-                
-                &__body span {
-                    @include transform(translateY(0) scaleY(1));
-                }
+            img {
+                width: 75%;
             }
         }
     }

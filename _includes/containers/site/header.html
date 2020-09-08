@@ -28,7 +28,7 @@
 	<meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 	<!-- image for share button -->
-	<meta property="og:image" content="https://appliedblockchain.com/{{ site.imageurl }}/posts/{{ page.image }}.jpg"/>
+	<meta property="og:image" content="https://appliedblockchain.com/{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% else %}social.jpg{% endif %}"/>
 
 	<!-- FAVICONS -->
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">

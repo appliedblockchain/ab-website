@@ -206,7 +206,7 @@ testimonial:
 ---
 ```
 - [Here is an example](https://appliedblockchain.com/projects/appii/) of how each is displayed.
-- Add logo in the `resources/images/carousel/clients_projects` folder.
+- Add logo in the `assets/images/carousel/clients_projects` folder.
 > Png format
 > No white space around the logo
 > File name should be the same as the .md file
@@ -256,7 +256,7 @@ testimonial:
   link: # link to the event website
 ```
 > Use the YYYY-MM-DD format for the date, it will automatically be displayed in the right format on the website
-- Add the corresponding image in `resources/images/events`.
+- Add the corresponding image in `assets/images/events`.
   - If doesn't work: check file extension (needs to be `.jpg`).
   - File cannot be over 800 px wide and 100 KB.
   - If you don't have an image, leave the `image:` tag empty, a default image is set.

@@ -1,5 +1,6 @@
 ---
 layout: project
+create-page: false
 order: 1
 title: Telecom Italia
 subtitle: TIM WCAP Innovation Program

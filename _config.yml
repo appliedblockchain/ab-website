@@ -4,8 +4,8 @@ title: Applied Blockchain
 description: "Building Real World Distributed Ledger Applications"
 
 # internal path
-resourceurl: /resources
-imageurl: /resources/images
+resourceurl: /assets
+imageurl: /assets/images
 
 # contact 
 contact: 
@@ -54,6 +54,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - resources/.sass-cache/
-  - resources/sass/
-  - resources/config.rb
+  - assets/.sass-cache/
+  - assets/sass/
+  - assets/config.rb

@@ -1,5 +1,6 @@
 ---
 layout: project
+create-page: false
 order: 100
 title: KLM
 subtitle: Aircraft component tracking solution

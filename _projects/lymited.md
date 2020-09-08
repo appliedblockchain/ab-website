@@ -1,5 +1,6 @@
 ---
 layout: project
+create-page: false
 order: 100
 title: Lymited
 subtitle: Changing the Game for Luxury Vendors

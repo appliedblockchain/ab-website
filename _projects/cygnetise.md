@@ -47,7 +47,7 @@ results-icons:
       title: Fraud mitigation
 
 results-comment:
-    'With automated processes and a user friendly-interface, managing authorised signatory lists is simple and efficient.  It also means that the data (signatory lists) are shared peer to peer through a decentralised distributed ledger, providing a much better digitised solution than utilising a 3rd party’s centralised database.  The customers keep complete control of their own data.'
+    'With automated processes and a user friendly-interface, managing authorised signatory lists is simple and efficient.  It also means that the data (signatory lists) are shared peer to peer through a decentralised distributed ledger, providing a much better digitised solution than utilising a 3rd party’s centralised database. The customers keep complete control of their own data.'
 
 testimonial:
     - quote: Applied Blockchain are a market leader in building proof-of-concept blockchain applications. They have experience through a broad range of customers, so regardless of whether you are a small startup or large enterprise they are well equipped to deliver a solution.

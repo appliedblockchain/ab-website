@@ -18,11 +18,6 @@ $('.js-blog-filter .tab__button').on('click', function(){
     $(this).removeClass('button--primary-lighten');
 });
 
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});
-
-
 // —————————————————————————————————————————————————————————————————
 
 });

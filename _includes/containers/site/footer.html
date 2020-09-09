@@ -8,7 +8,11 @@
 <!-- owl carousel -->
 <script src="{{ site.url }}{{ site.resourceurl }}/vendor/owlcarousel/owl.carousel.min.js"></script>
 <!-- isotope (blog filter) -->
-<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script type='text/javascript' >
+  $(window).load(function() {
+      $.getScript('https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js', function() { });
+  });
+</script>
 
 <!-- JAVASCRIPT -->
 <script src="{{ site.url }}{{ site.resourceurl }}/js/anchor.js"></script>

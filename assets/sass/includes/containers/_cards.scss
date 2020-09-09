@@ -711,3 +711,14 @@
         }
     }
 }
+
+#projects {
+
+    .card {
+
+        &__image {
+            background-color: $light-grey;
+            padding-bottom: 0;
+        }
+    }
+}

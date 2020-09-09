@@ -18,12 +18,8 @@ background_color: white
                 <div class="card__inner">
                     <div class="card__content">
                         <p class="card__label label">{{ project.industry }}</p>
-                        <h2 class="card__title subtitle">
-                            <a href="{{ project.url }}">{{ project.title }}</a>
-                        </h2>
-                        <p class="card__subtitle lead">
-                            <a href="{{ project.url }}">{{ project.subtitle }}</a>
-                        </p>
+                        <h2 class="card__title subtitle">{{ project.title }}</h2>
+                        <p class="card__subtitle lead">{{ project.subtitle }}</p>
                         <p class="card__body">
                             <span>{{ project.summary }}</span>
                         </p>

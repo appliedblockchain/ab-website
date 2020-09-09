@@ -718,12 +718,7 @@
 
         &__image {
             background-color: $light-grey;
-            padding: 5%;
-            text-align: center;
-
-            img {
-                width: 75%;
-            }
+            padding-bottom: 0;
         }
     }
 }

@@ -206,7 +206,7 @@ testimonial:
 ---
 ```
 - [Here is an example](https://appliedblockchain.com/projects/appii/) of how each is displayed.
-- Add logo in the `assets/images/carousel/clients_projects` folder.
+- Add logo in the `assets/images/carousel/clients_color` folder.
 > Png format
 > No white space around the logo
 > File name should be the same as the .md file

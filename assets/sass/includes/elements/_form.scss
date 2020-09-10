@@ -19,7 +19,9 @@
 	padding-right: $integer*1.5 !important;
 
 	&--pipedrive {
-		max-width: 792px;
+		// pipedrive width + 40px left and right
+		@include calc(max-width, '480px + '$integer-xl*2);
+		padding: $integer-xl;
 	}
 
 	&__group {

@@ -1,47 +1,41 @@
 # join.html
 
 london:
-
-  - title: Sales and Marketing Assistant
+  
+  - title: Senior Back End Developer
     type: Permanent
-    responsabilities:
-      - li: 'Working with the CEO and Sales to define the sales and marketing strategy'
-      - li: 'Organising and attending client sales meetings '
-      - li: 'Monitoring and responding to inbound Sales enquiries'
-      - li: 'Sending outbound marketing communications (e.g. LinkedIn posts, LinkedIn Sales)'
-      - li: 'Helping to create and manage marketing materials, including client case studies, client video interviews, company website, company banners, company blog posts and press releases'
-      - li: 'Measuring the effectiveness of our marketing approach and channels'
-      - li: 'Creating statements of work/proposals for new client projects'
-      - li: 'Creating regular sales reports including sales activity and pipeline'
-      - li: 'Organising company events'
-      - li: 'Coordinating Applied Blockchain’s participation at industry events'
-    required-skills:
-      - li: 'Minimum 1 year’s experience in Sales and Marketing '
-      - li: 'Experience using LinkedIn, LinkedIn Sales Navigator, Twitter, MailChimp, Meetup, Eventbrite, HubSpot, Google Analytics, Zoom, Google Docs, Google Forms'
-      - li: 'Excellent communication skills (verbal and written) and numeracy'
-      - li: 'Experience writing professional, client facing documents'
-      - li: 'Proficient in MS Office (Word, Excel, Powerpoint) or Google Docs equivalents'
-      - li: 'English as a first language'
-      - li: 'University degree'
-      - li: 'Able to take on new tasks and responsibilities quickly and calmly'
-      - li: 'A proactive and positive “can do” attitude where nothing is too hard - if you don’t know how to do something, you’ll find out'
-      - li: 'A desire to learn and take on more'
-    additional-skills:
-      - li: 'Experience with Pipedrive or another CRM'
-
-  - title: Junior C++/Rust Developer
-    type: Permanent
-    responsabilities:
-      - li: 'Working on a cutting edge product that uses next generation cryptography to enable parties to act together and generate meaningful outcomes without having to share their sensitive data.'
-    required-skills:
-      - li: 'Computer Science or STEM degree'
-      - li: 'C/C++ knowledge'
-      - li: 'Good understanding of low level programming'
-      - li: 'Basic understanding of Linux and shell scripting'
-    additional-skills:
-      - li: 'Rust experience (or some basic understanding of it)'
-      - li: 'Knowledge of SQL and NoSql Databases'
+    responsabilities: 
+      - li: 'Developing cutting edge software solutions for startups and corporate clients'
+      - li: 'Developing DApps (Decentralized applications) based on the Ethereum blockchain platform'
+      - li: 'Working alongside other developers in your team and come up with solid and resilient implementations'
+      - li: 'Engaging with clients to understand the product business proposition and make sure the code is aiming to that'
+      - li: 'Developing smart contracts using Solidity'
+      - li: 'Aligning with front end developers to build efficient JSON REST APIs to be consumed by React-based web and mobile apps'
+      - li: 'Writing automated tests for Solidity smart contracts and NodeJS models and API code'
+      - li: 'Reviewing other developers code in form of github pull requests'
+      - li: 'Ensuring that the features you developed are deployed and working on staging and production environments'
+    required-skills: 
+      - li: '4+ years of professional backend development experience'
+      - li: '2+ years of professional Node.js experience'
+      - li: 'Experience in writing automated tests'
+      - li: 'Experience with REST API design and implementation'
+      - li: 'Experience with SQL and NoSql Databases.'
+      - li: 'Basic understanding of Linux and bash'
       - li: 'Git knowledge (feature branches, github flow)'
+      - li: 'Good teamwork skills'
+    additional-skills: 
+      - li: 'Knowledge of ES6+/ES2015+ (new features, specifically: Promises, Async/Await and Generators)'
+      - li: 'Knowledge of how NodeJS work and how to write clean, resilient and performant code'
+      - li: 'Experience in REST API development and best practices (testing, documenting, versioning, monitoring)'
+      - li: 'Testing Framework experience (Jest, Mocha/Chai/Should.js)'
+      - li: 'Docker experience (Docker, Docker Compose, Docker Swarm, Kubernetes)'
+      - li: 'Terraform experience'
+      - li: 'Cloud computing platforms: Azure, AWS (user roles / network configuration / VM deployment)'
+      - li: 'Experience with EC2 Web Console and APIs'
+      - li: 'Experience in React'
+      - li: 'Blockchain knowledge - Bitcoin: bitcoin core software and rpc api, bitcoin js libraries, block explorer apis, op-return and timestamping. Ethereum: web3.js,      setting up and running geth/parity nodes, solidity smart contracts, truffle.js'
+      - li: 'HTML and CSS experience'
+
 
 porto:
 

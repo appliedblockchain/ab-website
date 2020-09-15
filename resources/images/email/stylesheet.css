@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light dark;
+  supported-color-schemes: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  .lightimage {
+    display: none !important;
+  }
+  .darkimageWrapper,
+  .darkimage {
+    display: block !important;
+  }
+}

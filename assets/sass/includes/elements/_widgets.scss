@@ -71,10 +71,6 @@
 
 .newsletter {
 
-    @include responsive(max-width, $desktop-lg-max) {
-        margin-top: $integer-lg;
-    }
-    
     &__button {
         margin-top: $integer;
     }
@@ -84,7 +80,15 @@
     }
 
     &__input {
-        max-width: $integer-max*2;
+        display: block;
+        
+        @include responsive(max-width, $desktop-max) {
+            max-width: $integer-max*2;
+        }
+
+        & + & {
+            margin-top: $integer;
+        }
     }
 }
 
@@ -93,13 +97,6 @@
 // —————————————————————————————————————————————————————————————————
 // news
 // —————————————————————————————————————————————————————————————————
-
-.widget {
-
-    &--news {
-
-    }
-}
 
 
 

@@ -1,62 +1,78 @@
 <footer id="footer" class="footer section section--dark">
-    <div class="row">
-        <div class="col--xl4">
-            <div class="card footer__logo">
-                <div class="logo logo-name-white">
-                    <a href="{{ site.url }}/">
-                        {% include mixins/logo.html %}
-                    </a>
-                </div>
-            </div>
-            {% include components/social.html 
-                header = 'true'
-            %}
+  <div class="footer__row row">
+    <div class="col--xl4">
+      <div class="card footer__logo">
+        <div class="logo logo-name-white">
+          <a href="{{ site.url }}/">
+            {% include mixins/logo.html %}
+          </a>
         </div>
-        <div class="card coloffset--xl1 col--xl7">
-            {% include components/newsletter.html %}
-        </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="card footer__adress col--lg4">
+    <div class="coloffset--xl1 col--xl7">
+      <div class="row">
+        <div class="col--6">
+          <div class="card">
+            {% include components/social.html 
+              header = 'true'
+            %}
+          </div>
+        </div>
+        <div class="col--6">
+          <div class="card">
             <p class="card__title body--large body--bold">Address</p>
             <div class="card__body">
-                <p class="body">{{ site.contact.london.address }}</p>
-                <p class="body body--bold">© Copyright 2020 Applied Blockchain Ltd<br>All rights reserved</p>
-                <p class="body">Applied Blockchain Ltd is a company registered in England and Wales<br>Company No. 09686276</p>
+              <p class="body">{{ site.contact.london.address }}</p>
             </div>
+          </div>
         </div>
-        <div class="coloffset--xl1 col--xl7 col--lg8">
-            <div class="row">
-                <div class="card col--md4">
-                    <p class="card__title body--large body--bold">Site map</p>
-                    <div class="card__body">
-                        <a href="{{ site.url }}/" class="footer__button button button--text">Home</a>
-                        <a href="{{ site.url }}/services" class="footer__button button button--text">Services</a>
-                        <a href="{{ site.url }}/projects" class="footer__button button button--text">Projects</a>
-                        <a href="{{ site.url }}/products" class="footer__button button button--text">Products</a>
-                        <a href="{{ site.url }}/about" class="footer__button button button--text">About</a>
-                        <a href="{{ site.url }}/media" class="footer__button button button--text">Media</a>
-                        <a href="{{ site.url }}/events" class="footer__button button button--text">Events</a>
-                        <a href="{{ site.url }}/join" class="footer__button button button--text">Join</a>
-                        <a href="{{ site.url }}/contact" class="footer__button button button--text">Contact</a>
-                    </div>
-                </div>
-                <div class="card col--md4">
-                    <p class="card__title body--large body--bold">Support</p>
-                    <div class="card__body">
-                        <a href="{{ site.url }}/faq" class="footer__button button button--text">FAQ</a>
-                        <a href="{{ site.url }}/privacy-policy" class="footer__button button button--text">Privacy policy</a>
-                    </div>
-                </div>
-                <div class="card col--md4">
-                    <p class="card__title body--large body--bold">Projects</p>
-                    <div class="card__body">
-                        {% for project in site.projects %}
-                        <a href="{{ project.url }}" class="footer__button button button--text">{{ project.title }}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
+  <div class="footer__row row">
+    <div class="col--xl4 col--lg5">
+      <div class="card">
+        {% include components/newsletter.html %}
+      </div>
+    </div>
+    <div class="coloffset--xl1 col--xl7 coloffset--lg1 col--lg6">
+      <div class="row">
+        <div class="card col--4">
+          <p class="card__title body--large body--bold">Content</p>
+          <div class="card__body">
+            <a href="{{ site.url }}/" class="footer__button button button--text">Home</a>
+            <a href="{{ site.url }}/services" class="footer__button button button--text">Services</a>
+            <a href="{{ site.url }}/projects" class="footer__button button button--text">Projects</a>
+            <a href="{{ site.url }}/products" class="footer__button button button--text">Products</a>
+            <a href="{{ site.url }}/about" class="footer__button button button--text">About</a>
+            <a href="{{ site.url }}/media" class="footer__button button button--text">Media</a>
+            <a href="{{ site.url }}/events" class="footer__button button button--text">Events</a>
+            <a href="{{ site.url }}/join" class="footer__button button button--text">Join</a>
+            <a href="{{ site.url }}/contact" class="footer__button button button--text">Contact</a>
+          </div>
+        </div>
+        <div class="card col--4">
+          <p class="card__title body--large body--bold">Projects</p>
+          <div class="card__body">
+            {% for project in site.projects %}
+            <a href="{{ project.url }}" class="footer__button button button--text">{{ project.title }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="card col--sm4">
+          <p class="card__title body--large body--bold">Support</p>
+          <div class="card__body">
+            <a href="{{ site.url }}/faq" class="footer__button button button--text">FAQ</a>
+            <a href="{{ site.url }}/privacy-policy" class="footer__button button button--text">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__row row">
+    <div class="col--12">
+      <p class="body body--bold">© Copyright 2020 Applied Blockchain Ltd. <br>All rights reserved.</p>
+      <p class="body">Applied Blockchain Ltd is a company registered in England and Wales. <br>Company No. 09686276</p>
+    </div>
+  </div>
 </footer>

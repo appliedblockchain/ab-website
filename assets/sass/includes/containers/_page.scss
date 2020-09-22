@@ -305,6 +305,12 @@
 .footer {
 	text-align: left;
 	margin-bottom: -$integer-xl;
+	padding-bottom: $integer-max;
+
+	&__row {
+		margin-top: $integer-xl;
+		margin-bottom: -$integer-xl;
+	}
 
 	.card {
 		margin-bottom: $integer-xl;

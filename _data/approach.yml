@@ -4,23 +4,23 @@
   active: true
   title: Advisory
   id: advisory
-  text: We work with you to learn about your requirements and provide independent strategic advice on whether blockchain or advanced cryptography technologies are optimal and add genuine technical and business value to the problem you are trying to solve. We assess your requirements to provide you with an impartial recommendation to approach and implement your project. We document this for you before moving on to building a prototype.
+  text: We work with each customer to learn about their requirements and provide independent strategic advice on whether confidential computing, blockchain or advanced cryptography technologies are optimal and add genuine technical and business value to the problem that they are trying to solve. We assess the requirements to provide an impartial recommended approach to implement a project. We document this for the customer before moving on to building a prototype.
   icon: icon-advisory
 
 - number: 2
   title: Prototype
   id: prototype
-  text: The prototype is for you to test against your requirements and technical needs. Our solution architects, developers and designers work together to prove that the concepts and technologies for the proposed application are viable. We create a working prototype based on the minimum requirements of the product, for you to test and demonstrate.
+  text: The prototype is for the customer to test against their requirements and technical needs. Our solution architects, developers and designers work together to prove that the concepts and technologies for the proposed application are viable. We create a working prototype based on the minimum requirements of the product, for the customer to test and demonstrate to their stakeholders.
   icon: icon-prototype
 
 - number: 3
   title: Production
   id: production
-  text: Our developers build your project and test it at every stage. After the build is complete, we coordinate with your team and support you implementing the project.  We move into production, and then your project is live.
+  text: Our developers build the project and test it at every stage. After the build is complete, we coordinate with the customer team and support them in integrating the project into their business environment.  We move into production, and then the project is live and delivering business value.
   icon: icon-production
 
 - number: 4
   title: Support
   id: support
-  text: We provide you with ongoing support from the day we start a conversation with you. After the delivery and deployment of your project, we continue to work with you to ensure its smooth operation and advise on technical enhancements if required.
+  text: We provide the customer with ongoing support throughout the process. After the delivery and deployment of a project, we continue to work with the customer to ensure its smooth operation and advise on technical enhancements if required.
   icon: icon-support

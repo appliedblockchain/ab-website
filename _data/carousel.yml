@@ -22,17 +22,17 @@ testimonials_clients:
     position: CEO
     company: Shell
 
-  - name: johan-krebbers
-    quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
-    author: Johan Krebbers
-    position: Chief Technology Officer for IT
-    company: Shell Global Solutions International
-
   - name: stephane-cheikh
     quote: Applied Blockchain have always been very helpful by coming up with new concepts and new developments. They challenge you as a customer, they say “have you thought about this, have you thought about that?”. This has been very refreshing and I would definitely recommend Applied Blockchain.
     author: Stephane Cheikh
     position: Ventures & Innovation Manager
     company: SITA
+
+  - name: johan-krebbers
+    quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
+    author: Johan Krebbers
+    position: Chief Technology Officer for IT
+    company: Shell Global Solutions International
 
   - name: stephen-pomfret
     quote: Applied Blockchain feel the passion for your business. They actually like to get involved, they feel excited about what you’re doing, being a part of it and advise accordingly.

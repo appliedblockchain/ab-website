@@ -3,16 +3,16 @@
 intro:
   - id: Problems
     title: We Solve Problems
-    body: 'At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced cryptographic technology to build applications that maximise data privacy and security.'
+    body: 'At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced confidential computing, secure enclaves, cryptography and blockchain technology to build applications that maximise trust, data privacy and security.'
   - id: Products
     title: We Build Products
-    body: 'We build products to solve a problem once for our many clients. We focus on advanced cryptography to enable businesses to do more with each other, while sharing less data.'
+    body: 'We build products to solve a problem once for our many clients. We focus on confidential computing, secure enclaves, and advanced cryptography to enable businesses to do more together, while reducing their cyber risk.'
 
 
 leadership:
   - name: Adi Ben-Ari
     title: Founder & CEO
-    bio: Adi has over 20 years enterprise software experience, more recently leading major deliveries of production blockchain solutions. Adi is widely recognised as an independent thought leader in the industry, a noted speaker at major conferences, experienced in educating C-suite on blockchain and zero knowledge proofs, and acts as an advisor for a number of startups. His work has been noted by the UK Government, where he was invited to present at Parliament and the House of Lords, and at UCL. Adi has co-invented and designed a number of patents related to blockchain and mobile payments. Adi holds a BSc in Computer Science and an MBA Information Systems.
+    bio: Adi has over 20 years enterprise software experience, more recently leading major deliveries of production blockchain and advanced cryptography solutions. Adi is widely recognised as an independent thought leader in the industry, a noted speaker at major conferences, experienced in educating C-suite on blockchain, confidential computing and privacy-preserving technologies, and acts as an advisor for a number of startups. His work has been noted by the UK Government, where he was invited to present at Parliament and the House of Lords, and at University College London. Adi has co-invented and designed a number of patents related to confidential computing, advanced cryptography, blockchain and mobile payments. Adi holds a BSc in Computer Science from the University of Bristol and an MBA Information Systems from Tel-Aviv University.
   - name: Francesco Canessa
     title: CTO
     bio: Francesco is a seasoned technology expert and a serial hackathon winner, with a decade of experience in software development and four years within building blockchain applications. Francesco  has worked on  large-scale enterprise projects and with startups, building solutions for Sky TV Italia, 5Apps, and Quill Content to name a few. He has also developed tools and libraries for Ethereum and Bitcoin. Francesco is a fan of reading, writing and talking about software development, and is an open source enthusiast. When he’s not looking at code, Francesco builds and rides electric skateboards.

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 // —————————————————————————————————————————————————————————————————
-// WEBINAR
+// MISC
 // —————————————————————————————————————————————————————————————————
 
 #webinar {
@@ -13,6 +13,19 @@
         background-color: rgba($dark, 0.8);
     }
 
+    .section {
+        background-color: transparent;
+
+        &:before {
+            background-image: none;
+        }
+    }
+}
+
+#report {
+    @include background(center center, cover);
+    min-height: 100vh;
+    
     .section {
         background-color: transparent;
 

@@ -21,7 +21,18 @@
 	&--pipedrive {
 		// pipedrive width + 40px left and right
 		@include calc(max-width, '480px + '$integer-xl*2);
-		padding: $integer-xl;
+		padding: $integer-xl !important;
+		
+		#report & {
+			width: 560px;
+			max-width: 100%;
+		}
+	}
+
+	&__container {
+		@include display-flex();
+		@include justify-content(center);
+		width: 100%;
 	}
 
 	&__group {

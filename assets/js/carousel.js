@@ -10,7 +10,7 @@ $('.owl-carousel-clients').owlCarousel({
     dots: false,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 5000,
     autoplayHoverPause: false,
     smartSpeed: 2000,
     responsive: {
@@ -85,6 +85,18 @@ $('.owl-carousel-testimonials').owlCarousel({
 });
 
 $('.owl-carousel-webinar').owlCarousel({
+    dots: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 2000,
+    mouseDrag: false,
+    touchDrag: true, 
+    items: 1, 
+    margin: 0 
+});
+
+$('.owl-carousel-news').owlCarousel({
     dots: false,
     loop: true,
     autoplay: true,

@@ -55,7 +55,30 @@ layout: compress
             </div>
         </div>
         <div class="col--xl4">
-            {% include containers/cards/news.html %}
+            <div class="owl-carousel owl-carousel-news widget--news card card--xs card--portrait background--shadow body--black">
+                {% for item in site.data.news %}
+                <div class="carousel__item">
+                    <div class="card__inner">
+                        <div>
+                            <div class="card__content">
+                                <p class="card__title body--bold">{{ item.title }}</p>
+                                {% if item.body %}
+                                <p class="body--small">{{ item.body }}</p>
+                                {% endif %}
+                            </div>
+                            <div class="card__actions">
+                                <a href="{{ site.url }}/{{ item.button_link }}" target="_blank" class="card__actions button button--small button--primary button--animate fas fa-eye">
+                                    <p class="button__inner">{{ item.button_label }}</p>
+                                </a>
+                            </div>
+                        </div>
+                        {% if item.image %}
+                        <img src="{{ site.url }}/assets/images/{{ item.image }}" alt="" class="card__image">
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>

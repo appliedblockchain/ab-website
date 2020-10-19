@@ -391,6 +391,24 @@
 // layouts
 // —————————————————————————————————————————————————————————————————
 
+// index 
+.widget--news {
+
+    .card {
+
+        &__inner {
+            @include display-flex();
+        }
+
+        &__image {
+            border-radius: 5rem;
+            width: 5rem !important;
+            height: 5rem;
+            padding: 0;
+        }
+    }
+}
+
 #about-leadership {
 
     .card {

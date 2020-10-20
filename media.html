@@ -87,6 +87,11 @@ background_color: white
                                 <p class="button__inner">View recording</p>
                             </a>
                             {% endif %}
+                            {% if post.social == 'report' %}
+                            <a href="{{ site.url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+                                <p class="button__inner">Download report</p>
+                            </a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

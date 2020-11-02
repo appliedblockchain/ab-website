@@ -31,6 +31,21 @@ collections:
     output: true
     permalink: /:title
 
+# plugins
+plugins:
+  - jekyll-autoprefixer
+  - jekyll-coffeescript
+
+# autoprefixer (for css)
+autoprefixer:
+  browsers:
+  - last 10 versions
+
+# sass
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
 # compress 
 # http://jch.penibelst.de/
 compress_html:
@@ -55,5 +70,3 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - assets/.sass-cache/
-  - assets/sass/
-  - assets/config.rb

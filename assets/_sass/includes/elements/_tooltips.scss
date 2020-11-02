@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// TOOLTIPS
+// —————————————————————————————————————————————————————————————————
+
+.tooltip {
+	position: relative;
+
+    &__inner {
+        position: absolute;
+        pointer-events: none;
+        z-index: 1;
+        opacity: 0;
+    }
+}
+
+// click
+
+.tooltip--click {
+    cursor: pointer;
+
+    .tooltip__inner.js-show  {
+        pointer-events: initial;
+        opacity: 1;
+    }
+}
+
+// with tracking
+
+.tooltip__inner--tracking {
+    transform: translateX(-60%) translateY(10%);
+    display: none;
+    opacity: 1;
+    padding: $integer/2 $integer;
+    @include responsive-mobile-devices() {
+        display: none !important;
+    }
+}

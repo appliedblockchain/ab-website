@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// SECTIONS
+// —————————————————————————————————————————————————————————————————
+// general
+// variants
+// colors
+// layouts
+// —————————————————————————————————————————————————————————————————
+
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
+
+.section {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding-left: $page;
+	padding-top: $integer-xxxl;
+	padding-bottom: $integer-xxxl;
+	padding-right: $page;
+	text-align: center;
+
+	#project &,
+	#post & {
+		text-align: left;
+	}
+
+	&__header {
+		padding-right: $page;
+		padding-left: $page;
+
+		& + .section__content {
+			margin-top: $integer-xxl;
+		}
+	}
+
+	&__comment {
+
+		& + .section__title {
+			margin-top: $integer-lg;
+		}
+	}
+
+	&__title {
+
+		& + .section__subtitle,
+		& + .section__body {
+			margin-top: $integer-md;
+		}
+	}
+
+	&__subtitle {
+
+		& + .section__body {
+			margin-top: $integer-md;
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+		& + & {
+			margin-top: $integer-xxl;
+		}
+	}
+}
+
+// —————————————————————————————————————————————————————————————————
+// variants
+// —————————————————————————————————————————————————————————————————
+
+.section {
+
+	&--header {
+		padding-top: $integer-xxxl+$integer-xxxl;
+
+		#post & {
+			text-align: center;
+		}
+	}
+
+	&--full {
+		padding: 0 !important;
+		overflow: hidden;
+
+		.section {
+
+			&__header {
+				padding-top: $integer-xxxl;
+				padding-right: $page*2;			
+				padding-left: $page*2;
+			}
+		}
+
+		&.section--overlap {
+
+			.section__header {
+				padding-top: $integer-xxxl*2;
+			}
+		}
+	}
+
+	&--alt {
+		padding-left: $page/2;
+		padding-right: $page/2;
+	}
+	
+	&--overlap {
+		margin-top: -$integer-xxxl*2;
+		padding-top: $integer-xxxl*2;
+	}
+
+	&__content {
+
+		&--2 {
+			display: flex;
+			align-items: stretch;
+			flex-direction: row;
+
+			.card {
+				width: 50%;
+				position: relative;
+				
+				&__inner { 
+					padding-top: 0;
+					padding-bottom: $integer-xxxl;
+					position: relative;
+				}
+
+				&:nth-child(1),
+				&:nth-child(2) {
+
+					&:before {
+						@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+
+						@include responsive(max-width, $tablet-max) {
+							display: none;
+						}
+					}
+				}
+
+				&:nth-child(1) {
+					padding-left: $page;
+
+					&:before {
+						background-image: linear-gradient(to bottom, $light-grey, rgba($light-grey, 0.6));
+					}
+
+					.card__inner {
+						padding-left: 0;
+						
+						@include responsive(max-width, $tablet-max) {
+							padding-right: 0;
+						}
+					}
+				}
+
+				&:nth-child(2) {
+					padding-right: $page;
+
+					&:before {
+						background-image: linear-gradient(to bottom, $light-grey, rgba($light-grey, 0.6));
+					}
+
+					.card__inner {
+						padding-right: 0;
+						
+						@include responsive(max-width, $tablet-max) {
+							padding-left: 0;
+						}
+					}
+				}
+
+				@include responsive(max-width, $tablet-max) {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// —————————————————————————————————————————————————————————————————
+// colors
+// —————————————————————————————————————————————————————————————————
+
+.section {
+
+	&--transparent {
+
+		& + & {
+			padding-top: 0;
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+
+	&--primary { 
+		background-color: $primary; 
+
+		& + & {
+			padding-top: 0; 
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+	&--dark { 
+		background-color: $dark; 
+
+		& + & {
+			padding-top: 0; 
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+	&--grey { 
+		background-color: $light-grey; 
+
+		& + & {
+			padding-top: 0; 
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+	&--white { 
+		background-color: $white; 
+
+		& + & {
+			padding-top: 0; 
+			.section__header { padding-top: 0; } 
+		}
+	}
+
+	&--primary, 
+	&--dark 	{ 
+		color: $white; 
+
+		.form__input {
+			color: $white;
+		}
+	}
+
+	&--primary {
+
+		.title, 
+		.lead, 
+		.label {
+			color: $white;
+		}
+	}
+}
+
+// —————————————————————————————————————————————————————————————————
+// layouts
+// —————————————————————————————————————————————————————————————————
+
+#join {
+
+	.section--overlap {
+		margin-top: -$integer-xxxl*4;
+	}
+	
+	&-header {
+		
+		&.section {
+			padding-bottom: $integer-xxxl*3;
+		}
+	}
+}
+
+#project {
+
+	.section--header {
+		padding-top: $integer-xxxl*3;
+	}
+}

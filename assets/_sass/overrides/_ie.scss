@@ -1,163 +1,152 @@
-$(document).ready(function() {
+@charset "UTF-8";
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
 // —————————————————————————————————————————————————————————————————
-// SCRIPT
+// INTERNET EXPLORER
 // —————————————————————————————————————————————————————————————————
-// accordions
-// buttons
-// cookie bar accept
-// form
-// header scroll animation
-// join
-// modals
-// news widget animation
-// parallax scrolling
+// elements / includes / acccordions
+// elements / includes / structure
 // —————————————————————————————————————————————————————————————————
-
-// —————————————————————————————————————————————————————————————————
-// accordions
+// layouts / about
+// layouts / index
+// layouts / mantle
+// layouts / products
+// layouts / services
 // —————————————————————————————————————————————————————————————————
 
-$('.accordion .accordion__header').on('click', function() {
-
-	// variables
-	var next = $(this).next('.accordion__content');
-
-	// trigger accordion toggle
-	if( ! $(event.target).is('.button--primary') ){
-		// slide
-		$('.accordion__content').not(next).each(function() {
-			$(this).slideUp();
-		});
-		next.slideToggle();
-		// icon animation
-		$('.accordion__header.js-accordion-active').not(this).removeClass('js-accordion-active');
-		$(this).toggleClass('js-accordion-active');
-
-	// prevent trigger when click on apply button
-	} else {
-	}
-
-});
-
 // —————————————————————————————————————————————————————————————————
-// buttons
+// elements / includes / acccordions
 // —————————————————————————————————————————————————————————————————
 
-// menu button
-
-$(".button--menu").click(function(event) {
-	$('.button--menu').toggleClass("button--menu--open");
-	$('.header').toggleClass('js-opened');
-	$('body').toggleClass('js-freeze');
-});
-
-// —————————————————————————————————————————————————————————————————
-// cookie bar accept
-// —————————————————————————————————————————————————————————————————
-
-var cookieKey = "__applied_blockchain_cookie_banner"
-var cookieClose = function() {
-	if (typeof localStorage !== 'undefined') {
-		localStorage[cookieKey] = "true"
-	}
+.accordion__button .fa {
+    transform: translateX(-7px);
 }
 
-var displayCookieBar = function() {
-	if (typeof localStorage !== 'undefined') {
-		if (!localStorage[cookieKey]) {
-			$(".cookie").css("display", "flex")
-		}
-	}
+// —————————————————————————————————————————————————————————————————
+// elements / includes / structure
+// —————————————————————————————————————————————————————————————————
+
+// make header buttons work in ie
+
+.header {
+    pointer-events: auto !important;
 }
 
-$(".cookie__button").on("click", cookieClose)
-displayCookieBar()
-
-$(".cookie__button").click(function(){
-	$(".cookie").addClass("js-cookie-accepted");
-})
-
 // —————————————————————————————————————————————————————————————————
-// form
+// layouts / about
 // —————————————————————————————————————————————————————————————————
 
-// change style on focus
+.timeline {
 
-$(".form__input").focus(function() {
-	$(this).closest(".form__group").addClass('focused');
-});
-$(".form__input").focusout(function() {
-	$(this).closest(".form__group").removeClass('focused');
-});
+    &__text {
+        flex-basis: auto;
+        width: 100%;
+    }
 
-// —————————————————————————————————————————————————————————————————
-// header scroll animation
-// —————————————————————————————————————————————————————————————————
-
-$(window).scroll(function() { //the scrolled element
-	var scroll = $(this).scrollTop();
-	if (scroll >= 5) { //the point past whom you add the class (in pixel)
-		$('.header').addClass("js-scrolled"); //the element to which add the class
-	} else {
-		$('.header').removeClass("js-scrolled");
-	}
-});
-
-// —————————————————————————————————————————————————————————————————
-// join
-// —————————————————————————————————————————————————————————————————
-
-// change background image
-
-$('.js-button-porto').on('click', function() {
-    $('.join__background--london').addClass('hide').fadeIn();
-});
-
-$('.js-button-london').on('click', function() {
-    $('.join__background--london').removeClass('hide').fadeIn();
-});
-
-// —————————————————————————————————————————————————————————————————
-// modals
-// —————————————————————————————————————————————————————————————————
-
-// prevent page scroll when modal opened
-
-// open
-$(".js-button-modal").click(function(event) {
-	$('html, body').addClass("js-freeze");
-});
-
-// close
-$(".modal__close, .modal__button").click(function(event) {
-	$('html, body').removeClass("js-freeze");
-});
-
-// —————————————————————————————————————————————————————————————————
-// news widget animation
-// —————————————————————————————————————————————————————————————————
-
-if ($(window).width() > 575) {   
-	setTimeout(function() {
-		$('.widget--news').animate({
-			right: '0'
-		}, 800, 'swing');
-	}, 1200);
+    &__icon {
+        flex-basis: auto;
+    }
 }
-else {  
-}; 
 
 // —————————————————————————————————————————————————————————————————
-// parallax background
+// layouts / index
 // —————————————————————————————————————————————————————————————————
 
-window.addEventListener('scroll', doParallax);
-function doParallax(){
-   var positionY = window.pageYOffset/8;
-   document.body.style.backgroundPosition = "0 -" + positionY + "px";
+.landing {
+    padding-top: $integer-xxxl;
+    padding-bottom: 0;
+}
+
+// —————————————————————————————————————————————————————————————————
+// elements / includes / mantle
+// —————————————————————————————————————————————————————————————————
+
+#mantle {
+
+    .section__content {
+        width: 100%;
+    }
+}
+
+.mantle {
+    
+    &__label {
+
+        & + & {
+            margin-top: 25%;
+        }
+    }
+}
+
+// —————————————————————————————————————————————————————————————————
+// layouts / products
+// —————————————————————————————————————————————————————————————————
+
+.products {
+
+    &__intro {
+        display: block;
+    }
+
+    &__container {
+        height: 400px;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+}
+
+// —————————————————————————————————————————————————————————————————
+// layouts / projects
+// —————————————————————————————————————————————————————————————————
+
+#projects {
+
+    .card--lg {
+        height: 400px;
+    }
+}
+
+// —————————————————————————————————————————————————————————————————
+// layouts / services
+// —————————————————————————————————————————————————————————————————
+
+#services {
+
+    .tab {
+        
+        &__nav {
+            padding: 0 $integer;
+        }
+        
+        &__button {
+            width: 25%;
+            white-space: nowrap;
+            
+            &:hover:before, 
+            &.tab__button--active:before {
+                width: 80%;
+                left: 10%;
+            }
+        }
+        
+        &__content {
+            flex-basis: 50%;
+        }
+        
+    }
+
+    .card {
+
+        &__image {
+            width: 30%;
+            height: 30%;
+        }
+    }
 }
 
 // —————————————————————————————————————————————————————————————————
 
-});
+}

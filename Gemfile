@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.6"
+gem "jekyll", "~> 4.1.1"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem 'html-proofer'
   gem 'jekyll-autoprefixer'
   gem 'jekyll-coffeescript'
+  gem "kramdown", ">= 2.3.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

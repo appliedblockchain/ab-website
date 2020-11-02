@@ -49,8 +49,8 @@ sass:
 # compress 
 # http://jch.penibelst.de/
 compress_html:
-  clippings: []
-  comments: []
+  clippings: all
+  comments: all
   endings: []
   ignore:
     envs: []

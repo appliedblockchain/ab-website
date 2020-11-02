@@ -1,12 +1,12 @@
 # Applied Blockchain Website
 - [Introduction](#introduction)
-  - [Getting started](#getting-started)
-  - [Dependencies & Methodology](#comments)
+- [Getting started](#getting-started)
+- [Dependencies & Methodology](#comments)
 - [Deployment](#deployment)
 - [Page structure](#page-structure)
-  - [Section system](#section-system)
-  - [Components](#components)
-  - [Column system](#column-system)
+- [Section system](#section-system)
+- [Components](#components)
+- [Column system](#column-system)
 - [Create page](#create-page)  
 - [Create project](#create-project)
 - [Create job](#create-job)
@@ -30,17 +30,17 @@ gem install bundler jekyll
 #### Run the website in development mode
 
 ```
-bundle exec jekyll serve
+jekyll serve
 ```
 > Local URL: [localhost:4000](http://localhost:4000)
 
 ### Dependencies & Methodologies
 
-#### SASS & Compass
+#### SASS
 
-Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
+Styling is powered with Sass, a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
+Style files are located in the assets/_sass folder. You don't need to run any additional command to compile, it does it automatically with `jekyll serve`
 - [Install Sass](https://sass-lang.com/install)
-- [Install Compass](http://compass-style.org/install/)
 
 #### BEM Markdown
 

@@ -17,10 +17,24 @@ clients:
 # home.html
 testimonials_clients:
   - name: ben-van-beurden
-    quote: We did the first product derivative trade on blockchain together with our partner Applied Blockchain
+    quote: We did the first product derivative trade on blockchain together with our partner Applied Blockchain.
     author: Ben van Beurden
     position: CEO
     company: Shell
+
+  - name: gartner
+    quote: Consistently deliver value!. A great team who work both autonomously and alongside us.
+    author: Product Manager
+    company: Energy and Utilities Industry
+    rating: 5
+    link: https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/review/view/3468146
+
+  - name: gartner
+    quote: Applied Blockchain brings to the table experience, expertise and innovative ideas, which is much more valuable than just outsourced development.
+    author: Founder
+    company: Finance Industry
+    rating: 5
+    link: https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/review/view/3467712
 
   - name: stephane-cheikh
     quote: Applied Blockchain have always been very helpful by coming up with new concepts and new developments. They challenge you as a customer, they say “have you thought about this, have you thought about that?”. This has been very refreshing and I would definitely recommend Applied Blockchain.

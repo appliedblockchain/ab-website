@@ -86,7 +86,7 @@ html, body {
 		font-size: 1.25rem;
 	}
 	&--small {
-		font-size: 0.8rem;
+		font-size: 0.87575rem;
 	}
 	&--bold {
 		font-weight: $font-bold;
@@ -185,7 +185,7 @@ html, body {
 	}
 
 	&.button--small {
-		@include font-size(0.8, $font-black, normal);
+		@include font-size(0.875, $font-black, normal);
 		letter-spacing: 0.04rem;
 		line-height: 1.5;
 	}
@@ -216,7 +216,7 @@ html, body {
 }
 
 .label, .form__label {
-	@include font-size(0.8, $font-black, normal);
+	@include font-size(0.875, $font-black, normal);
 }
 
 .form {

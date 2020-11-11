@@ -37,10 +37,6 @@
   &__stars {
     color: $medium-grey;
     margin-right: $integer;
-
-    .checked {
-      color: $highlight;
-    }
   }
 }
 
@@ -132,6 +128,24 @@
           display: none !important;
         }
       }
+    }
+  }
+}
+
+.owl-carousel {
+
+  &-news {
+
+    .owl {
+
+      &-nav,
+      &-dots {
+        display: none;
+      }
+    }
+
+    .carousel__item {
+      height: 100%;
     }
   }
 }

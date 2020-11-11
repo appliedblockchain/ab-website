@@ -52,15 +52,24 @@ layout: compress
         {% for item in site.data.news %}
         <div class="carousel__item">
           <div class="card__inner">
-            <div>
+            <div class="card__inner--left">
               <div class="card__content">
+                {% if item.rating %}
+                <div class="body--small body--grey">
+                  <div class="fas fa-star{% if item.rating >= 1 %} body--highlight{% endif %}"></div>
+                  <div class="fas fa-star{% if item.rating >= 2 %} body--highlight{% endif %}"></div>
+                  <div class="fas fa-star{% if item.rating >= 3 %} body--highlight{% endif %}"></div>
+                  <div class="fas fa-star{% if item.rating >= 4 %} body--highlight{% endif %}"></div>
+                  <div class="fas fa-star{% if item.rating >= 5 %} body--highlight{% endif %}"></div>
+                </div>
+                {% endif %}    
                 <p class="card__title body--bold">{{ item.title }}</p>
                 {% if item.body %}
                 <p class="body--small">{{ item.body }}</p>
                 {% endif %}
               </div>
               <div class="card__actions">
-                <a href="{{ site.url }}/{{ item.button_link }}" target="_blank" class="card__actions button button--small button--primary button--animate fas fa-eye">
+                <a href="{% if link_type == 'internal' %}{{ site.url }}/{% endif %}{{ item.link }}" target="_blank" class="card__actions button button--small button--primary button--animate fas fa-eye">
                   <p class="button__inner">{{ item.button_label }}</p>
                 </a>
               </div>

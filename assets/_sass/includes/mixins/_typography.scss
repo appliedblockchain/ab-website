@@ -137,8 +137,10 @@ html, body {
 .body {
 
 	&--black 	{ color: $black; }
+	&--grey 	{ color: $medium-grey; }
 	&--white 	{ color: $white; }
 	&--primary 	{ color: $primary; }
+	&--highlight 	{ color: $highlight; }
 }
 
 // alignement

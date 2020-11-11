@@ -96,6 +96,7 @@ $('.owl-carousel-webinar').owlCarousel({
 
 $('.owl-carousel-news').owlCarousel({
     dots: false,
+    nav: false,
     loop: true,
     autoplay: true,
     autoplayTimeout: 5000,

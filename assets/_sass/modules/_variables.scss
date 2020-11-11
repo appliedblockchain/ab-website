@@ -13,61 +13,61 @@
 // 1. colors
 // —————————————————————————————————————————————————————————————————
 
-$primary: 	#007bff;
-$secondary: #64f0ff;
-$dark: 		#161656;
-$highlight:	#ff6f00;
+$primary: #007bff;
+$secondary:#64f0ff;
+$dark: #161656;
+$highlight:#ff6f00;
 
-$secondary-alt: #46FFC3;
-$highlight-alt: #FAD961;
+$secondary-alt:#46FFC3;
+$highlight-alt:#FAD961;
 
-$primary-darken:  darken($primary, 15%);
+$primary-darken: darken($primary, 15%);
 $primary-lighten: lighten($primary, 15%);
 
-$black: 	    #000a1e;
-$dark-grey: 	#8c8c96;
-$medium-grey:   #d7d7dc;
-$light-grey:    #f8f8f8;
-$white: 	    #ffffff;
+$black: #000a1e;
+$dark-grey: #8c8c96;
+$medium-grey: #d7d7dc;
+$light-grey: #f8f8f8;
+$white: #ffffff;
 
-$red: #ff224a;
+$red:#ff224a;
 
-$facebook:	#3b5998;
-$github:	#4078c0;
-$linkedin:  #0077b5;
-$medium:	#00ab6c;
-$twitter:	#1da1f2;
+$facebook:#3b5998;
+$github:#4078c0;
+$linkedin: #0077b5;
+$medium:#00ab6c;
+$twitter:#1da1f2;
 
 
 // —————————————————————————————————————————————————————————————————
 // 2. general
 // —————————————————————————————————————————————————————————————————
 
-$page:			12.5vw;
-$col:			100%/12;
-$col-footer:	100%/15;
+$page: 12.5vw;
+$col: 100%/12;
+$col-footer:100%/15;
 
-$integer:		0.5rem;		 // 8px
+$integer: 0.5rem; // 8px
 
-$integer-xxs:	$integer/8;	 // 1px
-$integer-xs:	$integer/4;	 // 2px 
-$integer-sm:	$integer/2;	 // 4px
+$integer-xxs: $integer/8; // 1px
+$integer-xs: $integer/4; // 2px 
+$integer-sm: $integer/2; // 4px
 
-$integer-md:	$integer*2;	 // 16px
-$integer-lg:	$integer*4;	 // 32px
-$integer-xl:	$integer*5;	 // 40px
-$integer-xxl:	$integer*8;	 // 64px
-$integer-xxxl:  $integer*10; // 80px
+$integer-md: $integer*2; // 16px
+$integer-lg: $integer*4; // 32px
+$integer-xl: $integer*5; // 40px
+$integer-xxl: $integer*8; // 64px
+$integer-xxxl: $integer*10; // 80px
 $integer-xxxxl: $integer*15; // 120px
-$integer-max:	$integer*25; // 200px
+$integer-max: $integer*25; // 200px
 
-$transition:		0.4s ease 0s;
-$transition-delay:  0.4s ease 0.2s;
-$transition-long:	0.6s ease 0s;
+$transition: 0.4s ease 0s;
+$transition-delay: 0.4s ease 0.2s;
+$transition-long: 0.6s ease 0s;
 
-$box-shadow-xs:	 0 0 15px 0 rgba($dark, 0.05);
-$box-shadow-sm:	 0 0 10px 0 rgba($dark, 0.15);
-$box-shadow-md:	 0 0 20px 0 rgba($dark, 0.20);
+$box-shadow-xs: 0 0 15px 0 rgba($dark, 0.05);
+$box-shadow-sm: 0 0 10px 0 rgba($dark, 0.15);
+$box-shadow-md: 0 0 20px 0 rgba($dark, 0.20);
 
 $border-sm: $integer-xs solid;
 $border-md: $integer-sm solid;
@@ -81,44 +81,37 @@ $border-radius: $integer-md*1.5;
 // —————————————————————————————————————————————————————————————————
 
 // fonts
-$font:		"Chivo", Verdana, Geneva, sans-serif;
-$font-code:	"Roboto Mono", Courier, monospace;
+$font: "Chivo", Verdana, Geneva, sans-serif;
+$font-code: "Roboto Mono", Courier, monospace;
 
 // weight
-$font-thin: 		100;
-$font-extralight: 	200;
-$font-light:		300;
-$font-regular: 		400;
-$font-medium:		500;
-$font-semibold: 	600;
-$font-bold:			700;
-$font-extrabold: 	800;
-$font-black: 		900;
+$font-thin: 100;
+$font-extralight: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;
 
 // —————————————————————————————————————————————————————————————————
 // 4. anchor points
 // —————————————————————————————————————————————————————————————————
-// extralarge desktops	1300px  >  ...
-// large desktops		1024px  >  1199px
-// desktops				 768px  >  1023px
-// tablets				 576px  >	767px
-// phones			 	 350px  >	575px
-// small phones 			...	>	349px
-// —————————————————————————————————————————————————————————————————
 
-$desktop-xl:		1800px;
+$desktop-xl: 1800px;
 
-$desktop-lg-min:	1300px;
-$desktop-lg-max:	1299.98px;
+$desktop-lg-min: 1300px;
+$desktop-lg-max: 1299.98px;
 
-$desktop-min:		1024px;
-$desktop-max:		1023.98px;
+$desktop-min: 1024px;
+$desktop-max: 1023.98px;
 
-$tablet-min:		768px;
-$tablet-max:		767.98px;
+$tablet-min: 768px;
+$tablet-max: 767.98px;
 
-$mobile-min:		576px;
-$mobile-max:		575.98px;
+$mobile-min: 576px;
+$mobile-max: 575.98px;
 
-$mobile-sm-min:		350px;
-$mobile-sm-max:		349.98px;
+$mobile-sm-min: 350px;
+$mobile-sm-max: 349.98px;

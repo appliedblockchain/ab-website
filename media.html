@@ -29,7 +29,7 @@ background_color: white
             <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
                 <div class="card card--portrait background--shadow">
                     <a href="{% if post.link %}{% if post.social contains "pdf" %}{{ site.url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>
-                        <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg);"></div>
+                        <div class="card__image background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg');"></div>
                     </a>
                     <div class="card__inner">
                         <div class="card__content">

@@ -7,115 +7,115 @@ background_color: white
 ---
 
 <section class="section section--alt section--white">
-    <div class="section__content">
-        <div class="card block__title">
-            {% include elements/carousel.html
-                variant = 'clients'
-                colour = 'color'
-            %}
-        </div>
+  <div class="section__content">
+    <div class="card block__title">
+      {% include elements/carousel.html
+        variant = 'clients'
+        colour = 'color'
+      %}
     </div>
-    <div class="section__content">
-        <a href="{{ site.url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
-            <p class="button__inner">Projects</p>
-        </a>
-    </div>
+  </div>
+  <div class="section__content">
+    <a href="{{ site.url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
+      <p class="button__inner">Projects</p>
+    </a>
+  </div>
 </section>
 
 <section id="services-solutions" class="section section--grey">
-    {% include containers/sections/header.html
-        title = 'Our solutions'
-    %}
-    <div class="section__content z-index--2">
-        <div class="row">
-            <div class="card__wrapper">
-                {% for item in site.data.services.solutions %}
-                <div class="col--lg4">
-                    <div class="card card--lg">
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/solutions/icon-{{ item.icon }}.svg" alt="" class="card__image">
-                        <h2 class="card__title lead">{{ item.title }}</h2>
-                        <p class="card__body body">{{ item.body }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
+  {% include containers/sections/header.html
+    title = 'Our solutions'
+  %}
+  <div class="section__content z-index--2">
+    <div class="row">
+      <div class="card__wrapper">
+        {% for item in site.data.services.solutions %}
+        <div class="col--lg4">
+          <div class="card card--lg">
+            <img src="{{ site.url }}{{ site.imageurl }}/icons/solutions/icon-{{ item.icon }}.svg" alt="" class="card__image">
+            <h2 class="card__title lead">{{ item.title }}</h2>
+            <p class="card__body body">{{ item.body }}</p>
+          </div>
         </div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
 </section>
 
 <section id="services-stack" class="section section--white z-index--2">
-    {% include containers/sections/header.html
-        title = 'Technology'
-        body = 'Our team builds and supports full stack, privacy-preserving, secure and distributed applications.'
-    %}
-    <div class="section__content">
-        <div class="card__wrapper">
-            <div class="row">
-                {% for item in site.data.services.stack %}
-                <div class="col--md6">
-                    <div class="card body--left">
-                        <div class="background--shadow">
-                            <div class="card__inner">
-                                <div class="card__title">
-                                    <img src="{{ site.url }}{{ site.imageurl }}/icons/services/{{ item.icon }}.png" alt="{{ item.title }} icon" class="card__image">
-                                    <h2 class="lead">{{ item.title }}</h2>
-                                </div>
-                                <p class="card__body">{{ item.body }}</p>
-                            </div>
-                        </div>
-                    </div>
+  {% include containers/sections/header.html
+    title = 'Technology'
+    body = 'Our team builds and supports full stack, privacy-preserving, secure and distributed applications.'
+  %}
+  <div class="section__content">
+    <div class="card__wrapper">
+      <div class="row">
+        {% for item in site.data.services.stack %}
+        <div class="col--md6">
+          <div class="card body--left">
+            <div class="background--shadow">
+              <div class="card__inner">
+                <div class="card__title">
+                  <img src="{{ site.url }}{{ site.imageurl }}/icons/services/{{ item.icon }}.png" alt="{{ item.title }} icon" class="card__image">
+                  <h2 class="lead">{{ item.title }}</h2>
                 </div>
-                {% endfor %}
+                <p class="card__body">{{ item.body }}</p>
+              </div>
             </div>
+          </div>
         </div>
+        {% endfor %}
+      </div>
     </div>
-    <div class="section__content">
-        {% include elements/carousel.html
-            variant = 'technologies'
-        %}
-    </div>
+  </div>
+  <div class="section__content">
+    {% include elements/carousel.html
+      variant = 'technologies'
+    %}
+  </div>
 </section>
 
 <section class="section section--white">
-    {% include containers/sections/header.html
-        title = 'Our Approach'
-        subtitle = 'Building your Project'
-    %}
-    <div class="section__content tab tab--approach z-index--2">
-        <div class="tab__nav z-index--2 hide--tablet">
-            {% for item in site.data.approach %}
-            <a href="#{{ item.id }}" class="tab__button{% if item.active %} tab__button--active{% endif %}">
-                <h2 class="comment">{{ item.number }}. {{ item.title }}</h2>
-            </a>
-            {% endfor %}
-        </div>
-        <div class="tab__content background--shadow">
-            {% for item in site.data.approach %}
-            <div id="{{ item.id }}" class="tab__item">
-                <div class="card card--lg card--landscape">
-                    <div class="card__inner">
-                        <div class="card__content z-index--2">
-                            <p class="card__title subtitle">{{ item.title }}</p>
-                            <p class="card__body body">{{ item.text }}</p>
-                        </div>
-                    </div>
-                    <div class="card__image hide--mobile">
-                        <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="">
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+  {% include containers/sections/header.html
+    title = 'Our Approach'
+    subtitle = 'Building your Project'
+  %}
+  <div class="section__content tab tab--approach z-index--2">
+    <div class="tab__nav z-index--2 hide--tablet">
+      {% for item in site.data.approach %}
+      <a href="#{{ item.id }}" class="tab__button{% if item.active %} tab__button--active{% endif %}">
+        <h2 class="comment">{{ item.number }}. {{ item.title }}</h2>
+      </a>
+      {% endfor %}
     </div>
+    <div class="tab__content background--shadow">
+      {% for item in site.data.approach %}
+      <div id="{{ item.id }}" class="tab__item">
+        <div class="card card--lg card--landscape">
+          <div class="card__inner">
+            <div class="card__content z-index--2">
+              <p class="card__title subtitle">{{ item.title }}</p>
+              <p class="card__body body">{{ item.text }}</p>
+            </div>
+          </div>
+          <div class="card__image hide--mobile">
+            <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="">
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 <section id="index-testimonials" class="section section--grey no-padding--left no-padding--right">
   <div class="section__content">
-    <div class="card testimonials">
-      {% include elements/carousel.html
-        type = 'testimonials'
-        variant = 'testimonials_clients'
-      %}
-    </div>
+  <div class="card testimonials">
+    {% include elements/carousel.html
+    type = 'testimonials'
+    variant = 'testimonials_clients'
+    %}
+  </div>
   </div>
 </section>

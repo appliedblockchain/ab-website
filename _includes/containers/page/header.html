@@ -2,7 +2,11 @@
 	<div class="header__bar">
 		<div class="header__logo logo{% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
 			<a href="{{ site.url }}/">
+				{% if page.title == 'Applied Privacy' %}
+				<img src="{{ site.url }}{{ site.resourceurl }}/{{ page.logo }}" alt="Logo">
+				{% else %}
 				{% include mixins/logo.html %}
+				{% endif %}
 			</a>
 		</div>
 		<div class="header__button">
@@ -26,12 +30,16 @@
 					</a>
 				{% endif %}
 			{% endif %}
+			{% if page.title != 'Applied Privacy' %}
 			<a href="{{ site.url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>
+			{% endif %}
+			{% if page.title != 'Applied Privacy' %}
 			<div class="button button--menu{% if page.background_color == 'white' %} alt{% endif %}">
-                <i class="button__inner"></i>
-            </div>
+				<i class="button__inner"></i>
+			</div>
+			{% endif %}
 		</div>
 	</div>
 	<div class="header__menu card__wrapper">

@@ -258,6 +258,15 @@ ul {
 	&--left { margin-left: 0 !important; }
 }
 
+.m {
+
+	&b {
+		margin-bottom: $integer;
+		&--md { margin-bottom: $integer-md; }
+		&--lg { margin-bottom: $integer-lg; }
+	}
+}
+
 .no-padding {
 	padding: 0 !important;
 

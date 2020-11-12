@@ -264,6 +264,16 @@
 		}
 	}
 
+	&__logo {
+		width: 50%;
+		min-width: 350px;
+
+		& + .page__comment,
+		& + .page__title {
+			margin-top: $integer-xl;
+		}
+	}
+
 	&__comment {
 
 		& + .page__title {

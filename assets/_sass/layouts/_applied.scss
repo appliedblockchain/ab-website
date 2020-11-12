@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// APPLIED PROOFS
+// —————————————————————————————————————————————————————————————————
+
+#applied {
+
+    &:before {
+        @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+        position: fixed;
+    }
+
+    #landing:before {
+        display: none;
+    }
+
+    .page__header {
+        padding-left: $page;
+        padding-right: $page;
+        text-align: left;
+    }
+
+    .page__header,
+    .section--dark {
+        background-color: transparent !important;
+
+        &:before {
+            display: none !important
+        }
+    }
+
+    .headline {
+        font-size: 6rem;
+    }
+
+    .timeline {
+        
+        &__item {
+            flex-direction: column;
+            margin-top: 0;
+            width: auto;
+            
+            &:before {
+                @include pseudo-element('', 34px, 50%, 0, auto, 100%, 2px);
+                transform: scaleX(3);
+                transform-origin: right;
+                background-color: $primary;
+            }
+        }
+        
+        &__date {
+            position: initial;
+        }
+        
+        &__dot {
+            margin-top: $integer;
+            background-color: $primary;
+            border: 0;
+            
+            &.triangle {
+                @include pseudo-element('', auto, auto, auto, auto, $integer-md, $integer-md);
+                transform: rotate(90deg);
+                position: initial;
+                -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
+                background-color: $primary;
+                border-radius: 0;
+                @include responsive(max-width, $tablet-max) {
+                    height: 50px;
+                }
+            }
+        }
+        
+        &__title {
+            margin-top: $integer;
+        }
+        
+        &__text {
+            text-align: center !important;
+        }
+    }
+}
+
+.applied-proofs { 
+
+    &:before { background-image: linear-gradient(to bottom, rgba($dark, 0.9), $dark); } 
+}
+
+.applied-identity { 
+
+    &:before { background-image: linear-gradient(to bottom, rgba($white, 0.9), $white); } 
+}

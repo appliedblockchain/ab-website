@@ -1,13 +1,27 @@
+- title: “Consistently deliver value! A great team who work both autonomously and alongside us.”
+  body: 
+  button_label: View full review
+  link: https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/review/view/3468146
+  image: carousel/testimonials_clients/gartner-small.png
+  rating: 5
+
+# - title: “More than just development”
+#   body: 
+#   button_label: View full review
+#   link: https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/review/view/3467712
+#   image: carousel/testimonials_clients/gartner-small.png
+#   rating: 5
+
 - title: A Review of Next Generation Enterprise Blockchain Technology
   body: 
-  image: 
   button_label: Download Report
-  button_link: download-next-gen-blockchains
+  link: download-next-gen-blockchains
+  link_type: internal
   image: team/portrait/adi.jpg
 
-- title: 4 Pragmatic Blockchain Design Patterns for Business
-  body: 
-  image: 
-  button_label: Read article
-  button_link: four-blockchain-design-patterns
-  image:
+# - title: 4 Pragmatic Blockchain Design Patterns for Business
+#   body: 
+#   button_label: Read article
+#   link: four-blockchain-design-patterns
+#   link_type: internal
+#   image:

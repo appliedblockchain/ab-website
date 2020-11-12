@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// INDEX
+// —————————————————————————————————————————————————————————————————
+
+#landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: $integer-xxl;
+
+    &:before {
+        @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+        background-image: linear-gradient(to bottom, rgba($primary, 0.7), $primary);
+    }
+
+    .page__header {
+        padding-left: $page;
+        padding-bottom: $integer-xxl;
+        padding-right: $page;
+    }
+
+    .section__content {
+        position: relative;
+        padding-bottom: $integer-xxxl*2;
+    }
+
+    .gartner {
+        position: absolute;
+        top: 0;
+        left: -$page/2;
+        min-width: 320px;
+        width: 10%;
+        z-index: 1;
+
+        @include responsive-mobile-devices-landscape() {
+            display: none;
+        }
+    }
+
+    .page__header,
+    .section__content,
+    .widget__bar {
+        pointer-events: none;
+    }
+
+    .button {
+        pointer-events: initial;
+    }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    @include responsive-mobile-devices() {
+        display: none;
+    }
+}
+
+#index {
+
+    &-intro {
+        background-size: 50%;
+        background-position: -20% 30%;
+    }
+
+    &-why-us {
+
+        .section__content {
+
+            &:nth-child(even)    { .background--contain { background-position: 25% center; }}
+            &:nth-child(odd)   { .background--contain { background-position: 75% center; }}
+
+            .card {
+                padding-top: $integer-lg;
+                padding-bottom: $integer-lg;
+
+                @include responsive(max-width, $mobile-max) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+
+            @include responsive(max-width, $mobile-max) {
+
+                .body--right,
+                .body--left {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &-testimonials {
+
+        &.section--overlap {
+
+            @include responsive(max-width, $mobile-max) {
+                margin-top: 0;
+                padding-top: $integer-xxxl;
+            }
+        }
+    }
+    
+    &-featured-in {
+        
+        @include responsive(max-width, $mobile-max) {
+            
+            .col--6 {
+                width: 50% !important;
+            }
+        }
+    }
+}

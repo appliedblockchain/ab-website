@@ -34,7 +34,7 @@ background_color: white
             {% for item in site.data.about.leadership %}
             <div class="card__outer col--xl5 col--lg6">
                 <div class="card card--portrait background--shadow">
-                    <div class="card__image background--cover" style="background-image: url({{ site.url }}{{ site.imageurl}}/team/{{ item.name | slugify }}.jpg);">
+                    <div class="card__image background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl}}/team/{{ item.name | slugify }}.jpg');">
                         <p class="card__body-hidden body">{{ item.bio }}</p>
                     </div>
                     <div class="card__inner">

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// ANCHOR
+// —————————————————————————————————————————————————————————————————
+
+.anchor {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	// widgets on index > landing
+	&.card {
+		align-items: stretch;
+	}
+
+	&__item {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

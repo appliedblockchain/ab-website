@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
 // —————————————————————————————————————————————————————————————————
 // CAROUSEL
 // —————————————————————————————————————————————————————————————————
@@ -75,7 +73,7 @@ $('.owl-carousel-partners').owlCarousel({
 $('.owl-carousel-testimonials').owlCarousel({
     loop: true,
     autoplay: true,
-    autoplayTimeout: 10000,
+    autoplayTimeout: 8000,
     autoplayHoverPause: true,
     smartSpeed: 2000,
     mouseDrag: false,
@@ -98,6 +96,7 @@ $('.owl-carousel-webinar').owlCarousel({
 
 $('.owl-carousel-news').owlCarousel({
     dots: false,
+    nav: false,
     loop: true,
     autoplay: true,
     autoplayTimeout: 5000,
@@ -107,8 +106,6 @@ $('.owl-carousel-news').owlCarousel({
     items: 1, 
     margin: 0 
 });
-
-
 
 // —————————————————————————————————————————————————————————————————
 

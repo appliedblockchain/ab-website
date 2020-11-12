@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
 // —————————————————————————————————————————————————————————————————
 // SCRIPT
 // —————————————————————————————————————————————————————————————————
@@ -15,8 +13,6 @@ $(document).ready(function() {
 // news widget animation
 // parallax scrolling
 // —————————————————————————————————————————————————————————————————
-
-
 
 // —————————————————————————————————————————————————————————————————
 // accordions
@@ -44,8 +40,6 @@ $('.accordion .accordion__header').on('click', function() {
 
 });
 
-
-
 // —————————————————————————————————————————————————————————————————
 // buttons
 // —————————————————————————————————————————————————————————————————
@@ -57,8 +51,6 @@ $(".button--menu").click(function(event) {
 	$('.header').toggleClass('js-opened');
 	$('body').toggleClass('js-freeze');
 });
-
-
 
 // —————————————————————————————————————————————————————————————————
 // cookie bar accept
@@ -86,8 +78,6 @@ $(".cookie__button").click(function(){
 	$(".cookie").addClass("js-cookie-accepted");
 })
 
-
-
 // —————————————————————————————————————————————————————————————————
 // form
 // —————————————————————————————————————————————————————————————————
@@ -100,8 +90,6 @@ $(".form__input").focus(function() {
 $(".form__input").focusout(function() {
 	$(this).closest(".form__group").removeClass('focused');
 });
-
-
 
 // —————————————————————————————————————————————————————————————————
 // header scroll animation
@@ -116,8 +104,6 @@ $(window).scroll(function() { //the scrolled element
 	}
 });
 
-
-
 // —————————————————————————————————————————————————————————————————
 // join
 // —————————————————————————————————————————————————————————————————
@@ -131,8 +117,6 @@ $('.js-button-porto').on('click', function() {
 $('.js-button-london').on('click', function() {
     $('.join__background--london').removeClass('hide').fadeIn();
 });
-
-
 
 // —————————————————————————————————————————————————————————————————
 // modals
@@ -150,8 +134,6 @@ $(".modal__close, .modal__button").click(function(event) {
 	$('html, body').removeClass("js-freeze");
 });
 
-
-
 // —————————————————————————————————————————————————————————————————
 // news widget animation
 // —————————————————————————————————————————————————————————————————
@@ -166,8 +148,6 @@ if ($(window).width() > 575) {
 else {  
 }; 
 
-
-
 // —————————————————————————————————————————————————————————————————
 // parallax background
 // —————————————————————————————————————————————————————————————————
@@ -177,8 +157,6 @@ function doParallax(){
    var positionY = window.pageYOffset/8;
    document.body.style.backgroundPosition = "0 -" + positionY + "px";
 }
-
-
 
 // —————————————————————————————————————————————————————————————————
 

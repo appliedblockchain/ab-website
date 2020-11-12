@@ -42,7 +42,7 @@ html, body {
 }
 
 .title {
-	@include font-size(2.5, $font-bold, normal);	
+	@include font-size(2.5, $font-bold, normal);
 	color: $primary;
 
 	@include responsive(max-width, $tablet-max) {
@@ -136,11 +136,12 @@ html, body {
 
 .body {
 
-	&--black 	{ color: $black; }
-	&--grey 	{ color: $medium-grey; }
-	&--white 	{ color: $white; }
-	&--primary 	{ color: $primary; }
-	&--highlight 	{ color: $highlight; }
+	&--black { color: $black; }
+	&--grey { color: $medium-grey; }
+	&--white { color: $white; }
+	&--primary { color: $primary; }
+	&--highlight { color: $highlight; }
+	&--dark { color: $dark; }
 }
 
 // alignement

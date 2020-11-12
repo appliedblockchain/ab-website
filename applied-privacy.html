@@ -3,29 +3,59 @@ layout: default
 title: Applied Privacy
 comment: Confidential Computing
 headline: Applied Privacy
-subtitle: Confidential Computing technology presents a new set of opportunities.</br>It enables computation to be conducted
-on data without the party running the computation having any access to the data.</br>Data resides inside hardware secure
-enclaves, meaning that even a system administrator or a malicous actor with physical access to the device cannot access
-the data.</br>We specialise in building solutions using R3 Conclave, Microsoft Azure, and Intel SGX
-technologies.</br>Use cases include:</br>AI for insights, learning and fraud detection on private data residing with
-different entities</br>Market data from private transactions residing with different entities</br>Dark pools
+subtitle: Confidential Computing technology presents a new set of opportunities.
+body: It enables computation to be conducted on data without the party running the computation having any access to the data. Data resides inside hardware secure enclaves, meaning that even a system administrator or a malicous actor with physical access to the device cannot access the data.
 logo: images/logos/applied-privacy.svg
 ---
 
-<section class="section section--alt no-padding--top">
+<section id="index-intro" class="section section--white">
+  {% include containers/sections/header.html
+    title = 'We specialise in building solutions using R3 Conclave, Microsoft Azure, and Intel SGX technologies.'
+  %}
   <div class="section__content">
     <div class="row">
       <div class="coloffset--xl2 col--xl8 coloffset--md1 col--md10">
         <div class="card block__title">
-          <p class="mb--lg subtitle">Our partners</p>
           {% include elements/carousel.html
-            variant = 'partners'
-          %}
+              variant = 'partners'
+            %}
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section id="index-intro" class="section section--white">
+  {% include containers/sections/header.html
+    title = 'Use cases'
+  %}
+  <div class="section__content">
+    <div class="row">
+      <div class="col--4">
+        <div class="card">
+          <div class="card__inner background--shadow">
+            AI for insights, learning and fraud detection on private data residing with different entities
+          </div>
+        </div>
+      </div>
+      <div class="col--4">
+        <div class="card">
+          <div class="card__inner background--shadow">
+            Market data from private transactions residing with different entities
+          </div>
+        </div>
+      </div>
+      <div class="col--4">
+        <div class="card">
+          <div class="card__inner background--shadow">
+            Dark pools
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section--alt">
   <div class="section__content">
     <div class="row">

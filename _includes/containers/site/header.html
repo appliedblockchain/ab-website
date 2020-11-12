@@ -72,7 +72,7 @@
 
 {% include containers/page/header.html %}
 
-<div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page background--cover"{% if page.layout == 'webinar' or page.layout == 'report' %} style="background-image: url('{{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');"{% endif %}>
+<div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page background--cover"{% if page.layout == 'webinar' or page.layout == 'report' or page.background == true %} style="background-image: url('{{ site.url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');"{% endif %}>
 
 {% if page.layout == 'index' or page.layout == 'post' or page.layout == 'project' %}
 {% else %}

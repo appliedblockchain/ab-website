@@ -7,45 +7,45 @@ background_color: white
 ---
 
 <section class="section section--white">
-    <div class="section__content z-index--2">
-        <div class="form form--pipedrive background--shadow">
-            <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/273256c741bb877073d9fe9c923f1c942026773">
-                <script src="https://cdn.eu-central-1.pipedriveassets.com/web-form-assets/webforms.min.js"></script>
-            </div>
-        </div>
+  <div class="section__content z-index--2">
+    <div class="form form--pipedrive background--shadow">
+      <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/273256c741bb877073d9fe9c923f1c942026773">
+        <script src="https://cdn.eu-central-1.pipedriveassets.com/web-form-assets/webforms.min.js"></script>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="section section--grey section--overlap section--full">
-    {% include containers/sections/header.html
-        title = ''
-    %}
-    <div class="section__content--2">
-        <div class="card card--lg background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl }}/background/london.jpg');">
-            <div class="card__inner">
-                <div class="card__content">
-                    <h2 class="card__title lead">London</h2>
-                    <p class="card__body body--large">{{ site.contact.london.address }}</p>
-                </div>
-                <div class="card__actions">
-                    <a href="{{ site.contact.london.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
-                        <p class="button__inner">Get directions</p>
-                    </a>
-                </div>
-            </div>
+  {% include containers/sections/header.html
+    title = ''
+  %}
+  <div class="section__content--2">
+    <div class="card card--lg background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl }}/background/london.jpg');">
+      <div class="card__inner">
+        <div class="card__content">
+          <h2 class="card__title lead">London</h2>
+          <p class="card__body body--large">{{ site.contact.london.address }}</p>
         </div>
-        <div class="card card--lg background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl }}/background/porto.jpg');">
-            <div class="card__inner">
-                <div class="card__content">
-                    <h2 class="card__title lead">Porto</h2>
-                    <p class="card__body body--large">{{ site.contact.porto.address }}</p>
-                </div>
-                <div class="card__actions">
-                    <a href="{{ site.contact.porto.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
-                        <p class="button__inner">Get directions</p>
-                    </a>
-                </div>
-            </div>
+        <div class="card__actions">
+          <a href="{{ site.contact.london.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
+            <p class="button__inner">Get directions</p>
+          </a>
         </div>
+      </div>
     </div>
+    <div class="card card--lg background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl }}/background/porto.jpg');">
+      <div class="card__inner">
+        <div class="card__content">
+          <h2 class="card__title lead">Porto</h2>
+          <p class="card__body body--large">{{ site.contact.porto.address }}</p>
+        </div>
+        <div class="card__actions">
+          <a href="{{ site.contact.porto.map }}" target="_blank" class="card__actions button button--primary button--animate fas fa-directions">
+            <p class="button__inner">Get directions</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

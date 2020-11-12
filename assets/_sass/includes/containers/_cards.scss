@@ -25,6 +25,11 @@
 
     .card {
       margin-bottom: $integer-md*2;
+      height: calc(100% - 2rem);
+
+      &__inner {
+        height: 100%;
+      }
     }
 
     &--sm {
@@ -654,10 +659,10 @@
       padding: $integer;
       background-color: $primary;
       
-      &--news       { background-color: $secondary; }
-      &--press-release  { background-color: $highlight; }
-      &--blog       { background-color: $primary; }
-      &--videos       { background-color: $dark; }   
+      &--news { background-color: $secondary; }
+      &--press-release { background-color: $highlight; }
+      &--blog { background-color: $primary; }
+      &--videos { background-color: $dark; }
     }
   }
 }

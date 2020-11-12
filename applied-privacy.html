@@ -1,11 +1,77 @@
 ---
-layout: report
-title: Confidential Computing
+layout: default
+title: Applied Privacy
 comment: Confidential Computing
-headline:  Applied Privacy
-body: Confidential Computing technology presents a new set of opportunitues.
+headline: Applied Privacy
+subtitle: Confidential Computing technology presents a new set of opportunities.
+body: It enables computation to be conducted on data without the party running the computation having any access to the data. Data resides inside hardware secure enclaves, meaning that even a system administrator or a malicous actor with physical access to the device cannot access the data.
+logo: images/logos/applied-privacy.svg
 ---
 
-<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/31lf3DrW8aZcccgD8qgQnJ2oyaSYNZDgQs96syt8TyLGOb8YVvtuQoYpEcdWzs4FB">
-  <script src="https://webforms.pipedrive.com/f/loader"></script>
-</div>
+<section id="index-intro" class="section section--white">
+  {% include containers/sections/header.html
+    title = 'We specialise in building solutions using R3 Conclave, Microsoft Azure, and Intel SGX technologies.'
+  %}
+  <div class="section__content">
+    <div class="row">
+      <div class="coloffset--xl2 col--xl8 coloffset--md1 col--md10">
+        <div class="card block__title">
+          {% include elements/carousel.html
+              variant = 'partners'
+            %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="index-intro" class="section section--white">
+  {% include containers/sections/header.html
+    comment = 'Use cases'
+  %}
+  <div class="section__content">
+    <div class="card__wrapper">
+      <div class="row">
+        <div class="col--lg4 col--md6">
+          <div class="card card--sm">
+            <div class="card__inner background--shadow">
+              <i class="card__header title fas fa-fingerprint body--primary"></i>
+              <p class="card__body body">AI for insights, learning and fraud detection on private data residing with different entities</p>
+            </div>
+          </div> 
+        </div>
+        <div class="col--lg4 col--md6">
+          <div class="card card--sm">
+            <div class="card__inner background--shadow">
+              <i class="card__header title fas fa-exchange-alt body--highlight"></i>
+              <p class="card__body body">Market data from private transactions residing with different entities</p>
+            </div>
+          </div> 
+        </div>
+        <div class="col--lg4 col--md12">
+          <div class="card card--sm">
+            <div class="card__inner background--shadow">
+              <i class="card__header title fas fa-coins body--dark"></i>
+              <p class="card__body body">Dark pools</p>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="section__content">
+    <div class="row">
+      <div class="form__container">
+        <div class="form form--pipedrive background--shadow">
+          <div class="pipedriveWebForms"
+            data-pd-webforms="https://webforms.pipedrive.com/f/31lf3DrW8aZcccgD8qgQnJ2oyaSYNZDgQs96syt8TyLGOb8YVvtuQoYpEcdWzs4FB">
+            <script src="https://webforms.pipedrive.com/f/loader"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

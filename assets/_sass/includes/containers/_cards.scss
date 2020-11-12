@@ -25,6 +25,11 @@
 
     .card {
       margin-bottom: $integer-md*2;
+      height: calc(100% - 2rem);
+
+      &__inner {
+        height: 100%;
+      }
     }
 
     &--sm {

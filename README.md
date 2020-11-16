@@ -49,8 +49,7 @@ Along with SASS, the CSS styles are based on BEM terminology.
 
 ### Plugins
 
-the plugins used can be found in the `Gemfile` file, under `group :jekyll_plugins do` (except from Compress who is used as a layout).
-If any, you can change the plugins settings in `_config.yml`.
+the plugins used can be found in the `Gemfile` file, under `group :jekyll_plugins do` (except from Compress who is used as a layout). If any, you can change the plugins settings in `_config.yml`.
 
 #### Autoprefixer
 
@@ -93,14 +92,14 @@ The deployment process is run throught Netlify.
 - Elements are layed out using a bootstrap like [column system](#column-system).
 ```html
 <section class="section">
-    {% include containers/sections/header.html
-        title = ''
-        subtitle = ''
-        body = ''
-    %}
-    <div class="section__content">
-        <!-- add your code -->
-    </div>
+  {% include containers/sections/header.html
+    title = ''
+    subtitle = ''
+    body = ''
+  %}
+  <div class="section__content">
+    <!-- add your code -->
+  </div>
 </section>
 <!-- repeat section if needed -->
 ```
@@ -128,10 +127,10 @@ The components are located in the `_include` folder. They were created to ensure
 
 ```html
 {% include containers/sections/header.html
-    comment = 'Lorem ipsum'
-    title = 'Section title'
-    subtitle = 'Section subitle'
-    description = 'Lorem ipsum dolor sit amet.'
+  comment = 'Lorem ipsum'
+  title = 'Section title'
+  subtitle = 'Section subitle'
+  description = 'Lorem ipsum dolor sit amet.'
 %}
 ```
 
@@ -140,9 +139,9 @@ The components are located in the `_include` folder. They were created to ensure
 The website uses a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) like column system. It as based on a twelve column structure. You can add prefixes to the number to set up the responsive behaviour of each column.
 ```html
 <div class="row">
-    <div class="col--lg3 col--md4"></div>
-    <div class="col--lg7 col--md8"></div>
-    <div class="col--lg2 col--md12"></div>
+  <div class="col--lg3 col--md4"></div>
+  <div class="col--lg7 col--md8"></div>
+  <div class="col--lg2 col--md12"></div>
 </div>
 ```
 
@@ -157,8 +156,8 @@ The website uses a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_gri
 ```yml
 ---
 layout: default # do not change
-title: # this will appear as the screen header and the html header in the browser tab
-headline: # [optional] overrides the screen header
+title: # this will appear as the page header and the html header in the browser tab
+headline: # [optional] overrides the page header
 subtitle: # [optional]
 background_color: white # do not change
 ---
@@ -191,36 +190,36 @@ deliverables:
 
 challenge-diagram: 
 challenge: 
-    - lead: 
-    - paragraph: 
-    - paragraph: 
-    # etc.
+  - lead: 
+  - paragraph: 
+  - paragraph: 
+  # etc.
 
 delivery:
-    - item:
-        - paragraph: 
-        - paragraph: 
-        # etc.
-    - item:
-        - paragraph: 
-        # etc.
+  - item:
+    - paragraph: 
+    - paragraph: 
+    # etc.
+  - item:
+    - paragraph: 
+    # etc.
 
 results:
-    - paragraph: 
-    - paragraph: 
-    # etc.
+  - paragraph: 
+  - paragraph: 
+  # etc.
 results-icons:
-    - image: 
-      title: 
-    - image: 
-      title: 
-    # etc.
+  - image: 
+    title: 
+  - image: 
+    title: 
+  # etc.
 
 testimonial:
-    - quote: 
-      author: 
-      position: 
-      company: 
+  - quote: 
+    author: 
+    position: 
+    company: 
 ---
 ```
 - [Here is an example](https://appliedblockchain.com/projects/appii/) of how each is displayed.
@@ -239,19 +238,19 @@ testimonial:
 - Copy/paste this code in the section you want it to appear (London or Porto) and fill the content.
 ```yml
   - title: 
-    type: 
-    responsabilities:
-      - li: ''
-      - li: ''
-      # etc.
-    required-skills:
-      - li: ''
-      - li: ''
-      # etc.
-    additional-skills:
-      - li: ''
-      - li: ''
-      # etc.
+  type: 
+  responsabilities:
+    - li: ''
+    - li: ''
+    # etc.
+  required-skills:
+    - li: ''
+    - li: ''
+    # etc.
+  additional-skills:
+    - li: ''
+    - li: ''
+    # etc.
 ```
 - The content of each tag must be inside single quotes. This ensures the HTML to be read correctly by Jekyll.
 - Each new line is set by a `- li:` tag.

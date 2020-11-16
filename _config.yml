@@ -62,6 +62,8 @@ compress_html:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - .jekyll-cache
+  - .sass-cache
   - Gemfile
   - Gemfile.lock
   - node_modules

@@ -82,18 +82,12 @@ html, body {
 
 .body {
 
-	&--large {
-		font-size: 1.25rem;
-	}
-	&--small {
-		font-size: 0.87575rem;
-	}
-	&--bold {
-		font-weight: $font-bold;
-	}
-	&--block {
-		display: inline-block;
-	}
+	&--large { font-size: 1.25rem; }
+  &--small { font-size: 0.875rem; }
+  &--xs { font-size: 0.8rem; }
+
+	&--bold { font-weight: $font-bold; }
+	&--block { display: inline-block; }
 }
 
 .post__content {

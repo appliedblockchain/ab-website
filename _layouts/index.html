@@ -63,9 +63,9 @@ layout: compress
                   <div class="fas fa-star{% if item.rating >= 5 %} body--highlight{% endif %}"></div>
                 </div>
                 {% endif %}    
-                <p class="card__title body--bold">{{ item.title }}</p>
+                <p class="card__title body--small body--bold">{{ item.title }}</p>
                 {% if item.body %}
-                <p class="body--small">{{ item.body }}</p>
+                <p class="body--xs">{{ item.body }}</p>
                 {% endif %}
               </div>
               <div class="card__actions">

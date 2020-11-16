@@ -70,3 +70,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - assets/.sass-cache/
+  - products

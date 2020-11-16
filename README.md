@@ -23,9 +23,8 @@
 
 #### Install [Jekyll](https://jekyllrb.com/)
 
-```
-gem install bundler jekyll
-```
+Jekyll is a Ruby Gem that can be installed on most systems.
+[installation manual](https://jekyllrb.com/docs/installation/)
 
 #### Run the website in development mode
 
@@ -48,6 +47,25 @@ Along with SASS, the CSS styles are based on BEM terminology.
 - [bem.info](https://en.bem.info/methodology/quick-start/)
 - [getbem.com](http://getbem.com/introduction/)
 
+### Plugins
+
+the plugins used can be found in the `Gemfile` file, under `group :jekyll_plugins do` (except from Compress who is used as a layout).
+If any, you can change the plugins settings in `_config.yml`.
+
+#### Autoprefixer
+
+This plugin provides simple autoprefixer support for Jekyll.
+[Documentation](https://github.com/vwochnik/jekyll-autoprefixer)
+
+#### Cofeescript
+
+Used for the built-in support of Sass.
+[Documentation](https://jekyllrb.com/docs/assets/)
+
+#### Compress
+
+A Jekyll layout that compresses HTML.
+[Documentation](http://jch.penibelst.de/)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

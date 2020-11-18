@@ -16,13 +16,13 @@
 // —————————————————————————————————————————————————————————————————
 
 .widget {
-    position: relative;
-    border-radius: $border-radius;
+  position: relative;
+  border-radius: $border-radius;
 
-    &__bar {
-        display: flex;
-        align-items: flex-end;
-    }
+  &__bar {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -30,26 +30,26 @@
 // —————————————————————————————————————————————————————————————————
 
 .share {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(-$integer-xxxl);
-    position: absolute;
-    top: 0;
-    padding-top: $integer/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-$integer-xxxl);
+  position: absolute;
+  top: 0;
+  padding-top: $integer/4;
+  
+  &__button {
     
-    &__button {
-        
-        .post & {
-            margin-left: 0;
-            margin-bottom: $integer/4;
-            text-decoration: none;
-        }
-
-        & + & {
-            margin-top: $integer-md;
-        }
+    .post & {
+      margin-left: 0;
+      margin-bottom: $integer/4;
+      text-decoration: none;
     }
+
+    & + & {
+      margin-top: $integer-md;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -62,25 +62,25 @@
 
 .newsletter {
 
-    &__button {
-        margin-top: $integer;
+  &__button {
+    margin-top: $integer;
+  }
+
+  .form__label {
+    color: $white !important;
+  }
+
+  &__input {
+    display: block;
+    
+    @include responsive(max-width, $desktop-lg-max) {
+      max-width: $integer-max*2;
     }
 
-    .form__label {
-        color: $white !important;
+    & + & {
+      margin-top: $integer;
     }
-
-    &__input {
-        display: block;
-        
-        @include responsive(max-width, $desktop-max) {
-            max-width: $integer-max*2;
-        }
-
-        & + & {
-            margin-top: $integer;
-        }
-    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -92,46 +92,46 @@
 // —————————————————————————————————————————————————————————————————
 
 .cookie {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: opacity $transition;
-    box-shadow: $box-shadow-md;
-    padding: $integer-xs $page;
-    will-change: opacity;
-    background-color: $primary;
-    color: $white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    opacity: 1;
-    display: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: opacity $transition;
+  box-shadow: $box-shadow-md;
+  padding: $integer-xs $page;
+  will-change: opacity;
+  background-color: $primary;
+  color: $white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 1;
+  display: none;
+
+  @include responsive(max-width, $mobile-max) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: $col;
+    padding-right: $col;
+  }
+
+  @include responsive-mobile-devices() {
+    padding-right: $col;
+  }
+
+  &.js-cookie-accepted {
+    opacity: 0;
+  }
+
+  &__text {
+    padding-right: $integer;
 
     @include responsive(max-width, $mobile-max) {
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding-left: $col;
-        padding-right: $col;
+      padding-right: 0;
+      margin-bottom: $integer;
     }
+  }
 
-    @include responsive-mobile-devices() {
-        padding-right: $col;
-    }
-
-    &.js-cookie-accepted {
-        opacity: 0;
-    }
-
-    &__text {
-        padding-right: $integer;
-
-        @include responsive(max-width, $mobile-max) {
-            padding-right: 0;
-            margin-bottom: $integer;
-        }
-    }
-
-    &__button {
-        color: white;
-    }
+  &__button {
+    color: white;
+  }
 }

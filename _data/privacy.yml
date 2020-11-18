@@ -1,0 +1,15 @@
+- icon: fingerprint
+  title: AI
+  body: Perform privacy-preserving NLP and machine learning to gain insights from fully encrypted sensitive data belonging to different parties.
+
+- icon: exchange-alt
+  title: Market Data
+  body: Generate data from private, sensitive, fully encrypted transactional data belonging to different parties.
+
+- icon: coins
+  title: Dark Pools
+  body: Match fully encrypted transactions to prevent anyone from seeing or accessing the order book.
+
+- icon: user-lock
+  title: GDPR & Data Minimisation
+  body: Hold personal identifiable information (PII) in a secure enclave environment. This increases GDPR data minimisation compliance and reduces cyber risk.

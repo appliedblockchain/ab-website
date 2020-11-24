@@ -87,7 +87,7 @@ The deployment process is run throught Netlify.
 
 ## Page structure
 
-- You only need to concern yourself woth the content of the page, the page header and footer are built in the layout, ensuring their consistency throughout the whole website.
+- You only need to concern yourself with the content of the page, the page header and footer are built in the layout, ensuring their consistency throughout the whole website.
 - Each page is divided in sections (usually differenciated by background colours).
 - Elements are layed out using a bootstrap like [column system](#column-system).
 ```html
@@ -224,9 +224,7 @@ testimonial:
 ```
 - [Here is an example](https://appliedblockchain.com/projects/appii/) of how each is displayed.
 - Add logo in the `assets/images/carousel/clients_color` folder.
-> Png format
-> No white space around the logo
-> File name should be the same as the .md file
+> Png format. No white space around the logo. File name should be the same as the .md file
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -300,7 +298,7 @@ link: # if news is external
 headline: # introduction text
 ---
 ```
-- If the news is internal, use [markdown terminology](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to write the article and it will display automatically.
+- If the news is internal, use [markdown terminology](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to write the article and it will create the styling automoatically.
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

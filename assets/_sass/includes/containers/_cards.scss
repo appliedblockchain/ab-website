@@ -140,6 +140,11 @@
 
   &__body {
 
+    & + & {
+      // example in sitemap links in footer
+      margin-top: $integer-md*1.5;
+    }
+
     & + .card__meta {
       margin-top: $integer-md;
     }

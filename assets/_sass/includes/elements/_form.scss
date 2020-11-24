@@ -5,6 +5,7 @@
 // —————————————————————————————————————————————————————————————————
 // general
 // checkbox & radio
+// overrides
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -16,23 +17,12 @@
 	padding-left: $integer*1.5 !important;
 	padding-right: $integer*1.5 !important;
 
-	&--pipedrive {
-		// pipedrive width + 40px left and right
-		@include calc(max-width, '480px + '$integer-xl*2);
-		padding: $integer-xl !important;
-		
-		#report & {
-			width: 560px;
-			max-width: 100%;
-		}
-	}
-
 	&__container {
 		display: flex;
 		justify-content: center;
 		width: 100%;
-	}
-
+  }
+  
 	&__group {
 		position: relative;
 		width: 100%;
@@ -195,3 +185,30 @@
 	}
 }
 
+// —————————————————————————————————————————————————————————————————
+// overrides
+// —————————————————————————————————————————————————————————————————
+
+.form {
+
+  &--pipedrive {
+		// pipedrive width + 40px left and right
+		@include calc(max-width, '480px + '$integer-xl*2);
+		padding: $integer-xl !important;
+		
+		#report & {
+			width: 560px;
+			max-width: 100%;
+    }
+
+    .form {
+
+      &__cover {
+        @include calc(width, '100% + '$integer-xl*2);
+        margin-top: -$integer-xl;
+        margin-bottom: $integer-xl;
+        margin-left: -$integer-xl;
+      }  
+    }
+	}
+}

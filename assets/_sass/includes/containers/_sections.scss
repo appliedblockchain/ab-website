@@ -32,7 +32,11 @@
 		padding-right: $page;
 		padding-left: $page;
 
-		& + .section__content {
+		& + .section__header {
+			margin-top: $integer-md;
+		}
+
+    & + .section__content {
 			margin-top: $integer-xxl;
 		}
 	}

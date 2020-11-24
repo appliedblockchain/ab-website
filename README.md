@@ -23,9 +23,8 @@
 
 #### Install [Jekyll](https://jekyllrb.com/)
 
-```
-gem install bundler jekyll
-```
+Jekyll is a Ruby Gem that can be installed on most systems.
+[installation manual](https://jekyllrb.com/docs/installation/)
 
 #### Run the website in development mode
 
@@ -48,6 +47,24 @@ Along with SASS, the CSS styles are based on BEM terminology.
 - [bem.info](https://en.bem.info/methodology/quick-start/)
 - [getbem.com](http://getbem.com/introduction/)
 
+### Plugins
+
+the plugins used can be found in the `Gemfile` file, under `group :jekyll_plugins do` (except from Compress who is used as a layout). If any, you can change the plugins settings in `_config.yml`.
+
+#### Autoprefixer
+
+This plugin provides simple autoprefixer support for Jekyll.
+[Documentation](https://github.com/vwochnik/jekyll-autoprefixer)
+
+#### Cofeescript
+
+Used for the built-in support of Sass.
+[Documentation](https://jekyllrb.com/docs/assets/)
+
+#### Compress
+
+A Jekyll layout that compresses HTML.
+[Documentation](http://jch.penibelst.de/)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -70,19 +87,19 @@ The deployment process is run throught Netlify.
 
 ## Page structure
 
-- You only need to concern yourself woth the content of the page, the page header and footer are built in the layout, ensuring their consistency throughout the whole website.
+- You only need to concern yourself with the content of the page, the page header and footer are built in the layout, ensuring their consistency throughout the whole website.
 - Each page is divided in sections (usually differenciated by background colours).
 - Elements are layed out using a bootstrap like [column system](#column-system).
 ```html
 <section class="section">
-    {% include containers/sections/header.html
-        title = ''
-        subtitle = ''
-        body = ''
-    %}
-    <div class="section__content">
-        <!-- add your code -->
-    </div>
+  {% include containers/sections/header.html
+    title = ''
+    subtitle = ''
+    body = ''
+  %}
+  <div class="section__content">
+    <!-- add your code -->
+  </div>
 </section>
 <!-- repeat section if needed -->
 ```
@@ -110,10 +127,10 @@ The components are located in the `_include` folder. They were created to ensure
 
 ```html
 {% include containers/sections/header.html
-    comment = 'Lorem ipsum'
-    title = 'Section title'
-    subtitle = 'Section subitle'
-    description = 'Lorem ipsum dolor sit amet.'
+  comment = 'Lorem ipsum'
+  title = 'Section title'
+  subtitle = 'Section subitle'
+  description = 'Lorem ipsum dolor sit amet.'
 %}
 ```
 
@@ -122,9 +139,9 @@ The components are located in the `_include` folder. They were created to ensure
 The website uses a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) like column system. It as based on a twelve column structure. You can add prefixes to the number to set up the responsive behaviour of each column.
 ```html
 <div class="row">
-    <div class="col--lg3 col--md4"></div>
-    <div class="col--lg7 col--md8"></div>
-    <div class="col--lg2 col--md12"></div>
+  <div class="col--lg3 col--md4"></div>
+  <div class="col--lg7 col--md8"></div>
+  <div class="col--lg2 col--md12"></div>
 </div>
 ```
 
@@ -139,8 +156,8 @@ The website uses a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_gri
 ```yml
 ---
 layout: default # do not change
-title: # this will appear as the screen header and the html header in the browser tab
-headline: # [optional] overrides the screen header
+title: # this will appear as the page header and the html header in the browser tab
+headline: # [optional] overrides the page header
 subtitle: # [optional]
 background_color: white # do not change
 ---
@@ -173,43 +190,41 @@ deliverables:
 
 challenge-diagram: 
 challenge: 
-    - lead: 
-    - paragraph: 
-    - paragraph: 
-    # etc.
+  - lead: 
+  - paragraph: 
+  - paragraph: 
+  # etc.
 
 delivery:
-    - item:
-        - paragraph: 
-        - paragraph: 
-        # etc.
-    - item:
-        - paragraph: 
-        # etc.
+  - item:
+    - paragraph: 
+    - paragraph: 
+    # etc.
+  - item:
+    - paragraph: 
+    # etc.
 
 results:
-    - paragraph: 
-    - paragraph: 
-    # etc.
+  - paragraph: 
+  - paragraph: 
+  # etc.
 results-icons:
-    - image: 
-      title: 
-    - image: 
-      title: 
-    # etc.
+  - image: 
+    title: 
+  - image: 
+    title: 
+  # etc.
 
 testimonial:
-    - quote: 
-      author: 
-      position: 
-      company: 
+  - quote: 
+    author: 
+    position: 
+    company: 
 ---
 ```
 - [Here is an example](https://appliedblockchain.com/projects/appii/) of how each is displayed.
 - Add logo in the `assets/images/carousel/clients_color` folder.
-> Png format
-> No white space around the logo
-> File name should be the same as the .md file
+> Png format. No white space around the logo. File name should be the same as the .md file
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -221,19 +236,19 @@ testimonial:
 - Copy/paste this code in the section you want it to appear (London or Porto) and fill the content.
 ```yml
   - title: 
-    type: 
-    responsabilities:
-      - li: ''
-      - li: ''
-      # etc.
-    required-skills:
-      - li: ''
-      - li: ''
-      # etc.
-    additional-skills:
-      - li: ''
-      - li: ''
-      # etc.
+  type: 
+  responsabilities:
+    - li: ''
+    - li: ''
+    # etc.
+  required-skills:
+    - li: ''
+    - li: ''
+    # etc.
+  additional-skills:
+    - li: ''
+    - li: ''
+    # etc.
 ```
 - The content of each tag must be inside single quotes. This ensures the HTML to be read correctly by Jekyll.
 - Each new line is set by a `- li:` tag.
@@ -283,7 +298,7 @@ link: # if news is external
 headline: # introduction text
 ---
 ```
-- If the news is internal, use [markdown terminology](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to write the article and it will display automatically.
+- If the news is internal, use [markdown terminology](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to write the article and it will create the styling automoatically.
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

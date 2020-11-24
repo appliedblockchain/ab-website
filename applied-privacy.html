@@ -1,12 +1,12 @@
 ---
 layout: default
-background: true
 id: applied-privacy
 title: Confidential Computing
 comment: Confidential Computing
 headline: The future of data privacy
 body: Take data security to the next level with confidential computing. Conduct computation on data without having any access to the data. Data resides inside hardware secured enclaves, meaning that even a system administrator or someone with physical access to the machine cannot access the sensitive data. Our team of experts specialise in building solutions using the most advanced platforms in this space including Intel SGX, R3 Conclave and Microsoft Azure.
 logo: images/logos/applied-privacy.svg
+background_image: applied-privacy.svg
 ---
 
 <section id="index-intro" class="section section--white">
@@ -30,50 +30,50 @@ logo: images/logos/applied-privacy.svg
   {% include containers/sections/header.html
     comment = 'Use cases'
   %}
-  <div class="section__content">
+  <div class="section__content z-index--2">
     <div class="card__wrapper">
       <div class="row">
-        <div class="col--lg4 col--md6">
+        <!-- edit use cases content in _data/privacy.yml  -->
+        {% for item in site.data.privacy %}
+        <div class="col--xl3 col--sm6">
           <div class="card card--sm">
             <div class="card__inner background--shadow">
-              <i class="card__image title fas fa-fingerprint body--primary"></i>
-              <p class="card__title body--large body--bold">AI</p>
-              <p class="card__body body">Perform privacy-preserving NLP and machine learning to gain insights from fully encrypted sensitive data belonging to different parties.</p>
+              <i class="card__image subtitle fas fa-{{ item.icon }} body--primary"></i>
+              <p class="card__title body--large body--bold">{{ item.title }}</p>
+              <p class="card__body body">{{ item.body }}</p>
             </div>
           </div>
         </div>
-        <div class="col--lg4 col--md6">
-          <div class="card card--sm">
-            <div class="card__inner background--shadow">
-              <i class="card__image title fas fa-exchange-alt body--highlight"></i>
-              <p class="card__title body--large body--bold">Market Data</p>
-              <p class="card__body body">Generate data from private, sensitive, fully encrypted transactional data belonging to different parties.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col--lg4 col--md12">
-          <div class="card card--sm">
-            <div class="card__inner background--shadow">
-              <i class="card__image title fas fa-coins body--dark"></i>
-              <p class="card__title body--large body--bold">Dark Pools</p>
-              <p class="card__body body">Match fully encrypted transactions to prevent anyone from seeing or accessing the order book.</p>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section--alt">
+<section id="index-testimonials" class="section section--primary section--overlap no-padding--left no-padding--right">
   <div class="section__content">
-    <div class="row">
-      <div class="form__container">
-        <div class="form form--pipedrive background--shadow">
-          <div class="pipedriveWebForms"
-            data-pd-webforms="https://webforms.pipedrive.com/f/2XgSPY89VeFbDqNzLeKa2lJZbcUrJ5y484hBON2kAjTYXcAAjrpSzp3IzhpUULOg3">
-            <script src="https://webforms.pipedrive.com/f/loader"></script>
-          </div>
+    <div class="card testimonials">
+      {% include elements/carousel.html
+        type = 'testimonials'
+        variant = 'testimonials_clients'
+      %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  {% include containers/sections/header.html
+    comment = 'Register interest and get our report'
+    title = 'Confidential computing and the future of data privacy'
+    body = 'A new data privacy technology is becoming available in the mainstream, and we believe it opens up a wealth of opportunities. In this paper we explain secure enclaves and the breadth of new business applications they present.'
+  %}
+  <div class="section__content">
+    <div class="form__container">
+      <div class="form form--pipedrive background--shadow">
+        <img class="form__cover" src="{{ site.url }}{{ site.imageurl }}/resources/reports/report-confidential-computing.jpg" alt="Cover and inside example of a printed report">
+        <div class="pipedriveWebForms"
+          data-pd-webforms="https://webforms.pipedrive.com/f/2XgSPY89VeFbDqNzLeKa2lJZbcUrJ5y484hBON2kAjTYXcAAjrpSzp3IzhpUULOg3">
+          <script src="https://webforms.pipedrive.com/f/loader"></script>
         </div>
       </div>
     </div>

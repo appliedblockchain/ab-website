@@ -37,6 +37,14 @@
   &__stars {
     color: $medium-grey;
     margin-right: $integer;
+
+    .section--primary & {
+      color: rgba($white, 0.2);
+
+      .body--highlight {
+        color: $dark;
+      }
+    }
   }
 }
 
@@ -45,6 +53,17 @@
 // —————————————————————————————————————————————————————————————————
 
 .owl {
+
+  &-carousel {
+    
+    .section--primary & {
+      
+      .button--primary {
+        background-color: $secondary !important;
+        color: $black !important;
+      }
+    }
+  }
 
   &-stage {
     display: flex;
@@ -67,6 +86,10 @@
     &.active, &:hover {
       transform: scale(1.5);
       background-color: $primary !important;
+      
+      .section--primary & {
+        background-color: $dark !important;
+      }
     }
   }
 }

@@ -62,10 +62,10 @@ layout: compress
                   <div class="fas fa-star{% if item.rating >= 4 %} body--highlight{% endif %}"></div>
                   <div class="fas fa-star{% if item.rating >= 5 %} body--highlight{% endif %}"></div>
                 </div>
-                {% endif %}    
-                <p class="card__title body--bold">{{ item.title }}</p>
+                {% endif %}
+                <p class="card__title body--small body--bold">{{ item.title }}</p>
                 {% if item.body %}
-                <p class="body--small">{{ item.body }}</p>
+                <p class="body--xs">{{ item.body }}</p>
                 {% endif %}
               </div>
               <div class="card__actions">
@@ -89,16 +89,18 @@ layout: compress
   {% include containers/sections/header.html
     comment = 'What we do'
     title = 'Bringing Innovative Solutions to Problems Businesses Face Today'
-    body = 'We design and build next-generation business applications that provide additional trust and privacy. The team has extensive expertise in confidential computing, secure enclaves, advanced cryptography, blockchains, and privacy-preserving technologies.'
   %}
+  <div class="section__header body--large">
+    We design and build next-generation business applications that provide additional trust and privacy. The team has extensive expertise in <a href="{{ site.url }}/applied-privacy" class="button--underline">confidential computing</a>, <a href="{{ site.url }}/applied-privacy" class="button--underline">secure enclaves</a>, privacy-preserving technologies, and blockchains.
+  </div>
   <div class="section__content">
     <div class="button__wrapper">
       <a href="{{ site.url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
         <p class="button__inner">Services</p>
       </a>
-      <a href="{{ site.url }}/products" class="ga-button-services button button--primary button--animate fa fa-box">
+      <!-- <a href="{{ site.url }}/products" class="ga-button-services button button--primary button--animate fa fa-box">
         <p class="button__inner">Products</p>
-      </a>
+      </a> -->
     </div>
   </div>
 </section>
@@ -200,7 +202,7 @@ layout: compress
     <div class="row">
       <div class="col--6 background--contain" style="background-image: url('{{ site.url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg');"></div>
       <div class="card col--6 body--left">
-        <h2 class="card__title lead">Experts in Applications of Confidential Computing, Distributed Ledgers and Advanced Cryptography</h2>
+        <h2 class="card__title lead">Experts in Applications of <a href="{{ site.url }}/applied-privacy" class="button--underline">Confidential Computing</a>, Distributed Ledgers and Advanced Cryptography</h2>
         <p class="card__body body">Our team of in-house development experts along with our highly-skilled advisory, project and operations team work very closely with our clients to bring confidential computing, distributed ledger and advanced cryptography solutions to life – together.</p>
       </div>
     </div>

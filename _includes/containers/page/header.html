@@ -30,12 +30,12 @@
 					</a>
 				{% endif %}
 			{% endif %}
-			{% if page.id == 'applied-privacy' %}
+			{% if page.id != 'applied-privacy' %}
 			<a href="{{ site.url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
 				<p class="button__inner">Contact us</p>
 			</a>
 			{% endif %}
-			{% if page.id == 'applied-privacy' %}
+			{% if page.id != 'applied-privacy' %}
 			<div class="button button--menu{% if page.background_color == 'white' %} alt{% endif %}">
 				<i class="button__inner"></i>
 			</div>
@@ -68,14 +68,14 @@
 					</p>
 				</a>
 			</div>
-			<div class="col--lg4 col--sm6">
+			<!-- <div class="col--lg4 col--sm6">
 				<a href="{{ site.url }}/products" class="card menu__button">
 					<p class="subtitle">Products</p>
 					<p class="menu__description">
 						<span>Blockchain-based products</span>
 					</p>
 				</a>
-			</div>
+			</div> -->
 			<div class="col--lg4 col--sm6">
 				<a href="{{ site.url }}/about" class="card menu__button">
 					<p class="subtitle">About</p>

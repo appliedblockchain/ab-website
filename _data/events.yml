@@ -10,10 +10,17 @@
 #   webinar_id: [link to recording form page]
 #   link:
 
+- name: 'Webinar: Confidential Computing'
+  image: webinar-banner-cc
+  date: '2020-12-02'
+  display: webinar
+  type: internal
+  link: https://us02web.zoom.us/webinar/register/WN_X_07c2EZQMauvmBVstlE9A
+
 - name: 'Webinar: Future of Blockchains in Business'
   image: webinar-banner-b
   date: '2020-05-07'
-  display: upcoming
+  display: webinar
   type: internal
   webinar_id: blockchains
   link: https://zoom.us/webinar/register/WN_r1OAtkhwRvmJ_dy7whJydQ
@@ -21,7 +28,7 @@
 - name: 'Webinar: Privacy Enhancing Technologies for Business'
   image: webinar-banner-pet
   date: '2020-04-30'
-  display: upcoming
+  display: webinar
   type: internal
   webinar_id: privacy-enhancing-technologies
   link: https://zoom.us/webinar/register/WN_Bns5FfQpS1SLEqZHIxyXjA
@@ -29,18 +36,10 @@
 - name: 'Webinar: Zero Knowledge Proofs for Business'
   image: webinar-banner-zkp
   date: '2020-04-23'
-  display: upcoming
+  display: webinar
   type: internal
   webinar_id: zero-knowledge-proofs
   link: https://zoom.us/webinar/register/WN_ex2LDfNOS2mPVVCSxoROng
-
-- name: 'Webinar: Confidential Computing'
-  image: webinar-banner-cc
-  date: '2020-12-02'
-  display: upcoming
-  type: internal
-  link: https://us02web.zoom.us/webinar/register/WN_X_07c2EZQMauvmBVstlE9A
-
 
 - name: 'Applied Blockchain Zero-Knowledge Proofs Drinks Reception'
   type: internal

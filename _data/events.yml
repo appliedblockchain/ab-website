@@ -1,14 +1,22 @@
 # ordered from most to least recent
 
-# - name: 
-#   image: 
+# - name:
+#   image:
 #   date:
 #   date_to: [if relevant]
 #   location: [if relevant]
 #   directions: [if relevant]
 #   type: internal, external
 #   webinar_id: [link to recording form page]
-#   link: 
+#   link:
+
+- name: 'Webinar: Confidential Computing and the Future of Data Privacy'
+  image: webinar-banner-cc
+  date: '2020-12-02'
+  display: upcoming
+  type: internal
+  webinar_id: confidential-computing
+  link: https://us02web.zoom.us/webinar/register/WN_X_07c2EZQMauvmBVstlE9A
 
 
 - name: 'Webinar: Future of Blockchains in Business'

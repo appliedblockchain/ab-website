@@ -16,7 +16,7 @@
   display: webinar
   type: internal
   webinar_id: confidential-computing
-  link: https://us02web.zoom.us/webinar/register/WN_X_07c2EZQMauvmBVstlE9A
+  link: https://appliedblockchain.com/webinar-confidential-computing
 
 - name: 'Webinar: Future of Blockchains in Business'
   image: webinar-banner-b
@@ -24,7 +24,7 @@
   display: webinar
   type: internal
   webinar_id: blockchains
-  link: https://zoom.us/webinar/register/WN_r1OAtkhwRvmJ_dy7whJydQ
+  link: https://appliedblockchain.com/webinar-blockchains
 
 - name: 'Webinar: Privacy Enhancing Technologies for Business'
   image: webinar-banner-pet
@@ -32,7 +32,7 @@
   display: webinar
   type: internal
   webinar_id: privacy-enhancing-technologies
-  link: https://zoom.us/webinar/register/WN_Bns5FfQpS1SLEqZHIxyXjA
+  link: https://appliedblockchain.com/webinar-privacy-enhancing-technologies
 
 - name: 'Webinar: Zero Knowledge Proofs for Business'
   image: webinar-banner-zkp
@@ -40,7 +40,7 @@
   display: webinar
   type: internal
   webinar_id: zero-knowledge-proofs
-  link: https://zoom.us/webinar/register/WN_ex2LDfNOS2mPVVCSxoROng
+  link: https://appliedblockchain.com/webinar-zero-knowledge-proofs
 
 - name: 'Applied Blockchain Zero-Knowledge Proofs Drinks Reception'
   type: internal

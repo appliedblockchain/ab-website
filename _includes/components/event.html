@@ -13,10 +13,16 @@
             {% endif %}
         </div>
         <div class="card__actions">
-            {% if variant == 'past' and event.webinar_id %}
-            <a href="{{ site.url }}/webinar-{{ event.webinar_id }}" target="_blank" class="button button--small button--highlight button--animate fas fa-globe">
+            {% if event.display == 'webinar' %}
+            {% if event.webinar_id %}
+            <a href="{{ site.url }}/webinar-{{ event.webinar_id }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
                 <p class="button__inner">View recording</p>
             </a>
+            {% else %}
+            <a href="{{ event.link }}" target="_blank" class="button button--small button--highlight button--animate fas fa-globe">
+                <p class="button__inner">Register</p>
+            </a>
+            {% endif %}
             {% endif %}
             {% if event.link and event.type != 'internal' %}
             <a href="{{ event.link }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">

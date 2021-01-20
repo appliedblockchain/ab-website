@@ -2,11 +2,7 @@
 	<div class="header__bar">
 		<div class="header__logo logo{% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
 			<a href="{{ site.url }}/">
-				{% if page.id == 'applied-privacy' %}
-				<img src="{{ site.url }}{{ site.resourceurl }}/{{ page.logo }}" alt="Logo">
-				{% else %}
 				{% include mixins/logo.html %}
-				{% endif %}
 			</a>
 		</div>
 		<div class="header__button">

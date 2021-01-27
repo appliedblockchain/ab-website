@@ -59,16 +59,31 @@
   background-color: $beyond-dark-grey; 
   color: $white;
 
+  p,
+  p.button__inner,
+  .form__input {
+    font-family: $font-beyond;
+  }
+
   .footer {
     
     &__logo {
       display: flex;
       flex-direction: row;
       align-items: center;
-
+      
+      @include responsive(max-width, $mobile-max) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
       .body {
         margin-right: $integer-lg;
+        
+        @include responsive(max-width, $mobile-max) {
+          margin-right: 0;
+          margin-bottom: $integer-lg;
+        }
       }
     }
   }

@@ -4,12 +4,107 @@
 // BEYOND
 // —————————————————————————————————————————————————————————————————
 // typography
+// page
+// section
+// button
+// card
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
 // typography
 // —————————————————————————————————————————————————————————————————
 
-// #beyond {
-//   font-family: $font-beyond;
-// }
+#beyond {
+  font-family: $font-beyond;
+  font-weight: initial;
+  
+  .title {
+    color: inherit;
+  }
+  
+  .lead {
+    font-weight: bold;
+    color: $beyond-default;
+  }
+  
+  .button__inner {
+    font-family: $font-beyond;
+    font-weight: bold;
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// page
+// —————————————————————————————————————————————————————————————————
+
+.footer--beyond {
+  background-color: $beyond-dark-grey; 
+  color: $white;
+}
+
+// —————————————————————————————————————————————————————————————————
+// section
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+  background-color: $beyond-light-grey;
+
+  .section {
+
+    &__header {
+
+      + .section__content {
+        margin-top: $integer-xxxxl;
+      }
+    }
+
+    &__title {
+
+      + .section__subtitle {
+        margin-top: $integer-xl;
+      }
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// beyond
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+
+  .button {
+    border-radius: $integer;
+  }
+}
+
+.button--beyond {
+  background-color: $beyond-default;
+
+  .button {
+
+    &__inner {
+      color: $white;
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// beyond
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+
+  .card {
+    background-color: $white;
+    padding: $integer-md*1.5;
+    border-radius: $integer-md;
+
+    &__title {
+
+      + .card__subtitle {
+        margin-top: $integer-md;
+      }
+    }
+  }
+}

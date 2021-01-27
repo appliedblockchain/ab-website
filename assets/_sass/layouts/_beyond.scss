@@ -231,6 +231,10 @@
       display: none;
     }
 
+    @include responsive(max-width, $mobile-max) {
+      display: none;
+    }
+
     &--white { background-color: $white; }
     &--light { background-color: $beyond-light; }
 

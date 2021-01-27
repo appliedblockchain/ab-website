@@ -123,23 +123,20 @@
 
   .button {
     border-radius: $integer;
-  }
-}
-
-.button--beyond {
-  transition: box-shadow $transition;
-  background-color: $beyond-default;
-  box-shadow: 0 0 $integer $beyond-default;
-  
-  &:hover {
-    box-shadow: none;
-  }
-
-  .button {
 
     &__inner {
       color: $white;
     }
+  }
+
+  .button--primary {
+    transition: box-shadow $transition;
+    background-color: $beyond-default;
+    box-shadow: 0 0 $integer $beyond-default;
+    
+    &:hover {
+      box-shadow: none;
+    }    
   }
 }
 

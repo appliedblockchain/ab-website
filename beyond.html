@@ -5,16 +5,24 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean id dict
 ---
 
 <div class="section section--landing">
-  <div class="section__header">
-    {% svg /assets/images/logos/beyond.svg height=80 alt="Beyond logo" %}
+  <div>
+    <div class="beyond__graphic beyond__graphic--light beyond__graphic--20"></div>
+    <div class="beyond__graphic beyond__graphic--white beyond__graphic--15"></div>
+    <div class="beyond__graphic beyond__graphic--light beyond__graphic--30"></div>
+    <div class="beyond__graphic beyond__graphic--light beyond__graphic--15"></div>
+    <div class="beyond__graphic beyond__graphic--light beyond__graphic--15"></div>
+    <div class="beyond__graphic beyond__graphic--white beyond__graphic--30"></div>
+    <div class="beyond__graphic beyond__graphic--white beyond__graphic--30"></div>
   </div>
-  <img src="{{ site.url }}{{ site.imageurl }}/graphics/beyond-divider-primary.svg" alt="Section divider" class="section__divider">
+  <img src="{{ site.url }}{{ site.imageurl }}/graphics/beyond-divider-primary.svg" alt="Section divider" class="section__divider section__divider--primary">
+  <div class="section__header z-index--9">
+    <img src="{{ site.url }}{{ site.imageurl }}/logos/beyond.svg" alt="Beyond logo" class="beyond__logo">
+  </div>
 </div>
 
 <div class="section">
   <div class="section__header">
-    <!-- edit at the top of the page, coded this way for the SEO page description -->
-    <h1 class="section__title title">{{ page.subtitle }}</h1>
+    <h1 class="section__title title">{{ page.subtitle }}</h1> <!-- edit at the top of the page, coded this way for the SEO page description -->
     <p class="section__subtitle body--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id dictum nisi. Nam aliquam placerat purus, eu ultrices mauris sagittis at. Cras id odio nunc. Aliquam tempus sapien vitae risus molestie, non pharetra eros bibendum.</p>
   </div>
   <div class="section__content">
@@ -32,7 +40,7 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean id dict
 </div>
 
 <div class="section section--grey">
-  <img src="{{ site.url }}{{ site.imageurl }}/graphics/beyond-divider-grey.svg" alt="Section divider" class="section__divider section__divider--top">
+  <img src="{{ site.url }}{{ site.imageurl }}/graphics/beyond-divider-grey.svg" alt="Section divider" class="section__divider section__divider--grey">
   <div class="section__header">
     <h2 class="section__title title">Why we use Conclave</h2>
     <p class="section__subtitle body--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id dictum nisi. Nam aliquam placerat purus, eu ultrices mauris sagittis at. Cras id odio nunc.</p>

@@ -8,6 +8,7 @@
 // section
 // button
 // card
+// input
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -40,6 +41,20 @@
 .footer--beyond {
   background-color: $beyond-dark-grey; 
   color: $white;
+
+  .footer {
+    
+    &__logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+
+      .body {
+        margin-right: $integer-lg;
+      }
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -47,12 +62,22 @@
 // —————————————————————————————————————————————————————————————————
 
 #beyond {
-  background-color: $beyond-light-grey;
-
+  
   .section {
-
+    position: relative;
+    
     &--landing {
       padding-top: $integer-max;
+      padding-bottom: 0;
+      background-color: $beyond-default;
+    }
+    
+    &--grey {
+      background-color: $beyond-light-grey;
+    }
+
+    &:last-child {
+      padding-bottom: $integer-xxxxl;
     }
 
     &__header {
@@ -68,14 +93,33 @@
         margin-top: $integer-xl;
       }
     }
+
+    &__subtitle {
+
+      + .section__subtitle {
+        margin-top: $integer-xxl;
+      }
+    }
+
+    &__divider {
+      position: absolute;
+      width: 100vw;
+      bottom: -$integer-max;
+      z-index: -1;
+      
+      &--top {
+        top: -$integer-max*1.5;
+      }
+    }
   }
 }
 
 // —————————————————————————————————————————————————————————————————
-// beyond
+// button
 // —————————————————————————————————————————————————————————————————
 
-#beyond {
+#beyond, 
+.footer--beyond {
 
   .button {
     border-radius: $integer;
@@ -83,7 +127,13 @@
 }
 
 .button--beyond {
+  transition: box-shadow $transition;
   background-color: $beyond-default;
+  box-shadow: 0 0 $integer $beyond-default;
+  
+  &:hover {
+    box-shadow: none;
+  }
 
   .button {
 
@@ -94,7 +144,7 @@
 }
 
 // —————————————————————————————————————————————————————————————————
-// beyond
+// card
 // —————————————————————————————————————————————————————————————————
 
 #beyond {
@@ -103,6 +153,7 @@
     background-color: $white;
     padding: $integer-md*1.5;
     border-radius: $integer-md;
+    box-shadow: 0 0 $integer $white;
 
     &__title {
 
@@ -110,5 +161,23 @@
         margin-top: $integer-md;
       }
     }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// input
+// —————————————————————————————————————————————————————————————————
+
+.footer--beyond {
+
+  ::placeholder {
+    color: $dark-grey;
+    opacity: 1;
+  }
+  
+  .form__input {
+    border-radius: $integer !important;
+    background-color: $white;
+    border: 0;
   }
 }

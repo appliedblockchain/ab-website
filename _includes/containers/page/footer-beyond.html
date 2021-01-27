@@ -1,34 +1,32 @@
 <footer class="footer footer--beyond section">
-  <div class="footer__content">
-    <div class="block">
-      <div class="row card__wrapper--lg">
-        <div class="cl--lg6 col--md8">
-          <div class="footer__logo card card--transparent">
-            <p class="body">A new product by</p>
-            <a href="https://appliedblockchain.com/" target="_blank" title="Go to Applied Blockchain's website">
-              <img src="{{ site.base-url}}{{ site.imageurl }}/logo-ab.svg" alt="Applied Blockchain logo" class="logo">
-            </a>
-          </div>
+  <div class="footer__row">
+    <div class="row card__wrapper--lg">
+      <div class="cl--lg6 col--md8">
+        <div class="footer__logo card card--transparent">
+          <p class="body">A new product by</p>
+          {% include mixins/logo.html %}
         </div>
       </div>
     </div>
-    <div class="block">
-      <div class="row card__wrapper--lg">
-        <div class="col--lg5 col--sm7">
-          {% include components/newsletter.html %}
-        </div>
-        <div class="coloffset--lg1 col--lg2 coloffset--sm1 col--sm4 col--xs4 col--12">
-          {% include components/social.html %}
-        </div>
+  </div>
+  <div class="footer__row">
+    <div class="row card__wrapper--lg">
+      <div class="col--sm6 card">
+        {% include components/newsletter.html %}
+      </div>
+      <div class="coloffset--sm2 col--sm4 card">
+        {% include components/social.html 
+          header = ''
+        %}
       </div>
     </div>
-    <div class="block">
-      <div class="row">
-        <div class="col--lg12 footer__legal">
-          <div class="card card--transparent card--p0">
-            <p class="body--sm">© Copyright {{ site.time | date: '%Y' }} Applied Blockchain Ltd. All rights reserved</p>
-            <p class="body--sm">Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276</p>
-          </div>
+  </div>
+  <div class="footer__row">
+    <div class="row">
+      <div class="col--lg12 footer__legal">
+        <div class="card card--transparent card--p0">
+          <p class="body--sm">© Copyright {{ site.time | date: '%Y' }} Applied Blockchain Ltd. All rights reserved</p>
+          <p class="body--sm">Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276</p>
         </div>
       </div>
     </div>

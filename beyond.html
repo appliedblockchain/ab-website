@@ -6,8 +6,9 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean id dict
 
 <div class="section section--landing">
   <div class="section__header">
-    <img src="{{ site.url }}{{ site.imageurl }}/logos/beyond.svg" alt="Beyond logo" height="80">
+    {% svg /assets/images/logos/beyond.svg height=80 alt="Beyond logo" %}
   </div>
+  <img src="{{ site.url }}{{ site.imageurl }}/graphics/beyond-divider-primary.svg" alt="Section divider" class="section__divider">
 </div>
 
 <div class="section">
@@ -30,14 +31,15 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean id dict
   </div>
 </div>
 
-<div class="section">
+<div class="section section--grey">
+  <img src="{{ site.url }}{{ site.imageurl }}/graphics/beyond-divider-grey.svg" alt="Section divider" class="section__divider section__divider--top">
   <div class="section__header">
     <h2 class="section__title title">Why we use Conclave</h2>
     <p class="section__subtitle body--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id dictum nisi. Nam aliquam placerat purus, eu ultrices mauris sagittis at. Cras id odio nunc.</p>
-  </div>
-  <div class="section__content">
-    <div class="button button--beyond button--large">
-      <p class="button__inner">Visit their website</p>
+    <div class="section__subtitle">
+      <div class="button button--beyond button--large">
+        <p class="button__inner">Visit their website</p>
+      </div>
     </div>
   </div>
 </div>

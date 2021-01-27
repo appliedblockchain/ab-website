@@ -66,6 +66,11 @@ Used for the built-in support of Sass.
 A Jekyll layout that compresses HTML.
 [Documentation](http://jch.penibelst.de/)
 
+#### Jekyll Inline SVG
+
+SVG optimizer and inliner for jekyll.
+[Documentation](https://github.com/sdumetz/jekyll-inline-svg)
+
 <!------------------------------------------------------>
 <p>&nbsp;</p>
 <!------------------------------------------------------>

@@ -1,0 +1,34 @@
+<footer class="footer footer--beyond section">
+  <div class="footer__row">
+    <div class="row card__wrapper--lg">
+      <div class="cl--lg6 col--md8">
+        <div class="footer__logo card card--transparent">
+          <p class="body">A new product by</p>
+          {% include mixins/logo.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__row">
+    <div class="row card__wrapper--lg">
+      <div class="col--sm6 card">
+        {% include components/newsletter.html %}
+      </div>
+      <div class="coloffset--sm2 col--sm4 card">
+        {% include components/social.html 
+          header = ''
+        %}
+      </div>
+    </div>
+  </div>
+  <div class="footer__row">
+    <div class="row">
+      <div class="col--lg12 footer__legal">
+        <div class="card card--transparent card--p0">
+          <p class="body--sm">© Copyright {{ site.time | date: '%Y' }} Applied Blockchain Ltd. All rights reserved</p>
+          <p class="body--sm">Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

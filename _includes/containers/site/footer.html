@@ -1,6 +1,11 @@
 </div>
 
+{% if page.layout == 'beyond' %}
+{% include containers/page/footer-beyond.html %}
+{% else %}
 {% include containers/page/footer.html %}
+{% endif %}
+
 
 <!-- VENDOR JS -->
 <!-- jquery -->

@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+// —————————————————————————————————————————————————————————————————
+// BEYOND
+// —————————————————————————————————————————————————————————————————
+// logo
+// typography
+// page
+// section
+// button
+// card
+// input
+// graphics
+// —————————————————————————————————————————————————————————————————
+
+.beyond {
+
+  &__logo {
+    width: 66.666%;
+    
+    @include responsive(max-width, $tablet-max) {
+      width: 75%;
+    }
+    
+    @include responsive(max-width, $mobile-max) {
+      width: 100%;
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// typography
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+  font-family: $font-beyond;
+  font-weight: initial;
+  
+  .title {
+    color: inherit;
+  }
+  
+  .lead {
+    font-weight: bold;
+    color: $beyond-default;
+  }
+  
+  .button__inner {
+    font-family: $font-beyond;
+    font-weight: bold;
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// page
+// —————————————————————————————————————————————————————————————————
+
+.footer--beyond {
+  background-color: $beyond-dark-grey; 
+  color: $white;
+
+  .footer {
+    
+    &__logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+
+      .body {
+        margin-right: $integer-lg;
+      }
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// section
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+  overflow: hidden;
+  
+  .section {
+    position: relative;
+    
+    &--landing {
+      padding-top: $integer-max;
+      padding-bottom: 0;
+      background-color: $beyond-default;
+    }
+    
+    &--grey {
+      background-color: $beyond-light-grey;
+    }
+
+    &:last-child {
+      padding-bottom: $integer-xxxxl;
+    }
+
+    &__header {
+
+      + .section__content {
+        margin-top: $integer-xxxxl;
+      }
+    }
+
+    &__title {
+
+      + .section__subtitle {
+        margin-top: $integer-xl;
+      }
+    }
+
+    &__subtitle {
+
+      + .section__subtitle {
+        margin-top: $integer-xxl;
+      }
+    }
+
+    &__divider {
+      position: absolute;
+      width: 100vw;
+      bottom: -$integer-max;
+      z-index: -1;
+      
+      &--grey {
+        top: -$integer-max*1.5;
+        
+        @include responsive(max-width, $mobile-max) {
+          top: -$integer-max*1;
+        }
+      }
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// button
+// —————————————————————————————————————————————————————————————————
+
+#beyond, 
+.footer--beyond {
+
+  .button {
+    border-radius: $integer;
+
+    &__inner {
+      color: $white;
+    }
+  }
+
+  .button--primary {
+    transition: box-shadow $transition;
+    background-color: $beyond-default;
+    box-shadow: 0 0 $integer $beyond-default;
+    
+    &:hover {
+      box-shadow: none;
+    }    
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// card
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+
+  .card {
+    background-color: $white;
+    padding: $integer-md*1.5;
+    border-radius: $integer-md;
+    box-shadow: 0 0 $integer $white;
+
+    &__title {
+
+      + .card__subtitle {
+        margin-top: $integer-md;
+      }
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// input
+// —————————————————————————————————————————————————————————————————
+
+.footer--beyond {
+
+  ::placeholder {
+    color: $dark-grey;
+    opacity: 1;
+  }
+  
+  .form__input {
+    border-radius: $integer !important;
+    background-color: $white;
+    border: 0;
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// graphic
+// —————————————————————————————————————————————————————————————————
+
+.beyond {
+
+  &__graphic {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 10%;
+
+    &--white { background-color: $white; }
+    &--light { background-color: $beyond-light; }
+
+    &--15 { opacity: 15%; }
+    &--20 { opacity: 20%; }
+    &--30 { opacity: 30%; }
+
+    &:nth-child(1) {
+      width: $integer-max*4;
+      height: $integer-max*4;
+      left: -20%;
+      top: -40%;
+    }
+
+    &:nth-child(2) {
+      width: $integer-max*3;
+      height: $integer-max*3;
+      right: 10%;
+      top: -130%;
+    }
+
+    &:nth-child(3) {
+      width: $integer-max*2;
+      height: $integer-max*2;
+      right: -5%;
+      top: 75%;
+    }
+
+    &:nth-child(4) {
+      width: $integer-max;
+      height: $integer-max;
+      left: 20%;
+      top: 75%;
+    }
+
+    &:nth-child(5) {
+      width: $integer-max*0.75;
+      height: $integer-max*0.75;
+      right: 12%;
+      top: 140%;
+    }
+
+    &:nth-child(6) {
+      width: $integer-max*0.5;
+      height: $integer-max*0.5;
+      right: 20%;
+      top: 60%;
+    }
+
+    &:nth-child(7) {
+      width: $integer-max*0.25;
+      height: $integer-max*0.25;
+      left: 10%;
+      top: 20%;
+    }
+  }
+}

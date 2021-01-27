@@ -227,6 +227,10 @@
     border-radius: 50%;
     opacity: 10%;
 
+    @include responsive-mobile-devices() {
+      display: none;
+    }
+
     &--white { background-color: $white; }
     &--light { background-color: $beyond-light; }
 

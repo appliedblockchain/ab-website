@@ -56,3 +56,12 @@
 /*black*/
 @include fontface('Roboto Mono', roboto-mono/roboto-mono-bold, $font-black, normal);
 @include fontface('Roboto Mono', roboto-mono/roboto-mono-bolditalic, $font-black, italic);
+
+// —————————————————————————————————————————————————————————————————
+// montserrat (beyond)
+// —————————————————————————————————————————————————————————————————
+
+/*regular*/
+@include fontface('Montserrat', montserrat/montserrat-regular, $font-regular, normal);
+/*bold*/
+@include fontface('Montserrat', montserrat/montserrat-bold, $font-bold, normal);

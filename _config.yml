@@ -35,17 +35,15 @@ collections:
 plugins:
   - jekyll-autoprefixer
   - jekyll-coffeescript
-
+  - jekyll-inline-svg
 # autoprefixer (for css)
 autoprefixer:
   browsers:
   - last 10 versions
-
 # sass
 sass:
   sass_dir: assets/_sass
   style: compressed
-
 # compress 
 # http://jch.penibelst.de/
 compress_html:
@@ -57,6 +55,9 @@ compress_html:
   blanklines: true
   profile: false
   startings: []
+# svg
+svg:
+  optimize: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,8 +1,8 @@
 - title: "Private trade matching"
   subtitle: "Trades cannot be seen, intercepted or front run, even by the venue host"
 
-- title: "Market price"
-  subtitle: "Accurate market price is surfaced without revealing private trades"
+- title: "Market data"
+  subtitle: "Accurate market price and aggregate data is surfaced without revealing any individual trade activity"
 
 - title: "Predefined rules"
   subtitle: "Matching and pricing engines execute a transparent set of algorithms and cannot diverge"

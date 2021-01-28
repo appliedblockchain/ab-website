@@ -1,11 +1,11 @@
 - title: "Private trade matching"
-  subtitle: "Only matched counterparts see the trade and its details"
+  subtitle: "Trades cannot be seen, intercepted or front run, even by the venue host"
 
 - title: "Market price"
   subtitle: "Accurate market price is surfaced without revealing private trades"
 
 - title: "Predefined rules"
-  subtitle: "Matching and pricing engines execute a transparent set of algorithms"
+  subtitle: "Matching and pricing engines execute a transparent set of algorithms and cannot diverge"
 
 - title: "Compliance controls"
-  subtitle: "Algorithms executed in Beyond enforce compliance controls without reavealing trading data to the host"
+  subtitle: "Algorithms enforce compliance controls without reavealing trading data to the host"

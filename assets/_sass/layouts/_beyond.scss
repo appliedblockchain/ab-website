@@ -26,6 +26,12 @@
       width: 100%;
     }
   }
+
+  &__screen {
+    border-radius: $integer-md;
+    overflow: hidden;
+    margin-bottom: $integer-xxl;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

@@ -48,7 +48,7 @@
   
   .lead {
     font-weight: bold;
-    color: $beyond-default;
+    color: $beyond;
   }
   
   .button__inner {
@@ -108,7 +108,7 @@
     &--landing {
       padding-top: $integer-max;
       padding-bottom: 0;
-      background-color: $beyond-default;
+      background-color: $beyond;
     }
     
     &--grey {
@@ -174,8 +174,8 @@
 
   .button--primary {
     transition: box-shadow $transition;
-    background-color: $beyond-default;
-    box-shadow: 0 0 $integer $beyond-default;
+    background-color: $beyond;
+    box-shadow: 0 0 $integer $beyond;
     
     &:hover {
       box-shadow: none;

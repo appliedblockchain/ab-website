@@ -1,43 +1,46 @@
 - title: "SILENTDATA"
-  logo: "silentdata"
+  id: "silentdata" # DO NOT CHANGE !!
+  background: "silentdata.jpg"
   category: "Cryptography"
-  tag: "live"
+  status: "Live"
   description: "SILENTDATA enables checks that are performed on private and sensitive banking data without the need to reveal it. The best way to protect data is not to reveal it in the first place."
   links: 
     - name: "Website"
       url: "https://silentdata.com/"
-      colour: "dark"
-      icon: "fab fa-github"
+      icon: "fa fa-globe"
+    - name: "App"
+      url: "https://app.silentdata.com/"
+      icon: "fa fa-desktop"
 
 - title: "Beyond"
-  logo: "beyond"
+  id: "beyond" # DO NOT CHANGE !!
+  background: "beyond.png"
   category: "Confidential Trading"
-  tag: "In development"
+  status: "In development"
   description: "Enable trading by a white-listed group of participants in a confidential environment where trade activity, volume and price data are not revealed, even to the venue host."
   links: 
     - name: "Website"
-      url: "https://silentdata.com/"
-      colour: "dark"
+      url: "http://appliedblockchain.com/beyond"
       icon: "fab fa-github"
 
 - title: "K<span class=\"body--zero\">0</span>"
-  logo: "k0"
+  id: "k0" # DO NOT CHANGE !!
+  background: "k0.svg"
   category: "Blockchain"
-  tag: "Experimental"
+  status: "Experimental"
   description: "K<span class=\"body--zero\">0</span> (pronounced “K zero”) is our vision to enable digital assets, and digital twins of physical assets, to be created, verified and traded privately and seamlessly across multiple enterprise blockchain platforms & networks."
   technos: 
     - name: Ethereum
     - name: Hyperledger Fabric
   links: 
     - name: "Technical description"
-      url: "{{ site.url }}/k0.pdf"
-      colour: "primary"
+      url: "k0.pdf"
+      type: "internal"
       icon: "fa fa-file-alt"
     - name: "Background paper"
-      url: "{{ site.url }}/k0-background"
-      colour: "primary"
+      url: "k0-background.pdf"
+      type: "internal"
       icon: "fa fa-file-alt"
     - name: "Github repo"
       url: "https://github.com/appliedblockchain/k0"
-      colour: "dark"
       icon: "fab fa-github"

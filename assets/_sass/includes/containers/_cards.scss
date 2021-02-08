@@ -683,28 +683,34 @@
   .card {
 
     &__image {
-      height: $integer-xxxxl;
-      width: auto;
-      max-width: none;
-
-      @include responsive(max-width, $desktop-max) {
-        height: $integer-xxxl;
-      }
+      height: auto;
+      width: 100%;
+      max-width: 30rem;
+      margin-top: $integer-md;
     }
 
-    &__label {
-      margin-top: $integer-lg;
+    &--k0 {
+
+      & .card__image {
+        max-width: 10rem;
+      }
     }
 
     &__actions {
       display: flex;
-      justify-content: center;
-      margin-top: $integer-md;
-    }
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 100%;
 
-    &__icon {
-      width: auto;
-      height: $integer-xxxxl;
+      @include responsive(max-width, $desktop-max) {
+        align-items: flex-start;
+        margin-top: $integer-md;
+      }
+      
+      .button + .button {
+        margin-top: $integer;
+      }
     }
   }
 }

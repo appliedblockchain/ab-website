@@ -22,6 +22,22 @@ $('.owl-carousel-clients').owlCarousel({
   }
 });
 
+$('.owl-carousel-beyond').owlCarousel({
+  dots: false,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: false,
+  smartSpeed: 2000,
+  responsive: {
+    0: { items: 3, margin: 40 },
+    450: { items: 3, margin: 40 },
+    575: { items: 4, margin: 40 },
+    1023: { items: 5, margin: 40 },
+    1299: { items: 6, margin: 40 },
+  }
+});
+
 $('.owl-carousel-clients_color').owlCarousel({
   dots: false,
   loop: true,

@@ -306,3 +306,23 @@ ul {
 		margin-top: $integer-lg;
 	}
 }
+
+.rating {
+  display: flex;
+  align-self: center;
+	margin-left: $integer-lg;
+	
+	&__logo {
+		margin-right: $integer;
+		max-width: 15rem;
+	}
+
+	&__item {
+		margin-right: 0 !important;
+		stroke: $highlight-alt;
+
+    & + & {
+      margin-left: $integer-sm;
+    }
+  }
+}

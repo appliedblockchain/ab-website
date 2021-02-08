@@ -96,3 +96,12 @@ partners:
   - name: microsoft
   - name: r3
   - name: intel
+
+# beyond.html
+beyond: 
+  - name: shell
+  - name: barclays
+  - name: toyota
+  - name: vodafone
+  - name: united-nations
+  - name: klm

@@ -106,6 +106,7 @@
     width: 100%;
 
     & + .card__image,
+    & + .card__media,
     & + .card__body,
     & + .card__meta {
       margin-top: $integer-md;
@@ -161,8 +162,13 @@
     }
   }
 
-  &__actions {
+  &__media {
+    display: flex;
+    align-items: center;
 
+    & + .card__actions {
+      margin-top: $integer-lg;
+    }
   }
 }
 

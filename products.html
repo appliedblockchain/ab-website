@@ -6,47 +6,35 @@ body: Our work on real world projects provides unique insights into technology g
 background_color: white
 ---
 
-<section class="section section--white">
-    <div class="row card__wrapper">
-        <div class="col--md6 card">
-            <div class="background--shadow">
-                <div class="card__inner">
-                    <img src="{{ site.url }}{{ site.imageurl }}/logos/products/k0-alt.png" alt="Logo k0" class="card__image">
-                    <p class="card__label label">Blockchain</p>
-                    <h2 class="card__title lead">K<span class="body--zero">0</span></h2>
-                    <p class="card__body">K<span class="body--zero">0</span> (pronounced “K zero”) is our vision to enable digital assets, and digital twins of physical assets, to be created, verified and traded privately and seamlessly across multiple enterprise blockchain platforms & networks.</p>
-                    <div class="card__icons">
-                        <img src="{{ site.url }}{{ site.imageurl }}/carousel/technologies/ethereum.png" alt="Logo Ethereum" class="card__icon">
-                        <img src="{{ site.url }}{{ site.imageurl }}/carousel/technologies/hyperledger-fabric.png" alt="Logo Hyperledger Fabric" class="card__icon">
-                    </div>
-                    <div class="card__actions button__wrapper">
-                        <a href="{{ site.url }}/k0.pdf" target="_blank" class="button button--primary button--small button--animate fa fa-file-alt">
-                            <p class="button__inner">Technical description</p>
-                        </a>
-                        <a href="{{ site.url }}/k0-background.pdf" target="_blank" target="_blank" class="button button--primary button--small button--animate fa fa-file-alt">
-                            <p class="button__inner">Background paper</p>
-                        </a>
-                        <a href="https://github.com/appliedblockchain/k0" target="_blank" target="_blank" class="button button--dark button--small button--animate fab fa-github">
-                            <p class="button__inner">Github repo</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+{% for item in site.data.products %}
+<section class="section section--{{ item.title | slugify }}">
+  <div class="row card__wrapper">
+    <div class="col--md4 card">
+      <div class="background--shadow">
+        <div class="card__inner">
+          <img src="{{ site.url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.png" alt="Logo for {{ item.title }}" class="card__image">
+          <p class="card__label label">{{ item.category }}</p>
+          <h2 class="card__title lead">{{ item.title }}</h2>
+          <p class="card__body">{{ item.description }}</p>
+          {% if item.technos %}
+          <div class="card__icons">
+            {% for techno in item.technos %}
+            <img src="{{ site.url }}{{ site.imageurl }}/carousel/technologies/{{ techno.name | slugify  }}.png" alt="Logo {{ techno.name }}" class="card__icon">
+            {% endfor %}
+          </div>
+          {% endif %}
+          {% if item.links %}
+          <div class="card__actions button__wrapper">
+            {% for link in item.links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener" class="button button--{{ link.colour }} button--small button--animate {{ link.icon}}">
+              <p class="button__inner">{{ link.name }}</p>
+            </a>
+            {% endfor %}
+          </div>
+          {% endif %}
         </div>
-        <div class="col--md6 card">
-            <div class="background--shadow">
-                <div class="card__inner">
-                    <img src="{{ site.url }}{{ site.imageurl }}/logos/products/silent-data.png" alt="Logo k0" class="card__image">
-                    <p class="card__label label">Cryptography</p>
-                    <h2 class="card__title lead">Silent Data</h2>
-                    <p class="card__body">Silent data uses next generation cryptography to enable parties to act together and generate meaningful outcomes without having to share their sensitive data, not even in encrypted form.</p>
-                    <div class="card__actions button__wrapper">
-                        <a href="https://silentdata.com/" target="_blank" target="_blank" class="button button--dark button--small button--animate fab fa-github">
-                            <p class="button__inner">Website</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </section>
+{% endfor %}

@@ -88,7 +88,7 @@ $('.owl-carousel-partners').owlCarousel({
 
 $('.owl-carousel-testimonials').owlCarousel({
   loop: true,
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 8000,
   autoplayHoverPause: true,
   smartSpeed: 2000,

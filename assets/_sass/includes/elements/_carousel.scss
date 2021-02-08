@@ -143,12 +143,16 @@
         background-color: $light-grey;
 
         @include responsive(max-width, $desktop-lg-max) {
-          width: $integer-xxxxl+$integer-xl !important;
-          height: $integer-xxxxl+$integer-xl;
+          width: $integer-xxxxl+$integer !important;
+          height: $integer-xxxxl+$integer;
+          margin: 0 auto $integer-lg auto;
         }
+      }
 
-        @include responsive(max-width, $desktop-max) {
-          display: none !important;
+      &__meta {
+
+        @include responsive(max-width, $desktop-lg-max) {
+          align-items: center;
         }
       }
     }

@@ -147,7 +147,7 @@
       z-index: -1;
       
       &--grey {
-        top: -$integer-max*2;
+        top: -$integer-max*1.5;
         
         @include responsive(max-width, $mobile-max) {
           top: -$integer-max*1;

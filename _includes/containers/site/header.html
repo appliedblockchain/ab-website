@@ -27,8 +27,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-	<!-- image for share button -->
-	<meta property="og:image" content="https://appliedblockchain.com{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% elsif page.layout == 'beyond' %}social-beyond.png{% else %}social.jpg{% endif %}"/>
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="{{ site.url }}{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% elsif page.layout == 'beyond' %}social-beyond.png{% else %}social.jpg{% endif %}"/>
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 
 	<!-- FAVICONS -->
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">

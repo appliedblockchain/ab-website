@@ -17,145 +17,177 @@
 
 .timeline {
 
-    &:before {
-        @include pseudo-element('', $integer-xxxxl+$integer-xxxl, auto, 0, 50%, $integer, 100%);
-        transform: translateX(-$integer/2);
-        background-color: $light-grey;
+  &:before {
+    @include pseudo-element('', $integer-xxxxl+$integer-xxxl, auto, 0, 50%, $integer, 100%);
+    transform: translateX(-$integer/2);
+    background-color: $light-grey;
 
-        @include responsive(max-width, $tablet-max) {
-            display: none;
-        }
+    @include responsive(max-width, $tablet-max) {
+      display: none;
+    }
+  }
+
+  &__headline {
+    display: flex;
+    position: relative;
+    margin: $integer-xl 0;
+
+    &:nth-of-type(odd)  { .timeline__date { left: 0; } }
+    &:nth-of-type(even) { .timeline__date { right: 0; } }
+
+    @include responsive(max-width, $tablet-max) {
+      width: 100%;
     }
 
-    &__headline {
-        display: flex;
-        position: relative;
-        margin: $integer-xl 0;
+    &:nth-child(1) {
+      margin-top: 0;      
+    }
+  }
 
-        &:nth-of-type(odd)  { .timeline__date { left: 0; } }
-        &:nth-of-type(even) { .timeline__date { right: 0; } }
+  &__dot {
+    border-radius: $border-radius;   
+    display: inline-block;
+    background-color: $secondary;
+    width: $integer-md;
+    height: $integer-md;
+    border: $border-lg $white;
+    box-sizing: content-box;
+    z-index: 1;
+    
+    .timeline__item & {
+      width: $integer;
+      height: $integer;
 
-        @include responsive(max-width, $tablet-max) {
-            width: 100%;
-        }
+      @include responsive(max-width, $tablet-max) {
+        display: none;
+      }
+    }
+  }
 
-        &:nth-child(1) {
-            margin-top: 0;            
-        }
+  &__date {
+    position: absolute;
+    padding: 0 $integer-xl;
+
+    @include responsive(max-width, $tablet-max) {
+      padding-left: $integer-xl;
+      right: auto !important;
+      left: 0 !important;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    & + & {
+      margin-top: $integer-xl;
     }
 
-    &__dot {
-        border-radius: $border-radius;     
-        display: inline-block;
-        background-color: $secondary;
-        width: $integer-md;
-        height: $integer-md;
-        border: $border-lg $white;
-        box-sizing: content-box;
+    &:nth-of-type(odd) .timeline__text,
+    &:nth-of-type(even) .timeline__icon { 
+      text-align: right; 
+      padding-right: $integer-xxl;
+      justify-content: flex-end;
+
+      @include responsive(max-width, $desktop-max) {
+        padding-right: $integer-lg;
+      }
     }
 
-    &__date {
-        position: absolute;
-        padding: 0 $integer-xxl+$integer-md;
+    &:nth-of-type(even) .timeline__text,
+    &:nth-of-type(odd) .timeline__icon { 
+      text-align: left; 
+      padding-left: $integer-xxl; 
+      justify-content: flex-start;
 
-        @include responsive(max-width, $tablet-max) {
-            padding-left: $integer-xl;
-            right: auto !important;
-            left: 0 !important;
-        }
+      @include responsive(max-width, $desktop-max) {
+        padding-left: $integer-lg; 
+      }
     }
 
-    &__item {
-        display: flex;
-        align-items: center;
-        width: 100%;
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
 
-        & + & {
-            margin-top: $integer-xl;
-        }
-
-        &:nth-of-type(odd) .timeline__text,
-        &:nth-of-type(even) .timeline__icon { 
-            text-align: right; 
-            padding-right: $integer-xxl;
-
-            @include responsive(max-width, $desktop-max) {
-                padding-right: $integer-lg;
-            }
-        }
-
-        &:nth-of-type(even) .timeline__text,
-        &:nth-of-type(odd) .timeline__icon { 
-            text-align: left; 
-            padding-left: $integer-xxl; 
-
-            @include responsive(max-width, $desktop-max) {
-                padding-left: $integer-lg; 
-            }
-        }
-
-        &:nth-of-type(even) {
-            flex-direction: row-reverse;
-        }
-
-        @include responsive(min-width, $desktop-xl) {
-            margin-top: $integer;
-            margin-bottom: $integer;
-        }
-
-        @include responsive(max-width, $desktop-max) {
-            margin-top: $integer;
-            margin-bottom: $integer;
-        }
+      .timeline__button {
+        align-self: flex-start;
+      }
     }
 
-    &__text, 
-    &__icon {
-        flex-basis: 50%;
+    @include responsive(min-width, $desktop-xl) {
+      margin-top: $integer;
+      margin-bottom: $integer;
     }
 
-    &__text {
+    @include responsive(max-width, $desktop-max) {
+      margin-top: $integer;
+      margin-bottom: $integer;
+    }
+  }
 
-        @include responsive(max-width, $tablet-max) {
-            flex-basis: 100% !important;
-            text-align: left !important;
-            padding: 0 !important;
-        }
+  &__text, 
+  &__icon {
+    flex-basis: 50%;
+  }
+
+  &__text {
+
+    @include responsive(max-width, $tablet-max) {
+      flex-basis: 100% !important;
+      text-align: left !important;
+      padding: 0 !important;
+    }
+  }
+
+  &__icon {
+    height: $integer-xxxxl;
+    display: flex;
+    
+    @include responsive(max-width, $tablet-max) {
+      display: none;
+    }
+    
+    img {
+      height: 100%;
+      width: auto;
+      max-width: 20rem;
     }
 
-    &__icon {
-        height: $integer-xxxxl;
-        
-        @include responsive(max-width, $tablet-max) {
-            display: none;
-        }
-        
-        img {
-            height: 100%;
-            width: auto;
-        }
+    .timeline__logo {
+      height: auto;
+      max-height: $integer-xxxxl;
     }
+  }
 
-    .body--zero {
-        display: contents;
+  &__button {
+    margin-top: $integer-md;
+    align-self: flex-end;
+    
+    @include responsive(max-width, $tablet-max) {
+      align-self: flex-start;
     }
+  }
+
+  .body--zero {
+    display: contents;
+  }
 }
 
 #about {
 
-    &-intro {
+  &-intro {
 
-        .card:before {
-            display: none;
-        }
+    .card:before {
+      display: none;
     }
+  }
 
-    &-leadership {
+  &-leadership {
 
-        .row {
-            justify-content: center;
-        }
+    .row {
+      justify-content: center;
     }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -164,12 +196,12 @@
 
 #contact {
 
-    .background--cover {
+  .background--cover {
 
-        @include responsive(max-width, $tablet-max) {
-            background-image: none !important;
-        }
+    @include responsive(max-width, $tablet-max) {
+      background-image: none !important;
     }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -178,53 +210,53 @@
 
 #join {
 
-    ul {
-        padding-left: $integer-md;
+  ul {
+    padding-left: $integer-md;
 
-        & + .body {
-            margin-top: $integer-md;
-        }
+    & + .body {
+      margin-top: $integer-md;
     }
+  }
 
-    li + li {
-        margin-top: $integer-sm;
-    }
-        
-    &-header {
+  li + li {
+    margin-top: $integer-sm;
+  }
+    
+  &-header {
 
-        .section__header {
-            z-index: 2;
-        }
+    .section__header {
+      z-index: 2;
     }
+  }
 }
 
 .join {
 
-    &__background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        transition: opacity 0.8s ease 0s;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: opacity 0.8s ease 0s;
 
-        &:before {
-            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-            background-color: rgba($primary, 0.5);
-            z-index: 1;
-        }
-
-        &--london {
-            @extend .join__background;
-            @include background(bottom center, cover);
-        }
-
-        &--porto {
-            @extend .join__background;
-            @include background(center center, cover);
-        }
+    &:before {
+      @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+      background-color: rgba($primary, 0.5);
+      z-index: 1;
     }
+
+    &--london {
+      @extend .join__background;
+      @include background(bottom center, cover);
+    }
+
+    &--porto {
+      @extend .join__background;
+      @include background(center center, cover);
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -232,31 +264,31 @@
 // —————————————————————————————————————————————————————————————————
 
 .mantle {
-    align-items: center;
+  align-items: center;
 
    &__diagram {
 
-    @include responsive(max-width, $desktop-max) {
-           margin-top: $integer-xl;
-       }
+  @include responsive(max-width, $desktop-max) {
+       margin-top: $integer-xl;
+     }
    }
 
    &__legend {
-       display: flex;
-       flex-direction: column;
-       justify-content: space-evenly;
-       align-self: stretch;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-self: stretch;
    }
 
    &__label {
-       position: relative;
-       padding-left: 50%;
+     position: relative;
+     padding-left: 50%;
 
-       &:before {
-           @include pseudo-element('', 50%, auto, auto, $integer, 40%, 2px);
-           position: absolute;
-           background-color: rgba($white, 0.5);
-       }
+     &:before {
+       @include pseudo-element('', 50%, auto, auto, $integer, 40%, 2px);
+       position: absolute;
+       background-color: rgba($white, 0.5);
+     }
    }
 }
 
@@ -265,47 +297,47 @@
 // —————————————————————————————————————————————————————————————————
 
 .privacy {
-    // Creates a new instance of the section counter with each ol element
-    counter-reset: section;
-    list-style-type: none;
-      
-    &__title,
-    &__subtitle {
-        
-       &:before {
-            // Increments only this instance of the section counter
-            counter-increment: section;
-            // Combines the values of all instances of the section counter, separated by a period
-            content: counters(section, ".") ". ";
-        }
+  // Creates a new instance of the section counter with each ol element
+  counter-reset: section;
+  list-style-type: none;
+    
+  &__title,
+  &__subtitle {
+    
+     &:before {
+      // Increments only this instance of the section counter
+      counter-increment: section;
+      // Combines the values of all instances of the section counter, separated by a period
+      content: counters(section, ".") ". ";
     }
+  }
 
-    &__title {
+  &__title {
 
-        & + .privacy__content {
-            padding-top: $integer-lg;
-        }
+    & + .privacy__content {
+      padding-top: $integer-lg;
     }
+  }
 
-    &__subtitle {
-        padding-top: $integer-lg;
+  &__subtitle {
+    padding-top: $integer-lg;
 
-        & + .privacy__content {
-            padding-top: $integer-md;
-        }
+    & + .privacy__content {
+      padding-top: $integer-md;
     }
+  }
 
-    &__content {
-        list-style: none;
+  &__content {
+    list-style: none;
 
-        & + .privacy__title {
-            padding-top: $integer-xl;
-        }
+    & + .privacy__title {
+      padding-top: $integer-xl;
     }
+  }
 
-    ul.body {
-        padding-left: $integer-md;
-    }
+  ul.body {
+    padding-left: $integer-md;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -314,103 +346,103 @@
 
 #services {
 
-    &-solutions {
+  &-solutions {
+
+    .card {
+
+      &__inner {
+        padding-right: $integer-lg;
+        padding-left: $integer-lg;
+
+        @include responsive-mobile-devices() {
+          padding-top: 0;
+          padding-bottom: $integer-lg;
+        }
+
+        @include responsive(max-width, $desktop-max) {
+          padding-top: 0;
+          padding-bottom: $integer-lg;
+        }
+      }
+
+      &__image {
+        transform: scale(3.5) translateY(1rem);
+        transform-origin: center, top;
+        transition: transform $transition;
+        will-change: transform;
+        max-width: $integer-xxl;
+        
+        @include responsive-mobile-devices() {
+          transform: scale(1) translateY(0);
+        }
+
+        @include responsive(max-width, $desktop-max) {
+          transform: scale(1) translateY(0);
+        }
+      }
+
+      &__title {
+        transform: translateY(13rem);
+        transition: transform $transition;
+        will-change: transform;
+
+        @include responsive-mobile-devices() {
+          transform: translateY(0);
+          margin-top: $integer-md;
+        }
+
+        @include responsive(max-width, $desktop-max) {
+          transform: translateY(0);
+          margin-top: $integer-md;
+        }
+      }
+
+      &__body {
+        transform: translateY(13rem);
+        transition: opacity $transition, transform $transition;
+        will-change: opacity, transform;
+        opacity: 0;
+        margin-top: $integer-md;
+
+        @include responsive-mobile-devices() {
+          transform: translateY(0);
+          opacity: 1;
+        }
+
+        @include responsive(max-width, $desktop-max) {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      &:hover {
 
         .card {
 
-            &__inner {
-                padding-right: $integer-lg;
-                padding-left: $integer-lg;
+          &__image {
+            transform: scale(1);
+          }
 
-                @include responsive-mobile-devices() {
-                    padding-top: 0;
-                    padding-bottom: $integer-lg;
-                }
+          &__title {
+            transform: translateY(0);
+          }
 
-                @include responsive(max-width, $desktop-max) {
-                    padding-top: 0;
-                    padding-bottom: $integer-lg;
-                }
-            }
-
-            &__image {
-                transform: scale(3.5) translateY(1rem);
-                transform-origin: center, top;
-                transition: transform $transition;
-                will-change: transform;
-                max-width: $integer-xxl;
-                
-                @include responsive-mobile-devices() {
-                    transform: scale(1) translateY(0);
-                }
-
-                @include responsive(max-width, $desktop-max) {
-                    transform: scale(1) translateY(0);
-                }
-            }
-
-            &__title {
-                transform: translateY(13rem);
-                transition: transform $transition;
-                will-change: transform;
-
-                @include responsive-mobile-devices() {
-                    transform: translateY(0);
-                    margin-top: $integer-md;
-                }
-
-                @include responsive(max-width, $desktop-max) {
-                    transform: translateY(0);
-                    margin-top: $integer-md;
-                }
-            }
-
-            &__body {
-                transform: translateY(13rem);
-                transition: opacity $transition, transform $transition;
-                will-change: opacity, transform;
-                opacity: 0;
-                margin-top: $integer-md;
-
-                @include responsive-mobile-devices() {
-                    transform: translateY(0);
-                    opacity: 1;
-                }
-
-                @include responsive(max-width, $desktop-max) {
-                    transform: translateY(0);
-                    opacity: 1;
-                }
-            }
-
-            &:hover {
-
-                .card {
-
-                    &__image {
-                        transform: scale(1);
-                    }
-
-                    &__title {
-                        transform: translateY(0);
-                    }
-
-                    &__body {
-                        transform: translateY(0);
-                        opacity: 1;
-                    }
-                }
-            }
+          &__body {
+            transform: translateY(0);
+            opacity: 1;
+          }
         }
+      }
     }
+  }
 
-    &-stack {
+  &-stack {
 
-        .body--right {
+    .body--right {
 
-            @include responsive(max-width, $desktop-max) {
-                text-align: left;
-            }
-        }
+      @include responsive(max-width, $desktop-max) {
+        text-align: left;
+      }
     }
+  }
 }

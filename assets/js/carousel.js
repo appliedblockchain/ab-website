@@ -81,8 +81,8 @@ $('.owl-carousel-partners').owlCarousel({
     0: { items: 2, margin: 20 },
     450: { items: 2, margin: 25 },
     575: { items: 3, margin: 40 },
-    767: { items: 3, margin: 80 },
-    1299: { items: 3, margin: 160 }
+    767: { items: 4, margin: 40 },
+    1299: { items: 4, margin: 80 }
   }
 });
 

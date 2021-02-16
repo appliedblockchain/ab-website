@@ -96,6 +96,7 @@ partners:
   - name: microsoft
   - name: r3
   - name: intel
+  - name: confidential-computing-consortium
 
 # beyond.html
 beyond: 

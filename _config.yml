@@ -1,19 +1,19 @@
 # site settings
 author: Applied Blockchain
-title: Applied Blockchain 
-description: "We Develop Applications with Enhanced Trust and Privacy"
+title: Applied Blockchain
+description: "Make your business more efficient using technologies of trust and confidentiality"
 
 # internal path
 resourceurl: /assets
 imageurl: /assets/images
 url: https://appliedblockchain.com
 
-# contact 
-contact: 
-  london: 
+# contact
+contact:
+  london:
     address: Level 39<br>One Canada Square, Canary Wharf<br>London E14 5AB, United Kingdom
     map: https://www.google.com/maps/dir//Level39,+One+Canada+Square,+Canary+Wharf,+London+E14+5AB/@51.5049937,-0.0194643,17z/data=!4m16!1m6!3m5!1s0x487602b766104115:0x2936fbc8438dd3a4!2sLevel39!8m2!3d51.5049937!4d-0.0194643!4m8!1m0!1m5!1m1!1s0x487602b766104115:0x2936fbc8438dd3a4!2m2!1d-0.0194643!2d51.5049937!3e2
-  porto: 
+  porto:
     address: District – Offices & Lifestyle<br>Rua Augusto Rosa 39<br>4000-098 Porto, Portugal
     map: https://www.google.com/maps/dir//District+-+Offices+%26+Lifestyle,+R.+de+Augusto+Rosa+79,+4000-098+Porto,+Portugal/@41.1437949,-8.6098844,17z/data=!4m16!1m6!3m5!1s0xd2464e67c58646f:0xea88aa73d39ff9e1!2sDistrict+-+Offices+%26+Lifestyle!8m2!3d41.1437909!4d-8.6076957!4m8!1m0!1m5!1m1!1s0xd2464e67c58646f:0xea88aa73d39ff9e1!2m2!1d-8.6076957!2d41.1437909!3e2
 
@@ -45,7 +45,7 @@ autoprefixer:
 sass:
   sass_dir: assets/_sass
   style: compressed
-# compress 
+# compress
 # http://jch.penibelst.de/
 compress_html:
   clippings: all

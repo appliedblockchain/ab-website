@@ -33,6 +33,16 @@
   <meta property="og:image" content="{{ site.url }}{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% elsif page.layout == 'beyond' %}social-beyond.png{% else %}social.jpg{% endif %}"/>
   <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 
+	<!-- FONTS (preload here to avoid FOUT) -->
+	<link rel="preload" href="/assets/fonts/chivo/chivo-black.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-blackitalic.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-bold.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-bolditalic.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-italic.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-light.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-lightitalic.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-regular.ttf" as="font" type="font/woff2" crossorigin>
+
 	<!-- FAVICONS -->
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">

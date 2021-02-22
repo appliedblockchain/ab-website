@@ -22,4 +22,4 @@ Confidential Computing protects data in use, enabling encrypted data to be proce
 
 [More information on Confidential Computing at Applied Blockchain](https://appliedblockchain.com/applied-privacy)
 
-[Confidential Computing Consortium Website](https://confidentialcomputing.io/)
+[Confidential Computing Consortium Website](https://confidentialcomputing.io/members/)

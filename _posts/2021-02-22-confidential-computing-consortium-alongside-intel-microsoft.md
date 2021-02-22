@@ -20,6 +20,6 @@ Confidential Computing protects data in use, enabling encrypted data to be proce
 
 **Stephen Walli, Chair of the Governing Board, Confidential Computing Consortium**
 
-[Applied Blockchain's Confidential Computing page](https://appliedblockchain.com/applied-privacy)
+[More information on Confidential Computing at Applied Blockchain](https://appliedblockchain.com/applied-privacy)
 
 [Confidential Computing Consortium Website](https://confidentialcomputing.io/)

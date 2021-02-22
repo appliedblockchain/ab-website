@@ -28,15 +28,15 @@ background_color: white
             {% for post in site.posts %}
             <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
                 <div class="card card--portrait background--shadow">
-                    <a href="{% if post.link %}{% if post.social contains "pdf" %}{{ site.url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>
-                        <div class="card__image background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg');"></div>
+                    <a href="{% if post.link %}{% if post.social contains "pdf" %}{{ site.base-url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>
+                        <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg');"></div>
                     </a>
                     <div class="card__inner">
                         <div class="card__content">
-                            <img src="{{ site.url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="" class="card__icon card__icon--{{ post.category }}">
+                            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="" class="card__icon card__icon--{{ post.category }}">
                             <p class="card__label body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
                             <h2 class="card__title lead">
-                                <a href="{% if post.link %}{% if post.social contains "pdf" %}{{ site.url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>{{ post.title }}</a>
+                                <a href="{% if post.link %}{% if post.social contains "pdf" %}{{ site.base-url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>{{ post.title }}</a>
                             </h2>
                             <p class="card__body">{{ post.headline | truncate: 250, "…" }}</p>
                         </div>
@@ -67,7 +67,7 @@ background_color: white
                                 <p class="button__inner">Watch video </p>
                             </a>
                             {% elsif post.social contains "pdf" %}
-                            <a href="{{ site.url }}/assets/pdfs/{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-eye">
+                            <a href="{{ site.base-url }}/assets/pdfs/{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-eye">
                                 <p class="button__inner">Read</p>
                             </a>
                             {% elsif post.social contains "blank" %}
@@ -83,12 +83,12 @@ background_color: white
                             </a>
                             {% endif %}
                             {% if post.social == 'webinar' %}
-                            <a href="{{ site.url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+                            <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
                                 <p class="button__inner">View recording</p>
                             </a>
                             {% endif %}
                             {% if post.social == 'report' %}
-                            <a href="{{ site.url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+                            <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
                                 <p class="button__inner">Download report</p>
                             </a>
                             {% endif %}

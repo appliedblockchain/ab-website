@@ -17,14 +17,14 @@ subtitle: Resources and content about our brand, our processes, our clients
         {% for category in site.data.resources.sales %}
         <div class="col--md4">
             <div class="block card--download">
-                <div class="card__header background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/assets/{{ category.slug }}.jpg);">
+                <div class="card__header background--cover" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/assets/{{ category.slug }}.jpg);">
                     <h3 class="lead">{{ category.title }}</h3>
                     <p>{{ category.subtitle }}</p>
                 </div>
                 <div class="card__content">
                     <div class="card__download">
                         <p class="card__meta body--bold">Download all</p>
-                        <a class="button button--icon button--small button--highlight button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}.zip" download>
+                        <a class="button button--icon button--small button--highlight button--animate fas fa-plus" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}.zip" download>
                             <i class="button__inner fas fa-download"></i>
                         </a>
                     </div>
@@ -38,11 +38,11 @@ subtitle: Resources and content about our brand, our processes, our clients
                         </div>
                         <div class="card__buttons">
                             {% if category.slug == 'case-studies' or category.slug == 'one-pagers' %}
-                            <a class="button button--icon button--small button--primary-lighten button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" target="_blank">
+                            <a class="button button--icon button--small button--primary-lighten button--animate fas fa-plus" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" target="_blank">
                                 <i class="button__inner fas fa-eye"></i>
                             </a>
                             {% endif %}
-                            <a class="button button--icon button--small button--primary button--animate fas fa-plus" href="{{ site.url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" download>
+                            <a class="button button--icon button--small button--primary button--animate fas fa-plus" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" download>
                                 <i class="button__inner fas fa-download"></i>
                             </a>
                         </div>

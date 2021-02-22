@@ -8,7 +8,7 @@ headline: In 2020 we’re beginning to see the emergence of the second generatio
 
 There are many ways that blockchain can be used in a business context and perhaps shouldn’t. It is a complex multi-party system that can become a burden if used incorrectly, but can also open up new efficiencies, markets and opportunities if well understood and executed in an optimal way.
 
-![Diagram]({{ site.url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/intro.svg)	
+![Diagram]({{ site.base-url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/intro.svg)	
 
 In software design and architecture it is common to refer to design patterns when solving a particular problem. These are reusable high-level technical design templates that can be applied to many different use cases, and follow a well-trodden path in designing a solution. This is very common in [enterprise integration](https://www.enterpriseintegrationpatterns.com/).
 
@@ -21,7 +21,7 @@ At its core, a blockchain provides “group security”. In other words, histori
 # 1. Time Stamping
 This is a very simple pattern where an entire application and database reside outside the blockchain, and we use the blockchain to simply store and “group-secure” “evidence” of documents or activity that took place in the application.
 
-![Diagram]({{ site.url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/1.svg)	
+![Diagram]({{ site.base-url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/1.svg)	
 
 ## How does it work?
 This evidence takes the form of a digital snapshot “fingerprint” (also known as a cryptographic hash) that does not reveal anything about the document, data, activity or parties involved, but can be used to prove the state of the application data at a given point in time, and may be handy in resolving disputes, where there may be suspicion that data may have been modified or manipulated post agreement.
@@ -46,7 +46,7 @@ An example of this pattern can be found in [Emsurge](https://appliedblockchain.c
 # 2. Enterprise Business Process Integration
 Large enterprises can often benefit from better “synchronising” their multi-party business processes (e.g. supply chain, invoices), in particular those that lead to payments and may be disputed. This is where we often see the term “DLT” used to describe the technology and solution.
 
-![Diagram]({{ site.url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/2.svg)	
+![Diagram]({{ site.base-url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/2.svg)	
 
 ## How does it work?
 In this case, it is assumed that all transacting parties are large enterprises and form a consortium (e.g. group of banks, insurers, retailers and large suppliers) and will each independently host a blockchain node that will store a copy of their own transactions.
@@ -76,7 +76,7 @@ There are cryptographic techniques available that can be overlaid onto the vario
 # 3. Simple Assets
 Basic blockchains are first and foremost asset registers. Bitcoin itself is a distributed registry of digital asset ownership.
 
-![Diagram]({{ site.url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/3.svg)	
+![Diagram]({{ site.base-url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/3.svg)	
 
 ## How does it work?
 In blockchains, assets are expressed as tokens that belong to accounts, and can be transferred to other accounts through transactions. The asset could be purely digital, a representation of money, or a representation of a physical asset such as a commodity or property.
@@ -128,7 +128,7 @@ In this pattern, it is not recommended to store any data on the blockchain unles
 # Summary
 Below is a summary of the four patterns described in this article:
 
-![Diagram]({{ site.url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/summary.svg)	
+![Diagram]({{ site.base-url }}{{ site.imageurl }}/posts/four-blockchain-design-patterns/summary.svg)	
 
 ## Can I mix and match?
 We’re big believers in the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle). There’s a lot to be said for maintaining a simple and elegant design, and only deploying selective, optimal technology as required to solve a particular problem.

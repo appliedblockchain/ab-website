@@ -28,7 +28,7 @@ layout: compress
 </div>
 
 {% if page.summary %}
-<section id="project-summary" class="section background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
+<section id="project-summary" class="section background--cover" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
     <div class="card card--lg card--landscape background--shadow">
         <div class="card__inner">
             <div class="card__content">
@@ -37,7 +37,7 @@ layout: compress
             </div>
         </div>
         <div class="card__image">
-            <img src="{{ site.url }}{{ site.imageurl }}/carousel/clients_color/{{ page.slug }}.png" alt="{{ page.title }} logo">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/clients_color/{{ page.slug }}.png" alt="{{ page.title }} logo">
         </div>
     </div>
 </section>
@@ -47,13 +47,13 @@ layout: compress
 <section id="project-challenge" class="section section--white">
     <div class="row">
         {% if page.challenge-diagram %}
-        <img src="{{ site.url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4">
+        <img src="{{ site.base-url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4">
         <div class="coloffset--md1 col--md7">
         {% elsif page.challenge-video %}
         <div class="col--md5">
-            <div class="video background--shadow background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg);">
+            <div class="video background--shadow background--cover" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg);">
                 <a href="#modal-video" class="js-button-modal">
-                    <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+                    <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
                 </a>
             </div>
             <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
@@ -86,7 +86,7 @@ layout: compress
 {% endif %}
 
 {% if page.delivery %}
-<section id="project-delivery" class="section section--transparent background--cover" style="background-image: url({{ site.url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
+<section id="project-delivery" class="section section--transparent background--cover" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
     <div class="row">
         <div class="col--xl7 col--lg9 block__title">
             <h1 class="subtitle">What Applied Blockchain Delivered</h1>
@@ -121,7 +121,7 @@ layout: compress
         <div class="card__wrapper--inline">
             {% for item in page.results-icons %}
             <div class="card">
-                <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.image }}.svg" alt="Icon {{ item.title }}" class="card__image">
+                <img src="{{ site.base-url }}{{ site.imageurl }}/icons/{{ item.image }}.svg" alt="Icon {{ item.title }}" class="card__image">
                 <p class="card__title body--large body--bold">{{ item.title }}</p>
                 <p class="card__body body">{{ item.body }}</p>
             </div>
@@ -144,7 +144,7 @@ layout: compress
             <div class="{% if page.title == 'Shell' %} owl-carousel owl-carousel-testimonials{% endif %} carousel--testimonials">
                 {% for item in page.testimonial %}
                 <div class="carousel__item">
-                    <img src="{{ site.url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
+                    <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
                     <div class="card body--left">
                         <p class="card__body quote">{{ item.quote }}</p>
                         <div class="card__meta">

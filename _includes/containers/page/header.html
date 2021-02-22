@@ -1,33 +1,33 @@
 <header class="header">
   <div class="header__bar">
     <div class="header__logo logo{% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
-      <a href="{{ site.url }}/">
+      <a href="{{ site.base-url }}/">
         {% include mixins/logo.html %}
       </a>
     </div>
     <div class="header__button">
       {% if page.layout == 'post' %}
-        <a href="{{ site.url }}/media" class="button button--small button--primary button--animate fas fa-chevron-left alt">
+        <a href="{{ site.base-url }}/media" class="button button--small button--primary button--animate fas fa-chevron-left alt">
           <p class="button__inner">Back</p>
         </a>
         {% if page.category == 'press-release' and page.dlc %}
-          <a href="{{ site.url }}{{ site.resourceurl }}/dlc/press-releases/appliedBlockchain-{{ page.image }}.zip" class="post__button button button--small button--highlight button--animate fas fa-download" download>
+          <a href="{{ site.base-url }}{{ site.resourceurl }}/dlc/press-releases/appliedBlockchain-{{ page.image }}.zip" class="post__button button button--small button--highlight button--animate fas fa-download" download>
             <p class="button__inner"><span class="hide--desktop">Download </span>Press kit</p>
           </a>
         {% endif %}
       {% endif %}
       {% if page.layout == 'project' %}
-        <a href="{{ site.url }}/projects" class="button button--small button--primary button--animate fas fa-chevron-left">
+        <a href="{{ site.base-url }}/projects" class="button button--small button--primary button--animate fas fa-chevron-left">
           <p class="button__inner">Back</p>
         </a>
         {% if page.dlc %}
-          <a href="{{ site.url }}{{ site.resourceurl }}/dlc/case-studies/appliedBlockchain-caseStudies-{{ page.slug }}.pdf" class="post__button button button--small button--highlight button--animate fas fa-download" download>
+          <a href="{{ site.base-url }}{{ site.resourceurl }}/dlc/case-studies/appliedBlockchain-caseStudies-{{ page.slug }}.pdf" class="post__button button button--small button--highlight button--animate fas fa-download" download>
             <p class="button__inner"><span class="hide--desktop">Download </span>case study</p>
           </a>
         {% endif %}
       {% endif %}
       {% if page.id != 'applied-privacy' %}
-      <a href="{{ site.url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
+      <a href="{{ site.base-url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
         <p class="button__inner">Contact us</p>
       </a>
       {% endif %}
@@ -41,7 +41,7 @@
   <div class="header__menu card__wrapper">
     <div class="row">
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/" class="card menu__button">
+        <a href="{{ site.base-url }}/" class="card menu__button">
           <p class="subtitle">Home</p>
           <p class="menu__description">
             <span>Start your journey here</span>
@@ -49,7 +49,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/services" class="card menu__button">
+        <a href="{{ site.base-url }}/services" class="card menu__button">
           <p class="subtitle">Services</p>
           <p class="menu__description">
             <span>Discover solutions, approach & projects</span>
@@ -57,7 +57,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/projects" class="card menu__button">
+        <a href="{{ site.base-url }}/projects" class="card menu__button">
           <p class="subtitle">Projects</p>
           <p class="menu__description">
             <span>See what we have worked on</span>
@@ -65,7 +65,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/products" class="card menu__button">
+        <a href="{{ site.base-url }}/products" class="card menu__button">
           <p class="subtitle">Products</p>
           <p class="menu__description">
             <span>Blockchain-based products</span>
@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/about" class="card menu__button">
+        <a href="{{ site.base-url }}/about" class="card menu__button">
           <p class="subtitle">About</p>
           <p class="menu__description">
             <span>The team, our story, our values</span>
@@ -81,7 +81,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/media" class="card menu__button">
+        <a href="{{ site.base-url }}/media" class="card menu__button">
           <p class="subtitle">Media</p>
           <p class="menu__description">
             <span>Read our news and press releases</span>
@@ -89,7 +89,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/events" class="card menu__button">
+        <a href="{{ site.base-url }}/events" class="card menu__button">
           <p class="subtitle">Events</p>
           <p class="menu__description">
             <span>Find us at events</span>
@@ -97,7 +97,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/join" class="card menu__button">
+        <a href="{{ site.base-url }}/join" class="card menu__button">
           <p class="subtitle">Join</p>
           <p class="menu__description">
             <span>Step into a unique environment</span>
@@ -105,7 +105,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/contact" class="card menu__button">
+        <a href="{{ site.base-url }}/contact" class="card menu__button">
           <p class="subtitle">Contact</p>
           <p class="menu__description">
             <span>Get in touch</span>
@@ -115,7 +115,7 @@
     </div>
     <div class="row">
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/faq" class="card menu__button">
+        <a href="{{ site.base-url }}/faq" class="card menu__button">
           <p class="body--large body--bold">FAQ</p>
           <p class="menu__description body--small">
             <span>Have questions?</span>
@@ -123,7 +123,7 @@
         </a>
       </div>
       <div class="col--lg4 col--sm6">
-        <a href="{{ site.url }}/privacy-policy" class="card menu__button">
+        <a href="{{ site.base-url }}/privacy-policy" class="card menu__button">
           <p class="body--large body--bold">Privacy policy</p>
           <p class="menu__description body--small">
             <span>The legal bit</span>

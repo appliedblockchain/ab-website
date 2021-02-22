@@ -1,12 +1,12 @@
 {% assign variant = include.variant %}
 
 <div class="card card--landscape no-padding">
-    <a href="{% if variant == 'past' and event.webinar_id %}{{ site.url }}/webinar-{{ event.webinar_id }}{% else %}{{ event.link }}{% endif %}" target="_blank" class="card__image background--cover" style="background-image: url({{ site.url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg);"></a>
+    <a href="{% if variant == 'past' and event.webinar_id %}{{ site.base-url }}/webinar-{{ event.webinar_id }}{% else %}{{ event.link }}{% endif %}" target="_blank" class="card__image background--cover" style="background-image: url({{ site.base-url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg);"></a>
     <div class="card__inner">
         <div class="card__content">
             <p class="card__label body--bold">{% if event.date_to %}{{ event.date | date: '%b %-d' }} to {{ event.date_to | date: '%b %-d, %Y' }}{% else %}{{ event.date | date: '%b %-d, %Y' }}{% endif %}</p>
             <h2 class="card__title lead">
-                <a href="{% if variant == 'past' and event.webinar_id %}{{ site.url }}/webinar-{{ event.webinar_id }}{% else %}{{ event.link }}{% endif %}" target="_blank">{{ event.name }}</a>
+                <a href="{% if variant == 'past' and event.webinar_id %}{{ site.base-url }}/webinar-{{ event.webinar_id }}{% else %}{{ event.link }}{% endif %}" target="_blank">{{ event.name }}</a>
             </h2>
             {% if event.location %}
             <p class="body">{{ event.location }}</p>
@@ -15,7 +15,7 @@
         <div class="card__actions">
             {% if event.display == 'webinar' %}
             {% if event.webinar_id %}
-            <a href="{{ site.url }}/webinar-{{ event.webinar_id }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
+            <a href="{{ site.base-url }}/webinar-{{ event.webinar_id }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
                 <p class="button__inner">View recording</p>
             </a>
             {% else %}

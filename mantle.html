@@ -18,7 +18,7 @@ background_color: dark
                 </div>
             </div>
             <div class="col--lg3 coloffset--md1 col--md5 col--6">
-                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-mantle.svg" alt="Mantle schematic" class="mantle__diagram">
+                <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-mantle.svg" alt="Mantle schematic" class="mantle__diagram">
             </div>
             <div class="col--lg4 col--md5 col--6 mantle__legend">
                 <p class="mantle__label">Mantle and its layers</p>
@@ -38,7 +38,7 @@ background_color: dark
         <div class="row">
             {% for item in site.data.images.mantle %}
             <div class="col--lg3 col--sm6 card">
-                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
+                <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
                 <p class="card__title body--large body--bold">{{ item.title }}</p>
                 <p class="card__body body--small">{{ item.alt }}</p>
             </div>

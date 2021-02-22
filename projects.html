@@ -12,7 +12,7 @@ background_color: white
         {% for project in sorted %}
         <div class="col--lg4 col--sm6">
             <div class="card card--portrait background--shadow">
-                <div class="card__image background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl }}/carousel/clients_color/{{ project.slug }}.png');"></div>
+                <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/carousel/clients_color/{{ project.slug }}.png');"></div>
                 <div class="card__inner">
                     <div class="card__content">
                         <p class="card__label label">{{ project.industry }}</p>

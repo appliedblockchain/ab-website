@@ -11,7 +11,7 @@ background_color: white
     <div class="card card--lg">
       <div class="card__inner">
         <p class="card__title subtitle">{{ item.title }}</p>
-        <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.id | slugify }}.svg" alt="{{ item.id }} icon" class="card__image">
+        <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.id | slugify }}.svg" alt="{{ item.id }} icon" class="card__image">
         <p class="card__body body">{{ item.body }}</p>
       </div>
     </div>
@@ -25,7 +25,7 @@ background_color: white
     body = 'Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
   %}
   <div class="section__content">
-    <a href="{{ site.url }}/join" class="ga-button-join button button--primary button--animate fas fa-user-plus">
+    <a href="{{ site.base-url }}/join" class="ga-button-join button button--primary button--animate fas fa-user-plus">
       <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
     </a>
   </div>
@@ -34,7 +34,7 @@ background_color: white
       {% for item in site.data.about.leadership %}
       <div class="card__outer col--xl5 col--lg6">
         <div class="card card--portrait background--shadow">
-          <div class="card__image background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl}}/team/{{ item.name | slugify }}.jpg');">
+          <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/team/{{ item.name | slugify }}.jpg');">
             <p class="card__body-hidden body">{{ item.bio }}</p>
           </div>
           <div class="card__inner">
@@ -79,7 +79,7 @@ background_color: white
         <div class="card card--sm card__inner background--shadow">
           <p class="card__title body">{{ item.body }}</p>
           {% if item.link %}
-          <a href="{{ site.url }}/{{ item.link }}" class="timeline__button button button--small button--primary button--animate fas fa-{{ item.link_icon }}">
+          <a href="{{ site.base-url }}/{{ item.link }}" class="timeline__button button button--small button--primary button--animate fas fa-{{ item.link_icon }}">
             <p class="button__inner">{% if item.link_title %}{{ item.link_title }}{% else %}{{ item.link }}{% endif %}</p>
           </a>
           {% endif %}
@@ -87,7 +87,7 @@ background_color: white
       </div>
       <span class="timeline__dot"></span>
       <div class="timeline__icon">
-        <img src="{{ site.url }}{{ site.imageurl }}/{% if item.icon_type == 'logo' %}logos/products/{{ item.icon }}.png{% else %}icons/icon-{{ item.icon }}.svg{% endif %}" alt="{{ item.icon }} icon"{% if item.icon_type == 'logo' %} class="timeline__logo"{% endif %}>
+        <img src="{{ site.base-url }}{{ site.imageurl }}/{% if item.icon_type == 'logo' %}logos/products/{{ item.icon }}.png{% else %}icons/icon-{{ item.icon }}.svg{% endif %}" alt="{{ item.icon }} icon"{% if item.icon_type == 'logo' %} class="timeline__logo"{% endif %}>
       </div>
     </div>
     {% endfor %}

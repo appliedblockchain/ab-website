@@ -16,7 +16,7 @@ background_color: white
     </div>
   </div>
   <div class="section__content">
-    <a href="{{ site.url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
+    <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
       <p class="button__inner">Projects</p>
     </a>
   </div>
@@ -32,7 +32,7 @@ background_color: white
         {% for item in site.data.services.solutions %}
         <div class="col--lg4">
           <div class="card card--lg">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/solutions/icon-{{ item.icon }}.svg" alt="" class="card__image">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/solutions/icon-{{ item.icon }}.svg" alt="" class="card__image">
             <h2 class="card__title lead">{{ item.title }}</h2>
             <p class="card__body body">{{ item.body }}</p>
           </div>
@@ -57,7 +57,7 @@ background_color: white
             <div class="background--shadow">
               <div class="card__inner">
                 <div class="card__title">
-                  <img src="{{ site.url }}{{ site.imageurl }}/icons/services/{{ item.icon }}.png" alt="{{ item.title }} icon" class="card__image">
+                  <img src="{{ site.base-url }}{{ site.imageurl }}/icons/services/{{ item.icon }}.png" alt="{{ item.title }} icon" class="card__image">
                   <h2 class="lead">{{ item.title }}</h2>
                 </div>
                 <p class="card__body">{{ item.body }}</p>
@@ -100,7 +100,7 @@ background_color: white
             </div>
           </div>
           <div class="card__image hide--mobile">
-            <img src="{{ site.url }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/{{ item.icon }}.svg" alt="Icon" class="">
           </div>
         </div>
       </div>

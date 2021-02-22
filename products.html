@@ -10,13 +10,13 @@ background_color: white
   <div class="section__content">
     <div class="card__wrapper">
       {% for item in site.data.products %}
-      <div class="card card--lg background--shadow background--cover" style="background-image: url('{{ site.url }}{{ site.imageurl}}/background/products/{{ item.background }}');">
+      <div class="card card--lg background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/products/{{ item.background }}');">
         <div class="card__inner body--white card--{{ item.id }}">
           <div class="row">
             <div class="col--lg8">
               <div class="card__content body--left">
                 <p class="card__label label">{{ item.category }}</p>
-                <img src="{{ site.url }}{{ site.imageurl }}/logos/products/{{ item.id }}.png" alt="Logo for {{ item.title | strip_html }}" class="card__image">
+                <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.id }}.png" alt="Logo for {{ item.title | strip_html }}" class="card__image">
                 <p class="card__body body--large">{{ item.description }}</p>
                 <p class="card__body badge badge--{% if item.status == 'Live' %}success{% else %}warning{% endif %} label">{{ item.status }}</p>
               </div>
@@ -25,7 +25,7 @@ background_color: white
             <div class="col--lg4">
               <div class="card__actions">
                 {% for link in item.links %}
-                <a href="{% if item.type == 'internal' %}{{ site.url }}/{% endif %}{{ link.url }}" target="_blank" rel="noopener" class="button button--white button--animate {{ link.icon }}">
+                <a href="{% if item.type == 'internal' %}{{ site.base-url }}/{% endif %}{{ link.url }}" target="_blank" rel="noopener" class="button button--white button--animate {{ link.icon }}">
                   <p class="button__inner">{{ link.name }}</p>
                 </a>
                 {% endfor %}
@@ -43,7 +43,7 @@ background_color: white
 <!-- {% if item.technos %}
 <div class="card__icons">
   {% for techno in item.technos %}
-  <img src="{{ site.url }}{{ site.imageurl }}/carousel/technologies/{{ techno.name | slugify  }}.png" alt="Logo {{ techno.name }}" class="card__icon">
+  <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/technologies/{{ techno.name | slugify  }}.png" alt="Logo {{ techno.name }}" class="card__icon">
   {% endfor %}
 </div>
 {% endif %} -->

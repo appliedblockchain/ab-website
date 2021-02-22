@@ -7,9 +7,9 @@
   <div class="carousel__item">
     {% if type != 'text' %}
     {% if type == 'testimonials' %}
-    <div class="carousel__image" style="background-image: url('{{ site.url }}{{ site.imageurl }}/carousel/{{ variant }}{% if colour %}_{{ colour }}{% endif %}/{{ item.name | slugify }}.png');"></div>
+    <div class="carousel__image" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/carousel/{{ variant }}{% if colour %}_{{ colour }}{% endif %}/{{ item.name | slugify }}.png');"></div>
     {% else %}
-    <img src="{{ site.url }}{{ site.imageurl }}/carousel/{{ variant }}{% if colour %}_{{ colour }}{% endif %}/{{ item.name | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
+    <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/{{ variant }}{% if colour %}_{{ colour }}{% endif %}/{{ item.name | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
     {% endif %}
     {% endif %}
     {% if type == 'text' %}

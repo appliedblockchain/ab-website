@@ -15,7 +15,7 @@ background_color: white
         <div class="row">
             {% for item in site.data.images.node-hosting %}
             <div class="col--4 card">
-                <img src="{{ site.url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
+                <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
                 <p class="card__title body--large body--bold">{{ item.title }}</p>
             </div>
             {% endfor %}
@@ -55,7 +55,7 @@ background_color: white
         subtitle = 'Give us an shout and we will get back to you shortly'
     %}
     <div class="section__content">
-        <a href="{{ site.url }}/contact" class="button button--white button--animate fas fa-envelope">
+        <a href="{{ site.base-url }}/contact" class="button button--white button--animate fas fa-envelope">
             <p class="button__inner">Contact us</p>
         </a>
     </div>

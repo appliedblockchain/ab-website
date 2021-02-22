@@ -5,7 +5,7 @@ layout: compress
 {% include containers/site/header.html %}
 
 <div class="post">
-    <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.url }}{{ site.imageurl }}/{% if page.image %}posts/{{ page.image }}{% else %}default{% endif %}.jpg);">
+    <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/{% if page.image %}posts/{{ page.image }}{% else %}default{% endif %}.jpg);">
         {% capture date %}{{ page.date | date: "%b %-d, %Y" }}{% endcapture %}
         {% include containers/sections/header.html
             comment = page.category

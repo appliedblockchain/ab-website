@@ -8,7 +8,7 @@ headline: Following recent investment from Shell, Applied Blockchain collaborate
 ---
 
 <p>
-    <a href="{{ site.url }}/projects/ewf" class="button button--primary button--animate fas fa-eye">
+    <a href="{{ site.base-url }}/projects/ewf" class="button button--primary button--animate fas fa-eye">
         <span class="button__inner">See the case study</span>
     </a>
 </p>

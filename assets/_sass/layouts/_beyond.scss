@@ -61,7 +61,7 @@
   }
 
   .layer--primary,
-  .layer--primary-light { 
+  .layer--primary-dark { 
     color: $white;
     padding-top: $integer-xxl;
 
@@ -71,7 +71,7 @@
   }
 
   .layer--primary { background-color: $beyond; }
-  .layer--primary-light { background-color: $beyond-light; }
+  .layer--primary-dark { background-color: $beyond-dark; }
 }
 
 // —————————————————————————————————————————————————————————————————

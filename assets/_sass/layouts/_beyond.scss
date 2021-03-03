@@ -55,6 +55,23 @@
     font-family: $font-beyond;
     font-weight: bold;
   }
+
+  .body--black {
+    color: $black;
+  }
+
+  .layer--primary,
+  .layer--primary-light { 
+    color: $white;
+    padding-top: $integer-xxl;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .layer--primary { background-color: $beyond; }
+  .layer--primary-light { background-color: $beyond-light; }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -113,6 +130,10 @@
     
     &--grey {
       background-color: $beyond-light-grey;
+    }
+
+    &--full {
+      overflow: visible;
     }
 
     &:last-child {
@@ -175,11 +196,22 @@
   .button--primary {
     transition: box-shadow $transition;
     background-color: $beyond;
-    box-shadow: 0 0 $integer $beyond;
     
     &:hover {
-      box-shadow: none;
+      box-shadow: 0 0 $integer $beyond;
     }    
+  }
+  
+  .button--white {
+    transition: box-shadow $transition;
+    
+    &:hover {
+      box-shadow: 0 0 $integer $white;
+    }
+    
+    .button__inner {
+      color: $beyond;
+    }
   }
 }
 
@@ -189,7 +221,7 @@
 
 #beyond {
 
-  .card {
+  .card--alt {
     background-color: $white;
     padding: $integer-md*1.5;
     border-radius: $integer-md;

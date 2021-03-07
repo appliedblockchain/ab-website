@@ -23,7 +23,7 @@ subtitle: Confidential Trading
 <div class="section">
   <div class="section__header">
     <h1 class="section__title title">{{ page.subtitle }}</h1> <!-- edit at the top of the page, coded this way for the SEO page description -->
-    <p class="section__subtitle body--large">Beyond is a confidential trading platform where orders, volume and price data are not revealed even to the venue host.</p>
+    <p class="section__subtitle lead body--black">Beyond is a confidential trading platform where orders, volume and price data are not revealed, even to the venue host</p>
     <!--<p class="section__subtitle body--large">Venues act like a dark pools, useful for secure and confidential liquidity. Any parties looking to execute trades in an illiquid market may wish to post the trade anonymously, as in a lit exchange, but may wish to hide the trade details, volume and price from the open market, in order not to adversely influence the market and to gain the optimal price. Beyond provides an automated solution for matching such trades without revealing the details to the venue host or to an intermediary broker.</p>-->
   </div>
   <div class="section__content">
@@ -38,7 +38,7 @@ subtitle: Confidential Trading
       <!-- edit in _data/beyonf.yml -->
       {% for item in site.data.beyond %}
       <div class="col--xl3 col--md6">
-        <div class="card">
+        <div class="card card--alt">
           <h2 class="card__title lead">{{ item.title }}</h2>
           <p class="card__subtitle">{{ item.subtitle }}</p>
         </div>
@@ -48,20 +48,59 @@ subtitle: Confidential Trading
   </div>
 </div>
 
-<div class="section section--grey">
+<section class="section section--full">
   <img src="{{ site.base-url }}{{ site.imageurl }}/graphics/beyond-divider-grey.svg" alt="Section divider" class="section__divider section__divider--grey">
-  <div class="section__header">
-    <h2 class="section__title title">We use Conclave</h2>
-    <p class="section__subtitle body--large">Beyond Conclave Edition runs on the R3 Conclave platform. Conclave takes data sharing to a whole new level. It enables multiple parties to contribute data for analysis without revealing the actual data to anyone.</p>
-    <div class="section__subtitle">
-      <a href="https://www.r3.com/platform-conclave/" target="_blank" class="button button--primary button--medium">
-        <p class="button__inner"><span class="hide--mobile">Learn more about </span>Conclave</p>
-      </a>
+  {% include containers/sections/header.html
+    title = 'Beyond provides technical data privacy and integrity'
+    body = 'Our confidential trading container provides guarantees of the trading logic executed, and of privacy levels maintained. Our team has experience building production commodity trading platforms for the largest global organisations.'
+  %}
+  <div class="section__content section__content--2">
+    <div class="card card--lg layer--primary">
+      <div class="card__inner">
+        <div class="card__content">
+          <img src="/assets/images/logos/products/beyond-native.png" alt="Logo for Beyond native edition" class="card__image">
+          <p class="card__title subtitle">Built on Intel SGX</p>
+          <p class="card__body body">Built using Intel's Secure Guard Extensions with manufacturer attestation.</p>
+        </div>
+        <a href="{% link contact.html %}" target="_blank" class="card__actions button button--white">
+          <p class="button__inner"><span class="hide--mobile">Contact us</p>
+        </a>
+      </div>
+    </div>
+    <div class="card card--lg layer--primary-dark">
+      <div class="card__inner">
+        <div class="card__content">
+          <img src="/assets/images/logos/products/beyond-conclave.png" alt="Logo for Beyond Conclave edition" class="card__image">
+          <p class="card__title subtitle">We use Conclave</p>
+          <p class="card__body body">Beyond Conclave Edition runs on the R3 Conclave platform. Conclave takes data sharing to a whole new level. It enables multiple parties to contribute data for analysis without revealing the actual data to anyone.</p>
+        </div>
+        <a href="https://www.r3.com/platform-conclave/" target="_blank" class="card__actions button button--white">
+          <p class="button__inner"><span class="hide--mobile">Learn more about </span>Conclave</p>
+        </a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="section section--white">
+<section class="section section--white">
+  {% include containers/sections/header.html
+    title = 'Industry leading partners'
+    body = 'As an active member of the Confidential Computing Consoritium we work with the industry technology leaders'
+  %}
+  <div class="section__content">
+    <div class="row">
+      <div class="coloffset--xl2 col--xl8 coloffset--md1 col--md10">
+        <div class="card block__title">
+          {% include elements/carousel.html
+              variant = 'partners'
+            %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section section--grey">
   <div class="section__content">
     <div class="carousel--testimonials">
       <div class="carousel__item">

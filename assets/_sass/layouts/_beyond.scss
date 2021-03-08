@@ -72,6 +72,12 @@
 
   .layer--primary { background-color: $beyond; }
   .layer--primary-dark { background-color: $beyond-dark; }
+
+  button, 
+  input {
+    font-family: $font-beyond;
+    font-weight: initial;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

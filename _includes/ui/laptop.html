@@ -1,0 +1,42 @@
+{% assign view = include.view %}
+
+<div class="mockup mockup--laptop">
+  <div class="mockup__border">
+    <div class="mockup__wrapper">
+      <div class="mockup-nav layer--black">
+        <div class="mockup-nav__inner">
+          <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/beyond-default-white.png" alt="Beyond logo" class="mockup-nav__logo">
+        </div>
+      </div>
+      <div class="mockup__container">
+        <table class="mockup-table">
+          {% for table in site.data.beyond-data %}
+          <thead class="mockup-table__head">
+            <tr>
+              <th colspan="7" class="mockup-table__title mockup__title">{{ table.title }}</th>
+            </tr>
+            <tr>
+              {% for cell in table.thead %}
+              <th class="mockup__label">{{ cell.th }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody class="mockup-table__body">
+            {% for row in table.tbody %}
+            <tr>
+              {% for cell in row.tr %}
+              <td class="mockup-table__cell mockup__body{% if cell.td contains "" %}{% else %} mockup__body--right{% endif %}">{% if cell.td contains 'GMT' %}{{ 'now' | date: "%d/%m/%y" }}, {{ cell.td | remove: 'GMT' }}{% else %}{{ cell.td }}{% endif %}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="mockup__bottom">
+    <div class="mockup__keyboard"></div>
+    <div class="mockup__handle"></div>
+  </div>
+</div>

@@ -24,13 +24,19 @@ $highlight-alt:#FAD961;
 $primary-darken: darken($primary, 15%);
 $primary-lighten: lighten($primary, 15%);
 
+$deep-black: #000000;
 $black: #000a1e;
+$darker-grey: #3F4F69;
 $dark-grey: #8c8c96;
 $medium-grey: #d7d7dc;
 $light-grey: #f8f8f8;
+$lighter-grey: #F7F8FD;
 $white: #ffffff;
 
-$red:#ff224a;
+$error:#ff224a;
+$success:#00ab6c;
+$warning:#FAD961;
+$info:#2E81F4;
 
 $facebook:#3b5998;
 $github:#4078c0;

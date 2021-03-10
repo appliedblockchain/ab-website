@@ -25,23 +25,31 @@
 
 	<!-- META -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="description" content="{% if page.layout =='post' %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-  <!-- Open Graph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}"/>
+	<!-- Open graphs protocal tags (creates rich content for social sharing) -->
   <meta property="og:type" content="website"/>
-  <meta property="og:image" content="{{ site.base-url }}{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% elsif page.layout == 'beyond' %}social-beyond.png{% else %}social.jpg{% endif %}"/>
-  <meta property="og:url" content="{{ site.base-url }}{{ page.url }}"/>
-
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}"/>
+	<meta property="og:description" content="{% if page.layout =='post' %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}"/>
+  <meta property="og:image" content="{{ site.url }}{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% elsif page.layout == 'beyond' %}social-beyond.png{% else %}social.jpg{% endif %}"/>
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+	<!-- Twitter cards tags (creates rich content for social sharing) -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@SILENTDATA1">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.layout =='post' %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}">
+	<meta name="twitter:image" content="{{ site.url }}{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% elsif page.layout == 'beyond' %}social-beyond.png{% else %}social.jpg{% endif %}">
+	<meta name="twitter:site" content="{{ site.url }}{{ page.url }}" />
+	
 	<!-- FONTS (preload here to avoid FOUT) -->
-	<link rel="preload" href="/assets/fonts/chivo/chivo-black.ttf" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/assets/fonts/chivo/chivo-blackitalic.ttf" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/assets/fonts/chivo/chivo-bold.ttf" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/assets/fonts/chivo/chivo-bolditalic.ttf" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/assets/fonts/chivo/chivo-italic.ttf" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/assets/fonts/chivo/chivo-light.ttf" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/assets/fonts/chivo/chivo-lightitalic.ttf" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/assets/fonts/chivo/chivo-regular.ttf" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-black.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-blackitalic.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-bolditalic.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-italic.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-light.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-lightitalic.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/assets/fonts/chivo/chivo-regular.woff2" as="font" type="font/woff2" crossorigin>
 
 	<!-- FAVICONS -->
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.base-url }}/apple-touch-icon.png">

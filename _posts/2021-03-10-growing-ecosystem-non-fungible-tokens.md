@@ -2,7 +2,7 @@
 layout: post
 title: 'The Growing Ecosystem of Non-Fungible Tokens (NFTs)'
 image: ecosystem
-category: press-release
+category: blog
 headline: A recent report from Forbes (2021) shows that Non-Fungible Tokens (NFT) transaction volume more than quadrupled in 2020, from $62 million to over $250 million. Brands like NBA, Nike, and Formula 1 have started to issue their own NFTs, catering to a tech-savvy audience.
 ---
 

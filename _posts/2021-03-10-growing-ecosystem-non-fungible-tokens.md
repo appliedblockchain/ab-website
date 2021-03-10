@@ -36,7 +36,7 @@ An NFT represents something unique. Since these tokens are not fungible, they ar
 
 **Verifiability**: Being anchored in a blockchain, items can be traced back to their original creator, allowing pieces to be authenticated without the need for third-party verification.
 
-An interesting story is that [MC DOOM](https://decrypt.co/53019/mf-doom-enigmatic-rapper-leaves-behind-crypto-art-legacy). An enigmatic wrapper who created augmented reality masks, and minted a set NFT's to represent their ownership. Unfortunately, and coincidentally, he died on Halloween, the same that the NFT sale concluded. The collectibles are likely one of his last creative projects. The private keys are now in the possession of his family, and they will continue to automatically receive royalties from every NFT sale in perpetuity.
+An interesting story is that [MC DOOM](https://decrypt.co/53019/mf-doom-enigmatic-rapper-leaves-behind-crypto-art-legacy). An enigmatic wrapper who created augmented reality masks, and minted NFT's to represent their ownership. Unfortunately, and coincidentally, he died on Halloween, the same day that the NFT sale concluded. The collectibles are likely one of his last creative projects. The private keys are now in the possession of his family, and they will continue to automatically receive royalties from every NFT sale in perpetuity.
 
 As NFTs are located in the universe of the blockchain, it is possible to demonstrate and verify the intellectual property of the object in question: regardless of the transfer of ownership of the latter, its attribution will always remain in the hands of the creator. The certainty provided by the blockchain also provides proof of authenticity.
 

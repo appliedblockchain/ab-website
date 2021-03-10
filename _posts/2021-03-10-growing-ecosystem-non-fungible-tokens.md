@@ -59,7 +59,7 @@ NFT’s can be used to represent physical components and products flowing throug
 
 There are three main levels where NFTs can significantly affect the supply chain:
 
-- **Organisations**: NFTs can be used to identify organisations and their credentials (e.g. anti-slevary, ISO certification)
+- **Organisations**: NFTs can be used to identify organisations and their credentials (e.g. anti-slavery, ISO certification)
 - **Paperwork**: The traditional supply chain system records all the property titles and registration, contracts, purchase orders, invoices and payments  through cumbersome paperwork. Blockchain can digitize and connect the entire process, and some documents could be securitised (e.g. invoices) using NFT’s. 
 - **Products and components** in a supply chain should be represented as an NFT. NFTs can be used to track materials as they move through the supply chain, and they can represent the provenance, the quality assurance, and sustainability properties of products.
 

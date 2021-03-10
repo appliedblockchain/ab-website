@@ -24,13 +24,13 @@ An NFT represents something unique. Since these tokens are not fungible, they ar
 
 # The main characteristics of NFT are the following:
 
-Uniqueness: NFTs contain metadata where information of various kinds can be entered. It is a highly important feature, particularly when the resource they represent is digital. Since digital files can be copied endlessly and perfectly, thanks to NFTs, the uniqueness and originality of the source document can be demonstrated.
+**Uniqueness**: NFTs contain metadata where information of various kinds can be entered. It is a highly important feature, particularly when the resource they represent is digital. Since digital files can be copied endlessly and perfectly, thanks to NFTs, the uniqueness and originality of the source document can be demonstrated.
 
 **Rarity**: the value of NFTs comes from their scarcity. The developers of these Tokens often limit their distribution to increase rarity.
 
 **Authenticity**: Blockchain technology allows you to certify the authenticity of the Token.
 
-**Indivisibility**: It is not possible to divide a token into divisible parts. NFTs cannot be broken down into smaller denominations - they can only be bought, sold and stored in their entirety.
+**Indivisibility**: NFT's can be bought, sold and stored in their entirety. It is possible, through other smart contracts to fractionalise ownership, although this is more complex.
 
 **Ownership**: it is possible to uniquely identify the owner of a specific Token.
 

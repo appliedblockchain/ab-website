@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'The Growing Ecosystem of Non-Fungible Tokens (NFTs)' 
+title: 'How NFTs are fueling a digital art boom'
 image: ecosystem
 category: press-release
 headline: A recent report from Forbes (2021) shows that Non-Fungible Tokens (NFT) transaction volume more than quadrupled in 2020, from $62 million to over $250 million. Brands like NBA, Nike, and Formula 1 have started to issue their own NFTs, catering to a tech-savvy audience.
@@ -8,7 +8,7 @@ headline: A recent report from Forbes (2021) shows that Non-Fungible Tokens (NFT
 
 NBA Top Shots, the first blockchain licensing agreement entered by the NBA has already generated almost over $230m this year alone.
 
-Many other companies are exploiting the opportunity offered by NFTs. For instance, on Friday, 5th of March 2021, Jack Dorsey, CEO of Twitter, launched the sale of the first Tweet posted on the social platform as a NFT (BBC, 2021). Meanwhile, the world of NFTs has already caught the attention of artists such as Beeple, whose works were recently sold by the prestigious auction house Christie's. 
+Many other companies are exploiting the opportunity offered by NFTs. For instance, on Friday, 5th of March 2021, Jack Dorsey, CEO of Twitter, launched the sale of the first Tweet posted on the social platform as a NFT (BBC, 2021). Meanwhile, the world of NFTs has already caught the attention of artists such as Beeple, whose works were recently sold by the prestigious auction house Christie's.
 
 Prior to the blockchain technology revolution, the cost of replicating something in the digital world was almost zero. Think of the copy and paste mechanism that damages the rights of economic use of photos or other works of art on the internet. Since the introduction of blockchain technology, this can be solved. These goods, even of an artistic nature, become digitally rare because they are not fungible. Thus, it is possible to distinguish a photo or a copied work.
 
@@ -30,7 +30,7 @@ Uniqueness: NFTs contain metadata where information of various kinds can be ente
 
 **Authenticity**: Blockchain technology allows you to certify the authenticity of the Token.
 
-**Indivisibility**: It is not possible to divide a token into divisible parts. NFTs cannot be broken down into smaller denominations - they can only be bought, sold and stored in their entirety. 
+**Indivisibility**: It is not possible to divide a token into divisible parts. NFTs cannot be broken down into smaller denominations - they can only be bought, sold and stored in their entirety.
 
 **Ownership**: it is possible to uniquely identify the owner of a specific Token.
 
@@ -60,12 +60,12 @@ NFT’s can be used to represent physical components and products flowing throug
 There are three main levels where NFTs can significantly affect the supply chain:
 
 - **Organisations**: NFTs can be used to identify organisations and their credentials (e.g. anti-slavery, ISO certification)
-- **Paperwork**: The traditional supply chain system records all the property titles and registration, contracts, purchase orders, invoices and payments  through cumbersome paperwork. Blockchain can digitize and connect the entire process, and some documents could be securitised (e.g. invoices) using NFT’s. 
+- **Paperwork**: The traditional supply chain system records all the property titles and registration, contracts, purchase orders, invoices and payments  through cumbersome paperwork. Blockchain can digitize and connect the entire process, and some documents could be securitised (e.g. invoices) using NFT’s.
 - **Products and components** in a supply chain should be represented as an NFT. NFTs can be used to track materials as they move through the supply chain, and they can represent the provenance, the quality assurance, and sustainability properties of products.
 
-We will continue to see further improvements in the infrastructure behind NFTs. Applied Blockchain positions itself as one of the technologies developed above the blockchain ecosystem. At Applied Blockchain, we began studying the NFT market intensely, helping clients to understand NFTs for particular markets, as well as giving them an impartial view of the technology platforms and suitability for a particular market and use case. 
+We will continue to see further improvements in the infrastructure behind NFTs. Applied Blockchain positions itself as one of the technologies developed above the blockchain ecosystem. At Applied Blockchain, we began studying the NFT market intensely, helping clients to understand NFTs for particular markets, as well as giving them an impartial view of the technology platforms and suitability for a particular market and use case.
 
-The possibility of certifying both physical and digital objects allows speculation on intensive use to come with potentially any area that could be affected. Major players are rapidly moving in this direction, seizing the opportunity to capitalize on a broader shift towards virtual reality. 
+The possibility of certifying both physical and digital objects allows speculation on intensive use to come with potentially any area that could be affected. Major players are rapidly moving in this direction, seizing the opportunity to capitalize on a broader shift towards virtual reality.
 
 Applied Blockchain can help to build NFT based solutions and support, scaling and growing an NFT marketplace, and building an infrastructure of dedicated services and products guaranteed by NFT.
 
@@ -76,6 +76,10 @@ Developments in public blockchains involving cryptocurrencies, including Decentr
 ---
 
 **References**
+
+[CNN: How NFTs are fueling a digital art boom](https://edition.cnn.com/style/article/nft-digital-art-boom/index.html)
+
+[Guardian: Flying cats and a burning Banksy: why are digital art prices suddenly rocketing?](https://www.theguardian.com/artanddesign/2021/mar/09/nfts-flying-cats-burning-banksy-digital-art-crypto-art-bitcoin-rocketing)
 
 [Forbes: BNP Paribas Subsidiary Helps Identify $250 Million Leap In NFT Sales](https://www.forbes.com/sites/ninabambysheva/2021/02/15/french-banking-giant-bnp-paribas-details-explosion-of-new-crypto-sector-with-250-million-sales-volume/)
 

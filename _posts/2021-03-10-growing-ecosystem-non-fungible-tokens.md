@@ -30,11 +30,11 @@ Uniqueness: NFTs contain metadata where information of various kinds can be ente
 
 **Authenticity**: Blockchain technology allows you to certify the authenticity of the Token.
 
-**Indivisible**: It is not possible to divide a token into divisible parts. NFTs cannot be broken down into smaller denominations - they can only be bought, sold and stored in their entirety. 
+**Indivisibility**: It is not possible to divide a token into divisible parts. NFTs cannot be broken down into smaller denominations - they can only be bought, sold and stored in their entirety. 
 
 **Ownership**: it is possible to uniquely identify the owner of a specific Token.
 
-**Verifiable**: Being connected to a blockchain, the storage of historical ownership, items can be traced back to the original creator, allowing pieces to be authenticated without the need for third-party verification.
+**Verifiability**: Being connected to a blockchain, the storage of historical ownership, items can be traced back to the original creator, allowing pieces to be authenticated without the need for third-party verification.
 
 As NFTs are located in the universe of the blockchain, it is interesting to underline that their use allows to demonstrate and certify the intellectual property of the object in question: regardless of the transfer of ownership of the latter, its attribution will always remain in the hands of the creator. The certainty provided by the blockchain also makes them proof of authenticity.
 

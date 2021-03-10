@@ -26,25 +26,28 @@ An NFT represents something unique. Since these tokens are not fungible, they ar
 
 **Uniqueness**: NFTs contain metadata where information of various kinds can be entered. It is a highly important feature, particularly when the resource they represent is digital. Since digital files can be copied endlessly and perfectly, thanks to NFTs, the uniqueness and originality of the source document can be demonstrated.
 
-**Rarity**: the value of NFTs comes from their scarcity. The developers of these Tokens often limit their distribution to increase rarity.
+**Rarity**: The value of NFTs comes from their scarcity. The developers of these Tokens often limit their distribution to increase rarity.
 
 **Authenticity**: Blockchain technology allows you to certify the authenticity of the Token.
 
 **Indivisibility**: NFT's can be bought, sold and stored in their entirety. It is possible, through other smart contracts to fractionalise ownership, although this is more complex.
 
-**Ownership**: it is possible to uniquely identify the owner of a specific Token.
+**Ownership**: It is possible for the owner of a specific Token to identify themselves.
 
-**Verifiability**: Being connected to a blockchain, the storage of historical ownership, items can be traced back to the original creator, allowing pieces to be authenticated without the need for third-party verification.
+**Verifiability**: Being anchored in a blockchain, items can be traced back to their original creator, allowing pieces to be authenticated without the need for third-party verification.
 
-As NFTs are located in the universe of the blockchain, it is interesting to underline that their use allows to demonstrate and certify the intellectual property of the object in question: regardless of the transfer of ownership of the latter, its attribution will always remain in the hands of the creator. The certainty provided by the blockchain also makes them proof of authenticity.
+An interesting story is that [MC DOOM](https://decrypt.co/53019/mf-doom-enigmatic-rapper-leaves-behind-crypto-art-legacy). An enigmatic wrapper who created augmented reality masks, and minted a set NFT's to represent their ownership. Unfortunately, and coincidentally, he died on Halloween, the same that the NFT sale concluded. The collectibles are likely one of his last creative projects. The private keys are now in the possession of his family, and they will continue to automatically receive royalties from every NFT sale in perpetuity.
+
+As NFTs are located in the universe of the blockchain, it is possible to demonstrate and verify the intellectual property of the object in question: regardless of the transfer of ownership of the latter, its attribution will always remain in the hands of the creator. The certainty provided by the blockchain also provides proof of authenticity.
 
 # NFT use cases
 
-Having reviewed these characteristics, it can be stated that the potential applications of this technology are numerous: modernizing the collecting market, eliminating fraud in the entertainment industry, allowing someone to prove ownership or other rights in real or digital assets are just other examples.
+Having reviewed these characteristics, it can be stated that the potential applications of this technology are numerous: modernizing the collectables market, eliminating fraud in the entertainment industry, allowing someone to prove ownership or other rights in real or digital assets are just other examples.
 
 ## Art
 
 The space in which art and consequently the blockchain applied to it must confront each other are property, corporeality, manipulation, and value.
+
 The ability to combine the identity of the work with the creative path of the same and to bring this history to the blockchain, allows each creative action and passage of the work to generate an NFT, which connected and chained to the previous one can maintain information and generate a story.
 
 The safety of the work is not entrusted to third parties, but to the historical path of the individual actions, the complete representation of the work is the sum of all the actions recorded on the non-modifiable NFT tokens. The possibility offered by a structure that "tells" the entire story of the work with non-manipulable NFTs, formed by a chain in which it is not possible to alter its sequence, gives the artist the entire path to create it and the unique identity of the work.
@@ -53,7 +56,7 @@ The safety of the work is not entrusted to third parties, but to the historical 
 
 Works of art, real estate, stamps, and rare collectibles are just some examples of real objects that are digitized with NFTs. In practice, these NFTs can represent fractions of physical assets that can be stored and exchanged as tokens on a blockchain.
 
-## Supply Chain
+## Supply Chain Provenance
 
 NFT’s can be used to represent physical components and products flowing through a supply chain. This enables provenance checks to be made on a per-item basis. NFTs can be particularly useful also for keeping track of physical assets, such as luxury items, rare artifacts, and products in a supply chain. Two of the main benefits of tokenizing these assets are quality control and the reduction of counterfeiting, as anyone can verify the origin of goods by querying the blockchain.
 

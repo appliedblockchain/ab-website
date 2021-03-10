@@ -3,10 +3,10 @@ layout: post
 title: 'The Growing Ecosystem of Non-Fungible Tokens (NFTs)' 
 image: ecosystem
 category: press-release
-headline: A recent report from Forbes (2021) shows that Non-Fungible Tokens (NFT) transaction volume more than quadrupled in 2020, from $ 62 million to over $ 250 million. Brands like NBA, Nike, and Formula 1 have started to issue their own NFTs, catering to a tech-savvy audience.
+headline: A recent report from Forbes (2021) shows that Non-Fungible Tokens (NFT) transaction volume more than quadrupled in 2020, from $62 million to over $250 million. Brands like NBA, Nike, and Formula 1 have started to issue their own NFTs, catering to a tech-savvy audience.
 ---
 
-The NBA recently launched NBA Top Shot, the first blockchain licensing agreement entered by the NBA which has already generated almost 50 million dollars in revenue in a very short time.
+NBA Top Shots, the first blockchain licensing agreement entered by the NBA has already generated almost over $230m this year alone.
 
 Many other companies are exploiting the opportunity offered by NFTs. For instance, on Friday, 5th of March 2021, Jack Dorsey, CEO of Twitter, launched the sale of the first Tweet posted on the social platform as a NFT (BBC, 2021). Meanwhile, the world of NFTs has already caught the attention of artists such as Beeple, whose works were recently sold by the prestigious auction house Christie's. 
 

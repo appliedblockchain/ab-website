@@ -57,7 +57,7 @@ The artwork metadata stored in the NFT must uniquely identify the physical or di
 
 Music, and rare collectibles are just some examples of real objects who's ownership records are digitized with NFTs. In practice, these NFTs could represent fractions of physical assets, including real estate, cars, wines that can be stored and exchanged as tokens on a blockchain.
 
-## Supply Chain Provenance
+## Supply Chain
 
 NFT’s can also be used to represent physical components and products flowing through a supply chain. This enables provenance checks to be made on a per-item basis. Two of the main benefits of tokenizing these assets are quality control and the reduction of counterfeiting, although these do depend on the ability to scan and uniquely identify the physical item.
 
@@ -67,7 +67,7 @@ There are three main levels where NFTs can significantly affect the supply chain
 - **Paperwork**: The traditional supply chain system records all the property titles and registration, contracts, purchase orders, invoices and payments  through cumbersome paperwork. Blockchain can digitize and connect the entire process, and some documents could be securitised (e.g. invoices) using NFT’s.
 - **Products and components** in a supply chain should be represented as an NFT. NFTs can be used to track materials as they move through the supply chain, and they can represent the provenance, the quality assurance, and sustainability properties of products.
 
-The possibility of certifying and digitising ownership records of both physical and digital items in way that they can be openly traded in multiple venues introduces speculation and increased liquidity to previously illiquid markets. Major players are rapidly moving in this direction, seizing the opportunity to capitalize on a broader shift towards tokenisation and digital assets.
+The possibility of certifying and digitising ownership records of both physical and digital items in a way that they can be openly traded in multiple venues introduces speculation and increased liquidity to previously illiquid markets. Major players are rapidly moving in this direction, seizing the opportunity to capitalize on a broader shift towards tokenisation and digital assets.
 
 Developments in public blockchains, including decentralised exchanges (DEX) and decentralized finance (DeFi) are creating tremendously efficient alternative financial services infrastructure. NFTs are starting to do the same for collectibles and unique items.
 

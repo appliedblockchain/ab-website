@@ -3,12 +3,12 @@ layout: post
 title: 'The Growing Ecosystem of Non-Fungible Tokens (NFTs)'
 image: ecosystem
 category: blog
-headline: This month prestigious auction house Christies sold their first digital art using blockchain NFT (non-fungible tokens), and the NBA saw over $230 in new revenue from its NFT based Top Shots digital collectibles
+headline: This month prestigious auction house Christies sold their first digital art using blockchain NFT (non-fungible tokens) for $69 million, and the NBA saw over $230 in new revenue from its NFT based Top Shots digital collectibles
 ---
 
-An enigmatic wrapper named MC DOOM created a set of augmented reality masks, and minted NFT's to represent their ownership. Unfortunately, and coincidentally, he died on Halloween, the same day that the NFT sale concluded. The collectibles are likely one of his last creative projects. His private keys are now in the possession of his family, and smart contracts will continue to automatically transfer royalties to them from every NFT sale in perpetuity.
-
 Many companies are now exploring the opportunity offered by NFTs. Some are more strategic, such as NBA Top Shots, while others are more opportunistic in nature, for instance, on Friday, 5th of March 2021, Jack Dorsey, CEO of Twitter, launched the sale of the first Tweet posted on the social platform as an NFT (BBC, 2021).
+
+An enigmatic wrapper named MC DOOM created a set of augmented reality masks, and minted NFT's to represent their ownership. Unfortunately, and coincidentally, he died on Halloween, the same day that the NFT sale concluded. The collectibles are likely one of his last creative projects. His private keys are now in the possession of his family, and smart contracts will continue to automatically transfer royalties to them from every NFT sale in perpetuity.
 
 Prior to blockchain, the cost of replicating an item in the digital world was almost zero. Think of the copy and paste mechanism that damages the rights of economic use of photos or other works of art on the internet. Blockchain doesn't prevent this. However, blockchain NFT's allow ownership of the items to be recorded, shared, published, and very efficiently traded across multiple venues, increasing liquidity. It also allows royalties to continue to be paid out to the original creators of the items regardless of where or how the items are sold.
 
@@ -40,7 +40,7 @@ At Applied Blockchain we've explored each of these platforms and options in dept
 
 As NFTs are located on a blockchain, it is possible to demonstrate and verify the intellectual property rights of the object in question: regardless of the transfer of ownership of the latter, its attribution will always remain in the hands of the creator. The certainty provided by the blockchain also provides proof of authenticity.
 
-Particular attention should be paid to custody of the NFT, which, just like cryptocurrency, may be held by a third party custodian or exchange, or in a wallet held by the owner. 
+Particular attention should be paid to custody of the NFT, which, just like cryptocurrency, may be held by a third party custodian or exchange, or in a wallet held by the owner.
 
 # NFT use cases
 
@@ -79,6 +79,8 @@ Whether you attach value to the speculative activity or not, you cannot ignore t
 ---
 
 **References**
+
+[Bloomberg: An NFT Sold for $69 Million, Blasting Crypto Art Records](https://www.bloomberg.com/news/articles/2021-03-11/beeple-everydays-nft-sells-at-art-auction-for-60-million-paid-in-ether)
 
 [CNN: How NFTs are fueling a digital art boom](https://edition.cnn.com/style/article/nft-digital-art-boom/index.html)
 

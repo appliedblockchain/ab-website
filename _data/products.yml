@@ -1,5 +1,6 @@
 - title: "SILENTDATA"
   id: "silentdata" # DO NOT CHANGE !!
+  logo: "silentdata"
   background: "silentdata.jpg"
   category: "Confidential Open Banking"
   status: "Live"
@@ -14,6 +15,7 @@
 
 - title: "Beyond"
   id: "beyond" # DO NOT CHANGE !!
+  logo: beyond-default-white
   background: "beyond.png"
   category: "Confidential Trading"
   status: "In development"
@@ -25,6 +27,7 @@
 
 - title: "K<span class=\"body--zero\">0</span>"
   id: "k0" # DO NOT CHANGE !!
+  logo: "k0"
   background: "k0.svg"
   category: "Zero Knowledge Proofs"
   status: "Experimental"

@@ -78,6 +78,8 @@ Whether you attach value to the speculative activity or not, you cannot ignore t
 
 **References**
 
+[MF DOOM](https://decrypt.co/53019/mf-doom-enigmatic-rapper-leaves-behind-crypto-art-legacy)
+
 [Bloomberg: An NFT Sold for $69 Million, Blasting Crypto Art Records](https://www.bloomberg.com/news/articles/2021-03-11/beeple-everydays-nft-sells-at-art-auction-for-60-million-paid-in-ether)
 
 [CNN: How NFTs are fueling a digital art boom](https://edition.cnn.com/style/article/nft-digital-art-boom/index.html)
@@ -93,5 +95,3 @@ Whether you attach value to the speculative activity or not, you cannot ignore t
 [BBC: Jack Dorsey: Bids reach $2.5m for Twitter co-founder's first post](https://www.bbc.com/news/world-us-canada-56307153 )
 
 [Netflix: Made You Look](https://www.netflix.com/gb/title/81406333)
-
-[MF DOOM](https://decrypt.co/53019/mf-doom-enigmatic-rapper-leaves-behind-crypto-art-legacy)

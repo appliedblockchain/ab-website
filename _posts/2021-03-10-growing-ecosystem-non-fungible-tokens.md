@@ -8,7 +8,7 @@ headline: This month prestigious auction house Christies sold their first digita
 
 Many companies are now exploring the opportunity offered by NFTs. Some are more strategic, such as NBA Top Shots, while others are more opportunistic in nature, for instance, on Friday, 5th of March 2021, Jack Dorsey, CEO of Twitter, launched the sale of the first Tweet posted on the social platform as an NFT (BBC, 2021).
 
-An enigmatic wrapper named MC DOOM created a set of augmented reality masks, and minted NFT's to represent their ownership. Unfortunately, and coincidentally, he died on Halloween, the same day that the NFT sale concluded. The collectibles are likely one of his last creative projects. His private keys are now in the possession of his family, and smart contracts will continue to automatically transfer royalties to them from every NFT sale in perpetuity.
+An enigmatic rapper named MF DOOM created a set of augmented reality masks, and minted NFT's to represent their ownership. Unfortunately, and coincidentally, he died on Halloween, the same day that the NFT sale concluded. The collectibles are likely one of his last creative projects. His private keys are now in the possession of his family, and smart contracts will continue to automatically transfer royalties to them from every NFT sale in perpetuity.
 
 Prior to blockchain, the cost of replicating an item in the digital world was almost zero. Think of the copy and paste mechanism that damages the rights of economic use of photos or other works of art on the internet. Blockchain doesn't prevent this. However, blockchain NFT's allow ownership of the items to be recorded, shared, published, and very efficiently traded across multiple venues, increasing liquidity. They also allow royalties to continue to be paid out to the original creators regardless of where or how the items are sold.
 
@@ -94,4 +94,4 @@ Whether you attach value to the speculative activity or not, you cannot ignore t
 
 [Netflix: Made You Look](https://www.netflix.com/gb/title/81406333)
 
-[MC DOOM](https://decrypt.co/53019/mf-doom-enigmatic-rapper-leaves-behind-crypto-art-legacy)
+[MF DOOM](https://decrypt.co/53019/mf-doom-enigmatic-rapper-leaves-behind-crypto-art-legacy)

@@ -62,6 +62,8 @@ Music, and rare collectibles are just some examples of real objects who's owners
 
 NFT’s can also be used to represent physical components and products flowing through a supply chain. This enables provenance checks to be made on a per-item basis. Some benefits of tokenizing these assets are proof of quality control, ethical sourcing and the reduction of counterfeiting, although these do depend on the ability to scan and uniquely identify the physical item.
 
+# Liquidity
+
 The possibility of certifying and digitising ownership records of both physical and digital items in a way that they can be openly traded in multiple venues introduces speculation and increased liquidity to previously illiquid markets. Major players are rapidly moving in this direction, seizing the opportunity to capitalize on a broader shift towards tokenisation and digital assets.
 
 Developments in public blockchains, including decentralised exchanges (DEX) and decentralized finance (DeFi) are creating tremendously efficient alternative financial services infrastructure. NFTs are starting to do the same for collectibles and unique items.

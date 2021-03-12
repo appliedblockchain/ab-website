@@ -60,13 +60,7 @@ Music, and rare collectibles are just some examples of real objects who's owners
 
 ## Supply Chain
 
-NFT’s can also be used to represent physical components and products flowing through a supply chain. This enables provenance checks to be made on a per-item basis. Two of the main benefits of tokenizing these assets are quality control and the reduction of counterfeiting, although these do depend on the ability to scan and uniquely identify the physical item.
-
-There are three main levels where NFTs can significantly affect the supply chain:
-
-- **Organisations**: NFTs can be used to identify organisations and their credentials (e.g. anti-slavery, ISO certification)
-- **Paperwork**: The traditional supply chain system records all the property titles and registration, contracts, purchase orders, invoices and payments  through cumbersome paperwork. Blockchain can digitize and connect the entire process, and some documents could be securitised (e.g. invoices) using NFT’s.
-- **Products and components** in a supply chain should be represented as an NFT. NFTs can be used to track materials as they move through the supply chain, and they can represent the provenance, the quality assurance, and sustainability properties of products.
+NFT’s can also be used to represent physical components and products flowing through a supply chain. This enables provenance checks to be made on a per-item basis. Some benefits of tokenizing these assets are proof of quality control, ethical sourcing and the reduction of counterfeiting, although these do depend on the ability to scan and uniquely identify the physical item.
 
 The possibility of certifying and digitising ownership records of both physical and digital items in a way that they can be openly traded in multiple venues introduces speculation and increased liquidity to previously illiquid markets. Major players are rapidly moving in this direction, seizing the opportunity to capitalize on a broader shift towards tokenisation and digital assets.
 

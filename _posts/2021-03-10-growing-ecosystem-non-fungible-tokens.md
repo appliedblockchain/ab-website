@@ -10,13 +10,11 @@ Many companies are now exploring the opportunity offered by NFTs. Some are more 
 
 An enigmatic wrapper named MC DOOM created a set of augmented reality masks, and minted NFT's to represent their ownership. Unfortunately, and coincidentally, he died on Halloween, the same day that the NFT sale concluded. The collectibles are likely one of his last creative projects. His private keys are now in the possession of his family, and smart contracts will continue to automatically transfer royalties to them from every NFT sale in perpetuity.
 
-Prior to blockchain, the cost of replicating an item in the digital world was almost zero. Think of the copy and paste mechanism that damages the rights of economic use of photos or other works of art on the internet. Blockchain doesn't prevent this. However, blockchain NFT's allow ownership of the items to be recorded, shared, published, and very efficiently traded across multiple venues, increasing liquidity. It also allows royalties to continue to be paid out to the original creators of the items regardless of where or how the items are sold.
+Prior to blockchain, the cost of replicating an item in the digital world was almost zero. Think of the copy and paste mechanism that damages the rights of economic use of photos or other works of art on the internet. Blockchain doesn't prevent this. However, blockchain NFT's allow ownership of the items to be recorded, shared, published, and very efficiently traded across multiple venues, increasing liquidity. They also allow royalties to continue to be paid out to the original creators regardless of where or how the items are sold.
 
-So NFT's do not prevent duplication of a digital item, however, they do prevent duplication of the ownership rights and records. Recent NFT sales demonstrate that the ownership records, in particular for rare digital items, are highly valued. These goods, even of an artistic nature, become digitally rare because they are not fungible. Thus, it is possible to uniquely prove ownership of a particular photo or work.
+NFT's do not prevent duplication of a digital item. However, they do prevent duplication of the ownership rights. Recent NFT sales demonstrate that the ownership rights, in particular for rare digital items, are highly valued. The items, especially those of an artistic nature, become digitally rare as they are not fungible as they uniquely prove ownership of a particular photo or work. Non-fungible tokens are tradable, universal blockchain-based ownership records for specific items. Unlike digital currencies such as Bitcoin, and fungible tokens such as utility tokens, NFTs are not interchangeable with each other.
 
-Non-fungible tokens (NFT) are therefore tradable universal blockchain-based ownership records for specific items. Unlike currencies such as Bitcoin, and fungible tokens such as utility tokens, NFTs are not interchangeable with each other.
-
-NFTs represent a particular type of cryptographic token that is defined:
+NFTs represent a particular type of cryptographic token that is technically defined:
 
 - Using a standard; for example [Ethereum ERC-721](https://eips.ethereum.org/EIPS/eip-721), or
 - Natively in the general purpose blockchain platform (e.g. [Algorand](https://developer.algorand.org/search/?search_query=nft&category=all-categories)), or

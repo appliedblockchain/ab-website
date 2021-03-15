@@ -1,0 +1,32 @@
+{% assign body = include.body %}
+{% assign background_color = include.background_color %}
+{% assign background_image = include.background_image %}
+
+<tr>
+  <td>
+    <table role="presentation" cellspacing="32" cellpadding="0" border="0" width="600" style="background-color: #FFFFFF; -webkit-border-radius: 24px; border-radius: 24px; background-image: url('{{ background_image }}'); background-color: {{ background_color }}; background-position: center center !important; background-size: cover !important;" class="email-container" align="center">
+      <tr>
+        <td valign="middle">
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:175px; background-position: center center !important;">
+          <v:fill type="tile" src="https://via.placeholder.com/600x230/000a1e/666666" color="#000a1e" />
+          <v:textbox inset="0,0,0,0">
+          <![endif]-->
+          <div>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td valign="middle" style="text-align: center; font-family: Arial, sans-serif; font-size: 20px; line-height: 1.5; color: #FFFFFF;">
+                  <p style="margin: 0;">{{ body }}</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if gte mso 9]>
+          </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

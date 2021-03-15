@@ -1,0 +1,14 @@
+{% assign type = include.type %}
+{% assign background = include.background %}
+{% assign height = include.height %}
+
+
+{% if type == 'table' %}
+<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container">
+{% endif %}
+  <tr>
+    <td height="{% if height %}{{ height }}{% else %}16{% endif %}" {% if background %}bgcolor="{% if background == 'primary' %}#007BFF{% elsif background == 'secondary' %}#64F0FF{% elsif background == 'highlight' %}#FF6F00{% endif %}"{% endif %} style="{% if background %}background-color: {% if background == 'primary' %}#007BFF{% elsif background == 'secondary' %}#64F0FF{% elsif background == 'highlight' %}#FF6F00{% endif %};{% endif %} border-radius: 24px; -webkit-border-radius: 24px;"></td>
+  </tr>
+{% if type == 'table' %}
+</table>
+{% endif %}

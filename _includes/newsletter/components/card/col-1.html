@@ -1,0 +1,40 @@
+{% assign media = include.media %}
+{% assign media_alt = include.media_alt %}
+{% assign label = include.label %}
+{% assign title = include.title %}
+{% assign body = include.body %}
+{% assign button_label = include.button_label %}
+{% assign button_color = include.button_color %}
+{% assign button_link = include.button_link %}
+
+<tr>
+  <td>
+    {% if media %}
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" height="280" bgcolor="#FFFFFF" style="-webkit-border-top-left-radius: 24px; border-top-left-radius: 24px; -webkit-border-top-right-radius: 24px; border-top-right-radius: 24px;" class="email-container" align="center">
+      <tr>
+        <td>
+          <img src="{{ media }}" width="600" height="" alt="{{ media_alt }}" border="0" style="width: 100%; max-width: 600px; height: auto; background: #FFFFFF; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #253858; margin: auto; display: block; -webkit-border-top-left-radius: 24px; border-top-left-radius: 24px; -webkit-border-top-right-radius: 24px; border-top-right-radius: 24px;" class="g-img">
+        </td>
+      </tr>
+    </table>
+    {% endif %}
+    <table role="presentation" cellspacing="32" cellpadding="0" border="0" width="600" bgcolor="#F0F0F0" style="background-color: #F0F0F0; -webkit-border-bottom-right-radius: 24px; border-bottom-right-radius: 24px; -webkit-border-bottom-left-radius: 24px; border-bottom-left-radius: 24px;{% if media %}{% else %}-webkit-border-radius: 24px; border-radius: 24px; {% endif %}" class="email-container" align="center">
+      <tr>
+        <td style="font-family: Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #000A1E; text-align: left;">
+          {% if label %}
+          <p style="margin: 0 0 16px 0; font-size: 14px; font-weight: 700;">{{ label }}</p>
+          {% endif %}
+          <h2 style="margin: 0 0 16px 0; font-size: 24px; font-weight: 700; color: #007BFF;">{{ title }}</h2>
+          <p style="margin: 0;">{{ body }}</p>
+        </td>
+      </tr>
+      {% if button_label %}
+      {% include newsletter/components/button.html 
+        label = button_label
+        color = button_color
+        link = button_link
+      %}
+      {% endif %}
+    </table>
+  </td>
+</tr>

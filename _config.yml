@@ -31,6 +31,9 @@ collections:
   posts:
     output: true
     permalink: /:title
+  newsletters:
+    output: true
+    permalink: /newsletters/:path
 
 # plugins
 plugins:
@@ -49,7 +52,7 @@ sass:
 # http://jch.penibelst.de/
 compress_html:
   clippings: all
-  comments: all
+  comments: ["<!-- ", " -->"]
   endings: []
   ignore:
     envs: []

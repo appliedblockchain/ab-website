@@ -84,7 +84,7 @@ Whether you attach value to the speculative activity or not, you cannot ignore t
 
 [Forbes: BNP Paribas Subsidiary Helps Identify $250 Million Leap In NFT Sales](https://www.forbes.com/sites/ninabambysheva/2021/02/15/french-banking-giant-bnp-paribas-details-explosion-of-new-crypto-sector-with-250-million-sales-volume/)
 
-[Forbes: NBA Top Shot, A Crypto-Based Platfom For Video Collectibles, Soars Past $200 Million In Total Sales](https://www.forbes.com/sites/tommybeer/2021/02/23/nba-top-shot-a-crypto-based-platfom-for-video-collectibles-soars-past-200-million-in-total-sales/ )
+[Forbes: NBA Top Shot, A Crypto-Based Platform For Video Collectibles, Soars Past $200 Million In Total Sales](https://www.forbes.com/sites/tommybeer/2021/02/23/nba-top-shot-a-crypto-based-platfom-for-video-collectibles-soars-past-200-million-in-total-sales/ )
 
 [Christies: Created over 5,000 days by the groundbreaking artist, this monumental collage is the first purely digital artwork (NFT) ever offered at Christie’s](https://www.christies.com/features/Monumental-collage-by-Beeple-is-first-purely-digital-artwork-NFT-to-come-to-auction-11510-7.aspx )
 

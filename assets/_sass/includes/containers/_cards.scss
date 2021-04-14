@@ -75,6 +75,15 @@
     }
   }
 
+  &__avatar {
+    width: $integer-xxxxl;
+    height: $integer-xxxxl;
+    padding: 0;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+  }
+
   &__inner {
     position: relative;
     padding: $integer-lg;
@@ -234,12 +243,6 @@
           margin-top: $integer;
         }
       }
-      
-      &__image {
-      }
-      
-      &__meta {
-      }
     }
   }
 
@@ -274,7 +277,6 @@
         }
       }
 
-      &__label {}
       &__header {
 
         & + .card__image,
@@ -309,10 +311,6 @@
           margin-top: $integer-lg;
         }
       }
-    
-      &__body {}
-      &__meta {}
-      &__actions {}
     }
   }
 }
@@ -390,6 +388,24 @@
       &__image {
         padding-bottom: 50%;
         max-width: none;
+      }
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// style
+// —————————————————————————————————————————————————————————————————
+
+.card {
+
+  &--transparent {
+    background-color: transparent;
+
+    .card {
+
+      &__inner {
+        padding: 0;
       }
     }
   }
@@ -514,6 +530,17 @@
           }
         }
       }
+    }
+  }
+}
+
+#about-team {
+
+  .card {
+    flex-basis: 25%;
+    
+    @include responsive(max-width, $mobile-max) {
+      flex-basis: 50%;
     }
   }
 }

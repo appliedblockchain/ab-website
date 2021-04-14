@@ -29,7 +29,7 @@ background_color: white
       <h1 class="button__inner">Join our <span class="hide--mobile"> growing </span>team</h1>
     </a>
   </div>
-  <div class="section__content body--left">
+  <div class="section__content body--left z-index--2">
     <div class="row card__wrapper">
       {% for item in site.data.about.leadership %}
       <div class="card__outer col--xl5 col--lg6">
@@ -42,6 +42,25 @@ background_color: white
             <p class="card__title lead">{{ item.name }}</p>
             <p class="card__body body">{{ item.bio }}</p>
           </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="about-team" class="section section--white section--overlap">
+  {% include containers/sections/header.html
+    title = 'Management team'
+  %}
+  <div class="section__content body--left">
+    <div class="row card__wrapper card__wrapper--inline">
+      {% for item in site.data.about.team %}
+      <div class="card card--portrait card--sm">
+        <img src="{{ site.base-url }}{{ site.imageurl}}/team/portrait/{{ item.thumbnail }}.jpg" alt="Portrait of team member" class="card__avatar">
+        <div class="card__inner body--center">
+          <p class="card__label body--large body--primary body--regular">{{ item.name }}</p>
+          <p class="card__title label">{{ item.title }}<br><span class="body--regular">{{ item.office }}</span></p>
         </div>
       </div>
       {% endfor %}

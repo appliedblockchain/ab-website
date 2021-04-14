@@ -86,7 +86,6 @@ html, body {
   &--small { font-size: 0.875rem; }
   &--xs { font-size: 0.8rem; }
 
-	&--bold { font-weight: $font-bold; }
 	&--block { display: inline-block; }
 }
 
@@ -143,10 +142,18 @@ html, body {
 
 .body {
 
-	&--left 	{ text-align: left; }
-	&--center 	{ text-align: center; }
-	&--right 	{ text-align: right; }
-	&--justify 	{ text-align: justify; }
+	&--left { text-align: left; }
+	&--center { text-align: center; }
+	&--right { text-align: right; }
+	&--justify { text-align: justify; }
+}
+
+// weight
+
+.body {
+
+	&--regular { font-weight: $font-regular; }
+	&--bold { font-weight: $font-bold; }
 }
 
 // col text

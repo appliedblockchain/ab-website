@@ -10,22 +10,10 @@
       </div>
     </div>
     <div class="coloffset--xl1 col--xl7">
-      <div class="row">
-        <div class="col--6">
-          <div class="card">
-            {% include components/social.html
-              header = 'true'
-            %}
-          </div>
-        </div>
-        <div class="col--6">
-          <div class="card">
-            <p class="card__title body--large body--bold">Address</p>
-            <div class="card__body">
-              <p class="body">{{ site.contact.london.address }}</p>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        {% include components/social.html
+          header = 'true'
+        %}
       </div>
     </div>
   </div>
@@ -87,7 +75,18 @@
     </div>
   </div>
   <div class="footer__row row">
-    <div class="col--12">
+    <div class="col--xl4">
+      <div class="card">
+        <p class="card__title body--large body--bold">Addresses</p>
+        <div class="card__body">
+          <p class="body">{{ site.contact.london.address }}</p>
+        </div>
+        <div class="card__body">
+          <p class="body">{{ site.contact.porto.address }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="coloffset--xl1 col--xl7">
       <p class="body body--bold">© Copyright 2020 Applied Blockchain Ltd. <br>All rights reserved.</p>
       <p class="body">Applied Blockchain Ltd is a company registered in England and Wales. <br>Company No. 09686276</p>
     </div>

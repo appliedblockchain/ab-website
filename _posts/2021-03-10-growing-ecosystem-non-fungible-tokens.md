@@ -6,7 +6,7 @@ category: blog
 headline: This month prestigious auction house Christies sold their first digital art using blockchain NFT (non-fungible tokens) for $69 million, and the NBA saw over $230 in new revenue from its NFT based Top Shots digital collectibles
 ---
 
-Many companies are now exploring the opportunity offered by NFTs. Some are more strategic, such as NBA Top Shots, while others are more opportunistic in nature, for instance, on Friday, 5th of March 2021, Jack Dorsey, CEO of Twitter, launched the sale of the first Tweet posted on the social platform as an NFT (BBC, 2021).
+Many organisations are now exploring the opportunity offered by NFTs. Some are more strategic, such as NBA Top Shots, while others are more opportunistic in nature, for instance, on Friday, 5th of March 2021, Jack Dorsey, CEO of Twitter, launched the sale of the first Tweet posted on the social platform as an NFT (BBC, 2021).
 
 Rapper MF DOOM created a set of augmented reality masks, and minted NFT's using to represent their ownership. The masks were hosted on augmented reality (AR) platform Illust Space. Unfortunately, and coincidentally, he died on Halloween, the same day that the NFT sale concluded. The collectibles are likely one of his last creative projects. His private keys are now in the possession of his family, and smart contracts will continue to automatically transfer royalties to them from every NFT sale in perpetuity.
 

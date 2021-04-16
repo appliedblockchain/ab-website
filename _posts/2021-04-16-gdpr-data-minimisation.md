@@ -38,3 +38,5 @@ Moreover, it is essential that personal data is accurate, updated and stored sec
 The processing of “personal data” to be lawful, and therefore permitted, must be limited to the indispensable, pertinent data and limited to what is necessary for the pursuit of the purposes for which they are collected and processed.
 
 **Using confidential computing technology, we focus on the 3rd principle of GDPR data minimisation, and utilise personal data for business purpose, while at the same time, we minimise the personal data that is revealed to the third party.**
+
+[Full report](https://www.linkedin.com/smart-links/AQEPsIE-64B6ZA)

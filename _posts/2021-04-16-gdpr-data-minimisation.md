@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'GDPR Data Minimisation & Confidential Computing'
-image: ecosystem
+#image: ecosystem
 category: blog
 headline: Confidential computing technology enables businesses to do more, without requiring direct access to personal data. Now that it is possible to operate with less data, isn’t every business required to minimise data collection?
 ---
@@ -29,7 +29,6 @@ According to Article 5 of the European Regulation 679/2016 (GDPR), the principle
 - Accuracy
 
 - Integrity and confidentiality
-
 
 Any data of an individual or business can be collected by the third party only if the collected data is used for specified, explicit and legitimate purposes. The data has to be adequate, relevant and limited to the purposes for which it was collected.
 

@@ -10,6 +10,12 @@
 #   webinar_id: [link to recording form page]
 #   link:
 
+- name: "The Future of Blockchain & Crypto: Where do we Go from Here?"
+  image: future-blockchain-crypto
+  display: webinar
+  date: '2021-06-02'
+  link: "https://www.eventbrite.co.uk/e/the-future-of-blockchain-crypto-where-do-we-go-from-here-tickets-156889146661"
+
 - name: "VI Jornadas de Emprego e Engenharia"
   image: isep
   date: '2021-06-08'

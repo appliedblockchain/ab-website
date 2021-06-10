@@ -10,6 +10,26 @@
 #   webinar_id: [link to recording form page]
 #   link:
 
+- name: "Key Considerations When Building an NFT Marketplace"
+  image: nft-website
+  display: webinar
+  date: '2021-06-29'
+  link: "https://us02web.zoom.us/webinar/register/WN_Klem_1YQQ2W9klabOS5Nzg"
+
+- name: "The Future of Blockchain & Crypto: Where do we Go from Here?"
+  image: future-blockchain-crypto
+  display: webinar
+  date: '2021-06-02'
+  link: "https://www.eventbrite.co.uk/e/the-future-of-blockchain-crypto-where-do-we-go-from-here-tickets-156889146661"
+
+- name: "VI Jornadas de Emprego e Engenharia"
+  image: isep
+  date: '2021-06-08'
+  date_to: '2021-06-09'
+  location: "Instituto Superior de Engenharia do Porto, Porto, Portugal"
+  directions: https://www.google.com/maps/place/ISEP+-+Instituto+Superior+de+Engenharia+do+Porto/@41.1784097,-8.6149734,15.46z/data=!4m5!3m4!1s0xd246449b419e1c1:0x16a6fd2fcace4efe!8m2!3d41.1784687!4d-8.6089777
+  link: https://jee.aeisep.pt/
+
 - name: 'Webinar: Confidential Computing'
   image: webinar-banner-cc
   date: '2020-12-02'

@@ -30,7 +30,7 @@ team:
     title: Solution Architect
     office: London
     thumbnail: andy
-  - name: Mario Gemol
+  - name: Mario Gemoll
     title: Senior Software Engineer
     office: London
     thumbnail: mario
@@ -46,3 +46,7 @@ team:
     title: Project Manager
     office: London
     thumbnail: patrick
+  - name: Anna Zambon
+    title: Junior Sales Executive
+    office: London
+    thumbnail: anna

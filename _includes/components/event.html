@@ -13,18 +13,21 @@
             {% endif %}
         </div>
         <div class="card__actions">
+            {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
             {% if event.display == 'webinar' %}
             {% if event.webinar_id %}
             <a href="{{ site.base-url }}/webinar-{{ event.webinar_id }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
                 <p class="button__inner">View recording</p>
             </a>
             {% else %}
+            {% if date >= now %}
             <a href="{{ event.link }}" target="_blank" class="button button--small button--highlight button--animate fas fa-globe">
                 <p class="button__inner">Register</p>
             </a>
             {% endif %}
             {% endif %}
-            {% if event.link and event.type != 'internal' %}
+            {% endif %}
+            {% if event.link and event.type != 'internal'and event.display != 'webinar' %}
             <a href="{{ event.link }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
                 <p class="button__inner">Website</p>
             </a>

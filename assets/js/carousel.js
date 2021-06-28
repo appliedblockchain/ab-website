@@ -111,7 +111,7 @@ $('.owl-carousel-webinar').owlCarousel({
 });
 
 $('.owl-carousel-news').owlCarousel({
-  dots: false,
+  dots: true,
   nav: false,
   loop: true,
   autoplay: true,

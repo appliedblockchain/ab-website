@@ -163,10 +163,31 @@
 
   &-news {
 
+    &.background--shadow {
+      overflow: visible;
+    }
+
     .owl {
 
-      &-nav,
       &-dots {
+        display: inline-block;
+        position: absolute;
+        left: $integer-md;
+        bottom: -$integer-lg;
+        pointer-events: initial;
+      }
+
+      &-dot {
+        margin-right: $integer;
+        margin-left: $integer;
+        background-color: $secondary !important;
+        
+        &.active {
+          background-color: $white !important;
+        }
+      }
+
+      &-nav {
         display: none;
       }
     }

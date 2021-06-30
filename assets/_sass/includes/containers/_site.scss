@@ -48,6 +48,10 @@ html, body {
 		display: block;
 		clear: both;
 	}
+
+	&--center {
+		justify-content: center;
+	}
 }
 
 .clear:after {

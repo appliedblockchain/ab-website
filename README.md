@@ -1,12 +1,12 @@
 # Applied Blockchain Website
 - [Introduction](#introduction)
-- [Getting started](#getting-started)
-- [Dependencies & Methodology](#comments)
+  - [Getting started](#getting-started)
+  - [Dependencies & Methodology](#comments)
 - [Deployment](#deployment)
 - [Page structure](#page-structure)
-- [Section system](#section-system)
-- [Components](#components)
-- [Column system](#column-system)
+  - [Section system](#section-system)
+  - [Components](#components)
+  - [Column system](#column-system)
 - [Create page](#create-page)  
 - [Create project](#create-project)
 - [Create job](#create-job)
@@ -240,7 +240,7 @@ testimonial:
 - Open the `jobs.yml` file in `_data` folder.
 - Copy/paste this code in the section you want it to appear (London or Porto) and fill the content.
 ```yml
-  - title: 
+- title: 
   type: 
   responsabilities:
     - li: ''

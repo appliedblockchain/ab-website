@@ -9,6 +9,12 @@
 #   type: internal, external
 #   webinar_id: [link to recording form page]
 #   link:
+- name: "How to Be More Collaborative with Your Data"
+  image: webinar-nft # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  display: webinar
+  date: '2021-07-29'
+  # webinar_id:
+  link: "https://digitalleadershipforum.co.uk/events/how-to-be-more-collaborative-with-your-data/"
 
 - name: "Key Considerations When Building an NFT Marketplace"
   image: webinar-nft # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

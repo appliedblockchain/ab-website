@@ -62,6 +62,6 @@ The Currency project has its own secondary market and charges a fee (5%). At the
 # Summary
 
 The core points to consider when creating an NFT representing physical world assets:
-- ho will be the custodian? Why will people know to trust them?
+- Who will be the custodian? Why will people know to trust them?
 - What mechanism will be used to link the physical asset to the NFT?
 - Will the additional activity and liquidity provided by an NFT lead to additional revenues?

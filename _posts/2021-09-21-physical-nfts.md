@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What the Damien Hirst Project: The Currency Gets Right about Physical NFTs
+title: 'What the Damien Hirst Project: The Currency Gets Right about Physical NFTs'
 image: grant-upgrade-hardhat-starter-kit
 category: blog
 headline: With the launch of the high profile Damien Hirst “The Currency” NFTs have expanded beyond digital assets and towards physical NFT artwork

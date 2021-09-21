@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'The Growing Ecosystem of Non-Fungible Tokens (NFTs)'
+title: "The Growing Ecosystem of Non-Fungible Tokens (NFTs)"
 image: ecosystem
 category: blog
-headline: This month prestigious auction house Christies sold their first digital art using blockchain NFT (non-fungible tokens) for $69 million, and the NBA saw over $230 in new revenue from its NFT based Top Shots digital collectibles
+headline: "This month prestigious auction house Christies sold their first digital art using blockchain NFT (non-fungible tokens) for $69 million, and the NBA saw over $230 in new revenue from its NFT based Top Shots digital collectibles"
 ---
 
 Many organisations are now exploring the opportunity offered by NFTs. Some are more strategic, such as NBA Top Shots, while others are more opportunistic in nature, for instance, on Friday, 5th of March 2021, Jack Dorsey, CEO of Twitter, launched the sale of the first Tweet posted on the social platform as an NFT (BBC, 2021).

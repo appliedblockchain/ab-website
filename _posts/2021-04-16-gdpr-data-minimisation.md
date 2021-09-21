@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'GDPR Data Minimisation & Confidential Computing'
+title: "GDPR Data Minimisation & Confidential Computing"
 #image: ecosystem
 category: blog
-headline: Confidential computing technology enables businesses to do more, without requiring direct access to personal data. Now that it is possible to operate with less data, isn’t every business required to minimise data collection?
+headline: "Confidential computing technology enables businesses to do more, without requiring direct access to personal data. Now that it is possible to operate with less data, isn’t every business required to minimise data collection?"
 ---
 
 General Data Protection Regulation (GDPR) enacted on the 25th of May 2018 provides individuals greater control over their personal data through policy enforcement, including the principle of data minimisation: only collecting and using data that is absolutely required in order for a business to operate.

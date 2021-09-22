@@ -74,6 +74,10 @@
 
 			.button {
 				margin-right: 0;
+
+				& + .button {
+					margin-left: 0 !important;
+				}
 			}
 		}
 	}

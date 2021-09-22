@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Applied Blockchain Receives Grant to Provide Key Chainlink Hardhat Starter Kit Updates"
+title: "Applied Blockchain receives grant to provide key Chainlink hardhat starter kit updates"
 image: grant-upgrade-hardhat-starter-kit
 category: news
 social: external

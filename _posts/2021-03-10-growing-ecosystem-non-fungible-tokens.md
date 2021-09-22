@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Growing Ecosystem of Non-Fungible Tokens (NFTs)"
+title: "The growing ecosystem of non-fungible tokens (NFTs)"
 image: ecosystem
 category: blog
 headline: "This month prestigious auction house Christies sold their first digital art using blockchain NFT (non-fungible tokens) for $69 million, and the NBA saw over $230 in new revenue from its NFT based Top Shots digital collectibles"

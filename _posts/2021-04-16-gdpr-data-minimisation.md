@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GDPR Data Minimisation & Confidential Computing"
+title: "GDPR data minimisation & confidential computing"
 #image: ecosystem
 category: blog
 headline: "Confidential computing technology enables businesses to do more, without requiring direct access to personal data. Now that it is possible to operate with less data, isn’t every business required to minimise data collection?"

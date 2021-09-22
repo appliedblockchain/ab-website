@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shell-Backed Firm Raises $2.5M for Zero-Knowledge Proof Platform
+title: Shell-backed firm raises $2.5m for zero-knowledge proof platform
 image: coin-telegraph
 category: news
 social: external

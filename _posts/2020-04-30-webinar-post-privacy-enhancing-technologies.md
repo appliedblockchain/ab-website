@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Privacy Enhancing Technologies For Business'
+title: 'Privacy enhancing technologies for business'
 image: webinar-banner-pet
 category: videos
 social: webinar

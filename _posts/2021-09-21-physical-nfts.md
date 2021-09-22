@@ -3,7 +3,7 @@ layout: post
 title: "Physical NFTs"
 image: physical-nfts
 category: blog
-headline: "What the Damien Hirst project: The Currency gets right about physical nfts"
+headline: "What the Damien Hirst Project: The Currency Gets Right about Physical NFTs"
 ---
 
 In March we wrote about [The Growing Ecosystem of Non-Fungible Tokens (NFTs)](https://appliedblockchain.com/growing-ecosystem-non-fungible-tokens) as often happens in the blockchain world a lot has changed in the past few months. With the launch of the high profile [Damien Hirst “The Currency”](https://www.heni.com/) NFTs have expanded beyond digital assets and towards physical NFT artwork. We’ve had many conversations with people looking to start physical NFT artwork projects as well as exploring tokenising other physical assets using NFTs. Here we will summarise some common findings and clarify some common incorrect assumptions, in particular we focus on how we think The Currency project got it right.
@@ -62,6 +62,6 @@ The Currency project has its own secondary market and charges a fee (5%). At the
 # Summary
 
 The core points to consider when creating an NFT representing physical world assets:
-- ho will be the custodian? Why will people know to trust them?
+- Who will be the custodian? Why will people know to trust them?
 - What mechanism will be used to link the physical asset to the NFT?
 - Will the additional activity and liquidity provided by an NFT lead to additional revenues?

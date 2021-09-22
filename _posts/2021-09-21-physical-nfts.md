@@ -3,14 +3,24 @@ layout: post
 title: "Physical NFTs"
 image: physical-nfts
 category: blog
-headline: "What the Damien Hirst Project: The Currency Gets Right about Physical NFTs"
+headline: "What the Damien Hirst Project The Currency Gets Right about Physical NFTs"
 ---
 
-In March we wrote about [The Growing Ecosystem of Non-Fungible Tokens (NFTs)](https://appliedblockchain.com/growing-ecosystem-non-fungible-tokens) as often happens in the blockchain world a lot has changed in the past few months. With the launch of the high profile [Damien Hirst “The Currency”](https://www.heni.com/) NFTs have expanded beyond digital assets and towards physical NFT artwork. We’ve had many conversations with people looking to start physical NFT artwork projects as well as exploring tokenising other physical assets using NFTs. Here we will summarise some common findings and clarify some common incorrect assumptions, in particular we focus on how we think The Currency project got it right.
+In March we wrote about [The Growing Ecosystem of Non-Fungible Tokens (NFTs)](https://appliedblockchain.com/growing-ecosystem-non-fungible-tokens). As often happens in the blockchain world a lot has changed in the past few months. With the launch of the high profile [Damien Hirst “The Currency”](https://www.heni.com/) NFTs have expanded beyond purely digital art and towards physical NFT artwork. We've been working on NFT marketplaces with major artists . Here we will summarise some of our findings and clarify some common incorrect assumptions, in particular we focus on how we think The Currency project got it right.
 
-# What is a physical NFT Artwork?
+# What is a physical NFT artwork?
 
-A physical NFT artwork (Non-Fungible Token) is a token which represents a real world physical artwork that is held in custody. For an NFT representing a physical item to have value it must be exchangeable for the physical asset at any point. For Digital NFTs a hash of the digital asset file is normally stored in the token to link the token to the asset. This creates a provable link between the token and the asset. In the physical world the token itself should have some unique identifier that links the physical asset to the on chain token. The identifier used will depend on the asset in question, but in its most simple form it could be a serial number.
+A physical NFT artwork (Non-Fungible Token) is a token which represents a real world physical artwork.
+
+# Can a digital NFT be linked to a physical artwork?
+
+One common mistake people make is to assume that an NFT can exist and be traded alongside the physical asset. In practice, unless the physical asset is held in custody, it will be very difficult to track both the physical artwork and digital NFT. For example, I could buy an NFT online, but in the meantime the holder of the physical asset may have sold it for cash without updating the digital record. It is fair to assume that without a trusted custodian of the physical asset, it is impossible to ensure that the physical art and the digital NFT remain in sync.
+
+We therefore have two options:
+1. Place the physical asset in custody with a trusted custodian while the digital NFT is trading, whereby the custodian commits to delivering the physical artwork to the NFT owner on the terms agreed, or
+2. Treat the digital NFT as a separate piece in its own right that may accompany the physical artwork, but can be separately priced, bought and sold. In this case, the value of the NFT is independent of the physical piece.
+
+In the remainder of this article we shall focus on option 1, as this was demonstrated in The Currency project.
 
 # Why do physical NFT artworks add value over traditional physical artworks?
 

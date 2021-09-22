@@ -28,7 +28,7 @@ layout: compress
 </div>
 
 {% if page.summary %}
-<section id="project-summary" class="section background--cover" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
+<section id="project-summary" class="section background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg');">
     <div class="card card--lg card--landscape background--shadow">
         <div class="card__inner">
             <div class="card__content">
@@ -51,7 +51,7 @@ layout: compress
         <div class="coloffset--md1 col--md7">
         {% elsif page.challenge-video %}
         <div class="col--md5">
-            <div class="video background--shadow background--cover" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg);">
+            <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
                 <a href="#modal-video" class="js-button-modal">
                     <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
                 </a>
@@ -86,7 +86,7 @@ layout: compress
 {% endif %}
 
 {% if page.delivery %}
-<section id="project-delivery" class="section section--transparent background--cover" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg);">
+<section id="project-delivery" class="section section--transparent background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg');">
     <div class="row">
         <div class="col--xl7 col--lg9 block__title">
             <h1 class="subtitle">What Applied Blockchain Delivered</h1>

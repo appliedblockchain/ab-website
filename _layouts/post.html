@@ -5,29 +5,29 @@ layout: compress
 {% include containers/site/header.html %}
 
 <div class="post">
-    <div class="section section--primary section--header background--cover post__header" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/{% if page.image %}posts/{{ page.image }}{% else %}default{% endif %}.jpg);">
-        {% capture date %}{{ page.date | date: "%b %-d, %Y" }}{% endcapture %}
-        {% include containers/sections/header.html
-            comment = page.category
-            title = page.title
-            body = date
-        %}
-    </div>     
-    <article class="section">
-        <div class="section__content section--left">
-            <div class="row">
-                <div class="coloffset--xl2 col--xl8 coloffset--lg1 col--lg10">
-                    {% include components/share.html %}
-                    {% if page.headline %}
-                    <p class="lead">{{ page.headline }}</p>
-                    {% endif %}
-                    <div class="post__content">
-                        {{ content }}
-                    </div>
-                </div>
-            </div>
+  <div class="section section--primary section--header background--cover post__header" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if page.image %}posts/{{ page.image }}{% else %}default{% endif %}.jpg');">
+    {% capture date %}{{ page.date | date: "%b %-d, %Y" }}{% endcapture %}
+    {% include containers/sections/header.html
+      comment = page.category
+      title = page.title
+      body = date
+    %}
+  </div>   
+  <article class="section">
+    <div class="section__content section--left">
+      <div class="row">
+        <div class="coloffset--xl2 col--xl8 coloffset--lg1 col--lg10">
+          {% include components/share.html %}
+          {% if page.headline %}
+          <p class="lead">{{ page.headline }}</p>
+          {% endif %}
+          <div class="post__content">
+            {{ content }}
+          </div>
         </div>
-    </article>
+      </div>
+    </div>
+  </article>
 </div>
 
 {% include containers/site/footer.html %}

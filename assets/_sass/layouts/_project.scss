@@ -6,53 +6,63 @@
 
 #project {
 
-    .title {
+  .title {
 
-        @include responsive(max-width, $desktop-max) {
-            margin-bottom: $integer-lg;
-        }
+    @include responsive(max-width, $desktop-max) {
+      margin-bottom: $integer-lg;
+    }
 
-        h1 {
-            display: inline-block;
-        }
-    } 
+    h1 {
+      display: inline-block;
+    }
+  } 
+  
+  &-summary,
+  &-delivery {
+    position: relative;
+    background-attachment: fixed;
+
+    @include responsive-mobile-devices() {
+      background-attachment: initial;
+      background-size: cover;
+    }
     
-    &-summary,
-    &-delivery {
-        position: relative;
-        background-attachment: fixed;
-
-        &:before {
-            @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-            background-color: rgba($white, 0.9);
-            background-blend-mode: multiply;
-        }
+    &:before {
+      @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
+      background-color: rgba($white, 0.9);
+      background-blend-mode: multiply;
     }
+  }
 
-    &-summary {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: $integer-xxxxl;
+  &-summary {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: $integer-xxxxl;
 
-        & + #project-delivery {
-            padding-top: 0;
-        }
+    & + #project-delivery {
+      padding-top: 0;
+      
+      @include responsive-mobile-devices() {
+        background-image: none !important;
+        padding-top: $integer-xxxl;
+      }  
     }
+  }
 
-    &-challenge {
-    
-        img {
+  &-challenge {
+  
+    img {
 
-            @include responsive(max-width, $tablet-max) {
-                display: none;
-            }
-        }
+      @include responsive(max-width, $tablet-max) {
+        display: none;
+      }
     }
+  }
 
-    &-results {
+  &-results {
 
-        &.section {
-            text-align: center;        
-        }
+    &.section {
+      text-align: center;    
     }
+  }
 }

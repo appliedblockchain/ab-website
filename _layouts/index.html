@@ -10,10 +10,10 @@ layout: compress
     headline = site.description
   %}
   <div class="section__content body--black">
-    <div class="row card__wrapper">
+    <div class="row row--center">
       <img src="{{ site.base-url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop">
-      <div class="coloffset--xl3 col--xl3 coloffset--lg2 col--lg4 col--md6">
-        <div class="card card--xxs anchor background--shadow">
+      <div class="col--xl3 col--lg4 col--md6 col--sm8">
+        <div class="card card--xxs anchor background--shadow mb--md">
           <div class="card__inner">
             <div class="card__header">
               <p class="card__title body--bold">Sign up to our newsletter</p>
@@ -23,8 +23,6 @@ layout: compress
             </div>
           </div>
         </div>
-      </div>
-      <div class="col--xl3 col--lg4 col--md6">
         <div class="card card--xxs background--shadow">
           <div class="card__inner">
             <div class="card__header">
@@ -39,7 +37,7 @@ layout: compress
     </div>
   </div>
   <div class="row widget__bar card__wrapper">
-    <div class="card col--xl8 body--left">
+    <div class="card col--xl8 col--lg7 body--left">
       <p class="body body--bold card__title">Trusted by global organisations and startups alike</p>
       <div class="card__body">
         {% include elements/carousel.html
@@ -47,15 +45,26 @@ layout: compress
         %}
       </div>
     </div>
-    <div class="col--xl4">
+    <div class="col--xl4 col--lg5">
       <div class="owl-carousel owl-carousel-news widget--news card card--xs card--portrait background--shadow body--black">
         {% for item in site.data.news %}
         <div class="carousel__item">
           <div class="card__inner">
             <div class="card__inner--left">
               <div class="card__content">
+                <p class="card__title body--small body--bold">
+                  <span class="mr">{{ item.title }}</span>
+                  {% if item.body %}
+                  <span class="body--xs body--regular">{{ item.body }}</span>
+                  {% endif %}
+                </p>
+              </div>
+              <div class="card__actions">
+                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.link }}" target="_blank" class="card__actions button button--xsmall button--primary button--animate fas fa-eye">
+                  <p class="button__inner">{{ item.button_label }}</p>
+                </a>
                 {% if item.rating %}
-                <div class="body--small body--grey">
+                <div class="body--small body--grey rating">
                   <div class="fas fa-star{% if item.rating >= 1 %} body--highlight{% endif %}"></div>
                   <div class="fas fa-star{% if item.rating >= 2 %} body--highlight{% endif %}"></div>
                   <div class="fas fa-star{% if item.rating >= 3 %} body--highlight{% endif %}"></div>
@@ -63,15 +72,6 @@ layout: compress
                   <div class="fas fa-star{% if item.rating >= 5 %} body--highlight{% endif %}"></div>
                 </div>
                 {% endif %}
-                <p class="card__title body--small body--bold">{{ item.title }}</p>
-                {% if item.body %}
-                <p class="body--xs">{{ item.body }}</p>
-                {% endif %}
-              </div>
-              <div class="card__actions">
-                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.link }}" target="_blank" class="card__actions button button--small button--primary button--animate fas fa-eye">
-                  <p class="button__inner">{{ item.button_label }}</p>
-                </a>
               </div>
             </div>
             {% if item.image %}
@@ -88,10 +88,10 @@ layout: compress
 <section id="index-intro" class="section section--white">
   {% include containers/sections/header.html
     comment = 'What we do'
-    title = 'Bringing Innovative Solutions to Problems Businesses Face Today'
+    title = 'Blockchain solutions'
   %}
   <div class="section__header body--large">
-    We design and build next-generation business applications that provide additional trust and confidentiality. The team has extensive expertise in blockchains, advanced cryptography, confidential computing and secure enclaves.
+    We build production-grade blockchain applications for our clients ranging from NFT marketplaces and DeFi protocols through to supply chain provenance, identity, CBDC, trading and payment solutions. Our extensive technology experience includes full stack web and mobile, a range of blockchains including Ethereum, Algorand and others, and a range of specialisations in areas advanced cryptography including custom wallet applications, zero knowledge proofs, secure multiparty computation, and hardware secure enclaves such as Intel SGX.
   </div>
   <div class="section__content">
     <div class="button__wrapper">
@@ -108,7 +108,7 @@ layout: compress
 <section class="section section--grey" id="who-we-help">
   {% include containers/sections/header.html
     comment = 'Who we help'
-    title = 'From the Most Innovative Startups to the Largest Global Enterprises'
+    title = 'Cutting-edge startups to global enterprises'
   %}
   <div class="section__content">
     <div class="row card__wrapper">
@@ -150,7 +150,7 @@ layout: compress
     </div>
   </div>
   <div class="section__content">
-    <p class="body--large">Over the past 5 years we have been selected by some of the world's top companies to advise, design and build innovative solutions. We serve customers in financial services, trading, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.</p>
+    <p class="body--large">Over the past 6 years we have been selected by some of the world's top companies to advise, design and build innovative solutions. We serve customers in financial services, cryptocurrency, trading, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.</p>
   </div>
   <div class="section__content">
     <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
@@ -173,7 +173,7 @@ layout: compress
 <section id="index-why-us" class="section section--grey">
   {% include containers/sections/header.html
     comment = 'Why us'
-    title = 'Independent Thinking, Production Grade Solutions'
+    title = 'Independent thinking, production grade solutions'
   %}
   <div class="section__content">
     <a href="{{ site.base-url }}/about" class="ga-button-about button button--primary button--animate fa fa-address-card">
@@ -184,7 +184,7 @@ layout: compress
     <div class="row">
       <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/thought-leader.png');"></div>
       <div class="card col--6 body--left">
-        <h2 class="card__title lead">Thought Leaders</h2>
+        <h2 class="card__title lead">Thought leaders</h2>
         <p class="card__body body">We contribute to global industry events and whitepapers, with keynote presentations and commentaries on practical applications of distributed ledgers, advanced cryptography, confidential computing and secure enclaves. Our work has led us to be recognised by the UK government, where Adi Ben-Ari has been invited to present at the House of Lords, Houses of Parliament, and leading academic institutions.</p>
       </div>
     </div>
@@ -192,7 +192,7 @@ layout: compress
   <div class="section__content">
     <div class="row">
       <div class="card col--6 body--right">
-        <h2 class="card__title lead">International Market Leader</h2>
+        <h2 class="card__title lead">International market leader</h2>
         <p class="card__body body">We have built and deployed enterprise grade solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has recognised Applied Blockchain amongst the Top Global Blockchain Development and Consulting Firm for 4 consecutive years 2017-2020.</p>
       </div>
       <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/market-leader.svg');"></div>
@@ -202,7 +202,7 @@ layout: compress
     <div class="row">
       <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg');"></div>
       <div class="card col--6 body--left">
-        <h2 class="card__title lead">Experts in Applications of Distributed Ledgers, Advanced Cryptography, and Confidential Computing</h2>
+        <h2 class="card__title lead">Experts in applications of distributed ledgers (DApps), advanced cryptography, and confidential computing</h2>
         <p class="card__body body">Our team of in-house development experts work closely with our clients to bring innovative solutions to life – together.</p>
       </div>
     </div>
@@ -231,7 +231,7 @@ layout: compress
     </div>
   </div>
   <div class="section__content">
-    <p class="block__title lead">See what's making news at Applied Blockchain</p>
+    <p class="block__title lead">We're in a fast changing industry, here's our news at Applied Blockchain</p>
     <div class="block__content">
       <a href="{{ site.base-url }}/media" class="ga-button-media button button--primary button--animate fas fa-newspaper">
         <p class="button__inner">Media</p>

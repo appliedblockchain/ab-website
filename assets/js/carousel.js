@@ -12,13 +12,13 @@ $('.owl-carousel-clients').owlCarousel({
   autoplayHoverPause: false,
   smartSpeed: 2000,
   responsive: {
-    0: { items: 2, margin: 0 },
-    450: { items: 2, margin: 0 },
-    575: { items: 3, margin: 20 },
-    767: { items: 3, margin: 50 },
-    1023: { items: 4, margin: 50 },
-    1299: { items: 4, margin: 20 },
-    1499: { items: 4, margin: 50 }
+    0: { items: 3, margin: 0 },
+    450: { items: 4, margin: 0 },
+    575: { items: 5, margin: 20 },
+    767: { items: 5, margin: 20 },
+    1023: { items: 4, margin: 20 },
+    1299: { items: 5, margin: 20 },
+    1499: { items: 6, margin: 20 }
   }
 });
 

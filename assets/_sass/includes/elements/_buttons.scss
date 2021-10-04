@@ -104,6 +104,13 @@
 		line-height: 1.5;
 	}
 
+	&.button--xsmall {
+		@include font-size(0.75, $font-black, normal);
+		padding: 3px 10px;
+		letter-spacing: 0.02rem;
+		line-height: 1.5;
+	}
+
 	&--icon {
 		padding: 0;
 		width: $integer-xl;
@@ -124,6 +131,16 @@
 			padding: 0;
 			width: $integer-md*2;
 			height: $integer-md*2;
+	
+			.fab {
+				font-weight: 100;
+			}
+		}
+
+		&.button--xsmall {
+			padding: 0;
+			width: $integer*3;
+			height: $integer*3;
 	
 			.fab {
 				font-weight: 100;

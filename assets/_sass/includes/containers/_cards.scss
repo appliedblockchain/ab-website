@@ -434,10 +434,15 @@
       }
     }
 
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+    }
+
     &__image {
       border-radius: 5rem;
-      width: 5rem !important;
-      height: 5rem;
+      width: 4rem !important;
+      height: 4rem;
       padding: 0;
       align-self: flex-start;
     }

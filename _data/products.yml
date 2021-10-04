@@ -2,9 +2,9 @@
   id: "silentdata" # DO NOT CHANGE !!
   logo: "silentdata"
   background: "silentdata.jpg"
-  category: "Confidential Open Banking"
+  category: "Confidential Open Banking &amp; DeFi"
   status: "Live"
-  description: "SILENTDATA is a confidential open banking platform that enables queries to be performed on individual and business bank accounts without revealing the banking data even to the platform host. Privacy-preserving proofs can be verified in DeFi blockchain smart contracts."
+  description: "SILENTDATA is a confidential open banking platform that enables queries to be performed on individual and business bank accounts without revealing the banking data even to the platform host. Privacy-preserving proofs can be verified in DeFi (decentralised finance) blockchain smart contracts."
   links:
     - name: "Website"
       url: "https://silentdata.com/"

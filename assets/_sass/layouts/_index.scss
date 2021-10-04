@@ -19,14 +19,14 @@
     }
 
     .page__header {
-        padding-left: $page;
-        padding-bottom: $integer-xxl;
-        padding-right: $page;
+        padding-left: $page/2;
+        padding-bottom: $integer-lg;
+        padding-right: $page/2;
     }
 
     .section__content {
         position: relative;
-        padding-bottom: $integer-xxxl*2;
+        padding-bottom: $integer-xxxl*1.5;
     }
 
     .gartner {

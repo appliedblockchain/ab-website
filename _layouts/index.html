@@ -10,10 +10,10 @@ layout: compress
     headline = site.description
   %}
   <div class="section__content body--black">
-    <div class="row card__wrapper">
+    <div class="row row--center">
       <img src="{{ site.base-url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop">
-      <div class="coloffset--xl3 col--xl3 coloffset--lg2 col--lg4 col--md6">
-        <div class="card card--xxs anchor background--shadow">
+      <div class="col--xl3 col--lg4 col--md6 col--sm8">
+        <div class="card card--xxs anchor background--shadow mb--md">
           <div class="card__inner">
             <div class="card__header">
               <p class="card__title body--bold">Sign up to our newsletter</p>
@@ -23,8 +23,6 @@ layout: compress
             </div>
           </div>
         </div>
-      </div>
-      <div class="col--xl3 col--lg4 col--md6">
         <div class="card card--xxs background--shadow">
           <div class="card__inner">
             <div class="card__header">
@@ -39,7 +37,7 @@ layout: compress
     </div>
   </div>
   <div class="row widget__bar card__wrapper">
-    <div class="card col--xl8 body--left">
+    <div class="card col--xl8 col--lg7 body--left">
       <p class="body body--bold card__title">Trusted by global organisations and startups alike</p>
       <div class="card__body">
         {% include elements/carousel.html
@@ -47,15 +45,26 @@ layout: compress
         %}
       </div>
     </div>
-    <div class="col--xl4">
+    <div class="col--xl4 col--lg5">
       <div class="owl-carousel owl-carousel-news widget--news card card--xs card--portrait background--shadow body--black">
         {% for item in site.data.news %}
         <div class="carousel__item">
           <div class="card__inner">
             <div class="card__inner--left">
               <div class="card__content">
+                <p class="card__title body--small body--bold">
+                  <span class="mr">{{ item.title }}</span>
+                  {% if item.body %}
+                  <span class="body--xs body--regular">{{ item.body }}</span>
+                  {% endif %}
+                </p>
+              </div>
+              <div class="card__actions">
+                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.link }}" target="_blank" class="card__actions button button--xsmall button--primary button--animate fas fa-eye">
+                  <p class="button__inner">{{ item.button_label }}</p>
+                </a>
                 {% if item.rating %}
-                <div class="body--small body--grey">
+                <div class="body--small body--grey rating">
                   <div class="fas fa-star{% if item.rating >= 1 %} body--highlight{% endif %}"></div>
                   <div class="fas fa-star{% if item.rating >= 2 %} body--highlight{% endif %}"></div>
                   <div class="fas fa-star{% if item.rating >= 3 %} body--highlight{% endif %}"></div>
@@ -63,15 +72,6 @@ layout: compress
                   <div class="fas fa-star{% if item.rating >= 5 %} body--highlight{% endif %}"></div>
                 </div>
                 {% endif %}
-                <p class="card__title body--small body--bold">{{ item.title }}</p>
-                {% if item.body %}
-                <p class="body--xs">{{ item.body }}</p>
-                {% endif %}
-              </div>
-              <div class="card__actions">
-                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.link }}" target="_blank" class="card__actions button button--small button--primary button--animate fas fa-eye">
-                  <p class="button__inner">{{ item.button_label }}</p>
-                </a>
               </div>
             </div>
             {% if item.image %}

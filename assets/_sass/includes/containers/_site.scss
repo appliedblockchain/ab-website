@@ -264,10 +264,22 @@ ul {
 
 .m {
 
+	&r {
+		margin-right: $integer;
+		&--md { margin-right: $integer-md; }
+		&--lg { margin-right: $integer-lg; }
+	}
+
 	&b {
 		margin-bottom: $integer;
 		&--md { margin-bottom: $integer-md; }
 		&--lg { margin-bottom: $integer-lg; }
+	}
+
+	&l {
+		margin-left: $integer;
+		&--md { margin-left: $integer-md; }
+		&--lg { margin-left: $integer-lg; }
 	}
 }
 
@@ -314,7 +326,6 @@ ul {
 .rating {
   display: flex;
   align-self: center;
-	margin-left: $integer-lg;
 	
 	&__logo {
 		margin-right: $integer;

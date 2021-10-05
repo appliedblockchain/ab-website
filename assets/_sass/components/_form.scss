@@ -1,7 +1,3 @@
-@charset "UTF-8";
-
-// —————————————————————————————————————————————————————————————————
-// FORM
 // —————————————————————————————————————————————————————————————————
 // general
 // checkbox & radio
@@ -68,7 +64,7 @@
 		width: 100%;
 		background-color: transparent;
 		padding: $integer $integer*1.5;
-		border: $border-sm $medium-grey;
+		border: $border-sm $grey-30;
 		border-radius: $integer-lg !important;
 	}
 
@@ -82,7 +78,7 @@
 }
 
 ::placeholder {
-	color: $medium-grey;
+	color: $grey-30;
 	opacity: 1;
 }
 
@@ -120,7 +116,7 @@
 			box-sizing: border-box;
 			transition: border $transition;
 			will-change: border;
-			border: $border-sm $medium-grey;
+			border: $border-sm $grey-30;
 		}
 	}
 }

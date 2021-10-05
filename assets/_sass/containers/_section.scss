@@ -153,7 +153,7 @@
 					padding-left: $page;
 
 					&:before {
-						background-image: linear-gradient(to bottom, $light-grey, rgba($light-grey, 0.6));
+						background-image: linear-gradient(to bottom, $grey-10, rgba($grey-10, 0.6));
 					}
 
 					.card__inner {
@@ -169,7 +169,7 @@
 					padding-right: $page;
 
 					&:before {
-						background-image: linear-gradient(to bottom, $light-grey, rgba($light-grey, 0.6));
+						background-image: linear-gradient(to bottom, $grey-10, rgba($grey-10, 0.6));
 					}
 
 					.card__inner {
@@ -223,7 +223,7 @@
 	}
 
 	&--grey { 
-		background-color: $light-grey; 
+		background-color: $grey-10; 
 
 		& + & {
 			padding-top: 0; 

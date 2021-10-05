@@ -1,14 +1,9 @@
-@charset "UTF-8";
-
-// —————————————————————————————————————————————————————————————————
-// SLIDER
-// —————————————————————————————————————————————————————————————————
-
 .slides {
 
 	&__item {
 		// Hide the slides before the JS is loaded. Avoids image jumping
 		display: none;
+		backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 	}
 

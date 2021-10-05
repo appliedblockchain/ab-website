@@ -3,40 +3,78 @@
 // —————————————————————————————————————————————————————————————————
 // VARIABLES
 // —————————————————————————————————————————————————————————————————
-// 1. colors
-// 2. general
-// 3. fonts
-// 4. anchor points
+// colors
+// general
+// fonts
+// breakpoints
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
-// 1. colors
+// colors
 // —————————————————————————————————————————————————————————————————
 
-$primary: #007bff;
-$secondary:#64f0ff;
-$dark: #161656;
-$highlight:#ff6f00;
+// system
 
-$secondary-alt:#46FFC3;
-$highlight-alt:#FAD961;
-
-$primary-darken: darken($primary, 15%);
-$primary-lighten: lighten($primary, 15%);
-
+$black: #000A1E;
 $deep-black: #000000;
-$black: #000a1e;
-$darker-grey: #3F4F69;
-$dark-grey: #8c8c96;
-$medium-grey: #d7d7dc;
-$light-grey: #f8f8f8;
-$lighter-grey: #F7F8FD;
 $white: #ffffff;
 
-$error:#ff224a;
-$success:#00ab6c;
-$warning:#FAD961;
-$info:#2E81F4;
+$text: #000A1E;
+$text-disabled: rgba($text, 0.33);
+$text-contrast: #FFFFFF;
+
+$grey-5: #F5F6F7;
+$grey-10: #EBEDEE;
+$grey-20: #D7DBDE;
+$grey-30: #C3C9CD;
+$grey-40: #AFB8BD;
+$grey-50: #9BA6AD;
+$grey-60: #87949D;
+$grey-70: #73838D;
+$grey-80: #5F717C;
+$grey-90: #4B5F6C;
+
+$background-default: #FFFFFF;
+$background-paper: #F8F8F8;
+
+// brand
+
+$primary-light: #B3D7FF;
+$primary: #007bff;
+$primary-dark: #0062CC;
+$primary-contrast-text: $text-contrast;
+
+$secondary-light: #FFD686;
+$secondary:#FF6F00;
+$secondary-dark: #C05400;
+$secondary-contrast-text: $text-contrast;
+
+$dark: #161656;
+$highlight:#64f0ff;
+
+// feedback
+
+$error-light: #FED6DD;
+$error: #FF224A;
+$error-dark: #BD0022;
+$error-contrast-text: $text-contrast;
+
+$warning-light: #FDF1C4;
+$warning: #FAD961;
+$warning-dark: #BC9506;
+$warning-contrast-text: $text;
+
+$info-light: #D6EBFB;
+$info: #2196F3;
+$info-dark: #0960A5;
+$info-contrast-text: $text-contrast;
+
+$success-light: #C9F1E2;
+$success: #00AB6C;
+$success-dark: #00613D;
+$success-contrast-text: $text-contrast;
+
+// social
 
 $facebook:#3b5998;
 $github:#4078c0;
@@ -44,22 +82,20 @@ $linkedin: #0077b5;
 $medium:#00ab6c;
 $twitter:#1da1f2;
 
-$privacy: #ff915f;
+// products
 
-// PRODUCTS
-// beyond
 $beyond-light: #F9C99D;
 $beyond: #EA7032;
 $beyond-dark: #BD4E15;
 $beyond-light-grey: #F7F8FD;
 $beyond-dark-grey: #3F4F69;
-// slentdata
+
 $silentdata: #2E81F4;
-// k0
+
 $k0: #00E27B;
 
 // —————————————————————————————————————————————————————————————————
-// 2. general
+// general
 // —————————————————————————————————————————————————————————————————
 
 $page: 12.5vw;
@@ -96,7 +132,7 @@ $border-lg: $integer solid;
 $border-radius: $integer-md*1.5;
 
 // —————————————————————————————————————————————————————————————————
-// 3. fonts
+// fonts
 // —————————————————————————————————————————————————————————————————
 
 // fonts
@@ -116,22 +152,22 @@ $font-extrabold: 800;
 $font-black: 900;
 
 // —————————————————————————————————————————————————————————————————
-// 4. anchor points
+// breakpoints
 // —————————————————————————————————————————————————————————————————
 
-$desktop-xl: 1800px;
+$desktop-lg: 1800px;
 
-$desktop-lg-min: 1300px;
-$desktop-lg-max: 1299.98px;
+$desktop-min: 1280px;
+$desktop-max: 1279.98px;
 
-$desktop-min: 1024px;
-$desktop-max: 1023.98px;
+$laptop-min: 1024px;
+$laptop-max: 1023.98px;
 
 $tablet-min: 768px;
 $tablet-max: 767.98px;
 
-$mobile-min: 576px;
-$mobile-max: 575.98px;
+$mobile-min: 568px;
+$mobile-max: 567.98px;
 
 $mobile-sm-min: 350px;
 $mobile-sm-max: 349.98px;

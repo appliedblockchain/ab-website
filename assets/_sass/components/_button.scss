@@ -1,7 +1,3 @@
-@charset "UTF-8";
-
-// —————————————————————————————————————————————————————————————————
-// BUTTONS
 // —————————————————————————————————————————————————————————————————
 // general
 // sizes
@@ -228,7 +224,7 @@
 @include button-fill-color('button--',
 //	 prefix 		 background		 color
 	'black' 		  $black 			  $white,
-	'grey' 			  $medium-grey 	$black,
+	'grey' 			  $grey-60 			$black,
 	'white' 		  $white 			  $primary,
 
 	'primary'   	$primary 		  $white,

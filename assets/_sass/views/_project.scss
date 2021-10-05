@@ -8,7 +8,7 @@
 
   .title {
 
-    @include responsive(max-width, $desktop-max) {
+    @include responsive(max-width, $laptop-max) {
       margin-bottom: $integer-lg;
     }
 

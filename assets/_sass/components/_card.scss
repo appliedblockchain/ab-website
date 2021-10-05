@@ -1,7 +1,3 @@
-@charset "UTF-8";
- 
-// —————————————————————————————————————————————————————————————————
-// CARDS
 // —————————————————————————————————————————————————————————————————
 // general
 // sizes
@@ -47,7 +43,7 @@
     justify-content: center;
     margin-bottom: -$integer-lg;
 
-    @include responsive(max-width, $desktop-max) {
+    @include responsive(max-width, $laptop-max) {
       flex-wrap: wrap;
     }
 
@@ -57,7 +53,7 @@
       margin-bottom: $integer-lg;
       max-width: $integer-max*2;
 
-      @include responsive(max-width, $desktop-max) {
+      @include responsive(max-width, $laptop-max) {
         max-width: $integer-max;
       }
     }
@@ -326,7 +322,7 @@
     text-align: left;
 
     & + & {
-      border-top: $border-sm $light-grey;
+      border-top: $border-sm $grey-10;
     }
 
     .card {
@@ -461,7 +457,7 @@
       opacity: 0;
     }
 
-    @include responsive(max-width, $desktop-max) {
+    @include responsive(max-width, $laptop-max) {
       flex-direction: row;
 
       .card {
@@ -484,7 +480,7 @@
       }
     }
     
-    @include responsive(min-width, $desktop-min) {
+    @include responsive(min-width, $laptop-min) {
       justify-content: space-between;
       
       &__outer {
@@ -599,7 +595,7 @@
 
 #events {
 
-  @include responsive(max-width, $desktop-lg-max) {
+  @include responsive(max-width, $desktop-max) {
 
     .card {
       
@@ -674,7 +670,7 @@
   .card {
 
     & + .card {
-      border-top: $border-sm $medium-grey;
+      border-top: $border-sm $grey-30;
     }
 
     &__wrapper--sm .card {
@@ -736,7 +732,7 @@
       align-items: flex-end;
       height: 100%;
 
-      @include responsive(max-width, $desktop-max) {
+      @include responsive(max-width, $laptop-max) {
         align-items: flex-start;
         margin-top: $integer-md;
       }
@@ -768,7 +764,7 @@
       align-items: baseline;
       
       & + .card {
-        border-top: $border-sm $medium-grey;
+        border-top: $border-sm $grey-30;
         padding-top: $integer-md;
       }
   
@@ -793,7 +789,7 @@
   .card {
 
     &__image {
-      background-color: $light-grey;
+      background-color: $grey-10;
     }
   }
 }

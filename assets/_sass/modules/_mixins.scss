@@ -75,7 +75,7 @@
 }
 
 @mixin responsive-mobile-devices-landscape {
-	@media only screen and (max-device-width: $desktop-max) and (orientation: landscape) {
+	@media only screen and (max-device-width: $laptop-max) and (orientation: landscape) {
 		@content;
 	}
 }

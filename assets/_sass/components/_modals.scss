@@ -1,59 +1,81 @@
-@charset "UTF-8";
-
-// —————————————————————————————————————————————————————————————————
-// LOGOS
 // —————————————————————————————————————————————————————————————————
 // general
-// products
+// video
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
 // general
 // —————————————————————————————————————————————————————————————————
 
-.logo {
-	
-	&__item {
-		width: 100%;
-		max-width: $integer-max*2;
-		height: auto;
+.modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: opacity $transition;
+	will-change: opacity;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba($black, 0.9);
+	z-index: 10;
+	opacity: 0;
+	pointer-events: none;
+
+    &__inner {
+		transition: all $transition;
+		will-change: transform;
+		width: 60%;
+        min-width: 300px;
+		position: relative;
+        opacity: 0;
 	}
 
-	&-icon-bg {
-		fill: $primary;
-	}
-
-	&-icon-color {
-		fill: $white;
-	}
-
-	&-name {
-		fill: $black;
-
-		.footer__logo & {
-			fill: $white;
+    &:target {
+		opacity:1;
+		pointer-events: auto;
+		.modal__inner {
+			opacity: 1;
 		}
+	}
+
+  &__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		cursor: default;
+	}
+
+  &__button {
+    position: absolute;
+    right: -$integer;
+    top: -$integer-xl;
+		
+		&:before, &:after {
+			background-color: $white;
+		}
+	}
+
+	.block {
+		padding: 0 !important;
 	}
 }
 
 // —————————————————————————————————————————————————————————————————
-// products
+// video
 // —————————————————————————————————————————————————————————————————
 
-.logo {
+.modal-video {
 
-	&--k0 {
+    .modal__inner {
+		transform: scale(0);
+	}
 
-		@include responsive(max-width, $tablet-max) {
-			width: 25%;
-			margin-top: -$integer-lg;
-			margin-bottom: $integer-xl;
-		}
-
-		@include responsive(max-width, $mobile-max) {
-			width: 50%;
-			margin-top: -$integer-md;
-			margin-bottom: $integer-lg;
-		}
+    &:target .modal__inner {
+		transform: scale(1);
 	}
 }

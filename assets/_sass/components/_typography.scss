@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 // —————————————————————————————————————————————————————————————————
-// TYPOGRAPHY
-// —————————————————————————————————————————————————————————————————
 // general
 // variants
 // buttons
@@ -21,7 +19,7 @@ html, body {
 	font-weight: $font-light;
 	color: $black;
 
-	@include responsive(min-width, $desktop-xl) {
+	@include responsive(min-width, $desktop-lg) {
 		font-size: 20px;
 	}
 }
@@ -130,7 +128,7 @@ html, body {
 .body {
 
 	&--black { color: $black; }
-	&--grey { color: $medium-grey; }
+	&--grey { color: $grey-30; }
 	&--white { color: $white; }
 	&--primary { color: $primary; }
 	&--secondary { color: $secondary; }

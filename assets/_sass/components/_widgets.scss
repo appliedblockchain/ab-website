@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 // —————————————————————————————————————————————————————————————————
-// WIDGETS
-// —————————————————————————————————————————————————————————————————
 // general
 // share
 // social
@@ -73,7 +71,7 @@
   &__input {
     display: block;
     
-    @include responsive(max-width, $desktop-lg-max) {
+    @include responsive(max-width, $desktop-max) {
       max-width: $integer-max*2;
     }
 

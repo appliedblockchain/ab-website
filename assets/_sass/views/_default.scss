@@ -20,7 +20,7 @@
   &:before {
     @include pseudo-element('', $integer-xxxxl+$integer-xxxl, auto, 0, 50%, $integer, 100%);
     transform: translateX(-$integer/2);
-    background-color: $light-grey;
+    background-color: $grey-10;
 
     @include responsive(max-width, $tablet-max) {
       display: none;
@@ -90,7 +90,7 @@
       padding-right: $integer-xxl;
       justify-content: flex-end;
 
-      @include responsive(max-width, $desktop-max) {
+      @include responsive(max-width, $laptop-max) {
         padding-right: $integer-lg;
       }
     }
@@ -101,7 +101,7 @@
       padding-left: $integer-xxl; 
       justify-content: flex-start;
 
-      @include responsive(max-width, $desktop-max) {
+      @include responsive(max-width, $laptop-max) {
         padding-left: $integer-lg; 
       }
     }
@@ -114,12 +114,12 @@
       }
     }
 
-    @include responsive(min-width, $desktop-xl) {
+    @include responsive(min-width, $desktop-lg) {
       margin-top: $integer;
       margin-bottom: $integer;
     }
 
-    @include responsive(max-width, $desktop-max) {
+    @include responsive(max-width, $laptop-max) {
       margin-top: $integer;
       margin-bottom: $integer;
     }
@@ -268,7 +268,7 @@
 
    &__diagram {
 
-  @include responsive(max-width, $desktop-max) {
+  @include responsive(max-width, $laptop-max) {
        margin-top: $integer-xl;
      }
    }
@@ -359,7 +359,7 @@
           padding-bottom: $integer-lg;
         }
 
-        @include responsive(max-width, $desktop-max) {
+        @include responsive(max-width, $laptop-max) {
           padding-top: 0;
           padding-bottom: $integer-lg;
         }
@@ -376,7 +376,7 @@
           transform: scale(1) translateY(0);
         }
 
-        @include responsive(max-width, $desktop-max) {
+        @include responsive(max-width, $laptop-max) {
           transform: scale(1) translateY(0);
         }
       }
@@ -391,7 +391,7 @@
           margin-top: $integer-md;
         }
 
-        @include responsive(max-width, $desktop-max) {
+        @include responsive(max-width, $laptop-max) {
           transform: translateY(0);
           margin-top: $integer-md;
         }
@@ -409,7 +409,7 @@
           opacity: 1;
         }
 
-        @include responsive(max-width, $desktop-max) {
+        @include responsive(max-width, $laptop-max) {
           transform: translateY(0);
           opacity: 1;
         }
@@ -440,7 +440,7 @@
 
     .body--right {
 
-      @include responsive(max-width, $desktop-max) {
+      @include responsive(max-width, $laptop-max) {
         text-align: left;
       }
     }

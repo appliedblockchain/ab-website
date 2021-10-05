@@ -1,85 +1,47 @@
-@charset "UTF-8";
-
-// —————————————————————————————————————————————————————————————————
-// MODALS
 // —————————————————————————————————————————————————————————————————
 // general
-// video
+// click
+// with tracking
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
 // general
 // —————————————————————————————————————————————————————————————————
 
-.modal {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	transition: opacity $transition;
-	will-change: opacity;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba($black, 0.9);
-	z-index: 10;
-	opacity: 0;
-	pointer-events: none;
+.tooltip {
+	position: relative;
 
     &__inner {
-		transition: all $transition;
-		will-change: transform;
-		width: 60%;
-        min-width: 300px;
-		position: relative;
+        position: absolute;
+        pointer-events: none;
+        z-index: 1;
         opacity: 0;
-	}
-
-    &:target {
-		opacity:1;
-		pointer-events: auto;
-		.modal__inner {
-			opacity: 1;
-		}
-	}
-
-  &__close {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		cursor: default;
-	}
-
-  &__button {
-    position: absolute;
-    right: -$integer;
-    top: -$integer-xl;
-		
-		&:before, &:after {
-			background-color: $white;
-		}
-	}
-
-	.block {
-		padding: 0 !important;
-	}
+    }
 }
 
 // —————————————————————————————————————————————————————————————————
-// video
+// click
 // —————————————————————————————————————————————————————————————————
 
-.modal-video {
+.tooltip--click {
+    cursor: pointer;
 
-    .modal__inner {
-		transform: scale(0);
-	}
+    .tooltip__inner.js-show  {
+        pointer-events: initial;
+        opacity: 1;
+    }
+}
 
-    &:target .modal__inner {
-		transform: scale(1);
-	}
+// —————————————————————————————————————————————————————————————————
+// with tracking
+// —————————————————————————————————————————————————————————————————
+
+.tooltip__inner--tracking {
+    transform: translateX(-60%) translateY(10%);
+    display: none;
+    opacity: 1;
+    padding: $integer/2 $integer;
+    @include responsive-mobile-devices() {
+        display: none !important;
+    }
 }

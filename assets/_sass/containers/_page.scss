@@ -256,7 +256,7 @@
 		&.section--primary 	{ &:before { background-image: linear-gradient(to bottom, rgba($primary, 0.5), $primary); } }
 		&.section--dark 	{ &:before { background-image: linear-gradient(to bottom, rgba($dark, 0.9), $dark); } }
 		&.section--white 	{ &:before { background-image: linear-gradient(to bottom, rgba($white, 0.6), $white); } }
-		&.section--grey 	{ &:before { background-image: linear-gradient(to bottom, rgba($light-grey, 0.6), $light-grey); } }
+		&.section--grey 	{ &:before { background-image: linear-gradient(to bottom, rgba($grey-10, 0.6), $grey-10); } }
 
 		> * {
 			// display elements on top of gradient

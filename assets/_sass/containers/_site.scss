@@ -86,14 +86,14 @@ html, body {
 	}
 }
 
-@include responsive(min-width, $desktop-min) {
+@include responsive(min-width, $laptop-min) {
 	@for $i from 1 through 12 {
 		.col--lg#{$i} 		{ width: $i*$col; }
 		.coloffset--lg#{$i} { margin-left: $i*$col; }
 	}
 }
 
-@include responsive(min-width, $desktop-lg-min) {
+@include responsive(min-width, $desktop-min) {
 	@for $i from 1 through 12 {
 		.col--xl#{$i} 		{ width: $i*$col; }
 		.coloffset--xl#{$i} { margin-left: $i*$col; }
@@ -121,14 +121,14 @@ html, body {
 	}
 }
 
-@include responsive(min-width, $desktop-min) {
+@include responsive(min-width, $laptop-min) {
 	@for $i from 1 through 15 {
 		.colalt--lg#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
 	}
 }
 
-@include responsive(min-width, $desktop-lg-min) {
+@include responsive(min-width, $desktop-min) {
 	@for $i from 1 through 15 {
 		.colalt--xl#{$i} 		{ width: $i*$col-footer; }
 		.colaltoffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
@@ -207,8 +207,8 @@ ul {
 .hide {
 	opacity: 0;
 
-	&--desktop-lg { @include responsive(max-width, $desktop-lg-max) { display: none !important; } }
-	&--desktop { @include responsive(max-width, $desktop-max) { display: none !important; } }
+	&--desktop-lg { @include responsive(max-width, $desktop-max) { display: none !important; } }
+	&--desktop { @include responsive(max-width, $laptop-max) { display: none !important; } }
 	&--tablet { @include responsive(max-width, $tablet-max) { display: none !important; } }
 	&--mobile { @include responsive(max-width, $mobile-max) { display: none !important; } }
 	&--touch { @include responsive-mobile-devices() { display: none !important; } }
@@ -334,7 +334,7 @@ ul {
 
 	&__item {
 		margin-right: 0 !important;
-		stroke: $highlight-alt;
+		stroke: $secondary-light;
 
     & + & {
       margin-left: $integer-sm;

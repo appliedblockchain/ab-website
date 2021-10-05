@@ -4,7 +4,7 @@
 // RESPONSIVE
 // —————————————————————————————————————————————————————————————————
 
-@include responsive(max-width, $desktop-lg-max) {
+@include responsive(max-width, $desktop-max) {
 
   .page__header,
   .section--full .section__header {
@@ -18,7 +18,7 @@
 	}
 }
 
-@include responsive(max-width, $desktop-max) {
+@include responsive(max-width, $laptop-max) {
 
 	.header__menu,
 	.page__header,

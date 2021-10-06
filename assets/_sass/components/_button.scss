@@ -1,406 +1,195 @@
 // —————————————————————————————————————————————————————————————————
-// general
-// sizes
-// variants
-// colors
-// animate
-// close
-// menu
-// overrides
+// reset
+// root
+// color
+// size
+// variant
+// misc
+// wrapper
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
-// general
+// reset
 // —————————————————————————————————————————————————————————————————
 
-.button {
-	transition: background-color $transition, transform $transition, opacity $transition;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	// @include align-self(center);
-	border-radius: $border-radius*4;
-	will-change: background-color, transform, opacity;
-	cursor: pointer;
-	overflow: hidden;
-	position: relative;
-	white-space: nowrap;
-	font-family: $font;
-	letter-spacing: 0.04rem;
-	line-height: 1;
+button,
+a {
 
-	&.fa, &.fab, &.fal, &.far, &.fas {
-		display: inline-flex;
-	}
-
-	&__inner {
-		transform-style: preserve-3d;
-		backface-visibility: initial;
-		transition: color $transition, transform $transition;
-		will-change: color, transform;
-		display: block;
-		width: 100%;
-		font-family: $font;
-		text-transform: uppercase;
-		letter-spacing: 0.04rem;
-		text-align: center;
-	}
-
-	& + & {
-		margin-left: $integer-sm;
-	}
-
-	&__wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		margin-bottom: -$integer;
-
-		.button {
-			margin-bottom: $integer;
-			margin-left: 0 !important;
-			margin-right: $integer;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-
-		@include responsive(max-width, $mobile-max) {
-			flex-direction: column;
-
-			.button {
-				margin-right: 0;
-
-				& + .button {
-					margin-left: 0 !important;
-				}
-			}
-		}
-	}
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
-// sizes
+// root
 // —————————————————————————————————————————————————————————————————
 
 .button {
-	@include font-size(1, $font-black, normal);
-	padding: $integer+$integer-sm $integer-md+$integer;
-
-	&.button--large {
-		@include font-size(1.5, $font-black, normal);
-		padding: $integer-md $integer-lg;
-		letter-spacing: 0.08rem;
-	}
-
-	&.button--small {
-		@include font-size(0.75, $font-black, normal);
-		padding: 7px 14px;
-		letter-spacing: 0.02rem;
-		line-height: 1.5;
-	}
-
-	&.button--xsmall {
-		@include font-size(0.75, $font-black, normal);
-		padding: 3px 10px;
-		letter-spacing: 0.02rem;
-		line-height: 1.5;
-	}
-
-	&--icon {
-		padding: 0;
-		width: $integer-xl;
-		height: $integer-xl;
-		font-weight: 100;
-	
-		&.button--large {
-			padding: 0;
-			width: $integer-xxl;
-			height: $integer-xxl;
-	
-			.fab {
-				font-weight: 100;
-			}
-		}
-	
-		&.button--small {
-			padding: 0;
-			width: $integer-md*2;
-			height: $integer-md*2;
-	
-			.fab {
-				font-weight: 100;
-			}
-		}
-
-		&.button--xsmall {
-			padding: 0;
-			width: $integer*3;
-			height: $integer*3;
-	
-			.fab {
-				font-weight: 100;
-			}
-		}
-	}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  line-height: 1;
+  cursor: pointer;
 }
 
 // —————————————————————————————————————————————————————————————————
-// variants
+// color
+// —————————————————————————————————————————————————————————————————
+
+@mixin color($color, $text, $hover) {
+
+  &.button {
+
+    &--fill {
+      background-color: $color;
+      color: $text;
+
+      @include hover {
+        background-color: $hover;
+      }
+    }
+
+    &--stroke {
+      border-color: $color;
+      color: $black;
+
+      @include hover {
+        border-color: $hover;
+      }
+    }
+
+    &--text {
+      color: $color;
+
+      @include hover {
+        color: $hover;
+      }
+    }
+  }
+}
+
+.button {
+
+  &--primary { @include color($primary, $primary-contrast-text, $primary-dark); }
+  &--secondary { @include color($secondary, $secondary-contrast-text, $secondary-dark); }
+  &--grey { @include color($grey-60, $text-contrast, $grey-70); }
+  &--success { @include color($success, $success-contrast-text, $success-dark); }
+  &--info { @include color($info, $info-contrast-text, $info-dark); }
+  &--warning { @include color($warning, $warning-contrast-text, $warning-dark); }
+  &--error { @include color($error, $error-contrast-text, $error-dark); }
+}
+
+// —————————————————————————————————————————————————————————————————
+// size
+// —————————————————————————————————————————————————————————————————
+
+@mixin size($font-size, $size) {
+  border-radius: $size;
+  padding-right: $size/2;
+  padding-left: $size/2;
+  height: $size;
+  font-size: $font-size;
+  letter-spacing: $font-size/10;
+
+  svg {
+    width: $size/2;
+    height: $size/2;
+
+    &:first-child { 
+      margin-right: $size/4; 
+      margin-left: -$size/8; 
+    }
+    &:last-child { 
+      margin-right: -$size/8; 
+      margin-left: $size/4; 
+    }
+  }
+
+  &.button {
+
+    &--icon {
+      width: $size;
+      padding: $size/4;
+
+      svg {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.button {
+
+  &--sm { @include size(0.75rem, 1.75rem); }
+  &--md { @include size(0.875rem, 2rem); }
+  &--lg { @include size(1rem, 2.5rem); }
+}
+
+// —————————————————————————————————————————————————————————————————
+// variant
 // —————————————————————————————————————————————————————————————————
 
 .button {
 
-	&--text-icon {
+  &--fill {
+    transition: background-color 0.4s ease;
+  }
 
-		&.fab:before { 
-			font-weight: normal; 
-		}
+  &--stroke {
+    border-width: 2px;
+    border-style: solid;
+    transition: border-color 0.4s ease;
+  }
 
-		&:before {
-			margin-right: $integer;
-		}
-
-		.button__inner {
-			display: inline;
-		}
-	}
-
-	&--text {
-		transition: color $transition;
-		will-change: color;
-		display: block;
-		overflow: initial;
-		padding: 0;
-		font-weight: $font-regular;
-		letter-spacing: 0.025rem;
-
-		& + & {
-			margin-left: 0;
-			margin-top: $integer;
-		}
-
-		&.button--small, 
-		&.button--large {
-			padding: 0;
-		}
-	}
-
-	&--underline {
-		transition: color $transition;
-		will-change: color;
-		text-decoration: underline;
-
-		@include hover-link {
-			color: $primary;
-		}
-	}
-
-	&--block {
-		display: block;
-
-		& + & {
-			margin-left: 0;
-			margin-top: $integer-sm;
-		}
-		
-		&.button--text {
-
-			& + & {
-				margin-top: $integer;
-			}			
-		}
-
-		&.fa, &.fab, &.fal, &.far, &.fas {
-			display: block;
-		}
-	}
+  &--text {
+    padding: 0;
+    height: auto;
+    transition: color 0.4s ease;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
-// colors
+// misc
 // —————————————————————————————————————————————————————————————————
 
-@include button-fill-color('button--',
-//	 prefix 		 background		 color
-	'black' 		  $black 			  $white,
-	'grey' 			  $grey-60 			$black,
-	'white' 		  $white 			  $primary,
+.button {
 
-	'primary'   	$primary 		  $white,
-	'secondary' 	$secondary		$black,
-	'highlight' 	$highlight		$white,
-	'dark' 			  $dark 			  $white,
+  &--fullWidth {
+    width: 100%;
+  }
 
-	'facebook' 		$facebook 		$white,
-	'github' 		  $github 		  $white,
-	'linkedin' 		$linkedin 		$white,
-	'medium' 		  $medium 		  $white,
-	'twitter' 		$twitter 		  $white
-);
-
-// —————————————————————————————————————————————————————————————————
-// animate
-// —————————————————————————————————————————————————————————————————
-
-.button--animate {
-
-	&:before {
-		transition: transform $transition;
-		@include pseudo-element('', 0, auto, auto, -140%, 100%, 100%);
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		will-change: transform;
-		text-align: center;
-		background-color: transparent;
-	}
-	
-	&:hover {
-
-		&:before {
-			transform: translateX(140%);
-		}
-
-		.button__inner {
-			transform: translateX(180%);
-		}
-	}
-
-	// prevent animation on touch devices
-	&:focus,
-	&:active {
-
-		&:before {
-			transform: translateX(0);
-		}
-
-		.button__inner {
-			transform: translateX(0);
-		}
-	}
+  &--disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
-// close
+// wrapper
 // —————————————————————————————————————————————————————————————————
 
-.button--close {
-	height: $integer-xl+$integer;
-	width: $integer-xl+$integer;
-	padding: 0;
+.button__wrapper {
+  display: flex;
 
-	&:before, &:after {
-		transform: rotate(0deg);
-		transition: transform $transition;
-		@include pseudo-element('', 50%, auto, auto, auto, $integer-md+$integer, $integer-sm);
-		margin-top: -2px;
-		background-color: $white;
-		will-change: transform;
-		border-radius: $integer;
-	}
+  @include responsive(max-width, $mobile-max) {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
 
-	&.rotate:before {
-		transform: rotate(45deg);
-	}
+  .button {
 
-	&.rotate:after {
-		transform: rotate(-45deg);
-	}
+    & + .button {
+      margin-left: $integer;
 
-	&.rotate:hover:before, &.rotate:hover:after {
-		transform: rotate(0deg);
-	}
-}
-
-// —————————————————————————————————————————————————————————————————
-// menu
-// —————————————————————————————————————————————————————————————————
-
-.button--menu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	animation: button-menu-opacity 0.8s ease 0s;
-	cursor: pointer;
-	position: relative;
-	overflow: visible;
-	width: $integer-lg;
-	height: $integer-lg;
-	background-color: transparent !important;
-	border: 0;
-	padding: 0;
-
-	&:before, 
-	&:after, 
-	.button__inner {
-		background-color: $white;
-	}
-
-	&.alt {
-
-		&:before, 
-		&:after, 
-		.button__inner {
-			background-color: $black;
-		}	
-	}
-
-	&:before, &:after {
-		transition: transform $transition;
-		@include pseudo-element('', auto, auto, auto, auto, $integer-lg, $integer-sm+$integer-xs);
-		border-radius: $integer;
-		will-change: transform;
-	}
-
-	&:before {
-		transform: translateY($integer+$integer-xs);
-		animation: button-menu-close-before 0.8s ease 0s;
-	}
-
-	&:after {
-		transform: translateY(-($integer+$integer-xs));
-		animation: button-menu-close-after 0.8s ease 0s;
-	}
-
-	.button__inner {
-		transition: opacity 0s ease 0.4s;
-		border-radius: $integer;
-		will-change: opacity;
-		width: $integer-lg;
-		height: $integer-sm+$integer-xs;
-		position: absolute;
-	}
-
-	&.button--menu--open {
-
-		&:before {
-			animation: button-menu-open-before 0.8s ease 0s forwards;
-		}
-
-		&:after {
-			animation: button-menu-open-after 0.8s ease 0s forwards;
-		}
-
-		.button__inner {
-			opacity: 0;
-		}
-	}
-}
-
-// —————————————————————————————————————————————————————————————————
-// overrides
-// —————————————————————————————————————————————————————————————————
-
-#faq,
-#join {
-
-	.accordion {
-
-		.button--white {
-			height: auto;
-			width: auto;
-			margin-left: $integer-md;
-		}
-	}
+      @include responsive(max-width, $mobile-max) {
+        margin-left: 0;
+        margin-top: $integer;
+      }
+    }
+  }
 }

@@ -1,14 +1,8 @@
-@charset "UTF-8";
-
-// —————————————————————————————————————————————————————————————————
-// MIXINS
 // —————————————————————————————————————————————————————————————————
 // general
 // media queris
-// buttons
 // fonts
 // forms
-// buttons
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -37,7 +31,7 @@
 	height: $height;
 }
 
-@mixin hover-link {
+@mixin hover {
 	&:hover, &:active, &:focus {
 		@content;
 	}
@@ -120,45 +114,4 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
-
-// —————————————————————————————————————————————————————————————————
-// buttons
-// —————————————————————————————————————————————————————————————————
-
-@mixin button-fill-color($prefix, $colors...) {
-	@each $i in $colors {
-		.#{$prefix}#{nth($i, 1)} {
-			background-color: nth($i, 2);
-			color: nth($i, 3);
-			&-lighten {
-				background-color: lighten(nth($i, 2), 20%);
-				color: nth($i, 3);
-			}
-			&-darken {
-				background-color: darken(nth($i, 2), 20%);
-				color: nth($i, 3);
-			}
-		}
-	}
-}
-
-@mixin button-stroke-color($prefix, $colors...) {
-	@each $i in $colors {
-		.#{$prefix}#{nth($i, 1)} {
-			background-color: transparent;
-			border: 2px solid nth($i, 2);
-			color: nth($i, 3);
-		}
-	}
-}
-
-@mixin button-close-color($prefix, $colors...) {
-	@each $i in $colors {
-		.#{$prefix}#{nth($i, 1)} {
-			&::before, &::after {
-				background-color: nth($i, 2);
-			}
-		}
-	}
 }

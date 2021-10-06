@@ -1,7 +1,3 @@
-@charset "UTF-8";
-
-// —————————————————————————————————————————————————————————————————
-// SITE
 // —————————————————————————————————————————————————————————————————
 // general
 // responsive
@@ -244,7 +240,7 @@ ul {
 	transition: filter, $transition;
 	will-change: filter;
 	
-	@include hover-link {
+	@include hover {
 		filter: grayscale(0%);
 	}
 }

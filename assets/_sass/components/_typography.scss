@@ -3,7 +3,6 @@
 // —————————————————————————————————————————————————————————————————
 // general
 // variants
-// buttons
 // form
 // misc
 // —————————————————————————————————————————————————————————————————
@@ -164,49 +163,6 @@ html, body {
 		@include responsive(max-width, $tablet-max) {
 			column-count: 1;
 		}
-	}
-}
-
-// —————————————————————————————————————————————————————————————————
-// buttons
-// —————————————————————————————————————————————————————————————————
-
-.button {
-	@include font-size(1, $font-black, normal);
-	font-family: $font;
-	letter-spacing: 0.05rem;
-	line-height: 1;
-
-	&--text {
-		font-weight: $font-regular;
-		letter-spacing: 0;
-	}
-
-	&.button--large {
-		@include font-size(1.5, $font-black, normal);
-		letter-spacing: 0.08rem;
-	}
-
-	&.button--small {
-		@include font-size(0.875, $font-black, normal);
-		letter-spacing: 0.04rem;
-		line-height: 1.5;
-	}
-}
-
-.button__inner {
-	font-family: $font;
-}
-
-.button--icon {
-	font-size: 20px !important;
-
-	&.button--large {
-		font-size: 30px !important;
-	}
-
-	&.button--small {
-		font-size: 14px !important;
 	}
 }
 

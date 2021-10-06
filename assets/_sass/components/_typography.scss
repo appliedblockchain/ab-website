@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 // —————————————————————————————————————————————————————————————————
 // general
 // variants
@@ -15,107 +13,49 @@ html, body {
 	font-family: $font;
 	font-size: 16px;
 	line-height: 1.5;
-	font-weight: $font-light;
-	color: $black;
+	font-weight: $font-regular;
+	color: $text;
 
 	@include responsive(min-width, $desktop-lg) {
 		font-size: 20px;
 	}
 }
 
-.headline,
-.title,
-.subtitle {
-	line-height: 1.2;
+@mixin font-size($fontSize: 1, $fontWeight: $font-regular, $lineHeight: 1.5) {
+  font-size: $fontSize * 1rem;
+  font-weight: $fontWeight;
+  letter-spacing: calc(#{$fontSize * 1rem} * 0.01);
+  line-height: $lineHeight;
+
+  & + & {
+    margin-top: 0.5em;
+  }
+
+  &.gutter {
+    margin-bottom: 0.5em;
+  }
 }
 
-.headline {
-	@include font-size(3, $font-black, normal);
-	text-transform: uppercase;
-
-	@include responsive(max-width, $tablet-max) {
-		font-size: 2.5rem;
-	}
-}
-
-.title {
-	@include font-size(2.5, $font-bold, normal);
-	color: $primary;
-
-	@include responsive(max-width, $tablet-max) {
-		font-size: 2rem;
-	}
-
-	@include responsive(max-width, $mobile-max) {
-		font-size: 1.8rem;
-	}
-}
-
-.subtitle {
-	@include font-size(1.8, $font-bold, normal);
-
-	@include responsive(max-width, $mobile-max) {
-		font-size: 1.5rem;
-	}
-}
-
-.comment {
-	@include font-size(1.5, $font-light, normal);
-	text-transform: uppercase;
-}
-
-.quote {
-	@include font-size(1.5, $font-light, normal);
-
-	@include responsive(max-width, $tablet-max) {
-		font-size: 1.25rem;
-	}
-}
-
-.lead {
-	@include font-size(1.5, $font-regular, normal);
-	color: $primary;
-}
+.h1 { @include font-size(3, $font-black, 1.25); }
+.h2 { @include font-size(2.5, $font-bold, 1.25); }
+.h3 { @include font-size(2, $font-bold, 1.25); }
+.h4 { @include font-size(1.75, $font-bold, 1.25); }
+.h5 { @include font-size(1.5, $font-bold, 1.5); }
+.h6 { @include font-size(1.25, $font-bold, 1.5); }
 
 .body {
 
-	&--large { font-size: 1.25rem; }
-  &--small { font-size: 0.875rem; }
-  &--xs { font-size: 0.8rem; }
-
-	&--block { display: inline-block; }
+	&--xs { @include font-size(0.75); letter-spacing: 0 }
+	&--sm { @include font-size(0.875); letter-spacing: 0 }
+	& { @include font-size(); letter-spacing: 0 }
+	&--lg { @include font-size(1.125); letter-spacing: 0 }
 }
 
-.post__content {
+.label { @include font-size(0.875, $font-bold); }
 
-	h1 { @extend .subtitle; }
-	h2 { @extend .lead; }
-	p, li { @extend .body--large; }
-	blockquote p { @extend .quote; }
-}
-
-// spacing between paragraphs
-
-.body {
-	
-	& + & { 
-		margin-top: $integer; 
-	}
-
-	&--large { 
-
-		& + &,
-		& + .body { 
-			margin-top: $integer-md; 
-		}
-	}
-
-	&--small { 
-
-		& + & { 
-			margin-top: $integer-sm; 
-		}
-	}
+.code {
+  @include font-size(0.75, $font-bold, 1.25);
+  font-family: "Roboto Mono", Courier, monospace;
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -126,13 +66,16 @@ html, body {
 
 .body {
 
-	&--black { color: $black; }
+	&--black { color: $text; }
 	&--grey { color: $grey-30; }
-	&--white { color: $white; }
+	&--white { color: $text-contrast; }
+	&--disabled { color: $text-disabled; }
 	&--primary { color: $primary; }
 	&--secondary { color: $secondary; }
-	&--highlight { color: $highlight; }
-	&--dark { color: $dark; }
+	&--success { color: $success; }
+	&--info { color: $info; }
+	&--warning { color: $warning; }
+	&--error { color: $error; }
 }
 
 // alignement
@@ -149,6 +92,7 @@ html, body {
 
 .body {
 
+	&--light { font-weight: $font-light; }
 	&--regular { font-weight: $font-regular; }
 	&--bold { font-weight: $font-bold; }
 }
@@ -156,32 +100,13 @@ html, body {
 // col text
 
 @for $i from 1 through 4 {
-	.col-text--#{$i} {
+	.colText--#{$i} {
 		column-count: $i;
 		column-gap: 2rem;
 	
 		@include responsive(max-width, $tablet-max) {
 			column-count: 1;
 		}
-	}
-}
-
-// —————————————————————————————————————————————————————————————————
-// form
-// —————————————————————————————————————————————————————————————————
-
-.form__label, .form__input {
-	font-family: $font;
-}
-
-.label, .form__label {
-	@include font-size(0.875, $font-black, normal);
-}
-
-.form {
-
-	&__input, .form__dropdown li {
-		@include font-size(1, $font-light, normal);
 	}
 }
 

@@ -1,4 +1,6 @@
-// —————————————————————————————————————————————————————————————————
+@import "components/_typography";
+
+  // —————————————————————————————————————————————————————————————————
 // elements
 // size
 // direction
@@ -15,6 +17,8 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  text-align: left;
+  box-shadow: $box-shadow-sm;
 
   &__header,
   &__content,
@@ -23,13 +27,12 @@
   }
 
   &__header,
-  &__actions {
-    justify-content: space-between;
-  }
-
   &__content {
     flex-direction: column;
-    align-items: flex-start;
+  }
+
+  &__actions {
+    justify-content: space-between;
   }
 }
 
@@ -37,73 +40,100 @@
 // size
 // —————————————————————————————————————————————————————————————————
 
-@mixin size($size) {
-  border-radius: $size;
+@mixin size($size, $ratio) {
+  border-radius: $ratio;
 
-  .card__header,
-  .card__content,
-  .card__actions {
-    padding: 0 $size $size $size;
+  .card {
 
-    &:first-child {
-      padding-top: $size;
-    }
-
-    &.noPadding {
-      padding: 0;
-
+    &__header,
+    &__content,
+    &__actions {
+      padding: 0 $ratio $ratio $ratio;
+      
       &:first-child {
-        padding-top: 0;
+        padding-top: $ratio;
+      }
+      
+      &.noPadding {
+        padding: 0;
+        
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+      
+      &.fullWidth {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    
+    &__label {
+      @extend .label;
+      
+      + .card__title,
+      + .card__subtitle {    
+        margin-top: $ratio/4;
+      }
+    }
+    
+    &__title {
+      color: $primary;
+      @if $size == sm {
+        @extend .h6;
+      } @else if $size == md {
+        @extend .h5;
+      } @else if $size == lg {
+        @extend .h4;
+      }
+      
+      + .card__subtitle {
+        margin-top: $ratio/2;
       }
     }
 
-    &.fullWidth {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
-
-  .card__label {
-
-    + .card__title,
-    + .card__subtitle {    
-            margin-top: $size/4;
-    }
-  }
-
-  .card__title {
-
-    + .card__subtitle {
-      margin-top: $size/2;
+    &__subtitle {
+      @if $size == sm {
+        @extend .body--sm;
+      } @else if $size == md {
+        @extend .body;
+      } @else if $size == lg {
+        @extend .body--lg;
+      }
     }
   }
 
   &.card--landscape {
 
-    .card__header,
-    .card__content,
-    .card__actions {
-      padding: $size $size $size 0;
+    .card {
 
-      &:first-child {
-        padding-left: $size;
-      }
-
-      &.noPadding {
-        padding: 0;
-
+      &__header,
+      &__content,
+      &__actions {
+        padding: $ratio $ratio $ratio 0;
+        
         &:first-child {
-          padding-left: 0;
+          padding-left: $ratio;
+        }
+        
+        &.noPadding {
+          padding: 0;
+          
+          &:first-child {
+            padding-left: 0;
+          }
         }
       }
     }
   }
 }
 
-.card--xs { @include size(0.5rem); }
-.card--sm { @include size(1rem); }
-.card--md { @include size(1.5rem); }
-.card--lg { @include size(2rem); }
+.card {
+
+  &--sm { @include size(sm, 1rem); }
+  &--md { @include size(md, 1.5rem); }
+  &--lg { @include size(lg, 2rem); }
+}
 
 // —————————————————————————————————————————————————————————————————
 // direction

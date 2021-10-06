@@ -40,33 +40,27 @@ a {
 // —————————————————————————————————————————————————————————————————
 
 @mixin color($color, $text, $hover) {
+  background-color: $color;
+  color: $text;
 
-  &.button {
+  @include hover {
+    background-color: $hover;
+  }
 
-    &--fill {
-      background-color: $color;
-      color: $text;
+  &--stroke {
+    border-color: $color;
+    color: $black;
 
-      @include hover {
-        background-color: $hover;
-      }
+    @include hover {
+      border-color: $hover;
     }
+  }
 
-    &--stroke {
-      border-color: $color;
-      color: $black;
+  &--text {
+    color: $color;
 
-      @include hover {
-        border-color: $hover;
-      }
-    }
-
-    &--text {
-      color: $color;
-
-      @include hover {
-        color: $hover;
-      }
+    @include hover {
+      color: $hover;
     }
   }
 }
@@ -124,8 +118,8 @@ a {
 
 .button {
 
+  & { @include size(0.875rem, 2rem); }
   &--sm { @include size(0.75rem, 1.75rem); }
-  &--md { @include size(0.875rem, 2rem); }
   &--lg { @include size(1rem, 2.5rem); }
 }
 
@@ -134,10 +128,7 @@ a {
 // —————————————————————————————————————————————————————————————————
 
 .button {
-
-  &--fill {
-    transition: background-color 0.4s ease;
-  }
+  transition: background-color 0.4s ease;
 
   &--stroke {
     border-width: 2px;

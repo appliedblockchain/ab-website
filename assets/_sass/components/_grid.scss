@@ -1,0 +1,175 @@
+// —————————————————————————————————————————————————————————————————
+// variables
+// —————————————————————————————————————————————————————————————————
+
+$col:  100%/12;
+
+// —————————————————————————————————————————————————————————————————
+// elements
+// —————————————————————————————————————————————————————————————————
+
+.grid {
+
+  // display a bigger top margin betweem grid wrappers
+  &__container {
+  
+    & + & {
+      margin-top: 3rem;
+    }
+  }
+  
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  &__item {
+    display: flex;
+    position: relative;
+    float: left;
+    width: 100%;
+    
+    &.grid__wrapper {
+      width: 100%;
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// direction
+// —————————————————————————————————————————————————————————————————
+
+.grid--column { flex-direction: column; }
+.grid--column-reverse { flex-direction: column-reverse; }
+.grid--row { flex-direction: row; flex-wrap: nowrap; }
+.grid--row-reverse { flex-direction: row-reverse; flex-wrap: nowrap; }
+
+// —————————————————————————————————————————————————————————————————
+// justifyContent
+// —————————————————————————————————————————————————————————————————
+
+.grid--jc-center { justify-content: center;}
+.grid--jc-flex-end { justify-content: flex-end;}
+.grid--jc-flex-start { justify-content: flex-start;}
+.grid--jc-space-around { justify-content: space-around;}
+.grid--jc-space-between { justify-content: space-between;}
+.grid--jc-space-evenly { justify-content: space-evenly;}
+
+// —————————————————————————————————————————————————————————————————
+// alignItems
+// —————————————————————————————————————————————————————————————————
+
+.grid--ai-stretch { align-items: stretch; }
+.grid--ai-center { align-items: center; }
+.grid--ai-flex-end { align-items: flex-end; }
+.grid--ai-flex-start { align-items: flex-start; }
+.grid--ai-baseline { align-items: baseline; }
+
+// —————————————————————————————————————————————————————————————————
+// item width
+// —————————————————————————————————————————————————————————————————
+
+@for $colWidth from 1 through 12 {
+
+  .grid__item--#{$colWidth} {
+    width: $colWidth*$col;
+
+    &.grid__wrapper {
+      width: $colWidth*$col;
+    }
+  }
+}
+
+@include responsive(min-width, $mobile-min) {
+ 
+  @for $colWidth from 1 through 12 {
+
+    .grid__item--sm#{$colWidth} {
+      width: $colWidth*$col;
+
+      &.grid__wrapper {
+        width: $colWidth*$col;
+      }
+    }
+  }
+}
+
+@include responsive(min-width, $tablet-min) {
+ 
+  @for $colWidth from 1 through 12 {
+
+    .grid__item--md#{$colWidth} {
+      width: $colWidth*$col;
+
+      &.grid__wrapper {
+        width: $colWidth*$col;
+      }
+    }
+  }
+}
+
+@include responsive(min-width, $laptop-min) {
+ 
+  @for $colWidth from 1 through 12 {
+
+    .grid__item--lg#{$colWidth} {
+      width: $colWidth*$col;
+
+      &.grid__wrapper {
+        width: $colWidth*$col;
+      }
+    }
+  }
+}
+
+@include responsive(min-width, $desktop-min) {
+ 
+  @for $colWidth from 1 through 12 {
+
+    .grid__item--xl#{$colWidth} {
+      width: $colWidth*$col;
+
+      &.grid__wrapper {
+        width: $colWidth*$col;
+      }
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// spacing
+// —————————————————————————————————————————————————————————————————
+
+@for $spacingWidth from 1 through 12 {
+
+  .grid__spacing--#{$spacingWidth} {
+    margin: -($spacingWidth * 0.5rem)/2;
+    width: calc(100% + #{$spacingWidth * 0.5rem});
+
+    > .grid__item {
+      padding: ($spacingWidth * 0.5rem)/2;
+    }
+
+    &.grid__item {
+      width: calc(100% + #{$spacingWidth * 0.5rem});
+    }
+
+    @for $colWidth from 1 through 12 {
+
+      &.grid__item--#{$colWidth} {
+        width: calc(#{$colWidth*$col} + #{$spacingWidth * 0.5rem});
+      }
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// misc
+// —————————————————————————————————————————————————————————————————
+
+// have children all the same width
+.grid__wrapper--inline {
+  flex-wrap: nowrap;
+  flex-direction: row;
+}

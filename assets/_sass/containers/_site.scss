@@ -32,105 +32,6 @@ html, body {
 	height: 100%;
 }
 
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	@include calc(width, '100% + '$integer-md*2);
-	margin-right: -$integer-md;
-	margin-left: -$integer-md;
-
-	&:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	&--center {
-		justify-content: center;
-	}
-}
-
-.clear:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-[class*="col--"] {
-	float: left;
-	position: relative;
-	padding: 0 $integer-md;
-	width: 100%;
-}
-
-@for $i from 1 through 12 {
-	.col--#{$i} 			{ width: $i*$col; }
-	.coloffset--#{$i} 		{ margin-left: $i*$col; }
-}
-
-@include responsive(min-width, $mobile-min) {
-	@for $i from 1 through 12 {
-		.col--sm#{$i} 		{ width: $i*$col; }
-		.coloffset--sm#{$i} { margin-left: $i*$col; }
-	}
-}
-
-@include responsive(min-width, $tablet-min) {
-	@for $i from 1 through 12 {
-		.col--md#{$i} 		{ width: $i*$col; }
-		.coloffset--md#{$i} { margin-left: $i*$col; }
-	}
-}
-
-@include responsive(min-width, $laptop-min) {
-	@for $i from 1 through 12 {
-		.col--lg#{$i} 		{ width: $i*$col; }
-		.coloffset--lg#{$i} { margin-left: $i*$col; }
-	}
-}
-
-@include responsive(min-width, $desktop-min) {
-	@for $i from 1 through 12 {
-		.col--xl#{$i} 		{ width: $i*$col; }
-		.coloffset--xl#{$i} { margin-left: $i*$col; }
-	}
-}
-
-// footer
-
-@for $i from 1 through 15 {
-	.colalt--#{$i} 				{ width: $i*$col-footer; }
-	.colaltoffset--#{$i} 		{ margin-left: $i*$col-footer; }
-}
-
-@include responsive(min-width, $mobile-min) {
-	@for $i from 1 through 15 {
-		.colalt--sm#{$i} 		{ width: $i*$col-footer; }
-		.colaltoffset--sm#{$i} 	{ margin-left: $i*$col-footer; }
-	}
-}
-
-@include responsive(min-width, $tablet-min) {
-	@for $i from 1 through 15 {
-		.colalt--md#{$i} 		{ width: $i*$col-footer; }
-		.colaltoffset--md#{$i} 	{ margin-left: $i*$col-footer; }
-	}
-}
-
-@include responsive(min-width, $laptop-min) {
-	@for $i from 1 through 15 {
-		.colalt--lg#{$i} 		{ width: $i*$col-footer; }
-		.colaltoffset--lg#{$i} 	{ margin-left: $i*$col-footer; }
-	}
-}
-
-@include responsive(min-width, $desktop-min) {
-	@for $i from 1 through 15 {
-		.colalt--xl#{$i} 		{ width: $i*$col-footer; }
-		.colaltoffset--xl#{$i} 	{ margin-left: $i*$col-footer; }
-	}
-}
-
 // embed responsively
 
 .embed-container { 
@@ -167,6 +68,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
+	box-shadow: 0 0 0px 1000px $white inset;
 	-webkit-box-shadow: 0 0 0px 1000px $white inset;
 	transition: background-color $transition;
 }

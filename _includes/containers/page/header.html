@@ -27,8 +27,8 @@
         {% endif %}
       {% endif %}
       {% if page.id != 'applied-privacy' %}
-      <a href="{{ site.base-url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
-        <p class="button__inner">Contact us</p>
+      <a href="{{ site.base-url }}/contact" class="header__contact button button--sm button--primary{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
+        <p>Contact us</p>
       </a>
       {% endif %}
       {% if page.id != 'applied-privacy' %}

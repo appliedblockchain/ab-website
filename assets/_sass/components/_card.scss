@@ -18,7 +18,10 @@
   width: 100%;
   overflow: hidden;
   text-align: left;
-  box-shadow: $box-shadow-sm;
+  // box-shadow: $box-shadow-sm;
+  // remove after testing
+  background-color: $grey-10;
+  padding: 1rem;
 
   &__header,
   &__content,

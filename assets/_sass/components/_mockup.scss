@@ -27,7 +27,7 @@
   margin: 0 auto;
   position: relative;
   
-  @include responsive(max-width, $desktop-max) {
+  @include responsive(up, $desktop) {
     width: 65vmin;
     height: (65vmin)*0.63;
     font-size: 0.975vmin;
@@ -77,11 +77,11 @@
       opacity: 0.1;
       z-index: 2;
       
-      @include responsive(max-width, $laptop-max) {
+      @include responsive(up, $laptop) {
         border-width: 0 0 40em 40em;
       }
       
-      @include responsive(max-width, $tablet-max) {
+      @include responsive(up, $tablet) {
         border-width: 0 0 50em 25em;
       }
     }

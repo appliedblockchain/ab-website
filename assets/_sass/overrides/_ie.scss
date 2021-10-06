@@ -54,7 +54,7 @@
 // —————————————————————————————————————————————————————————————————
 
 .landing {
-    padding-top: $integer-xxxl;
+    padding-top: $spacing*10;
     padding-bottom: 0;
 }
 
@@ -118,7 +118,7 @@
     .tab {
         
         &__nav {
-            padding: 0 $integer;
+            padding: 0 $spacing;
         }
         
         &__button {

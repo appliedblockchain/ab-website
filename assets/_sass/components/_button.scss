@@ -166,7 +166,7 @@ a {
 .button__wrapper {
   display: flex;
 
-  @include responsive(max-width, $mobile-max) {
+  @include responsive(up, $mobile) {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
@@ -175,11 +175,11 @@ a {
   .button {
 
     & + .button {
-      margin-left: $integer;
+      margin-left: $spacing;
 
-      @include responsive(max-width, $mobile-max) {
+      @include responsive(up, $mobile) {
         margin-left: 0;
-        margin-top: $integer;
+        margin-top: $spacing;
       }
     }
   }

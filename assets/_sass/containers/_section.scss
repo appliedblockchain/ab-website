@@ -14,8 +14,8 @@
 	flex-direction: column;
 	position: relative;
 	padding-left: $page;
-	padding-top: $integer-xxxl;
-	padding-bottom: $integer-xxxl;
+	padding-top: $spacing*10;
+	padding-bottom: $spacing*10;
 	padding-right: $page;
 	text-align: center;
 
@@ -29,18 +29,18 @@
 		padding-left: $page;
 
 		& + .section__header {
-			margin-top: $integer-md;
+			margin-top: $spacing*2;
 		}
 
     & + .section__content {
-			margin-top: $integer-xxl;
+			margin-top: $spacing*8;
 		}
 	}
 
 	&__comment {
 
 		& + .section__title {
-			margin-top: $integer-lg;
+			margin-top: $spacing*4;
 		}
 	}
 
@@ -48,14 +48,14 @@
 
 		& + .section__subtitle,
 		& + .section__body {
-			margin-top: $integer-md;
+			margin-top: $spacing*2;
 		}
 	}
 
 	&__subtitle {
 
 		& + .section__body {
-			margin-top: $integer-md;
+			margin-top: $spacing*2;
 		}
 	}
 
@@ -66,7 +66,7 @@
 		flex-wrap: wrap;
 
 		& + & {
-			margin-top: $integer-xxl;
+			margin-top: $spacing*8;
 		}
 	}
 }
@@ -78,7 +78,7 @@
 .section {
 
 	&--header {
-		padding-top: $integer-xxxl+$integer-xxxl;
+		padding-top: $spacing*10+$spacing*10;
 
 		#post & {
 			text-align: center;
@@ -92,7 +92,7 @@
 		.section {
 
 			&__header {
-				padding-top: $integer-xxxl;
+				padding-top: $spacing*10;
 				padding-right: $page*2;			
 				padding-left: $page*2;
 			}
@@ -101,7 +101,7 @@
 		&.section--overlap {
 
 			.section__header {
-				padding-top: $integer-xxxl*2;
+				padding-top: $spacing*10*2;
 			}
 		}
 	}
@@ -112,8 +112,8 @@
 	}
 	
 	&--overlap {
-		margin-top: -$integer-xxxl*2;
-		padding-top: $integer-xxxl*2;
+		margin-top: -$spacing*10*2;
+		padding-top: $spacing*10*2;
 	}
 
 	&__content {
@@ -129,7 +129,7 @@
 				
 				&__inner { 
 					padding-top: 0;
-					padding-bottom: $integer-xxxl;
+					padding-bottom: $spacing*10;
 					position: relative;
 				}
 
@@ -139,7 +139,7 @@
 					&:before {
 						@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
 
-						@include responsive(max-width, $tablet-max) {
+						@include responsive(up, $tablet) {
 							display: none;
 						}
 					}
@@ -155,7 +155,7 @@
 					.card__inner {
 						padding-left: 0;
 						
-						@include responsive(max-width, $tablet-max) {
+						@include responsive(up, $tablet) {
 							padding-right: 0;
 						}
 					}
@@ -171,13 +171,13 @@
 					.card__inner {
 						padding-right: 0;
 						
-						@include responsive(max-width, $tablet-max) {
+						@include responsive(up, $tablet) {
 							padding-left: 0;
 						}
 					}
 				}
 
-				@include responsive(max-width, $tablet-max) {
+				@include responsive(up, $tablet) {
 					width: 100%;
 				}
 			}
@@ -262,13 +262,13 @@
 #join {
 
 	.section--overlap {
-		margin-top: -$integer-xxxl*4;
+		margin-top: -$spacing*10*4;
 	}
 	
 	&-header {
 		
 		&.section {
-			padding-bottom: $integer-xxxl*3;
+			padding-bottom: $spacing*10*3;
 		}
 	}
 }
@@ -276,6 +276,6 @@
 #project {
 
 	.section--header {
-		padding-top: $integer-xxxl*3;
+		padding-top: $spacing*10*3;
 	}
 }

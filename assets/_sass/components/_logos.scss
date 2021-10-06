@@ -11,7 +11,7 @@
 	
 	&__item {
 		width: 100%;
-		max-width: $integer-max*2;
+		max-width: $spacing*25*2;
 		height: auto;
 	}
 
@@ -40,16 +40,16 @@
 
 	&--k0 {
 
-		@include responsive(max-width, $tablet-max) {
+		@include responsive(up, $tablet) {
 			width: 25%;
-			margin-top: -$integer-lg;
-			margin-bottom: $integer-xl;
+			margin-top: -$spacing*4;
+			margin-bottom: $spacing*5;
 		}
 
-		@include responsive(max-width, $mobile-max) {
+		@include responsive(up, $mobile) {
 			width: 50%;
-			margin-top: -$integer-md;
-			margin-bottom: $integer-lg;
+			margin-top: -$spacing*2;
+			margin-bottom: $spacing*4;
 		}
 	}
 }

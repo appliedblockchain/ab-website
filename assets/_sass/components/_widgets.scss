@@ -31,21 +31,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateX(-$integer-xxxl);
+  transform: translateX(-$spacing*10);
   position: absolute;
   top: 0;
-  padding-top: $integer/4;
+  padding-top: $spacing/4;
   
   &__button {
     
     .post & {
       margin-left: 0;
-      margin-bottom: $integer/4;
+      margin-bottom: $spacing/4;
       text-decoration: none;
     }
 
     & + & {
-      margin-top: $integer-md;
+      margin-top: $spacing*2;
     }
   }
 }
@@ -61,7 +61,7 @@
 .newsletter {
 
   &__button {
-    margin-top: $integer;
+    margin-top: $spacing;
   }
 
   .form__label {
@@ -71,12 +71,12 @@
   &__input {
     display: block;
     
-    @include responsive(max-width, $desktop-max) {
-      max-width: $integer-max*2;
+    @include responsive(up, $desktop) {
+      max-width: $spacing*25*2;
     }
 
     & + & {
-      margin-top: $integer;
+      margin-top: $spacing;
     }
   }
 }
@@ -95,7 +95,7 @@
   justify-content: space-between;
   transition: opacity $transition;
   box-shadow: $box-shadow-md;
-  padding: $integer-xs $page;
+  padding: $spacing/4 $page;
   will-change: opacity;
   background-color: $primary;
   color: $white;
@@ -105,14 +105,14 @@
   opacity: 1;
   display: none;
 
-  @include responsive(max-width, $mobile-max) {
+  @include responsive(up, $mobile) {
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-left: $col;
     padding-right: $col;
   }
 
-  @include responsive-mobile-devices() {
+  @include responsive-touch() {
     padding-right: $col;
   }
 
@@ -121,11 +121,11 @@
   }
 
   &__text {
-    padding-right: $integer;
+    padding-right: $spacing;
 
-    @include responsive(max-width, $mobile-max) {
+    @include responsive(up, $mobile) {
       padding-right: 0;
-      margin-bottom: $integer;
+      margin-bottom: $spacing;
     }
   }
 

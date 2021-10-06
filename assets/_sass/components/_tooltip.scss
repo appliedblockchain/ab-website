@@ -40,8 +40,8 @@
     transform: translateX(-60%) translateY(10%);
     display: none;
     opacity: 1;
-    padding: $integer/2 $integer;
-    @include responsive-mobile-devices() {
+    padding: $spacing/2 $spacing;
+    @include responsive-touch() {
         display: none !important;
     }
 }

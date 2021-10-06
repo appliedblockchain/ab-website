@@ -16,7 +16,7 @@ html, body {
 	font-weight: $font-regular;
 	color: $text;
 
-	@include responsive(min-width, $desktop-lg) {
+	@include responsive(down, $desktop-lg) {
 		font-size: 20px;
 	}
 }
@@ -100,11 +100,11 @@ html, body {
 // col text
 
 @for $i from 1 through 4 {
-	.colText--#{$i} {
+	.col-text--#{$i} {
 		column-count: $i;
 		column-gap: 2rem;
 	
-		@include responsive(max-width, $tablet-max) {
+		@include responsive(up, $tablet) {
 			column-count: 1;
 		}
 	}

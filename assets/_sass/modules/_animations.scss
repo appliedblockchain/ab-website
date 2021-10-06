@@ -62,7 +62,7 @@
 
 @keyframes button-menu-open-before {
 	0% { 
-		transform: translateY($integer+$integer-xs);
+		transform: translateY($spacing+$spacing/4);
 	}
 	50% { 
 		transform: translateY(0);
@@ -74,7 +74,7 @@
 }
 @keyframes button-menu-open-after {
 	0% { 
-		transform: translateY(-($integer+$integer-xs));
+		transform: translateY(-($spacing+$spacing/4));
 	}
 	50% { 
 		transform: translateY(0);
@@ -96,7 +96,7 @@
 		transform: translateY(0);
 	}
 	100% { 
-		transform: translateY($integer+$integer-xs);
+		transform: translateY($spacing+$spacing/4);
 	}
 }
 @keyframes button-menu-close-after {
@@ -108,6 +108,6 @@
 		transform: translateY(0);
 	}
 	100% { 
-		transform: translateY(-($integer+$integer-xs));
+		transform: translateY(-($spacing+$spacing/4));
 	}
 }

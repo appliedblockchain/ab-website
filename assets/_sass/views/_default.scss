@@ -18,11 +18,11 @@
 .timeline {
 
   &:before {
-    @include pseudo-element('', $integer-xxxxl+$integer-xxxl, auto, 0, 50%, $integer, 100%);
-    transform: translateX(-$integer/2);
+    @include pseudo-element('', $spacing*15+$spacing*10, auto, 0, 50%, $spacing, 100%);
+    transform: translateX(-$spacing/2);
     background-color: $grey-10;
 
-    @include responsive(max-width, $tablet-max) {
+    @include responsive(up, $tablet) {
       display: none;
     }
   }
@@ -30,12 +30,12 @@
   &__headline {
     display: flex;
     position: relative;
-    margin: $integer-xl 0;
+    margin: $spacing*5 0;
 
     &:nth-of-type(odd)  { .timeline__date { left: 0; } }
     &:nth-of-type(even) { .timeline__date { right: 0; } }
 
-    @include responsive(max-width, $tablet-max) {
+    @include responsive(up, $tablet) {
       width: 100%;
     }
 
@@ -48,17 +48,17 @@
     border-radius: $border-radius;   
     display: inline-block;
     background-color: $secondary;
-    width: $integer-md;
-    height: $integer-md;
+    width: $spacing*2;
+    height: $spacing*2;
     border: $border-lg $white;
     box-sizing: content-box;
     z-index: 1;
     
     .timeline__item & {
-      width: $integer;
-      height: $integer;
+      width: $spacing;
+      height: $spacing;
 
-      @include responsive(max-width, $tablet-max) {
+      @include responsive(up, $tablet) {
         display: none;
       }
     }
@@ -66,10 +66,10 @@
 
   &__date {
     position: absolute;
-    padding: 0 $integer-xl;
+    padding: 0 $spacing*5;
 
-    @include responsive(max-width, $tablet-max) {
-      padding-left: $integer-xl;
+    @include responsive(up, $tablet) {
+      padding-left: $spacing*5;
       right: auto !important;
       left: 0 !important;
     }
@@ -81,28 +81,28 @@
     width: 100%;
 
     & + & {
-      margin-top: $integer-xl;
+      margin-top: $spacing*5;
     }
 
     &:nth-of-type(odd) .timeline__text,
     &:nth-of-type(even) .timeline__icon { 
       text-align: right; 
-      padding-right: $integer-xxl;
+      padding-right: $spacing*8;
       justify-content: flex-end;
 
-      @include responsive(max-width, $laptop-max) {
-        padding-right: $integer-lg;
+      @include responsive(up, $laptop) {
+        padding-right: $spacing*4;
       }
     }
 
     &:nth-of-type(even) .timeline__text,
     &:nth-of-type(odd) .timeline__icon { 
       text-align: left; 
-      padding-left: $integer-xxl; 
+      padding-left: $spacing*8; 
       justify-content: flex-start;
 
-      @include responsive(max-width, $laptop-max) {
-        padding-left: $integer-lg; 
+      @include responsive(up, $laptop) {
+        padding-left: $spacing*4; 
       }
     }
 
@@ -114,14 +114,14 @@
       }
     }
 
-    @include responsive(min-width, $desktop-lg) {
-      margin-top: $integer;
-      margin-bottom: $integer;
+    @include responsive(down, $desktop-lg) {
+      margin-top: $spacing;
+      margin-bottom: $spacing;
     }
 
-    @include responsive(max-width, $laptop-max) {
-      margin-top: $integer;
-      margin-bottom: $integer;
+    @include responsive(up, $laptop) {
+      margin-top: $spacing;
+      margin-bottom: $spacing;
     }
   }
 
@@ -132,7 +132,7 @@
 
   &__text {
 
-    @include responsive(max-width, $tablet-max) {
+    @include responsive(up, $tablet) {
       flex-basis: 100% !important;
       text-align: left !important;
       padding: 0 !important;
@@ -140,10 +140,10 @@
   }
 
   &__icon {
-    height: $integer-xxxxl;
+    height: $spacing*15;
     display: flex;
     
-    @include responsive(max-width, $tablet-max) {
+    @include responsive(up, $tablet) {
       display: none;
     }
     
@@ -155,15 +155,15 @@
 
     .timeline__logo {
       height: auto;
-      max-height: $integer-xxxxl;
+      max-height: $spacing*15;
     }
   }
 
   &__button {
-    margin-top: $integer-md;
+    margin-top: $spacing*2;
     align-self: flex-end;
     
-    @include responsive(max-width, $tablet-max) {
+    @include responsive(up, $tablet) {
       align-self: flex-start;
     }
   }
@@ -198,7 +198,7 @@
 
   .background--cover {
 
-    @include responsive(max-width, $tablet-max) {
+    @include responsive(up, $tablet) {
       background-image: none !important;
     }
   }
@@ -211,15 +211,15 @@
 #join {
 
   ul {
-    padding-left: $integer-md;
+    padding-left: $spacing*2;
 
     & + .body {
-      margin-top: $integer-md;
+      margin-top: $spacing*2;
     }
   }
 
   li + li {
-    margin-top: $integer-sm;
+    margin-top: $spacing/2;
   }
     
   &-header {
@@ -268,8 +268,8 @@
 
    &__diagram {
 
-  @include responsive(max-width, $laptop-max) {
-       margin-top: $integer-xl;
+  @include responsive(up, $laptop) {
+       margin-top: $spacing*5;
      }
    }
 
@@ -285,7 +285,7 @@
      padding-left: 50%;
 
      &:before {
-       @include pseudo-element('', 50%, auto, auto, $integer, 40%, 2px);
+       @include pseudo-element('', 50%, auto, auto, $spacing, 40%, 2px);
        position: absolute;
        background-color: rgba($white, 0.5);
      }
@@ -315,15 +315,15 @@
   &__title {
 
     & + .privacy__content {
-      padding-top: $integer-lg;
+      padding-top: $spacing*4;
     }
   }
 
   &__subtitle {
-    padding-top: $integer-lg;
+    padding-top: $spacing*4;
 
     & + .privacy__content {
-      padding-top: $integer-md;
+      padding-top: $spacing*2;
     }
   }
 
@@ -331,12 +331,12 @@
     list-style: none;
 
     & + .privacy__title {
-      padding-top: $integer-xl;
+      padding-top: $spacing*5;
     }
   }
 
   ul.body {
-    padding-left: $integer-md;
+    padding-left: $spacing*2;
   }
 }
 
@@ -351,17 +351,17 @@
     .card {
 
       &__inner {
-        padding-right: $integer-lg;
-        padding-left: $integer-lg;
+        padding-right: $spacing*4;
+        padding-left: $spacing*4;
 
-        @include responsive-mobile-devices() {
+        @include responsive-touch() {
           padding-top: 0;
-          padding-bottom: $integer-lg;
+          padding-bottom: $spacing*4;
         }
 
-        @include responsive(max-width, $laptop-max) {
+        @include responsive(up, $laptop) {
           padding-top: 0;
-          padding-bottom: $integer-lg;
+          padding-bottom: $spacing*4;
         }
       }
 
@@ -370,13 +370,13 @@
         transform-origin: center, top;
         transition: transform $transition;
         will-change: transform;
-        max-width: $integer-xxl;
+        max-width: $spacing*8;
         
-        @include responsive-mobile-devices() {
+        @include responsive-touch() {
           transform: scale(1) translateY(0);
         }
 
-        @include responsive(max-width, $laptop-max) {
+        @include responsive(up, $laptop) {
           transform: scale(1) translateY(0);
         }
       }
@@ -386,14 +386,14 @@
         transition: transform $transition;
         will-change: transform;
 
-        @include responsive-mobile-devices() {
+        @include responsive-touch() {
           transform: translateY(0);
-          margin-top: $integer-md;
+          margin-top: $spacing*2;
         }
 
-        @include responsive(max-width, $laptop-max) {
+        @include responsive(up, $laptop) {
           transform: translateY(0);
-          margin-top: $integer-md;
+          margin-top: $spacing*2;
         }
       }
 
@@ -402,14 +402,14 @@
         transition: opacity $transition, transform $transition;
         will-change: opacity, transform;
         opacity: 0;
-        margin-top: $integer-md;
+        margin-top: $spacing*2;
 
-        @include responsive-mobile-devices() {
+        @include responsive-touch() {
           transform: translateY(0);
           opacity: 1;
         }
 
-        @include responsive(max-width, $laptop-max) {
+        @include responsive(up, $laptop) {
           transform: translateY(0);
           opacity: 1;
         }
@@ -440,7 +440,7 @@
 
     .body--right {
 
-      @include responsive(max-width, $laptop-max) {
+      @include responsive(up, $laptop) {
         text-align: left;
       }
     }

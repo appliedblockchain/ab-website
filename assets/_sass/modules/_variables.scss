@@ -85,9 +85,7 @@ $beyond: #EA7032;
 $beyond-dark: #BD4E15;
 $beyond-light-grey: #F7F8FD;
 $beyond-dark-grey: #3F4F69;
-
 $silentdata: #2E81F4;
-
 $k0: #00E27B;
 
 // —————————————————————————————————————————————————————————————————
@@ -96,36 +94,19 @@ $k0: #00E27B;
 
 $page: 12.5vw;
 $col: 100%/12;
-$col-footer:100%/15;
 
-$integer: 0.5rem; // 8px
-
-$integer-xxs: $integer/8; // 1px
-$integer-xs: $integer/4; // 2px 
-$integer-sm: $integer/2; // 4px
-
-$integer-md: $integer*2; // 16px
-$integer-lg: $integer*4; // 32px
-$integer-xl: $integer*5; // 40px
-$integer-xxl: $integer*8; // 64px
-$integer-xxxl: $integer*10; // 80px
-$integer-xxxxl: $integer*15; // 120px
-$integer-max: $integer*25; // 200px
+$spacing: 0.5rem; // 8px
 
 $transition: 0.4s ease 0s;
-$transition-delay: 0.4s ease 0.2s;
-$transition-long: 0.6s ease 0s;
 
-$box-shadow-xs: 0 0 15px 0 rgba($dark, 0.05);
 $box-shadow-sm: 0 0 10px 0 rgba($dark, 0.15);
 $box-shadow-md: 0 0 20px 0 rgba($dark, 0.20);
 
-$border-sm: $integer-xs solid;
-$border-md: $integer-sm solid;
-$border-lg: $integer solid;
+$border-sm: $spacing/4 solid;
+$border-md: $spacing/2 solid;
+$border-lg: $spacing solid;
 
-// one border radius to keep consistency througbout your website
-$border-radius: $integer-md*1.5;
+$border-radius: $spacing;
 
 // —————————————————————————————————————————————————————————————————
 // fonts
@@ -152,18 +133,8 @@ $font-black: 900;
 // —————————————————————————————————————————————————————————————————
 
 $desktop-lg: 1800px;
-
-$desktop-min: 1280px;
-$desktop-max: 1279.98px;
-
-$laptop-min: 1024px;
-$laptop-max: 1023.98px;
-
-$tablet-min: 768px;
-$tablet-max: 767.98px;
-
-$mobile-min: 568px;
-$mobile-max: 567.98px;
-
-$mobile-sm-min: 350px;
-$mobile-sm-max: 349.98px;
+$desktop: 1280px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 568px;
+$mobile-sm: 350px;

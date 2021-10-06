@@ -52,8 +52,8 @@
 
   &__button {
     position: absolute;
-    right: -$integer;
-    top: -$integer-xl;
+    right: -$spacing;
+    top: -$spacing*5;
 		
 		&:before, &:after {
 			background-color: $white;

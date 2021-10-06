@@ -105,17 +105,17 @@ ul {
 .hide {
 	opacity: 0;
 
-	&--desktop-lg { @include responsive(max-width, $desktop-max) { display: none !important; } }
-	&--desktop { @include responsive(max-width, $laptop-max) { display: none !important; } }
-	&--tablet { @include responsive(max-width, $tablet-max) { display: none !important; } }
-	&--mobile { @include responsive(max-width, $mobile-max) { display: none !important; } }
-	&--touch { @include responsive-mobile-devices() { display: none !important; } }
+	&--desktop-lg { @include responsive(up, $desktop) { display: none !important; } }
+	&--desktop { @include responsive(up, $laptop) { display: none !important; } }
+	&--tablet { @include responsive(up, $tablet) { display: none !important; } }
+	&--mobile { @include responsive(up, $mobile) { display: none !important; } }
+	&--touch { @include responsive-touch() { display: none !important; } }
 }
 
 .show {
 	opacity: 1;
 
-	&--mobile { @include responsive(min-width, $mobile-min) { display: none !important; } }
+	&--mobile { @include responsive(down, $mobile) { display: none !important; } }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -163,21 +163,21 @@ ul {
 .m {
 
 	&r {
-		margin-right: $integer;
-		&--md { margin-right: $integer-md; }
-		&--lg { margin-right: $integer-lg; }
+		margin-right: $spacing;
+		&--md { margin-right: $spacing*2; }
+		&--lg { margin-right: $spacing*4; }
 	}
 
 	&b {
-		margin-bottom: $integer;
-		&--md { margin-bottom: $integer-md; }
-		&--lg { margin-bottom: $integer-lg; }
+		margin-bottom: $spacing;
+		&--md { margin-bottom: $spacing*2; }
+		&--lg { margin-bottom: $spacing*4; }
 	}
 
 	&l {
-		margin-left: $integer;
-		&--md { margin-left: $integer-md; }
-		&--lg { margin-left: $integer-lg; }
+		margin-left: $spacing;
+		&--md { margin-left: $spacing*2; }
+		&--lg { margin-left: $spacing*4; }
 	}
 }
 
@@ -209,7 +209,7 @@ ul {
 	&__button {
 		transition: transform $transition;
 		will-change: transform;
-		width: $integer-xxxl;
+		width: $spacing*10;
 
 		&:hover {
 			transform: scale(1.2);
@@ -217,7 +217,7 @@ ul {
 	}
 
 	&__notice {
-		margin-top: $integer-lg;
+		margin-top: $spacing*4;
 	}
 }
 
@@ -226,7 +226,7 @@ ul {
   align-self: center;
 	
 	&__logo {
-		margin-right: $integer;
+		margin-right: $spacing;
 		max-width: 15rem;
 	}
 
@@ -235,7 +235,7 @@ ul {
 		stroke: $secondary-light;
 
     & + & {
-      margin-left: $integer-sm;
+      margin-left: $spacing/2;
     }
   }
 }

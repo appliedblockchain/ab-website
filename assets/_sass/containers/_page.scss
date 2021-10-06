@@ -14,7 +14,7 @@
 	will-change: height, background-color, box-shadow, padding-top, padding-bottom;
 	overflow: hidden;
 	position: fixed;
-	height: $integer-xxxl*2;
+	height: $spacing*10*2;
 	width: 100vw;
 	pointer-events: none;
 
@@ -24,18 +24,18 @@
 		align-items: center;
 		justify-content: space-between;
 		will-change: height;
-		height: $integer-xxxl*2;
+		height: $spacing*10*2;
 		padding: 0 $page/2;
 
 		.button + .button--menu {
-			margin-left: $integer-md;
+			margin-left: $spacing*2;
 		}
 	}
 
 	&__logo {
 		transition: height $transition, width $transition;
 		will-change: height, width;
-		width: $integer-max*1.5;
+		width: $spacing*25*1.5;
 		pointer-events: initial;
 
 		&.logo-white {
@@ -66,12 +66,12 @@
 
 	&__button {
 		display: flex;
-		margin-left: $integer;
+		margin-left: $spacing;
 	}
 
 	&__contact {
 
-		@include responsive(max-width, $mobile-max) {
+		@include responsive(up, $mobile) {
 			display: none !important;
 		}
 	}
@@ -89,25 +89,25 @@
 	}
 
 	&__menu {
-		@include calc(height, '100vh - '$integer*8);
+		@include calc(height, '100vh - '$spacing*8);
 		@include overflow-scroll();
-		padding: 0  $page $integer-xl $page;
+		padding: 0  $page $spacing*5 $page;
 		pointer-events: initial;
 	}
 
 	&.js-scrolled {
 		box-shadow: $box-shadow-md;
-		height: $integer-xxxl;
+		height: $spacing*10;
 		background-color: $white;
 		
 		.header {
 
 			&__bar {
-				height: $integer-xxxl;
+				height: $spacing*10;
 			}
 			
 			&__logo {
-				width: $integer-xxxxl*1.5;
+				width: $spacing*15*1.5;
 			}
 		}
 	}
@@ -121,11 +121,11 @@
 		.header {
 
 			&__bar {
-				height: $integer-xxxl*2;
+				height: $spacing*10*2;
 			}
 
 			&__logo {
-				width: $integer-max*1.5;
+				width: $spacing*25*1.5;
 			}
 		}
 	}
@@ -174,7 +174,7 @@
 	&__row {
 
 		& + & {
-			margin-top: $integer-xl;
+			margin-top: $spacing*5;
 		}
 	}
 
@@ -184,7 +184,7 @@
 	}
 
 	&__button {
-		margin-bottom: $integer;
+		margin-bottom: $spacing;
 		
 		.subtitle {
 			padding: 0;
@@ -209,7 +209,7 @@
 		overflow: hidden;
 		white-space: nowrap;
 
-		@include responsive-mobile-devices() {
+		@include responsive-touch() {
 			overflow: visible;
 		}
 
@@ -219,14 +219,14 @@
 			will-change: transform;
 			display: block;
 
-			@include responsive-mobile-devices() {
+			@include responsive-touch() {
 				transform: translateY(0);
 			}
 		}
 	}
 
 	&__newsletter {
-		margin-top: $integer-xl;
+		margin-top: $spacing*5;
 	}
 }
 
@@ -239,9 +239,9 @@
 
 	&__header {
 		background-position: top center !important;
-		padding-top: $integer-xxxl*2;
+		padding-top: $spacing*10*2;
 		padding-right: 25vw;
-		padding-bottom: $integer-xxxl;
+		padding-bottom: $spacing*10;
 		padding-left: 25vw;
 		text-align: center;
 
@@ -266,32 +266,32 @@
 
 		& + .page__comment,
 		& + .page__title {
-			margin-top: $integer-xl;
+			margin-top: $spacing*5;
 		}
 	}
 
 	&__comment {
 
 		& + .page__title {
-			margin-top: $integer-md;
+			margin-top: $spacing*2;
 		}
 	}
 
 	&__subtitle {
 
 		.page__title + & {
-			margin-top: $integer-lg;
+			margin-top: $spacing*4;
 		}
 	}
 
 	&__body {
 
 		.page__title + & {
-			margin-top: $integer-lg;
+			margin-top: $spacing*4;
 		}
 
 		.page__subtitle + & {
-			margin-top: $integer-lg;
+			margin-top: $spacing*4;
 		}
 	}
 }
@@ -302,24 +302,24 @@
 
 .footer {
 	text-align: left;
-	margin-bottom: -$integer-xl;
-	padding-bottom: $integer-max;
+	margin-bottom: -$spacing*5;
+	padding-bottom: $spacing*25;
 
 	&__row {
-		margin-top: $integer-xxl;
-		margin-bottom: -$integer-xl;
+		margin-top: $spacing*8;
+		margin-bottom: -$spacing*5;
 	}
 
 	.card {
-		margin-bottom: $integer-xl;
+		margin-bottom: $spacing*5;
 	}
 
 	&__logo {
-		margin-bottom: $integer-xl;
+		margin-bottom: $spacing*5;
 	}
 
 	.form__checkbox {
-		margin-top: $integer-md;
+		margin-top: $spacing*2;
 	}
 
 	&__button {

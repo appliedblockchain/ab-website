@@ -54,25 +54,25 @@
         }
         
         &__dot {
-            margin-top: $integer;
+            margin-top: $spacing;
             background-color: $primary;
             border: 0;
             
             &.triangle {
-                @include pseudo-element('', auto, auto, auto, auto, $integer-md, $integer-md);
+                @include pseudo-element('', auto, auto, auto, auto, $spacing*2, $spacing*2);
                 transform: rotate(90deg);
                 position: initial;
                 -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
                 background-color: $primary;
                 border-radius: 0;
-                @include responsive(max-width, $tablet-max) {
+                @include responsive(up, $tablet) {
                     height: 50px;
                 }
             }
         }
         
         &__title {
-            margin-top: $integer;
+            margin-top: $spacing;
         }
         
         &__text {

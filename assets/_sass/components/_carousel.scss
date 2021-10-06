@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
 
-    @include responsive(max-width, $laptop-max) {
+    @include responsive(up, $laptop) {
       flex-direction: column;
     }
   }
@@ -23,16 +23,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: $integer-md;
+    margin-top: $spacing*2;
     
     .button {
-      margin-top: $integer;
+      margin-top: $spacing;
     }
   }
 
   &__stars {
     color: $grey-30;
-    margin-right: $integer;
+    margin-right: $spacing;
 
     .section--primary & {
       color: rgba($white, 0.2);
@@ -66,7 +66,7 @@
   }
 
   &-dots {
-    margin-top: $integer-lg;
+    margin-top: $spacing*4;
     text-align: center;
   }
 
@@ -74,10 +74,10 @@
     transition: background-color $transition, transform $transition;
     border-radius: 50%;
     will-change: background-color, transform;
-    height: $integer;
-    width: $integer;
+    height: $spacing;
+    width: $spacing;
     background-color: $secondary !important;
-    margin: 0 $integer-md;
+    margin: 0 $spacing*2;
 
     &.active, &:hover {
       transform: scale(1.5);
@@ -118,7 +118,7 @@
         padding-right: $page;
         padding-left: $page;
 
-        @include responsive(max-width, $laptop-max) {
+        @include responsive(up, $laptop) {
 
           .body--left {
             text-align: center;
@@ -133,21 +133,21 @@
         flex-shrink: 0;
         overflow: hidden;
         position: relative;
-        margin-right: $integer-xl;
-        width: $integer-max !important;
-        height: $integer-max;
+        margin-right: $spacing*5;
+        width: $spacing*25 !important;
+        height: $spacing*25;
         background-color: $grey-10;
 
-        @include responsive(max-width, $desktop-max) {
-          width: $integer-xxxxl+$integer !important;
-          height: $integer-xxxxl+$integer;
-          margin: 0 auto $integer-lg auto;
+        @include responsive(up, $desktop) {
+          width: $spacing*15+$spacing !important;
+          height: $spacing*15+$spacing;
+          margin: 0 auto $spacing*4 auto;
         }
       }
 
       &__meta {
 
-        @include responsive(max-width, $desktop-max) {
+        @include responsive(up, $desktop) {
           align-items: center;
         }
       }
@@ -168,14 +168,14 @@
       &-dots {
         display: inline-block;
         position: absolute;
-        left: $integer-md;
-        bottom: -$integer-lg;
+        left: $spacing*2;
+        bottom: -$spacing*4;
         pointer-events: initial;
       }
 
       &-dot {
-        margin-right: $integer;
-        margin-left: $integer;
+        margin-right: $spacing;
+        margin-left: $spacing;
         background-color: $secondary !important;
         
         &.active {

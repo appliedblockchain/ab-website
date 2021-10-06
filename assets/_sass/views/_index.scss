@@ -11,7 +11,7 @@
     min-height: 100vh;
     position: relative;
     padding-top: 0;
-    padding-bottom: $integer-xxl;
+    padding-bottom: $spacing*8;
 
     &:before {
         @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
@@ -20,13 +20,13 @@
 
     .page__header {
         padding-left: $page/2;
-        padding-bottom: $integer-lg;
+        padding-bottom: $spacing*4;
         padding-right: $page/2;
     }
 
     .section__content {
         position: relative;
-        padding-bottom: $integer-xxxl*1.5;
+        padding-bottom: $spacing*10*1.5;
     }
 
     .gartner {
@@ -37,7 +37,7 @@
         width: 10%;
         z-index: 1;
 
-        @include responsive-mobile-devices-landscape() {
+        @include responsive-mobile-landscape() {
             display: none;
         }
     }
@@ -60,7 +60,7 @@
     top: 0;
     left: 0;
 
-    @include responsive-mobile-devices() {
+    @include responsive-touch() {
         display: none;
     }
 }
@@ -80,16 +80,16 @@
             &:nth-child(odd)   { .background--contain { background-position: 75% center; }}
 
             .card {
-                padding-top: $integer-lg;
-                padding-bottom: $integer-lg;
+                padding-top: $spacing*4;
+                padding-bottom: $spacing*4;
 
-                @include responsive(max-width, $mobile-max) {
+                @include responsive(up, $mobile) {
                     padding-top: 0;
                     padding-bottom: 0;
                 }
             }
 
-            @include responsive(max-width, $mobile-max) {
+            @include responsive(up, $mobile) {
 
                 .body--right,
                 .body--left {
@@ -103,16 +103,16 @@
 
         &.section--overlap {
 
-            @include responsive(max-width, $mobile-max) {
+            @include responsive(up, $mobile) {
                 margin-top: 0;
-                padding-top: $integer-xxxl;
+                padding-top: $spacing*10;
             }
         }
     }
     
     &-featured-in {
         
-        @include responsive(max-width, $mobile-max) {
+        @include responsive(up, $mobile) {
             
             .col--6 {
                 width: 50% !important;

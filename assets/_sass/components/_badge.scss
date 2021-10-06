@@ -8,7 +8,7 @@
 // —————————————————————————————————————————————————————————————————
 
 .badge {
-  padding: $integer-sm $integer;
+  padding: $spacing/2 $spacing;
   border-radius: $border-radius/4;
   display: inline-block;  
 }

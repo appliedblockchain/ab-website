@@ -12,24 +12,24 @@ $col:  100%/12;
 
   // display a bigger top margin betweem grid wrappers
   &__container {
-  
+
     & + & {
       margin-top: 3rem;
     }
   }
-  
+
   &__wrapper {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
   }
-  
+
   &__item {
     display: flex;
     position: relative;
     float: left;
     width: 100%;
-    
+ 
     &.grid__wrapper {
       width: 100%;
     }
@@ -81,8 +81,8 @@ $col:  100%/12;
   }
 }
 
-@include responsive(min-width, $mobile-min) {
- 
+@include responsive(down, $mobile) {
+
   @for $colWidth from 1 through 12 {
 
     .grid__item--sm#{$colWidth} {
@@ -95,8 +95,8 @@ $col:  100%/12;
   }
 }
 
-@include responsive(min-width, $tablet-min) {
- 
+@include responsive(down, $tablet) {
+
   @for $colWidth from 1 through 12 {
 
     .grid__item--md#{$colWidth} {
@@ -109,8 +109,8 @@ $col:  100%/12;
   }
 }
 
-@include responsive(min-width, $laptop-min) {
- 
+@include responsive(down, $laptop) {
+
   @for $colWidth from 1 through 12 {
 
     .grid__item--lg#{$colWidth} {
@@ -123,8 +123,8 @@ $col:  100%/12;
   }
 }
 
-@include responsive(min-width, $desktop-min) {
- 
+@include responsive(down, $desktop) {
+
   @for $colWidth from 1 through 12 {
 
     .grid__item--xl#{$colWidth} {

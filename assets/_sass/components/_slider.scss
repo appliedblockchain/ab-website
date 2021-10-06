@@ -11,19 +11,19 @@
 		display: flex;
 		justify-content: space-between;
 		position: absolute;
-		top: $integer-xl;
-		right: $integer-lg;
+		top: $spacing*5;
+		right: $spacing*4;
 		z-index: 2;
 
 		a {
-			height: $integer-xl;
-			width: $integer-xl;
+			height: $spacing*5;
+			width: $spacing*5;
 			cursor: pointer;
 
 			&:before {
 				font-size: 2rem;
 
-				@include responsive(max-width, $mobile-max) {
+				@include responsive(up, $mobile) {
 					font-size: 1.5rem;
 				}
 			}
@@ -39,7 +39,7 @@
 	&__prev {
 
 		&:before {
-			@include font-awesome("\f104", auto, auto, auto, $integer-md, $black);
+			@include font-awesome("\f104", auto, auto, auto, $spacing*2, $black);
 			position: initial;
 		}
 	}
@@ -47,7 +47,7 @@
 	&__next {
 
 		&:before {
-			@include font-awesome("\f105", auto, $integer-md, auto, auto, $black);
+			@include font-awesome("\f105", auto, $spacing*2, auto, auto, $black);
 			position: initial;
 		}
 	}

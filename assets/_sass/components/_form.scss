@@ -10,8 +10,8 @@
 
 .form {
 	width: 100%;
-	padding-left: $integer*1.5 !important;
-	padding-right: $integer*1.5 !important;
+	padding-left: $spacing*1.5 !important;
+	padding-right: $spacing*1.5 !important;
 
 	&__container {
 		display: flex;
@@ -22,11 +22,11 @@
 	&__group {
 		position: relative;
 		width: 100%;
-		margin-bottom: $integer;
+		margin-bottom: $spacing;
 		text-align: left;
 
-		@include responsive(max-width, $mobile-max) {
-			margin-bottom: $integer;
+		@include responsive(up, $mobile) {
+			margin-bottom: $spacing;
 		}
 
 		&.focused {
@@ -53,8 +53,8 @@
 		overflow: hidden;
 		white-space: nowrap;
 		position: relative;
-		padding-left: $integer*0.75;
-		margin-bottom: $integer;
+		padding-left: $spacing*0.75;
+		margin-bottom: $spacing;
 	}
 
 	&__input {
@@ -63,17 +63,17 @@
 		will-change: border;
 		width: 100%;
 		background-color: transparent;
-		padding: $integer $integer*1.5;
+		padding: $spacing $spacing*1.5;
 		border: $border-sm $grey-30;
-		border-radius: $integer-lg !important;
+		border-radius: $spacing*4 !important;
 	}
 
 	&__button {
-		margin-top: $integer-md;
+		margin-top: $spacing*2;
 	}
 	
 	&__notice {
-		margin-top: $integer;
+		margin-top: $spacing;
 	}
 }
 
@@ -97,12 +97,12 @@
 
 		&:checked + .form__label:before {
 			border-color: $primary;
-			border-width: $integer;
+			border-width: $spacing;
 		}
 	}
 
 	.form__label {
-		padding-left: $integer-lg;
+		padding-left: $spacing*4;
 		cursor: pointer;
 		margin: 0;
 		font-size: 1rem !important;
@@ -112,7 +112,7 @@
 		white-space: normal;
 
 		&:before {
-			@include pseudo-element('', -1px, auto, auto, 0, $integer-md*1.5, $integer-md*1.5);
+			@include pseudo-element('', -1px, auto, auto, 0, $spacing*2*1.5, $spacing*2*1.5);
 			box-sizing: border-box;
 			transition: border $transition;
 			will-change: border;
@@ -126,7 +126,7 @@
 	.form__input {
 
 		&:checked + .form__label:before {
-			border-width: $integer-md*0.75;
+			border-width: $spacing*2*0.75;
 		}
 
 		&:checked + .form__label:after {
@@ -137,7 +137,7 @@
 	.form__label {
 
 		&:before {
-			border-radius: $integer;
+			border-radius: $spacing;
 		}
 
 		&:after {
@@ -147,8 +147,8 @@
 			justify-content: center;
 			@include font-awesome("\f00c", 0, auto, auto, 0, $white);
 			will-change: opacity;
-			width: $integer-md*1.5;
-			height: $integer-md*1.5;
+			width: $spacing*2*1.5;
+			height: $spacing*2*1.5;
 			font-size: 0.7rem;
 			line-height: 0;
 			opacity: 0;
@@ -160,10 +160,10 @@
     display: flex;
     align-items: center;
     flex-basis: 0;
-    height: $integer-xl;
+    height: $spacing*5;
 
 	& + & {
-		margin-left: $integer;
+		margin-left: $spacing;
 	}
 
 	.form__input {
@@ -189,8 +189,8 @@
 
   &--pipedrive {
 		// pipedrive width + 40px left and right
-		@include calc(max-width, '480px + '$integer-xl*2);
-		padding: $integer-xl !important;
+		@include calc(max-width, '480px + '$spacing*5*2);
+		padding: $spacing*5 !important;
 		
 		#report & {
 			width: 560px;
@@ -200,10 +200,10 @@
     .form {
 
       &__cover {
-        @include calc(width, '100% + '$integer-xl*2);
-        margin-top: -$integer-xl;
-        margin-bottom: $integer-xl;
-        margin-left: -$integer-xl;
+        @include calc(width, '100% + '$spacing*5*2);
+        margin-top: -$spacing*5;
+        margin-bottom: $spacing*5;
+        margin-left: -$spacing*5;
       }  
     }
 	}

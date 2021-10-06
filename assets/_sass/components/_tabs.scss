@@ -16,7 +16,7 @@
 		text-align: center;
 
 		& + .tab__content {
-			margin-top: $integer-xxl;
+			margin-top: $spacing*8;
 		}
 	}
 
@@ -27,7 +27,7 @@
 		}
 
 		& + & {
-			margin-left: $integer-md !important;
+			margin-left: $spacing*2 !important;
 		}
 	}
 
@@ -55,12 +55,12 @@
 		.tab {
 
 			&__content {
-				margin-top: $integer-xl;
+				margin-top: $spacing*5;
 			}
 
 			&__item {
 
-				@include responsive(max-width, $tablet-max) {
+				@include responsive(up, $tablet) {
 					display: block;
 
 					& + .tab__item {
@@ -80,8 +80,8 @@
 
 				&:before {
 					transition: opacity $transition, width $transition, left $transition;
-					@include pseudo-element('', auto, 0, -($integer-xl+$integer-sm), 50%, 0, $integer);
-					border-radius: $integer;
+					@include pseudo-element('', auto, 0, -($spacing*5+$spacing/2), 50%, 0, $spacing);
+					border-radius: $spacing;
 					will-change: opacity, width, left;
 					background-color: $dark;
 				}

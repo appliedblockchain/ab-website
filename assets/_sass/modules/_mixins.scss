@@ -2,7 +2,6 @@
 // general
 // media queris
 // fonts
-// forms
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -37,16 +36,6 @@
 	}
 }
 
-@mixin position($position, $top, $right, $bottom, $left, $height, $width) {
-	position: $position;
-	top: $top;
-	right: $right;
-	bottom: $bottom;
-	left: $left;
-	width: $width;
-	height: $height;
-}
-
 @mixin overflow-scroll {
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -56,20 +45,26 @@
 // media queries
 // —————————————————————————————————————————————————————————————————
 
-@mixin responsive($value, $break) {
-	@media ($value: $break) {
+@mixin responsive($value, $breakpoint) {
+	@if $value == down {
+		$value: min-width;
+	} @else if $value == up {
+		$value: max-width;
+	}
+
+	@media ($value: $breakpoint) {
 		@content;
 	}
 }
 
-@mixin responsive-mobile-devices() {
+@mixin responsive-touch() {
 	@media (pointer:coarse) {
 		@content;
 	}
 }
 
-@mixin responsive-mobile-devices-landscape {
-	@media only screen and (max-device-width: $laptop-max) and (orientation: landscape) {
+@mixin responsive-mobile-landscape {
+	@media only screen and (max-device-width: $laptop) and (orientation: landscape) {
 		@content;
 	}
 }
@@ -89,13 +84,6 @@
 	}
 }
 
-@mixin font-size($font-size, $font-weight, $font-style) {
-	font-size: $font-size + rem;
-	letter-spacing: $font-size*.02 + rem;
-	font-weight: $font-weight;
-	font-style: $font-style;
-}
-
 @mixin font-awesome($fa, $top, $right, $bottom, $left, $color) {
 	content: $fa;
 	font-family: "Font Awesome 5 Free";
@@ -108,10 +96,4 @@
 	right: $right;
 	bottom: $bottom;
 	left: $left;
-}
-
-@mixin ellipsis() {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }

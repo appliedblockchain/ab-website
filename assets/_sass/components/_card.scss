@@ -1,795 +1,117 @@
 // —————————————————————————————————————————————————————————————————
-// general
-// sizes
-// orientation
-// layouts
+// elements
+// size
+// direction
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
-// general
+// elements
 // —————————————————————————————————————————————————————————————————
 
 .card {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   position: relative;
   width: 100%;
+  overflow: hidden;
 
-  &__wrapper {
-    width: 100%;
-    margin-bottom: -$integer-md*2;
-
-    .card {
-      margin-bottom: $integer-md*2;
-      height: calc(100% - 2rem);
-
-      &__inner {
-        height: 100%;
-      }
-    }
-
-    &--sm {
-      width: 100%;
-      margin-bottom: -$integer-md;
-
-      .card {
-        margin-bottom: $integer-md;
-      }
-    }
-  }
-
-  &__wrapper--inline {
+  &__header,
+  &__content,
+  &__actions {
     display: flex;
-    justify-content: center;
-    margin-bottom: -$integer-lg;
-
-    @include responsive(max-width, $laptop-max) {
-      flex-wrap: wrap;
-    }
-
-    .card {
-      padding-left: $integer;
-      padding-right: $integer;
-      margin-bottom: $integer-lg;
-      max-width: $integer-max*2;
-
-      @include responsive(max-width, $laptop-max) {
-        max-width: $integer-max;
-      }
-    }
   }
 
-  &__image {
-    max-width: $integer-xxxxl;
-
-    & + .card__inner,
-    & + .card__header, 
-    & + .card__title,
-    & + .card__body,
-    & + .card__label {
-      margin-top: $integer-md;
-    }
-  }
-
-  &__avatar {
-    width: $integer-xxxxl;
-    height: $integer-xxxxl;
-    padding: 0;
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 50%;
-  }
-
-  &__inner {
-    position: relative;
-    padding: $integer-lg;
-
-    & + .card__image {
-      margin-top: $integer-md;
-    }
+  &__header,
+  &__actions {
+    justify-content: space-between;
   }
 
   &__content {
-
-    & + .card__actions {
-      margin-top: $integer-lg;
-    }
-  }
-
-  &__label {
-
-    & + .card__title,
-    & + .card__header {
-      margin-top: $integer;
-    }
-  }
-
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-
-    & + .card__image,
-    & + .card__media,
-    & + .card__body,
-    & + .card__meta {
-      margin-top: $integer-md;
-    }
-  }
-
-  &__title {
-
-    & + .card__subtitle {
-      margin-top: $integer;
-    }
-
-    & + .card__image,
-    & + .card__body,
-    & + .card__meta {
-      margin-top: $integer-md;
-    }
-
-    & + .card__actions {
-      padding-left: $integer-lg;
-    }
-  }
-
-  &__subtitle {
-
-    & + .card__image,
-    & + .card__body,
-    & + .card__meta {
-      margin-top: $integer-md;
-    }
-  }
-
-  &__body {
-
-    & + & {
-      // example in sitemap links in footer
-      margin-top: $integer-md*1.5;
-    }
-
-    & + .card__meta {
-      margin-top: $integer-md;
-    }
-
-    & + .card__button {
-      margin-top: $integer-lg;
-    }
-  }
-
-  &__meta {
-
-    & + .card__actions {
-      margin-top: $integer-lg;
-    }
-  }
-
-  &__media {
-    display: flex;
-    align-items: center;
-
-    & + .card__actions {
-      margin-top: $integer-lg;
-    }
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
 // —————————————————————————————————————————————————————————————————
-// sizes
+// size
 // —————————————————————————————————————————————————————————————————
 
-.card {
+@mixin size($size) {
+  border-radius: $size;
 
-  &--xxs {
+  .card__header,
+  .card__content,
+  .card__actions {
+    padding: 0 $size $size $size;
 
-    .card {
-
-      &__inner {
-        padding: $integer;
-      }
-    }
-  }
-
-  &--xs {
-
-    .card {
-
-      &__inner {
-        padding: $integer-md;
-      }
-    
-      &__content {
-
-        & + .card__actions {
-          margin-top: $integer;
-        }
-      }
-    }
-  }
-
-  &--sm {
-
-    .card {
-
-      &__inner {
-        padding: $integer-md*1.5;
-        
-        @include responsive(max-width, $tablet-max) {
-          padding: $integer-md;
-        }
-      }
-    
-      &__header {
-        
-        & + .card__image,
-        & + .card__body,
-        & + .card__meta {
-          margin-top: $integer;
-        }
-      }
-
-      &__title {
-    
-        & + .card__image,
-        & + .card__body,
-        & + .card__meta {
-          margin-top: $integer;
-        }
-      }
-    }
-  }
-
-  &--lg {
-
-    .card {
-
-      &__image {
-        max-width: $integer-xxxxl*2;
-
-        & + .card__inner,
-        & + .card__header, 
-        & + .card__title,
-        & + .card__body {
-          margin-top: $integer-lg;
-        }
-      }
-
-      &__inner {
-        padding: $integer-xxl;
-
-        @include responsive(max-width, $tablet-max) {
-          padding: $integer-lg;
-        }
-
-      }
-
-      &__content {
-
-        & + .card__actions {
-          margin-top: $integer-lg;
-        }
-      }
-
-      &__header {
-
-        & + .card__image,
-        & + .card__body,
-        & + .card__meta {
-          margin-top: $integer-lg;
-        }
-      }
-
-      &__title {
-
-        & + .card__subtitle {
-          margin-top: $integer-md;
-        }
-    
-        & + .card__image,
-        & + .card__body,
-        & + .card__meta {
-          margin-top: $integer-lg;
-        }
-    
-        & + .card__actions {
-          padding-left: $integer-xl;
-        }
-      }
-    
-      &__subtitle {
-    
-        & + .card__image,
-        & + .card__body,
-        & + .card__meta {
-          margin-top: $integer-lg;
-        }
-      }
-    }
-  }
-}
-
-// —————————————————————————————————————————————————————————————————
-// orientation
-// —————————————————————————————————————————————————————————————————
-
-.card {
-
-  &--landscape {
-    flex-direction: row;
-    text-align: left;
-
-    & + & {
-      border-top: $border-sm $grey-10;
+    &:first-child {
+      padding-top: $size;
     }
 
-    .card {
-      
-      &__image {
-        display: flex;
-        max-width: none;
-
-        & + .card__inner,
-        & + .card__header, 
-        & + .card__title,
-        & + .card__body {
-          margin-top: 0;
-        }
-    
-        @include responsive(max-width, $mobile-max) {
-          display: none;
-        }
-      }
-
-      &__inner {
-        display: flex;
-        justify-content: space-between;
-
-        @include responsive(max-width, $tablet-max) {
-          flex-direction: column;
-        }
-    
-        @include responsive(max-width, $mobile-max) {
-          flex-basis: 100%;
-        }
-      }
-
-      &__content {
-
-        & + .card__actions {
-          margin-top: 0;
-          padding-left: $integer-md;
-        }
-      }
-  
-      &__actions {
-        display: flex;
-        flex-direction: column; 
-        align-items: flex-end;
-
-        .button + .button {
-          margin-top: $integer;
-        }
-      }
-    }
-  }
-
-  &--portrait {
-    text-align: left;
-
-    .card { 
-
-      &__image {
-        padding-bottom: 50%;
-        max-width: none;
-      }
-    }
-  }
-}
-
-// —————————————————————————————————————————————————————————————————
-// style
-// —————————————————————————————————————————————————————————————————
-
-.card {
-
-  &--transparent {
-    background-color: transparent;
-
-    .card {
-
-      &__inner {
-        padding: 0;
-      }
-    }
-  }
-}
-
-// —————————————————————————————————————————————————————————————————
-// layouts
-// —————————————————————————————————————————————————————————————————
-
-// index 
-.widget--news {
-
-  .card {
-
-    &__inner {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 100%;
-
-      &--left {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-    }
-
-    &__actions {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__image {
-      border-radius: 5rem;
-      width: 4rem !important;
-      height: 4rem;
+    &.noPadding {
       padding: 0;
-      align-self: flex-start;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    &.fullWidth {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
-}
 
-#about-leadership {
+  .card__label {
 
-  .card {
-
-    &__image {
-      padding-bottom: 0;
+    + .card__title,
+    + .card__subtitle {    
+            margin-top: $size/4;
     }
+  }
 
-    &__body-hidden {
-      opacity: 0;
+  .card__title {
+
+    + .card__subtitle {
+      margin-top: $size/2;
     }
+  }
 
-    @include responsive(max-width, $laptop-max) {
-      flex-direction: row;
+  &.card--landscape {
 
-      .card {
+    .card__header,
+    .card__content,
+    .card__actions {
+      padding: $size $size $size 0;
 
-        &__image {
-          height: auto;
-          min-width: 5rem;
-        }
+      &:first-child {
+        padding-left: $size;
+      }
 
-        &__inner {
-          margin-top: 0;
-        }
-      }
-    }
+      &.noPadding {
+        padding: 0;
 
-    @include responsive(max-width, $tablet-max) {
-
-      .card__image {
-        display: none;
-      }
-    }
-    
-    @include responsive(min-width, $laptop-min) {
-      justify-content: space-between;
-      
-      &__outer {
-        display: flex;
-      }
-      
-      &__image {
-        flex-grow: 1;
-        transition: max-height $transition;
-        will-change: max-height;
-        max-height: 22rem;
-        height: auto;
-      }
-      
-      &__inner {
-        margin-top: 0;
-      }
-      
-      &__body {
-        transition: padding $transition, max-height $transition;
-        will-change: padding, max-height;
-        opacity: 0;
-        max-height: 0;
-        
-        &-hidden {
-          transition: padding $transition, max-height $transition;
-          will-change: padding, max-height;
-          max-height: 22rem;
-          padding: $integer-lg;
-        }
-      }
-      
-      &:hover {
-        
-        .card {
-          
-          &__image {
-            max-height: 0;
-          }
-          
-          &__body {
-            opacity: 1;
-            max-height: 22rem;
-            
-            &-hidden {
-              max-height: 0;
-              padding: 0;
-            }    
-          }
+        &:first-child {
+          padding-left: 0;
         }
       }
     }
   }
 }
 
-#about-team {
+.card--xs { @include size(0.5rem); }
+.card--sm { @include size(1rem); }
+.card--md { @include size(1.5rem); }
+.card--lg { @include size(2rem); }
+
+// —————————————————————————————————————————————————————————————————
+// direction
+// —————————————————————————————————————————————————————————————————
+
+.card--landscape {
 
   .card {
-    flex-basis: 25%;
-    
-    @include responsive(max-width, $mobile-max) {
-      flex-basis: 50%;
-    }
-  }
-}
-
-#landing {
-
-  .card--xxs .card__inner {
-    padding-left: $integer-md;
-  }
-}
-
-#events,
-#services,
-#project {
-
-  .card {
-
-    &--landscape {
-  
-      .card {
-
-        &__image {
-          flex-basis: 33.333%;
-          max-width: none;
-
-          @include responsive(max-width, $tablet-max) {
-            display: none;
-          }
-        }
-
-        &__inner {
-          flex-basis: 66.666%;
-
-          @include responsive(max-width, $tablet-max) {
-            flex-direction: column;
-            flex-basis: 100%;
-          }
-        }
-      }
-    }
-  }
-}
-
-#services #support {
-
-  .card__image {
-  flex-basis: 25%;
-  }
-}
-
-#events {
-
-  @include responsive(max-width, $desktop-max) {
-
-    .card {
-      
-      &__inner {
-        flex-direction: column;
-      }
-
-      &__actions {
-        flex-direction: row;
-        align-items: flex-start;
-        margin-top: $integer-md;
-        padding-left: 0;
-
-        .button {
-          margin-right: $integer;
-          
-          & + .button {
-            margin-top: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-#services {
-
-  &-stack {
-
-    .background--shadow {
-      overflow: visible;
-      height: 100%;
-    }
-
-    .card {
-      height: 100%;
-      margin-bottom: 0;
-      padding-bottom: $integer-lg;
-
-      &__title {
-        position: relative;
-      }
-
-      &__image {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        max-width: none;
-        width: auto;
-        height: $integer-xxxxl;
-      }
-    }
-  }
-
-  .card {
-
-    &--landscape {
-
-      .card {
-
-        &__image {
-          padding: $integer-xxl;
-        }
-      }
-    }
-  }
-}
-
-#faq,
-#join {
-
-  .card {
-
-    & + .card {
-      border-top: $border-sm $grey-30;
-    }
-
-    &__wrapper--sm .card {
-      border-top: 0;
-    }
-
-    &__actions {
-      display: flex;
-    }
-  }
-}
-
-#media {
-
-  .card {
-
-    &__icon {
-      border-radius: 50%;
-      box-sizing: content-box;
-      position: absolute;
-      top: -$integer-lg;
-      right: $integer-lg;
-      height: $integer-lg;
-      width: $integer-lg;
-      border: $integer solid $white;
-      padding: $integer;
-      background-color: $primary;
-      
-      &--news { background-color: $secondary; }
-      &--press-release { background-color: $highlight; }
-      &--blog { background-color: $primary; }
-      &--videos { background-color: $dark; }
-    }
-  }
-}
-
-#products {
-
-  .card {
-
-    &__image {
-      height: auto;
-      width: 100%;
-      max-width: 30rem;
-      margin-top: $integer-md;
-    }
-
-    &--k0 {
-
-      & .card__image {
-        max-width: 10rem;
-      }
-    }
-
-    &__actions {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-end;
-      height: 100%;
-
-      @include responsive(max-width, $laptop-max) {
-        align-items: flex-start;
-        margin-top: $integer-md;
-      }
-      
-      .button + .button {
-        margin-top: $integer;
-      }
-    }
-  }
-}
-
-#project {
-
-  &-summary {
-
-    .card {
-      transform: translateY(-$integer-xxxxl);
-        
-      &__image {
-        padding: $integer-xl;
-      }
-    }
-  }
-
-  &-intro {
-        
-    .card--xsmall {
-      display: flex;
-      align-items: baseline;
-      
-      & + .card {
-        border-top: $border-sm $grey-30;
-        padding-top: $integer-md;
-      }
-  
-      > * {
-        flex-basis: 50%;
-        margin-top: 0;
-      }  
-    }
-  }
-
-  &-results {
-
-    .card__image {
-      height: $integer-max;
-      max-width: $integer-xxxxl*1.5;
-    }
-  }
-}
-
-#projects {
-
-  .card {
-
-    &__image {
-      background-color: $grey-10;
-    }
+    flex-direction: row;
   }
 }

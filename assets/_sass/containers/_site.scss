@@ -103,31 +103,32 @@ ul {
 // —————————————————————————————————————————————————————————————————
 
 .hide {
-  opacity: 0;
-
-  &--desktop-lg { @include responsive(up, $desktop) { display: none !important; } }
-  &--desktop { @include responsive(up, $laptop) { display: none !important; } }
-  &--tablet { @include responsive(up, $tablet) { display: none !important; } }
-  &--mobile { @include responsive(up, $mobile) { display: none !important; } }
+  
+  &--desktop { @include responsive(max-width, $desktop) { display: none !important; } }
+  &--laptop { @include responsive(max-width, $laptop) { display: none !important; } }
+  &--tablet { @include responsive(max-width, $tablet) { display: none !important; } }
+  &--mobile { @include responsive(max-width, $mobile) { display: none !important; } }
   &--touch { @include responsive-touch() { display: none !important; } }
 }
 
 .show {
-  opacity: 1;
 
-  &--mobile { @include responsive(down, $mobile) { display: none !important; } }
+  &--desktop { @include responsive(min-width, $desktop) { display: none !important; } }
+  &--laptop { @include responsive(min-width, $laptop) { display: none !important; } }
+  &--tablet { @include responsive(min-width, $tablet) { display: none !important; } }
+  &--mobile { @include responsive(min-width, $mobile) { display: none !important; } }
 }
 
 // —————————————————————————————————————————————————————————————————
 // z-index
 // —————————————————————————————————————————————————————————————————
 
-.widget--news       { z-index: 9; }
-.anchor             { z-index: 9; }
-.cookie               { z-index: 10; }
-.button--scroll-top { z-index: 11; }
-.header             { z-index: 20; }
-.modal               { z-index: 30; }
+.widget--news { z-index: 9; }
+.anchor { z-index: 9; }
+.cookie { z-index: 10; }
+.button--scroll-top{ z-index: 11; }
+.navbar { z-index: 20; }
+.modal { z-index: 30; }
 
 @for $i from 0 through 9 {
   .z-index--#{$i} { z-index: $i; }

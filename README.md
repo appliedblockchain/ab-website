@@ -71,6 +71,12 @@ A Jekyll layout that compresses HTML.
 SVG optimizer and inliner for jekyll.
 [Documentation](https://github.com/sdumetz/jekyll-inline-svg)
 
+### Jekyll menus
+
+A robust, simple-to-use menu plugin for Jekyll that allows for infinitely nested menus.
+
+[Documentation](https://github.com/forestryio/jekyll-menus)
+
 <!------------------------------------------------------>
 <p>&nbsp;</p>
 <!------------------------------------------------------>

@@ -23,7 +23,7 @@
     margin-bottom: $spacing;
     text-align: left;
 
-    @include responsive(up, $mobile) {
+    @include responsive(down, $mobile) {
       margin-bottom: $spacing;
     }
 

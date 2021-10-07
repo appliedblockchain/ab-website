@@ -1,0 +1,35 @@
+// —————————————————————————————————————————————————————————————————
+// footer
+// —————————————————————————————————————————————————————————————————
+
+.footer {
+  text-align: left;
+  margin-bottom: -$spacing*5;
+  padding-bottom: $spacing*25;
+
+  &__row {
+    margin-top: $spacing*8;
+    margin-bottom: -$spacing*5;
+  }
+
+  .card {
+    margin-bottom: $spacing*5;
+  }
+
+  &__logo {
+    margin-bottom: $spacing*5;
+  }
+
+  .form__checkbox {
+    margin-top: $spacing*2;
+  }
+
+  &__button {
+    display: block !important;
+    margin-left: 0 !important;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

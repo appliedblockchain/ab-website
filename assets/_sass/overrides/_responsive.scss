@@ -4,7 +4,7 @@
 // RESPONSIVE
 // —————————————————————————————————————————————————————————————————
 
-@include responsive(up, $desktop) {
+@include responsive(down, $desktop) {
 
   .page__header,
   .section--full .section__header {
@@ -18,9 +18,9 @@
   }
 }
 
-@include responsive(up, $laptop) {
+@include responsive(down, $laptop) {
 
-  .header__menu,
+  .navbar__menu,
   .page__header,
   .section,
   .section--full .section__header,
@@ -45,9 +45,9 @@
   }
 }
 
-@include responsive(up, $tablet) {
+@include responsive(down, $tablet) {
 
-  .header__menu,
+  .navbar__menu,
   .page__header,
   .section,
   .section--full .section__header,
@@ -67,7 +67,7 @@
   }
 }
 
-@include responsive(up, $mobile) {
+@include responsive(down, $mobile) {
 
   .row {
     margin-right: 0;
@@ -87,7 +87,7 @@
     width: 100% !important;
   }
 
-  .header__menu,
+  .navbar__menu,
   .page__header,
   .section,
   .section--full .section__header,

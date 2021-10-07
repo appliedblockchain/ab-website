@@ -1,143 +1,138 @@
-<header class="header">
-  <div class="header__bar">
-    <div class="header__logo logo{% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
-      <a href="{{ site.base-url }}/">
-        {% include components/logos/logo.html %}
-      </a>
-    </div>
-    <div class="header__button">
-      {% if page.layout == 'post' %}
-        <a href="{{ site.base-url }}/media" class="button button--small button--primary button--animate fas fa-chevron-left alt">
-          <p class="button__inner">Back</p>
-        </a>
-        {% if page.category == 'press-release' and page.dlc %}
-          <a href="{{ site.base-url }}{{ site.resourceurl }}/dlc/press-releases/appliedBlockchain-{{ page.image }}.zip" class="post__button button button--small button--highlight button--animate fas fa-download" download>
-            <p class="button__inner"><span class="hide--desktop">Download </span>Press kit</p>
-          </a>
-        {% endif %}
-      {% endif %}
-      {% if page.layout == 'project' %}
-        <a href="{{ site.base-url }}/projects" class="button button--small button--primary button--animate fas fa-chevron-left">
-          <p class="button__inner">Back</p>
-        </a>
-        {% if page.dlc %}
-          <a href="{{ site.base-url }}{{ site.resourceurl }}/dlc/case-studies/appliedBlockchain-caseStudies-{{ page.slug }}.pdf" class="post__button button button--small button--highlight button--animate fas fa-download" download>
-            <p class="button__inner"><span class="hide--desktop">Download </span>case study</p>
-          </a>
-        {% endif %}
-      {% endif %}
-      {% if page.id != 'applied-privacy' %}
-      <a href="{{ site.base-url }}/contact" class="header__contact button button--sm button--primary{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
-        <p>Contact us</p>
-      </a>
-      {% endif %}
-      {% if page.id != 'applied-privacy' %}
-      <div class="button button--menu{% if page.background_color == 'white' %} alt{% endif %}">
+<header class="section navbar">
+  <div class="section__container navbar__container">
+    <a href="{{ site.base-url }}/" class="navbar__logo logo">
+      {% include components/logos/logo.html %}
+    </a>
+    <div class="nav">
+      <div class="nav__icon show--desktop js-button-menu button--menu">
         <i class="button__inner"></i>
       </div>
-      {% endif %}
-    </div>
-  </div>
-  <div class="header__menu card__wrapper">
-    <div class="row">
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/" class="card menu__button">
-          <p class="subtitle">Home</p>
-          <p class="menu__description">
-            <span>Start your journey here</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/services" class="card menu__button">
-          <p class="subtitle">Services</p>
-          <p class="menu__description">
-            <span>Discover solutions, approach & projects</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/projects" class="card menu__button">
-          <p class="subtitle">Projects</p>
-          <p class="menu__description">
-            <span>See what we have worked on</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/products" class="card menu__button">
-          <p class="subtitle">Products</p>
-          <p class="menu__description">
-            <span>Ground-breaking products</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/about" class="card menu__button">
-          <p class="subtitle">About</p>
-          <p class="menu__description">
-            <span>The team, our story, our values</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/media" class="card menu__button">
-          <p class="subtitle">Media</p>
-          <p class="menu__description">
-            <span>Read our news and press releases</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/events" class="card menu__button">
-          <p class="subtitle">Events</p>
-          <p class="menu__description">
-            <span>Find us at events</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/join" class="card menu__button">
-          <p class="subtitle">Join</p>
-          <p class="menu__description">
-            <span>Step into a unique environment</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/contact" class="card menu__button">
-          <p class="subtitle">Contact</p>
-          <p class="menu__description">
-            <span>Get in touch</span>
-          </p>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/faq" class="card menu__button">
-          <p class="body--large body--bold">FAQ</p>
-          <p class="menu__description body--small">
-            <span>Have questions?</span>
-          </p>
-        </a>
-      </div>
-      <div class="grid__item--lg4 grid__item--sm6">
-        <a href="{{ site.base-url }}/privacy-policy" class="card menu__button">
-          <p class="body--large body--bold">Privacy policy</p>
-          <p class="menu__description body--small">
-            <span>The legal bit</span>
-          </p>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="grid__item--lg4 grid__item--md5">
-        <!-- edit component in _includes/components/social.html -->
-        {% include components/social.html
-          header = 'true'
+      <div class="nav__items">
+        {% include components/nav.html
+          variant = "header"
         %}
       </div>
+      <a href="{% link contact.html %}" class="navbar__button button button--sm button--primary">
+        <p>Contact us</p>
+      </a>
     </div>
   </div>
 </header>
+
+<!-- <div class="navbar__bar">
+  <div class="navbar__button">
+    {% if page.layout == 'post' %}
+      {% if page.category == 'press-release' and page.dlc %}
+        <a href="{{ site.base-url }}{{ site.resourceurl }}/dlc/press-releases/appliedBlockchain-{{ page.image }}.zip" class="post__button button button--small button--highlight button--animate fas fa-download" download>
+          <p class="button__inner"><span class="hide--desktop">Download </span>Press kit</p>
+        </a>
+      {% endif %}
+    {% endif %}
+    {% if page.layout == 'project' %}
+      {% if page.dlc %}
+        <a href="{{ site.base-url }}{{ site.resourceurl }}/dlc/case-studies/appliedBlockchain-caseStudies-{{ page.slug }}.pdf" class="post__button button button--small button--highlight button--animate fas fa-download" download>
+          <p class="button__inner"><span class="hide--desktop">Download </span>case study</p>
+        </a>
+      {% endif %}
+    {% endif %}
+    {% if page.id != 'applied-privacy' %}
+    <div class="button button--menu{% if page.background_color == 'white' %} alt{% endif %}">
+      <i class="button__inner"></i>
+    </div>
+    {% endif %}
+  </div>
+</div>
+<div class="navbar__menu card__wrapper">
+  <div class="row">
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/" class="card menu__button">
+        <p class="subtitle">Home</p>
+        <p class="menu__description">
+          <span>Start your journey here</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/services" class="card menu__button">
+        <p class="subtitle">Services</p>
+        <p class="menu__description">
+          <span>Discover solutions, approach & projects</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/projects" class="card menu__button">
+        <p class="subtitle">Projects</p>
+        <p class="menu__description">
+          <span>See what we have worked on</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/products" class="card menu__button">
+        <p class="subtitle">Products</p>
+        <p class="menu__description">
+          <span>Ground-breaking products</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/about" class="card menu__button">
+        <p class="subtitle">About</p>
+        <p class="menu__description">
+          <span>The team, our story, our values</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/media" class="card menu__button">
+        <p class="subtitle">Media</p>
+        <p class="menu__description">
+          <span>Read our news and press releases</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/events" class="card menu__button">
+        <p class="subtitle">Events</p>
+        <p class="menu__description">
+          <span>Find us at events</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/join" class="card menu__button">
+        <p class="subtitle">Join</p>
+        <p class="menu__description">
+          <span>Step into a unique environment</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/contact" class="card menu__button">
+        <p class="subtitle">Contact</p>
+        <p class="menu__description">
+          <span>Get in touch</span>
+        </p>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/faq" class="card menu__button">
+        <p class="body--large body--bold">FAQ</p>
+        <p class="menu__description body--small">
+          <span>Have questions?</span>
+        </p>
+      </a>
+    </div>
+    <div class="grid__item--lg4 grid__item--sm6">
+      <a href="{{ site.base-url }}/privacy-policy" class="card menu__button">
+        <p class="body--large body--bold">Privacy policy</p>
+        <p class="menu__description body--small">
+          <span>The legal bit</span>
+        </p>
+      </a>
+    </div>
+  </div>
+</div> -->

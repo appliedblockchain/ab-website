@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem 'jekyll-coffeescript'
   gem "kramdown", ">= 2.3.0"
   gem "jekyll-inline-svg"
+  gem "jekyll-menus"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

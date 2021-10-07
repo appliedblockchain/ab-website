@@ -46,9 +46,9 @@
 // —————————————————————————————————————————————————————————————————
 
 @mixin responsive($value, $breakpoint) {
-  @if $value == down {
+  @if $value == up {
     $value: min-width;
-  } @else if $value == up {
+  } @else if $value == down {
     $value: max-width;
   }
 

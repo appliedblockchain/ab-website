@@ -30,6 +30,7 @@ medium: "https://medium.com/@AppBlockchain_"
 twitter: "https://twitter.com/appblockchain"
 
 # permalinks config
+permalink: /:title
 collections:
   projects:
     output: true
@@ -46,6 +47,7 @@ plugins:
   - jekyll-autoprefixer
   - jekyll-coffeescript
   - jekyll-inline-svg
+  - jekyll-menus
 # autoprefixer (for css)
 autoprefixer:
   browsers:

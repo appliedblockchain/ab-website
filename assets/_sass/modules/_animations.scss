@@ -47,67 +47,35 @@
 // button apparition
 
 @keyframes button-menu-opacity {
-  0% { 
-    opacity: 0; 
-  }
-  50% { 
-    opacity: 0; 
-  }
-  100% { 
-    opacity: 100%; 
-  }
+  0%    { opacity: 0; }
+  50%   { opacity: 0; }
+  100%  { opacity: 100%; }
 }
 
 // open > close
 
 @keyframes button-menu-open-before {
-  0% { 
-    transform: translateY($spacing+$spacing/4);
-  }
-  50% { 
-    transform: translateY(0);
-    transform: rotate(0);
-  }
-  100% { 
-    transform: rotate(45deg);
-  }
+  0%    { transform: translateY($spacing); }
+  50%   { transform: translateY(0) rotate(0); }
+  100%  { transform: rotate(45deg); }
 }
+
 @keyframes button-menu-open-after {
-  0% { 
-    transform: translateY(-($spacing+$spacing/4));
-  }
-  50% { 
-    transform: translateY(0);
-    transform: rotate(0);
-  }
-  100% { 
-    transform: rotate(-45deg);
-  }
+  0%    { transform: translateY(-$spacing); }
+  50%   { transform: translateY(0) rotate(0); }
+  100%  { transform: rotate(-45deg); }
 }
 
 // close > open
 
 @keyframes button-menu-close-before {
-  0% { 
-    transform: rotate(45deg);
-  }
-  50% { 
-    transform: rotate(0);
-    transform: translateY(0);
-  }
-  100% { 
-    transform: translateY($spacing+$spacing/4);
-  }
+  0%    { transform: rotate(45deg); }
+  50%   { transform: rotate(0) translateY(0); }
+  100%  { transform: translateY($spacing); }
 }
+
 @keyframes button-menu-close-after {
-  0% { 
-    transform: rotate(-45deg);
-  }
-  50% { 
-    transform: rotate(0);
-    transform: translateY(0);
-  }
-  100% { 
-    transform: translateY(-($spacing+$spacing/4));
-  }
+  0%    { transform: rotate(-45deg); }
+  50%   { transform: rotate(0) translateY(0); }
+  100%  { transform: translateY(-$spacing); }
 }

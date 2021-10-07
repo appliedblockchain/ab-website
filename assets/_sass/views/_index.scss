@@ -83,13 +83,13 @@
                 padding-top: $spacing*4;
                 padding-bottom: $spacing*4;
 
-                @include responsive(up, $mobile) {
+                @include responsive(down, $mobile) {
                     padding-top: 0;
                     padding-bottom: 0;
                 }
             }
 
-            @include responsive(up, $mobile) {
+            @include responsive(down, $mobile) {
 
                 .body--right,
                 .body--left {
@@ -103,7 +103,7 @@
 
         &.section--overlap {
 
-            @include responsive(up, $mobile) {
+            @include responsive(down, $mobile) {
                 margin-top: 0;
                 padding-top: $spacing*10;
             }
@@ -112,7 +112,7 @@
     
     &-featured-in {
         
-        @include responsive(up, $mobile) {
+        @include responsive(down, $mobile) {
             
             .grid__item--6 {
                 width: 50% !important;

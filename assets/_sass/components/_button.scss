@@ -4,6 +4,7 @@
 // color
 // size
 // variant
+// menu
 // misc
 // wrapper
 // —————————————————————————————————————————————————————————————————
@@ -30,7 +31,7 @@ a {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-weight: $font-bold;
+  font-weight: $font-black;
   line-height: 1;
   cursor: pointer;
 }
@@ -144,6 +145,73 @@ a {
 }
 
 // —————————————————————————————————————————————————————————————————
+// menu
+// —————————————————————————————————————————————————————————————————
+
+.button--menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: button-menu-opacity 0.8s ease 0s;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  width: $spacing*3;
+  height: $spacing*3;
+  background-color: transparent !important;
+  border: 0;
+  padding: 0;
+
+  &:before, 
+  &:after, 
+  .button__inner {
+    background-color: $black;
+  }
+
+  &:before, 
+  &:after {
+    transition: transform $transition;
+    @include pseudo-element('', auto, auto, auto, auto, $spacing*3, $spacing/2);
+    border-radius: 0.15rem;
+    will-change: transform;
+  }
+
+  &:before {
+    transform: translateY($spacing);
+    animation: button-menu-close-before 0.8s ease;
+  }
+
+  &:after {
+    transform: translateY(-$spacing);
+    animation: button-menu-close-after 0.8s ease;
+  }
+
+  .button__inner {
+    transition: opacity 0s ease 0.4s;
+    border-radius: 0.15rem;
+    will-change: opacity;
+    width: $spacing*3;
+    height: $spacing/2;
+    position: absolute;
+  }
+
+  &.button--menu--open {
+
+    &:before {
+      animation: button-menu-open-before 0.8s ease forwards;
+    }
+
+    &:after {
+      animation: button-menu-open-after 0.8s ease forwards;
+    }
+
+    .button__inner {
+      opacity: 0;
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
 // misc
 // —————————————————————————————————————————————————————————————————
 
@@ -166,7 +234,7 @@ a {
 .button__wrapper {
   display: flex;
 
-  @include responsive(up, $mobile) {
+  @include responsive(down, $mobile) {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
@@ -177,7 +245,7 @@ a {
     & + .button {
       margin-left: $spacing;
 
-      @include responsive(up, $mobile) {
+      @include responsive(down, $mobile) {
         margin-left: 0;
         margin-top: $spacing;
       }

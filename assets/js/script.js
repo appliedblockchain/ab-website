@@ -48,7 +48,7 @@ $('.accordion .accordion__header').on('click', function() {
 
 $(".button--menu").click(function(event) {
 	$('.button--menu').toggleClass("button--menu--open");
-	$('.header').toggleClass('js-opened');
+	$('.navbar').toggleClass('js-opened');
 	$('body').toggleClass('js-freeze');
 });
 
@@ -98,9 +98,9 @@ $(".form__input").focusout(function() {
 $(window).scroll(function() { //the scrolled element
 	var scroll = $(this).scrollTop();
 	if (scroll >= 5) { //the point past whom you add the class (in pixel)
-		$('.header').addClass("js-scrolled"); //the element to which add the class
+		$('.navbar').addClass("js-scrolled"); //the element to which add the class
 	} else {
-		$('.header').removeClass("js-scrolled");
+		$('.navbar').removeClass("js-scrolled");
 	}
 });
 

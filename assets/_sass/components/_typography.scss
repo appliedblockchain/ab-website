@@ -16,7 +16,7 @@ html, body {
 	font-weight: $font-regular;
 	color: $text;
 
-	@include responsive(down, $desktop-lg) {
+	@include responsive(up, $desktop-lg) {
 		font-size: 20px;
 	}
 }
@@ -27,26 +27,34 @@ html, body {
   letter-spacing: calc(#{$fontSize * 1rem} * 0.01);
   line-height: $lineHeight;
 
-  & + & {
-    margin-top: 0.5em;
-  }
-
   &.gutter {
     margin-bottom: 0.5em;
   }
 }
 
-.h1 { @include font-size(3, $font-black, 1.25); }
-.h2 { @include font-size(2.5, $font-bold, 1.25); }
-.h3 { @include font-size(2, $font-bold, 1.25); }
-.h4 { @include font-size(1.75, $font-bold, 1.25); }
-.h5 { @include font-size(1.5, $font-bold, 1.25); }
+.h1 { @include font-size(2.5, $font-bold, 1.25); }
+.h2 { @include font-size(2, $font-bold, 1.25); }
+.h3 { @include font-size(1.75, $font-bold, 1.25); }
+.h4 { @include font-size(1.375, $font-bold, 1.25); }
+.h5 { @include font-size(1.375, $font-regular, 1.5); }
 .h6 { @include font-size(1.25, $font-bold, 1.25); }
 
-.subtitle1 { @include font-size(1.125); letter-spacing: 0; }
+.subtitle1 { 
+	@include font-size(1.125); letter-spacing: 0; 
+
+	& + & {
+		margin-top: 0.5em;
+	}
+}
 .subtitle2 { @extend .subtitle1; font-weight: $font-bold }
 
-.body1 { @include font-size(); letter-spacing: 0; }
+.body1 { 
+	@include font-size(); letter-spacing: 0; 
+
+	& + & {
+		margin-top: 0.5em;
+	}
+}
 .body2 { @extend .body1; font-weight: $font-bold }
 
 .caption { @include font-size(.875, $font-bold); }
@@ -104,7 +112,7 @@ html, body {
 		column-count: $i;
 		column-gap: 2rem;
 	
-		@include responsive(up, $tablet) {
+		@include responsive(down, $tablet) {
 			column-count: 1;
 		}
 	}

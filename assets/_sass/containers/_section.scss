@@ -12,8 +12,8 @@
 // variables
 // —————————————————————————————————————————————————————————————————
 
-$spacing-section: $spacing*8;
-$spacing-section-content: $spacing*5;
+$section-spacing: $spacing*8;
+$section-spacing-content: $spacing*5;
 
 // —————————————————————————————————————————————————————————————————
 // general
@@ -22,25 +22,25 @@ $spacing-section-content: $spacing*5;
 .section {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   position: relative;
-  padding: $spacing-section $page-gutter;
+  padding: $section-spacing $page-gutter;
 
   & + & {
     padding-top: 0;
   }
 
   &__container {
+    width: 100%;
     max-width: $page-max-width;
-    flex-direction: column;
-    align-items: stretch;
   }
   
   &__header {
     max-width: $page-max-width/2;
 
+    & + &,
     & + .section__content {
-      margin-top: $spacing-section-content;
+      margin-top: $section-spacing-content;
     }
   }
 
@@ -71,7 +71,7 @@ $spacing-section-content: $spacing*5;
     align-items: stretch;
   
     & + & {
-      margin-top: $spacing-section-content;
+      margin-top: $section-spacing-content;
     }
   }
 }
@@ -84,12 +84,12 @@ $spacing-section-content: $spacing*5;
 
   &.section {
     background-color: $background-color;
-    padding-top: $spacing-section;
+    padding-top: $section-spacing;
     color: $color;
   }
   
   & + .section {
-    padding-top: $spacing-section;
+    padding-top: $section-spacing;
   }
 
   & + & {
@@ -102,10 +102,18 @@ $spacing-section-content: $spacing*5;
       color: $title-color;
     }
   }
+
+  &.page__header {
+
+    &:before {
+      background-image: linear-gradient(to bottom, rgba($background-color, 0.5), $background-color);
+    }
+  }
 }
 
 .section {
 
+  &--white { @include background-color($background-default); }
   &--grey { @include background-color($background-paper); }
   &--primary { @include background-color($primary, $text-contrast, $text-contrast); }
 }
@@ -119,6 +127,9 @@ $spacing-section-content: $spacing*5;
   .section {
 
     &__label {
+      @if $size == lg {
+        @extend .body2;
+      }
 
       & + .section__title {
         margin-top: $ratio;
@@ -130,6 +141,8 @@ $spacing-section-content: $spacing*5;
         @extend .h4;
       } @else if $size == md {
         @extend .h3;
+      } @else if $size == lg {
+        @extend .h1;
       }
 
       + .section__subtitle {
@@ -142,6 +155,8 @@ $spacing-section-content: $spacing*5;
         @extend .body1;
       } @else if $size == md {
         @extend .subtitle1;
+      } @else if $size == lg {
+        @extend .h5;
       }
     }
   }
@@ -151,6 +166,7 @@ $spacing-section-content: $spacing*5;
 
   &--sm { @include size(sm, $spacing*1.5); }
   &--md { @include size(md, $spacing*2); }
+  &--lg { @include size(lg, $spacing*3); }
 }
 
 // —————————————————————————————————————————————————————————————————

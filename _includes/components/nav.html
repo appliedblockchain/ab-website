@@ -1,0 +1,19 @@
+{% assign variant = include.variant %}
+
+{% for item in site.menus[variant] %}
+  <div class="nav__item {% if page.title == item.title or page.menus == item.identifier %} nav__item--active{% endif %}">
+    <{% if item.children %}div{% else %}a href="{{ item.url }}"{% endif %} class="js-menu-trigger nav__trigger button button--sm" title="Go to {{ item.title }}">
+      <p>{{ item.title }}</p>
+      {% if item.children %}
+      {% svg /assets/icons/feather/chevron-down.svg width=24 %}
+      {% endif %}  
+    </{% if item.children %}div{% else %}a{% endif %}>
+    {% if item.children %}
+    <div class="js-menu-inner subnav">
+      {% for item in item.children %}
+      <a class="button button--sm subnav__item{% if page.title == item.title %} subnav__item--active{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}"">{{ item.title | capitalize }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+{% endfor %}

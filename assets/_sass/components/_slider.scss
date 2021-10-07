@@ -23,7 +23,7 @@
       &:before {
         font-size: 2rem;
 
-        @include responsive(up, $mobile) {
+        @include responsive(down, $mobile) {
           font-size: 1.5rem;
         }
       }

@@ -22,7 +22,7 @@
     transform: translateX(-$spacing/2);
     background-color: $grey-10;
 
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       display: none;
     }
   }
@@ -35,7 +35,7 @@
     &:nth-of-type(odd)  { .timeline__date { left: 0; } }
     &:nth-of-type(even) { .timeline__date { right: 0; } }
 
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       width: 100%;
     }
 
@@ -58,7 +58,7 @@
       width: $spacing;
       height: $spacing;
 
-      @include responsive(up, $tablet) {
+      @include responsive(down, $tablet) {
         display: none;
       }
     }
@@ -68,7 +68,7 @@
     position: absolute;
     padding: 0 $spacing*5;
 
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       padding-left: $spacing*5;
       right: auto !important;
       left: 0 !important;
@@ -90,7 +90,7 @@
       padding-right: $spacing*8;
       justify-content: flex-end;
 
-      @include responsive(up, $laptop) {
+      @include responsive(down, $laptop) {
         padding-right: $spacing*4;
       }
     }
@@ -101,7 +101,7 @@
       padding-left: $spacing*8; 
       justify-content: flex-start;
 
-      @include responsive(up, $laptop) {
+      @include responsive(down, $laptop) {
         padding-left: $spacing*4; 
       }
     }
@@ -114,12 +114,12 @@
       }
     }
 
-    @include responsive(down, $desktop-lg) {
+    @include responsive(up, $desktop-lg) {
       margin-top: $spacing;
       margin-bottom: $spacing;
     }
 
-    @include responsive(up, $laptop) {
+    @include responsive(down, $laptop) {
       margin-top: $spacing;
       margin-bottom: $spacing;
     }
@@ -132,7 +132,7 @@
 
   &__text {
 
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       flex-basis: 100% !important;
       text-align: left !important;
       padding: 0 !important;
@@ -143,7 +143,7 @@
     height: $spacing*15;
     display: flex;
     
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       display: none;
     }
     
@@ -163,7 +163,7 @@
     margin-top: $spacing*2;
     align-self: flex-end;
     
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       align-self: flex-start;
     }
   }
@@ -198,7 +198,7 @@
 
   .background--cover {
 
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       background-image: none !important;
     }
   }
@@ -268,7 +268,7 @@
 
    &__diagram {
 
-  @include responsive(up, $laptop) {
+  @include responsive(down, $laptop) {
        margin-top: $spacing*5;
      }
    }
@@ -359,7 +359,7 @@
           padding-bottom: $spacing*4;
         }
 
-        @include responsive(up, $laptop) {
+        @include responsive(down, $laptop) {
           padding-top: 0;
           padding-bottom: $spacing*4;
         }
@@ -376,7 +376,7 @@
           transform: scale(1) translateY(0);
         }
 
-        @include responsive(up, $laptop) {
+        @include responsive(down, $laptop) {
           transform: scale(1) translateY(0);
         }
       }
@@ -391,7 +391,7 @@
           margin-top: $spacing*2;
         }
 
-        @include responsive(up, $laptop) {
+        @include responsive(down, $laptop) {
           transform: translateY(0);
           margin-top: $spacing*2;
         }
@@ -409,7 +409,7 @@
           opacity: 1;
         }
 
-        @include responsive(up, $laptop) {
+        @include responsive(down, $laptop) {
           transform: translateY(0);
           opacity: 1;
         }
@@ -440,7 +440,7 @@
 
     .body--right {
 
-      @include responsive(up, $laptop) {
+      @include responsive(down, $laptop) {
         text-align: left;
       }
     }

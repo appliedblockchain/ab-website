@@ -60,7 +60,7 @@
 
       &__item {
 
-        @include responsive(up, $tablet) {
+        @include responsive(down, $tablet) {
           display: block;
 
           & + .tab__item {

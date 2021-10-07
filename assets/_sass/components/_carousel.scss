@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
 
-    @include responsive(up, $laptop) {
+    @include responsive(down, $laptop) {
       flex-direction: column;
     }
   }
@@ -118,7 +118,7 @@
         padding-right: $page-gutter;
         padding-left: $page-gutter;
 
-        @include responsive(up, $laptop) {
+        @include responsive(down, $laptop) {
 
           .body--left {
             text-align: center;
@@ -138,7 +138,7 @@
         height: $spacing*25;
         background-color: $grey-10;
 
-        @include responsive(up, $desktop) {
+        @include responsive(down, $desktop) {
           width: $spacing*15+$spacing !important;
           height: $spacing*15+$spacing;
           margin: 0 auto $spacing*4 auto;
@@ -147,7 +147,7 @@
 
       &__meta {
 
-        @include responsive(up, $desktop) {
+        @include responsive(down, $desktop) {
           align-items: center;
         }
       }

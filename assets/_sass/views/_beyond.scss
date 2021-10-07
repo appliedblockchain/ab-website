@@ -18,11 +18,11 @@
   &__logo {
     width: 66.666%;
     
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       width: 75%;
     }
     
-    @include responsive(up, $mobile) {
+    @include responsive(down, $mobile) {
       width: 100%;
     }
   }
@@ -101,7 +101,7 @@
       flex-direction: row;
       align-items: center;
       
-      @include responsive(up, $mobile) {
+      @include responsive(down, $mobile) {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -109,7 +109,7 @@
       .body {
         margin-right: $spacing*4;
         
-        @include responsive(up, $mobile) {
+        @include responsive(down, $mobile) {
           margin-right: 0;
           margin-bottom: $spacing*4;
         }
@@ -176,7 +176,7 @@
       &--grey {
         top: -$spacing*25*1.5;
         
-        @include responsive(up, $mobile) {
+        @include responsive(down, $mobile) {
           top: -$spacing*25*1;
         }
       }
@@ -275,7 +275,7 @@
       display: none;
     }
 
-    @include responsive(up, $mobile) {
+    @include responsive(down, $mobile) {
       display: none;
     }
 

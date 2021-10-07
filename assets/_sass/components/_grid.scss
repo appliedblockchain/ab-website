@@ -27,6 +27,7 @@ $col:  100%/12;
   &__item {
     display: flex;
     position: relative;
+    flex-direction: column;
     float: left;
     width: 100%;
  

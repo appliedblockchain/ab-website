@@ -1,0 +1,234 @@
+// —————————————————————————————————————————————————————————————————
+// elements
+// nav
+// —————————————————————————————————————————————————————————————————
+
+// —————————————————————————————————————————————————————————————————
+// elements
+// —————————————————————————————————————————————————————————————————
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-height: $navbar-height;
+  background-color: $background-default;
+  box-shadow: $box-shadow-md;
+
+  @include responsive(up, $desktop) {
+    height: $navbar-height;
+  }
+
+  @include responsive(down, $desktop) {
+    overflow: hidden;
+    transition: max-height $transition-lg;
+    will-change: max-height;
+  }
+
+  &.section{
+    position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(up, $desktop) {
+      height: 100%;
+    }
+
+    @include responsive(down, $desktop) {
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    margin-right: $spacing*4;
+    height: $navbar-height/2;
+    width: auto;
+
+    @include responsive(down, $desktop) {
+      position: absolute;
+      top: $navbar-height/4;
+    }
+  }
+
+  &__button {
+    margin-left: $spacing*1.5;
+
+    @include responsive(down, $desktop) {
+      margin-top: $spacing*1.5;
+      margin-left: 0;
+    }
+  }
+
+  // mobile menu
+  &.js-opened {
+    max-height: 100vh;
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// nav
+// —————————————————————————————————————————————————————————————————
+
+.nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @include responsive(up, $desktop) {
+    height: 100%;
+  }
+
+  @include responsive(down, $desktop) {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: $spacing*4;
+  }
+
+  &__icon {
+    height: $navbar-height;
+  }
+
+  &__items {
+    display: flex;
+    align-items: stretch;
+
+    @include responsive(up, $desktop) {
+      height: 100%;
+    }
+
+    @include responsive(down, $desktop) {
+      flex-direction: column;
+      height: auto;
+      margin: 0;
+      margin-right: -$page-gutter;
+    }
+  }
+
+  &__item {
+    text-decoration: none;
+    border-bottom: $spacing/2 solid $white;
+    position: relative;
+    padding-top: $spacing/2;
+    
+    .button {
+      padding-right: $spacing*1.5;
+      padding-left: $spacing*1.5;
+
+      @include responsive(down, $desktop) {
+        padding: $spacing*1.5 0;
+        justify-content: flex-end;
+      }
+    }
+    
+    @include responsive(down, $desktop) {
+      padding-top: 0;
+
+      .navbar & {
+        border-bottom: 0;
+        border-top: $border-sm $grey-20;
+        text-align: right;
+        width: 100vw;
+        margin-left: -$page-gutter;
+        padding-right: $page-gutter;
+        padding-left: $page-gutter;
+      }
+    }
+
+    &:hover .nav__trigger {
+      color: $primary;
+    }
+
+    &--active {
+      color: $primary;
+      border-bottom-color: $primary
+    }
+
+    .footer & {
+      border: 0;
+      color: $text-contrast;
+      justify-content: flex-start;
+
+      & + .nav__item {
+        margin-top: $spacing;
+      }
+    }
+  }
+
+  &__trigger {
+    transition: color $transition;
+    will-change: color;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    svg:last-child {
+      margin-left: $spacing/4;
+    }
+  }
+}
+ 
+.subnav {
+  display: none;
+  position: absolute;
+  top: $spacing*8;
+  left: -10%;
+  background-color: $white;
+  border-radius: $spacing*2;
+  width: 120%;
+  box-shadow: $box-shadow-md;
+  z-index: 1;
+  padding: $spacing 0;
+
+  @include responsive(down, $desktop) {
+    box-shadow: none;
+    position: initial;
+    width: 100vw;
+    margin-left: -$page-gutter;
+    padding-right: $page-gutter;
+    padding-left: $page-gutter;
+  }
+
+  &__item {
+    transition: color $transition;
+    will-change: color;
+    padding: $spacing*1.5;
+    text-align: center;
+    display: block;
+    color: $text;
+    height: auto;
+    border-radius: 0;
+
+    @include responsive(down, $desktop) {
+      align-self: flex-end;
+      border-bottom: 0;
+      width: 100%;
+      border-top: 0;
+      text-align: right;
+      padding-right: 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+  
+      & + & {
+        border-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    @include hover {
+      color: $primary;
+    }
+
+    &--active {
+      color: $primary;
+    }
+  }
+}

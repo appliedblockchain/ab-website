@@ -82,7 +82,7 @@
       @if $size == sm {
         @extend .h6;
       } @else if $size == md {
-        @extend .h5;
+        @extend .h6;
       } @else if $size == lg {
         @extend .h4;
       }

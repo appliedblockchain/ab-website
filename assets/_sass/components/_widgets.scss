@@ -71,7 +71,7 @@
   &__input {
     display: block;
     
-    @include responsive(up, $desktop) {
+    @include responsive(down, $desktop) {
       max-width: $spacing*25*2;
     }
 
@@ -105,7 +105,7 @@
   opacity: 1;
   display: none;
 
-  @include responsive(up, $mobile) {
+  @include responsive(down, $mobile) {
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-left: $col;
@@ -123,7 +123,7 @@
   &__text {
     padding-right: $spacing;
 
-    @include responsive(up, $mobile) {
+    @include responsive(down, $mobile) {
       padding-right: 0;
       margin-bottom: $spacing;
     }

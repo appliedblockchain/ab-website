@@ -8,28 +8,14 @@
 // —————————————————————————————————————————————————————————————————
 
 .logo {
-  
-  &__item {
-    width: 100%;
-    max-width: $spacing*25*2;
-    height: auto;
+
+  &-icon {
+
+    &-bg { fill: $primary; }
+    &-color { fill: $white; }
   }
 
-  &-icon-bg {
-    fill: $primary;
-  }
-
-  &-icon-color {
-    fill: $white;
-  }
-
-  &-name {
-    fill: $black;
-
-    .footer__logo & {
-      fill: $white;
-    }
-  }
+  &-name { fill: $black; }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -40,13 +26,13 @@
 
   &--k0 {
 
-    @include responsive(up, $tablet) {
+    @include responsive(down, $tablet) {
       width: 25%;
       margin-top: -$spacing*4;
       margin-bottom: $spacing*5;
     }
 
-    @include responsive(up, $mobile) {
+    @include responsive(down, $mobile) {
       width: 50%;
       margin-top: -$spacing*2;
       margin-bottom: $spacing*4;

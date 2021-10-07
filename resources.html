@@ -6,7 +6,7 @@ subtitle: Resources and content about our brand, our processes, our clients
 
 <!-- <section class="section section--left z-index--2">
     <div class="row">
-        <div class="col--md6">
+        <div class="grid__item--md6">
             {% include components/sectionHeader.html
                 title = 'Sales collaterals'
                 subtitle = 'Download our resources Fusce sed facilisis diam. Curabitur suscipit dolor tempor ante scelerisque consequat.'
@@ -15,7 +15,7 @@ subtitle: Resources and content about our brand, our processes, our clients
     </div>
     <div class="row">
         {% for category in site.data.resources.sales %}
-        <div class="col--md4">
+        <div class="grid__item--md4">
             <div class="block card--download">
                 <div class="card__header background--cover" style="background-image: url({{ site.base-url }}{{ site.imageurl }}/assets/{{ category.slug }}.jpg);">
                     <h3 class="lead">{{ category.title }}</h3>

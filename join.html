@@ -9,7 +9,7 @@ background_color: white
 <section class="section section--white">
     <div class="row">
         {% for item in site.data.images.join %}
-        <div class="col--lg3 col--sm6">
+        <div class="grid__item--lg3 grid__item--sm6">
             <div class="card">
                 <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
                 <p class="card__title">{{ item.alt }}</p>

@@ -13,7 +13,7 @@ background_color: white
       <div class="card card--lg background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/products/{{ item.background }}');">
         <div class="card__inner body--white card--{{ item.id }}">
           <div class="row">
-            <div class="col--lg8">
+            <div class="grid__item--lg8">
               <div class="card__content body--left">
                 <p class="card__label label">{{ item.category }}</p>
                 <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.png" alt="Logo for {{ item.title | strip_html }}" class="card__image">
@@ -22,7 +22,7 @@ background_color: white
               </div>
             </div>
             {% if item.links %}
-            <div class="col--lg4">
+            <div class="grid__item--lg4">
               <div class="card__actions">
                 {% for link in item.links %}
                 <a href="{% if item.type == 'internal' %}{{ site.base-url }}/{% endif %}{{ link.url }}" target="_blank" rel="noopener" class="button button--white button--animate {{ link.icon }}">

@@ -10,7 +10,7 @@ background_color: white
 <section class="section section--alt section--white">
     <div class="grid row card__wrapper">
         {% for project in sorted %}
-        <div class="col--lg4 col--sm6">
+        <div class="grid__item--lg4 grid__item--sm6">
             <div class="card card--portrait background--shadow">
                 <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/carousel/clients_color/{{ project.slug }}.png');"></div>
                 <div class="card__inner">

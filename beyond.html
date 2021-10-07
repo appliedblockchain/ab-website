@@ -27,7 +27,7 @@ subtitle: Confidential Trading
   </div>
   <div class="section__content">
     <div class="row">
-      <div class="coloffset--md1 col--md10">
+      <div class="coloffset--md1 grid__item--md10">
         {% include ui/laptop.html %}
       </div>
     </div>
@@ -36,7 +36,7 @@ subtitle: Confidential Trading
     <div class="row card__wrapper">
       <!-- edit in _data/beyonf.yml -->
       {% for item in site.data.beyond %}
-      <div class="col--xl3 col--md6">
+      <div class="grid__item--xl3 grid__item--md6">
         <div class="card card--alt">
           <h2 class="card__title lead">{{ item.title }}</h2>
           <p class="card__subtitle">{{ item.subtitle }}</p>
@@ -88,7 +88,7 @@ subtitle: Confidential Trading
   %}
   <div class="section__content">
     <div class="row">
-      <div class="coloffset--xl2 col--xl8 coloffset--md1 col--md10">
+      <div class="coloffset--xl2 grid__item--xl8 coloffset--md1 grid__item--md10">
         <div class="card block__title">
           {% include components/carousel.html
               variant = 'partners'

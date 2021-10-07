@@ -1,13 +1,13 @@
 <footer class="footer footer--beyond section">
   <div class="footer__row">
     <div class="row card__wrapper--lg">
-      <div class="col--lg6 col--md8">
+      <div class="grid__item--lg6 grid__item--md8">
         <div class="footer__logo card">
           <p class="body">A new product by</p>
           {% include components/logos/logo.html %}
         </div>
       </div>
-      <div class="coloffset--lg2 col--md4 card">
+      <div class="coloffset--lg2 grid__item--md4 card">
         {% include components/social.html 
           header = ''
         %}
@@ -16,7 +16,7 @@
   </div>
   <div class="footer__row">
     <div class="row card__wrapper--lg">
-      <div class="col--md7">
+      <div class="grid__item--md7">
         <div class="card card--lg card--p0 footer__card alt">
           <p class="card__header body--bold">Trusted by global organisations and startups alike</p>
           <div class="card__media">
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-      <div class="coloffset--md1 col--md4">
+      <div class="coloffset--md1 grid__item--md4">
         <div class="card card--lg card--p0 footer__card alt">
           <p class="card__header body--bold">5-star customer reviews</p>
           <div class="card__media">
@@ -58,7 +58,7 @@
   </div>
   <div class="footer__row">
     <div class="row">
-      <div class="col--lg12 footer__legal">
+      <div class="grid__item--lg12 footer__legal">
         <div class="card card--p0">
           <p class="body--sm">© Copyright {{ site.time | date: '%Y' }} Applied Blockchain Ltd. All rights reserved</p>
           <p class="body--sm">Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276</p>

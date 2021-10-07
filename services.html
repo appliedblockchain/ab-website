@@ -30,7 +30,7 @@ background_color: white
     <div class="row">
       <div class="card__wrapper">
         {% for item in site.data.services.solutions %}
-        <div class="col--lg4">
+        <div class="grid__item--lg4">
           <div class="card card--lg">
             <img src="{{ site.base-url }}{{ site.imageurl }}/icons/solutions/icon-{{ item.icon }}.svg" alt="" class="card__image">
             <h2 class="card__title lead">{{ item.title }}</h2>
@@ -52,7 +52,7 @@ background_color: white
     <div class="card__wrapper">
       <div class="row">
         {% for item in site.data.services.stack %}
-        <div class="col--md6">
+        <div class="grid__item--md6">
           <div class="card body--left">
             <div class="background--shadow">
               <div class="card__inner">

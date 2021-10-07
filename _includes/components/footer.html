@@ -1,6 +1,6 @@
 <footer id="footer" class="footer section section--dark">
   <div class="footer__row row">
-    <div class="col--xl4">
+    <div class="grid__item--xl4">
       <div class="card footer__logo">
         <div class="logo logo-name-white">
           <a href="{{ site.base-url }}/">
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <div class="coloffset--xl1 col--xl7">
+    <div class="coloffset--xl1 grid__item--xl7">
       <div class="card">
         {% include components/social.html
           header = 'true'
@@ -18,14 +18,14 @@
     </div>
   </div>
   <div class="footer__row row">
-    <div class="col--xl4">
+    <div class="grid__item--xl4">
       <div class="card">
         {% include components/newsletter.html %}
       </div>
     </div>
-    <div class="coloffset--xl1 col--xl7">
+    <div class="coloffset--xl1 grid__item--xl7">
       <div class="row">
-        <div class="card col--4">
+        <div class="card grid__item--4">
           <p class="card__title body--large body--bold">Sitemap</p>
           <div class="card__body">
             <a href="{{ site.base-url }}/" class="footer__button button button--text">Home</a>
@@ -55,7 +55,7 @@
             <a href="{{ site.base-url }}/beyond" class="footer__button button button--text">Confidential Trading</a>
           </div>
         </div>
-        <div class="card col--4">
+        <div class="card grid__item--4">
           <p class="card__title body--large body--bold">Projects</p>
           <div class="card__body">
             {% for project in site.projects %}
@@ -63,7 +63,7 @@
             {% endfor %}
           </div>
         </div>
-        <div class="card col--sm4">
+        <div class="card grid__item--sm4">
           <p class="card__title body--large body--bold">Products</p>
           <div class="card__body">
             <a href="https://silentdata.com/" target="_blank" rel="noopener" class="footer__button button button--text">SILENTDATA</a>
@@ -75,7 +75,7 @@
     </div>
   </div>
   <div class="footer__row row">
-    <div class="col--xl4">
+    <div class="grid__item--xl4">
       <div class="card">
         <p class="card__title body--large body--bold">Addresses</p>
         <div class="card__body">
@@ -86,7 +86,7 @@
         </div>
       </div>
     </div>
-    <div class="coloffset--xl1 col--xl7">
+    <div class="coloffset--xl1 grid__item--xl7">
       <p class="body body--bold">© Copyright 2020 Applied Blockchain Ltd. <br>All rights reserved.</p>
       <p class="body">Applied Blockchain Ltd is a company registered in England and Wales. <br>Company No. 09686276</p>
     </div>

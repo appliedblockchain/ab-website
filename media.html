@@ -26,7 +26,7 @@ background_color: white
     <div class="grid row tab__content card__wrapper">
       {% if site.posts.size > 0 %}
       {% for post in site.posts %}
-      <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
+      <div class="grid__item--lg4 grid__item--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
         <div class="card card--portrait background--shadow">
           <a href="{% if post.link %}{% if post.social contains "pdf" %}{{ site.base-url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>
             <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg');"></div>

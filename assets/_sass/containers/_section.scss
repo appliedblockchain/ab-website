@@ -163,5 +163,12 @@ $spacing-section-content: $spacing*5;
     padding-left: 0 !important;
     padding-right: 0 !important;
     overflow: hidden;
+
+    .section {
+
+      &__container {
+        max-width: unset;
+      }
+    }
   }
 }

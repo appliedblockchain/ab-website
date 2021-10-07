@@ -14,7 +14,7 @@ background_color: white
     <div class="section__content">
         <div class="row">
             {% for item in site.data.images.node-hosting %}
-            <div class="col--4 card">
+            <div class="grid__item--4 card">
                 <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
                 <p class="card__title body--large body--bold">{{ item.title }}</p>
             </div>

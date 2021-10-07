@@ -12,7 +12,7 @@ layout: compress
   <div class="section__content body--black">
     <div class="row row--center">
       <img src="{{ site.base-url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop">
-      <div class="col--xl3 col--lg4 col--md6 col--sm8">
+      <div class="grid__item--xl3 grid__item--lg4 grid__item--md6 grid__item--sm8">
         <div class="card card--xxs anchor background--shadow mb--md">
           <div class="card__inner">
             <div class="card__header">
@@ -37,7 +37,7 @@ layout: compress
     </div>
   </div>
   <div class="row widget__bar card__wrapper">
-    <div class="card col--xl8 col--lg7 body--left">
+    <div class="card grid__item--xl8 grid__item--lg7 body--left">
       <p class="body body--bold card__title">Trusted by global organisations and startups alike</p>
       <div class="card__body">
         {% include components/carousel.html
@@ -45,7 +45,7 @@ layout: compress
         %}
       </div>
     </div>
-    <div class="col--xl4 col--lg5">
+    <div class="grid__item--xl4 grid__item--lg5">
       <div class="owl-carousel owl-carousel-news widget--news card card--xs card--portrait background--shadow body--black">
         {% for item in site.data.news %}
         <div class="carousel__item">
@@ -112,7 +112,7 @@ layout: compress
   %}
   <div class="section__content">
     <div class="row card__wrapper">
-      <div class="card col--md6">
+      <div class="card grid__item--md6">
         <div class="card body--left">
           <div class="card__header">
             <p class="card__title body"><span class="body body--bold">Gary Pogson</span>, <span class="body body--bold">Lloyd's Register</span></p>
@@ -130,7 +130,7 @@ layout: compress
         </div>
         {% include components/modals/video.html %}
       </div>
-      <div class="card col--md6">
+      <div class="card grid__item--md6">
         <div class="card body--left">
           <div class="card__header">
             <p class="card__title body"><span class="body body--bold">Ben Van Beurden, CEO at Shell</span></p>
@@ -182,8 +182,8 @@ layout: compress
   </div>
   <div class="section__content">
     <div class="row">
-      <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/thought-leader.png');"></div>
-      <div class="card col--6 body--left">
+      <div class="grid__item--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/thought-leader.png');"></div>
+      <div class="card grid__item--6 body--left">
         <h2 class="card__title lead">Thought leaders</h2>
         <p class="card__body body">We contribute to global industry events and whitepapers, with keynote presentations and commentaries on practical applications of distributed ledgers, advanced cryptography, confidential computing and secure enclaves. Our work has led us to be recognised by the UK government, where Adi Ben-Ari has been invited to present at the House of Lords, Houses of Parliament, and leading academic institutions.</p>
       </div>
@@ -191,17 +191,17 @@ layout: compress
   </div>
   <div class="section__content">
     <div class="row">
-      <div class="card col--6 body--right">
+      <div class="card grid__item--6 body--right">
         <h2 class="card__title lead">International market leader</h2>
         <p class="card__body body">We have built and deployed enterprise grade solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has recognised Applied Blockchain amongst the Top Global Blockchain Development and Consulting Firm for 4 consecutive years 2017-2020.</p>
       </div>
-      <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/market-leader.svg');"></div>
+      <div class="grid__item--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/market-leader.svg');"></div>
     </div>
   </div>
   <div class="section__content">
     <div class="row">
-      <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg');"></div>
-      <div class="card col--6 body--left">
+      <div class="grid__item--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg');"></div>
+      <div class="card grid__item--6 body--left">
         <h2 class="card__title lead">Experts in applications of distributed ledgers (DApps), advanced cryptography, and confidential computing</h2>
         <p class="card__body body">Our team of in-house development experts work closely with our clients to bring innovative solutions to life – together.</p>
       </div>
@@ -216,7 +216,7 @@ layout: compress
   <div class="section__content">
     <div class="row">
       {% for item in site.data.images.media %}
-      <div class="col--lg3 col--6">
+      <div class="grid__item--lg3 grid__item--6">
         <div class="card card__inner">
           {% if item.link %}
           <a href="{{ item.link }}" target="_blank">

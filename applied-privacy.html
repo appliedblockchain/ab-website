@@ -14,7 +14,7 @@ background_image: applied-privacy.svg
   %}
   <div class="section__content">
     <div class="row">
-      <div class="coloffset--xl2 col--xl8 coloffset--md1 col--md10">
+      <div class="coloffset--xl2 grid__item--xl8 coloffset--md1 grid__item--md10">
         <div class="card block__title">
           {% include components/carousel.html
               variant = 'partners'
@@ -34,7 +34,7 @@ background_image: applied-privacy.svg
       <div class="row">
         <!-- edit use cases content in _data/privacy.yml -->
         {% for item in site.data.privacy %}
-        <div class="col--xl3 col--sm6">
+        <div class="grid__item--xl3 grid__item--sm6">
           <div class="card card--sm">
             <div class="card__inner background--shadow">
               <i class="card__image subtitle fas fa-{{ item.icon }} body--primary"></i>

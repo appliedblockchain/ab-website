@@ -9,7 +9,7 @@ background_color: dark
 <section class="section section--primary section--left">
     <div class="section__content">
         <div class="row mantle body--left">
-            <div class="col--lg4">
+            <div class="grid__item--lg4">
                 <h1 class="subtitle block__title">What Mantle delivers</h1>
                 <div class="block__content">
                     <p class="body">Mantle solves the problem of privacy and anonymity by adding an additional layer of security on top of any blockchain application that supports smart contracts.</p>
@@ -17,10 +17,10 @@ background_color: dark
                     <p class="body">Mantle enables data caching to greatly improve system performance and data retrieval to run application operations.</p>
                 </div>
             </div>
-            <div class="col--lg3 coloffset--md1 col--md5 col--6">
+            <div class="grid__item--lg3 coloffset--md1 grid__item--md5 grid__item--6">
                 <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-mantle.svg" alt="Mantle schematic" class="mantle__diagram">
             </div>
-            <div class="col--lg4 col--md5 col--6 mantle__legend">
+            <div class="grid__item--lg4 grid__item--md5 grid__item--6 mantle__legend">
                 <p class="mantle__label">Mantle and its layers</p>
                 <p class="mantle__label">Blockchain application</p>
                 <p class="mantle__label">Encrypted data</p>
@@ -37,7 +37,7 @@ background_color: dark
     <div class="section__content">
         <div class="row">
             {% for item in site.data.images.mantle %}
-            <div class="col--lg3 col--sm6 card">
+            <div class="grid__item--lg3 grid__item--sm6 card">
                 <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
                 <p class="card__title body--large body--bold">{{ item.title }}</p>
                 <p class="card__body body--small">{{ item.alt }}</p>

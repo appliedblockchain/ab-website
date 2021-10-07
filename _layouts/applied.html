@@ -88,8 +88,8 @@
     </div>
     <div class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %}">
         <div class="body--left row">
-            <p class="lead col--lg6 col--md9">{{ page.intro }}</p> 
-            <div class="ap__anchor anchor coloffset--lg3 col--md3 z-index--1">
+            <p class="lead grid__item--lg6 grid__item--md9">{{ page.intro }}</p> 
+            <div class="ap__anchor anchor coloffset--lg3 grid__item--md3 z-index--1">
                 <div class="button anchor__item"><a class="button__inner" href="#the-technology">The technology</a></div>
                 <div class="button anchor__item"><a class="button__inner" href="#properties">Properties</a></div>
                 <div class="button anchor__item"><a class="button__inner" href="#use-case">Use case</a></div>
@@ -102,21 +102,21 @@
 
 <section class="section section--{% if page.title == 'Applied Proofs' %}dark{% else %}transparent{% endif %}">
     <div class="timeline__content row">
-        <div class="coloffset--lg3 col--lg3 col--md4">
+        <div class="coloffset--lg3 grid__item--lg3 grid__item--md4">
             <div class="timeline__item">
                 <p class="timeline__date label">April 2016</p>    
                 <span class="timeline__dot"></span>
                 <p class="timeline__title body--large body--bold">GDPR adoption</p>
             </div>
         </div>
-        <div class="col--lg3 col--md4">
+        <div class="grid__item--lg3 grid__item--md4">
             <div class="timeline__item">
                 <p class="timeline__date label">May 2018</p>    
                 <span class="timeline__dot"></span>
                 <p class="timeline__title body--large body--bold">GDPR enforcement</p>
             </div>
         </div>
-        <div class="col--lg3 col--md4">
+        <div class="grid__item--lg3 grid__item--md4">
             <div class="timeline__item">
                 <p class="timeline__date label">Today</p>    
                 <span class="timeline__dot triangle"></span>
@@ -145,7 +145,7 @@
         <div class="row">
             {% capture page_id %}{{ page.title | slugify }}{% endcapture %}
             {% for item in site.data.images[page_id] %}
-            <div class="col--md3 col--6 card">
+            <div class="grid__item--md3 grid__item--6 card">
                 <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.png" alt="{{ item.url }} icon" class="card__image">
                 <p class="card__title body body--bold">{{ item.title }}</p>
             </div>
@@ -162,7 +162,7 @@
     %}
     <div class="section__content section--white">
         <div class="row">
-            <img src="{{ site.base-url }}{{ site.imageurl }}/graphics/{{ page.title | slugify }}.png" alt="Use case diagram" class="coloffset--2 col--8">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/graphics/{{ page.title | slugify }}.png" alt="Use case diagram" class="coloffset--2 grid__item--8">
         </div>
     </div>
 </section>

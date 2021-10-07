@@ -6,7 +6,7 @@
 - [Page structure](#page-structure)
   - [Section system](#section-system)
   - [Components](#components)
-  - [Column system](#column-system)
+  - [Grid system](#grid-system)
 - [Create page](#create-page)  
 - [Create project](#create-project)
 - [Create job](#create-job)
@@ -84,7 +84,7 @@ The deployment process is run throught Netlify.
 | Staging | staging | [beta.appliedblockchain.com](https://beta.appliedblockchain.com/) |
 | Production | master | [appliedblockchain.com](https://appliedblockchain.com/) |
 
-> Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on the content.
+> Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on staging.
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -92,61 +92,80 @@ The deployment process is run throught Netlify.
 
 ## Page structure
 
-- You only need to concern yourself with the content of the page, the page header and footer are built in the layout, ensuring their consistency throughout the whole website.
-- Each page is divided in sections (usually differenciated by background colours).
-- Elements are layed out using a bootstrap like [column system](#column-system).
+- You only need to concern yourself with the content of the page. The page header and footer are built-in, ensuring their consistency throughout the whole website.
+- Elements are layed out using a [grid system](#grid-system).
+
+### Sections
+
+Each page is divided in sections (usually differenciated by background colours). They should all have this structure:
+
 ```html
 <section class="section">
-  {% include components/sectionHeader.html
-    title = ''
-    subtitle = ''
-    body = ''
-  %}
-  <div class="section__content">
-    <!-- add your code -->
+  <div class="section__container">
+    {% include components/sectionHeader.html
+      label = "Use case"
+      title = "Applied Blockchain"
+      subtitle = 'We build applications with added trust and data privacy'
+    %}
+    <div class="section__content">
+      <!-- add your code -->
+    </div>
   </div>
 </section>
-<!-- repeat section if needed -->
+<!-- repeat if needed -->
 ```
 
-### Section system
+#### Section header
 
-#### Section types
+The `sectionHeader` is a built-in component, to ensure styling consistency. Here are its properties.
+
+| Prop | Value | Description |
+| --- | --- |
+| `label` | `string` | |
+| `title` | `string` | |
+| `subtitle` | `string` | |
+| `proportion` | `sm`, `md` | `md` is the default value, use `sm` for subheaders |
+
+#### Variants
+
+Add the following classes to the section elements to use each variant.
 
 | Class | Description |
 | --- | --- |
-| `section--alt` | Divide left and right padding by two |
-| `section--full` | Fullwidth section |
-| `section--overlap` | Add a negative margin top to the section to make them overlap |
+| `section--fullWidth` | Fullwidth section |
 
-#### Section colors
+#### Background colors
 
-Change the background color of a section (default is white) using `section--primary`, `section--dark` or `section--grey`.
+Add the following classes to change a section's background color (by default is white).
+
+| Class | Description |
+| --- | --- |
+| `section--primary` | Blue (primary color) background |
+| `section--grey` | light grey background |
 
 ### Components
 
 The components are located in the `_include` folder. They were created to ensure that every iteration has the same structure, and that it will be easy to edit it. Each of them has a set of attributes.
-> if you want one attribute not to appear, delete the line
 
-#### Section header
+> if you want an attribute not to appear, delete the line
+
+### Grid system
+
+The website uses a css grid system, based on a twelve column structure. You can add breakpoint prefixes to the column number for responsive behaviour of each column.
+
+| Class | Description |
+| --- | --- |
+| `grid__wrapper` | The parent component |
+| `grid__spacing--X` | X can be a value between 1 and 12. It defines the vertical and horizontal spacing between children |
+| `grid__item` | The child component. Children can be both **items** and **wrappers** |
+| `grid__item--X` | X can be a value between 1 and 12. It defines the width of the child element |
 
 ```html
-{% include components/sectionHeader.html
-  comment = 'Lorem ipsum'
-  title = 'Section title'
-  subtitle = 'Section subitle'
-  description = 'Lorem ipsum dolor sit amet.'
-%}
-```
-
-### Column system
-
-The website uses a [bootstrap](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) like column system. It as based on a twelve column structure. You can add prefixes to the number to set up the responsive behaviour of each column.
-```html
-<div class="row">
-  <div class="col--lg3 col--md4"></div>
-  <div class="col--lg7 col--md8"></div>
-  <div class="col--lg2 col--md12"></div>
+<div class="grid__wrapper grid__spacing--2">
+  <div class="grid__item grid__item--xl6">
+  <div class="grid__item grid__item--lg3 grid__item--md4"></div>
+  <div class="grid__item grid__item--lg7 grid__item--md8"></div>
+  <div class="grid__item grid__item--lg2 grid__item--md12"></div>
 </div>
 ```
 

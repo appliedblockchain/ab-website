@@ -4,7 +4,7 @@
       <div class="col--lg6 col--md8">
         <div class="footer__logo card">
           <p class="body">A new product by</p>
-          {% include mixins/logo.html %}
+          {% include components/logos/logo.html %}
         </div>
       </div>
       <div class="coloffset--lg2 col--md4 card">
@@ -21,7 +21,7 @@
           <p class="card__header body--bold">Trusted by global organisations and startups alike</p>
           <div class="card__media">
             <!-- edit in _data/images.yml in beyond section -->
-            {% include elements/carousel.html
+            {% include components/carousel.html
               variant = 'beyond'
             %}
           </div>

@@ -2,7 +2,7 @@
   <div class="header__bar">
     <div class="header__logo logo{% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
       <a href="{{ site.base-url }}/">
-        {% include mixins/logo.html %}
+        {% include components/logos/logo.html %}
       </a>
     </div>
     <div class="header__button">

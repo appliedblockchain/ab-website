@@ -20,7 +20,7 @@ background_color: white
 </section>
 
 <section id="about-leadership" class="section section--grey">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Leadership team'
     body = 'Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services.'
   %}
@@ -45,7 +45,7 @@ background_color: white
 </section>
 
 <section id="about-team" class="section section--white section--overlap">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Management team'
   %}
   <div class="section__content body--left">
@@ -69,12 +69,12 @@ background_color: white
 </section>
 
 <section class="section section--grey no-padding--left no-padding--right">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Investors'
   %}
   <div class="section__content">
     <div class="card testimonials">
-      {% include elements/carousel.html 
+      {% include components/carousel.html 
         type = 'testimonials'
         variant = 'testimonials_investors' 
       %}
@@ -83,7 +83,7 @@ background_color: white
 </section>
 
 <section class="section section--white timeline">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Our story'
   %}
   <div class="section__content timeline">

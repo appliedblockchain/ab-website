@@ -3,26 +3,26 @@
 {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
 {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
 {% if date == now %}
-    <section class="section">
+  <section class="section">
 
-        <!-- edit component in _includes/components/section-header.html -->
-        {% include containers/sections/header.html
-            title='On today'
-        %}
-        
-        <div class="block event">
-            <!-- edit data in _data/events.yml -->
-            {% for event in site.data.events %}
-                {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
-                {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
-                {% if date == now %}
-                    <!-- edit component in _includes/components/event.html -->
-                    {% include components/event.html %}
-                {% endif %}
-            {% endfor %} 
-        </div>
-        
-    </section>
+    <!-- edit component in _includes/components/section-header.html -->
+    {% include components/sectionHeader.html
+      title='On today'
+    %}
+    
+    <div class="block event">
+      <!-- edit data in _data/events.yml -->
+      {% for event in site.data.events %}
+        {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->
+        {% capture date %} {{ event.date | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture event date -->
+        {% if date == now %}
+          <!-- edit component in _includes/components/event.html -->
+          {% include components/event.html %}
+        {% endif %}
+      {% endfor %} 
+    </div>
+    
+  </section>
 {% endif %}
 {% endfor %} 
 
@@ -30,25 +30,25 @@
 
 <!-- HIRING AND NEWS WIDGETS -->
 <div class="landing__widget widget block">
-    <div class="widget--hiring">
-        <div class="widget__header">
-            <p class="lead">We are hiring</p>
-            <a href="{{ site.base-url }}/join" class="button button--small button--highlight button--animate fas fa-user-plus">
-                <p class="button__inner">See our vacancy list</p>
-            </a>
-        </div>
+  <div class="widget--hiring">
+    <div class="widget__header">
+      <p class="lead">We are hiring</p>
+      <a href="{{ site.base-url }}/join" class="button button--small button--highlight button--animate fas fa-user-plus">
+        <p class="button__inner">See our vacancy list</p>
+      </a>
     </div>
-    <div class="widget--news">
-        <div class="widget__header">
-            <p class="lead">Latest news</p>
-            <a href="{{ site.base-url }}/media" class="button button--small button--primary-lighten button--animate fas fa-plus">
-                <p class="button__inner">Read more</p>
-            </a>
-        </div>
-        <div class="widget__content news__content owl-carousel owl-carousel-news">
-            {% for post in site.posts limit: 3 %}
-                <p class="">{{ post.title | truncate: 100, "…" }}</p>
-            {% endfor %}
-        </div>
+  </div>
+  <div class="widget--news">
+    <div class="widget__header">
+      <p class="lead">Latest news</p>
+      <a href="{{ site.base-url }}/media" class="button button--small button--primary-lighten button--animate fas fa-plus">
+        <p class="button__inner">Read more</p>
+      </a>
     </div>
+    <div class="widget__content news__content owl-carousel owl-carousel-news">
+      {% for post in site.posts limit: 3 %}
+        <p class="">{{ post.title | truncate: 100, "…" }}</p>
+      {% endfor %}
+    </div>
+  </div>
 </div>

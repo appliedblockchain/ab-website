@@ -8,7 +8,7 @@ background_color: white
 ---
 
 <section class="section section--primary">
-    {% include containers/sections/header.html
+    {% include components/sectionHeader.html
         title = 'Provide assurance to users of your blockchain solution with an independent Applied Blockchain node and explorer'
     %}
     <div class="section__content">
@@ -24,12 +24,12 @@ background_color: white
 </section>
 
 <section class="section section--primary section--alt">
-    {% include containers/sections/header.html
+    {% include components/sectionHeader.html
         subtitle = 'Applied Blockchain has experience supporting multiple distributed technologies'
     %}
     <div class="section__content z-index--2">
         <div class="block background--shadow">
-            {% include elements/carousel.html 
+            {% include components/carousel.html 
                 variant = 'technologies' 
             %}
         </div>
@@ -37,7 +37,7 @@ background_color: white
 </section>
 
 <section class="section section--white section--overlap">
-    {% include containers/sections/header.html
+    {% include components/sectionHeader.html
         title = 'Block Explorer'
         subtitle = 'Complementing the independently controlled node, our independently hosted open source blockchain explorer provides further transparency and assurance to users of the applications running on that network.'
         body = 'The Applied Blockchain explorer is a tool for visualising blockchain networks, improving transparency and highlighting malicious activity. The explorer also aids in spotting potential issues with the blockchain such as forks and reorgs.'
@@ -50,7 +50,7 @@ background_color: white
 </section>
 
 <section class="section section--primary">
-    {% include containers/sections/header.html
+    {% include components/sectionHeader.html
         title = 'Interested in our solution?'
         subtitle = 'Give us an shout and we will get back to you shortly'
     %}

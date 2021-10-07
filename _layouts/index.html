@@ -2,11 +2,11 @@
 layout: compress
 ---
 
-{% include containers/site/header.html %}
+{% include containers/header.html %}
 
 <div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
   <div id="particles-js"></div>
-  {% include containers/page/title.html
+  {% include components/pageHeader.html
     headline = site.description
   %}
   <div class="section__content body--black">
@@ -40,7 +40,7 @@ layout: compress
     <div class="card col--xl8 col--lg7 body--left">
       <p class="body body--bold card__title">Trusted by global organisations and startups alike</p>
       <div class="card__body">
-        {% include elements/carousel.html
+        {% include components/carousel.html
           variant = 'clients'
         %}
       </div>
@@ -86,7 +86,7 @@ layout: compress
 </div>
 
 <section id="index-intro" class="section section--white">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     comment = 'What we do'
     title = 'Blockchain solutions'
   %}
@@ -106,7 +106,7 @@ layout: compress
 </section>
 
 <section class="section section--grey" id="who-we-help">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     comment = 'Who we help'
     title = 'Cutting-edge startups to global enterprises'
   %}
@@ -128,7 +128,7 @@ layout: compress
             <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
           </a>
         </div>
-        {% include elements/modals/video.html %}
+        {% include components/modals/video.html %}
       </div>
       <div class="card col--md6">
         <div class="card body--left">
@@ -162,7 +162,7 @@ layout: compress
 <section id="index-testimonials" class="section section--white no-padding--left no-padding--right">
   <div class="section__content">
     <div class="card testimonials">
-      {% include elements/carousel.html
+      {% include components/carousel.html
         type = 'testimonials'
         variant = 'testimonials_clients'
       %}
@@ -171,7 +171,7 @@ layout: compress
 </section>
 
 <section id="index-why-us" class="section section--grey">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     comment = 'Why us'
     title = 'Independent thinking, production grade solutions'
   %}
@@ -210,7 +210,7 @@ layout: compress
 </section>
 
 <section id="index-featured-in" class="section section--white">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Featured In'
   %}
   <div class="section__content">
@@ -248,4 +248,4 @@ layout: compress
   });
 </script>
 
-{% include containers/site/footer.html %}
+{% include containers/footer.html %}

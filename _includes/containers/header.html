@@ -92,12 +92,12 @@
 </div>
 
 {% if page.layout != 'beyond' %}
-{% include containers/page/header.html %}
+{% include components/navbar.html %}
 {% endif %}
 
 <div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{% if page.layout == 'webinar' or page.layout == 'report' %}{{ page.layout }}.jpg{% elsif page.background_image %}{{ page.background_image }}{% endif %}');">
 
 {% if page.layout == 'index' or page.layout == 'post' or page.layout == 'project' or page.layout == 'beyond' %}
 {% else %}
-{% include containers/page/title.html %}
+{% include components/pageHeader.html %}
 {% endif %}

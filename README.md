@@ -97,7 +97,7 @@ The deployment process is run throught Netlify.
 - Elements are layed out using a bootstrap like [column system](#column-system).
 ```html
 <section class="section">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = ''
     subtitle = ''
     body = ''
@@ -131,7 +131,7 @@ The components are located in the `_include` folder. They were created to ensure
 #### Section header
 
 ```html
-{% include containers/sections/header.html
+{% include components/sectionHeader.html
   comment = 'Lorem ipsum'
   title = 'Section title'
   subtitle = 'Section subitle'

@@ -2,7 +2,7 @@
 layout: compress
 ---
 
-{% include containers/site/header.html %}
+{% include containers/header.html %}
 
 <div id="project-intro" class="section section--header">
     <div class="block__content">
@@ -58,7 +58,7 @@ layout: compress
             </div>
             <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
         </div>
-        {% include elements/modals/video.html %}
+        {% include components/modals/video.html %}
         <div class="coloffset--md1 col--md6">
         {% else %}
         <div class="col--md6">
@@ -160,4 +160,4 @@ layout: compress
 </section>
 {% endif %}
 
-{% include containers/site/footer.html %}
+{% include containers/footer.html %}

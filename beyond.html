@@ -49,7 +49,7 @@ subtitle: Confidential Trading
 
 <section class="section section--full">
   <img src="{{ site.base-url }}{{ site.imageurl }}/graphics/beyond-divider-grey.svg" alt="Section divider" class="section__divider section__divider--grey">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Beyond provides technical data privacy and integrity'
     body = 'Our confidential trading container provides guarantees of the trading logic executed, and of privacy levels maintained. Our team has experience building production commodity trading platforms for the largest global organisations.'
   %}
@@ -82,7 +82,7 @@ subtitle: Confidential Trading
 </section>
 
 <section class="section section--white">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Industry leading partners'
     body = 'As an active member of the Confidential Computing Consoritium we work with the industry technology leaders'
   %}
@@ -90,7 +90,7 @@ subtitle: Confidential Trading
     <div class="row">
       <div class="coloffset--xl2 col--xl8 coloffset--md1 col--md10">
         <div class="card block__title">
-          {% include elements/carousel.html
+          {% include components/carousel.html
               variant = 'partners'
             %}
         </div>

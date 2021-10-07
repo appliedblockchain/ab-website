@@ -9,7 +9,7 @@ background_color: white
 <section class="section section--alt section--white">
   <div class="section__content">
     <div class="card block__title">
-      {% include elements/carousel.html
+      {% include components/carousel.html
         variant = 'clients'
         colour = 'color'
       %}
@@ -23,7 +23,7 @@ background_color: white
 </section>
 
 <section id="services-solutions" class="section section--grey">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Our solutions'
   %}
   <div class="section__content z-index--2">
@@ -44,7 +44,7 @@ background_color: white
 </section>
 
 <section id="services-stack" class="section section--white z-index--2">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Technology'
     body = 'Our team builds and supports full stack, privacy-preserving, secure and distributed applications.'
   %}
@@ -70,14 +70,14 @@ background_color: white
     </div>
   </div>
   <div class="section__content">
-    {% include elements/carousel.html
+    {% include components/carousel.html
       variant = 'technologies'
     %}
   </div>
 </section>
 
 <section class="section section--white">
-  {% include containers/sections/header.html
+  {% include components/sectionHeader.html
     title = 'Our Approach'
     subtitle = 'Building your Project'
   %}
@@ -112,7 +112,7 @@ background_color: white
 <section id="index-testimonials" class="section section--grey no-padding--left no-padding--right">
   <div class="section__content">
   <div class="card testimonials">
-    {% include elements/carousel.html
+    {% include components/carousel.html
     type = 'testimonials'
     variant = 'testimonials_clients'
     %}

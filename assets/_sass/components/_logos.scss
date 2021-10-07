@@ -1,21 +1,30 @@
 // —————————————————————————————————————————————————————————————————
-// general
+// color
 // products
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
-// general
+// color
 // —————————————————————————————————————————————————————————————————
+
+@mixin color($icon-bg, $icon-color, $name) {
+
+  .logo {
+
+    &-icon {
+  
+      &-bg { fill: $icon-bg; }
+      &-color { fill: $icon-color; }
+    }
+  
+    &-name { fill: $name; }
+  }
+}
 
 .logo {
 
-  &-icon {
-
-    &-bg { fill: $primary; }
-    &-color { fill: $white; }
-  }
-
-  &-name { fill: $black; }
+  &--default { @include color($primary, $white, $black); }
+  &--white { @include color($primary, $white, $white); }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -26,13 +35,13 @@
 
   &--k0 {
 
-    @include responsive(down, $tablet) {
+    @include responsive(up, $tablet) {
       width: 25%;
       margin-top: -$spacing*4;
       margin-bottom: $spacing*5;
     }
 
-    @include responsive(down, $mobile) {
+    @include responsive(up, $mobile) {
       width: 50%;
       margin-top: -$spacing*2;
       margin-bottom: $spacing*4;

@@ -68,13 +68,13 @@ a {
 
 .button {
 
-  &--primary { @include color($primary, $primary-contrast-text, $primary-dark); }
-  &--secondary { @include color($secondary, $secondary-contrast-text, $secondary-dark); }
+  &--primary { @include color($primary, $primary-text-contrast, $primary-dark); }
+  &--secondary { @include color($secondary, $secondary-text-contrast, $secondary-dark); }
   &--grey { @include color($grey-60, $text-contrast, $grey-70); }
-  &--success { @include color($success, $success-contrast-text, $success-dark); }
-  &--info { @include color($info, $info-contrast-text, $info-dark); }
-  &--warning { @include color($warning, $warning-contrast-text, $warning-dark); }
-  &--error { @include color($error, $error-contrast-text, $error-dark); }
+  &--success { @include color($success, $success-text-contrast, $success-dark); }
+  &--info { @include color($info, $info-text-contrast, $info-dark); }
+  &--warning { @include color($warning, $warning-text-contrast, $warning-dark); }
+  &--error { @include color($error, $error-text-contrast, $error-dark); }
 }
 
 // —————————————————————————————————————————————————————————————————

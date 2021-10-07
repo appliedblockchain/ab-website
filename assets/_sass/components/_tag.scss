@@ -24,8 +24,8 @@
 
 .tag {
 
-  &--success { @include color($success, $success-contrast-text); }
-  &--info { @include color($info, $info-contrast-text); }
-  &--warning { @include color($warning, $warning-contrast-text); }
-  &--error { @include color($error, $error-contrast-text); }
+  &--success { @include color($success, $success-text-contrast); }
+  &--info { @include color($info, $info-text-contrast); }
+  &--warning { @include color($warning, $warning-text-contrast); }
+  &--error { @include color($error, $error-text-contrast); }
 }

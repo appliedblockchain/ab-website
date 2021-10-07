@@ -1,6 +1,9 @@
 {% assign label = include.label %}
 {% assign title = include.title %}
 {% assign subtitle = include.subtitle %}
+{% assign link.label = include.link.label %}
+{% assign link.url = include.link.url %}
+{% assign link.title = include.link.title %}
 {% assign background_image = include.background_image %}
 {% assign background_color = include.background_color %}
 
@@ -8,12 +11,19 @@
   <div class="section__container">
     <div class="section__header section__header--lg">
       {% if page.label %}
-      <p class="section__label caption">{{ page.label }}</p>
+      <p class="section__label">{{ page.label }}</p>
       {% endif %}
-      <h1 class="section__title h1">{% if title %}{{ title }}{% else %}{% if page.title %}{{ page.title }}{% else %}{{ page.title }}{% endif %}{% endif %}</h1>
+      <h1 class="section__title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
       {% if page.subtitle %}
-      <p class="section__subtitle h5">{{ page.subtitle }}</p>
+      <p class="section__subtitle">{{ page.subtitle }}</p>
       {% endif %}
+    </div>
+    <div class="section__content">
+      <div class="grid__wrapper">
+        <a  href="{{ site.base-url }}{{ page.link.url }}" title="{{ page.link.title }}" class="button button--lg button--primary">
+          <p>{{ page.link.label }}</p>
+        </a>
+      </div>
     </div>
   </div>
 </div>

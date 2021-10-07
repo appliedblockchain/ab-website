@@ -27,9 +27,9 @@ $col:  100%/12;
   &__item {
     display: flex;
     position: relative;
-    flex-direction: column;
     float: left;
     width: 100%;
+    align-items: flex-start;
  
     &.grid__wrapper {
       width: 100%;
@@ -82,7 +82,7 @@ $col:  100%/12;
   }
 }
 
-@include responsive(down, $mobile) {
+@include responsive(up, $mobile) {
 
   @for $colWidth from 1 through 12 {
 
@@ -96,7 +96,7 @@ $col:  100%/12;
   }
 }
 
-@include responsive(down, $tablet) {
+@include responsive(up, $tablet) {
 
   @for $colWidth from 1 through 12 {
 
@@ -110,7 +110,7 @@ $col:  100%/12;
   }
 }
 
-@include responsive(down, $laptop) {
+@include responsive(up, $laptop) {
 
   @for $colWidth from 1 through 12 {
 
@@ -124,7 +124,7 @@ $col:  100%/12;
   }
 }
 
-@include responsive(down, $desktop) {
+@include responsive(up, $desktop) {
 
   @for $colWidth from 1 through 12 {
 

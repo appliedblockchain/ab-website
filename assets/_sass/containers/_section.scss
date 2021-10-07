@@ -96,11 +96,9 @@ $section-spacing-content: $spacing*5;
     padding-top: 0;
   }
 
-  .section {
-
-    &__title {
-      color: $title-color;
-    }
+  .section__title,
+  .card__title {
+    color: $title-color;
   }
 
   &.page__header {
@@ -115,7 +113,8 @@ $section-spacing-content: $spacing*5;
 
   &--white { @include background-color($background-default); }
   &--grey { @include background-color($background-paper); }
-  &--primary { @include background-color($primary, $text-contrast, $text-contrast); }
+  &--primary { @include background-color($primary, $primary-text-contrast, $primary-text-contrast); }
+  &--dark { @include background-color($dark, $text-contrast, $text-contrast); }
 }
 
 // —————————————————————————————————————————————————————————————————

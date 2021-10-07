@@ -40,18 +40,18 @@ html, body {
 .h2 { @include font-size(2.5, $font-bold, 1.25); }
 .h3 { @include font-size(2, $font-bold, 1.25); }
 .h4 { @include font-size(1.75, $font-bold, 1.25); }
-.h5 { @include font-size(1.5, $font-bold, 1.5); }
-.h6 { @include font-size(1.25, $font-bold, 1.5); }
+.h5 { @include font-size(1.5, $font-bold, 1.25); }
+.h6 { @include font-size(1.25, $font-bold, 1.25); }
 
-.body {
+.subtitle1 { @include font-size(1.125); letter-spacing: 0; }
+.subtitle2 { @extend .subtitle1; font-weight: $font-bold }
 
-	&--xs { @include font-size(0.75); letter-spacing: 0 }
-	&--sm { @include font-size(0.875); letter-spacing: 0 }
-	& { @include font-size(); letter-spacing: 0 }
-	&--lg { @include font-size(1.125); letter-spacing: 0 }
-}
+.body1 { @include font-size(); letter-spacing: 0; }
+.body2 { @extend .body1; font-weight: $font-bold }
 
-.label { @include font-size(0.875, $font-bold); }
+.caption { @include font-size(.875, $font-bold); }
+
+.overline { @include font-size(0.875); }
 
 .code {
   @include font-size(0.75, $font-bold, 1.25);
@@ -100,7 +100,7 @@ html, body {
 // col text
 
 @for $i from 1 through 4 {
-	.col-text--#{$i} {
+	.colText--#{$i} {
 		column-count: $i;
 		column-gap: 2rem;
 	

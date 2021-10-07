@@ -25,7 +25,7 @@
 		justify-content: space-between;
 		will-change: height;
 		height: $spacing*10*2;
-		padding: 0 $page/2;
+		padding: 0 $page-gutter/2;
 
 		.button + .button--menu {
 			margin-left: $spacing*2;
@@ -91,7 +91,7 @@
 	&__menu {
 		@include calc(height, '100vh - '$spacing*8);
 		@include overflow-scroll();
-		padding: 0  $page $spacing*5 $page;
+		padding: 0  $page-gutter $spacing*5 $page-gutter;
 		pointer-events: initial;
 	}
 

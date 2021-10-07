@@ -115,8 +115,8 @@
     .carousel {
 
       &__item {
-        padding-right: $page;
-        padding-left: $page;
+        padding-right: $page-gutter;
+        padding-left: $page-gutter;
 
         @include responsive(up, $laptop) {
 

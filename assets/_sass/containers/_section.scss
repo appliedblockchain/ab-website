@@ -1,74 +1,156 @@
+@import "components/_typography";
+
 // —————————————————————————————————————————————————————————————————
+// variables
 // general
-// variants
-// colors
-// layouts
+// size
+// color
+// variant
 // —————————————————————————————————————————————————————————————————
+
+// —————————————————————————————————————————————————————————————————
+// variables
+// —————————————————————————————————————————————————————————————————
+
+$spacing-section: $spacing*8;
+$spacing-section-content: $spacing*5;
 
 // —————————————————————————————————————————————————————————————————
 // general
 // —————————————————————————————————————————————————————————————————
 
 .section {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	padding-left: $page;
-	padding-top: $spacing*10;
-	padding-bottom: $spacing*10;
-	padding-right: $page;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  padding: $spacing-section $page-gutter;
 
-	#project &,
-	#post & {
-		text-align: left;
-	}
+  & + & {
+    padding-top: 0;
+  }
 
-	&__header {
-		padding-right: $page;
-		padding-left: $page;
-
-		& + .section__header {
-			margin-top: $spacing*2;
-		}
+  &__container {
+    max-width: $page-max-width;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  &__header {
+    max-width: $page-max-width/2;
 
     & + .section__content {
-			margin-top: $spacing*8;
-		}
-	}
+      margin-top: $spacing-section-content;
+    }
+  }
 
-	&__comment {
+  &__label {
+    @extend .caption;
 
-		& + .section__title {
-			margin-top: $spacing*4;
-		}
-	}
+    & + .section__title {
+      margin-top: $spacing*2;
+    }
+  }
 
-	&__title {
+  &__title {
+    @extend .h3;
+    color: $primary;
 
-		& + .section__subtitle,
-		& + .section__body {
-			margin-top: $spacing*2;
-		}
-	}
+    & + .section__subtitle {
+      margin-top: $spacing*2;
+    }
+  }
 
-	&__subtitle {
+  &__subtitle {
+    @extend .subtitle1;
+  }
 
-		& + .section__body {
-			margin-top: $spacing*2;
-		}
-	}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  
+    & + & {
+      margin-top: $spacing-section-content;
+    }
+  }
+}
 
-	&__content {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		flex-wrap: wrap;
+// —————————————————————————————————————————————————————————————————
+// color
+// —————————————————————————————————————————————————————————————————
 
-		& + & {
-			margin-top: $spacing*8;
-		}
-	}
+@mixin background-color($background-color, $title-color: $primary, $color: $text) {
+
+  &.section {
+    background-color: $background-color;
+    padding-top: $spacing-section;
+    color: $color;
+  }
+  
+  & + .section {
+    padding-top: $spacing-section;
+  }
+
+  & + & {
+    padding-top: 0;
+  }
+
+  .section {
+
+    &__title {
+      color: $title-color;
+    }
+  }
+}
+
+.section {
+
+  &--grey { @include background-color($background-paper); }
+  &--primary { @include background-color($primary, $text-contrast, $text-contrast); }
+}
+
+// —————————————————————————————————————————————————————————————————
+// size
+// —————————————————————————————————————————————————————————————————
+
+@mixin size($size, $ratio) {
+
+  .section {
+
+    &__label {
+
+      & + .section__title {
+        margin-top: $ratio;
+      }
+    }
+  
+    &__title {
+      @if $size == sm {
+        @extend .h4;
+      } @else if $size == md {
+        @extend .h3;
+      }
+
+      + .section__subtitle {
+        margin-top: $ratio;
+      }
+    }
+
+    &__subtitle {
+      @if $size == sm {
+        @extend .body1;
+      } @else if $size == md {
+        @extend .subtitle1;
+      }
+    }
+  }
+}
+
+.section__header {
+
+  &--sm { @include size(sm, $spacing*1.5); }
+  &--md { @include size(md, $spacing*2); }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -77,205 +159,9 @@
 
 .section {
 
-	&--header {
-		padding-top: $spacing*10+$spacing*10;
-
-		#post & {
-			text-align: center;
-		}
-	}
-
-	&--full {
-		padding: 0 !important;
-		overflow: hidden;
-
-		.section {
-
-			&__header {
-				padding-top: $spacing*10;
-				padding-right: $page*2;			
-				padding-left: $page*2;
-			}
-		}
-
-		&.section--overlap {
-
-			.section__header {
-				padding-top: $spacing*10*2;
-			}
-		}
-	}
-
-	&--alt {
-		padding-left: $page/2;
-		padding-right: $page/2;
-	}
-	
-	&--overlap {
-		margin-top: -$spacing*10*2;
-		padding-top: $spacing*10*2;
-	}
-
-	&__content {
-
-		&--2 {
-			display: flex;
-			align-items: stretch;
-			flex-direction: row;
-
-			.card {
-				width: 50%;
-				position: relative;
-				
-				&__inner { 
-					padding-top: 0;
-					padding-bottom: $spacing*10;
-					position: relative;
-				}
-
-				&:nth-child(1),
-				&:nth-child(2) {
-
-					&:before {
-						@include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-
-						@include responsive(up, $tablet) {
-							display: none;
-						}
-					}
-				}
-
-				&:nth-child(1) {
-					padding-left: $page;
-
-					&:before {
-						background-image: linear-gradient(to bottom, $grey-10, rgba($grey-10, 0.6));
-					}
-
-					.card__inner {
-						padding-left: 0;
-						
-						@include responsive(up, $tablet) {
-							padding-right: 0;
-						}
-					}
-				}
-
-				&:nth-child(2) {
-					padding-right: $page;
-
-					&:before {
-						background-image: linear-gradient(to bottom, $grey-10, rgba($grey-10, 0.6));
-					}
-
-					.card__inner {
-						padding-right: 0;
-						
-						@include responsive(up, $tablet) {
-							padding-left: 0;
-						}
-					}
-				}
-
-				@include responsive(up, $tablet) {
-					width: 100%;
-				}
-			}
-		}
-	}
-}
-
-// —————————————————————————————————————————————————————————————————
-// colors
-// —————————————————————————————————————————————————————————————————
-
-.section {
-
-	&--transparent {
-
-		& + & {
-			padding-top: 0;
-			.section__header { padding-top: 0; } 
-		}
-	}
-
-
-	&--primary { 
-		background-color: $primary; 
-
-		& + & {
-			padding-top: 0; 
-			.section__header { padding-top: 0; } 
-		}
-	}
-
-	&--dark { 
-		background-color: $dark; 
-
-		& + & {
-			padding-top: 0; 
-			.section__header { padding-top: 0; } 
-		}
-	}
-
-	&--grey { 
-		background-color: $grey-10; 
-
-		& + & {
-			padding-top: 0; 
-			.section__header { padding-top: 0; } 
-		}
-	}
-
-	&--white { 
-		background-color: $white; 
-
-		& + & {
-			padding-top: 0; 
-			.section__header { padding-top: 0; } 
-		}
-	}
-
-	&--primary, 
-	&--dark 	{ 
-		color: $white; 
-
-		.form__input {
-			color: $white;
-		}
-	}
-
-	&--primary {
-
-		.title, 
-		.lead, 
-		.label {
-			color: $white;
-		}
-	}
-}
-
-// —————————————————————————————————————————————————————————————————
-// layouts
-// —————————————————————————————————————————————————————————————————
-
-#join {
-
-	.section--overlap {
-		margin-top: -$spacing*10*4;
-	}
-	
-	&-header {
-		
-		&.section {
-			padding-bottom: $spacing*10*3;
-		}
-	}
-}
-
-#project {
-
-	.section--header {
-		padding-top: $spacing*10*3;
-	}
+  &--fullWidth {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow: hidden;
+  }
 }

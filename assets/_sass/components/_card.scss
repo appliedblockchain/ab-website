@@ -1,6 +1,6 @@
 @import "components/_typography";
 
-  // —————————————————————————————————————————————————————————————————
+// —————————————————————————————————————————————————————————————————
 // elements
 // size
 // direction
@@ -18,10 +18,7 @@
   width: 100%;
   overflow: hidden;
   text-align: left;
-  // box-shadow: $box-shadow-sm;
-  // remove after testing
-  background-color: $grey-10;
-  padding: 1rem;
+  box-shadow: $box-shadow-sm;
 
   &__header,
   &__content,
@@ -72,7 +69,7 @@
     }
     
     &__label {
-      @extend .label;
+      @extend .caption;
       
       + .card__title,
       + .card__subtitle {    
@@ -97,11 +94,11 @@
 
     &__subtitle {
       @if $size == sm {
-        @extend .body--sm;
+        @extend .overline;
       } @else if $size == md {
-        @extend .body;
+        @extend .body1;
       } @else if $size == lg {
-        @extend .body--lg;
+        @extend .subtitle1;
       }
     }
   }
@@ -133,9 +130,9 @@
 
 .card {
 
-  &--sm { @include size(sm, 1rem); }
-  &--md { @include size(md, 1.5rem); }
-  &--lg { @include size(lg, 2rem); }
+  &--sm { @include size(sm, $spacing*2); }
+  &--md { @include size(md, $spacing*3); }
+  &--lg { @include size(lg, $spacing*4); }
 }
 
 // —————————————————————————————————————————————————————————————————

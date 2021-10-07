@@ -95,7 +95,7 @@
   justify-content: space-between;
   transition: opacity $transition;
   box-shadow: $box-shadow-md;
-  padding: $spacing/4 $page;
+  padding: $spacing/4 $page-gutter;
   will-change: opacity;
   background-color: $primary;
   color: $white;

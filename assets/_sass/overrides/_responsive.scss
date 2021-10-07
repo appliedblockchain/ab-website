@@ -8,8 +8,8 @@
 
   .page__header,
   .section--full .section__header {
-		padding-right: $page;
-		padding-left: $page;
+		padding-right: $page-gutter;
+		padding-left: $page-gutter;
   }
     
   .section__header {
@@ -27,21 +27,21 @@
 	#landing,
 	#landing .page__header,
 	.carousel--testimonials .carousel__item {
-		padding-right: $page/2;
-		padding-left: $page/2;
+		padding-right: $page-gutter/2;
+		padding-left: $page-gutter/2;
 	}
 
 	.section__content--2 .card:nth-child(1) {
-		padding-left: $page/2;
+		padding-left: $page-gutter/2;
   }
 
   .section__content--2 .card:nth-child(2) {
-		padding-right: $page/2;
+		padding-right: $page-gutter/2;
   }
 
   .section--alt {
-    padding-right: $page/4;
-		padding-left: $page/4;
+    padding-right: $page-gutter/4;
+		padding-left: $page-gutter/4;
   }
 }
 
@@ -57,13 +57,13 @@
 	#landing,
 	#landing .page__header,
 	.carousel--testimonials .carousel__item {
-		padding-right: $page/3;
-		padding-left: $page/3;
+		padding-right: $page-gutter/3;
+		padding-left: $page-gutter/3;
 	}
 
 	.section--alt {
-    padding-right: $page/6;
-    padding-left: $page/6;
+    padding-right: $page-gutter/6;
+    padding-left: $page-gutter/6;
   }
 }
 

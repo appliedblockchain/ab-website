@@ -4,18 +4,18 @@
 
 .accordion {
 
-	&__header {
-		cursor: pointer;
+  &__header {
+    cursor: pointer;
 
-		&.js-accordion-active {
+    &.js-accordion-active {
 
-			.button--icon {
-				transform: rotate(45deg);
-			}
-		}
-	}
+      .button--icon {
+        transform: rotate(45deg);
+      }
+    }
+  }
 
-	&__content {
-		display: none;
-	}
+  &__content {
+    display: none;
+  }
 }

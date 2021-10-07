@@ -18,7 +18,7 @@ background_color: white
                 <p class="card__label label">{{ item.category }}</p>
                 <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.png" alt="Logo for {{ item.title | strip_html }}" class="card__image">
                 <p class="card__body body--large">{{ item.description }}</p>
-                <p class="card__body badge badge--{% if item.status == 'Live' %}success{% else %}warning{% endif %} label">{{ item.status }}</p>
+                <p class="card__body tag tag--{% if item.status == 'Live' %}success{% else %}warning{% endif %} label">{{ item.status }}</p>
               </div>
             </div>
             {% if item.links %}

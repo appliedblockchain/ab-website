@@ -9,39 +9,39 @@
 
 .tab {
 
-	&__nav {
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		text-align: center;
+  &__nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
 
-		& + .tab__content {
-			margin-top: $spacing*8;
-		}
-	}
+    & + .tab__content {
+      margin-top: $spacing*8;
+    }
+  }
 
-	&__button {
+  &__button {
 
-		&.js-active {
-			color: $primary;
-		}
+    &.js-active {
+      color: $primary;
+    }
 
-		& + & {
-			margin-left: $spacing*2 !important;
-		}
-	}
+    & + & {
+      margin-left: $spacing*2 !important;
+    }
+  }
 
-	&__content {
-	    transition: all $transition;
-	}
+  &__content {
+      transition: all $transition;
+  }
 
-	&__item {
-		display: none;
+  &__item {
+    display: none;
 
-		&:nth-child(1) {
-			display: block;
-		}
-	}
+    &:nth-child(1) {
+      display: block;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -50,62 +50,62 @@
 
 .tab {
 
-	&--approach {
+  &--approach {
 
-		.tab {
+    .tab {
 
-			&__content {
-				margin-top: $spacing*5;
-			}
+      &__content {
+        margin-top: $spacing*5;
+      }
 
-			&__item {
+      &__item {
 
-				@include responsive(up, $tablet) {
-					display: block;
+        @include responsive(up, $tablet) {
+          display: block;
 
-					& + .tab__item {
+          & + .tab__item {
 
-						.card {
+            .card {
 
-							&__inner {
-								padding-top: 0;
-							}
-						}
-					}
-				}
-			}
+              &__inner {
+                padding-top: 0;
+              }
+            }
+          }
+        }
+      }
 
-			&__button {
-				position: relative;
+      &__button {
+        position: relative;
 
-				&:before {
-					transition: opacity $transition, width $transition, left $transition;
-					@include pseudo-element('', auto, 0, -($spacing*5+$spacing/2), 50%, 0, $spacing);
-					border-radius: $spacing;
-					will-change: opacity, width, left;
-					background-color: $dark;
-				}
-		
-				&:hover:before, 
-				&.tab__button--active:before {
-					width: 100%;
-					left: 0;
-				}
-			}
-		}
+        &:before {
+          transition: opacity $transition, width $transition, left $transition;
+          @include pseudo-element('', auto, 0, -($spacing*5+$spacing/2), 50%, 0, $spacing);
+          border-radius: $spacing;
+          will-change: opacity, width, left;
+          background-color: $dark;
+        }
+    
+        &:hover:before, 
+        &.tab__button--active:before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
 
-		.card {
+    .card {
 
-			&__image {
-				padding-left: 0 !important;
-			}
-		}
-	}
+      &__image {
+        padding-left: 0 !important;
+      }
+    }
+  }
 
-	&--events {
+  &--events {
 
-		.tab__content {
-			width: 100%;
-		}
-	}
+    .tab__content {
+      width: 100%;
+    }
+  }
 }

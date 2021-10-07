@@ -9,20 +9,20 @@
 // —————————————————————————————————————————————————————————————————
 
 @keyframes fade-in {
-	from 	{ opacity: 0; } 
-	to 		{ opacity: 1; } 
+  from { opacity: 0; } 
+  to { opacity: 1; } 
 }
 
 @keyframes spin {
-	100% { 
-		transform: rotate(360deg);
-	}
+  100% { 
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin-reverse {
-	100% { 
-		transform: rotate(-360deg);
-	}
+  100% { 
+    transform: rotate(-360deg);
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -30,14 +30,14 @@
 // —————————————————————————————————————————————————————————————————
 
 @keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(-30%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    } 
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  } 
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -47,67 +47,67 @@
 // button apparition
 
 @keyframes button-menu-opacity {
-	0% { 
-		opacity: 0; 
-	}
-	50% { 
-		opacity: 0; 
-	}
-	100% { 
-		opacity: 100%; 
-	}
+  0% { 
+    opacity: 0; 
+  }
+  50% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 100%; 
+  }
 }
 
 // open > close
 
 @keyframes button-menu-open-before {
-	0% { 
-		transform: translateY($spacing+$spacing/4);
-	}
-	50% { 
-		transform: translateY(0);
-		transform: rotate(0);
-	}
-	100% { 
-		transform: rotate(45deg);
-	}
+  0% { 
+    transform: translateY($spacing+$spacing/4);
+  }
+  50% { 
+    transform: translateY(0);
+    transform: rotate(0);
+  }
+  100% { 
+    transform: rotate(45deg);
+  }
 }
 @keyframes button-menu-open-after {
-	0% { 
-		transform: translateY(-($spacing+$spacing/4));
-	}
-	50% { 
-		transform: translateY(0);
-		transform: rotate(0);
-	}
-	100% { 
-		transform: rotate(-45deg);
-	}
+  0% { 
+    transform: translateY(-($spacing+$spacing/4));
+  }
+  50% { 
+    transform: translateY(0);
+    transform: rotate(0);
+  }
+  100% { 
+    transform: rotate(-45deg);
+  }
 }
 
 // close > open
 
 @keyframes button-menu-close-before {
-	0% { 
-		transform: rotate(45deg);
-	}
-	50% { 
-		transform: rotate(0);
-		transform: translateY(0);
-	}
-	100% { 
-		transform: translateY($spacing+$spacing/4);
-	}
+  0% { 
+    transform: rotate(45deg);
+  }
+  50% { 
+    transform: rotate(0);
+    transform: translateY(0);
+  }
+  100% { 
+    transform: translateY($spacing+$spacing/4);
+  }
 }
 @keyframes button-menu-close-after {
-	0% { 
-		transform: rotate(-45deg);
-	}
-	50% { 
-		transform: rotate(0);
-		transform: translateY(0);
-	}
-	100% { 
-		transform: translateY(-($spacing+$spacing/4));
-	}
+  0% { 
+    transform: rotate(-45deg);
+  }
+  50% { 
+    transform: rotate(0);
+    transform: translateY(0);
+  }
+  100% { 
+    transform: translateY(-($spacing+$spacing/4));
+  }
 }

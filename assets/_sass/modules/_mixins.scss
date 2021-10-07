@@ -9,36 +9,36 @@
 // —————————————————————————————————————————————————————————————————
 
 @mixin calc($property, $expression) {
-	#{$property}: -webkit-calc(#{$expression});
-	#{$property}: calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
 }
 
 @mixin background($position, $size) {
-	background-position: $position;
+  background-position: $position;
   background-size: $size;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 @mixin pseudo-element($content, $top, $right, $bottom, $left, $width, $height) {
-	content: $content;
-	position: absolute;
-	top: $top;
-	right: $right;
-	bottom: $bottom;
-	left: $left;
-	width: $width;
-	height: $height;
+  content: $content;
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  width: $width;
+  height: $height;
 }
 
 @mixin hover {
-	&:hover, &:active, &:focus {
-		@content;
-	}
+  &:hover, &:active, &:focus {
+    @content;
+  }
 }
 
 @mixin overflow-scroll {
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -46,27 +46,27 @@
 // —————————————————————————————————————————————————————————————————
 
 @mixin responsive($value, $breakpoint) {
-	@if $value == down {
-		$value: min-width;
-	} @else if $value == up {
-		$value: max-width;
-	}
+  @if $value == down {
+    $value: min-width;
+  } @else if $value == up {
+    $value: max-width;
+  }
 
-	@media ($value: $breakpoint) {
-		@content;
-	}
+  @media ($value: $breakpoint) {
+    @content;
+  }
 }
 
 @mixin responsive-touch() {
-	@media (pointer:coarse) {
-		@content;
-	}
+  @media (pointer:coarse) {
+    @content;
+  }
 }
 
 @mixin responsive-mobile-landscape {
-	@media only screen and (max-device-width: $laptop) and (orientation: landscape) {
-		@content;
-	}
+  @media only screen and (max-device-width: $laptop) and (orientation: landscape) {
+    @content;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -74,26 +74,26 @@
 // —————————————————————————————————————————————————————————————————
 
 @mixin fontface($font-name, $font-file, $font-weight, $font-style) {
-	@font-face {
-		font-family: $font-name;
-		src: url('../fonts/' + $font-file + '.woff2') format('woff2'),
-			 url('../fonts/' + $font-file + '.woff') format('woff'),
-			 url('../fonts/' + $font-file + '.ttf') format('truetype');
-		font-weight: $font-weight;
-		font-style: $font-style;
-	}
+  @font-face {
+    font-family: $font-name;
+    src: url('../fonts/' + $font-file + '.woff2') format('woff2'),
+       url('../fonts/' + $font-file + '.woff') format('woff'),
+       url('../fonts/' + $font-file + '.ttf') format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
 }
 
 @mixin font-awesome($fa, $top, $right, $bottom, $left, $color) {
-	content: $fa;
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	font-style: normal;
-	text-decoration: none;
-	color: $color;
-	position: absolute;
-	top: $top;
-	right: $right;
-	bottom: $bottom;
-	left: $left;
+  content: $fa;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  text-decoration: none;
+  color: $color;
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }

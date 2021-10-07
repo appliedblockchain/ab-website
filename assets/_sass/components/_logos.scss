@@ -8,28 +8,28 @@
 // —————————————————————————————————————————————————————————————————
 
 .logo {
-	
-	&__item {
-		width: 100%;
-		max-width: $spacing*25*2;
-		height: auto;
-	}
+  
+  &__item {
+    width: 100%;
+    max-width: $spacing*25*2;
+    height: auto;
+  }
 
-	&-icon-bg {
-		fill: $primary;
-	}
+  &-icon-bg {
+    fill: $primary;
+  }
 
-	&-icon-color {
-		fill: $white;
-	}
+  &-icon-color {
+    fill: $white;
+  }
 
-	&-name {
-		fill: $black;
+  &-name {
+    fill: $black;
 
-		.footer__logo & {
-			fill: $white;
-		}
-	}
+    .footer__logo & {
+      fill: $white;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -38,18 +38,18 @@
 
 .logo {
 
-	&--k0 {
+  &--k0 {
 
-		@include responsive(up, $tablet) {
-			width: 25%;
-			margin-top: -$spacing*4;
-			margin-bottom: $spacing*5;
-		}
+    @include responsive(up, $tablet) {
+      width: 25%;
+      margin-top: -$spacing*4;
+      margin-bottom: $spacing*5;
+    }
 
-		@include responsive(up, $mobile) {
-			width: 50%;
-			margin-top: -$spacing*2;
-			margin-bottom: $spacing*4;
-		}
-	}
+    @include responsive(up, $mobile) {
+      width: 50%;
+      margin-top: -$spacing*2;
+      margin-bottom: $spacing*4;
+    }
+  }
 }

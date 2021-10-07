@@ -9,77 +9,75 @@
 // —————————————————————————————————————————————————————————————————
 
 .form {
-	width: 100%;
-	padding-left: $spacing*1.5 !important;
-	padding-right: $spacing*1.5 !important;
+  width: 100%;
 
-	&__container {
-		display: flex;
-		justify-content: center;
-		width: 100%;
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   
-	&__group {
-		position: relative;
-		width: 100%;
-		margin-bottom: $spacing;
-		text-align: left;
+  &__group {
+    position: relative;
+    width: 100%;
+    margin-bottom: $spacing;
+    text-align: left;
 
-		@include responsive(up, $mobile) {
-			margin-bottom: $spacing;
-		}
+    @include responsive(up, $mobile) {
+      margin-bottom: $spacing;
+    }
 
-		&.focused {
+    &.focused {
 
-			.form {
+      .form {
 
-				&__label {
-					color: $primary;
-				}
+        &__label {
+          color: $primary;
+        }
 
-				&__input {
-					border-color: $primary;
-				}
-			}
-		}
-	}
+        &__input {
+          border-color: $primary;
+        }
+      }
+    }
+  }
 
-	&__label {
-		transition: color $transition;
-		text-overflow: ellipsis;
-		will-change: color;
-		cursor: pointer;
-		display: block;
-		overflow: hidden;
-		white-space: nowrap;
-		position: relative;
-		padding-left: $spacing*0.75;
-		margin-bottom: $spacing;
-	}
+  &__label {
+    transition: color $transition;
+    text-overflow: ellipsis;
+    will-change: color;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-left: $spacing*0.75;
+    margin-bottom: $spacing;
+  }
 
-	&__input {
-		transition: border $transition;
-		text-overflow: ellipsis;
-		will-change: border;
-		width: 100%;
-		background-color: transparent;
-		padding: $spacing $spacing*1.5;
-		border: $border-sm $grey-30;
-		border-radius: $spacing*4 !important;
-	}
+  &__input {
+    transition: border $transition;
+    text-overflow: ellipsis;
+    will-change: border;
+    width: 100%;
+    background-color: transparent;
+    padding: $spacing $spacing*1.5;
+    border: $border-sm $grey-30;
+    border-radius: $spacing*4 !important;
+  }
 
-	&__button {
-		margin-top: $spacing*2;
-	}
-	
-	&__notice {
-		margin-top: $spacing;
-	}
+  &__button {
+    margin-top: $spacing*2;
+  }
+  
+  &__notice {
+    margin-top: $spacing;
+  }
 }
 
 ::placeholder {
-	color: $grey-30;
-	opacity: 1;
+  color: $grey-30;
+  opacity: 1;
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -89,71 +87,71 @@
 .form__checkbox, 
 .form__radio {
 
-	.form__input {
-		position: absolute;
-		opacity: 0;
-		width: 0;
-		height: 0;
+  .form__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 
-		&:checked + .form__label:before {
-			border-color: $primary;
-			border-width: $spacing;
-		}
-	}
+    &:checked + .form__label:before {
+      border-color: $primary;
+      border-width: $spacing;
+    }
+  }
 
-	.form__label {
-		padding-left: $spacing*4;
-		cursor: pointer;
-		margin: 0;
-		font-size: 1rem !important;
-		font-weight: 200;
-		overflow: visible;
-		color: $black !important;
-		white-space: normal;
+  .form__label {
+    padding-left: $spacing*4;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1rem !important;
+    font-weight: 200;
+    overflow: visible;
+    color: $black !important;
+    white-space: normal;
 
-		&:before {
-			@include pseudo-element('', -1px, auto, auto, 0, $spacing*2*1.5, $spacing*2*1.5);
-			box-sizing: border-box;
-			transition: border $transition;
-			will-change: border;
-			border: $border-sm $grey-30;
-		}
-	}
+    &:before {
+      @include pseudo-element('', -1px, auto, auto, 0, $spacing*2*1.5, $spacing*2*1.5);
+      box-sizing: border-box;
+      transition: border $transition;
+      will-change: border;
+      border: $border-sm $grey-30;
+    }
+  }
 }
 
 .form__checkbox {
 
-	.form__input {
+  .form__input {
 
-		&:checked + .form__label:before {
-			border-width: $spacing*2*0.75;
-		}
+    &:checked + .form__label:before {
+      border-width: $spacing*2*0.75;
+    }
 
-		&:checked + .form__label:after {
-			opacity: 1;
-		}		
-	}
+    &:checked + .form__label:after {
+      opacity: 1;
+    }    
+  }
 
-	.form__label {
+  .form__label {
 
-		&:before {
-			border-radius: $spacing;
-		}
+    &:before {
+      border-radius: $spacing;
+    }
 
-		&:after {
-			transition: opacity $transition;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			@include font-awesome("\f00c", 0, auto, auto, 0, $white);
-			will-change: opacity;
-			width: $spacing*2*1.5;
-			height: $spacing*2*1.5;
-			font-size: 0.7rem;
-			line-height: 0;
-			opacity: 0;
-		}
-	}
+    &:after {
+      transition: opacity $transition;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include font-awesome("\f00c", 0, auto, auto, 0, $white);
+      will-change: opacity;
+      width: $spacing*2*1.5;
+      height: $spacing*2*1.5;
+      font-size: 0.7rem;
+      line-height: 0;
+      opacity: 0;
+    }
+  }
 }
 
 .form__radio {
@@ -162,23 +160,23 @@
     flex-basis: 0;
     height: $spacing*5;
 
-	& + & {
-		margin-left: $spacing;
-	}
+  & + & {
+    margin-left: $spacing;
+  }
 
-	.form__input {
+  .form__input {
 
-		&:checked + .form__label:before {
-			border-width: 7px;
-		}
-	}
+    &:checked + .form__label:before {
+      border-width: 7px;
+    }
+  }
 
-	.form__label {
+  .form__label {
 
-		&:before {
-			border-radius: 50%;
-		}
-	}
+    &:before {
+      border-radius: 50%;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -188,13 +186,13 @@
 .form {
 
   &--pipedrive {
-		// pipedrive width + 40px left and right
-		@include calc(max-width, '480px + '$spacing*5*2);
-		padding: $spacing*5 !important;
-		
-		#report & {
-			width: 560px;
-			max-width: 100%;
+    // pipedrive width + 40px left and right
+    @include calc(max-width, '480px + '$spacing*5*2);
+    padding: $spacing*5 !important;
+    
+    #report & {
+      width: 560px;
+      max-width: 100%;
     }
 
     .form {
@@ -206,5 +204,5 @@
         margin-left: -$spacing*5;
       }  
     }
-	}
+  }
 }

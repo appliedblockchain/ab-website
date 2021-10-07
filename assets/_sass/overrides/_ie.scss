@@ -20,7 +20,7 @@
 // —————————————————————————————————————————————————————————————————
 
 .accordion__button .fa {
-    transform: translateX(-7px);
+  transform: translateX(-7px);
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -30,7 +30,7 @@
 // make header buttons work in ie
 
 .header {
-    pointer-events: auto !important;
+  pointer-events: auto !important;
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -39,14 +39,14 @@
 
 .timeline {
 
-    &__text {
-        flex-basis: auto;
-        width: 100%;
-    }
+  &__text {
+    flex-basis: auto;
+    width: 100%;
+  }
 
-    &__icon {
-        flex-basis: auto;
-    }
+  &__icon {
+    flex-basis: auto;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -54,8 +54,8 @@
 // —————————————————————————————————————————————————————————————————
 
 .landing {
-    padding-top: $spacing*10;
-    padding-bottom: 0;
+  padding-top: $spacing*10;
+  padding-bottom: 0;
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -64,19 +64,19 @@
 
 #mantle {
 
-    .section__content {
-        width: 100%;
-    }
+  .section__content {
+    width: 100%;
+  }
 }
 
 .mantle {
-    
-    &__label {
+  
+  &__label {
 
-        & + & {
-            margin-top: 25%;
-        }
+    & + & {
+      margin-top: 25%;
     }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -85,17 +85,17 @@
 
 .products {
 
-    &__intro {
-        display: block;
-    }
+  &__intro {
+    display: block;
+  }
 
-    &__container {
-        height: 400px;
-    }
+  &__container {
+    height: 400px;
+  }
 
-    &__item {
-        display: inline-block;
-    }
+  &__item {
+    display: inline-block;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -104,9 +104,9 @@
 
 #projects {
 
-    .card--lg {
-        height: 400px;
-    }
+  .card--lg {
+    height: 400px;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -115,36 +115,36 @@
 
 #services {
 
-    .tab {
-        
-        &__nav {
-            padding: 0 $spacing;
-        }
-        
-        &__button {
-            width: 25%;
-            white-space: nowrap;
-            
-            &:hover:before, 
-            &.tab__button--active:before {
-                width: 80%;
-                left: 10%;
-            }
-        }
-        
-        &__content {
-            flex-basis: 50%;
-        }
-        
+  .tab {
+    
+    &__nav {
+      padding: 0 $spacing;
     }
-
-    .card {
-
-        &__image {
-            width: 30%;
-            height: 30%;
-        }
+    
+    &__button {
+      width: 25%;
+      white-space: nowrap;
+      
+      &:hover:before, 
+      &.tab__button--active:before {
+        width: 80%;
+        left: 10%;
+      }
     }
+    
+    &__content {
+      flex-basis: 50%;
+    }
+    
+  }
+
+  .card {
+
+    &__image {
+      width: 30%;
+      height: 30%;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

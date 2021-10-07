@@ -9,14 +9,14 @@
 // —————————————————————————————————————————————————————————————————
 
 .tooltip {
-	position: relative;
+  position: relative;
 
-    &__inner {
-        position: absolute;
-        pointer-events: none;
-        z-index: 1;
-        opacity: 0;
-    }
+  &__inner {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -24,12 +24,12 @@
 // —————————————————————————————————————————————————————————————————
 
 .tooltip--click {
-    cursor: pointer;
+  cursor: pointer;
 
-    .tooltip__inner.js-show  {
-        pointer-events: initial;
-        opacity: 1;
-    }
+  .tooltip__inner.js-show  {
+    pointer-events: initial;
+    opacity: 1;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -37,11 +37,11 @@
 // —————————————————————————————————————————————————————————————————
 
 .tooltip__inner--tracking {
-    transform: translateX(-60%) translateY(10%);
-    display: none;
-    opacity: 1;
-    padding: $spacing/2 $spacing;
-    @include responsive-touch() {
-        display: none !important;
-    }
+  transform: translateX(-60%) translateY(10%);
+  display: none;
+  opacity: 1;
+  padding: $spacing/2 $spacing;
+  @include responsive-touch() {
+    display: none !important;
+  }
 }

@@ -7,7 +7,7 @@
 // root
 // —————————————————————————————————————————————————————————————————
 
-.badge {
+.tag {
   padding: $spacing/2 $spacing;
   border-radius: $border-radius/4;
   display: inline-block;  
@@ -17,15 +17,15 @@
 // root
 // —————————————————————————————————————————————————————————————————
 
-.badge {
+@mixin color($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+}
 
-  &--success {
-    background-color: $primary-light;
-    color: $black;
-  }
+.tag {
 
-  &--warning {
-    background-color: $secondary-light;
-    color: $black;
-  }
+  &--success { @include color($success, $success-contrast-text); }
+  &--info { @include color($info, $info-contrast-text); }
+  &--warning { @include color($warning, $warning-contrast-text); }
+  &--error { @include color($error, $error-contrast-text); }
 }

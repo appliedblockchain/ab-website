@@ -1,17 +1,17 @@
 .stroke {
-	fill: none;
-	stroke-linecap:round;
-	stroke-linejoin:round;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 
-	&--primary 			{ stroke: $primary; }
-	&--secondary 		{ stroke: $secondary; }
-	&--highlight 		{ stroke: $highlight; }
-	&--dark 			  { stroke: $dark; }
-	&--primary-lighten  { stroke: $primary-light; }
-	&--primary-darken   { stroke: $primary-dark }
-	&--white 			  { stroke: $white; }
+  &--primary { stroke: $primary; }
+  &--secondary { stroke: $secondary; }
+  &--highlight { stroke: $highlight; }
+  &--dark { stroke: $dark; }
+  &--primary-lighten { stroke: $primary-light; }
+  &--primary-darken { stroke: $primary-dark }
+  &--white { stroke: $white; }
 
-	&--sm { stroke-width: 2; }
-	&--md { stroke-width: 4; }
-	&--lg { stroke-width: 8; }
+  &--sm { stroke-width: 2; }
+  &--md { stroke-width: 4; }
+  &--lg { stroke-width: 8; }
 }

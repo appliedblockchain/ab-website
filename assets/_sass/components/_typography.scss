@@ -61,6 +61,12 @@ html, body {
 
 .overline { @include font-size(0.875); }
 
+.button__inner { 
+	@include font-size(.75, $font-black, 1);
+	letter-spacing: 0.075rem;
+	text-transform: uppercase;
+}
+
 .code {
   @include font-size(0.75, $font-bold, 1.25);
   font-family: "Roboto Mono", Courier, monospace;

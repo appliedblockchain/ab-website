@@ -1,5 +1,13 @@
 header:
+  - url: /solutions/
+    title: Solutions
+    identifier: solutions
+    weight: 3
   - url: /about-us/
     title: About us
     identifier: about-us
+    weight: 4
+  - url: /resources/
+    title: Resources
+    identifier: resources
     weight: 4

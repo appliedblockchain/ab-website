@@ -81,7 +81,7 @@
     &__title {
       color: $primary;
       @if $size == sm {
-        @extend .h6;
+        @extend .subtitle2;
       } @else if $size == md {
         @extend .h6;
       } @else if $size == lg {

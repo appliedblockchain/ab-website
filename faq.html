@@ -1,30 +1,32 @@
 ---
-layout: default
-title: FAQ
-headline: Frequently Asked Questions
-subtitle: Below we’ve provided a bit of background on Applied Blockchain, blockchain technology, cryptocurrencies, mining and smart contracts
-background_color: white
+layout: "default"
+title: "FAQ"
+headline: "Frequently Asked Questions"
+subtitle: "Below we’ve provided a bit of background on Applied Blockchain, blockchain technology, cryptocurrencies, mining and smart contracts"
+menus:
+  resources:
+    weigth: 2
 ---
 
 <section class="section section--white">
-    <div class="section__content">
-        <div class="row">
-            <div class="grid__item--lg6 block">
-                <h2 class="block__title subtitle">Applied Blockchain</h2>
-                <div class="block__content background--shadow no-padding accordion">
-                    {% for item in site.data.faq.company %}
-                    {% include components/faq.html %}
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="grid__item--lg6 block">
-                <h2 class="block__title subtitle">Blockchain Technology</h2>
-                <div class="block__content background--shadow no-padding accordion">
-                    {% for item in site.data.faq.technology %}
-                    {% include components/faq.html %}
-                    {% endfor %}
-                </div>
-            </div>
+  <div class="section__content">
+    <div class="row">
+      <div class="grid__item--lg6 block">
+        <h2 class="block__title subtitle">Applied Blockchain</h2>
+        <div class="block__content background--shadow no-padding accordion">
+          {% for item in site.data.faq.company %}
+          {% include components/faq.html %}
+          {% endfor %}
         </div>
+      </div>
+      <div class="grid__item--lg6 block">
+        <h2 class="block__title subtitle">Blockchain Technology</h2>
+        <div class="block__content background--shadow no-padding accordion">
+          {% for item in site.data.faq.technology %}
+          {% include components/faq.html %}
+          {% endfor %}
+        </div>
+      </div>
     </div>
+  </div>
 </section>

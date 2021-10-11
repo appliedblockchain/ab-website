@@ -13,7 +13,7 @@
   width: 100vw;
   max-height: $navbar-height;
   background-color: $background-default;
-  box-shadow: $box-shadow-md;
+  box-shadow: $box-shadow;
 
   @include responsive(up, $desktop) {
     height: $navbar-height;
@@ -115,12 +115,23 @@
     text-decoration: none;
     cursor: pointer;
 
-    &:hover .nav__trigger {
-      color: $primary;
+    @include hover {
+      
+      .nav__trigger {
+        color: $primary;
+        
+        svg {
+          fill: $primary;
+        }
+      }
     }
-
+    
     &--active {
       color: $primary;
+
+      svg {
+        fill: $primary;
+      }
     }
 
     .navbar & {
@@ -137,7 +148,7 @@
       @include responsive(down, $desktop) {
         padding-top: 0;
         border-bottom: 0;
-        border-top: $border-sm $grey-20;
+        border-top: $border-sm;
         text-align: right;
         width: 100vw;
         margin-left: -$page-gutter;
@@ -181,7 +192,7 @@
   background-color: $white;
   border-radius: $spacing*2;
   width: 120%;
-  box-shadow: $box-shadow-md;
+  box-shadow: $box-shadow;
   z-index: 1;
   padding: $spacing 0;
 

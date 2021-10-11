@@ -3,17 +3,25 @@
 // —————————————————————————————————————————————————————————————————
 
 .anchor {
+  margin-top: $spacing*4;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  // widgets on index > landing
-  &.card {
-    align-items: stretch;
-  }
-
   &__item {
-    padding-left: 0;
-    padding-right: 0;
+    transition: color $transition;
+    will-change: color;
+
+    &.js-active {
+      color: $primary;
+    }
+
+    @include hover {
+      color: $primary;
+    }
+
+    & + & {
+      margin-top: $spacing;
+    }
   }
 }

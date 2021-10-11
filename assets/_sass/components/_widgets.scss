@@ -22,8 +22,6 @@
 
 .widget--share {
   flex-direction: column;
-  position: sticky;
-  top: $navbar-height+$section-spacing;
   
   .button + .button {
     margin-top: $spacing;
@@ -50,7 +48,7 @@
   align-items: center;
   justify-content: center;
   transition: opacity $transition;
-  box-shadow: $box-shadow-md;
+  box-shadow: $box-shadow;
   will-change: opacity;
   padding: $spacing $page-gutter;
   background-color: $primary;

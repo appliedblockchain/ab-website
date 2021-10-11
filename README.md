@@ -111,7 +111,7 @@ Each page is divided in sections (usually differenciated by background colours).
     {% include components/sectionHeader.html
       label = "Use case"
       title = "Applied Blockchain"
-      subtitle = 'We build applications with added trust and data privacy'
+      subtitle = "We build applications with added trust and data privacy"
     %}
     <div class="section__content">
       <!-- add your code -->
@@ -130,7 +130,7 @@ The `sectionHeader` is a built-in component, to ensure styling consistency. Here
 | `label` | `string` | |
 | `title` | `string` | |
 | `subtitle` | `string` | |
-| `proportion` | `sm`, `md` | `md` is the default value, use `sm` for subheaders |
+| `size` | `sm`, `md` | `md` is the default value, use `sm` for subheaders |
 
 #### Variants
 

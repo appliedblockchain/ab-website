@@ -69,24 +69,6 @@
 
 @include responsive(down, $mobile) {
 
-  .row {
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-  }
-  
-  [class*="grid__item--"] {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    width: 100% !important;
-  }
-  
-  [class*="coloffset--"] {
-    transform: none;
-    margin-left: 0 !important;
-    width: 100% !important;
-  }
-
   .navbar__menu,
   .page__header,
   .section,

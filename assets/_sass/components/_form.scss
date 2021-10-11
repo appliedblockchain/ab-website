@@ -49,7 +49,7 @@
     width: 100%;
     background-color: transparent;
     padding: $spacing*1.25 $spacing*1.5;
-    border: $border-sm $grey-30;
+    border: $border-sm;
     border-radius: $spacing*4 !important;
     font-size: 1rem;
     color: $text;
@@ -96,7 +96,7 @@
       box-sizing: border-box;
       transition: border $transition;
       will-change: border;
-      border: $border-sm $grey-30;
+      border: $border-sm;
     }
   }
 }

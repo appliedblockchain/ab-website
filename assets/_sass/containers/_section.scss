@@ -45,7 +45,7 @@
   }
 
   &__title {
-    @extend .h3;
+    @extend .h2;
     color: $primary;
 
     & + .section__subtitle {
@@ -62,7 +62,8 @@
     flex-direction: column;
     align-items: stretch;
   
-    & + & {
+    & + &,
+    & + .section__header {
       margin-top: $section-spacing-content;
     }
   }
@@ -97,6 +98,11 @@
   .form__checkbox .form__label,
   .form__radio .form__label {
     color: $color;
+    border-color: rgba($color, 0.66);
+    
+    &:before {
+      border-color: $color;
+    }
   }
 
   &.page__header {
@@ -135,8 +141,6 @@
   
     &__title {
       @if $size == sm {
-        @extend .h4;
-      } @else if $size == md {
         @extend .h3;
       } @else if $size == lg {
         @extend .h1;
@@ -150,8 +154,6 @@
     &__subtitle {
       @if $size == sm {
         @extend .body1;
-      } @else if $size == md {
-        @extend .subtitle1;
       } @else if $size == lg {
         @extend .h5;
       }

@@ -150,18 +150,18 @@ a {
 // —————————————————————————————————————————————————————————————————
 
 .button {
-  transition: background-color 0.4s ease;
+  transition: background-color $transition;
 
   &--stroke {
     border-width: 2px;
     border-style: solid;
-    transition: border-color 0.4s ease;
+    transition: border-color $transition;
   }
 
   &--text {
     padding: 0;
     height: auto;
-    transition: color 0.4s ease;
+    transition: color $transition;
   }
 }
 

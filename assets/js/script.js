@@ -24,7 +24,7 @@ $('.accordion .accordion__header').on('click', function() {
 	var next = $(this).next('.accordion__content');
 
 	// trigger accordion toggle
-	if( ! $(event.target).is('.button--primary') ){
+	if( ! $(event.target).is('.accordion__icon') ){
 		// slide
 		$('.accordion__content').not(next).each(function() {
 			$(this).slideUp();
@@ -66,16 +66,16 @@ var cookieClose = function() {
 var displayCookieBar = function() {
 	if (typeof localStorage !== 'undefined') {
 		if (!localStorage[cookieKey]) {
-			$(".cookie").css("display", "flex")
+			$(".widget--cookie").css("display", "flex")
 		}
 	}
 }
 
-$(".cookie__button").on("click", cookieClose)
+$(".widget--cookie button").on("click", cookieClose)
 displayCookieBar()
 
-$(".cookie__button").click(function(){
-	$(".cookie").addClass("js-cookie-accepted");
+$(".widget--cookie button").click(function(){
+	$(".widget--cookie").addClass("js-cookie-accepted");
 })
 
 // —————————————————————————————————————————————————————————————————

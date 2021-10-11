@@ -8,23 +8,41 @@ menus:
     weigth: 2
 ---
 
-<section class="section section--white">
-  <div class="section__content">
-    <div class="row">
-      <div class="grid__item--lg6 block">
-        <h2 class="block__title subtitle">Applied Blockchain</h2>
-        <div class="block__content background--shadow no-padding accordion">
-          {% for item in site.data.faq.company %}
-          {% include components/faq.html %}
+<section class="section">
+  <div class="section__container">
+    <div class="grid__wrapper grid__spacing--8">
+      <div class="grid__item grid__item--lg7 grid__item--md8 grid--ai-stretch">
+        {% for section in site.data.faq %}
+        {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
+        {% include components/sectionHeader.html
+          id = section_id
+          title = section.title
+        %}
+        <div class="section__content accordion__container">
+          {% for item in section.questions %}
+          <div class="accordion">
+            <div class="accordion__header">
+              <p class="subtitle2">{{ item.q }}</p>
+              {% svg /assets/icons/feather/plus.svg width="24" class="accordion__icon" %}
+            </div>
+            <div class="accordion__content markdown">{{ item.a | markdownify }}</div>
+          </div>
           {% endfor %}
         </div>
+        {% endfor %}
       </div>
-      <div class="grid__item--lg6 block">
-        <h2 class="block__title subtitle">Blockchain Technology</h2>
-        <div class="block__content background--shadow no-padding accordion">
-          {% for item in site.data.faq.technology %}
-          {% include components/faq.html %}
-          {% endfor %}
+      <div class="grid__wrapper grid__item grid__item--lg5 grid__item--md4 grid--jc-flex-end">
+        <div class="grid__item grid__item--lg8 sticky">
+          {% include components/sectionHeader.html
+            title = "Table of contents"
+            size = "sm"
+          %}
+          <div class="anchor">
+            {% for section in site.data.faq %}
+            {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
+            <p class="anchor__item"><a href="#{{ section_id }}" class="body2">{{ section.title }}</a></p>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>

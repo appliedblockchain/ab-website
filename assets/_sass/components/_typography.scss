@@ -21,6 +21,12 @@ html, body {
 	}
 }
 
+// text selection
+::selection {
+  background: $primary;
+  color: $white;
+}
+
 @mixin font-size($fontSize: 1, $fontWeight: $font-regular, $lineHeight: 1.5) {
   font-size: $fontSize * 1rem;
   font-weight: $fontWeight;

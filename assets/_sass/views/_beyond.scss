@@ -203,7 +203,7 @@
     transition: box-shadow $transition;
     background-color: $beyond;
     
-    &:hover {
+    @include hover {
       box-shadow: 0 0 $spacing $beyond;
     }    
   }
@@ -211,7 +211,7 @@
   .button--white {
     transition: box-shadow $transition;
     
-    &:hover {
+    @include hover {
       box-shadow: 0 0 $spacing $white;
     }
     

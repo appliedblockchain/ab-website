@@ -1,7 +1,7 @@
 {% assign variant = include.variant %}
 
 {% for item in site.menus[variant] %}
-  <div class="nav__item {% if page.title == item.title or page.menus == item.identifier %} nav__item--active{% endif %}">
+  <div class="nav__item {% if page.title == item.title or page.menus contains item.identifier %} nav__item--active{% endif %}">
     <{% if item.children %}div{% else %}a href="{{ item.url }}"{% endif %} class="js-menu-trigger nav__trigger" title="Go to {{ item.title }}">
       <p>{{ item.title }}</p>
       {% if item.children %}

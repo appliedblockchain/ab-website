@@ -1,15 +1,50 @@
 // —————————————————————————————————————————————————————————————————
-// ACCORDIONS
+// variables
+// elements
+// —————————————————————————————————————————————————————————————————
+
+// —————————————————————————————————————————————————————————————————
+// variables
+// —————————————————————————————————————————————————————————————————
+
+$spacing-accordion: $spacing*2;
+
+// —————————————————————————————————————————————————————————————————
+// elements
 // —————————————————————————————————————————————————————————————————
 
 .accordion {
 
+  & + & {
+    border-top: $border;
+  }
+
+  &__container {
+    width: 100%;
+  }
+  
   &__header {
+    transition: padding-top $transition;
+    will-change: padding-top;
     cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: $spacing-accordion;
+    padding-bottom: $spacing-accordion;
+
+    .accordion:first-child & {
+      padding-top: 0;
+    }
 
     &.js-accordion-active {
+      padding-top: $spacing-accordion*2;
 
-      .button--icon {
+      .accordion:first-child & {
+        padding-top: $spacing-accordion;
+      }
+
+      .accordion__icon {
         transform: rotate(45deg);
       }
     }
@@ -17,5 +52,18 @@
 
   &__content {
     display: none;
+    padding-bottom: $spacing-accordion*2;
+
+    .accordion:last-child & {
+      padding-bottom: $spacing-accordion;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    margin-left: $spacing;
+    transition: transform $transition;
+    will-change: transform;
+    fill: $primary;
   }
 }

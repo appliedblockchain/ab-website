@@ -1,19 +1,19 @@
-{% assign comment = include.comment %}
+{% assign id = include.id %}
+{% assign size = include.size %}
+{% assign label = include.label %}
 {% assign title = include.title %}
+{% assign title_component = include.title_component %}
 {% assign subtitle = include.subtitle %}
-{% assign body = include.body %}
+{% assign subtitle_component = include.subtitle_component %}
 
-<div class="section__header">
-    {% if comment %}
-    <p class="section__comment comment">{{ comment }}</p>
-    {% endif %}
-    {% if title %}
-    <h1 class="section__title title">{{ title }}</h1>
-    {% endif %}
-    {% if subtitle %}
-    <p class="section__subtitle lead">{{ subtitle }}</p>
-    {% endif %}
-    {% if body %}
-    <p class="section__body body--large">{{ body }}</p>
-    {% endif %}
+<div{% if id %} id="{{ id }}"{% endif %} class="section__header section__header--{% if size %}{{ size }}{% else %}md{% endif %}">
+  {% if label %}
+  <p class="section__label">{{ label }}</p>
+  {% endif %}
+  {% if title %}
+  <{% if title_component %}{{ title_component }}{% else %}{% if size == "sm" %}h3{% else %}h2{% endif %}{% endif %} class="section__title">{{ title }}</{% if title_component %}{{ title_component }}{% else %}{% if size == "sm" %}h3{% else %}h2{% endif %}{% endif %}>
+  {% endif %}
+  {% if subtitle %}
+  <p class="section__subtitle">{{ subtitle }}</p>
+  {% endif %}
 </div>

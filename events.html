@@ -25,7 +25,7 @@ menus: "about-us"
     </div>
     <div class="tab__content">
       <div id="webinars" class="tab__item">
-        <div class="tab__content block background--shadow no-padding">
+        <div class="tab__content block background--shadow p-0">
           {% for event in site.data.events %}
           {% if event.display == 'webinar' %}
           {% include components/event.html %}
@@ -34,24 +34,24 @@ menus: "about-us"
         </div>
       </div>
       <div id="upcoming" class="tab__item">
-        <div class="tab__content block background--shadow no-padding">
+        <div class="tab__content block background--shadow p-0">
           {% for event in sorted %}
           {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
           {% if date >= now %}
           {% include components/event.html 
-            variant = 'upcoming'
+            variant = "upcoming"
           %}
           {% endif %}
           {% endfor %} 
         </div>
       </div>
       <div id="past" class="tab__item">
-        <div class="tab__content block background--shadow no-padding">
+        <div class="tab__content block background--shadow p-0">
           {% for event in site.data.events %}
           {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
           {% if date < now %}
           {% include components/event.html 
-            variant = 'past'
+            variant = "past"
           %}
           {% endif %}
           {% endfor %} 

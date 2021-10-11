@@ -1,5 +1,16 @@
 // —————————————————————————————————————————————————————————————————
 // variables
+// elements
+// direction
+// justifyContent
+// alignItems
+// spacing
+// item width
+// misc
+// —————————————————————————————————————————————————————————————————
+
+// —————————————————————————————————————————————————————————————————
+// variables
 // —————————————————————————————————————————————————————————————————
 
 $col:  100%/12;
@@ -26,13 +37,15 @@ $col:  100%/12;
 
   &__item {
     display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     position: relative;
     float: left;
     width: 100%;
-    align-items: flex-start;
  
     &.grid__wrapper {
       width: 100%;
+      flex-direction: row;
     }
   }
 }
@@ -68,77 +81,6 @@ $col:  100%/12;
 .grid--ai-baseline { align-items: baseline; }
 
 // —————————————————————————————————————————————————————————————————
-// item width
-// —————————————————————————————————————————————————————————————————
-
-@for $colWidth from 1 through 12 {
-
-  .grid__item--#{$colWidth} {
-    width: $colWidth*$col;
-
-    &.grid__wrapper {
-      width: $colWidth*$col;
-    }
-  }
-}
-
-@include responsive(up, $mobile) {
-
-  @for $colWidth from 1 through 12 {
-
-    .grid__item--sm#{$colWidth} {
-      width: $colWidth*$col;
-
-      &.grid__wrapper {
-        width: $colWidth*$col;
-      }
-    }
-  }
-}
-
-@include responsive(up, $tablet) {
-
-  @for $colWidth from 1 through 12 {
-
-    .grid__item--md#{$colWidth} {
-      width: $colWidth*$col;
-
-      &.grid__wrapper {
-        width: $colWidth*$col;
-      }
-    }
-  }
-}
-
-@include responsive(up, $laptop) {
-
-  @for $colWidth from 1 through 12 {
-
-    .grid__item--lg#{$colWidth} {
-      width: $colWidth*$col;
-
-      &.grid__wrapper {
-        width: $colWidth*$col;
-      }
-    }
-  }
-}
-
-@include responsive(up, $desktop) {
-
-  @for $colWidth from 1 through 12 {
-
-    .grid__item--xl#{$colWidth} {
-      width: $colWidth*$col;
-
-      &.grid__wrapper {
-        width: $colWidth*$col;
-      }
-    }
-  }
-}
-
-// —————————————————————————————————————————————————————————————————
 // spacing
 // —————————————————————————————————————————————————————————————————
 
@@ -155,14 +97,62 @@ $col:  100%/12;
     &.grid__item {
       width: calc(100% + #{$spacingWidth * 0.5rem});
     }
+  }
+}
 
-    @for $colWidth from 1 through 12 {
+// —————————————————————————————————————————————————————————————————
+// item width
+// —————————————————————————————————————————————————————————————————
 
-      &.grid__item--#{$colWidth} {
+@for $colWidth from 1 through 12 {
+
+  .grid__item--#{$colWidth} {
+    width: $colWidth*$col;
+
+    &.grid__wrapper {
+      width: $colWidth*$col;
+    }
+
+    @for $spacingWidth from 1 through 12 {
+
+      &.grid__spacing--#{$spacingWidth} {
         width: calc(#{$colWidth*$col} + #{$spacingWidth * 0.5rem});
       }
     }
   }
+}
+
+@mixin break($breakpoint) {
+
+  @include responsive(up, $breakpoint) {
+
+    @for $colWidth from 1 through 12 {
+
+      &#{$colWidth} {
+        width: $colWidth*$col;
+        
+        &.grid__wrapper {
+          width: $colWidth*$col;
+        }
+
+        @for $spacingWidth from 1 through 12 {
+
+          &.grid__spacing--#{$spacingWidth} {
+            width: calc(#{$colWidth*$col} + #{$spacingWidth * 0.5rem});
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.grid__item {
+
+  &--sm { @include break($mobile); }
+  &--md { @include break($tablet); }
+  &--lg { @include break($laptop); }
+  &--xl { @include break($desktop); }
 }
 
 // —————————————————————————————————————————————————————————————————

@@ -4,16 +4,10 @@
 
 .footer {
 
-  .form__checkbox {
-    margin-top: $spacing*2;
-  }
+  &__content {
 
-  &__button {
-    display: block !important;
-    margin-left: 0 !important;
-
-    &:hover {
-      color: $primary;
+    @include responsive(down, $laptop) {
+      flex-direction: column-reverse;
     }
   }
 }

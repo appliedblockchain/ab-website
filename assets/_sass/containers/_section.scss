@@ -1,19 +1,11 @@
 @import "components/_typography";
 
 // —————————————————————————————————————————————————————————————————
-// variables
 // general
 // size
 // color
 // variant
 // —————————————————————————————————————————————————————————————————
-
-// —————————————————————————————————————————————————————————————————
-// variables
-// —————————————————————————————————————————————————————————————————
-
-$section-spacing: $spacing*8;
-$section-spacing-content: $spacing*5;
 
 // —————————————————————————————————————————————————————————————————
 // general
@@ -99,6 +91,12 @@ $section-spacing-content: $spacing*5;
   .section__title,
   .card__title {
     color: $title-color;
+  }
+  
+  .form__input,
+  .form__checkbox .form__label,
+  .form__radio .form__label {
+    color: $color;
   }
 
   &.page__header {

@@ -1,24 +1,19 @@
 {% assign header = include.header %}
 {% assign size = include.size %}
 
-<div class="social">
-  {% if header %}
-  <p class="card__title body--large body--bold">Follow us</p>
-  <div class="card__body">
-  {% endif %}
-    <a href="{{ site.github }}" title="Github" target="_blank" class="ga-social-github button{% if size %} button--{{ size }}{% endif %} button--icon button--github button--animate fas fa-plus">
-      <i class="button__inner fab fa-github"></i>
+<div class="widget widget--social">
+  <div class="button__wrapper">
+    <a href="{{ site.github }}" title="Github" target="_blank" class="ga-social-github button{% if size %} button--{{ size }}{% endif %} button--icon button--github">
+      {% svg /assets/icons/social/github.svg %}
     </a>
-    <a href="{{ site.linkedin }}" title="Linkedin" target="_blank" class="ga-social-linkedin-in button{% if size %} button--{{ size }}{% endif %} button--icon button--linkedin button--animate fas fa-plus">
-      <i class="button__inner fab fa-linkedin-in"></i>
+    <a href="{{ site.linkedin }}" title="Linkedin" target="_blank" class="ga-social-linkedin-in button{% if size %} button--{{ size }}{% endif %} button--icon button--linkedin">
+      {% svg /assets/icons/social/linkedin.svg %}
     </a>
-    <a href="{{ site.medium }}" title="Medium" target="_blank" class="ga-social-medium-m button{% if size %} button--{{ size }}{% endif %} button--icon button--medium button--animate fas fa-plus">
-      <i class="button__inner fab fa-medium-m"></i>
+    <a href="{{ site.medium }}" title="Medium" target="_blank" class="ga-social-medium-m button{% if size %} button--{{ size }}{% endif %} button--icon button--medium">
+      {% svg /assets/icons/social/medium.svg %}
     </a>
-    <a href="{{ site.twitter }}" title="Twitter" target="_blank" class="ga-social-twitter button{% if size %} button--{{ size }}{% endif %} button--icon button--twitter button--animate fas fa-plus">
-      <i class="button__inner fab fa-twitter"></i>
+    <a href="{{ site.twitter }}" title="Twitter" target="_blank" class="ga-social-twitter button{% if size %} button--{{ size }}{% endif %} button--icon button--twitter">
+      {% svg /assets/icons/social/twitter.svg %}
     </a>
-  {% if header %}
   </div>
-  {% endif %}
 </div>

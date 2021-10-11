@@ -11,21 +11,9 @@
 .form {
   width: 100%;
 
-  &__container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
   &__group {
     position: relative;
     width: 100%;
-    margin-bottom: $spacing;
-    text-align: left;
-
-    @include responsive(down, $mobile) {
-      margin-bottom: $spacing;
-    }
 
     &.focused {
 
@@ -48,7 +36,6 @@
     will-change: color;
     cursor: pointer;
     display: block;
-    overflow: hidden;
     white-space: nowrap;
     position: relative;
     padding-left: $spacing*0.75;
@@ -57,26 +44,21 @@
 
   &__input {
     transition: border $transition;
-    text-overflow: ellipsis;
     will-change: border;
+    text-overflow: ellipsis;
     width: 100%;
     background-color: transparent;
-    padding: $spacing $spacing*1.5;
+    padding: $spacing*1.25 $spacing*1.5;
     border: $border-sm $grey-30;
     border-radius: $spacing*4 !important;
-  }
-
-  &__button {
-    margin-top: $spacing*2;
-  }
-  
-  &__notice {
-    margin-top: $spacing;
+    font-size: 1rem;
+    color: $text;
   }
 }
 
 ::placeholder {
-  color: $grey-30;
+  font-family: $font;
+  color: rgba($text-contrast, 0.33);
   opacity: 1;
 }
 
@@ -103,14 +85,14 @@
     padding-left: $spacing*4;
     cursor: pointer;
     margin: 0;
-    font-size: 1rem !important;
+    font-size: 1rem;
     font-weight: 200;
     overflow: visible;
-    color: $black !important;
+    color: $text;
     white-space: normal;
 
     &:before {
-      @include pseudo-element('', -1px, auto, auto, 0, $spacing*2*1.5, $spacing*2*1.5);
+      @include pseudo-element('', $spacing/4, auto, auto, 0, $spacing*2.4, $spacing*2.4);
       box-sizing: border-box;
       transition: border $transition;
       will-change: border;
@@ -123,32 +105,31 @@
 
   .form__input {
 
-    &:checked + .form__label:before {
-      border-width: $spacing*2*0.75;
-    }
+    &:checked + .form__label {
 
-    &:checked + .form__label:after {
-      opacity: 1;
-    }    
+      &:before {
+        border-width: $spacing*1.2;
+      }
+
+      &:after {
+        opacity: 1;
+      }    
+    }
   }
 
   .form__label {
 
     &:before {
-      border-radius: $spacing;
+      border-radius: $spacing/2;
     }
 
     &:after {
+      @include pseudo-element('✓', $spacing/4, auto, auto, 0, $spacing*2.4, $spacing*2.4);
       transition: opacity $transition;
+      will-change: opacity;
       display: flex;
       align-items: center;
       justify-content: center;
-      @include font-awesome("\f00c", 0, auto, auto, 0, $white);
-      will-change: opacity;
-      width: $spacing*2*1.5;
-      height: $spacing*2*1.5;
-      font-size: 0.7rem;
-      line-height: 0;
       opacity: 0;
     }
   }

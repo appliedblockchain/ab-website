@@ -2,22 +2,20 @@
   <div class="section__container">
     <div class="section__content">
       <div class="grid__wrapper grid__spacing--4">
-        <div class="grid__item grid__item--7">
+        <div class="grid__item grid__item--lg8 grid--jc-center">
           <a href="{{ site.base-url }}/" class="logo logo--white">
             {% include components/logos/logo.html %}
           </a>
         </div>
-        <div class="grid__item grid__item--5">
-          {% include components/social.html
-            header = 'true'
-          %}
+        <div class="grid__item grid__item--lg4 grid--jc-center">
+          {% include components/social.html %}
         </div>
       </div>
     </div>
     <div class="section__content">
-      <div class="grid__wrapper grid__spacing--4">
-        <div class="grid__wrapper grid__item grid__item--7 grid__spacing--3">
-          <div class="grid__wrapper grid__item grid__item--4 grid__spacing--3">
+      <div class="grid__wrapper grid__spacing--4 footer__content">
+        <div class="grid__wrapper grid__item grid__item--lg8 grid__spacing--3">
+          <div class="grid__wrapper grid__item grid__item--sm4 grid__spacing--3">
             <div class="grid__item">
               <div class="card card--sm card--transparent">
                 <div class="card__header">
@@ -43,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="grid__wrapper grid__item grid__item--4 grid__spacing--3">
+          <div class="grid__wrapper grid__item grid__item--sm4 grid__spacing--3">
             <div class="grid__item">
               <div class="card card--sm card--transparent">
                 <div class="card__header">
@@ -81,7 +79,7 @@
               </div>
             </div>
           </div>
-          <div class="grid__wrapper grid__item grid__item--4 grid__spacing--3">
+          <div class="grid__wrapper grid__item grid__item--sm4 grid__spacing--3">
             <div class="grid__item">
               <div class="card card--sm card--transparent">
                 <div class="card__header">
@@ -96,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="grid__item grid__item--5">
+        <div class="grid__item grid__item--lg4">
           {% include components/newsletter.html %}
         </div>
       </div>

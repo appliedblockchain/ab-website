@@ -3,7 +3,6 @@
 // —————————————————————————————————————————————————————————————————
 // general
 // share
-// social
 // newsletter
 // news
 // cookies
@@ -14,102 +13,56 @@
 // —————————————————————————————————————————————————————————————————
 
 .widget {
-  position: relative;
-  border-radius: $border-radius;
-
-  &__bar {
-    display: flex;
-    align-items: flex-end;
-  }
+  display: flex;
 }
 
 // —————————————————————————————————————————————————————————————————
 // share
 // —————————————————————————————————————————————————————————————————
 
-.share {
-  display: flex;
+.widget--share {
   flex-direction: column;
-  align-items: center;
-  transform: translateX(-$spacing*10);
-  position: absolute;
-  top: 0;
-  padding-top: $spacing/4;
+  position: sticky;
+  top: $navbar-height+$section-spacing;
   
-  &__button {
-    
-    .post & {
-      margin-left: 0;
-      margin-bottom: $spacing/4;
-      text-decoration: none;
-    }
-
-    & + & {
-      margin-top: $spacing*2;
-    }
+  .button + .button {
+    margin-top: $spacing;
   }
 }
-
-// —————————————————————————————————————————————————————————————————
-// social
-// —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
 // newsletter
 // —————————————————————————————————————————————————————————————————
 
-.newsletter {
+.widget--newsletter {
+  max-width: $spacing*80;
 
-  &__button {
-    margin-top: $spacing;
-  }
-
-  .form__label {
-    color: $white !important;
-  }
-
-  &__input {
-    display: block;
-    
-    @include responsive(down, $desktop) {
-      max-width: $spacing*25*2;
-    }
-
-    & + & {
-      margin-top: $spacing;
-    }
+  .form__input {
+    max-width: $spacing*50;
   }
 }
-
-// —————————————————————————————————————————————————————————————————
-// news
-// —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
 // cookies
 // —————————————————————————————————————————————————————————————————
 
-.cookie {
-  display: flex;
+.widget--cookie {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   transition: opacity $transition;
   box-shadow: $box-shadow-md;
-  padding: $spacing/4 $page-gutter;
   will-change: opacity;
+  padding: $spacing $page-gutter;
   background-color: $primary;
-  color: $white;
+  color: $primary-text-contrast;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   opacity: 1;
-  display: none;
 
   @include responsive(down, $mobile) {
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding-left: $col;
-    padding-right: $col;
   }
 
   @include responsive-touch() {
@@ -120,16 +73,13 @@
     opacity: 0;
   }
 
-  &__text {
-    padding-right: $spacing;
+  .button {
+    margin-left: $spacing;
+    padding: 0;
 
     @include responsive(down, $mobile) {
-      padding-right: 0;
-      margin-bottom: $spacing;
+      margin-left: 0;
+      margin-top: $spacing;
     }
-  }
-
-  &__button {
-    color: white;
   }
 }

@@ -30,6 +30,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   text-transform: uppercase;
   font-weight: $font-black;
   line-height: 1;
@@ -48,19 +49,35 @@ a {
     background-color: $hover;
   }
 
+  svg {
+    fill: $text;
+  }
+  
   &--stroke {
+    background-color: transparent;
     border-color: $color;
-    color: $black;
-
+    color: $text;
+    
     @include hover {
+      background-color: transparent;
       border-color: $hover;
     }
-  }
 
+    svg {
+      fill: $text;
+    }
+  }
+  
   &--text {
+    background-color: transparent;
     color: $color;
 
+    svg {
+      fill: $color;
+    }
+    
     @include hover {
+      background-color: transparent;
       color: $hover;
     }
   }
@@ -75,6 +92,11 @@ a {
   &--info { @include color($info, $info-text-contrast, $info-dark); }
   &--warning { @include color($warning, $warning-text-contrast, $warning-dark); }
   &--error { @include color($error, $error-text-contrast, $error-dark); }
+  &--facebook { @include color($facebook, $text-contrast, $facebook-dark); }
+  &--github { @include color($github, $text-contrast, $github-dark); }
+  &--linkedin { @include color($linkedin, $text-contrast, $linkedin-dark); }
+  &--medium { @include color($medium, $text-contrast, $medium-dark); }
+  &--twitter { @include color($twitter, $text-contrast, $twitter-dark); }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -90,13 +112,12 @@ a {
   letter-spacing: $font-size/10;
 
   svg {
-    width: $size/2;
-    height: $size/2;
 
     &:first-child { 
       margin-right: $size/4; 
       margin-left: -$size/8; 
     }
+
     &:last-child { 
       margin-right: -$size/8; 
       margin-left: $size/4; 
@@ -107,7 +128,7 @@ a {
 
     &--icon {
       width: $size;
-      padding: $size/4;
+      padding: $size/5;
 
       svg {
         margin-right: 0;
@@ -165,7 +186,7 @@ a {
   &:before, 
   &:after, 
   .button__inner {
-    background-color: $black;
+    background-color: $text;
   }
 
   &:before, 
@@ -231,24 +252,29 @@ a {
 // wrapper
 // —————————————————————————————————————————————————————————————————
 
-.button__wrapper {
-  display: flex;
+@mixin break($breakpoint) {
 
-  @include responsive(down, $mobile) {
+  @include responsive(down, $breakpoint) {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-  }
-
-  .button {
-
-    & + .button {
-      margin-left: $spacing;
-
-      @include responsive(down, $mobile) {
-        margin-left: 0;
-        margin-top: $spacing;
-      }
+    
+    .button + .button {
+      margin-left: 0;
+      margin-top: $spacing;
     }
   }
+}
+
+.button__wrapper {
+  display: flex;
+
+  .button + .button {
+    margin-left: $spacing;
+  }
+
+  &--sm { @include break($mobile); }
+  &--md { @include break($tablet); }
+  &--lg { @include break($laptop); }
+  &--xl { @include break($desktop); }
 }

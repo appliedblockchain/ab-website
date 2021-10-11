@@ -39,7 +39,7 @@
   &__prev {
 
     &:before {
-      @include font-awesome("\f104", auto, auto, auto, $spacing*2, $black);
+      @include font-awesome("\f104", auto, auto, auto, $spacing*2, $text);
       position: initial;
     }
   }
@@ -47,7 +47,7 @@
   &__next {
 
     &:before {
-      @include font-awesome("\f105", auto, $spacing*2, auto, auto, $black);
+      @include font-awesome("\f105", auto, $spacing*2, auto, auto, $text);
       position: initial;
     }
   }

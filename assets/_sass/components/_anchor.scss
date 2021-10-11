@@ -24,4 +24,13 @@
       margin-top: $spacing;
     }
   }
+
+  &__target:before {
+    display: block; 
+    content: ""; 
+    margin-top: -($navbar-height+$section-spacing-content); 
+    height: $navbar-height+$section-spacing-content; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
 }

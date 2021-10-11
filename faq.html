@@ -14,9 +14,11 @@ menus:
       <div class="grid__item grid__item--lg7 grid__item--md8 grid--ai-stretch">
         {% for section in site.data.faq %}
         {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
+        <!-- the id and the class are for the anchor tag link -->
         {% include components/sectionHeader.html
-          id = section_id
           title = section.title
+          title_id = section_id
+          title_class = "anchor__target"
         %}
         <div class="section__content accordion__container">
           {% for item in section.questions %}

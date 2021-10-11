@@ -1,17 +1,20 @@
 {% assign id = include.id %}
+{% assign class = include.class %}
 {% assign size = include.size %}
 {% assign label = include.label %}
 {% assign title = include.title %}
+{% assign title_id = include.title_id %}
+{% assign title_class = include.title_class %}
 {% assign title_component = include.title_component %}
 {% assign subtitle = include.subtitle %}
 {% assign subtitle_component = include.subtitle_component %}
 
-<div{% if id %} id="{{ id }}"{% endif %} class="section__header section__header--{% if size %}{{ size }}{% else %}md{% endif %}">
+<div{% if id %} id="{{ id }}"{% endif %} class="section__header section__header--{% if size %}{{ size }}{% else %}md{% endif %}{% if class %} {{ class }}{% endif %}">
   {% if label %}
   <p class="section__label">{{ label }}</p>
   {% endif %}
   {% if title %}
-  <{% if title_component %}{{ title_component }}{% else %}{% if size == "sm" %}h3{% else %}h2{% endif %}{% endif %} class="section__title">{{ title }}</{% if title_component %}{{ title_component }}{% else %}{% if size == "sm" %}h3{% else %}h2{% endif %}{% endif %}>
+  <{% if title_component %}{{ title_component }}{% else %}{% if size == "sm" %}h3{% else %}h2{% endif %}{% endif %}{% if title_id %} id="{{ title_id }}"{% endif %} class="section__title{% if title_class %} {{ title_class }}{% endif %}">{{ title }}</{% if title_component %}{{ title_component }}{% else %}{% if size == "sm" %}h3{% else %}h2{% endif %}{% endif %}>
   {% endif %}
   {% if subtitle %}
   <p class="section__subtitle">{{ subtitle }}</p>

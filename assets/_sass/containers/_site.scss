@@ -32,9 +32,14 @@ html, body {
   height: 100%;
   // prevent horizontal scroll
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
 }
 
-// embed responsively (youtube videos)
+// embed responsively (embed Youtube and Vimeo)
 
 .embed-container { 
   position: relative; 

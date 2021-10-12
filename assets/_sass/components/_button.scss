@@ -112,6 +112,7 @@ a {
   letter-spacing: $font-size/10;
 
   svg {
+    width: $size/2;
 
     &:first-child { 
       margin-right: $size/4; 
@@ -256,9 +257,13 @@ a {
 
   @include responsive(down, $breakpoint) {
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
     width: 100%;
     
+    @include responsive(down, $mobile) {
+      align-items: stretch;
+    }
+
     .button + .button {
       margin-left: 0;
       margin-top: $spacing;
@@ -277,4 +282,19 @@ a {
   &--md { @include break($tablet); }
   &--lg { @include break($laptop); }
   &--xl { @include break($desktop); }
+
+  &--landscape {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    @include responsive(down, $mobile) {
+      align-items: stretch;
+    }
+    
+    .button + .button {
+      margin-left: 0;
+      margin-top: $spacing;
+    }
+  }
 }

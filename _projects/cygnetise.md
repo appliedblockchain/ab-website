@@ -8,7 +8,7 @@ subtitle: A smarter way to manage your Authorised Signatory Lists
 industry: Legal
 summary: Cygnetise is a decentralised digital platform built on the blockchain that solves the pain of managing your Authorised Signatory Lists, making it secure and efficient.
 link: https://www.cygnetise.com/
-background_color: white
+
 
 deliverables: Blockchain-based authorised signatory list
 

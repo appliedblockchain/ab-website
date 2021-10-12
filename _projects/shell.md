@@ -7,7 +7,7 @@ subtitle: First energy product derivative trade on blockchain
 industry: Energy
 summary: Shell is a Dutch-British global group of energy and petrochemical companies.
 link: https://www.shell.com/inside-energy/blockchain.html
-background_color: white
+
 
 delivery:
     - item:

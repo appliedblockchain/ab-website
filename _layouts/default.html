@@ -5,7 +5,9 @@ layout: compress
 {% include containers/header.html %}
 {% include components/pageHeader.html %}
 
-{{ content }}
+<div class="page__container background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/{{ page.background_image }}');">
+  {{ content }}
+</div>
 
 {% include components/footer.html %}
 {% include containers/footer.html %}

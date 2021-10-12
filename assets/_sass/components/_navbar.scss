@@ -12,7 +12,7 @@
   left: 0;
   width: 100vw;
   max-height: $navbar-height;
-  background-color: $background-default;
+  background-color: $background-paper;
   box-shadow: $box-shadow;
 
   @include responsive(up, $desktop) {

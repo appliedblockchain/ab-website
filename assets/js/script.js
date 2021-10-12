@@ -1,21 +1,15 @@
 $(document).ready(function() {
 
 // —————————————————————————————————————————————————————————————————
-// SCRIPT
-// —————————————————————————————————————————————————————————————————
-// accordions
-// buttons
-// cookie bar accept
+// accordion
+// button
+// cookie bar
 // form
-// header scroll animation
-// join
-// modals
-// news widget animation
-// parallax scrolling
+// modal
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
-// accordions
+// accordion
 // —————————————————————————————————————————————————————————————————
 
 $('.accordion .accordion__header').on('click', function() {
@@ -41,7 +35,7 @@ $('.accordion .accordion__header').on('click', function() {
 });
 
 // —————————————————————————————————————————————————————————————————
-// buttons
+// button
 // —————————————————————————————————————————————————————————————————
 
 // menu button
@@ -53,7 +47,7 @@ $(".button--menu").click(function(event) {
 });
 
 // —————————————————————————————————————————————————————————————————
-// cookie bar accept
+// cookie bar
 // —————————————————————————————————————————————————————————————————
 
 var cookieKey = "__applied_blockchain_cookie_banner"
@@ -92,34 +86,7 @@ $(".form__input").focusout(function() {
 });
 
 // —————————————————————————————————————————————————————————————————
-// header scroll animation
-// —————————————————————————————————————————————————————————————————
-
-$(window).scroll(function() { //the scrolled element
-	var scroll = $(this).scrollTop();
-	if (scroll >= 5) { //the point past whom you add the class (in pixel)
-		$('.navbar').addClass("js-scrolled"); //the element to which add the class
-	} else {
-		$('.navbar').removeClass("js-scrolled");
-	}
-});
-
-// —————————————————————————————————————————————————————————————————
-// join
-// —————————————————————————————————————————————————————————————————
-
-// change background image
-
-$('.js-button-porto').on('click', function() {
-    $('.join__background--london').addClass('hide').fadeIn();
-});
-
-$('.js-button-london').on('click', function() {
-    $('.join__background--london').removeClass('hide').fadeIn();
-});
-
-// —————————————————————————————————————————————————————————————————
-// modals
+// modal
 // —————————————————————————————————————————————————————————————————
 
 // prevent page scroll when modal opened
@@ -133,30 +100,6 @@ $(".js-button-modal").click(function(event) {
 $(".modal__close, .modal__button").click(function(event) {
 	$('html, body').removeClass("js-freeze");
 });
-
-// —————————————————————————————————————————————————————————————————
-// news widget animation
-// —————————————————————————————————————————————————————————————————
-
-if ($(window).width() > 575) {   
-	setTimeout(function() {
-		$('.widget--news').animate({
-			right: '0'
-		}, 800, 'swing');
-	}, 1200);
-}
-else {  
-}; 
-
-// —————————————————————————————————————————————————————————————————
-// parallax background
-// —————————————————————————————————————————————————————————————————
-
-window.addEventListener('scroll', doParallax);
-function doParallax(){
-   var positionY = window.pageYOffset/8;
-   document.body.style.backgroundPosition = "0 -" + positionY + "px";
-}
 
 // —————————————————————————————————————————————————————————————————
 

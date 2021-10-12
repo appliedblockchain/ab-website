@@ -4,7 +4,7 @@
 // general
 // size
 // color
-// variant
+// variants
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -20,6 +20,14 @@
 
   & + & {
     padding-top: 0;
+  }
+  
+  &--overlap {
+    padding-top: 0 !important;
+    
+    & + .section {
+      padding-top: $section-spacing;
+    }
   }
 
   &__container {
@@ -115,8 +123,8 @@
 
 .section {
 
-  &--white { @include background-color($background-default); }
-  &--grey { @include background-color($background-paper); }
+  &--white { @include background-color($background-paper); }
+  &--grey { @include background-color($background-default); }
   &--primary { @include background-color($primary, $primary-text-contrast, $primary-text-contrast); }
   &--dark { @include background-color($dark, $text-contrast, $text-contrast); }
 }
@@ -184,6 +192,18 @@
       &__container {
         max-width: unset;
       }
+    }
+  }
+
+  &--overlap {
+    position: absolute;
+    top: $navbar-height+$section-spacing;
+    left: 0;
+    width: 100vw;
+    pointer-events: none;
+
+    .section__container > * {
+      pointer-events: initial;
     }
   }
 }

@@ -30,8 +30,8 @@ $grey-70: #73838D;
 $grey-80: #5F717C;
 $grey-90: #4B5F6C;
 
-$background-default: #FFFFFF;
-$background-paper: #F8F8F8;
+$background-default: #F8F8F8;
+$background-paper: #FFFFFF;
 
 // brand
 
@@ -108,10 +108,10 @@ $spacing: 0.5rem; // 8px
 $page-gutter: 100vw/12;
 $page-max-width: 1200px;
 $col: 100%/12;
-$navbar-height: $spacing*10;
-
 $section-spacing: $spacing*8;
 $section-spacing-content: $spacing*6;
+
+$navbar-height: $spacing*10;
 
 // transition
 

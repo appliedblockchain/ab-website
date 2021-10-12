@@ -7,7 +7,7 @@ subtitle: Distributed drone registry
 industry: Aviation IT
 summary: Development of the world’s first distributed drone registry.
 link: https://www.reuters.com/article/us-iata-drones/airlines-back-creation-of-global-drone-registry-iata-idUSKBN1HO2M5
-background_color: white
+
 
 delivery:
     - item:

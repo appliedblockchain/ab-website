@@ -7,7 +7,7 @@ subtitle: Blockchain-based social bank
 industry: Financial Technology<br>Services
 summary: Core banking infrastructure and full-stack banking application on a private blockchain using smart contracts.
 link: https://getbabb.com/
-background_color: white
+
 
 delivery:
     - item: 

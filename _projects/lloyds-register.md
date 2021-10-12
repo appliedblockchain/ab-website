@@ -8,7 +8,7 @@ subtitle: Creating the first demonstrator that can register ships into Class usi
 industry: Shipping
 summary: LR created the first register of ships in 1764, a tool used to provide merchants and underwriters information about the quality and condition of vessels they chartered and insured.
 link: https://www.lr.org/en-gb/latest-news/classification-for-the-digital-age/
-background_color: white
+
 
 challenge:
     - lead: Applying blockchain technology to the classification process of registering new ships into Class and launching a prototype blockchain-enabled register tool.

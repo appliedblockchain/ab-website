@@ -71,7 +71,7 @@ A Jekyll layout that compresses HTML.
 SVG optimizer and inliner for jekyll.
 [Documentation](https://github.com/sdumetz/jekyll-inline-svg)
 
-### Jekyll menus
+#### Jekyll menus
 
 A robust, simple-to-use menu plugin for Jekyll that allows for infinitely nested menus.
 
@@ -100,6 +100,42 @@ The deployment process is run throught Netlify.
 
 - You only need to concern yourself with the content of the page. The page header and footer are built-in, ensuring their consistency throughout the whole website.
 - Elements are layed out using a [grid system](#grid-system).
+
+### Page front matter
+
+The front matter are the lines found at the top of each page between the `---` lines. Here are all the options used to customise the layout and information of a page
+
+```yml
+---
+layout: "default"
+title: "Home"
+headline: "Optionnal override for page title"
+subtitle: "Optionnal short sentence describing the page in more depth"
+background_image: example.jpg
+banner_image: example2.jpg
+banner_color: "primary"
+links:
+  - label: "Back to homepage"
+    url: "/"
+    title: "Go to homepage"
+menus:
+  header:
+    weight: 6
+---
+```
+
+| Parameter | Value | Description |
+| --- | --- |
+| `layout` | `default`, `index`, `post`, `project`, `webinar` | |
+| `title` | `string` | The page title. Used for the title on the page **and** the HTML title tag (that appears on the browser tabs) |
+| `headline` | `string` | Optionnal. Add if you want the title on the page to be different from the HTML title tag |
+| `subtitle` | `string` | Optionnal. Short sentence describing the page in more depth|
+| `background_image` | `string` | Add a background image to **the entire page**. Put the image in `assets/images/background` |
+| `banner_image` | `string` | Add a background image to **the page header page** |
+| `banner_color` | `primary`, `dark`, `white`, `grey` | Change the page header background (or gradient) color. The default value is primary |
+| `link` | | Adds a button in the page header |
+| `menus` | | Set which menus the page appears in. See [Jekyll menus](#jekyll-menus) for more information |
+
 
 ### Sections
 
@@ -138,7 +174,8 @@ Add the following classes to the section elements to use each variant.
 
 | Class | Description |
 | --- | --- |
-| `section--fullWidth` | Fullwidth section |
+| `section--fullWidth` | removes padding left and right |
+| `section--overlap` | used a section that overlaps the page headar (see contact page) |
 
 #### Background colors
 

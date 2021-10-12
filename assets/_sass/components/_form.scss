@@ -164,26 +164,23 @@
 // overrides
 // —————————————————————————————————————————————————————————————————
 
-.form {
+.pipedriveWebForms {
+  padding: $spacing*4 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &--pipedrive {
-    // pipedrive width + 40px left and right
-    @include calc(max-width, '480px + '$spacing*5*2);
-    padding: $spacing*5 !important;
-    
-    #report & {
-      width: 560px;
-      max-width: 100%;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    animation: spin 1.2s infinite;
+    border: $spacing*0.75 outset $primary;
+    border-radius: 50%;
+    height: $spacing*2;
+    width: $spacing*2;
+  }
 
-    .form {
-
-      &__cover {
-        @include calc(width, '100% + '$spacing*5*2);
-        margin-top: -$spacing*5;
-        margin-bottom: $spacing*5;
-        margin-left: -$spacing*5;
-      }  
-    }
+  iframe {
+    background-color: $background-paper;
   }
 }

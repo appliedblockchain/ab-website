@@ -4,10 +4,10 @@
 {% assign link.label = include.link.label %}
 {% assign link.url = include.link.url %}
 {% assign link.title = include.link.title %}
-{% assign background_image = include.background_image %}
-{% assign background_color = include.background_color %}
+{% assign banner_image = include.banner_image %}
+{% assign banner_color = include.banner_color %}
 
-<div class="section page__header{% if page.background_color %} section--{{ page.background_color }}{% else %} section--primary{% endif %} background--cover"{% if page.background_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.title | slugify }}.jpg');"{% endif %}>
+<div class="section page__header{% if page.banner_color %} section--{{ page.banner_color }}{% else %} section--primary{% endif %} background--cover"{% if page.banner_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ banner_image }}');"{% endif %}>
   <div class="section__container">
     <div class="section__header section__header--lg">
       {% if page.label %}
@@ -18,12 +18,16 @@
       <p class="section__subtitle">{{ page.subtitle }}</p>
       {% endif %}
     </div>
-    {% if page.link.url %}
+    {% if page.links %}
     <div class="section__content">
       <div class="grid__wrapper">
-        <a  href="{{ site.base-url }}{{ page.link.url }}" title="{{ page.link.title }}" class="button button--lg button--primary">
-          <p>{{ page.link.label }}</p>
-        </a>
+        <div class="button__wrapper button__wrapper--landscape">
+          {% for link in page.links %}
+          <a  href="{{ site.base-url }}{{ link.url }}" title="{{ link.title }}" class="button button--primary">
+            <p>{{ link.label }}</p>
+          </a>
+          {% endfor %}
+        </div>
       </div>
     </div>
     {% endif %}

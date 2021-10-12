@@ -8,14 +8,9 @@
 // —————————————————————————————————————————————————————————————————
 
 .page {
-  min-height: calc(100vh - $navbar-height);
   margin-top: $navbar-height;
 
   &__header {
-
-    &:before {    
-      @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-    }
 
     // display elements on top of gradient
     > * {

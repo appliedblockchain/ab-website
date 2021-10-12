@@ -19,6 +19,14 @@ $spacing-accordion: $spacing*2;
     border-top: $border;
   }
 
+  &:first-child {
+    margin-top: -$spacing-accordion;
+  }
+
+  &:last-child {
+    margin-bottom: -$spacing-accordion;
+  }
+
   &__container {
     width: 100%;
   }
@@ -33,16 +41,8 @@ $spacing-accordion: $spacing*2;
     padding-top: $spacing-accordion;
     padding-bottom: $spacing-accordion;
 
-    .accordion:first-child & {
-      padding-top: 0;
-    }
-
     &.js-accordion-active {
       padding-top: $spacing-accordion*2;
-
-      .accordion:first-child & {
-        padding-top: $spacing-accordion;
-      }
 
       .accordion__icon {
         transform: rotate(45deg);
@@ -53,10 +53,6 @@ $spacing-accordion: $spacing*2;
   &__content {
     display: none;
     padding-bottom: $spacing-accordion*2;
-
-    .accordion:last-child & {
-      padding-bottom: $spacing-accordion;
-    }
   }
 
   &__icon {

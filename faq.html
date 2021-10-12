@@ -11,7 +11,21 @@ menus:
 <section class="section">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
-      <div class="grid__item grid__item--lg7 grid__item--md8 grid--ai-stretch">
+      <div class="grid__wrapper grid__item grid__item--md4">
+        <div class="grid__item grid__item--xl10 sticky">
+          {% include components/sectionHeader.html
+            title = "Table of contents"
+            size = "sm"
+          %}
+          <div class="anchor">
+            {% for section in site.data.faq %}
+            {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
+            <p class="anchor__item"><a href="#{{ section_id }}" class="body2">{{ section.title }}</a></p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="grid__item grid__item--md8 grid--ai-stretch">
         {% for section in site.data.faq %}
         {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
         <!-- the id and the class are for the anchor tag link -->
@@ -32,20 +46,6 @@ menus:
           {% endfor %}
         </div>
         {% endfor %}
-      </div>
-      <div class="grid__wrapper grid__item grid__item--lg5 grid__item--md4 grid--jc-flex-end">
-        <div class="grid__item grid__item--lg8 sticky">
-          {% include components/sectionHeader.html
-            title = "Table of contents"
-            size = "sm"
-          %}
-          <div class="anchor">
-            {% for section in site.data.faq %}
-            {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
-            <p class="anchor__item"><a href="#{{ section_id }}" class="body2">{{ section.title }}</a></p>
-            {% endfor %}
-          </div>
-        </div>
       </div>
     </div>
   </div>

@@ -25,12 +25,16 @@
     }
   }
 
-  &__target:before {
-    display: block; 
-    content: ""; 
-    margin-top: -($navbar-height+$section-spacing-content); 
-    height: $navbar-height+$section-spacing-content; 
-    visibility: hidden; 
+  &__target {
     pointer-events: none;
+    
+    &:before {
+      display: block; 
+      content: ""; 
+      margin-top: -($navbar-height+$section-spacing-content); 
+      height: $navbar-height+$section-spacing-content; 
+      visibility: hidden; 
+      pointer-events: none;
+    }
   }
 }

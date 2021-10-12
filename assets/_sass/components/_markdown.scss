@@ -29,6 +29,10 @@
     &:not(:first-child) {
       margin-top: $section-spacing-content;
     }
+
+    &:not(:last-child) {
+      margin-bottom: $spacing*4;
+    }
   }
 
   h2,
@@ -38,7 +42,11 @@
   h6 {
 
     &:not(:first-child) {
-      margin-top: $spacing*2;
+      margin-top: $spacing*4;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $spacing;
     }
   }
 
@@ -53,29 +61,13 @@
     }
   }
 
+  ol,
+  ul {
+    margin-left: $spacing*4;
+  }
+
   ol { list-style: decimal; }
   ul { list-style: disc; }
-
-  // li {
-  //   margin-left: $spacing;
-
-  //   &::marker {
-  //     text-indent: -$spacing;
-  //   }
-
-  //   ul,
-  //   ol {
-  //     padding-top: $spacing;
-      
-  //     li + li {
-  //       padding-top: $spacing !important;        
-  //     }
-  //   }
-    
-  //   + li {    
-  //     padding-top: $spacing !important;
-  //   }
-  // }
 
   a {
     transition: color $transition;
@@ -176,24 +168,9 @@ body {
   counter-reset: h1counter;
 }
 
-.markdown.counter {
+.counter {
 
-  h2, 
-  h3 {
-
-    &:before {
-      position: absolute;
-      left: -$spacing*2;
-      text-align: right;
-      width: $spacing*2;
-
-      @include responsive(max, $tablet) {
-        left: 0;
-      }
-    }
-  }
-
-  h2 { 
+  h1 { 
     counter-reset: h2counter; 
 
     &:before {
@@ -202,12 +179,21 @@ body {
     }    
   }
 
-  h3 { 
+  h2 { 
     counter-reset: h3counter; 
 
     &:before {
       counter-increment: h2counter;
       content: counter(h1counter) "." counter(h2counter) ". ";
+    }
+  }
+
+  h3 { 
+    counter-reset: h4counter; 
+
+    &:before {
+      counter-increment: h3counter;
+      content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) ". ";
     }
   }
 

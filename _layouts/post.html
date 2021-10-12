@@ -7,7 +7,7 @@ layout: compress
 <div class="post">
   <div class="section section--primary section--header background--cover post__header" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if page.image %}posts/{{ page.image }}{% else %}default{% endif %}.jpg');">
     {% capture date %}{{ page.date | date: "%b %-d, %Y" }}{% endcapture %}
-    {% include components/sectionHeader.html
+    {% include components/section-header.html
       comment = page.category
       title = page.title
       body = date

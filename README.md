@@ -129,11 +129,12 @@ menus:
 | `layout` | `default`, `index`, `post`, `project`, `webinar` | |
 | `title` | `string` | The page title. Used for the title on the page **and** the HTML title tag (that appears on the browser tabs) |
 | `headline` | `string` | Optionnal. Add if you want the title on the page to be different from the HTML title tag |
-| `subtitle` | `string` | Optionnal. Short sentence describing the page in more depth|
+| `subtitle` | `string` | Optionnal. Short sentence describing the page in more depth |
 | `background_image` | `string` | Add a background image to **the entire page**. Put the image in `assets/images/background` |
 | `banner_image` | `string` | Add a background image to **the page header page** |
 | `banner_color` | `primary`, `dark`, `white`, `grey` | Change the page header background (or gradient) color. The default value is primary |
 | `link` | | Adds a button in the page header |
+| `tabs` | `string` | Add automatic tabs to the page header. The value indicates the file containing the tabs values in the _data folder (see media for example) |
 | `menus` | | Set which menus the page appears in. See [Jekyll menus](#jekyll-menus) for more information |
 
 
@@ -144,7 +145,7 @@ Each page is divided in sections (usually differenciated by background colours).
 ```html
 <section class="section">
   <div class="section__container">
-    {% include components/sectionHeader.html
+    {% include components/section-header.html
       label = "Use case"
       title = "Applied Blockchain"
       subtitle = "We build applications with added trust and data privacy"
@@ -159,7 +160,7 @@ Each page is divided in sections (usually differenciated by background colours).
 
 #### Section header
 
-The `sectionHeader` is a built-in component, to ensure styling consistency. Here are its properties.
+The `section-header` is a built-in component, to ensure styling consistency. Here are its properties.
 
 | Prop | Value | Description |
 | --- | --- |

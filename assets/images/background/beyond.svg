@@ -70,10 +70,10 @@
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
                 </g>
-                <text id="tab__item.button-[assessments]" font-family="Roboto-Black, Roboto" font-size="12" font-weight="700" line-spacing="12" letter-spacing="1.2" fill="#F9C99D">
+                <text id="tab__target.button-[assessments]" font-family="Roboto-Black, Roboto" font-size="12" font-weight="700" line-spacing="12" letter-spacing="1.2" fill="#F9C99D">
                     <tspan x="314.091016" y="42.3261719">ASSESSEMENTS</tspan>
                 </text>
-                <text id="tab__item.button-[indexes]" font-family="Roboto-Black, Roboto" font-size="12" font-weight="700" line-spacing="12" letter-spacing="1.2" fill="#EA7032">
+                <text id="tab__target.button-[indexes]" font-family="Roboto-Black, Roboto" font-size="12" font-weight="700" line-spacing="12" letter-spacing="1.2" fill="#EA7032">
                     <tspan x="498.949414" y="42.3261719">INDEXES</tspan>
                 </text>
                 <g id="BEYOND" transform="translate(1125.000000, 25.049676)" fill="#EA7032" fill-rule="nonzero">

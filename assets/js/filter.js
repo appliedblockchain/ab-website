@@ -5,17 +5,18 @@ $(document).ready(function() {
 // —————————————————————————————————————————————————————————————————
 
 // init Isotope
-var $grid = $('.grid').isotope({
-    // options
+var $grid = $('.js-filter-content').isotope({
+  layoutMode: 'fitRows'
 });
+
 // filter items on button click
-$('.js-blog-filter').on( 'click', 'a', function() {
+$('.js-filter').on( 'click', 'a', function() {
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });
-$('.js-blog-filter .tab__button').on('click', function(){
-    $('.js-blog-filter .tab__button').addClass('button--primary-lighten');
-    $(this).removeClass('button--primary-lighten');
+$('.js-filter .tab').on('click', function(){
+  $('.js-filter .tab').removeClass('js-active');
+  $(this).addClass('js-active');
 });
 
 // —————————————————————————————————————————————————————————————————

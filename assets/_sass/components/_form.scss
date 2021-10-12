@@ -58,7 +58,7 @@
 
 ::placeholder {
   font-family: $font;
-  color: rgba($text-contrast, 0.33);
+  color: $text-contrast-disabled;
   opacity: 1;
 }
 

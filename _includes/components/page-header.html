@@ -7,7 +7,7 @@
 {% assign banner_image = include.banner_image %}
 {% assign banner_color = include.banner_color %}
 
-<div class="section page__header{% if page.banner_color %} section--{{ page.banner_color }}{% else %} section--primary{% endif %} background--cover"{% if page.banner_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ banner_image }}');"{% endif %}>
+<div class="section page__header section--tabs{% if page.banner_color %} section--{{ page.banner_color }}{% else %} section--primary{% endif %}{% if page.banner_image %} background--cover{% endif %}"{% if page.banner_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.banner_image }}');"{% endif %}>
   <div class="section__container">
     <div class="section__header section__header--lg">
       {% if page.label %}
@@ -16,6 +16,13 @@
       <h1 class="section__title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
       {% if page.subtitle %}
       <p class="section__subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+      {% if page.tabs %}
+      <div class="tabs js-filter">
+        {% for tab in site.data.[page.tabs] %}
+        <a class="tab button__inner{% if forloop.first %} js-active{% endif %}" data-filter="{% if tab.name == "All" %}*{% else %}.{{ tab.name | slugify }}{% endif %}">{{ tab.name }}</a>
+        {% endfor %}
+      </div>
       {% endif %}
     </div>
     {% if page.links %}

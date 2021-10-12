@@ -21,6 +21,7 @@
   box-shadow: $box-shadow-sm;
   background-color: $background-paper;
 
+  &__media,
   &__header,
   &__content,
   &__actions {
@@ -30,6 +31,11 @@
   &__header,
   &__content {
     flex-direction: column;
+  }
+
+  &__thumbnail {
+    width: 100%;
+    padding-bottom: 50%;
   }
 
   &__actions {
@@ -46,15 +52,16 @@
 
   .card {
 
+    &__media,
     &__header,
     &__content,
     &__actions {
       padding: 0 $ratio $ratio $ratio;
-      
+
       &:first-child {
         padding-top: $ratio;
       }
-      
+
       &.noPadding {
         padding: 0;
         
@@ -68,7 +75,11 @@
         padding-left: 0;
       }
     }
-    
+
+    &__thumbnail {
+      border-radius: $ratio/3;
+    }
+
     &__label {
       @extend .caption;
       
@@ -108,6 +119,7 @@
 
     .card {
 
+      &__media,
       &__header,
       &__content,
       &__actions {
@@ -135,6 +147,7 @@
 
     .card {
 
+      &__media,
       &__header,
       &__content,
       &__actions {

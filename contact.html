@@ -6,10 +6,10 @@ headline: "Contact us"
 subtitle: "Send us a message to learn more about our services and how we can support you"
 menus:
   company:
-    weight: 6
+    weight: 7
 ---
 
-<div class="section">
+<!-- <div class="section">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8 grid--jc-flex-end">
       <div class="grid__item grid__item--md5">
@@ -21,12 +21,12 @@ menus:
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <div class="section">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
       <div class="grid__item grid__item--md7">
-        {% include components/sectionHeader.html
+        {% include components/section-header.html
           title = "Our offices"
           subtitle = "Applied Blockchain is based in London and Porto"
         %}
@@ -42,7 +42,7 @@ menus:
                 <div class="card__actions">
                   <a href="{{ office.direction }}" target="_blank" rel="noopener" class="button button--primary">
                     Get directions
-                    {% svg /assets/icons/feather/externalLink.svg %}
+                    {% svg /assets/icons/feather/external-link.svg %}
                   </a>
                 </div>
               </div>

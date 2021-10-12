@@ -11,7 +11,7 @@ menus: "about-us"
 
 <section class="section section--white">
   <div class="section__content tab tab--events">
-    <div class="tab__nav">
+    <div class="tabs">
       <a href="#webinars" class="tab__button button button--primary button--animate fa fa-desktop">
         <p class="button__inner">Webinars</p>
       </a>
@@ -23,7 +23,7 @@ menus: "about-us"
       </a>
     </div>
     <div class="tab__content">
-      <div id="webinars" class="tab__item">
+      <div id="webinars" class="tab__target">
         <div class="tab__content block background--shadow p-0">
           {% for event in site.data.events %}
           {% if event.display == 'webinar' %}
@@ -32,7 +32,7 @@ menus: "about-us"
           {% endfor %} 
         </div>
       </div>
-      <div id="upcoming" class="tab__item">
+      <div id="upcoming" class="tab__target">
         <div class="tab__content block background--shadow p-0">
           {% for event in sorted %}
           {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
@@ -44,7 +44,7 @@ menus: "about-us"
           {% endfor %} 
         </div>
       </div>
-      <div id="past" class="tab__item">
+      <div id="past" class="tab__target">
         <div class="tab__content block background--shadow p-0">
           {% for event in site.data.events %}
           {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}

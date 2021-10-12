@@ -7,35 +7,45 @@
 // general
 // —————————————————————————————————————————————————————————————————
 
+.tabs {
+  display: flex;
+}
+
 .tab {
+  position: relative;
+  cursor: pointer;
+  transition: color $transition, background-color $transition;
+  will-change: color, background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  min-width: $spacing*20;
+  padding: $spacing*2;
+  color: $text-contrast-secondary;
 
-  &__nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
+  &:after {
+    @include pseudo-element('', auto, 0, 0, 0, 100%, 0);
+    transition: height $transition;
+    will-change: height;
+    background-color: $text-contrast;
+  }
 
-    & + .tab__content {
-      margin-top: $spacing*8;
+  @include hover {
+    color: $text-contrast;
+    background-color: rgba($text-contrast, 0.1);
+  }
+  
+  &.js-active {
+    color: $text-contrast;
+
+    &:after {
+      height: $spacing/2;
     }
   }
 
-  &__button {
-
-    &.js-active {
-      color: $primary;
-    }
-
-    & + & {
-      margin-left: $spacing*2 !important;
-    }
-  }
-
-  &__content {
-      transition: all $transition;
-  }
-
-  &__item {
+  &__target {
     display: none;
 
     &:nth-child(1) {
@@ -49,58 +59,6 @@
 // —————————————————————————————————————————————————————————————————
 
 .tab {
-
-  &--approach {
-
-    .tab {
-
-      &__content {
-        margin-top: $spacing*5;
-      }
-
-      &__item {
-
-        @include responsive(down, $tablet) {
-          display: block;
-
-          & + .tab__item {
-
-            .card {
-
-              &__inner {
-                padding-top: 0;
-              }
-            }
-          }
-        }
-      }
-
-      &__button {
-        position: relative;
-
-        &:before {
-          transition: opacity $transition, width $transition, left $transition;
-          @include pseudo-element('', auto, 0, -($spacing*5+$spacing/2), 50%, 0, $spacing);
-          border-radius: $spacing;
-          will-change: opacity, width, left;
-          background-color: $dark;
-        }
-    
-        &:hover:before, 
-        &.tab__button--active:before {
-          width: 100%;
-          left: 0;
-        }
-      }
-    }
-
-    .card {
-
-      &__image {
-        padding-left: 0 !important;
-      }
-    }
-  }
 
   &--events {
 

@@ -16,8 +16,11 @@ $deep-black: #000000;
 $white: #ffffff;
 
 $text: #000A1E;
+$text-secondary: rgba($text, 0.66);
 $text-disabled: rgba($text, 0.33);
 $text-contrast: #FFFFFF;
+$text-contrast-secondary: rgba($text-contrast, 0.66);
+$text-contrast-disabled: rgba($text-contrast, 0.33);
 
 $grey-5: #F5F6F7;
 $grey-10: #EBEDEE;

@@ -12,7 +12,7 @@ menus:
     <div class="grid__wrapper grid__spacing--8">
       <div class="grid__wrapper grid__item grid__item--md4">
         <div class="grid__item grid__item--xl10 sticky">
-          {% include components/sectionHeader.html
+          {% include components/section-header.html
             title = "Table of contents"
             size = "sm"
           %}
@@ -36,7 +36,7 @@ menus:
           {% for section in site.data.privacy-policy %}
           {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
           <!-- the id and the class are for the anchor tag link -->
-          {% include components/sectionHeader.html
+          {% include components/section-header.html
             title = section.title
             title_id = section_id
             title_class = "anchor__target"

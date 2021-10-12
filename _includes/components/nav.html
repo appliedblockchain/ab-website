@@ -5,7 +5,7 @@
     <{% if item.children %}div{% else %}a href="{{ item.url }}"{% endif %} class="js-menu-trigger nav__trigger" title="Go to {{ item.title }}">
       <p>{{ item.title }}</p>
       {% if item.children %}
-      {% svg /assets/icons/feather/chevronDown.svg width=20 %}
+      {% svg /assets/icons/feather/chevron-down.svg width=20 %}
       {% endif %}  
     </{% if item.children %}div{% else %}a{% endif %}>
     {% if item.children %}

@@ -63,9 +63,10 @@
                 transform: rotate(90deg);
                 position: initial;
                 -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
+                clip-path: polygon(0 100%, 50% 0, 100% 100%);
                 background-color: $primary;
                 border-radius: 0;
-                @include responsive(down, $tablet) {
+                @include responsive(down, $tablet-down) {
                     height: 50px;
                 }
             }

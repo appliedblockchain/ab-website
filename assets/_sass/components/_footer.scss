@@ -6,7 +6,7 @@
 
   &__content {
 
-    @include responsive(down, $laptop) {
+    @include responsive(down, $laptop-down) {
       flex-direction: column-reverse;
     }
   }

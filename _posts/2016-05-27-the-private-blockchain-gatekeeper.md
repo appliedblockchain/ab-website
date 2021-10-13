@@ -1,9 +1,9 @@
 ---
-layout: post
-title: The Private Blockchain Gatekeeper
-image: the-private-blockchain-gatekeeper
-category: blog
-headline: This piece proposes concepts for designing a Private Blockchain Smart Contract Application.
+layout: "post"
+title: "The Private Blockchain Gatekeeper"
+lead: "This piece proposes concepts for designing a Private Blockchain Smart Contract Application."
+image: "the-private-blockchain-gatekeeper.jpg"
+category: "Blog"
 ---
 
 **Private**: because we don’t want the whole world to access it, or take on the load
@@ -14,7 +14,9 @@ headline: This piece proposes concepts for designing a Private Blockchain Smart 
 
 **Application**: because it’s going to do something useful
 
-At Applied Blockchain we’ve designed and built a number of private blockchain smart contract applications, and we thought it was time share some of the lessons we’ve learned. We’ve pioneered an approach we’re simply calling: BApp (Blockchain Application). It is a general approach that can be applied to a wide range of problems. We’ve also shared a light, simple open source private blockchain application development framework of the same name. [Feel free to try it](https://github.com/appliedblockchain/bapp).
+At Applied Blockchain we’ve designed and built a number of private blockchain smart contract applications, and we thought it was time share some of the lessons we’ve learned. We’ve pioneered an approach we’re simply calling: BApp (Blockchain Application). It is a general approach that can be applied to a wide range of problems. We’ve also shared a light, simple open source private blockchain application development framework of the same name. 
+
+[Feel free to try it](https://github.com/appliedblockchain/bapp).
 
 I believe that this technology only really adds value for a group of participants who do not necessarily trust each other but need to share and transact (financial or otherwise). If this is true for a problem that you need to solve, one approach is to look at creating a private blockchain network. You’ll need a number of participants (usually different organisations) who will each hold their own copy of a blockchain (aka shared ledger / distributed ledger). You will act as the gatekeeper.
 

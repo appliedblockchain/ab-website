@@ -1,19 +1,13 @@
 // —————————————————————————————————————————————————————————————————
-// variables
 // elements
 // direction
 // justifyContent
+// alignItems
 // alignItems
 // spacing
 // item width
 // misc
 // —————————————————————————————————————————————————————————————————
-
-// —————————————————————————————————————————————————————————————————
-// variables
-// —————————————————————————————————————————————————————————————————
-
-$col:  100%/12;
 
 // —————————————————————————————————————————————————————————————————
 // elements
@@ -149,10 +143,10 @@ $col:  100%/12;
 
 .grid__item {
 
-  &--sm { @include break($mobile); }
-  &--md { @include break($tablet); }
-  &--lg { @include break($laptop); }
-  &--xl { @include break($desktop); }
+  &--sm { @include break($mobile-up); }
+  &--md { @include break($tablet-up); }
+  &--lg { @include break($laptop-up); }
+  &--xl { @include break($desktop-up); }
 }
 
 // —————————————————————————————————————————————————————————————————

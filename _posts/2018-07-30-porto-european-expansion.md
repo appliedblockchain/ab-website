@@ -1,10 +1,9 @@
 ---
-layout: post
-title: Applied Blockchain chooses Porto as its Development Centre for European Expansion
-image: porto-european-expansion
-category: press-release
-dlc: true
-headline: Applied Blockchain, one of the UK’s leading developers of distributed ledger technology and smart contracts, has announced the opening of an office in Porto – its first non-UK office – to further strengthen its blockchain development and to fulfill the growing demand from clients internationally.
+layout: "post"
+title: "Applied Blockchain chooses Porto as its Development Centre for European Expansion"
+lead: "Applied Blockchain, one of the UK’s leading developers of distributed ledger technology and smart contracts, has announced the opening of an office in Porto – its first non-UK office – to further strengthen its blockchain development and to fulfill the growing demand from clients internationally."
+image: "porto-european-expansion.jpg"
+category: "Press release"
 ---
 
 Set up in 2015, Applied Blockchain supports leading organisations across multiple sectors including aviation, banking, telecoms, automotive and manufacturing, as these companies evolve their businesses in order to make the best-use of blockchain technology. Applied Blockchain has over 30 startup and enterprise clients including Shell, who also recently invested in the company.

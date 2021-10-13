@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: "post"
 title: "Applied Blockchain joins Algorand's global partner program"
-image: launch-partner-program
-category: news
-social: external
-link: https://www.algorand.com/resources/news/launch-partner-program
-headline: "Algorand Launches Global Partner Program to Accelerate Development and Adoption of Blockchain-Powered Products and Services."
+lead: "Algorand Launches Global Partner Program to Accelerate Development and Adoption of Blockchain-Powered Products and Services."
+image: "launch-partner-program.jpg"
+category: "News"
+link:
+  type: "external"
+  url: https://www.algorand.com/resources/news/launch-partner-program
 ---

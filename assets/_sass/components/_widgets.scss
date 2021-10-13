@@ -22,9 +22,29 @@
 
 .widget--share {
   flex-direction: column;
+  width: 0;
+  height: 100%;
+  transform: translateX(-$spacing*12);
+  
+  @include responsive(down, $laptop-down) {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    transform: initial;
+    margin-bottom: $section-spacing-content;
+
+    &.sticky {
+      position: initial;
+    }
+  }
   
   .button + .button {
-    margin-top: $spacing;
+    margin-top: $spacing*2;
+
+    @include responsive(down, $laptop-down) {
+      margin-top: 0;
+      margin-left: $spacing*2;
+    }
   }
 }
 
@@ -58,7 +78,7 @@
   width: 100vw;
   opacity: 1;
 
-  @include responsive(down, $mobile) {
+  @include responsive(down, $mobile-down) {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
@@ -75,7 +95,7 @@
     margin-left: $spacing;
     padding: 0;
 
-    @include responsive(down, $mobile) {
+    @include responsive(down, $mobile-down) {
       margin-left: 0;
       margin-top: $spacing;
     }

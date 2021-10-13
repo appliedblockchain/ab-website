@@ -1,9 +1,9 @@
 ---
-layout: post
-title: Why Smart Contracts Make Slow Blockchains
-image: response-to-why-smart-contracts-make-slow-blockchains
-category: blog
-headline: You have raised some real issues with the current implementation of Ethereum. However, I think that most of organisations playing and building with Ethereum as a private chain today don’t believe that Ethereum, certainly not in it’s current form, will be their target platform.
+layout: "post"
+title: "Why Smart Contracts Make Slow Blockchains"
+lead: "You have raised some real issues with the current implementation of Ethereum. However, I think that most of organisations playing and building with Ethereum as a private chain today don’t believe that Ethereum, certainly not in it’s current form, will be their target platform."
+image: "response-to-why-smart-contracts-make-slow-blockchains.jpg"
+category: "Blog"
 ---
 
 The reason they’ve chosen Ethereum is because they see the potential of one particular feature: The Ethereum Virtual Machine. This smart contract implementation, together with it’s developer friendly Solidity programming language has sparked a great deal of interest as you know.

@@ -38,6 +38,14 @@
     padding-bottom: 50%;
   }
 
+  &__content {
+
+    // allow post card bold text to be 
+    strong {
+      display: inline-block;
+    }
+  }
+
   &__actions {
     justify-content: space-between;
   }

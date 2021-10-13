@@ -1,17 +1,5 @@
-# ordered from most to least recent
-
-# - name:
-#   image:
-#   date:
-#   date_to: [if relevant]
-#   location: [if relevant]
-#   directions: [if relevant]
-#   type: internal, external
-#   webinar_id: [link to recording form page]
-#   link:
-
 - name: "Porto Tech Hub Conference 2021"
-  image: porto-tech-hub-conference # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  image: porto-tech-hub-conference
   date: "2021-10-18"
   date_to: "2021-10-19"
   location: "Online"

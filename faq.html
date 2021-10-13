@@ -11,7 +11,7 @@ menus:
 <section class="section">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
-      <div class="grid__wrapper grid__item grid__item--md4">
+      <div class="grid__wrapper grid__item grid__item--lg4">
         <div class="grid__item grid__item--xl10 sticky">
           {% include components/section-header.html
             title = "Table of contents"
@@ -25,7 +25,7 @@ menus:
           </div>
         </div>
       </div>
-      <div class="grid__item grid__item--md8 grid--ai-stretch">
+      <div class="grid__item grid__item--lg8 grid--ai-stretch">
         {% for section in site.data.faq %}
         {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
         <!-- the id and the class are for the anchor tag link -->

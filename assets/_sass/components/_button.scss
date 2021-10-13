@@ -260,7 +260,7 @@ a {
     align-items: flex-start;
     width: 100%;
     
-    @include responsive(down, $mobile) {
+    @include responsive(down, $mobile-down) {
       align-items: stretch;
     }
 
@@ -278,17 +278,17 @@ a {
     margin-left: $spacing;
   }
 
-  &--sm { @include break($mobile); }
-  &--md { @include break($tablet); }
-  &--lg { @include break($laptop); }
-  &--xl { @include break($desktop); }
+  &--sm { @include break($mobile-down); }
+  &--md { @include break($tablet-down); }
+  &--lg { @include break($laptop-down); }
+  &--xl { @include break($desktop-down); }
 
   &--landscape {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
 
-    @include responsive(down, $mobile) {
+    @include responsive(down, $mobile-down) {
       align-items: stretch;
     }
     

@@ -1,9 +1,10 @@
 ---
-layout: post
-title: 'NFTs: A digital fad, or a transformational technology?'
-image: nft-article
-category: news
-social: external
-link: https://www.enterprisetimes.co.uk/2021/09/28/placeholder-nfts-a-digital-fad-or-a-transformational-technology/
-headline: 'Adi Ben-Ari has written an article about NFTs for the Enterprise Times.'
+layout: "post"
+title: "NFTs: A digital fad, or a transformational technology?"
+lead: "Adi Ben-Ari has written an article about NFTs for the Enterprise Times."
+image: "nft-article.jpg"
+category: "News"
+link:
+  type: "external"
+  url: "https://www.enterprisetimes.co.uk/2021/09/28/placeholder-nfts-a-digital-fad-or-a-transformational-technology/"
 ---

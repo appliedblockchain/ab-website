@@ -1,8 +1,8 @@
 ---
-layout: post
-title: First energy product derivative trade on blockchain
-image: applied-blockchain-plays-pivotal-role-in-designing-blockchain-technology-for-shell
-category: press-release
+layout: "post"
+title: "First energy product derivative trade on blockchain"
+image: "applied-blockchain-plays-pivotal-role-in-designing-blockchain-technology-for-shell.jpg"
+category: "Press release"
 ---
 
 On November 8, 2018, [Shell announced](https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433/) the world's first oil product derivatives trade using blockchain technology developed with Applied Blockchain. The technology is currently being used within Shell, allowing the company’s various businesses to trade by seeing real time prices from its trading teams.

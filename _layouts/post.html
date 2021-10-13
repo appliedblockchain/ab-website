@@ -4,33 +4,30 @@ layout: compress
 
 {% include containers/header.html %}
 
-<div class="post">
-  <div class="section section--primary section--header background--cover post__header" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if page.image %}posts/{{ page.image }}{% else %}default{% endif %}.jpg');">
-    {% capture date %}{{ page.date | date: "%b %-d, %Y" }}{% endcapture %}
-    {% include components/section-header.html
-      comment = page.category
-      title = page.title
-      body = date
-    %}
-  </div>   
-  <article class="section">
-    <div class="section__content">
-      <div class="grid__wrapper grid__spacing--8">
-        <div class="grid__item grid__item--3 grid--ai-flex-end">
-          {% include components/share.html %}
+{% capture page_label %}{{ page.date | date: "%b %-d, %Y" }} {{ page.category }}{% endcapture %}
+{% include components/page-header.html
+  label = page_label
+  subtitle = page.lead
+  banner_image = page.image
+  banner_color = "white"
+%}
+
+<div class="section section--maxWidth">
+  <div class="section__container">
+    <div class="grid__wrapper grid--jc-center">
+      {% include components/share.html
+        class = "hide--laptop"
+      %}
+      <div class="section__content">
+        {% include components/share.html
+          class = "show--laptop"
+        %}
+        <div class="markdown markdown--post">
+          {{ content | markdownify }}
         </div>
-        <div class="grid__item grid__item--6">
-          {% if page.headline %}
-          <p class="h5">{{ page.headline }}</p>
-          {% endif %}
-          <div class="post__content">
-            {{ content }}
-          </div>
-        </div>
-        <div class="grid__item grid__item--4"></div>
       </div>
     </div>
-  </article>
+  </div>
 </div>
 
 {% include components/footer.html %}

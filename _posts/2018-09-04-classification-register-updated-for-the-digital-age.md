@@ -1,9 +1,9 @@
 ---
-layout: post
-title: LR announces the launch of prototype blockchain-enabled Class register
-image: classification-register-updated-for-the-digital-age
-category: press-release
-headline: Classification register updated for the digital age
+layout: "post"
+title: "LR announces the launch of prototype blockchain-enabled Class register"
+image: "classification-register-updated-for-the-digital-age.jpg"
+category: "Press release"
+lead: "Classification register updated for the digital age"
 ---
 
 [Republished from Lloyds Register](https://www.lr.org/en/latest-news/classification-for-the-digital-age/)

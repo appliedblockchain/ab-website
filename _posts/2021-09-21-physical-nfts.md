@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: "post"
+lead: "What the Damien Hirst Project The Currency Gets Right about Physical NFTs"
 title: "Physical NFTs"
-image: physical-nfts
-category: blog
-headline: "What the Damien Hirst Project The Currency Gets Right about Physical NFTs"
+image: "physical-nfts.jpg"
+category: "Blog"
 ---
 
 In March we wrote about [The Growing Ecosystem of Non-Fungible Tokens (NFTs)](https://appliedblockchain.com/growing-ecosystem-non-fungible-tokens). As often happens in the blockchain world a lot has changed in the past few months. With the launch of the high profile [Damien Hirst “The Currency”](https://www.heni.com/) NFTs have expanded beyond purely digital art and towards physical NFT artwork. We've been working on NFT marketplaces with major artists . Here we will summarise some of our findings and clarify some common incorrect assumptions, in particular we focus on how we think The Currency project got it right.

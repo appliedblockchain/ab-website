@@ -15,11 +15,11 @@
   background-color: $background-paper;
   box-shadow: $box-shadow;
 
-  @include responsive(up, $desktop) {
+  @include responsive(up, $desktop-up) {
     height: $navbar-height;
   }
 
-  @include responsive(down, $desktop) {
+  @include responsive(down, $desktop-down) {
     overflow: hidden;
     transition: max-height $transition-lg;
     will-change: max-height;
@@ -36,11 +36,11 @@
     align-items: center;
     justify-content: space-between;
 
-    @include responsive(up, $desktop) {
+    @include responsive(up, $desktop-up) {
       height: 100%;
     }
 
-    @include responsive(down, $desktop) {
+    @include responsive(down, $desktop-down) {
       align-items: flex-start;
     }
   }
@@ -50,7 +50,7 @@
     height: $navbar-height/2;
     width: auto;
 
-    @include responsive(down, $desktop) {
+    @include responsive(down, $desktop-down) {
       position: absolute;
       top: $navbar-height/4;
     }
@@ -59,7 +59,7 @@
   &__button {
     margin-left: $spacing*1.5;
 
-    @include responsive(down, $desktop) {
+    @include responsive(down, $desktop-down) {
       margin-top: $spacing*1.5;
       margin-left: 0;
     }
@@ -81,11 +81,11 @@
   align-items: center;
   justify-content: flex-end;
 
-  @include responsive(up, $desktop) {
+  @include responsive(up, $desktop-up) {
     height: 100%;
   }
 
-  @include responsive(down, $desktop) {
+  @include responsive(down, $desktop-down) {
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: $spacing*4;
@@ -99,11 +99,11 @@
     display: flex;
     align-items: stretch;
 
-    @include responsive(up, $desktop) {
+    @include responsive(up, $desktop-up) {
       height: 100%;
     }
 
-    @include responsive(down, $desktop) {
+    @include responsive(down, $desktop-down) {
       flex-direction: column;
       height: auto;
       margin: 0;
@@ -145,7 +145,7 @@
         border-bottom-color: $primary
       }
 
-      @include responsive(down, $desktop) {
+      @include responsive(down, $desktop-down) {
         padding-top: 0;
         border-bottom: 0;
         border-top: $border-sm;
@@ -172,7 +172,7 @@
     .navbar & {
       @extend .button__inner;
 
-      @include responsive(down, $desktop) {
+      @include responsive(down, $desktop-down) {
         height: $navbar-height/2;
         justify-content: flex-end;
       }
@@ -196,7 +196,7 @@
   z-index: 1;
   padding: $spacing 0;
 
-  @include responsive(down, $desktop) {
+  @include responsive(down, $desktop-down) {
     box-shadow: none;
     position: initial;
     width: 100vw;
@@ -220,7 +220,7 @@
       @extend .button__inner;
     }
 
-    @include responsive(down, $desktop) {
+    @include responsive(down, $desktop-down) {
       align-self: flex-end;
       border-bottom: 0;
       width: 100%;

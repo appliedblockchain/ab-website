@@ -36,7 +36,6 @@
   }
   
   &__header {
-    max-width: $page-max-width/2;
 
     & + &,
     & + .section__content {
@@ -192,6 +191,20 @@
 
       &__container {
         max-width: unset;
+      }
+    }
+  }
+
+  &--maxWidth {
+
+    @include responsive(up, $tablet-up) {
+
+      .section {
+        
+        &__header,
+        &__content {
+          max-width: $page-max-width/2;
+        }
       }
     }
   }

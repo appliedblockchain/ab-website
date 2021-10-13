@@ -1,7 +1,7 @@
 // —————————————————————————————————————————————————————————————————
 // style
-// layouts
 // counter
+// layouts
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -70,8 +70,8 @@
   ul { list-style: disc; }
 
   a {
-    transition: color $transition;
-    will-change: color;
+    transition: color $transition, background-color $transition;
+    will-change: color, background-color;
     text-decoration: underline;
     font-weight: $font-bold;
     color: $primary;
@@ -81,7 +81,9 @@
     }
 
     &.button {
+      display: inline-flex;
       text-decoration: none;
+      color: $text-contrast;
     }
   }
 
@@ -119,21 +121,11 @@
   }
 
   img {
-    margin-bottom: $spacing*4;
-    width: 80%;
-    margin-left: 10%;
     border-radius: $border-radius-lg;
     overflow: hidden;
     display: block;
-    
-    &:not(:first-child) {
-      margin-top: $spacing*4;
-    }
-
-    @include responsive(down, $tablet) {
-      width: 100%;
-      margin-left: 0;
-    }
+    margin-bottom: $spacing*6;
+    margin-top: $spacing*6;
 
     &.no-shadow {
       box-shadow: none;
@@ -212,6 +204,31 @@ body {
 
     ul {
       list-style-type: lower-roman;
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// layouts
+// —————————————————————————————————————————————————————————————————
+
+.markdown--post {
+
+  @include responsive(up, $mobile-up) {
+
+    p,
+    ol,
+    ul {
+      
+      &:not(:first-child) {
+        margin-top: $spacing*2;
+      }
+    }
+    
+    p,
+    li {
+      font-size: 1.125rem;
+      line-height: 1.75;
     }
   }
 }

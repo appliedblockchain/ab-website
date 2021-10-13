@@ -104,19 +104,19 @@ ul {
 
 .hide {
   
-  &--desktop { @include responsive(max-width, $desktop) { display: none !important; } }
-  &--laptop { @include responsive(max-width, $laptop) { display: none !important; } }
-  &--tablet { @include responsive(max-width, $tablet) { display: none !important; } }
-  &--mobile { @include responsive(max-width, $mobile) { display: none !important; } }
+  &--desktop { @include responsive(down, $desktop-down) { display: none !important; } }
+  &--laptop { @include responsive(down, $laptop-down) { display: none !important; } }
+  &--tablet { @include responsive(down, $tablet-down) { display: none !important; } }
+  &--mobile { @include responsive(down, $mobile-down) { display: none !important; } }
   &--touch { @include responsive-touch() { display: none !important; } }
 }
 
 .show {
 
-  &--desktop { @include responsive(min-width, $desktop) { display: none !important; } }
-  &--laptop { @include responsive(min-width, $laptop) { display: none !important; } }
-  &--tablet { @include responsive(min-width, $tablet) { display: none !important; } }
-  &--mobile { @include responsive(min-width, $mobile) { display: none !important; } }
+  &--desktop { @include responsive(up, $desktop-up) { display: none !important; } }
+  &--laptop { @include responsive(up, $laptop-up) { display: none !important; } }
+  &--tablet { @include responsive(up, $tablet-up) { display: none !important; } }
+  &--mobile { @include responsive(up, $mobile-up) { display: none !important; } }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -138,7 +138,7 @@ ul {
 
 .sticky {
   position: sticky;
-  top: $navbar-height+$section-spacing;
+  top: $navbar-height+$section-spacing-content;
 }
 
 .m {

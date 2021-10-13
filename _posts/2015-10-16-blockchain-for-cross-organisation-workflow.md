@@ -1,9 +1,9 @@
 ---
-layout: post
-title: Blockchain for Cross-Organisation Workflow
-image: blockchain-for-cross-organisation-workflow
-category: blog
-headline: Everyone is looking for the perfect blockchain use case. There’s a lot of talk about blockchains, and there are a number of smart people working on improving the underlying blockchain platform technology (consensus algorithms, throughput). However, there are very few good use cases actually being built and realised using blockchain technology.
+layout: "post"
+title: "Blockchain for Cross-Organisation Workflow"
+lead: "Everyone is looking for the perfect blockchain use case. There’s a lot of talk about blockchains, and there are a number of smart people working on improving the underlying blockchain platform technology (consensus algorithms, throughput). However, there are very few good use cases actually being built and realised using blockchain technology."
+image: "blockchain-for-cross-organisation-workflow.jpg"
+category: "Blog"
 ---
 
 # Smart Contracts

@@ -1,9 +1,10 @@
 ---
-layout: post
-title: 'Trust but verify: Shells trading arm buys into blockchain'
-image: bloomberg
-category: news
-social: external
-link: https://www.bnnbloomberg.ca/video/trust-but-verify-shells-trading-arm-buys-into-blockchain~1312110
-headline: The trading arm of Royal Dutch Shell is investing in Applied Blockchain, a U.K.-based firm that develops blockchain applications, with a focus on distributed ledger technology and smart contracts.
+layout: "post"
+title: "Trust but verify: Shells trading arm buys into blockchain"
+lead: "The trading arm of Royal Dutch Shell is investing in Applied Blockchain, a U.K.-based firm that develops blockchain applications, with a focus on distributed ledger technology and smart contracts."
+image: "bloomberg.jpg"
+category: "News"
+link:
+  type: "external"
+  url: "https://www.bnnbloomberg.ca/video/trust-but-verify-shells-trading-arm-buys-into-blockchain~1312110"
 ---

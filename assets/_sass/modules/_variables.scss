@@ -162,8 +162,18 @@ $font-black: 900;
 // —————————————————————————————————————————————————————————————————
 
 $desktop-lg: 1800px;
-$desktop: 1280px;
-$laptop: 1024px;
-$tablet: 768px;
-$mobile: 568px;
-$mobile-sm: 350px;
+
+$desktop-up: 1280px;
+$desktop-down: 1279.98px;
+
+$laptop-up: 1024px;
+$laptop-down: 1023.98px;
+
+$tablet-up: 768px;
+$tablet-down: 767.98px;
+
+$mobile-up: 568px;
+$mobile-down: 567.98px;
+
+$mobile-sm-up: 350px;
+$mobile-sm-down: 349.98px;

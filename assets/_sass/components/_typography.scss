@@ -10,21 +10,25 @@
 // —————————————————————————————————————————————————————————————————
 
 html, body {
-	font-family: $font;
-	font-size: 16px;
-	line-height: 1.5;
-	font-weight: $font-regular;
-	color: $text;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: $font-regular;
+  color: $text;
 
-	@include responsive(up, $desktop-lg) {
-		font-size: 20px;
-	}
+  @include responsive(up, $desktop-lg) {
+    font-size: 20px;
+  }
 }
 
 // text selection
 ::selection {
   background: $primary;
   color: $white;
+}
+
+strong {
+  font-weight: $font-bold;
 }
 
 @mixin font-size($fontSize: 1, $fontWeight: $font-regular, $lineHeight: 1.5) {
@@ -46,20 +50,20 @@ html, body {
 .h6 { @include font-size(1.25, $font-bold, 1.25); }
 
 .subtitle1 { 
-	@include font-size(1.125); letter-spacing: 0; 
+  @include font-size(1.125); letter-spacing: 0; 
 
-	& + & {
-		margin-top: 0.5em;
-	}
+  & + & {
+    margin-top: 0.5em;
+  }
 }
 .subtitle2 { @extend .subtitle1; font-weight: $font-bold }
 
 .body1 { 
-	@include font-size(); letter-spacing: 0; 
+  @include font-size(); letter-spacing: 0; 
 
-	& + & {
-		margin-top: 0.5em;
-	}
+  & + & {
+    margin-top: 0.5em;
+  }
 }
 .body2 { @extend .body1; font-weight: $font-bold }
 
@@ -68,9 +72,9 @@ html, body {
 .overline { @include font-size(0.875); }
 
 .button__inner { 
-	@include font-size(.75, $font-black, 1);
-	letter-spacing: 0.075rem;
-	text-transform: uppercase;
+  @include font-size(.75, $font-black, 1);
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
 }
 
 .code {
@@ -86,48 +90,48 @@ html, body {
 
 .body {
 
-	&--black { color: $text; }
-	&--grey { color: $grey-30; }
-	&--white { color: $text-contrast; }
-	&--disabled { color: $text-disabled; }
-	&--primary { color: $primary; }
-	&--secondary { color: $secondary; }
-	&--success { color: $success; }
-	&--info { color: $info; }
-	&--warning { color: $warning; }
-	&--error { color: $error; }
+  &--black { color: $text; }
+  &--grey { color: $grey-30; }
+  &--white { color: $text-contrast; }
+  &--disabled { color: $text-disabled; }
+  &--primary { color: $primary; }
+  &--secondary { color: $secondary; }
+  &--success { color: $success; }
+  &--info { color: $info; }
+  &--warning { color: $warning; }
+  &--error { color: $error; }
 }
 
 // alignement
 
 .body {
 
-	&--left { text-align: left; }
-	&--center { text-align: center; }
-	&--right { text-align: right; }
-	&--justify { text-align: justify; }
+  &--left { text-align: left; }
+  &--center { text-align: center; }
+  &--right { text-align: right; }
+  &--justify { text-align: justify; }
 }
 
 // weight
 
 .body {
 
-	&--light { font-weight: $font-light; }
-	&--regular { font-weight: $font-regular; }
-	&--bold { font-weight: $font-bold; }
+  &--light { font-weight: $font-light; }
+  &--regular { font-weight: $font-regular; }
+  &--bold { font-weight: $font-bold; }
 }
 
 // col text
 
 @for $i from 1 through 4 {
-	.colText--#{$i} {
-		column-count: $i;
-		column-gap: 2rem;
-	
-		@include responsive(down, $tablet) {
-			column-count: 1;
-		}
-	}
+  .colText--#{$i} {
+    column-count: $i;
+    column-gap: 2rem;
+  
+    @include responsive(down, $tablet-down) {
+      column-count: 1;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -136,11 +140,11 @@ html, body {
 
 .body {
 
-	&--zero {
-		font-family: $font-code;
+  &--zero {
+    font-family: $font-code;
 
-		.body--large & {
-			font-size: 19px;
-		}
-	}
+    .body--large & {
+      font-size: 19px;
+    }
+  }
 }

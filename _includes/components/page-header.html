@@ -7,21 +7,30 @@
 {% assign banner_image = include.banner_image %}
 {% assign banner_color = include.banner_color %}
 
-<div class="section page__header section--tabs{% if page.banner_color %} section--{{ page.banner_color }}{% else %} section--primary{% endif %}{% if page.banner_image %} background--cover{% endif %}"{% if page.banner_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.banner_image }}');"{% endif %}>
+<!-- capture banner_image path -->
+{% capture image_path %}{% if page.layout == "post" %}posts{% else %}background{% endif %}{% endcapture %}
+<div class="section section--maxWidth page__header{% if page.tabs %} section--tabs{% endif %}{% if page.banner_color or banner_color %} section--{{ page.banner_color }}{{ banner_color }}{% else %} section--primary{% endif %}{% if page.banner_image or banner_image %} background--cover{% endif %}"{% if page.banner_image or banner_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{{ image_path }}/{{ page.banner_image }}{{ banner_image }}');"{% endif %}>
   <div class="section__container">
-    <div class="section__header section__header--lg">
-      {% if page.label %}
-      <p class="section__label">{{ page.label }}</p>
-      {% endif %}
-      <h1 class="section__title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
-      {% if page.subtitle %}
-      <p class="section__subtitle">{{ page.subtitle }}</p>
-      {% endif %}
-      {% if page.tabs %}
-      <div class="tabs js-filter">
-        {% for tab in site.data.[page.tabs] %}
-        <a class="tab button__inner{% if forloop.first %} js-active{% endif %}" data-filter="{% if tab.name == "All" %}*{% else %}.{{ tab.name | slugify }}{% endif %}">{{ tab.name }}</a>
-        {% endfor %}
+    {% if page.layout == "post" %}
+    <!-- limit the content width for post pages -->
+    <div class="grid__wrapper grid--jc-center">
+    {% endif %}
+      <div class="section__header section__header--lg">
+        {% if page.label or label %}
+        <p class="section__label">{{ page.label }}{{ label }}</p>
+        {% endif %}
+        <h1 class="section__title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+        {% if page.subtitle or subtitle %}
+        <p class="section__subtitle">{{ page.subtitle }}{{ subtitle }}</p>
+        {% endif %}
+        {% if page.tabs %}
+        <div class="tabs js-filter">
+          {% for tab in site.data.[page.tabs] %}
+          <a class="tab button__inner{% if forloop.first %} js-active{% endif %}" data-filter="{% if tab.name == "All" %}*{% else %}.{{ tab.name | slugify }}{% endif %}">{{ tab.name }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      {% if page.layout == "post" %}
       </div>
       {% endif %}
     </div>

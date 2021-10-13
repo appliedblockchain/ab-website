@@ -1,4 +1,5 @@
 # Applied Blockchain Website
+
 - [Introduction](#introduction)
   - [Getting started](#getting-started)
   - [Dependencies & Methodology](#comments)
@@ -8,10 +9,10 @@
   - [Components](#components)
   - [Grid system](#grid-system)
 - [Create page](#create-page)  
+- [Create post](#create-post)
 - [Create project](#create-project)
 - [Create job](#create-job)
 - [Create event](#create-event)
-- [Create blog post](#create-blog-post)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -124,19 +125,18 @@ menus:
 ---
 ```
 
-| Parameter | Value | Description |
-| --- | --- |
+| Parameter | Values | Description |
+| --- | --- | --- |
 | `layout` | `default`, `index`, `post`, `project`, `webinar` | |
-| `title` | `string` | The page title. Used for the title on the page **and** the HTML title tag (that appears on the browser tabs) |
-| `headline` | `string` | Optionnal. Add if you want the title on the page to be different from the HTML title tag |
-| `subtitle` | `string` | Optionnal. Short sentence describing the page in more depth |
-| `background_image` | `string` | Add a background image to **the entire page**. Put the image in `assets/images/background` |
-| `banner_image` | `string` | Add a background image to **the page header page** |
+| `title` | string | The page title. Used for the title on the page **and** the HTML title tag (that appears on the browser tabs) |
+| `headline` | string | Optionnal. Add if you want the title on the page to be different from the HTML title tag |
+| `subtitle` | string | Optionnal. Short sentence describing the page in more depth |
+| `background_image` | string | Add a background image to **the entire page**. Put the image in `assets/images/background` |
+| `banner_image` | string | Add a background image to **the page header page** |
 | `banner_color` | `primary`, `dark`, `white`, `grey` | Change the page header background (or gradient) color. The default value is primary |
-| `link` | | Adds a button in the page header |
-| `tabs` | `string` | Add automatic tabs to the page header. The value indicates the file containing the tabs values in the _data folder (see media for example) |
+| `links` | | Adds buttons in the page header |
+| `tabs` | string | Add automatic tabs to the page header. The value indicates the file containing the tabs values in the _data folder (see [blog](https://appliedblockchain.com/blog) for example) |
 | `menus` | | Set which menus the page appears in. See [Jekyll menus](#jekyll-menus) for more information |
-
 
 ### Sections
 
@@ -158,17 +158,6 @@ Each page is divided in sections (usually differenciated by background colours).
 <!-- repeat if needed -->
 ```
 
-#### Section header
-
-The `section-header` is a built-in component, to ensure styling consistency. Here are its properties.
-
-| Prop | Value | Description |
-| --- | --- |
-| `label` | `string` | |
-| `title` | `string` | |
-| `subtitle` | `string` | |
-| `size` | `sm`, `md` | `md` is the default value, use `sm` for subheaders |
-
 #### Variants
 
 Add the following classes to the section elements to use each variant.
@@ -176,9 +165,11 @@ Add the following classes to the section elements to use each variant.
 | Class | Description |
 | --- | --- |
 | `section--fullWidth` | removes padding left and right |
+| `section--maxWidth` | sets max-width: 600px for `section__header` and `section__content` |
 | `section--overlap` | used a section that overlaps the page headar (see contact page) |
+| `section--tabs` | variant used for pages with tabs in the section header (e.g [blog](https://appliedblockchain.com/blog)) |
 
-#### Background colors
+#### Background color
 
 Add the following classes to change a section's background color (by default is white).
 
@@ -186,6 +177,17 @@ Add the following classes to change a section's background color (by default is 
 | --- | --- |
 | `section--primary` | Blue (primary color) background |
 | `section--grey` | light grey background |
+
+#### Section header
+
+The `section-header` is a built-in component, to ensure styling consistency. Here are its properties.
+
+| Prop | Value | Description |
+| --- | --- | --- |
+| `label` | string | |
+| `title` | string | |
+| `subtitle` | string | |
+| `size` | `sm`, `md` | `md` is the default value, use `sm` for subheaders |
 
 ### Components
 
@@ -348,25 +350,9 @@ testimonial:
 <p>&nbsp;</p>
 <!------------------------------------------------------>
 
-## Create blog post
+## Create post
 
-- Create a new file in the `_posts` folder.
-- Name the file with a slugged version of the title, preceded by the date of the post.
-> If the title is `Blockchain as a Database`, it becomes `YYYY-MM-DD-blockchain-as-a-database`
-- Copy/paste this code in the file and fill the content
-```yml
----
-layout: post
-title: 
-image: # image file name > use a slugify version of the title, remove if no image
-category: # blog / press-release / news / videos
-dlc: true # add for PRESS RELEASES if there is a press kit 
-social: # linkedin / medium
-link: # if news is external
-headline: # introduction text
----
-```
-- If the news is internal, use [markdown terminology](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to write the article and it will create the styling automoatically.
+[Documentation](https://github.com/appliedblockchain/ab-website/tree/master/_posts/README.md)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

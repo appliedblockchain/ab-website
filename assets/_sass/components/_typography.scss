@@ -42,6 +42,7 @@ strong {
   }
 }
 
+.h0 { @include font-size(6, $font-light); }
 .h1 { @include font-size(2.5, $font-bold, 1.25); }
 .h2 { @include font-size(2, $font-bold, 1.25); }
 .h3 { @include font-size(1.75, $font-bold, 1.25); }

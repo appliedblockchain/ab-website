@@ -4,10 +4,231 @@ title: "Home"
 menus:
   header:
     weight: 1
+  company:
+    weight: 1
 ---
 
-<div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
-  <div id="particles-js"></div>
+<div class="landing">
+  <div class="landing__main section section--primary section--maxWidth">
+    <div class="section__container">
+      <div class="section__header">
+        <h1 class="section__title">Welcome to Applied Blockchain</h1>
+        <p class="section__subtitle h2">We build applications with added trust and data privacy</p>
+      </div>
+      <div class="section__content">
+        <div class="button__wrapper">
+          <a href="{% link projects.html %}" class="button button--white button--lg">Projects</a>
+          <a href="{% link products.html %}" class="button button--white button--lg">Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="landing__banner section section--primary-light">
+    <div class="section__container">
+      <div class="section__content">
+        <div class="grid__wrapper grid--jc-space-between grid--ai-center">
+          <p>We are hiring! Join our growing team of blockchain experts and industry professionals</p>
+          <a href="https://apply.workable.com/appliedblockchain/" target="_blank" class="button button--sm b button--text button--black">
+            View careers
+            {% svg assets/icons/feather/external-link.svg %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="landing__bottom section section--primary-dark">
+    <div class="section__container">
+      <div class="section__content">
+        <div class="grid__wrapper landing__widgets">
+          <div class="grid__wrapper grid__spacing--1 grid__item grid__item--6 grid--column">
+            <div class="grid__item grid--row grid--ai-center">
+              <p class="caption">Latest news</p>
+              <div class="owl-carousel-dots-container-news display--flex"></div>
+              <a href="{% link blog.html %}" class="button button--sm button--text button--white">
+                View all
+                {% svg assets/icons/feather/chevron-right.svg %}
+              </a>
+            </div>
+            <div class="grid__item spinner">
+              <div class="owl-carousel owl-carousel-news">
+                {% for item in site.data.news %}
+                <div class="card card--sm card--landscape card--transparent card--news">
+                  {% if item.image %}
+                  <div class="card__media">
+                    <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="Cover image for blog post" class="card__thumbnail pb-0">
+                  </div>
+                  {% endif %}        
+                  <div class="card__header">
+                    <p class="card__subtitle">{{ item.title }}</p>
+                    <p class="card__subtitle">{{ item.body }}</p>
+                  </div>
+                  <div class="card__actions">
+                    <a href="{% if item.link.type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.link.url }}" target="_blank" rel="noopener" class="button button--sm button--white">
+                      {% if item.link.label %}{{ item.link.label }}{% else %}Read{% endif %}
+                    </a>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="divider divider--portrait divider--white position--absolute"></div>
+          <div class="grid__wrapper grid__spacing--1 grid__item grid__item--6 grid--column">
+            <div class="grid__item grid--row grid--ai-center">
+              <p class="caption">Gartner peer insights</p>
+              <div class="owl-carousel-dots-container-rating display--flex"></div>
+            </div>
+            <div class="grid__item spinner">
+              <div class="owl-carousel owl-carousel-rating">
+                {% for item in site.data.peer-insights %}
+                <div class="card card--sm card--landscape card--transparent">
+                  <div class="card__header">
+                    <p class="card__subtitle">{{ item.title }}</p>
+                    <div class="card__subtitle rating">
+                      {% include ui/rating.html rating_value = 1 rating_score = item.rating %}
+                      {% include ui/rating.html rating_value = 2 rating_score = item.rating %}
+                      {% include ui/rating.html rating_value = 3 rating_score = item.rating %}
+                      {% include ui/rating.html rating_value = 4 rating_score = item.rating %}
+                      {% include ui/rating.html rating_value = 5 rating_score = item.rating %}
+                    </div>
+                  </div>
+                  <div class="card__actions">
+                    <a href="{{ item.link.url }}" target="_blank" rel="noopener" class="button button--sm button--white">
+                      Read full review
+                      {% svg assets/icons/feather/external-link.svg %}
+                    </a>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html 
+      title = "Trutest by global organisations and startups alike"
+      size = "sm"
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2 grid--jc-center grid__inline grid__inline--xl7 grid__inline--lg6 grid__inline--md5 grid__inline--sm4 grid__inline--3">
+        {% for logo in site.data.clients %}
+        <div class="grid__item">
+          <img src="{{ site.base-url }}{{ site.imageurl }}/logos/clients/{{ logo.name | slugify }}.png" alt="Logo for {{ logo.name }}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section--grey">
+  <div class="section__container">
+    <div class="grid__wrapper grid__spacing--8">
+      <div class="grid__item grid__item--6">
+        {% include components/section-header.html 
+          title = "We Solve Problems"
+          subtitle = "At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced confidential computing, secure enclaves, cryptography and blockchain technology to build applications that maximise trust, data privacy and security."
+          link_label = "View our projects"
+          link_url = "projects"
+        %}
+      </div>
+      <div class="grid__item grid__item--6">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section--grey">
+  <div class="section__container">
+    <div class="grid__wrapper grid__spacing--8">
+      <div class="grid__item grid__item--6">
+      </div>
+      <div class="grid__item grid__item--6 grid--ai-right">
+        {% include components/section-header.html 
+          title = "We Build Products"
+          subtitle = "We build products to solve a problem once for our many clients. We focus on confidential computing, secure enclaves, and advanced cryptography to enable businesses to do more together, while reducing their cyber risk."
+          link_label = "View our products"
+          link_url = "products"
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section--primary">
+  <div class="section__container">
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--4 grid__inline grid__inline--lg4 grid__inline--2">
+        {% for counter in site.data.counters %}
+        <div class="grid__item">
+          <div class="counter">
+            {% svg /assets/icons/feather/{{counter.icon}}.svg class="counter__icon" %}
+            <p class="counter__number h0">{{ counter.number }}</p>
+            <p class="counter__title h6">{{ counter.title }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html 
+      title = "What people say about us"
+    %}
+    <div class="section__content">
+      <div class="owl-carousel owl-carousel-testimonials">
+        {% for quote in site.data.testimonials %}
+        <div class="card card--md">
+          <div class="card__content">
+            {% svg assets/icons/quote.svg class="fill--primary-light" %}
+          </div>
+          <p class="card__content subtitle1">{{ quote.quote }}</p>
+          <div class="card__content">
+            <div class="card card--xs card--transparent card--landscape card--portrait">
+              <div class="card__media">
+                <img src="{{ site.base-url }}{{ site.imageurl }}/team/clients/{{ quote.image }}.png" alt="Portrait of {{ quote.author }}" class="card__thumbnail">
+              </div>
+              <div class="card__header">
+                <p class="card__title">{{ quote.author }}</p>
+                <p class="card__subtitle">{{ quote.position }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section--grey">
+  <div class="section__container">
+    {% include components/section-header.html 
+      title = "Featured in"
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2 grid--jc-center grid__inline grid__inline--lg4 grid__inline--md3 grid__inline--sm2 grid__inline--2">
+        {% for image in site.static_files %}
+        {% if image.path contains 'logos/media' %}
+          <div class="grid__item">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="Logo">
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- <div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
   {% include components/page-header.html
     headline = site.description
   %}
@@ -39,14 +260,6 @@ menus:
     </div>
   </div>
   <div class="row widget__bar card__wrapper">
-    <div class="card grid__item--xl8 grid__item--lg7 body--left">
-      <p class="body body--bold card__title">Trusted by global organisations and startups alike</p>
-      <div class="card__body">
-        {% include components/carousel.html
-          variant = "clients"
-        %}
-      </div>
-    </div>
     <div class="grid__item--xl4 grid__item--lg5">
       <div class="owl-carousel owl-carousel-news widget--news card card--xs card--portrait background--shadow body--black">
         {% for item in site.data.news %}
@@ -100,9 +313,6 @@ menus:
       <a href="{{ site.base-url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
         <p class="button__inner">Services</p>
       </a>
-      <!-- <a href="{{ site.base-url }}/products" class="ga-button-services button button--primary button--animate fa fa-box">
-        <p class="button__inner">Products</p>
-      </a> -->
     </div>
   </div>
 </section>
@@ -158,17 +368,6 @@ menus:
     <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
       <p class="button__inner">Projects</p>
     </a>
-  </div>
-</section>
-
-<section id="index-testimonials" class="section section--white  pr-0 pl-0">
-  <div class="section__content">
-    <div class="card testimonials">
-      {% include components/carousel.html
-        type = "testimonials"
-        variant = "testimonials_clients"
-      %}
-    </div>
   </div>
 </section>
 
@@ -240,12 +439,4 @@ menus:
       </a>
     </div>
   </div>
-</section>
-
-<!-- particles animation -->
-<script src="{{ site.base-url }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
-<script>
-  particlesJS.load('particles-js', 'assets/vendor/particles/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-</script>
+</section> -->

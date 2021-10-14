@@ -166,21 +166,5 @@
 
 .pipedriveWebForms {
   padding: $spacing*4 !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:before {
-    content: "";
-    position: absolute;
-    animation: spin 1.2s infinite;
-    border: $spacing*0.75 outset $primary;
-    border-radius: 50%;
-    height: $spacing*2;
-    width: $spacing*2;
-  }
-
-  iframe {
-    background-color: $background-paper;
-  }
+  background-color: $background-paper;
 }

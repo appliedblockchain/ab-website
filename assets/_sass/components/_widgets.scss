@@ -4,7 +4,6 @@
 // general
 // share
 // newsletter
-// news
 // cookies
 // —————————————————————————————————————————————————————————————————
 
@@ -77,6 +76,7 @@
   bottom: 0;
   width: 100vw;
   opacity: 1;
+  display: none;
 
   @include responsive(down, $mobile-down) {
     justify-content: flex-start;

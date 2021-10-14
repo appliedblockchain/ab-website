@@ -1,11 +1,11 @@
 // —————————————————————————————————————————————————————————————————
 // elements
 // direction
+// spacing
+// item width
 // justifyContent
 // alignItems
 // alignItems
-// spacing
-// item width
 // misc
 // —————————————————————————————————————————————————————————————————
 
@@ -43,36 +43,6 @@
     }
   }
 }
-
-// —————————————————————————————————————————————————————————————————
-// direction
-// —————————————————————————————————————————————————————————————————
-
-.grid--column { flex-direction: column; }
-.grid--column-reverse { flex-direction: column-reverse; }
-.grid--row { flex-direction: row; flex-wrap: nowrap; }
-.grid--row-reverse { flex-direction: row-reverse; flex-wrap: nowrap; }
-
-// —————————————————————————————————————————————————————————————————
-// justifyContent
-// —————————————————————————————————————————————————————————————————
-
-.grid--jc-center { justify-content: center;}
-.grid--jc-flex-end { justify-content: flex-end;}
-.grid--jc-flex-start { justify-content: flex-start;}
-.grid--jc-space-around { justify-content: space-around;}
-.grid--jc-space-between { justify-content: space-between;}
-.grid--jc-space-evenly { justify-content: space-evenly;}
-
-// —————————————————————————————————————————————————————————————————
-// alignItems
-// —————————————————————————————————————————————————————————————————
-
-.grid--ai-stretch { align-items: stretch; }
-.grid--ai-center { align-items: center; }
-.grid--ai-flex-end { align-items: flex-end; }
-.grid--ai-flex-start { align-items: flex-start; }
-.grid--ai-baseline { align-items: baseline; }
 
 // —————————————————————————————————————————————————————————————————
 // spacing
@@ -150,11 +120,77 @@
 }
 
 // —————————————————————————————————————————————————————————————————
-// misc
+// direction
+// —————————————————————————————————————————————————————————————————
+
+.grid--column { flex-direction: column !important; }
+.grid--column-reverse { flex-direction: column-reverse !important; }
+.grid--row { flex-direction: row; flex-wrap: nowrap !important; }
+.grid--row-reverse { flex-direction: row-reverse; flex-wrap: nowrap !important; }
+
+// —————————————————————————————————————————————————————————————————
+// justifyContent
+// —————————————————————————————————————————————————————————————————
+
+.grid--jc-center { justify-content: center !important; }
+.grid--jc-flex-end { justify-content: flex-end !important; }
+.grid--jc-flex-start { justify-content: flex-start !important; }
+.grid--jc-space-around { justify-content: space-around !important; }
+.grid--jc-space-between { justify-content: space-between !important; }
+.grid--jc-space-evenly { justify-content: space-evenly !important; }
+
+// —————————————————————————————————————————————————————————————————
+// alignItems
+// —————————————————————————————————————————————————————————————————
+
+.grid--ai-stretch { align-items: stretch !important; }
+.grid--ai-center { align-items: center !important; }
+.grid--ai-flex-end { align-items: flex-end !important; }
+.grid--ai-flex-start { align-items: flex-start !important; }
+.grid--ai-baseline { align-items: baseline !important; }
+
+// —————————————————————————————————————————————————————————————————
+// inline
 // —————————————————————————————————————————————————————————————————
 
 // have children all the same width
-.grid__wrapper--inline {
-  flex-wrap: nowrap;
+.grid__inline {
+  flex-wrap: wrap;
   flex-direction: row;
 }
+
+@for $columnWidth from 1 through 12 {
+
+  .grid__inline--#{$columnWidth} {
+
+    > .grid__item {
+      flex-basis: 100%/$columnWidth;
+    }
+  }
+}
+
+@mixin break($breakpoint) {
+
+  @include responsive(up, $breakpoint) {
+
+    @for $columnWidth from 1 through 12 {
+
+      &#{$columnWidth} {
+    
+        > .grid__item {
+          flex-basis: 100%/$columnWidth;
+        }
+      }
+    }
+  }
+}
+
+
+.grid__inline {
+
+  &--sm { @include break($mobile-up); }
+  &--md { @include break($tablet-up); }
+  &--lg { @include break($laptop-up); }
+  &--xl { @include break($desktop-up); }
+}
+

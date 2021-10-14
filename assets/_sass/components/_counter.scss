@@ -1,0 +1,17 @@
+.counter {
+  position: relative;
+  text-align: center;
+
+  &__number {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    fill: $primary-dark;
+    width: $spacing*16;
+    height: auto;
+  }
+}

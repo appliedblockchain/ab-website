@@ -1,31 +1,14 @@
-- title: Applied Blockchain Receives Grant to Provide Key Chainlink Hardhat Starter Kit Updates
-  button_label: Read
-  link: https://blog.chain.link/applied-blockchain-receives-grant-to-upgrade-hardhat-starter-kit/
+- title: "Applied Blockchain Receives Grant to Provide Key Chainlink Hardhat Starter Kit Updates"
+  image: "posts/grant-upgrade-hardhat-starter-kit.jpg"
+  link:
+    url: "https://blog.chain.link/applied-blockchain-receives-grant-to-upgrade-hardhat-starter-kit/"
 
-- title:
-  body: “Consistently deliver value! A great team who work both autonomously and alongside us.”
-  button_label: View full review
-  link: https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/review/view/3468146
-  image: carousel/testimonials_clients/gartner-small.png
-  rating: 5
+- title: "Physical NFTs: What the Damien Hirst project The Currency gets right about physical NFTs"
+  link:
+    type: "internal"
+    url: "physical-nfts"
 
-# - title: “More than just development”
-#   body:
-#   button_label: View full review
-#   link: https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/review/view/3467712
-#   image: carousel/testimonials_clients/gartner-small.png
-#   rating: 5
-
-- title: Physical NFTs
-  body: "What the Damien Hirst project The Currency gets right about physical NFTs"
-  button_label: Learn more
-  button_label: Read
-  link_type: internal
-  link: physical-nfts
-
-# - title: 4 Pragmatic Blockchain Design Patterns for Business
-#   body:
-#   button_label: Read article
-#   link: four-blockchain-design-patterns
-#   link_type: internal
-#   image:
+- title: 4 Pragmatic Blockchain Design Patterns for Business
+  link:
+    type: "internal"
+    url: "four-blockchain-design-patterns"

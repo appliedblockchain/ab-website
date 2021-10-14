@@ -2,8 +2,8 @@
 
 // —————————————————————————————————————————————————————————————————
 // general
-// size
 // color
+// size
 // variants
 // —————————————————————————————————————————————————————————————————
 
@@ -62,6 +62,11 @@
 
   &__subtitle {
     @extend .subtitle1;
+    max-width: $page-max-width/2;
+  }
+
+  &__button {
+    margin-top: $spacing*4;
   }
 
   &__content {
@@ -96,6 +101,14 @@
     padding-top: 0;
   }
 
+  &.background--cover {
+    
+    &:before {
+      @include pseudo-element("", 0, 0 ,0, 0, 100%, 100%);
+      background-image: linear-gradient(to left, rgba($background-color, 0.6), $background-color);
+    }
+  }
+
   .section__title,
   .card__title {
     color: $title-color;
@@ -112,11 +125,14 @@
     }
   }
 
-  &.background--cover {
-    
+  .spinner {
+
     &:before {
-      @include pseudo-element("", 0, 0 ,0, 0, 100%, 100%);
-      background-image: linear-gradient(to left, rgba($background-color, 0.6), $background-color);
+      border-color: $title-color;
+    }
+
+    > * {
+      background-color: $background-color;
     }
   }
 }
@@ -126,6 +142,8 @@
   &--white { @include background-color($background-paper); }
   &--grey { @include background-color($background-default); }
   &--primary { @include background-color($primary, $primary-text-contrast, $primary-text-contrast); }
+  &--primary-light { @include background-color($primary-light, $text, $text); }
+  &--primary-dark { @include background-color($primary-dark, $primary-text-contrast, $primary-text-contrast); }
   &--dark { @include background-color($dark, $text-contrast, $text-contrast); }
 }
 

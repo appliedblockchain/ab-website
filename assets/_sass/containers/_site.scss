@@ -123,10 +123,10 @@ ul {
 // z-index
 // —————————————————————————————————————————————————————————————————
 
-.anchor { z-index: 9; }
-.widget--cookie { z-index: 10; }
-.navbar { z-index: 20; }
-.modal { z-index: 30; }
+.anchor { z-index: 5; }
+.widget--cookie { z-index: 6; }
+.navbar { z-index: 7; }
+.modal { z-index: 10; }
 
 @for $i from 0 through 9 {
   .z-index--#{$i} { z-index: $i; }
@@ -167,28 +167,42 @@ ul {
 }
 
 .p {
-  &-0 { padding: 0 !important; }
+  &-0 { padding: 0; }
 
   &t {
-    &-0 { padding-top: 0 !important; }
+    &-0 { padding-top: 0; }
   }
 
   &r {
-    &-0 { padding-right: 0 !important; }
+    &-0 { padding-right: 0; }
   }
 
   &b {
-    &-0 { padding-bottom: 0 !important; }
+    &-0 { padding-bottom: 0; }
   }
 
   &l {
-    &-0 { padding-left: 0 !important; }
+    &-0 { padding-left: 0; }
   }
 }
 
 .display {
 
   &--block { display: block; }
+  &--flex { display: flex; }
+}
+
+.position {
+
+  &--absolute { position: absolute; }
+  &--relative { position: relative; }
+}
+
+.image {
+
+  &--greyscale {
+    filter: grayscale(1);
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -219,19 +233,50 @@ ul {
 
 .rating {
   display: flex;
-  align-self: center;
-  
-  &__logo {
-    margin-right: $spacing;
-    max-width: 15rem;
-  }
 
   &__item {
-    margin-right: 0 !important;
-    stroke: $secondary-light;
+    width: $spacing*2.5;
+    height: auto;
+    fill: $warning;
+    opacity: 0.33;
 
-    & + & {
-      margin-left: $spacing/2;
+    &--active {
+      opacity: 1;
     }
+  }
+}
+
+.divider {
+  background-color: rgba($text, 0.15);
+  border-radius: $spacing/4;
+  height: $spacing/2;
+  width: $spacing/2;
+  
+  &--white { background-color: rgba($text-contrast, 0.15); }
+
+  &--portrait { height: 100%; }
+  &--landscape { width: 100%; }
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: $spacing/2;
+  background-image: linear-gradient(to right, $grey-30 0%, $grey-30 50%, transparent 50%);
+  background-size: $spacing*5 100%;
+  background-repeat: repeat-x;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0; 
+    height: 0; 
+    border-top: $spacing*1.2 solid transparent;
+    border-bottom: $spacing*1.2 solid transparent;
+    border-left: $spacing*1.2 solid $grey-30;
+    transform: scaleX(3);
   }
 }

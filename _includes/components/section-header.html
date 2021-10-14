@@ -8,6 +8,11 @@
 {% assign title_component = include.title_component %}
 {% assign subtitle = include.subtitle %}
 {% assign subtitle_component = include.subtitle_component %}
+{% assign subtitle_component = include.subtitle_component %}
+{% assign subtitle_component = include.subtitle_component %}
+{% assign link_label = include.link_label %}
+{% assign link_url = include.link_url %}
+{% assign link_title = include.link_title %}
 
 <div{% if id %} id="{{ id }}"{% endif %} class="section__header section__header--{% if size %}{{ size }}{% else %}md{% endif %}{% if class %} {{ class }}{% endif %}">
   {% if label %}
@@ -18,5 +23,12 @@
   {% endif %}
   {% if subtitle %}
   <p class="section__subtitle">{{ subtitle }}</p>
+  {% endif %}
+  {% if link_url %}
+  <div class="button__wrapper">
+    <a  href="{% link {{ link_url }}.html %}" title="{{ link_title }}" class="section__button button button--primary">
+      <p>{{ link_label }}</p>
+    </a>
+  </div>
   {% endif %}
 </div>

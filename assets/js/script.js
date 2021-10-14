@@ -65,10 +65,10 @@ var displayCookieBar = function() {
 	}
 }
 
-$(".widget--cookie button").on("click", cookieClose)
+$(".widget--cookie .button").on("click", cookieClose)
 displayCookieBar()
 
-$(".widget--cookie button").click(function(){
+$(".widget--cookie .button").click(function(){
 	$(".widget--cookie").addClass("js-cookie-accepted");
 })
 

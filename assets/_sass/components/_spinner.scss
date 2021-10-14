@@ -1,0 +1,54 @@
+// —————————————————————————————————————————————————————————————————
+// general
+// position
+// color
+// —————————————————————————————————————————————————————————————————
+
+// —————————————————————————————————————————————————————————————————
+// general
+// —————————————————————————————————————————————————————————————————
+
+.spinner {
+  min-height: $spacing*6;
+
+  &:before {
+    content: "";
+    position: absolute;
+    animation: spin .8s infinite;
+    border: $spacing*0.75 outset $primary;
+    border-radius: 50%;
+    height: $spacing*2;
+    width: $spacing*2;
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// position
+// —————————————————————————————————————————————————————————————————
+
+@mixin position($position) {
+
+  &:before {
+    $position: 0;
+  }
+}
+
+.spinner {
+
+  &--top { @include position(top); }
+  &--right { @include position(right); }
+  &--bottom { @include position(bottom); }
+  &--left { @include position(left); }
+
+  &--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// color
+// —————————————————————————————————————————————————————————————————
+
+// see color section of _section.scss file

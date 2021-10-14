@@ -4,6 +4,8 @@
 // elements
 // size
 // direction
+// color
+// variants
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -20,7 +22,7 @@
   text-align: left;
   box-shadow: $box-shadow-sm;
   background-color: $background-paper;
-
+  
   &__media,
   &__header,
   &__content,
@@ -33,20 +35,24 @@
     flex-direction: column;
   }
 
+  &__media {
+  // fixes shrinking images
+    flex-shrink: 0;
+  }
+
   &__thumbnail {
     width: 100%;
     padding-bottom: 50%;
   }
 
-  &__content {
-
-    // allow post card bold text to be 
-    strong {
-      display: inline-block;
-    }
+  &__actions {
+    justify-content: space-between;
+    // prevent shrinking
+    flex-shrink: 0;
   }
 
-  &__actions {
+  &__title {
+    display: flex;
     justify-content: space-between;
   }
 }
@@ -58,7 +64,7 @@
 @mixin size($size, $ratio) {
   border-radius: $ratio;
 
-  .card {
+  > .card {
 
     &__media,
     &__header,
@@ -84,36 +90,63 @@
       }
     }
 
+    &__header {
+
+      & > .card {
+
+        &__label {
+          
+          + .card__title,
+          + .card__subtitle {    
+            margin-top: $ratio/4;
+          }
+        }
+    
+        &__title {
+          
+          + .card__subtitle {
+            margin-top: $ratio/2;
+          }
+        }
+    
+        &__subtitle {
+    
+          + .card__subtitle {
+            margin-top: $ratio/2;
+          }
+        }        
+      }
+    }
+  }
+
+  .card {
+
+    &__media,
     &__thumbnail {
       border-radius: $ratio/3;
     }
 
     &__label {
       @extend .caption;
-      
-      + .card__title,
-      + .card__subtitle {    
-        margin-top: $ratio/4;
-      }
     }
-    
+
     &__title {
       color: $primary;
-      @if $size == sm {
+      @if $size == xs {
+        @extend .caption;
+      } @else if $size == sm {
         @extend .subtitle2;
       } @else if $size == md {
         @extend .h6;
       } @else if $size == lg {
         @extend .h4;
       }
-      
-      + .card__subtitle {
-        margin-top: $ratio/2;
-      }
     }
 
     &__subtitle {
-      @if $size == sm {
+      @if $size == xs {
+        @extend .overline;
+      } @else if $size == sm {
         @extend .overline;
       } @else if $size == md {
         @extend .body1;
@@ -125,7 +158,7 @@
 
   &.card--landscape {
 
-    .card {
+    > .card {
 
       &__media,
       &__header,
@@ -153,7 +186,7 @@
     background-color: transparent;
     box-shadow: none;
 
-    .card {
+    > .card {
 
       &__media,
       &__header,
@@ -171,11 +204,35 @@
         }
       }
     }
+
+    &.card--landscape {
+
+      > .card {
+  
+        &__media,
+        &__header,
+        &__content,
+        &__actions {
+          padding-top: 0;
+          padding-right: $ratio;
+          padding-bottom: 0;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
   }
 }
 
 .card {
 
+  &--xs { @include size(xs, $spacing); }
   &--sm { @include size(sm, $spacing*2); }
   &--md { @include size(md, $spacing*3); }
   &--lg { @include size(lg, $spacing*4); }
@@ -186,8 +243,60 @@
 // —————————————————————————————————————————————————————————————————
 
 .card--landscape {
-  
-  .card {
-    flex-direction: row;
+  flex-direction: row;
+}
+
+// —————————————————————————————————————————————————————————————————
+// color
+// —————————————————————————————————————————————————————————————————
+
+@mixin color($background-color) {
+  background-color: $background-color;
+}
+
+.card {
+
+  &--grey { @include color($background-default); }
+  &--white { @include color($background-paper); }
+}
+
+// —————————————————————————————————————————————————————————————————
+// variants
+// —————————————————————————————————————————————————————————————————
+
+.card {
+
+  &--noShadow {
+    box-shadow: none;
+  }
+
+  &--news {
+
+    .card__thumbnail {
+      height: $spacing*5;
+      width: auto !important;
+    }
+
+    .card__header {
+      flex: 1;
+    }
+  }
+
+  &--portrait {
+    align-items: center;
+
+    .card {
+
+      &__media {
+        padding-right: $spacing*2 !important;
+      }
+      
+      &__thumbnail {
+        width: $spacing*8;
+        height: $spacing*8;
+        border-radius: $spacing*8;
+        padding-bottom: 0;
+      }
+    }
   }
 }

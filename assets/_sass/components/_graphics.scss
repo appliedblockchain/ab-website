@@ -2,17 +2,28 @@ svg {
   fill: $text;
 }
 
+.fill {
+
+  &--primary { fill: $primary; }
+  &--primary-light { fill: $primary-light; }
+  &--primary-dark { fill: $primary-dark }
+  &--secondary { fill: $secondary; }
+  &--highlight { fill: $highlight; }
+  &--dark { fill: $dark; }
+  &--white { fill: $white; }
+}
+
 .stroke {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
 
   &--primary { stroke: $primary; }
+  &--primary-light { stroke: $primary-light; }
+  &--primary-dark { stroke: $primary-dark }
   &--secondary { stroke: $secondary; }
   &--highlight { stroke: $highlight; }
   &--dark { stroke: $dark; }
-  &--primary-lighten { stroke: $primary-light; }
-  &--primary-darken { stroke: $primary-dark }
   &--white { stroke: $white; }
 
   &--sm { stroke-width: 2; }

@@ -53,7 +53,7 @@ a {
     fill: $text;
   }
   
-  &--stroke {
+  &.button--stroke {
     background-color: transparent;
     border-color: $color;
     color: $text;
@@ -68,7 +68,7 @@ a {
     }
   }
   
-  &--text {
+  &.button--text {
     background-color: transparent;
     color: $color;
 
@@ -87,6 +87,8 @@ a {
 
   &--primary { @include color($primary, $primary-text-contrast, $primary-dark); }
   &--secondary { @include color($secondary, $secondary-text-contrast, $secondary-dark); }
+  &--white { @include color($white, $primary, $background-default); }
+  &--black { @include color($black, $text-contrast, $deep-black); }
   &--grey { @include color($grey-60, $text-contrast, $grey-70); }
   &--success { @include color($success, $success-text-contrast, $success-dark); }
   &--info { @include color($info, $info-text-contrast, $info-dark); }

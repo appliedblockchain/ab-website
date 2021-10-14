@@ -19,8 +19,8 @@ $(".tab--approach .tabs a").click(function(event) {
 
 $(".tab--jobs .tabs a").click(function(event) {
 	event.preventDefault();
-	$(this).removeClass("button--primary-lighten");
-	$(this).siblings().addClass("button--primary-lighten");
+	$(this).removeClass("button--primary-light");
+	$(this).siblings().addClass("button--primary-light");
 	var tab = $(this).attr("href");
 	$(".tab--jobs .tab__target").not(tab).css("display", "none");
 	$(tab).fadeIn(400);
@@ -30,8 +30,8 @@ $(".tab--jobs .tabs a").click(function(event) {
 
 $(".tab--events .tabs a").click(function(event) {
 	event.preventDefault();
-	$(this).removeClass("button--primary-lighten");
-	$(this).siblings().addClass("button--primary-lighten");
+	$(this).removeClass("button--primary-light");
+	$(this).siblings().addClass("button--primary-light");
 	var tab = $(this).attr("href");
 	$(".tab--events .tab__target").not(tab).css("display", "none");
 	$(tab).fadeIn(400);

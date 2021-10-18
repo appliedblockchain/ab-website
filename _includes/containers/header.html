@@ -25,20 +25,20 @@
 
   <!-- META -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="{% if page.layout =='post' or page.layout =='webinar' %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}">
+  <meta name="description" content="{% if page.layout == "post" or page.layout == "webinar" %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
   <!-- Open graphs protocal tags (creates rich content for social sharing) -->
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}"/>
-  <meta property="og:description" content="{% if page.layout =='post' or page.layout =='webinar' %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}"/>
-  <meta property="og:image" content="{{ site.url }}{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% elsif page.layout == 'webinar' %}events/{{ page.name | remove: '.html' }}.jpg{% elsif page.layout == 'beyond' %}social-beyond.png{% else %}social.jpg{% endif %}"/>
+  <meta property="og:description" content="{% if page.layout == "post" or page.layout == "webinar" %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}"/>
+  <meta property="og:image" content="{{ site.url }}{{ site.imageurl }}/{% if page.layout == "post" %}posts/{{ page.image }}.jpg{% elsif page.layout == "webinar" %}events/{{ page.name | remove: '.html' }}.jpg{% elsif page.layout == "beyond" %}social-beyond.png{% else %}social.jpg{% endif %}"/>
   <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
   <!-- Twitter cards tags (creates rich content for social sharing) -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@SILENTDATA1">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.layout =='post' or page.layout =='webinar' %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.imageurl }}/{% if page.layout == 'post' %}posts/{{ page.image }}.jpg{% elsif page.layout == 'webinar' %}events/{{ page.name | remove: '.html' }}.jpg{% elsif page.layout == 'beyond' %}social-beyond.png{% else %}social.jpg{% endif %}">
+  <meta name="twitter:description" content="{% if page.layout == "post" or page.layout == "webinar" %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.imageurl }}/{% if page.layout == "post" %}posts/{{ page.image }}.jpg{% elsif page.layout == "webinar" %}events/{{ page.name | remove: '.html' }}.jpg{% elsif page.layout == "beyond" %}social-beyond.png{% else %}social.jpg{% endif %}">
   <meta name="twitter:site" content="{{ site.url }}{{ page.url }}" />
   
   <!-- FONTS (preload here to avoid FOUT) -->
@@ -89,8 +89,8 @@
   <button class="button button--sm button--primary">Got it</button>
 </div>
 
-{% if page.layout != 'beyond' %}
+{% if page.layout != "beyond" %}
 {% include components/navbar.html %}
 {% endif %}
 
-<div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page">
+<div id="{% if page.layout == "post" %}post{% elsif page.layout == "case-study" %}case-study{% else %}{{ page.title | slugify }}{% endif %}" class="page">

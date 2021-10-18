@@ -240,17 +240,17 @@ background_color: white # do not change
 
 ## Create project
 
-- In the `_projects` folder, create a new .md file.
+- In the `_case-studies` folder, create a new .md file.
 - Name it with a slugified version of the client name (e.g. Lloyd's register becomes `lloyd-s-register.md`).
 - Copy/paste the code below and fill it accordingly.
 ```yml
 ---
-layout: "project" # do not change
-order: # number, specify the order it will appear on the projects page
+layout: "case-study" # do not change
+order: # number, specify the order it will appear on the case-studies page
 case_study: true # add if the project has a standalone page
 title: # company name
 subtitle: # short project/deliverable description
-industry: 
+industries: 
 summary: # longer description of the company/project
 link: # [optionnal] external link to company website (or other)
 link_title: # [optionnal] # overrides default link title
@@ -292,7 +292,7 @@ testimonial:
     company: 
 ---
 ```
-- [Here is an example](https://appliedblockchain.com/projects/appii/) of how each is displayed.
+- [Here is an example](https://appliedblockchain.com/case-studies/appii/) of how each is displayed.
 - Add logo in the `assets/images/carousel/clients_color` folder.
 > Png format. No white space around the logo. File name should be the same as the .md file
 

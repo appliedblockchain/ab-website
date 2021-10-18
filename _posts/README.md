@@ -59,3 +59,8 @@ You can write markdown code here.
 | `podcast` | Links to an external page, changes the button label |
 | `newsletter` | Links to an external page, changes the button label |
 | `report` | Links to an internal page to download a report, changes the button label |
+
+## Advice
+
+- The post image should not exceed **1000px** in width and **75 KB** in size
+- If you don't have an image, leave the `image` tag empty, a default image is set.

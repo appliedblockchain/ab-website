@@ -38,7 +38,7 @@ permalink: /:title
 collections:
   projects:
     output: true
-    permalink: /projects/:path
+    permalink: /case-studies/:path
   posts:
     output: true
     permalink: /:title

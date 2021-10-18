@@ -1,0 +1,186 @@
+---
+layout: compress
+---
+
+{% include containers/header.html %}
+
+<div class="page__container background--cover"{% if page.background_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/{{ page.background_image }}');"{% endif %}>
+
+  {% capture page_label %}{% for industry in page.industries %}{{ industry.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture %}
+  {% include components/page-header.html
+    label = page_label
+    title = page.title
+    subtitle = page.subtitle
+    banner_image = page.image
+    banner_color = "white"
+  %}
+
+  <div class="section section--overlap">
+    <div class="section__container">
+      <div class="grid__wrapper grid__spacing--8 grid--jc-flex-end">
+        <div class="grid__item grid__item--xl5 grid__item--lg6">
+          <div class="card card--md">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/logos/clients/{{ page.slug }}.png" alt="Logo for {{ page.title }}" class="card__media">
+            <div class="card__content">
+              <p>{{ page.summary }}</p>
+            </div>
+            {% if page.deliverables or page.services or page.technologies %}
+            <div class="card__content">
+              {% if page.deliverables %}
+              <div class="grid__wrapper grid--row grid--ai-baseline">
+                <p class="caption mr-2">Deliverables</p>
+                <p>{{ page.deliverables }}</p>
+              </div>
+              {% endif %}
+              {% if page.services %}
+              <div class="grid__wrapper grid--row grid--ai-baseline">
+                <p class="caption mr-2">Services</p>
+                <p>{{ page.services }}</p>
+              </div>
+              {% endif %}
+              {% if page.technologies %}
+              <div class="grid__wrapper grid--row grid--ai-baseline">
+                <p class="caption mr-2">Technologies</p>
+                <p>{{ page.technologies }}</p>
+              </div>
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if page.challenge %}
+  <div class="section section--maxWidth">
+    <div class="section__container">
+      {% if page.video %}<div class="grid__wrapper grid__spacing--8 grid--ai-flex-end">{% endif %}
+        {% if page.video %}<div class="grid__item grid__item--lg6">{% endif %}
+          {% include components/section-header.html
+            title = "The challenge"
+            subtitle = page.challenge.title
+          %}
+          {% if page.challenge.content %}
+          <div class="section__content">
+            <div class="markdown">{{ page.challenge.content | markdownify }}</div>
+          </div>
+          {% endif %}    
+        {% if page.video %}</div>{% endif %}
+        {% if page.video %}
+        <div class="grid__item grid__item--lg6 grid--">
+          <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
+            <a href="#modal-video" class="js-button-modal">
+              <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+            </a>
+          </div>
+          <p class="video__notice body--large body--bold">{{ page.video.lead }}</p>
+          {% include components/modals/video.html 
+            url = page.video.url
+          %}
+        </div>
+        {% endif %}
+      {% if page.video %}</div>{% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.delivery %}
+  <div class="section section--maxWidth">
+    <div class="section__container">
+      {% if page.delivery.diagram %}<div class="grid__wrapper grid__spacing--8">{% endif %}
+        {% if page.delivery.diagram %}<div class="grid__item grid__item--lg6">{% endif %}
+          {% include components/section-header.html
+            title = "What Applied Blockchain Delivered"
+            subtitle = page.delivery.title
+          %}
+          {% if page.delivery.content %}
+          <div class="section__content">
+            <div class="markdown">{{ page.delivery.content | markdownify }}</div>
+          </div>
+          {% endif %}
+        {% if page.delivery.diagram %}</div>{% endif %}
+        {% if page.delivery.diagram %}
+        <div class="grid__item grid__item--lg6 hide--laptop">
+          <img src="{{ site.base-url }}{{ site.imageurl}}/graphics/projects/{{ page.delivery.diagram }}" alt="Diagram for {{ page.title }}">
+        </div>
+        {% endif %}
+      {% if page.delivery.diagram %}</div>{% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.results.icons %}
+  <div id="case-study-icons" class="section">
+    <div class="section__container">
+      {% if page.results.icons %}
+      <div class="section__content">
+        <div class="grid__wrapper grid__spacing--4 grid__inline grid--jc-center">
+          {% for item in page.results.icons %}
+          <div class="grid__item">
+            <div class="card card--sm card--transparent body--center">
+              <img src="{{ site.base-url }}{{ site.imageurl }}/icons/{{ item.image }}.svg" alt="Icon {{ item.title }}" class="card__media">
+              <div class="card__header grid--ai-center">
+                <p class="card__title">{{ item.title }}</p>
+                <p class="card__subtitle">{{ item.body }}</p>
+              </div>
+            </div>
+          </div>  
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.results %}
+  <div class="section section--maxWidth">
+    <div class="section__container">
+      {% include components/section-header.html
+        title = "Results"
+        subtitle = page.results.title
+      %}
+      {% if page.results.content %}
+      <div class="section__content">
+        <div class="markdown">{{ page.results.content | markdownify }}</div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.testimonial %}
+  <section class="section grid--ai-flex-start">
+    <div class="section__content">
+      <div class="section__content">
+        <div class="owl-carousel owl-carousel-testimonials-case-studies">
+          {% for quote in page.testimonial %}
+          <div class="card card--md">
+            <div class="card__content">
+              {% svg assets/icons/quote.svg class="fill--primary-light" %}
+            </div>
+            <p class="card__content subtitle1">{{ quote.quote }}</p>
+            <div class="card__content">
+              <div class="card card--xs card--transparent card--landscape card--portrait">
+                <div class="card__media">
+                  <img src="{{ site.base-url }}{{ site.imageurl }}/team/clients/{{ quote.image }}.png" alt="Portrait of {{ quote.author }}" class="card__thumbnail">
+                </div>
+                <div class="card__header">
+                  <p class="card__title">{{ quote.author }}</p>
+                  <p class="card__subtitle">{{ quote.position }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+</div>
+
+{% include components/footer.html %}
+{% include containers/footer.html %}

@@ -24,7 +24,7 @@ menus:
               <a href="{{ project.url }}" class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png');"></a>
             </div>
             <div class="card__header">
-              <p class="card__label">{% for industry in project.industry %}{{ industry.name }} {% endfor %}</p>
+              <p class="card__label">{% for industry in project.industries %}{{ industry.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
               <h2 class="card__title">
                 <a href="{{ project.url }}">{{ project.title }}</a>
               </h2>

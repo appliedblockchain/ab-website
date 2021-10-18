@@ -22,6 +22,24 @@ $('.owl-carousel-testimonials').owlCarousel({
   margin: 16
 });
 
+$('.owl-carousel-testimonials-case-studies').owlCarousel({
+  dots: false,
+  nav: true,
+  loop: false,
+  autoplay: false,
+  autoplayTimeout: 8000,
+  autoplayHoverPause: true,
+  smartSpeed: 2000,
+  mouseDrag: false,
+  responsive: {
+    0: { items: 1 },
+    568: { items: 1 },
+    768: { items: 2 },
+    1280: { items: 3  }
+  },
+  margin: 16
+});
+
 $('.owl-carousel-news').owlCarousel({
   dots: true,
   nav: false,

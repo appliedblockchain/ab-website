@@ -68,6 +68,13 @@
     max-width: $page-max-width/2;
   }
 
+  &__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $spacing*30;
+  }
+
   &__button {
     margin-top: $spacing*4;
   }
@@ -243,7 +250,7 @@
       padding-bottom: $section-spacing*3;
       height: 0;
       pointer-events: none;
-      
+
       .card {
         pointer-events: initial;
         z-index: 1;
@@ -285,4 +292,26 @@
   @include responsive(down, $desktop-down) { .section__header { max-width: $page-max-width/3; }}
   @include responsive(down, $laptop-down) { .section__header { max-width: $page-max-width/4; }}
   @include responsive(down, $tablet-down) { .section__header { max-width: none; }}
+}
+
+#case-study {
+
+  .page__container .section {
+    padding-top: $section-spacing;
+
+    &:nth-child(2n+3) {
+      background-color: $background-paper;
+    }
+    
+    &:nth-child(2n+4) {
+      background-color: $background-default;
+    }
+  }
+
+  .section--overlap + .section { 
+
+    @include responsive(down, $laptop-down) {
+      padding-top: 0;
+    }
+  }
 }

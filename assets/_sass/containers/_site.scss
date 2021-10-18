@@ -220,7 +220,8 @@ ul {
   align-items: center;
   justify-content: center;
   padding-top: 16.6667%;
-  padding-bottom: 16.6667%; 
+  padding-bottom: 16.6667%;
+  width: 100%;
 
   &__button {
     transition: transform $transition;

@@ -1,23 +1,25 @@
 ---
-layout: "project"
+layout: "case-study"
 order: 1
 case_study: true
 title: "Lloyd's Register"
 subtitle: "Creating the first demonstrator that can register ships into Class using blockchain technology"
-industry:
-  name: "Shipping"
+image: "lloyds-register.jpg"
+industries:
+  - name: "Shipping"
 summary: "LR created the first register of ships in 1764, a tool used to provide merchants and underwriters information about the quality and condition of vessels they chartered and insured."
 link: 
   url: "https://www.lr.org/en-gb/latest-news/classification-for-the-digital-age/"
 
-challenge: |-
-  Applying blockchain technology to the classification process of registering new ships into Class and launching a prototype blockchain-enabled register tool.
+video: 
+  url: "https://www.youtube.com/embed/M_V1MrZv-_Y"
+  lead: "Watch Gary Pogson talk about our relationship with Lloyd's Register and how we helped them"
 
-  Nick Brown, LR Marine & Offshore Director, commented: “LR has tested blockchain technology as an enabler to enter a ship into Class and we have identified multiple potential sources of value by adopting this technology in relation to the management of the activities required as part of this process. A blockchain-based register provides immutability and auditability, therefore providing enhanced trust in the information provided on the platform and also potentially facilitating the trusted information to be available ‘up-to-the-minute’ allowing financing, insuring, payments etc to be provided more dynamically.”
 
-  LR Lead Technical Specialist, Marine and Offshore, Gary Pogson added: “I have been investigating distributed ledger and blockchain technologies for about two and half years and from very early on, I recognised this as an area of great potential. We have taken a systems approach in undertaking this project, exploring customer needs to derive requirements. In looking at potential solutions, we’ve been careful to ask whether blockchain is a valid component of a solution. In our view, applied carefully as part of a well-designed system, it is uniquely disposed to offer additional value and set a foundation for the maritime industry’s future needs.”
+challenge: 
+  title: "Applying blockchain technology to the classification process of registering new ships into Class and launching a prototype blockchain-enabled register tool."
+  content: |-
+    Nick Brown, LR Marine & Offshore Director, commented: “LR has tested blockchain technology as an enabler to enter a ship into Class and we have identified multiple potential sources of value by adopting this technology in relation to the management of the activities required as part of this process. A blockchain-based register provides immutability and auditability, therefore providing enhanced trust in the information provided on the platform and also potentially facilitating the trusted information to be available ‘up-to-the-minute’ allowing financing, insuring, payments etc to be provided more dynamically.”
 
-challenge-video: true
-
-challenge-video-lead: "Watch Gary Pogson talk about our relationship with Lloyd's Register and how we helped them"
+    LR Lead Technical Specialist, Marine and Offshore, Gary Pogson added: “I have been investigating distributed ledger and blockchain technologies for about two and half years and from very early on, I recognised this as an area of great potential. We have taken a systems approach in undertaking this project, exploring customer needs to derive requirements. In looking at potential solutions, we’ve been careful to ask whether blockchain is a valid component of a solution. In our view, applied carefully as part of a well-designed system, it is uniquely disposed to offer additional value and set a foundation for the maritime industry’s future needs.”
 ---

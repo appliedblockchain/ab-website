@@ -245,7 +245,7 @@ background_color: white # do not change
 - Copy/paste the code below and fill it accordingly.
 ```yml
 ---
-layout: project # do not change
+layout: "project" # do not change
 order: # number, specify the order it will appear on the projects page
 case_study: true # add if the project has a standalone page
 title: # company name

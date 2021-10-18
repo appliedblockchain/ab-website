@@ -43,6 +43,7 @@
   }
 
   &__thumbnail {
+    background-color: $grey-5;
     width: 100%;
     padding-bottom: 50%;
   }
@@ -108,6 +109,9 @@
           
           + .card__subtitle {
             margin-top: $ratio/2;
+            @if $size == xs {
+              margin-top: 0;
+            }
           }
         }
     
@@ -135,13 +139,13 @@
     &__title {
       color: $primary;
       @if $size == xs {
-        @extend .caption;
-      } @else if $size == sm {
         @extend .subtitle2;
-      } @else if $size == md {
+      } @else if $size == sm {
         @extend .h6;
-      } @else if $size == lg {
+      } @else if $size == md {
         @extend .h4;
+      } @else if $size == lg {
+        @extend .h3;
       }
     }
 
@@ -149,11 +153,11 @@
       @if $size == xs {
         @extend .overline;
       } @else if $size == sm {
-        @extend .overline;
-      } @else if $size == md {
         @extend .body1;
-      } @else if $size == lg {
+      } @else if $size == md {
         @extend .subtitle1;
+      } @else if $size == lg {
+        @extend .h6;
       }
     }
   }
@@ -323,6 +327,14 @@
 
     .card__thumbnail {
       width: $spacing*20;
+    }
+  }
+
+  &--project {
+    height: 100%;
+
+    .card__actions {
+      margin-top: auto;
     }
   }
 }

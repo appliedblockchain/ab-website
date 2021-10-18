@@ -1,0 +1,52 @@
+---
+layout: "default"
+title: "Case studies"
+subtitle: "We develop applications for startups and enterprises using blockchain, advanced cryptography and secure enclaves"
+banner_image: "projects.jpg"
+menus: 
+  solutions:
+    weight: 3
+  footer_company:
+    weight: 5
+---
+
+{% assign sorted = site.projects | sort : "order" %}
+
+<div class="section">
+  <div class="section__container">
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2">
+        {% for project in sorted %}
+        {% if project.case_study == true %}
+        <div class="grid__item grid__item--lg4 grid__item--sm6">
+          <div class="card card--md card--project">
+            <div class="card__media">
+              <a href="{{ project.url }}" class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png');"></a>
+            </div>
+            <div class="card__header">
+              <p class="card__label">{% for industry in project.industry %}{{ industry.name }} {% endfor %}</p>
+              <h2 class="card__title">
+                <a href="{{ project.url }}">{{ project.title }}</a>
+              </h2>
+              <p class="card__subtitle">{{ project.subtitle }}</p>
+            </div>
+            <div class="card__content">
+              <p class="overline">{{ project.summary }}</p>
+            </div>
+            {% if project.case_study == true or project.link %}
+            <div class="card__actions">
+              {% if project.case_study == true %}
+              <a href="{{ project.url }}" class="button button--primary button--sm">
+                <p class="button__inner">Read</p>
+              </a>
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,7 +12,7 @@ I’ve been in the space since 2015, and we used to write end of year summaries 
 
 Below is a diagram that I’ve used in many webinars and conferences that I’ve presented over the years. These principles were true 5 years ago, and they’re still true today, and they’re one explanation as to why we’ve seen some of the recent developments such as NFTs and DeFi
 
-
+![Image]({{ site.base-url }}{{ site.imageurl }}/posts/blockchain-evolution)	
 
 The diagram illustrates where I see the added value of blockchain technology. The 10% on the left refers to using blockchain technology purely to improve business processes, the next 60% is when master asset ownership records are held on-chain, and finally 30% of the value and efficiency gains come with digital (tokenised) money. If all three are combined then we reach “blockchain nirvana” with decentralised, atomic, trustless, autonomous rules-based delivery vs payment.
 

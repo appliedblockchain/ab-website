@@ -1,10 +1,5 @@
-@charset "UTF-8";
-
-// —————————————————————————————————————————————————————————————————
-// DEFAULT
 // —————————————————————————————————————————————————————————————————
 // about
-// contact
 // join
 // mantle
 // privacy-policy
@@ -186,20 +181,6 @@
 
     .row {
       justify-content: center;
-    }
-  }
-}
-
-// —————————————————————————————————————————————————————————————————
-// contact
-// —————————————————————————————————————————————————————————————————
-
-#contact {
-
-  .background--cover {
-
-    @include responsive(down, $tablet-down) {
-      background-image: none !important;
     }
   }
 }

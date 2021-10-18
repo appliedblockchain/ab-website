@@ -24,11 +24,13 @@
   }
   
   &--overlap {
-    padding-top: 0 !important;
-    
-    & + .section {
-      padding-top: $section-spacing;
-    }
+
+    @include responsive(up, $laptop-up) {
+
+      & + .section {
+        padding-top: $section-spacing;
+      }
+    }    
   }
 
   &__container {
@@ -229,14 +231,18 @@
   }
 
   &--overlap {
-    position: absolute;
-    top: $navbar-height+$section-spacing;
-    left: 0;
-    width: 100vw;
-    pointer-events: none;
 
-    .section__container > * {
-      pointer-events: initial;
+    @include responsive(up, $laptop-up) {
+      margin-top: -$section-spacing*3;
+      padding-top: 0 !important;
+      padding-bottom: $section-spacing*3;
+      height: 0;
+      pointer-events: none;
+      
+      .card {
+        pointer-events: initial;
+        z-index: 1;
+      }
     }
   }
 
@@ -267,4 +273,11 @@
     // remove blue gßradient 
     display: none;
   }
+}
+
+#contact {
+
+  @include responsive(down, $desktop-down) { .section__header { max-width: $page-max-width/3; }}
+  @include responsive(down, $laptop-down) { .section__header { max-width: $page-max-width/4; }}
+  @include responsive(down, $tablet-down) { .section__header { max-width: none; }}
 }

@@ -29,6 +29,7 @@
   &__content,
   &__actions {
     display: flex;
+    width: 100%;
   }
 
   &__header,
@@ -245,6 +246,16 @@
 
 .card--landscape {
   flex-direction: row;
+
+  .card {
+
+    &__media,
+    &__header,
+    &__content,
+    &__actions {
+      width: auto;
+    }  
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

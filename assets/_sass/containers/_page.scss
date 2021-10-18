@@ -33,6 +33,12 @@
 #contact {
 
   .page__header {
-    mix-blend-mode: multiply;
+    background-color: transparent;
+
+    &:before {
+      @include pseudo-element("", 0, 0 ,0, 0, 100%, 100%);
+      background-color: $primary;
+      mix-blend-mode: multiply;
+    }
   }
 }

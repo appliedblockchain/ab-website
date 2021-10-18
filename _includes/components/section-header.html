@@ -7,9 +7,7 @@
 {% assign title_class = include.title_class %}
 {% assign title_component = include.title_component %}
 {% assign subtitle = include.subtitle %}
-{% assign subtitle_component = include.subtitle_component %}
-{% assign subtitle_component = include.subtitle_component %}
-{% assign subtitle_component = include.subtitle_component %}
+{% assign body = include.body %}
 {% assign link_label = include.link_label %}
 {% assign link_url = include.link_url %}
 {% assign link_title = include.link_title %}
@@ -23,6 +21,9 @@
   {% endif %}
   {% if subtitle %}
   <p class="section__subtitle">{{ subtitle }}</p>
+  {% endif %}
+  {% if body %}
+  <p class="section__body">{{ body }}</p>
   {% endif %}
   {% if link_url %}
   <div class="button__wrapper">

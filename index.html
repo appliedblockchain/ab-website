@@ -125,18 +125,20 @@ menus:
     </div>
   </div>
 </div>
-<div class="section section--grey">
+<div class="section section--grey overflow--hidden">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
       <div class="grid__item grid__item--6">
         {% include components/section-header.html 
           title = "We Solve Problems"
-          subtitle = "At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced confidential computing, secure enclaves, cryptography and blockchain technology to build applications that maximise trust, data privacy and security."
+          subtitle = "We build production-grade blockchain applications for our clients ranging from NFT marketplaces and DeFi protocols through to supply chain provenance, identity, CBDC, trading and payment solutions."
+          body = "Our extensive technology experience includes full stack web and mobile, a range of blockchains including Ethereum, Algorand and others, and a range of specialisations in areas advanced cryptography including custom wallet applications, zero knowledge proofs, secure multiparty computation, and hardware secure enclaves such as Intel SGX."
           link_label = "View our projects"
           link_url = "projects"
         %}
       </div>
-      <div class="grid__item grid__item--6">
+      <div class="grid__item grid__item--6 grid--jc-flex-end grid--ai-flex-end">
+        {% svg assets/icons/custom/large/services.svg width="520" class="position--absolute" %}
       </div>
     </div>
   </div>
@@ -145,11 +147,13 @@ menus:
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
       <div class="grid__item grid__item--6">
+        {% svg assets/icons/custom/large/products.svg width="520" class="position--absolute" %}
       </div>
       <div class="grid__item grid__item--6 grid--ai-right">
         {% include components/section-header.html 
           title = "We Build Products"
           subtitle = "We build products to solve a problem once for our many clients. We focus on confidential computing, secure enclaves, and advanced cryptography to enable businesses to do more together, while reducing their cyber risk."
+          body = "Over the past 6 years we have been selected by some of the world's top companies to advise, design and build innovative solutions. We serve customers in financial services, cryptocurrency, trading, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government."
           link_label = "View our products"
           link_url = "products"
         %}
@@ -259,117 +263,9 @@ menus:
       </div>
     </div>
   </div>
-  <div class="row widget__bar card__wrapper">
-    <div class="grid__item--xl4 grid__item--lg5">
-      <div class="owl-carousel owl-carousel-news widget--news card card--xs card--portrait background--shadow body--black">
-        {% for item in site.data.news %}
-        <div class="carousel__item">
-          <div class="card__inner">
-            <div class="card__inner--left">
-              <div class="card__content">
-                <p class="card__title body--small body--bold">
-                  <span class="mr">{{ item.title }}</span>
-                  {% if item.body %}
-                  <span class="body--xs body--regular">{{ item.body }}</span>
-                  {% endif %}
-                </p>
-              </div>
-              <div class="card__actions">
-                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.link }}" target="_blank" class="card__actions button button--xsmall button--primary button--animate fas fa-eye">
-                  <p class="button__inner">{{ item.button_label }}</p>
-                </a>
-                {% if item.rating %}
-                <div class="body--small body--grey rating">
-                  <div class="fas fa-star{% if item.rating >= 1 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 2 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 3 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 4 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 5 %} body--highlight{% endif %}"></div>
-                </div>
-                {% endif %}
-              </div>
-            </div>
-            {% if item.image %}
-            <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="" class="card__image">
-            {% endif %}
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
 </div>
 
-<section id="index-intro" class="section section--white">
-  {% include components/section-header.html
-    comment = "What we do"
-    title = "Blockchain solutions"
-  %}
-  <div class="section__header body--large">
-    We build production-grade blockchain applications for our clients ranging from NFT marketplaces and DeFi protocols through to supply chain provenance, identity, CBDC, trading and payment solutions. Our extensive technology experience includes full stack web and mobile, a range of blockchains including Ethereum, Algorand and others, and a range of specialisations in areas advanced cryptography including custom wallet applications, zero knowledge proofs, secure multiparty computation, and hardware secure enclaves such as Intel SGX.
-  </div>
-  <div class="section__content">
-    <div class="button__wrapper">
-      <a href="{{ site.base-url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
-        <p class="button__inner">Services</p>
-      </a>
-    </div>
-  </div>
-</section>
 
-<section class="section section--grey" id="who-we-help">
-  {% include components/section-header.html
-    comment = "Who we help"
-    title = "Cutting-edge startups to global enterprises"
-  %}
-  <div class="section__content">
-    <div class="row card__wrapper">
-      <div class="card grid__item--md6">
-        <div class="card body--left">
-          <div class="card__header">
-            <p class="card__title body"><span class="body body--bold">Gary Pogson</span>, <span class="body body--bold">Lloyd's Register</span></p>
-            <div class="card__actions">
-              <a href="{{ site.base-url }}/projects/lloyds-register" class="button button--secondary button--small button--animate fas fa-fill">
-                <p class="button__inner">Case study</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-lloyd-s-register.jpg');">
-          <a href="#modal-video" class="js-button-modal">
-            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-          </a>
-        </div>
-        {% include components/modals/video.html %}
-      </div>
-      <div class="card grid__item--md6">
-        <div class="card body--left">
-          <div class="card__header">
-            <p class="card__title body"><span class="body body--bold">Ben Van Beurden, CEO at Shell</span></p>
-            <div class="card__actions">
-              <a href="{{ site.base-url }}/projects/shell" class="button button--secondary button--small button--animate fas fa-fill">
-                <p class="button__inner">Case study</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-shell.jpg');">
-          <a href="https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433" class="js-button-modal" target="_blank">
-            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section__content">
-    <p class="body--large">Over the past 6 years we have been selected by some of the world's top companies to advise, design and build innovative solutions. We serve customers in financial services, cryptocurrency, trading, energy, commodities, supply chain, shipping, aviation, automotive, telecoms, medical and government.</p>
-  </div>
-  <div class="section__content">
-    <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
-      <p class="button__inner">Projects</p>
-    </a>
-  </div>
-</section>
 
 <section id="index-why-us" class="section section--grey">
   {% include components/section-header.html

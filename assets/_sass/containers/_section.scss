@@ -175,7 +175,7 @@
         @extend .h1;
       }
 
-      + .section__subtitle {
+      & + .section__subtitle {
         margin-top: $ratio;
       }
     }
@@ -186,6 +186,11 @@
       } @else if $size == lg {
         @extend .h5;
       }
+
+    }
+
+    &__body {
+      margin-top: $ratio*1.5;
     }
   }
 }

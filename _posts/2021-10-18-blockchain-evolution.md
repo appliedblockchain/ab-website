@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Blockchain evolution'
-image: nft-article
+image: blockchain-evolution
 category: blog
 #social: external
 #link: https://www.enterprisetimes.co.uk/2021/09/28/placeholder-nfts-a-digital-fad-or-a-transformational-technology/

@@ -1,0 +1,41 @@
+<div class="card card--md card--landscape card--event">
+  <div class="card__media">
+    <div class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default.jpg{% endif %}');"></div>
+  </div>
+  <div class="card__content">
+    <div class="card card--md card--transparent">
+      <div class="card__header">
+        <p class="card__label">
+          {% if event.date_to %}{{ event.date | date: '%b %-d' }} to {{ event.date_to | date: '%b %-d, %Y' }}{% else %}{{ event.date | date: '%b %-d, %Y' }}{% endif %}
+          {% if event.type %}<span class="ml-1 body--grey">{{ event.type }}</span>{% endif %}
+        </p>
+        <div class="card__title">{{ event.name }}</div>
+      </div>
+      {% if event.location %}
+      <p class="card__content">{{ event.location }}</p>
+      {% endif %}
+      <div class="card__actions">
+        <div class="button__wrapper">
+          {% if event.website %}
+          <a href="{{ event.website }}" class="button button--sm button--primary">
+            Website
+            {% svg assets/icons/feather/external-link.svg %}
+          </a>
+          {% endif %}
+          {% if event.register %}
+          <a href="{{ event.register }}" class="button button--sm button--secondary">
+            Register
+            {% svg assets/icons/feather/external-link.svg %}
+          </a>
+          {% endif %}
+          {% if event.directions %}
+          <a href="{{ event.directions }}" class="button button--sm button--white">
+            Directions
+            {% svg assets/icons/feather/external-link.svg %}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

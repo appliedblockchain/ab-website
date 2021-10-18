@@ -68,7 +68,7 @@ strong {
 }
 .body2 { @extend .body1; font-weight: $font-bold }
 
-.caption { @include font-size(.875, $font-bold); }
+.caption { @include font-size(.875, $font-bold, 1.25); }
 
 .overline { @include font-size(0.875); }
 
@@ -92,7 +92,7 @@ strong {
 .body {
 
   &--black { color: $text; }
-  &--grey { color: $grey-30; }
+  &--grey { color: $grey-50; }
   &--white { color: $text-contrast; }
   &--disabled { color: $text-disabled; }
   &--primary { color: $primary; }

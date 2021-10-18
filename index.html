@@ -4,7 +4,7 @@ title: "Home"
 menus:
   header:
     weight: 1
-  company:
+  footer_company:
     weight: 1
 ---
 
@@ -13,7 +13,7 @@ menus:
     <div class="section__container">
       <div class="section__header">
         <h1 class="section__title">Welcome to Applied Blockchain</h1>
-        <p class="section__subtitle h2">We build applications with added trust and data privacy</p>
+        <p class="section__subtitle h2">{{ site.description }}</p>
       </div>
       <div class="section__content">
         <div class="button__wrapper">
@@ -208,6 +208,9 @@ menus:
   <div class="section__container">
     {% include components/section-header.html 
       title = "Featured in"
+      subtitle = "We're in a fast changing industry, here's our news at Applied Blockchain"
+      link_label = "Read our news"
+      link_url = "blog"
     %}
     <div class="section__content">
       <div class="grid__wrapper grid__spacing--2 grid--jc-center grid__inline grid__inline--lg4 grid__inline--md3 grid__inline--sm2 grid__inline--2">
@@ -228,10 +231,7 @@ menus:
 
 
 
-<!-- <div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
-  {% include components/page-header.html
-    headline = site.description
-  %}
+<div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
   <div class="section__content body--black">
     <div class="row row--center">
       <img src="{{ site.base-url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop">
@@ -410,33 +410,3 @@ menus:
   </div>
 </section>
 
-<section id="index-featured-in" class="section section--white">
-  {% include components/section-header.html
-    title = "Featured In"
-  %}
-  <div class="section__content">
-    <div class="row">
-      {% for item in site.data.images.media %}
-      <div class="grid__item--lg3 grid__item--6">
-        <div class="card card__inner">
-          {% if item.link %}
-          <a href="{{ item.link }}" target="_blank">
-            {% endif %}
-            <img src="{{ site.base-url }}{{ site.imageurl }}/logos/media/{{ item.name | slugify }}.png" alt="Logo {{ item.name }}" class="logo-media__image">
-            {% if item.link %}
-          </a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="section__content">
-    <p class="block__title lead">We're in a fast changing industry, here's our news at Applied Blockchain</p>
-    <div class="block__content">
-      <a href="{{ site.base-url }}/media" class="ga-button-media button button--primary button--animate fas fa-newspaper">
-        <p class="button__inner">Media</p>
-      </a>
-    </div>
-  </div>
-</section> -->

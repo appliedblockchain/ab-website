@@ -136,33 +136,28 @@ ul {
 // overrides
 // —————————————————————————————————————————————————————————————————
 
-.sticky {
-  position: sticky;
-  top: $navbar-height+$section-spacing-content;
-}
-
 .m {
   &-0 { margin: 0; }
 
   &r {
-    margin-right: $spacing;
-    &-md { margin-right: $spacing*2; }
-    &-lg { margin-right: $spacing*4; }
     &-0 { margin-right: 0; }
+    &-1 { margin-right: $spacing; }
+    &-2 { margin-right: $spacing*2; }
+    &-4 { margin-right: $spacing*4; }
   }
 
   &b {
-    margin-bottom: $spacing;
-    &-md { margin-bottom: $spacing*2; }
-    &-lg { margin-bottom: $spacing*4; }
     &-0 { margin-bottom: 0; }
+    &-1 { margin-bottom: $spacing; }
+    &-2 { margin-bottom: $spacing*2; }
+    &-4 { margin-bottom: $spacing*4; }
   }
 
   &l {
-    margin-left: $spacing;
-    &-md { margin-left: $spacing*2; }
-    &-lg { margin-left: $spacing*4; }
     &-0 { margin-left: 0; }
+    &-1 { margin-left: $spacing; }
+    &-2 { margin-left: $spacing*2; }
+    &-4 { margin-left: $spacing*4; }
   }
 }
 
@@ -190,6 +185,11 @@ ul {
 
   &--block { display: block; }
   &--flex { display: flex; }
+}
+
+.sticky {
+  position: sticky;
+  top: $navbar-height+$section-spacing-content;
 }
 
 .position {

@@ -1,13 +1,23 @@
 header:
-  - url: /solutions/
-    title: Solutions
-    identifier: solutions
+  - url: "/solutions/"
+    title: "Solutions"
+    identifier: "solutions"
     weight: 3
-  - url: /about-us/
-    title: About us
-    identifier: about-us
+  - url: "/about-us/"
+    title: "About us"
+    identifier: "about-us"
     weight: 4
-  - url: /resources/
-    title: Resources
-    identifier: resources
+  - url: "/resources/"
+    title: "Resources"
+    identifier: "resources"
     weight: 4
+
+footer_products:
+  - url: "https://www.silentdata.com"
+    title: "Silent Data"
+    identifier: "silent-data"
+    weight: 1
+  - url: ""
+    title: "K0"
+    identifier: "k0"
+    weight: 1

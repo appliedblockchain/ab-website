@@ -300,51 +300,39 @@ testimonial:
 <p>&nbsp;</p>
 <!------------------------------------------------------>
 
-## Create job
-
-- Open the `jobs.yml` file in `_data` folder.
-- Copy/paste this code in the section you want it to appear (London or Porto) and fill the content.
-```yml
-- title: 
-  type: 
-  responsabilities:
-    - li: ''
-    - li: ''
-    # etc.
-  required-skills:
-    - li: ''
-    - li: ''
-    # etc.
-  additional-skills:
-    - li: ''
-    - li: ''
-    # etc.
-```
-- The content of each tag must be inside single quotes. This ensures the HTML to be read correctly by Jekyll.
-- Each new line is set by a `- li:` tag.
-
-<!------------------------------------------------------>
-<p>&nbsp;</p>
-<!------------------------------------------------------>
-
 ## Create event
 
 - Open the `events.yml` file in `_data` folder.
 - Copy/paste this code and fill the content.
+
 ```yml
 - name: 
-  image:  #image file name > use a slugify version of the name
-  date: YYYY-MM-DD
-  date_to: # use if the event is longer than a day
-  location: # [if relevant] venue, city, country
-  directions: # [if relevant] Google Maps link
-  link: # link to the event website
+  image: 
+  type: 
+  date: 
+  date_to: 
+  location: 
+  wesbite: 
+  register: 
+  directions: 
 ```
-> Use the YYYY-MM-DD format for the date, it will automatically be displayed in the right format on the website
-- Add the corresponding image in `assets/images/events`.
-  - If doesn't work: check file extension (needs to be `.jpg`).
-  - File cannot be over 800 px wide and 100 KB.
-  - If you don't have an image, leave the `image:` tag empty, a default image is set.
+
+| Parameter | Values | Description |
+| --- | --- | --- |
+| `name` | string |  |
+| `image` | string | Write the name of the event thumbnail and add the image in `assets/images/events` |
+| `type` | `Webinar`, `Conference`, `Virtual`, `Social`, `Workshop` | Select the event type |
+| `date` | string | Use `YYYY-MM-DD` format |
+| `date_to` | string | Use `YYYY-MM-DD` format |
+| `location` | string | |
+| `wesbite` | string | Website full URL |
+| `register` | string | Optional. If different from the wesbite URL |
+| `directions` | string | Optional. Google Maps link to the event location |
+
+### Advice
+
+- File cannot be over 800 px wide and 80 KB.
+- If you don't have an image, leave the `image` tag empty, a default image is set.
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

@@ -5,6 +5,7 @@
 // color
 // size
 // variants
+// views
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -52,7 +53,7 @@
   }
 
   &__title {
-    @extend .h2;
+    @extend .h3;
     color: $primary;
 
     & + .section__subtitle {
@@ -167,7 +168,7 @@
   
     &__title {
       @if $size == sm {
-        @extend .h3;
+        @extend .h4;
       } @else if $size == lg {
         @extend .h1;
       }
@@ -245,5 +246,25 @@
     .tabs {
       margin-top: $section-spacing-content;
     }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// views
+// —————————————————————————————————————————————————————————————————
+
+.landing {
+
+  .section__header,
+  .section__subtitle {
+    max-width: $page-max-width/1.5;
+  }
+}
+
+#products {
+
+  .section:not(.page__header):before {
+    // remove blue gßradient 
+    display: none;
   }
 }

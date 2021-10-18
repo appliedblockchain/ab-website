@@ -6,10 +6,10 @@
   status: "Live"
   description: "SILENTDATA is a confidential open banking platform that enables queries to be performed on individual and business bank accounts without revealing the banking data even to the platform host. Privacy-preserving proofs can be verified in DeFi (decentralised finance) blockchain smart contracts."
   links:
-    - name: "Website"
+    - label: "Website"
       url: "https://silentdata.com/"
       icon: "fa fa-globe"
-    - name: "App"
+    - label: "App"
       url: "https://app.silentdata.com/"
       icon: "fa fa-desktop"
 
@@ -21,7 +21,7 @@
   status: "In development"
   description: "Beyond is a confidential trading platform where orders, volume and price data are not revealed even to the venue host."
   links:
-    - name: "Website"
+    - label: "Website"
       url: "http://appliedblockchain.com/beyond"
       icon: "fab fa-github"
 
@@ -33,17 +33,17 @@
   status: "Experimental"
   description: "K<span class=\"body--zero\">0</span> (pronounced “K zero”) is a zero knowledge proof protocol that enables digital assets to be created, verified and traded privately and seamlessly across multiple enterprise blockchain platforms & networks."
   technos:
-    - name: Ethereum
-    - name: Hyperledger Fabric
+    - label: Ethereum
+    - label: Hyperledger Fabric
   links:
-    - name: "Technical description"
+    - label: "Technical description"
       url: "k0.pdf"
       type: "internal"
       icon: "fa fa-file-alt"
-    - name: "Background paper"
+    - label: "Background paper"
       url: "k0-background.pdf"
       type: "internal"
       icon: "fa fa-file-alt"
-    - name: "Github repo"
+    - label: "Github repo"
       url: "https://github.com/appliedblockchain/k0"
       icon: "fab fa-github"

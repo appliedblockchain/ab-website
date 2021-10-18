@@ -59,5 +59,3 @@ You can write markdown code here.
 | `podcast` | Links to an external page, changes the button label |
 | `newsletter` | Links to an external page, changes the button label |
 | `report` | Links to an internal page to download a report, changes the button label |
-
-

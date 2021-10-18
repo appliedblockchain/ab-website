@@ -2,6 +2,7 @@
 layout: "default"
 title: "Events"
 subtitle: "Find us at Blockchain events, subscribe to our webinars"
+banner_image: "event.jpg"
 menus: 
   about-us:
     weight: 3
@@ -13,15 +14,44 @@ menus:
 {% assign sorted = site.data.events | reverse %}
 <!-- capture today's date -->
 {% capture now %} {{ 'now' | date: '%s' | plus: 0 }} {% endcapture %}
+<!-- capture date - 30 days for recent events -->
+{% capture past %} {{ 'now' | date: '%s' | minus: 3600 | date_to_long_string }} {% endcapture %}
 
 <div class="section">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
-      <div class="grid__item grid__item--8">
+      <div class="grid__item grid__item--8 grid--ai-stretch">
         {% include components/section-header.html
           title = "Upcoming events"
         %}
         <div class="section__content">
+          <div class="grid__wrapper grid__spacing--2">
+            {% for event in sorted %}
+            {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
+            {% if date >= now %}
+            <div class="grid__item">
+              {% include components/cards/event.html %}
+            </div>
+            {% endif %}
+            {% endfor %} 
+          </div>
+        </div>
+        {% include components/section-header.html
+          title = "Recent events"
+        %}
+        <div class="section__content">
+          <div class="grid__wrapper grid__spacing--2">
+            {% for event in site.data.events %}
+            {% capture date %} {{ event.date | date_to_long_string }} {% endcapture %} 
+            {% if date < past %}
+            <div class="grid__item">
+              <!-- {{ past }}
+              {{ event.date }} -->
+              {% include components/cards/event.html %}
+            </div>
+            {% endif %}
+            {% endfor %} 
+          </div>
         </div>
       </div>
       <div class="grid__item grid__item--4">
@@ -53,34 +83,3 @@ menus:
     </div>
   </div>
 </div>
-
-<section class="section section--white">
-  <div class="section__content tab tab--events">
-    <div class="tab__content">
-      <div id="upcoming" class="tab__target">
-        <div class="tab__content block background--shadow p-0">
-          {% for event in sorted %}
-          {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
-          {% if date >= now %}
-          {% include components/event.html 
-            variant = "upcoming"
-          %}
-          {% endif %}
-          {% endfor %} 
-        </div>
-      </div>
-      <div id="past" class="tab__target">
-        <div class="tab__content block background--shadow p-0">
-          {% for event in site.data.events %}
-          {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
-          {% if date < now %}
-          {% include components/event.html 
-            variant = "past"
-          %}
-          {% endif %}
-          {% endfor %} 
-        </div>
-      </div>
-    </div>
-  </div>
-</section>

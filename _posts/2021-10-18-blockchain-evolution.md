@@ -5,7 +5,7 @@ image: blockchain-evolution
 category: blog
 #social: external
 #link: https://www.enterprisetimes.co.uk/2021/09/28/placeholder-nfts-a-digital-fad-or-a-transformational-technology/
-headline: 'Adi Ben-Ari has written a blog post about blockchain evolution.'
+headline: 'In this blog we outlined the trends in blockchain that were observed over the last 5 years'
 ---
 
 I’ve been in the space since 2015, and we used to write end of year summaries of developments, but the technology and applications are evolving at such a pace, that I think there’s no point waiting until the end of the year.

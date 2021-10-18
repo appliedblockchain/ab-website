@@ -17,29 +17,31 @@ tabs: "post-categories"
       <div class="js-filter-content grid__wrapper grid__spacing--2">
         {% if site.posts.size > 0 %}
         {% for post in site.posts %}
+        <!-- capture post link -->
+        {% capture post_link %} 
+        {% if post.link.type == "pdf" %}
+        {{ site.base-url }}/assets/pdfs/{{ post.link.url }}
+        {% elsif post.link.type == "webinar" or post.link.type == "report"  %}
+        {{ site.base-url }}/{{ post.link.url }}
+        {% elsif post.link.type == "external" or post.link.type == "podcast" or post.link.type == "newsletter" %}
+        {{ post.link.url }}
+        {% else %}
+        {{ site.base-url }}{{ post.url }}
+        {% endif %} 
+        {% endcapture %}
         <div class="grid__item grid__item--lg4 grid__item--md6 {{ post.category | slugify }}">
           <div class="card card--md">
             <div class="card__media">
-              <div class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default.jpg{% endif %}');"></div>
+              <a href="{{ post_link }}" class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default.jpg{% endif %}');"></a>
             </div>
             <div class="card__header">
               <div class="card__label">{{ post.date | date: "%b %-d, %Y" }} {{ post.category }}</div>
-              <h2 class="card__title">{{ post.title }}</h2>
+              <h2 class="card__title">
+                <a href="{{ post_link }}">{{ post.title }}</a>
+              </h2>
             </div>
             <div class="card__content">{{ post.lead | truncate: 250, "…" }}</div>
             <div class="card__actions">
-              <!-- capture post link value -->
-              {% capture post_link %}
-              {% if post.link.type == "pdf" %}
-              {{ site.base-url }}/assets/pdfs/{{ post.link.url }}
-              {% elsif post.link.type == "webinar" or post.link.type == "report"  %}
-              {{ site.base-url }}/{{ post.link.url }}
-              {% elsif post.link.type == "external" or post.link.type == "podcast" or post.link.type == "newsletter" %}
-              {{ post.link.url }}
-              {% else %}
-              {{ site.base-url }}{{ post.url }}
-              {% endif %}
-              {% endcapture %}
               <a href="{{ post_link }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %} class="button button--primary button--sm">
                 <!-- capture button label -->
                 {% capture button_label %}

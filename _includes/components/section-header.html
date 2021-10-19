@@ -36,7 +36,7 @@
     {% link {{ link_url }}.html %}
     {% endif %}
     {% endcapture %}
-    <a href="{{ link }}" title="{{ link_title }}" class="section__button button{% if link_color %} button--{{ link_color }}{% else %} button--primary{% endif %}">
+    <a href="{{ link | strip }}" title="{{ link_title }}" class="section__button button{% if link_color %} button--{{ link_color }}{% else %} button--primary{% endif %}">
       {{ link_label }}
       {% if link_type == "external" %}{% svg assets/icons/feather/external-link.svg %}{% endif %}
     </a>

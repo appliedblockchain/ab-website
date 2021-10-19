@@ -8,8 +8,16 @@
 {% assign banner_color = include.banner_color %}
 
 <!-- capture banner_image path -->
-{% capture image_path %}{% if page.layout == "post" %}posts{% elsif page.layout == "case-study" %}background/projects{% else %}background{% endif %}{% endcapture %}
-<div class="section section--maxWidth page__header{% if page.tabs %} section--tabs{% endif %}{% if page.banner_color or banner_color %} section--{{ page.banner_color }}{{ banner_color }}{% else %} section--primary{% endif %}{% if page.banner_image or banner_image %} background--cover{% endif %}"{% if page.banner_image or banner_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{{ image_path }}/{{ page.banner_image }}{{ banner_image }}');"{% endif %}>
+{% capture image_path %}
+{% if page.layout == "post" %}
+posts
+{% elsif page.layout == "case-study" %}
+background/projects
+{% else %}
+background
+{% endif %}
+{% endcapture %}
+<div class="section section--maxWidth page__header{% if page.tabs %} section--tabs{% endif %}{% if page.banner_color or banner_color %} section--{{ page.banner_color }}{{ banner_color }}{% else %} section--primary{% endif %}{% if page.banner_image or banner_image %} background--cover{% endif %}"{% if page.banner_image or banner_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{{ image_path | strip }}/{{ page.banner_image }}{{ banner_image }}');"{% endif %}>
   <div class="section__container">
     <!-- limit the content width for post pages -->
     {% if page.layout == "post" %}

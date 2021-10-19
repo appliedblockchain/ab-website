@@ -6,7 +6,7 @@
       <p>{{ item.title }}</p>
       {% if item.children %}
       {% svg /assets/icons/feather/chevron-down.svg width=16 %}
-      {% endif %}  
+      {% endif %}
     </{% if item.children %}div{% else %}a{% endif %}>
     {% if item.children %}
     <div class="js-menu-inner subnav">

@@ -152,6 +152,7 @@ strong {
 
   &--zero {
     font-family: $font-code;
+    display: contents;
 
     .body--large & {
       font-size: 19px;

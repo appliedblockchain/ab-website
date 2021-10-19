@@ -1,0 +1,170 @@
+.timeline {
+  position: relative;
+
+  &:before {
+    @include pseudo-element('', 0, auto, 0, 50%, $spacing/2, 100%);
+    transform: translateX(-$spacing/4);
+    background-color: $grey-10;
+
+    @include responsive(down, $tablet-down) {
+      left: $spacing*3.5;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: $section-spacing-content 0;
+
+    &:nth-of-type(odd) { .timeline__date { left: 50%; } }
+    &:nth-of-type(even) { .timeline__date { right: 50%; } }
+
+    &:nth-child(1) {
+      margin-top: 0;      
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-top: $section-spacing-content*2;
+
+      @include responsive(down, $tablet-down) {
+        padding-left: $spacing;
+      }
+    }
+
+    @include responsive(down, $tablet-down) {
+      justify-content: flex-start;
+      padding-left: $spacing*2;
+    }
+  }
+
+  &__dot {
+    border-radius: $border-radius-lg;   
+    display: inline-block;
+    background-color: $primary;
+    width: $spacing*2;
+    height: $spacing*2;
+    border: $border-lg;
+    border-color: $white;
+    box-sizing: content-box;
+    z-index: 1;
+    
+    .timeline__header:last-child & {
+      width: $spacing*4;
+      height: $spacing*4;
+      border-radius: $spacing*4;
+    }
+    
+    .timeline__content & {
+      width: $spacing;
+      height: $spacing;
+
+      @include responsive(down, $tablet-down) {
+        display: none;
+      }
+    }
+  }
+
+  &__date {
+    position: absolute;
+    padding: 0 $section-spacing-content;
+
+    @include responsive(down, $tablet-down) {
+      right: auto !important;
+      left: 0 !important;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    & + & {
+      margin-top: $section-spacing-content;
+    }
+
+    &:nth-of-type(odd) .timeline__card,
+    &:nth-of-type(even) .timeline__icon { 
+      padding-left: 0;
+      text-align: right; 
+      justify-content: flex-end;
+    }
+
+    &:nth-of-type(even) .timeline__card,
+    &:nth-of-type(odd) .timeline__icon { 
+      padding-right: 0;
+      text-align: left; 
+      justify-content: flex-start;
+    }
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+
+    @include responsive(up, $desktop-lg) {
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+
+    @include responsive(down, $laptop-down) {
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+  }
+
+  &__card, 
+  &__icon {
+    display: flex;
+    padding: 0 $spacing*8;
+    flex-basis: 50%;
+  }
+
+  &__card {
+
+    @include responsive(down, $tablet-down) {
+      flex-basis: 100% !important;
+      text-align: left !important;
+      padding: 0 !important;
+    }
+  }
+
+  &__icon {
+    height: $spacing*15;
+    
+    @include responsive(down, $tablet-down) {
+      display: none;
+    }
+    
+    img {
+      height: 100%;
+      width: auto;
+      max-width: 20rem;
+    }
+
+    .timeline__logo {
+      height: auto;
+      max-height: $spacing*15;
+      max-width: $spacing*30;
+    }
+  }
+
+  &__footer {
+
+    @include responsive(up, $tablet-up) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .card {
+    
+    @include responsive(up, $tablet-up) {
+      max-width: $spacing*50;
+    }
+  }
+}

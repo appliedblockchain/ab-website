@@ -55,21 +55,25 @@ the plugins used can be found in the `Gemfile` file, under `group :jekyll_plugin
 #### Autoprefixer
 
 This plugin provides simple autoprefixer support for Jekyll.
+
 [Documentation](https://github.com/vwochnik/jekyll-autoprefixer)
 
 #### Cofeescript
 
 Used for the built-in support of Sass.
+
 [Documentation](https://jekyllrb.com/docs/assets/)
 
 #### Compress
 
 A Jekyll layout that compresses HTML.
+
 [Documentation](http://jch.penibelst.de/)
 
 #### Jekyll Inline SVG
 
 SVG optimizer and inliner for jekyll.
+
 [Documentation](https://github.com/sdumetz/jekyll-inline-svg)
 
 #### Jekyll menus
@@ -184,14 +188,17 @@ The `section-header` is a built-in component, to ensure styling consistency. Her
 
 | Prop | Value | Description |
 | --- | --- | --- |
+| `class` | string | Add more class to the component to change the styling |
+| `size` | `sm`, `md` | `md` is the default value, use `sm` for subheaders |
 | `label` | string | |
 | `title` | string | |
 | `subtitle` | string | |
-| `size` | `sm`, `md` | `md` is the default value, use `sm` for subheaders |
-| `link_type` | `external` | Use that value to for an external link (adds an icon to the button and bypass jekyll page check |
+| `body` | string | |
+| `link_type` | `external` | Use that value to for an external link (adds an icon to the button and bypass jekyll link validation |
 | `link_label` | string | Button label |
 | `link_url` | string | Sets the URL. if not an external link. it needs to be the page file name without the file extension |
 | `link_title` | string | For SEO |
+| `link_color` | string | Overrides the button color |
 
 ### Components
 

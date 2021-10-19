@@ -1,47 +1,67 @@
 # about.html
 
-- year: '2015'
-  item:
-   - body: 'Adi started the company in 2015, and was soon joined by Francesco, with the vision of helping companies solve real-world problems by developing distributed applications and contributing towards creating a trustless ecosystem.'
-     icon: 'rocket'
+- year: "2015"
+  content:
+    - title: "How it started"
+      subtitle: "Adi started the company in 2015, and was soon joined by Francesco, with the vision of helping companies solve real-world problems by developing distributed applications and contributing towards creating a trustless ecosystem."
+      icon:
+        file: "rocket.svg"
 
-- year: '2016'
-  item:
-   - body: 'We received an Innovate UK grant to develop identity and privacy toolkit.'
-     icon: 'mantle-logo'
-   - body: 'Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving venture funding.'
-     icon: 'group'
+- year: "2016"
+  content:
+    - title: "First grant, first product"
+      subtitle: "We received an Innovate UK grant to develop identity and privacy toolkit."
+      icon:
+        type: "logo"
+        file: "mantle.svg"
+    - title: "Organic growth"
+      subtitle: "Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving venture funding."
+      icon:
+        file: "people.svg"
 
-- year: '2017'
-  item:
-   - body: 'We received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading. The application was productionized and is used on a daily basis by their trading team.'
-     link: 'case-studies/shell'
-     link_title: 'View project'
-     link_icon: 'fill'
-     icon: 'dollar'
+- year: "2017"
+  content:
+    - title: "First funding"
+      subtitle: "We received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading. The application was productionized and is used on a daily basis by their trading team."
+      link:
+        label: "Read case study"
+        url: "case-studies/shell"
+      icon:
+        file: "dollar.svg"
 
-- year: '2018'
-  item:
-   - body: 'We opened an office in Porto! We have chosen Porto as our first non-UK office and as our development centre for European expansion.'
-     icon: 'pinpoint'
+- year: "2018"
+  content:
+    - title: "European expansion"
+      subtitle: "We opened an office in Porto! We have chosen Porto as our first non-UK office and as our development centre for European expansion."
+      icon:
+        file: "location.svg"
 
-- year: '2019'
-  item:
-   - body: 'We launched K<span class="body--zero">0</span>, an open source zero knowledge proof framework for trading assets privately on smart contract blockchains.'
-     link: 'products'
-     link_icon: 'box'
-     icon_type: 'logo'
-     icon: 'k0'
+- year: "2019"
+  content:
+    - title: "New product launch"
+      subtitle: "We launched K<span class=\"body--zero\">0</span>, an open source zero knowledge proof framework for trading assets privately on smart contract blockchains."
+      link: 
+        label: "View our products"
+        url: "products"        
+      icon:
+        type: "logo"
+        file: "k0.png"
 
-- year: '2021'
-  item:
-   - body: 'We launched SILENTDATA, a platform that enables checks on private and sensitive banking data without the need to reveal it. The best way to protect data is not to reveal it in the first place.'
-     link: 'products'
-     link_icon: 'box'
-     icon_type: 'logo'
-     icon: 'silentdata-default'
-   - body: 'We started developping Beyond, a tool to enable trading in a confidential environment where trade activity, volume and price data are not revealed, even to the venue host.'
-     link: 'products'
-     link_icon: 'box'
-     icon_type: 'logo'
-     icon: 'beyond-default-primary'
+- year: "2021"
+  content:
+    - title: "Flagship product launch"
+      subtitle: "We launched SILENTDATA, a platform that enables checks on private and sensitive banking data without the need to reveal it. The best way to protect data is not to reveal it in the first place."
+      link: 
+        label: "View our products"
+        url: "products"        
+      icon:
+        type: "logo"
+        file: "silentdata-default.png"
+    - title: "New product launch"
+      subtitle: "We started developping Beyond, a tool to enable trading in a confidential environment where trade activity, volume and price data are not revealed, even to the venue host."
+      link: 
+        label: "View our products"
+        url: "products"        
+      icon:
+        type: "logo"
+        file: "beyond-default-primary.png"

@@ -1,0 +1,65 @@
+---
+layout: "default"
+title: "Our story"
+subtitle: "Nulla nec velit sed erat pharetra vehicula nec in ligula. Fusce lacinia in orci id imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae"
+banner_image: "london.jpg"
+menus: 
+  about-us:
+    weight: 2
+  footer_company:
+    weight: 7
+---
+
+<div class="section">
+  <div class="section__container">
+    <div class="section__content timeline">
+      {% for year in site.data.timeline %}
+      <span class="timeline__header">
+        <span class="timeline__dot"></span>
+        <p class="timeline__date h4">{{ year.year }}</p>
+      </span>
+      {% for item in year.content %}
+      <div class="timeline__content">
+        <div class="timeline__card">
+          <div class="card card--sm">
+            <div class="card__header">
+              <p class="card__title">{{ item.title }}</p>
+              <p class="card__subtitle">{{ item.subtitle }}</p>
+            </div>
+            {% if item.link %}
+            <div class="card__actions">
+              <a href="{{ site.base-url }}/{{ item.link.url }}" class="button button--sm button--primary">
+                <p>{% if item.link.label %}{{ item.link.label }}{% else %}View{% endif %}</p>
+              </a>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        <span class="timeline__dot"></span>
+        <div class="timeline__icon">
+          {% capture icon_link %}
+          {% if item.icon.type == 'logo' %}
+          assets/images/logos/products/{{ item.icon.file }}
+          {% else %}
+          assets/icons/custom/medium/{{ item.icon.file }}
+          {% endif %}
+          {% endcapture %}
+          <img src="{{ site.base-url }}{{ icon_link | strip }}" alt="{{ item.icon.file }} icon"{% if item.icon.type == 'logo' %} class="timeline__logo"{% endif %}>
+        </div>
+      </div>
+      {% endfor %}
+      {% endfor %}
+      <span class="timeline__header">
+        <span class="timeline__dot"></span>
+      </span>
+    </div>
+    {% include components/section-header.html
+      class = "timeline__footer"
+      subtitle = "We are now a team of 30+ developers, designers, sales executives, on five countries and three different time zones"
+      link_label = "Get to know our team"
+      link_url = "team"
+      link_title = "Go to team page"
+      link_color = "secondary"
+    %}
+  </div>
+</div>

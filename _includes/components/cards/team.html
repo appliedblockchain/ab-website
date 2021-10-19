@@ -1,0 +1,22 @@
+{% assign variant = include.variant %}
+
+<div class="grid__wrapper grid__spacing--4 grid--ai-center">
+  {% for person in site.data.team.[variant] %}
+  <div class="grid__item grid__item--xl3 grid__item--lg4 grid__item--md6">
+    <div class="card card--landscape card--xs card--transparent card--portrait">
+      <div class="card__media">
+        <img src="{{ site.base-url }}{{ site.imageurl}}/team/portrait/{{ person.thumbnail }}" alt="Portrait of a team member" class="card__thumbnail">
+      </div>
+      <div class="card__header">
+        <p class="card__title">{{ person.name }}</p>
+        <div class="card__subtitle">
+          <p class="body--bold">{{ person.title }}</p>
+          {% if person.office %}
+          <p class="body--regular">{{ person.office }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

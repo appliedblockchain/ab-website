@@ -30,7 +30,7 @@ tabs: "post-categories"
         {% endif %} 
         {% endcapture %}
         <div class="grid__item grid__item--lg4 grid__item--md6 {{ post.category | slugify }}">
-          <div class="card card--md">
+          <div class="card card--md card--blog">
             <div class="card__media">
               <a href="{{ post_link }}" class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default.jpg{% endif %}');"></a>
             </div>

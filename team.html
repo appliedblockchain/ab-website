@@ -1,0 +1,134 @@
+---
+layout: "default"
+title: "Team"
+subtitle: "We are a team of engineers, designers, and advisors with unique expertise in applying advances in cryptography to solve our client’s business problems."
+banner_image: "team.jpg"
+menus: 
+  about-us:
+    weight: 1
+  footer_company:
+    weight: 6
+---
+
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Leadership team"
+      subtitle = "Our founding team brings in 20+ years of experience in enterprise IT architecture, big data, artificial intelligence, integration and solution delivery in telecommunications and financial services."
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2">
+        {% for person in site.data.team.leadership %}
+        <div class="grid__item grid__item--xl6">
+          <div class="card card--md card--landscape card--team">
+            <div class="card__media">
+              <div class="card__thumbnail" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/team/{{ person.thumbnail }}')"></div>
+            </div>
+            <div class="card__content">
+              <div class="card card--md card--transparent">
+                <div class="card__header">
+                  <h3 class="card__title">{{ person.name }}</h3>
+                  <p class="card__subtitle">{{ person.title }}</p>
+                </div>
+                <div class="card__content">
+                  <p class="markdown">{{ person.bio | markdownify }}</p>
+                </div>
+                <div class="card__actions">
+                  <a href="" class="button button--icon button--linkedin">
+                    {% svg assets/icons/social/linkedin.svg %}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section--grey">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Management team"
+      subtitle = "Mauris nec turpis ex. Sed aliquam mauris non fringilla condimentum. Quisque non laoreet erat, non iaculis justo. Nullam eget tellus nulla."
+    %}
+    <div class="section__content">
+      {% include components/cards/team.html
+        variant = "management"
+      %}
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Board & Advisors"
+    %}
+    {% include components/section-header.html
+      size = "sm"
+      title = "Board"
+    %}
+    <div class="section__content">
+      {% include components/cards/team.html
+        variant = "board"
+      %}
+    </div>
+    {% include components/section-header.html
+      size = "sm"
+      title = "Advisors"
+    %}
+    <div class="section__content">
+      {% include components/cards/team.html
+        variant = "advisors"
+      %}
+    </div>
+  </div>
+</div>
+
+<div class="section section--grey">
+  <div class="section__container">
+    {% include components/section-header.html 
+      title = "What our investors say about us"
+    %}
+    <div class="section__content">
+      <div class="owl-carousel owl-carousel-testimonials-alt">
+        {% for quote in site.data.testimonials.investors %}
+        <div class="card card--md">
+          <div class="card__content">
+            {% svg assets/icons/quote.svg class="fill--primary-light" %}
+          </div>
+          <p class="card__content subtitle1">{{ quote.quote }}</p>
+          <div class="card__content">
+            <div class="card card--xs card--transparent card--landscape card--portrait">
+              <div class="card__media">
+                <img src="{{ site.base-url }}{{ site.imageurl }}/logos/investors/{{ quote.image }}.png" alt="Logo for {{ quote.image | capitalize }}" class="card__thumbnail">
+              </div>
+              <div class="card__header">
+                <p class="card__title">{{ quote.author }}</p>
+                <p class="card__subtitle">{{ quote.position }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section--primary">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Join our growing team"
+      subtitle = "Nulla nec velit sed erat pharetra vehicula nec in ligula. Fusce lacinia in orci id imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+      link_type = "external"
+      link_label = "See career opportunities"
+      link_url = "https://apply.workable.com/appliedblockchain/"
+      link_title = "External link to careers page"
+      link_color = "white"
+    %}
+  </div>
+</div>

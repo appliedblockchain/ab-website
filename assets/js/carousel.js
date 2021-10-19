@@ -22,7 +22,7 @@ $('.owl-carousel-testimonials').owlCarousel({
   margin: 16
 });
 
-$('.owl-carousel-testimonials-case-studies').owlCarousel({
+$('.owl-carousel-testimonials-alt').owlCarousel({
   dots: false,
   nav: true,
   loop: false,
@@ -45,7 +45,7 @@ $('.owl-carousel-news').owlCarousel({
   nav: false,
   loop: true,
   autoplay: true,
-  smartSpeed: 2000,
+  smartSpeed: 4000,
   mouseDrag: false,
   items: 1, 
   margin: 40,
@@ -57,7 +57,7 @@ $('.owl-carousel-rating').owlCarousel({
   nav: false,
   loop: true,
   autoplay: true,
-  smartSpeed: 2000,
+  smartSpeed: 4000,
   mouseDrag: false,
   items: 1, 
   margin: 40,

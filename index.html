@@ -52,7 +52,7 @@ menus:
             <div class="grid__item spinner">
               <div class="owl-carousel owl-carousel-news">
                 {% for item in site.data.news %}
-                <div class="card card--sm card--landscape card--transparent card--news">
+                <div class="card card--xs card--landscape card--transparent card--news">
                   {% if item.image %}
                   <div class="card__media">
                     <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="Cover image for blog post" class="card__thumbnail pb-0">
@@ -81,7 +81,7 @@ menus:
             <div class="grid__item spinner">
               <div class="owl-carousel owl-carousel-rating">
                 {% for item in site.data.peer-insights %}
-                <div class="card card--sm card--landscape card--transparent">
+                <div class="card card--xs card--landscape card--transparent">
                   <div class="card__header">
                     <p class="card__subtitle">{{ item.title }}</p>
                     <div class="card__subtitle rating">
@@ -108,6 +108,7 @@ menus:
     </div>
   </div>
 </div>
+
 <div class="section">
   <div class="section__container">
     {% include components/section-header.html 
@@ -125,6 +126,7 @@ menus:
     </div>
   </div>
 </div>
+
 <div class="section section--grey overflow--hidden">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
@@ -143,6 +145,7 @@ menus:
     </div>
   </div>
 </div>
+
 <div class="section section--grey">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
@@ -161,6 +164,7 @@ menus:
     </div>
   </div>
 </div>
+
 <div class="section section--primary">
   <div class="section__container">
     <div class="section__content">
@@ -178,6 +182,7 @@ menus:
     </div>
   </div>
 </div>
+
 <div class="section">
   <div class="section__container">
     {% include components/section-header.html 
@@ -185,7 +190,7 @@ menus:
     %}
     <div class="section__content">
       <div class="owl-carousel owl-carousel-testimonials">
-        {% for quote in site.data.testimonials %}
+        {% for quote in site.data.testimonials.clients %}
         <div class="card card--md">
           <div class="card__content">
             {% svg assets/icons/quote.svg class="fill--primary-light" %}
@@ -208,6 +213,7 @@ menus:
     </div>
   </div>
 </div>
+
 <div class="section section--grey">
   <div class="section__container">
     {% include components/section-header.html 

@@ -8,9 +8,11 @@
 {% assign title_component = include.title_component %}
 {% assign subtitle = include.subtitle %}
 {% assign body = include.body %}
+{% assign link_type = include.link_type %}
 {% assign link_label = include.link_label %}
 {% assign link_url = include.link_url %}
 {% assign link_title = include.link_title %}
+{% assign link_color = include.link_color %}
 
 <div{% if id %} id="{{ id }}"{% endif %} class="section__header section__header--{% if size %}{{ size }}{% else %}md{% endif %}{% if class %} {{ class }}{% endif %}">
   {% if label %}
@@ -27,8 +29,16 @@
   {% endif %}
   {% if link_url %}
   <div class="button__wrapper">
-    <a  href="{% link {{ link_url }}.html %}" title="{{ link_title }}" class="section__button button button--primary">
-      <p>{{ link_label }}</p>
+    {% capture link %}
+    {% if link_type == "external" %}
+    {{ link_url }}
+    {% else %}
+    {% link {{ link_url }}.html %}
+    {% endif %}
+    {% endcapture %}
+    <a href="{{ link }}" title="{{ link_title }}" class="section__button button{% if link_color %} button--{{ link_color }}{% else %} button--primary{% endif %}">
+      {{ link_label }}
+      {% if link_type == "external" %}{% svg assets/icons/feather/external-link.svg %}{% endif %}
     </a>
   </div>
   {% endif %}

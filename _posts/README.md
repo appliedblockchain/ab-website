@@ -11,7 +11,7 @@
 
 > If the post title is `Blockchain as a Database`, it becomes `YYYY-MM-DD-blockchain-database`
 
-- Copy/paste this code in the file and fill the content
+- Copy/paste the code below and fill the content
 - If the news is internal, use [markdown terminology](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to write the article and it will create the styling automoatically.
 
 ```yml
@@ -43,7 +43,7 @@ You can write markdown code here.
 | `layout` | `post` | Do not edit! Defines which layout to use |
 | `title` | string | The post title, which appears on the page **and** the HTML title tag (that appears on the browser tabs) |
 | `lead` | string | First paragraph of the post (excerpt on the media page, larger text on the post page |
-| `image` | string | Place the image in `_assets/images/posts` folder and  write the name here. If no image, use `default.jpg` |
+| `image` | string | Place the image in `_assets/images/posts` folder and  write the name here, with the file extension |
 | `category` | `News`, `Press release`, `Blog`, `Video` | |
 | `link:type` | `external`, `pdf`, `webinar`, `podcast`, `newsletter`, `report` | Optional parameters to override the default link behaviour, button style and content |
 | `link:source` | string | Add to add a suffix to the button label (e.g. write `medium` to display `Read on medium` |

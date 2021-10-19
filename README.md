@@ -188,6 +188,10 @@ The `section-header` is a built-in component, to ensure styling consistency. Her
 | `title` | string | |
 | `subtitle` | string | |
 | `size` | `sm`, `md` | `md` is the default value, use `sm` for subheaders |
+| `link_type` | `external` | Use that value to for an external link (adds an icon to the button and bypass jekyll page check |
+| `link_label` | string | Button label |
+| `link_url` | string | Sets the URL. if not an external link. it needs to be the page file name without the file extension |
+| `link_title` | string | For SEO |
 
 ### Components
 
@@ -240,61 +244,7 @@ background_color: white # do not change
 
 ## Create project
 
-- In the `_case-studies` folder, create a new .md file.
-- Name it with a slugified version of the client name (e.g. Lloyd's register becomes `lloyd-s-register.md`).
-- Copy/paste the code below and fill it accordingly.
-```yml
----
-layout: "case-study" # do not change
-order: # number, specify the order it will appear on the case-studies page
-case_study: true # add if the project has a standalone page
-title: # company name
-subtitle: # short project/deliverable description
-industries: 
-summary: # longer description of the company/project
-link: # [optionnal] external link to company website (or other)
-link_title: # [optionnal] # overrides default link title
-background_color: white # do not change
-
-deliverables: 
-
-challenge-diagram: 
-challenge: 
-  - lead: 
-  - paragraph: 
-  - paragraph: 
-  # etc.
-
-delivery:
-  - item:
-    - paragraph: 
-    - paragraph: 
-    # etc.
-  - item:
-    - paragraph: 
-    # etc.
-
-results:
-  - paragraph: 
-  - paragraph: 
-  # etc.
-results-icons:
-  - image: 
-    title: 
-  - image: 
-    title: 
-  # etc.
-
-testimonial:
-  - quote: 
-    author: 
-    position: 
-    company: 
----
-```
-- [Here is an example](https://appliedblockchain.com/case-studies/appii/) of how each is displayed.
-- Add logo in the `assets/images/carousel/clients_color` folder.
-> Png format. No white space around the logo. File name should be the same as the .md file
+[Documentation](https://github.com/appliedblockchain/ab-website/tree/master/_projects/README.md)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

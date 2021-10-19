@@ -1,6 +1,6 @@
 ---
 layout: "case-study"
-order: 1
+menu: "footer_customers"
 case_study: true
 title: "SITA"
 subtitle: "Distributed drone registry"

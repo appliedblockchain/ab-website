@@ -20,6 +20,9 @@
 ```yml
 ---
 layout: "case-study"
+menu:
+  footer_customers:
+    disabled: true
 order:
 case_study: true
 title: ""
@@ -84,6 +87,7 @@ testimonial:
 | Parameter | Values | Description |
 | --- | --- | --- |
 | `layout` | `case-study` | Do not edit! Defines which layout to use if the project has a case study page |
+| `menus` | `node` | Required. If the projects has a case study, use `menu: "footer_customers"`. If not use the snippet below. |
 | `order` | number | Specify the order it will appear on the case-studies page |
 | `case_study` | boolean | Set to true to create a standalone page and add the project to the case studies page |
 | `title` | string | Company name |
@@ -95,6 +99,12 @@ testimonial:
 | `link:url` | string | (optionnal) External link to company website (or other) |
 | `link:color` | string | Defines to button color |
 | `deliverables` | string | |
+
+```yml
+menu:
+  footer_customers:
+    disabled: true
+```
 
 ## Advice
 

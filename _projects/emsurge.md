@@ -1,6 +1,8 @@
 ---
 layout: "case-study"
-order: 100
+menu:
+  footer_customers:
+    disabled: true
 title: "Emsurge"
 subtitle: "Streamlining the pre to post trade process and create more interactive, efficient LNG networks"
 industries:

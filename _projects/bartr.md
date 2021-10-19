@@ -1,6 +1,8 @@
 ---
 layout: "case-study"
-order: 100
+menu:
+  footer_customers:
+    disabled: true
 title: "BARTR"
 subtitle: "Wholesale telecoms billing and reconciliation"
 industries:

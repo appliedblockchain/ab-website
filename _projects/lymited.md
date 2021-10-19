@@ -1,6 +1,8 @@
 ---
 layout: "case-study"
-order: 100
+menu:
+  footer_customers:
+    disabled: true
 title: "Lymited"
 subtitle: "Changing the Game for Luxury Vendors"
 industries:

@@ -1,6 +1,8 @@
 ---
 layout: "case-study"
-order: 1
+menu:
+  footer_customers:
+    disabled: true
 title: "Telecom Italia"
 subtitle: "TIM WCAP Innovation Program"
 industries:

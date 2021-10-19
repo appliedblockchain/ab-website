@@ -1,22 +1,3 @@
-# about.html
-testimonials_investors:
-  - name: Shell
-    quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
-    author: Johan Krebbers
-    position: Chief Technology Officer for IT
-    company: Shell Global Solutions International
-
-  - name: QBN
-    quote: Governments, corporates, and individuals are increasingly concerned about data privacy and data security. We believe zero knowledge proof offers a new and better way to share and handle data. We are very excited to be supporting Applied Blockchain, a pioneer in this space, and we can’t wait to see an abundance of applications for ZKP coming out in the near future.
-    author: Philea Chim
-    company: QBN Capital
-
-  - name: Calibrate
-    quote: We believe in the long-term promise and process innovation that blockchain brings and believe Applied Blockchain is strategically positioned to lead in this space.
-    author: Remy Kesrouani
-    position: Fund Manager and Partner
-    company: Calibrate
-
 # services.html
 technologies:
   - name: Ethereum

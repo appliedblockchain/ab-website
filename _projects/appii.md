@@ -1,6 +1,8 @@
 ---
 layout: "case-study"
-order: 100
+menu: 
+  footer_customers:
+    weigth: 1
 case_study: true
 title: "APPII"
 subtitle: "World’s first blockchain career verification and background screening platform"
@@ -10,7 +12,6 @@ industries:
 summary: "APPII is an online verification, career management, and recruitment platform."
 link: 
   url: "https://appii.io/"
-menus: "footer_customers"
 
 deliverables: "Blockchain-based career verification application"
 

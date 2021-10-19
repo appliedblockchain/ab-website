@@ -1,6 +1,8 @@
 ---
 layout: "case-study"
-order: 5
+menu:
+  footer_customers:
+    disabled: true
 title: "United Nations"
 subtitle: "Working with the United Nations agencies including World Food Program and UNICEF"
 industries:

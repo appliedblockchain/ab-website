@@ -131,6 +131,27 @@
       }
     }
     
+    &--disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: default;
+      
+      a {
+        cursor: default;
+      }
+    }
+
+    @include hover {
+      
+      .nav__trigger {
+        color: inherit;
+        
+        svg {
+          fill: inherit;
+        }
+      }
+    }
+    
     &--active {
       color: $primary;
 

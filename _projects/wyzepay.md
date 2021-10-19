@@ -1,6 +1,9 @@
 ---
 layout: "case-study"
-order: 100
+menu:
+  footer_customers:
+    disabled: true
+    weight: 100
 title: "Wyzepay"
 subtitle: "The payments platform for forward thinkers"
 industries:

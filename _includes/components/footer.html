@@ -8,7 +8,9 @@
           </a>
         </div>
         <div class="grid__item grid__item--lg4 grid--jc-center">
-          {% include components/social.html %}
+          {% include components/social.html 
+            size = "lg"
+          %}
         </div>
       </div>
     </div>
@@ -100,7 +102,7 @@
       </div>
     </div>
     <div class="section__content">
-      <p class="caption">© Copyright {{ site.time | date: '%Y' }} Applied Blockchain Ltd. All rights reserved.</p>
+      <p class="caption gutter">© Copyright {{ site.time | date: '%Y' }} Applied Blockchain Ltd. All rights reserved.</p>
       <p class="overline">Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276</p>
     </div>
   </div>

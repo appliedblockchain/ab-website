@@ -1,6 +1,6 @@
 ---
 layout: "case-study"
-order: 100
+menu: "footer_customers"
 case_study: true
 title: "BABB"
 subtitle: "Blockchain-based social bank"

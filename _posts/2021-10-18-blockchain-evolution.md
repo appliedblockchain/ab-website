@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Blockchain Evolution'
+title: 'Principles of Value in Blockchain Technology'
 image: blockchain-evolution
 category: blog
 #social: external
 #link: https://www.enterprisetimes.co.uk/2021/09/28/placeholder-nfts-a-digital-fad-or-a-transformational-technology/
-headline: 'In this blog I outline the trends in blockchain that Ive observed over the last 5 years'
+headline: 'In this blog I outline the core principles of value that have held true over 5 years and throughout the recent trends'
 ---
 
 I’ve been in the space since 2015, and I usually write an end-of-year summary of developments, but blockchain technology and applications are evolving at such a pace at the moment, that I think there’s no point waiting until the end of the year.

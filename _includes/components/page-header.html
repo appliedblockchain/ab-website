@@ -4,6 +4,7 @@
 {% assign link.label = include.link.label %}
 {% assign link.url = include.link.url %}
 {% assign link.title = include.link.title %}
+{% assign link.color = include.link.color %}
 {% assign banner_image = include.banner_image %}
 {% assign banner_color = include.banner_color %}
 
@@ -48,7 +49,7 @@ background
       <div class="grid__wrapper">
         <div class="button__wrapper button__wrapper--landscape">
           {% for link in page.links %}
-          <a  href="{{ site.base-url }}{{ link.url }}" title="{{ link.title }}" class="button button--primary">
+          <a  href="{% link {{ link.url }}.html %}" title="{{ link.title }}" class="button button--{% if link.color %}{{ link.color }}{% else %}primary{% endif %}">
             <p>{{ link.label }}</p>
           </a>
           {% endfor %}

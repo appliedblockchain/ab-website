@@ -9,20 +9,23 @@
           {% if event.date_to %}{{ event.date | date: '%b %-d' }} to {{ event.date_to | date: '%b %-d, %Y' }}{% else %}{{ event.date | date: '%b %-d, %Y' }}{% endif %}
           {% if event.type %}<span class="ml-1 body--grey">{{ event.type }}</span>{% endif %}
         </p>
-        <div class="card__title">{{ event.name }}</div>
+        <h3 class="card__title">{{ event.title }}</h3>
       </div>
+      {% if event.description %}
+      <p class="card__content">{{ event.description }}</p>
+      {% endif %}
       {% if event.location %}
       <p class="card__content">{{ event.location }}</p>
       {% endif %}
       <div class="card__actions">
         <div class="button__wrapper">
-          {% if event.website %}
-          <a href="{{ event.website }}" class="button button--sm button--primary">
+          {% if event.website and event.recording != true %}
+          <a href="{{ event.website }}" target="_blank" rel="noopener" class="button button--sm button--primary">
             Website
             {% svg assets/icons/feather/external-link.svg %}
           </a>
           {% endif %}
-          {% if event.register %}
+          {% if event.register and event.recording != true %}
           <a href="{{ event.register }}" class="button button--sm button--secondary">
             Register
             {% svg assets/icons/feather/external-link.svg %}
@@ -34,8 +37,32 @@
             {% svg assets/icons/feather/external-link.svg %}
           </a>
           {% endif %}
+          {% if event.type == "Webinar" and event.recording %}
+          <a href="{{ site.base-url }}{{ event.url }}" class="button button--sm button--primary">
+            {% if event.recording.type == "video" %}View{% elsif event.recording.type == "form" %}Download{% else %}Link to{% endif %} recording
+          </a>
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
+  {% if event.type == "Webinar" and event.recording and event.speakers %}
+  <div class="card__content">
+    <div class="grid__wrapper grid__spacing--1">
+      {% for speaker in event.speakers %}
+      <div class="grid__item">
+        <div class="card card--xs card--transparent card--landscape card--portrait card--portrait-sm">
+          <div class="card__media">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/team/portrait/{{ speaker.thumbnail }}" alt="Portrait of {{ speaker.name }}" class="card__thumbnail">
+          </div>
+          <div class="card__content">
+            <p class="caption body--nowrap">{{ speaker.name }}</p>
+            <p class="overline body--nowrap">{{ speaker.company }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 </div>

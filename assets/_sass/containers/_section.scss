@@ -285,11 +285,11 @@
   }
 }
 
-#contact {
+#contact,
+#webinar {
 
   @include responsive(down, $desktop-down) { .section__header { max-width: $page-max-width/3; }}
-  @include responsive(down, $laptop-down) { .section__header { max-width: $page-max-width/4; }}
-  @include responsive(down, $tablet-down) { .section__header { max-width: none; }}
+  @include responsive(down, $laptop-down) { .section__header { max-width: none; }}
 }
 
 #case-study {

@@ -121,7 +121,7 @@ banner_image: example2.jpg
 banner_color: "primary"
 links:
   - label: "Back to homepage"
-    url: "/"
+    url: "index"
     title: "Go to homepage"
 menus:
   header:

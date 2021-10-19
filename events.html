@@ -11,11 +11,11 @@ menus:
 ---
 
 <!-- reverse the order -->
-{% assign sorted = site.data.events | reverse %}
+{% assign sorted = site.events | reverse %}
 <!-- capture today's date -->
-{% capture now %} {{ 'now' | date: '%s' | plus: 0 }} {% endcapture %}
-<!-- capture date - 30 days for recent events -->
-{% capture past %} {{ 'now' | date: '%s' | minus: 3600 | date_to_long_string }} {% endcapture %}
+{% capture now %} {{ 'now' | date: '%s' }} {% endcapture %}
+<!-- capture date -28 days for recent events -->
+{% capture past %} {{ 'now' | date: '%s' | minus: 2419200 }} {% endcapture %}
 
 <div class="section">
   <div class="section__container">
@@ -27,8 +27,8 @@ menus:
         <div class="section__content">
           <div class="grid__wrapper grid__spacing--2">
             {% for event in sorted %}
-            {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
-            {% if date >= now %}
+            {% capture date %} {{ event.date | date: '%s' }} {% endcapture %} 
+            {% if date > now %}
             <div class="grid__item">
               {% include components/cards/event.html %}
             </div>
@@ -41,9 +41,9 @@ menus:
         %}
         <div class="section__content">
           <div class="grid__wrapper grid__spacing--2">
-            {% for event in site.data.events %}
-            {% capture date %} {{ event.date | date_to_long_string }} {% endcapture %} 
-            {% if date < past %}
+            {% for event in site.events %}
+            {% capture date %} {{ event.date | date: '%s' }} {% endcapture %} 
+            {% if date > past and date <= now %}
             <div class="grid__item">
               <!-- {{ past }}
               {{ event.date }} -->

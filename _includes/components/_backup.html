@@ -1,3 +1,18 @@
+<!-- WEBINAR ATTENDANCE FEEDBACK-->
+<div class="row row--center">
+  {% if page.meta != "hide" %}
+  <div class="grid__item--md6 hide--tablet body--left">
+    {% include components/cards/webinar.html %}
+  </div>
+  {% endif %}
+  <div class="{% if page.meta != "hide" %}grid__item--md6{% else %}grid__item--lg9{% endif %}">
+    <div class="background--shadow">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+
 <!-- TODAY'S EVENT (EVENT ) -->
 {% for event in site.data.events %}
 {% capture now %} {{'now' | date: '%d' | plus: 0 }} {% endcapture %} <!-- capture today's date -->

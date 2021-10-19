@@ -1,0 +1,44 @@
+---
+layout: "default"
+title: "Webinars"
+subtitle: "Here is a list of our past webinars, fugit rem nostrum veniam eum qui doloribus. Ut est quo voluptates. Deleniti eum aut non placeat rerum."
+banner_image: "webinar.jpg"
+links: 
+  - label: "Check our upcoming events"
+    url: "events"
+    title: "Go to events page"
+    color: "white"
+menus: 
+  resources:
+    weight: 1
+  footer_resources:
+    weight: 1
+---
+
+<!-- reverse the order -->
+{% assign sorted = site.events | reverse %}
+
+<div class="section">
+  <div class="section__container">
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2">
+        {% if site.events.size > 0 %}
+        {% for event in sorted %}
+        {% if event.type == "Webinar" and event.recording %}
+        <div class="grid__item">
+          {% include components/cards/event.html %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% else %}
+        <div class="grid__item">
+          {% include components/section-header.html
+            title = "We’re sorry"
+            subtitle = "There are no past webinars. Come back soon!"
+          %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

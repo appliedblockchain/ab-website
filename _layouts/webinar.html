@@ -4,20 +4,53 @@ layout: compress
 
 {% include containers/header.html %}
 
-<section class="section section--dark">
-    <div class="section__content">
-        <div class="row row--center">
-            {% if page.meta != "hide" %}
-            <div class="grid__item--md6 hide--tablet body--left">
-                {% include components/cards/webinar.html %}
-            </div>
-            {% endif %}
-            <div class="{% if page.meta != "hide" %}grid__item--md6{% else %}grid__item--lg9{% endif %}">
-                <div class="background--shadow">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
-</section>
+{% include components/page-header.html
+  label = "Webinar recording"
+  title = page.title
+  subtitle = page.description
+  banner_color = "dark"
+%}
 
+<div class="section section--overlap">
+  <div class="section__container">
+    <div class="grid__wrapper grid__spacing--8 grid--jc-flex-end">
+      <div class="grid__item grid__item--xl5 grid__item--lg6">
+        <div class="card card--lg{% if page.recording.type == "video" %} card--transparent{% endif %} spinner spinner--center">
+          <div class="card__content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html 
+      title = "Speakers"
+    %}
+    {% if page.speakers %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--3">
+        {% for speaker in page.speakers %}
+        <div class="grid__item">
+          <div class="card card--sm card--transparent card--landscape card--portrait">
+            <div class="card__media">
+              <img src="{{ site.base-url }}{{ site.imageurl }}/team/portrait/{{ speaker.thumbnail }}" alt="Portrait of {{ speaker.name }}" class="card__thumbnail">
+            </div>
+            <div class="card__header">
+              <p class="card__title">{{ speaker.name }}</p>
+              <p class="card__subtitle">{{ speaker.company }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% include components/footer.html %}
 {% include containers/footer.html %}

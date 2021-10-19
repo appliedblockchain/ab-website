@@ -7,6 +7,7 @@ layout: compress
 {% capture page_label %}{{ page.date | date: "%b %-d, %Y" }} {{ page.category }}{% endcapture %}
 {% include components/page-header.html
   label = page_label
+  title = page.title
   subtitle = page.lead
   banner_image = page.image
   banner_color = "white"

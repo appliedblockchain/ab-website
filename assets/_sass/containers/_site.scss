@@ -47,6 +47,8 @@ html, body {
   height: 0; 
   overflow: hidden; 
   max-width: 100%; 
+  width: 100%;
+  border-radius: $border-radius-lg;
 
   iframe, object, embed { 
     position: absolute; 

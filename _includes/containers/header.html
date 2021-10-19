@@ -93,4 +93,4 @@
 {% include components/navbar.html %}
 {% endif %}
 
-<div id="{% if page.layout == "post" %}post{% elsif page.layout == "case-study" %}case-study{% else %}{{ page.title | slugify }}{% endif %}" class="page">
+<div id="{% if page.layout == "post" %}post{% elsif page.layout == "case-study" %}case-study{% elsif page.layout == "webinar" %}webinar{% else %}{{ page.title | slugify }}{% endif %}" class="page">

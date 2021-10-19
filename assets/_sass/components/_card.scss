@@ -315,8 +315,8 @@
 
   &--event {
 
-    .card__thumbnail {
-      width: $spacing*20;
+    .card__media {
+      flex-basis: 33.33%;
     }
   }
 
@@ -375,11 +375,28 @@
       
       &__thumbnail {
         background-color: transparent;
-        width: $spacing*10;
-        height: $spacing*10;
+        width: $spacing*8;
+        height: $spacing*8;
         border-radius: $spacing*1.5;
         padding-bottom: 0;
         object-fit: cover;
+      }
+    }
+
+    &-sm {
+      @extend .card--portrait;
+
+      .card {
+    
+        &__media {
+          padding-right: $spacing !important;
+        }
+        
+        &__thumbnail {
+          width: $spacing*5;
+          height: $spacing*5;
+          border-radius: $spacing*1;
+        }
       }
     }
   }

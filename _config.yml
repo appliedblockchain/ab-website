@@ -6,7 +6,7 @@ description: "From NFT to DeFi, build your solution with one of the most experie
 # internal path
 resourceurl: "/assets"
 imageurl: "/assets/images"
-url: "https://appliedblockchain.com"
+url: "https://appliedblockchain.com/"
 
 # offices
 offices:
@@ -41,7 +41,10 @@ collections:
     permalink: /case-studies/:path
   posts:
     output: true
-    permalink: /:title
+    permalink: /blog/:title
+  events:
+    output: true
+    permalink: /webinars/:title
   newsletters:
     output: true
     permalink: /newsletters/:path

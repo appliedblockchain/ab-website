@@ -193,7 +193,7 @@
   display: none;
   position: absolute;
   top: $spacing*8;
-  left: -10%;
+  left: -$spacing/2;
   background-color: $white;
   border-radius: $spacing*2;
   width: 120%;
@@ -214,8 +214,7 @@
     cursor: pointer;
     transition: color $transition;
     will-change: color;
-    padding: $spacing*1.5;
-    text-align: center;
+    padding: $spacing*1.5 $spacing*2;
     display: block;
     color: $text;
     height: auto;

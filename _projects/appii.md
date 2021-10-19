@@ -4,6 +4,7 @@ menu:
   footer_customers:
     weigth: 1
 case_study: true
+order: 100
 title: "APPII"
 subtitle: "World’s first blockchain career verification and background screening platform"
 image: "appii.jpg"

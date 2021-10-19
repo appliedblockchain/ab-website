@@ -17,12 +17,14 @@ about-us:
     title: "Careers"
     identifier: "careers"
     weight: 4
+    external: true
 
 footer_company:
   - url: "https://apply.workable.com/appliedblockchain/"
     title: "Careers"
     identifier: "careers"
     weight: 9
+    external: true
 
 footer_products:
   - url: "https://www.silentdata.com"

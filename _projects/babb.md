@@ -2,6 +2,7 @@
 layout: "case-study"
 menu: "footer_customers"
 case_study: true
+order: 100
 title: "BABB"
 subtitle: "Blockchain-based social bank"
 image: "babb.jpg"

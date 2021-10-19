@@ -117,7 +117,6 @@
 
     svg {
       fill: $text;
-      margin-left: $spacing/4;
     }
 
     @include hover {
@@ -139,15 +138,15 @@
       a {
         cursor: default;
       }
-    }
-
-    @include hover {
       
-      .nav__trigger {
-        color: inherit;
+      @include hover {
         
-        svg {
-          fill: inherit;
+        .nav__trigger {
+          color: inherit;
+          
+          svg {
+            fill: inherit;
+          }
         }
       }
     }
@@ -195,6 +194,17 @@
     display: flex;
     align-items: center;
 
+    svg {
+      transition: fill $transition;
+      will-change: fill;  
+      width: $spacing*1.5;
+      margin-left: $spacing/2;
+
+      .footer & {
+        fill: $text-contrast;
+      }
+    }
+
     .navbar & {
       @extend .button__inner;
 
@@ -232,6 +242,8 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
     cursor: pointer;
     transition: color $transition;
     will-change: color;
@@ -269,6 +281,11 @@
 
     &--active {
       color: $primary;
+    }
+
+    svg {
+      width: $spacing*1.5;
+      margin-left: $spacing/2;
     }
   }
 }

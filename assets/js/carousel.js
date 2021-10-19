@@ -9,9 +9,8 @@ $('.owl-carousel-testimonials').owlCarousel({
   nav: true,
   loop: true,
   autoplay: false,
-  autoplayTimeout: 8000,
+  autoplayTimeout: 10000,
   autoplayHoverPause: true,
-  smartSpeed: 2000,
   mouseDrag: false,
   responsive: {
     0: { items: 1 },
@@ -27,9 +26,8 @@ $('.owl-carousel-testimonials-alt').owlCarousel({
   nav: true,
   loop: false,
   autoplay: false,
-  autoplayTimeout: 8000,
+  autoplayTimeout: 10000,
   autoplayHoverPause: true,
-  smartSpeed: 2000,
   mouseDrag: false,
   responsive: {
     0: { items: 1 },

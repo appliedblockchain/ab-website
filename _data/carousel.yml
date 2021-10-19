@@ -1,13 +1,3 @@
-# services.html
-technologies:
-  - name: Ethereum
-  - name: Quorum
-  - name: Hyperledger Fabric
-  - name: Corda
-  - name: Algorand
-  - name: Libra
-  - name: Elements
-
 # webinar.html
 webinar:
   - quote: “Very well done and right paced”

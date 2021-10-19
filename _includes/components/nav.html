@@ -2,16 +2,18 @@
 
 {% for item in site.menus[variant] %}
   <div class="nav__item {% if page.title == item.title or page.menus contains item.identifier %} nav__item--active{% endif %}{% if item.disabled == true %} nav__item--disabled{% endif %}">
-    <{% if item.children %}div{% else %}a href="{{ item.url }}"{% endif %} class="js-menu-trigger nav__trigger" title="Go to {{ item.title }}">
+    <{% if item.children %}div{% else %}a href="{{ item.url }}"{% endif %}{% if item.external == true %} target="_blank" rel="noopener"{% endif %} class="js-menu-trigger nav__trigger" title="Go to {{ item.title }}">
       <p>{{ item.title }}</p>
-      {% if item.children %}
-      {% svg /assets/icons/feather/chevron-down.svg width=16 %}
-      {% endif %}
+      {% if item.children %}{% svg /assets/icons/feather/chevron-down.svg width=16 %}{% endif %}
+      {% if item.external == true %}{% svg /assets/icons/feather/external-link.svg width=16 %}{% endif %}
     </{% if item.children %}div{% else %}a{% endif %}>
     {% if item.children %}
     <div class="js-menu-inner subnav">
       {% for item in item.children %}
-      <a class="subnav__item{% if page.title == item.title %} subnav__item--active{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}"">{{ item.title | capitalize }}</a>
+      <a class="subnav__item{% if page.title == item.title %} subnav__item--active{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}"">
+        {{ item.title | capitalize }}
+        {% if item.external == true %}{% svg /assets/icons/feather/external-link.svg width=16 %}{% endif %}
+      </a>
       {% endfor %}
     </div>
     {% endif %}

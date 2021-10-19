@@ -1,22 +1,79 @@
 ---
 layout: "default"
-title: "Services"
-subtitle: "We bring innovative digital trust solutions to problems businesses face today"
-body: "We work with enterprises and startups across all verticals. We advise, design and develop pragmatic solutions best suited to customer needs, keeping solutions simple, and only using advanced technologies such as confidential computing, secure enclaves, blockchains and advanced cryptography when they introduce real value. We build across the entire development stack. We work with our customers from the initial seed of an idea and continue to provide support as the solution moves into production and beyond."
+title: "Technologies"
+subtitle: "Solutions tailored to your business. Our team builds and supports full stack, privacy-preserving, secure and distributed applications."
 menus:
   solutions:
     weight: 2
-  footer_industries:
-    weight: 1
+  footer_company:
+    weight: 4
 ---
 
-<section class="section section--alt section--white">
-  <div class="section__content">
-    <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
-      <p class="button__inner">Projects</p>
-    </a>
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Privacy-preserving technology experts"
+      subtitle = "We use advanced technologies such as confidential computing, secure enclaves, blockchains and advanced cryptography"
+    %}
   </div>
-</section>
+</div>
+
+<div class="section section--grey">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Technology stack"
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2 grid--jc-center grid__inline grid__inline--lg7 grid__inline--md4 grid__inline--sm3 grid__inline--2">
+        {% for image in site.static_files %}
+        {% if image.path contains 'logos/technologies' %}
+        <div class="grid__item">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="Logo">
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Development stack"
+      subtitle = "Applied Blockchain acompanies on all the aspects of your proejct. We build across the entire development stack"      
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2">
+        {% for skill in site.data.skills %}
+        <div class="grid__item grid__item--6">
+          <div class="card card--md">
+            <div class="card__header">
+              <h3 class="card__title">{{ skill.title }} </h3>
+            </div>
+            <div class="card__content">
+              <p>{{ skill.subtitle }}</p>
+            </div>
+            <div class="card__content">
+              <div class="card card--sm card--transparent">
+                <div class="card__header">
+                  <p class="card__title">Featured project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 <section id="services-solutions" class="section section--grey">
   {% include components/section-header.html

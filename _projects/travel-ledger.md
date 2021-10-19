@@ -2,6 +2,7 @@
 layout: "case-study"
 menu: "footer_customers"
 case_study: true
+order: 3
 dlc: true
 title: "Travel Ledger"
 subtitle: "Travel settlement platform built on blockchain technology"

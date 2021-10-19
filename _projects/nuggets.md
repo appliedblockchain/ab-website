@@ -2,6 +2,7 @@
 layout: "case-study"
 menu: "footer_customers"
 case_study: true
+order: 100
 title: "Nuggets"
 subtitle: "Reinventing consumer data security"
 image: "nuggets.jpg"

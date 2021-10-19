@@ -2,6 +2,7 @@
 layout: "case-study"
 menu: "footer_customers"
 case_study: true
+order: 2
 title: "SITA"
 subtitle: "Distributed drone registry"
 image: "sita.jpg"

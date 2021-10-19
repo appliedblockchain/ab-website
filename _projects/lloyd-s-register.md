@@ -2,6 +2,7 @@
 layout: "case-study"
 menu: "footer_customers"
 case_study: true
+order: 4
 title: "Lloyd's Register"
 subtitle: "Creating the first demonstrator that can register ships into Class using blockchain technology"
 image: "lloyds-register.jpg"

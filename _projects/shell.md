@@ -2,6 +2,7 @@
 layout: "case-study"
 menu: "footer_customers"
 case_study: true
+order: 1
 title: "Shell"
 subtitle: "First energy product derivative trade on blockchain"
 image: "shell.jpg"

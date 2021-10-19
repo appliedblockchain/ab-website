@@ -2,6 +2,7 @@
 layout: "case-study"
 menu: "footer_customers"
 case_study: true
+order: 100
 dlc: true
 title: "Cygnetise"
 subtitle: "A smarter way to manage your Authorised Signatory Lists"

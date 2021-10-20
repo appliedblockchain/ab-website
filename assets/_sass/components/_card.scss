@@ -303,19 +303,22 @@
 
   &--news {
 
-    .card__thumbnail {
-      height: $spacing*5;
-      width: auto !important;
-    }
+    .card {
 
-    .card__header {
-      flex: 1;
+      &__thumbnail {
+        height: $spacing*5;
+        width: auto !important;
+      }
+      
+      &__header {
+        flex: 1;
+      }
     }
   }
 
   &--event {
 
-    .card__media {
+    > .card__media {
       flex-basis: 33.33%;
     }
   }

@@ -7,8 +7,8 @@ tags: ["Cryptocurrencies", "Blockchain"]
 image: "webinar-future-blockchain.jpg"
 register: "https://www.eventbrite.co.uk/e/the-future-of-blockchain-crypto-where-do-we-go-from-here-tickets-156889146661"
 
-recording: 
-  type: video
+recording: true
+recording_type: "video"
 
 speakers:
   - name: "Adi Ben-Ari"
@@ -22,6 +22,6 @@ speakers:
     thumbnail: "asher-tan.jpg"
 ---
 
-<div class='embed-container'>
-  <iframe src='https://www.youtube.com/embed/3fCAi0GzhwI' frameborder='0' allowfullscreen></iframe>
+<div class="embed-container">
+  <iframe src="https://www.youtube.com/embed/3fCAi0GzhwI" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>

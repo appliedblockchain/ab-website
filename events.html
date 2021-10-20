@@ -12,70 +12,112 @@ menus:
 
 <!-- reverse the order -->
 {% assign sorted = site.events | reverse %}
+<!-- capture on;y webinars -->
+{% assign webinars = site.events | reverse | where: "type", "Webinar" | where: "recording", true %}
 <!-- capture today's date -->
-{% capture now %} {{ 'now' | date: '%s' }} {% endcapture %}
+{% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}
 <!-- capture date -28 days for recent events -->
-{% capture past %} {{ 'now' | date: '%s' | minus: 2419200 }} {% endcapture %}
+{% capture recent %}{{ 'now' | date: '%s' | minus: 2419200 }}{% endcapture %}
+
+<!-- check if upcoming events is empty array -->
+{% capture upcoming_events %}
+{% for event in sorted %}
+{% capture date %}{{ event.date | date: '%s' }}{% endcapture %}
+{% if date > now %}
+not_empty
+{% endif %} 
+{% endfor %}
+{% endcapture %}
+
+<!-- capture upcoming events subtitle if empty -->
+{% unless upcoming_events contains "not_empty" %}
+{% capture upcoming_events_subtitle | strip %}
+There are no upcoming events. Please come back soon!
+{% endcapture %}
+{% endunless %} 
+
+<!-- check if recent events is empty array -->
+{% capture recent_events %}
+{% for event in site.events %}
+{% capture date %}{{ event.date | date: '%s' }}{% endcapture %} 
+{% if date > recent and date <= now %}
+not_empty
+{% endif %} 
+{% endfor %}
+{% endcapture %}
+
+<!-- capture recent events subtitle if empty -->
+{% unless recent_events contains "not_empty" %}
+{% capture recent_events_subtitle | strip %}
+There are no recent events. Please come back soon!
+{% endcapture %}
+{% endunless %} 
 
 <div class="section">
   <div class="section__container">
-    <div class="grid__wrapper grid__spacing--8">
+    <div class="grid__wrapper grid__spacing--5">
       <div class="grid__item grid__item--8 grid--ai-stretch">
         {% include components/section-header.html
           title = "Upcoming events"
+          subtitle = upcoming_events_subtitle
         %}
+        {% if upcoming_events contains "not_empty" %}
         <div class="section__content">
           <div class="grid__wrapper grid__spacing--2">
             {% for event in sorted %}
-            {% capture date %} {{ event.date | date: '%s' }} {% endcapture %} 
+            {% capture date %}{{ event.date | date: '%s' }}{% endcapture %}
             {% if date > now %}
             <div class="grid__item">
               {% include components/cards/event.html %}
             </div>
             {% endif %}
-            {% endfor %} 
+            {% endfor %}
           </div>
         </div>
+        {% endif %}
         {% include components/section-header.html
           title = "Recent events"
+          subtitle = recent_events_subtitle
         %}
+        {% if recent_events contains "not_empty" %}
         <div class="section__content">
           <div class="grid__wrapper grid__spacing--2">
             {% for event in site.events %}
-            {% capture date %} {{ event.date | date: '%s' }} {% endcapture %} 
-            {% if date > past and date <= now %}
+            {% capture date %}{{ event.date | date: '%s' }}{% endcapture %} 
+            {% if date > recent and date <= now %}
             <div class="grid__item">
-              <!-- {{ past }}
-              {{ event.date }} -->
               {% include components/cards/event.html %}
             </div>
             {% endif %}
             {% endfor %} 
           </div>
         </div>
+        {% endif %}
       </div>
       <div class="grid__item grid__item--4">
         <div class="card card--md card--grey card--noShadow">
           <div class="card__header">
             <div class="card__title">
               <p>Webinar recordings</p>
-              <a href="" class="button button--sm button--primary">View all</a>
+              <a href="{% link webinars.html %}" class="button button--sm button--primary">View all</a>
             </div>
           </div>
           <div class="card__content">
             <div class="grid__wrapper grid__spacing--1">
+              {% for event in webinars limit:3 %}
               <div class="grid__item">
-                <div class="card card--sm card--white card--noShadow">
-                  <div class="card__header">
-                    <div class="card__title">
-                      <p>Toto</p>
-                      <a href="" class="button button--icon button--sm button--primary">
+                <a href="{{ site.base-url }}{{ event.url }}" class="w-100">
+                  <div class="card card--sm card--landscape card--white card--noShadow">
+                    <p class="card__content flex-1 caption">{{ event.title }}</p>
+                    <div class="card__actions">
+                      <div class="button button--icon button--xs button--primary">
                         {% svg /assets/icons/feather/chevron-right.svg %}
-                      </a>
+                      </div>
                     </div>
                   </div>
+                  </a>
                 </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>

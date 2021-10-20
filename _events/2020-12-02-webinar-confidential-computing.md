@@ -1,12 +1,12 @@
 ---
 layout: "webinar"
-title: "Webinar: Confidential Computing"
+title: "Confidential Computing"
 description: "Applied Blockchain and R3 present a recorded session explaining the potential of confidential computing."
 type: "Webinar"
 image: "webinar-confidential-computing.jpg"
 
-recording: 
-  type: form
+recording: true
+recording_type: "form"
 
 speakers:
   - name: "Adi Ben-Ari"

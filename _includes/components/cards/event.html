@@ -37,16 +37,16 @@
             {% svg assets/icons/feather/external-link.svg %}
           </a>
           {% endif %}
-          {% if event.type == "Webinar" and event.recording %}
+          {% if event.type == "Webinar" and event.recording == true %}
           <a href="{{ site.base-url }}{{ event.url }}" class="button button--sm button--primary">
-            {% if event.recording.type == "video" %}View{% elsif event.recording.type == "form" %}Download{% else %}Link to{% endif %} recording
+            {% if event.recording_type == "video" %}View{% elsif event.recording_type == "form" %}Download{% else %}Link to{% endif %} recording
           </a>
           {% endif %}
         </div>
       </div>
     </div>
   </div>
-  {% if event.type == "Webinar" and event.recording and event.speakers %}
+  {% if event.type == "Webinar" and event.recording == true and event.speakers != nil %}
   <div class="card__content">
     <div class="grid__wrapper grid__spacing--1">
       {% for speaker in event.speakers %}

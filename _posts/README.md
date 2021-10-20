@@ -43,7 +43,7 @@ You can write markdown code here.
 | `layout` | `post` | Do not edit! Defines which layout to use |
 | `title` | string | The post title, which appears on the page **and** the HTML title tag (that appears on the browser tabs) |
 | `lead` | string | First paragraph of the post (excerpt on the media page, larger text on the post page |
-| `image` | string | Place the image in `_assets/images/posts` folder and  write the name here, with the file extension |
+| `image` | string | Place the image in `assets/images/posts` folder and  write the name here, with the file extension |
 | `category` | `News`, `Press release`, `Blog`, `Video` | |
 | `link:type` | `external`, `pdf`, `webinar`, `podcast`, `newsletter`, `report` | Optional parameters to override the default link behaviour, button style and content |
 | `link:source` | string | Add to add a suffix to the button label (e.g. write `medium` to display `Read on medium` |
@@ -54,7 +54,7 @@ You can write markdown code here.
 | Value | Description |
 | --- | --- |
 | `external` | Adds an icon to the button to notify he will leave the site, and add parameters to the `<a />` tag |
-| `pdf` | Links to an internal pdf. Put the file in `_assets/pdfs` folder, changes the button label |
+| `pdf` | Links to an internal pdf. Put the file in `assets/pdfs` folder, changes the button label |
 | `webinar` | Links to and internal page to view the webinar recording, changes the button label |
 | `podcast` | Links to an external page, changes the button label |
 | `newsletter` | Links to an external page, changes the button label |

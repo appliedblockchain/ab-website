@@ -113,7 +113,7 @@
     
     &:before {
       @include pseudo-element("", 0, 0 ,0, 0, 100%, 100%);
-      background-image: linear-gradient(to left, rgba($background-color, 0.6), $background-color);
+      background-image: linear-gradient(to right, $background-color, rgba($background-color, 0.8));
     }
   }
 

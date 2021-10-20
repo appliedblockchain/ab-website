@@ -1,12 +1,12 @@
 ---
 layout: "webinar"
-title: "Webinar: Privacy Enhancing Technologies for Business"
+title: "Privacy Enhancing Technologies for Business"
 description: "Applied Blockchain presents a recorded session aimed at a business audience to learn about privacy enhancing technologies and how it can be applied to enhance security and privacy in a business setting."
 type: "Webinar"
 image: "webinar-privacy-enhancing-technologies.jpg"
 
-recording: 
-  type: form
+recording: true
+recording_type: "form"
 
 speakers:
   - name: "Adi Ben-Ari"

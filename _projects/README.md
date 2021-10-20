@@ -92,7 +92,7 @@ testimonial:
 | `case_study` | boolean | Set to true to create a standalone page and add the project to the case studies page |
 | `title` | string | Company name |
 | `subtitle` | string | Short project/deliverable description |
-| `image` | string | Place the image in `_assets/images/backgrounds` folder and write the name here, with the file extension |
+| `image` | string | Place the image in `assets/images/backgrounds` folder and write the name here, with the file extension |
 | `industries` | node | List of industries |
 | `summary` | string | Longer description of the company/project |
 | `link:label` | string | Replace the default link label of the external link |

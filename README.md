@@ -11,7 +11,6 @@
 - [Create page](#create-page)  
 - [Create post](#create-post)
 - [Create project](#create-project)
-- [Create job](#create-job)
 - [Create event](#create-event)
 
 <!------------------------------------------------------>
@@ -251,7 +250,7 @@ background_color: white # do not change
 
 ## Create project
 
-[Documentation](https://github.com/appliedblockchain/ab-website/tree/master/_projects/README.md)
+[Instructions](https://github.com/appliedblockchain/ab-website/tree/master/_projects/README.md)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -259,37 +258,7 @@ background_color: white # do not change
 
 ## Create event
 
-- Open the `events.yml` file in `_data` folder.
-- Copy/paste this code and fill the content.
-
-```yml
-- name: 
-  image: 
-  type: 
-  date: 
-  date_to: 
-  location: 
-  wesbite: 
-  register: 
-  directions: 
-```
-
-| Parameter | Values | Description |
-| --- | --- | --- |
-| `name` | string |  |
-| `image` | string | Write the name of the event thumbnail and add the image in `assets/images/events` |
-| `type` | `Webinar`, `Conference`, `Virtual`, `Social`, `Workshop` | Select the event type |
-| `date` | string | Use `YYYY-MM-DD` format |
-| `date_to` | string | Use `YYYY-MM-DD` format |
-| `location` | string | |
-| `wesbite` | string | Website full URL |
-| `register` | string | Optional. If different from the wesbite URL |
-| `directions` | string | Optional. Google Maps link to the event location |
-
-### Advice
-
-- File cannot be over 800 px wide and 80 KB.
-- If you don't have an image, leave the `image` tag empty, a default image is set.
+[Instructions](https://github.com/appliedblockchain/ab-website/tree/master/_events/README.md)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -297,7 +266,7 @@ background_color: white # do not change
 
 ## Create post
 
-[Documentation](https://github.com/appliedblockchain/ab-website/tree/master/_posts/README.md)
+[Instructions](https://github.com/appliedblockchain/ab-website/tree/master/_posts/README.md)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

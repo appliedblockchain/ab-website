@@ -48,7 +48,7 @@ html, body {
   overflow: hidden; 
   max-width: 100%; 
   width: 100%;
-  border-radius: $border-radius-lg;
+  border-radius: $border-radius*3;
 
   iframe, object, embed { 
     position: absolute; 
@@ -138,6 +138,11 @@ ul {
 // overrides
 // —————————————————————————————————————————————————————————————————
 
+.w {
+
+  &-100 { width: 100%; }
+}
+
 .m {
   &-0 { margin: 0; }
 
@@ -211,6 +216,13 @@ ul {
 
   &--hidden { overflow: hidden; }
   &--visible { overflow: visible; }
+}
+
+.flex {
+
+  &-1 {
+    flex-grow: 1;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

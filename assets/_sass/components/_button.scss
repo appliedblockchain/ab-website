@@ -144,6 +144,7 @@ a {
 .button {
 
   & { @include size(0.875rem, 2rem); }
+  &--xs { @include size(0.625rem, 1.5rem); }
   &--sm { @include size(0.75rem, 1.75rem); }
   &--lg { @include size(1rem, 2.5rem); }
 }

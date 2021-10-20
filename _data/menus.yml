@@ -34,4 +34,5 @@ footer_products:
   - url: ""
     title: "K0"
     identifier: "k0"
-    weight: 1
+    weight: 3
+    disabled: true

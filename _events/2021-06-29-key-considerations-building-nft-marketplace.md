@@ -7,8 +7,8 @@ tags: ["NFT", "Blockchain"]
 image: "webinar-nft.jpg"
 register: "https://us02web.zoom.us/webinar/register/WN_Klem_1YQQ2W9klabOS5Nzg"
 
-recording: 
-  type: video
+recording: true
+recording_type: "video"
 
 speakers:
   - name: "Adi Ben-Ari"

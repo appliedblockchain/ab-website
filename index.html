@@ -49,7 +49,7 @@ menus:
                 {% svg assets/icons/feather/chevron-right.svg %}
               </a>
             </div>
-            <div class="grid__item spinner">
+            <div class="grid__item spinner spinner--white">
               <div class="owl-carousel owl-carousel-news">
                 {% for item in site.data.news %}
                 <div class="card card--xs card--landscape card--transparent card--news">
@@ -78,18 +78,18 @@ menus:
               <p class="caption">Gartner peer insights</p>
               <div class="owl-carousel-dots-container-rating display--flex"></div>
             </div>
-            <div class="grid__item spinner">
+            <div class="grid__item spinner spinner--white">
               <div class="owl-carousel owl-carousel-rating">
                 {% for item in site.data.peer-insights %}
                 <div class="card card--xs card--landscape card--transparent">
                   <div class="card__header">
                     <p class="card__subtitle">{{ item.title }}</p>
                     <div class="card__subtitle rating">
-                      {% include ui/rating.html rating_value = 1 rating_score = item.rating %}
-                      {% include ui/rating.html rating_value = 2 rating_score = item.rating %}
-                      {% include ui/rating.html rating_value = 3 rating_score = item.rating %}
-                      {% include ui/rating.html rating_value = 4 rating_score = item.rating %}
-                      {% include ui/rating.html rating_value = 5 rating_score = item.rating %}
+                      {% include components/rating.html rating_value = 1 rating_score = item.rating %}
+                      {% include components/rating.html rating_value = 2 rating_score = item.rating %}
+                      {% include components/rating.html rating_value = 3 rating_score = item.rating %}
+                      {% include components/rating.html rating_value = 4 rating_score = item.rating %}
+                      {% include components/rating.html rating_value = 5 rating_score = item.rating %}
                     </div>
                   </div>
                   <div class="card__actions">

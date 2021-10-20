@@ -32,12 +32,12 @@ tabs: "post-categories"
         <div class="grid__item grid__item--lg4 grid__item--md6 {{ post.category | slugify }}">
           <div class="card card--md card--blog">
             <div class="card__media">
-              <a href="{{ post_link | strip }}" class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default.jpg{% endif %}');"></a>
+              <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %} class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default.jpg{% endif %}');"></a>
             </div>
             <div class="card__header">
               <div class="card__label">{{ post.date | date: "%b %-d, %Y" }} {{ post.category }}</div>
               <h2 class="card__title">
-                <a href="{{ post_link | strip }}">{{ post.title }}</a>
+                <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %}>{{ post.title }}</a>
               </h2>
             </div>
             <div class="card__content">{{ post.lead | truncate: 250, "…" }}</div>

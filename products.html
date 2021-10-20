@@ -10,7 +10,7 @@ menus:
 
 {% for item in site.data.products %}
 <div class="divider divider--white divider--landscape"></div>
-<div class="section section--primary background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/products/{{ item.background }}');">
+<div class="section section--primary background--cover section--products" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/products/{{ item.background }}');">
   <div class="section__container">
     <div class="grid__wrapper grid__spacing--8">
       <div class="grid__item grid__item--8">
@@ -24,7 +24,7 @@ menus:
           </div>
           <p class="card__content">{{ item.description }}</p>
           <div class="card__actions">
-            <div class="button__wrapper">
+            <div class="button__wrapper button__wrapper--xl">
               {% for link in item.links %}
               <a href="{% if item.type == 'internal' %}{{ site.base-url }}/{% endif %}{{ link.url }}" target="_blank" rel="noopener" class="button button--white">
                 {{ link.label }}
@@ -35,7 +35,7 @@ menus:
         </div>
       </div>
       <div class="grid__item grid__item--4">
-        <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.png" alt="Logo for {{ item.title | strip_html }}">
+        <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.png" alt="Logo for {{ item.title | strip_html }}" class="section__logo">
       </div>
     </div>
   </div>

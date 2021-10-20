@@ -239,7 +239,7 @@
 
 .card {
 
-  &--xs { @include size(xs, $spacing); }
+  &--xs { @include size(xs, $spacing*1.5); }
   &--sm { @include size(sm, $spacing*2); }
   &--md { @include size(md, $spacing*3); }
   &--lg { @include size(lg, $spacing*4); }
@@ -285,6 +285,10 @@
 
   &--noShadow {
     box-shadow: none;
+  }
+
+  &--maxWidth {
+    max-width: $spacing*65;
   }
 }
 

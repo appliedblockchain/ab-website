@@ -7,6 +7,7 @@
 {% assign link.color = include.link.color %}
 {% assign banner_image = include.banner_image %}
 {% assign banner_color = include.banner_color %}
+{% assign side_content = include.side_content %}
 
 <!-- capture banner_image path -->
 {% capture image_path %}
@@ -18,12 +19,14 @@ background/projects
 background
 {% endif %}
 {% endcapture %}
+
 <div class="section section--maxWidth page__header{% if page.tabs %} section--tabs{% endif %}{% if page.banner_color or banner_color %} section--{{ page.banner_color }}{{ banner_color }}{% else %} section--primary{% endif %}{% if page.banner_image or banner_image %} background--cover{% endif %}"{% if page.banner_image or banner_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{{ image_path | strip }}/{{ page.banner_image }}{{ banner_image }}');"{% endif %}>
   <div class="section__container">
     <!-- limit the content width for post pages -->
-    {% if page.layout == "post" %}
-    <div class="grid__wrapper grid--jc-center">
-    {% endif %}
+    {% if page.layout == "post" %}<div class="grid__wrapper grid--jc-center">{% endif %}
+    <!-- add wrapper if overlapping side_content -->
+    {% if page.side_content or side_content %}<div class="grid__wrapper grid__spacing--6 grid--jc-space-between">{% endif %}
+      {% if page.side_content or side_content %}<div class="grid__item grid__item--lg6">{% endif %}
       <div class="section__header section__header--lg">
         {% if page.label or label %}
         <p class="section__label">{{ page.label }}{{ label }}</p>
@@ -39,11 +42,24 @@ background
           {% endfor %}
         </div>
         {% endif %}
-      <!-- limit the content width for post pages -->
-      {% if page.layout == "post" %}
+      </div>
+      <!-- add wrapper if overlapping side_content -->
+      {% if page.side_content or side_content %}</div>{% endif %}
+      {% if page.side_content or side_content %}
+      <div class="grid__item grid__item--xl5 grid__item--lg6">
+        <div class="page__side">
+          {% if page.layout == "webinar" or page.layout == "case-study" %}
+          {{ side_content }}
+          {% else %}
+          {% include {{ page.side_content }} %}
+          {% endif %}
+        </div>
       </div>
       {% endif %}
-    </div>
+    <!-- add wrapper if overlapping side_content -->
+    {% if page.side_content or side_content %}</div>{% endif %}
+    <!-- limit the content width for post pages -->
+    {% if page.layout == "post" %}</div>{% endif %}
     {% if page.links %}
     <div class="section__content">
       <div class="grid__wrapper">

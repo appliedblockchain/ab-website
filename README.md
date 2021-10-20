@@ -169,7 +169,6 @@ Add the following classes to the section elements to use each variant.
 | --- | --- |
 | `section--fullWidth` | removes padding left and right |
 | `section--maxWidth` | sets max-width: 600px for `section__header` and `section__content` |
-| `section--overlap` | used a section that overlaps the page headar (see contact page) |
 | `section--tabs` | variant used for pages with tabs in the section header (e.g [blog](https://appliedblockchain.com/blog)) |
 
 #### Background color

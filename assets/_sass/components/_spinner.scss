@@ -51,4 +51,12 @@
 // color
 // —————————————————————————————————————————————————————————————————
 
-// see color section of _section.scss file
+.spinner {
+
+  &--white {
+
+    &:before {
+      border-color: $white;
+    }
+  }
+}

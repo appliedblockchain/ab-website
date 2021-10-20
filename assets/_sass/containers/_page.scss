@@ -18,6 +18,25 @@
       position: relative;
     }
   }
+
+  // overlapping element on right side of page header
+  &__side {
+    width: 100%;
+
+    @include responsive(up, $laptop-up) {
+      height: 0;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+
+    @include responsive(down, $laptop-down) {
+      display: none;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -32,13 +51,20 @@
 
 #contact {
 
-  .page__header {
-    background-color: transparent;
+  .page {
 
-    &:before {
-      @include pseudo-element("", 0, 0 ,0, 0, 100%, 100%);
-      background-color: $primary;
-      mix-blend-mode: multiply;
+    &__container {
+      background-position: 30% center;
+    }
+
+    &__header {
+      background-color: transparent;
+      
+      &:before {
+        @include pseudo-element("", 0, 0 ,0, 0, 100%, 100%);
+        background-color: $primary;
+        mix-blend-mode: multiply;
+      }
     }
   }
 }

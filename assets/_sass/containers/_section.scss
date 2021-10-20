@@ -21,16 +21,6 @@
     padding-top: 0;
   }
   
-  &--overlap {
-
-    @include responsive(up, $laptop-up) {
-
-      & + .section {
-        padding-top: $section-spacing;
-      }
-    }    
-  }
-
   &__container {
     width: 100%;
     max-width: $page-max-width;
@@ -67,10 +57,9 @@
   }
 
   &__logo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: $spacing*30;
+    max-height: $spacing*20;
+    object-fit: contain;
+    object-position: right;
   }
 
   &__button {
@@ -135,11 +124,7 @@
 
   .spinner {
 
-    &:before {
-      border-color: $title-color;
-    }
-
-    > * {
+    > *:not(.card__content) {
       background-color: $background-color;
     }
   }
@@ -240,22 +225,6 @@
     }
   }
 
-  &--overlap {
-
-    @include responsive(up, $laptop-up) {
-      margin-top: -$section-spacing*3;
-      padding-top: 0 !important;
-      padding-bottom: $section-spacing*3;
-      height: 0;
-      pointer-events: none;
-
-      .card {
-        pointer-events: initial;
-        z-index: 1;
-      }
-    }
-  }
-
   &--tabs {
     padding-bottom: 0;
 
@@ -297,19 +266,12 @@
   .page__container .section {
     padding-top: $section-spacing;
 
-    &:nth-child(2n+3) {
+    &:nth-child(2n+2) {
       background-color: $background-paper;
     }
     
-    &:nth-child(2n+4) {
+    &:nth-child(2n+3) {
       background-color: $background-default;
-    }
-  }
-
-  .section--overlap + .section { 
-
-    @include responsive(down, $laptop-down) {
-      padding-top: 0;
     }
   }
 }

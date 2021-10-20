@@ -43,6 +43,19 @@ background
         </div>
         {% endif %}
       </div>
+      {% if page.links %}
+      <div class="section__content">
+        <div class="grid__wrapper">
+          <div class="button__wrapper button__wrapper--landscape">
+            {% for link in page.links %}
+            <a  href="{% link {{ link.url }}.html %}" title="{{ link.title }}" class="button button--{% if link.color %}{{ link.color }}{% else %}primary{% endif %}">
+              <p>{{ link.label }}</p>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
       <!-- add wrapper if overlapping side_content -->
       {% if page.side_content or side_content %}</div>{% endif %}
       {% if page.side_content or side_content %}
@@ -60,18 +73,5 @@ background
     {% if page.side_content or side_content %}</div>{% endif %}
     <!-- limit the content width for post pages -->
     {% if page.layout == "post" %}</div>{% endif %}
-    {% if page.links %}
-    <div class="section__content">
-      <div class="grid__wrapper">
-        <div class="button__wrapper button__wrapper--landscape">
-          {% for link in page.links %}
-          <a  href="{% link {{ link.url }}.html %}" title="{{ link.title }}" class="button button--{% if link.color %}{{ link.color }}{% else %}primary{% endif %}">
-            <p>{{ link.label }}</p>
-          </a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-    {% endif %}
   </div>
 </div>

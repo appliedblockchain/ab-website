@@ -371,6 +371,38 @@
     }
   }
 
+  &--event {
+
+    @include responsive(down, $laptop-down) {
+
+      > .card {
+
+        &__content:nth-child(2) {
+          padding-left: $spacing*3 !important;
+        }
+
+        &__media {
+          display: none;
+        }
+      }
+    }
+
+    @include responsive(down, $tablet-down) {
+
+      & {
+        flex-direction: column;
+      }
+
+      > .card {
+
+        &__content:nth-child(3) {
+          padding-top: 0 !important;
+          padding-left: $spacing*3 !important;
+        }
+      }
+    }
+  }
+
   &--portrait {
     align-items: center;
 

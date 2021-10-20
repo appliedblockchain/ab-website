@@ -29,7 +29,7 @@ not_empty
 {% endfor %}
 {% endcapture %}
 
-<!-- capture upcoming events subtitle if empty -->
+<!-- capture upcoming events subtitle if empty array -->
 {% unless upcoming_events contains "not_empty" %}
 {% capture upcoming_events_subtitle | strip %}
 There are no upcoming events. Please come back soon!
@@ -46,7 +46,7 @@ not_empty
 {% endfor %}
 {% endcapture %}
 
-<!-- capture recent events subtitle if empty -->
+<!-- capture recent events subtitle if empty array -->
 {% unless recent_events contains "not_empty" %}
 {% capture recent_events_subtitle | strip %}
 There are no recent events. Please come back soon!

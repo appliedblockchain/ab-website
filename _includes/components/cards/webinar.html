@@ -1,17 +1,19 @@
-<div class="card__wrapper">
-  <div class="card">
-    <p class="card__title body body--bold"><span class="quote">100% of attendees</span> <br>found the webinar useful</p>
+<div class="grid__wrapper grid__spacing--2 body--right">
+  <div class="grid__item grid--ai-stretch">
+    <p class="subtitle2">100% of attendees</p>
+    <p>found the webinar useful</p>
   </div>
-  <div class="card">
-    <p class="card__title body body--bold"><span class="quote">100% of attendees</span> <br>would recommend to friends and colleagues</p>
+  <div class="grid__item grid--ai-stretch">
+    <p class="subtitle2">100% of attendees</p>
+    <p>would recommend to friends and colleagues</p>
   </div>
-  <div class="card">
-    <p class="body body--bold">What they say about it</p>
-    <div class="body">
-      {% include components/carousel.html 
-        type = "text"
-        variant = "webinar"
-      %}
+  <div class="grid__item grid--ai-stretch">
+    <p class="subtitle2">What they say about it</p>
+    <div class="owl-carousel owl-carousel-webinar">
+      {% for quote in site.data.testimonials.webinars %}
+      <p>{{ quote.quote }}</p>
+      {% endfor %}
     </div>
-  </div>
 </div>
+</div>
+    

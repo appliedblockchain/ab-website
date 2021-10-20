@@ -1,60 +1,19 @@
 // —————————————————————————————————————————————————————————————————
-// join
+// webinars
 // mantle
 // services
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
-// join
+// webinars
 // —————————————————————————————————————————————————————————————————
 
-#join {
+#webinars {
 
-  ul {
-    padding-left: $spacing*2;
+  .body--right {
 
-    & + .body {
-      margin-top: $spacing*2;
-    }
-  }
-
-  li + li {
-    margin-top: $spacing/2;
-  }
-    
-  &-header {
-
-    .section__header {
-      z-index: 2;
-    }
-  }
-}
-
-.join {
-
-  &__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    transition: opacity 0.8s ease 0s;
-
-    &:before {
-      @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-      background-color: rgba($primary, 0.5);
-      z-index: 1;
-    }
-
-    &--london {
-      @extend .join__background;
-      @include background(bottom center, cover);
-    }
-
-    &--porto {
-      @extend .join__background;
-      @include background(center center, cover);
+    @include responsive(down, $laptop-down) {
+      text-align: left;
     }
   }
 }

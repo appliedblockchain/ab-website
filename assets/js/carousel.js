@@ -100,7 +100,7 @@ $('.owl-carousel-webinar').owlCarousel({
   dots: false,
   loop: true,
   autoplay: true,
-  smartSpeed: 2000,
+  smartSpeed: 1200,
   mouseDrag: false,
   items: 1, 
   margin: 0 

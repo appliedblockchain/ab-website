@@ -416,7 +416,7 @@
         background-color: transparent;
         width: $spacing*8;
         height: $spacing*8;
-        border-radius: $spacing*1.5;
+        border-radius: $spacing*4;
         padding-bottom: 0;
         object-fit: cover;
       }
@@ -434,7 +434,6 @@
         &__thumbnail {
           width: $spacing*5;
           height: $spacing*5;
-          border-radius: $spacing*1;
         }
       }
     }

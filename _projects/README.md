@@ -106,6 +106,10 @@ menu:
     disabled: true
 ```
 
+<!------------------------------------------------------>
+<p>&nbsp;</p>
+<!------------------------------------------------------>
+
 ## Advice
 
 - The project banner image should not exceed **1000px** in width and **75 KB** in size

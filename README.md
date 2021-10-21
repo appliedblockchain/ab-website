@@ -230,18 +230,71 @@ The website uses a css grid system, based on a twelve column structure. You can 
 
 ## Create page
 
+### Instructions
+
 - Create a .html file at the root of the website, with the name of the new page.
 - Copy/paste the following code in the file.
+
 ```yml
 ---
-layout: default # do not change
-title: # this will appear as the page header and the html header in the browser tab
-headline: # [optional] overrides the page header
-subtitle: # [optional]
-background_color: white # do not change
+layout: "default"
+title: ""
+subtitle: ""
+# banner_image: ""
+# banner_color: ""
+# links: 
+#   - label: ""
+#     url: ""
+#     title: ""
+#     color: ""
+menus: 
+
+# side_content: ""
 ---
 ```
+
 - Start coding your HTML content below this snippet.
+
+### Parameters
+
+| Parameter | Values | Description |
+| --- | --- | --- |
+| `layout` | `default` | Do not edit! Defines which layout to use |
+| `title` | string | The page title, which appears on the page **and** the HTML title tag (that appears on the browser tabs) |
+| `headline` | string | Optionnal. Overrides the page title displayed on the page if you want a different one than the HTML page title |
+| `subtitle` | string | Short introductory text |
+| `banner_image` | string | Place the image in `assets/images/background` folder and  write the name here, with the file extension |
+| `banner_color` | `white`, `grey`, `primary`, `primary-light`, `primary-dark`, `secondary`, `dark` | Overrides the page header background color |
+| `links` | node | Add buttons below the subtitle |
+| `link:label` | string | |
+| `link:url` | string | Link URL. Can only be internal for now, write the page file name without the extension |
+| `link:title` | string | Link title for SEO |
+| `link:color` | `primary`, `secondary`, `white`, `black`, `grey`, `success`, `info`, `warning`, `error`, `facebook`, `github`, `linkedin`, `medium`, `twitter` | Sets the button color |
+| `menus` | node | Sets which menus to add the page to. See [Jekyll menus](#jekyll-menus) for more info |
+| `side_content` | string | If the page header has some overlapping content on the side, create a component in the `_includes` folder and refereence it here |
+
+Here is an example
+
+```yml
+---
+layout: "default"
+title: "Webinars"
+subtitle: "Here is a list of our past webinars, fugit rem nostrum veniam eum qui doloribus. Ut est quo voluptates. Deleniti eum aut non placeat rerum."
+banner_image: "webinar.jpg"
+links: 
+  - label: "Check our upcoming events"
+    url: "events"
+    title: "Go to events page"
+    color: "white"
+menus: 
+  resources:
+    weight: 1
+  footer_resources:
+    weight: 1
+
+side_content: "components/cards/webinar.html"
+---
+```
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

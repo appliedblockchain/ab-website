@@ -17,14 +17,14 @@
 ```yml
 ---
 layout: "post"
-title: "Blockchain as a Database"
-lead: "Much has been written about the merits of private blockchains. including articles by Richard Brown of IBM, as well as the founders of Eris."
-image: "blockchain-as-a-database"
-category: "Blog"
-link:
-  type: "external"
-  source: "medium"
-  url: "https://medium.com/@AppBlockchain_/blockchain-as-a-database-6e81f915f207"
+title: ""
+lead: ""
+image: ""
+category: ""
+# link:
+#   type: ""
+#   source: ""
+#   url: ""
 ---
 
 You can write markdown code here.
@@ -59,6 +59,26 @@ You can write markdown code here.
 | `podcast` | Links to an external page, changes the button label |
 | `newsletter` | Links to an external page, changes the button label |
 | `report` | Links to an internal page to download a report, changes the button label |
+
+Here is an example
+
+```yml
+---
+layout: "post"
+title: "Blockchain as a Database"
+lead: "Much has been written about the merits of private blockchains. including articles by Richard Brown of IBM, as well as the founders of Eris."
+image: "blockchain-as-a-database"
+category: "Blog"
+link:
+  type: "external"
+  source: "medium"
+  url: "https://medium.com/@AppBlockchain_/blockchain-as-a-database-6e81f915f207"
+---
+```
+
+<!------------------------------------------------------>
+<p>&nbsp;</p>
+<!------------------------------------------------------>
 
 ## Advice
 

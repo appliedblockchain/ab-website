@@ -285,6 +285,10 @@ a {
     margin-left: $spacing;
   }
 
+  .button--lg + .button--lg {
+    margin-left: $spacing*2;
+  }
+
   &--sm { @include break($mobile-down); }
   &--md { @include break($tablet-down); }
   &--lg { @include break($laptop-down); }

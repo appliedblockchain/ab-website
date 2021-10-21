@@ -23,32 +23,13 @@
 // —————————————————————————————————————————————————————————————————
 
 .mantle {
-  align-items: center;
 
    &__diagram {
 
-  @include responsive(down, $laptop-down) {
-       margin-top: $spacing*5;
-     }
-   }
-
-   &__legend {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-     align-self: stretch;
-   }
-
-   &__label {
-     position: relative;
-     padding-left: 50%;
-
-     &:before {
-       @include pseudo-element('', 50%, auto, auto, $spacing, 40%, 2px);
-       position: absolute;
-       background-color: rgba($white, 0.5);
-     }
-   }
+    @include responsive(down, $laptop-down) {
+      display: none;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

@@ -1,65 +1,64 @@
-<footer class="footer footer--beyond section">
-  <div class="footer__row">
-    <div class="row card__wrapper--lg">
-      <div class="grid__item--lg6 grid__item--md8">
-        <div class="footer__logo card">
-          <p class="body">A new product by</p>
-          {% include components/logos/logo.html %}
+<footer class="footer section section--dark">
+  <div class="section__container">
+    <div class="grid__wrapper grid__spacing--8">
+      <div class="grid__wrapper grid__spacing--4 grid__item grid--ai-center">
+        <div class="grid__item grid__item--md8 grid--row grid--ai-center">
+          <p class="mr-2 body--left">A new product by</p>
+          <a href="{{ site.base-url }}/" class="logo logo--white">
+            {% include components/logos/logo.html %}
+          </a>
+        </div>
+        <div class="grid__item grid__item--md4">
+          {% include components/social.html %}
         </div>
       </div>
-      <div class="coloffset--lg2 grid__item--md4 card">
-        {% include components/social.html %}
-      </div>
-    </div>
-  </div>
-  <div class="footer__row">
-    <div class="row card__wrapper--lg">
-      <div class="grid__item--md7">
-        <div class="card card--lg card--p0 footer__card alt">
-          <p class="card__header body--bold">Trusted by global organisations and startups alike</p>
-          <div class="card__media">
-            <!-- edit in _data/images.yml in beyond section -->
-            {% include components/carousel.html
-              variant = "beyond"
-            %}
-          </div>
-          <div class="card__actions">
-            <a href="https://appliedblockchain.com/" target="_blank" rel="noopener" title="External link to Applied Blockchain website" class="button button--filled button--small button--white">
-              <p class="button__inner">Visit website</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="coloffset--md1 grid__item--md4">
-        <div class="card card--lg card--p0 footer__card alt">
-          <p class="card__header body--bold">5-star customer reviews</p>
-          <div class="card__media">
-            <picture>
-              <source srcset="{{ site.base-url}}{{ site.imageurl }}/logos/gartner.webp" type="image/webp">
-              <source srcset="{{ site.base-url}}{{ site.imageurl }}/logos/gartner.png" type="image/png">
-              <img src="{{ site.base-url}}{{ site.imageurl }}/logos/gartner.png" alt="Kudelski logo" class="rating__logo">
-            </picture>
-            <div class="rating">
-              {% for num in (1..5) %}
-              {% svg /assets/icons/feather/star.svg width="20" class="stroke--warning rating__item" %}
-              {% endfor %}
+      <div class="grid__wrapper grid__spacing--4 grid__item">
+        <div class="grid__item grid__item--md8">
+          <div class="card card--lg card--transparent">
+            <p class="card__header body--bold">Trusted by global organisations and startups alike</p>
+            <div class="card__content">
+              <div class="grid__wrapper grid__spacing--4 grid--jc-center grid__inline grid__inline--xl7 grid__inline--lg6 grid__inline--md5 grid__inline--sm4 grid__inline--3">
+                {% for logo in site.data.clients %}
+                <div class="grid__item grid--jc-center grid--ai-center">
+                  <img src="{{ site.base-url }}{{ site.imageurl }}/logos/clients-white/{{ logo.name | slugify }}.png" alt="Logo for {{ logo.name }}" class="logo__client">
+                </div>
+                {% endfor %}
+              </div>        
             </div>
-          </div>
-          <div class="card__actions">
-            <a href="https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain" target="_blank" rel="noopener" title="External link to Applied Blockchain's Gartner reviews" class="button button--filled button--small button--white">
-              <p class="button__inner">Read reviews</p>
-            </a>
-          </div>
+            <div class="card__actions">
+              <a href="https://appliedblockchain.com/" target="_blank" rel="noopener" title="External link to Applied Blockchain website" class="button button--filled button--small button--white">
+                <p class="button__inner">Visit website</p>
+              </a>
+            </div>
+          </div>  
+        </div>
+        <div class="grid__item grid__item--md4">
+          <div class="card card--lg card--transparent">
+            <p class="card__header body--bold">5-star customer reviews</p>
+            <div class="card__media">
+              <picture>
+                <source srcset="{{ site.base-url}}{{ site.imageurl }}/logos/gartner.webp" type="image/webp">
+                <source srcset="{{ site.base-url}}{{ site.imageurl }}/logos/gartner.png" type="image/png">
+                <img src="{{ site.base-url}}{{ site.imageurl }}/logos/gartner.png" alt="Kudelski logo" class="rating__logo">
+              </picture>
+              <div class="rating">
+                {% for num in (1..5) %}
+                {% include components/rating.html rating_value = 5 rating_score = 5 %}
+                {% endfor %}
+              </div>
+            </div>
+            <div class="card__actions">
+              <a href="https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain" target="_blank" rel="noopener" title="External link to Applied Blockchain's Gartner reviews" class="button button--filled button--small button--white">
+                <p class="button__inner">Read reviews</p>
+              </a>
+            </div>
+          </div>  
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer__row">
-    <div class="row">
-      <div class="grid__item--lg12 footer__legal">
-        <div class="card card--p0">
-          <p class="body--sm">© Copyright {{ site.time | date: '%Y' }} Applied Blockchain Ltd. All rights reserved</p>
-          <p class="body--sm">Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276</p>
+      <div class="grid__wrapper grid__spacing--4 grid__item">
+        <div class="grid__item">
+          <p class="caption gutter">© Copyright {{ site.time | date: '%Y' }} Applied Blockchain Ltd. All rights reserved</p>
+          <p class="overline">Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276</p>
         </div>
       </div>
     </div>

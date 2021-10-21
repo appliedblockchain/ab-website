@@ -1,5 +1,5 @@
 ---
-layout: "webinar"
+layout: "resource"
 title: "How to Be More Collaborative with Your Data"
 type: "Webinar"
 tags: ["Data", "Collaboration"]

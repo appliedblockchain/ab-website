@@ -1,5 +1,5 @@
 ---
-layout: "webinar"
+layout: "resource"
 title: "Key Considerations When Building an NFT Marketplace"
 description: "NFT's (non-fungible tokens) have taken the world by storm in recent months. Christies sold a digital artwork by Beeple for $69.3m+, the NBA created TopShots collectibles that have traded for $200m+, and it seems that the worlds of art, sports, entertainment, retail, and all manner of luxury, exclusive and collectible goods are being registered in this new digital form."
 type: "Webinar"

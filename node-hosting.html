@@ -4,59 +4,71 @@ title: "Node Hosting"
 headline: "Node hosting & assurance"
 subtitle: "Increase security and transparency of your private, consortium or side network with an Applied Blockchain secured node"
 body: "Private, consortium and side networks are often controlled by a small group of entities that may collude to undermine the blockchain consensus and thereby defraud network users. Applied Blockchain will host and control an independent node in your network, and monitor, alert and report in the case of forks, reordering of transactions or any malicious behaviour that may undermine the security of your blockchain network."
-
+banner_color: "dark"
 ---
 
-<section class="section section--primary">
-  {% include components/section-header.html
-    title = "Provide assurance to users of your blockchain solution with an independent Applied Blockchain node and explorer"
-  %}
-  <div class="section__content">
-    <div class="row">
-      {% for item in site.data.images.node-hosting %}
-      <div class="grid__item--4 card">
-        <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
-        <p class="card__title body--large body--bold">{{ item.title }}</p>
+<div class="section section--primary">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Provide assurance to users of your blockchain solution with an independent Applied Blockchain node and explorer"
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--4">
+        {% for item in site.data.images.node-hosting %}
+        <div class="grid__item grid__item--4">
+          <div class="card card--xs card--transparent card--center">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__media">
+            <div class="card__header">
+              <p class="card__title">{{ item.title }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
-</section>
+</div>
 
-<section class="section section--primary section--alt">
-  {% include components/section-header.html
-    subtitle = "Applied Blockchain has experience supporting multiple distributed technologies"
-  %}
-  <div class="section__content z-index--2">
-    <div class="block background--shadow">
-      {% include components/carousel.html 
-        variant = "technologies"
-      %}
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Applied Blockchain has experience supporting multiple distributed technologies"
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2 grid--jc-center grid__inline grid__inline--lg7 grid__inline--md4 grid__inline--sm3 grid__inline--2">
+        {% for image in site.static_files %}
+        {% if image.path contains 'logos/technologies' %}
+        <div class="grid__item">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="Logo">
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="section section--white section--overlap">
-  {% include components/section-header.html
-    title = "Block Explorer"
-    subtitle = "Complementing the independently controlled node, our independently hosted open source blockchain explorer provides further transparency and assurance to users of the applications running on that network."
-    body = "The Applied Blockchain explorer is a tool for visualising blockchain networks, improving transparency and highlighting malicious activity. The explorer also aids in spotting potential issues with the blockchain such as forks and reorgs."
-  %}
-  <div class="section__content">
-    <a href="https://github.com/appliedblockchain/explorer" target="_blank" class="button button--primary button--animate fas fa-eye">
-      <p class="button__inner">Learn more</p>
-    </a>
+<div class="section section--grey">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Block Explorer"
+      subtitle = "Complementing the independently controlled node, our independently hosted open source blockchain explorer provides further transparency and assurance to users of the applications running on that network."
+      body = "The Applied Blockchain explorer is a tool for visualising blockchain networks, improving transparency and highlighting malicious activity. The explorer also aids in spotting potential issues with the blockchain such as forks and reorgs."
+      link_type = "external"
+      link_label = "Learn more"
+      link_url = "https://github.com/appliedblockchain/explorer"
+    %}
   </div>
-</section>
+</div>
 
-<section class="section section--primary">
-  {% include components/section-header.html
-    title = "Interested in our solution?"
-    subtitle = "Give us an shout and we will get back to you shortly"
-  %}
-  <div class="section__content">
-    <a href="{{ site.base-url }}/contact" class="button button--white button--animate fas fa-envelope">
-      <p class="button__inner">Contact us</p>
-    </a>
+<div class="section section--primary">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "Interested in our solution?"
+      subtitle = "Give us an shout and we will get back to you shortly"
+      link_label = "Contact us"
+      link_url = "contact"
+      link_color = "white"
+    %}
   </div>
-</section>
+</div>

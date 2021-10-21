@@ -1,5 +1,5 @@
 ---
-layout: "webinar"
+layout: "resource"
 title: "The Future of Blockchain & Crypto: Where do we Go from Here?"
 description: "Adi Ben-Ari, Samantha Yap and Asher Tan discussed the perspectives on the future of cryptocurrency and blockchain by looking at what the rest of 2021 is likely to have in store, along with the long-term term view and the real-world applications for both cryptocurrency and blockchain."
 type: "Webinar"

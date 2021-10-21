@@ -1,0 +1,21 @@
+<div class="owl-carousel owl-carousel-testimonials">
+  {% for quote in site.data.testimonials.clients %}
+  <div class="card card--md">
+    <div class="card__content">
+      {% svg assets/icons/quote.svg class="fill--primary-light" %}
+    </div>
+    <p class="card__content subtitle1">{{ quote.quote }}</p>
+    <div class="card__content">
+      <div class="card card--xs card--transparent card--landscape card--portrait">
+        <div class="card__media">
+          <img src="{{ site.base-url }}{{ site.imageurl }}/team/clients/{{ quote.image }}.png" alt="Portrait of {{ quote.author }}" class="card__thumbnail">
+        </div>
+        <div class="card__header">
+          <p class="card__title">{{ quote.author }}</p>
+          <p class="card__subtitle">{{ quote.position }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

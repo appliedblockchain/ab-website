@@ -1,6 +1,7 @@
 {% assign label = include.label %}
 {% assign title = include.title %}
 {% assign subtitle = include.subtitle %}
+{% assign body = include.body %}
 {% assign link.label = include.link.label %}
 {% assign link.url = include.link.url %}
 {% assign link.title = include.link.title %}
@@ -35,6 +36,9 @@ background
         {% if page.subtitle or subtitle %}
         <p class="section__subtitle">{{ page.subtitle }}{{ subtitle }}</p>
         {% endif %}
+        {% if page.body or body %}
+        <p class="section__body">{{ page.body }}{{ body }}</p>
+        {% endif %}
         {% if page.tabs %}
         <div class="tabs js-filter">
           {% for tab in site.data.[page.tabs] %}
@@ -61,7 +65,7 @@ background
       {% if page.side_content or side_content %}
       <div class="grid__item grid__item--xl5 grid__item--lg6">
         <div class="page__side">
-          {% if page.layout == "webinar" or page.layout == "case-study" %}
+          {% if page.layout == "resource" or page.layout == "case-study" or page.layout == "applied" %}
           {{ side_content }}
           {% else %}
           {% include {{ page.side_content }} %}

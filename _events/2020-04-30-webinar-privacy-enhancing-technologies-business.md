@@ -1,5 +1,5 @@
 ---
-layout: "webinar"
+layout: "resource"
 title: "Privacy Enhancing Technologies for Business"
 description: "Applied Blockchain presents a recorded session aimed at a business audience to learn about privacy enhancing technologies and how it can be applied to enhance security and privacy in a business setting."
 type: "Webinar"

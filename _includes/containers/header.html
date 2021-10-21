@@ -64,9 +64,7 @@
   <link rel="stylesheet" href="{{ site.base-url }}{{ site.resourceurl }}/stylesheets/style.css" />
   
   <!-- VENDOR CSS -->
-  <!-- font awesome -->
-  <link href="{{ site.base-url }}{{ site.resourceurl }}/vendor/fontawesome/css/all.min.css" rel="stylesheet">
-    <!-- owl carousel -->
+  <!-- owl carousel -->
   <link href="{{ site.base-url }}{{ site.resourceurl }}/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
   
   <!-- Pipedrive LeadBooster -->
@@ -89,7 +87,7 @@
   <button class="button button--sm button--text button--white">Got it</button>
 </div>
 
-{% if page.layout != "beyond" %}
+{% if page.layout != "beyond" or page.layout != "applied" %}
 {% include components/navbar.html %}
 {% endif %}
 

@@ -12,9 +12,16 @@ layout: compress
 </div>
 {% endcapture %}
 
+{% capture label %}
+{% if page.type == "Webinar "%}
+Webinar recording
+{% else %}
+Download report
+{% endif %}
+{% endcapture %}
+
 {% include components/page-header.html
-  label = "Webinar recording"
-  title = page.title
+  label = label
   subtitle = page.description
   banner_color = "dark"
   side_content = side_content
@@ -22,10 +29,10 @@ layout: compress
 
 <div class="section">
   <div class="section__container">
+    {% if page.speakers %}
     {% include components/section-header.html 
       title = "Speakers"
     %}
-    {% if page.speakers %}
     <div class="section__content">
       <div class="grid__wrapper grid__spacing--3">
         {% for speaker in page.speakers %}

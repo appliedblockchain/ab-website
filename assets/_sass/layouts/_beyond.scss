@@ -1,218 +1,29 @@
 // —————————————————————————————————————————————————————————————————
-// logo
-// typography
-// page
-// section
 // button
 // card
-// input
+// footer
 // graphics
-// —————————————————————————————————————————————————————————————————
-
-.beyond {
-
-  &__logo {
-    width: 66.666%;
-    
-    @include responsive(down, $tablet-down) {
-      width: 75%;
-    }
-    
-    @include responsive(down, $mobile-down) {
-      width: 100%;
-    }
-  }
-
-  &__screen {
-    border-radius: $spacing*2;
-    overflow: hidden;
-    margin-bottom: $spacing*8;
-  }
-}
-
-// —————————————————————————————————————————————————————————————————
+// grid
 // typography
-// —————————————————————————————————————————————————————————————————
-
-#beyond {
-  font-family: $font-beyond;
-  font-weight: initial;
-  
-  .title {
-    color: inherit;
-  }
-  
-  .lead {
-    font-weight: bold;
-    color: $beyond;
-  }
-  
-  .button__inner {
-    font-family: $font-beyond;
-    font-weight: bold;
-  }
-
-  .body--black {
-    color: $text;
-  }
-
-  .layer--primary,
-  .layer--primary-dark { 
-    color: $white;
-    padding-top: $spacing*8;
-
-    &:before {
-      display: none;
-    }
-  }
-
-  .layer--primary { background-color: $beyond; }
-  .layer--primary-dark { background-color: $beyond-dark; }
-
-  button, 
-  input {
-    font-family: $font-beyond;
-    font-weight: initial;
-  }
-}
-
-// —————————————————————————————————————————————————————————————————
-// page
-// —————————————————————————————————————————————————————————————————
-
-.footer--beyond {
-  background-color: $beyond-dark-grey; 
-  color: $white;
-
-  p,
-  p.button__inner,
-  .form__input {
-    font-family: $font-beyond;
-  }
-
-  .footer {
-    
-    &__logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      
-      @include responsive(down, $mobile-down) {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .body {
-        margin-right: $spacing*4;
-        
-        @include responsive(down, $mobile-down) {
-          margin-right: 0;
-          margin-bottom: $spacing*4;
-        }
-      }
-    }
-  }
-}
-
-// —————————————————————————————————————————————————————————————————
 // section
 // —————————————————————————————————————————————————————————————————
-
-#beyond {
-  overflow: hidden;
-  
-  .section {
-    position: relative;
-    
-    &--landing {
-      padding-top: $spacing*25;
-      padding-bottom: 0;
-      background-color: $beyond;
-    }
-    
-    &--grey {
-      background-color: $beyond-light-grey;
-    }
-
-    &--full {
-      overflow: visible;
-    }
-
-    &:last-child {
-      padding-bottom: $spacing*15;
-    }
-
-    &__header {
-
-      + .section__content {
-        margin-top: $spacing*15;
-      }
-    }
-
-    &__title {
-
-      + .section__subtitle {
-        margin-top: $spacing*5;
-      }
-    }
-
-    &__subtitle {
-
-      + .section__subtitle {
-        margin-top: $spacing*8;
-      }
-    }
-
-    &__divider {
-      position: absolute;
-      width: 100vw;
-      bottom: -$spacing*25;
-      z-index: -1;
-      
-      &--grey {
-        top: -$spacing*25*1.5;
-        
-        @include responsive(down, $mobile-down) {
-          top: -$spacing*25*1;
-        }
-      }
-    }
-  }
-}
 
 // —————————————————————————————————————————————————————————————————
 // button
 // —————————————————————————————————————————————————————————————————
 
-#beyond, 
-.footer--beyond {
+#beyond {
 
   .button {
     border-radius: $spacing;
-
-    &__inner {
-      color: $white;
-    }
-  }
-
-  .button--primary {
-    transition: box-shadow $transition;
-    background-color: $beyond;
     
-    @include hover {
-      box-shadow: 0 0 $spacing $beyond;
-    }    
-  }
-  
-  .button--white {
-    transition: box-shadow $transition;
-    
-    @include hover {
-      box-shadow: 0 0 $spacing $white;
-    }
-    
-    .button__inner {
+    &--white {
+      transition: box-shadow $transition;
       color: $beyond;
+      
+      @include hover {
+        box-shadow: 0 0 $spacing $white;
+      }
     }
   }
 }
@@ -223,41 +34,56 @@
 
 #beyond {
 
-  .card--alt {
-    background-color: $white;
-    padding: $spacing*2*1.5;
-    border-radius: $spacing*2;
-    box-shadow: 0 0 $spacing $white;
+  .card {
 
+    &__media {
+      width: 75%;
+    }
+    
     &__title {
+      color: $beyond;
+    }
 
-      + .card__subtitle {
-        margin-top: $spacing*2;
-      }
+    &--beyond {
+      background-color: $beyond;
+      color: $text-contrast;
+
+      .card__title { color: $text-contrast; }
+    }
+
+    &--beyond-dark {
+      background-color: $beyond-dark;
+      color: $text-contrast;
+
+      .card__title { color: $text-contrast; }
     }
   }
 }
 
 // —————————————————————————————————————————————————————————————————
-// input
+// footer
 // —————————————————————————————————————————————————————————————————
 
-.footer--beyond {
+#beyond {
 
-  ::placeholder {
-    color: $grey-60;
-    opacity: 1;
-  }
-  
-  .form__input {
-    border-radius: $spacing !important;
-    background-color: $white;
-    border: 0;
+  .footer {
+    background-color: $beyond-dark-grey; 
+
+    &.section {
+      padding-bottom: $section-spacing*2;
+      padding-top: $section-spacing*1.5 !important;
+    }
+
+    .logo__client {
+      max-width: $spacing*15;
+      max-height: $spacing*5;
+      object-fit: contain;
+    }
   }
 }
 
 // —————————————————————————————————————————————————————————————————
-// graphic
+// graphics
 // —————————————————————————————————————————————————————————————————
 
 .beyond {
@@ -275,7 +101,7 @@
       display: none;
     }
 
-    &--white { background-color: $white; }
+    &--white { background-color: $text-contrast; }
     &--light { background-color: $beyond-light; }
 
     &--15 { opacity: 15%; }
@@ -329,6 +155,89 @@
       height: $spacing*25*0.25;
       left: 10%;
       top: 20%;
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// grid
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+
+  .grid__wrapper {
+    justify-content: center;
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
+// typography
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+  font-family: $font-beyond;
+  font-weight: initial;
+  text-align: center;
+}
+
+// —————————————————————————————————————————————————————————————————
+// section
+// —————————————————————————————————————————————————————————————————
+
+#beyond {
+  margin-top: 0;
+  overflow: hidden;
+  
+  .section {
+    position: relative;
+    align-items: center;
+
+    &--landing {
+      background-position: bottom center;
+      padding-top: $section-spacing*2;
+      padding-bottom: $section-spacing*4;
+      margin-bottom: -$section-spacing*3;
+    }
+    
+    &--grey {
+      background-color: $beyond-light-grey;
+    }
+
+    &--divider {
+      padding-bottom: 0;
+      margin-top: -$section-spacing*4;
+
+      @include responsive(down, $desktop-down) {
+        margin-top: -$section-spacing*3;
+      }
+
+      @include responsive(down, $laptop-down) {
+        margin-top: -$section-spacing*2;
+      }
+
+      @include responsive(down, $tablet-down) {
+        margin-top: -$section-spacing*2;
+      }
+
+      & + .section {
+        padding-top: $section-spacing;
+      }
+    }
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__title {
+      color: $text;
     }
   }
 }

@@ -146,7 +146,7 @@ menus:
 Each page is divided in sections (usually differenciated by background colours). They should all have this structure:
 
 ```html
-<section class="section">
+<div class="section">
   <div class="section__container">
     {% include components/section-header.html
       label = "Use case"
@@ -157,7 +157,7 @@ Each page is divided in sections (usually differenciated by background colours).
       <!-- add your code -->
     </div>
   </div>
-</section>
+</div>
 <!-- repeat if needed -->
 ```
 
@@ -194,9 +194,10 @@ The `section-header` is a built-in component, to ensure styling consistency. Her
 | `body` | string | |
 | `link_type` | `external` | Use that value to for an external link (adds an icon to the button and bypass jekyll link validation |
 | `link_label` | string | Button label |
+| `link_collection` | `_posts_`, `_reports`, `_webinars`, `_events`, | Use if you want to link to an item in a collection (i.e. a blog post, a report, etc. ). Reference the folder name of the collection |
 | `link_url` | string | Sets the URL. if not an external link. it needs to be the page file name without the file extension |
 | `link_title` | string | For SEO |
-| `link_color` | string | Overrides the button color |
+| `link_color` | `primary`, `secondary`, `white`, `black`, `grey`, `success`, `info`, `warning`, `error`, `facebook`, `github`, `linkedin`, `medium`, `twitter` | Sets the button color |
 
 ### Components
 

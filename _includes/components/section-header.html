@@ -10,6 +10,7 @@
 {% assign body = include.body %}
 {% assign link_type = include.link_type %}
 {% assign link_label = include.link_label %}
+{% assign link_collection = include.link_collection %}
 {% assign link_url = include.link_url %}
 {% assign link_title = include.link_title %}
 {% assign link_color = include.link_color %}
@@ -32,6 +33,8 @@
     {% capture link %}
     {% if link_type == "external" %}
     {{ link_url }}
+    {% elsif link_collection %}
+    {% link {{ link_collection }}/{{ link_url }}.md %}
     {% else %}
     {% link {{ link_url }}.html %}
     {% endif %}

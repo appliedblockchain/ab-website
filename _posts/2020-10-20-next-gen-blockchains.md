@@ -6,5 +6,5 @@ image: "next-gen-blockchain.jpg"
 category: "News"
 link:
   type: "report"
-  url: "download-next-gen-blockchains"
+  url: "reports/next-gen-blockchains"
 ---

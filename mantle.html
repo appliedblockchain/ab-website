@@ -1,47 +1,40 @@
 ---
 layout: "default"
-title: "Mantle"
-subtitle: "Identity and privacy toolkit"
-body: "A key element of public distributed ledger technologies is that anyone hosting a node on the network can view all confirmed transactions on that network. This level of transparency naturally creates a barrier to entry for enterprises and startups who wish to deploy blockchain applications but require an element of privacy in order to maintain their competitive advantage."
+title: "Mantle: Identity and privacy toolkit"
+subtitle: "A key element of public distributed ledger technologies is that anyone hosting a node on the network can view all confirmed transactions on that network. This level of transparency naturally creates a barrier to entry for enterprises and startups who wish to deploy blockchain applications but require an element of privacy in order to maintain their competitive advantage."
+
+side_content: "ui/mantle.html"
 ---
 
-<section class="section section--primary section--left">
-  <div class="section__content">
-    <div class="row mantle body--left">
-      <div class="grid__item--lg4">
-        <h1 class="subtitle block__title">What Mantle delivers</h1>
-        <div class="block__content">
-          <p class="body">Mantle solves the problem of privacy and anonymity by adding an additional layer of security on top of any blockchain application that supports smart contracts.</p>
-          <p class="body">This enables confidential data to be encrypted within smart contracts and kept anonymous, whilst other data can be shared on the ledger for users to see.</p>
-          <p class="body">Mantle enables data caching to greatly improve system performance and data retrieval to run application operations.</p>
-        </div>
-      </div>
-      <div class="grid__item--lg3 coloffset--md1 grid__item--md5 grid__item--6">
-        <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-mantle.svg" alt="Mantle schematic" class="mantle__diagram">
-      </div>
-      <div class="grid__item--lg4 grid__item--md5 grid__item--6 mantle__legend">
-        <p class="mantle__label">Mantle and its layers</p>
-        <p class="mantle__label">Blockchain application</p>
-        <p class="mantle__label">Encrypted data</p>
-        <p class="mantle__label">Blockchain platform</p>
-      </div>
-    </div>
+<div class="section">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "What Mantle delivers"
+      subtitle = "Mantle solves the problem of privacy and anonymity by adding an additional layer of security on top of any blockchain application that supports smart contracts."
+      body = "This enables confidential data to be encrypted within smart contracts and kept anonymous, whilst other data can be shared on the ledger for users to see. Mantle enables data caching to greatly improve system performance and data retrieval to run application operations."
+    %}
   </div>
-</section>
+</div>
 
-<section class="section section--primary">
-  {% include components/section-header.html
-    title = "The layers of Mantle include"
-  %}
-  <div class="section__content">
-    <div class="row">
-      {% for item in site.data.images.mantle %}
-      <div class="grid__item--lg3 grid__item--sm6 card">
-        <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__image">
-        <p class="card__title body--large body--bold">{{ item.title }}</p>
-        <p class="card__body body--small">{{ item.alt }}</p>
+<div class="section section--primary">
+  <div class="section__container">
+    {% include components/section-header.html
+      title = "The layers of Mantle include"
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--4">
+        {% for item in site.data.images.mantle %}
+        <div class="grid__item grid__item--lg3 grid__item--sm6">
+          <div class="card card--sm card--transparent card--center">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-{{ item.url }}.svg" alt="{{ item.url }} icon" class="card__media">
+            <div class="card__header">
+              <div class="card__title">{{ item.title }}</div>
+              <div class="card__subtitle">{{ item.alt }}</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
-</section>
+</div>

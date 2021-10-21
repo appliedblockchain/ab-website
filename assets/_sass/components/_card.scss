@@ -438,4 +438,22 @@
       }
     }
   }
+
+  &--center {
+    text-align: center;
+    align-items: center;
+
+    .card {
+
+      &__media {
+        width: $spacing*15;
+        justify-content: center;
+      }
+
+      &__actions,
+      &__title {
+        justify-content: center;
+      }      
+    }
+  }
 }

@@ -45,6 +45,9 @@ collections:
   events:
     output: true
     permalink: /webinars/:title
+  reports:
+    output: true
+    permalink: /reports/:title
   newsletters:
     output: true
     permalink: /newsletters/:path

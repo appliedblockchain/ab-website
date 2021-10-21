@@ -1,87 +1,87 @@
 # mantle.html
 
 mantle:
-  - url: wallet
-    title: Wallet
-    alt: Generate and store private/public key pairs belonging to a user or to another entity, call Smart Contracts and sign transactions
+  - url: "wallet"
+    title: "Wallet"
+    alt: "Generate and store private/public key pairs belonging to a user or to another entity, call Smart Contracts and sign transactions"
 
-  - url: privacy
-    title: Privacy
-    alt: Compatible on most blockchain platforms, and allows private data to be encrypted and accessed by selected parties
+  - url: "privacy"
+    title: "Privacy"
+    alt: "Compatible on most blockchain platforms, and allows private data to be encrypted and accessed by selected parties"
 
-  - url: key
-    title: Key recovery
-    alt: Provides two different key recovery mechanisms
+  - url: "key"
+    title: "Key recovery"
+    alt: "Provides two different key recovery mechanisms"
 
-  - url: independant
-    title: Platform independent
-    alt: Can be used on any blockchain application that supports smart contracts
+  - url: "independant"
+    title: "Platform independent"
+    alt: "Can be used on any blockchain application that supports smart contracts"
 
-  - url: anonymity
-    title: Anonymity
-    alt: Cryptographic key issuance and storage to securely manage the identities of network members
+  - url: "anonymity"
+    title: "Anonymity"
+    alt: "Cryptographic key issuance and storage to securely manage the identities of network members"
 
-  - url: compliance
-    title: GDPR compliance
-    alt: Enables the “right to be forgotten”
+  - url: "compliance"
+    title: "GDPR compliance"
+    alt: "Enables the “right to be forgotten”"
 
-  - url: management
-    title: Enterprise key management
-    alt: Integration with AWS Key Management Service and Azure Key Vault
+  - url: "management"
+    title: "Enterprise key management"
+    alt: "Integration with AWS Key Management Service and Azure Key Vault"
 
-  - url: ad
-    title: AD / LDAP
-    alt: Directory services integration
+  - url: "ad"
+    title: "AD / LDAP"
+    alt: "Directory services integration"
 
 # node-hosting.html
 
 node-hosting:
-  - url: independant
-    title: An enterprise blockchain explorer for independent transparency
-    alt: Transparency
+  - url: "independant"
+    title: "An enterprise blockchain explorer for independent transparency"
+    alt: "Transparency"
 
-  - url: node-primary
-    title: Detect, alert and report forks and reorgs
-    alt: Experience
+  - url: "node-primary"
+    title: "Detect, alert and report forks and reorgs"
+    alt: "Experience"
 
-  - url: keynote-primary
-    title: A trusted brand used by global corporations as well as independent startups
-    alt: Brand
+  - url: "keynote-primary"
+    title: "A trusted brand used by global corporations as well as independent startups"
+    alt: "Brand"
 
 # applied-proofs.html
 
 applied-proofs:
-  - url: primary-keys
-    title: Data security
-    alt: Data security
+  - url: "primary-keys"
+    title: "Data security"
+    alt: "Data security"
     
-  - url: primary-privacy
-    title: Data privacy
-    alt: Data privacy
+  - url: "primary-privacy"
+    title: "Data privacy"
+    alt: "Data privacy"
     
-  - url: primary-anonimity
-    title: GDPR compliance
-    alt: GDPR compliance
+  - url: "primary-anonimity"
+    title: "GDPR compliance"
+    alt: "GDPR compliance"
 
-  - url: primary-scale
-    title: Reduced threat of data leakage
-    alt: Reduced threat of data leakage
+  - url: "primary-scale"
+    title: "Reduced threat of data leakage"
+    alt: "Reduced threat of data leakage"
 
 # applied-identity.html
 
 applied-identity:
-  - url: white-keys
-    title: Identity security
-    alt: Identity security
+  - url: "white-keys"
+    title: "Identity security"
+    alt: "Identity security"
     
-  - url: white-privacy
-    title: Identity privacy
-    alt: Identity privacy
+  - url: "white-privacy"
+    title: "Identity privacy"
+    alt: "Identity privacy"
     
-  - url: white-anonimity
-    title: GDPR compliance
-    alt: GDPR compliance
+  - url: "white-anonimity"
+    title: "GDPR compliance"
+    alt: "GDPR compliance"
 
-  - url: white-scale
-    title: Reduced threat of data leakage
-    alt: Reduced threat of data leakage
+  - url: "white-scale"
+    title: "Reduced threat of data leakage"
+    alt: "Reduced threat of data leakage"

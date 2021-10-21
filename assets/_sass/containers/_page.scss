@@ -22,6 +22,7 @@
   // overlapping element on right side of page header
   &__side {
     width: 100%;
+    z-index: 1;
 
     @include responsive(up, $laptop-up) {
       height: 0;

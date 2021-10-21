@@ -106,20 +106,6 @@ $('.owl-carousel-webinar').owlCarousel({
   margin: 0 
 });
 
-$('.owl-carousel-beyond').owlCarousel({
-  dots: false,
-  loop: true,
-  autoplay: true,
-  smartSpeed: 2000,
-  responsive: {
-    0: { items: 3, margin: 40 },
-    350: { items: 3, margin: 40 },
-    568: { items: 4, margin: 40 },
-    1023: { items: 5, margin: 40 },
-    1280: { items: 6, margin: 40 },
-  }
-});
-
 // —————————————————————————————————————————————————————————————————
 
 });

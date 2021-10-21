@@ -24,6 +24,8 @@
   &__container {
     width: 100%;
     max-width: $page-max-width;
+    // fix content below :before element
+    position: relative;
   }
   
   &__header {
@@ -58,6 +60,7 @@
 
   &__body {
     margin-top: $spacing*3;
+    max-width: $page-max-width/2;
   }  
 
   &__logo {
@@ -259,7 +262,7 @@
 #products {
 
   .section:not(.page__header):before {
-    // remove blue gßradient 
+    // remove blue gradient 
     display: none;
   }
 }

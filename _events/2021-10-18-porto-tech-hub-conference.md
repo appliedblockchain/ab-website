@@ -1,5 +1,5 @@
 ---
-layout: "webinar"
+layout: "resource"
 title: "Porto Tech Hub Conference 2021"
 image: "porto-tech-hub-conference.jpg"
 type: "Virtual"

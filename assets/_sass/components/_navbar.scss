@@ -47,12 +47,12 @@
 
   &__logo {
     margin-right: $spacing*4;
-    height: $navbar-height/2;
+    height: $navbar-height/1.5;
     width: auto;
 
     @include responsive(down, $desktop-down) {
       position: absolute;
-      top: $navbar-height/4;
+      top: $navbar-height/6;
     }
   }
 
@@ -223,7 +223,7 @@
 .subnav {
   display: none;
   position: absolute;
-  top: $spacing*8;
+  top: $navbar-height*0.5;
   left: -$spacing/2;
   background-color: $white;
   border-radius: $spacing*2;

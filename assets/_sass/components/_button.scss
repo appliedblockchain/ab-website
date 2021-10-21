@@ -250,6 +250,10 @@ a {
     opacity: 0.4;
     cursor: not-allowed;
   }
+
+  &--underline {
+    text-decoration: underline;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

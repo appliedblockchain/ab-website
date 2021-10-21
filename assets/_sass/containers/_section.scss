@@ -56,6 +56,10 @@
     max-width: $page-max-width/2;
   }
 
+  &__body {
+    margin-top: $spacing*3;
+  }  
+
   &__logo {
     max-height: $spacing*20;
     object-fit: contain;
@@ -103,6 +107,11 @@
     &:before {
       @include pseudo-element("", 0, 0 ,0, 0, 100%, 100%);
       background-image: linear-gradient(to right, $background-color, rgba($background-color, 0.8));
+      
+    }
+
+    &.landing__main:before {
+      background-image: linear-gradient(to right, $background-color, rgba($background-color, 0.2));
     }
   }
 
@@ -137,6 +146,7 @@
   &--primary { @include background-color($primary, $primary-text-contrast, $primary-text-contrast); }
   &--primary-light { @include background-color($primary-light, $text, $text); }
   &--primary-dark { @include background-color($primary-dark, $primary-text-contrast, $primary-text-contrast); }
+  &--secondary { @include background-color($secondary, $secondary-text-contrast, $secondary-text-contrast); }
   &--dark { @include background-color($dark, $text-contrast, $text-contrast); }
 }
 

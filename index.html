@@ -9,12 +9,12 @@ menus:
 ---
 
 <div class="landing">
-  <div class="landing__banner section section--primary-light">
+  <div class="landing__banner section section--dark">
     <div class="section__container">
       <div class="section__content">
         <div class="grid__wrapper grid--jc-space-between grid--ai-center">
-          <p>We are hiring! Join our growing team of blockchain experts and industry professionals</p>
-          <a href="https://apply.workable.com/appliedblockchain/" target="_blank" class="button button--sm b button--text button--black">
+          <p class="caption">We are hiring! Join our growing team of blockchain experts and industry professionals</p>
+          <a href="https://apply.workable.com/appliedblockchain/" target="_blank" class="button button--sm b button--text button--white">
             View careers
             {% svg assets/icons/feather/external-link.svg %}
           </a>
@@ -22,16 +22,17 @@ menus:
       </div>
     </div>
   </div>
-  <div class="landing__main section section--primary section--maxWidth">
+  <div class="landing__main section section--primary section--maxWidth background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/landing.png');">
     <div class="section__container">
       <div class="section__header">
+        <img src="{{ site.base-url }}{{ site.imageurl }}/gartner.svg" alt="Gartner banner" class="gartner hide--laptop">
         <h1 class="section__title">Welcome to Applied Blockchain</h1>
         <p class="section__subtitle h2">{{ site.description }}</p>
       </div>
       <div class="section__content">
         <div class="button__wrapper">
           <a href="{% link case-studies.html %}" class="button button--white button--lg">Case studies</a>
-          <a href="{% link products.html %}" class="button button--white button--lg">Services</a>
+          <a href="{% link services.html %}" class="button button--white button--lg">Services</a>
         </div>
       </div>
     </div>
@@ -39,8 +40,8 @@ menus:
   <div class="landing__bottom section section--primary-dark">
     <div class="section__container">
       <div class="section__content">
-        <div class="grid__wrapper landing__widgets">
-          <div class="grid__wrapper grid__spacing--1 grid__item grid__item--6 grid--column">
+        <div class="grid__wrapper grid__spacing--4 landing__widgets">
+          <div class="grid__wrapper grid__spacing--2 grid__item grid__item--lg6 grid--column">
             <div class="grid__item grid--row grid--ai-center">
               <p class="caption">Latest news</p>
               <div class="owl-carousel-dots-container-news display--flex"></div>
@@ -52,7 +53,7 @@ menus:
             <div class="grid__item spinner spinner--white">
               <div class="owl-carousel owl-carousel-news">
                 {% for item in site.data.news %}
-                <div class="card card--xs card--landscape card--transparent card--news">
+                <div class="card card--xs card--landscape card--transparent card--news grid--jc-space-between">
                   {% if item.image %}
                   <div class="card__media">
                     <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="Cover image for blog post" class="card__thumbnail pb-0">
@@ -73,7 +74,7 @@ menus:
             </div>
           </div>
           <div class="divider divider--portrait divider--white position--absolute"></div>
-          <div class="grid__wrapper grid__spacing--1 grid__item grid__item--6 grid--column">
+          <div class="grid__wrapper grid__spacing--2 grid__item grid__item--lg6 grid--column">
             <div class="grid__item grid--row grid--ai-center">
               <p class="caption">Gartner peer insights</p>
               <div class="owl-carousel-dots-container-rating display--flex"></div>
@@ -81,7 +82,7 @@ menus:
             <div class="grid__item spinner spinner--white">
               <div class="owl-carousel owl-carousel-rating">
                 {% for item in site.data.peer-insights %}
-                <div class="card card--xs card--landscape card--transparent">
+                <div class="card card--xs card--landscape card--transparent grid--jc-space-between">
                   <div class="card__header">
                     <p class="card__subtitle">{{ item.title }}</p>
                     <div class="card__subtitle rating">
@@ -94,7 +95,7 @@ menus:
                   </div>
                   <div class="card__actions">
                     <a href="{{ item.link.url }}" target="_blank" rel="noopener" class="button button--sm button--white">
-                      Read full review
+                      Read review
                       {% svg assets/icons/feather/external-link.svg %}
                     </a>
                   </div>
@@ -170,7 +171,7 @@ menus:
     <div class="section__content">
       <div class="grid__wrapper grid__spacing--4 grid__inline grid__inline--lg4 grid__inline--2">
         {% for counter in site.data.counters %}
-        <div class="grid__item">
+        <div class="grid__item grid--ai-center">
           <div class="counter">
             {% svg /assets/icons/feather/{{counter.icon}}.svg class="counter__icon" %}
             <p class="counter__number h0">{{ counter.number }}</p>
@@ -244,7 +245,6 @@ menus:
 <div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
   <div class="section__content body--black">
     <div class="row row--center">
-      <img src="{{ site.base-url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop">
       <div class="grid__item--xl3 grid__item--lg4 grid__item--md6 grid__item--sm8">
         <div class="card card--xxs anchor background--shadow mb--md">
           <div class="card__inner">

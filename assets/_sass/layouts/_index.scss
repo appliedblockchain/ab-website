@@ -12,12 +12,19 @@
     flex: 1;
     justify-content: center;
 
-    .section__title {
-      font-size: 4rem;
-    }
+    .section {
 
-    .section__subtitle {
-      @extend .h2;
+      &__container {
+        position: relative;
+      }
+
+      &__title {
+        font-size: 3.5rem;
+      }
+      
+      &__subtitle {
+        @extend .h2;
+      }
     }
   }
 
@@ -36,31 +43,37 @@
 
     > .grid__item {
 
-      &:first-child {
-        padding-right: $spacing*6;
-      }
-      
-      &:last-child {
-        padding-left: $spacing*6;
+      @include responsive(up, $laptop-up) {
+
+        &:first-child {
+          padding-right: $spacing*4;
+        }
+        
+        &:last-child {
+          padding-left: $spacing*4;
+        }
       }
     }
 
     .divider {
+      @include calc(height, '100% - '$spacing*4);
+      top: 16px;
       left: 50%;
+
+      @include responsive(down, $laptop-down) {
+        position: initial;
+        width: 100%;
+        height: $spacing/2;
+      }
     }
   }
 
   .gartner {
     position: absolute;
     top: 0;
-    left: -$page-gutter/2;
-    min-width: 320px;
-    width: 10%;
+    right: -$page-gutter;
+    width: $spacing*30;
     z-index: 1;
-
-    @include responsive-mobile-landscape() {
-      display: none;
-    }
   }
 }
 

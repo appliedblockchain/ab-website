@@ -65,7 +65,7 @@
 
 .widget--cookie {
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   transition: opacity $transition;
   box-shadow: $box-shadow;
   will-change: opacity;

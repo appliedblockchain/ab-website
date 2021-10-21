@@ -6,7 +6,7 @@
 // justifyContent
 // alignItems
 // alignItems
-// misc
+// inline
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -193,4 +193,3 @@
   &--lg { @include break($laptop-up); }
   &--xl { @include break($desktop-up); }
 }
-

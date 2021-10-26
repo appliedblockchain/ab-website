@@ -87,8 +87,4 @@
   <button class="button button--sm button--text button--white">Got it</button>
 </div>
 
-{% if page.layout != "beyond" or page.layout != "applied" %}
-{% include components/navbar.html %}
-{% endif %}
-
 <div id="{% if page.layout == "post" %}post{% elsif page.layout == "case-study" %}case-study{% elsif page.layout == "webinar" %}webinar{% else %}{{ page.title | slugify }}{% endif %}" class="page">

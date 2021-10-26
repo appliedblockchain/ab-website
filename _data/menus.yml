@@ -23,16 +23,16 @@ footer_company:
   - url: "https://apply.workable.com/appliedblockchain/"
     title: "Careers"
     identifier: "careers"
-    weight: 9
+    weight: 5
     external: true
 
 footer_products:
   - url: "https://www.silentdata.com"
     title: "Silent Data"
     identifier: "silent-data"
-    weight: 1
+    weight: 2
   - url: ""
     title: "K0"
     identifier: "k0"
-    weight: 3
+    weight: 4
     disabled: true

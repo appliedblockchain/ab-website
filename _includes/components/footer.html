@@ -87,6 +87,10 @@
                 <div class="card__header">
                   <p class="card__title">Customers</p>
                   <div class="card__subtitle">
+                    <!-- use two navs to fix order bug -->
+                    {% include components/nav.html
+                      variant = "footer_customers_all"
+                    %}
                     {% include components/nav.html
                       variant = "footer_customers"
                     %}

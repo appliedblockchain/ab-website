@@ -5,8 +5,9 @@ subtitle: "Solutions tailored to your business. Our team builds and supports ful
 menus:
   solutions:
     weight: 2
-  footer_company:
-    weight: 4
+  footer_technologies:
+    title: "All technologies"
+    weight: 1
 ---
 
 <div class="section">
@@ -122,11 +123,6 @@ menus:
       </div>
     </div>
   </div>
-  <div class="section__content">
-    {% include components/carousel.html
-      variant = "technologies"
-    %}
-  </div>
 </div>
 
 <div class="section section--white">
@@ -159,16 +155,5 @@ menus:
       </div>
       {% endfor %}
     </div>
-  </div>
-</div>
-
-<div id="index-testimonials" class="section section--grey  pr-0 pl-0">
-  <div class="section__content">
-  <div class="card testimonials">
-    {% include components/carousel.html
-    type = "testimonials"
-    variant = "testimonials_clients"
-    %}
-  </div>
   </div>
 </div>

@@ -63,7 +63,7 @@ a {
       border-color: $hover;
     }
 
-    svg {
+    svg * {
       fill: $text;
     }
   }
@@ -72,7 +72,7 @@ a {
     background-color: transparent;
     color: $color;
 
-    svg {
+    svg * {
       fill: $color;
     }
     

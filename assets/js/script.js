@@ -6,7 +6,7 @@ $(document).ready(function() {
 // cookie bar
 // form
 // modal
-// search
+// newsletter
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -33,18 +33,6 @@ $('.accordion .accordion__header').on('click', function() {
 	} else {
 	}
 
-});
-
-// —————————————————————————————————————————————————————————————————
-// button
-// —————————————————————————————————————————————————————————————————
-
-// menu button
-
-$(".button--menu").click(function(event) {
-	$('.button--menu').toggleClass("button--menu--open");
-	$('.navbar').toggleClass('js-opened');
-	$('body').toggleClass('js-freeze');
 });
 
 // —————————————————————————————————————————————————————————————————
@@ -93,26 +81,30 @@ $(".form__input").focusout(function() {
 // prevent page scroll when modal opened
 
 // open
-$(".js-button-modal").click(function(event) {
+$(".js-button-modal").click(function() {
 	$('html, body').addClass("js-freeze");
 });
 
 // close
-$(".modal__close, .modal__button").click(function(event) {
+$(".modal__close, .modal__button").click(function() {
 	$('html, body').removeClass("js-freeze");
 });
 
 // —————————————————————————————————————————————————————————————————
-// search
+// newsletter
 // —————————————————————————————————————————————————————————————————
 
-// hide full list of elements when the user starts typing
-document.getElementById("search-input").addEventListener("input", function() {
-	if(this.value.length == 0) {
-		document.getElementById('search-results').style.display = 'none';
-	} else {
-		document.getElementById('search-results').style.display = 'block';
-	}
+var footer = $('.footer')
+
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 400) {
+    $('.widget--newsletter').addClass("show");
+  } else {
+    $('.widget--newsletter').removeClass("show");
+  }
+  if($(this).scrollTop() + $(window).height() > ($(document).height() - $(footer).height()) - 200 ) {
+    $('.widget--newsletter').removeClass("show");
+  }
 });
 
 // —————————————————————————————————————————————————————————————————

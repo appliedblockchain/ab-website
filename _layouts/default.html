@@ -5,7 +5,7 @@ layout: compress
 {% include containers/header.html %}
 {% include components/navbar.html %}
 
-<div class="page__container background--cover"{% if page.background_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/{{ page.background_image }}');"{% endif %}>
+<div class="page__container{% if page.background_image %} background--cover{% endif %}"{% if page.background_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/{{ page.background_image }}');"{% endif %}>
   {% include components/page-header.html %}
   {{ content }}
 </div>

@@ -52,10 +52,29 @@
 // —————————————————————————————————————————————————————————————————
 
 .widget--newsletter {
-  max-width: $spacing*80;
+  transition: bottom 0.4s ease;
+  position: fixed;
+  bottom: -$spacing*12;
+  left: $page-gutter;
+  width: $spacing*36;
+  background-color: $primary;
+  color: $white;
+  margin-left: -$spacing*2;
 
-  .form__input {
-    max-width: $spacing*50;
+  @include responsive(down, $mobile-down) {
+    display: none;
+  }
+
+  &.show {
+    bottom: $spacing*3;
+    
+    @include responsive(down, $desktop-down) {
+      bottom: $spacing*4;
+    }
+
+    @include responsive(down, $tablet-down) {
+      bottom: $spacing*5;
+    }
   }
 }
 
@@ -67,7 +86,6 @@
   align-items: center;
   justify-content: space-between;
   transition: opacity $transition;
-  box-shadow: $box-shadow;
   will-change: opacity;
   padding: $spacing $page-gutter;
   background-color: $primary;

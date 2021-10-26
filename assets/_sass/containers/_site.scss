@@ -29,14 +29,16 @@ img {
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  // prevent horizontal scroll
-  overflow-x: hidden;
   scroll-behavior: smooth;
 
   @media screen and (prefers-reduced-motion: reduce) {
     scroll-behavior: auto;
   }
+}
+
+body {
+  // prevent horizontal scroll
+  overflow-x: hidden;
 }
 
 // embed responsively (embed Youtube and Vimeo)
@@ -125,7 +127,8 @@ ul {
 // z-index
 // —————————————————————————————————————————————————————————————————
 
-.anchor { z-index: 5; }
+.anchor { z-index: 4; }
+.widget--newsletter { z-index: 5; }
 .widget--cookie { z-index: 6; }
 .navbar { z-index: 7; }
 .modal { z-index: 10; }

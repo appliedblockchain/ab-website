@@ -1,0 +1,18 @@
+@mixin responsive-section($breakpoint, $gutter) {
+
+  @include responsive(down, $breakpoint) {
+    
+    .section {
+      padding-right: $gutter;
+      padding-left: $gutter;
+    }
+    
+    .widget--newsletter {
+      left: $gutter;
+    }
+  }
+}
+
+@include responsive-section($laptop-down, $spacing*6);
+@include responsive-section($tablet-down, $spacing*4);
+@include responsive-section($mobile-down, $spacing*2);

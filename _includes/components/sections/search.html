@@ -18,6 +18,8 @@
 <script src="{{ site.base-url }}{{ site.resourceurl }}/vendor/search.min.js"></script>
   
 <script>
+
+  // initiate search script
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results-container'),
@@ -25,4 +27,13 @@
     searchResultTemplate: 
       '<a href="{url}" class="search__result"><p class="search__title body2">{title}</p><p class="search__subtitle overline">{subtitle}</p></a>'
   })
+
+  // hide full list of elements when the user starts typing
+  document.getElementById("search-input").addEventListener("input", function() {
+    if(this.value.length == 0) {
+      document.getElementById('search-results').style.display = 'none';
+    } else {
+      document.getElementById('search-results').style.display = 'block';
+    }
+  });
 </script>

@@ -10,4 +10,8 @@
       flex-direction: column-reverse;
     }
   }
+
+  .form {
+    max-width: $page-max-width/3;
+  }
 }

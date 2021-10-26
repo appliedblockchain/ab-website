@@ -63,12 +63,6 @@
     max-width: $page-max-width/2;
   }  
 
-  &__logo {
-    max-height: $spacing*20;
-    object-fit: contain;
-    object-position: right;
-  }
-
   &__button {
     margin-top: $spacing*4;
   }

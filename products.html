@@ -15,8 +15,8 @@ menus:
 <div class="divider divider--white divider--landscape"></div>
 <div class="section section--primary background--cover section--products" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/background/products/{{ item.background }}');">
   <div class="section__container">
-    <div class="grid__wrapper grid__spacing--8">
-      <div class="grid__item grid__item--8">
+    <div class="grid__wrapper grid__spacing--8 product__wrapper">
+      <div class="grid__item grid__item--lg8">
         <div class="card card--lg card--transparent card--{{ item.id }}">
           <div class="card__header">
             <p class="card__label">{{ item.category }}</p>
@@ -37,8 +37,8 @@ menus:
           </div>
         </div>
       </div>
-      <div class="grid__item grid__item--4">
-        <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.png" alt="Logo for {{ item.title | strip_html }}" class="section__logo">
+      <div class="product__logo grid__item grid__item--lg4">
+        <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.png" alt="Logo for {{ item.title | strip_html }}" class="product__logo">
       </div>
     </div>
   </div>

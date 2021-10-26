@@ -1,8 +1,34 @@
 // —————————————————————————————————————————————————————————————————
+// products
 // webinars
 // mantle
 // services
 // —————————————————————————————————————————————————————————————————
+
+// —————————————————————————————————————————————————————————————————
+// products
+// —————————————————————————————————————————————————————————————————
+
+#products {
+
+  .product__wrapper {
+
+    @include responsive(down, $laptop-down) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .product__logo {
+    max-height: $spacing*20;
+    object-fit: contain;
+    object-position: right;  
+
+    @include responsive(down, $laptop-down) {
+      max-width: $spacing*60;
+      object-position: left;
+    }
+  }
+}
 
 // —————————————————————————————————————————————————————————————————
 // webinars

@@ -7,10 +7,6 @@
 // misc
 // —————————————————————————————————————————————————————————————————
 
-body.js-freeze {
-  overflow: hidden;
-}
-
 img {
   // prevent images from stretching with flex
   align-self: center;
@@ -39,6 +35,27 @@ html, body {
 body {
   // prevent horizontal scroll
   overflow-x: hidden;
+
+  &:before {
+    @include pseudo-element('', 0, 0, 0, 0, 100vw, 100vh);
+    position: fixed;
+    background-color: rgba($black, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $transition;
+    will-change: opacity;
+  }
+  
+  &.js-freeze {
+    // prevents scrolling when menu is opened on mobile
+    overflow: hidden;
+    
+    &:before {
+      transition: opacity $transition;
+      will-change: opacity;
+      opacity: 1;
+    }
+  }
 }
 
 // embed responsively (embed Youtube and Vimeo)
@@ -127,10 +144,11 @@ ul {
 // z-index
 // —————————————————————————————————————————————————————————————————
 
-.anchor { z-index: 4; }
-.widget--newsletter { z-index: 5; }
-.widget--cookie { z-index: 6; }
-.navbar { z-index: 7; }
+.anchor { z-index: 5; }
+.widget--newsletter { z-index: 6; }
+.widget--cookie { z-index: 7; }
+body:before { z-index: 8; }
+.navbar { z-index: 9; }
 .modal { z-index: 10; }
 
 @for $i from 0 through 9 {

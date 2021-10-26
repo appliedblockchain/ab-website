@@ -209,7 +209,7 @@
       @extend .button__inner;
 
       @include responsive(down, $desktop-down) {
-        height: $navbar-height/2;
+        height: $spacing*5;
         justify-content: flex-end;
       }
     }
@@ -269,9 +269,9 @@
         padding-top: 0;
       }
   
-      & + & {
+      & {
         border-top: 0;
-        padding-top: 0;
+        padding: $spacing 0;
       }
     }
 

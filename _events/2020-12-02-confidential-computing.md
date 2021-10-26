@@ -1,7 +1,7 @@
 ---
 layout: "resource"
 title: "Confidential Computing"
-description: "Applied Blockchain and R3 present a recorded session explaining the potential of confidential computing."
+subtitle: "Applied Blockchain and R3 present a recorded session explaining the potential of confidential computing."
 type: "Webinar"
 image: "webinar-confidential-computing.jpg"
 

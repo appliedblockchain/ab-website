@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Applied Blockchain raises £2m to enable companies to do more together while sharing less data"
-lead: "Leading distributed solutions specialist Applied Blockchain has completed a £2 million funding round lead by Hong Kong based venture capital firm QBN Capital. The newly-injected funds will be invested in developing a platform using privacy-enhancing technologies to help companies to collaborate and generate meaningful outcomes together, without having to share any of their data."
+subtitle: "Leading distributed solutions specialist Applied Blockchain has completed a £2 million funding round lead by Hong Kong based venture capital firm QBN Capital. The newly-injected funds will be invested in developing a platform using privacy-enhancing technologies to help companies to collaborate and generate meaningful outcomes together, without having to share any of their data."
 image: "qbn-investment.jpg"
 category: "Press release"
 dlc: true

@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Applied Blockchain chooses Porto as its Development Centre for European Expansion"
-lead: "Applied Blockchain, one of the UK’s leading developers of distributed ledger technology and smart contracts, has announced the opening of an office in Porto – its first non-UK office – to further strengthen its blockchain development and to fulfill the growing demand from clients internationally."
+subtitle: "Applied Blockchain, one of the UK’s leading developers of distributed ledger technology and smart contracts, has announced the opening of an office in Porto – its first non-UK office – to further strengthen its blockchain development and to fulfill the growing demand from clients internationally."
 image: "porto-european-expansion.jpg"
 category: "Press release"
 ---

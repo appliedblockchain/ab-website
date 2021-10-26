@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Blockchain Architecture"
-lead: "Or how not to build distributed applications."
+subtitle: "Or how not to build distributed applications."
 image: "default.jpg"
 category: "Blog"
 link:

@@ -1,7 +1,7 @@
 ---
 layout: "resource"
 title: "Review of Next Generation Enterprise Blockchain Technologies"
-description: "The report describes an emerging new generation of blockchain technologies with a ground-up approach to data privacy and confidentiality. A fresh outlook on emerging enterprise blockchain technologies including R3 Conclave, Microsoft Azure Confidential Computing Framework (CCF), Baseline Protocol and AZTEC Protocol."
+subtitle: "The report describes an emerging new generation of blockchain technologies with a ground-up approach to data privacy and confidentiality. A fresh outlook on emerging enterprise blockchain technologies including R3 Conclave, Microsoft Azure Confidential Computing Framework (CCF), Baseline Protocol and AZTEC Protocol."
 image: "next-gen-blockchain.jpg"
 ---
 

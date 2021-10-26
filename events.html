@@ -12,7 +12,7 @@ menus:
 
 <!-- reverse the order -->
 {% assign sorted = site.events | reverse %}
-<!-- capture on;y webinars -->
+<!-- capture only webinars -->
 {% assign webinars = site.events | reverse | where: "type", "Webinar" | where: "recording", true %}
 <!-- capture today's date -->
 {% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}

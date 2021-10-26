@@ -140,6 +140,10 @@
       background-color: $background-color;
     }
   }
+
+  ::placeholder {
+    color: $color;
+  }  
 }
 
 .section {

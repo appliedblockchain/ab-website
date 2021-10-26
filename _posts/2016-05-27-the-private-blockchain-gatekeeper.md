@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "The Private Blockchain Gatekeeper"
-lead: "This piece proposes concepts for designing a Private Blockchain Smart Contract Application."
+subtitle: "This piece proposes concepts for designing a Private Blockchain Smart Contract Application."
 image: "the-private-blockchain-gatekeeper.jpg"
 category: "Blog"
 ---

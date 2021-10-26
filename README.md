@@ -12,6 +12,7 @@
 - [Create post](#create-post)
 - [Create project](#create-project)
 - [Create event](#create-event)
+- [Add search to page](#add-search-to-page)
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>
@@ -320,6 +321,28 @@ side_content: "components/cards/webinar.html"
 ## Create post
 
 [Instructions](https://github.com/appliedblockchain/ab-website/tree/master/_posts/README.md)
+
+<!------------------------------------------------------>
+<p>&nbsp;</p>
+<!------------------------------------------------------>
+
+## Add search to page
+
+> Check out the search [plugin documentation](https://github.com/christian-fei/Simple-Jekyll-Search) for more information and troubleshooting
+
+- Create a file in the `_search` folder.
+- Name the file with the typ of items you will search on.
+
+> If you are searching for blog posts, name it `posts.json`
+
+- Adapt the code to loop on the corresponding collection (you can use `webinars.json` as reference), adding the necessary objects.
+- Add the search snippet to the page you are adding the search to, using the json file slug as the variant variable.
+
+```html
+{% include components/sections/search.html 
+  variant = "your-file-name"
+%}
+```
 
 <!------------------------------------------------------>
 <p>&nbsp;</p>

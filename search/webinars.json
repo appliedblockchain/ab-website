@@ -1,0 +1,18 @@
+---
+layout: compress
+---
+
+{% assign webinars = site.events | reverse | where: "type", "Webinar" | where: "recording", true %}
+
+[
+  {% for event in webinars %}
+  {
+
+    "url" : "{{ site.baseurl }}{{ event.url }}",
+    "title" : "{{ event.title | strip_html | escape }}",
+    "subtitle" : "{{ event.subtitle | strip_html | strip_newlines | escape }}",
+    "tags" : "{{ event.tags | join: ', ' }}"
+
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

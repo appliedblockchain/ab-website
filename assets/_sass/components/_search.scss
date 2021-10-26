@@ -1,0 +1,62 @@
+.search {
+
+  &__container {
+    // fix adjacent .section siblings styling removed by script tag
+    margin-bottom: -$section-spacing;
+  }
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: $page-max-width/3;
+    
+    @include responsive(down, $tablet-down) {
+      max-width: none;
+    }
+
+    &:before {
+      @include pseudo-element('', auto, $spacing*1.5, auto, auto, $spacing*3, $spacing*3);
+      background-image: url('/assets/icons/feather/search.svg');
+    }
+  }
+
+  &__input {
+    padding-right: $spacing*5;
+  }
+
+  &__results {
+    display: none;
+    margin-top: $spacing*3;
+  }
+
+  &__result {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    & + & {
+      margin-top: $spacing*2;
+    }
+  }
+  
+  &__title {
+    display: flex;
+    align-items: center;
+    padding-right: $spacing*3;
+    
+    &:before {
+      @include pseudo-element('', $spacing/2, 0, auto, auto, $spacing*2, $spacing*2);
+      background-image: url('/assets/icons/feather/chevron-right.svg');
+      background-size: 100%;
+    }  
+  }
+
+  &__subtitle {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: $spacing/4;
+  }
+}

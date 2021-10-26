@@ -6,6 +6,7 @@ $(document).ready(function() {
 // cookie bar
 // form
 // modal
+// search
 // —————————————————————————————————————————————————————————————————
 
 // —————————————————————————————————————————————————————————————————
@@ -99,6 +100,19 @@ $(".js-button-modal").click(function(event) {
 // close
 $(".modal__close, .modal__button").click(function(event) {
 	$('html, body').removeClass("js-freeze");
+});
+
+// —————————————————————————————————————————————————————————————————
+// search
+// —————————————————————————————————————————————————————————————————
+
+// hide full list of elements when the user starts typing
+document.getElementById("search-input").addEventListener("input", function() {
+	if(this.value.length == 0) {
+		document.getElementById('search-results').style.display = 'none';
+	} else {
+		document.getElementById('search-results').style.display = 'block';
+	}
 });
 
 // —————————————————————————————————————————————————————————————————

@@ -18,7 +18,7 @@
 ---
 layout: "post"
 title: ""
-lead: ""
+subtitle: ""
 image: ""
 category: ""
 # link:
@@ -42,7 +42,7 @@ You can write markdown code here.
 | --- | --- | --- |
 | `layout` | `post` | Do not edit! Defines which layout to use |
 | `title` | string | The post title, which appears on the page **and** the HTML title tag (that appears on the browser tabs) |
-| `lead` | string | First paragraph of the post (excerpt on the media page, larger text on the post page |
+| `subtitle` | string | First paragraph of the post (excerpt on the media page, larger text on the post page |
 | `image` | string | Place the image in `assets/images/posts` folder and  write the name here, with the file extension |
 | `category` | `News`, `Press release`, `Blog`, `Video` | |
 | `link:type` | `external`, `pdf`, `webinar`, `podcast`, `newsletter`, `report` | Optional parameters to override the default link behaviour, button style and content |
@@ -66,7 +66,7 @@ Here is an example
 ---
 layout: "post"
 title: "Blockchain as a Database"
-lead: "Much has been written about the merits of private blockchains. including articles by Richard Brown of IBM, as well as the founders of Eris."
+subtitle: "Much has been written about the merits of private blockchains. including articles by Richard Brown of IBM, as well as the founders of Eris."
 image: "blockchain-as-a-database"
 category: "Blog"
 link:

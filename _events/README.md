@@ -25,7 +25,7 @@
 ---
 layout: "resource"
 title: ""
-description: ""
+subtitle: ""
 type: ""
 tags: ["", ""]
 image: ""
@@ -61,7 +61,7 @@ speakers:
 | --- | --- | --- |
 | `layout` | `webinar` | Do not edit! Defines which layout to use |
 | `title` | string | The event name, which appears on the page **and** the HTML title tag (that appears on the browser tabs) |
-| `description` | string | Optional. Event description in a few lines |
+| `subtitle` | string | Optional. Event description in a few lines |
 | `location` | string | Optional. The event location of not virtual |
 | `image` | string | Place the image in `assets/images/events` folder and  write the name here, with the file extension |
 | `category` | `Webinar`, `Virtual`, `Conference`, etc… | |
@@ -87,7 +87,7 @@ Here is an example
 ---
 layout: "resource"
 title: "The Future of Blockchain & Crypto: Where do we Go from Here?"
-description: "Adi Ben-Ari, Samantha Yap and Asher Tan discussed the perspectives on the future of cryptocurrency and blockchain by looking at what the rest of 2021 is likely to have in store, along with the long-term term view and the real-world applications for both cryptocurrency and blockchain."
+subtitle: "Adi Ben-Ari, Samantha Yap and Asher Tan discussed the perspectives on the future of cryptocurrency and blockchain by looking at what the rest of 2021 is likely to have in store, along with the long-term term view and the real-world applications for both cryptocurrency and blockchain."
 type: "Webinar"
 tags: ["Cryptocurrencies", "Blockchain"]
 image: "webinar-future-blockchain.jpg"

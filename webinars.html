@@ -17,29 +17,24 @@ menus:
 side_content: "components/cards/webinar.html"
 ---
 
-<!-- reverse the order -->
-{% assign sorted = site.events | reverse %}
+<!-- get only webinars with recordings -->
+{% assign webinars = site.events | reverse | where: "type", "Webinar" | where: "recording", true %}
+
+{% include components/sections/search.html 
+  variant = "webinars"
+%}
 
 <div class="section">
   <div class="section__container">
     <div class="section__content">
       <div class="grid__wrapper grid__spacing--2">
-        {% if site.events.size > 0 %}
-        {% for event in sorted %}
+        {% for event in webinars %}
         {% if event.type == "Webinar" and event.recording %}
         <div class="grid__item">
           {% include components/cards/event.html %}
         </div>
         {% endif %}
         {% endfor %}
-        {% else %}
-        <div class="grid__item">
-          {% include components/section-header.html
-            title = "We’re sorry"
-          subtitle = "There are no past webinars. Come back soon!"
-          %}
-        </div>
-        {% endif %}
       </div>
     </div>
   </div>

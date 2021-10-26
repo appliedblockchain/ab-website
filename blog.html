@@ -11,6 +11,10 @@ menus:
 tabs: "post-categories"
 ---
 
+{% include components/sections/search.html 
+  variant = "posts"
+%}
+
 <div class="section">
   <div class="section__container">
     <div class="section__content">
@@ -40,7 +44,7 @@ tabs: "post-categories"
                 <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %}>{{ post.title }}</a>
               </h2>
             </div>
-            <div class="card__content">{{ post.lead | truncate: 250, "…" }}</div>
+            <div class="card__content">{{ post.subtitle | truncate: 250, "…" }}</div>
             <div class="card__actions">
               <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %} class="button button--primary button--sm">
                 <!-- capture button label -->

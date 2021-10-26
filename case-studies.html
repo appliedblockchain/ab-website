@@ -10,14 +10,17 @@ menus:
     weight: 5
 ---
 
-{% assign sorted = site.projects | sort : "order" %}
+{% assign case_studies = site.projects | sort : "order" | where: "case_study", true %}
+
+{% include components/sections/search.html 
+  variant = "case-studies"
+%}
 
 <div class="section">
   <div class="section__container">
     <div class="section__content">
       <div class="grid__wrapper grid__spacing--2">
-        {% for project in sorted %}
-        {% if project.case_study == true %}
+        {% for project in case_studies %}
         <div class="grid__item grid__item--lg4 grid__item--sm6">
           <div class="card card--md card--project">
             <div class="card__media">
@@ -44,7 +47,6 @@ menus:
             {% endif %}
           </div>
         </div>
-        {% endif %}
         {% endfor %}
       </div>
     </div>

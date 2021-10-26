@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Watch Adi talk about zero knowledge proofs"
-lead: "Our CEO Adi Ben-Ari discusses how zero knowledge proofs will transform the way we exchange data."
+subtitle: "Our CEO Adi Ben-Ari discusses how zero knowledge proofs will transform the way we exchange data."
 image: "zkp-video.jpg"
 category: "Video"
 link:

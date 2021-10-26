@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Applied Blockchain one of eight companies selected from 400 to join PwC Scale | Cyber programme"
-lead: "PwC is collaborating with CyLon to launch its first Scale | Cyber programme to support high potential scale-up businesses focused on building a more secure and innovative digital economy."
+subtitle: "PwC is collaborating with CyLon to launch its first Scale | Cyber programme to support high potential scale-up businesses focused on building a more secure and innovative digital economy."
 image: "pwc-and-cylon-launch-scale-cyber-programme.jpg"
 category: "Press release"
 ---

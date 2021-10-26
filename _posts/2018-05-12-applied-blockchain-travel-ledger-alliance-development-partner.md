@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Applied Blockchain selected as Travel Ledger Alliance development partner"
-lead: "Travel Ledger Alliance has announced that it has selected Applied Blockchain as its development partner to build and deliver the base architecture and minimum viable product for Travel Ledger, a distributed billing and settlement platform for the travel industry."
+subtitle: "Travel Ledger Alliance has announced that it has selected Applied Blockchain as its development partner to build and deliver the base architecture and minimum viable product for Travel Ledger, a distributed billing and settlement platform for the travel industry."
 image: "applied-blockchain-travel-ledger-alliance-development-partner.jpg"
 category: "Press release"
 ---

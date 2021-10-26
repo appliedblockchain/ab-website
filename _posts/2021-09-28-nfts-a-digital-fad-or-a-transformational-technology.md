@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "NFTs: A digital fad, or a transformational technology?"
-lead: "Adi Ben-Ari has written an article about NFTs for the Enterprise Times."
+subtitle: "Adi Ben-Ari has written an article about NFTs for the Enterprise Times."
 image: "nft-article.jpg"
 category: "News"
 link:

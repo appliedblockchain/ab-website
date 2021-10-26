@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Applied Blockchain Becomes Energy Web Foundation Affiliate to Drive Blockchain Technology Implementation across the Energy Sector"
-lead: "Following recent investment from Shell, Applied Blockchain collaborates with non-profit organisation."
+subtitle: "Following recent investment from Shell, Applied Blockchain collaborates with non-profit organisation."
 image: "energy-web-affiliate.jpg"
 category: "Press release"
 ---

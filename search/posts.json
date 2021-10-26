@@ -1,0 +1,28 @@
+---
+layout: compress
+---
+
+[
+  {% for post in site.posts %}
+  {
+
+    {% capture post_link %} 
+    {% if post.link.type == "pdf" %}
+    {{ site.base-url }}/assets/pdfs/{{ post.link.url }}
+    {% elsif post.link.type == "webinar" or post.link.type == "report"  %}
+    {{ site.base-url }}/{{ post.link.url }}
+    {% elsif post.link.type == "external" or post.link.type == "podcast" or post.link.type == "newsletter" %}
+    {{ post.link.url }}
+    {% else %}
+    {{ site.base-url }}{{ post.url }}
+    {% endif %} 
+    {% endcapture %}
+
+    "url" : "{{ post_link | strip }}",
+    "title" : "{{ post.title | strip_html | escape }}",
+    "subtitle" : "{{ post.subtitle | strip_html | strip_newlines | escape }}",
+    "tags" : "{{ post.tags | join: ', ' }}"
+
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

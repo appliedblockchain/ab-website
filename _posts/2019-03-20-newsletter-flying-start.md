@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Newsletter March 2019 – Flying Start"
-lead: "New clients, a new direction and a new product. 2019 began with a flying start"
+subtitle: "New clients, a new direction and a new product. 2019 began with a flying start"
 image: "default.jpg"
 category: "News"
 link:

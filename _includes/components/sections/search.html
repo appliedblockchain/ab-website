@@ -1,0 +1,28 @@
+{% assign variant = include.variant %}
+
+<div class="section search__container">
+  <div class="section__container">
+    <div class="search">
+      <div class="search__bar form__group">
+        <input type="text" id="search-input" placeholder="Search all {{ variant | replace: '-', ' ' }}" class="search__input form__input">
+      </div>
+      <div id="search-results" class="search__results">
+        <div class="card card--md">
+          <div id="search-results-container" class="card__content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ site.base-url }}{{ site.resourceurl }}/vendor/search.min.js"></script>
+  
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results-container'),
+    json: '/search/{{ variant }}.json',
+    searchResultTemplate: 
+      '<a href="{url}" class="search__result"><p class="search__title body2">{title}</p><p class="search__subtitle overline">{subtitle}</p></a>'
+  })
+</script>

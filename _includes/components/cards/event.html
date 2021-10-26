@@ -11,8 +11,8 @@
         </p>
         <h3 class="card__title">{{ event.title }}</h3>
       </div>
-      {% if event.description %}
-      <p class="card__content">{{ event.description }}</p>
+      {% if event.subtitle %}
+      <p class="card__content">{{ event.subtitle }}</p>
       {% endif %}
       {% if event.location %}
       <p class="card__content">{{ event.location }}</p>
@@ -39,7 +39,7 @@
           {% endif %}
           {% if event.type == "Webinar" and event.recording == true %}
           <a href="{{ site.base-url }}{{ event.url }}" class="button button--sm button--primary">
-            {% if event.recording_type == "video" %}View{% elsif event.recording_type == "form" %}Download{% else %}Link to{% endif %} recording
+            Link to recording
           </a>
           {% endif %}
         </div>

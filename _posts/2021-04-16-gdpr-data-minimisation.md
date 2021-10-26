@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "GDPR data minimisation & confidential computing"
-lead: "Confidential computing technology enables businesses to do more, without requiring direct access to personal data. Now that it is possible to operate with less data, isn’t every business required to minimise data collection?"
+subtitle: "Confidential computing technology enables businesses to do more, without requiring direct access to personal data. Now that it is possible to operate with less data, isn’t every business required to minimise data collection?"
 image: "default.jpg"
 category: "Blog"
 ---

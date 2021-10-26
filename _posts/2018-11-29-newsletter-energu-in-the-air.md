@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Newsletter November 2018 – Energy in the Air"
-lead: "We've been feeling the energy in the air, and wanted to share some of it with you"
+subtitle: "We've been feeling the energy in the air, and wanted to share some of it with you"
 image: "default.jpg"
 category: "News"
 social: "newsletter"

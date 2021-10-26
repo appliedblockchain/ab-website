@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Applied Blockchain joins Confidential Computing Consortium to develop confidential computing applications in energy and banking"
-lead: "Applied Blockchain joins Confidential Computing Consortium to explore applying confidential computing technology in financial services and energy."
+subtitle: "Applied Blockchain joins Confidential Computing Consortium to explore applying confidential computing technology in financial services and energy."
 image: "confidential-computing-consortium-alongside-intel-microsoft.jpg"
 category: "Press release"
 ---

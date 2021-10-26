@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Applied Blockchain signs up to the World Economic Forum Presidio Principles"
-lead: "We have signed up to Presidio Principles: Foundational Values for a Decentralized Future, a series of principles to help safeguard the promise of blockchain."
+subtitle: "We have signed up to Presidio Principles: Foundational Values for a Decentralized Future, a series of principles to help safeguard the promise of blockchain."
 image: "world-economic-forum.jpg"
 category: "News"
 link:

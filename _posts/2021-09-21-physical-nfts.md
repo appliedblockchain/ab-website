@@ -1,6 +1,6 @@
 ---
 layout: "post"
-lead: "What the Damien Hirst Project The Currency Gets Right about Physical NFTs"
+subtitle: "What the Damien Hirst Project The Currency Gets Right about Physical NFTs"
 title: "Physical NFTs"
 image: "physical-nfts.jpg"
 category: "Blog"

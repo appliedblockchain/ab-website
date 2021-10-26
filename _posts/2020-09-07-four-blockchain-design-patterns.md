@@ -3,7 +3,7 @@ layout: "post"
 title: "4 pragmatic blockchain design patterns for business"
 image: "four-blockchain-design-patterns.jpg"
 category: "Blog"
-lead: "In 2020 we’re beginning to see the emergence of the second generation of blockchain business applications that take a more pragmatic approach."
+subtitle: "In 2020 we’re beginning to see the emergence of the second generation of blockchain business applications that take a more pragmatic approach."
 ---
 
 There are many ways that blockchain can be used in a business context and perhaps shouldn’t. It is a complex multi-party system that can become a burden if used incorrectly, but can also open up new efficiencies, markets and opportunities if well understood and executed in an optimal way.

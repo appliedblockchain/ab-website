@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Promotional video for our zero knowledge workshops for business"
-lead: "We started hosting zero knowledge proofs workshops for business. Contact us for more information."
+subtitle: "We started hosting zero knowledge proofs workshops for business. Contact us for more information."
 image: "zkp-promo.jpg"
 category: "Video"
 link:

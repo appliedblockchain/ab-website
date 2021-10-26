@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Shell Trades Derivatives On Technology Developed By Applied Blockchain"
-lead: "On November 8, 2018, Shell announced the world's first oil product derivatives trade using blockchain technology developed with Applied Blockchain. The technology is currently being used within Shell, allowing the company’s various businesses to trade by seeing real-time prices from its trading teams."
+subtitle: "On November 8, 2018, Shell announced the world's first oil product derivatives trade using blockchain technology developed with Applied Blockchain. The technology is currently being used within Shell, allowing the company’s various businesses to trade by seeing real-time prices from its trading teams."
 image: "forbes.jpg"
 category: "News"
 link:

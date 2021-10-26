@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Shell-backed firm raises $2.5m for zero-knowledge proof platform"
-lead: "A Shell-backed blockchain startup has raised $2.5M to build an enterprise platform featuring zero-knowledge proofs."
+subtitle: "A Shell-backed blockchain startup has raised $2.5M to build an enterprise platform featuring zero-knowledge proofs."
 image: "coin-telegraph.jpg"
 category: "News"
 link:

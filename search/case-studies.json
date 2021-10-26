@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+
+{% assign case_studies = site.projects | sort : "order" | where: "case_study", true %}
+
+[
+  {% for project in case_studies %}
+  {
+
+    "url" : "{{ site.baseurl }}{{ project.url }}",
+    "title" : "{{ project.title | strip_html | escape }}",
+    "subtitle" : "{{ project.subtitle | strip_html | strip_newlines | escape }}",
+    "industries" : "{{ project.tags | join: ', ' }}",
+    "summary" : "{{ project.summary | strip_html | strip_newlines | escape }}",
+    "deliverables" : "{{ project.deliverables | strip_html | strip_newlines | escape }}",
+    "challenge_title" : "{{ project.challenge.title | strip_html | strip_newlines | escape }}",
+    "challenge_content" : "{{ project.challenge.content | strip_html | strip_newlines | escape }}",
+    "diagram_title" : "{{ project.diagram.title | strip_html | strip_newlines | escape }}",
+    "diagram_content" : "{{ project.diagram.content | strip_html | strip_newlines | escape }}",
+    "results_title" : "{{ project.results.title | strip_html | strip_newlines | escape }}",
+    "results_content" : "{{ project.results.content | strip_html | strip_newlines | escape }}"
+
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

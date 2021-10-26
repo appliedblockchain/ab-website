@@ -4,6 +4,12 @@
 
   &__number {
     position: relative;
+    font-size: 6rem;
+    font-weight: $font-light;
+  }
+  
+  &__title {
+    position: relative;
   }
 
   &__icon {

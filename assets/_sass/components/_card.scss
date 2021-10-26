@@ -309,6 +309,13 @@
 
     .card {
 
+      &__media {
+        
+        @include responsive(down, $laptop-down) {
+          display: none;
+        }
+      }
+
       &__thumbnail {
         height: $spacing*5;
         width: auto !important;

@@ -42,10 +42,27 @@ strong {
   }
 }
 
-.h0 { @include font-size(6, $font-light); }
-.h1 { @include font-size(2.5, $font-bold, 1.25); }
-.h2 { @include font-size(2, $font-bold, 1.25); }
-.h3 { @include font-size(1.75, $font-bold, 1.25); }
+.h0 { 
+  @include font-size(3.5, $font-bold, 1.25);
+  @include responsive(down, $tablet-down) { font-size: 3rem; }
+  @include responsive(down, $mobile-down) { font-size: 2.5rem; }
+}
+
+.h1 { 
+  @include font-size(2.5, $font-bold, 1.25);
+  @include responsive(down, $tablet-down) { font-size: 2rem; }
+}
+
+.h2 { 
+  @include font-size(2, $font-bold, 1.25);
+  @include responsive(down, $tablet-down) { font-size: 1.75rem; }
+}
+
+.h3 { 
+  @include font-size(1.75, $font-bold, 1.25);
+  @include responsive(down, $tablet-down) { font-size: 1.5rem; }
+}
+
 .h4 { @include font-size(1.375, $font-bold); }
 .h5 { @include font-size(1.375, $font-regular); }
 .h6 { @include font-size(1.25, $font-bold); }

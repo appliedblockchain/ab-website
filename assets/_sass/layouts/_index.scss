@@ -19,7 +19,7 @@
       }
 
       &__title {
-        font-size: 3.5rem;
+        @extend .h0;
       }
       
       &__subtitle {

@@ -28,9 +28,6 @@ $('.accordion .accordion__header').on('click', function() {
 		// icon animation
 		$('.accordion__header.js-accordion-active').not(this).removeClass('js-accordion-active');
 		$(this).toggleClass('js-accordion-active');
-
-	// prevent trigger when click on apply button
-	} else {
 	}
 
 });

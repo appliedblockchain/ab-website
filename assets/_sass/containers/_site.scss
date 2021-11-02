@@ -25,11 +25,6 @@ img {
 html, body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-
-  @media screen and (prefers-reduced-motion: reduce) {
-    scroll-behavior: auto;
-  }
 }
 
 body {

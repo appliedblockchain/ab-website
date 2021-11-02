@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 // —————————————————————————————————————————————————————————————————
+// scroll to anchor
 // accordion
 // button
 // cookie bar
@@ -8,6 +9,18 @@ $(document).ready(function() {
 // modal
 // newsletter
 // —————————————————————————————————————————————————————————————————
+
+// —————————————————————————————————————————————————————————————————
+// scroll to anchor
+// —————————————————————————————————————————————————————————————————
+
+$(document).on('click', 'a.js-anchor', function (event) {
+	event.preventDefault();
+
+	$('html, body').animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+	}, 400);
+});
 
 // —————————————————————————————————————————————————————————————————
 // accordion

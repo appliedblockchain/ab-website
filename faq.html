@@ -22,7 +22,7 @@ menus:
           <div class="anchor">
             {% for section in site.data.faq %}
             {% capture section_id %}{{ section.title | slugify }}{% endcapture %}
-            <p class="anchor__item"><a href="#{{ section_id }}" class="body2">{{ section.title }}</a></p>
+            <p class="anchor__item"><a href="#{{ section_id }}" class="body2 js-anchor">{{ section.title }}</a></p>
             {% endfor %}
           </div>
         </div>

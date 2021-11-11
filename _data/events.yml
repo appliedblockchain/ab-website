@@ -9,11 +9,24 @@
 #   type: internal, external
 #   webinar_id: [link to recording form page]
 #   link:
+- name: "DeCipher 2021"
+  image: decipher # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2021-11-29"
+  date_to: "2021-11-30"
+  location: "Miami, Florida"
+  link: "https://decipherevent.com/speakers/"
+
+- name: "Solana Breakpoint 2021"
+  image: solana-breakpoint # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2021-11-07"
+  date_to: "2021-11-10"
+  location: "Online"
+  link: "https://www.youtube.com/playlist?list=PLilwLeBwGuK7yLsxKM1RZlxuNpaEuBEXk"
 
 - name: "Porto Tech Hub Conference 2021"
   image: porto-tech-hub-conference # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
-  date: "2021-10-18"
-  date_to: "2021-10-19"
+  date: "2021-11-18"
+  date_to: "2021-11-19"
   location: "Online"
   link: "https://portotechhub.com/conference-2021/"
 

@@ -17,6 +17,11 @@
   position: relative;
   padding: $section-spacing $page-gutter;
 
+  @include responsive(down, $laptop-down) {
+    // prevent horizontal scroll on smaller devices
+    overflow-x: hidden;
+  }
+
   & + & {
     padding-top: 0;
   }

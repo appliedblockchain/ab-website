@@ -16,7 +16,7 @@ $('.owl-carousel-testimonials').owlCarousel({
     0: { items: 1 },
     568: { items: 1 },
     768: { items: 2 },
-    1280: { items: 3  }
+    1024: { items: 3  }
   },
   margin: 16
 });
@@ -33,7 +33,7 @@ $('.owl-carousel-testimonials-alt').owlCarousel({
     0: { items: 1 },
     568: { items: 1 },
     768: { items: 2 },
-    1280: { items: 3  }
+    1024: { items: 3  }
   },
   margin: 16
 });

@@ -4,6 +4,7 @@ title: "The Private Blockchain Gatekeeper"
 subtitle: "This piece proposes concepts for designing a Private Blockchain Smart Contract Application."
 image: "the-private-blockchain-gatekeeper.jpg"
 category: "Blog"
+tags: ["Blockchain", "Smart contracts"]
 ---
 
 **Private**: because we don’t want the whole world to access it, or take on the load

@@ -6,9 +6,7 @@ order: 100
 title: "BABB"
 subtitle: "Blockchain-based social bank"
 image: "babb.jpg"
-industries:
-  - name: "Financial Technology"
-  - name: "Services"
+industries: ["Finance", "Services"]
 summary: "Core banking infrastructure and full-stack banking application on a private blockchain using smart contracts."
 link: 
   url: "https://getbabb.com/"

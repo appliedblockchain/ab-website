@@ -53,6 +53,7 @@
     @include responsive(down, $desktop-down) {
       position: absolute;
       top: $navbar-height/6;
+      left: 0;
     }
   }
 

@@ -7,8 +7,7 @@ dlc: true
 title: "Travel Ledger"
 subtitle: "Travel settlement platform built on blockchain technology"
 image: "travel-ledger.jpg"
-industries:
-  - name: "Travel"
+industries: ["Travel"]
 summary: "Travel Ledger is a billing and settlement platform for the travel industry, that provides a single source of truth for the purchasing process for non-air travel along the entire distribution chain."
 link: 
   url: "https://travelledger.org/"

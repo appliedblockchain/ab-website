@@ -28,7 +28,7 @@ case_study: true
 title: ""
 subtitle: ""
 image: "appii.jpg"
-industries:
+industries: [""]
   - name: ""
   # repeat if needed…
 summary: ""

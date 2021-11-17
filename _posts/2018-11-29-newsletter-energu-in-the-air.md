@@ -4,6 +4,7 @@ title: "Newsletter November 2018 – Energy in the Air"
 subtitle: "We've been feeling the energy in the air, and wanted to share some of it with you"
 image: "default.jpg"
 category: "News"
+tags: ["Newsletter", "Energy"]
 social: "newsletter"
 link:
   type: "newsletter"

@@ -6,8 +6,7 @@ order: 4
 title: "Lloyd's Register"
 subtitle: "Creating the first demonstrator that can register ships into Class using blockchain technology"
 image: "lloyds-register.jpg"
-industries:
-  - name: "Shipping"
+industries: ["Shipping"]
 summary: "LR created the first register of ships in 1764, a tool used to provide merchants and underwriters information about the quality and condition of vessels they chartered and insured."
 link: 
   url: "https://www.lr.org/en-gb/latest-news/classification-for-the-digital-age/"

@@ -6,8 +6,7 @@ order: 2
 title: "SITA"
 subtitle: "Distributed drone registry"
 image: "sita.jpg"
-industries:
-  - name: "Aviation IT"
+industries: ["Aviation"]
 summary: "Development of the world’s first distributed drone registry."
 link: 
   url: "https://www.reuters.com/article/us-iata-drones/airlines-back-creation-of-global-drone-registry-iata-idUSKBN1HO2M5"

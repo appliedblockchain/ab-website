@@ -6,9 +6,7 @@ order: 100
 title: "Nuggets"
 subtitle: "Reinventing consumer data security"
 image: "nuggets.jpg"
-industries:
-  - name: "Biometrics"
-  - name: "Data privacy"
+industries: ["Biometrics", "Privacy"]
 summary: "Biometric tool for login, payment and identity verification, without sharing or storing private data."
 link: 
   url: "http://nuggets.life/"

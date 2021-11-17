@@ -6,7 +6,6 @@ menu:
     weight: 100
 title: "Wyzepay"
 subtitle: "The payments platform for forward thinkers"
-industries:
-  - name: "Financial Technology"
+industries: ["Financial Technology"]
 summary: "Consumer payments solution"
 ---

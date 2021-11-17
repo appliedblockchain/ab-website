@@ -3,6 +3,7 @@ layout: "post"
 title: "Our parternship with Shell has come to fruition"
 subtitle: "Ben Van Beurden, CEO at Shell, says \"We did the first product derivative trade on blockchain together with our partner Applied Blockchain.\""
 category: "News"
+tags: ["Shell", "Projects", "Energy", "Trading"]
 image: "our-parternship-with-shell-has-come-to-fruition.jpg"
 link:
   type: "external"

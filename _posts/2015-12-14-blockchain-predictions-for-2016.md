@@ -4,6 +4,7 @@ title: "14 Blockchain Predictions for 2016"
 subtitle: "Wishing you a happy, healthy and successful 2016! Here are my 14 blockchain predictions for the coming year."
 image: "blockchain-predictions-for-2016.jpg"
 category: "Blog"
+tags: ["Blockchain", "Innovation", "Predictions"]
 ---
 
 # The hype won’t last

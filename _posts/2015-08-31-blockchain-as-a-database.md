@@ -4,6 +4,7 @@ title: "Blockchain as a Database"
 subtitle: "Much has been written about the merits of private blockchains. including articles by Richard Brown of IBM, as well as the founders of Eris."
 image: "blockchain-as-a-database.jpg"
 category: "Blog"
+tags: ["Blockchain", "Database", "Private"]
 link:
   type: "external"
   source: "medium"

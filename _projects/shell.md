@@ -6,8 +6,7 @@ order: 1
 title: "Shell"
 subtitle: "First energy product derivative trade on blockchain"
 image: "shell.jpg"
-industries:
-  - name: "Energy"
+industries: ["Energy"]
 summary: "Shell is a Dutch-British global group of energy and petrochemical companies."
 link: 
   url: "https://www.shell.com/inside-energy/blockchain.html"

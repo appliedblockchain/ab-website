@@ -8,8 +8,7 @@ order: 100
 title: "APPII"
 subtitle: "World’s first blockchain career verification and background screening platform"
 image: "appii.jpg"
-industries:
-  - name: "Recruitment"
+industries: ["Recruitment"]
 summary: "APPII is an online verification, career management, and recruitment platform."
 link: 
   url: "https://appii.io/"

@@ -22,30 +22,7 @@ menus:
       <div class="grid__wrapper grid__spacing--2">
         {% for project in case_studies %}
         <div class="grid__item grid__item--lg4 grid__item--sm6">
-          <div class="card card--md card--project">
-            <div class="card__media">
-              <a href="{{ project.url }}" class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png');"></a>
-            </div>
-            <div class="card__header">
-              <p class="card__label">{% for industry in project.industries %}{{ industry.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
-              <h2 class="card__title">
-                <a href="{{ project.url }}">{{ project.title }}</a>
-              </h2>
-              <p class="card__subtitle">{{ project.subtitle }}</p>
-            </div>
-            <div class="card__content">
-              <p>{{ project.summary }}</p>
-            </div>
-            {% if project.case_study == true or project.link %}
-            <div class="card__actions">
-              {% if project.case_study == true %}
-              <a href="{{ project.url }}" class="button button--primary button--sm">
-                <p class="button__inner">Read</p>
-              </a>
-              {% endif %}
-            </div>
-            {% endif %}
-          </div>
+          {% include components/cards/case-study.html %}
         </div>
         {% endfor %}
       </div>

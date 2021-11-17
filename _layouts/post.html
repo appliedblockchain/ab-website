@@ -24,9 +24,27 @@ layout: compress
         {% include components/share.html
           class = "show--laptop"
         %}
+        <div class="mb-4 caption">
+          {{ page.tags | join: ", " }}
+        </div>
         <div class="markdown markdown--post">
           {{ content | markdownify }}
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section--grey">
+  <div class="section__container">
+    {% include components/section-header.html 
+      title = "Latest posts"
+    %}
+    <div class="section__content">
+      <div class="owl-carousel owl-carousel-testimonials">
+        {% for post in site.related_posts limit: 6 %}
+        {% include components/cards/post.html %}
+        {% endfor %}
       </div>
     </div>
   </div>

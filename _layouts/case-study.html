@@ -149,6 +149,24 @@ layout: compress
   </div>
   {% endif %}
   
+  <div class="section">
+    <div class="section__container">
+      {% include components/section-header.html 
+        title = "Other case studies"
+      %}
+      <div class="section__content">
+        <div class="owl-carousel owl-carousel-testimonials">
+          {% assign case_studies = site.projects | sort : "order" | where: "case_study", true %}
+          {% for project in case_studies %}
+          {% if project.url != page.url %}
+          {% include components/cards/case-study.html %}
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </div>
 
 {% include components/footer.html %}

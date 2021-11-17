@@ -30,7 +30,7 @@ html, body {
 body {
   // prevent horizontal scroll
   overflow-x: hidden;
-
+  
   &:before {
     @include pseudo-element('', 0, 0, 0, 0, 100vw, 100vh);
     position: fixed;

@@ -4,6 +4,7 @@ title: "Applied Blockchain joins Confidential Computing Consortium to develop co
 subtitle: "Applied Blockchain joins Confidential Computing Consortium to explore applying confidential computing technology in financial services and energy."
 image: "confidential-computing-consortium-alongside-intel-microsoft.jpg"
 category: "Press release"
+tags: ["Confidential computing", "Financial services", "Microsoft", "Intel"]
 ---
 
 Applied Blockchain, a specialist in building applications with enhanced trust and privacy, today announced it has joined the Confidential Computing Consortium, an organization created by the Linux Foundation dedicated to accelerating the adoption of Confidential Computing. Applied Blockchain is joining to collaborate more closely with the companies at the forefront this technology.

@@ -4,6 +4,7 @@ title: "Applied Blockchain Becomes Energy Web Foundation Affiliate to Drive Bloc
 subtitle: "Following recent investment from Shell, Applied Blockchain collaborates with non-profit organisation."
 image: "energy-web-affiliate.jpg"
 category: "Press release"
+tags: ["Partnerships", "Shell", "Energy"]
 ---
 
 <a href="{{ site.base-url }}/projects/ewf" class="button button--primary">Read case study</a>

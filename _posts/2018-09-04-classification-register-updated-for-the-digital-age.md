@@ -3,6 +3,7 @@ layout: "post"
 title: "LR announces the launch of prototype blockchain-enabled Class register"
 image: "classification-register-updated-for-the-digital-age.jpg"
 category: "Press release"
+tags: ["Projects", "Supply chain", "Shipping", "Lloyd's register"]
 subtitle: "Classification register updated for the digital age"
 ---
 

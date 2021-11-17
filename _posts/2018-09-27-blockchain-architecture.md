@@ -4,6 +4,7 @@ title: "Blockchain Architecture"
 subtitle: "Or how not to build distributed applications."
 image: "default.jpg"
 category: "Blog"
+tags: ["Blockchain", "Architecture"]
 link:
   type: "external"
   source: "linkedin"

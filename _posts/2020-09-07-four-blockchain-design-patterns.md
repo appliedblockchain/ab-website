@@ -3,6 +3,7 @@ layout: "post"
 title: "4 pragmatic blockchain design patterns for business"
 image: "four-blockchain-design-patterns.jpg"
 category: "Blog"
+tags: ["Blockchain", "Design", "Entreprise blockchain", "Business"]
 subtitle: "In 2020 we’re beginning to see the emergence of the second generation of blockchain business applications that take a more pragmatic approach."
 ---
 

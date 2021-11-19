@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Adi Ben-Ari participated in the discussion panel "NFTs: Art, Gaming, Social Media & More"'
+title: 'The discussion panel "NFTs: Art, Gaming, Social Media & More" at Solana Breakpoint 2021'
 image: solana-breakpoint
 category: videos
 social: video

@@ -16,7 +16,7 @@ background_color: white
     #  - paragraph: '"The goal of the platform is for anyone on the system to be able to look at a particular energy product at any time and understand where it is being traded and at what price. This will allow trades to be executed more quickly and efficiently to manage their business needs and exposures as required" says Martin Ireland, GM Price Risk Management at Shell.'
 
 #testimonial:
-  - #quote: We did the first product derivative trade on blockchain together with our partner Applied Blockchain
+  #- quote: We did the first product derivative trade on blockchain together with our partner Applied Blockchain
   #  author: Ben van Beurden
   #  position: CEO
   #  company: Shell

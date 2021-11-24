@@ -21,6 +21,10 @@ title: ""
 subtitle: ""
 image: ""
 category: ""
+# tags: ["", "", "", "etc."]
+# author:
+#   name: ""
+#   thumbnail: ""
 # link:
 #   type: ""
 #   source: ""
@@ -45,9 +49,12 @@ You can write markdown code here.
 | `subtitle` | string | First paragraph of the post (excerpt on the media page, larger text on the post page |
 | `image` | string | Place the image in `assets/images/posts` folder and  write the name here, with the file extension |
 | `category` | `News`, `Press release`, `Blog`, `Video` | |
-| `link:type` | `external`, `pdf`, `webinar`, `podcast`, `newsletter`, `report` | Optional parameters to override the default link behaviour, button style and content |
-| `link:source` | string | Add to add a suffix to the button label (e.g. write `medium` to display `Read on medium` |
-| `link:url` | string | The override post URL |
+| `tabs` | | Optional. List of tags related to the article. They are not used for now |
+| `author.name` | string | Optional |
+| `author.thumbnail` | string | Optional. Author picture. Write the corresponding file name (with the extension) in `images/team/portrait/` |
+| `link.type` | `external`, `pdf`, `webinar`, `podcast`, `newsletter`, `report` | Optional parameters to override the default link behaviour, button style and content |
+| `link.source` | string | Add to add a suffix to the button label (e.g. write `medium` to display `Read on medium` |
+| `link.url` | string | The override post URL |
 
 ### `link:type`
 

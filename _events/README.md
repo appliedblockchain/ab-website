@@ -4,13 +4,6 @@
 <p>&nbsp;</p>
 <!------------------------------------------------------>
 
-
-
-
-
-
-
-
 ## Instructions
 
 - Create a file in the `_events` folder.
@@ -71,7 +64,7 @@ speakers:
 | `date_to` | string | Optional. If the event spans multiple days. Use `YYYY-MM-DD` format |
 | `recording` | boolean | Only for webinars. When set to `true`, adds the event to the webinar page and tcreates a standalone page |
 | `recording_type` | `from`, `video` | Sets the styling depending on the recording type |
-| `speakers` | node | Adds |
+| `speakers` | node | Adds a list of speakers to the event (for webinars only) |
 
 ### `Speakers`
 

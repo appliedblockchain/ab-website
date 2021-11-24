@@ -268,10 +268,10 @@ menus:
 | `banner_image` | string | Place the image in `assets/images/background` folder and  write the name here, with the file extension |
 | `banner_color` | `white`, `grey`, `primary`, `primary-light`, `primary-dark`, `secondary`, `dark` | Overrides the page header background color |
 | `links` | node | Add buttons below the subtitle |
-| `link:label` | string | |
-| `link:url` | string | Link URL. Can only be internal for now, write the page file name without the extension |
-| `link:title` | string | Link title for SEO |
-| `link:color` | `primary`, `secondary`, `white`, `black`, `grey`, `success`, `info`, `warning`, `error`, `facebook`, `github`, `linkedin`, `medium`, `twitter` | Sets the button color |
+| `link.label` | string | |
+| `link.url` | string | Link URL. Can only be internal for now, write the page file name without the extension |
+| `link.title` | string | Link title for SEO |
+| `link.color` | `primary`, `secondary`, `white`, `black`, `grey`, `success`, `info`, `warning`, `error`, `facebook`, `github`, `linkedin`, `medium`, `twitter` | Sets the button color |
 | `menus` | node | Sets which menus to add the page to. See [Jekyll menus](#jekyll-menus) for more info |
 | `side_content` | string | If the page header has some overlapping content on the side, create a component in the `_includes` folder and refereence it here |
 

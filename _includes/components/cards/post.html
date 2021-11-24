@@ -15,7 +15,21 @@
     <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %} class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default.jpg{% endif %}');"></a>
   </div>
   <div class="card__header">
-    <div class="card__label">{{ post.date | date: "%b %-d, %Y" }} {{ post.category }}</div>
+    <div class="card__label">
+      <div class="card card--xs card--transparent card--landscape card--portrait card--portrait-sm">
+        {% if post.author %}
+        <div class="card__media">
+          <img src="{{ site.base-url }}{{ site.imageurl }}/team/portrait/{{ post.author.thumbnail }}" alt="Portrait of {{ post.author.name }}" class="card__thumbnail">
+        </div>
+        {% endif %}
+        <div class="card__content">
+          <p class="caption">{{ post.date | date: "%b %-d, %Y" }} <span class="body--grey">{{ post.category }}</span></p>
+          {% if post.author %}
+          <p class="overline">{{ post.author.name }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>  
     <h2 class="card__title">
       <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %}>{{ post.title }}</a>
     </h2>

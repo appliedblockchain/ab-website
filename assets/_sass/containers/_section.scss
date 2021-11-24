@@ -90,6 +90,11 @@
 
 @mixin background-color($background-color, $title-color: $primary, $color: $text) {
 
+  // text selection
+  ::selection {
+    background: rgba($title-color, 0.33);
+  }
+
   &.section {
     background-color: $background-color;
     padding-top: $section-spacing;

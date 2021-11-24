@@ -5,9 +5,7 @@ layout: compress
 {% include containers/header.html %}
 {% include components/navbar.html %}
 
-{% capture page_label %}{{ page.date | date: "%b %-d, %Y" }} {{ page.category }}{% endcapture %}
 {% include components/page-header.html
-  label = page_label
   title = page.title
   subtitle = page.subtitle
   banner_image = page.image
@@ -24,8 +22,20 @@ layout: compress
         {% include components/share.html
           class = "show--laptop"
         %}
-        <div class="mb-4 caption">
-          {{ page.tags | join: ", " }}
+        <div class="mb-4">
+          <div class="card card--xs card--transparent card--landscape card--portrait card--portrait-sm">
+            {% if page.author %}
+            <div class="card__media">
+              <img src="{{ site.base-url }}{{ site.imageurl }}/team/portrait/{{ page.author.thumbnail }}" alt="Portrait of {{ page.author.name }}" class="card__thumbnail">
+            </div>
+            {% endif %}
+            <div class="card__content">
+              <p class="caption">{{ page.date | date: "%b %-d, %Y" }} <span class="body--grey">{{ page.category }}</span></p>
+              {% if page.author %}
+              <p class="overline">{{ page.author.name }}</p>
+              {% endif %}
+            </div>
+          </div>
         </div>
         <div class="markdown markdown--post">
           {{ content | markdownify }}

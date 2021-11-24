@@ -23,8 +23,7 @@ html, body {
 
 // text selection
 ::selection {
-  background: $primary;
-  color: $white;
+  background: rgba($primary, 0.33);
 }
 
 strong {
@@ -94,7 +93,7 @@ strong {
   font-weight: $font-bold; 
 }
 
-.caption { @include font-size(.875, $font-bold, 1.25); }
+.caption { @include font-size(.875, $font-bold); }
 
 .overline { @include font-size(0.875); }
 

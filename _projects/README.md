@@ -95,9 +95,9 @@ testimonial:
 | `image` | string | Place the image in `assets/images/backgrounds` folder and write the name here, with the file extension |
 | `industries` | node | List of industries |
 | `summary` | string | Longer description of the company/project |
-| `link:label` | string | Replace the default link label of the external link |
-| `link:url` | string | (optionnal) External link to company website (or other) |
-| `link:color` | string | Defines to button color |
+| `link.label` | string | Replace the default link label of the external link |
+| `link.url` | string | (optionnal) External link to company website (or other) |
+| `link.color` | string | Defines to button color |
 | `deliverables` | string | |
 
 ```yml

@@ -1,8 +1,11 @@
 # home.html
 clients:
   - name: Shell
+  - name: Aorist
   - name: KLM
+  - name: Cult Wines
   - name: Toyota
+  - name: Opulous
   - name: Vodafone
   - name: LLoyds Register
   - name: United Nations
@@ -99,7 +102,7 @@ partners:
   - name: confidential-computing-consortium
 
 # beyond.html
-beyond: 
+beyond:
   - name: shell
   - name: barclays
   - name: toyota

@@ -3,6 +3,7 @@
 // color
 // size
 // variants
+// responsive
 // views
 // —————————————————————————————————————————————————————————————————
 
@@ -256,6 +257,55 @@
 }
 
 // —————————————————————————————————————————————————————————————————
+// responsive
+// —————————————————————————————————————————————————————————————————
+
+@mixin responsive-section($breakpoint, $gutter) {
+
+  @include responsive(down, $breakpoint) {
+    
+    .section {
+      padding-right: $gutter;
+      padding-left: $gutter;
+    }
+
+    .nav {
+
+      &__items {
+        margin-right: -$gutter;
+      }
+
+      &__item {
+ 
+        .navbar & {
+          margin-left: -$gutter;
+          padding-right: $gutter;
+          padding-left: $gutter;
+        }
+      }
+    }
+
+    .subnav {
+      margin-left: -$gutter;
+      padding-right: $gutter;
+      padding-left: $gutter;  
+    }
+
+    .gartner {
+      right: $gutter;
+    }
+    
+    .widget--newsletter {
+      left: $gutter;
+    }
+  }
+}
+
+@include responsive-section($laptop-down, $spacing*6);
+@include responsive-section($tablet-down, $spacing*4);
+@include responsive-section($mobile-down, $spacing*2);
+
+// —————————————————————————————————————————————————————————————————
 // views
 // —————————————————————————————————————————————————————————————————
 
@@ -273,13 +323,6 @@
     // remove blue gradient 
     display: none;
   }
-}
-
-#contact,
-#webinar {
-
-  @include responsive(down, $desktop-down) { .section__header { max-width: $page-max-width/3; }}
-  @include responsive(down, $laptop-down) { .section__header { max-width: none; }}
 }
 
 #case-study {

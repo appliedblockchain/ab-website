@@ -290,6 +290,15 @@
   &--maxWidth {
     max-width: $spacing*65;
   }
+
+  &--hover {
+    transition: box-shadow $transition;
+    will-change: box-shadow;
+
+    @include hover {
+      box-shadow: $box-shadow-lg;
+    }
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

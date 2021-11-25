@@ -10,9 +10,9 @@
 {{ site.base-url }}{{ post.url }}
 {% endif %} 
 {% endcapture %}
-<div class="card card--md card--post">
+<a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %} class="card card--md card--hover card--post">
   <div class="card__media">
-    <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %} class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default.jpg{% endif %}');"></a>
+    <div class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default.jpg{% endif %}');"></div>
   </div>
   <div class="card__header">
     <div class="card__label">
@@ -30,13 +30,11 @@
         </div>
       </div>
     </div>  
-    <h2 class="card__title">
-      <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %}>{{ post.title }}</a>
-    </h2>
+    <h2 class="card__title">{{ post.title }}</h2>
   </div>
   <div class="card__content">{{ post.subtitle | truncate: 250, "…" }}</div>
   <div class="card__actions">
-    <a href="{{ post_link | strip }}"{% if post.link.type == "external" or post.link.type == "pdf" or post.link.type == "podcast" or post.link.type == "newsletter" %} target="_blank" rel="noopener"{% endif %} class="button button--primary button--sm">
+    <div class="button button--primary button--sm">
       <!-- capture button label -->
       {% capture button_label %}
       {% if post.link.type == "pdf" %}
@@ -57,6 +55,6 @@
       {% if post.link.type == "external" or post.link.type == "podcast" or post.link.type == "newsletter" %}
       {% svg /assets/icons/feather/external-link.svg %}
       {% endif %}
-    </a>
+    </div>
   </div>
-</div>
+</a>

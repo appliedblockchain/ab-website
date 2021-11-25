@@ -17,20 +17,20 @@ menus:
       <div class="grid__wrapper grid__spacing--2">
         {% for report in site.reports %}
         <div class="grid__item grid__item--lg4 grid__item--md6">
-          <div class="card card--md card--post">
+          <a href="{{ site.base-url }}{{ report.url }}" class="card card--md card--hover card--post">
             <div class="card__media">
               <div class="card__thumbnail background--cover" style="background-image: url('{{ site.base-url}}{{ site.imageurl}}/{% if report.image %}reports/{{ report.image }}{% else %}default.jpg{% endif %}');"></div>
             </div>
-          <div class="card__header">
+            <div class="card__header">
               <h2 class="card__title">{{ report.title }} </h2>
             </div>
             <p class="card__content">{{ report.subtitle }}</p>
             <div class="card__actions">
-              <a href="{{ site.base-url }}{{ report.url }}" class="button button--sm button--primary">
+              <div class="button button--sm button--primary">
                 Download report
-              </a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         {% endfor %}
       </div>

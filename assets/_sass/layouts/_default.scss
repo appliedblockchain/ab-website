@@ -31,6 +31,56 @@
 }
 
 // —————————————————————————————————————————————————————————————————
+// contact
+// —————————————————————————————————————————————————————————————————
+
+#contact,
+#resource {
+
+  @include responsive(up, $mobile-sm-up) {
+
+    .section--grey {
+      background-color: transparent;
+    }
+  }
+
+  @include responsive(down, $mobile-down) {
+
+    .background--cover {
+      background-image: none !important;
+    }
+  }  
+
+  @include responsive(down, $mobile-sm-down) {
+
+    .section {
+
+      &__header {
+        padding-bottom: $spacing*2;
+      }
+    }
+
+    .page {
+      
+      &__side {
+        
+        .card {
+          width: 100vw;
+          margin-bottom: -$section-spacing;
+          margin-left: -$spacing*2;
+          border-radius: 0;
+          box-shadow: none;
+          
+          &__content {
+            padding: $section-spacing $spacing*2;
+          }
+        }
+      } 
+    }
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
 // webinars
 // —————————————————————————————————————————————————————————————————
 

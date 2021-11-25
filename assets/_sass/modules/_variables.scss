@@ -124,7 +124,8 @@ $transition-lg: 0.8s ease 0s;
 // shadow
 
 $box-shadow-sm: 0 0 $spacing 0 rgba($dark, 0.15);
-$box-shadow: 0 0 $spacing*2 0 rgba($dark, 0.15);
+$box-shadow: 0 0 $spacing*1.5 0 rgba($dark, 0.15);
+$box-shadow-lg: 0 0 $spacing*2 0 rgba($dark, 0.20);
 
 // border
 

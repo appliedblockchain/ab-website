@@ -100,4 +100,4 @@
   <button class="button button--sm button--text button--white">Got it</button>
 </div>
 
-<div id="{% if page.layout == "post" %}post{% elsif page.layout == "case-study" %}case-study{% elsif page.layout == "webinar" %}webinar{% else %}{{ page.title | slugify }}{% endif %}" class="page">
+<div id="{% if page.layout == "post" %}post{% elsif page.layout == "case-study" %}case-study{% elsif page.layout == "resource" %}resource{% else %}{{ page.title | slugify }}{% endif %}" class="page">

@@ -24,16 +24,16 @@ layout: compress
         %}
         <div class="mb-4">
           <div class="card card--xs card--transparent card--landscape card--portrait card--portrait-sm">
-            {% if page.author %}
+            <!-- {% if page.author %}
             <div class="card__media">
               <img src="{{ site.base-url }}{{ site.imageurl }}/team/portrait/{{ page.author.thumbnail }}" alt="Portrait of {{ page.author.name }}" class="card__thumbnail">
             </div>
-            {% endif %}
+            {% endif %} -->
             <div class="card__content">
               <p class="caption">{{ page.date | date: "%b %-d, %Y" }} <span class="body--grey">{{ page.category }}</span></p>
-              {% if page.author %}
+              <!-- {% if page.author %}
               <p class="overline">{{ page.author.name }}</p>
-              {% endif %}
+              {% endif %} -->
             </div>
           </div>
         </div>

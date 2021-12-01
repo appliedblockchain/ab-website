@@ -388,31 +388,28 @@
 
   &--event {
 
-    @include responsive(down, $laptop-down) {
-
-      > .card {
-
-        &__content:nth-child(2) {
-          padding-left: $spacing*3 !important;
-        }
-
-        &__media {
-          display: none;
-        }
-      }
-    }
-
     @include responsive(down, $tablet-down) {
-
+      
       & {
         flex-direction: column;
       }
-
+      
       > .card {
+        
+        &__media {
+          display: none;
+        }
 
-        &__content:nth-child(3) {
-          padding-top: 0 !important;
-          padding-left: $spacing*3 !important;
+        &__content {
+
+          &:nth-child(2) {
+            padding-left: $spacing*3 !important;
+          }
+          
+          &:nth-child(3) {
+            padding-top: 0 !important;
+            padding-left: $spacing*3 !important;
+          }
         }
       }
     }
@@ -434,6 +431,10 @@
         border-radius: $spacing*4;
         padding-bottom: 0;
         object-fit: cover;
+
+        #team & {
+          filter: grayscale(1);
+        }
       }
     }
 

@@ -17,16 +17,16 @@
   <div class="card__header">
     <div class="card__label">
       <div class="card card--xs card--transparent card--landscape card--portrait card--portrait-sm">
-        {% if post.author %}
+        <!-- {% if post.author %}
         <div class="card__media">
           <img src="{{ site.base-url }}{{ site.imageurl }}/team/portrait/{{ post.author.thumbnail }}" alt="Portrait of {{ post.author.name }}" class="card__thumbnail">
         </div>
-        {% endif %}
+        {% endif %} -->
         <div class="card__content">
           <p class="caption">{{ post.date | date: "%b %-d, %Y" }} <span class="body--grey">{{ post.category }}</span></p>
-          {% if post.author %}
+          <!-- {% if post.author %}
           <p class="overline">{{ post.author.name }}</p>
-          {% endif %}
+          {% endif %} -->
         </div>
       </div>
     </div>  

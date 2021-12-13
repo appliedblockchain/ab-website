@@ -1,7 +1,7 @@
 ---
 layout: "case-study"
 menu: "footer_customers"
-case_study: true
+case_study: false
 order: 1
 title: "Cult Wines"
 subtitle: "NFT-based inventory management system"

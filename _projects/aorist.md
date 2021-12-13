@@ -3,12 +3,12 @@ layout: "case-study"
 menu: "footer_customers"
 case_study: true
 order: 1
-title: "Opulous"
-subtitle: "Copyright backed NFT marketplace for music"
-image: "opulous.jpg"
-industries: ["Music"]
-summary: "Opulous is the first music copyright-backed NFTs marketplace, that changes how artists can access the funding they need."
+title: "Aorist"
+subtitle: "NFT marketplace for digital art"
+image: "aorist.jpg"
+industries: ["Art"]
+summary: "Aorist is a next-generation cultural institution supporting an NFT marketplace for artists creating digital art."
 link:
-  url: "https://opulous.org/"
+  url: "https://aorist.art/"
 
 ---

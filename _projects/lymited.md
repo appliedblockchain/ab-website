@@ -1,5 +1,6 @@
 ---
 layout: "case-study"
+case_study: false
 menu:
   footer_customers:
     disabled: true

@@ -354,7 +354,15 @@
       &__actions {
         margin-top: auto;
       }
-    } 
+    }
+
+    &-sm {
+      height: 100%;
+
+      .card__media {
+        width: 100% !important;
+      }  
+    }
   }
 
   &--team {

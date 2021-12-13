@@ -11,6 +11,7 @@ menus:
 ---
 
 {% assign case_studies = site.projects | sort : "order" | where: "case_study", true %}
+{% assign logos = site.projects | sort : "order" | where: "case_study", false %}
 
 {% include components/sections/search.html 
   variant = "case-studies"
@@ -26,6 +27,38 @@ menus:
         </div>
         {% endfor %}
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section--grey">
+  <div class="section__container">
+    {% include components/section-header.html 
+      title = "Our other projects include"
+    %}
+    <div class="section__content">
+      <div class="grid__wrapper grid__spacing--2 grid--jc-center grid__inline grid__inline--xl6 grid__inline--lg5 grid__inline--md4 grid__inline--sm3 grid__inline--2">
+        {% for project in logos %}
+        <div class="grid__item">
+          <div class="card card--xs card--project-sm card--center">
+            <div class="card__media">
+              <img src="{{ site.base-url }}{{ site.imageurl }}/logos/clients/{{ project.slug }}.png" alt="Logo for {{ project.title }}">
+            </div>
+            <div class="card__content">
+              <h3 class="caption">{{ project.subtitle }}</h3>
+            </div>
+            {% if project.link.url %}
+            <div class="card__actions">
+              <a href="{{ project.link.url }}" target="_blank" rel="noopener" class="button button--primary button--text button--sm">
+                {% if project.link.label %}{{ project.link.label }}{% else %}Visit website{% endif %}
+                {% svg /assets/icons/feather/external-link.svg %}
+              </a>
+            </div>
+            {% endif %}      
+          </div>
+        </div>
+        {% endfor %}
+      </div>      
     </div>
   </div>
 </div>

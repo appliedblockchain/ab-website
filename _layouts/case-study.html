@@ -11,12 +11,12 @@ layout: compress
   <img src="{{ site.base-url }}{{ site.imageurl }}/logos/clients/{{ page.slug }}.png" alt="Logo for {{ page.title }}" class="page__logo">
   {% endcapture %}
 
-  {% capture page_label %}{% for industry in page.industries %}{{ industry.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture %}
+  {% capture page_label %}{% for industry in page.industries %}{{ industry }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture %}
   {% include components/page-header.html
     label = page_label
     title = page.title
     subtitle = page.subtitle
-    banner_image = page.image
+    banner_image = page.cover_image
     banner_color = "white"
     side_content = side_content
   %}
@@ -120,7 +120,7 @@ layout: compress
   {% endif %}
 
   {% if page.testimonial %}
-  <section class="section grid--ai-flex-start">
+  <div class="section grid--ai-flex-start">
     <div class="section__content">
       <div class="section__content">
         <div class="owl-carousel owl-carousel-testimonials-alt">

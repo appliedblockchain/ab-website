@@ -1,11 +1,11 @@
 ---
 layout: "case-study"
-menu: "footer_customers"
 case_study: true
+menu: "footer_customers"
 order: 4
 title: "Lloyd's Register"
 subtitle: "Creating the first demonstrator that can register ships into Class using blockchain technology"
-image: "lloyds-register.jpg"
+cover_image: "lloyds-register.jpg"
 industries: ["Shipping"]
 summary: "LR created the first register of ships in 1764, a tool used to provide merchants and underwriters information about the quality and condition of vessels they chartered and insured."
 link: 

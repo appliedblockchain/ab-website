@@ -1,11 +1,11 @@
 ---
 layout: "case-study"
-menu: "footer_customers"
 case_study: true
+menu: "footer_customers"
 order: 100
 title: "Nuggets"
 subtitle: "Reinventing consumer data security"
-image: "nuggets.jpg"
+cover_image: "nuggets.jpg"
 industries: ["Biometrics", "Privacy"]
 summary: "Biometric tool for login, payment and identity verification, without sharing or storing private data."
 link: 

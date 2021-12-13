@@ -1,11 +1,11 @@
 ---
 layout: "case-study"
-menu: "footer_customers"
 case_study: true
+menu: "footer_customers"
 order: 2
 title: "SITA"
 subtitle: "Distributed drone registry"
-image: "sita.jpg"
+cover_image: "sita.jpg"
 industries: ["Aviation"]
 summary: "Development of the world’s first distributed drone registry."
 link: 

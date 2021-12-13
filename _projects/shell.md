@@ -1,11 +1,11 @@
 ---
 layout: "case-study"
-menu: "footer_customers"
 case_study: true
+menu: "footer_customers"
 order: 1
 title: "Shell"
 subtitle: "First energy product derivative trade on blockchain"
-image: "shell.jpg"
+cover_image: "shell.jpg"
 industries: ["Energy"]
 summary: "Shell is a Dutch-British global group of energy and petrochemical companies."
 link: 

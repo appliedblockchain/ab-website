@@ -1,11 +1,11 @@
 ---
 layout: "case-study"
-menu: "footer_customers"
 case_study: true
+menu: "footer_customers"
 order: 100
 title: "BABB"
 subtitle: "Blockchain-based social bank"
-image: "babb.jpg"
+cover_image: "babb.jpg"
 industries: ["Finance", "Services"]
 summary: "Core banking infrastructure and full-stack banking application on a private blockchain using smart contracts."
 link: 

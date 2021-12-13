@@ -1,12 +1,12 @@
 ---
 layout: "case-study"
-menu: "footer_customers"
 case_study: true
+menu: "footer_customers"
 order: 3
 dlc: true
 title: "Travel Ledger"
 subtitle: "Travel settlement platform built on blockchain technology"
-image: "travel-ledger.jpg"
+cover_image: "travel-ledger.jpg"
 industries: ["Travel"]
 summary: "Travel Ledger is a billing and settlement platform for the travel industry, that provides a single source of truth for the purchasing process for non-air travel along the entire distribution chain."
 link: 

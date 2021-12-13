@@ -6,5 +6,6 @@ category: "Video"
 tags: ["NFT", "Blockchain"]
 link:
   type: "external"
+  source: "youtube"
   url: "https://www.youtube.com/watch?v=4qplEacSMvI&list=PLilwLeBwGuK7yLsxKM1RZlxuNpaEuBEXk&index=84&ab_channel=Solana"
 ---

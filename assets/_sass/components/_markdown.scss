@@ -218,7 +218,8 @@ body {
 
     p,
     ol,
-    ul {
+    ul,
+    li {
       
       &:not(:first-child) {
         margin-top: $spacing*2;

@@ -25,10 +25,10 @@ category: ""
 # author:
 #   name: ""
 #   thumbnail: ""
-# link:
-#   type: ""
-#   source: ""
-#   url: ""
+link:
+  type: ""
+  source: ""
+  url: ""
 ---
 
 You can write markdown code here.
@@ -49,9 +49,9 @@ You can write markdown code here.
 | `subtitle` | string | First paragraph of the post (excerpt on the media page, larger text on the post page |
 | `image` | string | Place the image in `assets/images/posts` folder and  write the name here, with the file extension |
 | `category` | `News`, `Press release`, `Blog`, `Video` | |
-| `tabs` | | Optional. List of tags related to the article. They are not used for now |
-| `author.name` | string | Optional |
-| `author.thumbnail` | string | Optional. Author picture. Write the corresponding file name (with the extension) in `images/team/portrait/` |
+| `tags` | | Optional. List of tags related to the article. It is not used for now |
+| `author.name` | string | Optional. It is not used for now |
+| `author.thumbnail` | string | Optional. Author picture. Write the corresponding file name (with the extension) in `images/team/portrait/`. It is not used for now |
 | `link.type` | `external`, `pdf`, `webinar`, `podcast`, `newsletter`, `report` | Optional parameters to override the default link behaviour, button style and content |
 | `link.source` | string | Add to add a suffix to the button label (e.g. write `medium` to display `Read on medium` |
 | `link.url` | string | The override post URL |
@@ -89,5 +89,21 @@ link:
 
 ## Advice
 
-- The post image should not exceed **1000px** in width and **75 KB** in size
-- If you don't have an image, leave the `image` tag empty, a default image is set.
+**Cover image**
+
+- The cover image should not exceed **1000px** in width and **75 KB** in size
+- If you don't have an cover image, leave the `image` tag empty, a default image is set.
+
+**Embed image to the post content**
+
+- Create a folder in `assets/images/posts` folder, using the name of the post file (removing the date)
+  - 2021-10-18-blockchain evolution translates to `assets/images/posts/blockchain-evolution`
+  - This is for better referecing
+- Add the image(s) inside that folder
+- Add the following snippet inside the post file where you want the image to be displayed
+  - rename the image with a relevant name for SEO purposes
+  - Do not leave empty spaces in the image name
+
+```markdown
+![Image alt text, description of the image in a few words]({{ site.base-url }}{{ site.imageurl }}/posts/name-of-the-folder/name-of-the-image.jpg)
+```

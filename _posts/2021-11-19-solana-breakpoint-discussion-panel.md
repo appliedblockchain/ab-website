@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "The discussion panel "NFTs: Art, Gaming, Social Media & More" at Solana Breakpoint 2021""
+title: "The discussion panel \"NFTs: Art, Gaming, Social Media & More\" at Solana Breakpoint 2021"
 image: "solana-breakpoint.jpg"
 category: "Video"
 tags: ["NFT", "Blockchain"]

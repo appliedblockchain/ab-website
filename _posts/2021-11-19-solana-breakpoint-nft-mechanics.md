@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Adi Ben-Ari presented "NFT Mechanics" at Solana Breakpoint 2021"
+title: "Adi Ben-Ari presented \"NFT Mechanics\" at Solana Breakpoint 2021"
 image: "solana-breakpoint.jpg"
 category: "Video"
 tags: ["NFT", "Blockchain"]

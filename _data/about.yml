@@ -17,7 +17,7 @@ leadership:
     title: CTO
     bio: Francesco is a seasoned technology expert and a serial hackathon winner, with a decade of experience in software development and four years within building blockchain applications. Francesco  has worked on  large-scale enterprise projects and with startups, building solutions for Sky TV Italia, 5Apps, and Quill Content to name a few. He has also developed tools and libraries for Ethereum and Bitcoin. Francesco is a fan of reading, writing and talking about software development, and is an open source enthusiast. When he’s not looking at code, Francesco builds and rides electric skateboards.
 
-team: 
+team:
   - name: Cláudia Neves
     title: HR and Office Manager
     office: Porto
@@ -38,10 +38,6 @@ team:
     title: Project Manager
     office: London
     thumbnail: katerina
-  - name: Eduardo Martins
-    title: Project Manager
-    office: Porto
-    thumbnail: eduardo
   - name: Patrick Timmis
     title: Project Manager
     office: London

@@ -3,10 +3,10 @@ layout: project
 order: 1
 case_study: true
 title: ICON
-subtitle: NFT marketplace for digital art
-industry: Art
-summary: Aorist is a next-generation cultural institution supporting an NFT marketplace for artists creating digital art.
-link: https://aorist.art/
+subtitle: Algorand BTP Bridge
+industry: Blockchain
+summary: ICON is a blockchain protocol for decentralized applications.
+link: https://icon.foundation/
 background_color: white
 
 #delivery:

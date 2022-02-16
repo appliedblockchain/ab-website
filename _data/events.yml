@@ -9,6 +9,13 @@
 #   type: internal, external
 #   webinar_id: [link to recording form page]
 #   link:
+
+- name: "Blockchain and Token Bridges"
+  image: blockchain-token-bridges # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-03-10"
+  location: "Porto, Portugal"
+  link: "https://www.meetup.com/Porto-Blockchain/events/283790106/?utm_medium=email&utm_source=braze_canvas&utm_campaign=mmrk_alleng_event_announcement_prod_v3_en&utm_term=promo&utm_content=lp_meetup"
+
 - name: "DeCipher 2021"
   image: decipher # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2021-11-29"

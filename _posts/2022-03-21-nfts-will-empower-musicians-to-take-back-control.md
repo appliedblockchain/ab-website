@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'NFTs will empower musicians to take back control'
-image: cryptosale-nfts-musicians
+image: cryptoslate-nfts-musicians
 category: news
 social: external
 link: https://cryptoslate.com/nfts-will-empower-musicians-to-take-back-control/

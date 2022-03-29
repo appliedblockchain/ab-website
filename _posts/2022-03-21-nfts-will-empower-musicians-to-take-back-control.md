@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'Liquidity Pool Mechanics eBook'
-image: liquidity-pools
-category: blog
+title: 'NFTs will empower musicians to take back control'
+image: cryptosale-nfts-musicians
+category: news
 social: external
-link: https://docsend.com/view/mn5m7dhpg8qagxkg
-headline: "Liquidity Pools play an essential role in the ecosystem of Decentralized Finance (DeFi). Learn how this mechanism makes it possible to Invest, Lend, Repay, Withdraw and Exchange Tokens."
+link: https://cryptoslate.com/nfts-will-empower-musicians-to-take-back-control/
+headline: "2021 was a breakthrough year for NFTs (non-fungible tokens), with the sale of crypto assets totalling US$24.9 billion, up from US$94.9 million in 2020."
 ---

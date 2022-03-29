@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'Liquidity Pool Mechanics eBook'
-image: liquidity-pools
-category: blog
+title: 'NFTs shaking up the music industry'
+image: cityAM-nfts-music
+category: news
 social: external
-link: https://docsend.com/view/mn5m7dhpg8qagxkg
-headline: "Liquidity Pools play an essential role in the ecosystem of Decentralized Finance (DeFi). Learn how this mechanism makes it possible to Invest, Lend, Repay, Withdraw and Exchange Tokens."
+link: https://www.cityam.com/nfts-shaking-up-the-music-industry/
+headline: "NFTs represent an opportunity to return some of the agency to musicians while offering new ways for listeners to play an active part in the industry."
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'CBDCs combine benefits of blockchain with stability of regulated currencies'
-image: aorist-oxford-street
+image: cbdc-article
 category: news
 social: external
 link: https://www.retailbankerinternational.com/comment/cbdc-benefits-blockchain-regulated-currencies/

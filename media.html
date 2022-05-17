@@ -42,6 +42,11 @@ background_color: white
             </div>
             <div class="card__actions">
               {% if post.link %}
+              {% if post.link_label %}
+              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-external-link-alt">
+                <p class="button__inner">{{ post.link_label }}</p>
+              </a>
+              {% else %}
               {% if post.social contains "newsletter" %}
               <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-newspaper">
                 <p class="button__inner">Read</p>
@@ -64,7 +69,7 @@ background_color: white
               </a>
               {% elsif post.social contains "video" %}
               <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-play">
-                <p class="button__inner">Watch video </p>
+                <p class="button__inner">Watch video</p>
               </a>
               {% elsif post.social contains "pdf" %}
               <a href="{{ site.base-url }}/assets/pdfs/{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-eye">
@@ -91,6 +96,7 @@ background_color: white
               <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
                 <p class="button__inner">Download report</p>
               </a>
+              {% endif %}
               {% endif %}
             </div>
           </div>

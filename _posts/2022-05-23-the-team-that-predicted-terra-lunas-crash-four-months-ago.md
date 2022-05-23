@@ -5,5 +5,5 @@ image: moneyweb-terraluna-crash
 category: news
 social: external
 link: https://www.moneyweb.co.za/moneyweb-crypto/the-team-that-predicted-terra-lunas-crash-four-months-ago/
-headline: "Applied Blockchain predicted in January that Terra’s smart contracts protocol would run out of funds within nine months. “In reality the collapse has been quicker,” CEO Adi Ben-Ari wrote in a recent LinkedIn post."
+headline: "In January we were asked by an investor to take a look at the inner workings of Terra Luna and we didn’t like what we found. We predicted it would run out of funds within nine months but the collapse has been quicker."
 ---

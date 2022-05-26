@@ -4,7 +4,7 @@
   active: true
   title: Advisory
   id: advisory
-  text: We work with each customer to learn about their requirements and provide independent strategic advice on whether confidential computing, blockchain or advanced cryptography technologies are optimal and add genuine technical and business value to the problem that they are trying to solve. We assess the requirements to provide an impartial recommended approach to implement a project. We document this for the customer before moving on to building a prototype.
+  text: We work with each customer to learn about their requirements and provide independent strategic advice on the solutions that will answer best to those requirements. We assess the requirements to provide an impartial recommended approach to implement a project. We document this for the customer before moving on to building a prototype.
   icon: icon-advisory
 
 - number: 2
@@ -16,7 +16,7 @@
 - number: 3
   title: Production
   id: production
-  text: Our developers build the project and test it at every stage. After the build is complete, we coordinate with the customer team and support them in integrating the project into their business environment.  We move into production, and then the project is live and delivering business value.
+  text: Our developers build the project and test it at every stage. After the build is complete, we coordinate with the customer team and support them in integrating the project into their business environment. We move into production, and then the project is live and delivering business value.
   icon: icon-production
 
 - number: 4

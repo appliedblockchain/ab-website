@@ -13,6 +13,9 @@ media:
   - name: Coindesk
     link: https://www.coindesk.com/british-maritime-society-builds-blockchain-tool-for-ship-registration
 
+  - name: Cryptoslate
+    link: https://cryptoslate.com/developers-and-users-need-to-focus-on-the-strengths-of-different-blockchains-to-maximize-benefits/
+
   - name: Finextra
     link: https://www.finextra.com/pressarticle/72235/applied-blockchain-secures-investments-from-shell-trading-and-calibrate-partners
 
@@ -94,11 +97,11 @@ applied-proofs:
   - url: primary-keys
     title: Data security
     alt: Data security
-    
+
   - url: primary-privacy
     title: Data privacy
     alt: Data privacy
-    
+
   - url: primary-anonimity
     title: GDPR compliance
     alt: GDPR compliance
@@ -113,11 +116,11 @@ applied-identity:
   - url: white-keys
     title: Identity security
     alt: Identity security
-    
+
   - url: white-privacy
     title: Identity privacy
     alt: Identity privacy
-    
+
   - url: white-anonimity
     title: GDPR compliance
     alt: GDPR compliance

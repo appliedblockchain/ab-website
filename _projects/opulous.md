@@ -14,4 +14,5 @@ challenge:
     - paragraph: 'Applied Blockchain chose Algorand as the best solution for an NFT platform requiring the additional control mechanisms that ASAs offer.'
     - paragraph: 'Opulous presents musicians with an opportunity to push back against the minimal revenue generated through today's streaming platforms.'
     - paragraph: 'Future phase developments for the Opulous platform include a Defi protocol for artist funding and royalty profit shares.'
+
 ---

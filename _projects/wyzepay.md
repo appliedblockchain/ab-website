@@ -1,6 +1,6 @@
 ---
 layout: project
-create-page: false
+create-page: true
 order: 100
 title: Wyzepay
 subtitle: The payments platform for forward thinkers

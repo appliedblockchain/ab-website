@@ -2,11 +2,11 @@
 layout: project
 order: 1
 case_study: true
-Title: Current
-Subtitle: Mobile banking done better
-Industry: Financial Services
-Summary: Current is the future of banking. You can spend, save, and manage your money better with their mobile banking app and Visa debit card.
-Link: https://current.com/
+title: Current
+subtitle: Mobile banking done better
+industry: Financial Services
+summary: Current is the future of banking. You can spend, save, and manage your money better with their mobile banking app and Visa debit card.
+link: https://current.com/
 
 challenge:
     - paragraph: Current is the future of banking. With this application you can spend, save, and manage your money better via a mobile banking app and Visa debit card that are designed to make the most of what people get.

@@ -16,4 +16,5 @@ challenge:
           - paragraph: 'Current has an existing ASA security token and it aims to issue a new utility token in exchange for the security token.'
        - item:
           - paragraph: 'Using scripts, we are monitoring the Algorand blockchain looking for CRNC account holders and, based on that, we are creating utility tokens. These scripts will lock the deposited tokens but incentivise this lock up by issuing bonuses based on the times tokens are locked from.'
+          
 ---

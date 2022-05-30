@@ -1,7 +1,7 @@
 ---
 layout: project
-create-page: true
 order: 100
+case_study: true
 title: Lymited
 subtitle: Changing the Game for Luxury Vendors
 industry: Luxury goods

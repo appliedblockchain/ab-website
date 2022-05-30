@@ -20,6 +20,5 @@ delivery:
       - paragraph: 'Data oracles, platform integrations and automations were implemented with a web service platform. We also developed intuitive and easy to use interfaces, a web app for the operations team and a mobile app for the warehouses.'
 
 results:
-      - item:
-        - paragraph: 'Now it’s possible to verify the case ownership on a custom block explorer and see the history of wine cases location changes. The wine cases are created on Algorand.'
+      - paragraph: 'Now it’s possible to verify the case ownership on a custom block explorer and see the history of wine cases location changes. The wine cases are created on Algorand.'
 ---

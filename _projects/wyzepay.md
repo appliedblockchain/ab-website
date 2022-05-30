@@ -1,7 +1,7 @@
 ---
 layout: project
-create-page: true
 order: 100
+case_study: true
 title: Wyzepay
 subtitle: The payments platform for forward thinkers
 industry: Financial Technology

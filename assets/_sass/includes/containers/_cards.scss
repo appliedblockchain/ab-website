@@ -716,16 +716,16 @@
   .card {
 
     &__image {
-      height: auto;
-      width: 100%;
-      max-width: 30rem;
+      height: $integer-xl;
+      width: auto;
+      max-width: 100%;
       margin-top: $integer-md;
     }
 
     &--k0 {
 
       & .card__image {
-        max-width: 10rem;
+        max-height: 10rem;
       }
     }
 

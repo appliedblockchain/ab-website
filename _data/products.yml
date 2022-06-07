@@ -2,48 +2,57 @@
   id: "silentdata" # DO NOT CHANGE !!
   logo: "silentdata"
   background: "silentdata.jpg"
-  category: "Confidential Open Banking &amp; DeFi"
-  status: "Live"
-  description: "SILENTDATA is a confidential open banking platform that enables queries to be performed on individual and business bank accounts without revealing the banking data even to the platform host. Privacy-preserving proofs can be verified in DeFi (decentralised finance) blockchain smart contracts."
+  category: "The Privacy Preserving Oracle for Real World Data"
+  status: "In development"
+  description: "SilentData is a confidential computing solution that enables web3 applications to utilise web2 data, without revealing the data to anyone."
   links:
     - name: "Website"
       url: "https://silentdata.com/"
       icon: "fa fa-globe"
-    - name: "App"
-      url: "https://app.silentdata.com/"
-      icon: "fa fa-desktop"
 
-- title: "Beyond"
-  id: "beyond" # DO NOT CHANGE !!
-  logo: beyond-default-white
-  background: "beyond.png"
-  category: "Confidential Trading"
+- title: "London Bridge"
+  id: "londonbridge" # DO NOT CHANGE !!
+  logo: "londonbridge"
+  background: "londonbridge.jpg"
+  category: "The most secure Bridge between Algorand and Ethereum"
   status: "In development"
-  description: "Beyond is a confidential trading platform where orders, volume and price data are not revealed even to the venue host."
+  description: "London Bridge is a solution that securely bridges Algorand with Ethereum and other EVM chains to enable seamless integration and bi-directional liquidity flows."
   links:
     - name: "Website"
-      url: "http://appliedblockchain.com/beyond"
-      icon: "fab fa-github"
+      url: "https://londonbridge.io/"
+      icon: "fa fa-globe"
 
-- title: "K<span class=\"body--zero\">0</span>"
-  id: "k0" # DO NOT CHANGE !!
-  logo: "k0"
-  background: "k0.svg"
-  category: "Zero Knowledge Proofs"
-  status: "Experimental"
-  description: "K<span class=\"body--zero\">0</span> (pronounced “K zero”) is a zero knowledge proof protocol that enables digital assets to be created, verified and traded privately and seamlessly across multiple enterprise blockchain platforms & networks."
-  technos:
-    - name: Ethereum
-    - name: Hyperledger Fabric
-  links:
-    - name: "Technical description"
-      url: "k0.pdf"
-      type: "internal"
-      icon: "fa fa-file-alt"
-    - name: "Background paper"
-      url: "k0-background.pdf"
-      type: "internal"
-      icon: "fa fa-file-alt"
-    - name: "Github repo"
-      url: "https://github.com/appliedblockchain/k0"
-      icon: "fab fa-github"
+# - title: "Beyond"
+#   id: "beyond" # DO NOT CHANGE !!
+#   logo: beyond-default-white
+#   background: "beyond.png"
+#   category: "Confidential Trading"
+#   status: "In development"
+#   description: "Beyond is a confidential trading platform where orders, volume and price data are not revealed even to the venue host."
+#   links:
+#     - name: "Website"
+#       url: "http://appliedblockchain.com/beyond"
+#       icon: "fab fa-github"
+
+# - title: "K<span class=\"body--zero\">0</span>"
+#   id: "k0" # DO NOT CHANGE !!
+#   logo: "k0"
+#   background: "k0.svg"
+#   category: "Zero Knowledge Proofs"
+#   status: "Experimental"
+#   description: "K<span class=\"body--zero\">0</span> (pronounced “K zero”) is a zero knowledge proof protocol that enables digital assets to be created, verified and traded privately and seamlessly across multiple enterprise blockchain platforms & networks."
+#   technos:
+#     - name: Ethereum
+#     - name: Hyperledger Fabric
+#   links:
+#     - name: "Technical description"
+#       url: "k0.pdf"
+#       type: "internal"
+#       icon: "fa fa-file-alt"
+#     - name: "Background paper"
+#       url: "k0-background.pdf"
+#       type: "internal"
+#       icon: "fa fa-file-alt"
+#     - name: "Github repo"
+#       url: "https://github.com/appliedblockchain/k0"
+#       icon: "fab fa-github"

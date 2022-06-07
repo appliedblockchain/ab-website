@@ -1,6 +1,6 @@
-- title: Applied Blockchain Receives Grant to Provide Key Chainlink Hardhat Starter Kit Updates
+- title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology
   button_label: Read
-  link: https://blog.chain.link/applied-blockchain-receives-grant-to-upgrade-hardhat-starter-kit/
+  link: https://www.intel.co.uk/content/dam/www/central-libraries/us/en/documents/final-pdf-applied-blockchain-and-intel-sgx-12.pdf
 
 - title:
   body: “Consistently deliver value! A great team who work both autonomously and alongside us.”
@@ -16,12 +16,9 @@
 #   image: carousel/testimonials_clients/gartner-small.png
 #   rating: 5
 
-- title: Physical NFTs
-  body: "What the Damien Hirst project The Currency gets right about physical NFTs"
-  button_label: Learn more
+- title: The team that predicted Terra Luna’s crash four months ago
   button_label: Read
-  link_type: internal
-  link: physical-nfts
+  link: https://www.moneyweb.co.za/moneyweb-crypto/the-team-that-predicted-terra-lunas-crash-four-months-ago/ 
 
 # - title: 4 Pragmatic Blockchain Design Patterns for Business
 #   body:

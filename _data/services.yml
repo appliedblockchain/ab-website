@@ -3,32 +3,32 @@
 solutions:
   - icon: decentralised
     title: Future-Proof
-    body: We work with emerging technologies that are rapidly evolving. There are innovations available today that we couldn't have imagined even 2 or 3 years ago. We design our solutions to allow for flexibility and change with minumal impact, based on our own understanding of the directions in which the technologies are evolving.
+    body: We work with emerging technologies that are rapidly evolving. There are innovations available today that we couldn't have imagined even 2 or 3 years ago. We design our solutions to allow for flexibility and change with minimal impact, based on our own understanding of the directions in which the technologies are evolving.
 
   - icon: production
     title: Production-Ready
-    body: There's a major difference between writing POCs in a lab environment and architecting and deploying confidential and distributed applications into enterprise production environments. When we design applications we keep in mind the end state of production requirements of both enterprises and startups.
+    body: There's a major difference between writing POCs in a lab environment and architecting and deploying confidential and distributed applications into production environments. When we design applications we keep in mind the end state of the production requirements of our customers.
 
   - icon: security
     title: Private & secure
-    body: We selectively apply confidential computing, secure enclaves, advanced cryptography and blockchain to solutions in order to increase the security, digital trust and enable data privacy to preserved throughout.
+    body: We selectively apply confidential computing, secure enclaves, advanced cryptography and blockchain to solutions in order to increase the security, digital trust and enable data privacy to be preserved throughout.
 
 stack:
   - title: 'Front End'
     icon: 'front-end'
-    body: 'We design and develop responsive, rich front end applications using React.js. These range from mission critical enterprise trading platforms, to beautifully designed consumer facing user experiences.'
+    body: 'We design and develop responsive, rich front end applications using React.js. These range from NFT marketplaces to DeFi applications and real world tokenization.'
   - title: 'Back End'
     icon: 'back-end'
-    body: 'We develop fast, scalable backend applications using node.js and Typescript. We develop, implement and extensively test API’s, enterprise systems integrations, and integration with multiple databases and data sources.'
+    body: 'We develop fast, scalable backend applications using node.js and Typescript. We develop, implement and extensively test API’s and integration with multiple databases and data sources.'
   - title: 'Blockchain'
     icon: 'blockchain'
-    body: 'We’ve been developing blockchain applications since 2015, and have deep, independent expertise in a range of enterprise and public platforms, as well as an opinion on when they should be used. We develop applications that are relatively platform agnostic in order to protect investment, and be ready for future evolution of the technology.'
+    body: 'We’ve been developing blockchain applications since 2015, and have deep, independent expertise in a wide range of platforms, as well as a vision on how they should be used.'
   - title: 'Mobile'
     icon: 'mobile'
     body: 'We develop business and consumer applications using React Native that support both iOS and Android. We have extensive experience incorporating mobile wallets, data encryption and advanced cryptography, as well as KYC and biometric authentication in mobile applications.'
   - title: 'Confidential Computing'
     icon: 'confidential-computing'
-    body: 'Our expertise in cutting edge confidential computing, secure enclaves, privacy-preserving technologies and advanced cryptography enables us to develop applications for our clients that protect data, and avoid the risks associated with sharing data, while at the same time enabling the most secure forms of business collaboration.'
-  - title: 'Infrastructure'
+    body: 'Our expertise in cutting edge confidential computing, secure enclaves, privacy-preserving technologies and advanced cryptography enables us to develop applications for our clients that protect data, and avoid the risks associated with sharing data, while at the same time enabling the most secure forms of collaboration.'
+  - title: 'Real World Tokenization'
     icon: 'infrastructure'
-    body: 'Our team has extensive experience deploying and supporting enterprise-grade production applications in customer cloud environments. We use Docker and Kubernetes to ensure platform agnostic deployments, and at the same time have extensive experience with both AWS and Azure, ensuring that applications are well architected, optimised and non-functional requirements for security, performance and resilience are met.'
+    body: 'Our team has extensive experience in this industry and is enabling companies to harness the efficiencies of blockchain for real world data tokenization. These industry changing solutions are helping to shape the future of Blockchain and allowing our customers to excel in the worlds of Web3, NFTs and DeFi.'

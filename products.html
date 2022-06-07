@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Products
-subtitle: Applied Blockchain Labs is our research and development centre
-body: We build our own technology to support client requirements
+subtitle: We are developing the next generation of blockchain products
+body: A technological suite to support the future of Web3, DeFi and multichain interoperability
 background_color: white
 ---
 
@@ -16,7 +16,7 @@ background_color: white
             <div class="col--lg8">
               <div class="card__content body--left">
                 <p class="card__label label">{{ item.category }}</p>
-                <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.png" alt="Logo for {{ item.title | strip_html }}" class="card__image">
+                <img src="{{ site.base-url }}{{ site.imageurl }}/logos/products/{{ item.logo }}.svg" alt="Logo for {{ item.title | strip_html }}" class="card__image">
                 <p class="card__body body--large">{{ item.description }}</p>
                 <p class="card__body badge badge--{% if item.status == 'Live' %}success{% else %}warning{% endif %} label">{{ item.status }}</p>
               </div>

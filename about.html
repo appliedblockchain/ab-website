@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-subtitle: We are a team of engineers, designers, and advisors with unique expertise in applying advances in cryptography to solve our client’s business problems
+subtitle: We are a team of engineers, designers, and advisors that are helping to make the worlds of Web3, NFTs and DeFi a reality
 background_color: white
 ---
 
@@ -16,7 +16,7 @@ background_color: white
       </div>
     </div>
     {% endfor %}
-  </div>   
+  </div>
 </section>
 
 <section id="about-leadership" class="section section--grey">
@@ -74,9 +74,9 @@ background_color: white
   %}
   <div class="section__content">
     <div class="card testimonials">
-      {% include elements/carousel.html 
+      {% include elements/carousel.html
         type = 'testimonials'
-        variant = 'testimonials_investors' 
+        variant = 'testimonials_investors'
       %}
     </div>
   </div>
@@ -98,7 +98,7 @@ background_color: white
         <div class="card card--sm card__inner background--shadow">
           <p class="card__title body">{{ item.body }}</p>
           {% if item.link %}
-          <a href="{{ site.base-url }}/{{ item.link }}" class="timeline__button button button--small button--primary button--animate fas fa-{{ item.link_icon }}">
+          <a href="{% if item.link_type != 'external' %}{{ site.base-url }}/{% endif %}{{ item.link }}" {% if item.link_type == 'external' %}target="_blank"{% endif %} class="timeline__button button button--small button--primary button--animate fas fa-{{ item.link_icon }}">
             <p class="button__inner">{% if item.link_title %}{{ item.link_title }}{% else %}{{ item.link }}{% endif %}</p>
           </a>
           {% endif %}
@@ -106,7 +106,7 @@ background_color: white
       </div>
       <span class="timeline__dot"></span>
       <div class="timeline__icon">
-        <img src="{{ site.base-url }}{{ site.imageurl }}/{% if item.icon_type == 'logo' %}logos/products/{{ item.icon }}.png{% else %}icons/icon-{{ item.icon }}.svg{% endif %}" alt="{{ item.icon }} icon"{% if item.icon_type == 'logo' %} class="timeline__logo"{% endif %}>
+        <img src="{{ site.base-url }}{{ site.imageurl }}/{% if item.icon_type == 'logo' %}logos/{{ item.icon }}{% else %}icons/icon-{{ item.icon }}.svg{% endif %}" alt="{{ item.icon }} icon"{% if item.icon_type == 'logo' %} class="timeline__logo"{% endif %}>
       </div>
     </div>
     {% endfor %}

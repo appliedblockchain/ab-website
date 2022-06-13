@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'The team that predicted Terra Luna’s crash four months agos'
-image: moneyweb-terraluna-crash
+title: 'Blockchain bridges have failed spectacularly. Can the faith and trust in them be restored?'
+image: forkast-blockchain-bridges
 category: news
 social: external
-link: https://www.moneyweb.co.za/moneyweb-crypto/the-team-that-predicted-terra-lunas-crash-four-months-ago/
-headline: "In January we were asked by an investor to take a look at the inner workings of Terra Luna and we didn’t like what we found. We predicted it would run out of funds within nine months but the collapse has been quicker."
+link: https://forkast.news/how-rebuild-trust-blockchain-bridges/
+headline: "Token bridges are essential for interoperability between blockchains, but some of them did not come under the same technical scrutiny as the blockchains themselves, which as lead to the proliferation of bridges with weak security mechanisms. What are the solutions?"
 ---

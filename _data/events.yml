@@ -10,6 +10,40 @@
 #   webinar_id: [link to recording form page]
 #   link:
 
+- name: "DeCipher 2022"
+  image: decipher-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-11-28"
+  date_to: "2022-11-30"
+  location: "Dubai, UAE"
+  link: "https://decipherevent.com/"
+
+- name: "TOKEN2049"
+  image: token2049-london-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-11-09"
+  date_to: "2022-11-10"
+  location: "London, UK"
+  link: "https://www.europe.token2049.com/"
+
+- name: "Porto Tech Hub Conference 2022"
+  image: porto-tech-hub-conference-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-10-27"
+  location: "Porto, Portugal"
+  link: "https://portotechhub.com/conference-2022/"
+
+- name: "TOKEN2049"
+  image: token2049-singapore-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-09-28"
+  date_to: "2022-09-29"
+  location: "Singapore"
+  link: "https://www.asia.token2049.com/"
+
+- name: "EthCC5"
+  image: ethcc-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-07-19"
+  date_to: "2022-07-21"
+  location: "Paris, France"
+  link: "https://ethcc.io/"
+
 - name: "Consensus 2022 Session: Securing Cross-Chain Bridges With Algorand State Proofs"
   image: consensus-austin # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-06-09"

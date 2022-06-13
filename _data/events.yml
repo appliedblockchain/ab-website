@@ -10,6 +10,25 @@
 #   webinar_id: [link to recording form page]
 #   link:
 
+- name: "Consensus 2022 Session: Securing Cross-Chain Bridges With Algorand State Proofs"
+  image: consensus-austin # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-06-09"
+  date_to: "2022-06-12"
+  location: "Austin, US"
+  link: "https://events.coindesk.com/consensus2022/agenda/session/900585"
+
+- name: "AVM Panel discussion: Bridge Season on Algorand"
+  image: avm-austin # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-06-08"
+  location: "Austin, US"
+  link: "https://www.youtube.com/watch?v=w-mOFqMcvdE&t=22097s"
+
+- name: "AVM: SilentData Presentation"
+  image: avm-austin # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-06-08"
+  location: "Austin, US"
+  link: "https://www.youtube.com/watch?v=w-mOFqMcvdE&t=18656s"
+
 - name: "Blockchain and Token Bridges"
   image: blockchain-token-bridges # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-03-10"

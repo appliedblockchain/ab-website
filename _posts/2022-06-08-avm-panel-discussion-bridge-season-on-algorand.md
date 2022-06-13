@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '"Panel discussion: Bridge Season on Algorand" at AVM 2022'
+title: 'Panel discussion: "Bridge Season on Algorand" at AVM 2022'
 image: avm-austin-2022
 category: videos
 social: video

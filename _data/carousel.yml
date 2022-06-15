@@ -82,12 +82,11 @@ testimonials_investors:
 # services.html
 technologies:
   - name: Ethereum
-  - name: Quorum
-  - name: Hyperledger Fabric
-  - name: Corda
   - name: Algorand
-  - name: Libra
   - name: Elements
+  - name: Solana
+  - name: Polygon
+  - name: Polkadot
 
 # webinar.html
 webinar:

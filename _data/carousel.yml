@@ -3,6 +3,10 @@ clients:
   - name: Shell
   - name: Aorist
   - name: KLM
+  - name: NAX
+  - name: Algorand
+  - name: Chainlink
+  - name: Ledger
   - name: Cult Wines
   - name: Toyota
   - name: Current
@@ -17,7 +21,6 @@ clients:
   - name: APPII
   - name: Supermoney
   - name: Sita
-  - name: BABB
   - name: Travel Ledger
 
 # home.html

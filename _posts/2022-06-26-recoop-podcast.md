@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'The ReCoop Podcast with Adi Ben-Ari'
+title: 'The ReCoop Podcast with our CEO Adi Ben-Ari'
 image: recoop-podcast
 category: videos
 social: video

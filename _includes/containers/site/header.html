@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 
+	{% if page.noindex == true %}
+	<meta name="robots" content="noindex, nofollow" />
+	{% endif %}
+
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125324953-1"></script>
 	<script>

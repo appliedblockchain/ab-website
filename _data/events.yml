@@ -50,7 +50,7 @@
   image: digital-leadership-forum-072022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-07-14"
   location: "Online"
-  Recording: "https://www.youtube.com/watch?v=BJnBkiVYnpk"
+  recording: "https://www.youtube.com/watch?v=BJnBkiVYnpk"
 
 - name: "Consensus 2022 Session: Securing Cross-Chain Bridges With Algorand State Proofs"
   image: consensus-austin # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

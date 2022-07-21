@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'EthCC5 session 2022: "Connecting web2 with web3: Verifying private off chain data sources"'
+title: 'EthCC5 session: "Connecting web2 with web3: Verifying private off chain data sources"'
 image: ethcc5
 category: videos
 social: video

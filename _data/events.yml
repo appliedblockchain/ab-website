@@ -44,7 +44,7 @@
   date: "2022-07-19"
   date_to: "2022-07-21"
   location: "Paris, France"
-  website: "https://ethcc.io/"
+  recording: "https://www.youtube.com/watch?v=IX2Xp6QIrx8"
 
 - name: "How will disruptive forces radically transform the industry"
   image: digital-leadership-forum-072022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
@@ -57,7 +57,7 @@
   date: "2022-06-09"
   date_to: "2022-06-12"
   location: "Austin, US"
-  website: "https://events.coindesk.com/consensus2022/agenda/session/900585"
+  recording: "https://www.youtube.com/watch?v=LEsaen_kMUU"
 
 - name: "AVM Panel discussion: Bridge Season on Algorand"
   image: avm-austin # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

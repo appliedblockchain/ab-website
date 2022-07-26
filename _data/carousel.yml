@@ -30,6 +30,12 @@ testimonials_clients:
     position: CEO
     company: Shell
 
+  - name: fernando-cruz
+    quote: It’s been great working with Applied Blockchain. They have a solid, smart team developing all the products we need at Opulous.
+    author: Fernando Cruz
+    position: Chief Marketing Officer
+    company: Opulous
+
   - name: gartner
     quote: Consistently deliver value! A great team who work both autonomously and alongside us.
     author: Product Manager

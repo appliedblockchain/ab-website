@@ -39,6 +39,12 @@
   location: "Singapore"
   website: "https://www.asia.token2049.com/"
 
+- name: "Algorand London Community Event"
+  image: algorand-london-community-event-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-07-29"
+  location: "London"
+  website: "https://www.eventbrite.com/e/algorand-london-community-event-tickets-371143388867"
+
 - name: "EthCC5"
   image: ethcc-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-07-19"

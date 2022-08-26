@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'the Around The Coin Podcast with our CEO Adi Ben-Ari'
+title: 'The Around The Coin Podcast with our CEO Adi Ben-Ari'
 image: around-coin-podcast
 category: videos
 social: video

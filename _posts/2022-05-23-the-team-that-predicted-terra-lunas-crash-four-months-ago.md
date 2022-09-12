@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'The team that predicted Terra Luna’s crash four months agos'
+title: 'The team that predicted Terra Luna’s crash four months ago'
 image: moneyweb-terraluna-crash
 category: news
 social: external

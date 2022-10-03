@@ -39,6 +39,19 @@
   location: "Singapore"
   website: "https://www.asia.token2049.com/"
 
+- name: "Algorand Developer Greenhouse Tech Talks"
+  image: algorand-greenhouse-talks # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-09-27"
+  location: "Singapore"
+  recording: "https://youtu.be/fU4H_YtGtX4?t=21361"
+
+- name: "Zebu Live"
+  image: zebu-live-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-09-22"
+  date_to: "2022-09-23"
+  location: "London"
+  website: "https://www.zebulive.xyz/"
+
 - name: "Algorand London Community Event"
   image: algorand-london-community-event-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-07-29"

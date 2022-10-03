@@ -5,5 +5,5 @@ image: algorand-applied-blockchain
 category: news
 social: external
 link: https://www.algorand.foundation/news/randomness-has-arrived
-headline: "Algorand’s cryptography research team, headed by Tal Rabin, together with Applied Blockchain, has developed a VRF Oracle to bring randomness to the Algorand blockchain. Applied Blockchain’s role involved developing and deploying a beacon service that posts VRF proofs to a Smart Contract developed by Algorand."
+headline: "Algorand’s cryptography research team, headed by Tal Rabin, together with Applied Blockchain, has developed a VRF Oracle to bring randomness to the Algorand blockchain."
 ---

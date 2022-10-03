@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Interview of Adi Ben-Ari for the Porto Tech Hub Conference.'
+title: 'Interview with Adi Ben-Ari for the Porto Tech Hub Conference.'
 image: interview-porto-tech-hub
 category: videos
 social: video

@@ -26,13 +26,13 @@
   location: "London, UK"
   website: "https://www.europe.token2049.com/"
 
-- name: "Porto Tech Hub Conference 2022"
+- name: "Porto Tech Hub Conference"
   image: porto-tech-hub-conference-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-10-27"
   location: "Porto, Portugal"
   website: "https://portotechhub.com/conference-2022/"
 
-- name: "ETH Lisbon Hackathon 2022"
+- name: "ETH Lisbon Hackathon"
   image: eth-lisbon-hackathon-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-10-28"
   date_to: "2022-10-30"

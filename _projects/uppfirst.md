@@ -1,7 +1,7 @@
 ---
 layout: project
 order: 1
-case_study: false
+case_study: true
 title: UPPFIRST
 subtitle:  NFT marketplace for customised physical goods
 industry: Physical goods

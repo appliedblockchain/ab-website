@@ -5,7 +5,7 @@ case_study: true
 title: UPPFIRST
 subtitle:  NFT marketplace for customised physical goods
 industry: Physical goods
-summary:  UppFirst is a non-custodial primary and secondary marketplace for customizable NFTs
+summary:  UPPFIRST is a non-custodial primary and secondary marketplace for customizable NFTs
 link: http://uppfirst.com
 background_color: white
 challenge:

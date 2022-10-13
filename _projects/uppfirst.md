@@ -4,7 +4,7 @@ order: 1
 case_study: true
 title: UPPFIRST
 subtitle:  The web3 commerce platform defining the future of trade
-industry: Physical goods
+industry: Commerce
 summary:  UPPFIRST is a launchpad for creators and merchants, a testbed for brands, and a one-of-a-kind circular community for buyers and traders.
 link: http://uppfirst.com
 background_color: white

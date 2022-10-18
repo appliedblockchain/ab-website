@@ -26,6 +26,12 @@
   location: "London, UK"
   website: "https://www.europe.token2049.com/"
 
+- name: "Algorand Lisbon"
+  image: algorand-lisbon-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-10-31"
+  location: "Lisbon, Portugal"
+  website: "https://www.eventbrite.com/e/algorand-lisbon-tickets-439239195257"
+
 - name: "ETH Lisbon Hackathon"
   image: eth-lisbon-hackathon-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-10-28"
@@ -57,7 +63,7 @@
   date: "2022-09-22"
   date_to: "2022-09-23"
   location: "London"
-  website: "https://www.zebulive.xyz/"
+  recording: "https://www.youtube.com/watch?t=1369&v=VNo-3oW4XLA&feature=youtu.be"
 
 - name: "Algorand London Community Event"
   image: algorand-london-community-event-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

@@ -283,3 +283,25 @@
 		padding-top: $integer-xxxl*3;
 	}
 }
+
+.giveaway--text {
+  margin: 1rem 0;
+}
+
+.giveaway--form--description {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.giveaway--description {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  margin-right: 2rem;
+  @include responsive(max-width, $desktop-lg-min) {
+    max-width: 100%;
+  }
+}

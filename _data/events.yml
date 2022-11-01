@@ -19,6 +19,13 @@
   location: "Dubai, UAE"
   website: "https://decipherevent.com/"
 
+- name: "Blockchain Forum Italia"
+  image: italia-blockchain-forum # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2022-11-18"
+  date_to: "2022-11-19"
+  location: "Milan, Italy"
+  website: "https://blockchainforumitalia.com/en/"
+
 - name: "TOKEN2049"
   image: token2049-london-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2022-11-09"

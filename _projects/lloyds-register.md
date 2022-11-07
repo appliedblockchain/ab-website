@@ -16,4 +16,5 @@ challenge:
     - paragraph: 'LR Lead Technical Specialist, Marine and Offshore, Gary Pogson added: “I have been investigating distributed ledger and blockchain technologies for about two and half years and from very early on, I recognised this as an area of great potential. We have taken a systems approach in undertaking this project, exploring customer needs to derive requirements. In looking at potential solutions, we’ve been careful to ask whether blockchain is a valid component of a solution. In our view, applied carefully as part of a well-designed system, it is uniquely disposed to offer additional value and set a foundation for the maritime industry’s future needs.”'
 challenge-video: true
 challenge-video-lead: Watch Gary Pogson talk about our relationship with Lloyd's Register and how we helped them
+challenge-video-title: lloyds
 ---

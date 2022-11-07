@@ -11,6 +11,9 @@ background_color: white
 
 challenge:
     - paragraph: Ethereum EIP1559 is a change to the Ethereum protocols that allows the user to pay a high gas fee in order for their transaction to be prioritised (or a lower one, for lower priority and longer processing time). Ledger commissioned Applied Blockchain to add support for Ethereum’s EIP1559 in the Ledger live app. With this integration, both the Ledger Live Desktop and Ledger Live Mobile apps allow users to utilise EIP1559 transactions on  Ethereum.
+challenge-video: true
+challenge-video-lead: XXXXXXXXXX
+challenge-video-title: ledger
 
 delivery:
     - item:
@@ -24,6 +27,4 @@ testimonial:
     author: Victor Baconnet
     position: Product Owner
     company: Ledger
-
-    challenge-video: true
 ---

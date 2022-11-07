@@ -5,14 +5,11 @@ case_study: true
 title: Ledger
 subtitle: Integration of EIP1559 for Ethereum mainnet
 industry: Hardware Wallet
-summary: Ledger is developing hardware wallet technology that provides the highest level of security for crypto assets.
+summary: Ledger has a range of  the most popular hardware wallets in the industry. These store a user’s private key enabling them to hold cryptocurrency and sign transactions more securely. Ledger provides two different models, the Nano S Plus and Nano X, the latter connecting through Bluetooth,  both of which support over 5,500 digital assets . The hardware wallets come equipped with the Ledger Live app, that allows users to buy, sell, own, and invest their crypto assets. Ledger has over 2M users in 165 countries.
 link: https://www.ledger.com/
 background_color: white
 
 challenge:
-    - paragraph: Ledger has a range of  the most popular hardware wallets in the industry. These store a user’s private key enabling them to hold cryptocurrency and sign transactions more securely.
-    - paragraph: Ledger provides two different models, the Nano S Plus and Nano X, the latter connecting through Bluetooth,  both of which support over 5,500 digital assets . The hardware wallets come equipped with the Ledger Live app, that allows users to buy, sell, own, and invest their crypto assets.
-    - paragraph: Ledger has over 2M users in 165 countries.
     - paragraph: Ethereum EIP1559 is a change to the Ethereum protocols that allows the user to pay a high gas fee in order for their transaction to be prioritised (or a lower one, for lower priority and longer processing time). Ledger commissioned Applied Blockchain to add support for Ethereum’s EIP1559 in the Ledger live app. With this integration, both the Ledger Live Desktop and Ledger Live Mobile apps allow users to utilise EIP1559 transactions on  Ethereum.
 
 delivery:

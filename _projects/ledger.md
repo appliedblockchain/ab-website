@@ -24,4 +24,6 @@ testimonial:
     author: Victor Baconnet
     position: Product Owner
     company: Ledger
+
+    challenge-video: true
 ---

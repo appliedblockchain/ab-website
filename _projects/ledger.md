@@ -23,7 +23,7 @@ results:
     - paragraph: EIP1559 replaces the first-price auction as the main gas fee calculation and embeds an average price for Ethereum transactions. As Ethereum is one of the most popular cryptocurrencies in the Ledger Live app, this feature was highly anticipated by the platform’s users.
 
 testimonial:
-  - quote: The Applied Blockchain team has been super kind and super helpful, allowing to go back and forth, allowing us to change and to adapt to our user feedbacks and always taking into consideration what the changes were and it’s been really really helpful on outside. I’d say it’s been super easy because also all the project management side of this were taken care of. That means the roadmap was very clear, the vision was very clear and it ensured basically that everything went realy smooth and it freed a lot of time actually on our side to just focus on quality and focus on the product side things when you have a great team working on your future.  
+  - quote: The Applied Blockchain team has been super kind and super helpful. I’d say it’s been super easy because also all the project management side of this was taken care of, the roadmap was very clear, the vision was very clear and it ensured basically that everything went really smoothly and it freed a lot of time actually on our side to just focus on quality and focus on the product side of things when you have a great team working on your future.  
     author: Victor Baconnet
     position: Product Owner
     company: Ledger

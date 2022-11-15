@@ -1,6 +1,6 @@
 ---
 layout: project
-order: 1
+order: 2
 case_study: false
 title: Chainlink
 subtitle: Improvements on the Hardhat Starter Kit

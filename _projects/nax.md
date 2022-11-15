@@ -1,6 +1,6 @@
 ---
 layout: project
-order: 1
+order: 2
 case_study: false
 title: NAX Group
 subtitle: Blockchain-based warranty management platform

@@ -1,6 +1,6 @@
 ---
 layout: project
-order: 1
+order: 2
 case_study: true
 title: Shell
 subtitle: First energy product derivative trade on blockchain

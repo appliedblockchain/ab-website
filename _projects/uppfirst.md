@@ -1,6 +1,6 @@
 ---
 layout: project
-order: 1
+order: 2
 case_study: true
 title: UPPFIRST
 subtitle:  The web3 commerce platform defining the future of trade

@@ -31,7 +31,7 @@
   date: "2022-11-09"
   date_to: "2022-11-10"
   location: "London, UK"
-  website: "https://www.europe.token2049.com/"
+  recording: "https://youtu.be/o4YNS0es9i4"
 
 - name: "Algorand Lisbon"
   image: algorand-lisbon-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

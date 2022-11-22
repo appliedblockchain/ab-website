@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'TOKEN2049 session: "Web 2.5: Bridging the Gap"'
+title: 'TOKEN2049 London session: "Web 2.5: Bridging the Gap"'
 image: token2049-2022
 category: videos
 social: video

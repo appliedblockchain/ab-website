@@ -2,7 +2,7 @@
 
 intro:
   - id: Problems
-    title: We Solve Problemsiaugf
+    title: We Solve Problems
     body: 'At Applied Blockchain we build applications for our clients: enterprises and startups. We value working through their real world business problems, and leverage advanced confidential computing, secure enclaves, cryptography and blockchain technology to build applications that maximise trust, data privacy and security.'
   - id: Products
     title: We Build Products
@@ -46,7 +46,7 @@ team:
     title: Junior Sales Executive
     office: London
     thumbnail: anna
-  - name: Daniel Castilho
+  - name: Miguel Figueiredo
     title: Marketing Manager
     office: Porto
     thumbnail: daniel

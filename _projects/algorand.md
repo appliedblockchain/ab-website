@@ -5,8 +5,7 @@ case_study: true
 title: Algorand
 subtitle: Randomness Oracle
 industry: Blockchain
-summary: Algorand is a decentralised network built to solve the Blockchain Trilemma of simultaneously achieving speed, security, and decentralisation. Launched in June 2019 by computer scientist and MIT professor Silvio Micali, Algorand is a permissionless, open-source blockchain network upon which anyone can build. 
-Applied Blockchain has been working closely with the Algorand Foundation since 2019, including developing a range of leading Algorand decentralised applications from Opulous music rights financing, to Aorist high-end digital art marketplace, and core infrastructure such as London Bridge, a secure token bridge between Ethereum and Algorand, and Silent Data, a privacy-preserving data oracle.
+summary: Algorand is a decentralised network built to solve the Blockchain Trilemma of simultaneously achieving speed, security, and decentralisation. Launched in June 2019 by computer scientist and MIT professor Silvio Micali, Algorand is a permissionless, open-source blockchain network upon which anyone can build. Applied Blockchain has been working closely with the Algorand Foundation since 2019, including developing a range of leading Algorand decentralised applications from Opulous music rights financing, to Aorist high-end digital art marketplace, and core infrastructure such as London Bridge, a secure token bridge between Ethereum and Algorand, and Silent Data, a privacy-preserving data oracle.
 link: https://www.algorand.com/
 background_color: white
 

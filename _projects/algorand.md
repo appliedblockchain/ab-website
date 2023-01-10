@@ -6,7 +6,9 @@ title: Algorand
 subtitle: Randomness Oracle
 industry: Blockchain
 short_summary: Algorand is a decentralised network built to solve the Blockchain Trilemma of simultaneously achieving speed, security, and decentralisation. Launched in June 2019 by computer scientist and MIT professor Silvio Micali, Algorand is a permissionless, open-source blockchain network upon which anyone can build.
+
 summary: Algorand is a decentralised network built to solve the Blockchain Trilemma of simultaneously achieving speed, security, and decentralisation. Launched in June 2019 by computer scientist and MIT professor Silvio Micali, Algorand is a permissionless, open-source blockchain network upon which anyone can build. Applied Blockchain has been working closely with the Algorand Foundation since 2019, including developing a range of leading Algorand decentralised applications from Opulous music rights financing, to Aorist high-end digital art marketplace, and core infrastructure such as London Bridge, a secure token bridge between Ethereum and Algorand, and Silent Data, a privacy-preserving data oracle.
+
 link: https://www.algorand.com/
 background_color: white
 
@@ -18,7 +20,7 @@ challenge-video-title: randomnessoracle
 
 delivery:
      - item:
-         - paragraph: With all the above in mind and with the commission from the Algorand Foundation, Applied Blockchain was able to design, build, and host the very first randomness Oracle for the Algorand blockchain. The Oracle calls the same VRF used by the Algorand consensus protocol to generate verifiable pseudo-random values stored on-chain.
+         - paragraph: With all the above in mind and with the commission from the Algorand Foundation, Applied Blockchain was able to design, build, and host the very first Randomness Oracle for the Algorand blockchain. The Oracle calls the same VRF used by the Algorand consensus protocol to generate verifiable pseudo-random values stored on-chain.
 
 results:
     - paragraph: These random values can now be used by any smart contract deployed on the Algorand blockchain for free and utilised for various use cases such as on-chain gaming, NFTs, lottery etc. The Applied Blockchain Algorand Randomness Oracle was successfully launched into production on the 17th of November 2022 and is now the official source of randomness on the Algorand blockchain.

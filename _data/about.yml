@@ -27,11 +27,11 @@ team:
     office: London
     thumbnail: tudor
   - name: Andy Campbell
-    title: Solution Architect
+    title: Head of Product
     office: London
     thumbnail: andy
   - name: Mario Gemoll
-    title: Senior Software Engineer
+    title: Principal Engineer, Core Technologies
     office: London
     thumbnail: mario
   - name: Katerina Sobetskaia
@@ -43,10 +43,10 @@ team:
     office: London
     thumbnail: patrick
   - name: Anna Zambon
-    title: Junior Sales Executive
+    title: Sales Executive
     office: London
     thumbnail: anna
   - name: Miguel Figueiredo
     title: Marketing Manager
     office: Porto
-    thumbnail: daniel
+    thumbnail: miguel

@@ -18,7 +18,11 @@ background_color: white
                         <p class="card__label label">{{ project.industry }}</p>
                         <h2 class="card__title subtitle">{{ project.title }}</h2>
                         <p class="card__subtitle lead">{{ project.subtitle }}</p>
-                        <p class="card__body">{{ project.summary }}</p>
+                        {% if project.short_summary %} 
+                          <p class="card__body">{{ project.short_summary }}</p>
+                          {% else %}
+                          <p class="card__body">{{ project.summary }}</p>
+                        {% endif %}
                     </div>
                     {% if project.case_study == true or project.link %}
                     <div class="card__actions">

@@ -60,7 +60,7 @@ layout: compress
               <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
           </div>
           {% include elements/modals/video-lloyds.html %}
-        {% else %}
+        {% elsif page.challenge-video-title == 'ledger' %}
           <div class="col--md5">
             <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
                 <a href="#modal-video-ledger" class="js-button-modal">
@@ -81,6 +81,7 @@ layout: compress
           </div>
           {% include elements/modals/video-randomnessoracle.html %}
         {% endif %}
+
         <div class="coloffset--md1 col--md6">
         {% else %}
         <div class="col--md6">

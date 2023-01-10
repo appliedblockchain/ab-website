@@ -160,6 +160,25 @@ layout: compress
 </section>
 {% endif %}
 
+{% if page.resources %}
+<section id="project-resources" class="section section--white">
+  <div class="row">
+    <div class="col--lg9 block__title">
+        <h1 class="subtitle">Other Resources</h1>
+    </div>
+    <div class="block__content">
+        {% for content in page.resources %}
+        <div class="block__column col--md12">
+            {% for column in content.item %}
+            <p class="body">{{ column.paragraph }}</p>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>        
+</div>
+</section>
+{% endif %}
+
 {% if page.testimonial %}
 <section class="section section--grey no-padding--left no-padding--right">
     <div class="section__content">

@@ -23,6 +23,18 @@ delivery:
 results:
     - paragraph: These random values can now be used by any smart contract deployed on the Algorand blockchain for free and utilised for various use cases such as on-chain gaming, NFTs, lottery etc. The Applied Blockchain Algorand Randomness Oracle was successfully launched into production on the 17th of November 2022 and is now the official source of randomness on the Algorand blockchain.
 
+resources:
+  - item:
+    - paragraph: '<a target="_blank" class="giveaway--link" href="https://developer.algorand.org/articles/usage-and-best-practices-for-randomness-beacon/">Guide: Usage and best practices</a>
+    </br>
+    <a target="_blank" class="giveaway--link" href="https://www.algorand.foundation/news/randomness-has-arrived">News: 01101011110101… – Randomness Has Arrived on Algorand</a>
+    </br>
+    <a target="_blank" class="giveaway--link" href="https://developer.algorand.org/articles/randomness-on-algorand/">Article: Randomness on Algorand</a>
+    </br>
+    <a target="_blank" class="giveaway--link" href="https://algoexplorer.io/address/APPLDMEYQTPYA25IGZLM5OBRWIGWYBJEPXRSKXKJTGEGYI2TJDC33SEZNU">Algo Explorer: Applied Blockchain Randomness Oracle</a>
+    </br>
+    <a target="_blank" class="giveaway--link" href="https://youtu.be/nJ5vRI466kU">Youtube: Algorand Foundation Testimonial for Applied Blockchain</a>'
+
 testimonial:
   - quote: It was impressive how competent and professional the [Applied Blockchain] team members were, as well as how well we communicated. We had a great experience working with them, since they always understood the importance of the project, and shared our views. Also whenever we requested a change or fix, we usually got quick responses and solutions, so all in all, the experience was excellent.  
     author: Ori Shem-Tov

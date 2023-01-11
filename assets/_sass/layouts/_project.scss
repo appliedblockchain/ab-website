@@ -49,16 +49,6 @@
     }
   }
 
-  &-challenge {
-  
-    img {
-
-      @include responsive(max-width, $tablet-max) {
-        display: none;
-      }
-    }
-  }
-
   &-results {
 
     &.section {

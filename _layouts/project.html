@@ -54,37 +54,33 @@ layout: compress
         <img src="{{ site.base-url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4">
         <div class="coloffset--md1 col--md7">
         {% elsif page.challenge-video %}
+        <div class="col--md5">
         {% if page.challenge-video-title == 'lloyds' %}
-          <div class="col--md5">
-              <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
-                  <a href="#modal-video-lloyds" class="js-button-modal">
-                      <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-                  </a>
-              </div>
-              <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
+          <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
+              <a href="#modal-video-lloyds" class="js-button-modal modal-video-button">
+                  <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+              </a>
           </div>
+          <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
           {% include elements/modals/video-lloyds.html %}
         {% elsif page.challenge-video-title == 'ledger' %}
-          <div class="col--md5">
-            <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
-                <a href="#modal-video-ledger" class="js-button-modal">
-                    <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-                </a>
-            </div>
-            <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
+          <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
+              <a href="#modal-video-ledger" class="js-button-modal">
+                  <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+              </a>
           </div>
+          <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
           {% include elements/modals/video-ledger.html %}
         {% else %}
-          <div class="col--md5">
-            <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
-                <a href="#modal-video-randomnessoracle" class="js-button-modal">
-                    <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-                </a>
-            </div>
-            <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
+          <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
+              <a href="#modal-video-randomnessoracle" class="js-button-modal">
+                  <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+              </a>
           </div>
+          <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
           {% include elements/modals/video-randomnessoracle.html %}
         {% endif %}
+      </div>
 
         <div class="coloffset--md2 col--md5">
         {% else %}

@@ -25,7 +25,7 @@ delivery:
          - paragraph: 'Applied Blockchain was selected by the Algorand Foundation to design, build, host and operate the very first independent Randomness Oracle for the Algorand blockchain. The cryptographic function implemented in the oracle is referred to as a <a class="giveaway--link" target="_blank" href="https://en.wikipedia.org/wiki/Verifiable_random_function">Verifiable Random Function (VRF)</a>, and its authenticity is verified by Algorand smart contracts.'
 
 results:
-    - paragraph: 'The Algorand Randomness Oracle service developed, hosted and operated by Applied Blockchain was launched in mainnet on 17th November 2022, and is now the official source of randomness on the Algorand blockchain. It can be seen providing random numbers at regular intervals in the Algorand blockchain explorer <a class="giveaway--link" target="_blank" href="https://algoexplorer.io/address/APPLDMEYQTPYA25IGZLM5OBRWIGWYBJEPXRSKXKJTGEGYI2TJDC33SEZNU">here</a>, and these random values are available to be used by any smart contract deployed on the Algorand blockchain, including in games, generative NFTs, lotteries etc. A guide to using the randomness oracle can be found <a class="giveaway--link" target="_blank" href="https://developer.algorand.org/articles/usage-and-best-practices-for-randomness-beacon/">here</a>.'
+    - paragraph: 'The Algorand Randomness Oracle service developed, hosted and operated by Applied Blockchain was launched in mainnet on 17th November 2022, and is now the official source of randomness on the Algorand blockchain. It can be seen providing random numbers at regular intervals in the Algorand blockchain explorer <a class="giveaway--link" target="_blank" href="https://algoexplorer.io/address/APPLDMEYQTPYA25IGZLM5OBRWIGWYBJEPXRSKXKJTGEGYI2TJDC33SEZNU">here</a>, and these random values are available to be used by any smart contract deployed on the Algorand blockchain, including in games, generative NFTs, lotteries etc. A guide to using the Randomness Oracle can be found <a class="giveaway--link" target="_blank" href="https://developer.algorand.org/articles/usage-and-best-practices-for-randomness-beacon/">here</a>.'
 
 resources:
   - item:
@@ -39,11 +39,11 @@ resources:
     </ul>'
 
 testimonial:
-    - quote: It was impressive how competent and professional the [Applied Blockchain] team members were, as well as how well we communicated. We had a great experience working with them, since they always understood the importance of the project, and shared our views. Also whenever we requested a change or fix, we usually got quick responses and solutions, so all in all, the experience was excellent.  
-      author: Ori Shem-Tov
-      company: Algorand Foundation
     - quote: We are grateful to Applied Blockchain for implementing and maintaining the backend service. 
       author: Tal Rabin
       company: Algorand Foundation
       position: Head of Research
+    - quote: It was impressive how competent and professional the [Applied Blockchain] team members were, as well as how well we communicated. We had a great experience working with them, since they always understood the importance of the project, and shared our views. Also whenever we requested a change or fix, we usually got quick responses and solutions, so all in all, the experience was excellent.  
+      author: Ori Shem-Tov
+      company: Algorand Foundation
 ---

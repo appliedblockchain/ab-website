@@ -14,7 +14,7 @@ background_color: white
 
 challenge:
      - paragraph: 'Generating a source of trusted and secure randomness is difficult, especially on-chain. Yet having one is necessary for decentralised applications that depend on randomised processes, such as lotteries, random NFT drops, games, etc. Crucially, it is not enough for most on-chain applications to use “random-looking” quantities (such as the block seed) as sources of randomness. Instead, block proposers have partial control over these quantities, making it possible for rogue block proposers to break applications that depend on these sources being unpredictable.</br>
-     An external randomness oracle service is therefore required in order to post random values into the blockchain in a cryptographically trusted manner. Full details of the challenge can be found <a href="https://developer.algorand.org/articles/randomness-on-algorand/" target="_blank" class="giveaway--link">here</a>.'
+     An external randomness oracle service is therefore required in order to post random values into the blockchain in a cryptographically trusted manner. Algorand, one of the most advanced layer one blockchains, required such as randomness service and commissioned Applied Blockchain to build and provide one. Full details of the challenge can be found <a href="https://developer.algorand.org/articles/randomness-on-algorand/" target="_blank" class="giveaway--link">here</a>.'
 
 challenge-video: true
 challenge-video-lead: Video Case Study

@@ -30,7 +30,7 @@ results:
 resources:
   - item:
     - paragraph: '
-    <ul>
+    <ul class="ul-inside-position">
       <li>Tal Rabin, Algorand Head of Research at Algorand Foundation announces the launch of the Algorand Randomness Oracle developed by Applied Blockchain: <a target="_blank" class="giveaway--link" href="https://www.algorand.foundation/news/randomness-has-arrived">01101011110101… — Randomness Has Arrived on Algorand</a>
       </li>
       <li>

@@ -27,16 +27,12 @@ layout: compress
     </div>
 </div>
 
-{% if page.summary %}
+{% if page.summary and page.short_summary == false %}
 <section id="project-summary" class="section background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg');">
     <div class="card card--lg card--landscape background--shadow">
         <div class="card__inner">
             <div class="card__content">
-              {% if page.title == "Algorand" %}
-                <h1 class="card__title subtitle">Introduction</h1>
-              {% else %}
-                <h1 class="card__title subtitle">About {{ page.title }}</h1>
-              {% endif %}
+              <h1 class="card__title subtitle">About {{ page.title }}</h1>
               <p class="card__body body">{{ page.summary }}</p>
             </div>
         </div>
@@ -50,11 +46,11 @@ layout: compress
 {% if page.challenge %}
 <section id="project-challenge" class="section section--white">
     <div class="row">
-        {% if page.challenge-diagram %}
+      {% if page.challenge-diagram %}
         <img src="{{ site.base-url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4">
         <div class="coloffset--md1 col--md7">
-        {% elsif page.challenge-video %}
-        <div class="col--md5">
+      {% elsif page.challenge-video %}
+      <div class="col--md5">
         {% if page.challenge-video-title == 'lloyds' %}
           <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
               <a href="#modal-video-lloyds" class="js-button-modal modal-video-button">
@@ -81,7 +77,6 @@ layout: compress
           {% include elements/modals/video-randomnessoracle.html %}
         {% endif %}
       </div>
-
         <div class="coloffset--md2 col--md5">
         {% else %}
         <div class="col--md6">
@@ -208,7 +203,7 @@ layout: compress
         <div class="card__inner">
             <div class="card__content">
                 <h1 class="card__title subtitle">About {{ page.title }}</h1>
-                <p class="card__body body">{{ page.short_summary }}</p>
+                <p class="card__body body">{{ page.short_summary }}.{{ page_summary}}</p>
             </div>
         </div>
         <div class="card__image">

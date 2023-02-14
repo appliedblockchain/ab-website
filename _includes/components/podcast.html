@@ -1,0 +1,23 @@
+{% assign header = include.header %}
+{% assign size = include.size %}
+
+<div class="social">
+    <a href="{{ site.podcastYoutube }}" title="Youtube" target="_blank" class="ga-social-youtube button{% if size %} button--{{ size }}{% endif %} button--icon button--youtube button--animate fas fa-plus">
+      <i class="button__inner fab fa-youtube"></i>
+    </a>
+    <a href="{{ site.podcastSpotify }}" title="Spotify" target="_blank" class="ga-social-spotify button{% if size %} button--{{ size }}{% endif %} button--icon button--spotify button--animate fas fa-plus">
+      <i class="button__inner fab fa-spotify"></i>
+    </a>
+    <a href="{{ site.podcastApple }}" title="Apple Podcasts" target="_blank" class="ga-social-apple button{% if size %} button--{{ size }}{% endif %} button--icon button--apple-podcasts button--animate fas fa-plus">
+      <i class="button__inner fab fa-apple"></i>
+    </a>
+    <a href="{{ site.podcastGoogle }}" title="Google Podcasts" target="_blank" class="ga-social-google button{% if size %} button--{{ size }}{% endif %} button--icon button--google-podcasts button--animate fas fa-plus">
+      <i class="button__inner fab fa-google"></i>
+    </a>
+    <a href="{{ site.podcastAmazon }}" title="Amazon music" target="_blank" class="ga-social-amazon button{% if size %} button--{{ size }}{% endif %} button--icon button--amazon-music button--animate fas fa-plus">
+      <i class="button__inner fab fa-amazon"></i>
+    </a>
+    <a href="{{ site.podcastAnchor }}" title="Anchor" target="_blank" class="ga-social-anchor button{% if size %} button--{{ size }}{% endif %} button--icon button--anchor button--animate fas fa-plus">
+      <i class="button__inner fab fa-regular fa-spotify"></i>
+    </a>
+</div>

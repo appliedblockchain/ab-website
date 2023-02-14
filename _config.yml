@@ -25,6 +25,14 @@ twitter: https://twitter.com/appblockchain
 telegram: https://t.me/applied_blockchain
 youtube: https://www.youtube.com/@AppBlockchain/
 
+# podcast links
+podcastYoutube: https://www.youtube.com/playlist?list=PLFAAXU0gmqD02L9CCvlp8LspkHTpBnoPB
+podcastSpotify: https://open.spotify.com/show/0OF5Q1zM9oPxDlDdC18AZY
+podcastApple: https://podcasts.apple.com/pt/podcast/applied-blockchain-podcast/id1653098459
+podcastGoogle: https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9iZWUzOWM5OC9wb2RjYXN0L3Jzcw
+podcastAmazon: https://music.amazon.co.uk/podcasts/4294ffd7-5dea-4885-81e6-c38ee8590403/applied-blockchain-podcast
+podcastAnchor: https://anchor.fm/appliedblockchainpodcast
+
 # permalinks config
 collections:
   projects:

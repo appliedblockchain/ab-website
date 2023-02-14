@@ -95,6 +95,10 @@ technologies:
   - name: Solana
   - name: Polygon
   - name: Polkadot
+  - name: Hedera
+  - name: Starkware
+  - name: Binance smart chain
+  
 
 # webinar.html
 webinar:

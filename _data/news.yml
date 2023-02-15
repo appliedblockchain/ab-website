@@ -1,13 +1,21 @@
-- title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology
-  button_label: Read
-  link: https://www.intel.co.uk/content/dam/www/central-libraries/us/en/documents/final-pdf-applied-blockchain-and-intel-sgx-12.pdf
+- title: 'Case Study: Algorand Randomness Oracle'
+  button_label: Learn more
+  link: https://appliedblockchain.com/projects/algorand
 
-- title:
-  body: “Consistently deliver value! A great team who work both autonomously and alongside us.”
-  button_label: View full review
-  link: https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/review/view/3468146
-  image: carousel/testimonials_clients/gartner-small.png
-  rating: 5
+- title: 'Case Study: Ledger'
+  button_label: Learn more
+  link: https://appliedblockchain.com/projects/ledger
+
+# - title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology
+#   button_label: Read
+#   link: https://www.intel.co.uk/content/dam/www/central-libraries/us/en/documents/final-pdf-applied-blockchain-and-intel-sgx-12.pdf
+
+# - title:
+#   body: “Consistently deliver value! A great team who work both autonomously and alongside us.”
+#   button_label: View full review
+#   link: https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/review/view/3468146
+#   image: carousel/testimonials_clients/gartner-small.png
+#   rating: 5
 
 # - title: “More than just development”
 #   body:
@@ -16,9 +24,9 @@
 #   image: carousel/testimonials_clients/gartner-small.png
 #   rating: 5
 
-- title: The team that predicted Terra Luna’s crash four months ago
-  button_label: Read
-  link: https://www.moneyweb.co.za/moneyweb-crypto/the-team-that-predicted-terra-lunas-crash-four-months-ago/ 
+# - title: The team that predicted Terra Luna’s crash four months ago
+#   button_label: Read
+#   link: https://www.moneyweb.co.za/moneyweb-crypto/the-team-that-predicted-terra-lunas-crash-four-months-ago/ 
 
 # - title: 4 Pragmatic Blockchain Design Patterns for Business
 #   body:

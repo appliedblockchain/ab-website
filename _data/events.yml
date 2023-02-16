@@ -13,27 +13,27 @@
   # recording: # if relevant, url to the recording
 
 - name: "APPG Blockchain Evidence Session at UK Parliament"
-  image: italia-blockchain-forum # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  image: blockchain-evidence # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-03-07"
   location: "London, UK"
   website: "https://www.biginnovationcentre.com/event/blockchain-as-a-service-baas-commoditising-blockchains-2/"
 
 - name: "StarkWare Sessions 2023"
-  image: decipher-2022 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  image: starkware-2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-02-05"
   date_to: "2023-02-06"
   location: "Tel Aviv, Israel"
   recording: "https://youtu.be/zE2rZZ9jNxg"
 
 - name: "DLD Tel Aviv"
-  image: italia-blockchain-forum # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  image: dld-tel-aviv # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-02-01"
   date_to: "2023-02-03"
   location: "Tel Aviv, Israel"
   website: "https://www.dldtelaviv.com/2023/speakers.html"
 
 - name: "2023 in Crypto at Rise, created by Barclays"
-  image: italia-blockchain-forum # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  image: crypto-at-rise # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-01-23"
   location: "London, UK"
   website: "https://www.eventbrite.co.uk/o/rise-london-16793628230"

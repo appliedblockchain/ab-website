@@ -1,9 +1,15 @@
-- title: 'Case Study: Algorand Randomness Oracle'
-  button_label: Learn more
+- title: 'Applied Blockchain Podcast #1 - Adi invites John Woods.'
+  button_label: Watch
+  second_button_label: Listen
+  second_link: https://tr.ee/QhJttrwzzb
+  link: https://www.youtube.com/playlist?list=PLFAAXU0gmqD02L9CCvlp8LspkHTpBnoPB
+
+- title: 'Applied Blockchain built and hosts the first Randomness Oracle on the Algorand blockchain.'
+  button_label: Read Case Study
   link: https://appliedblockchain.com/projects/algorand
 
-- title: 'Case Study: Ledger'
-  button_label: Learn more
+- title: 'Ledger has commissioned Applied Blockchain to integrate EIP1559 into the Ledger Live app.'
+  button_label: Read Case Study
   link: https://appliedblockchain.com/projects/ledger
 
 # - title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology

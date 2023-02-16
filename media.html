@@ -23,7 +23,7 @@ background_color: white
         <p class="button__inner">Videos</p>
       </a>
       <a class="tab__button button button--primary button--primary-lighten button--animate fas fa-play" data-filter=".podcasts">
-        <p class="button__inner">Podcasts</p>
+        <p class="button__inner">Podcast</p>
       </a>
     </div>
     <div class="grid row tab__content card__wrapper">
@@ -61,6 +61,9 @@ background_color: white
               {% elsif post.social contains "podcast" %}
               <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-headphones">
                 <p class="button__inner">Listen</p>
+              </a>
+              <a href="{{ post.video_link }}" target="_blank" class="button button--primary button--small button--animate fas fa-play">
+                <p class="button__inner">Watch video</p>
               </a>
               {% elsif post.social contains "linkedin" %}
               <a href="{{ post.link }}" target="_blank" class="button button--linkedin button--small button--animate fab fa-linkedin-in">

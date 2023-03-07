@@ -10,13 +10,14 @@
 #   webinar_id: # link to recording form page
 #   website: # if relevant, url of the event page
 #   register: # if relevant, url to register
-  # recording: # if relevant, url to the recording
+# recording: # if relevant, url to the recording
 
-- name: "APPG Blockchain Evidence Session at UK Parliament"
-  image: blockchain-evidence # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
-  date: "2023-03-07"
-  location: "London, UK"
-  website: "https://www.biginnovationcentre.com/event/blockchain-as-a-service-baas-commoditising-blockchains-2/"
+- name: "ETH Porto"
+  image: ethporto # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2023-03-17"
+  date_to: "2023-03-18"
+  location: "Porto, Portugal"
+  website: "https://ethporto.org/"
 
 - name: "StarkWare Sessions 2023"
   image: starkware-2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

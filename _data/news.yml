@@ -1,16 +1,16 @@
-- title: 'Applied Blockchain Podcast #1 - Adi invites John Woods.'
+- title: 'Applied Blockchain Podcast #02 - Layer 2 ZK Rollups with David Engel from StarkWare'
   button_label: Watch
   second_button_label: Listen
   second_link: https://tr.ee/QhJttrwzzb
-  link: https://www.youtube.com/playlist?list=PLFAAXU0gmqD02L9CCvlp8LspkHTpBnoPB
+  link:  https://www.youtube.com/watch?v=aOou3Yaw2Po&feature=youtu.be
+
+- title: 'Predictions For 2023: A Technology Perspective'
+  button_label: READ FULL REPORT 
+  link: https://www.linkedin.com/smart-links/AQFQcgqlWtg2wQ
 
 - title: 'Applied Blockchain built and hosts the first Randomness Oracle on the Algorand blockchain.'
   button_label: Read Case Study
   link: https://appliedblockchain.com/projects/algorand
-
-- title: 'Ledger has commissioned Applied Blockchain to integrate EIP1559 into the Ledger Live app.'
-  button_label: Read Case Study
-  link: https://appliedblockchain.com/projects/ledger
 
 # - title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology
 #   button_label: Read

@@ -6,14 +6,21 @@
 {% assign background_color = include.background_color %}
 
 <div class="section page__header{% if page.background_color %} section--{{ page.background_color }}{% endif %} background--cover"{% if page.background_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.title | slugify }}.jpg');"{% endif %}>
-    {% if page.comment %}
-    <p class="page__comment comment">{{ page.comment }}</p>
+  <div class="joinRow">
+    <div class="texts">
+      {% if page.comment %}
+        <p class="page__comment comment">{{ page.comment }}</p>
+      {% endif %}
+        <h1 class="page__title headline">{% if headline %}{{ headline }}{% else %}{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}{% endif %}</h1>
+      {% if page.subtitle %}
+        <p class="page__subtitle lead">{{ page.subtitle }}</p>
+      {% endif %}
+      {% if page.body %}
+        <p class="page__body body--large">{{ page.body }}</p>
+      {% endif %}
+    </div>
+    {% if page.title == 'Join' %}
+      <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/1uLhuWQoXLrdsJV7jRveG9NQ5luJVvZgX6zqoibC7f4a833i9L2V1hAVHuS89nhR1"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
     {% endif %}
-    <h1 class="page__title headline">{% if headline %}{{ headline }}{% else %}{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}{% endif %}</h1>
-    {% if page.subtitle %}
-    <p class="page__subtitle lead">{{ page.subtitle }}</p>
-    {% endif %}
-    {% if page.body %}
-    <p class="page__body body--large">{{ page.body }}</p>
-    {% endif %}
+  </div>
 </div>

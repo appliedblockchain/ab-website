@@ -231,7 +231,6 @@
 }
 
 .join {
-
   &__background {
     position: absolute;
     top: 0;
@@ -257,6 +256,21 @@
       @include background(center center, cover);
     }
   }
+}
+
+.joinRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include responsive(max-width, $mobile-max) {
+        flex-direction: column;
+  }
+}
+
+.texts {
+  margin-right: 200px;
 }
 
 // —————————————————————————————————————————————————————————————————

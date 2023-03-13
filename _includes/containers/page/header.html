@@ -27,7 +27,19 @@
         {% endif %}
       {% endif %}
       {% if page.id != 'applied-privacy' %}
-      <a href="{{ site.base-url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
+      <a href="{{ site.base-url }}/projects" class="header__contact button button--small button--primary">
+        <p class="button__inner">Projects</p>
+      </a>
+      <a href="{{ site.base-url }}/services" class="header__contact button button--small button--primary">
+        <p class="button__inner">Services</p>
+      </a>
+      <a href="{{ site.base-url }}/resources" class="header__contact button button--small button--primary">
+        <p class="button__inner">Resources</p>
+      </a>
+      <a href="{{ site.base-url }}/company" class="header__contact button button--small button--primary">
+        <p class="button__inner">Company</p>
+      </a>
+      <a href="{{ site.base-url }}/contact" class="header__contact button button--small button--primary">
         <p class="button__inner">Contact us</p>
       </a>
       {% endif %}

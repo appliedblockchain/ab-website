@@ -4,269 +4,63 @@ layout: compress
 
 {% include containers/site/header.html %}
 
-<div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
+<video autoplay muted loop id="myVideo">
+  <source src="https://www.youtube.com/embed/M_V1MrZv-_Y" type="video/mp4">
+</video>
+
+<div id="landing" class="section section--alt section--dark">
   <div id="particles-js"></div>
   {% include containers/page/title.html
     headline = site.description
   %}
   <div class="section__content body--black">
     <div class="row row--center">
-      <img src="{{ site.base-url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop-lg">
-      <div class="col--xl4 col--lg5 col--md7 col--sm8">
-        <div class="card card--xxs anchor background--shadow mb--md">
-          <div class="card__inner">
-            <div class="card__header">
-              <p class="card__title body--bold">Stay updated</p>
-              <a href="#footer" title="Newsletter anchor" class="button button--small button--icon button--highlight button--animate fas fa-plus">
-                <i class="button__inner fas fa-newspaper"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="card card--xxs background--shadow mb--md">
-          <div class="card__inner">
-            <div class="card__header">
-              <p class="card__title body--bold">Follow us</p>
-              {% include components/social.html
-                size = 'small'
-              %}
-            </div>
-          </div>
-        </div>
-        <!-- <div class="card card--xxs background--shadow">
-          <div class="card__inner">
-            <div class="card__header">
-              <p class="card__title body--bold">Applied Blockchain Podcast</p>
-              {% include components/podcast.html
-                size = 'small'
-              %}
-            </div>
-          </div>
-        </div> -->
-      </div>
+       <div class="col--3">
+          <p>
+            2015
+          </p>
+          <p>since</p>
+       </div>
+       <div class="col--3">
+          <p>
+            +100
+          </p>
+          <p>projects delivered</p>
+       </div>
+       <div class="col--3">
+          <p>
+            +100
+          </p>
+          <p>developers</p>
+       </div>
+       <div class="col--3">
+          <p>
+            5 star
+          </p>
+          <p>clients reviews on Gartner</p>
+       </div>
+    </div>
+    <div class="row row--center">
+        <button>Stay informed</button>
+    </div>
+  </div>
+
+  <div class="section__content">
+    <div class="row row--center">
+      <p>What our clients say?</p>
+      <p>Our testimonials</p>
     </div>
   </div>
   <div class="row widget__bar card__wrapper">
-    <div class="card col--xl8 col--lg7 body--left">
-      <p class="body body--bold card__title">Trusted by global organisations and startups alike</p>
+    <div class="card">
+      <div>Video</div>
       <div class="card__body">
         {% include elements/carousel.html
           variant = 'clients'
         %}
       </div>
     </div>
-    <div class="col--xl4 col--lg5">
-      <div class="owl-carousel owl-carousel-news widget--news card card--xs card--portrait background--shadow body--black">
-        {% for item in site.data.news %}
-        <div class="carousel__item">
-          <div class="card__inner">
-            <div class="card__inner--left">
-              <div class="card__content">
-                <p class="card__title body--small body--bold">
-                  <span class="mr">{{ item.title }}</span>
-                  {% if item.body %}
-                  <span class="body--xs body--regular">{{ item.body }}</span>
-                  {% endif %}
-                </p>
-              </div>
-              <div class="card__actions">
-                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.link }}" target="_blank" class="card__actions button button--xsmall button--primary button--animate fas fa-eye">
-                  <p class="button__inner">{{ item.button_label }}</p>
-                </a>
-                {% if item.second_button_label %}
-                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.second_link }}" target="_blank" class="card__actions button button--xsmall button--primary button--animate fas fa-eye">
-                  <p class="button__inner">{{ item.second_button_label }}</p>
-                </a>
-                {% endif %}
-
-                {% if item.rating %}
-                <div class="body--small body--grey rating">
-                  <div class="fas fa-star{% if item.rating >= 1 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 2 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 3 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 4 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 5 %} body--highlight{% endif %}"></div>
-                </div>
-                {% endif %}
-              </div>
-            </div>
-            {% if item.image %}
-            <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="" class="card__image">
-            {% endif %}
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
   </div>
 </div>
-
-<section id="index-intro" class="section section--white">
-  {% include containers/sections/header.html
-    comment = 'What we do'
-    title = 'Blockchain solutions'
-  %}
-  <div class="section__header body--large">
-    We have developed and deployed dozens of blockchain applications from NFT marketplaces for famous artists to sophisticated DeFi protocols and Web3 dApps, on blockchains including Ethereum, Algorand, Polygon and Solana. We are also developing the next generation of blockchain solutions. These include SilentData, a privacy-preserving data oracle for off-chain data, and London Bridge, a hardware-secured bridge between Algorand, Ethereum, and other EVM chains for cross chain asset transfers.
-  </div>
-  <div class="section__content">
-    <div class="button__wrapper">
-      <a href="{{ site.base-url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
-        <p class="button__inner">Services</p>
-      </a>
-      <!-- <a href="{{ site.base-url }}/products" class="ga-button-services button button--primary button--animate fa fa-box">
-        <p class="button__inner">Products</p>
-      </a> -->
-    </div>
-  </div>
-  <div class="section__content">
-    {% include elements/carousel.html
-      variant = 'technologies'
-    %}
-  </div>
-</section>
-
-<section class="section section--grey" id="who-we-help">
-  {% include containers/sections/header.html
-    comment = 'Who we help'
-    title = 'Cutting-edge startups to global enterprises'
-  %}
-  <div class="section__content">
-    <div class="row card__wrapper">
-      <div class="card col--md6">
-        <div class="card body--left">
-          <div class="card__header">
-            <p class="card__title body"><span class="body body--bold">Victor Baconnet</span>, <span class="body body--bold">Product Owner at Ledger</span></p>
-            <div class="card__actions">
-              <a href="{{ site.base-url }}/projects/ledger" class="button button--secondary button--small button--animate fas fa-fill">
-                <p class="button__inner">Case study</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-ledger.jpg');">
-          <a href="#modal-video-ledger" class="js-button-modal">
-            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-          </a>
-        </div>
-        {% include elements/modals/video-ledger.html %}
-      </div>
-      <div class="card col--md6">
-        <div class="card body--left">
-          <div class="card__header">
-            <p class="card__title body"><span class="body body--bold">Ben Van Beurden, CEO at Shell</span></p>
-            <div class="card__actions">
-              <a href="{{ site.base-url }}/projects/shell" class="button button--secondary button--small button--animate fas fa-fill">
-                <p class="button__inner">Case study</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-shell.jpg');">
-          <a href="https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433" class="js-button-modal" target="_blank">
-            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section__content">
-    <p class="body--large">Over the last years we have been selected by some of the world's top companies to advise, design and build innovative solutions. We serve customers in DeFi, Web3, NFTs, cryptocurrency, financial services, trading, energy, commodities, supply chain, telecoms and government.</p>
-  </div>
-  <div class="section__content">
-    <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
-      <p class="button__inner">Projects</p>
-    </a>
-  </div>
-</section>
-
-<section id="index-testimonials" class="section section--white no-padding--left no-padding--right">
-  <div class="section__content">
-    <div class="card testimonials">
-      {% include elements/carousel.html
-        type = 'testimonials'
-        variant = 'testimonials_clients'
-      %}
-    </div>
-  </div>
-</section>
-
-<section id="index-why-us" class="section section--grey">
-  {% include containers/sections/header.html
-    comment = 'Why us'
-    title = 'Independent thinking, production grade solutions'
-  %}
-  <div class="section__content">
-    <a href="{{ site.base-url }}/about" class="ga-button-about button button--primary button--animate fa fa-address-card">
-      <p class="button__inner">About us</p>
-    </a>
-  </div>
-  <div class="section__content">
-    <div class="row">
-      <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/thought-leader.png');"></div>
-      <div class="card col--6 body--left">
-        <h2 class="card__title lead">Thought leaders</h2>
-        <p class="card__body body">We contribute to global industry events and whitepapers, with keynote presentations and commentaries on practical applications of distributed ledgers, advanced cryptography, confidential computing and secure enclaves. Our work has led us to be recognised by the UK government, where Adi Ben-Ari has been invited to present at the House of Lords, Houses of Parliament, and leading academic institutions.</p>
-      </div>
-    </div>
-  </div>
-  <div class="section__content">
-    <div class="row">
-      <div class="card col--6 body--right">
-        <h2 class="card__title lead">International market leader</h2>
-        <p class="card__body body">We have built and deployed enterprise grade solutions in the UK, Switzerland, Netherlands, Australia, China, USA and South America. Gartner has recognised Applied Blockchain amongst the Top Global Blockchain Development and Consulting Firm for 4 consecutive years 2017-2020.</p>
-      </div>
-      <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/market-leader.svg');"></div>
-    </div>
-  </div>
-  <div class="section__content">
-    <div class="row">
-      <div class="col--6 background--contain" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/blockchain-experts.svg');"></div>
-      <div class="card col--6 body--left">
-        <h2 class="card__title lead">Industry experts </h2>
-        <p class="card__body body">We are experts in applications of distributed ledgers (DApps), advanced cryptography, and confidential computing. Our team of in-house development experts work closely with our clients to bring innovative solutions to life – together.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="index-featured-in" class="section section--white">
-  {% include containers/sections/header.html
-    title = 'Featured In'
-  %}
-  <div class="section__content">
-    <div class="row">
-      {% for item in site.data.images.media %}
-      <div class="col--lg3 col--6">
-        <div class="card card__inner">
-          {% if item.link %}
-          <a href="{{ item.link }}" target="_blank">
-            {% endif %}
-            <img src="{{ site.base-url }}{{ site.imageurl }}/logos/media/{{ item.name | slugify }}.png" alt="Logo {{ item.name }}" class="logo-media__image">
-            {% if item.link %}
-          </a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="section__content">
-    <p class="block__title lead">We're in a fast changing industry, here's our news at Applied Blockchain</p>
-    <div class="block__content">
-      <a href="{{ site.base-url }}/media" class="ga-button-media button button--primary button--animate fas fa-newspaper">
-        <p class="button__inner">Media</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- particles animation -->
-<script src="{{ site.base-url }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
-<script>
-  particlesJS.load('particles-js', 'assets/vendor/particles/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-</script>
 
 {% include containers/site/footer.html %}

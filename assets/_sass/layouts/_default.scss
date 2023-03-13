@@ -263,14 +263,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   @include responsive(max-width, $mobile-max) {
-        flex-direction: column;
+    flex-direction: column;
   }
 }
 
-.texts {
-  margin-right: 200px;
+.joinForm {
+  display: none;
+  @include responsive(max-width, $mobile-max) {
+    display: block;
+    margin-top: 25px;
+  }
 }
 
 // —————————————————————————————————————————————————————————————————

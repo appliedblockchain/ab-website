@@ -7,7 +7,7 @@
 
 <div class="section page__header{% if page.background_color %} section--{{ page.background_color }}{% endif %} background--cover"{% if page.background_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.title | slugify }}.jpg');"{% endif %}>
   <div class="joinRow">
-    <div class="texts">
+    <div>
       {% if page.comment %}
         <p class="page__comment comment">{{ page.comment }}</p>
       {% endif %}
@@ -20,7 +20,7 @@
       {% endif %}
     </div>
     {% if page.title == 'Join' %}
-      <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/1uLhuWQoXLrdsJV7jRveG9NQ5luJVvZgX6zqoibC7f4a833i9L2V1hAVHuS89nhR1"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+      <div class="pipedriveWebForms joinForm" data-pd-webforms="https://webforms.pipedrive.com/f/1uLhuWQoXLrdsJV7jRveG9NQ5luJVvZgX6zqoibC7f4a833i9L2V1hAVHuS89nhR1"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
     {% endif %}
   </div>
 </div>

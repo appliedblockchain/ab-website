@@ -22,8 +22,16 @@ body {
   justify-content: center;
 }
 
+.button {
+  text-transform: none;  
+}
+
 .onlyMobile {
   display: none;
+}
+
+.link-no-underline {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 900px) {

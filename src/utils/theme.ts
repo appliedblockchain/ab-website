@@ -74,8 +74,74 @@ export const lightTheme = createTheme({
       medium: '#1DB954',
       twitter: '#1DA1F2',
     },
-    black: '#000A1E',
-    white: '#FFFFFF',
     divider: 'rgba(0, 10, 30, 0.12)',
+  },
+  typography: {
+    fontFamily: 'Chivo',
+    h1: {
+      fontWeight: '400',
+      fontSize: '40px',
+      lineHeight: '125%',
+    },
+    h2: {
+      fontWeight: '900',
+      fontSize: '32px',
+      lineHeight: '125%',
+    },
+    h3: {
+      fontWeight: '400',
+      fontSize: '28px',
+      lineHeight: '125%',
+    },
+    h4: {
+      fontWeight: '400',
+      fontSize: '22px',
+      lineHeight: '125%',
+    },
+    h5: {
+      fontWeight: '400',
+      fontSize: '22px',
+      lineHeight: '150%',
+    },
+    h6: {
+      fontWeight: '400',
+      fontSize: '20px',
+      lineHeight: '150%',
+    },
+    subtitle1: {
+      fontWeight: '400',
+      fontSize: '18px',
+      lineHeight: '170%',
+    },
+    subtitle2: {
+      fontWeight: '400',
+      fontSize: '18px',
+      lineHeight: '150%',
+    },
+    body1: {
+      fontWeight: '400',
+      fontSize: '16px',
+      lineHeight: '150%',
+    },
+    body2: {
+      fontWeight: '400',
+      fontSize: '16px',
+      lineHeight: '150%',
+    },
+    button: {
+      fontWeight: '900',
+      fontSize: '12px',
+      lineHeight: '100%',
+    },
+    caption: {
+      fontWeight: '400',
+      fontSize: '14px',
+      lineHeight: '150%',
+    },
+    overline: {
+      fontWeight: '400',
+      fontSize: '14px',
+      lineHeight: '150%',
+    },
   },
 });

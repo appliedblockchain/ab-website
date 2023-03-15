@@ -1,0 +1,14 @@
+.toolbar {
+  min-height: 80px;
+  padding: 0 120px;
+  justify-content: space-between;
+}
+
+.button {
+  margin-right: 48px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+}

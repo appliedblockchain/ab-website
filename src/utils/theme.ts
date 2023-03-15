@@ -78,4 +78,4 @@ export const lightTheme = createTheme({
     white: '#FFFFFF',
     divider: 'rgba(0, 10, 30, 0.12)',
   },
-})
+});

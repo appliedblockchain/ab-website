@@ -5,5 +5,5 @@ export default function HomePage() {
     <IndexLayout>
       <div>Home page</div>
     </IndexLayout>
-  )
+  );
 }

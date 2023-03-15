@@ -18,9 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <CacheProvider value={cache}>
         <ThemeProvider theme={lightTheme}>
           <CssBaseline />
-          <Component
-            {...pageProps}
-          />
+          <Component {...pageProps} />
         </ThemeProvider>
       </CacheProvider>
     </StyledEngineProvider>

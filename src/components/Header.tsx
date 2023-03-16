@@ -1,4 +1,4 @@
-import classes from '../styles/Header.module.css';
+import classes from '@/styles/components/Header.module.css';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -17,20 +17,35 @@ export default function Header() {
             src="/white-ab-logo.svg"
           />
         </Link>
-        <div className='flex-centered'>
-          <Link href="/products" className={clsx("link-no-underline", classes.button)}>
+        <div className="flex-centered">
+          <Link
+            href="/products"
+            className={clsx('link-no-underline', classes.button)}
+          >
             <Typography color="white">Products</Typography>
           </Link>
-          <Link href="/projects" className={clsx("link-no-underline", classes.button)}>
+          <Link
+            href="/projects"
+            className={clsx('link-no-underline', classes.button)}
+          >
             <Typography color="white">Projects</Typography>
           </Link>
-          <Link href="/solutions" className={clsx("link-no-underline", classes.button)}>
+          <Link
+            href="/solutions"
+            className={clsx('link-no-underline', classes.button)}
+          >
             <Typography color="white">Solutions</Typography>
           </Link>
-          <Link href="/company" className={clsx("link-no-underline", classes.button)}>
+          <Link
+            href="/company"
+            className={clsx('link-no-underline', classes.button)}
+          >
             <Typography color="white">Company</Typography>
           </Link>
-          <Link href="/resources" className={clsx("link-no-underline", classes.button)}>
+          <Link
+            href="/resources"
+            className={clsx('link-no-underline', classes.button)}
+          >
             <Typography color="white">Resources</Typography>
           </Link>
           <Link href="/contact-us" className="link-no-underline">

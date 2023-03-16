@@ -7,6 +7,7 @@
 }
 
 main {
+  margin-top: 80px;
   min-height: 100vh;
 }
 
@@ -22,8 +23,18 @@ body {
   justify-content: center;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .button {
-  text-transform: none;  
+  border-radius: 33px;
+  padding: 8px 18px;
+  gap: 10px;
+}
+
+.section {
+  padding: 0 120px;
 }
 
 .onlyMobile {

@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { ThemeProvider, CssBaseline } from '@mui/material';
-import { lightTheme } from '@/utils/theme';
+import { theme } from '@/utils/theme';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <StyledEngineProvider injectFirst>
       <CacheProvider value={cache}>
-        <ThemeProvider theme={lightTheme}>
+        <ThemeProvider theme={theme}>
           <CssBaseline />
           <Component {...pageProps} />
         </ThemeProvider>

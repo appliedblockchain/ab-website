@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-export const lightTheme = createTheme({
+export const theme = createTheme({
   palette: {
     primary: {
       light: '#A8D2FF',
@@ -63,9 +63,8 @@ export const lightTheme = createTheme({
     },
     text: {
       primary: '#000A1E',
-      secondary: 'rgba(0, 10, 30, 0.54)',
-      disabled: 'rgba(0, 10, 30, 0.38)',
-      // hint: 'rgba(0, 10, 30, 0.38)',
+      secondary: '#4A4D52',
+      disabled: '#687183',
     },
     brand: {
       facebook: '#1877F2',
@@ -79,44 +78,51 @@ export const lightTheme = createTheme({
   typography: {
     fontFamily: 'Chivo',
     h1: {
-      fontWeight: '400',
-      fontSize: '40px',
-      lineHeight: '125%',
+      fontWeight: '900',
+      fontSize: '80px',
+      lineHeight: '135%',
+      fontStyle: 'black',
     },
     h2: {
-      fontWeight: '900',
-      fontSize: '32px',
+      fontWeight: '400',
+      fontSize: '64px',
       lineHeight: '125%',
+      fontStyle: 'bold',
     },
     h3: {
       fontWeight: '400',
-      fontSize: '28px',
+      fontSize: '48px',
       lineHeight: '125%',
+      fontStyle: 'bold',
     },
     h4: {
       fontWeight: '400',
-      fontSize: '22px',
+      fontSize: '40px',
       lineHeight: '125%',
+      fontStyle: 'bold',
     },
     h5: {
       fontWeight: '400',
-      fontSize: '22px',
+      fontSize: '32px',
       lineHeight: '150%',
+      fontStyle: 'bold',
     },
     h6: {
       fontWeight: '400',
       fontSize: '20px',
-      lineHeight: '150%',
+      lineHeight: '120%',
+      fontStyle: 'bold',
     },
     subtitle1: {
       fontWeight: '400',
       fontSize: '18px',
-      lineHeight: '170%',
+      lineHeight: '150%',
     },
     subtitle2: {
       fontWeight: '400',
       fontSize: '18px',
       lineHeight: '150%',
+      fontStyle: 'bold',
     },
     body1: {
       fontWeight: '400',
@@ -127,16 +133,19 @@ export const lightTheme = createTheme({
       fontWeight: '400',
       fontSize: '16px',
       lineHeight: '150%',
+      fontStyle: 'bold',
     },
     button: {
-      fontWeight: '900',
+      fontWeight: '400',
       fontSize: '12px',
       lineHeight: '100%',
+      fontStyle: 'bold',
     },
     caption: {
       fontWeight: '400',
-      fontSize: '14px',
-      lineHeight: '150%',
+      fontSize: '12px',
+      lineHeight: '100%',
+      fontStyle: 'bold',
     },
     overline: {
       fontWeight: '400',

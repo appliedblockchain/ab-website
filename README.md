@@ -1,39 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Applied Blockchain Website
+- [Introduction](#introduction)
+  - [Getting started](#getting-started)
+  - [Dependencies](#dependencies)
+- [Deployment](#deployment)
+<!-- - [Page structure](#page-structure)
+  - [Section system](#section-system)
+  - [Components](#components)
+  - [Column system](#column-system) -->
+<!-- - [Create page](#create-page)   -->
+<!-- - [Create project](#create-project)
+- [Create job](#create-job)
+- [Create event](#create-event)
+- [Create blog post](#create-blog-post) -->
 
-## Getting Started
+<!------------------------------------------------------>
+<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### Getting started
+
+#### Install dependencies
+
+```
+yarn
+or
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Run the website in development mode
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+yarn dev
+or
+npm run dev
+```
+> Local URL: [localhost:3000](http://localhost:3000)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### Yarn or NPM
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[Yarn](https://yarnpkg.com)
 
-## Learn More
+[NPM](https://www.npmjs.com)
 
-To learn more about Next.js, take a look at the following resources:
+<!------------------------------------------------------>
+<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Material UI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[MUI](https://mui.com) offers a comprehensive suite of UI tools to help you ship new features faster. Start with Material UI, our fully-loaded component library, or bring your own design system to our production-ready components.
 
-## Deploy on Vercel
+<!------------------------------------------------------>
+<p>&nbsp;</p>
+<!------------------------------------------------------>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### NextJS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[NextJS](https://nextjs.org) Used by some of the world's largest companies, Next.js enables you to create full-stack web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.
 
+<!------------------------------------------------------>
+<p>&nbsp;</p>
+<!------------------------------------------------------>
+
+## Deployment
+
+The deployment process is run throught Netlify.
+
+| Environment | Branch | URL |
+| --- | --- | --- |
+| Staging | staging | [beta.appliedblockchain.com](https://beta.appliedblockchain.com/) |
+| Production | master | [appliedblockchain.com](https://appliedblockchain.com/) |
+
+> Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on the content.
+
+<!------------------------------------------------------>
+<p>&nbsp;</p>
+<!------------------------------------------------------>
+
+---
+
+### [LICENSE](https://github.com/appliedblockchain/ab-website/blob/master/LICENSE)

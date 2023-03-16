@@ -1,0 +1,18 @@
+.carousel {
+  animation: carousel 30s linear infinite;
+  height: 120px;
+  width: 1200px;
+}
+
+.logo {
+  margin: 24px 70px 0 70px;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(10 * -120px), 0, 0);
+  }
+}

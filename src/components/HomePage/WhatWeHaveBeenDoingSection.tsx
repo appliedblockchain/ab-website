@@ -4,10 +4,10 @@ import { Grid, Typography, styled, Button } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 import clsx from 'clsx';
 import { projects } from '@/data/projects';
+import Typewriter from 'typewriter-effect';
 
 const StyledSection = styled(Grid)(({ theme }) => ({
   padding: '120px',
-  
 }));
 
 function WhatWeHaveBeenDoingSection() {
@@ -22,7 +22,26 @@ function WhatWeHaveBeenDoingSection() {
           {'What we`ve been doing?'}
         </Typography>
         <Typography variant="h2" color="text.secondary">
-          Commodities
+          <Typewriter
+            options={{
+              strings: [
+                'Energy',
+                'Finance',
+                'Commodities',
+                'Transports',
+                'Supply-Chain',
+                'DeFi',
+                'Telecoms',
+                "NFT's",
+                'Web3',
+              ],
+              autoStart: true,
+              loop: true,
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-ignore
+              pauseFor: 250,
+            }}
+          />
         </Typography>
         <Typography variant="subtitle1" color="text.disabled">
           {
@@ -30,7 +49,11 @@ function WhatWeHaveBeenDoingSection() {
           }
         </Typography>
         <Button className="button" variant="contained" color="primary">
-          <Typography variant="button" textTransform="none" color="white">
+          <Typography
+            variant="button"
+            textTransform="none"
+            color="primary.contrastText"
+          >
             Explore all projects
           </Typography>
         </Button>

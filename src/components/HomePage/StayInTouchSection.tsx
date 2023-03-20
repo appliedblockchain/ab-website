@@ -11,11 +11,15 @@ const StyledSection = styled(Grid)(({ theme }) => ({
 function StayInTouchSection() {
   return (
     <StyledSection item container xs={12}>
-      <Grid item xs={6} className={clsx('flex-centered', 'column', classes.texts)}>
-        <Typography variant="h4" color="white">
+      <Grid
+        item
+        xs={6}
+        className={clsx('flex-centered', 'column', classes.texts)}
+      >
+        <Typography variant="h4" color="primary.contrastText">
           Stay in touch
         </Typography>
-        <Typography variant="subtitle1" color="white">
+        <Typography variant="subtitle1" color="primary.contrastText">
           Announcements can be found in our blog. Press contact:
         </Typography>
       </Grid>

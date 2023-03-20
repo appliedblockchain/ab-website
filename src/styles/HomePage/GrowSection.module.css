@@ -1,11 +1,19 @@
-.carousel {
-  animation: carousel 30s linear infinite;
-  height: 120px;
-  width: 1200px;
+.numbers {
+  margin: 50px 0;
 }
 
 .logo {
   margin: 24px 70px 0 70px;
+}
+
+.button {
+  margin-bottom: 112px;
+}
+
+.carousel {
+  animation: carousel 30s linear infinite;
+  height: 120px;
+  width: 1200px;
 }
 
 @keyframes carousel {

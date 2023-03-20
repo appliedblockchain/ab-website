@@ -1,0 +1,28 @@
+.carousel {
+  width: 1000px;
+  min-height: 526px;
+  margin-top: 80px;
+}
+
+.indicatorIcon {
+  width: 154px;
+  height: 86px;
+  background-color: #242931;
+  border-radius: 16px;
+  margin: 0 26px;
+}
+
+.carouselItem {
+  background-color: #242931;
+  border-radius: 24px;
+  padding: 32px;
+  min-height: 400px;
+}
+
+.author {
+  margin-left: 24px;
+}
+
+.quote {
+  margin-top: 32px;
+}

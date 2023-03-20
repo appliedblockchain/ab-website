@@ -6,6 +6,8 @@ import clsx from 'clsx';
 const StyledSection = styled(Grid)(({ theme }) => ({
   padding: '60px 60px 60px 120px',
   backgroundColor: '#1E2126',
+  borderTopLeftRadius: '750px 122px',
+  borderTopRightRadius: '750px 122px',
 }));
 
 function WhatMakesUsDifferentSection() {
@@ -15,7 +17,7 @@ function WhatMakesUsDifferentSection() {
         <Typography variant="h4" color="secondary">
           What makes us different?
         </Typography>
-        <Typography variant="h2" color="white">
+        <Typography variant="h2" color="primary.contrastText">
           Our Core technologies
         </Typography>
       </Grid>
@@ -24,7 +26,7 @@ function WhatMakesUsDifferentSection() {
         xs={6}
         className={clsx('flex-centered', 'column', classes.texts)}
       >
-        <Typography variant="h5" color="white">
+        <Typography variant="h5" color="primary.contrastText">
           Title: tokenization?
         </Typography>
         <Typography variant="subtitle1" color="grey.500">
@@ -40,7 +42,7 @@ function WhatMakesUsDifferentSection() {
         xs={6}
         className={clsx('flex-centered', 'column', classes.texts)}
       >
-        <Typography variant="h5" color="white">
+        <Typography variant="h5" color="primary.contrastText">
           Zero-Knowledge Technology
         </Typography>
         <Typography variant="subtitle1" color="grey.500">
@@ -56,7 +58,7 @@ function WhatMakesUsDifferentSection() {
         xs={6}
         className={clsx('flex-centered', 'column', classes.texts)}
       >
-        <Typography variant="h5" color="white">
+        <Typography variant="h5" color="primary.contrastText">
           Secure Hardware Enclaves
         </Typography>
         <Typography variant="subtitle1" color="grey.500">

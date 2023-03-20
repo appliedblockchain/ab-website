@@ -18,39 +18,24 @@ export default function Header() {
           />
         </Link>
         <div className="flex-centered">
-          <Link
-            href="/products"
-            className={clsx('link-no-underline', classes.button)}
-          >
-            <Typography color="white">Products</Typography>
+          <Link href="/products" className={classes.button}>
+            <Typography color="primary.contrastText">Products</Typography>
           </Link>
-          <Link
-            href="/projects"
-            className={clsx('link-no-underline', classes.button)}
-          >
-            <Typography color="white">Projects</Typography>
+          <Link href="/projects" className={classes.button}>
+            <Typography color="primary.contrastText">Projects</Typography>
           </Link>
-          <Link
-            href="/solutions"
-            className={clsx('link-no-underline', classes.button)}
-          >
-            <Typography color="white">Solutions</Typography>
+          <Link href="/solutions" className={classes.button}>
+            <Typography color="primary.contrastText">Solutions</Typography>
           </Link>
-          <Link
-            href="/company"
-            className={clsx('link-no-underline', classes.button)}
-          >
-            <Typography color="white">Company</Typography>
+          <Link href="/company" className={classes.button}>
+            <Typography color="primary.contrastText">Company</Typography>
           </Link>
-          <Link
-            href="/resources"
-            className={clsx('link-no-underline', classes.button)}
-          >
-            <Typography color="white">Resources</Typography>
+          <Link href="/resources" className={classes.button}>
+            <Typography color="primary.contrastText">Resources</Typography>
           </Link>
-          <Link href="/contact-us" className="link-no-underline">
+          <Link href="/contact-us">
             <Button className="button">
-              <Typography color="white">Contact us</Typography>
+              <Typography color="primary.contrastText">Contact us</Typography>
             </Button>
           </Link>
         </div>

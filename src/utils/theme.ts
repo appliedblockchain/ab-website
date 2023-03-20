@@ -2,6 +2,10 @@ import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
   palette: {
+    common: {
+      white: '#FFFFFF',
+      black: '#000A1E',
+    },
     primary: {
       light: '#A8D2FF',
       main: '#007BFF',
@@ -12,12 +16,6 @@ export const theme = createTheme({
       light: '#FFD686',
       main: '#FF6F00',
       dark: '#C05400',
-      contrastText: '#FFFFFF',
-    },
-    success: {
-      light: '#C9F1E2',
-      main: '#00A96B',
-      dark: '#00613D',
       contrastText: '#FFFFFF',
     },
     error: {
@@ -38,20 +36,25 @@ export const theme = createTheme({
       dark: '#0960A5',
       contrastText: '#FFFFFF',
     },
+    success: {
+      light: '#C9F1E2',
+      main: '#00A96B',
+      dark: '#00613D',
+      contrastText: '#FFFFFF',
+    },
     background: {
       default: '#FFFFFF',
-      paper: '#F5F6F7',
+      paper: '#F8FCFF',
     },
     action: {
       disabled: 'rgba(0, 10, 30, 0.26)',
       focus: 'rgba(0, 10, 30, 0.12)',
       selected: 'rgba(0, 10, 30, 0.08)',
       hover: 'rgba(0, 10, 30, 0.04)',
-      // default: '#E0E0E0',
     },
     grey: {
-      900: '#4B5F6C',
-      800: '#5F717C',
+      900: '#1E2126',
+      800: '#242931',
       700: '#73838D',
       600: '#87949D',
       500: '#9BA6AD',

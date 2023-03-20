@@ -5,15 +5,9 @@ import Footer from './Footer';
 
 interface IndexLayoutProps {
   children?: ReactNode;
-  setThemeMode?: (arg0: string) => void;
-  themeMode?: string;
 }
 
-export function IndexLayout({
-  children,
-  themeMode,
-  setThemeMode,
-}: IndexLayoutProps) {
+export function IndexLayout({ children }: IndexLayoutProps) {
   return (
     <>
       <Head>

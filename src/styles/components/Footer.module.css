@@ -1,0 +1,18 @@
+.menu {
+  justify-content: flex-start;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.columnTitle {
+  margin-bottom: 16px;
+}
+
+.menuItem {
+  margin-bottom: 12px;
+}
+
+.privacyPolice {
+  width: fit-content;
+  margin-left: 50px;
+}

@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player';
 import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
 
-export const CarouselItem = ({ item }) => {
+export const CarouselItem = ({ item }: { item: any }) => {
   return (
     <div className={classes.carouselItem}>
       <Grid container item xs={12} key={uuidv4()}>

@@ -1,19 +1,30 @@
 import classes from '@/styles/HomePage/WhatClientsSaySection.module.css';
-import React from 'react';
 import { Grid, Typography, styled, Box } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 import Image from 'next/image';
 import clsx from 'clsx';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { IconButton, Button } from '@mui/material';
+import React, { useState } from 'react';
+import { CarouselItem } from './CarouselItem';
 import { carousel } from '@/data/carouselTestimonials';
-import Carousel from 'react-material-ui-carousel';
-import Link from 'next/link';
-import ReactPlayer from 'react-player';
 
 const StyledSection = styled(Grid)(({ theme }) => ({
   padding: '120px',
 }));
 
 function WhatClientsSaySection() {
+  const [activeIndex, setActiveIndex] = useState(carousel.length / 2);
+  const updateIndex = (newIndex: number) => {
+    if (newIndex < 0) {
+      newIndex = carousel.length - 1;
+    } else if (newIndex >= carousel.length) {
+      newIndex = 0;
+    }
+
+    setActiveIndex(newIndex);
+  };
   return (
     <StyledSection item xs={12} className={clsx('flex-centered', 'column')}>
       <Typography variant="h4" color="primary">
@@ -22,84 +33,70 @@ function WhatClientsSaySection() {
       <Typography variant="h2" color="text.secondary">
         Our testimonials
       </Typography>
-      <Carousel
-        navButtonsAlwaysInvisible={true}
-        className={classes.carousel}
-        indicatorIconButtonProps={{
-          className: classes.indicatorIcon,
-        }}
-        indicatorContainerProps={{ style: { marginTop: '40px' } }}
-        IndicatorIcon={carousel.map((el) => (
-          <Image
-            key={uuidv4()}
-            src={el.logo.src}
-            alt={el.logo.src}
-            width={el.logo.width}
-            height={el.logo.height}
-          />
-        ))}
-      >
-        {carousel.map((item) => (
-          <Grid
-            container
-            item
-            xs={12}
-            key={uuidv4()}
-            className={classes.carouselItem}
+
+      <div className={classes.carousel}>
+        <div
+          className={classes.inner}
+          style={{ transform: `translate(-${activeIndex * 100}%)` }}
+        >
+          {carousel.map((item) => {
+            return <CarouselItem key={uuidv4()} item={item} />;
+          })}
+        </div>
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          marginTop="40px"
+        >
+          <IconButton
+            onClick={() => {
+              updateIndex(activeIndex - 1);
+            }}
           >
-            <Grid
-              item
-              xs={6}
-              justifyContent="space-between"
-              display="flex"
-              flexDirection="column"
+            <ArrowBackIcon />
+          </IconButton>
+          <div className={classes.indicatorsWrapper}>
+            <div
+              className={classes.indicators}
+              style={{
+                transform: `translate(-${activeIndex * 180}px)`,
+                marginRight: `-${carousel.length * 180 - 180}px`,
+              }}
             >
-              <Box display="flex" flexDirection="column">
-                <Box display="flex" alignItems="center">
-                  <Image
-                    width={60}
-                    height={60}
-                    src={item.avatar}
-                    alt={item.avatar}
-                  />
-                  <Box
-                    display="flex"
-                    flexDirection="column"
-                    className={classes.author}
+              {carousel.map((item, index) => {
+                return (
+                  <Button
+                    key={index}
+                    className={clsx(
+                      classes.indicatorContainer,
+                      index === activeIndex ? classes.activeIndicator : '',
+                    )}
+                    onClick={() => {
+                      updateIndex(index);
+                    }}
                   >
-                    <Typography variant="h6" color="primary.contrastText">
-                      {item.author}
-                    </Typography>
-                    <Typography variant="subtitle1" color="textSecondary">
-                      {item.position} at{' '}
-                      <Link href={item.linkToCaseStudy}>{item.company}</Link>
-                    </Typography>
-                  </Box>
-                </Box>
-                <Typography
-                  variant="subtitle1"
-                  color="primary.contrastText"
-                  className={classes.quote}
-                >
-                  &quot;{item.quote}&quot;
-                </Typography>
-              </Box>
-              <Link href={item.linkToCaseStudy}>
-                <Typography variant="body2" color="primary">
-                  Case study
-                </Typography>
-              </Link>
-            </Grid>
-            <Grid item xs={6}>
-              <ReactPlayer
-                width="485px"
-                height="336px"
-                url={item.linkToVideo}
-              />
-            </Grid>
-          </Grid>
-        ))}
-      </Carousel>
+                    <Image
+                      key={uuidv4()}
+                      src={item.logo.src}
+                      alt={item.logo.src}
+                      width={item.logo.width}
+                      height={item.logo.height}
+                    />
+                  </Button>
+                );
+              })}
+            </div>
+          </div>
+          <IconButton
+            onClick={() => {
+              updateIndex(activeIndex + 1);
+            }}
+          >
+            <ArrowForwardIcon />
+          </IconButton>
+        </Box>
+      </div>
     </StyledSection>
   );
 }

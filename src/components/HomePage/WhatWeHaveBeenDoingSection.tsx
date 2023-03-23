@@ -19,7 +19,7 @@ function WhatWeHaveBeenDoingSection() {
         className={clsx('flex-centered', 'column', classes.texts)}
       >
         <Typography variant="h4" color="primary">
-          {'What we`ve been doing?'}
+          {"What we've been doing?"}
         </Typography>
         <Typography variant="h2" color="text.secondary">
           <Typewriter

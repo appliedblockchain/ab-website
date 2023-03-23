@@ -1,0 +1,36 @@
+import React from 'react';
+import classes from '@/styles/HomePage/WhatClientsSaySection.module.css';
+import clsx from 'clsx';
+import Image from 'next/image';
+import { Button, Typography } from '@mui/material';
+
+type PropType = {
+  selected: boolean;
+  imgSrc: string;
+  imgWdth: number;
+  imgHgth: number;
+  index: number;
+  onClick: () => void;
+};
+
+export const Thumb: React.FC<PropType> = (props) => {
+  const { selected, imgSrc, imgWdth, imgHgth, onClick, index } = props;
+
+  return (
+    <div
+      className={clsx(
+        classes.embla__thumbs__slide,
+        selected ? classes.embla__thumbs__slide__selected : '',
+      )}
+    >
+      <Button
+        onClick={onClick}
+        className={classes.embla__thumbs__slide__button}
+        type="button"
+      >
+        <Image src={imgSrc} alt={imgSrc} width={imgWdth} height={imgHgth} color="common.white" />
+        <Typography color="common.white">{index}</Typography>
+      </Button>
+    </div>
+  );
+};

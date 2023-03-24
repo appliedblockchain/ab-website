@@ -1,10 +1,8 @@
 import classes from '@/styles/HomePage/GrowSection.module.css';
 import React from 'react';
 import { Grid, Typography, Button, styled } from '@mui/material';
-import { v4 as uuidv4 } from 'uuid';
-import Image from 'next/image';
 import clsx from 'clsx';
-import { logos } from '@/data/carouselLogos';
+import TrustedCarousel from './TrustedCarousel';
 
 const StyledSection = styled(Grid)(({ theme }) => ({
   padding: '120px 120px 50px 120px',
@@ -72,18 +70,7 @@ function GrowSection() {
         <Typography variant="subtitle1" color="primary.contrastText">
           Trusted by global top companies like:
         </Typography>
-        <div className={clsx('flex-centered')}>
-          {logos.map((logo) => (
-            <Image
-              className={classes.logo}
-              alt={logo.alt}
-              src={logo.src}
-              key={uuidv4()}
-              width={logo.width}
-              height={logo.height}
-            />
-          ))}
-        </div>
+        <TrustedCarousel />
       </Grid>
     </StyledSection>
   );

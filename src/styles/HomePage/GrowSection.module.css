@@ -2,25 +2,53 @@
   margin: 50px 0;
 }
 
-.logo {
-  margin: 24px 70px 0 70px;
-}
-
 .button {
   margin-bottom: 112px;
 }
 
-.carousel {
-  animation: carousel 30s linear infinite;
-  height: 120px;
-  width: 1200px;
+.embla {
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes carousel {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(calc(10 * -120px), 0, 0);
-  }
+.embla__viewport {
+  max-width: 1200px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -10px;
+}
+
+.embla__slide {
+  max-width: 150px;
+  height: 60px;
+  margin: 24px 35px 0 35px;
+  position: relative;
+}
+
+.embla__slide__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  height: 60px;
 }

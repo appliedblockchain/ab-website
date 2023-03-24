@@ -18,6 +18,18 @@ export const logos = [
     height: 47,
   },
   {
+    src: '/carousel-logos/united-nations.svg',
+    alt: 'Logo United Nations',
+    width: 58,
+    height: 47,
+  },
+  {
+    src: '/carousel-logos/united-nations.svg',
+    alt: 'Logo United Nations',
+    width: 58,
+    height: 47,
+  },
+  {
     src: '/carousel-logos/algorand.svg',
     alt: 'Logo Algorand',
     width: 114,

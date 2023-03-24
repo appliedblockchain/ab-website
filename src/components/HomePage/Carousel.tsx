@@ -10,14 +10,13 @@ import ReactPlayer from 'react-player';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 
 function Carousel() {
-  const options = {};
-
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
+  const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ loop: true });
 
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
     containScroll: 'keepSnaps',
     dragFree: true,
+    loop: true,
   });
 
   const onThumbClick = useCallback(
@@ -83,10 +82,19 @@ function Carousel() {
                         <Typography variant="h6" color="primary.contrastText">
                           {slide.author} {index}
                         </Typography>
-                        <Typography variant="subtitle1" color="textSecondary">
+                        <Typography
+                          variant="subtitle1"
+                          color="textSecondary"
+                          display="flex"
+                        >
                           {slide.position} at{' '}
-                          <Link href={slide.linkToCaseStudy}>
-                            {slide.company}
+                          <Link
+                            href={slide.linkToCaseStudy}
+                            className={classes.company}
+                          >
+                            <Typography variant="subtitle1" color="primary">
+                              {slide.company}
+                            </Typography>
                           </Link>
                         </Typography>
                       </Box>

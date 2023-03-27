@@ -1,17 +1,110 @@
-export const projects = [
+import { Project } from '@/utils/types';
+
+export const projects: Project[] = [
   {
     title: 'Current',
     subtitle: 'Mobile banking done better',
     description:
       'Current is the future of banking. You can spend, save, and manage your money better with their mobile banking app and Visa debit card.',
-    actionButtons: [
-      {
-        label: 'View project',
-        link: '/current',
-      },
-    ],
-    logo: '',
+    viewCaseStudyLink: '/current',
+    logo: {
+      src: '',
+      alt: '',
+      width: 50,
+      height: 50,
+    },
     industry: 'Financial Services',
     type: '',
+    important: true,
+  },
+  {
+    title: 'Opuluos',
+    subtitle: 'Copyright backed NFT marketplace for music',
+    description: '',
+    viewCaseStudyLink: '/opuluos',
+    logo: {
+      src: '',
+      alt: '',
+      width: 50,
+      height: 50,
+    },
+    industry: 'Music',
+    type: '',
+    important: true,
+  },
+  {
+    title: 'NAX',
+    subtitle: 'Blockchain-based warranty management platform',
+    description: '',
+    viewCaseStudyLink: '/nax',
+    logo: {
+      src: '',
+      alt: '',
+      width: 50,
+      height: 50,
+    },
+    industry: 'Asset Exchange',
+    type: '',
+    important: true,
+  },
+  {
+    title: 'Icon',
+    subtitle: 'Algorand BTP Bridge',
+    description: '',
+    viewCaseStudyLink: '/icon',
+    logo: {
+      src: '',
+      alt: '',
+      width: 50,
+      height: 50,
+    },
+    industry: 'Blockchain',
+    type: '',
+    important: true,
+  },
+  {
+    title: 'Archax',
+    subtitle: 'Improvements on the Hardhat Starter Kit',
+    description: '',
+    viewCaseStudyLink: '/archax',
+    logo: {
+      src: '',
+      alt: '',
+      width: 50,
+      height: 50,
+    },
+    industry: 'Blockchain',
+    type: '',
+    important: true,
+  },
+  {
+    title: 'Aorist',
+    subtitle: 'NFT marketplace for digital art',
+    description: '',
+    viewCaseStudyLink: '/aorist',
+    logo: {
+      src: '',
+      alt: '',
+      width: 50,
+      height: 50,
+    },
+    industry: 'ART',
+    type: '',
+    important: true,
+  },
+  {
+    title: 'Uppfirst',
+    subtitle: 'The web3 commerce platform defining the future of trade',
+    description: '',
+    viewCaseStudyLink: '/uppfirst',
+    logo: {
+      src: '',
+      alt: '',
+      width: 50,
+      height: 50,
+    },
+    industry: 'Commerce',
+    type: '',
+    important: true,
   },
 ];

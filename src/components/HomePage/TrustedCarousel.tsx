@@ -28,19 +28,13 @@ const TrustedCarousel = () => {
     rafId.current = requestAnimationFrame(animate);
   }, [animate]);
 
-  const stopAutoScroll = useCallback(() => {
-    rafId.current = cancelAnimationFrame(rafId.current) || 0;
-  }, []);
-
   useEffect(() => {
     if (!embla) return;
 
-    embla.on('pointerDown', stopAutoScroll);
     embla.on('settle', startAutoScroll);
 
     startAutoScroll();
-    return () => stopAutoScroll();
-  }, [embla, startAutoScroll, stopAutoScroll]);
+  }, [embla, startAutoScroll]);
 
   return (
     <div className={classes.embla}>
@@ -53,8 +47,8 @@ const TrustedCarousel = () => {
                   alt={logo.alt}
                   src={logo.src}
                   key={uuidv4()}
-                  width={logo.width}
-                  height={logo.height}
+                  width={116}
+                  height={58}
                 />
               </div>
             </div>

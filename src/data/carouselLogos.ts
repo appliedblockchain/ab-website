@@ -2,61 +2,81 @@ export const logos = [
   {
     src: '/carousel-logos/shell.svg',
     alt: 'Logo Shell',
-    width: 49,
-    height: 45,
   },
   {
     src: '/carousel-logos/vodafone.svg',
     alt: 'Logo Vodafone',
-    width: 65,
-    height: 53,
   },
   {
     src: '/carousel-logos/united-nations.svg',
     alt: 'Logo United Nations',
-    width: 58,
-    height: 47,
-  },
-  {
-    src: '/carousel-logos/united-nations.svg',
-    alt: 'Logo United Nations',
-    width: 58,
-    height: 47,
-  },
-  {
-    src: '/carousel-logos/united-nations.svg',
-    alt: 'Logo United Nations',
-    width: 58,
-    height: 47,
   },
   {
     src: '/carousel-logos/algorand.svg',
     alt: 'Logo Algorand',
-    width: 114,
-    height: 31,
   },
   {
     src: '/carousel-logos/uppfirst.svg',
     alt: 'Logo Uppfirst',
-    width: 98,
-    height: 26,
   },
   {
     src: '/carousel-logos/klm.svg',
     alt: 'Logo KLM',
-    width: 65,
-    height: 38,
   },
   {
-    src: '/carousel-logos/aorist.svg',
-    alt: 'Logo Aorist',
-    width: 97,
-    height: 25,
-  },
-  {
-    src: '/carousel-logos/opuluos.svg',
+    src: '/carousel-logos/opulous.svg',
     alt: 'Logo Opuluos',
-    width: 143,
-    height: 39,
+  },
+  {
+    src: '/carousel-logos/appii.svg',
+    alt: 'Logo appii',
+  },
+  {
+    src: '/carousel-logos/chainlink.svg',
+    alt: 'Logo chainlink',
+  },
+  {
+    src: '/carousel-logos/cult.svg',
+    alt: 'Logo Cult-wines',
+  },
+  {
+    src: '/carousel-logos/current.svg',
+    alt: 'Logo current',
+  },
+  {
+    src: '/carousel-logos/cygnetise.svg',
+    alt: 'Logo cygnetise',
+  },
+  {
+    src: '/carousel-logos/icon.svg',
+    alt: 'Logo icon',
+  },
+  {
+    src: '/carousel-logos/ledger.svg',
+    alt: 'Logo ledger',
+  },
+  {
+    src: '/carousel-logos/lloyds-register.svg',
+    alt: 'Logo lloyds-registered',
+  },
+  {
+    src: '/carousel-logos/nax.svg',
+    alt: 'Logo nax',
+  },
+  {
+    src: '/carousel-logos/nuggets.svg',
+    alt: 'Logo nuggets',
+  },
+  {
+    src: '/carousel-logos/sita.svg',
+    alt: 'Logo sita',
+  },
+  {
+    src: '/carousel-logos/toyota.svg',
+    alt: 'Logo toyota',
+  },
+  {
+    src: '/carousel-logos/travel-ledger.svg',
+    alt: 'Logo travel-ledger',
   },
 ];

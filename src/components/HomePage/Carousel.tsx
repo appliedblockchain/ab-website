@@ -8,6 +8,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
+import { v4 as uuidv4 } from 'uuid';
 
 function Carousel() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -52,8 +53,8 @@ function Carousel() {
     <div className={classes.embla}>
       <div className={classes.embla__viewport} ref={emblaMainRef}>
         <div className={classes.embla__container}>
-          {carousel.map((slide, index) => (
-            <div className={classes.embla__slide} key={index}>
+          {carousel.map((slide) => (
+            <div className={classes.embla__slide} key={uuidv4()}>
               <Box
                 display="flex"
                 flexDirection="row"
@@ -80,7 +81,7 @@ function Carousel() {
                         className={classes.author}
                       >
                         <Typography variant="h6" color="primary.contrastText">
-                          {slide.author} {index}
+                          {slide.author}
                         </Typography>
                         <Typography
                           variant="subtitle1"
@@ -135,13 +136,12 @@ function Carousel() {
           <div className={classes.embla__thumbs__container}>
             {carousel.map((slide, index) => (
               <Thumb
-                index={index}
                 onClick={() => onThumbClick(index)}
                 selected={index === selectedIndex}
                 imgSrc={slide.logo.src}
                 imgHgth={slide.logo.height}
                 imgWdth={slide.logo.width}
-                key={index}
+                key={uuidv4()}
               />
             ))}
           </div>

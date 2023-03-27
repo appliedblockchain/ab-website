@@ -88,6 +88,7 @@
   opacity: 0.2;
   transition: opacity 0.2s;
   border-radius: 16px;
+  padding: 20px;
 }
 
 .embla__thumbs__slide__selected .embla__thumbs__slide__button {

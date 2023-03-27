@@ -1,8 +1,7 @@
 import classes from '@/styles/HomePage/WhatClientsSaySection.module.css';
 import { Grid, Typography, styled } from '@mui/material';
 import clsx from 'clsx';
-import React, { useState } from 'react';
-import { carousel } from '@/data/carouselTestimonials';
+import React from 'react';
 import Carousel from './Carousel';
 
 const StyledSection = styled(Grid)(({ theme }) => ({
@@ -10,20 +9,6 @@ const StyledSection = styled(Grid)(({ theme }) => ({
 }));
 
 function WhatClientsSaySection() {
-  const [activeIndex, setActiveIndex] = useState(carousel.length / 2);
-  const updateIndex = (newIndex: number | undefined) => {
-    if (newIndex) {
-      if (newIndex < 0) {
-        newIndex = carousel.length - 1;
-      } else if (newIndex >= carousel.length) {
-        newIndex = 0;
-      }
-      setActiveIndex(newIndex);
-    }
-  };
-
-  console.log(activeIndex);
-
   return (
     <StyledSection item xs={12} className={clsx('flex-centered', 'column')}>
       <Typography variant="h4" color="primary">
@@ -33,7 +18,6 @@ function WhatClientsSaySection() {
         Our testimonials
       </Typography>
       <Carousel />
-
     </StyledSection>
   );
 }

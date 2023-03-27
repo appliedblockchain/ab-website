@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import clsx from 'clsx';
 import { projects } from '@/data/projects';
 import Typewriter from 'typewriter-effect';
+import ProjectCard from '@/components/ProjectCard';
 
 const StyledSection = styled(Grid)(({ theme }) => ({
   padding: '120px',
@@ -60,9 +61,7 @@ function WhatWeHaveBeenDoingSection() {
       </Grid>
       <Grid item xs={7} container>
         {projects.map((project) => (
-          <Grid item xs={6} key={uuidv4()}>
-            {project.title}
-          </Grid>
+          <ProjectCard project={project} key={uuidv4()} />
         ))}
       </Grid>
     </StyledSection>

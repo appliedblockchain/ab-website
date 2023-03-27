@@ -85,62 +85,93 @@ export const theme = createTheme({
       fontSize: '80px',
       lineHeight: '135%',
       fontStyle: 'black',
+      '@media screen and (max-width:900px)': {
+        fontSize: '42px',
+        lineHeight: '125%',
+      },
     },
     h2: {
       fontWeight: '400',
       fontSize: '64px',
       lineHeight: '125%',
       fontStyle: 'bold',
+      '@media screen and (max-width:900px)': {
+        fontSize: '32px',
+      },
     },
     h3: {
       fontWeight: '400',
       fontSize: '48px',
       lineHeight: '125%',
       fontStyle: 'bold',
+      '@media screen and (max-width:900px)': {
+        fontSize: '24px',
+      },
     },
     h4: {
       fontWeight: '400',
       fontSize: '40px',
       lineHeight: '125%',
       fontStyle: 'bold',
+      '@media screen and (max-width:900px)': {
+        fontSize: '22px',
+      },
     },
     h5: {
       fontWeight: '400',
       fontSize: '32px',
       lineHeight: '150%',
       fontStyle: 'bold',
+      '@media screen and (max-width:900px)': {
+        fontSize: '20px',
+      },
     },
     h6: {
       fontWeight: '400',
       fontSize: '20px',
       lineHeight: '120%',
       fontStyle: 'bold',
+      '@media screen and (max-width:900px)': {
+        fontSize: '18px',
+      },
     },
     subtitle1: {
       fontWeight: '400',
       fontSize: '18px',
       lineHeight: '150%',
+      '@media screen and (max-width:900px)': {
+        fontSize: '16px',
+      },
     },
     subtitle2: {
       fontWeight: '400',
       fontSize: '18px',
       lineHeight: '150%',
       fontStyle: 'bold',
+      '@media screen and (max-width:900px)': {
+        fontSize: '16px',
+      },
     },
     body1: {
       fontWeight: '400',
       fontSize: '16px',
       lineHeight: '150%',
+      '@media screen and (max-width:900px)': {
+        fontSize: '14px',
+      },
     },
     body2: {
       fontWeight: '400',
       fontSize: '16px',
       lineHeight: '150%',
       fontStyle: 'bold',
+      '@media screen and (max-width:900px)': {
+        fontSize: '14px',
+      },
     },
     button: {
       fontWeight: '400',
-      fontSize: '12px',
+      fontSize: '14px',
       lineHeight: '100%',
       fontStyle: 'bold',
     },
@@ -149,11 +180,26 @@ export const theme = createTheme({
       fontSize: '12px',
       lineHeight: '100%',
       fontStyle: 'bold',
+      '@media screen and (max-width:900px)': {
+        fontSize: '10px',
+      },
+    },
+    caption2: {
+      fontWeight: '400',
+      fontSize: '13px',
+      lineHeight: '100%',
+      fontStyle: 'bold',
+      // '@media screen and (max-width:900px)': {
+      //   fontSize: '11px',
+      // },
     },
     overline: {
       fontWeight: '400',
       fontSize: '14px',
       lineHeight: '150%',
+      '@media screen and (max-width:900px)': {
+        fontSize: '12px',
+      },
     },
   },
 });

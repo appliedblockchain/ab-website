@@ -79,7 +79,6 @@ export const footerMenu = [
         name: 'News',
         link: '/news',
       },
-
       {
         name: 'Talks',
         link: '/talks',

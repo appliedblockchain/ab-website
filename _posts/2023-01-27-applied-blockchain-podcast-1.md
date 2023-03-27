@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Applied Blockchain Podcast #1 - Adi invites John Woods"
+title: "Applied Blockchain Podcast #01 - Future of Algorand with John Woods from Algorand Foundation"
 image: ab-podcast-EP01
 category: podcasts
 social: podcast

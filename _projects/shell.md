@@ -18,7 +18,7 @@ delivery:
 testimonial:
   - quote: We did the first product derivative trade on blockchain together with our partner Applied Blockchain
     author: Ben van Beurden
-    position: CEO
+    position: Former CEO
     company: Shell
   - quote: Investing in Applied Blockchain is part of our commitment to use digitalisation to create value in our core business and develop new business models.
     author: Johan Krebbers

@@ -1,11 +1,13 @@
-import classes from '@/styles/HomePage/WhatClientsSaySection.module.css';
 import { Grid, Typography, styled } from '@mui/material';
 import clsx from 'clsx';
 import React from 'react';
 import Carousel from './Carousel';
 
-const StyledSection = styled(Grid)(({ theme }) => ({
+const StyledSection = styled(Grid)(() => ({
   padding: '120px',
+  '@media screen and (max-width:900px)': {
+    padding: '60px 16px',
+  },
 }));
 
 function WhatClientsSaySection() {

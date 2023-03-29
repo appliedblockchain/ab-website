@@ -9,9 +9,14 @@ import ProjectCard from '@/components/ProjectCard';
 
 const StyledSection = styled(Grid)(({ theme }) => ({
   padding: '120px',
+
+  '@media screen and (max-width:900px)': {
+    padding: '60px 16px',
+  },
 }));
 
 function WhatWeHaveBeenDoingSection() {
+  const importantProjects = projects.filter((el) => el.important);
   return (
     <StyledSection item container xs={12}>
       <Grid
@@ -61,8 +66,10 @@ function WhatWeHaveBeenDoingSection() {
         </Button>
       </Grid>
       <Grid item xs={12} md={5} container>
-        {projects.map((project) => (
-          <ProjectCard project={project} key={uuidv4()} />
+        {importantProjects.map((project) => (
+          <Grid item xs={12} md={6} key={uuidv4()}>
+            <ProjectCard project={project} />
+          </Grid>
         ))}
       </Grid>
     </StyledSection>

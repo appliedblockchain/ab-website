@@ -9,6 +9,10 @@ import { v4 as uuidv4 } from 'uuid';
 const StyledFooter = styled(Grid)(({ theme }) => ({
   backgroundColor: theme.palette.grey[900],
   padding: '60px 120px',
+
+  '@media screen and (max-width:900px)': {
+    padding: '40px 24px',
+  },
 }));
 
 export default function Footer() {

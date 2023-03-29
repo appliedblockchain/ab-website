@@ -8,6 +8,10 @@ const StyledSection = styled(Grid)(({ theme }) => ({
   backgroundColor: '#1E2126',
   borderTopLeftRadius: '750px 122px',
   borderTopRightRadius: '750px 122px',
+  '@media screen and (max-width:900px)': {
+    padding: '70px 16px 0 16px',
+    textAlign: 'center',
+  },
 }));
 
 function WhatMakesUsDifferentSection() {
@@ -23,11 +27,16 @@ function WhatMakesUsDifferentSection() {
       </Grid>
       <Grid
         item
-        xs={6}
+        xs={12}
+        md={6}
         className={clsx('flex-centered', 'column', classes.texts)}
       >
-        <Typography variant="h5" color="primary.contrastText">
-          Title: tokenization?
+        <Typography
+          variant="h5"
+          color="primary.contrastText"
+          className={classes.title}
+        >
+          Blockchain based solutions
         </Typography>
         <Typography variant="subtitle1" color="grey.500">
           Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph
@@ -39,10 +48,15 @@ function WhatMakesUsDifferentSection() {
       <Grid item xs={6}></Grid>
       <Grid
         item
-        xs={6}
+        xs={12}
+        md={6}
         className={clsx('flex-centered', 'column', classes.texts)}
       >
-        <Typography variant="h5" color="primary.contrastText">
+        <Typography
+          variant="h5"
+          color="primary.contrastText"
+          className={classes.title}
+        >
           Zero-Knowledge Technology
         </Typography>
         <Typography variant="subtitle1" color="grey.500">
@@ -55,10 +69,15 @@ function WhatMakesUsDifferentSection() {
       <Grid item xs={6}></Grid>
       <Grid
         item
-        xs={6}
+        xs={12}
+        md={6}
         className={clsx('flex-centered', 'column', classes.texts)}
       >
-        <Typography variant="h5" color="primary.contrastText">
+        <Typography
+          variant="h5"
+          color="primary.contrastText"
+          className={classes.title}
+        >
           Secure Hardware Enclaves
         </Typography>
         <Typography variant="subtitle1" color="grey.500">

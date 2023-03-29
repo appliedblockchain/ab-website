@@ -15,7 +15,7 @@ function Carousel() {
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ loop: true });
 
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-    containScroll: 'keepSnaps',
+    // containScroll: 'keepSnaps',
     dragFree: true,
     loop: true,
   });
@@ -58,11 +58,12 @@ function Carousel() {
               <Box
                 display="flex"
                 flexDirection="row"
-                justifyContent="center"
+                justifyContent="space-between"
                 alignItems="center"
               >
                 <Box
                   height={400}
+                  width={420}
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-between"
@@ -100,6 +101,13 @@ function Carousel() {
                         </Typography>
                       </Box>
                     </Box>
+                    <Box width="295px" height="180px" className="onlyMobile">
+                      <ReactPlayer
+                        width="295px"
+                        height="180px"
+                        url={slide.linkToVideo}
+                      />
+                    </Box>
                     <Box className={classes.quote}>
                       <Typography
                         variant="subtitle1"
@@ -115,7 +123,7 @@ function Carousel() {
                     </Typography>
                   </Link>
                 </Box>
-                <Box width="485px" height="336px">
+                <Box width="485px" height="336px" className="onlyDesktop">
                   <ReactPlayer
                     width="485px"
                     height="336px"

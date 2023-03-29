@@ -9,6 +9,11 @@ const StyledSection = styled(Grid)(({ theme }) => ({
   backgroundColor: theme.palette.grey[900],
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+
+  '@media screen and (max-width:900px)': {
+    height: '600px',
+  },
 }));
 
 function OurVisionAndValuesSection() {

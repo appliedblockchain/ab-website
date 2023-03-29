@@ -1,3 +1,17 @@
 .texts {
+  max-width: 492px;
+  margin: 250px 0;
   align-items: flex-start;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+  .texts {
+    align-items: center;
+    max-width: 100%;
+    margin: 16px 0 40px 0;
+  }
 }

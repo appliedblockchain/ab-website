@@ -6,6 +6,9 @@ import clsx from 'clsx';
 const StyledSection = styled(Grid)(({ theme }) => ({
   padding: '120px',
   backgroundColor: theme.palette.primary.main,
+  '@media screen and (max-width:900px)': {
+    padding: '40px 24px',
+  },
 }));
 
 function StayInTouchSection() {
@@ -13,7 +16,8 @@ function StayInTouchSection() {
     <StyledSection item container xs={12}>
       <Grid
         item
-        xs={6}
+        xs={12}
+        md={6}
         className={clsx('flex-centered', 'column', classes.texts)}
       >
         <Typography variant="h4" color="primary.contrastText">

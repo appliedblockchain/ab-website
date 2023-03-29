@@ -19,7 +19,7 @@ function ProjectCard({ project }: Props) {
         </Typography>
       </div>
       <Typography variant="subtitle2">{project.subtitle}</Typography>
-      <Link href={project.viewCaseStudyLink} className={classes.link}>
+      <Link href={project.viewCaseStudyLink|| 'test'} className={classes.link}>
         <Typography color="primary">View case study</Typography>
         <ArrowForward color="primary" className={classes.arrow} />
       </Link>

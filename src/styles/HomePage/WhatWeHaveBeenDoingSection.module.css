@@ -2,3 +2,10 @@
   text-align: left;
   align-items: flex-start;
 }
+
+@media (max-width: 900px) {
+  .texts {
+    text-align: center;
+    align-items: center;
+  }
+}

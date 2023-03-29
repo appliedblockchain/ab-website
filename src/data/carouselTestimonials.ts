@@ -11,7 +11,8 @@ export const carousel = [
     logo: {
       src: '/testimonials/logos/shell.svg',
     },
-    linkToVideo: 'https://www.youtube.com/watch?v=mOACvbu51BM',
+    linkToVideo:
+      'https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433/',
   },
   {
     author: 'Victor Baconnet',
@@ -25,7 +26,7 @@ export const carousel = [
     logo: {
       src: '/testimonials/logos/ledger.svg',
     },
-    linkToVideo: 'https://www.youtube.com/watch?v=mOACvbu51BM',
+    linkToVideo: 'https://youtu.be/-IoeyK_oipg',
   },
   {
     author: 'Ori Shem-Tov',
@@ -39,7 +40,7 @@ export const carousel = [
     logo: {
       src: '/testimonials/logos/algorand.svg',
     },
-    linkToVideo: 'https://www.youtube.com/watch?v=mOACvbu51BM',
+    linkToVideo: 'https://youtu.be/nJ5vRI466kU',
   },
   {
     author: 'Stephane Cheikh',
@@ -53,7 +54,7 @@ export const carousel = [
     logo: {
       src: '/testimonials/logos/sita.svg',
     },
-    linkToVideo: 'https://www.youtube.com/watch?v=mOACvbu51BM',
+    linkToVideo: 'https://youtu.be/wUQWMrp-6Ds',
   },
   {
     author: 'Gary Pogson',
@@ -67,7 +68,7 @@ export const carousel = [
     logo: {
       src: '/testimonials/logos/lloyds-register.svg',
     },
-    linkToVideo: 'https://www.youtube.com/watch?v=mOACvbu51BM',
+    linkToVideo: 'https://youtu.be/M_V1MrZv-_Y',
   },
   {
     author: 'Stephen Pomfret',
@@ -81,7 +82,7 @@ export const carousel = [
     logo: {
       src: '/testimonials/logos/cygnetise.svg',
     },
-    linkToVideo: 'https://www.youtube.com/watch?v=mOACvbu51BM',
+    linkToVideo: 'https://youtu.be/EjmRz6l4HzE',
   },
   {
     author: 'Kush Patel',
@@ -95,6 +96,6 @@ export const carousel = [
     logo: {
       src: '/testimonials/logos/tallysticks.svg',
     },
-    linkToVideo: 'https://www.youtube.com/watch?v=mOACvbu51BM',
+    linkToVideo: 'https://youtu.be/-Af8acvXQ5Y',
   },
 ];

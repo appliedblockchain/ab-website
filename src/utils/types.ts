@@ -2,7 +2,7 @@ export type Project = {
   title: string;
   subtitle: string;
   description: string;
-  viewCaseStudyLink: string;
+  viewCaseStudyLink?: string;
   logo: {
     src: string;
     alt: string;
@@ -11,5 +11,6 @@ export type Project = {
   };
   industry: string;
   type: string;
-  important: boolean;
+  important?: boolean;
+  link: string;
 };

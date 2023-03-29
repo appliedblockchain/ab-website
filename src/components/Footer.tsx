@@ -18,7 +18,8 @@ export default function Footer() {
         {footerMenu.map((column) => (
           <Grid
             item
-            xs={2}
+            xs={6}
+            md={2}
             className={clsx('flex-centered', 'column', classes.menu)}
             key={uuidv4()}
           >

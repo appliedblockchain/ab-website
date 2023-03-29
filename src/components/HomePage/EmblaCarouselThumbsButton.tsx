@@ -32,7 +32,7 @@ export const Thumb: React.FC<PropType> = (props) => {
           alt={imgSrc}
           width={imgWdth}
           height={imgHgth}
-          color="common.white"
+          color={selected ? 'common.white' : 'grey.400'}
         />
       </Button>
     </div>

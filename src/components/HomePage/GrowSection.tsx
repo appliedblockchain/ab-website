@@ -10,6 +10,9 @@ const StyledSection = styled(Grid)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
+  '@media screen and (max-width:900px)': {
+    padding: '16px',
+  },
 }));
 
 function GrowSection() {
@@ -26,7 +29,7 @@ function GrowSection() {
         </Typography>
       </Grid>
       <Grid item container xs={12} className={classes.numbers}>
-        <Grid item xs={3} justifyContent="center" display="grid">
+        <Grid item xs={6} md={3} justifyContent="center" display="grid">
           <Typography variant="h3" color="primary.contrastText">
             2015
           </Typography>
@@ -34,7 +37,7 @@ function GrowSection() {
             since
           </Typography>
         </Grid>
-        <Grid item xs={3} justifyContent="center" display="grid">
+        <Grid item xs={6} md={3} justifyContent="center" display="grid">
           <Typography variant="h3" color="primary.contrastText">
             +100
           </Typography>
@@ -42,7 +45,7 @@ function GrowSection() {
             projects delivered
           </Typography>
         </Grid>
-        <Grid item xs={3} justifyContent="center" display="grid">
+        <Grid item xs={6} md={3} justifyContent="center" display="grid">
           <Typography variant="h3" color="primary.contrastText">
             +100
           </Typography>
@@ -50,7 +53,7 @@ function GrowSection() {
             developers
           </Typography>
         </Grid>
-        <Grid item xs={3} justifyContent="center" display="grid">
+        <Grid item xs={6} md={3} justifyContent="center" display="grid">
           <Typography variant="h3" color="primary.contrastText">
             5 star
           </Typography>

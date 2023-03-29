@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 152 152" style="enable-background:new 0 0 152 152;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.1876;fill:#161656;enable-background:new    ;}
+	.st1{fill:#64f0ff;}
+	.st2{fill:none;stroke:#161656;stroke-width:6;}
+	.st3{fill:none;stroke:#161656;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:none;stroke:#161656;stroke-width:5;}
+	.st5{filter:url(#Adobe_OpacityMaskFilter);}
+	.st6{fill:#ffffff;}
+	.st7{mask:url(#mask-2_1_);fill:#161656;}
+	.st8{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st9{mask:url(#mask-2_2_);fill:#161656;}
+</style>
+<title>Binoculars icon</title>
+<g id="Desktop">
+	<g id="_x36_-About" transform="translate(-654.000000, -4139.000000)">
+		<g id="Group-7" transform="translate(654.000000, 4139.000000)">
+			<ellipse id="Oval-2" class="st0" cx="75" cy="115" rx="62.5" ry="12.5"/>
+			<g id="Group-16">
+				<path id="Fill-1" class="st1" d="M113.4,100.8c-10,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S123.3,100.8,113.4,100.8"/>
+				<path id="Stroke-3" class="st2" d="M113.4,100.8c-10,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S123.3,100.8,113.4,100.8z"/>
+				<path id="Stroke-5" class="st3" d="M39.9,28.1c-9.2,3.2-11.9,12.3-11.9,12.3s-2.2,5.8-4.7,12.2 M22.6,54.3
+					C19.8,61.5,17,68.9,17,68.9c-5.9,9-9.2,36.2,19.6,39.2c30.8-0.4,27-29.4,27-29.4L63,41.5C62.2,27.2,45.4,27,45.4,27
+					c-0.7,0-1.5,0.1-2.2,0.2"/>
+				<path id="Fill-7" class="st1" d="M38.1,100.8c-10,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S48.1,100.8,38.1,100.8"/>
+				<path id="Stroke-9" class="st2" d="M38.1,100.8c-10,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S48.1,100.8,38.1,100.8z"/>
+				<path id="Stroke-11" class="st4" d="M135,68.9l-11-28.6c0,0-3.7-12.5-17.4-13.3c0,0-16.8,0.2-17.6,14.5l-0.6,37.2
+					c0,0-3.7,29,27,29.4C144.2,105.1,140.8,77.9,135,68.9z"/>
+				<g id="Clip-14">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="61.2" y="48.2" width="30" height="8.8">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="61.2" y="48.2" width="30" height="8.8" id="mask-2_1_">
+					<g class="st5">
+						<polygon id="path-1_1_" class="st6" points="10.5,110.6 141.4,110.6 141.4,24.5 10.5,24.5 						"/>
+					</g>
+				</mask>
+				<polygon id="Fill-13" class="st7" points="61.2,57 91.2,57 91.2,48.2 61.2,48.2 				"/>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="61.6" y="62.4" width="29.6" height="9.4">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="61.6" y="62.4" width="29.6" height="9.4" id="mask-2_2_">
+					<g class="st8">
+						<polygon id="path-1_2_" class="st6" points="10.5,110.6 141.4,110.6 141.4,24.5 10.5,24.5 						"/>
+					</g>
+				</mask>
+				<polygon id="Fill-15" class="st9" points="61.6,71.8 91.2,71.8 91.2,62.4 61.6,62.4 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

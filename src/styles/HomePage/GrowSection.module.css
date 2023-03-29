@@ -8,13 +8,13 @@
 
 .embla {
   position: relative;
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .embla__viewport {
-  max-width: 1200px;
+  max-width: 100%;
   overflow: hidden;
   width: 100%;
 }
@@ -40,7 +40,7 @@
 .embla__slide {
   max-width: 150px;
   height: 60px;
-  margin: 24px 35px 0 35px;
+  margin: 24px 15px 0 15px;
   position: relative;
 }
 

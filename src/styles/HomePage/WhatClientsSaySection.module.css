@@ -62,16 +62,10 @@
 .embla__thumbs__slide {
   background-color: #242931;
   border-radius: 16px;
-  flex: 0 0 28%;
+  flex: 0 0 18%;
   min-width: 0;
   margin: 0px var(--thumbs-slide-spacing);
   position: relative;
-}
-
-@media (min-width: 576px) {
-  .embla__thumbs__slide {
-    flex: 0 0 18%;
-  }
 }
 
 .embla__thumbs__slide__button {
@@ -94,4 +88,22 @@
 .embla__thumbs__slide__selected .embla__thumbs__slide__button {
   opacity: 1;
   border: 3px solid #017cff;
+}
+
+@media (max-width: 900px) {
+  .embla {
+    --slide-size: 100%;
+  }
+
+  .embla__viewport {
+    width: 100%;
+  }
+
+  .embla__thumbs__slide {
+    flex: 0 0 28%;
+  }
+
+  .embla__thumbs__viewport {
+    width: 90%;
+  }
 }

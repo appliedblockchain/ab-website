@@ -16,7 +16,8 @@ function WhatWeHaveBeenDoingSection() {
     <StyledSection item container xs={12}>
       <Grid
         item
-        xs={5}
+        xs={12}
+        md={5}
         className={clsx('flex-centered', 'column', classes.texts)}
       >
         <Typography variant="h4" color="primary">
@@ -59,7 +60,7 @@ function WhatWeHaveBeenDoingSection() {
           </Typography>
         </Button>
       </Grid>
-      <Grid item xs={7} container>
+      <Grid item xs={12} md={5} container>
         {projects.map((project) => (
           <ProjectCard project={project} key={uuidv4()} />
         ))}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 166 166" style="enable-background:new 0 0 166 166;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#161656;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#64f0ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#ff6f00;stroke-width:4;stroke-linecap:round;}
+	.st4{fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;}
+	.st5{fill:none;stroke:#ffffff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>Keynote icon (primary)</title>
+<g id="Desktop">
+	<g id="_x39_-Join" transform="translate(-760.000000, -593.000000)">
+		<g id="Group-19" transform="translate(763.000000, 596.000000)">
+			<path id="Stroke-1" class="st0" d="M99.5,97.5v35"/>
+			<g id="Group-18">
+				<path id="Stroke-2" class="st1" d="M88,71.6c-5.7,0-10.4-4.7-10.4-10.4v-4.9c0-5.7,4.7-10.4,10.4-10.4s10.4,4.7,10.4,10.4v4.9
+					C98.4,66.9,93.7,71.6,88,71.6z"/>
+				<path id="Stroke-4" class="st1" d="M76.5,97.3v35.4"/>
+				<path id="Stroke-6" class="st2" d="M88.3,118.2v19.3"/>
+				<path id="Stroke-8" class="st1" d="M51.4,96c0,0,14.2,1.2,23.5-11.9"/>
+				<path id="Stroke-10" class="st3" d="M82.8,78.8c0,0,9.4-2.2,16.1,2.8"/>
+				<path id="Stroke-12" class="st4" d="M105.8,115.3c1.1,0,9.4-16.6-0.6-29.3"/>
+				<path id="Stroke-14" class="st5" d="M43.2,100.7h-9.1c-4.7,0-8.6-3.8-8.6-8.3V32.2c0-4.6,3.9-8.3,8.6-8.3h59.4"/>
+				<path id="Stroke-16" class="st5" d="M110,23.9h15.7c4.7,0,8.6,3.8,8.6,8.3v60.1c0,4.6-3.9,8.3-8.6,8.3h-7.2"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

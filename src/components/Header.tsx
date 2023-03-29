@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import Link from 'next/link';
 import Image from 'next/image';
 import clsx from 'clsx';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Header() {
   return (
@@ -17,7 +18,7 @@ export default function Header() {
             src="/white-ab-logo.svg"
           />
         </Link>
-        <div className="flex-centered">
+        <div className={clsx('flex-centered', 'onlyDesktop')}>
           <Link href="/products" className={classes.button}>
             <Typography color="primary.contrastText">Products</Typography>
           </Link>
@@ -39,6 +40,7 @@ export default function Header() {
             </Button>
           </Link>
         </div>
+        <MenuIcon className="onlyMobile" />
       </Toolbar>
     </AppBar>
   );

@@ -8,7 +8,8 @@
   margin-right: 48px;
 }
 
-
 @media screen and (max-width: 900px) {
-
+  .toolbar {
+    padding: 22px;
+  }
 }

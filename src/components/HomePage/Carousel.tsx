@@ -139,8 +139,8 @@ function Carousel() {
                 onClick={() => onThumbClick(index)}
                 selected={index === selectedIndex}
                 imgSrc={slide.logo.src}
-                imgHgth={slide.logo.height}
-                imgWdth={slide.logo.width}
+                imgHgth={60}
+                imgWdth={120}
                 key={uuidv4()}
               />
             ))}

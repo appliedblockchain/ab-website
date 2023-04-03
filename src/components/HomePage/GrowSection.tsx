@@ -10,6 +10,7 @@ const StyledSection = styled(Grid)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
   '@media screen and (max-width:900px)': {
     padding: '16px',
   },

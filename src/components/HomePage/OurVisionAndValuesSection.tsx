@@ -1,7 +1,7 @@
-// import classes from '@/styles/HomePage/OurVisionAndValuesSection.module.css';
 import React from 'react';
-import { Grid, Typography, styled, Button } from '@mui/material';
+import { Grid, Typography, styled, Button, IconButton } from '@mui/material';
 import clsx from 'clsx';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 
 const StyledSection = styled(Grid)(({ theme }) => ({
   height: '1100px',
@@ -10,9 +10,19 @@ const StyledSection = styled(Grid)(({ theme }) => ({
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-
   '@media screen and (max-width:900px)': {
     height: '600px',
+  },
+}));
+
+const StyledPlayCircleIcon = styled(PlayCircleIcon)(({ theme }) => ({
+  color: theme.palette.secondary.main,
+  width: '130px',
+  height: '130px',
+  margin: '60px 0',
+  '@media screen and (max-width:900px)': {
+    width: '80px',
+    height: '80px',
   },
 }));
 
@@ -29,6 +39,11 @@ function OurVisionAndValuesSection() {
         <Typography variant="subtitle1" color="grey.100">
           Founder & CEO at Applied Blockchain
         </Typography>
+        <IconButton
+          onClick={() => window.open('https://www.youtube.com/', '_blank')}
+        >
+          <StyledPlayCircleIcon />
+        </IconButton>
         <Button className="button" variant="contained">
           <Typography
             variant="button"

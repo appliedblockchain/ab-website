@@ -3,15 +3,28 @@ import useEmblaCarousel from 'embla-carousel-react';
 import classes from '@/styles/HomePage/WhatClientsSaySection.module.css';
 import { carousel } from '@/data/carouselTestimonials';
 import { Thumb } from './EmblaCarouselThumbsButton';
-import { Typography, Box, IconButton } from '@mui/material';
+import { Typography, Box, IconButton, styled, Modal } from '@mui/material';
 import Link from 'next/link';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import { v4 as uuidv4 } from 'uuid';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+
+const StyledPlayCircleIcon = styled(PlayCircleIcon)(({ theme }) => ({
+  color: theme.palette.secondary.main,
+  width: '130px',
+  height: '130px',
+  '@media screen and (max-width:900px)': {
+    width: '80px',
+    height: '80px',
+  },
+}));
 
 function Carousel() {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [openModal, setOpenModal] = useState('');
+
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ loop: true });
 
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
@@ -101,12 +114,26 @@ function Carousel() {
                         </Typography>
                       </Box>
                     </Box>
-                    <Box width="295px" height="180px" className="onlyMobile">
-                      <ReactPlayer
-                        width="295px"
-                        height="180px"
-                        url={slide.linkToVideo}
-                      />
+                    <Box
+                      width="295px"
+                      height="180px"
+                      className="onlyMobile"
+                      marginTop="32px"
+                    >
+                      <div
+                        className={classes.image}
+                        style={{ backgroundImage: `url(${slide.videoImage})` }}
+                      >
+                        <IconButton
+                          onClick={() =>
+                            slide.linkToVideo.includes('youtu')
+                              ? setOpenModal(slide.company)
+                              : window.open(slide.linkToVideo, '_blank')
+                          }
+                        >
+                          <StyledPlayCircleIcon />
+                        </IconButton>
+                      </div>
                     </Box>
                     <Box className={classes.quote}>
                       <Typography
@@ -124,13 +151,42 @@ function Carousel() {
                   </Link>
                 </Box>
                 <Box width="485px" height="336px" className="onlyDesktop">
+                  <div
+                    className={classes.image}
+                    style={{ backgroundImage: `url(${slide.videoImage})` }}
+                  >
+                    <IconButton
+                      onClick={() =>
+                        slide.linkToVideo.includes('youtu')
+                          ? setOpenModal(slide.company)
+                          : window.open(slide.linkToVideo, '_blank')
+                      }
+                    >
+                      <StyledPlayCircleIcon />
+                    </IconButton>
+                  </div>
+                </Box>
+              </Box>
+              <Modal
+                className={classes.modal}
+                open={openModal === slide.company}
+                onClose={() => setOpenModal('')}
+              >
+                <div>
                   <ReactPlayer
+                    className="onlyDesktop"
                     width="485px"
                     height="336px"
                     url={slide.linkToVideo}
                   />
-                </Box>
-              </Box>
+                  <ReactPlayer
+                    className="onlyMobile"
+                    width="295px"
+                    height="180px"
+                    url={slide.linkToVideo}
+                  />
+                </div>
+              </Modal>
             </div>
           ))}
         </div>
@@ -146,7 +202,7 @@ function Carousel() {
               <Thumb
                 onClick={() => onThumbClick(index)}
                 selected={index === selectedIndex}
-                imgSrc={slide.logo.src}
+                imgSrc={slide.logo}
                 imgHgth={60}
                 imgWdth={120}
                 key={uuidv4()}

@@ -4,6 +4,7 @@ import { logos } from '@/data/carouselLogos';
 import classes from '@/styles/HomePage/GrowSection.module.css';
 import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
+import Link from 'next/link';
 
 const TrustedCarousel = () => {
   const [viewportRef, embla] = useEmblaCarousel({
@@ -28,20 +29,30 @@ const TrustedCarousel = () => {
     rafId.current = requestAnimationFrame(animate);
   }, [animate]);
 
+  const stopAutoScroll = useCallback(() => {
+    rafId.current = cancelAnimationFrame(rafId.current) as unknown as number;
+  }, []);
+
   useEffect(() => {
     if (!embla) return;
 
+    embla.on('pointerDown', stopAutoScroll);
     embla.on('settle', startAutoScroll);
 
     startAutoScroll();
-  }, [embla, startAutoScroll]);
+    return () => stopAutoScroll();
+  }, [embla, startAutoScroll, stopAutoScroll]);
 
   return (
     <div className={classes.embla}>
       <div className={classes.embla__viewport} ref={viewportRef}>
         <div className={classes.embla__container}>
           {logos.map((logo) => (
-            <div className={classes.embla__slide} key={logo.src}>
+            <Link
+              className={classes.embla__slide}
+              key={logo.src}
+              href={'projects/' + logo.projectName}
+            >
               <div className={classes.embla__slide__inner}>
                 <Image
                   alt={logo.alt}
@@ -51,7 +62,7 @@ const TrustedCarousel = () => {
                   height={58}
                 />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -32,8 +32,7 @@ export const Thumb: React.FC<PropType> = (props) => {
           alt={imgSrc}
           width={imgWdth}
           height={imgHgth}
-          color={selected ? 'common.white' : 'grey.400'}
-          className={classes.logo}
+          className={clsx(selected ? classes.whiteLogo : classes.logo)}
         />
       </Button>
     </div>

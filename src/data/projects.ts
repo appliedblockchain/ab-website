@@ -8,10 +8,8 @@ export const projects: Project[] = [
       'Current is the future of banking. You can spend, save, and manage your money better with their mobile banking app and Visa debit card.',
     viewCaseStudyLink: '/current',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/current.svg',
+      alt: 'Current logo',
     },
     industry: 'Financial Services',
     type: '',
@@ -19,16 +17,14 @@ export const projects: Project[] = [
     link: 'https://current.com/',
   },
   {
-    title: 'Opuluos',
+    title: 'Opulous',
     subtitle: 'Copyright backed NFT marketplace for music',
     description:
       'Opulous is the first music copyright-backed NFTs marketplace, that changes how artists can access the funding they need.',
-    viewCaseStudyLink: '/opuluos',
+    viewCaseStudyLink: '/opulous',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/opulous.svg',
+      alt: 'Opulous logo',
     },
     industry: 'Music',
     type: '',
@@ -42,10 +38,8 @@ export const projects: Project[] = [
       'NAX is a digital asset management platform, which allows the user to submit, edit and remove a claim for a specific product.',
     viewCaseStudyLink: '/nax',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/nax.svg',
+      alt: 'NAX logo',
     },
     industry: 'Asset Exchange',
     type: '',
@@ -59,10 +53,8 @@ export const projects: Project[] = [
       'ICON is a blockchain protocol for decentralized applications.ICON is a blockchain protocol for decentralized applications.',
     viewCaseStudyLink: '/icon',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/icon.svg',
+      alt: 'Icon logo',
     },
     industry: 'Blockchain',
     type: '',
@@ -75,10 +67,8 @@ export const projects: Project[] = [
     description: '',
     viewCaseStudyLink: '/archax',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/archax.svg',
+      alt: 'Archax logo',
     },
     industry: 'Blockchain',
     type: '',
@@ -92,10 +82,8 @@ export const projects: Project[] = [
       'Aorist is a next-generation cultural institution supporting an NFT marketplace for artists creating digital art.',
     viewCaseStudyLink: '/aorist',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/aorist.svg',
+      alt: 'Aorist logo',
     },
     industry: 'ART',
     type: '',
@@ -109,10 +97,8 @@ export const projects: Project[] = [
       'UPPFIRST is a launchpad for creators and merchants, a testbed for brands, and a one-of-a-kind circular community for buyers and traders.',
     viewCaseStudyLink: '/uppfirst',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/uppfirst.svg',
+      alt: 'Uppfirst logo',
     },
     industry: 'Commerce',
     type: '',
@@ -125,10 +111,8 @@ export const projects: Project[] = [
     description:
       'Algorand is a decentralised network built to solve the Blockchain Trilemma of simultaneously achieving speed, security, and decentralisation. Launched in June 2019 by computer scientist and MIT professor Silvio Micali, Algorand is a permissionless, open-source blockchain network upon which anyone can build.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/algorand.svg',
+      alt: 'Algorand logo',
     },
     industry: 'Blockchain',
     type: '',
@@ -141,10 +125,8 @@ export const projects: Project[] = [
     description:
       'APPII is an online verification, career management, and recruitment platform.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/appii.svg',
+      alt: 'APPII logo',
     },
     industry: 'Recruitment',
     type: '',
@@ -155,10 +137,8 @@ export const projects: Project[] = [
     subtitle: 'The payments platform for forward thinkers',
     description: 'Consumer payments solution',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/wyzepay.svg',
+      alt: 'Wyzepay logo',
     },
     industry: 'Financial Technology',
     type: '',
@@ -171,10 +151,8 @@ export const projects: Project[] = [
     description:
       'Advising, developing, and enabling the UN agencies develop solutions to improve efficiency and reduce cost.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/united-nations.svg',
+      alt: 'United Nations logo',
     },
     industry: 'Government',
     type: '',
@@ -186,10 +164,8 @@ export const projects: Project[] = [
     description:
       'Travel Ledger is a billing and settlement platform for the travel industry, that provides a single source of truth for the purchasing process for non-air travel along the entire',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/travel-ledger.svg',
+      alt: 'Travel Ledger logo',
     },
     industry: 'Travel',
     type: '',
@@ -200,10 +176,8 @@ export const projects: Project[] = [
     subtitle: 'A production solution for Toyota Financial Services',
     description: '',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/toyota.svg',
+      alt: 'Toyota logo',
     },
     industry: 'Automobile',
     type: '',
@@ -214,10 +188,8 @@ export const projects: Project[] = [
     subtitle: 'TIM WCAP Innovation Program',
     description: 'Showcasing privacy-preserving technology',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/telecom-italia.svg',
+      alt: 'Telecom Italia logo',
     },
     industry: 'Telecom',
     type: '',
@@ -228,10 +200,8 @@ export const projects: Project[] = [
     subtitle: 'Distributed drone registry',
     description: "Development of the world's first distributed drone registry.",
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/sita.svg',
+      alt: 'SITA logo',
     },
     industry: 'Aviation IT',
     type: '',
@@ -243,10 +213,8 @@ export const projects: Project[] = [
     description:
       'Shell is a Dutch-British global group of energy and petrochemical companies.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/shell.svg',
+      alt: 'Shell logo',
     },
     industry: 'Energy',
     type: '',
@@ -258,10 +226,8 @@ export const projects: Project[] = [
     description:
       'Biometric tool for login, payment and identity verification, without sharing or storing private data.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/nuggets.svg',
+      alt: 'Nuggets logo',
     },
     industry: 'Data privacy & Biometrics',
     type: '',
@@ -273,10 +239,8 @@ export const projects: Project[] = [
     description:
       'The Lymited platform seamlessly connects vendors and their most sought-after pieces with a targeted global audience of discerning buyers.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/lymited.svg',
+      alt: 'Lymited logo',
     },
     industry: 'Luxury goods',
     type: '',
@@ -289,10 +253,8 @@ export const projects: Project[] = [
     description:
       'LR created the first register of ships in 1764, a tool used to provide merchants and underwriters information about the quality and condition of vessels they chartered and insured.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/lloyds-register.svg',
+      alt: "Lloyd's Register logo",
     },
     industry: 'Shipping',
     type: '',
@@ -304,10 +266,8 @@ export const projects: Project[] = [
     description:
       "Ledger has a range of  the most popular hardware wallets in the industry, with  over 2M users in 165 countries. These store a user's private key enabling them to hold cryptocurrency and sign transactions securely. Ledger provides two different models, the Nano S Plus and Nano X, the latter connecting through Bluetooth,  and both of these  support over 5,500 digital assets. The hardware wallets come equipped with the Ledger Live app, that allows users to buy, sell, own, and invest their crypto assets.",
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/ledger.svg',
+      alt: 'Ledger logo',
     },
     industry: 'Hardware Wallet',
     type: '',
@@ -320,10 +280,8 @@ export const projects: Project[] = [
     description:
       'A powerful suite of tools adopts emerging technologies that dramatically improve how LNG is traded.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/emsurge.svg',
+      alt: 'Emsurge logo',
     },
     industry: 'LNG Trading',
     type: '',
@@ -335,10 +293,8 @@ export const projects: Project[] = [
     description:
       'Cygnetise is a decentralised digital platform built on the blockchain that solves the pain of managing your Authorised Signatory Lists, making it secure and efficient.',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/cygnetise.svg',
+      alt: 'Cygnetise logo',
     },
     industry: 'Legal',
     type: '',
@@ -349,10 +305,8 @@ export const projects: Project[] = [
     subtitle: 'NFT-based inventory management system',
     description: 'Cult Wines - investment in fine wine',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/cult.svg',
+      alt: 'Cult Wines logo',
     },
     industry: 'Wine',
     type: '',
@@ -364,10 +318,8 @@ export const projects: Project[] = [
     description:
       "Chainlink provides the largest collection of decentralized services powering the world's hybrid smart contracts.",
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/chainlink.svg',
+      alt: 'Chainlink logo',
     },
     industry: 'Blockchain',
     type: '',
@@ -379,10 +331,8 @@ export const projects: Project[] = [
     description:
       "Chainlink provides the largest collection of decentralized services powering the world's hybrid smart contracts.",
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/chainlink.svg',
+      alt: 'Chainlink logo',
     },
     industry: 'Blockchain',
     type: '',
@@ -394,10 +344,8 @@ export const projects: Project[] = [
     description:
       'Bartr is creating a standardised, decentralised value layer that brings together global telecoms',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/bartr.svg',
+      alt: 'BARTR logo',
     },
     industry: 'Telecom',
     type: '',
@@ -409,10 +357,8 @@ export const projects: Project[] = [
     description:
       'Worked with Tallysticks, Barclays and Techstars teams to deliver blockchain-based invoice financing',
     logo: {
-      src: '',
-      alt: '',
-      width: 50,
-      height: 50,
+      src: '/projects/barclays.svg',
+      alt: 'Barclays logo',
     },
     industry: 'Financial Services',
     type: '',

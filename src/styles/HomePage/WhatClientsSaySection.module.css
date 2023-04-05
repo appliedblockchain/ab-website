@@ -10,30 +10,19 @@
   margin-left: 4px;
 }
 
-.embla {
-  --slide-spacing: 0.7rem;
-  padding: 1.6rem;
+.whiteLogo {
+  opacity: 1;
+  filter: brightness(0) invert(1);
 }
 
-.embla__viewport {
-  overflow: hidden;
-  width: 1000px;
+.arrowBack {
+  margin-right: 40px;
+  padding: 0;
 }
 
-.embla__container {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  margin: 0 10px;
-}
-
-.embla__slide {
-  flex: 0 0 1000px;
-  min-width: 0;
-  position: relative;
-  border-radius: 24px;
-  background-color: #242931;
-  padding: 32px;
+.arrowForward {
+  margin-left: 40px;
+  padding: 0;
 }
 
 .image {
@@ -48,39 +37,76 @@
   background-repeat: no-repeat;
 }
 
+.video iframe {
+  margin-top: 23px;
+  border-radius: 21px;
+}
+
+.closeIcon {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.modalContent {
+  display: flex;
+  align-items: flex-start;
+}
+
 .modal {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.embla {
+  position: relative;
+}
+
+.embla__viewport {
+  width: 1000px;
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  height: auto;
+}
+
+.embla__slide {
+  flex: 0 0 auto;
+  width: 100%;
+  position: relative;
+  border-radius: 24px;
+  background-color: #242931;
+  padding: 32px;
+}
+
 .embla__thumbs {
   display: flex;
+  margin-top: 40px;
   justify-content: center;
   align-items: center;
-  --thumbs-slide-spacing: 13px;
-  --thumbs-slide-height: 9rem;
-  margin-top: var(--thumbs-slide-spacing);
 }
 
 .embla__thumbs__viewport {
-  width: 900px;
+  width: 875px;
   overflow: hidden;
 }
 
 .embla__thumbs__container {
   display: flex;
   flex-direction: row;
-  margin-left: calc(var(--thumbs-slide-spacing) * -1);
+  margin-left: -13px;
 }
 
 .embla__thumbs__slide {
   background-color: #242931;
   border-radius: 16px;
-  flex: 0 0 18%;
+  flex: 0 0 154px;
   min-width: 0;
-  margin: 0px var(--thumbs-slide-spacing);
   position: relative;
+  margin: 0 13px;
 }
 
 .embla__thumbs__slide__button {
@@ -93,14 +119,12 @@
   border: 0;
   margin: 0;
   width: 100%;
-  opacity: 0.2;
-  transition: opacity 0.2s;
+  height: 100%;
   border-radius: 16px;
   padding: 13px 17px;
 }
 
 .embla__thumbs__slide__selected .embla__thumbs__slide__button {
-  opacity: 1;
   border: 3px solid #017cff;
 }
 
@@ -120,9 +144,11 @@
   .embla__thumbs__viewport {
     width: 340px;
   }
+  .embla__thumbs__container {
+    column-gap: 20px;
+  }
   .embla__thumbs__slide {
-    flex: 0 0 28%;
-    margin: 0 5px;
+    flex: 0 0 90px;
     min-width: 0;
     width: 100%;
   }
@@ -132,5 +158,15 @@
   .logo {
     width: 60px;
     height: 40px;
+  }
+  .whiteLogo {
+    width: 60px;
+    height: 40px;
+  }
+  .arrowBack {
+    margin-right: 0;
+  }
+  .arrowForward {
+    margin-left: 0;
   }
 }

@@ -10,6 +10,8 @@ import ReactPlayer from 'react-player';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import { v4 as uuidv4 } from 'uuid';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+import clsx from 'clsx';
+import CloseIcon from '@mui/icons-material/Close';
 
 const StyledPlayCircleIcon = styled(PlayCircleIcon)(({ theme }) => ({
   color: theme.palette.secondary.main,
@@ -25,10 +27,12 @@ function Carousel() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [openModal, setOpenModal] = useState('');
 
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ loop: true });
+  const [emblaMainRef, emblaMainApi] = useEmblaCarousel({
+    loop: true,
+  });
 
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-    // containScroll: 'keepSnaps',
+    containScroll: 'keepSnaps',
     dragFree: true,
     loop: true,
   });
@@ -71,7 +75,7 @@ function Carousel() {
               <Box
                 display="flex"
                 flexDirection="row"
-                justifyContent="space-between"
+                justifyContent="center"
                 alignItems="center"
               >
                 <Box
@@ -172,19 +176,22 @@ function Carousel() {
                 open={openModal === slide.company}
                 onClose={() => setOpenModal('')}
               >
-                <div>
+                <div className={classes.modalContent}>
                   <ReactPlayer
-                    className="onlyDesktop"
-                    width="485px"
-                    height="336px"
+                    className={clsx('onlyDesktop', classes.video)}
+                    width="820px"
+                    height="460px"
                     url={slide.linkToVideo}
                   />
                   <ReactPlayer
-                    className="onlyMobile"
+                    className={clsx('onlyMobile', classes.video)}
                     width="295px"
                     height="180px"
                     url={slide.linkToVideo}
                   />
+                  <IconButton>
+                    <CloseIcon className={classes.closeIcon} />
+                  </IconButton>
                 </div>
               </Modal>
             </div>
@@ -193,7 +200,7 @@ function Carousel() {
       </div>
 
       <div className={classes.embla__thumbs}>
-        <IconButton onClick={scrollPrev}>
+        <IconButton onClick={scrollPrev} className={classes.arrowBack}>
           <ArrowBack />
         </IconButton>
         <div className={classes.embla__thumbs__viewport} ref={emblaThumbsRef}>
@@ -210,8 +217,8 @@ function Carousel() {
             ))}
           </div>
         </div>
-        <IconButton onClick={scrollNext}>
-          <ArrowForward />
+        <IconButton onClick={scrollNext} className={classes.arrowForward}>
+          <ArrowForward className={classes.arrowIcon} />
         </IconButton>
       </div>
     </div>

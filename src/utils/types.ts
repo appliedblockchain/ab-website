@@ -6,8 +6,6 @@ export type Project = {
   logo: {
     src: string;
     alt: string;
-    width: number;
-    height: number;
   };
   industry: string;
   type: string;

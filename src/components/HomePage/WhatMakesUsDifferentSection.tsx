@@ -3,7 +3,7 @@ import React from 'react';
 import { Grid, Typography, styled } from '@mui/material';
 import clsx from 'clsx';
 
-const StyledSection = styled(Grid)(({ theme }) => ({
+const StyledSection = styled(Grid)(() => ({
   padding: '60px 60px 60px 120px',
   backgroundColor: '#1E2126',
   borderTopLeftRadius: '750px 122px',

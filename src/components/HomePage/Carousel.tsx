@@ -8,7 +8,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
-import { v4 as uuidv4 } from 'uuid';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import clsx from 'clsx';
 import CloseIcon from '@mui/icons-material/Close';
@@ -70,8 +69,8 @@ function Carousel() {
     <div className={classes.embla}>
       <div className={classes.embla__viewport} ref={emblaMainRef}>
         <div className={classes.embla__container}>
-          {carousel.map((slide) => (
-            <div className={classes.embla__slide} key={uuidv4()}>
+          {carousel.map((slide, index) => (
+            <div className={classes.embla__slide} key={index}>
               <Box
                 display="flex"
                 flexDirection="row"
@@ -189,7 +188,10 @@ function Carousel() {
                     height="180px"
                     url={slide.linkToVideo}
                   />
-                  <IconButton>
+                  <IconButton
+                    className="onlyDesktop"
+                    onClick={() => setOpenModal('')}
+                  >
                     <CloseIcon className={classes.closeIcon} />
                   </IconButton>
                 </div>
@@ -212,7 +214,7 @@ function Carousel() {
                 imgSrc={slide.logo}
                 imgHgth={60}
                 imgWdth={120}
-                key={uuidv4()}
+                key={index}
               />
             ))}
           </div>

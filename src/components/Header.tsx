@@ -1,13 +1,35 @@
 import classes from '@/styles/components/Header.module.css';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  useScrollTrigger,
+  styled,
+} from '@mui/material';
 import Link from 'next/link';
 import Image from 'next/image';
 import clsx from 'clsx';
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Header() {
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+    target: typeof window !== 'undefined' ? window : undefined,
+  });
+
+  const StyledAppBar = styled(AppBar)(({ theme }) => ({
+    backgroundColor: trigger
+      ? theme.palette.common.white
+      : theme.palette.primary.main,
+    color: trigger ? theme.palette.common.black : theme.palette.common.white,
+    transition: trigger ? '0.3s' : '0.5s',
+    opacity: trigger ? 0.95 : 1,
+    boxShadow: 'none',
+  }));
+
   return (
-    <AppBar position="fixed" color="primary" elevation={0}>
+    <StyledAppBar position="fixed" color="primary" elevation={0}>
       <Toolbar className={classes.toolbar}>
         <Link href="/" className={clsx(classes.logo, 'flex-centered')}>
           <Image
@@ -15,33 +37,31 @@ export default function Header() {
             width="203"
             height="46"
             alt="logo"
-            src="/white-ab-logo.svg"
+            src={trigger ? '/blue-ab-logo.svg' : '/white-ab-logo.svg'}
           />
         </Link>
         <div className={clsx('flex-centered', 'onlyDesktop')}>
           <Link href="/products" className={classes.button}>
-            <Typography color="primary.contrastText">Products</Typography>
+            <Typography>Products</Typography>
           </Link>
           <Link href="/projects" className={classes.button}>
-            <Typography color="primary.contrastText">Projects</Typography>
+            <Typography>Projects</Typography>
           </Link>
           <Link href="/solutions" className={classes.button}>
-            <Typography color="primary.contrastText">Solutions</Typography>
+            <Typography>Solutions</Typography>
           </Link>
           <Link href="/company" className={classes.button}>
-            <Typography color="primary.contrastText">Company</Typography>
+            <Typography>Company</Typography>
           </Link>
           <Link href="/resources" className={classes.button}>
-            <Typography color="primary.contrastText">Resources</Typography>
+            <Typography>Resources</Typography>
           </Link>
           <Link href="/contact-us">
-            <Button className="button">
-              <Typography color="primary.contrastText">Contact us</Typography>
-            </Button>
+            <Typography>Contact us</Typography>
           </Link>
         </div>
         <MenuIcon className="onlyMobile" />
       </Toolbar>
-    </AppBar>
+    </StyledAppBar>
   );
 }

@@ -7,9 +7,8 @@ import { projects } from '@/data/projects';
 import Typewriter from 'typewriter-effect';
 import ProjectCard from '@/components/ProjectCard';
 
-const StyledSection = styled(Grid)(({ theme }) => ({
+const StyledSection = styled(Grid)(() => ({
   padding: '120px',
-
   '@media screen and (max-width:900px)': {
     padding: '60px 16px',
   },

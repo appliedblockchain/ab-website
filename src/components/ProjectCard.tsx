@@ -2,17 +2,27 @@ import classes from '@/styles/components/ProjectCard.module.css';
 import { Project } from '@/utils/types';
 import { ArrowForward } from '@mui/icons-material';
 import { Box, Typography } from '@mui/material';
+import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 type Props = {
   project: Project;
+  index?: number;
+  variant?: string;
 };
 
-function ProjectCard({ project }: Props) {
+function ProjectCard({ project, index, variant = 'default' }: Props) {
   return (
-    <Box display="flex" flexDirection="column" className={classes.card}>
+    <Box
+      display="flex"
+      flexDirection="column"
+      className={clsx(
+        classes.card,
+        index === 4 && variant === 'home-page' ? classes.margined : '',
+      )}
+    >
       <Image
         width={130}
         height={38}

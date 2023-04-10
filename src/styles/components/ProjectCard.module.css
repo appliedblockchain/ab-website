@@ -7,6 +7,10 @@
   background-color: aliceblue;
 }
 
+.margined {
+  margin-top: 163px;
+}
+
 .industry {
   border-radius: 20px;
   padding: 5px 10px;

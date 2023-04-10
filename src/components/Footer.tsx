@@ -1,6 +1,6 @@
 import classes from '@/styles/components/Footer.module.css';
 import { footerMenu } from '@/data/footerMenu';
-import { Grid, Typography, styled } from '@mui/material';
+import { Box, Grid, Typography, styled } from '@mui/material';
 import clsx from 'clsx';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -48,16 +48,23 @@ export default function Footer() {
           </Grid>
         ))}
       </Grid>
-      <Grid item xs={2} className="flex-centered">
-        <Image width="203" height="46" alt="logo" src="/white-ab-logo.svg" />
-        <Link href="/privacy-police" className={classes.privacyPolice}>
-          <Typography variant="body1" color="common.white">
-            Privacy Policy
-          </Typography>
-        </Link>
+      <Grid item xs={12}>
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="felx-start"
+          className={classes.logoBar}
+        >
+          <Image width="203" height="46" alt="logo" src="/white-ab-logo.svg" />
+          <Link href="/privacy-police" className={classes.privacyPolice}>
+            <Typography variant="body1" color="common.white">
+              Privacy Policy
+            </Typography>
+          </Link>
+        </Box>
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="overline" color="grey.400">
+        <Typography variant="overline" color="grey.400" textTransform="none">
           © Copyright 2022 Applied Blockchain Ltd. All rights reserved. Applied
           Blockchain Ltd is a company registered in England and Wales. Company
           No. 09686276

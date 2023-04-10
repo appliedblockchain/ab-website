@@ -17,11 +17,11 @@ export const footerMenu = [
     items: [
       {
         name: 'Case Studies',
-        link: '/projects#case-studies',
+        link: '/projects?type=case-studies',
       },
       {
         name: 'Testimonials',
-        link: '/projects#testimonials',
+        link: '/projects?type=testimonials',
       },
     ],
   },

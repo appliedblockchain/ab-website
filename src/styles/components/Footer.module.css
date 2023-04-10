@@ -12,7 +12,43 @@
   margin-bottom: 12px;
 }
 
+.logoBar {
+  margin-bottom: 43px;
+}
+
 .privacyPolice {
-  width: fit-content;
+  width: 110px;
   margin-left: 50px;
+}
+
+.texts {
+  align-items: flex-start;
+}
+
+.iconButton {
+  padding: 0;
+  margin: 64px 8px 0 8px;
+}
+
+.announceText {
+  margin-top: 17px;
+}
+
+@media screen and (max-width: 900px) {
+  .iconButton {
+    margin: 40px 8px 60px 8px;
+  }
+  .announceText {
+    margin-top: 10px;
+  }
+  .logoBar {
+    flex-direction: column;
+    margin-bottom: 24px;
+    align-items: flex-start;
+  }
+  .privacyPolice {
+    width: 110px;
+    margin-left: 0;
+    margin-top: 33px;
+  }
 }

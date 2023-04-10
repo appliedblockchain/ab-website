@@ -4,7 +4,6 @@ import {
   WhatWeHaveBeenDoingSection,
   WhatMakesUsDifferentSection,
   OurVisionAndValuesSection,
-  StayInTouchSection,
 } from '@/components/HomePage';
 import { IndexLayout } from '@/components/IndexLayout';
 import { Grid } from '@mui/material';
@@ -18,7 +17,6 @@ export default function HomePage() {
         <WhatWeHaveBeenDoingSection />
         <WhatMakesUsDifferentSection />
         <OurVisionAndValuesSection />
-        <StayInTouchSection />
       </Grid>
     </IndexLayout>
   );

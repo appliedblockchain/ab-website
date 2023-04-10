@@ -1,11 +1,12 @@
 import classes from '@/styles/HomePage/WhatWeHaveBeenDoingSection.module.css';
 import React from 'react';
-import { Grid, Typography, styled, Button } from '@mui/material';
+import { Grid, Typography, styled, Button, Box } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 import clsx from 'clsx';
 import { projects } from '@/data/projects';
 import Typewriter from 'typewriter-effect';
 import ProjectCard from '@/components/ProjectCard';
+import Image from 'next/image';
 
 const StyledSection = styled(Grid)(() => ({
   padding: '120px',
@@ -16,6 +17,7 @@ const StyledSection = styled(Grid)(() => ({
 
 function WhatWeHaveBeenDoingSection() {
   const importantProjects = projects.filter((el) => el.important);
+
   return (
     <StyledSection item container xs={12}>
       <Grid
@@ -64,13 +66,22 @@ function WhatWeHaveBeenDoingSection() {
           </Typography>
         </Button>
       </Grid>
-      <Grid item xs={12} md={5} container>
-        {importantProjects.map((project) => (
-          <Grid item xs={12} md={6} key={uuidv4()}>
-            <ProjectCard project={project} />
-          </Grid>
+      <Image
+        src="/mask-group.svg"
+        alt="mask-group"
+        width={815}
+        height={619}
+        className={classes.blueBackground}
+      />
+      <Box
+        display="flex"
+        flexDirection="column"
+        className={clsx('onlyDesktop', classes.projects)}
+      >
+        {importantProjects.map((project, index) => (
+          <ProjectCard project={project} key={uuidv4()} index={index} variant='home-page'/>
         ))}
-      </Grid>
+      </Box>
     </StyledSection>
   );
 }

@@ -12,3 +12,8 @@ export type Project = {
   important?: boolean;
   link: string;
 };
+
+export type Filter = {
+  title: string;
+  value: string;
+};

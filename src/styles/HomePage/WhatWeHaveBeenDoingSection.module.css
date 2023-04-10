@@ -3,6 +3,21 @@
   align-items: flex-start;
 }
 
+.blueBackground {
+  right: 10%;
+  position: absolute;
+  transform: rotate(132.37deg);
+  z-index: -999;
+}
+
+.projects {
+  max-width: 700px;
+  max-height: 1415px;
+  column-gap: 40px;
+  row-gap: 24px;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 900px) {
   .texts {
     text-align: center;

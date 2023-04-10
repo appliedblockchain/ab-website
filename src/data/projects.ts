@@ -360,7 +360,7 @@ export const projects: Project[] = [
       src: '/projects/barclays.svg',
       alt: 'Barclays logo',
     },
-    industry: 'Financial Services',
+    industry: 'Financial services',
     type: '',
     link: 'https://bartr.world/',
   },

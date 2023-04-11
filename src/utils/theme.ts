@@ -186,7 +186,7 @@ export const theme = createTheme({
     },
     caption2: {
       fontWeight: '400',
-      fontSize: '13px',
+      fontSize: '11px',
       lineHeight: '100%',
       fontStyle: 'bold',
       // '@media screen and (max-width:900px)': {

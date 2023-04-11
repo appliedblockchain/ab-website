@@ -79,7 +79,12 @@ function WhatWeHaveBeenDoingSection() {
         className={clsx('onlyDesktop', classes.projects)}
       >
         {importantProjects.map((project, index) => (
-          <ProjectCard project={project} key={uuidv4()} index={index} variant='home-page'/>
+          <ProjectCard
+            project={project}
+            key={uuidv4()}
+            index={index}
+            variant="home-page"
+          />
         ))}
       </Box>
     </StyledSection>

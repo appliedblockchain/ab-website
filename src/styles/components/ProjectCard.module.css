@@ -7,6 +7,10 @@
   background-color: aliceblue;
 }
 
+.wideCard {
+  width: 374px;
+}
+
 .margined {
   margin-top: 163px;
 }
@@ -15,15 +19,19 @@
   border-radius: 20px;
   padding: 5px 10px;
   width: fit-content;
+  height: 21px;
   background-color: rgba(0, 123, 255, 0.08);
   text-transform: uppercase;
-  margin-bottom: 17px;
+  margin: 32px 0 12px 0;
+}
+
+.industryText {
+  display: block;
 }
 
 .link {
   display: flex;
   align-items: center;
-  margin-top: 38px;
 }
 
 .arrow {

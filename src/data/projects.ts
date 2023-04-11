@@ -188,7 +188,7 @@ export const projects: Project[] = [
     subtitle: 'TIM WCAP Innovation Program',
     description: 'Showcasing privacy-preserving technology',
     logo: {
-      src: '/projects/telecom-italia.svg',
+      src: '/projects/tim-italia.svg',
       alt: 'Telecom Italia logo',
     },
     industry: 'Telecom',

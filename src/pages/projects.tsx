@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import ProjectCard from '@/components/ProjectCard';
 import { Grid, Input, styled } from '@mui/material';
 import { useRouter } from 'next/router';
+import PageTitle from '@/components/PageTitle';
 
 const StyledSection = styled(Grid)(() => ({
   padding: '20px 120px',
@@ -30,8 +31,34 @@ function ProjectsPage() {
     // router.replace(tmp, undefined, { shallow: true });
   }, []);
 
+  const filteredProjects = projects.filter((el) => {
+    const reg = /\s/g;
+    const trimedType = el.type.toLowerCase().replace(reg, '-');
+    const trimedIndustry = el.industry.toLowerCase().replace(reg, '-');
+    const allIndustries = industry.includes('all');
+    const allTypes = type.includes('all');
+
+    if (search) {
+      return el.title.toLowerCase().includes(search.toLowerCase());
+    }
+
+    if (allIndustries && allTypes) {
+      return true;
+    } else if (allIndustries) {
+      return trimedType === type;
+    } else if (allTypes) {
+      return trimedIndustry === industry;
+    } else {
+      return trimedIndustry === industry && trimedType === type;
+    }
+  });
+
   return (
     <IndexLayout>
+      <PageTitle
+        title="Projects"
+        subtitle="We develop applications for startups and enterprises using blockchain, advanced cryptography and secure enclaves"
+      />
       <StyledSection item container xs={12}>
         <Grid item container xs={12}>
           <Input
@@ -46,24 +73,15 @@ function ProjectsPage() {
             handleChange={setIndustry}
           />
         </Grid>
-        {projects
-          .filter((el) => {
-            // problem: industries have spaces and uppercased letters
-            if (industry.includes('all') && type.includes('all')) {
-              return true;
-            } else if (industry.includes('all')) {
-              return el.type === type;
-            } else if (type.includes('all')) {
-              return el.industry === industry;
-            } else {
-              return el.industry === industry && el.type === type;
-            }
-          })
-          .map((project) => (
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project) => (
             <Grid item xs={12} md={4} key={uuidv4()}>
               <ProjectCard project={project} />
             </Grid>
-          ))}
+          ))
+        ) : (
+          <div>No project matches parameters of your request</div>
+        )}
       </StyledSection>
     </IndexLayout>
   );

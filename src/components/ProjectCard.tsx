@@ -18,23 +18,31 @@ function ProjectCard({ project, index, variant = 'default' }: Props) {
     <Box
       display="flex"
       flexDirection="column"
+      justifyContent="space-between"
       className={clsx(
         classes.card,
+        variant === 'home-page' ? '' : classes.wideCard,
         index === 4 && variant === 'home-page' ? classes.margined : '',
       )}
     >
-      <Image
-        width={130}
-        height={38}
-        src={project.logo.src}
-        alt={project.logo.alt}
-      />
-      <div className={classes.industry}>
-        <Typography variant="caption2" color="primary">
-          {project.industry}
-        </Typography>
-      </div>
-      <Typography variant="subtitle2">{project.subtitle}</Typography>
+      <Box display="flex" flexDirection="column" justifyContent="flex-start">
+        <Image
+          width={240}
+          height={70}
+          src={project.logo.src}
+          alt={project.logo.alt}
+        />
+        <div className={classes.industry}>
+          <Typography
+            variant="caption2"
+            color="primary"
+            className={classes.industryText}
+          >
+            {project.industry}
+          </Typography>
+        </div>
+        <Typography variant="subtitle2">{project.subtitle}</Typography>
+      </Box>
       <Link
         href={'projects' + project.viewCaseStudyLink || 'test'}
         className={classes.link}

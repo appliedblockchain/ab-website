@@ -1,0 +1,13 @@
+.filters {
+  margin-bottom: 32px;
+}
+
+.input {
+  border-radius: 50px;
+}
+
+@media (max-width: 900px) {
+  .project {
+    margin-top: 24px;
+  }
+}

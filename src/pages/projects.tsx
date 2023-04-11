@@ -1,14 +1,17 @@
+import classes from '@/styles/ProjectsPage.module.css';
 import React, { useEffect, useState } from 'react';
 import { IndexLayout } from '@/components/IndexLayout';
 import { Filter } from '@/components/ProjectsPage';
 import { projects } from '@/data/projects';
 import { v4 as uuidv4 } from 'uuid';
 import ProjectCard from '@/components/ProjectCard';
-import { Grid, Input, styled } from '@mui/material';
+import { Box, TextField, styled, InputAdornment } from '@mui/material';
 import { useRouter } from 'next/router';
 import PageTitle from '@/components/PageTitle';
+import SearchIcon from '@mui/icons-material/Search';
+import clsx from 'clsx';
 
-const StyledSection = styled(Grid)(() => ({
+const StyledSection = styled('div')(() => ({
   padding: '20px 120px',
   '@media screen and (max-width:900px)': {
     padding: '16px',
@@ -59,26 +62,44 @@ function ProjectsPage() {
         title="Projects"
         subtitle="We develop applications for startups and enterprises using blockchain, advanced cryptography and secure enclaves"
       />
-      <StyledSection item container xs={12}>
-        <Grid item container xs={12}>
-          <Input
+      <StyledSection>
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          alignItems="flex-end"
+          className={clsx('onlyDesktop', classes.filters)}
+        >
+          <TextField
+            variant="outlined"
             placeholder="Search for clients"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            InputProps={{
+              className: classes.input,
+              endAdornment: (
+                <InputAdornment position="end">
+                  <SearchIcon />
+                </InputAdornment>
+              ),
+            }}
           />
-          <Filter variant="Type" value={type} handleChange={setType} />
-          <Filter
-            variant="Industry"
-            value={industry}
-            handleChange={setIndustry}
-          />
-        </Grid>
+          <Box display="flex">
+            <Filter variant="Type" value={type} handleChange={setType} />
+            <Filter
+              variant="Industry"
+              value={industry}
+              handleChange={setIndustry}
+            />
+          </Box>
+        </Box>
         {filteredProjects.length > 0 ? (
-          filteredProjects.map((project) => (
-            <Grid item xs={12} md={4} key={uuidv4()}>
-              <ProjectCard project={project} />
-            </Grid>
-          ))
+          <Box display="flex" flexWrap="wrap" columnGap="39px" rowGap="39px">
+            {filteredProjects.map((project) => (
+              <Box key={uuidv4()} className={classes.project}>
+                <ProjectCard project={project} />
+              </Box>
+            ))}
+          </Box>
         ) : (
           <div>No project matches parameters of your request</div>
         )}

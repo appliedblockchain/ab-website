@@ -26,11 +26,20 @@ declare module '@mui/material/styles' {
   interface TypographyVariantsOptions {
     caption2?: React.CSSProperties;
   }
+
+  interface TypographyVariants {
+    body4: React.CSSProperties;
+  }
+
+  interface TypographyVariantsOptions {
+    body4?: React.CSSProperties;
+  }
 }
 
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
     caption2: true;
+    body4: true;
   }
 }
 

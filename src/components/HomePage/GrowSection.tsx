@@ -64,7 +64,11 @@ function GrowSection() {
         </Grid>
       </Grid>
       <Grid item xs={12} className={clsx('flex-centered', classes.button)}>
-        <Button className="button" variant="contained" color="secondary">
+        <Button
+          className="button"
+          variant="contained"
+          style={{ backgroundColor: '#ffff' }}
+        >
           <Typography variant="button" textTransform="none" color="primary">
             Stay informed
           </Typography>

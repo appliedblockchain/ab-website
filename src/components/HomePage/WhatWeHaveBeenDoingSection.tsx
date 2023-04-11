@@ -29,7 +29,11 @@ function WhatWeHaveBeenDoingSection() {
         <Typography variant="h4" color="primary">
           {"What we've been doing?"}
         </Typography>
-        <Typography variant="h2" color="text.secondary">
+        <Typography
+          variant="h2"
+          color="text.secondary"
+          className={classes.writer}
+        >
           <Typewriter
             options={{
               strings: [
@@ -51,12 +55,20 @@ function WhatWeHaveBeenDoingSection() {
             }}
           />
         </Typography>
-        <Typography variant="subtitle1" color="text.disabled">
+        <Typography
+          variant="subtitle1"
+          color="text.disabled"
+          className={classes.subtitle}
+        >
           {
-            'Here`s a collection of our prime projects, challenges faced, and final outcomes.'
+            "Here's a collection of our prime projects, challenges faced, and final outcomes."
           }
         </Typography>
-        <Button className="button" variant="contained" color="primary">
+        <Button
+          className={clsx('button', 'onlyDesktop')}
+          variant="contained"
+          color="primary"
+        >
           <Typography
             variant="button"
             textTransform="none"
@@ -76,7 +88,7 @@ function WhatWeHaveBeenDoingSection() {
       <Box
         display="flex"
         flexDirection="column"
-        className={clsx('onlyDesktop', classes.projects)}
+        className={clsx(classes.projects)}
       >
         {importantProjects.map((project, index) => (
           <ProjectCard
@@ -87,6 +99,19 @@ function WhatWeHaveBeenDoingSection() {
           />
         ))}
       </Box>
+      <Button
+        className={clsx('button', 'onlyMobile', classes.button)}
+        variant="contained"
+        color="primary"
+      >
+        <Typography
+          variant="button"
+          textTransform="none"
+          color="primary.contrastText"
+        >
+          Explore all projects
+        </Typography>
+      </Button>
     </StyledSection>
   );
 }

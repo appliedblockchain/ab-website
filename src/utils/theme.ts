@@ -169,6 +169,12 @@ export const theme = createTheme({
         fontSize: '14px',
       },
     },
+    body4: {
+      fontWeight: '400',
+      fontSize: '14px',
+      lineHeight: '170%',
+      fontStyle: 'bold',
+    },
     button: {
       fontWeight: '400',
       fontSize: '14px',
@@ -189,9 +195,6 @@ export const theme = createTheme({
       fontSize: '11px',
       lineHeight: '100%',
       fontStyle: 'bold',
-      // '@media screen and (max-width:900px)': {
-      //   fontSize: '11px',
-      // },
     },
     overline: {
       fontWeight: '400',

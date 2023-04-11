@@ -3,6 +3,10 @@
   align-items: flex-start;
 }
 
+.subtitle {
+  margin-bottom: 48px;
+}
+
 .blueBackground {
   right: 10%;
   position: absolute;
@@ -18,9 +22,28 @@
   flex-wrap: wrap;
 }
 
+.writer {
+  margin: 16px 0;
+}
+
 @media (max-width: 900px) {
   .texts {
     text-align: center;
     align-items: center;
+  }
+  .subtitle {
+    margin-bottom: 48px;
+  }
+  .projects {
+    max-width: 100%;
+    max-height: none;
+    row-gap: 39px;
+    column-gap: 0px;
+  }
+  .writer {
+    margin: 16px 0;
+  }
+  .button {
+    margin-top: 40px;
   }
 }

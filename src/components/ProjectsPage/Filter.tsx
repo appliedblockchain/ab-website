@@ -1,6 +1,6 @@
 import classes from '@/styles/components/Filter.module.css';
 import React from 'react';
-import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Box, Select, MenuItem, Typography } from '@mui/material';
 import { filters } from '@/data/projectsFilters';
 import { v4 as uuidv4 } from 'uuid';
 import { Filter } from '@/utils/types';
@@ -18,13 +18,11 @@ type Filters = {
 
 function Filter({ variant, value, handleChange }: Props) {
   return (
-    <FormControl>
-      <InputLabel id="select-label">{variant}</InputLabel>
+    <Box display="flex" flexDirection="column">
+      <Typography variant="body4">{variant}</Typography>
       <Select
         className={classes.select}
-        labelId="select-label"
         value={value}
-        label={variant}
         onChange={(e) => handleChange(e.target.value)}
       >
         {filters[variant as keyof Filters].map((el: Filter) => (
@@ -33,7 +31,7 @@ function Filter({ variant, value, handleChange }: Props) {
           </MenuItem>
         ))}
       </Select>
-    </FormControl>
+    </Box>
   );
 }
 

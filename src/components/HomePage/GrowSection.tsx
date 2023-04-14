@@ -11,6 +11,7 @@ const StyledSection = styled(Grid)(({ theme }) => ({
   // backgroundPosition: 'center',
   // backgroundRepeat: 'no-repeat',
   // backgroundSize: 'cover',
+  zIndex: 2,
   marginTop: '-900px',
   '@media screen and (max-width:900px)': {
     padding: '16px',

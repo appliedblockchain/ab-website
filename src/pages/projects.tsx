@@ -1,3 +1,4 @@
+
 import classes from '@/styles/ProjectsPage.module.css';
 import React, { useEffect, useState } from 'react';
 import { IndexLayout } from '@/components/IndexLayout';
@@ -28,19 +29,14 @@ function ProjectsPage() {
     const { type, industry } = router.query;
     setType((type as string) || 'all-projects');
     setIndustry((industry as string) || 'all-industries');
-    // const tmp = window.location.href.substring(
-    //   window.location.href.indexOf('?'),
-    // );
-    // router.replace(tmp, undefined, { shallow: true });
-  }, []);
+  }, [router.query]);
 
   const filteredProjects = projects.filter((el) => {
     const reg = /\s/g;
-    const trimedType = el.type.toLowerCase().replace(reg, '-');
+    const trimedType = el.type.toLowerCase()
     const trimedIndustry = el.industry.toLowerCase().replace(reg, '-');
     const allIndustries = industry.includes('all');
     const allTypes = type.includes('all');
-
     if (search) {
       return el.title.toLowerCase().includes(search.toLowerCase());
     }
@@ -48,11 +44,17 @@ function ProjectsPage() {
     if (allIndustries && allTypes) {
       return true;
     } else if (allIndustries) {
-      return trimedType === type;
+      if(type.includes('case')) {
+        return trimedType.includes('case');
+      }
+      return trimedType.includes('testimonials')
     } else if (allTypes) {
       return trimedIndustry === industry;
     } else {
-      return trimedIndustry === industry && trimedType === type;
+      if(type.includes('case')) {
+        return trimedIndustry === industry && trimedType.includes('case');
+      }
+      return trimedIndustry === industry && trimedType.includes('testimonials')
     }
   });
 
@@ -101,7 +103,7 @@ function ProjectsPage() {
             ))}
           </Box>
         ) : (
-          <div>No project matches parameters of your request</div>
+          <div>No projects matches parameters of your request</div>
         )}
       </StyledSection>
     </IndexLayout>

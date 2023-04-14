@@ -1,5 +1,13 @@
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 32px;
+}
+
 .author {
   margin-left: 24px;
+  width: 100%;
 }
 
 .quote {
@@ -156,6 +164,9 @@
   }
   .embla__thumbs__slide__button {
     padding: 10px;
+  }
+  .texts {
+    margin-right: 0;
   }
   .logo {
     width: 60px;

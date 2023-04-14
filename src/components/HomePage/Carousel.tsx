@@ -77,13 +77,7 @@ function Carousel() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Box
-                  height={400}
-                  width={420}
-                  display="flex"
-                  flexDirection="column"
-                  justifyContent="space-between"
-                >
+                <Box className={classes.texts} height={400} width={420}>
                   <Box display="flex" flexDirection="column">
                     <Box display="flex" alignItems="center">
                       <Image
@@ -100,21 +94,25 @@ function Carousel() {
                         <Typography variant="h6" color="primary.contrastText">
                           {slide.author}
                         </Typography>
-                        <Typography
-                          variant="subtitle1"
-                          color="textSecondary"
-                          display="flex"
-                        >
-                          {slide.position} at{' '}
-                          <Link
-                            href={slide.linkToCaseStudy}
-                            className={classes.company}
+                        <Box>
+                          <Typography
+                            variant="subtitle1"
+                            color="textSecondary"
+                            display="inline"
                           >
-                            <Typography variant="subtitle1" color="primary">
-                              {slide.company}
-                            </Typography>
-                          </Link>
-                        </Typography>
+                            {slide.position} at{' '}
+                          </Typography>
+                          <Typography
+                            display="inline"
+                            variant="subtitle1"
+                            color="primary"
+                            onClick={() => {
+                              window.open(slide.linkToCompany);
+                            }}
+                          >
+                            {slide.company}
+                          </Typography>
+                        </Box>
                       </Box>
                     </Box>
                     <Box

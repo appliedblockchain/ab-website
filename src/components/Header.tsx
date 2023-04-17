@@ -28,6 +28,12 @@ export default function Header() {
     boxShadow: 'none',
   }));
 
+  const StyledoOutlinedButton = styled(Link)(() => ({
+    padding: '12px 16px',
+    borderRadius: '50px',
+    border: '2px solid' + (trigger ? '#000' : '#ffff'),
+  }));
+
   return (
     <StyledAppBar position="fixed" color="primary" elevation={0}>
       <Toolbar className={classes.toolbar}>
@@ -56,9 +62,9 @@ export default function Header() {
           <Link href="/resources" className={classes.button}>
             <Typography>Resources</Typography>
           </Link>
-          <Link href="/contact-us">
+          <StyledoOutlinedButton href="/contact-us">
             <Typography>Contact us</Typography>
-          </Link>
+          </StyledoOutlinedButton>
         </div>
         <MenuIcon className="onlyMobile" />
       </Toolbar>

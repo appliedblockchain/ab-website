@@ -67,7 +67,7 @@ layout: compress
           </div>
           <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
           {% include elements/modals/video-ledger.html %}
-        {% else %}
+        {% elsif page.challenge-video-title == 'randomnessoracle' %}
           <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
               <a href="#modal-video-randomnessoracle" class="js-button-modal">
                   <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
@@ -75,7 +75,6 @@ layout: compress
           </div>
           <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
           {% include elements/modals/video-randomnessoracle.html %}
-        {% endif %}
         {% else %}
           <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
               <a href="#modal-video-watr" class="js-button-modal">

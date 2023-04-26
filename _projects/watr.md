@@ -37,7 +37,7 @@ resources:
         <a target="_blank" class="giveaway--link" href="https://github.com/Watr-Protocol">GitHub: Watr Protocol</a>
       </li>
       <li>
-        <a target="_blank" class="giveaway--link" href="https://polkadot.network/blog/parachain-dispatch-march-2023">Applied Blockchain Podcast #04 - Tokenisation of Commodities with Maryam Ayati
+        <a target="_blank" class="giveaway--link" href="https://youtu.be/Npr0-Gexh8w">Applied Blockchain Podcast #04 - Tokenisation of Commodities with Maryam Ayati
 from Watr Protocol</a>
       </li>
     </ul>'

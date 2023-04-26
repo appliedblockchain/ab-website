@@ -42,4 +42,13 @@ from Watr Protocol</a>
       </li>
     </ul>'
 
+testimonial:
+    - quote: "We asked Applied Blockchain to build our initial marketplace from scratch. We didn’t have anything in place, so they were doing a fresh build that includes everything from building the commodity smart contracts, all the backend services, wallet integration and a full front-end website as well. We asked Applied Blockchain to help with not just the development but also with the user experience, the UI design and the architecture as well as doing some research into kind of what’s possible with the current Web3 tools that are available. And of course as with many projects we also had a very tight deadline and only a few weeks to get it all done. Applied Blockchain provided all the resources for the project including project management, design, development and architecture support as well as providing their extensive knowledge and blockchain expertise. We provided the original feature requirements and gave feedback on our weekly call but Applied Blockchain did the rest. At the beginning Applied Blockchain delivered a project plan with milestones of what would be accomplished each week and a regular demo on the progress of the design and development and throughout the entire project they remained on schedule and delivered a product that met and even exceeded our expectations. The work with Applied Blockchain was a pleasure, they were a pleasure to work with. The project manager was responsive and accommodating to our needs and some of our changing requirements as we went through the project. The design work was excellent; it is now being used throughout our marketing materials. Some of that design work in the original marketplace is making its way through all of our marketing, we liked the design so much. The development implementation of the code was also very well done and the lead developer was great to work with. We’re currently discussing our next project with the Applied Blockchain." 
+      author: Corey Wendling
+      company: NEO Holdings and Watr
+      position: CTO
+    - quote: We’ve had a tremendous run of building world firsts alongside and with one another. This was one of my very favorite recorded conversations because Adi uniquely understands both of the worlds we straddle AND can help me articulate with a technologist’s clarity the what, why and how of Watr Protocol.  
+      author: Maryam Ayati
+      company: NEO Holdings, Co-Founder, Watr Protocol
+      position: CEO
 ---

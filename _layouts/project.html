@@ -186,7 +186,7 @@ layout: compress
 <section class="section section--grey no-padding--left no-padding--right">
     <div class="section__content">
         <div class="card testimonials">
-            <div class="{% if page.title == 'Shell' or page.title == 'Algorand' %} owl-carousel owl-carousel-testimonials{% endif %} carousel--testimonials">
+            <div class="{% if page.title == 'Shell' or page.title == 'Algorand' or page.title == 'Watr' %} owl-carousel owl-carousel-testimonials{% endif %} carousel--testimonials">
                 {% for item in page.testimonial %}
                 <div class="carousel__item">
                     <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">

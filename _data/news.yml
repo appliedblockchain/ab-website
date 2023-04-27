@@ -1,16 +1,16 @@
-- title: 'Applied Blockchain Podcast #3 - SIM Wallets, IoT and Account Abstraction w/ David Palmer from Vodafone'
+- title: 'Applied Blockchain Sessions #1: Five Predictions for Blockchain Technology'
+  button_label: REGISTER HERE
+  link: https://lu.ma/s91ob0zd
+
+- title: 'Applied Blockchain Podcast #4 - Tokenisation of Commodities with Maryam Ayati from Watr Protocol'
   button_label: Watch
   second_button_label: Listen
   second_link: https://tr.ee/QhJttrwzzb
-  link:  https://youtu.be/BtGCQqq9oec
+  link:  https://youtu.be/Npr0-Gexh8w
 
 - title: 'Predictions For 2023: A Technology Perspective'
   button_label: READ FULL REPORT 
   link: https://www.linkedin.com/smart-links/AQFQcgqlWtg2wQ
-
-- title: 'Applied Blockchain built and hosts the first Randomness Oracle on the Algorand blockchain.'
-  button_label: Read Case Study
-  link: https://appliedblockchain.com/projects/algorand
 
 # - title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology
 #   button_label: Read

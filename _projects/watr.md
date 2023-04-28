@@ -41,7 +41,7 @@ resources:
 from Watr Protocol</a>
       </li>
     </ul>
-    <a target="_blank" href="https://youtu.be/Npr0-Gexh8w"><img alt="podcast 4" src="/assets/images/posts/ab-podcast-EP04.jpg"></a>'
+    <a target="_blank" class="watr-image" href="https://youtu.be/Npr0-Gexh8w"><img alt="podcast 4" src="/assets/images/posts/ab-podcast-EP04-preview.jpg"></a>'
 
 testimonial:
     - quote: We’ve had a tremendous run of building world firsts alongside and with one another. This was one of my very favorite recorded conversations because Adi uniquely understands both of the worlds we straddle AND can help me articulate with a technologist’s clarity the what, why and how of Watr Protocol.  

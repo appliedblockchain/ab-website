@@ -3,6 +3,20 @@ import React from 'react';
 import { Grid, Typography, styled } from '@mui/material';
 import clsx from 'clsx';
 
+import { useLottie, useLottieInteractivity } from 'lottie-react';
+import robotAnimation from './test.json';
+
+const style = {
+  height: 300,
+  border: 3,
+  borderStyle: 'solid',
+  borderRadius: 7,
+};
+
+const options = {
+  animationData: robotAnimation,
+};
+
 const StyledSection = styled(Grid)(() => ({
   padding: '60px 60px 60px 120px',
   backgroundColor: '#1E2126',
@@ -15,6 +29,19 @@ const StyledSection = styled(Grid)(() => ({
 }));
 
 function WhatMakesUsDifferentSection() {
+  const lottieObj = useLottie(options, style);
+  const Animation = useLottieInteractivity({
+    lottieObj,
+    mode: 'scroll',
+    actions: [
+      {
+        visibility: [0.4, 0.9],
+        type: 'seek',
+        frames: [0, 38],
+      },
+    ],
+  });
+
   return (
     <StyledSection item container xs={12}>
       <Grid item xs={12} className={clsx('flex-centered', 'column')}>
@@ -45,7 +72,9 @@ function WhatMakesUsDifferentSection() {
           Paragraph Paragraph Paragraph
         </Typography>
       </Grid>
-      <Grid item xs={6}></Grid>
+      <Grid item xs={6}>
+        {Animation}
+      </Grid>
       <Grid
         item
         xs={12}

@@ -4,10 +4,10 @@ import { Grid, Typography, styled } from '@mui/material';
 import clsx from 'clsx';
 
 import { useLottie, useLottieInteractivity } from 'lottie-react';
-import robotAnimation from './test.json';
+import robotAnimation from './lottie.json';
 
 const style = {
-  height: 300,
+  height: 720,
   border: 3,
   borderStyle: 'solid',
   borderRadius: 7,
@@ -35,9 +35,9 @@ function WhatMakesUsDifferentSection() {
     mode: 'scroll',
     actions: [
       {
-        visibility: [0.4, 0.9],
+        visibility: [0, 1],
         type: 'seek',
-        frames: [0, 38],
+        frames: [0, 240],
       },
     ],
   });

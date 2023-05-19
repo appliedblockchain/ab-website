@@ -6,6 +6,11 @@ import clsx from 'clsx';
 import { useLottie, useLottieInteractivity } from 'lottie-react';
 import robotAnimation from './lottie.json';
 
+import worldTechnologies from '../../../public/us-different/world-technologies.svg';
+import zkTechnologies from '../../../public/us-different/zk-technologies.svg';
+import sgxTechnologies from '../../../public/us-different/sgx-technologies.svg';
+import Image from 'next/image';
+
 const style = {
   height: 720,
   border: 3,
@@ -28,6 +33,18 @@ const StyledSection = styled(Grid)(() => ({
   },
 }));
 
+const GridOnlyBigScreen = styled(StyledSection)(() => ({
+  '@media screen and (max-width:900px)': {
+    display: 'none !important',
+  },
+}));
+
+const GridOnlySmallScreen = styled(StyledSection)(() => ({
+  '@media screen and (min-width:900px)': {
+    display: 'none !important',
+  },
+}));
+
 function WhatMakesUsDifferentSection() {
   const lottieObj = useLottie(options, style);
   const Animation = useLottieInteractivity({
@@ -43,15 +60,24 @@ function WhatMakesUsDifferentSection() {
   });
 
   return (
-      <StyledSection item container xs={12}>
-        <Grid item xs={12} className={clsx('flex-centered', 'column')}>
-          <Typography variant="h4" color="secondary">
-            What makes us different?
-          </Typography>
-          <Typography variant="h2" color="primary.contrastText">
-            Our Core technologies
-          </Typography>
-        </Grid>
+    <StyledSection item container xs={12}>
+      <Grid item xs={12} className={clsx('flex-centered', 'column')}>
+        <Typography variant="h4" color="secondary">
+          What makes us different?
+        </Typography>
+        <Typography variant="h2" color="primary.contrastText">
+          Our Core technologies
+        </Typography>
+      </Grid>
+      <Grid item xs={12} md={6} className={clsx('flex-centered', 'column')}>
+        <GridOnlySmallScreen
+          item
+          xs={12}
+          md={6}
+          className={clsx('flex-centered', 'column')}
+        >
+          <Image src={worldTechnologies} alt="wold-tech" />
+        </GridOnlySmallScreen>
         <Grid
           item
           xs={12}
@@ -72,7 +98,14 @@ function WhatMakesUsDifferentSection() {
             Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph
           </Typography>
         </Grid>
-        <Grid item xs={6}>{Animation}</Grid>
+        <GridOnlySmallScreen
+          item
+          xs={12}
+          md={6}
+          className={clsx('flex-centered', 'column')}
+        >
+          <Image src={zkTechnologies} alt="zk-tech" />
+        </GridOnlySmallScreen>
         <Grid
           item
           xs={12}
@@ -93,7 +126,14 @@ function WhatMakesUsDifferentSection() {
             combination for security enabled protocols.
           </Typography>
         </Grid>
-        <Grid item xs={6}></Grid>
+        <GridOnlySmallScreen
+          item
+          xs={12}
+          md={6}
+          className={clsx('flex-centered', 'column')}
+        >
+          <Image src={sgxTechnologies} alt="sgx-tech" />
+        </GridOnlySmallScreen>
         <Grid
           item
           xs={12}
@@ -115,8 +155,16 @@ function WhatMakesUsDifferentSection() {
             running at higher privilege levels.
           </Typography>
         </Grid>
-        <Grid item xs={6}></Grid>
-      </StyledSection>
+      </Grid>
+      <GridOnlyBigScreen
+        item
+        xs={12}
+        md={6}
+        className={clsx('flex-centered', 'column', 'floating')}
+      >
+        {Animation}
+      </GridOnlyBigScreen>
+    </StyledSection>
   );
 }
 

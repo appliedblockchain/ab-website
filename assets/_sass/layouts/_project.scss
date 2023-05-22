@@ -73,5 +73,6 @@
   height: 460px;
   @include responsive-mobile-devices(){
     width: 95%;
+    height: 100%;
   }
 }

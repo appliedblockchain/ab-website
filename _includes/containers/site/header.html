@@ -29,7 +29,7 @@
 
 	<!-- META -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="{% if page.layout =='post' or page.layout =='webinar' %}{{ page.headline }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}">
+	<meta name="description" content="{% if page.layout =='post' or page.layout =='webinar' %}{{ page.headline }}{% else %}{% if page.description %}{{ page.description }}{% else %}{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}{% endif %}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 	<!-- Open graphs protocal tags (creates rich content for social sharing) -->
   <meta property="og:type" content="website"/>

@@ -15,6 +15,20 @@ const StyledSection = styled(Grid)(() => ({
   },
 }));
 
+const ExploreProjectsButton = ({ ...props }) => {
+  return (
+    <Button variant="contained" color="primary" {...props} href="/projects">
+      <Typography
+        variant="button"
+        textTransform="none"
+        color="primary.contrastText"
+      >
+        Explore all projects
+      </Typography>
+    </Button>
+  );
+};
+
 function WhatWeHaveBeenDoingSection() {
   const importantProjects = projects.filter((el) => el.important);
 
@@ -65,19 +79,7 @@ function WhatWeHaveBeenDoingSection() {
               "Here's a collection of our prime projects, challenges faced, and final outcomes."
             }
           </Typography>
-          <Button
-            className={clsx('button', 'onlyDesktop')}
-            variant="contained"
-            color="primary"
-          >
-            <Typography
-              variant="button"
-              textTransform="none"
-              color="primary.contrastText"
-            >
-              Explore all projects
-            </Typography>
-          </Button>
+          <ExploreProjectsButton className={clsx('button', 'onlyDesktop')} />
         </Grid>
         <Image
           src="/mask-group.svg"
@@ -102,19 +104,9 @@ function WhatWeHaveBeenDoingSection() {
         </Box>
       </StyledSection>
       <StyledSection item container xs={12} className={clsx('flex-centered')}>
-        <Button
+        <ExploreProjectsButton
           className={clsx('button', 'onlyMobile', classes.button)}
-          variant="contained"
-          color="primary"
-        >
-          <Typography
-            variant="button"
-            textTransform="none"
-            color="primary.contrastText"
-          >
-            Explore all projects
-          </Typography>
-        </Button>
+        />
       </StyledSection>
     </Grid>
   );

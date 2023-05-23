@@ -19,53 +19,91 @@ function WhatWeHaveBeenDoingSection() {
   const importantProjects = projects.filter((el) => el.important);
 
   return (
-    <StyledSection item container xs={12}>
-      <Grid
-        item
-        xs={12}
-        md={5}
-        className={clsx('flex-centered', 'column', classes.texts)}
-      >
-        <Typography variant="h4" color="primary">
-          {"What we've been doing?"}
-        </Typography>
-        <Typography
-          variant="h2"
-          color="text.secondary"
-          className={classes.writer}
+    <Grid container className={clsx('flex-centered')}>
+      <StyledSection item container xs={12} className={clsx('flex-centered')}>
+        <Grid
+          item
+          xs={12}
+          md={5}
+          className={clsx('flex-centered', 'column', classes.texts)}
         >
-          <Typewriter
-            options={{
-              strings: [
-                'Energy',
-                'Finance',
-                'Commodities',
-                'Transports',
-                'Supply-Chain',
-                'DeFi',
-                'Telecoms',
-                "NFT's",
-                'Web3',
-              ],
-              autoStart: true,
-              loop: true,
-              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-              // @ts-ignore
-              pauseFor: 250,
-            }}
-          />
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          color="text.disabled"
-          className={classes.subtitle}
+          <Typography variant="h4" color="primary">
+            {"What we've been doing?"}
+          </Typography>
+          <Typography
+            variant="h2"
+            color="text.secondary"
+            className={classes.writer}
+          >
+            <Typewriter
+              options={{
+                strings: [
+                  'Energy',
+                  'Finance',
+                  'Commodities',
+                  'Transports',
+                  'Supply-Chain',
+                  'DeFi',
+                  'Telecoms',
+                  "NFT's",
+                  'Web3',
+                ],
+                autoStart: true,
+                loop: true,
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                pauseFor: 250,
+              }}
+            />
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            color="text.disabled"
+            className={classes.subtitle}
+          >
+            {
+              "Here's a collection of our prime projects, challenges faced, and final outcomes."
+            }
+          </Typography>
+          <Button
+            className={clsx('button', 'onlyDesktop')}
+            variant="contained"
+            color="primary"
+          >
+            <Typography
+              variant="button"
+              textTransform="none"
+              color="primary.contrastText"
+            >
+              Explore all projects
+            </Typography>
+          </Button>
+        </Grid>
+        <Image
+          src="/mask-group.svg"
+          alt="mask-group"
+          width={815}
+          height={619}
+          className={classes.blueBackground}
+        />
+        <Box
+          display="flex"
+          flexDirection="column"
+          className={clsx(classes.projects)}
         >
-          {
-            "Here's a collection of our prime projects, challenges faced, and final outcomes."
-          }
-        </Typography>
+          {importantProjects.map((project, index) => (
+            <ProjectCard
+              project={project}
+              key={uuidv4()}
+              index={index}
+              variant="home-page"
+            />
+          ))}
+        </Box>
+      </StyledSection>
+      <StyledSection item container xs={12} className={clsx('flex-centered')}>
         <Button
-          className={clsx('button', 'onlyDesktop')}
+          className={clsx('button', 'onlyMobile', classes.button)}
           variant="contained"
           color="primary"
         >
@@ -77,42 +115,8 @@ function WhatWeHaveBeenDoingSection() {
             Explore all projects
           </Typography>
         </Button>
-      </Grid>
-      <Image
-        src="/mask-group.svg"
-        alt="mask-group"
-        width={815}
-        height={619}
-        className={classes.blueBackground}
-      />
-      <Box
-        display="flex"
-        flexDirection="column"
-        className={clsx(classes.projects)}
-      >
-        {importantProjects.map((project, index) => (
-          <ProjectCard
-            project={project}
-            key={uuidv4()}
-            index={index}
-            variant="home-page"
-          />
-        ))}
-      </Box>
-      <Button
-        className={clsx('button', 'onlyMobile', classes.button)}
-        variant="contained"
-        color="primary"
-      >
-        <Typography
-          variant="button"
-          textTransform="none"
-          color="primary.contrastText"
-        >
-          Explore all projects
-        </Typography>
-      </Button>
-    </StyledSection>
+      </StyledSection>
+    </Grid>
   );
 }
 

@@ -3,7 +3,6 @@ clients:
   - name: Shell
   - name: Aorist
   - name: KLM
-  - name: NAX
   - name: Algorand
   - name: Chainlink
   - name: Ledger
@@ -95,6 +94,7 @@ technologies:
   - name: Solana
   - name: Polygon
   - name: Polkadot
+  - name: Chainlink
   - name: Hedera
   - name: Starkware
   - name: Binance smart chain

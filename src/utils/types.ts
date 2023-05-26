@@ -11,9 +11,12 @@ export type Project = {
   type: string;
   important?: boolean;
   link: string;
+  position: number;
 };
 
 export type Filter = {
   title: string;
   value: string;
 };
+
+export type YamlPaths = 'projects';

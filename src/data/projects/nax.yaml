@@ -1,0 +1,14 @@
+title: NAX
+subtitle: Blockchain-based warranty management platform
+description:
+  NAX is a digital asset management platform, which allows the user to
+  submit, edit and remove a claim for a specific product.
+viewCaseStudyLink: '/nax'
+logo:
+  src: '/projects/nax.svg'
+  alt: NAX logo
+industry: Asset Exchange
+type: case study
+important: true
+link: https://www.naxgrp.com/
+position: 2

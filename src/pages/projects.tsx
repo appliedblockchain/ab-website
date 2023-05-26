@@ -1,16 +1,16 @@
-
-import classes from '@/styles/ProjectsPage.module.css';
-import React, { useEffect, useState } from 'react';
 import { IndexLayout } from '@/components/IndexLayout';
-import { Filter } from '@/components/ProjectsPage';
-import { projects } from '@/data/projects';
-import { v4 as uuidv4 } from 'uuid';
-import ProjectCard from '@/components/ProjectCard';
-import { Box, TextField, styled, InputAdornment } from '@mui/material';
-import { useRouter } from 'next/router';
 import PageTitle from '@/components/PageTitle';
+import ProjectCard from '@/components/ProjectCard';
+import { Filter } from '@/components/ProjectsPage';
+import { getProjects } from '@/data/projects';
+import classes from '@/styles/ProjectsPage.module.css';
+import { Project } from '@/utils/types';
 import SearchIcon from '@mui/icons-material/Search';
+import { Box, InputAdornment, TextField, styled } from '@mui/material';
 import clsx from 'clsx';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 const StyledSection = styled('div')(() => ({
   padding: '20px 120px',
@@ -19,7 +19,20 @@ const StyledSection = styled('div')(() => ({
   },
 }));
 
-function ProjectsPage() {
+interface Props {
+  projects: Project[];
+}
+
+export async function getStaticProps() {
+  const projects = await getProjects();
+  return {
+    props: {
+      projects,
+    },
+  };
+}
+
+function ProjectsPage({ projects }: Props) {
   const router = useRouter();
   const [type, setType] = useState('all-projects');
   const [industry, setIndustry] = useState('all-industries');
@@ -33,7 +46,7 @@ function ProjectsPage() {
 
   const filteredProjects = projects.filter((el) => {
     const reg = /\s/g;
-    const trimedType = el.type.toLowerCase()
+    const trimedType = el.type.toLowerCase();
     const trimedIndustry = el.industry.toLowerCase().replace(reg, '-');
     const allIndustries = industry.includes('all');
     const allTypes = type.includes('all');
@@ -44,17 +57,17 @@ function ProjectsPage() {
     if (allIndustries && allTypes) {
       return true;
     } else if (allIndustries) {
-      if(type.includes('case')) {
+      if (type.includes('case')) {
         return trimedType.includes('case');
       }
-      return trimedType.includes('testimonials')
+      return trimedType.includes('testimonials');
     } else if (allTypes) {
       return trimedIndustry === industry;
     } else {
-      if(type.includes('case')) {
+      if (type.includes('case')) {
         return trimedIndustry === industry && trimedType.includes('case');
       }
-      return trimedIndustry === industry && trimedType.includes('testimonials')
+      return trimedIndustry === industry && trimedType.includes('testimonials');
     }
   });
 

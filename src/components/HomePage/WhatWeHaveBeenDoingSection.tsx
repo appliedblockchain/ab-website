@@ -1,12 +1,11 @@
-import classes from '@/styles/HomePage/WhatWeHaveBeenDoingSection.module.css';
-import React from 'react';
-import { Grid, Typography, styled, Button, Box } from '@mui/material';
-import { v4 as uuidv4 } from 'uuid';
-import clsx from 'clsx';
-import { projects } from '@/data/projects';
-import Typewriter from 'typewriter-effect';
 import ProjectCard from '@/components/ProjectCard';
+import classes from '@/styles/HomePage/WhatWeHaveBeenDoingSection.module.css';
+import { Project } from '@/utils/types';
+import { Box, Button, Grid, Typography, styled } from '@mui/material';
+import clsx from 'clsx';
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
+import { v4 as uuidv4 } from 'uuid';
 
 const StyledSection = styled(Grid)(() => ({
   padding: '120px',
@@ -29,7 +28,11 @@ const ExploreProjectsButton = ({ ...props }) => {
   );
 };
 
-function WhatWeHaveBeenDoingSection() {
+interface Props {
+  projects: Project[];
+}
+
+function WhatWeHaveBeenDoingSection({ projects }: Props) {
   const importantProjects = projects.filter((el) => el.important);
 
   return (

@@ -47,3 +47,7 @@
     margin-top: 40px;
   }
 }
+
+.overrideFloatingTop > div {
+  top: 45% !important;
+}

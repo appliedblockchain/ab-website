@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const StyledSection = styled(Grid)(() => ({
   padding: '120px',
+  placeItems: 'unset !important',
   '@media screen and (max-width:900px)': {
     padding: '60px 16px',
   },
@@ -42,47 +43,55 @@ function WhatWeHaveBeenDoingSection({ projects }: Props) {
           item
           xs={12}
           md={5}
-          className={clsx('flex-centered', 'column', classes.texts)}
+          className={clsx(
+            'flex-centered',
+            'column',
+            classes.texts,
+            'floating',
+            classes.overrideFloatingTop,
+          )}
         >
-          <Typography variant="h4" color="primary">
-            {"What we've been doing?"}
-          </Typography>
-          <Typography
-            variant="h2"
-            color="text.secondary"
-            className={classes.writer}
-          >
-            <Typewriter
-              options={{
-                strings: [
-                  'Energy',
-                  'Finance',
-                  'Commodities',
-                  'Transports',
-                  'Supply-Chain',
-                  'DeFi',
-                  'Telecoms',
-                  "NFT's",
-                  'Web3',
-                ],
-                autoStart: true,
-                loop: true,
-                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                // @ts-ignore
-                pauseFor: 250,
-              }}
-            />
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            color="text.disabled"
-            className={classes.subtitle}
-          >
-            {
-              "Here's a collection of our prime projects, challenges faced, and final outcomes."
-            }
-          </Typography>
-          <ExploreProjectsButton className={clsx('button', 'onlyDesktop')} />
+          <Grid>
+            <Typography variant="h4" color="primary">
+              {"What we've been doing?"}
+            </Typography>
+            <Typography
+              variant="h2"
+              color="text.secondary"
+              className={classes.writer}
+            >
+              <Typewriter
+                options={{
+                  strings: [
+                    'Energy',
+                    'Finance',
+                    'Commodities',
+                    'Transports',
+                    'Supply-Chain',
+                    'DeFi',
+                    'Telecoms',
+                    "NFT's",
+                    'Web3',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                  // @ts-ignore
+                  pauseFor: 250,
+                }}
+              />
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              color="text.disabled"
+              className={classes.subtitle}
+            >
+              {
+                "Here's a collection of our prime projects, challenges faced, and final outcomes."
+              }
+            </Typography>
+            <ExploreProjectsButton className={clsx('button', 'onlyDesktop')} />
+          </Grid>
         </Grid>
         <Image
           src="/mask-group.svg"

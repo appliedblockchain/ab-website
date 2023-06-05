@@ -9,11 +9,11 @@ import React from 'react';
 
 type Props = {
   project: Project;
-  index?: number;
   variant?: string;
+  className?: string;
 };
 
-function ProjectCard({ project, index, variant = 'default' }: Props) {
+function ProjectCard({ project, variant = 'default', className = '' }: Props) {
   return (
     <Box
       display="flex"
@@ -22,7 +22,7 @@ function ProjectCard({ project, index, variant = 'default' }: Props) {
       className={clsx(
         classes.card,
         variant === 'home-page' ? '' : classes.wideCard,
-        index === 4 && variant === 'home-page' ? classes.margined : '',
+        className,
       )}
     >
       <Box display="flex" flexDirection="column" justifyContent="flex-start">

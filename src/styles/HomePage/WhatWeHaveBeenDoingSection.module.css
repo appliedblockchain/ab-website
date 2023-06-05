@@ -7,10 +7,30 @@
   margin-bottom: 48px;
 }
 
-.blueBackground {
+.background {
   right: 10%;
   position: absolute;
+  z-index: -999;
+}
+
+.blueBackground {
   transform: rotate(132.37deg);
+  z-index: -999;
+  position: relative;
+}
+
+.divBackground {
+  background: linear-gradient(
+    184.57deg,
+    #13b6ea 5.71%,
+    rgba(74, 249, 238, 0) 81.42%
+  );
+  opacity: 0.6;
+  filter: blur(117.5px);
+  transform: rotate(132.37deg);
+  position: relative;
+  width: 554px;
+  height: 554px;
   z-index: -999;
 }
 
@@ -24,6 +44,10 @@
 
 .writer {
   margin: 16px 0;
+}
+
+.mainContainer {
+  margin: 100px 0;
 }
 
 @media (max-width: 900px) {
@@ -46,8 +70,20 @@
   .button {
     margin-top: 40px;
   }
+  .detailsContainer {
+    text-align: center;
+    padding: 60px 16px;
+  }
 }
 
-.overrideFloatingTop > div {
-  top: 45% !important;
+/* only big screens */
+@media (min-width: 900px) {
+  .overrideFloatingTop {
+    position: sticky;
+    top: 80px;
+    top: 25% !important;
+  }
+  .detailsContainer {
+    padding: 120px;
+  }
 }

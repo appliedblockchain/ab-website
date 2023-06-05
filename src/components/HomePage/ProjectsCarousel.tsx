@@ -1,7 +1,7 @@
 import { Project } from '@/utils/types';
 import clsx from 'clsx';
 import Autoplay from 'embla-carousel-autoplay';
-import useEmblaCarousel from 'embla-carousel-react';
+import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react';
 import { useCallback, useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import ProjectCard from '../ProjectCard';
@@ -38,26 +38,30 @@ const ProjectsCarousel = ({ projects }: Props) => {
     [emblaApi],
   );
 
+  const onInit = useCallback((emblaApi: EmblaCarouselType) => {
+    const scrollSnaps = emblaApi.scrollSnapList();
+    setScrollSnaps(scrollSnaps);
+    nextItemTimer = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 2500);
+  }, []);
+
+  const onPointerUp = useCallback(() => {
+    clearInterval(nextItemTimer);
+  }, []);
+
+  const onSelected = useCallback((emblaApi: EmblaCarouselType) => {
+    const selected = emblaApi.selectedScrollSnap();
+    setSelectedIndex(selected);
+  }, []);
+
   useEffect(() => {
     if (!emblaApi) return;
-
-    emblaApi.on('init', () => {
-      const scrollSnaps = emblaApi.scrollSnapList();
-      setScrollSnaps(scrollSnaps);
-      nextItemTimer = setInterval(() => {
-        emblaApi.scrollNext();
-      }, 2500);
-    });
-
-    emblaApi.on('pointerUp', () => {
-      clearInterval(nextItemTimer);
-    });
-
-    emblaApi.on('select', () => {
-      const selected = emblaApi.selectedScrollSnap();
-      setSelectedIndex(selected);
-    });
-  }, [emblaApi]);
+    onInit(emblaApi);
+    emblaApi.on('init', () => onInit(emblaApi));
+    emblaApi.on('pointerUp', onPointerUp);
+    emblaApi.on('select', () => onSelected(emblaApi));
+  }, [emblaApi, onInit, onPointerUp, onSelected]);
 
   return (
     <>
@@ -74,7 +78,7 @@ const ProjectsCarousel = ({ projects }: Props) => {
           ))}
         </div>
         <div className={clsx('flex-centered')}>
-          {projects.map((_, index) => (
+          {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               selected={index === selectedIndex}

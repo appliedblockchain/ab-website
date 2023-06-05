@@ -43,7 +43,6 @@ const ProjectsCarousel = ({ projects }: Props) => {
 
     emblaApi.on('init', () => {
       const scrollSnaps = emblaApi.scrollSnapList();
-      const sliceNodes = emblaApi.slideNodes();
       setScrollSnaps(scrollSnaps);
       nextItemTimer = setInterval(() => {
         emblaApi.scrollNext();

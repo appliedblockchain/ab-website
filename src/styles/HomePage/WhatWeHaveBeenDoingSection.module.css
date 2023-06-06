@@ -11,6 +11,9 @@
   right: 10%;
   position: absolute;
   z-index: -999;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .blueBackground {
@@ -48,6 +51,7 @@
 
 .mainContainer {
   margin: 100px 0;
+  align-items: start !important;
 }
 
 @media (max-width: 900px) {
@@ -84,6 +88,6 @@
     top: 25% !important;
   }
   .detailsContainer {
-    padding: 120px;
+    padding: 20px;
   }
 }

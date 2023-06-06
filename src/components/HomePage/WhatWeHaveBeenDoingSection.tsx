@@ -106,6 +106,7 @@ function WhatWeHaveBeenDoingProjects({ projects }: Props) {
       sx={{
         display: 'flex',
         alignItems: 'center',
+        marginTop: '220px',
       }}
       className={clsx('onlyDesktop')}
     >

@@ -66,7 +66,7 @@ const ProjectsCarousel = ({ projects }: Props) => {
   return (
     <>
       <div className={clsx('embla', 'emblaMaxWidth')} ref={emblaRef}>
-        <div className="embla__container">
+        <div className={clsx('embla__container', 'carousel-content')}>
           {projects.map((project, index) => (
             <div key={uuidv4() + index}>
               <ProjectCard

@@ -20,7 +20,7 @@ const StyledSection = styled(Grid)(({ theme }) => ({
 
 const StyledVideo = styled('video')(() => ({
   width: '100vw',
-  height: '100vh',
+  height: 'auto',
   objectFit: 'cover',
   top: 0,
   zIndex: '1',

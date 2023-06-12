@@ -1,7 +1,3 @@
-- title: 'Applied Blockchain Masterclass: Decentralised Finance (DeFi)'
-  button_label: REGISTER HERE
-  link: https://lu.ma/bh498x3q
-
 - title: 'Applied Blockchain Podcast #6 - UK’s First Regulated Token Exchange with Graham Rodford from Archax'
   button_label: Watch
   second_button_label: Listen
@@ -11,6 +7,10 @@
 - title: 'Predictions For 2023: A Technology Perspective'
   button_label: READ FULL REPORT 
   link: https://www.linkedin.com/smart-links/AQFQcgqlWtg2wQ
+
+- title: 'Stay informed about the next events'
+  button_label: SIGN UP
+  link: https://appliedblockchain.com/#mc_embed_signup
 
 # - title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology
 #   button_label: Read

@@ -5,7 +5,6 @@ import {
   WhatMakesUsDifferentSection,
   WhatWeHaveBeenDoingSection,
 } from '@/components/HomePage';
-import { IndexLayout } from '@/components/IndexLayout';
 import { getProjects } from '@/data/projects';
 import { Project } from '@/utils/types';
 import { Grid } from '@mui/material';
@@ -25,7 +24,7 @@ interface Props {
 
 export default function HomePage({ projects }: Props) {
   return (
-    <IndexLayout>
+    <>
       <Grid container>
         <GrowSection />
         <WhatClientsSaySection />
@@ -33,6 +32,6 @@ export default function HomePage({ projects }: Props) {
         <WhatMakesUsDifferentSection />
         <OurVisionAndValuesSection />
       </Grid>
-    </IndexLayout>
+    </>
   );
 }

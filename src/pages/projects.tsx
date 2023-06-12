@@ -1,4 +1,3 @@
-import { IndexLayout } from '@/components/IndexLayout';
 import PageTitle from '@/components/PageTitle';
 import ProjectCard from '@/components/ProjectCard';
 import { Filter } from '@/components/ProjectsPage';
@@ -72,7 +71,7 @@ function ProjectsPage({ projects }: Props) {
   });
 
   return (
-    <IndexLayout>
+    <>
       <PageTitle
         title="Projects"
         subtitle="We develop applications for startups and enterprises using blockchain, advanced cryptography and secure enclaves"
@@ -119,7 +118,7 @@ function ProjectsPage({ projects }: Props) {
           <div>No projects matches parameters of your request</div>
         )}
       </StyledSection>
-    </IndexLayout>
+    </>
   );
 }
 

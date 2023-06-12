@@ -18,7 +18,7 @@ export function IndexLayout({ children }: IndexLayoutProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {children}
+      <main>{children}</main>
       <StayInTouchSection />
       <Footer />
     </>

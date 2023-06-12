@@ -19,7 +19,9 @@ export default function Header() {
   });
 
   const StyledAppBar = styled(AppBar)(({ theme }) => ({
-    backgroundColor: trigger ? theme.palette.common.white : 'transparent',
+    backgroundColor: trigger
+      ? theme.palette.common.white
+      : theme.palette.primary.main,
     color: trigger ? theme.palette.common.black : theme.palette.common.white,
     transition: trigger ? '0.3s' : '0.5s',
     opacity: trigger ? 0.95 : 1,

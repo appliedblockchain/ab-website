@@ -2,8 +2,14 @@
   background-color: #ffffff;
   color: black;
   padding: 160px 120px 80px 120px;
+
   @media screen and (max-width: 900px) {
     padding: 140px 16px 50px 16px;
+  }
+
+  > div {
+    padding-right: 32px;
+    border-right: #000a1e 4px solid;
   }
 }
 

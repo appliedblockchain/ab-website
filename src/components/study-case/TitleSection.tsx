@@ -6,7 +6,7 @@ import Image from 'next/image';
 function TitleSection({ project }: IProjectProps) {
   return (
     <Grid className={clsx('title-section')}>
-      <Grid item xs={12} marginBottom="24px">
+      <Grid item xs={12} paddingBottom="24px">
         <Image
           src={project.logo.src}
           alt={project.logo.alt}

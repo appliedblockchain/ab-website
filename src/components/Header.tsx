@@ -5,13 +5,40 @@ import {
   Typography,
   useScrollTrigger,
   styled,
+  Theme,
 } from '@mui/material';
 import Link from 'next/link';
 import Image from 'next/image';
 import clsx from 'clsx';
 import MenuIcon from '@mui/icons-material/Menu';
+import { useRouter } from 'next/router';
+
+const routesWithWhiteHeader = ['/projects/[slug]'];
+
+function getHeaderColorFalseTrigger(theme: Theme, route: string) {
+  if (routesWithWhiteHeader.includes(route)) {
+    return theme.palette.common.black;
+  }
+  return theme.palette.common.white;
+}
+
+function getLogoNotTrigger(route: string) {
+  if (routesWithWhiteHeader.includes(route)) {
+    return '/blue-ab-logo.svg';
+  }
+  return '/white-ab-logo.svg';
+}
+
+function getBorderColorNotTrigger(route: string) {
+  if (routesWithWhiteHeader.includes(route)) {
+    return '#000';
+  }
+  return '#ffff';
+}
 
 export default function Header() {
+  const { route } = useRouter();
+
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
@@ -20,7 +47,9 @@ export default function Header() {
 
   const StyledAppBar = styled(AppBar)(({ theme }) => ({
     backgroundColor: trigger ? theme.palette.common.white : 'transparent',
-    color: trigger ? theme.palette.common.black : theme.palette.common.white,
+    color: trigger
+      ? theme.palette.common.black
+      : getHeaderColorFalseTrigger(theme, route),
     transition: trigger ? '0.3s' : '0.5s',
     opacity: trigger ? 0.95 : 1,
     boxShadow: 'none',
@@ -29,7 +58,7 @@ export default function Header() {
   const StyledoOutlinedButton = styled(Link)(() => ({
     padding: '12px 16px',
     borderRadius: '50px',
-    border: '2px solid' + (trigger ? '#000' : '#ffff'),
+    border: '2px solid' + (trigger ? '#000' : getBorderColorNotTrigger(route)),
   }));
 
   return (
@@ -41,7 +70,7 @@ export default function Header() {
             width="203"
             height="46"
             alt="logo"
-            src={trigger ? '/blue-ab-logo.svg' : '/white-ab-logo.svg'}
+            src={trigger ? '/blue-ab-logo.svg' : getLogoNotTrigger(route)}
           />
         </Link>
         <div className={clsx('flex-centered', 'onlyDesktop')}>

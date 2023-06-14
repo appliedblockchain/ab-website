@@ -7,7 +7,7 @@ const paths = {
   projects: './src/data/projects',
 } as Record<YamlPaths, string>;
 
-export default async function convertYamlToJson(path: YamlPaths) {
+export async function convertYamlDirToJson(path: YamlPaths) {
   const directory = join(process.cwd(), paths[path]);
   const files = await readdirSync(directory)
     .filter((file) => file.endsWith('.yaml'))
@@ -20,4 +20,13 @@ export default async function convertYamlToJson(path: YamlPaths) {
   });
 
   return parsedFilesToData;
+}
+
+export async function convertYamlToJson(path: YamlPaths, fileName: string) {
+  const file = readFileSync(
+    join(process.cwd(), paths[path], `${fileName}.yaml`),
+    'utf8',
+  );
+  const parsedFileToData = yaml.load(file);
+  return parsedFileToData;
 }

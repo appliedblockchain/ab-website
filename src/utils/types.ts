@@ -1,3 +1,39 @@
+// type DetailsType = 'text' | 'testimonial'
+
+export type TextDetails = {
+  type: 'text';
+  title: string;
+  content: string[];
+};
+
+export type Media = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
+type Testimonial = {
+  subtitle: string;
+  content: string[];
+  media: Media;
+  reviewer: {
+    name: string;
+    position: string;
+    image: {
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+    };
+  };
+};
+
+export type TestimonialDetails = {
+  type: 'testimonial';
+  testimonials: Testimonial[];
+};
+
 export type Project = {
   title: string;
   subtitle: string;
@@ -12,6 +48,8 @@ export type Project = {
   important?: boolean;
   link: string;
   position: number;
+  category: string;
+  details: Array<TextDetails | TestimonialDetails>;
 };
 
 export type Filter = {

@@ -1,0 +1,158 @@
+.title-section {
+  background-color: #ffffff;
+  color: black;
+  padding: 160px 120px 80px 120px;
+  @media screen and (max-width: 900px) {
+    padding: 140px 16px 50px 16px;
+  }
+}
+
+.study-case-title {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  background: linear-gradient(270deg, #017cff 1.67%, #419dff 99.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex: none;
+  flex-grow: 0;
+}
+
+.study-case-subtitle {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  color: #000a1e;
+  flex: none;
+  flex-grow: 0;
+}
+
+.study-case-industry-category {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-align: right;
+  color: #4a4d52;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.study-case-industry-category-details {
+  font-size: 20px;
+  line-height: 120%;
+  background: linear-gradient(270deg, #017cff 1.67%, #419dff 99.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.study-case-details-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.study-case-details-text {
+  margin: 100px 0px;
+  > div {
+    max-width: 720px;
+  }
+}
+
+.study-case-details-text-base {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  color: #000a1e;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.study-case-details-text-content {
+  font-size: 18px;
+  line-height: 170%;
+  color: #4a4d52;
+}
+
+.study-case-details-testimonial-title {
+  text-align: center;
+  color: #ffffff;
+}
+
+.study-case-details-testimonial-subtitle {
+  text-align: center;
+  color: #ffffff;
+  margin: 8px 0px 48px 0px;
+}
+
+.study-case-details-testimonial-reviewer-name {
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.study-case-details-text-base-reviewer-position {
+  font-size: 18px;
+  line-height: 170%;
+  color: #afb8bd;
+  > a {
+    color: #007bff;
+  }
+}
+
+.study-case-details-text-base-reviewer-content {
+  font-size: 18px;
+  line-height: 170%;
+  color: #ffffff;
+}
+
+.study-case-details-content-margin-bottom {
+  margin-bottom: 32px;
+}
+
+.study-case-details-testimonial {
+  justify-content: center;
+  align-items: center;
+  background-color: #242931;
+  color: #fff;
+  > div {
+    padding: 80px 120px;
+    max-width: 1200px;
+  }
+}
+
+.study-case-details-testimonial-reviewer-image {
+  border-radius: 100%;
+  margin-right: 24px;
+}
+
+.study-case-details-testimonial-container {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.study-case-details-testimonial-reviewer {
+  justify-content: start;
+  align-items: center;
+}
+
+.study-case-details-testimonial-reviewer-content {
+  margin-top: 48px;
+}
+
+.study-case-details-youtube-video {
+  > iframe {
+    border-radius: 16px;
+    border: 0px;
+  }
+}

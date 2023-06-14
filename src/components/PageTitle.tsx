@@ -10,7 +10,7 @@ const StyledSection = styled(Grid)(({ theme }) => ({
   padding: '160px 120px 80px 120px',
   backgroundColor: theme.palette.primary.main,
   '@media screen and (max-width:900px)': {
-    padding: '60px 16px 50px 16px',
+    padding: '140px 16px 50px 16px',
   },
 }));
 

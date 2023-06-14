@@ -7,7 +7,6 @@ description: >-
   (digital securities, security tokens, etc.). They are also building a
   regulated, institutional-grade exchange for trading asset-backed tokens
   (digital securities, security tokens, etc.).
-viewCaseStudyLink: /archax2
 logo:
   src: /projects/archax.svg
   alt: Archax logo
@@ -17,6 +16,9 @@ industry: Blockchain
 type: case study
 important: false
 link: https://archax.com/
+
+viewCaseStudyLink: /archax2
+category: Web3
 details:
   - type: text
     title: The Background

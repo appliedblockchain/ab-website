@@ -44,7 +44,7 @@ function StayInTouchSection() {
                 width="32"
                 height="32"
                 alt={el.title}
-                src={'social/' + el.title + '.svg'}
+                src={'/social/' + el.title + '.svg'}
               />
             </IconButton>
           ))}

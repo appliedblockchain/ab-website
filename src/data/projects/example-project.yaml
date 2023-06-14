@@ -17,7 +17,7 @@ industry: Blockchain
 type: case study
 important: false
 link: https://archax.com/
-sections:
+details:
   - type: text
     title: The Background
     text: >-

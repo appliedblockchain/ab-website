@@ -1,5 +1,5 @@
 import { Grid, Typography } from '@mui/material';
-import { IProjectProps } from './[slug]';
+import { IProjectProps } from '../../pages/projects/[slug]';
 import clsx from 'clsx';
 import Image from 'next/image';
 

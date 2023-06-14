@@ -1,7 +1,7 @@
 import { getAllProjectSlugs, getProjectBySlug } from '@/data/projects';
 import { Project } from '@/utils/types';
-import DetailsSection from './DetailsSection';
-import TitleSection from './TitleSection';
+import DetailsSection from '../../components/study-case/DetailsSection';
+import TitleSection from '../../components/study-case/TitleSection';
 
 export interface IProjectProps {
   project: Project;

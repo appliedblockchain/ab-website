@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import TestimonialDetails from './TestimonialDetails';
-import { IProjectProps } from './[slug]';
+import { IProjectProps } from '../../pages/projects/[slug]';
 import TextDetails from './TextDetails';
 
 const parseRederDetails = {

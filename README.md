@@ -1,14 +1,16 @@
 # Applied Blockchain Website
+
 - [Introduction](#introduction)
   - [Getting started](#getting-started)
   - [Dependencies](#dependencies)
 - [Deployment](#deployment)
-<!-- - [Page structure](#page-structure)
-  - [Section system](#section-system)
-  - [Components](#components)
-  - [Column system](#column-system) -->
-<!-- - [Create page](#create-page)   -->
-<!-- - [Create project](#create-project)
+- [Projects Content Management](./src/data/projects/README.md)
+  <!-- - [Page structure](#page-structure)
+    - [Section system](#section-system)
+    - [Components](#components)
+    - [Column system](#column-system) -->
+  <!-- - [Create page](#create-page)   -->
+  <!-- - [Create project](#create-project)
 - [Create job](#create-job)
 - [Create event](#create-event)
 - [Create blog post](#create-blog-post) -->
@@ -36,6 +38,7 @@ yarn dev
 or
 npm run dev
 ```
+
 > Local URL: [localhost:3000](http://localhost:3000)
 
 ### Dependencies
@@ -70,10 +73,10 @@ npm run dev
 
 The deployment process is run throught Netlify.
 
-| Environment | Branch | URL |
-| --- | --- | --- |
-| Staging | staging | [beta.appliedblockchain.com](https://beta.appliedblockchain.com/) |
-| Production | master | [appliedblockchain.com](https://appliedblockchain.com/) |
+| Environment | Branch  | URL                                                               |
+| ----------- | ------- | ----------------------------------------------------------------- |
+| Staging     | staging | [beta.appliedblockchain.com](https://beta.appliedblockchain.com/) |
+| Production  | master  | [appliedblockchain.com](https://appliedblockchain.com/)           |
 
 > Even small text changes can have a graphical impact on the look of the website. Carefully check any changes you make on the content.
 

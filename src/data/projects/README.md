@@ -14,6 +14,8 @@ For example:
 viewCaseStudyLink: '/shell'
 ```
 
+---
+
 `category` this field is used to fill a value on the page.
 
 `aorist.yaml` file
@@ -21,6 +23,8 @@ viewCaseStudyLink: '/shell'
 ```yml
 category: 'NFTs'
 ```
+
+---
 
 `details` this field is a list of the content of the page. Those content can be text or testimonials.
 
@@ -50,6 +54,8 @@ When `type` is testimonial, it will have the title, the content and the testimon
 `reviewer` is an object and _must_ have the fields `name`, `image` and `position`.
 
 `image` is an object and _must_ have the fields `src` and `alt`. `width` and `height` are optional.
+
+---
 
 See example below:
 

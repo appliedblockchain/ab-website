@@ -23,9 +23,11 @@ category: 'NFTs'
 ```
 
 `details` this field is a list of the content of the page. Those content can be text or testimonials.
+
 Each item of this list must have the value `type` each will define how it will be built on screen.
 
 When `type` is text, it will have only the title and the content.
+
 For text type, we _must_ have more 2 fields: `title` and `content`.
 
 See example below:
@@ -40,9 +42,13 @@ details:
 ```
 
 When `type` is testimonial, it will have the title, the content and the testimonials.
+
 `testimonials` is a list of testimonials, each testimonial _must_ have the fields `media`, `reviewer` and `content`. `subtitle` is optional.
+
 `media` is an object and _must_ have the fields `type`, `src` and `alt`. `width` and `height` are optional.
+
 `reviewer` is an object and _must_ have the fields `name`, `image` and `position`.
+
 `image` is an object and _must_ have the fields `src` and `alt`. `width` and `height` are optional.
 
 See example below:

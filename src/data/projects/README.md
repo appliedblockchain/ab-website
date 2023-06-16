@@ -128,3 +128,9 @@ details:
           - "any text value" # each paragraph is a new line
         subtitle: "any text value" # Optional
 ```
+
+`related` this field is a list of the related items of the page. Each item _must_ have the fields `type` and `name`.
+
+`type` is the type of the related item, it can be `project`(only know type at this moment).
+
+`name` is the name of the related item, it can be any text value. _Note: this field is used to get the data from the yaml file so it MUST to be the same as the file name._

@@ -1,5 +1,3 @@
-// type DetailsType = 'text' | 'testimonial'
-
 export type TextDetails = {
   type: 'text';
   title: string;
@@ -34,6 +32,13 @@ export type TestimonialDetails = {
   testimonials: Testimonial[];
 };
 
+type RelatedProject = {
+  type: 'project';
+  name: string;
+};
+
+export type Related = RelatedProject;
+
 export type Project = {
   title: string;
   subtitle: string;
@@ -50,6 +55,7 @@ export type Project = {
   position: number;
   category: string;
   details: Array<TextDetails | TestimonialDetails>;
+  related: Array<Related>;
 };
 
 export type Filter = {

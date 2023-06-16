@@ -22,7 +22,7 @@ const StyledSection = styled(Grid)(() => ({
   },
 }));
 
-const ExploreProjectsButton = ({ ...props }) => {
+export const ExploreProjectsButton = ({ ...props }) => {
   return (
     <Button variant="contained" color="primary" {...props} href="/projects">
       <Typography

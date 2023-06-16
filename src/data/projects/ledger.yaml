@@ -58,3 +58,11 @@ details:
     title: The Outcome
     content:
       - EIP1559 replaces the first-price auction as the main gas fee calculation and embeds an average price for Ethereum transactions. As Ethereum is one of the most popular cryptocurrencies in the Ledger Live app, this feature was highly anticipated by the platform`s users.
+
+related:
+  - type: project
+    name: aorist
+  - type: project
+    name: current
+  - type: project
+    name: archax

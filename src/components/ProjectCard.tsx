@@ -43,13 +43,15 @@ function ProjectCard({ project, variant = 'default', className = '' }: Props) {
         </div>
         <Typography variant="subtitle2">{project.subtitle}</Typography>
       </Box>
-      <Link
-        href={'projects' + project.viewCaseStudyLink || 'test'}
-        className={classes.link}
-      >
-        <Typography color="primary">View case study</Typography>
-        <ArrowForward color="primary" className={classes.arrow} />
-      </Link>
+      {project.viewCaseStudyLink && (
+        <Link
+          href={'/projects' + project.viewCaseStudyLink || 'test'}
+          className={classes.link}
+        >
+          <Typography color="primary">View case study</Typography>
+          <ArrowForward color="primary" className={classes.arrow} />
+        </Link>
+      )}
     </Box>
   );
 }

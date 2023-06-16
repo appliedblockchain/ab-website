@@ -45,6 +45,8 @@ details:
       - any text value # each paragraph is a new line
 ```
 
+---
+
 When `type` is testimonial, it will have the title, the content and the testimonials.
 
 `testimonials` is a list of testimonials, each testimonial _must_ have the fields `media`, `reviewer` and `content`. `subtitle` is optional.
@@ -54,8 +56,6 @@ When `type` is testimonial, it will have the title, the content and the testimon
 `reviewer` is an object and _must_ have the fields `name`, `image` and `position`.
 
 `image` is an object and _must_ have the fields `src` and `alt`. `width` and `height` are optional.
-
----
 
 See example below:
 
@@ -95,6 +95,28 @@ details:
         - any text value
 ```
 
+---
+
+`related` this field is a list of the related items of the page. Each item _must_ have the fields `type` and `name`.
+
+`type` is the type of the related item, it can be `project`(only know type at this moment).
+
+`name` is the name of the related item, it can be any text value. _Note: this field is used to get the data from the yaml file so it MUST to be the same as the file name._
+
+See example below:
+
+```yml
+related:
+  - type: project
+    name: aorist
+  - type: project
+    name: current
+  - type: project
+    name: archax
+```
+
+---
+
 See a complete example below:
 
 ```yml
@@ -127,4 +149,11 @@ details:
           - "any text value" # each paragraph is a new line
           - "any text value" # each paragraph is a new line
         subtitle: "any text value" # Optional
+related:
+  - type: project
+    name: "any text value" # but this field MUST to be the same of the file name, of other projects.
+  - type: project
+    name: "any text value" # but this field MUST to be the same of the file name, of other projects.
+  - type: project
+    name: "any text value" # but this field MUST to be the same of the file name, of other projects.
 ```

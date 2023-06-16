@@ -162,3 +162,31 @@
     border: 0px;
   }
 }
+
+.study-case-related-main-container {
+  padding: 80px 120px;
+}
+
+.study-case-related-base {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.study-case-related-base-title {
+  font-size: 40px;
+  line-height: 125%;
+  color: #000a1e;
+}
+
+.study-case-related-cards-container {
+  margin-top: 48px;
+  gap: 32px;
+}
+
+.study-case-related-auto-grow-cards {
+  flex: 1;
+}

@@ -63,4 +63,19 @@ export type Filter = {
   value: string;
 };
 
-export type YamlPaths = 'projects';
+export type YamlPaths = 'projects' | 'our-story';
+
+export type StoryContent = {
+  title: string;
+  description: string;
+  image?: string;
+  link?: {
+    text?: string;
+    url: string;
+  };
+};
+
+export type TOurStory = {
+  date: number;
+  content: StoryContent[];
+};

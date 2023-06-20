@@ -5,6 +5,7 @@ import yaml from 'js-yaml';
 
 const paths = {
   projects: './src/data/projects',
+  'our-story': './src/data/our-story',
 } as Record<YamlPaths, string>;
 
 export async function convertYamlDirToJson(path: YamlPaths) {

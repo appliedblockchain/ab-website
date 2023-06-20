@@ -1,0 +1,70 @@
+- date: 2015
+  content:
+    - title: Start
+      description: Adi started the company in 2015, and was soon joined by Francesco, with the vision of helping companies solve real-world problems by developing distributed applications and contributing towards creating a trustless ecosystem.
+      image: /our-story/start.svg
+- date: 2016
+  content:
+    - title: First grant
+      description: We received an Innovate UK grant to develop identity and privacy toolkit.
+      image: /our-story/first-grant.svg
+    - title: Growing
+      description: Applied Blockchain was bootstrapped, growing from 2 people to 18 using revenue from client projects before receiving venture funding.
+      image: /our-story/growing.svg
+- date: 2017
+  content:
+    - title: Investments
+      description: We received investment from Shell, after winning their Blockchain Competition and designing a proof of concept for Shell Trading. The application was productionized and is used on a daily basis by their trading team.
+      image: /our-story/shell.svg
+      link:
+        url: /projects/shell
+        text: Read more
+- date: 2018
+  content:
+    - title: New office
+      description: We opened an office in Porto! We have chosen Porto as our first non-UK office and as our development centre for European expansion.
+      image: /our-story/new-office.svg
+- date: 2020
+  content:
+    - title: Extending our reach
+      description: We completed a funding round led by Hong Kong based venture capital firm QBN Capital to further develop our privacy preserving technology and work with them to extend our reach into the Asian markets.
+      image: /our-story/extending-our-reach.svg
+      link:
+        url: https://www.qnb.com/sites/qnb/qnbcapital/page/en/en-home.html
+- date: 2021
+  content:
+    - title: Developing
+      description: We joined the Confidential Computing Consortium alongside Intel, Microsoft and Google, to develop confidential computing applications in energy and banking.
+      image: /our-story/developing.svg
+      link:
+        url: https://www.intel.co.uk/content/www/uk/en/architecture-and-technology/software-guard-extensions/applied-blockchain-sgx-story.html
+    - title: Launching SilentData
+      description: We launched SilentData, a privacy-preserving oracle for real world data that enables web3 applications to utilise web2 data, without revealing the data to anyone.
+      image: /products/silent-data.svg
+      link:
+        url: https://silentdata.com/
+    - title: Another grant
+      description: We received a grant from Algorand, to integrate the SilentData platform with the Algorand blockchain.
+      image: /projects/algorand.svg
+      link:
+        url: /projects/algorand
+- date: 2022
+  content:
+    - title: Developing London Bridge
+      description: We received a grant from the Algorand Foundation to build the London Bridge, a trustless bridge between Algorand and Ethereum.
+      image: /products/london-bridge.svg
+      link:
+        url: https://londonbridge.io/
+    - title: White Paper
+      description: Intel releases a White Paper, co-written with Applied Blockchain, about how SilentData uses confidential computing technology inside Intel SGX to help banking data stay private during computation
+      image: /products/silent-data.svg
+      link:
+        url: https://www.linkedin.com/smart-links/AQEE0cyaT_nw0g
+# - date:
+#     content:
+#       - title:
+#         description:
+#         image:
+#         link:
+#           url:
+#           text:

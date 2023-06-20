@@ -5,12 +5,14 @@
   - [Dependencies](#dependencies)
 - [Deployment](#deployment)
 - [Projects Content Management](./src/data/projects/README.md)
+- [Company Content Management]
+  - [Our Story](./src/data/our-story/README.md)
   <!-- - [Page structure](#page-structure)
-    - [Section system](#section-system)
-    - [Components](#components)
-    - [Column system](#column-system) -->
-  <!-- - [Create page](#create-page)   -->
-  <!-- - [Create project](#create-project)
+  - [Section system](#section-system)
+  - [Components](#components)
+  - [Column system](#column-system) -->
+    <!-- - [Create page](#create-page)   -->
+    <!-- - [Create project](#create-project)
 - [Create job](#create-job)
 - [Create event](#create-event)
 - [Create blog post](#create-blog-post) -->

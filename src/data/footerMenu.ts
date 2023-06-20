@@ -52,7 +52,7 @@ export const footerMenu = [
       },
       {
         name: 'Our Story',
-        link: '',
+        link: '/company/our-story',
       },
       {
         name: 'Careers',

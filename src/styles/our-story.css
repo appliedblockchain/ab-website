@@ -1,0 +1,114 @@
+.our-story-timeline-separator {
+  background: linear-gradient(270deg, #017cff 1.67%, #419dff 99.06%);
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  margin: 0;
+}
+
+.our-story-timeline-separator-content {
+  height: 8px;
+  width: 8px;
+  border: 5px solid #ffffff;
+  background: linear-gradient(270deg, #017cff 1.67%, #419dff 99.06%);
+  border-radius: 100%;
+  margin: 0;
+}
+
+.our-story-timeline-text-container {
+  margin-bottom: 40px;
+}
+.our-story-timeline-text-container-opposite {
+  > div,
+  > div > div {
+    justify-content: end;
+  }
+}
+
+.our-story-timeline-main-container {
+  padding: 80px 220px;
+  > div:first-child {
+    > li:first-child {
+      margin-bottom: -5px;
+    }
+  }
+}
+
+.our-story-timeline-connector {
+  background: #007bff;
+}
+
+.our-story-timeline-image {
+  margin-top: -40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 116px;
+  max-width: 282px;
+  > img {
+    max-width: 282px;
+    object-fit: scale-down;
+    position: relative !important;
+    max-width: 282px;
+    width: fit-content !important;
+  }
+}
+
+.our-story-timeline-button {
+  margin-top: 16px;
+}
+
+.our-story-timeline-base-text {
+  font-family: 'Chivo';
+  font-style: normal;
+  flex: none;
+  flex-grow: 0;
+}
+
+.our-story-timeline-base-text-year {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.our-story-timeline-base-text-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  background: linear-gradient(270deg, #017cff 1.67%, #419dff 99.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.our-story-timeline-base-text-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  color: #4a4d52;
+  align-self: stretch;
+}
+
+.our-story-timeline-base-text-description-align-right {
+  text-align: right;
+}
+
+.our-story-timeline-base-text-link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: #007bff;
+  border-radius: 40px;
+  padding: 11px 18px;
+  width: min-content;
+  margin-top: 16px;
+  width: auto;
+}

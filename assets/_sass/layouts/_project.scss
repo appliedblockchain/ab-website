@@ -56,3 +56,13 @@
     }
   }
 }
+
+.projects__video {
+  margin: 0 auto 80px auto;
+  width: 818px;
+  height: 460px;
+  @include responsive-mobile-devices(){
+    width: 95%;
+    height: 100%;
+  }
+}

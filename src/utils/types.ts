@@ -1,3 +1,5 @@
+import { type } from "os";
+
 export type TextDetails = {
   type: 'text';
   title: string;
@@ -63,7 +65,7 @@ export type Filter = {
   value: string;
 };
 
-export type YamlPaths = 'projects' | 'our-story';
+export type YamlPaths = 'projects' | 'our-story' | 'resources';
 
 export type StoryContent = {
   title: string;
@@ -79,3 +81,16 @@ export type TOurStory = {
   date: number;
   content: StoryContent[];
 };
+
+export type TResource = {
+  date: Date
+  type: string
+  title: string
+  description: string
+  link: string
+  image: string
+  client: string
+  industry: string
+}
+
+

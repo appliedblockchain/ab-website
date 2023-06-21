@@ -5,6 +5,7 @@ import {
   WhatMakesUsDifferentSection,
   WhatWeHaveBeenDoingSection,
 } from '@/components/HomePage';
+import StayUpdatedSection from '@/components/HomePage/StayUpdatedSection';
 import { getProjects } from '@/data/projects';
 import { Project } from '@/utils/types';
 import { Grid } from '@mui/material';
@@ -29,8 +30,10 @@ export default function HomePage({ projects }: Props) {
         <GrowSection />
         <WhatClientsSaySection />
         <WhatWeHaveBeenDoingSection projects={projects} />
+
         <WhatMakesUsDifferentSection />
-        <OurVisionAndValuesSection />
+        <StayUpdatedSection />
+
       </Grid>
     </>
   );

@@ -10,6 +10,8 @@ import worldTechnologies from '../../../public/us-different/world-technologies.s
 import zkTechnologies from '../../../public/us-different/zk-technologies.svg';
 import sgxTechnologies from '../../../public/us-different/sgx-technologies.svg';
 import Image from 'next/image';
+import TopDecoratorWhatMakesUsDifferentSection from './TopDecoratorWhatMakesUsDifferentSection copy';
+import BottomDecoratorWhatMakesUsDifferentSection from './BottomDecoratorWhatMakesUsDifferentSection';
 
 const style = {
   height: 720,
@@ -25,8 +27,6 @@ const options = {
 const StyledSection = styled(Grid)(() => ({
   padding: '60px 60px 60px 120px',
   backgroundColor: '#1E2126',
-  borderTopLeftRadius: '750px 122px',
-  borderTopRightRadius: '750px 122px',
   '@media screen and (max-width:900px)': {
     padding: '70px 16px 0 16px',
     textAlign: 'center',
@@ -60,6 +60,8 @@ function WhatMakesUsDifferentSection() {
   });
 
   return (
+    <>
+    <TopDecoratorWhatMakesUsDifferentSection />
     <StyledSection item container xs={12}>
       <Grid item xs={12} className={clsx('flex-centered', 'column')}>
         <Typography variant="h4" color="secondary">
@@ -165,6 +167,8 @@ function WhatMakesUsDifferentSection() {
         {Animation}
       </GridOnlyBigScreen>
     </StyledSection>
+    <BottomDecoratorWhatMakesUsDifferentSection />
+    </>
   );
 }
 

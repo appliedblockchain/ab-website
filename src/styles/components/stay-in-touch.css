@@ -1,0 +1,7 @@
+.stay-in-touch-main-container {
+  padding: 64px 140px 80px 144px;
+  background-color: #007BFF;
+  @media screen and (max-width:900px) {
+    padding: '40px 24px',
+  }
+}

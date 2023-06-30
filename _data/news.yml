@@ -1,4 +1,10 @@
-- title: 'Applied Blockchain Podcast #6 - UK’s First Regulated Token Exchange with Graham Rodford from Archax'
+- title: 'London Bridge is Live on Testnets'
+  button_label: Try on Testnets
+  second_button_label: Read Testing Guide
+  second_link: https://londonbridge.io/news/how-to-use-the-london-bridge-web-app/
+  link: https://testnet.londonbridge.io/
+  
+  - title: 'Applied Blockchain Podcast #6 - UK’s First Regulated Token Exchange with Graham Rodford from Archax'
   button_label: Watch
   second_button_label: Listen
   second_link: https://tr.ee/QhJttrwzzb
@@ -7,10 +13,6 @@
 - title: 'Predictions For 2023: A Technology Perspective'
   button_label: READ FULL REPORT 
   link: https://www.linkedin.com/smart-links/AQFQcgqlWtg2wQ
-
-- title: 'Stay informed about the next events'
-  button_label: SIGN UP
-  link: https://appliedblockchain.com/#mc_embed_signup
 
 # - title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology
 #   button_label: Read

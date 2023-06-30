@@ -29,7 +29,7 @@
   image: ab-sessions # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-05-09"
   location: "Level39, London, UK"
-  website: "https://lu.ma/s91ob0zd"
+  recording: "https://youtu.be/wtJta3uCeHY"
 
 - name: "ETH Porto"
   image: ethporto # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

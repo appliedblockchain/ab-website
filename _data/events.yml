@@ -12,6 +12,13 @@
 #   register: # if relevant, url to register
 # recording: # if relevant, url to the recording
 
+- name: "TOA Festival"
+  image: toa-festival # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2023-07-05"
+  date_to: "2023-07-07"
+  location: "Berlin, Germany"
+  website: "https://festival.toa.media/speakers"
+
 - name: "Applied Blockchain Masterclass: Decentralised Finance (DeFi)"
   image: ab-masterclass # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-06-07"

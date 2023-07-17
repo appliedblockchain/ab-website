@@ -3,6 +3,9 @@
 @import './study-case.css';
 @import './our-story.css';
 @import './cards.css';
+@import './HomePage/stay-updated.css';
+@import './components/stay-in-touch.css';
+
 
 * {
   box-sizing: border-box;

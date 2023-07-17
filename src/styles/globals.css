@@ -2,6 +2,7 @@
 @import './embla-carrousel.css';
 @import './study-case.css';
 @import './our-story.css';
+@import './cards.css';
 
 * {
   box-sizing: border-box;

@@ -82,15 +82,22 @@ export type TOurStory = {
   content: StoryContent[];
 };
 
+type TResourceLink = {
+  url: string
+  text: string
+  type: string
+}
+
 export type TResource = {
   date: Date
   type: string
   title: string
   description: string
-  link: string
+  links: TResourceLink[]
   image: string
   client: string
   industry: string
+  cover: string
 }
 
 

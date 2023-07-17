@@ -1,0 +1,101 @@
+- date: Jan 27, 2023
+  type: podcast
+  title: 'Podcast #01 - Future of Algorand with John Woods from Algorand Foundation'
+  description: Welcome to the first episode of the Applied Blockchain Podcast, hosted by Adi Ben-Ari. In this episode, Adi is joined by John Woods, Chief Technology Officer at the Algorand Foundation. They discussed how John got started in the…
+  client: archax
+  study-case: true # show on study case page
+  industry: Blockchain
+  cover: https://appliedblockchain.com/assets/images/posts/ab-podcast-EP06.jpg
+  links:
+    - url: https://podcasts.apple.com/pt/podcast/6-uks-first-regulated-token-exchange-with-graham/id1653098459?i=1000615401838&l=en
+      text: Listen Now
+      type: button
+    - url: https://youtu.be/BFLRIVrN17I
+      text: Watch Video
+      type: link
+- date: May 31, 2023
+  type: article
+  title: Silent Data successfully completes the milestone of Web3 Foundation Grant
+  description: We are proud to announce that Silent Data has completed the milestone of the Web3 Foundation grant.
+  client: Silent Data
+  industry: Blockchain
+  cover: https://appliedblockchain.com/assets/images/posts/ab-podcast-EP06.jpg
+  links:
+    - url: https://silentdata.com/news/silent-data-successfully-completes-the-milestone-of-web3-foundation-grant/
+      text: Read more
+      type: button
+- date: Jan 27, 2023
+  type: podcast
+  title: 'Podcast #01 - Future of Algorand with John Woods from Algorand Foundation'
+  description: Welcome to the first episode of the Applied Blockchain Podcast, hosted by Adi Ben-Ari. In this episode, Adi is joined by John Woods, Chief Technology Officer at the Algorand Foundation. They discussed how John got started in the…
+  client: Archax
+  industry: Blockchain
+  cover: https://appliedblockchain.com/assets/images/posts/ab-podcast-EP06.jpg
+  links:
+    - url: https://podcasts.apple.com/pt/podcast/6-uks-first-regulated-token-exchange-with-graham/id1653098459?i=1000615401838&l=en
+      text: Listen Now
+      type: button
+    - url: https://youtu.be/BFLRIVrN17I
+      text: Watch Video
+      type: link
+- date: May 31, 2023
+  type: article
+  title: Silent Data successfully completes the milestone of Web3 Foundation Grant
+  description: We are proud to announce that Silent Data has completed the milestone of the Web3 Foundation grant.
+  client: Silent Data
+  industry: Blockchain
+  cover: https://appliedblockchain.com/assets/images/posts/ab-podcast-EP06.jpg
+  links:
+    - url: https://silentdata.com/news/silent-data-successfully-completes-the-milestone-of-web3-foundation-grant/
+      text: Read more
+      type: button
+- date: Jan 27, 2023
+  type: podcast
+  title: 'Podcast #01 - Future of Algorand with John Woods from Algorand Foundation'
+  description: Welcome to the first episode of the Applied Blockchain Podcast, hosted by Adi Ben-Ari. In this episode, Adi is joined by John Woods, Chief Technology Officer at the Algorand Foundation. They discussed how John got started in the…
+  client: Archax
+  industry: Blockchain
+  cover: https://appliedblockchain.com/assets/images/posts/ab-podcast-EP06.jpg
+  links:
+    - url: https://podcasts.apple.com/pt/podcast/6-uks-first-regulated-token-exchange-with-graham/id1653098459?i=1000615401838&l=en
+      text: Listen Now
+      type: button
+    - url: https://youtu.be/BFLRIVrN17I
+      text: Watch Video
+      type: link
+- date: May 31, 2023
+  type: article
+  title: Silent Data successfully completes the milestone of Web3 Foundation Grant
+  description: We are proud to announce that Silent Data has completed the milestone of the Web3 Foundation grant.
+  client: Silent Data
+  industry: Blockchain
+  cover: https://appliedblockchain.com/assets/images/posts/ab-podcast-EP06.jpg
+  links:
+    - url: https://silentdata.com/news/silent-data-successfully-completes-the-milestone-of-web3-foundation-grant/
+      text: Read more
+      type: button
+- date: Jan 27, 2023
+  type: article
+  title: 'Podcast #01 - Future of Algorand with John Woods from Algorand Foundation'
+  description: Welcome to the first episode of the Applied Blockchain Podcast, hosted by Adi Ben-Ari. In this episode, Adi is joined by John Woods, Chief Technology Officer at the Algorand Foundation. They discussed how John got started in the…
+  client: Archax
+  industry: Blockchain
+  cover: https://appliedblockchain.com/assets/images/posts/ab-podcast-EP06.jpg
+  links:
+    - url: https://podcasts.apple.com/pt/podcast/6-uks-first-regulated-token-exchange-with-graham/id1653098459?i=1000615401838&l=en
+      text: Listen Now
+      type: button
+    - url: https://youtu.be/BFLRIVrN17I
+      text: Watch Video
+      type: link
+- date: May 31, 2023
+  type: article
+  title: Silent Data successfully completes the milestone of Web3 Foundation Grant
+  description: We are proud to announce that Silent Data has completed the milestone of the Web3 Foundation grant.
+  client: Silent Data
+  industry: Blockchain
+  cover: https://appliedblockchain.com/assets/images/posts/ab-podcast-EP06.jpg
+  links:
+    - url: https://silentdata.com/news/silent-data-successfully-completes-the-milestone-of-web3-foundation-grant/
+      text: Read more
+      type: button

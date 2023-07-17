@@ -93,7 +93,7 @@ export const footerMenu = [
       },
       {
         name: 'Podcasts',
-        link: '/podcasts',
+        link: '/resources/podcasts',
       },
       {
         name: 'Reports',

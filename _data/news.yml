@@ -1,18 +1,18 @@
-- title: 'London Bridge is Live on Testnets'
-  button_label: Try on Testnets
-  second_button_label: Read Testing Guide
-  second_link: https://londonbridge.io/news/how-to-use-the-london-bridge-web-app/
-  link: https://testnet.londonbridge.io/
-  
-- title: 'Applied Blockchain Podcast #7 - Intel SGX, Silent Data and the Future of Confidential Computing with Paul O’Neill from Intel'
+- title: 'Applied Blockchain Podcast #8 - The Future of Polygon with Boris Spremo'
   button_label: Watch
   second_button_label: Listen
   second_link: https://tr.ee/QhJttrwzzb
-  link: https://youtu.be/Y6rtBzK5Tpw
+  link: https://youtu.be/UVdU3WcrZTg
 
 - title: 'Predictions For 2023: A Technology Perspective'
   button_label: READ FULL REPORT 
   link: https://www.linkedin.com/smart-links/AQFQcgqlWtg2wQ
+  
+- title: 'London Bridge is Live on Testnets'
+  button_label: Try on Testnets
+  second_button_label: Read Testing Guide
+  second_link: https://londonbridge.io/news/how-to-use-the-london-bridge-web-app/
+  link: https://testnet.londonbridge.io/  
 
 # - title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology
 #   button_label: Read

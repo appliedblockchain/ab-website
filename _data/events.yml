@@ -12,6 +12,32 @@
 #   register: # if relevant, url to register
 # recording: # if relevant, url to the recording
 
+- name: "Hong Kong FinTech Week"
+  image: hk_fw_2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2023-10-30"
+  date_to: "2023-11-05"
+  location: "Hong Kong, China"
+  website: "https://www.fintechweek.hk/"
+
+- name: "Porto Tech Hub 2023"
+  image: pth_2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2023-10-27"
+  location: "Porto, Portugal"
+  website: "https://portotechhub.com/conference-2023/"
+
+- name: "European Blockchain Convention"
+  image: ebc_bcn_2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2023-10-24"
+  date_to: "2023-10-26"
+  location: "Barcelona, Spain"
+  website: "https://eblockchainconvention.com/"
+
+- name: "BT Sustainability Festival"
+  image: bt_2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2023-09-13"
+  location: "London, UK"
+  website: "https://atadastral.co.uk/sustainability-festival/speakers/adi-ben-ari/"
+
 - name: "TOA Festival"
   image: toa-festival # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-07-05"

@@ -61,6 +61,9 @@ layout: compress
         {% for item in site.data.news %}
         <div class="carousel__item">
           <div class="card__inner">
+            {% if item.image %}
+            <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="" class="card__image">
+            {% endif %}
             <div class="card__inner--left">
               <div class="card__content">
                 <p class="card__title body--small body--bold">
@@ -91,9 +94,6 @@ layout: compress
                 {% endif %}
               </div>
             </div>
-            {% if item.image %}
-            <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="" class="card__image">
-            {% endif %}
           </div>
         </div>
         {% endfor %}

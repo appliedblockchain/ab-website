@@ -1,5 +1,6 @@
 {% assign comment = include.comment %}
 {% assign headline = include.headline %}
+{% assign subheadline = include.subheadline %}
 {% assign subtitle = include.subtitle %}
 {% assign body = include.body %}
 {% assign background_image = include.background_image %}
@@ -12,6 +13,15 @@
         <p class="page__comment comment">{{ page.comment }}</p>
       {% endif %}
         <h1 class="page__title headline">{% if headline %}{{ headline }}{% else %}{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}{% endif %}</h1>
+        <p class="page__subheadline lead" style="color: white; text-align: left">
+          {% if subheadline %}
+            {{ subheadline }}
+          {% else %}
+            {% if page.subheadline %}
+              {{ page.subheadline }}
+            {% endif %}
+          {% endif %}
+        </p>
       {% if page.subtitle %}
         <p class="page__subtitle lead">{{ page.subtitle }}</p>
       {% endif %}

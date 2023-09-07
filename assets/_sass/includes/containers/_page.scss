@@ -281,6 +281,13 @@
 		}
 	}
 
+	&__subheadline {
+
+		.page__title + & {
+			margin-top: $integer-md;
+		}
+	}
+
 	&__subtitle {
 
 		.page__title + & {

@@ -29,13 +29,31 @@
         padding-bottom: $integer-xxxl*1.5;
     }
 
-    .gartner {
+    .section--tags {
+        margin-top: 0;
+        padding-top: 0;
+        color: white;
+        font-size: 1rem;
+        margin-top: 2rem;
+
+        .tag__number {
+            font-size: 3rem;
+            font-weight: bold
+        }
+
+        @include responsive(max-width, $mobile-max) {
+            display: none;
+        }
+    }
+
+    .partners--logo {
         position: absolute;
-        top: 0;
-        left: -$page/2;
-        min-width: 320px;
+        top: 50%;
+        left: 0;
+        min-width: 220px;
         width: 10%;
         z-index: 1;
+        transform: translateY(-50%);
 
         @include responsive-mobile-devices-landscape() {
             display: none;

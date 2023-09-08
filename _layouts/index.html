@@ -8,47 +8,39 @@ layout: compress
   <div id="particles-js"></div>
   {% include containers/page/title.html
     headline = site.description
+    titleStyle = "text-align: left"
   %}
+  <div class="section section--tags">
+    <div class="row">
+      <div class="col--xl3 col--lg6 col--sm6">
+        <p class="tag__number">+100</p>
+        <p class="body body--regular">Projects Delivered</p>
+      </div>
+      <div class="col--xl3 col--lg6 col--sm6">
+        <p class="tag__number">+100</p>
+        <p class="body body--regular">Team Members</p>
+      </div>
+      <div class="col--xl3 col--lg6 col--sm6">
+        <p class="tag__number">+30</p>
+        <p class="body body--regular">Years of Technical Expertise</p>
+      </div>
+      <div class="col--xl3 col--lg6 col--sm6">
+        <p class="tag__number">+10</p>
+        <p class="body body--regular">Years of Technical Expertise</p>
+      </div>
+    </div>
+  </div>
   <div class="section__content body--black">
     <div class="row row--center">
-      <img src="{{ site.base-url }}{{ site.imageurl }}/icons/index/gartner-banner.svg" alt="Gartner banner" class="gartner hide--desktop-lg">
-      <div class="col--xl4 col--lg5 col--md7 col--sm8">
-        <div class="card card--xxs anchor background--shadow mb--md">
-          <div class="card__inner">
-            <div class="card__header">
-              <p class="card__title body--bold">Stay Updated</p>
-              <a href="#footer" title="Newsletter anchor" class="button button--small button--icon button--highlight button--animate fas fa-plus">
-                <i class="button__inner fas fa-newspaper"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-   <!--     <div class="card card--xxs background--shadow mb--md">
-          <div class="card__inner">
-            <div class="card__header">
-              <p class="card__title body--bold">Follow us</p>
-              {% include components/social.html
-                size = 'small'
-              %}
-            </div>
-          </div>
-        </div>
-        <!-- <div class="card card--xxs background--shadow">
-          <div class="card__inner">
-            <div class="card__header">
-              <p class="card__title body--bold">Applied Blockchain Podcast</p>
-              {% include components/podcast.html
-                size = 'small'
-              %}
-            </div>
-          </div>
-        </div> -->
-      </div>
+      <a href="{{ site.base-url }}/contact" class="button button--highlight button--animate fas fa-envelope"
+        style="padding: 1.2rem 1.5rem; border-radius: 0.5rem;">
+        <p class="button__inner">Discuss Your Business Needs</p>
+      </a>
     </div>
   </div>
   <div class="row widget__bar card__wrapper">
     <div class="card col--xl8 col--lg7 body--left">
-      <p class="body body--bold card__title">Trusted by global organisations and startups alike</p>
+      <p class="body body--regular card__title">Trusted by global organisations and startups alike</p>
       <div class="card__body">
         {% include elements/carousel.html
           variant = 'clients'
@@ -60,6 +52,9 @@ layout: compress
         {% for item in site.data.news %}
         <div class="carousel__item">
           <div class="card__inner">
+            {% if item.image %}
+            <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="" class="card__image">
+            {% endif %}
             <div class="card__inner--left">
               <div class="card__content">
                 <p class="card__title body--small body--bold">
@@ -90,9 +85,6 @@ layout: compress
                 {% endif %}
               </div>
             </div>
-            {% if item.image %}
-            <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="" class="card__image">
-            {% endif %}
           </div>
         </div>
         {% endfor %}

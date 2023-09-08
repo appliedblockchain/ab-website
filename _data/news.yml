@@ -1,18 +1,18 @@
 - title: 'Applied Blockchain Podcast #9 - UN World Food Programme’s Blockchain Journey with Houman Haddad'
   button_label: Watch
   second_button_label: Listen
-  image: default.jpg
+  image: carousel/ab-marketing-podcast-cover-ep09_720.png
   second_link: https://tr.ee/QhJttrwzzb
   link: https://youtu.be/p0kM9XpfNNI
 
 - title: 'Silent Data - your Trustless, Secure, and Flexible Oracle'
   button_label: Get Early Access
-  image: default.jpg
+  image: carousel/silent-data.png
   link: https://www.silentdata.com/early-access-form/
 
 - title: 'Predictions For 2023: A Technology Perspective'
   button_label: READ FULL REPORT 
-  image: default.jpg
+  image: 'carousel/ab-documents-cover-3.png'
   link: https://www.linkedin.com/smart-links/AQFQcgqlWtg2wQ
   
 # - title: Intel White Paper | SilentData is securing open banking with blockchain and Intel SGX technology

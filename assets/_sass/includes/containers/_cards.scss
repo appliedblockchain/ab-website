@@ -440,11 +440,11 @@
     }
 
     &__image {
-      border-radius: 1rem;
+      border-radius: 1rem !important;
       width: 6rem !important;
-      height: 6rem;
+      height: 6rem !important;
       padding: 0;
-      margin-right: $integer-md;
+      margin-right: $integer-md !important;
     }
   }
 }

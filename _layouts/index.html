@@ -5,17 +5,10 @@ layout: compress
 {% include containers/site/header.html %}
 
 <div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
-  <img class="partners--logo hide--desktop-lg" src="{{ site.base-url }}{{ site.imageurl }}/icons/index/partners.svg" alt="Partners banner">
   <div id="particles-js"></div>
   {% include containers/page/title.html
     headline = site.description
     titleStyle = "text-align: left"
-    subheadline = '
-      Applied Blockchain is specialised in 
-      <span style="font-weight: bold">Cryptography</span>, 
-      <span style="font-weight: bold">Blockchain</span> and 
-      <span style="font-weight: bold">Privacy-Enhancing Technologies</span>
-    '
   %}
   <div class="section section--tags">
     <div class="row">

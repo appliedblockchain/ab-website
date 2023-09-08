@@ -29,6 +29,23 @@
         padding-bottom: $integer-xxxl*1.5;
     }
 
+    .section--tags {
+        margin-top: 0;
+        padding-top: 0;
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+
+        .tag__number {
+            font-size: 3rem;
+            font-weight: bold
+        }
+
+        @include responsive(max-width, $mobile-max) {
+            display: none;
+        }
+    }
+
     .partners--logo {
         position: absolute;
         top: 50%;

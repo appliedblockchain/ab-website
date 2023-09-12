@@ -32,6 +32,12 @@
   location: "Barcelona, Spain"
   website: "https://eblockchainconvention.com/"
 
+- name: "London Blockchain Finance Summit 2023"
+  image: lbfs2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2023-10-18"
+  location: "London, UK"
+  website: "https://conf.novuminsights.com/"
+
 - name: "BT Sustainability Festival"
   image: bt_2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-09-13"

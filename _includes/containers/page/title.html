@@ -1,7 +1,6 @@
 {% assign comment = include.comment %}
 {% assign headline = include.headline %}
 {% assign subheadline = include.subheadline %}
-{% assign titleStyle = include.titleStyle %}
 {% assign subtitle = include.subtitle %}
 {% assign body = include.body %}
 {% assign background_image = include.background_image %}
@@ -9,14 +8,21 @@
 
 <div class="section page__header{% if page.background_color %} section--{{ page.background_color }}{% endif %} background--cover"{% if page.background_image %} style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.title | slugify }}.jpg');"{% endif %}>
   <div class="joinRow">
-    <div style="width: 100%">
+    <div class="title-container">
       {% if page.comment %}
         <p class="page__comment comment">{{ page.comment }}</p>
       {% endif %}
-        <h1 class="page__title headline"
-        {% if titleStyle and titleStyle != "" %}
-          style="text-align: left; {{ titleStyle }}"
-        {% endif %}>{% if headline %}{{ headline }}{% else %}{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}{% endif %}</h1>
+        <h1 class="page__title headline">
+          {% if headline %}
+            {{ headline }}
+          {% else %}
+          {% if page.headline %}
+            {{ page.headline }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}
+          {% endif %}
+        </h1>
         <p class="page__subheadline lead" style="color: white; text-align: left">
           {% if subheadline %}
             {{ subheadline }}

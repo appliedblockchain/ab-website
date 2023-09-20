@@ -93,6 +93,17 @@ layout: compress
   </div>
 </div>
 
+<section id="index-testimonials" class="section section--white no-padding--left no-padding--right">
+  <div class="section__content">
+    <div class="card testimonials">
+      {% include elements/carousel.html
+        type = 'testimonials'
+        variant = 'testimonials_clients'
+      %}
+    </div>
+  </div>
+</section>
+
 <section id="index-intro" class="section section--white">
   {% include containers/sections/header.html
     comment = 'What we do'
@@ -169,17 +180,6 @@ layout: compress
     <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
       <p class="button__inner">Projects</p>
     </a>
-  </div>
-</section>
-
-<section id="index-testimonials" class="section section--white no-padding--left no-padding--right">
-  <div class="section__content">
-    <div class="card testimonials">
-      {% include elements/carousel.html
-        type = 'testimonials'
-        variant = 'testimonials_clients'
-      %}
-    </div>
   </div>
 </section>
 

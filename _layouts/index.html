@@ -211,37 +211,6 @@ layout: compress
   </div>
 </section>
 
-<section id="index-featured-in" class="section section--white">
-  {% include containers/sections/header.html
-    title = 'Featured In'
-  %}
-  <div class="section__content">
-    <div class="row">
-      {% for item in site.data.images.media %}
-      <div class="col--lg3 col--6">
-        <div class="card card__inner">
-          {% if item.link %}
-          <a href="{{ item.link }}" target="_blank">
-            {% endif %}
-            <img src="{{ site.base-url }}{{ site.imageurl }}/logos/media/{{ item.name | slugify }}.png" alt="Logo {{ item.name }}" class="logo-media__image">
-            {% if item.link %}
-          </a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="section__content">
-    <p class="block__title lead">We're in a fast changing industry, here's our news at Applied Blockchain</p>
-    <div class="block__content">
-      <a href="{{ site.base-url }}/media" class="ga-button-media button button--primary button--animate fas fa-newspaper">
-        <p class="button__inner">Media</p>
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- particles animation -->
 <script src="{{ site.base-url }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
 <script>

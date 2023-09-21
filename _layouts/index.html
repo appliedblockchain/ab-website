@@ -211,6 +211,44 @@ layout: compress
   </div>
 </section>
 
+<section id="index-stay-in-touch" class="section section--primary">
+  <div class="section__content">
+    <div class="row">
+      <div class="card col--4 col--sm6 col--xl4 body--left">
+        <h2 class="card__title title">Stay in touch</h2>
+        <p class="body--regular body--large announcements" style="flex-grow: 1">
+          Announcements can be found in our blog. Press contact:
+        </p>
+        {% include components/social.html %}
+      </div>
+      <div class="card col--4 col--sm6 col--xl4 body--left" style="gap: 40px">
+        <h2 class="body--large body--bold">5-star customer reviews</h2>
+        <div style="width: 70%">
+          <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/clients/gartner.svg" alt="">
+        </div>
+        <div>
+          <a href="{{ site.base-url }}/about" class="button button--white">
+            <p style="margin-right: 1rem">Read reviews</p>
+            <i class="fa fa-link"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card col--4 col--sm6 col--xl4 body--left">
+        <h2 class="body--large body--bold">Be updated with our News</h2>
+        <form class="newsletter-form">
+          <input id="newsletter-email" placeholder="Email" type="text">
+          <input id="newsletter-name" placeholder="Name" type="text">
+          <div>
+            <button id="newsletter-submit" class="button button--white" type="submit">
+              <p>Subscribe</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- particles animation -->
 <script src="{{ site.base-url }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
 <script>

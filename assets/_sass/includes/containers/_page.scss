@@ -314,7 +314,23 @@
 .footer {
 	text-align: left;
 	margin-bottom: -$integer-xl;
-	padding-bottom: $integer-max;
+	padding-bottom: $integer-xxl;
+	background: #1E2126;
+
+	.card__title {
+		color: #9BA6AD;
+
+	}
+
+	.card__body {
+		margin-top: 0;
+		a {
+			margin-top: $integer-lg;
+			@include responsive(max-width, $mobile-max) {
+				margin-top: $integer-md;
+			}
+		}
+	}
 
 	&__row {
 		margin-top: $integer-xxl;
@@ -340,5 +356,28 @@
 		&:hover {
 			color: $primary;
 		}
+	}
+
+	.footer-row {
+		display: flex;
+		align-items: top;
+		justify-content: space-between;
+		width: 100%;
+
+		@include responsive(max-width, $mobile-max) {
+			flex-flow: wrap;
+			.card {
+				flex-basis: 50% !important;
+			}
+		}
+	}
+
+	.footer-logo {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		width: 100%;
+		gap: $integer-xxl;
+		margin-bottom: $integer-lg;
 	}
 }

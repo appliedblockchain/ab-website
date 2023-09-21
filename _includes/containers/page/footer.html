@@ -1,93 +1,65 @@
 <footer id="footer" class="footer section section--dark">
-  <div class="footer__row row">
-    <div class="col--xl4">
-      <div class="card footer__logo">
-        <div class="logo logo-name-white">
-          <a href="{{ site.base-url }}/">
-            {% include mixins/logo.html %}
-          </a>
-        </div>
+  <div class="footer-row">
+    <div class="card">
+      <p class="card__title body--large body--bold">Products</p>
+      <div class="card__body">
+        <a href="https://www.silentdata.com/" class="footer__button button button--text">Silent Data</a>
+        <a href="https://londonbridge.io/" class="footer__button button button--text">London Bridge</a>
       </div>
     </div>
-    <div class="coloffset--xl1 col--xl7">
-      <div class="card">
-        {% include components/social.html
-          header = 'true'
-        %}
+
+    <div class="card">
+      <p class="card__title body--large body--bold">Projects</p>
+      <div class="card__body">
+        <a href="{{ site.base-url }}/projects" class="footer__button button button--text">Case Studies</a>
+        <a href="#index-testimonials" class="footer__button button button--text">Testimonials</a>
       </div>
     </div>
-  </div>
-  <div class="footer__row row">
-    <div class="col--xl4">
-      <div class="card">
-        {% include components/newsletter.html %}
+
+    <div class="card">
+      <p class="card__title body--large body--bold">Solutions</p>
+      <div class="card__body">
+        <a href="{{ site.base-url }}/projects/aorist" class="footer__button button button--text">NFT</a>
+        <a href="{{ site.base-url }}/projects/aorist" class="footer__button button button--text">DeFi</a>
+        <a href="{{ site.base-url }}/projects/ledger" class="footer__button button button--text">Web3</a>
       </div>
     </div>
-    <div class="coloffset--xl1 col--xl7">
-      <div class="row">
-        <div class="card col--4">
-          <p class="card__title body--large body--bold">Sitemap</p>
-          <div class="card__body">
-            <a href="{{ site.base-url }}/" class="footer__button button button--text">Home</a>
-            <a href="{{ site.base-url }}/services" class="footer__button button button--text">Services</a>
-            <a href="{{ site.base-url }}/projects" class="footer__button button button--text">Projects</a>
-            <!-- <a href="{{ site.base-url }}/products" class="footer__button button button--text">Products</a> -->
-            <a href="{{ site.base-url }}/about" class="footer__button button button--text">About</a>
-          </div>
-          <div class="card__body">
-            <a href="{{ site.base-url }}/media" class="footer__button button button--text">Media</a>
-            <a href="{{ site.base-url }}/events" class="footer__button button button--text">Events</a>
-            <a href="{{ site.base-url }}/join" class="footer__button button button--text">Join</a>
-            <a href="{{ site.base-url }}/contact" class="footer__button button button--text">Contact</a>
-          </div>
-          <div class="card__body">
-            <a href="{{ site.base-url }}/faq" class="footer__button button button--text">FAQ</a>
-            <a href="{{ site.base-url }}/privacy-policy" class="footer__button button button--text">Privacy policy</a>
-          </div>
-          <div class="card__body">
-            <a href="{{ site.base-url }}/services" class="footer__button button button--text">Blockchain Consulting</a>
-            <a href="{{ site.base-url }}/services" class="footer__button button button--text">Blockchain Services</a>
-            <a href="{{ site.base-url }}/projects" class="footer__button button button--text">Blockchain Projects</a>
-          </div>
-          <div class="card__body">
-            <a href="{{ site.base-url }}/applied-privacy" class="footer__button button button--text">Confidential Computing</a>
-            <a href="https://silentdata.com/" class="footer__button button button--text">Confidential Open Banking</a>
-            <a href="{{ site.base-url }}/beyond" class="footer__button button button--text">Confidential Trading</a>
-          </div>
-        </div>
-        <div class="card col--4">
-          <p class="card__title body--large body--bold">Projects</p>
-          <div class="card__body">
-            {% for project in site.projects %}
-            <a href="{{ project.url }}" class="footer__button button button--text">{{ project.title }}</a>
-            {% endfor %}
-          </div>
-        </div>
-        <!-- <div class="card col--sm4">
-          <p class="card__title body--large body--bold">Products</p>
-          <div class="card__body">
-            <a href="https://silentdata.com/" target="_blank" rel="noopener" class="footer__button button button--text">SilentData</a>
-            <a href="https://londonbridge.io/" target="_blank" rel="noopener" class="footer__button button button--text">London Bridge</a>
-          </div>
-        </div> -->
+
+    <div class="card">
+      <p class="card__title body--large body--bold">Company</p>
+      <div class="card__body">
+        <a href="{{ site.base-url }}/about#about-leadership" class="footer__button button button--text">Team</a>
+        <a href="{{ site.base-url }}/about#our-story" class="footer__button button button--text">Our Story</a>
+        <a href="{{ site.base-url }}/events" class="footer__button button button--text">Events</a>
+        <a href="{{ site.base-url }}/join" class="footer__button button button--text">Careers</a>
+        <a href="{{ site.base-url }}/faq" class="footer__button button button--text">FAQ</a>
+        <a href="{{ site.base-url }}/contact" class="footer__button button button--text">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="card__title body--large body--bold">Resources</p>
+      <div class="card__body">
+        <a href="{{ site.base-url }}/media" class="footer__button button button--text">Blog</a>
+        <a href="{{ site.base-url }}/media" class="footer__button button button--text">News</a>
+        <a href="{{ site.base-url }}/media" class="footer__button button button--text">Webinars</a>
+        <a href="{{ site.base-url }}/media" class="footer__button button button--text">Reports</a>
+        <a href="{{ site.base-url }}/media" class="footer__button button button--text">Podcasts</a>
       </div>
     </div>
   </div>
-  <div class="footer__row row">
-    <div class="col--xl4">
-      <div class="card">
-        <p class="card__title body--large body--bold">Addresses</p>
-        <div class="card__body">
-          <p class="body">{{ site.contact.london.address }}</p>
-        </div>
-        <div class="card__body">
-          <p class="body">{{ site.contact.porto.address }}</p>
-        </div>
-      </div>
+  <div class="footer-logo">
+    <div class="logo-name-white" style="width: 300px;">
+      <a href="{{ site.base-url }}/">
+        {% include mixins/logo.html %}
+      </a>
     </div>
-    <div class="coloffset--xl1 col--xl7">
-      <p class="body body--bold">© Copyright 2020 Applied Blockchain Ltd. <br>All rights reserved.</p>
-      <p class="body">Applied Blockchain Ltd is a company registered in England and Wales. <br>Company No. 09686276</p>
-    </div>
+    <a href="{{ site.base-url }}/privacy-policy" class="footer__button button button--text">
+      Privacy policy
+    </a>
+  </div>
+  <div>
+    <p class="body body--bold">© Copyright 2023 Applied Blockchain Ltd. All rights reserved.</p>
+    <p class="body">Applied Blockchain Ltd is a company registered in England and Wales. Company No. 09686276</p>
   </div>
 </footer>

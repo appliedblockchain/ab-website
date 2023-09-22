@@ -154,9 +154,14 @@
         }
 
         .announcements {
-            margin-top: $integer-md;
+            margin-top: $integer-lg;
             margin-bottom: $integer-md;
             padding-right: $integer-lg;
+        }
+
+        .social {
+            display:flex;
+            gap: $integer-md;
         }
 
         .button--icon {

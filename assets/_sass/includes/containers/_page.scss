@@ -22,6 +22,38 @@
 	width: 100vw;
 	pointer-events: none;
 
+	#contact-us {
+		text-transform: capitalize !important;
+		padding: 0.5rem;
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		.action {
+			margin: 0;
+			padding: $integer-md;
+
+			font-family: Chivo;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 13px;
+			letter-spacing: 0px;
+			text-align: center;
+		}
+
+		.text-white {
+			color: white;
+		}
+
+		.text-black {
+			color: black;
+		}
+	}
+
+
 	&__bar {
 		transition: height $transition;
 		display: flex;
@@ -160,10 +192,18 @@
 		}
 
 		.button--primary {
-			background-color: $primary;
+			background-color: $white;
+			border: 1px solid black;
 	
 			.button__inner, &:before {
-				color: $white;
+				color: black;
+			}
+		}
+
+		.header__actions .button {
+			color: black;
+			&:hover {
+				color: $primary;
 			}
 		}
 	}

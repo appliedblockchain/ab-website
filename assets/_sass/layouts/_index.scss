@@ -153,6 +153,39 @@
             }
         }
 
+        .description {
+            flex-grow: 1;
+            height: 70px;
+        }
+
+        .action {
+            margin-bottom: 5.5rem
+        }
+
+        #read-reviews-btn {
+            box-shadow: rgba(0, 0, 0, 0.04) 1px 1px 3px;
+            transition: border-radius 200ms ease 0s;
+            height: unset;
+            padding: 8px 12px;
+            min-height: 48px;
+            border-radius: 24px;
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            background-color: rgb(255, 255, 255);
+            border: 0px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            font-family: inherit;
+            font-style: normal;
+            -moz-box-pack: center;
+            justify-content: center;
+            width: 100%;
+            outline: none;
+        }
+
         .announcements {
             margin-top: $integer-lg;
             margin-bottom: $integer-md;

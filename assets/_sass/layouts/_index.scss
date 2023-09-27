@@ -145,7 +145,7 @@
     &-stay-in-touch {
         display: flex;
 
-        background: linear-gradient(270deg, #017CFF 1.67%, #419DFF 99.06%);
+        background: #0c1a3a;
 
         @include responsive(max-width, $mobile-max) {
             .row {
@@ -153,43 +153,20 @@
             }
         }
 
-        .description {
-            flex-grow: 1;
-            height: 70px;
-        }
-
-        .action {
-            margin-bottom: 5.5rem
-        }
-
-        #read-reviews-btn {
-            box-shadow: rgba(0, 0, 0, 0.04) 1px 1px 3px;
-            transition: border-radius 200ms ease 0s;
-            height: unset;
-            padding: 8px 12px;
-            min-height: 48px;
-            border-radius: 24px;
-            line-height: 20px;
-            font-weight: 400;
-            font-size: 16px;
-            background-color: rgb(255, 255, 255);
-            border: 0px;
-            color: rgb(0, 0, 0);
-            display: flex;
-            -moz-box-align: center;
-            align-items: center;
-            font-family: inherit;
-            font-style: normal;
-            -moz-box-pack: center;
-            justify-content: center;
-            width: 100%;
-            outline: none;
-        }
-
         .announcements {
             margin-top: $integer-lg;
             margin-bottom: $integer-md;
             padding-right: $integer-lg;
+        }
+
+        .action {
+            margin-top: $integer-lg;
+        }
+
+        #read-reviews-btn {
+            color: white;
+            background: #0c1a3a;
+            border: 1px solid white;
         }
 
         .social {
@@ -199,33 +176,12 @@
 
         .button--icon {
             background-color: white;
-            color: #419DFF;
+            color: #0c1a3a;
         }
 
         .newsletter-form {
-            width: 85%;
-            display: flex;
-            flex-direction: column;
-            gap: $integer-md;
-
-            input {
-                border-radius: 35px;
-                border: 1px solid #FFFFFF;
-                background-color: transparent;
-                padding: 0.5rem 1rem;
-                font-size: 1.2rem;
-                color: white;
-                font-weight: 400;
-                font-family: 'Inter', sans-serif;
-                transition: all 0.2s ease-in-out;
-            }
-
-            #newsletter-email {
-                margin-top: $integer-md;
-            }
-
-            #newsletter-name {
-                margin-bottom: $integer-md;
+            #subscribe-btn {
+                color: #0c1a3a;
             }
         }
     }

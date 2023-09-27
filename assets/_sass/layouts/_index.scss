@@ -185,6 +185,15 @@
             }
         }
     }
+    &-stay-in-touch::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 75%;
+        left: 12.5%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
 }
 
 #core-expertise {

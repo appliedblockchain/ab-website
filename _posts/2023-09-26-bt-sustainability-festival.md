@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BT Sustainability Festival | Web3 for Sustainability: What Role Do Web3 and Blockchain Play in a Sustainable Future?
+title: "BT Sustainability Festival | Web3 for Sustainability: What Role Do Web3 and Blockchain Play in a Sustainable Future?"
 image: btsustainabilityfestival
 category: videos
 social: video

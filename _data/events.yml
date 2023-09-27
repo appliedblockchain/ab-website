@@ -38,11 +38,17 @@
   location: "London, UK"
   website: "https://conf.novuminsights.com/"
 
+- name: "Blockchain Technology: The Revolution in Raw Material Traceability"
+  image: pthmeetup # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2023-09-27"
+  location: "Porto, Portugal"
+  website: "https://www.eventbrite.pt/e/bilhetes-blockchain-technology-the-revolution-in-raw-material-traceability-723400198467"
+
 - name: "BT Sustainability Festival"
   image: bt_2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
   date: "2023-09-13"
   location: "London, UK"
-  website: "https://atadastral.co.uk/sustainability-festival/speakers/adi-ben-ari/"
+  recording: "https://youtu.be/OnTO458gDok"
 
 - name: "TOA Festival"
   image: toa-festival # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

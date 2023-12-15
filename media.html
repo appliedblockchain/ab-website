@@ -8,22 +8,22 @@ background_color: white
 <section class="section section--white section--alt">
   <div class="section__content blog">
     <div class="js-blog-filter tab__nav button__wrapper">
-      <a class="tab__button button button--primary button--animate fas fa-infinity active" data-filter="*">
+      <a id="all-btn" class="tab__button button button--primary button--animate fas fa-infinity active" data-filter="*">
         <p class="button__inner">All</p>
       </a>
-      <a class="tab__button button button--primary button--primary-lighten button--animate fas fa-newspaper" data-filter=".news">
+      <a id="news-btn" class="tab__button button button--primary button--primary-lighten button--animate fas fa-newspaper" data-filter=".news">
         <p class="button__inner">News</p>
       </a>
-      <a class="tab__button button button--primary button--primary-lighten button--animate fas fa-file-alt" data-filter=".press-release">
+      <a id="press-release-btn" class="tab__button button button--primary button--primary-lighten button--animate fas fa-file-alt" data-filter=".press-release">
         <p class="button__inner">Press release</p>
       </a>
-      <a class="tab__button button button--primary button--primary-lighten button--animate fas fa-rss" data-filter=".blog">
+      <a id="blog-btn" class="tab__button button button--primary button--primary-lighten button--animate fas fa-rss" data-filter=".blog">
         <p class="button__inner">Blog</p>
       </a>
-      <a class="tab__button button button--primary button--primary-lighten button--animate fas fa-play" data-filter=".videos">
+      <a id="videos-btn" class="tab__button button button--primary button--primary-lighten button--animate fas fa-play" data-filter=".videos">
         <p class="button__inner">Videos</p>
       </a>
-      <a class="tab__button button button--primary button--primary-lighten button--animate fas fa-play" data-filter=".podcasts">
+      <a id="podcasts-btn" class="tab__button button button--primary button--primary-lighten button--animate fas fa-play" data-filter=".podcasts">
         <p class="button__inner">Podcast</p>
       </a>
     </div>
@@ -115,4 +115,32 @@ background_color: white
       {% endif %}
     </div>
   </div>
+  <script>
+
+    function clickTab() {
+      if (window.location.href.indexOf("#all") > -1) {
+        document.getElementById('all-btn').click()
+      } else if (window.location.href.indexOf("#news") > -1) {
+        document.getElementById('news-btn').click()
+      } else if (window.location.href.indexOf("#press-release") > -1) {
+        document.getElementById('press-release-btn').click()
+      } else if (window.location.href.indexOf("#blog") > -1) {
+        document.getElementById('blog-btn').click()
+      } else if (window.location.href.indexOf("#videos") > -1) {
+        document.getElementById('videos-btn').click()
+      } else if (window.location.href.indexOf("#podcasts") > -1) {
+        document.getElementById('podcasts-btn').click()
+      }
+    }
+
+    var existCondition = setInterval(() => {
+      if (document.getElementsByClassName('js-blog-filter').length > 0) {
+        clearInterval(existCondition)
+        setInterval(() => {
+          clickTab()
+        }, 1000)
+      }
+    }, 100)
+
+  </script>
 </section>

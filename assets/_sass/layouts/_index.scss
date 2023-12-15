@@ -69,6 +69,10 @@
     .button {
         pointer-events: initial;
     }
+
+    .title-container {
+        width: 100%
+    }
 }
 
 #particles-js {
@@ -136,5 +140,77 @@
                 width: 50% !important;
             }
         }
+    }
+
+    &-stay-in-touch {
+        display: flex;
+
+        background: #0c1a3a;
+
+        @include responsive(max-width, $mobile-max) {
+            .row {
+                gap: 32px;
+            }
+        }
+
+        .announcements {
+            margin-top: $integer-lg;
+            margin-bottom: $integer-md;
+            padding-right: $integer-lg;
+        }
+
+        .action {
+            margin-top: $integer-lg;
+        }
+
+        #read-reviews-btn {
+            color: white;
+            background: #0c1a3a;
+            border: 1px solid white;
+        }
+
+        .social {
+            display:flex;
+            gap: $integer-md;
+        }
+
+        .button--icon {
+            background-color: white;
+            color: #0c1a3a;
+        }
+
+        .newsletter-form {
+            #subscribe-btn {
+                color: #0c1a3a;
+            }
+        }
+    }
+    &-stay-in-touch::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 75%;
+        left: 12.5%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+#core-expertise {
+    background-color: #0B1B3A;
+    min-height: 100vh;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .section__comment {
+        color: #007bff;
+        font-weight: 400;
+    }
+
+    .section__title {
+        color: white;
+        margin-top: 10px;
     }
 }

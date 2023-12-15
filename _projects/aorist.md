@@ -1,5 +1,6 @@
 ---
 layout: project
+hidden: true
 order: 2
 case_study: true
 title: Aorist

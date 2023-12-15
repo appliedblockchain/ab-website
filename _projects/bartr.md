@@ -1,5 +1,6 @@
 ---
 layout: project
+hidden: true
 create-page: false
 order: 100
 title: BARTR

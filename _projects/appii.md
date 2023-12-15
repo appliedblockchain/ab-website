@@ -1,5 +1,6 @@
 ---
 layout: project
+hidden: true
 order: 100
 case_study: true
 title: APPII

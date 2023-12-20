@@ -11,6 +11,11 @@
 #   website: # if relevant, url of the event page
 #   register: # if relevant, url to register
 # recording: # if relevant, url to the recording
+- name: "Applied Blockchain Session: Re-Imagining Enterprise Blockchain"
+  image: panel_ss2_ab # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page
+  date: "2024-01-24"
+  location: "Level 39, One Canada Square, Canary Wharf, London, United Kingdom"
+  website: "https://lu.ma/appliedblockchainsessions"
 
 - name: "Hong Kong FinTech Week"
   image: hk_fw_2023 # needs to follow the same patter (webinar-ID_OF_WEBINAR), as it will be the name of the recording page

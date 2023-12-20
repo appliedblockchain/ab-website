@@ -11,6 +11,9 @@ background_color: white
     <!-- <iframe class="projects__video" src="https://www.youtube.com/embed/WyLoPXjJaNE?autoplay=1&mute=1"></iframe> -->
     <div class="grid row card__wrapper">
         {% for project in sorted %}
+        {% if project.hidden == true %}
+            {% continue %}
+        {% endif %}
         <div class="col--lg4 col--sm6">
             <div class="card card--portrait background--shadow">
                 <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/carousel/clients_color/{{ project.slug }}.png');"></div>

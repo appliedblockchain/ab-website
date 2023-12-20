@@ -8,7 +8,6 @@ layout: compress
   <div id="particles-js"></div>
   {% include containers/page/title.html
     headline = site.description
-    titleStyle = "text-align: left"
   %}
   <div class="section section--tags">
     <div class="row">
@@ -34,7 +33,7 @@ layout: compress
     <div class="row row--center">
       <a href="{{ site.base-url }}/contact" class="button button--highlight button--animate fas fa-envelope"
         style="padding: 1.2rem 1.5rem; border-radius: 0.5rem;">
-        <p class="button__inner">Discuss Your Business Needs</p>
+        <p class="button__inner">Get in touch</p>
       </a>
     </div>
   </div>
@@ -93,32 +92,7 @@ layout: compress
   </div>
 </div>
 
-<section id="index-intro" class="section section--white">
-  {% include containers/sections/header.html
-    comment = 'What we do'
-    title = 'Blockchain solutions'
-  %}
-  <div class="section__header body--large">
-    We have developed and deployed dozens of blockchain applications from NFT marketplaces for famous artists to sophisticated DeFi protocols and Web3 dApps, on blockchains including Ethereum, Algorand, Polygon and Solana. We are also developing the next generation of blockchain solutions. These include SilentData, a privacy-preserving data oracle for off-chain data, and London Bridge, a hardware-secured bridge between Algorand, Ethereum, and other EVM chains for cross chain asset transfers.
-  </div>
-  <div class="section__content">
-    <div class="button__wrapper">
-      <a href="{{ site.base-url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
-        <p class="button__inner">Services</p>
-      </a>
-      <!-- <a href="{{ site.base-url }}/products" class="ga-button-services button button--primary button--animate fa fa-box">
-        <p class="button__inner">Products</p>
-      </a> -->
-    </div>
-  </div>
-  <div class="section__content">
-    {% include elements/carousel.html
-      variant = 'technologies'
-    %}
-  </div>
-</section>
-
-<section class="section section--grey" id="who-we-help">
+<section id="who-we-help" class="section section--grey">
   {% include containers/sections/header.html
     comment = 'Who we help'
     title = 'Cutting-edge startups to global enterprises'
@@ -163,7 +137,9 @@ layout: compress
     </div>
   </div>
   <div class="section__content">
-    <p class="body--large">Over the last years we have been selected by some of the world's top companies to advise, design and build innovative solutions. We serve customers in DeFi, Web3, NFTs, cryptocurrency, financial services, trading, energy, commodities, supply chain, telecoms and government.</p>
+    <p class="body--large">
+      World's top companies choose us to advise, design and build innovative solutions. We serve customers in DeFi, Web3, NFTs, cryptocurrency, financial services, trading, energy, commodities, supply chain, telecoms and government.
+    </p>
   </div>
   <div class="section__content">
     <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary button--animate fas fa-fill">
@@ -172,13 +148,17 @@ layout: compress
   </div>
 </section>
 
-<section id="index-testimonials" class="section section--white no-padding--left no-padding--right">
+<section id="core-expertise" class="section section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/core-expertise.png');">
+  {% include containers/sections/header.html
+    comment = 'What we do'
+    title = 'Our Core Expertise'
+  %}
   <div class="section__content">
-    <div class="card testimonials">
-      {% include elements/carousel.html
-        type = 'testimonials'
-        variant = 'testimonials_clients'
-      %}
+    <div class="button__wrapper" style="bottom: 5rem; position: absolute;">
+      <a href="{{ site.base-url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
+        <p class="button__inner">Our Services</p>
+      </a>
+
     </div>
   </div>
 </section>
@@ -222,24 +202,30 @@ layout: compress
   </div>
 </section>
 
-<section id="index-featured-in" class="section section--white">
-  {% include containers/sections/header.html
-    title = 'Featured In'
-  %}
+<section id="index-stay-in-touch" class="section section--primary">
   <div class="section__content">
     <div class="row">
-      {% for item in site.data.images.media %}
-      <div class="col--lg3 col--6">
-        <div class="card card__inner">
-          {% if item.link %}
-          <a href="{{ item.link }}" target="_blank">
-            {% endif %}
-            <img src="{{ site.base-url }}{{ site.imageurl }}/logos/media/{{ item.name | slugify }}.png" alt="Logo {{ item.name }}" class="logo-media__image">
-            {% if item.link %}
-          </a>
-          {% endif %}
+      <div class="card col--4 col--sm6 col--xl4 body--left">
+        <h2 class="body--large body--bold">Stay in touch</h2>
+        <p class="description body--regular body--regular announcements">
+          Subscribe to our social media channels:
+        </p>
+        <div class="action">
+          {% include components/social.html %}
         </div>
       </div>
+      <div class="card col--4 col--sm6 col--xl4 body--left">
+        <h2 class="body--large body--bold">5-star customer reviews</h2>
+        <div class="description " style="width: 70%; margin-top: 1.8rem; margin-bottom: 1rem">
+          <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/clients/gartner.svg" alt="">
+        </div>
+        <div class="action">
+          <a id="read-reviews-btn" class="button button--white" target="_blank" href="https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/reviews?marketSeoName=blockchain-consulting-and-proof-of-concept-development-services&vendorSeoName=applied-blockchain&productSeoName=applied-blockchain-consulting-and-development-services">
+            Read reviews <i class="fa fa-external-link-alt" style="margin-left: 0.5rem"></i>
+          </a>
+        </div>
+      </div>
+<<<<<<< HEAD
       {% endfor %}
     </div>
   </div>
@@ -249,6 +235,23 @@ layout: compress
       <a href="{{ site.base-url }}/media" class="ga-button-media button button--primary button--animate fas fa-newspaper">
         <p class="button__inner">Press</p>
       </a>
+=======
+      <div class="card col--4 col--sm6 col--xl4 body--left">
+        <h2 class="body--large body--bold">Subscribe to our mailing list</h2>
+        <form class="newsletter-form">
+          <a 
+            id="subscribe-btn"
+            class="action button button--white" 
+            onclick="document.getElementById('pipedrive-form').style.display = 'block'; document.getElementById('subscribe-btn').style.display = 'none';"
+          >
+            Subscribe
+          </a>
+          <div id="pipedrive-form" class="action" style="display: none">
+            <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2Vszhkp0VUQW1CVhICfEAHXpnNWE8eain6uvCf8koOQi9inTklIlYh91rBpTSMCS7"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+          </div>
+        </form>
+      </div>
+>>>>>>> 0319d24d17b7ff2dc0daf4b92323d3f7aa696a12
     </div>
   </div>
 </section>

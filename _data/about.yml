@@ -19,7 +19,7 @@ leadership:
 
 team:
   - name: Cláudia Neves
-    title: HR and Office Manager
+    title: People Operations and Culture Manager
     office: Porto
     thumbnail: claudia
   - name: Tudor Popescu
@@ -30,27 +30,19 @@ team:
     title: Head of Product
     office: London
     thumbnail: andy
-  - name: Mario Gemoll
-    title: Principal Engineer, Core Technologies
-    office: London
-    thumbnail: mario
-  - name: Katerina Sobetskaia
-    title: Project Manager
-    office: London
-    thumbnail: katerina
-  - name: Patrick Timmis
-    title: Project Manager
-    office: London
-    thumbnail: patrick
   - name: Anna Zambon
-    title: Sales Executive
+    title: Strategy & Growth Executive
     office: London
     thumbnail: anna
   - name: Maria Dragan
-    title: HR Manager
+    title: Recruitment Manager
     office: London
     thumbnail: maria
   - name: Donna Bengio
     title: Sales & Marketing Coordinator
     office: London
     thumbnail: donna
+  - name: Chris Miller
+    title: Blockchain Architect
+    office: London
+    thumbnail: chris

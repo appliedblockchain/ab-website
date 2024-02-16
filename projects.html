@@ -3,49 +3,64 @@ layout: default
 title: Projects
 subtitle: We develop applications for startups and enterprises using blockchain, advanced cryptography and secure enclaves
 background_color: white
+has_custom_title_section: true
 ---
 
 {% assign sorted = site.projects | sort : "order" %}
 
-<section class="section section--alt section--white">
-    <!-- <iframe class="projects__video" src="https://www.youtube.com/embed/WyLoPXjJaNE?autoplay=1&mute=1"></iframe> -->
-    <div class="grid row card__wrapper">
-        {% for project in sorted %}
-        {% if project.hidden == true %}
-            {% continue %}
-        {% endif %}
-        <div class="col--lg4 col--sm6">
-            <div class="card card--portrait background--shadow">
-                <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/carousel/clients_color/{{ project.slug }}.png');"></div>
-                <div class="card__inner">
-                    <div class="card__content">
-                        <p class="card__label label">{{ project.industry }}</p>
-                        <h2 class="card__title subtitle">{{ project.title }}</h2>
-                        <p class="card__subtitle lead">{{ project.subtitle }}</p>
-                        {% if project.short_summary %} 
-                          <p class="card__body">{{ project.short_summary }}</p>
-                          {% else %}
-                          <p class="card__body">{{ project.summary }}</p>
-                        {% endif %}
-                    </div>
-                    {% if project.case_study == true or project.link %}
-                    <div class="card__actions">
-                        {% if project.case_study == true %}
-                        <a href="{{ project.url }}" class="button button--primary button--small button--animate fa fa-eye">
-                            <p class="button__inner">Learn more</p>
-                        </a>
-                        {% endif %}
-                        {% if project.link %}
-                        <a href="{{ project.link }}" target="_blank" class="button button--highlight button--small button--animate fa fa-globe">
-                            <p class="button__inner">{% if project.link_title %}{{ project.link_title }}{% else %}Website{% endif %}</p>
-                        </a>
-                        {% endif %}
-                        
-                    </div>
-                    {% endif %}
+<section class="section section--alt section--white section--projects">
+    <div class="top-section">
+        <div class="top-section__inner-container">
+            <div class="top-section__text-container">
+                <div class="top-section__title">{{page.title}}</div>
+                <div class="top-section__description">{{page.subtitle}}</div>
+            </div>
+            <div class="top-section__icons-container">
+                <div class="top-section__icons" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-projects-logo-bg-0.svg'), url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-projects-logo-bg-1.svg'), url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-projects-logo-bg-2.svg'), url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-projects-logo-bg-3.svg'), url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-projects-logo-bg-4.svg'), url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-projects-logo-bg-5.svg'), url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-projects-logo-bg-6.svg')">
                 </div>
             </div>
         </div>
-        {% endfor %}
+    </div>
+
+    <div class="content-container">
+        <div class="buttons-container">
+            <button type="button" class="button">Supply-Chain</button>
+            <button type="button" class="button">DeFi</button>
+            <button type="button" class="button">NFT’s</button>
+            <button type="button" class="button">Web3</button>
+            <button type="button" class="button">Passkey</button>
+        </div>
+
+        <!-- <iframe class="projects__video" src="https://www.youtube.com/embed/WyLoPXjJaNE?autoplay=1&mute=1"></iframe> -->
+        <div class="projects-container">
+            <div class="projects-inner-container">
+                {% for project in sorted %}
+                {% if project.hidden == true %}
+                    {% continue %}
+                {% endif %}
+                <a href="{{ project.url }}" class="project-card">
+                    <div class="project-card__img-container">
+                        <img
+                            src="{{ site.base-url }}{{ site.imageurl }}/icons/{{ project.icon }}"
+                            alt="{{ project.title }}"
+                        >
+                    </div>
+                    <div class="project-card__badges-container">
+                        {% for industry in project.industry %}
+                        <div class="project-card__industry-badge">{{ industry }}</div>
+                        {% endfor %}
+                    </div>
+                    <div class="project-card__description">{{ project.subtitle }}</div>
+
+                    {% if project.case_study == true %}
+                        <div class="project-card__view-project-btn">
+                            <span>View project</span>
+                            {% include elements/right-arrow.html %}
+                        </div>
+                    {% endif %}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </section>

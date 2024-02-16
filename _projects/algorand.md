@@ -4,13 +4,15 @@ order: 2
 case_study: true
 title: Algorand
 subtitle: Randomness Oracle
-industry: Blockchain
+industry:
+  - Blockchain
 short_summary: Algorand is a decentralised network built to solve the Blockchain Trilemma of simultaneously achieving speed, security, and decentralisation. Launched in June 2019 by computer scientist and MIT professor Silvio Micali, Algorand is a permissionless, open-source blockchain network upon which anyone can build.
 
 summary: 'Applied Blockchain has been working closely with the Algorand Foundation since 2019, including developing a range of leading Algorand decentralised applications from <a class="giveaway--link" target="_blank" href="https://appliedblockchain.com/projects/opulous">Opulous</a> music rights financing, to <a class="giveaway--link" target="_blank" href="https://appliedblockchain.com/projects/aorist">Aorist<a/> high-end digital art marketplace, and core infrastructure such as <a class="giveaway--link" target="_blank" href="https://londonbridge.io">London Bridge</a>, a secure token bridge between Ethereum and Algorand, and <a class="giveaway--link" target="_blank" href="https://silentdata.com">Silent Data</a>, a privacy-preserving data oracle.'
 
 link: https://www.algorand.com/
 background_color: white
+icon: icon-project-client-logo-algornad.svg
 
 challenge:
      - paragraph: 'Generating a source of trusted and secure randomness is difficult, especially on-chain. Yet having one is necessary for decentralised applications that depend on randomised processes, such as lotteries, random NFT drops, games, etc. Crucially, it is not enough for most on-chain applications to use “random-looking” quantities (such as the block seed) as sources of randomness. Instead, block proposers have partial control over these quantities, making it possible for rogue block proposers to break applications that depend on these sources being unpredictable.</br>

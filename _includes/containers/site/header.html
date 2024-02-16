@@ -101,7 +101,7 @@
 
 <div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{% if page.layout == 'webinar' or page.layout == 'report' %}{{ page.layout }}.jpg{% elsif page.background_image %}{{ page.background_image }}{% endif %}');">
 
-{% if page.layout == 'index' or page.layout == 'post' or page.layout == 'project' or page.layout == 'beyond' %}
+{% if page.layout == 'index' or page.layout == 'post' or page.layout == 'project' or page.layout == 'beyond' or page.has_custom_title_section %}
 {% else %}
 {% include containers/page/title.html %}
 {% endif %}

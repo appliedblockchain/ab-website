@@ -4,11 +4,13 @@ order: 100
 case_study: true
 title: Nuggets
 subtitle: Reinventing consumer data security
-industry: Biometrics<br>
-    Data privacy
+industry:
+  - Biometrics
+  - Data privacy
 summary: Biometric tool for login, payment and identity verification, without sharing or storing private data.
 link: http://nuggets.life/
 background_color: white
+icon: icon-project-client-logo-nuggets.svg
 
 delivery:
     - item: 

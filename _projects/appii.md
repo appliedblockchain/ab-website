@@ -5,7 +5,8 @@ order: 100
 case_study: true
 title: APPII
 subtitle: World’s first blockchain career verification and background screening platform
-industry: Recruitment
+industry:
+  - Recruitment
 summary: APPII is an online verification, career management, and recruitment platform.
 link: https://appii.io/
 background_color: white

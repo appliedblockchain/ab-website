@@ -5,10 +5,12 @@ case_study: true
 tag: featured
 title: Lloyd's Register
 subtitle: Creating the first demonstrator that can register ships into Class using blockchain technology
-industry: Shipping
+industry:
+  - Shipping
 summary: LR created the first register of ships in 1764, a tool used to provide merchants and underwriters information about the quality and condition of vessels they chartered and insured.
 link: https://www.lr.org/en-gb/latest-news/classification-for-the-digital-age/
 background_color: white
+icon: icon-project-client-logo-lloyds_register.svg
 
 challenge:
     - lead: Applying blockchain technology to the classification process of registering new ships into Class and launching a prototype blockchain-enabled register tool.

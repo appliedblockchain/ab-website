@@ -4,10 +4,12 @@ order: 2
 case_study: true
 title: Opulous
 subtitle: Copyright backed NFT marketplace for music
-industry: Music
+industry:
+  - Music
 summary: Opulous is the first music copyright-backed NFTs marketplace, that changes how artists can access the funding they need.
 link: https://opulous.org/
 background_color: white
+icon: icon-project-client-logo-opulous.svg
 
 challenge:
     - paragraph: Opulous and Applied Blockchain have collaborated to create the first copyright-backed NFT platform for musicians. Applied Blockchain chose Algorand as the best solution for an NFT platform requiring the additional control mechanisms that ASAs offer.

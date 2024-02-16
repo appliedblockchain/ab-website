@@ -4,10 +4,12 @@ order: 2
 case_study: true
 title: SITA
 subtitle: Distributed drone registry
-industry: Aviation IT
+industry:
+  - Aviation IT
 summary: Development of the world’s first distributed drone registry.
 link: https://www.reuters.com/article/us-iata-drones/airlines-back-creation-of-global-drone-registry-iata-idUSKBN1HO2M5
 background_color: white
+icon: icon-project-client-logo-sita.svg
 
 delivery:
     - item:

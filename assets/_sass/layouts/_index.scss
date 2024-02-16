@@ -7,15 +7,36 @@
 #landing {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 100vh;
     position: relative;
     padding-top: 0;
     padding-bottom: $integer-xxl;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top calc(6rem + 1vh), right top 6rem;
+    background-size: 20rem, 68vh;
+    gap: 4rem;
 
-    &:before {
-        @include pseudo-element('', 0, 0, 0, 0, 100%, 100%);
-        background-image: linear-gradient(to bottom, rgba($primary, 0.7), $primary);
+    @include responsive(max-width, $desktop-max) {
+        background-size: 0, 68vh;
+    }
+
+    .description-container {
+        margin-top: $integer-xxxl + 2rem;
+        max-width: 48rem;
+
+        & > h1 {
+            display: block;
+            font-size: 4rem;
+            line-height: 5rem;
+            font-weight: 900;
+            text-align: start;
+            color: #017cff;
+
+            @include responsive(max-width, $mobile-max) {
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+        }
     }
 
     .page__header {
@@ -26,23 +47,136 @@
 
     .section__content {
         position: relative;
-        padding-bottom: $integer-xxxl*1.5;
+        padding-top: 2rem;
+        padding-bottom: $integer-xl;
+        display: none;
+
+        @include responsive(max-width, $mobile-max) {
+            display: block;
+        }
+    }
+
+    .section__organizations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        &__title {
+            text-align: center;
+            font-size: 1.125rem;
+            font-weight: 400;
+            width: 100%;
+        }
+
+        &__icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 2rem;
+            gap: 2rem;
+            max-width: 60rem;
+            justify-content: center;
+        }
+
+        &__icon {
+            height: 3rem;
+            flex: 0;
+        }
+    }
+
+    .section__tile-container {
+        display: flex;
+        position: relative;
+
+        @include responsive(max-width, $tablet-max) {
+            display: block;
+        }
+    }
+
+    .section__project-tile-container {
+        flex: 5;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+        gap: 1rem;
+
+        @include responsive(max-width, $tablet-max) {
+            width: 100%;
+            min-width: inherit;
+            grid-template-columns: 1fr;
+            margin-top: 1rem;
+        }
+    }
+
+    .section__project-tile {
+        background-color: #0c1731;
+        color: #fff;
+        border-radius: 10px;
+        text-align: start;
+        padding: 1.2rem 1.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &__icon {
+            width: 1.375rem;
+            height: 1.375rem;
+            display: inline-block;
+            margin-right: .4rem;
+        }
+
+        &__title {
+            font-size: 1.375rem;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        &__description {
+            font-size: .8125rem;
+            flex: 1 0 5rem;
+        }
+
+        &__link {
+            color: #017cff;
+            font-weight: 400;
+            font-size: .875rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            & > svg {
+                display: block;
+                margin-left: .5rem;
+                width: .875rem;
+                height: .875rem;
+            }
+        }
     }
 
     .section--tags {
-        margin-top: 0;
-        padding-top: 0;
-        color: white;
-        font-size: 1rem;
-        margin-top: 2rem;
-
-        .tag__number {
-            font-size: 3rem;
-            font-weight: bold
-        }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: start;
+        flex: 4;
+        gap: 1rem;
 
         @include responsive(max-width, $mobile-max) {
-            display: none;
+            width: 100%;
+            min-width: inherit;
+        }
+
+        .section__tile {
+            &__title {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            &__value {
+                font-size: 3rem;
+                font-weight: 400;
+                color: #0062cc;
+            }
         }
     }
 

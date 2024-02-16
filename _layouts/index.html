@@ -4,28 +4,56 @@ layout: compress
 
 {% include containers/site/header.html %}
 
-<div id="landing" class="section section--alt section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{{ page.layout }}.jpg');">
-  <div id="particles-js"></div>
-  {% include containers/page/title.html
-    headline = site.description
-  %}
-  <div class="section section--tags">
-    <div class="row">
-      <div class="col--xl3 col--lg6 col--sm6">
-        <p class="tag__number">+100</p>
-        <p class="body body--regular">Projects Delivered</p>
+<div id="landing" class="section section--alt" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/index-bg-1.svg'), url('{{ site.base-url }}{{ site.imageurl }}/background/index-bg-0.svg')">
+  <div class="description-container">
+    <h1>{{site.description}}</h1>
+  </div>
+  <div class="section__tile-container">
+    <div class="section--tags">
+      <div class="section__tile">
+        <div class="section__tile__title">Founded</div>
+        <div class="section__tile__value">2015</div>
       </div>
-      <div class="col--xl3 col--lg6 col--sm6">
-        <p class="tag__number">+100</p>
-        <p class="body body--regular">Team Members</p>
+      <div class="section__tile">
+        <div class="section__tile__title">Project delivered</div>
+        <div class="section__tile__value">+100</div>
       </div>
-      <div class="col--xl3 col--lg6 col--sm6">
-        <p class="tag__number">+30</p>
-        <p class="body body--regular">Years of Technical Expertise</p>
+      <div class="section__tile">
+        <div class="section__tile__title">Gartner rating</div>
+        <div class="section__tile__value">5 star</div>
       </div>
-      <div class="col--xl3 col--lg6 col--sm6">
-        <p class="tag__number">+10</p>
-        <p class="body body--regular">Enterprise Clients</p>
+      <div class="section__tile">
+        <div class="section__tile__title">Team size</div>
+        <div class="section__tile__value">+70</div>
+      </div>
+    </div>
+    <div class="section__project-tile-container">
+      <div class="section__project-tile">
+        <div class="section__project-tile__title">
+          <img
+            src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-sientdata.svg"
+            alt="silentdata"
+            class="section__project-tile__icon"
+          >
+          <span>SILENTDATA</span>
+        </div>
+        <div class="section__project-tile__description">
+          The data privacy layer for blockchains
+        </div>
+        <a href="https://www.silentdata.com" target="_blank" class="section__project-tile__link">
+          <span>Discover Silent Data</span>
+          {% include elements/right-arrow.html %}
+        </a>
+      </div>
+      <div class="section__project-tile">
+        <div class="section__project-tile__title">OUR PROJECTS</div>
+        <div class="section__project-tile__description">
+          We develop applications for startupsand enterprises using blockchain, advanced cryptography and secure enclaves
+        </div>
+        <a href="/projects" class="section__project-tile__link">
+          <span>Read Use Cases</span>
+          {% include elements/right-arrow.html %}
+        </a>
       </div>
     </div>
   </div>
@@ -37,57 +65,76 @@ layout: compress
       </a>
     </div>
   </div>
-  <div class="row widget__bar card__wrapper">
-    <div class="card col--xl8 col--lg7 body--left">
-      <p class="body body--regular card__title">Trusted by global organisations and startups alike</p>
-      <div class="card__body">
-        {% include elements/carousel.html
-          variant = 'clients'
-        %}
-      </div>
+  <div class="section__organizations">
+    <div class="section__organizations__title">
+      Trusted by global organisations and startups:
     </div>
-    <div class="col--xl4 col--lg5">
-      <div class="owl-carousel owl-carousel-news widget--news card card--xs card--portrait background--shadow body--black">
-        {% for item in site.data.news %}
-        <div class="carousel__item">
-          <div class="card__inner">
-            {% if item.image %}
-            <img src="{{ site.base-url }}/assets/images/{{ item.image }}" alt="" class="card__image">
-            {% endif %}
-            <div class="card__inner--left">
-              <div class="card__content">
-                <p class="card__title body--small body--bold">
-                  <span class="mr">{{ item.title }}</span>
-                  {% if item.body %}
-                  <span class="body--xs body--regular">{{ item.body }}</span>
-                  {% endif %}
-                </p>
-              </div>
-              <div class="card__actions">
-                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.link }}" target="_blank" class="card__actions button button--xsmall button--primary button--animate fas fa-eye">
-                  <p class="button__inner">{{ item.button_label }}</p>
-                </a>
-                {% if item.second_button_label %}
-                <a href="{% if link_type == 'internal' %}{{ site.base-url }}/{% endif %}{{ item.second_link }}" target="_blank" class="card__actions button button--xsmall button--primary button--animate fas fa-eye">
-                  <p class="button__inner">{{ item.second_button_label }}</p>
-                </a>
-                {% endif %}
-
-                {% if item.rating %}
-                <div class="body--small body--grey rating">
-                  <div class="fas fa-star{% if item.rating >= 1 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 2 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 3 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 4 %} body--highlight{% endif %}"></div>
-                  <div class="fas fa-star{% if item.rating >= 5 %} body--highlight{% endif %}"></div>
-                </div>
-                {% endif %}
-              </div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+    <div class="section__organizations__icon-container">
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-0.svg"
+        alt="shell"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-1.svg"
+        alt="klm"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-2.svg"
+        alt="ledger"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-3.svg"
+        alt="chainlink"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-4.svg"
+        alt="vodafone"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-5.svg"
+        alt="lloyds-register"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-6.svg"
+        alt="tim"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-7.svg"
+        alt="bank-of-america"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-8.svg"
+        alt="sita"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-9.svg"
+        alt="toyota"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-10.svg"
+        alt="travel-ledger"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-11.svg"
+        alt="baanx"
+      >
+      <img
+        class="section__organizations__icon"
+        src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-client-logo-12.svg"
+        alt="united-nations"
+      >
     </div>
   </div>
 </div>
@@ -243,13 +290,5 @@ layout: compress
     </div>
   </div>
 </section>
-
-<!-- particles animation -->
-<script src="{{ site.base-url }}{{ site.resourceurl }}/vendor/particles/particles.min.js"></script>
-<script>
-  particlesJS.load('particles-js', 'assets/vendor/particles/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-</script>
 
 {% include containers/site/footer.html %}

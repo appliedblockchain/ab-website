@@ -1,21 +1,28 @@
 <header class="header">
   <div class="header__bar">
-    <div class="header__logo logo{% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} logo-white{% endif %}{% if page.background_color == 'dark' %} logo-name-white{% endif %}">
+    <div class="header__logo logo">
       <a href="{{ site.base-url }}/">
         {% include mixins/logo.html %}
       </a>
     </div>
-    <div class="header__actions">
-      <a href="{{ site.base-url }}/projects" class="button action {% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} text-white {% endif %}">Projects</a>
-      <a href="{{ site.base-url }}/services" class="button action {% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} text-white {% endif %}">Services</a>
-      <a href="{{ site.base-url }}/events" class="button action {% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} text-white {% endif %}">Events</a>
-      <a href="{{ site.base-url }}/about" class="button action {% if page.background_color == 'primary' or page.layout == 'index' or page.layout == 'post' %} text-white {% endif %}">About</a>
-      <div class="header__button">
-        {% if page.id != 'applied-privacy' %}
-          <a href="{{ site.base-url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope{% if page.background_color != 'white' or page.layout == 'post' %} alt{% endif %}">
-            <p id="contact-us" class="button__inner action">Contact us</p>
-          </a>
-        {% endif %}
+    <div class="header__logo logo-mobile">
+      <a href="{{ site.base-url }}/">
+        {% include mixins/logo-mobile.html %}
+      </a>
+    </div>
+    <div class="header__action-container">
+      <div class="header__actions">
+        <a href="{{ site.base-url }}/projects" class="button action">Projects</a>
+        <a href="{{ site.base-url }}/services" class="button action">Services</a>
+        <a href="{{ site.base-url }}/events" class="button action">Events</a>
+        <a href="{{ site.base-url }}/about" class="button action">About</a>
+        <div class="header__button">
+          {% if page.id != 'applied-privacy' %}
+            <a href="{{ site.base-url }}/contact" class="header__contact button button--small button--primary button--animate fas fa-envelope">
+              <p id="contact-us" class="button__inner action">Contact us</p>
+            </a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>

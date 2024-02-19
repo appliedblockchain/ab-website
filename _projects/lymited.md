@@ -4,6 +4,8 @@ order: 100
 case_study: true
 title: Lymited
 subtitle: Changing the Game for Luxury Vendors
+category:
+  - Blockchain
 industry:
   - Luxury goods
 summary: The Lymited platform seamlessly connects vendors and their most sought-after pieces with a targeted global audience of discerning buyers.

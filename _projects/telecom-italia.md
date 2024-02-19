@@ -4,6 +4,8 @@ create-page: false
 order: 2
 title: Telecom Italia
 subtitle: TIM WCAP Innovation Program
+category:
+  - Blockchain
 industry:
   - Telecom
 summary: Showcasing privacy-preserving technology

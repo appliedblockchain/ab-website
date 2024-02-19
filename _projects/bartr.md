@@ -5,6 +5,8 @@ create-page: false
 order: 100
 title: BARTR
 subtitle: Wholesale telecoms billing and reconciliation
+category:
+  - Blockchain
 industry:
   - Telecom
 summary: Bartr is creating a standardised, decentralised value layer that brings together global telecoms

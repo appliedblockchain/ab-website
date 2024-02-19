@@ -4,6 +4,8 @@ order: 2
 case_study: true
 title: Opulous
 subtitle: Copyright backed NFT marketplace for music
+category:
+  - Blockchain
 industry:
   - Music
 summary: Opulous is the first music copyright-backed NFTs marketplace, that changes how artists can access the funding they need.

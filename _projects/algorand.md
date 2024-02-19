@@ -4,6 +4,8 @@ order: 2
 case_study: true
 title: Algorand
 subtitle: Randomness Oracle
+category:
+  - Blockchain
 industry:
   - Blockchain
 short_summary: Algorand is a decentralised network built to solve the Blockchain Trilemma of simultaneously achieving speed, security, and decentralisation. Launched in June 2019 by computer scientist and MIT professor Silvio Micali, Algorand is a permissionless, open-source blockchain network upon which anyone can build.

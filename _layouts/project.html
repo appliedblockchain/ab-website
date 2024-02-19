@@ -4,34 +4,43 @@ layout: compress
 
 {% include containers/site/header.html %}
 
-<div id="project-intro" class="section section--header">
-    <div class="block__content">
-        <div class="row">
-            <div class="col--lg7 title">
-                <h1>{{ page.title }}</h1>:
-                <span class="body--black">{{ page.subtitle }}</span>
+<div id="project-intro" class="section section--header section--project">
+    <div class="client-icon-container">
+        <img
+            src="{{ site.base-url }}{{ site.imageurl }}/icons/{{ page.icon }}"
+            alt="{{ page.title }}"
+        >
+    </div>
+    <div class="company-info-container">
+        <div class="company-info-container__left">
+            <div class="project-title">{{ page.title }} case study</div>
+            <div class="project-subtitle">{{ page.subtitle }}</div>
+        </div>
+
+        <div class="company-info-container__right">
+            {% if page.industry and page.industry.size > 0 %}
+            <div class="industry-container">
+                <div class="info-title">Industry</div>
+                {% for industry in page.industry %}
+                    <div class="info-value">{{ industry }}</div>
+                {% endfor %}
             </div>
-            <div class="coloffset--lg1 col--lg4 col--md12">
-                <div class="card card--xsmall card--landscape body--large">
-                    <p class="card__title body--bold">Industry</p>
-                    <p class="card__body">
-                        {% for industry in page.industry %}
-                            {{ industry }}
-                            {% if forloop.last == false %}<br>{% endif %}
-                        {% endfor %}
-                    </p>
-                </div>
-                {% if page.deliverables %}
-                <div class="card card--xsmall card--landscape body--large">
-                    <p class="card__title body--bold">Deliverables</p>
-                    <p class="card__body">{{ page.deliverables }}</p>
-                </div>
-                {% endif %}
+            {% endif %}
+
+            {% if page.category and page.category.size > 0 %}
+            <div class="industry-container">
+                <div class="info-title">Category</div>
+                {% for category in page.category %}
+                    <div class="info-value">{{ category }}</div>
+                {% endfor %}
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
 
+<div>
+{% if false %}
 {% if page.summary and page.short_summary == false %}
 <section id="project-summary" class="section background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg');">
     <div class="card card--lg card--landscape background--shadow">
@@ -47,119 +56,81 @@ layout: compress
     </div>
 </section>
 {% endif %}
+{% endif %}
 
 {% if page.challenge %}
-<section id="project-challenge" class="section section--white">
-    <div class="row">
-      {% if page.challenge-diagram %}
-        <img src="{{ site.base-url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg" alt="Challenge icon" class="col--md4">
-        <div class="coloffset--md1 col--md7">
-      {% elsif page.challenge-video %}
-      <div class="col--md5">
-        {% if page.challenge-video-title == 'lloyds' %}
-          <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
-              <a href="#modal-video-lloyds" class="js-button-modal modal-video-button">
-                  <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-              </a>
-          </div>
-          <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
-          {% include elements/modals/video-lloyds.html %}
-        {% elsif page.challenge-video-title == 'ledger' %}
-          <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
-              <a href="#modal-video-ledger" class="js-button-modal">
-                  <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-              </a>
-          </div>
-          <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
-          {% include elements/modals/video-ledger.html %}
-        {% else %}
-          <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
-              <a href="#modal-video-randomnessoracle" class="js-button-modal">
-                  <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
-              </a>
-          </div>
-          <p class="video__notice body--large body--bold">{{ page.challenge-video-lead }}</p>
-          {% include elements/modals/video-randomnessoracle.html %}
-        {% endif %}
-      </div>
-        <div class="coloffset--md2 col--md5">
-        {% else %}
-        <div class="col--md6">
-        {% endif %}
-            <h1 class="block__title subtitle">The Challenge</h1>
-            <div class="block__content">
-                {% for item in page.challenge %}
-                <p class="body--large body--bold">{{ item.lead }}</p>
-                <p class="body">{{ item.paragraph }}</p>
-                {% endfor %}
-            </div>
+<section id="project-challenge" class="section subsection section--bg-alt">
+    <div class="subsection__inner-container">
+        <div class="subsection__title">Challenge</div>
+        <div class="subsection__content-container">
+            {% for item in page.challenge %}
+            {% if item.lead %}
+            <p class="subsection__lead">{{ item.lead }}</p>
+            {% endif %}
+            {% if item.paragraph %}
+            <p class="subsection__content">{{ item.paragraph }}</p>
+            {% endif %}
+            {% endfor %}
         </div>
-        {% if page.outcome %}
-        <div class="coloffset--md1 col--md5">
-            <h1 class="block__title subtitle">The Outcome</h1>
-            <div class="block__content">
-                {% for item in page.outcome %}
-                <p class="body">{{ item.paragraph }}</p>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
     </div>
 </section>
 {% endif %}
 
 {% if page.delivery %}
-<section id="project-delivery" class="section section--transparent background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg');">
-    <div class="row">
-        <div class="col--xl7 col--lg9 block__title">
-            <h1 class="subtitle">The Deliverables</h1>
-        </div>
-        <div class="block__content">
+<section id="project-delivery" class="section subsection section--bg-alt">
+    <div class="subsection__inner-container">
+        <div class="subsection__title">Solution</div>
+        <div class="subsection__content-container">
             {% for content in page.delivery %}
-            <div class="block__column col--xl4 col--lg6 col--md8">
-                {% for column in content.item %}
-                <p class="body">{{ column.paragraph }}</p>
-                {% endfor %}
-            </div>
+            {% for item in content.item %}
+            {% if item.paragraph %}
+            <p class="subsection__content">{{ item.paragraph }}</p>
+            {% endif %}
             {% endfor %}
-        </div>        
+            {% endfor %}
+        </div>
     </div>
+
+    {% if page.challenge-diagram %}
+    <div class="subsection__image-container">
+        <div
+            style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/projects/icon/{{ page.slug }}.svg')"
+            class="subsection__image"
+        ></div>
+    </div>
+    {% endif %}
 </section>
 {% endif %}
 
-{% if page.results or page.results-icons %}
-<section id="project-results" class="section section--white">
-    <div class="section__header">
-        <p class="section__title subtitle">The Outcome</p>
-        {% if page.results %}
-        <div class="section__body">
+{% if page.results %}
+<section id="project-results" class="section subsection section--bg-alt">
+    <div class="subsection__inner-container">
+        <div class="subsection__title">Outcome</div>
+        <div class="subsection__content-container">
             {% for item in page.results %}
-            <p class="body--large">{{ item.paragraph }}</p>
+            <p class="subsection__content">{{ item.paragraph }}</p>
             {% endfor %}
-        </div>
-        {% endif %}
-    </div>
-    {% if page.results-icons %}
-    <div class="section__content">
-        <div class="card__wrapper--inline">
+
+            {% if page.results-icons.size > 0 %}
+            <ul>
             {% for item in page.results-icons %}
-            <div class="card">
-                <img src="{{ site.base-url }}{{ site.imageurl }}/icons/{{ item.image }}.svg" alt="Icon {{ item.title }}" class="card__image">
-                <p class="card__title body--large body--bold">{{ item.title }}</p>
-                <p class="card__body body">{{ item.body }}</p>
-            </div>
+            <li>{{ item.title }}</li>
+            {% if item.body %}
+            <ul><li>{{ item.body }}</li></ul>
+            {% endif %}
             {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if page.results-comment %}
+            <p class="subsection__content">{{ page.results-comment }}</p>
+            {% endif %}
         </div>
     </div>
-    {% endif %}
-    {% if page.results-comment %}
-    <div class="section__content">
-        <p class="block__subtitle body">{{ page.results-comment }}</p>
-    </div>
-    {% endif %}
 </section>
 {% endif %}
 
+{% if false %}
 {% if page.resources %}
 <section id="project-resources" class="section section--white">
   <div class="row">
@@ -178,30 +149,89 @@ layout: compress
 </div>
 </section>
 {% endif %}
+{% endif %}
 
-{% if page.testimonial %}
-<section class="section section--grey no-padding--left no-padding--right">
-    <div class="section__content">
-        <div class="card testimonials">
-            <div class="{% if page.title == 'Shell' or page.title == 'Algorand' %} owl-carousel owl-carousel-testimonials{% endif %} carousel--testimonials">
-                {% for item in page.testimonial %}
-                <div class="carousel__item">
-                    <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" class="carousel__image" alt="logo {{ item.name }}">
-                    <div class="card body--left">
-                        <p class="card__body quote">{{ item.quote }}</p>
-                        <div class="card__meta">
-                            <p class="body--large body--bold">{{ item.author }}</p>
-                            <p>{% if item.position %}{{ item.position }}, {% endif %}{{ item.company }}</p>
-                        </div>
-                    </div>
+{% if page.testimonial or page.challenge-video %}
+<section class="section subsection section--bg-alt">
+    <div class="subsection__testimonial-inner-container">
+        <div class="subsection__testimonial-title">Client Testimonials</div>
+        {% for item in page.testimonial %}
+        <div class="subsection__testimonial-card">
+            <div class="subsection__testimonial-card__bg-icon" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-quote.svg')"></div>
+            <div class="subsection__testimonial-card__profile-container">
+                <img class="subsection__testimonial-card__profile-icon" src="{{ site.base-url }}{{ site.imageurl }}/carousel/testimonials_clients/{{ item.author | slugify }}.png" alt="logo {{ item.name }}">
+                <div class="subsection__testimonial-card__profile-content-container">
+                    <div class="subsection__testimonial-card__profile-name">{{ item.author }}</div>
+                    <div class="subsection__testimonial-card__profile-position">{% if item.position %}{{ item.position }}, {% endif %}<span class="subsection__testimonial-card__profile-company">{{ item.company }}</span></div>
                 </div>
-                {% endfor %}
+            </div>
+            <div class="subsection__testimonial-card__content">{{ item.quote }}</div>
+        </div>
+        {% endfor %}
+
+        {% if page.challenge-video-title == 'lloyds' %}
+        <div class="subsection__testimonial-card">
+            <div class="subsection__testimonial-card__bg-icon" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-quote.svg')"></div>
+            <div class="subsection__testimonial-card__profile-container">
+                <img class="subsection__testimonial-card__profile-icon" src="{{ site.base-url }}{{ site.imageurl }}/carousel/testimonials_clients/gary-pogson.png" alt="logo gary-pogson">
+                <div class="subsection__testimonial-card__profile-content-container">
+                    <div class="subsection__testimonial-card__profile-name">Gary Pogson</div>
+                    <div class="subsection__testimonial-card__profile-position">Lead Technical Specialist, <span class="subsection__testimonial-card__profile-company">Lloyd’s Register</span></div>
+                </div>
+            </div>
+            <div class="subsection__testimonial-card__content">
+                <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
+                    <a href="#modal-video-lloyds" class="js-button-modal modal-video-button">
+                        <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play-orange.svg" alt="" class="video__button">
+                    </a>
+                </div>
             </div>
         </div>
+        {% include elements/modals/video-lloyds.html %}
+        {% elsif page.challenge-video-title == 'ledger' %}
+        <div class="subsection__testimonial-card">
+            <div class="subsection__testimonial-card__bg-icon" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-quote.svg')"></div>
+            <div class="subsection__testimonial-card__profile-container">
+                <img class="subsection__testimonial-card__profile-icon" src="{{ site.base-url }}{{ site.imageurl }}/carousel/testimonials_clients/victor-baconnet.png" alt="logo victor-baconnet">
+                <div class="subsection__testimonial-card__profile-content-container">
+                    <div class="subsection__testimonial-card__profile-name">Victor Baconnet</div>
+                    <div class="subsection__testimonial-card__profile-position">Product Owner, <span class="subsection__testimonial-card__profile-company">Ledger</span></div>
+                </div>
+            </div>
+            <div class="subsection__testimonial-card__content">
+                <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
+                    <a href="#modal-video-ledger" class="js-button-modal">
+                        <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play-orange.svg" alt="" class="video__button">
+                    </a>
+                </div>
+                {% include elements/modals/video-ledger.html %}
+            </div>
+        </div>
+        {% elsif page.challenge-video-title == 'randomnessoracle' %}
+        <div class="subsection__testimonial-card">
+            <div class="subsection__testimonial-card__bg-icon" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/icon-quote.svg')"></div>
+            <div class="subsection__testimonial-card__profile-container">
+                <img class="subsection__testimonial-card__profile-icon" src="{{ site.base-url }}{{ site.imageurl }}/carousel/testimonials_clients/ori-shem-tov.png" alt="logo ori-shem-tov">
+                <div class="subsection__testimonial-card__profile-content-container">
+                    <div class="subsection__testimonial-card__profile-name">Ori Shem-Tov</div>
+                    <div class="subsection__testimonial-card__profile-position"><span class="subsection__testimonial-card__profile-company">Algorand Foundation</span></div>
+                </div>
+            </div>
+            <div class="subsection__testimonial-card__content">
+                <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-{{ page.title | slugify }}.jpg');">
+                    <a href="#modal-video-randomnessoracle" class="js-button-modal">
+                        <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play-orange.svg" alt="" class="video__button">
+                    </a>
+                </div>
+                {% include elements/modals/video-randomnessoracle.html %}
+            </div>
+        </div>
+        {% endif %}
     </div>
 </section>
 {% endif %}
 
+{% if false %}
 {% if page.short_summary %}
 <section id="project-short-summary" class="section background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/projects/cover/{{ page.slug }}.jpg');">
     <div class="card card--lg card--landscape background--shadow">
@@ -217,5 +247,7 @@ layout: compress
     </div>
 </section>
 {% endif %}
+{% endif %}
+</div>
 
 {% include containers/site/footer.html %}

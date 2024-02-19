@@ -5,6 +5,8 @@ order: 2
 case_study: true
 title: Aorist
 subtitle: NFT marketplace for digital art
+category:
+  - Blockchain
 industry:
   - Art
 summary: Aorist is a next-generation cultural institution supporting an NFT marketplace for artists creating digital art.

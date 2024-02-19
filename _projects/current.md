@@ -5,6 +5,8 @@ order: 2
 case_study: true
 title: Current
 subtitle: Mobile banking done better
+category:
+  - Blockchain
 industry:
   - Financial Services
 summary: Current is the future of banking. You can spend, save, and manage your money better with their mobile banking app and Visa debit card.

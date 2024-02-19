@@ -4,6 +4,8 @@ order: 100
 case_study: true
 title: Nuggets
 subtitle: Reinventing consumer data security
+category:
+  - Blockchain
 industry:
   - Biometrics
   - Data privacy

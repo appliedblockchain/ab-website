@@ -4,6 +4,8 @@ order: 2
 case_study: true
 title: SITA
 subtitle: Distributed drone registry
+category:
+  - Blockchain
 industry:
   - Aviation IT
 summary: Development of the world’s first distributed drone registry.

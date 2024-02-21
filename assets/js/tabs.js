@@ -28,13 +28,15 @@ $(".tab--jobs .tab__nav a").click(function(event) {
 
 // events
 
-$(".tab--events .tab__nav a").click(function(event) {
-	event.preventDefault();
-	$(this).removeClass("button--primary-lighten");
-	$(this).siblings().addClass("button--primary-lighten");
-	var tab = $(this).attr("href");
-	$(".tab--events .tab__item").not(tab).css("display", "none");
-	$(tab).fadeIn(400);
+$('.events-tabs-container .tab').click(e => {
+	$('.events-tabs-container .tab').removeClass('tab--active');
+	$(e.target).addClass('tab--active');
+	const targetType = $(e.target).attr('data-event-type');
+	['events', 'webinars', 'podcasts', 'insights', 'videos'].forEach(type => {
+		if (targetType === type) return;
+		$('.event-cards-section').removeClass('event-cards-section--' + type);
+	})
+	$('.event-cards-section').addClass('event-cards-section--' + targetType);
 });
 
 // —————————————————————————————————————————————————————————————————

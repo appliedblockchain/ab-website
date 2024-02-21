@@ -1,42 +1,116 @@
-{% assign variant = include.variant %}
+{% assign event_date = include.event_date %}
+{% assign event_name = include.event_name %}
+{% assign event_description = include.event_description %}
+{% assign event_watch_video_url = include.event_watch_video_url %}
+{% assign event_listen_url = include.event_listen_url %}
+{% assign event_external_url = include.event_external_url %}
 
-<div class="card card--landscape no-padding">
-  <div class="card__image background--cover" style="background-image: url({{ site.base-url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg);"></div>
-  <div class="card__inner">
-    <div class="card__content">
-      <p class="card__label body--bold">{% if event.date_to %}{{ event.date | date: '%b %-d' }} to {{ event.date_to | date: '%b %-d, %Y' }}{% else %}{{ event.date | date: '%b %-d, %Y' }}{% endif %}</p>
-      <h2 class="card__title lead">{{ event.name }}</h2>
-      {% if event.location %}
-      <p class="body">{{ event.location }}</p>
+<div class="event-card">
+  <div class="event-card__image"
+    style="background-image: url('{{ thumbnail_url }}');">
+  </div>
+
+  <div class="event-card__content">
+    <div class="event-card__date">
+      {% if event_date %}
+        {{ event_date | date: '%b %-d, %Y' }}
+      {% else %}
+        {% if date < now and event.date_to %}
+          {{ event.date | date: '%b %-d' }} to {{ event.date_to | date: '%b %-d, %Y' }}
+        {% else %}
+          {{ event.date | date: '%b %-d, %Y' }}
+        {% endif %}
       {% endif %}
     </div>
-    <div class="card__actions">
-      {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
+        <div class="event-card__title">
+          {% if event_name %}
+            {{ event_name }}
+          {% else %}
+            {{ event.name }}
+          {% endif %}
+        </div>
+        {% if event_description %}
+          <div class="event-card__description">
+            {{ event_description }}
+          </div>
+        {% endif %}
+        {% if event.location %}
+        <div class="event-card__location">{{ event.location }}</div>
+        {% endif %}
+    </div>
+
+    <div class="event-card__actions-container">
       {% if event.website %}
-      <a href="{{ event.website }}" target="_blank" class="button button--small button--primary button--animate fas fa-globe">
-        <p class="button__inner">Website</p>
+      <a
+        class="button event-card__action event-card__action--website"
+        href="{{ event.website }}"
+        target="_blank"
+      >
+        Website
       </a>
       {% endif %}
       {% if event.register and date >= now %}
-      <a href="{{ event.register }}" target="_blank" class="button button--small button--secondary button--animate fas fa-globe">
-        <p class="button__inner">Register</p>
+      <a
+        class="button event-card__action event-card__action--register"
+        href="{{ event.register }}"
+        target="_blank"
+      >
+        Register
       </a>
       {% endif %}
       {% if event.directions and date >= now %}
-      <a href="{{ event.directions }}" target="_blank" class="button button--small button--secondary button--animate fas fa-directions">
-        <p class="button__inner">directions</p>
+      <a
+        class="button event-card__action event-card__action--directions"
+        href="{{ event.directions }}"
+        target="_blank"
+      >
+        directions
       </a>
       {% endif %}
       {% if event.recording %}
-      <a href="{{ event.recording }}" target="_blank" class="button button--small button--highlight button--animate fas fa-play">
-        <p class="button__inner">View recording</p>
+      <a
+        class="button event-card__action event-card__action--recording"
+        href="{{ event.recording }}"
+        target="_blank"
+      >
+        View recording
       </a>
       {% endif %}
       {% if event.display == 'webinar' and event.webinar_id %}
-      <a href="{{ site.base-url }}/webinar-{{ event.webinar_id }}" target="_blank" class="button button--small button--highlight button--animate fas fa-play">
-        <p class="button__inner">View recording</p>
+      <a
+        class="button event-card__action event-card__action--webinar"
+        href="{{ site.base-url }}/webinar-{{ event.webinar_id }}"
+        target="_blank"
+      >
+        View recording
+      </a>
+      {% endif %}
+      {% if event_watch_video_url %}
+      <a
+        class="button event-card__action event-card__action--watch-video"
+        href="{{ event_watch_video_url }}"
+        target="_blank"
+      >
+        Watch video
+      </a>
+      {% endif %}
+      {% if event_listen_url %}
+      <a
+        class="button event-card__action event-card__action--listen"
+        href="{{ event_listen_url }}"
+        target="_blank"
+      >
+        Listen
+      </a>
+      {% endif %}
+      {% if event_external_url %}
+      <a
+        class="button event-card__action event-card__action--listen"
+        href="{{ event_external_url }}"
+        target="_blank"
+      >
+        Read
       </a>
       {% endif %}
     </div>
   </div>
-</div>

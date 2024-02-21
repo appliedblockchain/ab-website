@@ -1,0 +1,248 @@
+---
+layout: default
+title: Stay Informed
+description: Explore our upcoming events
+background_color: white
+has_custom_title_section: true
+---
+
+<!-- reverse the order -->
+{% assign sorted = site.data.events | reverse %}
+<!-- capture today's date -->
+{% capture now %} {{ 'now' | date: '%s' | plus: 0 }} {% endcapture %}
+
+<!-- check if upcoming events is empty array -->
+{% capture upcoming_events %}
+{% for event in sorted %}
+{% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
+{% if date >= now %}
+not_empty
+{% endif %} 
+{% endfor %}
+{% endcapture %}
+
+<!-- check if recent events is empty array -->
+{% capture recent_events %}
+{% for event in site.data.events %}
+{% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
+{% if date < now %}
+not_empty
+{% endif %} 
+{% endfor %}
+{% endcapture %}
+
+<!-- check if webinar is empty array -->
+{% capture webinars %}
+{% for event in site.data.events %}
+{% if event.display == 'webinar' %}
+not_empty
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<!-- check if podcasts is empty array -->
+{% capture podcasts %}
+{% for event in site.posts %}
+{% if event.social contains "podcast" %}
+not_empty
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<!-- check if insights is empty array -->
+{% capture insights %}
+{% for event in site.posts %}
+{% if event.category == 'blog' %}
+not_empty
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<!-- check if videos is empty array -->
+{% capture videos %}
+{% for event in site.posts %}
+{% if event.social contains "video" %}
+not_empty
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<section class="section section--white section--events">
+  <div class="top-section">
+    <div class="top-section__inner-container">
+      <div class="top-section__text-container">
+        <div class="top-section__title">{{page.title}}</div>
+      </div>
+      <div class="top-section__subscription-container">
+        <div class="top-section__subscription-text">
+          Subscribe to our mailing list
+        </div>
+        <div class="top-section__subscription-button-container">
+          <button type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div class="events-tabs-container">
+        <a href="#events" data-event-type="events" class="button tab">Events</a>
+        <a href="#webinars" data-event-type="webinars" class="button tab">Webinars</a>
+        <a href="#podcasts" data-event-type="podcasts" class="button tab">Podcasts</a>
+        <a href="#insights" data-event-type="insights" class="button tab">Insights</a>
+        <a href="#videos" data-event-type="videos" class="button tab">Videos</a>
+    </div>
+
+    <div class="event-cards-section">
+      <div class="event-cards-container event-cards-container--events">
+        {% if upcoming_events contains "not_empty" or recent_events contains "not_empty" %}
+        {% if upcoming_events contains "not_empty" %}
+        <div class="event-card-section-title">Upcoming</div>
+        <div class="event-card-inner-container">
+          {% for event in sorted %}
+          {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
+          {% if date >= now %}
+          {% capture thumbnail_url %}{{ site.base-url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if recent_events contains "not_empty" %}
+        <div class="event-card-section-title">Past</div>
+        <div class="event-card-inner-container">
+          {% for event in sorted %}
+          {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
+          {% if date < now %}
+          {% capture thumbnail_url %}{{ site.base-url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% else %}
+        <div class="event-card__empty-message">There is no event. Please come back later!</div>
+        {% endif %}
+      </div>
+
+      <div class="event-cards-container event-cards-container--webinars">
+        {% if webinars contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for event in sorted %}
+          {% if event.display == 'webinar' %}
+          {% capture thumbnail_url %}{{ site.base-url}}{{ site.imageurl }}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="event-card__empty-message">There is no webinar. Please come back later!</div>
+        {% endif %}
+      </div>
+
+      <div class="event-cards-container event-cards-container--podcasts">
+        {% if podcasts contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for post in site.posts %}
+          {% if post.social contains 'podcast' %}
+          {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html
+            event_date = post.date
+            event_name = post.title
+            event_description = post.headline
+            event_watch_video_url = post.video_link
+            event_listen_url = post.link
+          %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="event-card__empty-message">There is no podcast. Please come back later!</div>
+        {% endif %}
+      </div>
+
+      <div class="event-cards-container event-cards-container--insights">
+        {% if insights contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for post in site.posts %}
+          {% if post.category == 'blog' %}
+          {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html
+            event_date = post.date
+            event_name = post.title
+            event_external_url = post.link
+          %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="event-card__empty-message">There is no insight. Please come back later!</div>
+        {% endif %}
+      </div>
+
+      <div class="event-cards-container event-cards-container--videos">
+        {% if videos contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for post in site.posts %}
+          {% if post.social contains 'video' %}
+          {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html
+            event_date = post.date
+            event_name = post.title
+            event_description = post.headline
+            event_watch_video_url = post.link
+          %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="event-card__empty-message">There is no video. Please come back later!</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include containers/page/subscription.html %}
+
+<script>
+  window.addEventListener('load', () => {
+    function updateTab() {
+      if (window.location.hash) {
+        const tab = document.querySelector(`.events-tabs-container .tab[data-event-type="${window.location.hash.slice(1)}"]`);
+        if (tab) {
+          tab.click();
+        } else {
+          window.location.hash = '';
+        }
+      } else {
+        document.querySelector('.events-tabs-container .tab[data-event-type="events"]').click();
+      }
+    }
+
+    function updateTabTimeout() {
+      updateTab();
+      setTimeout(updateTabTimeout, 100);
+    }
+
+    updateTabTimeout();
+
+    const subscribeButton = document.querySelector('.top-section__subscription-button-container > button');
+    if (!subscribeButton) return;
+    subscribeButton.addEventListener('click', () => {
+      const footerSubscribeButton = document.getElementById('subscribe-btn');
+      if (!footerSubscribeButton) return;
+
+      footerSubscribeButton.click();
+
+      const newsletterFormTitle = document.querySelector('.newsletter-form-title');
+      if (!newsletterFormTitle) return;
+
+      const { top } = newsletterFormTitle.getBoundingClientRect();
+      const headerBarHeight = 16 * 5; // 5rem
+      const offset = 80;
+      window.scrollTo({ top: top - headerBarHeight - offset, behavior: 'smooth' });
+    });
+  })
+</script>

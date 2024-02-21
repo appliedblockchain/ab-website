@@ -1,0 +1,41 @@
+<section id="index-stay-in-touch" class="section section--primary">
+  <div class="section__content">
+    <div class="row">
+      <div class="card col--4 col--sm6 col--xl4 body--left">
+        <h2 class="body--large body--bold">Stay in touch</h2>
+        <p class="description body--regular body--regular announcements">
+          Subscribe to our social media channels:
+        </p>
+        <div class="action">
+          {% include components/social.html %}
+        </div>
+      </div>
+      <div class="card col--4 col--sm6 col--xl4 body--left">
+        <h2 class="body--large body--bold">5-star customer reviews</h2>
+        <div class="description " style="width: 70%; margin-top: 1.8rem; margin-bottom: 1rem">
+          <img src="{{ site.base-url }}{{ site.imageurl }}/carousel/clients/gartner.svg" alt="">
+        </div>
+        <div class="action">
+          <a id="read-reviews-btn" class="button button--white" target="_blank" href="https://www.gartner.com/reviews/market/blockchain-consulting-and-proof-of-concept-development-services/vendor/applied-blockchain/product/applied-blockchain-consulting-and-development-services/reviews?marketSeoName=blockchain-consulting-and-proof-of-concept-development-services&vendorSeoName=applied-blockchain&productSeoName=applied-blockchain-consulting-and-development-services">
+            Read reviews <i class="fa fa-external-link-alt" style="margin-left: 0.5rem"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card col--4 col--sm6 col--xl4 body--left">
+        <h2 class="body--large body--bold newsletter-form-title">Subscribe to our mailing list</h2>
+        <form class="newsletter-form">
+          <a 
+            id="subscribe-btn"
+            class="action button button--white" 
+            onclick="document.getElementById('pipedrive-form').style.display = 'block'; document.getElementById('subscribe-btn').style.display = 'none';"
+          >
+            Subscribe
+          </a>
+          <div id="pipedrive-form" class="action" style="display: none">
+            <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2Vszhkp0VUQW1CVhICfEAHXpnNWE8eain6uvCf8koOQi9inTklIlYh91rBpTSMCS7"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

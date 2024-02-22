@@ -3,9 +3,19 @@ layout: default
 title: About
 subtitle: We are a team of engineers, designers, and advisors that are helping to make the worlds of Web3, NFTs and DeFi a reality
 background_color: white
+has_custom_title_section: true
 ---
 
-<section id="about-intro" class="section section--white section--full">
+<section id="about-intro" class="section section--white section--about">
+  <div class="top-section">
+    <div class="top-section__inner-container">
+        <div class="top-section__text-container">
+            <div class="top-section__title">{{page.title}}</div>
+            <div class="top-section__description">{{page.subtitle}}</div>
+        </div>
+    </div>
+  </div>
+
   <div class="section__content section__content--2">
     {% for item in site.data.about.intro %}
     <div class="card card--lg">

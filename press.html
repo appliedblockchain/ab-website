@@ -3,6 +3,7 @@ layout: default
 title: Press
 description: Discover the latest blockchain news, insights and opinions to help you make informed decisions.
 background_color: white
+has_custom_title_section: true
 ---
 <!-- check if recent events is empty array -->
 {% capture press_releases %}
@@ -13,8 +14,16 @@ not_empty
 {% endfor %}
 {% endcapture %}
 
-<section class="section section--white section--alt">
-  <div class="section__content blog">
+<section class="section section--white section--alt section--press">
+  <div class="top-section">
+    <div class="top-section__inner-container">
+      <div class="top-section__text-container">
+        <div class="top-section__title">{{page.title}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section__content section--alt blog">
     <div class="grid row tab__content card__wrapper">
       {% if press_releases contains 'not_empty' %}
       {% for post in site.posts %}

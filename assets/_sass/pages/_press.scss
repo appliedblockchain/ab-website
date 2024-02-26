@@ -38,6 +38,14 @@
       line-height: 4rem;
       font-weight: bold;
     }
+
+    &__description {
+      color: #fff;
+      font-size: 1.125rem;
+      line-height: 2rem;
+      font-weight: 400;
+      padding-top: 1rem;
+    }
   }
 
   .section__content.blog {

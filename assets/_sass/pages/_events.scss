@@ -40,6 +40,14 @@
       font-weight: bold;
     }
 
+    &__description {
+      color: #fff;
+      font-size: 1.125rem;
+      line-height: 2rem;
+      font-weight: 400;
+      padding-top: 1rem;
+    }
+
     &__subscription-container {
       display: flex;
       flex-direction: column;

@@ -22,7 +22,7 @@
         {% endif %}
       {% endif %}
     </div>
-        <div class="event-card__title">
+        <div class="event-card__title" title="{% if event_name %} {{ event_name }} {% else %} {{ event.name }} {% endif %}">
           {% if event_name %}
             {{ event_name }}
           {% else %}
@@ -30,12 +30,14 @@
           {% endif %}
         </div>
         {% if event_description %}
-          <div class="event-card__description">
+          <div class="event-card__description" title="{{ event_description }}">
             {{ event_description }}
           </div>
         {% endif %}
         {% if event.location %}
-        <div class="event-card__location">{{ event.location }}</div>
+        <div class="event-card__location" title="{{ event.location }}">
+          {{ event.location }}
+        </div>
         {% endif %}
     </div>
 

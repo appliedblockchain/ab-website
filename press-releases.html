@@ -24,95 +24,42 @@ not_empty
     </div>
   </div>
 
-  <div class="section__content section--alt blog">
-    <div class="grid row tab__content card__wrapper">
-      {% if press_releases contains 'not_empty' %}
-      {% for post in site.posts %}
-      {% if post.category == 'press-release' %}
-      <div class="col--lg4 col--md6 {{ post.category }} {{ post.date | date: "%Y" }}">
-        <div class="card card--portrait background--shadow">
-          <a href="{% if post.link %}{% if post.social contains "pdf" %}{{ site.base-url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>
-            <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg');"></div>
-          </a>
-          <div class="card__inner">
-            <div class="card__content">
-              <img src="{{ site.base-url }}{{ site.imageurl }}/icons/blog/{{ post.category }}.svg" alt="" class="card__icon card__icon--{{ post.category }}">
-              <p class="card__label body--bold">{{ post.date | date: "%b %-d, %Y" }}</p>
-              <h2 class="card__title lead">
-                <a href="{% if post.link %}{% if post.social contains "pdf" %}{{ site.base-url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"{% if post.link %} target="_blank"{% else %}{% endif %}>{{ post.title }}</a>
-              </h2>
-              <p class="card__body">{{ post.headline | truncate: 250, "…" }}</p>
-            </div>
-            <div class="card__actions">
-              {% if post.link %}
-              {% if post.link_label %}
-              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small">
-                <p class="button__inner">{{ post.link_label }}</p>
-              </a>
-              {% else %}
-              {% if post.social contains "newsletter" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--primary button--small">
-                <p class="button__inner">Read</p>
-              </a>
-              {% elsif post.social contains "external" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small">
-                <p class="button__inner">Read</p>
-              </a>
-              {% elsif post.social contains "podcast" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small">
-                <p class="button__inner">Listen</p>
-              </a>
-              <a href="{{ post.video_link }}" target="_blank" class="button button--primary button--small">
-                <p class="button__inner">Watch video</p>
-              </a>
-              {% elsif post.social contains "linkedin" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--linkedin button--small">
-                <p class="button__inner">Read</p>
-              </a>
-              {% elsif post.social contains "medium" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--medium button--small">
-                <p class="button__inner">Read</p>
-              </a>
-              {% elsif post.social contains "video" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--primary button--small">
-                <p class="button__inner">Watch video</p>
-              </a>
-              {% elsif post.social contains "pdf" %}
-              <a href="{{ site.base-url }}/assets/pdfs/{{ post.link }}" target="_blank" class="button button--primary button--small">
-                <p class="button__inner">Read</p>
-              </a>
-              {% elsif post.social contains "blank" %}
-              {% endif %}
-              {% else %}
-              <a href="{{ post.url | prepend: site.baseurl }}" class="button button--primary button--small">
-                <p class="button__inner">Read</p>
-              </a>
-              {% endif %}
-              {% if post.event %}
-              <a href="{{ post.event }}" target="_blank" class="button button--highlight button--small">
-                <p class="button__inner">Register</p>
-              </a>
-              {% endif %}
-              {% if post.social == 'webinar' %}
-              <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small">
-                <p class="button__inner">View recording</p>
-              </a>
-              {% endif %}
-              {% if post.social == 'report' %}
-              <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small">
-                <p class="button__inner">Download report</p>
-              </a>
-              {% endif %}
-              {% endif %}
+  <div class="section__content blog">
+    {% if press_releases contains 'not_empty' %}
+
+    <div class="cards-container">
+      <div class="cards-inner-container">
+        {% for post in site.posts %}
+        {% if post.category == 'press-release' %}
+        <a
+          href="{% if post.link %}{% if post.social contains 'pdf' %}{{ site.base-url }}/assets/pdfs/{{ post.link }}{% else %}{{ post.link }}{% endif %}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
+          {% if post.link %} target="_blank" {% endif %}
+          class="card"
+        >
+          <div
+            href="https://www.youtube.com/watch?v=sY1o3iRqLzg&t=14s"
+            target="_blank"
+            class="card__thumbnail"
+            style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg')"
+          ></div>
+          <div class="card__content">
+            <div class="card__badge">{{ post.date | date: "%b %-d, %Y" }}</div>
+            <div class="card__title">
+              {{ post.title }}
             </div>
           </div>
-        </div>
+          <div class="card__actions-container">
+            <button type="button" class="button">
+              Read
+            </button>
+            </div>
+        </a>
+        {% endif %}
+        {% endfor %}
       </div>
-      {% endif %}
-      {% endfor %}
-      {% else %}
-      <p>There is no press release available. Please come back later!</p>
-      {% endif %}
     </div>
+    {% else %}
+    <p>There is no press release available. Please come back later!</p>
+    {% endif %}
   </div>
 </section>

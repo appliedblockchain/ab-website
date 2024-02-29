@@ -232,25 +232,16 @@ not_empty
 
 <script>
   window.addEventListener('load', () => {
-    function updateTab() {
-      if (window.location.hash) {
-        const tab = document.querySelector(`.events-tabs-container .tab[data-event-type="${window.location.hash.slice(1)}"]`);
-        if (tab) {
-          tab.click();
-        } else {
-          window.location.hash = '';
-        }
+    if (window.location.hash) {
+      const tab = document.querySelector(`.events-tabs-container .tab[data-event-type="${window.location.hash.slice(1)}"]`);
+      if (tab) {
+        tab.click();
       } else {
-        document.querySelector('.events-tabs-container .tab[data-event-type="podcasts"]').click();
+        window.location.hash = '';
       }
+    } else {
+      document.querySelector('.events-tabs-container .tab[data-event-type="podcasts"]').click();
     }
-
-    function updateTabTimeout() {
-      updateTab();
-      setTimeout(updateTabTimeout, 100);
-    }
-
-    updateTabTimeout();
 
     document.querySelectorAll('.close-button')
       .forEach(el => el.addEventListener('click', e => {

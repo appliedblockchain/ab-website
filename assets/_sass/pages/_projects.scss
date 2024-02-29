@@ -106,22 +106,27 @@
 
     &--supply-chain-management {
       .project-card--supply-chain-management { display: $projectCardDisplay; }
+      .project-card:not(.project-card--supply-chain-management) { display: none; }
     }
 
     &--core-technologies {
       .project-card--core-technologies { display: $projectCardDisplay; }
+      .project-card:not(.project-card--core-technologies) { display: none; }
     }
 
     &--financial-solutions {
       .project-card--financial-solutions { display: $projectCardDisplay; }
+      .project-card:not(.project-card--financial-solutions) { display: none; }
     }
 
     &--nfts {
       .project-card--nfts { display: $projectCardDisplay; }
+      .project-card:not(.project-card--nfts) { display: none; }
     }
 
     &--payment-settlement {
       .project-card--payment-settlement { display: $projectCardDisplay; }
+      .project-card:not(.project-card--payment-settlement) { display: none; }
     }
   }
 
@@ -141,7 +146,7 @@
     height: 24rem;
     padding: 2rem 2rem 1.5rem 2rem;
     text-align: start;
-    display: none;
+    display: flex;
     flex-direction: column;
     border-radius: 10px;
 

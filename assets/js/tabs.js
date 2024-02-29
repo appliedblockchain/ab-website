@@ -42,9 +42,21 @@ $('.events-tabs-container .tab').click(e => {
 // projects
 
 $('.project-category-buttons-container .tab').click(e => {
+	const targetType = $(e.target).attr('data-project-category');
+
+	const isActive = e.target.classList.contains('tab--active');
+	if (isActive) {
+		e.preventDefault();
+		$(e.target).removeClass('tab--active');
+		$('.projects-container').removeClass('projects-container--' + targetType);
+		window.history.replaceState({}, '', Object.assign(new URL(window.location.href), {
+			hash: '',
+		}).toString());
+		return;
+	}
+
 	$('.project-category-buttons-container .tab').removeClass('tab--active');
 	$(e.target).addClass('tab--active');
-	const targetType = $(e.target).attr('data-project-category');
 	[
 		'supply-chain-management',
 		'core-technologies',
@@ -54,7 +66,7 @@ $('.project-category-buttons-container .tab').click(e => {
 	].forEach(type => {
 		if (targetType === type) return;
 		$('.projects-container').removeClass('projects-container--' + type);
-	})
+	});
 	$('.projects-container').addClass('projects-container--' + targetType);
 });
 

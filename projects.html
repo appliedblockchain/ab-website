@@ -67,24 +67,12 @@ has_custom_title_section: true
 
 <script>
 window.addEventListener('load', () => {
-    function updateTab() {
-      if (window.location.hash) {
-        const tab = document.querySelector(`.project-category-buttons-container .tab[data-project-category="${window.location.hash.slice(1)}"]`);
+    if (window.location.hash) {
+        const filter = window.location.hash.slice(1);
+        const tab = document.querySelector(`.project-category-buttons-container .tab[data-project-category="${filter}"]`);
         if (tab) {
-          tab.click();
-        } else {
-          window.location.hash = '';
+            tab.click();
         }
-      } else {
-        document.querySelector('.project-category-buttons-container .tab[data-project-category="supply-chain-management"]').click();
-      }
     }
-
-    function updateTabTimeout() {
-      updateTab();
-      setTimeout(updateTabTimeout, 100);
-    }
-
-    updateTabTimeout();
 });
 </script>

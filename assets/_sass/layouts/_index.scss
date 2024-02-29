@@ -454,6 +454,15 @@
         color: white;
         margin-top: 10px;
     }
+
+    .our-services-button {
+        background: linear-gradient(270deg, #017cff, #419dff);
+
+        & > p {
+            text-transform: none;
+            font-weight: 500;
+        }
+    }
 }
 
 #who-we-help {

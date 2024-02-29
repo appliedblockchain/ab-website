@@ -72,7 +72,7 @@ has_custom_title_section: true
     </div>
   </div>
   <div class="section__content">
-    <a href="https://apply.workable.com/appliedblockchain/" target="_blank" class="ga-button-join button button--primary button--animate fas fa-user-plus">
+    <a href="https://apply.workable.com/appliedblockchain/" target="_blank" class="ga-button-join button button--primary">
       <h1 class="button__inner">Join us</h1>
     </a>
   </div>
@@ -108,7 +108,7 @@ has_custom_title_section: true
         <div class="card card--sm card__inner background--shadow">
           <p class="card__title body">{{ item.body }}</p>
           {% if item.link %}
-          <a href="{% if item.link_type != 'external' %}{{ site.base-url }}/{% endif %}{{ item.link }}" {% if item.link_type == 'external' %}target="_blank"{% endif %} class="timeline__button button button--small button--primary button--animate fas fa-{{ item.link_icon }}">
+          <a href="{% if item.link_type != 'external' %}{{ site.base-url }}/{% endif %}{{ item.link }}" {% if item.link_type == 'external' %}target="_blank"{% endif %} class="timeline__button button button--small button--primary">
             <p class="button__inner">{% if item.link_title %}{{ item.link_title }}{% else %}{{ item.link }}{% endif %}</p>
           </a>
           {% endif %}

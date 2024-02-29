@@ -24,7 +24,7 @@ subtitle: Resources and content about our brand, our processes, our clients
                 <div class="card__content">
                     <div class="card__download">
                         <p class="card__meta body--bold">Download all</p>
-                        <a class="button button--icon button--small button--highlight button--animate fas fa-plus" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}.zip" download>
+                        <a class="button button--icon button--small button--highlight" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}.zip" download>
                             <i class="button__inner fas fa-download"></i>
                         </a>
                     </div>
@@ -38,11 +38,11 @@ subtitle: Resources and content about our brand, our processes, our clients
                         </div>
                         <div class="card__buttons">
                             {% if category.slug == 'case-studies' or category.slug == 'one-pagers' %}
-                            <a class="button button--icon button--small button--primary-lighten button--animate fas fa-plus" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" target="_blank">
+                            <a class="button button--icon button--small button--primary-lighten" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" target="_blank">
                                 <i class="button__inner fas fa-eye"></i>
                             </a>
                             {% endif %}
-                            <a class="button button--icon button--small button--primary button--animate fas fa-plus" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" download>
+                            <a class="button button--icon button--small button--primary" href="{{ site.base-url }}{{ site.resourceurl }}/dlc/{{ category.slug }}/{{ doc.file }}" download>
                                 <i class="button__inner fas fa-download"></i>
                             </a>
                         </div>

@@ -25,7 +25,7 @@ background_color: white
             <div class="col--lg4">
               <div class="card__actions">
                 {% for link in item.links %}
-                <a href="{% if item.type == 'internal' %}{{ site.base-url }}/{% endif %}{{ link.url }}" target="_blank" rel="noopener" class="button button--white button--animate {{ link.icon }}">
+                <a href="{% if item.type == 'internal' %}{{ site.base-url }}/{% endif %}{{ link.url }}" target="_blank" rel="noopener" class="button button--white {{ link.icon }}">
                   <p class="button__inner">{{ link.name }}</p>
                 </a>
                 {% endfor %}

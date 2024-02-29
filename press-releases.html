@@ -46,60 +46,60 @@ not_empty
             <div class="card__actions">
               {% if post.link %}
               {% if post.link_label %}
-              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-external-link-alt">
+              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small">
                 <p class="button__inner">{{ post.link_label }}</p>
               </a>
               {% else %}
               {% if post.social contains "newsletter" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-newspaper">
+              <a href="{{ post.link }}" target="_blank" class="button button--primary button--small">
                 <p class="button__inner">Read</p>
               </a>
               {% elsif post.social contains "external" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-external-link-alt">
+              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small">
                 <p class="button__inner">Read</p>
               </a>
               {% elsif post.social contains "podcast" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small button--animate fas fa-headphones">
+              <a href="{{ post.link }}" target="_blank" class="button button--secondary button--small">
                 <p class="button__inner">Listen</p>
               </a>
-              <a href="{{ post.video_link }}" target="_blank" class="button button--primary button--small button--animate fas fa-play">
+              <a href="{{ post.video_link }}" target="_blank" class="button button--primary button--small">
                 <p class="button__inner">Watch video</p>
               </a>
               {% elsif post.social contains "linkedin" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--linkedin button--small button--animate fab fa-linkedin-in">
+              <a href="{{ post.link }}" target="_blank" class="button button--linkedin button--small">
                 <p class="button__inner">Read</p>
               </a>
               {% elsif post.social contains "medium" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--medium button--small button--animate fab fa-medium-m">
+              <a href="{{ post.link }}" target="_blank" class="button button--medium button--small">
                 <p class="button__inner">Read</p>
               </a>
               {% elsif post.social contains "video" %}
-              <a href="{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-play">
+              <a href="{{ post.link }}" target="_blank" class="button button--primary button--small">
                 <p class="button__inner">Watch video</p>
               </a>
               {% elsif post.social contains "pdf" %}
-              <a href="{{ site.base-url }}/assets/pdfs/{{ post.link }}" target="_blank" class="button button--primary button--small button--animate fas fa-eye">
+              <a href="{{ site.base-url }}/assets/pdfs/{{ post.link }}" target="_blank" class="button button--primary button--small">
                 <p class="button__inner">Read</p>
               </a>
               {% elsif post.social contains "blank" %}
               {% endif %}
               {% else %}
-              <a href="{{ post.url | prepend: site.baseurl }}" class="button button--primary button--small button--animate fas fa-eye">
+              <a href="{{ post.url | prepend: site.baseurl }}" class="button button--primary button--small">
                 <p class="button__inner">Read</p>
               </a>
               {% endif %}
               {% if post.event %}
-              <a href="{{ post.event }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+              <a href="{{ post.event }}" target="_blank" class="button button--highlight button--small">
                 <p class="button__inner">Register</p>
               </a>
               {% endif %}
               {% if post.social == 'webinar' %}
-              <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+              <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small">
                 <p class="button__inner">View recording</p>
               </a>
               {% endif %}
               {% if post.social == 'report' %}
-              <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small button--animate fas fa-eye">
+              <a href="{{ site.base-url }}/{{ post.link }}" target="_blank" class="button button--highlight button--small">
                 <p class="button__inner">Download report</p>
               </a>
               {% endif %}

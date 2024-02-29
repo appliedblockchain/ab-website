@@ -6,8 +6,7 @@ background_color: white
 has_custom_title_section: true
 ---
 
-<!-- reverse the order -->
-{% assign sorted = site.data.events | reverse %}
+{% assign sorted = site.data.events %}
 <!-- capture today's date -->
 {% capture now %} {{ 'now' | date: '%s' | plus: 0 }} {% endcapture %}
 

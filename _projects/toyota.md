@@ -10,4 +10,5 @@ industry:
   - Automobile
 background_color: white
 icon: icon-project-client-logo-toyota.svg
+hidden: true
 ---

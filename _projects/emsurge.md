@@ -12,4 +12,5 @@ summary: A powerful suite of tools adopts emerging technologies that dramaticall
 link: https://www.emstream.co.uk/emsurge
 background_color: white
 icon: icon-project-client-logo-emsurge.svg
+hidden: true
 ---

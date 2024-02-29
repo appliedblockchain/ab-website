@@ -479,6 +479,10 @@
         padding-right: 0;
     }
 
+    .title {
+        color: #4a4d52;
+    }
+
     .card {
         &__name {
             color: #4a4d52;
@@ -495,8 +499,12 @@
 
     .case-study-btn {
         background: linear-gradient(270deg, #017cff, #419dff);
-        color: #fff;
-        font-weight: 500;
+
+        & > p {
+            font-weight: 500;
+            color: #fff;
+            text-transform: none;
+        }
     }
 
     .who-we-help-description {

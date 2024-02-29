@@ -76,7 +76,7 @@
     background-color: #f8fcff;
   }
 
-  .buttons-container {
+  .project-category-buttons-container {
     margin: 3rem 1rem;
     display: flex;
     gap: 1rem;
@@ -84,11 +84,15 @@
     align-items: center;
     flex-wrap: wrap;
 
-    .button {
-      background: linear-gradient(270deg, #017cff,#419dff);
+    .tab {
+      background: linear-gradient(270deg, #017cff, #419dff);
       color: #fff;
       font-weight: 400;
       font-size: .875rem;
+
+      &--active {
+        background: linear-gradient(271.51deg, #FF6F00, #FFB378);
+      }
     }
   }
 
@@ -97,6 +101,28 @@
     justify-content: center;
     margin-bottom: 3rem;
     position: relative;
+
+    $projectCardDisplay: flex;
+
+    &--supply-chain-management {
+      .project-card--supply-chain-management { display: $projectCardDisplay; }
+    }
+
+    &--core-technologies {
+      .project-card--core-technologies { display: $projectCardDisplay; }
+    }
+
+    &--financial-solutions {
+      .project-card--financial-solutions { display: $projectCardDisplay; }
+    }
+
+    &--nfts {
+      .project-card--nfts { display: $projectCardDisplay; }
+    }
+
+    &--payment-settlement {
+      .project-card--payment-settlement { display: $projectCardDisplay; }
+    }
   }
 
   .projects-inner-container {
@@ -115,7 +141,7 @@
     height: 24rem;
     padding: 2rem 2rem 1.5rem 2rem;
     text-align: start;
-    display: flex;
+    display: none;
     flex-direction: column;
     border-radius: 10px;
 

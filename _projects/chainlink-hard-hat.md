@@ -5,7 +5,7 @@ case_study: true
 title: Chainlink
 subtitle: The Hardhat Starter Kit Improvements
 category:
-  - Blockchain
+  - Core Technologies
 industry:
   - Blockchain
 short_summary: Chainlink provides the largest collection of decentralized services powering the world’s hybrid smart contracts.

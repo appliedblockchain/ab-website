@@ -5,7 +5,7 @@ case_study: true
 title: Ledger
 subtitle: Integration of EIP1559 for Ethereum mainnet
 category:
-  - Blockchain
+  - Core Technologies
 industry:
   - Hardware Wallet
 summary: Ledger has a range of  the most popular hardware wallets in the industry, with  over 2M users in 165 countries. These store a user’s private key enabling them to hold cryptocurrency and sign transactions securely. Ledger provides two different models, the Nano S Plus and Nano X, the latter connecting through Bluetooth,  and both of these  support over 5,500 digital assets. The hardware wallets come equipped with the Ledger Live app, that allows users to buy, sell, own, and invest their crypto assets.

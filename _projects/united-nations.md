@@ -5,7 +5,7 @@ order: 5
 title: United Nations
 subtitle: Working with the United Nations agencies including World Food Program and UNICEF
 category:
-  - Blockchain
+  - Supply Chain Management
 industry:
   - Government
 summary: Advising, developing, and enabling the UN agencies develop solutions to improve efficiency and reduce cost.

@@ -5,7 +5,7 @@ case_study: true
 title: Wyzepay
 subtitle: The payments platform for forward thinkers
 category:
-  - Blockchain
+  - Financial Solutions
 industry:
   - Financial Technology
 summary: Consumer payments solution

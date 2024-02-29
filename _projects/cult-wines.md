@@ -5,7 +5,7 @@ case_study: true
 title: Cult Wines
 subtitle: NFT-based inventory management system
 category:
-  - Blockchain
+  - Supply Chain Management
 industry:
   - Wine
 summary: Cult Wines - investment in fine wine

@@ -39,6 +39,25 @@ $('.events-tabs-container .tab').click(e => {
 	$('.event-cards-section').addClass('event-cards-section--' + targetType);
 });
 
+// projects
+
+$('.project-category-buttons-container .tab').click(e => {
+	$('.project-category-buttons-container .tab').removeClass('tab--active');
+	$(e.target).addClass('tab--active');
+	const targetType = $(e.target).attr('data-project-category');
+	[
+		'supply-chain-management',
+		'core-technologies',
+		'financial-solutions',
+		'nfts',
+		'payment-settlement',
+	].forEach(type => {
+		if (targetType === type) return;
+		$('.projects-container').removeClass('projects-container--' + type);
+	})
+	$('.projects-container').addClass('projects-container--' + targetType);
+});
+
 // —————————————————————————————————————————————————————————————————
 
 });

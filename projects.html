@@ -23,14 +23,12 @@ has_custom_title_section: true
     </div>
 
     <div class="content-container">
-        <div class="buttons-container">
-            <button type="button" class="button">Track & Trace</button>
-            <button type="button" class="button">IoT Efficiency</button>
-            <button type="button" class="button">Trading</button>
-            <button type="button" class="button">NFT's</button>
-            <button type="button" class="button">Data Sharing</button>
-            <button type="button" class="button">Inventory Management</button>
-            <button type="button" class="button">Payment Systems</button>
+        <div class="project-category-buttons-container">
+            <a href="#supply-chain-management" data-project-category="supply-chain-management" class="button tab">Supply Chain Management</a>
+            <a href="#core-technologies" data-project-category="core-technologies" class="button tab">Core Technologies</a>
+            <a href="#financial-solutions" data-project-category="financial-solutions" class="button tab">Financial Solutions</a>
+            <a href="#nfts" data-project-category="nfts" class="button tab">NFTs</a>
+            <a href="#payment-settlement" data-project-category="payment-settlement" class="button tab">Payment & Settlement</a>
         </div>
 
         <!-- <iframe class="projects__video" src="https://www.youtube.com/embed/WyLoPXjJaNE?autoplay=1&mute=1"></iframe> -->
@@ -40,7 +38,7 @@ has_custom_title_section: true
                 {% if project.hidden == true %}
                     {% continue %}
                 {% endif %}
-                <a href="{{ project.url }}" class="project-card">
+                <a href="{{ project.url }}" class="project-card {% for c in project.category %} project-card--{{ c | downcase | replace: ' & ', ' ' | replace: ' ', '-' }} {% endfor %}">
                     <div class="project-card__img-container">
                         <img
                             src="{{ site.base-url }}{{ site.imageurl }}/icons/{{ project.icon }}"
@@ -66,3 +64,27 @@ has_custom_title_section: true
         </div>
     </div>
 </section>
+
+<script>
+window.addEventListener('load', () => {
+    function updateTab() {
+      if (window.location.hash) {
+        const tab = document.querySelector(`.project-category-buttons-container .tab[data-project-category="${window.location.hash.slice(1)}"]`);
+        if (tab) {
+          tab.click();
+        } else {
+          window.location.hash = '';
+        }
+      } else {
+        document.querySelector('.project-category-buttons-container .tab[data-project-category="supply-chain-management"]').click();
+      }
+    }
+
+    function updateTabTimeout() {
+      updateTab();
+      setTimeout(updateTabTimeout, 100);
+    }
+
+    updateTabTimeout();
+});
+</script>

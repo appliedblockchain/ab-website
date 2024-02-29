@@ -5,7 +5,7 @@ case_study: true
 title: ICON
 subtitle: Algorand BTP Bridge
 category:
-  - Blockchain
+  - Core Technologies
 industry:
   - Blockchain
 summary: ICON is a blockchain protocol for decentralized applications.

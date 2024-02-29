@@ -5,7 +5,7 @@ case_study: true
 title: Chainlink
 subtitle: Native Support For Chainlink in Create Eth App Toolkit
 category:
-  - Blockchain
+  - Core Technologies
 industry:
   - Blockchain
 short_summary: Chainlink provides the largest collection of decentralized services powering the world’s hybrid smart contracts.

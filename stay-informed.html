@@ -96,9 +96,8 @@ not_empty
 
     <div class="event-cards-section">
       <div class="event-cards-container event-cards-container--events">
-        {% if upcoming_events contains "not_empty" or recent_events contains "not_empty" %}
-        {% if upcoming_events contains "not_empty" %}
         <div class="event-card-section-title">Upcoming</div>
+        {% if upcoming_events contains "not_empty" %}
         <div class="event-card-inner-container">
           {% for event in sorted %}
           {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
@@ -107,6 +106,12 @@ not_empty
           {% include components/event.html %}
           {% endif %}
           {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-message-container">
+          <div class="title">No upcoming events</div>
+          <div class="subtitle">Subscribe to our newsletter now and be the first to know!</div>
+          <button type="button" class="button subscription-button">Subscribe now</button>
         </div>
         {% endif %}
 
@@ -121,9 +126,6 @@ not_empty
           {% endif %}
           {% endfor %}
         </div>
-        {% endif %}
-        {% else %}
-        <div class="event-card__empty-message">There is no event. Please come back later!</div>
         {% endif %}
       </div>
 
@@ -229,9 +231,7 @@ not_empty
 
     updateTabTimeout();
 
-    const subscribeButton = document.querySelector('.top-section__subscription-button-container > button');
-    if (!subscribeButton) return;
-    subscribeButton.addEventListener('click', () => {
+    function handleSubscribe() {
       const footerSubscribeButton = document.getElementById('subscribe-btn');
       if (!footerSubscribeButton) return;
 
@@ -244,6 +244,13 @@ not_empty
       const headerBarHeight = 16 * 5; // 5rem
       const offset = 80;
       window.scrollTo({ top: top - headerBarHeight - offset, behavior: 'smooth' });
-    });
+    }
+
+    const subscribeButton = document.querySelector('.top-section__subscription-button-container > button');
+    if (!subscribeButton) return;
+    subscribeButton.addEventListener('click', handleSubscribe);
+
+    document.querySelectorAll('.empty-message-container .subscription-button')
+      .forEach(btn => btn.addEventListener('click', handleSubscribe));
   })
 </script>

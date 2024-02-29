@@ -330,6 +330,113 @@
     }
 }
 
+#thought-leadership {
+    background-color: #f8fcff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .title {
+        color: #4a4d52;
+        padding-bottom: 4rem;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .cards-inner-container {
+        $minCardWidth: 20rem;
+
+        width: calc(100% - 2rem);
+        max-width: $minCardWidth * 3 + 1rem * 2 + 2rem * 2;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax($minCardWidth, 1fr));
+        gap: 2rem;
+    }
+
+    .card {
+        background-color: #fff;
+        box-shadow: 0px 4px 24px 0px rgba(74, 77, 82, 0.02);
+        height: 30rem;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0px 4px 24px 0px rgba(74, 77, 82, 0.15);
+        }
+
+        &__thumbnail {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #4a4d52;
+        }
+
+        &__description {
+            font-weight: 400;
+            font-size: .825rem;
+            color: #4a4d52;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        &__content {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: .6rem;
+        }
+
+        &__actions-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1.5rem;
+
+            .button {
+                color: #fff;
+                background: linear-gradient(270deg, #017cff, #419dff);
+                font-weight: 500;
+                font-size: .825rem;
+            }
+
+            .button-video {
+                color: #419dff;
+                font-weight: 500;
+                font-size: .825rem;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                & > svg {
+                    width: .825rem;
+                    height: .825rem;
+                }
+            }
+        }
+    }
+}
+
 #core-expertise {
     background-color: #0B1B3A;
     min-height: 100vh;

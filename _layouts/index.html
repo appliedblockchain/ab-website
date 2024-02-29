@@ -139,9 +139,93 @@ layout: compress
   </div>
 </div>
 
+<section id="thought-leadership" class="section section-grey">
+  <div class="section__title title">Thought leadership</div>
+  <div class="cards-container">
+    <div class="cards-inner-container">
+      <div class="card">
+        {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/posts/home-page-predictions.png{% endcapture %}
+        <a
+          href="https://www.youtube.com/watch?v=sY1o3iRqLzg&t=14s"
+          target="_blank"
+          class="card__thumbnail"
+          style="background-image: url('{{ thumbnail_url }}')"
+        ></a>
+        <div class="card__content">
+          <div class="card__title">
+            2024 Blockchain Technology Predictions by Adi Ben-Ari
+          </div>
+        </div>
+        <div class="card__actions-container">
+          <a href="https://www.youtube.com/watch?v=sY1o3iRqLzg&t=14s" class="button" target="_blank">
+            Watch video
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/posts/home-page-passkeys.png{% endcapture %}
+        <div
+          class="card__thumbnail"
+          style="background-image: url('{{ thumbnail_url }}')"
+        ></div>
+        <div class="card__content">
+          <div class="card__title">
+            Passkeys will transform the blockchain user-experience
+          </div>
+          <div class="card__description">
+            Passkeys allow users to have self-custody and authorise operations without the need for a wallet application (e.g. Metamask), and without the need to remember a secret back-up text mnemonic. Applied Blockchain is pioneering a friction-free alternative to user wallets.
+          </div>
+        </div>
+        <div class="card__actions-container">
+          <a href="http://blog.appliedblockchain.com/passkeyforblockchain/" class="button" target="_blank">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/posts/home-page-podcast.png{% endcapture %}
+        <a
+          href="https://www.youtube.com/watch?v=ooQJyoSxmUQ"
+          target="_blank"
+          class="card__thumbnail"
+          style="background-image: url('{{ thumbnail_url }}')"
+        ></a>
+        <div class="card__content">
+          <div class="card__title">
+            Podcast #11 - Custody solutions, digital asset management and tokenisation at Fireblocks with John Hallahan
+          </div>
+          <div class="card__description"></div>
+        </div>
+        <div class="card__actions-container">
+          <a href="https://tr.ee/QhJttrwzzb" class="button" target="_blank">
+            Listen now
+          </a>
+          <a href="https://www.youtube.com/watch?v=ooQJyoSxmUQ" class="button-video" target="_blank">
+            <span>Watch video</span>
+            {% include elements/right-arrow.html %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="core-expertise" class="section section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/core-expertise.png');">
+  {% include containers/sections/header.html
+    title = 'Our Core Expertise'
+  %}
+  <div class="section__content">
+    <div class="button__wrapper" style="bottom: 5rem; position: absolute;">
+      <a href="{{ site.base-url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
+        <p class="button__inner">Our Services</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 <section id="who-we-help" class="section section--grey">
   {% include containers/sections/header.html
-    comment = 'Who we help'
     title = 'Cutting-edge startups to global enterprises'
   %}
   <div class="section__content">
@@ -195,21 +279,7 @@ layout: compress
   </div>
 </section>
 
-<section id="core-expertise" class="section section--dark background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/core-expertise.png');">
-  {% include containers/sections/header.html
-    comment = 'What we do'
-    title = 'Our Core Expertise'
-  %}
-  <div class="section__content">
-    <div class="button__wrapper" style="bottom: 5rem; position: absolute;">
-      <a href="{{ site.base-url }}/services" class="ga-button-services button button--primary button--animate fa fa-cogs">
-        <p class="button__inner">Our Services</p>
-      </a>
-
-    </div>
-  </div>
-</section>
-
+{% if false %}
 <section id="index-why-us" class="section section--grey">
   {% include containers/sections/header.html
     comment = 'Why us'
@@ -248,6 +318,7 @@ layout: compress
     </div>
   </div>
 </section>
+{% endif %}
 
 {% include containers/page/subscription.html %}
 {% include containers/site/footer.html %}

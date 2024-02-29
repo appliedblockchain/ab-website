@@ -18,7 +18,7 @@
 	will-change: height, background-color, box-shadow, padding-top, padding-bottom;
 	overflow: hidden;
 	position: fixed;
-	height: $integer-xxxl*2;
+	height: $integer-xxxl;
 	width: 100vw;
 	pointer-events: none;
 
@@ -27,12 +27,21 @@
 		padding: 0.5rem;
 	}
 
+	&__action-container {
+		flex: 1;
+		overflow-x: auto;
+		display: flex;
+		justify-content: flex-start;
+	}
+
 	&__actions {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-left: auto;
 		
 		.action {
+			flex: 0 0 auto;
 			margin: 0;
 			padding: $integer-md;
 
@@ -58,10 +67,10 @@
 		transition: height $transition;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
 		will-change: height;
-		height: $integer-xxxl*2;
+		height: $integer-xxxl;
 		padding: 0 $page/2;
+		gap: 1rem;
 
 		.button + .button--menu {
 			margin-left: $integer-md;
@@ -71,8 +80,42 @@
 	&__logo {
 		transition: height $transition, width $transition;
 		will-change: height, width;
-		width: $integer-max*1.5;
+		width: $integer-xxxxl*1.5;
 		pointer-events: initial;
+
+		&.logo-mobile {
+			display: none;
+			flex: 0 0 2.4rem;
+			width: 2.4rem;
+			height: 2.4rem;
+
+			& > svg {
+				width: 100%;
+				height: 100%;
+			}
+
+			@include responsive(max-width, $tablet-max) {
+				display: block;
+			}
+		}
+
+		&.logo {
+			@include responsive(max-width, $tablet-max) {
+				display: none;
+			}
+		}
+
+		& > a {
+			display: flex;
+			height: 100%;
+			width: 100%;
+			align-items: center;
+
+			& > svg {
+				height: 100%;
+				width: 100%;
+			}
+		}
 
 		&.logo-white {
 
@@ -106,6 +149,7 @@
 	}
 
 	&__contact {
+		background-color: #ff6f00;
 
 		@include responsive(max-width, $mobile-max) {
 			display: none !important;
@@ -191,16 +235,16 @@
 			}
 		}
 
-		.button--primary {
+		.button--primary:not(.header__contact) {
 			background-color: $white;
 			border: 1px solid black;
-	
+
 			.button__inner, &:before {
 				color: black;
 			}
 		}
 
-		.header__actions .button {
+		.header__actions .button:not(.header__contact) {
 			color: black;
 			&:hover {
 				color: $primary;

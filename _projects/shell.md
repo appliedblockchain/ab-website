@@ -4,10 +4,14 @@ order: 2
 case_study: true
 title: Shell
 subtitle: First energy product derivative trade on blockchain
-industry: Energy
+category:
+  - Blockchain
+industry:
+  - Energy
 summary: Shell is a Dutch-British global group of energy and petrochemical companies.
 link: https://www.shell.com/inside-energy/blockchain.html
 background_color: white
+icon: icon-project-client-logo-shell.svg
 
 delivery:
     - item:

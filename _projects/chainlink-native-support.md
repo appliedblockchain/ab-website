@@ -4,10 +4,14 @@ order: 2
 case_study: true
 title: Chainlink
 subtitle: Native Support For Chainlink in Create Eth App Toolkit
-industry: Blockchain
+category:
+  - Core Technologies
+industry:
+  - Blockchain
 short_summary: Chainlink provides the largest collection of decentralized services powering the world’s hybrid smart contracts.
 link: https://chain.link/
 background_color: white
+icon: icon-project-client-logo-chainlink.svg
 
 summary: Chainlink is a decentralised network of oracles that enables smart contracts to interact securely with real-world data and services outside blockchain networks. With Chainlink, the traditional systems that currently power modern economies can connect to the emerging blockchain industry to generate more security, efficiency, and transparency in business and social processes.
 

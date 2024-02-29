@@ -4,9 +4,13 @@ order: 100
 case_study: true
 title: Wyzepay
 subtitle: The payments platform for forward thinkers
-industry: Financial Technology
+category:
+  - Financial Solutions
+industry:
+  - Financial Technology
 summary: Consumer payments solution
 background_color: white
+icon: icon-project-client-logo-wyzepay.svg
 
 challenge:
     - paragraph: 'WyzePay delivers a new market infrastructure that is built on future-proof distributed ledger technology. It combines blockchain technology with a lightning network layer to allow for instant payment. By using smart contract functionality within the blockchain, WyzePay is able to execute instant payments across a network of participants. The security is enforced by blockchain smart contracts without creating an on-chain transaction for every single payment.'

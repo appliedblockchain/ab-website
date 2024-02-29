@@ -1,0 +1,59 @@
+.section.section--about {
+  padding: $integer-xxxl 0 0 0;
+  background-color: #f8fcff;
+  height: 100%;
+
+  .top-section {
+    background: linear-gradient(270deg, #017cff, #419dff);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+
+    &__inner-container {
+      width: 70rem;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: .875rem;
+      flex-wrap: wrap;
+      position: relative;
+      min-height: 14rem;
+    }
+
+    &__text-container {
+      flex: 2;
+      text-align: start;
+      min-width: 20rem;
+      max-width: 45rem;
+
+      @include responsive(max-width, $tablet-max) {
+        padding: 3rem;
+      }
+    }
+
+    &__title {
+      color: #fff;
+      font-size: 3rem;
+      line-height: 4rem;
+      font-weight: bold;
+    }
+
+    &__description {
+      color: #fff;
+      font-size: 1.125rem;
+      line-height: 2rem;
+      font-weight: 400;
+      padding-top: 1rem;
+    }
+  }
+}
+
+#about-leadership {
+  .leadership-cards-container {
+    .card__body-hidden.body {
+      height: 30rem;
+    }
+  }
+}

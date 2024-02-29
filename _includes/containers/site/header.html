@@ -90,7 +90,7 @@
 <!-- cookie banner -->
 <div class="cookie">
 	<p class="cookie__text body--small">We want to give you the best service by using cookies. Carry on browsing if you are happy with this, or <a href="{{ site.base-url }}/privacy-policy" class="button--underline">find out</a> how we manage your cookies.</p>
-	<button class="cookie__button button button--small button--primary button--animate fas fa-check">
+	<button class="cookie__button button button--small button--primary">
 		<p class="button__inner">Got it</p>
 	</button>
 </div>
@@ -101,7 +101,7 @@
 
 <div id="{% if page.layout == 'post' %}post{% elsif page.layout == 'project' %}project{% else %}{{ page.title | slugify }}{% endif %}" class="page background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/background/{% if page.layout == 'webinar' or page.layout == 'report' %}{{ page.layout }}.jpg{% elsif page.background_image %}{{ page.background_image }}{% endif %}');">
 
-{% if page.layout == 'index' or page.layout == 'post' or page.layout == 'project' or page.layout == 'beyond' %}
+{% if page.layout == 'index' or page.layout == 'post' or page.layout == 'project' or page.layout == 'beyond' or page.has_custom_title_section %}
 {% else %}
 {% include containers/page/title.html %}
 {% endif %}

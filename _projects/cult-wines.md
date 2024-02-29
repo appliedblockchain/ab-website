@@ -4,10 +4,14 @@ order: 2
 case_study: true
 title: Cult Wines
 subtitle: NFT-based inventory management system
-industry: Wine
+category:
+  - Supply Chain Management
+industry:
+  - Wine
 summary: Cult Wines - investment in fine wine
 link: http://cultwinesltd.com/
 background_color: white
+icon: icon-project-client-logo-cult.svg
 
 challenge:
     - paragraph: 'Cult Wines is transforming the fine wine industry, for producers, collectors, investors or those who simply enjoy it. Combining our expertise with digital platforms, innovative technology and a globalised infrastructure to re-define how consumers buy, sell, invest and collect fine wines.'

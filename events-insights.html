@@ -1,0 +1,270 @@
+---
+layout: default
+title: Events & Insights
+description: Subscribe to our newsletter now and be the first to know!
+background_color: white
+has_custom_title_section: true
+---
+
+{% assign sorted = site.data.events %}
+<!-- capture today's date -->
+{% capture now %} {{ 'now' | date: '%s' | plus: 0 }} {% endcapture %}
+
+<!-- check if upcoming events is empty array -->
+{% capture upcoming_events %}
+{% for event in sorted %}
+{% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %} 
+{% if date >= now %}
+not_empty
+{% endif %} 
+{% endfor %}
+{% endcapture %}
+
+<!-- check if recent events is empty array -->
+{% capture recent_events %}
+{% for event in site.data.events %}
+{% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
+{% if date < now %}
+not_empty
+{% endif %} 
+{% endfor %}
+{% endcapture %}
+
+<!-- check if webinar is empty array -->
+{% capture webinars %}
+{% for event in site.data.events %}
+{% if event.display == 'webinar' %}
+not_empty
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<!-- check if podcasts is empty array -->
+{% capture podcasts %}
+{% for event in site.posts %}
+{% if event.social contains "podcast" %}
+not_empty
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<!-- check if insights is empty array -->
+{% capture insights %}
+{% for event in site.posts %}
+{% if event.category == 'blog' %}
+not_empty
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<!-- check if videos is empty array -->
+{% capture videos %}
+{% for event in site.posts %}
+{% if event.social contains "video" %}
+not_empty
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
+<section class="section section--white section--events">
+  <div class="top-section">
+    <div class="top-section__inner-container">
+      <div class="top-section__text-container">
+        <div class="top-section__title">{{page.title}}</div>
+        <div class="top-section__description">{{page.description}}</div>
+        <div class="top-section__subscription-button-container">
+          <button type="button">Subscribe now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div class="events-tabs-container">
+        <a href="#events" data-event-type="events" class="button tab">Events</a>
+        <a href="#webinars" data-event-type="webinars" class="button tab">Webinars</a>
+        <a href="#podcasts" data-event-type="podcasts" class="button tab">Podcasts</a>
+        <a href="#insights" data-event-type="insights" class="button tab">Insights</a>
+        <a href="#videos" data-event-type="videos" class="button tab">Videos</a>
+    </div>
+
+    <div class="event-cards-section">
+      <div class="event-cards-container event-cards-container--events">
+        <div class="event-card-section-title">Upcoming</div>
+        {% if upcoming_events contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for event in sorted %}
+          {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
+          {% if date >= now %}
+          {% capture thumbnail_url %}{{ site.base-url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-message-container">
+          <div class="title">No upcoming events</div>
+          <div class="subtitle">Subscribe to our newsletter now and be the first to know!</div>
+          <button type="button" class="button subscription-button">Subscribe now</button>
+        </div>
+        {% endif %}
+
+        {% if recent_events contains "not_empty" %}
+        <div class="event-card-section-title">Past</div>
+        <div class="event-card-inner-container">
+          {% for event in sorted %}
+          {% capture date %} {{ event.date | date: '%s' | plus: 0 }} {% endcapture %}
+          {% if date < now %}
+          {% capture thumbnail_url %}{{ site.base-url}}{{ site.imageurl}}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="event-cards-container event-cards-container--webinars">
+        {% if webinars contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for event in sorted %}
+          {% if event.display == 'webinar' %}
+          {% capture thumbnail_url %}{{ site.base-url}}{{ site.imageurl }}/{% if event.image %}events/{{ event.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="event-card__empty-message">There is no webinar. Please come back later!</div>
+        {% endif %}
+      </div>
+
+      <div class="event-cards-container event-cards-container--podcasts">
+        {% if podcasts contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for post in site.posts %}
+          {% if post.social contains 'podcast' %}
+          {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html
+            event_date = post.date
+            event_name = post.title
+            event_description = post.headline
+            event_watch_video_url = post.video_link
+            event_listen_url = post.link
+          %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="event-card__empty-message">There is no podcast. Please come back later!</div>
+        {% endif %}
+      </div>
+
+      <div class="event-cards-container event-cards-container--insights">
+        {% if insights contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for post in site.posts %}
+          {% if post.category == 'blog' %}
+          {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html
+            event_date = post.date
+            event_name = post.title
+            event_external_url = post.link
+          %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="event-card__empty-message">There is no insight. Please come back later!</div>
+        {% endif %}
+      </div>
+
+      <div class="event-cards-container event-cards-container--videos">
+        {% if videos contains "not_empty" %}
+        <div class="event-card-inner-container">
+          {% for post in site.posts %}
+          {% if post.social contains 'video' %}
+          {% capture thumbnail_url %}{{ site.base-url }}{{ site.imageurl }}/{% if post.image %}posts/{{ post.image }}{% else %}default{% endif %}.jpg{% endcapture %}
+          {% include components/event.html
+            event_date = post.date
+            event_name = post.title
+            event_description = post.headline
+            event_watch_video_url = post.link
+          %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="event-card__empty-message">There is no video. Please come back later!</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div
+  class="subscription-dialog-container subscription-dialog-container--hidden"
+  onclick="event.stopPropagation()"
+>
+  <div class="subscription-dialog" onclick="event.stopPropagation()">
+    <div class="subscription-dialog__content-container">
+      <div class="subscription-dialog__content">
+        <div class="close-button">
+          <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M14 1.41 12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7 14 1.41Z" fill="#fff"/></svg>
+        </div>
+        <div class="title">Subscribe Newsletter</div>
+        <div class="description">
+          Join our inner circle for exclusive updates, insider perks, and the latest trends delivered straight to your inbox!<br>
+          Subscribe to our newsletter now and be the first to know!
+        </div>
+        <div class="form-container">
+          <form class="newsletter-form">
+            <div class="action">
+              <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2Vszhkp0VUQW1CVhICfEAHXpnNWE8eain6uvCf8koOQi9inTklIlYh91rBpTSMCS7"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include containers/page/subscription.html %}
+
+<script>
+  window.addEventListener('load', () => {
+    if (window.location.hash) {
+      const tab = document.querySelector(`.events-tabs-container .tab[data-event-type="${window.location.hash.slice(1)}"]`);
+      if (tab) {
+        tab.click();
+      } else {
+        window.location.hash = '';
+      }
+    } else {
+      document.querySelector('.events-tabs-container .tab[data-event-type="podcasts"]').click();
+    }
+
+    document.querySelectorAll('.close-button')
+      .forEach(el => el.addEventListener('click', e => {
+        document.querySelectorAll('.subscription-dialog-container')
+          .forEach(el => {
+            el.classList.add('subscription-dialog-container--hidden');
+            document.body.style.overflow = 'unset';
+          });
+      }));
+
+    function handleSubscribe() {
+      document.querySelectorAll('.subscription-dialog-container')
+          .forEach(el => {
+            el.classList.remove('subscription-dialog-container--hidden');
+            document.body.style.overflow = 'hidden';
+          });
+    }
+
+    const subscribeButton = document.querySelector('.top-section__subscription-button-container > button');
+    if (!subscribeButton) return;
+    subscribeButton.addEventListener('click', handleSubscribe);
+
+    document.querySelectorAll('.empty-message-container .subscription-button')
+      .forEach(btn => btn.addEventListener('click', handleSubscribe));
+  })
+</script>

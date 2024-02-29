@@ -1,11 +1,21 @@
 ---
 layout: default
 title: About
-subtitle: We are a team of engineers, designers, and advisors that are helping to make the worlds of Web3, NFTs and DeFi a reality
+subtitle: We are a team of engineers, designers, and advisors that are helping to make the worlds of Web3, NFTs and DeFi a reality.
 background_color: white
+has_custom_title_section: true
 ---
 
-<section id="about-intro" class="section section--white section--full">
+<section id="about-intro" class="section section--white section--about">
+  <div class="top-section">
+    <div class="top-section__inner-container">
+        <div class="top-section__text-container">
+            <div class="top-section__title">{{page.title}}</div>
+            <div class="top-section__description">{{page.subtitle}}</div>
+        </div>
+    </div>
+  </div>
+
   <div class="section__content section__content--2">
     {% for item in site.data.about.intro %}
     <div class="card card--lg">
@@ -27,10 +37,10 @@ background_color: white
   <div class="section__content body--left z-index--2">
     <div class="row card__wrapper">
       {% for item in site.data.about.leadership %}
-      <div class="card__outer col--xl5 col--lg6">
+      <div class="card__outer col--xl5 col--lg6 leadership-cards-container">
         <div class="card card--portrait background--shadow">
           <div class="card__image background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl}}/team/{{ item.name | slugify }}.jpg');">
-            <p class="card__body-hidden body">{{ item.bio }}</p>
+            <div class="card__body-hidden body"></div>
           </div>
           <div class="card__inner">
             <p class="card__label label">{{ item.title }}</p>
@@ -62,7 +72,7 @@ background_color: white
     </div>
   </div>
   <div class="section__content">
-    <a href="https://apply.workable.com/appliedblockchain/" target="_blank" class="ga-button-join button button--primary button--animate fas fa-user-plus">
+    <a href="https://apply.workable.com/appliedblockchain/" target="_blank" class="ga-button-join button button--primary">
       <h1 class="button__inner">Join us</h1>
     </a>
   </div>
@@ -98,7 +108,7 @@ background_color: white
         <div class="card card--sm card__inner background--shadow">
           <p class="card__title body">{{ item.body }}</p>
           {% if item.link %}
-          <a href="{% if item.link_type != 'external' %}{{ site.base-url }}/{% endif %}{{ item.link }}" {% if item.link_type == 'external' %}target="_blank"{% endif %} class="timeline__button button button--small button--primary button--animate fas fa-{{ item.link_icon }}">
+          <a href="{% if item.link_type != 'external' %}{{ site.base-url }}/{% endif %}{{ item.link }}" {% if item.link_type == 'external' %}target="_blank"{% endif %} class="timeline__button button button--small button--primary">
             <p class="button__inner">{% if item.link_title %}{{ item.link_title }}{% else %}{{ item.link }}{% endif %}</p>
           </a>
           {% endif %}

@@ -228,17 +228,20 @@ layout: compress
       <div class="card col--md6">
         <div class="card body--left">
           <div class="card__header">
-            <p class="card__title body"><span class="body body--bold">Victor Baconnet</span>, <span class="body body--bold">Product Owner at Ledger</span></p>
+            <div class="card__title body">
+              <div class="card__name">Victor Baconnet</div>
+              <div class="card__position">Product Owner at Ledger</div>
+            </div>
             <div class="card__actions">
-              <a href="{{ site.base-url }}/projects/ledger" class="button button--secondary button--small">
-                <p class="button__inner">Case study</p>
+              <a href="{{ site.base-url }}/projects/ledger" class="button button--secondary button--small case-study-btn">
+                <p class="button__inner">Read Case Study</p>
               </a>
             </div>
           </div>
         </div>
         <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-ledger.jpg');">
           <a href="#modal-video-ledger" class="js-button-modal">
-            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play-orange.svg" alt="" class="video__button">
           </a>
         </div>
         {% include elements/modals/video-ledger.html %}
@@ -246,30 +249,33 @@ layout: compress
       <div class="card col--md6">
         <div class="card body--left">
           <div class="card__header">
-            <p class="card__title body"><span class="body body--bold">Ben Van Beurden, Former CEO at Shell</span></p>
+            <div class="card__title body">
+              <div class="card__name">Ben Van Beurden</div>
+              <div class="card__position">Former CEO at Shell</div>
+            </div>
             <div class="card__actions">
-              <a href="{{ site.base-url }}/projects/shell" class="button button--secondary button--small">
-                <p class="button__inner">Case study</p>
+              <a href="{{ site.base-url }}/projects/shell" class="button button--secondary button--small case-study-btn">
+                <p class="button__inner">Read Case Study</p>
               </a>
             </div>
           </div>
         </div>
         <div class="video background--shadow background--cover" style="background-image: url('{{ site.base-url }}{{ site.imageurl }}/icons/index/video-shell.jpg');">
           <a href="https://www.linkedin.com/feed/update/urn:li:activity:6466320319719186433" class="js-button-modal" target="_blank">
-            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play.svg" alt="" class="video__button">
+            <img src="{{ site.base-url }}{{ site.imageurl }}/icons/icon-play-orange.svg" alt="" class="video__button">
           </a>
         </div>
       </div>
     </div>
   </div>
   <div class="section__content">
-    <p class="body--large">
+    <p class="body--large who-we-help-description">
       World's top companies choose us to advise, design and build innovative solutions. We serve customers in DeFi, Web3, NFTs, cryptocurrency, financial services, trading, energy, commodities, supply chain, telecoms and government.
     </p>
   </div>
   <div class="section__content">
-    <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary">
-      <p class="button__inner">Projects</p>
+    <a href="{{ site.base-url }}/projects" class="ga-button-projects button button--primary case-study-btn">
+      <p class="button__inner">Read Case Study</p>
     </a>
   </div>
 </section>

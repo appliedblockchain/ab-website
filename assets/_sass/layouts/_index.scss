@@ -455,3 +455,41 @@
         margin-top: 10px;
     }
 }
+
+#who-we-help {
+    .section__header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card {
+        &__name {
+            color: #4a4d52;
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+
+        &__position {
+            color: #4a4d52;
+            font-size: 1;
+            font-weight: 400;
+        }
+    }
+
+    .case-study-btn {
+        background: linear-gradient(270deg, #017cff, #419dff);
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .who-we-help-description {
+        color: #4a4d52;
+    }
+
+    .video__button {
+        border: .4rem solid #fff;
+        background-color: #fff;
+        box-sizing: border-box;
+        border-radius: 50%;
+    }
+}

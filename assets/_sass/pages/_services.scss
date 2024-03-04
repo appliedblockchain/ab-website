@@ -61,5 +61,11 @@
 
   .section--projects {
     padding-bottom: 5rem;
+    .button--primary{
+      background: linear-gradient(270deg, #017cff, #419dff);
+    }
+    .button__inner{
+      text-transform: capitalize;
+    }
   }
 }

@@ -5,11 +5,7 @@
         {% include mixins/logo.html %}
       </a>
     </div>
-    <div class="header__logo logo-mobile">
-      <a href="{{ site.base-url }}/">
-        {% include mixins/logo-mobile.html %}
-      </a>
-    </div>
+    <button type="button" class="header__mobile-menu-hamburger-btn"></button>
     <div class="header__action-container">
       <div class="header__actions">
         <a href="{{ site.base-url }}/projects" class="button action">Projects</a>
@@ -26,5 +22,32 @@
         </div>
       </div>
     </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__inner-container">
+        <a href="{{ site.base-url }}/projects" class="button action">Projects</a>
+        <a href="{{ site.base-url }}/services" class="button action">Services</a>
+        <a href="{{ site.base-url }}/events-insights#podcasts" class="button action">Events & Insights</a>
+        <a href="{{ site.base-url }}/press-releases" class="button action">Press releases</a>
+        <a href="{{ site.base-url }}/about" class="button action">About</a>
+        <div class="mobile-menu__contact-button-container">
+          <a href="{{ site.base-url }}/contact" class="button-contact button button--small button--primary">
+            <p id="contact-us" class="button__inner action">Contact us</p>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+  <script>
+      const mobileMenuButton = document.querySelector('.header__mobile-menu-hamburger-btn');
+      if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', e => {
+          const mobileMenu = document.querySelector('.mobile-menu');
+          if (mobileMenu) {
+            document.body.classList.toggle('body--mobile-menu-open');
+            mobileMenu.classList.toggle('mobile-menu--open');
+            mobileMenuButton.classList.toggle('header__mobile-menu-hamburger-btn--open');
+          }
+        })
+      }
+  </script>
 </header>

@@ -13,12 +13,14 @@
 // header
 // —————————————————————————————————————————————————————————————————
 
+$headerHeight: $integer-xxxl;
+
 .header {
 	transition: height $transition, background-color $transition, box-shadow $transition, padding-top $transition, padding-bottom $transition;
 	will-change: height, background-color, box-shadow, padding-top, padding-bottom;
 	overflow: hidden;
 	position: fixed;
-	height: $integer-xxxl;
+	height: $headerHeight;
 	width: 100vw;
 	pointer-events: none;
 
@@ -27,11 +29,70 @@
 		padding: 0.5rem;
 	}
 
+	&__mobile-menu-hamburger-btn {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 2.4rem;
+		width: 2.4rem;
+		height: 2.4rem;
+		margin-left: auto;
+		padding: 0;
+		outline: 0;
+		border: 0;
+		pointer-events: all;
+		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 1.8rem;
+			height: .1875rem;
+			background-color: #000;
+			box-shadow: 0 -.5rem 0 0 #000, 0 .5rem 0 0 #000;
+		}
+
+		&--open {
+			&::before {
+				content: '';
+				display: block;
+				width: 1.8rem;
+				height: .1875rem;
+				background-color: #000;
+				transform-origin: center;
+				transform: rotate(-45deg);
+				box-shadow: none;
+				position: absolute;
+			}
+
+			&::after {
+				content: '';
+				display: block;
+				width: 1.8rem;
+				height: .1875rem;
+				background-color: #000;
+				transform-origin: center;
+				transform: rotate(45deg);
+				position: absolute;
+			}
+		}
+
+		@include responsive(max-width, $desktop-max) {
+			display: flex;
+		}
+	}
+
 	&__action-container {
 		flex: 1;
-		overflow-x: auto;
 		display: flex;
 		justify-content: flex-start;
+
+		@include responsive(max-width, $desktop-max) {
+			display: none;
+		}
 	}
 
 	&__actions {
@@ -82,28 +143,6 @@
 		will-change: height, width;
 		width: $integer-xxxxl*1.5;
 		pointer-events: initial;
-
-		&.logo-mobile {
-			display: none;
-			flex: 0 0 2.4rem;
-			width: 2.4rem;
-			height: 2.4rem;
-
-			& > svg {
-				width: 100%;
-				height: 100%;
-			}
-
-			@include responsive(max-width, $tablet-max) {
-				display: block;
-			}
-		}
-
-		&.logo {
-			@include responsive(max-width, $tablet-max) {
-				display: none;
-			}
-		}
 
 		& > a {
 			display: flex;
@@ -249,6 +288,65 @@
 			&:hover {
 				color: $primary;
 			}
+		}
+	}
+}
+
+.mobile-menu {
+	display: none;
+	flex-direction: column;
+	background-color: #0c1731;
+	position: fixed;
+	top: $headerHeight;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 20;
+	justify-content: center;
+	padding: 2rem 0;
+
+	&__inner-container {
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+		align-items: stretch;
+		flex: 1;
+		gap: .4rem;
+
+		.button.action {
+			color: #fff;
+			padding: .6rem 2rem;
+			justify-content: flex-start;
+			font-size: 1.4rem;
+			margin: 0;
+			font-weight: bold;
+			min-height: 2.6rem;
+			box-sizing: border-box;
+		}
+
+		.button-contact {
+			background-color: #ff6f00;
+			align-self: flex-start;
+			font-size: 1.125rem;
+			min-height: 1.625rem;
+			font-weight: bold;
+			padding: .25rem .6rem;
+			box-sizing: border-box;
+
+			& > p {
+				padding: 0;
+			}
+		}
+	}
+
+	&__contact-button-container {
+		padding: 2rem;
+	}
+
+	@include responsive(max-width, $desktop-max) {
+		&--open {
+			display: flex;
+			pointer-events: all;
 		}
 	}
 }
@@ -463,5 +561,11 @@
 		width: 100%;
 		gap: $integer-xxl;
 		margin-bottom: $integer-lg;
+	}
+}
+
+body.body--mobile-menu-open {
+	@include responsive(max-width, $desktop-max) {
+		overflow: hidden;
 	}
 }
